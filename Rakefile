@@ -4,7 +4,7 @@ require "bundler/setup"
 require "jekyll"
 
 # Change your GitHub reponame
-GITHUB_REPONAME = "foryogi/foryogi.github.io"
+GITHUB_REPONAME = "zlu/zlu.github.io"
 
 desc "Generate blog files"
 task :generate do
