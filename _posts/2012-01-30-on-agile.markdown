@@ -1,0 +1,63 @@
+---
+layout: post
+title: "On Agile"
+date: 2012-01-30 18:11
+comments: true
+categories: agile
+---
+
+Programmers do not like rules.
+
+Programmers who are hesitate about adopting agile say agile is about adding rules
+to their development.
+
+Agile is not about implementing new rules.  It is about breaking existing rules.  
+The first rule to break when introducing XP into a traditional work place is to take down 
+the cubicles.
+
+Agile is about communication.  Pair programming is all about communication.  The pair
+communicate via code.  One write test, sees it fail, and the other write enough code
+to make the test pass.  The pair constantly communicate verbally to making design decisions.
+
+Agile is about communication across functional areas.  Customers, production, development, and 
+QA all need to communicate.  That is why heterogeneous pairing is so important.  Has 
+QA accepted the done criteria before developers start working on it?  How many times 
+do you have stories rejected and then started to talk to QA about what this feature 
+is about?  Miscommunication and missed communication imply wasted development and test cycles.
+
+The hardest thing for most developers to get about XP is TDD/BDD.  If there is
+one thing you want to start with Agile, that has to be TDD.  TDD is not about writing
+some code then a couple of tests to cover what you think is sufficient.  It is about
+starting a feature by writing a single test and only enough code to make it pass.  A
+method with a hard-coded string sometime is enough to make the test pass and that is ok.  
+Another example is simply returning a 200 for a web request.  The next test will be 
+forcing the hard-coded string to change or returning an actual response body (or at 
+least part of it).  It is harder to think about test first, it is also more code to 
+write because you may have several tests for a single line of production code.  But 
+the result is more robust and reliable code.  You will save time in the end because 
+you have considered how to defeat and defend your own code from the beginning, and 
+you will want to naturally refactor towards the end goal.  You will be less focused 
+on the postive case, which is usually easy and spend more time on negative paths.
+
+Agile builds better programmers.  You may think TDD is a rule.  But it's really a habit.  
+It is like Zen, a practice of life.  When thinking about a feature, you think about 
+how to make it testable.  If you can't seem to figure out how to write test first, it 
+means you are not understanding the feature well or the story needs redesign or being
+brutely honest, not getting TDD.  TDD takes practice, much like learning a new programming
+language.  I remember learning Java when I already know C.  OO concepts seem to be foreign
+and hard to grasp, at first.
+
+Agile does not stop you from experimenting with new technology and building prototypes just
+to figure out whether something will work or not.  It is called spikes.  You can spike
+often as needed but remember developer time is valuable and obligation to deliver
+features to customers on time.  Using existing infrastructure to meet customer requirements
+and refactor towards end goal is ideal.
+
+Agile is about emotions.  Believe or not, coders are also emotional beings.  Agile
+considers emotions first then about machines and programming languages.  In order to
+better delivery business values, the team, as an aggregation of humans, needs to work
+towards the same goal.  By effective communication and interaction, people make better
+decisions.  Pair programming eliminates personal blames.  Shifting pairs changes
+code ownership from individual to team.  By building trust, pair forms a natural support
+system.  It is often comforting to have someone sitting next to you to point out logical
+flaws.  Afterall, coders want to deliver better code.

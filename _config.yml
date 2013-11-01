@@ -1,0 +1,11 @@
+name: ForYogi Blog
+url: http://blog.foryogi.com
+description: Official blog of ForYogi.com
+author: ForYogi
+rss_path: feeds
+markdown: kramdown
+redcarpet:
+  extensions: ["strikethrough"]
+pygments: true
+port: 5000
+exclude: ["vendor"]

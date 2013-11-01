@@ -1,5 +1,13 @@
-<a href="http://c15009438.r38.cf2.rackcdn.com/large.m4v">Status Voicemail</a><br>
-<a href="https://github.com/zlu/play">Play Telephony DSL</a><br>
-<a href="https://github.com/openvoice">OpenVoice</a><br>
-<a href="https://www.zlu.me">Blog</a><br>
-<a href="https://www.foryogi.com">ForYogi</a><br>
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
