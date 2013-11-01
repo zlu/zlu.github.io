@@ -1,11 +1,11 @@
-name: ForYogi Blog
-url: http://blog.foryogi.com
-description: Official blog of ForYogi.com
-author: ForYogi
+name: blog@zlu
+url: http://www.zlu.me
+description: Personal blog of Zhao Lu
+author: Zhao Lu
 rss_path: feeds
 markdown: kramdown
 redcarpet:
   extensions: ["strikethrough"]
 pygments: true
-port: 5000
+port: 6000
 exclude: ["vendor"]
