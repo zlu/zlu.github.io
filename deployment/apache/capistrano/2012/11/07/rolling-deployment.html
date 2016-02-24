@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta content="@zlu" property="twitter:site"/>
+  <meta content="summary" property="twitter:card"/>
+  <meta content="Rolling Deployment" property="twitter:title"/>
+  <meta content="It is common to deploy new code to production several times a week (or even a day) in an agile shop.  How to make deployment
+less intrusive to end user has becoming a larger issue.  If you simply u..." property="twitter:description"/>
+  <meta content="@zlu" property="twitter:creator"/>
+  <meta content="www.zlu.me" property="twitter:domain"/>
+  <meta content="http://blog.zlu.me/" property="twitter:image:src"/>
+
+  <title>Rolling Deployment</title>
+
+  <link rel="author" href="https://plus.google.com/+Zhaolu"/>
+
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/zhaolu.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-7031506-4', 'zlu.me');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="header">
+        <h1 class="title"><a href="/">blog@zlu</a></h1>
+        <a class="extra" href="/about">ABOUT</a>
+      </div>
+
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/refactor/2015/12/20/on-refactor.html">On Refactor</a><br>
+          <span>12-20-2015</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/gcc/ruby/yosemite/2014/08/28/yosemite-gcc-woe.html">Yosemite GCC Woe</a><br>
+          <span>08-28-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2014/07/11/git-bisect.html">Git Bisect #FTW</a><br>
+          <span>07-11-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2014/05/28/git-grep.html">Git Grep</a><br>
+          <span>05-28-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2014/05/27/git-tip.html">Git Tip</a><br>
+          <span>05-27-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/yoga/2014/05/26/an-unbiased-yogic-guide-to-san-francisco.html">An Unbiased Yogic Guide to San Francisco</a><br>
+          <span>05-26-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/beijing/photo/2014/05/20/aunt-at-prince-gong-mansion.html">Aunt At Prince Gong's Mansion</a><br>
+          <span>05-20-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/heroku/database/performance/2014/05/19/heroku-database-optimization.html">Heroku Database Optimization</a><br>
+          <span>05-19-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/hiking/photo/2014/04/25/hike-at-wunderlich-park.html">Hike At Wunderlich Park</a><br>
+          <span>04-25-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/update/2013/11/01/site-updates.html">Site Updates</a><br>
+          <span>11-01-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/update/2013/09/29/site-updates.html">Site Updates</a><br>
+          <span>09-29-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/cms/2013/09/27/quicksurveyofrailscms.html">Quick Survey Of Rails CMS</a><br>
+          <span>09-27-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/jekyll/github/plugin/2013/09/18/never-ending-journey-on-the-perfect-blogging-setup.html">The Never Ending Journey On The Perfect Blogging Setup</a><br>
+          <span>09-18-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/system%20call/security/2013/06/03/system-calls-in-ruby.html">System Calls In Ruby</a><br>
+          <span>06-03-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/ruby/2013/05/29/initialization-is-an-interesting-thing.html">Initialization Is An Interesting Thing</a><br>
+          <span>05-29-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/shell/bash/2013/05/27/lost-shell-commands.html">Lost Shell Commands?</a><br>
+          <span>05-27-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/database/upgrade/sharedmemory/2013/02/04/postgres-gotchas.html">Postgres Gotchas</a><br>
+          <span>02-04-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/rvm/2012/11/10/housekeeping-rvm.html">Housekeeping RVM</a><br>
+          <span>11-10-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/system/2012/11/08/what-happened-to-fd-3-and-4-in-mri.html">What Happened to FD 3 and 4 in MRI</a><br>
+          <span>11-08-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/deployment/apache/capistrano/2012/11/07/rolling-deployment.html">Rolling Deployment</a><br>
+          <span>11-07-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/social/2012/11/01/encourage-social-sharing-in-china.html">Encouraging Social Sharing in China</a><br>
+          <span>11-01-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/2012/10/29/install-and-create-rails-4-dot-0-app.html">Install and Create Rails 4.0 App</a><br>
+          <span>10-29-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/mongodb/activerecord/sql/2012/10/16/a-small-difference-between-mongoid-and-activerecord-query-interface.html">A Small Difference Between Mongoid and ActiveRecord Query Interface</a><br>
+          <span>10-16-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/rails/gem/rvm/2012/10/16/segmentation-fault-with-rails-and-json.html">Segmentation fault with Rails and JSON</a><br>
+          <span>10-16-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/dns/censorship/2012/08/30/accessing-facebook-in-vietnam.html">Accessing Facebook in Vietnam</a><br>
+          <span>08-30-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/bash/gem/2012/07/31/uninstall-multiple-versions-of-multiple-ruby-gem.html">Uninstall Multiple Versions of Multiple Ruby Gems</a><br>
+          <span>07-31-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/2012/07/19/pretty-print-json-in-command-line.html">Pretty Print JSON in Command Line</a><br>
+          <span>07-19-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/mocking/rails/rspec/carrierwave/fog/s3/2012/07/17/testing-carrierwave-with-fog.html">Testing Carrierwave with Fog for Amazon S3</a><br>
+          <span>07-17-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/emacs/2012/05/18/my-current-emacs.html">My Current Emacs</a><br>
+          <span>05-18-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/bdd/agile/2012/05/13/tdd-by-jim-weirich.html">TDD by Jim Weirich</a><br>
+          <span>05-13-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/wireshark/os%20x/mountain%20lion/2012/02/28/running-wireshark-on-mountain-lion.html">Running Wireshark on Mountain Lion</a><br>
+          <span>02-28-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/os%20x/gem/mountain%20lion/2012/02/21/install-native-ruby-gem-in-mountain-lion-preview.html">Install Native Ruby Gem in Mountain Lion Preview</a><br>
+          <span>02-21-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/tools/2012/02/14/rubymine-and-pivotaltracker-integration.html">RubyMine and PivotalTracker Integration</a><br>
+          <span>02-14-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/2012/02/12/a-couple-things-to-watch-out-for-using-privatepub.html">A Couple Things to Watch Out For Using PrivatePub</a><br>
+          <span>02-12-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rspec/tdd/2012/02/12/rspec-arbitrary-handling-of-arguments.html">RSpec Arbitrary Handling of Arguments</a><br>
+          <span>02-12-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/agile/2012/01/30/on-agile.html">On Agile</a><br>
+          <span>01-30-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2011/11/01/git-auto-complete.html">Git auto complete</a><br>
+          <span>11-01-2011</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/android,/test/2009/04/14/running-apidemos-tests-in-android-sdk-1.5pre.html">Running APIDemos Tests in Android SDK 1.5pre</a><br>
+          <span>04-14-2009</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ubuntu,/mac/2008/09/04/dualboot-ubuntu-on-macbook.html">Dualboot Ubuntu on Macbook</a><br>
+          <span>09-04-2008</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/java/swing/visualization/1999/06/01/vizard.html">Vizard</a><br>
+          <span>06-01-1999</span>
+      </div>
+      
+    </div>
+    <div class="col-md-8">
+      <h2>Rolling Deployment</h2>
+<p class="meta">11-07-2012</p>
+
+Filed under: Deployment, Apache, Capistrano
+
+<p></p>
+<p></p>
+<p></p>
+<p>It is common to deploy new code to production several times a week (or even a day) in an agile shop.  How to make deployment
+less intrusive to end user has becoming a larger issue.  If you simply use <code>cap deploy production</code>, some web requests will
+time out hence hamper consumer experience.  Heroku supports maintenance mode, which can be turned on before a deployment.
+User will see a maintenance page instead of unresponsive web page.  This is ok but not ideal.</p>
+
+<p>Martin Fowler wrote about <a href="http://martinfowler.com/bliki/BlueGreenDeployment.html">Blue Green Deployment</a>.  The canonical
+form of this deployment strategy is to maintain two identical databases for each environment.  There is an issue of
+dealing with missed transactions when deploying to one environment (stand-by) while the live environment is still taking
+web requests.  There are a few ways to take care of this such as putting the live environment into read-only mode before the
+cut-over.</p>
+
+<p>For a small application (or a typical start-up scenario), having two database is a bit of over-kill and entails higher
+operational costs.  With rolling deployment,  all the production web (application) servers share the same database.  To
+reduce application downtime, only one web server will be taken out of the load balancer at a time.  This web server will then
+be loaded with new code.  We can then run some quick automated tests (simple selenium tests for example) to ensure the build
+is sane, against this web server.  If tests pass, we bring the node back into the load balancer.  We then repeat this process
+for the next server.  If there are database changes that could potentially affect the state of the application and cause
+inconsistency, then measure must be taken in the application to mitigate the problem through for example, back-fill.</p>
+
+<h2>Setup</h2>
+
+<p>A typical setup for a web app where multiple web servers (such as Unicorn) share the same database server.</p>
+
+<pre>
+                  |-> web server1 (red)   -|
+load balancer --> |-> web server2 (blue)  -|---> database
+                  |-> web server3 (green) -|
+</pre>
+
+<h2>Steps</h2>
+
+<ul>
+<li>Take the red web server out of load balancer</li>
+<li>Deploy new code to red</li>
+<li>Run deployment tests against red to ensure everything is sane</li>
+<li>If tests pass, put red back to load balancer and continue to the next node, blue</li>
+<li>If tests fail, roll back</li>
+</ul>
+
+<h2>Example</h2>
+
+<p>In this example, I use Apache&#39;s <a href="http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html">mod<em>proxy</em>balancer</a>.
+I use a typical Rails web server setup and <a href="https://github.com/capistrano/capistrano">Capistrano</a> for deployment.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">role</span> <span class="ss">:app</span><span class="p">,</span> <span class="s2">&quot;server1.com&quot;</span><span class="p">,</span> <span class="ss">:group</span> <span class="o">=&gt;</span> <span class="ss">:red</span>
+<span class="n">role</span> <span class="ss">:app</span><span class="p">,</span> <span class="s2">&quot;server2.com&quot;</span><span class="p">,</span> <span class="ss">:group</span><span class="o">=&gt;</span> <span class="ss">:blue</span>
+<span class="n">role</span> <span class="ss">:app</span><span class="p">,</span> <span class="s2">&quot;server3.com&quot;</span><span class="p">,</span> <span class="ss">:group</span> <span class="o">=&gt;</span> <span class="ss">:green</span>
+<span class="n">role</span> <span class="ss">:apache</span><span class="p">,</span> <span class="s2">&quot;loadbalancer.com&quot;</span><span class="p">,</span> <span class="ss">:no_release</span> <span class="o">=&gt;</span> <span class="kp">true</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">manage_node</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">group</span><span class="p">)</span>
+  <span class="n">uri</span> <span class="o">=</span> <span class="no">URI</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;http://</span><span class="si">#{</span><span class="n">roles</span><span class="o">[</span><span class="ss">:apache</span><span class="o">]</span><span class="si">}</span><span class="s2">/balancer-manager&quot;</span><span class="p">)</span>
+  <span class="n">response_body</span> <span class="o">=</span> <span class="no">Net</span><span class="o">::</span><span class="no">HTTP</span><span class="o">.</span><span class="n">get_response</span><span class="p">(</span><span class="n">uri</span><span class="p">)</span><span class="o">.</span><span class="n">body</span>
+  <span class="n">nonce</span> <span class="o">=</span> <span class="n">response_body</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sr">/nonce=(.*)\&quot;/</span><span class="p">)</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span>
+  <span class="n">node</span> <span class="o">=</span> <span class="n">find_servers</span><span class="p">(</span><span class="ss">:roles</span> <span class="o">=&gt;</span> <span class="ss">:app</span><span class="p">,</span> <span class="ss">:only</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="ss">:group</span> <span class="o">=&gt;</span> <span class="n">group</span><span class="o">.</span><span class="n">to_sym</span><span class="p">})</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>
+  <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:w</span> <span class="o">=&gt;</span> <span class="s2">&quot;http://</span><span class="si">#{</span><span class="n">node</span><span class="si">}</span><span class="s2">:8080&quot;</span><span class="p">,</span> <span class="ss">:b</span> <span class="o">=&gt;</span> <span class="n">stage</span><span class="p">,</span> <span class="ss">:nonce</span> <span class="o">=&gt;</span> <span class="n">nonce</span><span class="p">,</span> <span class="ss">:dw</span> <span class="o">=&gt;</span> <span class="n">action</span><span class="p">}</span>
+  <span class="n">uri</span><span class="o">.</span><span class="n">query</span> <span class="o">=</span> <span class="no">URI</span><span class="o">.</span><span class="n">encode_www_form</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+  <span class="n">response</span> <span class="o">=</span> <span class="no">Net</span><span class="o">::</span><span class="no">HTTP</span><span class="o">.</span><span class="n">get_response</span><span class="p">(</span><span class="n">uri</span><span class="p">)</span>
+  <span class="n">response</span><span class="o">.</span><span class="n">code</span> <span class="o">==</span> <span class="s2">&quot;200&quot;</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>mod<em>proxy</em>balancer has a balancer-manager GUI.  Admin is able to enable and disable node (web server) via a form.
+manage_node method essentially submit the form to the balancer-manager.</p>
+
+<p>To take red node out of the load balancer, simply define a task such as:
+<code>ruby
+task :enable do
+  manage_mode(&quot;Enable&quot;, group),
+end
+</code>
+The value of group can be passed in as a command line option for Capistrano</p>
+
+<h2>Other Considerations</h2>
+
+<p>Why do I suggest running some basic tests as the acceptance criteria for rolling deployment?  I assume that the code
+being deployed is well tested and passed CI/QA etc.  But there&#39;re all kinds of factors that can be different between test,
+CI, and production environment.  Some library have different versions, VM images, or even the OS can be different.  I like
+to use a Mac Mini for in-house CI (or Travis for open-source projects).  There&#39;s no guarantee that Travis or Mac Mini
+can be kept up-to-date with production environment.  I could spin up a CI instance that replicates production but keeping
+them in-sync still takes much effort.  There are also possibilities that integration test suites do not test views where
+a simple route change could prevent user from successfully logging in.  By running a simple Selenium test to login and
+perform one core function of the application, it gives me some level of assurance.</p>
+
+<p>Capistrano supports deployment to a single server using HOSTS or HOSTFITLER command line options.  However, the load balancer
+will keep sending requests to the server during deployment and server restart.</p>
+
+<h2>Note</h2>
+
+<p><a href="http://rdoc.info/github/capistrano/capistrano/master/Capistrano/Configuration/Servers">find_server API</a></p>
+
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div style="margin-top: 10px; margin-bottom: 10px;">
+<a href="https://twitter.com/zlu" target="_blank" class="unstyled">
+  <span class="fa-stack fa-lg">
+  <i class="fa fa-circle-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+  </span>
+</a>
+<a href="http://linkedin.com/in/zhaolu" target="_blank" class="unstyled">
+    <span class="fa-stack fa-lg">
+    <i class="fa fa-circle-o fa-stack-2x"></i>
+    <i class="fa fa-linkedin fa-stack-1x"></i>
+    </span>
+</a>
+</div>
+
+  </div>
+</div>
+
+</body>
+</html>

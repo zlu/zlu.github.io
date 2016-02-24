@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta content="@zlu" property="twitter:site"/>
+  <meta content="summary" property="twitter:card"/>
+  <meta content="Git Bisect #FTW" property="twitter:title"/>
+  <meta content="This blog is about 7 years over due.  Around 2007 I worked with Sam Pierson on a project at PivotalLabs.  It was a Rails app which provided xml payload to clients.  Those were the days when aliasme..." property="twitter:description"/>
+  <meta content="@zlu" property="twitter:creator"/>
+  <meta content="www.zlu.me" property="twitter:domain"/>
+  <meta content="http://blog.zlu.me/" property="twitter:image:src"/>
+
+  <title>Git Bisect #FTW</title>
+
+  <link rel="author" href="https://plus.google.com/+Zhaolu"/>
+
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/zhaolu.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-7031506-4', 'zlu.me');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="header">
+        <h1 class="title"><a href="/">blog@zlu</a></h1>
+        <a class="extra" href="/about">ABOUT</a>
+      </div>
+
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/refactor/2015/12/20/on-refactor.html">On Refactor</a><br>
+          <span>12-20-2015</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/gcc/ruby/yosemite/2014/08/28/yosemite-gcc-woe.html">Yosemite GCC Woe</a><br>
+          <span>08-28-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2014/07/11/git-bisect.html">Git Bisect #FTW</a><br>
+          <span>07-11-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2014/05/28/git-grep.html">Git Grep</a><br>
+          <span>05-28-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2014/05/27/git-tip.html">Git Tip</a><br>
+          <span>05-27-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/yoga/2014/05/26/an-unbiased-yogic-guide-to-san-francisco.html">An Unbiased Yogic Guide to San Francisco</a><br>
+          <span>05-26-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/beijing/photo/2014/05/20/aunt-at-prince-gong-mansion.html">Aunt At Prince Gong's Mansion</a><br>
+          <span>05-20-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/heroku/database/performance/2014/05/19/heroku-database-optimization.html">Heroku Database Optimization</a><br>
+          <span>05-19-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/hiking/photo/2014/04/25/hike-at-wunderlich-park.html">Hike At Wunderlich Park</a><br>
+          <span>04-25-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/update/2013/11/01/site-updates.html">Site Updates</a><br>
+          <span>11-01-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/update/2013/09/29/site-updates.html">Site Updates</a><br>
+          <span>09-29-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/cms/2013/09/27/quicksurveyofrailscms.html">Quick Survey Of Rails CMS</a><br>
+          <span>09-27-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/jekyll/github/plugin/2013/09/18/never-ending-journey-on-the-perfect-blogging-setup.html">The Never Ending Journey On The Perfect Blogging Setup</a><br>
+          <span>09-18-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/system%20call/security/2013/06/03/system-calls-in-ruby.html">System Calls In Ruby</a><br>
+          <span>06-03-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/ruby/2013/05/29/initialization-is-an-interesting-thing.html">Initialization Is An Interesting Thing</a><br>
+          <span>05-29-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/shell/bash/2013/05/27/lost-shell-commands.html">Lost Shell Commands?</a><br>
+          <span>05-27-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/database/upgrade/sharedmemory/2013/02/04/postgres-gotchas.html">Postgres Gotchas</a><br>
+          <span>02-04-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/rvm/2012/11/10/housekeeping-rvm.html">Housekeeping RVM</a><br>
+          <span>11-10-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/system/2012/11/08/what-happened-to-fd-3-and-4-in-mri.html">What Happened to FD 3 and 4 in MRI</a><br>
+          <span>11-08-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/deployment/apache/capistrano/2012/11/07/rolling-deployment.html">Rolling Deployment</a><br>
+          <span>11-07-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/social/2012/11/01/encourage-social-sharing-in-china.html">Encouraging Social Sharing in China</a><br>
+          <span>11-01-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/2012/10/29/install-and-create-rails-4-dot-0-app.html">Install and Create Rails 4.0 App</a><br>
+          <span>10-29-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/mongodb/activerecord/sql/2012/10/16/a-small-difference-between-mongoid-and-activerecord-query-interface.html">A Small Difference Between Mongoid and ActiveRecord Query Interface</a><br>
+          <span>10-16-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/rails/gem/rvm/2012/10/16/segmentation-fault-with-rails-and-json.html">Segmentation fault with Rails and JSON</a><br>
+          <span>10-16-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/dns/censorship/2012/08/30/accessing-facebook-in-vietnam.html">Accessing Facebook in Vietnam</a><br>
+          <span>08-30-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/bash/gem/2012/07/31/uninstall-multiple-versions-of-multiple-ruby-gem.html">Uninstall Multiple Versions of Multiple Ruby Gems</a><br>
+          <span>07-31-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/2012/07/19/pretty-print-json-in-command-line.html">Pretty Print JSON in Command Line</a><br>
+          <span>07-19-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/mocking/rails/rspec/carrierwave/fog/s3/2012/07/17/testing-carrierwave-with-fog.html">Testing Carrierwave with Fog for Amazon S3</a><br>
+          <span>07-17-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/emacs/2012/05/18/my-current-emacs.html">My Current Emacs</a><br>
+          <span>05-18-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/bdd/agile/2012/05/13/tdd-by-jim-weirich.html">TDD by Jim Weirich</a><br>
+          <span>05-13-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/wireshark/os%20x/mountain%20lion/2012/02/28/running-wireshark-on-mountain-lion.html">Running Wireshark on Mountain Lion</a><br>
+          <span>02-28-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/os%20x/gem/mountain%20lion/2012/02/21/install-native-ruby-gem-in-mountain-lion-preview.html">Install Native Ruby Gem in Mountain Lion Preview</a><br>
+          <span>02-21-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/tools/2012/02/14/rubymine-and-pivotaltracker-integration.html">RubyMine and PivotalTracker Integration</a><br>
+          <span>02-14-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/2012/02/12/a-couple-things-to-watch-out-for-using-privatepub.html">A Couple Things to Watch Out For Using PrivatePub</a><br>
+          <span>02-12-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rspec/tdd/2012/02/12/rspec-arbitrary-handling-of-arguments.html">RSpec Arbitrary Handling of Arguments</a><br>
+          <span>02-12-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/agile/2012/01/30/on-agile.html">On Agile</a><br>
+          <span>01-30-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2011/11/01/git-auto-complete.html">Git auto complete</a><br>
+          <span>11-01-2011</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/android,/test/2009/04/14/running-apidemos-tests-in-android-sdk-1.5pre.html">Running APIDemos Tests in Android SDK 1.5pre</a><br>
+          <span>04-14-2009</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ubuntu,/mac/2008/09/04/dualboot-ubuntu-on-macbook.html">Dualboot Ubuntu on Macbook</a><br>
+          <span>09-04-2008</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/java/swing/visualization/1999/06/01/vizard.html">Vizard</a><br>
+          <span>06-01-1999</span>
+      </div>
+      
+    </div>
+    <div class="col-md-8">
+      <h2>Git Bisect #FTW</h2>
+<p class="meta">07-11-2014</p>
+
+Filed under: git
+
+<p></p>
+<p></p>
+<p></p>
+<p>This blog is about 7 years over due.  Around 2007 I worked with <a href="http://www.sampierson.com/">Sam Pierson</a> on a project at PivotalLabs.  It was a Rails app which provided xml payload to clients.  Those were the days when alias<em>method</em>chain was used to render either html or xml without having to change most of the code logic.  The test coverage was quite high at about 2.5 (2.5 lines of test code for every line of production code).  One day after upgrading rails, several hundred tests on xml payload were broken.  We spend sometime digging into Rails source code hoping to find out why without much luck.  One morning Sam came in and said we could use git bisect to run a test script that will helps us to determine which commit in rails breaks our tests.</p>
+
+<p><a href="https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html">git-bisect</a> performs binary search for the change that introduces a bug.  Once you start the process with <code>git bisect start</code>, and tagging the current version to be bad with <code>git bisect bad</code>, you may choose a version where the bug is not present with <code>git bisect good v1.1.1</code>.  Now git-bisect will check out the middle of the revision and developer should test whether the bug is present or not and tag that revision accordingly.  As you can imagine, for a large open-source project like Rails, it may take a long time to perform bisect.  Luckily git-bisect also supports a <code>run</code> command that takes in a script, which can be used to run tests to determine whether the bug is present or not.  The following script is used in our git-bisect.  One thing to note is that this is written for an early version of rails so some of the semantic is no longer applicable.  The key thing is to run your test and return one of the 3 codes based on the result of the test run.  If test succeeds, return 0; if test fails, return 1; if source code is untestable (such as missing gem), then return 125.  </p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno"> 1</span> montcalm:~/workspace/fixrails <span class="nv">$ </span>more testit.sh
+<span class="lineno"> 2</span> <span class="c">#!/bin/bash</span>
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> <span class="nb">cd</span> <span class="nv">$HOME</span>/workspace/fixrails
+<span class="lineno"> 5</span> rm -rf testapp
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> <span class="nv">output</span><span class="o">=</span><span class="sb">`</span><span class="o">(</span>
+<span class="lineno"> 8</span> ruby rails/railties/bin/rails --quiet testapp
+<span class="lineno"> 9</span> <span class="nb">cd </span>testapp
+<span class="lineno">10</span> ln -s ../../rails vendor/rails
+<span class="lineno">11</span> 
+<span class="lineno">12</span> <span class="c"># Setup your test case here</span>
+<span class="lineno">13</span> script/generate rspec --quiet
+<span class="lineno">14</span> script/generate rspec_scaffold --quiet user name:string
+<span class="lineno">15</span> rm -rf spec/views
+<span class="lineno">16</span> rsync -a ../shared/ .
+<span class="lineno">17</span> 
+<span class="lineno">18</span> rake db:migrate &gt; /dev/null 2&gt;<span class="p">&amp;</span>1
+<span class="lineno">19</span> rake spec
+<span class="lineno">20</span> <span class="o">)</span> 2&gt;<span class="p">&amp;</span>1<span class="sb">`</span>
+<span class="lineno">21</span> 
+<span class="lineno">22</span> <span class="c">#echo $output</span>
+<span class="lineno">23</span> <span class="nb">echo</span> <span class="nv">$output</span> <span class="p">|</span> grep <span class="s1">&#39;[0-9]+ examples, 0 failures&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;it was good&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>0
+<span class="lineno">24</span> <span class="nb">echo</span> <span class="nv">$output</span> <span class="p">|</span> grep <span class="s1">&#39;[0-9]+ examples, &#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;it was bad&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>1
+<span class="lineno">25</span> <span class="nb">echo</span> <span class="nv">$output</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;Source code was untestable&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">exit </span>125</code></pre></figure>
+
+<p><strong>Note</strong><br>
+- We used regex to grep test status based on rspec stdout.  This output maybe different based on versions of rspec.<br>
+- We made an innocent assumption that without the word &#39;examples&#39;, rspec fails to run for whatever reason.</p>
+
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div style="margin-top: 10px; margin-bottom: 10px;">
+<a href="https://twitter.com/zlu" target="_blank" class="unstyled">
+  <span class="fa-stack fa-lg">
+  <i class="fa fa-circle-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+  </span>
+</a>
+<a href="http://linkedin.com/in/zhaolu" target="_blank" class="unstyled">
+    <span class="fa-stack fa-lg">
+    <i class="fa fa-circle-o fa-stack-2x"></i>
+    <i class="fa fa-linkedin fa-stack-1x"></i>
+    </span>
+</a>
+</div>
+
+  </div>
+</div>
+
+</body>
+</html>
