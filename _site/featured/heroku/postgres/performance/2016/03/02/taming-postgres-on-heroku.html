@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Taming Postgres on Heroku</title>
+
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/zhaolu.css">
+
+  <!-- <link href='http://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'> -->
+
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1 class="title"><a href="/">blog@zlu</a></h1>
+    <a class="extra" href="/">home</a>
+    <a class="extra" href="/about">about</a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/featured/2016/09/30/a-proper-goodbye.html">A Proper Goodbye</a><br>
+          <span>09-30-2016</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/featured/heroku/postgres/performance/2016/03/02/taming-postgres-on-heroku.html">Taming Postgres on Heroku</a><br>
+          <span>03-02-2016</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/featured/yoga/2014/05/26/an-unbiased-yogic-guide-to-san-francisco.html">An Unbiased Yogic Guide to San Francisco</a><br>
+          <span>05-26-2014</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/update/2013/11/01/site-updates.html">Site Updates</a><br>
+          <span>11-01-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/update/2013/09/29/site-updates.html">Site Updates</a><br>
+          <span>09-29-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/cms/2013/09/27/quicksurveyofrailscms.html">Quick Survey Of Rails CMS</a><br>
+          <span>09-27-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/jekyll/github/plugin/2013/09/18/never-ending-journey-on-the-perfect-blogging-setup.html">The Never Ending Journey On The Perfect Blogging Setup</a><br>
+          <span>09-18-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/system%20call/security/2013/06/03/system-calls-in-ruby.html">System Calls In Ruby</a><br>
+          <span>06-03-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/ruby/2013/05/29/initialization-is-an-interesting-thing.html">Initialization Is An Interesting Thing</a><br>
+          <span>05-29-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/shell/bash/2013/05/27/lost-shell-commands.html">Lost Shell Commands?</a><br>
+          <span>05-27-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/database/upgrade/sharedmemory/2013/02/04/postgres-gotchas.html">Postgres Gotchas</a><br>
+          <span>02-04-2013</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/rvm/2012/11/10/housekeeping-rvm.html">Housekeeping RVM</a><br>
+          <span>11-10-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/system/2012/11/08/what-happened-to-fd-3-and-4-in-mri.html">What Happened to FD 3 and 4 in MRI</a><br>
+          <span>11-08-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/deployment/apache/capistrano/2012/11/07/rolling-deployment.html">Rolling Deployment</a><br>
+          <span>11-07-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/social/2012/11/01/encourage-social-sharing-in-china.html">Encouraging Social Sharing in China</a><br>
+          <span>11-01-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rails/2012/10/29/install-and-create-rails-4-dot-0-app.html">Install and Create Rails 4.0 App</a><br>
+          <span>10-29-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/mongodb/activerecord/sql/2012/10/16/a-small-difference-between-mongoid-and-activerecord-query-interface.html">A Small Difference Between Mongoid and ActiveRecord Query Interface</a><br>
+          <span>10-16-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/rails/gem/rvm/2012/10/16/segmentation-fault-with-rails-and-json.html">Segmentation fault with Rails and JSON</a><br>
+          <span>10-16-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/dns/censorship/2012/08/30/accessing-facebook-in-vietnam.html">Accessing Facebook in Vietnam</a><br>
+          <span>08-30-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/bash/gem/2012/07/31/uninstall-multiple-versions-of-multiple-ruby-gem.html">Uninstall Multiple Versions of Multiple Ruby Gems</a><br>
+          <span>07-31-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/2012/07/19/pretty-print-json-in-command-line.html">Pretty Print JSON in Command Line</a><br>
+          <span>07-19-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/mocking/rails/rspec/carrierwave/fog/s3/2012/07/17/testing-carrierwave-with-fog.html">Testing Carrierwave with Fog for Amazon S3</a><br>
+          <span>07-17-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/emacs/2012/05/18/my-current-emacs.html">My Current Emacs</a><br>
+          <span>05-18-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/bdd/agile/2012/05/13/tdd-by-jim-weirich.html">TDD by Jim Weirich</a><br>
+          <span>05-13-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/wireshark/os%20x/mountain%20lion/2012/02/28/running-wireshark-on-mountain-lion.html">Running Wireshark on Mountain Lion</a><br>
+          <span>02-28-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/os%20x/gem/mountain%20lion/2012/02/21/install-native-ruby-gem-in-mountain-lion-preview.html">Install Native Ruby Gem in Mountain Lion Preview</a><br>
+          <span>02-21-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/tools/2012/02/14/rubymine-and-pivotaltracker-integration.html">RubyMine and PivotalTracker Integration</a><br>
+          <span>02-14-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/ruby/2012/02/12/a-couple-things-to-watch-out-for-using-privatepub.html">A Couple Things to Watch Out For Using PrivatePub</a><br>
+          <span>02-12-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/rspec/tdd/2012/02/12/rspec-arbitrary-handling-of-arguments.html">RSpec Arbitrary Handling of Arguments</a><br>
+          <span>02-12-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/agile/2012/01/30/on-agile.html">On Agile</a><br>
+          <span>01-30-2012</span>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+          <a href="/git/2011/11/01/git-auto-complete.html">Git auto complete</a><br>
+          <span>11-01-2011</span>
+      </div>
+      
+    </div>
+    <div class="col-md-8">
+      <h2>Taming Postgres on Heroku</h2>
+<p class="meta">03-02-2016</p>
+
+<p>So you deployed an app on Heroku, because it’s easy and cheap to start with. After a while, your app is gaining traction and user base grows. Suddenly you find a slow app. There are many ways to tackle the performance issue. Making web pages more ajaxy and preload content, page caching, leveraging cdns, etc. In this blog I would like to focus on addressing some common database performance issues from outside in. Supposed we haven’t done much about tuning the database, and suppose we listened to Heroku and chose one of their posgres db instances to store our data.</p>
+
+<p>A well-designed application serves 99% query from cache.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>heroku pg:cache-hit <span class="nt">-a</span> my_database
+      name      |         ratio          
+      <span class="nt">----------------</span>+------------------------
+      index hit rate | 0.76517846526624000529
+      table hit rate | 0.93700270695348766263
+      <span class="o">(</span>2 rows<span class="o">)</span>
+</code></pre></div></div>
+
+<p>The command above shows that cache hit rate is low because heuristic tells us that cache hit for postgres should be above 99% to be considered performant. Heroku pg provides a command that tells you what the outliners are. Suppose we already know what the outliner is, then we need to issue an explain analyze against query under suspicion.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">=&gt;</span> explain analyze SELECT COUNT<span class="o">(</span><span class="k">*</span><span class="o">)</span> FROM <span class="s2">"follows"</span> WHERE <span class="s2">"follows"</span>.<span class="s2">"account_id"</span> <span class="o">=</span> 1 AND <span class="s2">"follows"</span>.<span class="s2">"active"</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span> 
+QUERY PLAN
+<span class="nt">----------------------------------------------------------------------------------------------------------------------------------------------------------------------</span> 
+Aggregate <span class="o">(</span><span class="nv">cost</span><span class="o">=</span>41274.28..41274.28 <span class="nv">rows</span><span class="o">=</span>1 <span class="nv">width</span><span class="o">=</span>0<span class="o">)</span> <span class="o">(</span>actual <span class="nb">time</span><span class="o">=</span>473.756..473.758 <span class="nv">rows</span><span class="o">=</span>1 <span class="nv">loops</span><span class="o">=</span>1<span class="o">)</span> 
+-&gt; Index Scan using index_follows_on_follower_uid_and_account_id on follows <span class="o">(</span><span class="nv">cost</span><span class="o">=</span>0.09..41274.04 <span class="nv">rows</span><span class="o">=</span>466 <span class="nv">width</span><span class="o">=</span>0<span class="o">)</span> <span class="o">(</span>actual <span class="nb">time</span><span class="o">=</span>3.339..473.294 <span class="nv">rows</span><span class="o">=</span>333 <span class="nv">loops</span><span class="o">=</span>1<span class="o">)</span> 
+   Index Cond: <span class="o">(</span>account_id <span class="o">=</span> 1<span class="o">)</span> 
+   Filter: active 
+   Rows Removed by Filter: 1 
+   Total runtime: 474.043 ms 
+   <span class="o">(</span>6 rows<span class="o">)</span>
+</code></pre></div></div>
+<p>The result explains to us that we are performing a query that takes longer than half a second to complete. That’s quite slow. It’s good that the db is performing an index scan since we are looking at account_id and active columns. However the index used is wrong. So let’s add a better index:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>add_index :follows, <span class="o">[</span>:account_id, :active]
+</code></pre></div></div>
+<p>Now if we try the same query:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">=&gt;</span> explain analyze SELECT COUNT<span class="o">(</span><span class="k">*</span><span class="o">)</span> FROM <span class="s2">"follows"</span> WHERE <span class="s2">"follows"</span>.<span class="s2">"account_id"</span> <span class="o">=</span> 1 AND <span class="s2">"follows"</span>.<span class="s2">"active"</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+QUERY PLAN
+<span class="nt">---------------------------------------------------------------------------------------------------------------------------------------------------------------</span> 
+Aggregate <span class="o">(</span><span class="nv">cost</span><span class="o">=</span>679.66..679.66 <span class="nv">rows</span><span class="o">=</span>1 <span class="nv">width</span><span class="o">=</span>0<span class="o">)</span> <span class="o">(</span>actual <span class="nb">time</span><span class="o">=</span>0.022..0.023 <span class="nv">rows</span><span class="o">=</span>1 <span class="nv">loops</span><span class="o">=</span>1<span class="o">)</span> 
+-&gt; Index Only Scan using index_follows_on_account_id_and_active on follows <span class="o">(</span><span class="nv">cost</span><span class="o">=</span>0.09..679.43 <span class="nv">rows</span><span class="o">=</span>466 <span class="nv">width</span><span class="o">=</span>0<span class="o">)</span> <span class="o">(</span>actual <span class="nb">time</span><span class="o">=</span>0.017..0.017 <span class="nv">rows</span><span class="o">=</span>0 <span class="nv">loops</span><span class="o">=</span>1<span class="o">)</span> 
+   Index Cond: <span class="o">((</span>account_id <span class="o">=</span> 1<span class="o">)</span> AND <span class="o">(</span>active <span class="o">=</span> <span class="nb">true</span><span class="o">))</span> 
+   Filter: active 
+   Heap Fetches: 0 
+   Total runtime: 0.064 ms 
+   <span class="o">(</span>6 rows<span class="o">)</span> 
+</code></pre></div></div>
+<p>Total runtime has dropped down to a fraction of 1 millisecond from close to half a second. This shows our measure, deploy, and measure approach of fixing db performance issues driven by outside-in approach.</p>
+
+<p>Let’s say you iteratively issue pg:outliers and introduce approapriate indexes but then the performance doesn’t seem to improve any more. This is happening because your fine-tuned app is getting even more attraction. More data get stored and it is probably time to evaluate your database needs. A good place to start is pg:info command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Table size: 16.5 GB
+pg:total_index_size: 1022 MB
+</code></pre></div></div>
+<p>Suppose you are using Heroku’s Standard0 plan: - Cache: 1GB - Storage: 64 GB - Conn limit: 120</p>
+
+<p>Ah now the problem is that your index is too big to fit into cache. There are two things we can do. First thing is getting rid of unused index. Sometimes developers can get index happy and keep adding them, but it’s easy to forget to change or remove obsolete indexes when db schema changes.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#heroku pg:diagnose -a my_database </span>
+...
+Never Used Indexes public.follows::index_follows_on_follower_uid_and_account_id 0.00 0.00 104 MB 230 MB
+...
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">pg:diagnose</code> shows you what indexes are not being used. Since index negatively affect insertion/update/deletion, unused indexes should be removed. The added benefit is that we are also saving precious db storage. If used indexes still doesn’t fit into cache, then it’s time to upgrade database. Some heuristics for db performance for web applications: - Very common queries returning small data set: ~ 1ms - Occasionally run queries returning small data set: ~ 5ms - Common query returning larger data set: ~ 10ms - Uncommon queries returning larger data set: ~ 100ms</p>
+
+<p>Conditional OR composite index. A conditional would be where only current = true, where as the composite would index both values. A conditional is commonly more valuable when you have a smaller set of what the values may be, meanwhile the composite is when you have a high variability of values.</p>
+
+<p>Now is a good time to mention index types.</p>
+<h3 id="common-index-types">Common Index Types</h3>
+
+<p>B-Tree, this is the default index postgres creates:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>used for both equality and range queries
+operated against all data types
+</code></pre></div></div>
+
+<p>Hash Index:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>useful only for equality comparisons
+not transaction safe
+needs to be manually rebuilt after crashes
+</code></pre></div></div>
+
+<p>Partial Indexes</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Index with a where clause
+Increased scan speed by reducing index size
+Commonly applied to boolean field for the where clause
+</code></pre></div></div>
+
+<p>Expression Indexes</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Useful for queries that match on some function or modification of data, such as case-insensitive comparison of email login
+</code></pre></div></div>
+
+<p>create index users_lower_email on users(lower(email));</p>
+
+<p>Last words about sequential scan v.s. index scan</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Index scan requires more IO than sequential scan
+
+Sequential scan is faster when result set is relatively large (5-10% of all rows in the table)
+</code></pre></div></div>
+
+
+
+    </div>
+  </div>
+  <div class="footer">
+    <div style="margin-top: 10px; margin-bottom: 10px;">
+<a href="https://twitter.com/zlu" target="_blank" class="unstyled">
+  <span class="icon-stack">
+  <i class="icon-circle icon-stack-base icon-3x"></i>
+  <i class="icon-twitter icon-2x icon-light"></i>
+  </span>
+</a>
+<a href="http://linkedin.com/in/zhaolu" target="_blank" class="unstyled">
+    <span class="icon-stack">
+    <i class="icon-circle icon-stack-base icon-3x"></i>
+    <i class="icon-linkedin icon-2x icon-light"></i>
+    </span>
+</a>
+</div>
+  </div>
+</div>
+
+</body>
+</html>
