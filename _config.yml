@@ -1,11 +1,11 @@
-name: blog@zlu
-url: http://www.zlu.me
-description: Personal blog of Zhao Lu
-author: Zhao Lu
+name: zlu
+url: http://zlu.me/
+description: zlu
+author: zlu
 rss_path: feeds
 markdown: kramdown
 redcarpet:
   extensions: ["strikethrough"]
 pygments: true
-port: 6000
+port: 4000
 exclude: ["vendor"]
