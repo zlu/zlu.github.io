@@ -32,6 +32,27 @@
 </head>
 <body>
 
+<!-- <header>
+  <h1><a href="/">zlu</a></h1>
+  <nav class="social-icons">
+    <a href="http://github.com/zlu" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="http://linkedin.com/in/zhaolu" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="http://twitter.com/zlu" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://speakerdeck.com/zlu" target="_blank"><i class="fas fa-chalkboard-teacher"></i></a>
+    <a href="http://www.goodreads.com/zlulz" target="_blank"><i class="fab fa-goodreads"></i></a>
+  </nav>
+</header> -->
+
+<!-- <main>
+  {{ content }}
+</main>
+
+<footer>
+  <p>&copy; {{ "now" | date: "%Y" }} Zhao Lü</p>
+</footer>
+
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script> -->
+
 <div class="container">
   <div class="header">
     <h2 class="title"><a href="/">{{ site.name }}</a></h2>
@@ -45,14 +66,19 @@
           <span>{{ post.date | date: "%m-%d-%Y" }}</span>
       </div>
       {% endfor %}
+      <a href="/archives">Archive</a>
     </div>
+
     <div class="col-md-8">
       {{ content }}
     </div>
+    
   </div>
+
   <div class="footer">
     {% include footer.html %}
   </div>
+
 </div>
 
 </body>
