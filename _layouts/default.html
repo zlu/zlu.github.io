@@ -35,9 +35,8 @@
 <div class="header" style="margin-bottom:20px"></div>
 <div class="container">
 
-  <div class="row">
-    <div class="col-md-4">
-          
+  <aside class="sidebar">
+    <div class="sidebar-inner">
       <img src="/assets/images/avatar.png" class="img-rounded" alt="Zhaolu" width="200px">
       
       <h2 class="title"><a href="/">{{ site.name }}</a></h2>
@@ -71,12 +70,12 @@
       {% endfor %}
       <a href="/archives">Archive</a>
     </div>
+  </aside>
 
-    <div class="col-md-8">
-      {{ content }}
-    </div>
-    
-  </div>
+  <main class="content">
+    {{ content }}
+  </main>
+
 
   <div class="footer" style="margin-top:20px">
     {% include footer.html %}

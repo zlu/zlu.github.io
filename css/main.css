@@ -38,6 +38,59 @@ a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
+
+/* Container for two-column layout */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  /* Space between content and sidebar */
+}
+
+/* Main content area */
+.content {
+  flex: 2;
+  /* Takes up more space */
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  /* Takes up less space */
+  position: sticky;
+  top: 20px;
+  /* Distance from the top when it sticks */
+  align-self: flex-start;
+  /* Ensures it sticks at the top of its own height */
+  padding: 20px;
+  background: #f5f5f5;
+  /* Optional: light background to distinguish it */
+  border-radius: 5px;
+
+}
+
+/* Inner wrapper for sidebar content */
+.sidebar-inner {
+  max-width: 300px;
+  /* Constrain content width */
+  margin: 0 auto;
+  /* Center content horizontally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    min-height: auto;
+    /* Disable full height on mobile */
+  }
+}
+
 /*****************************************************************************/
 /*
 /* Home
