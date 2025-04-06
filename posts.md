@@ -4,7 +4,7 @@ title: "Posts"
 permalink: /posts/
 ---
 
-# Posts
+## Posts
 
 {% for post in site.posts %}
 <div style="margin-bottom: 10px;">
