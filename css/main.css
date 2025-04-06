@@ -91,6 +91,35 @@ a:visited { color: #a0a; }
   }
 }
 
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  color: #666;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.social-icons .icon:hover {
+  background: #f0f0f0;
+  color: #333;
+  border-color: #999;
+  text-decoration: none;
+}
+
+
 /*****************************************************************************/
 /*
 /* Home
@@ -222,26 +251,3 @@ ul.posts span {
 }
 
 /* footer */
-.soical-icon {
-    color: grey;
-}
-
-a.unstyled {
-  color: grey;
-}
-
-a.unstyled:link {
-  text-decoration: none;
-}
-
-a.unstyled:visited {
-  text-decoration: none
-}
-
-a.unstyled:hover {
-  text-decoration: none
-}
-
-a.unstyled:active {
-  text-decoration: none;
-}
