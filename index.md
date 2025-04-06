@@ -22,3 +22,7 @@ In general, I use **zlu** as my user name on networks and social channels when a
 - Twitter - I tweet under [@zlu](http://twitter.com/zlu) and [@foryogi](http://twitter.com/foryogi)
 - [SpeakerDeck](https://speakerdeck.com/zlu) - Some of the presentations I gave.  
 - [Good Reads][goodreads] - Books I read.
+
+
+[goodreads]: http://www.goodreads.com/zlulz "GoodReads"
+[flickr]: http://www.flickr.com/photos/zzlluu/ "Flickr"
