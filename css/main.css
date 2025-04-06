@@ -1,7 +1,5 @@
 /*****************************************************************************/
-/*
-/* Common
-/*
+/* Common */
 /*****************************************************************************/
 
 /* Global Reset */
@@ -12,70 +10,98 @@
 
 @font-face {
   font-family: 'Trykker';
-  src: url('/assets/fonts/Trykker-Regular.otf') format('opentype'); /* ✅ Correct */
+  src: url('/assets/fonts/Trykker-Regular.otf') format('opentype');
 }
 
-h1, h2, h3, h4, h5, h6, p, div, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span {
   font-family: Trykker, Helvetica, Arial, sans-serif;
 }
 
-html, body { height: 100%; }
-
-body {
-  background-color: #FFF;
-  font: 13.34em Trykker, Helvetica, Arial, sans-serif;
-  font-size: small;
+/* Reset and base styles */
+body,
+html {
+  font: 13.34px Trykker, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  height: 100%;
+  /* Ensure the body/html take full height */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
 }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+h1 {
+  margin-bottom: 1em;
+}
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+p {
+  margin: 1em 0;
+}
 
+a {
+  color: #00a;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:visited {
+  color: #a0a;
+}
 
 /* Container for two-column layout */
 .container {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px;
-  /* Space between content and sidebar */
+  min-height: 100vh;
+  /* Ensure the container spans the full viewport height */
 }
 
 /* Main content area */
 .content {
   flex: 2;
-  /* Takes up more space */
+  padding: 30px;
+}
+
+/* Wrapper for the sidebar to handle full-height background */
+.sidebar-wrapper {
+  flex: 1;
+  background: #fff;
+  /* White background */
+  min-height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  /* Use flex to control sidebar alignment */
+  align-items: flex-start;
+  /* Align to top */
 }
 
 /* Sidebar */
 .sidebar {
-  flex: 1;
-  /* Takes up less space */
   position: sticky;
-  top: 20px;
-  /* Distance from the top when it sticks */
-  align-self: flex-start;
-  /* Ensures it sticks at the top of its own height */
-  padding: 20px;
-  background: #f5f5f5;
-  /* Optional: light background to distinguish it */
-  border-radius: 5px;
-
-}
-
-/* Inner wrapper for sidebar content */
-.sidebar-inner {
-  max-width: 300px;
-  /* Constrain content width */
+  top: 0;
+  /* Stick to the top of the viewport */
+  max-width: 250px;
   margin: 0 auto;
-  /* Center content horizontally */
+  padding: 20px;
+  text-align: center;
 }
 
 /* Sidebar image */
@@ -95,6 +121,15 @@ a:visited { color: #a0a; }
   color: #333;
 }
 
+.sidebar-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar-title a:hover {
+  color: #007bff;
+}
+
 /* Sidebar tagline */
 .sidebar-tagline {
   font-size: 0.95em;
@@ -103,28 +138,30 @@ a:visited { color: #a0a; }
   line-height: 1.4;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+/* Sidebar navigation */
+.sidebar-nav {
+  margin-bottom: 20px;
+}
 
-  .sidebar {
-    position: static;
-    min-height: auto;
-    /* Disable full height on mobile */
-  }
+.sidebar-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.sidebar-nav a:hover {
+  color: #007bff;
 }
 
 /* Social icons */
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
-.social-icons .icon {
+.social-icons a.icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,22 +170,52 @@ a:visited { color: #a0a; }
   border: 1px solid #ccc;
   border-radius: 50%;
   color: #666;
-  font-size: 18px;
+  font-size: 24px;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
-.social-icons .icon:hover {
+.social-icons a.icon:hover {
   background: #f0f0f0;
   color: #333;
   border-color: #999;
-  text-decoration: none;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-height: auto;
+    /* Remove full height on mobile */
+  }
+
+  .sidebar-wrapper {
+    background: none;
+    min-height: auto;
+    /* Remove full height on mobile */
+    display: block;
+    /* Remove flex on mobile */
+  }
+
+  .sidebar {
+    position: static;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .sidebar-image {
+    width: 120px;
+  }
+
+  .social-icons a.icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
 
 /*****************************************************************************/
-/*
-/* Home
-/*
+/* Home */
 /*****************************************************************************/
 ul.posts {
   list-style-type: none;
@@ -166,9 +233,7 @@ ul.posts span {
 }
 
 /*****************************************************************************/
-/*
-/* Site
-/*
+/* Site */
 /*****************************************************************************/
 
 .site {
@@ -211,9 +276,7 @@ ul.posts span {
 }
 
 /*****************************************************************************/
-/*
-/* Posts
-/*
+/* Posts */
 /*****************************************************************************/
 
 /* standard */
@@ -223,7 +286,8 @@ ul.posts span {
   padding: 0 .4em;
 }
 
-.post ul, .post ol {
+.post ul,
+.post ol {
   margin-left: 1.35em;
 }
 
@@ -247,5 +311,3 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
-
-/* footer */
