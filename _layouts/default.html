@@ -32,34 +32,35 @@
 </head>
 <body>
 
-<!-- <header>
-  <h1><a href="/">zlu</a></h1>
-  <nav class="social-icons">
-    <a href="http://github.com/zlu" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="http://linkedin.com/in/zhaolu" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="http://twitter.com/zlu" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://speakerdeck.com/zlu" target="_blank"><i class="fas fa-chalkboard-teacher"></i></a>
-    <a href="http://www.goodreads.com/zlulz" target="_blank"><i class="fab fa-goodreads"></i></a>
-  </nav>
-</header> -->
-
-<!-- <main>
-  {{ content }}
-</main>
-
-<footer>
-  <p>&copy; {{ "now" | date: "%Y" }} Zhao Lü</p>
-</footer>
-
-<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script> -->
-
+<div class="header" style="margin-bottom:20px"></div>
 <div class="container">
-  <div class="header">
-    <h2 class="title"><a href="/">{{ site.name }}</a></h2>
-  </div>
 
   <div class="row">
     <div class="col-md-4">
+      
+      <h2 class="title"><a href="/">{{ site.name }}</a></h2>
+
+      <div style="margin-top: 10px; margin-bottom: 10px;">
+        <a href="https://github.com/zlu" target="_blank" class="unstyled">
+          <span class="icon-stack">
+            <i class="icon-circle icon-stack-base icon-3x"></i>
+            <i class="icon-github icon-2x icon-light"></i>
+          </span>
+        </a>
+        <a href="https://twitter.com/zlu" target="_blank" class="unstyled">
+          <span class="icon-stack">
+            <i class="icon-circle icon-stack-base icon-3x"></i>
+            <i class="icon-twitter icon-2x icon-light"></i>
+          </span>
+        </a>
+        <a href="http://linkedin.com/in/zhaolu" target="_blank" class="unstyled">
+          <span class="icon-stack">
+            <i class="icon-circle icon-stack-base icon-3x"></i>
+            <i class="icon-linkedin icon-2x icon-light"></i>
+          </span>
+        </a>
+      </div>
+
       {% for post in site.posts %}
       <div style="margin-bottom: 10px;">
           <a href="{{ post.url }}">{{ post.title }}</a><br>
@@ -75,7 +76,7 @@
     
   </div>
 
-  <div class="footer">
+  <div class="footer" style="margin-top:20px">
     {% include footer.html %}
   </div>
 
