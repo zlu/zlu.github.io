@@ -54,19 +54,19 @@ A GoogleVoice clone for the OpenSource to [Amoocon 2010](http://amooma.de/).
 A presentation given at Orange Research Salon
 
 - _May 2010, San Francisco, California_ - **[Status](https://speakerdeck.com/zlu/status-voicemail)**  
-A telephony-aided self-expression.  A presentation to [EComm 2010](http://america.ecomm.ec).
+A telephony-aided self-expression.  A presentation to [EComm 2010](http://america.ecomm.ec/).
 
 ### Patents
 
-- [USING CALLEE'S STATUS TO ENHANCE CALLER NOTIFICATION]("http://worldwide.espacenet.com/publicationDetails/description?CC=WO&NR=2011067676A1&KC=A1&FT=D&ND=3&date=20110609&DB=EPODOC&locale=en_EP")
+- [USING CALLEE'S STATUS TO ENHANCE CALLER NOTIFICATION](https://worldwide.espacenet.com/publicationDetails/biblio?CC=WO&NR=2011067676A1&KC=A1&FT=D&ND=3&date=20110609&DB=EPODOC&locale=en_EP#)
 
-- [ALTERNATE PROGRESS INDICATOR DISPLAYS]("http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=2&f=G&l=50&d=PG01&p=1&S1=(%22lu+zhao%22.IN.)&OS=IN/%22lu+zhao%22&RS=IN/%22lu+zhao%22")
+- [ALTERNATE PROGRESS INDICATOR DISPLAYS](http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=2&f=G&l=50&d=PG01&p=1&S1=(%22lu+zhao%22.IN.)&OS=IN/%22lu+zhao%22&RS=IN/%22lu+zhao%22)
 
-- [APPARATUS, SYSTEM, AND METHOD FOR PROVIDING A MULTI-DIMENSIONAL WEIGHTED PROPAGATED STATUS]("http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=5&f=G&l=50&d=PG01&p=1&S1=(%22lu+zhao%22.IN.)&OS=IN/%22lu+zhao%22&RS=IN/%22lu+zhao%22")
+- [APPARATUS, SYSTEM, AND METHOD FOR PROVIDING A MULTI-DIMENSIONAL WEIGHTED PROPAGATED STATUS](http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=5&f=G&l=50&d=PG01&p=1&S1=(%22lu+zhao%22.IN.)&OS=IN/%22lu+zhao%22&RS=IN/%22lu+zhao%22)
 
-- [APPARATUS, SYSTEM, AND METHOD FOR PROVIDING A MULTI-DIMENSIONAL WEIGHTED PROPAGATED STATUS]("http://worldwide.espacenet.com/publicationDetails/description?CC=US&NR=2008155325A1&KC=A1&FT=D&ND=3&date=20080626&DB=EPODOC&locale=en_EP")
+- [APPARATUS, SYSTEM, AND METHOD FOR PROVIDING A MULTI-DIMENSIONAL WEIGHTED PROPAGATED STATUS](http://worldwide.espacenet.com/publicationDetails/description?CC=US&NR=2008155325A1&KC=A1&FT=D&ND=3&date=20080626&DB=EPODOC&locale=en_EP)
 
-- [Apparatus, system, and method for managing task instances]("http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=7&f=G&l=50&d=PG01&p=1&S1=(%22lu+zhao%22.IN.)&OS=IN/%22lu+zhao%22&RS=IN/%22lu+zhao%22")
+- [Apparatus, system, and method for managing task instances](http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=7&f=G&l=50&d=PG01&p=1&S1=(%22lu+zhao%22.IN.)&OS=IN/%22lu+zhao%22&RS=IN/%22lu+zhao%22)
 
 [goodreads]: http://www.goodreads.com/zlulz "GoodReads"
 [flickr]: http://www.flickr.com/photos/zzlluu/ "Flickr"
