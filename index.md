@@ -4,7 +4,7 @@ title: "zlu"
 permalink: /
 ---
 
-My name is Zhao Lü. Zhao is pronounced as ‘ciao’ with a ‘j’ and it means to encourage oneself in Chinese. I was born in Beijing, China. I have lived in USA, UK, Brazil, Switzerland, France, and Germany. I travel quite a bit, 57 countries and counting.
+My name is Zhao Lü (吕钊). Zhao is pronounced as ‘ciao’ with a ‘j’ and it means to encourage oneself in Chinese. I was born in Beijing, China. I have lived in USA, UK, Brazil, Switzerland, France, and Germany. I travel quite a bit, 57 countries and counting.
 
 ![avatar]({{ site.url }}/assets/images/avatar.png)
 
