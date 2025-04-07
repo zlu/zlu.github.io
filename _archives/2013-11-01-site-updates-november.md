@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Site Updates"
+title: "Site Updates - November"
 date: 2013-11-01
 comments: true
 categories: [update]

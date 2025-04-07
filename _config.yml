@@ -13,3 +13,6 @@ collections:
   archives:
     output: true
     permalink: /archive/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
