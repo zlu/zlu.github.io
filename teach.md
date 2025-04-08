@@ -25,8 +25,7 @@ I hold five patents in the fields of storage systems and telephony.
 ## 覆盖⽅⾯ 
 
 ### 技术
-- Computer science, artificial intelligence, big data, statistics, distributed systems
-- Databases, software engineering, programming languages
+- Computer science, artificial intelligence, big data, statistics, distributed systems databases, software engineering, programming languages
 - 计算机科学、⼈⼯智能、⼤数据、统计学、分布式系统、数据库、软件⼯程、编程语⾔。
 
 ### 语⾔ 
