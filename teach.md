@@ -62,6 +62,7 @@ I hold five patents in the fields of storage systems and telephony.
 - CMPINF 0401: Intermediate Programming (School of Computing and Information)
 
 **UNSW Sydney**: 
+- INFO1113: Object-Oriented Programming (Computer Science)
 - INFS1701: Introduction to Networking and Security 
 - INFS1603: Introduction to Business Databases
 - ADAD9113: Communication Skills for Creative Disciplines
