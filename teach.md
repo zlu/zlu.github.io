@@ -36,35 +36,48 @@ I hold five patents in the fields of storage systems and telephony.
 
 ### University Courses
 
-- **John Hopkins University**: 
-  - Business Analytics & Artificial Intelligence
-- **University of Birmingham**: 
-  - Artificial Intelligence
-- **Macquarie University**: 
-  - COMP2200/COMP6200: Data Science
-- **University of Auckland**: 
-  - STATS 220: Data Technologies (R)
-- **Monash University**: 
-  - FIT5196: Data Wrangling (Information Technology)
-  - FIT9136: Intro to Python (Information Technology)
-  - FIT2014: Theory of Computation (Information Technology)
-  - FIT1045: Introduction to Programming (Computer Science)
-- **University of Sydney**: 
-  - COMP3221: Distributed Systems (Computer Science)
-- **University of Pittsburgh**: 
-  - CS 0445: Algorithms and Data Structures (Computer Science)
-  - CMPINF 0401: Intermediate Programming (School of Computing and Information)
-- **UNSW Sydney**: 
-  - INFS1701: Introduction to Networking and Security 
-  - INFS1603: Introduction to Business Databases
-  - ADAD9113: Communication Skills for Creative Disciplines
-- **University of Queensland**: CSSE7030 Intro to Programming (Computer Science)
-- **Cardiff University**: 
-  - CM6125: Database Systems
-  - CM6123: Software Development Skills (School of Computer Science and Informatics)
-- **NTU Singapore**: 
-  - AB0403 Decision Making with Programming & Analytics
-- **James Cook University Singapore**: 
-  - CP1407 - Introductory Machine Learning and Data Science
-- **Queen Mary University of London**: 
-  - Undergradute Final Project: School of Electronic Engineering & Computer Science
+**John Hopkins University**: 
+- Business Analytics & Artificial Intelligence
+
+**University of Birmingham**: 
+- Artificial Intelligence
+
+**Macquarie University**: 
+- COMP2200/COMP6200: Data Science
+
+**University of Auckland**: 
+- STATS 220: Data Technologies (R)
+
+**Monash University**: 
+- FIT5196: Data Wrangling (Information Technology)
+- FIT9136: Intro to Python (Information Technology)
+- FIT2014: Theory of Computation (Information Technology)
+- FIT1045: Introduction to Programming (Computer Science)
+
+**University of Sydney**: 
+- COMP3221: Distributed Systems (Computer Science)
+
+**University of Pittsburgh**: 
+- CS 0445: Algorithms and Data Structures (Computer Science)
+- CMPINF 0401: Intermediate Programming (School of Computing and Information)
+
+**UNSW Sydney**: 
+- INFS1701: Introduction to Networking and Security 
+- INFS1603: Introduction to Business Databases
+- ADAD9113: Communication Skills for Creative Disciplines
+
+**University of Queensland**: 
+- CSSE7030 Intro to Programming (Computer Science)
+
+**Cardiff University**: 
+- CM6125: Database Systems
+- CM6123: Software Development Skills (School of Computer Science and Informatics)
+
+**NTU Singapore**: 
+- AB0403 Decision Making with Programming & Analytics
+
+**James Cook University Singapore**: 
+- CP1407 - Introductory Machine Learning and Data Science
+
+**Queen Mary University of London**: 
+- Undergradute Final Project: School of Electronic Engineering & Computer Science
