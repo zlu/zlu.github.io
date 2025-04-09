@@ -85,3 +85,6 @@ I hold five patents in the fields of storage systems and telephony.
 
 **University of Nottingham**:
 - COMP4030: Data Science with Machine Learning
+
+**The University of Hongkong**:
+- COMP1117B: Computer Programming (School of Computing and Data Science)
