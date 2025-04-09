@@ -82,3 +82,6 @@ I hold five patents in the fields of storage systems and telephony.
 
 **Queen Mary University of London**: 
 - Undergradute Final Project: School of Electronic Engineering & Computer Science
+
+**University of Nottingham**:
+- COMP4030: Data Science with Machine Learning
