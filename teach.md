@@ -67,6 +67,9 @@ I hold five patents in the fields of storage systems and telephony.
 - INFS1603: Introduction to Business Databases
 - ADAD9113: Communication Skills for Creative Disciplines
 
+**University of Melborne**: 
+- COMP10001: Foundations of Computing
+ 
 **University of Queensland**: 
 - CSSE7030 Intro to Programming (Computer Science)
 
