@@ -42,6 +42,9 @@ I hold five patents in the fields of storage systems and telephony.
 **University of Birmingham**: 
 - Artificial Intelligence
 
+**College of William and Mary**:
+- Artificial Intelligence
+
 **Macquarie University**: 
 - COMP2200/COMP6200: Data Science
 
