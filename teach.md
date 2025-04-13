@@ -4,7 +4,7 @@
 
 layout: default
 title: Teach@zlu | Online 1-1 tutoring for chineses students | zlu.me/teach
-description: Expert tutoring for Chinese students in Australia, USA, UK, New Zealand, Singapore, and Hongkong. Contact me for computer science, data science, or artificial intelligence lessons today!
+description: Expert tutoring for Chinese students in Australia, USA, UK, New Zealand, Singapore, and Hongkong. Contact me for computer science, data science, artificial intelligence and python lessons today!
 ---
 
 # Introduction
