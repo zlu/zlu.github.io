@@ -85,6 +85,7 @@ I hold five patents in the fields of storage systems and telephony.
 - CM6123: Software Development Skills (School of Computer Science and Informatics)
 
 **NTU Singapore**: 
+- CS2030DE Programming Methodology II
 - AB0403 Decision Making with Programming & Analytics
 
 **James Cook University Singapore**: 
