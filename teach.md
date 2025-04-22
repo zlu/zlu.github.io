@@ -100,6 +100,9 @@ I hold five patents in the fields of storage systems and telephony.
 **The University of Hongkong**:
 - COMP1117B: Computer Programming (School of Computing and Data Science)
 
+**Hongkong Metropolitan University **:
+- COMP2030SEF: Intermediate Java Programming & User Interface Design
+
 **The National University of Malaysia**:
 - Technology for Success: Computer Concepts
 
