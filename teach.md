@@ -51,9 +51,11 @@ I hold five patents in the fields of storage systems and telephony.
 
 **Macquarie University**: 
 - COMP2200/COMP6200: Data Science
+- COMP6010: Fundamentals of Computer Science
 
 **University of Auckland**: 
 - STATS 220: Data Technologies (R)
+- COMPSCI101: Principle of Programming (Python)
 
 **Monash University**: 
 - FIT5196: Data Wrangling (Information Technology)
@@ -83,9 +85,10 @@ I hold five patents in the fields of storage systems and telephony.
 **Cardiff University**: 
 - CM6125: Database Systems
 - CM6123: Software Development Skills (School of Computer Science and Informatics)
+- CMT655: Manipulating and Exploring Data
 
 **NTU Singapore**: 
-- CS2030DE Programming Methodology II
+- CS2030DE Programming Methodology II (Functional Programming)
 - AB0403 Decision Making with Programming & Analytics
 
 **James Cook University Singapore**: 
@@ -96,6 +99,9 @@ I hold five patents in the fields of storage systems and telephony.
 
 **The University of Hongkong**:
 - COMP1117B: Computer Programming (School of Computing and Data Science)
+
+**The National University of Malaysia**:
+- Technology for Success: Computer Concepts
 
 ### 常见问题解答（FAQ）
 
