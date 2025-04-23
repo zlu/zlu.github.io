@@ -17,14 +17,14 @@ In my spare time, I like to read, take photos with my rangefinder camera, biking
 
 In general, I use **zlu** as my user name on networks and social channels when available.  
 
-- [Github](http://github.com/zlu) - The open source portion of my work.  Some old work done for [OpenVoice](http://github.com/openvoice), a ruby DSL for telephony.     
-- [LinkedIn](http://linkedin.com/in/zhaolu) - My business profile.
-- Twitter - I tweet under [@zlu](http://twitter.com/zlu) and [@foryogi](http://twitter.com/foryogi)
+- [Github](https://github.com/zlu) - The open source portion of my work.  Some old work done for [OpenVoice](https://github.com/openvoice), a ruby DSL for telephony.     
+- [LinkedIn](https://linkedin.com/in/zhaolu) - My business profile.
+- Twitter/X - I tweet under [@zlu](https://x.com/zlu) and [@foryogi](https://x.com/foryogi)
 - [SpeakerDeck](https://speakerdeck.com/zlu) - Some of the presentations I gave.  
 - [Good Reads][goodreads] - Books I read.
 - [500px][500px] - Some photos I took.
 
 
-[goodreads]: http://www.goodreads.com/zlulz "GoodReads"
+[goodreads]: https://www.goodreads.com/zlulz "GoodReads"
 [500px]: https://500px.com/p/zlu?view=photos "500px"
-[flickr]: http://www.flickr.com/photos/zzlluu/ "Flickr"
+[flickr]: https://www.flickr.com/photos/zzlluu/ "Flickr"
