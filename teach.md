@@ -40,6 +40,9 @@ I hold five patents in the fields of storage systems and telephony.
 **John Hopkins University**: 
 - Business Analytics & Artificial Intelligence
 
+**University of Rochester**: 
+- Intro to Statistical Machine Learning
+
 **University of Birmingham**: 
 - Artificial Intelligence
 
@@ -62,6 +65,7 @@ I hold five patents in the fields of storage systems and telephony.
 - FIT9136: Intro to Python (Information Technology)
 - FIT2014: Theory of Computation (Information Technology)
 - FIT1045: Introduction to Programming (Computer Science)
+- FIT1058: Foundations of Computing (Computer Science)
 
 **University of Sydney**: 
 - COMP3221: Distributed Systems (Computer Science)
@@ -85,6 +89,7 @@ I hold five patents in the fields of storage systems and telephony.
 **Cardiff University**: 
 - CM6125: Database Systems
 - CM6123: Software Development Skills (School of Computer Science and Informatics)
+- CMT645: DevOps
 - CMT655: Manipulating and Exploring Data
 
 **NTU Singapore**: 
@@ -101,7 +106,7 @@ I hold five patents in the fields of storage systems and telephony.
 - COMP1117B: Computer Programming (School of Computing and Data Science)
 
 **Hongkong Metropolitan University**:
-- COMP2030SEF: Intermediate Java Programming & User Interface Design
+- COMP2030SEF: Intermediate Java Pxrogramming & User Interface Design
 
 **Hongkong Baptist University**:
 - COMP7025: Artificial Intelligence for Digital Transformation
