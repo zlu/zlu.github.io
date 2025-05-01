@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Teach@zlu | Online 1-1 tutoring for chineses students | zlu.me/teach
+title: Teach@zlu | Online 1-1 tutoring for chineses students | https://zlu.me/teach
 description: Expert tutoring for Chinese students in Australia, USA, UK, New Zealand, Singapore, and Hongkong. Contact me for computer science, data science, artificial intelligence and python lessons today!
 ---
 
