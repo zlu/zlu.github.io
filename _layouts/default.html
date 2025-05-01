@@ -250,21 +250,21 @@
       const titleEn = "{{ page.title_en }}";
       const titleCn = "{{ page.title_cn }}";
 
-      // Set initial state to English
-      if (enContent) enContent.classList.add('active');
-      document.title = titleEn + " | " + titleSuffix;
+      // Set initial state to Chinese
+      if (cnContent) cnContent.classList.add('active');
+      document.title = titleCn + " | " + titleSuffix;
       cardLinks.forEach(link => {
-        link.setAttribute('href', link.getAttribute('data-en-href'));
+        link.setAttribute('href', link.getAttribute('data-cn-href'));
       });
       cardTitles.forEach(title => {
-        title.textContent = title.getAttribute('data-en');
+        title.textContent = title.getAttribute('data-cn');
       });
       cardDescs.forEach(desc => {
-        desc.textContent = desc.getAttribute('data-en');
+        desc.textContent = desc.getAttribute('data-cn');
       });
       cardButtons.forEach(button => {
-        if (button.getAttribute('data-en')) {
-          button.textContent = button.getAttribute('data-en');
+        if (button.getAttribute('data-cn')) {
+          button.textContent = button.getAttribute('data-cn');
         }
       });
 
