@@ -28,6 +28,9 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/863e3c3b68.js" crossorigin="anonymous"></script>
+
   {% seo %}
   <meta name="baidu-site-verification" content="codeva-mW0JDcJWVu" />
 
@@ -97,6 +100,95 @@
   }
   </script>
 
+  <style>
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card i {
+      color: #3b82f6;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #4b5563;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .cta-card {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .cta-card i,
+    .cta-card p {
+      color: white;
+    }
+
+    .cta-card:hover {
+      background: #2563eb;
+    }
+
+    .lang-switcher {
+      margin: 1rem 0;
+      text-align: right;
+    }
+
+    .lang-switcher button {
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+      border: 1px solid #3b82f6;
+      border-radius: 0.25rem;
+      background: white;
+      color: #3b82f6;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .lang-switcher button.active,
+    .lang-switcher button:hover {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .lang-en,
+    .lang-cn {
+      display: none;
+    }
+
+    .lang-en.active,
+    .lang-cn.active {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -104,7 +196,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXBC2JCM" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-   
+
   <div class="container">
     <div class="sidebar-wrapper">
       <aside class="sidebar">
@@ -123,9 +215,9 @@
           <a href="http://github.com/zlu" class="icon"><i class="fab fa-github"></i></a>
           <a href="http://twitter.com/zlu" class="icon"><i class="fab fa-twitter"></i></a>
           <a href="http://linkedin.com/in/zhaolu" class="icon"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:z@zlu.me" class="icon"><i class="fas fa-envelope"></i></a>
+          <a href="/cdn-cgi/l/email-protection#732973495f461d5e56" class="icon"><i class="fas fa-envelope"></i></a>
         </div>
-        
+
         <div>
           <img src="/assets/images/morpheon-wechat.png" class="sidebar-image" alt="Morpheon" width="150px">
         </div>
@@ -133,11 +225,58 @@
     </div>
 
     <main class="content">
+      {% if page.title == "Teach@zlu | Online 1-1 tutoring for chineses students | https://zlu.me/teach" %}
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="cn">CN</button>
+      </div>
+      {% endif %}
       {{ content }}
     </main>
 
   </div>
-  <script src="https://kit.fontawesome.com/863e3c3b68.js" crossorigin="anonymous"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  {% if page.title == "Teach@zlu | Online 1-1 tutoring for chineses students | https://zlu.me/teach" %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const langButtons = document.querySelectorAll('.lang-btn');
+      const enContent = document.querySelector('#en-content');
+      const cnContent = document.querySelector('#cn-content');
+      const cardLinks = document.querySelectorAll('.card-link');
+
+      // Set initial state to English
+      if (enContent) enContent.classList.add('active');
+      cardLinks.forEach(link => {
+        link.setAttribute('href', link.getAttribute('data-en-href'));
+      });
+
+      langButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const lang = this.getAttribute('data-lang');
+
+          // Remove active class from all buttons
+          langButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+
+          // Toggle content visibility
+          if (lang === 'en') {
+            if (enContent) enContent.classList.add('active');
+            if (cnContent) cnContent.classList.remove('active');
+            cardLinks.forEach(link => {
+              link.setAttribute('href', link.getAttribute('data-en-href'));
+            });
+          } else {
+            if (cnContent) cnContent.classList.add('active');
+            if (enContent) enContent.classList.remove('active');
+            cardLinks.forEach(link => {
+              link.setAttribute('href', link.getAttribute('data-cn-href'));
+            });
+          }
+        });
+      });
+    });
+  </script>
+  {% endif %}
 </body>
 
 </html>
