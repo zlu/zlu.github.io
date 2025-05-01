@@ -243,11 +243,25 @@
       const enContent = document.querySelector('#en-content');
       const cnContent = document.querySelector('#cn-content');
       const cardLinks = document.querySelectorAll('.card-link');
+      const cardTitles = document.querySelectorAll('.card h3');
+      const cardDescs = document.querySelectorAll('.card p');
+      const cardButtons = document.querySelectorAll('.card a.btn');
 
       // Set initial state to English
       if (enContent) enContent.classList.add('active');
       cardLinks.forEach(link => {
         link.setAttribute('href', link.getAttribute('data-en-href'));
+      });
+      cardTitles.forEach(title => {
+        title.textContent = title.getAttribute('data-en');
+      });
+      cardDescs.forEach(desc => {
+        desc.textContent = desc.getAttribute('data-en');
+      });
+      cardButtons.forEach(button => {
+        if (button.getAttribute('data-en')) {
+          button.textContent = button.getAttribute('data-en');
+        }
       });
 
       langButtons.forEach(button => {
@@ -258,18 +272,40 @@
           langButtons.forEach(btn => btn.classList.remove('active'));
           this.classList.add('active');
 
-          // Toggle content visibility
+          // Toggle content visibility and update card content
           if (lang === 'en') {
             if (enContent) enContent.classList.add('active');
             if (cnContent) cnContent.classList.remove('active');
             cardLinks.forEach(link => {
               link.setAttribute('href', link.getAttribute('data-en-href'));
             });
+            cardTitles.forEach(title => {
+              title.textContent = title.getAttribute('data-en');
+            });
+            cardDescs.forEach(desc => {
+              desc.textContent = desc.getAttribute('data-en');
+            });
+            cardButtons.forEach(button => {
+              if (button.getAttribute('data-en')) {
+                button.textContent = button.getAttribute('data-en');
+              }
+            });
           } else {
             if (cnContent) cnContent.classList.add('active');
             if (enContent) enContent.classList.remove('active');
             cardLinks.forEach(link => {
               link.setAttribute('href', link.getAttribute('data-cn-href'));
+            });
+            cardTitles.forEach(title => {
+              title.textContent = title.getAttribute('data-cn');
+            });
+            cardDescs.forEach(desc => {
+              desc.textContent = desc.getAttribute('data-cn');
+            });
+            cardButtons.forEach(button => {
+              if (button.getAttribute('data-cn')) {
+                button.textContent = button.getAttribute('data-cn');
+              }
             });
           }
         });
