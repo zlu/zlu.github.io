@@ -11,37 +11,37 @@ description: Expert tutoring for Chinese students in Australia, USA, UK, New Zea
     <i class="fas fa-user fa-2x"></i>
     <h3 class="about-me-title" data-en="About Me" data-cn="关于我">About Me</h3>
     <p class="about-me-desc" data-en="Silicon Valley veteran with expertise in AI, Data Science, and distributed systems." data-cn="硅谷资深人士，擅长人工智能、数据科学和分布式系统。">Silicon Valley veteran with expertise in AI, Data Science, and distributed systems.</p>
-    <a href="#introduction" class="btn btn-outline-primary card-link" data-en-href="#introduction" data-cn-href="#简介">Learn More</a>
+    <a href="#introduction" class="btn btn-outline-primary card-link" data-en-href="#introduction" data-cn-href="#简介" data-en="About Me" data-cn="个人简介">Learn More</a>
   </div>
   <div class="card">
     <i class="fas fa-book fa-2x"></i>
     <h3 class="popular-courses-title" data-en="Popular Courses" data-cn="热门课程">Popular Courses</h3>
     <p class="popular-courses-desc" data-en="Master AI, Data Science, and Python programming with tailored lessons." data-cn="通过定制课程掌握人工智能、数据科学和Python编程。">Master AI, Data Science, and Python programming with tailored lessons.</p>
-    <a href="#热门课程" class="btn btn-outline-primary card-link" data-en-href="#popular-courses" data-cn-href="#热门课程">Explore Courses</a>
+    <a href="#热门课程" class="btn btn-outline-primary card-link" data-en-href="#popular-courses" data-cn-href="#热门课程" data-en="Popular Courses" data-cn="热门课程">Explore Courses</a>
   </div>
   <div class="card">
     <i class="fas fa-star fa-2x"></i>
     <h3 class="student-success-title" data-en="Student Success" data-cn="学生成功案例">Student Success</h3>
     <p class="student-success-desc" data-en="Hear from students who excelled with personalized tutoring." data-cn="听听通过个性化辅导取得优异成绩的学生怎么说。">Hear from students who excelled with personalized tutoring.</p>
-    <a href="#学生评价或成功案例" class="btn btn-outline-primary card-link" data-en-href="#student-testimonials" data-cn-href="#学生评价或成功案例">Read Testimonials</a>
+    <a href="#学生评价或成功案例" class="btn btn-outline-primary card-link" data-en-href="#student-testimonials" data-cn-href="#学生评价或成功案例" data-en="Testmonials" data-cn="学生评价">Read Testimonials</a>
   </div>
   <div class="card">
     <i class="fas fa-university fa-2x"></i>
     <h3 class="university-courses-title" data-en="University Courses" data-cn="大学课程">University Courses</h3>
     <p class="university-courses-desc" data-en="Support for top university CS courses worldwide." data-cn="支持全球顶尖大学的计算机科学课程。">Support for top university CS courses worldwide.</p>
-    <a href="#授课实例-university-courses" class="btn btn-outline-primary card-link" data-en-href="#university-courses" data-cn-href="#授课实例-university-courses">View Courses</a>
+    <a href="#授课实例-university-courses" class="btn btn-outline-primary card-link" data-en-href="#university-courses" data-cn-href="#授课实例-university-courses" data-en="Courses" data-cn="授课实例">View Courses</a>
   </div>
   <div class="card">
     <i class="fas fa-question-circle fa-2x"></i>
     <h3 class="faqs-title" data-en="FAQs" data-cn="常见问题解答">FAQs</h3>
     <p class="faqs-desc" data-en="Answers to common questions about online tutoring." data-cn="解答关于在线辅导的常见问题。">Answers to common questions about online tutoring.</p>
-    <a href="#常见问题解答-faq" class="btn btn-outline-primary card-link" data-en-href="#faqs" data-cn-href="#常见问题解答-faq">Get Answers</a>
+    <a href="#常见问题解答-faq" class="btn btn-outline-primary card-link" data-en-href="#faqs" data-cn-href="#常见问题解答-faq" data-en="FAQ" data-cn="常见问题">Get Answers</a>
   </div>
   <div class="card cta-card">
     <i class="fas fa-envelope fa-2x"></i>
     <h3 class="contact-title" data-en="Contact Me" data-cn="联系我">Contact Me</h3>
     <p class="contact-desc" data-en="Ready to excel in CS? Book a session today!" data-cn="准备好在计算机科学领域脱颖而出？立即预约课程！">Ready to excel in CS? Book a session today!</p>
-    <a href="mailto:tutoring@zlu.me" class="btn btn-primary" data-en="Get Started" data-cn="开始学习">Get Started</a>
+    <a href="mailto:tutoring@zlu.me" class="btn btn-primary" data-en="Get Started" data-cn="预约课程">Get Started</a>
   </div>
 </div>
 
