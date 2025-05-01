@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="{{ site.keywords }}">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title_en }} | {{ page.title_suffix }}</title>
 
   <!-- syntax highlighting CSS -->
   <link rel="stylesheet" href="/css/syntax.css">
@@ -225,7 +225,7 @@
     </div>
 
     <main class="content">
-      {% if page.title == "Teach@zlu | Online 1-1 tutoring for chineses students | https://zlu.me/teach" %}
+      {% if page.title_en == "Teach@zlu" %}
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="cn">CN</button>
@@ -236,7 +236,7 @@
 
   </div>
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-  {% if page.title == "Teach@zlu | Online 1-1 tutoring for chineses students | https://zlu.me/teach" %}
+  {% if page.title_en == "Teach@zlu" %}
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const langButtons = document.querySelectorAll('.lang-btn');
@@ -246,9 +246,13 @@
       const cardTitles = document.querySelectorAll('.card h3');
       const cardDescs = document.querySelectorAll('.card p');
       const cardButtons = document.querySelectorAll('.card a.btn');
+      const titleSuffix = "{{ page.title_suffix }}";
+      const titleEn = "{{ page.title_en }}";
+      const titleCn = "{{ page.title_cn }}";
 
       // Set initial state to English
       if (enContent) enContent.classList.add('active');
+      document.title = titleEn + " | " + titleSuffix;
       cardLinks.forEach(link => {
         link.setAttribute('href', link.getAttribute('data-en-href'));
       });
@@ -276,6 +280,7 @@
           if (lang === 'en') {
             if (enContent) enContent.classList.add('active');
             if (cnContent) cnContent.classList.remove('active');
+            document.title = titleEn + " | " + titleSuffix;
             cardLinks.forEach(link => {
               link.setAttribute('href', link.getAttribute('data-en-href'));
             });
@@ -293,6 +298,7 @@
           } else {
             if (cnContent) cnContent.classList.add('active');
             if (enContent) enContent.classList.remove('active');
+            document.title = titleCn + " | " + titleSuffix;
             cardLinks.forEach(link => {
               link.setAttribute('href', link.getAttribute('data-cn-href'));
             });
