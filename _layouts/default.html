@@ -34,6 +34,10 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/863e3c3b68.js" crossorigin="anonymous"></script>
 
+  {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
+  <script src="/js/teach.js"></script>
+  {% endif %}
+
   {% seo %}
   <meta name="baidu-site-verification" content="codeva-mW0JDcJWVu" />
 
@@ -230,7 +234,7 @@
     <main class="content">
       {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
       <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="cn">CN</button>
+        <button class="lang-btn active" data-lang="zh-CN">CN</button>
         <button class="lang-btn" data-lang="en">EN</button>        
       </div>
       {% endif %}
@@ -239,86 +243,74 @@
 
   </div>
   {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
-  <script src="/js/teach.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const langButtons = document.querySelectorAll('.lang-btn');
-      const enContent = document.querySelector('#en-content');
-      const cnContent = document.querySelector('#cn-content');
-      const cardLinks = document.querySelectorAll('.card-link');
-      const cardTitles = document.querySelectorAll('.card h3');
-      const cardDescs = document.querySelectorAll('.card p');
-      const cardButtons = document.querySelectorAll('.card a.btn');
       const titleSuffix = "{{ page.title_suffix }}";
       const titleEn = "{{ page.title_en }}";
       const titleCn = "{{ page.title_cn }}";
 
-      // Set initial state to Chinese
-      if (cnContent) cnContent.classList.add('active');
-      document.title = titleCn + " | " + titleSuffix;
-      cardLinks.forEach(link => {
-        link.setAttribute('href', link.getAttribute('data-cn-href'));
-      });
-      cardTitles.forEach(title => {
-        title.textContent = title.getAttribute('data-cn');
-      });
-      cardDescs.forEach(desc => {
-        desc.textContent = desc.getAttribute('data-cn');
-      });
-      cardButtons.forEach(button => {
-        if (button.getAttribute('data-cn')) {
-          button.textContent = button.getAttribute('data-cn');
-        }
-      });
+      function updateLanguageContent(lang) {
+        // Update document title and language
+        document.title = (lang === 'zh-CN' ? titleCn : titleEn) + " | " + titleSuffix;
+        document.documentElement.lang = lang;
 
-      langButtons.forEach(button => {
-        button.addEventListener('click', function () {
-          const lang = this.getAttribute('data-lang');
-
-          // Remove active class from all buttons
-          langButtons.forEach(btn => btn.classList.remove('active'));
-          this.classList.add('active');
-
-          // Toggle content visibility and update card content
-          if (lang === 'en') {
-            if (enContent) enContent.classList.add('active');
-            if (cnContent) cnContent.classList.remove('active');
-            document.title = titleEn + " | " + titleSuffix;
-            cardLinks.forEach(link => {
-              link.setAttribute('href', link.getAttribute('data-en-href'));
-            });
-            cardTitles.forEach(title => {
-              title.textContent = title.getAttribute('data-en');
-            });
-            cardDescs.forEach(desc => {
-              desc.textContent = desc.getAttribute('data-en');
-            });
-            cardButtons.forEach(button => {
-              if (button.getAttribute('data-en')) {
-                button.textContent = button.getAttribute('data-en');
-              }
-            });
-          } else {
-            if (cnContent) cnContent.classList.add('active');
-            if (enContent) enContent.classList.remove('active');
-            document.title = titleCn + " | " + titleSuffix;
-            cardLinks.forEach(link => {
-              link.setAttribute('href', link.getAttribute('data-cn-href'));
-            });
-            cardTitles.forEach(title => {
-              title.textContent = title.getAttribute('data-cn');
-            });
-            cardDescs.forEach(desc => {
-              desc.textContent = desc.getAttribute('data-cn');
-            });
-            cardButtons.forEach(button => {
-              if (button.getAttribute('data-cn')) {
-                button.textContent = button.getAttribute('data-cn');
-              }
-            });
+        // Update all elements with data-en and data-cn attributes
+        document.querySelectorAll('[data-en]').forEach(el => {
+          const content = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}`);
+          if (content) {
+            if (el.tagName.toLowerCase() === 'p' || el.tagName.toLowerCase() === 'blockquote') {
+              el.innerHTML = content; // Use innerHTML for paragraphs and blockquotes
+            } else {
+              el.textContent = content;
+            }
           }
         });
+
+        // Update href attributes
+        document.querySelectorAll('[data-en-href]').forEach(el => {
+          const href = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}-href`);
+          if (href) el.href = href;
+        });
+
+        // Update language buttons
+        langButtons.forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+
+        // Toggle language-specific content
+        const enContent = document.getElementById('en-content');
+        const cnContent = document.getElementById('cn-content');
+        if (enContent && cnContent) {
+          enContent.style.display = lang === 'en' ? 'block' : 'none';
+          cnContent.style.display = lang === 'zh-CN' ? 'block' : 'none';
+        }
+
+        // Notify other components
+        document.dispatchEvent(new CustomEvent('languageChanged', {
+          detail: { language: lang === 'zh-CN' ? 'cn' : 'en' }
+        }));
+      }
+
+      // Add click handlers to language buttons
+      langButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          updateLanguageContent(this.getAttribute('data-lang'));
+        });
       });
+
+      // Set initial language based on URL or default to English
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialLang = urlParams.get('lang') === 'cn' ? 'zh-CN' : 'en';
+      updateLanguageContent(initialLang);
+
+      // Update language classes
+      const enContent = document.querySelector('.lang-en');
+      const cnContent = document.querySelector('.lang-cn');
+      if (enContent && cnContent) {
+        enContent.classList.toggle('active', initialLang === 'en');
+        cnContent.classList.toggle('active', initialLang === 'zh-CN');
+      }
     });
   </script>
   {% endif %}
