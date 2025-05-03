@@ -14,6 +14,9 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/zhaolu.css">
+  {% if page.title_en contains 'Computer Science Tutoring' %}
+  <link rel="stylesheet" href="/css/teach.css">
+  {% endif %}
 
   <link href='https://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
 
@@ -225,7 +228,7 @@
     </div>
 
     <main class="content">
-      {% if page.title_en == "Teach@zlu" %}
+      {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="cn">CN</button>
         <button class="lang-btn" data-lang="en">EN</button>        
@@ -235,7 +238,7 @@
     </main>
 
   </div>
-  {% if page.title_en == "Teach@zlu" %}
+  {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const langButtons = document.querySelectorAll('.lang-btn');

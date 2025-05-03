@@ -1,10 +1,40 @@
 ---
 layout: default
-title_en: Teach@zlu
-title_cn: 留学辅导
-title_suffix: Online 1-1 tutoring for chineses students | https://zlu.me/teach
-description: Expert tutoring for Chinese students in Australia, USA, UK, New Zealand, Singapore, and Hongkong. Contact me for computer science, data science, artificial intelligence and python lessons today!
+title_en: Computer Science Tutoring for Chinese Students | AI & Data Science Expert
+title_cn: 计算机科学留学辅导 | 人工智能与数据科学专家
+title_suffix: Professional CS Tutor for International Students | zlu.me/teach
+description: Expert computer science tutoring for Chinese students in Australia, USA, UK, Canada & NZ. Specialized in AI, Data Science, Python & University coursework. Bilingual instruction (中英双语) available. 15+ years Silicon Valley experience.
+keywords: computer science tutor, CS tuition, AI tutoring, data science help, Python programming, Chinese students abroad, 计算机科学辅导, 留学生辅导, 编程家教, 人工智能课程辅导
+lang: en
+alternate_lang: zh-CN
+hreflang:
+  en: https://zlu.me/teach/
+  zh-CN: https://zlu.me/teach/?lang=cn
+region_pages:
+  - title: Australia
+    url: /teach/australia/
+    description: Expert CS tutoring for students at Monash, UNSW, Melbourne & more
+  - title: United Kingdom
+    url: /teach/uk/
+    description: Supporting students at Birmingham, Cardiff & Queen Mary
+  - title: United States
+    url: /teach/usa/
+    description: Tutoring for Johns Hopkins, Rochester & other US universities
+  - title: Canada
+    url: /teach/canada/
+    description: Help for UofT, UBC, Waterloo & other Canadian institutions
+  - title: New Zealand
+    url: /teach/new-zealand/
+    description: Supporting University of Auckland and other NZ students
+  - title: Hong Kong
+    url: /teach/hong-kong/
+    description: Tutoring for HKU, HKBU & other Hong Kong universities
+  - title: Singapore
+    url: /teach/singapore/
+    description: Supporting NTU, NUS, JCU & other Singapore institutions
 ---
+
+{% include tutoring-schema.html %}
 
 <div class="card-grid">
   <div class="card">
