@@ -82,6 +82,55 @@
     color: white;
 }
 
+/* Contact Options */
+.contact-options {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-option i {
+    margin: 0;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.wechat-qr {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.wechat-qr:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .contact-options {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .wechat-qr {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 /* Region Links */
 .region-links {
     margin-top: 0.5rem;

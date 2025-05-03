@@ -76,10 +76,20 @@ region_pages:
     <a href="#常见问题解答-faq" class="btn btn-outline-primary card-link" data-en-href="#faqs" data-cn-href="#常见问题解答-faq" data-en="FAQ" data-cn="常见问题">Get Answers</a>
   </div>
   <div class="card cta-card">
-    <i class="fas fa-envelope fa-2x"></i>
-    <h3 class="contact-title" data-en="Contact Me" data-cn="联系我">Contact Me</h3>
-    <p class="contact-desc" data-en="Ready to excel in CS? Book a session today!" data-cn="准备好在计算机科学领域脱颖而出？立即预约课程！">Ready to excel in CS? Book a session today!</p>
-    <a href="mailto:tutoring@zlu.me" class="btn btn-primary" data-en="Get Started" data-cn="预约课程">Get Started</a>
+    <h3 class="contact-title" data-en="Book a Session" data-cn="预约课程">Book a Session</h3>
+    <p class="contact-desc" data-en="Ready to excel in CS? Choose your preferred contact method:" data-cn="准备好在计算机科学领域脱颖而出？请选择联系方式：">Ready to excel in CS? Choose your preferred contact method:</p>
+    <div class="contact-options">
+      <div class="contact-option">
+        <i class="fab fa-weixin fa-2x"></i>
+        <span class="contact-label" data-en="WeChat (Recommended)" data-cn="微信（推荐）">WeChat (Recommended)</span>
+        <img src="/assets/images/morpheon-wechat.png" class="wechat-qr" alt="WeChat QR Code" data-en-title="Scan QR Code" data-cn-title="扫描二维码">
+      </div>
+      <div class="contact-option">
+        <i class="fas fa-envelope fa-2x"></i>
+        <span class="contact-label" data-en="Email" data-cn="电子邮件">Email</span>
+        <a href="mailto:tutoring@zlu.me" class="btn btn-primary" data-en="Send Email" data-cn="发送邮件">Send Email</a>
+      </div>
+    </div>
   </div>
 </div>
 
