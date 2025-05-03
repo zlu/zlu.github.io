@@ -82,6 +82,24 @@
     color: white;
 }
 
+/* Region Links */
+.region-links {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.region-link {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.region-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .card-grid {

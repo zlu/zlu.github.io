@@ -58,8 +58,16 @@ region_pages:
   <div class="card">
     <i class="fas fa-university fa-2x"></i>
     <h3 class="university-courses-title" data-en="University Courses" data-cn="大学课程">University Courses</h3>
-    <p class="university-courses-desc" data-en="Support for top university CS courses worldwide." data-cn="支持全球顶尖大学的计算机科学课程。">Support for top university CS courses worldwide.</p>
-    <a href="#授课实例-university-courses" class="btn btn-outline-primary card-link" data-en-href="#university-courses" data-cn-href="#授课实例-university-courses" data-en="Courses" data-cn="授课实例">View Courses</a>
+    <p class="university-courses-desc" data-en="Support for universities in Australia, UK, USA, Canada, Hong Kong, Singapore & New Zealand" data-cn="为澳洲、英国、美国、加拿大、香港、新加坡和新西兰的大学提供辅导">Support for universities in Australia, UK, USA, Canada, Hong Kong, Singapore & New Zealand</p>
+    <div class="region-links">
+      <a href="/teach/australia/" class="region-link">Australia</a> ·
+      <a href="/teach/uk/" class="region-link">UK</a> ·
+      <a href="/teach/usa/" class="region-link">USA</a> ·
+      <a href="/teach/canada/" class="region-link">Canada</a> ·
+      <a href="/teach/hong-kong/" class="region-link">Hong Kong</a> ·
+      <a href="/teach/singapore/" class="region-link">Singapore</a> ·
+      <a href="/teach/new-zealand/" class="region-link">NZ</a>
+    </div>
   </div>
   <div class="card">
     <i class="fas fa-question-circle fa-2x"></i>
