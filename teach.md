@@ -242,85 +242,133 @@ No worries! I can teach in both Chinese and English, explaining complex AI terms
 
 “我刚开始学Python时，总是写错代码。老师特别耐心，帮我调试程序，还教我怎么优化算法。现在我能独立完成编程作业了！”——王某然，美国加州大学圣地亚哥分校一年级学生
 
-### 授课实例（University Courses） {#授课实例-university-courses}
+### Course Categories {#course-categories}
 
-**John Hopkins University**:
-- Business Analytics & Artificial Intelligence
+<div class="course-tabs">
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="ai-ml" data-en="AI & Machine Learning" data-cn="人工智能与机器学习">AI & Machine Learning</button>
+    <button class="tab-btn" data-tab="data-science" data-en="Data Science" data-cn="数据科学">Data Science</button>
+    <button class="tab-btn" data-tab="programming" data-en="Programming" data-cn="编程基础">Programming</button>
+    <button class="tab-btn" data-tab="advanced" data-en="Advanced CS" data-cn="高级计算机科学">Advanced CS</button>
+  </nav>
 
-**University of Rochester**:
-- Intro to Statistical Machine Learning
+  <div class="tab-content active" id="ai-ml">
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fas fa-brain"></i>
+          <h4>Machine Learning</h4>
+        </div>
+        <ul>
+          <li>Applied Deep Learning (HKU COMP3340)</li>
+          <li>AI for Digital Transformation (HKBU)</li>
+          <li>Statistical Machine Learning (Rochester)</li>
+          <li>Business Analytics & AI (John Hopkins)</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fas fa-robot"></i>
+          <h4>AI Applications</h4>
+        </div>
+        <ul>
+          <li>Machine Learning & Data Science (JCU CP1407)</li>
+          <li>Decision Making with Analytics (NTU AB0403)</li>
+          <li>AI Ethics & Safety</li>
+          <li>Computer Vision & NLP</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-**University of Birmingham**:
-- Artificial Intelligence
+  <div class="tab-content" id="data-science">
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fas fa-chart-bar"></i>
+          <h4>Data Analysis</h4>
+        </div>
+        <ul>
+          <li>Data Wrangling (Monash FIT5196)</li>
+          <li>Data Technologies (Auckland STATS 220)</li>
+          <li>Final Year Project (QMUL EECS)</li>
+          <li>Computer Concepts (UKM)</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fas fa-database"></i>
+          <h4>Databases</h4>
+        </div>
+        <ul>
+          <li>Database Systems (Cardiff CM6125)</li>
+          <li>Business Databases (UNSW INFS1603)</li>
+          <li>SQL & NoSQL</li>
+          <li>Data Modeling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-**University of Nottingham**:
-- COMP4030: Data Science with Machine Learning
+  <div class="tab-content" id="programming">
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fab fa-python"></i>
+          <h4>Python Programming</h4>
+        </div>
+        <ul>
+          <li>Computer Programming (HKU COMP1117B)</li>
+          <li>Programming Methodology II (NTU CS2030DE)</li>
+          <li>Java & UI Design (HKMU COMP2030SEF)</li>
+          <li>Programming Principles (Auckland)</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fas fa-code"></i>
+          <h4>Core CS</h4>
+        </div>
+        <ul>
+          <li>Algorithms & Data Structures</li>
+          <li>Theory of Computation</li>
+          <li>Software Development</li>
+          <li>Version Control & Git</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-**College of William and Mary**:
-- Artificial Intelligence
+  <div class="tab-content" id="advanced">
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fas fa-network-wired"></i>
+          <h4>Systems</h4>
+        </div>
+        <ul>
+          <li>Distributed Systems (Sydney)</li>
+          <li>DevOps (Cardiff)</li>
+          <li>Cloud Computing</li>
+          <li>System Design</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <div class="course-header">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Security</h4>
+        </div>
+        <ul>
+          <li>Network Security (UNSW)</li>
+          <li>Cybersecurity Fundamentals</li>
+          <li>Secure Coding Practices</li>
+          <li>Security Protocols</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-**Macquarie University**:
-- COMP2200/COMP6200: Data Science
-- COMP6010: Fundamentals of Computer Science
-
-**University of Auckland**:
-- STATS 220: Data Technologies (R)
-- COMPSCI101: Principle of Programming (Python)
-
-**Monash University**:
-- FIT5196: Data Wrangling (Information Technology)
-- FIT9136: Intro to Python (Information Technology)
-- FIT2014: Theory of Computation (Information Technology)
-- FIT1045: Introduction to Programming (Computer Science)
-- FIT1058: Foundations of Computing (Computer Science)
-
-**University of Sydney**:
-- COMP3221: Distributed Systems (Computer Science)
-- INFO1113: Object-Oriented Programming (Computer Science)
-
-**University of Pittsburgh**:
-- CS 0445: Algorithms and Data Structures (Computer Science)
-- CMPINF 0401: Intermediate Programming (School of Computing and Information)
-
-**UNSW Sydney**:
-- INFS1701: Introduction to Networking and Security
-- INFS1603: Introduction to Business Databases
-- ADAD9113: Communication Skills for Creative Disciplines
-
-**University of Melbourne**:
-- COMP10001: Foundations of Computing
-
-**University of Queensland**:
-- CSSE7030 Intro to Programming (Computer Science)
-
-**Cardiff University**:
-- CM6125: Database Systems
-- CM6123: Software Development Skills (School of Computer Science and Informatics)
-- CMT645: DevOps
-- CMT655: Manipulating and Exploring Data
-
-**NTU Singapore**:
-- CS2030DE Programming Methodology II (Functional Programming)
-- AB0403 Decision Making with Programming & Analytics
-
-**James Cook University Singapore**:
-- CP1407 - Introductory Machine Learning and Data Science
-
-**Queen Mary University of London**:
-- Undergradute Final Project: School of Electronic Engineering & Computer Science
-
-**The University of Hongkong**:
-- COMP3340: Applied Deep Learning (School of Computing and Data Science)
-- COMP1117B: Computer Programming (School of Computing and Data Science)
-
-**Hongkong Metropolitan University**:
-- COMP2030SEF: Intermediate Java Programming & User Interface Design
-
-**Hongkong Baptist University**:
-- COMP7025: Artificial Intelligence for Digital Transformation
-
-**The National University of Malaysia**:
-- Technology for Success: Computer Concepts
 
 ### 常见问题解答（FAQ） {#常见问题解答-faq}
 
