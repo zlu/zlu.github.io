@@ -96,8 +96,58 @@ document.addEventListener('DOMContentLoaded', function() {
     const initialLangCode = currentHtmlLang === 'zh-cn' ? 'cn' : 'en';
     updateTabLanguage(initialLangCode);
 
+    // 3. Hide all courses by default
+    filterCourses();
+
     // Note: Ensure your main language switching logic correctly handles the
     // visibility (e.g., display: none/block) of the '.lang-en' and '.lang-cn' divs.
     // This script now relies on that mechanism to show the correct set of tabs.
 });
+
+
+// Function to filter the course list based on search input
+function filterCourses() {
+  // Get the search input element and the filter value (lowercase)
+  const input = document.getElementById('courseSearchInput');
+  const filter = input.value.toLowerCase();
+
+  // Get the container for the list items
+  const list = document.getElementById('courseList');
+  if (!list) return; // Exit if the list container isn't found
+
+  // Get all the university entry divs
+  const items = list.getElementsByClassName('university-entry');
+
+  // If there's no search query, hide all items
+  if (!filter) {
+    for (let i = 0; i < items.length; i++) {
+      items[i].style.display = "none";
+    }
+    return;
+  }
+
+  // Loop through all list items, and show only those that match the search query
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    // Get the pre-compiled filter text from the data attribute
+    const filterText = item.getAttribute('data-filter-text');
+
+    if (filterText) {
+      // Check if the filter text (lowercase) includes the search term
+      if (filterText.toLowerCase().indexOf(filter) > -1) {
+        item.style.display = ""; // Show the item
+      } else {
+        item.style.display = "none"; // Hide the item
+      }
+    }
+  }
+}
+
+// Optional: If you want to add the listener programmatically instead of using onkeyup in HTML
+// document.addEventListener('DOMContentLoaded', function() {
+//   const searchInput = document.getElementById('courseSearchInput');
+//   if (searchInput) {
+//     searchInput.addEventListener('keyup', filterCourses);
+//   }
+// });
 

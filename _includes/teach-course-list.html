@@ -1,77 +1,197 @@
-**John Hopkins University**:
-- Business Analytics & Artificial Intelligence
+<div class="course-list-container">
+  <input type="text" id="courseSearchInput" onkeyup="filterCourses()" placeholder="Search courses or universities..." title="Type in a course or university name">
 
-**University of Rochester**:
-- Intro to Statistical Machine Learning
+  <div id="courseList">
+    <div class="university-entry" data-filter-text="John Hopkins University Business Analytics & Artificial Intelligence">
+      <strong>John Hopkins University</strong>
+      <ul>
+        <li>Business Analytics & Artificial Intelligence</li>
+      </ul>
+    </div>
 
-**University of Birmingham**:
-- Artificial Intelligence
+    <div class="university-entry" data-filter-text="University of Rochester Intro to Statistical Machine Learning">
+      <strong>University of Rochester</strong>
+      <ul>
+        <li>Intro to Statistical Machine Learning</li>
+      </ul>
+    </div>
 
-**University of Nottingham**:
-- COMP4030: Data Science with Machine Learning
+    <div class="university-entry" data-filter-text="University of Birmingham Artificial Intelligence">
+      <strong>University of Birmingham</strong>
+      <ul>
+        <li>Artificial Intelligence</li>
+      </ul>
+    </div>
 
-**College of William and Mary**:
-- Artificial Intelligence
+    <div class="university-entry" data-filter-text="University of Nottingham COMP4030 Data Science with Machine Learning">
+      <strong>University of Nottingham</strong>
+      <ul>
+        <li>COMP4030: Data Science with Machine Learning</li>
+      </ul>
+    </div>
 
-**Macquarie University**:
-- COMP2200/COMP6200: Data Science
-- COMP6010: Fundamentals of Computer Science
+    <div class="university-entry" data-filter-text="College of William and Mary Artificial Intelligence">
+      <strong>College of William and Mary</strong>
+      <ul>
+        <li>Artificial Intelligence</li>
+      </ul>
+    </div>
 
-**University of Auckland**:
-- STATS 220: Data Technologies (R)
-- COMPSCI101: Principle of Programming (Python)
+    <div class="university-entry" data-filter-text="Macquarie University COMP2200 COMP6200 Data Science COMP6010 Fundamentals of Computer Science">
+      <strong>Macquarie University</strong>
+      <ul>
+        <li>COMP2200/COMP6200: Data Science</li>
+        <li>COMP6010: Fundamentals of Computer Science</li>
+      </ul>
+    </div>
 
-**Monash University**:
-- FIT5196: Data Wrangling (Information Technology)
-- FIT9136: Intro to Python (Information Technology)
-- FIT2014: Theory of Computation (Information Technology)
-- FIT1045: Introduction to Programming (Computer Science)
-- FIT1058: Foundations of Computing (Computer Science)
+    <div class="university-entry" data-filter-text="University of Auckland STATS 220 Data Technologies R COMPSCI101 Principle of Programming Python">
+      <strong>University of Auckland</strong>
+      <ul>
+        <li>STATS 220: Data Technologies (R)</li>
+        <li>COMPSCI101: Principle of Programming (Python)</li>
+      </ul>
+    </div>
 
-**University of Sydney**:
-- COMP3221: Distributed Systems (Computer Science)
-- INFO1113: Object-Oriented Programming (Computer Science)
+    <div class="university-entry" data-filter-text="Monash University FIT5196 Data Wrangling Information Technology FIT9136 Intro to Python FIT2014 Theory of Computation FIT1045 Introduction to Programming Computer Science FIT1058 Foundations of Computing">
+      <strong>Monash University</strong>
+      <ul>
+        <li>FIT5196: Data Wrangling (Information Technology)</li>
+        <li>FIT9136: Intro to Python (Information Technology)</li>
+        <li>FIT2014: Theory of Computation (Information Technology)</li>
+        <li>FIT1045: Introduction to Programming (Computer Science)</li>
+        <li>FIT1058: Foundations of Computing (Computer Science)</li>
+      </ul>
+    </div>
 
-**University of Pittsburgh**:
-- CS 0445: Algorithms and Data Structures (Computer Science)
-- CMPINF 0401: Intermediate Programming (School of Computing and Information)
+    <div class="university-entry" data-filter-text="University of Sydney COMP3221 Distributed Systems Computer Science INFO1113 Object-Oriented Programming">
+      <strong>University of Sydney</strong>
+      <ul>
+        <li>COMP3221: Distributed Systems (Computer Science)</li>
+        <li>INFO1113: Object-Oriented Programming (Computer Science)</li>
+      </ul>
+    </div>
 
-**UNSW Sydney**:
-- INFS1701: Introduction to Networking and Security
-- INFS1603: Introduction to Business Databases
-- ADAD9113: Communication Skills for Creative Disciplines
+    <div class="university-entry" data-filter-text="University of Pittsburgh CS 0445 Algorithms and Data Structures Computer Science CMPINF 0401 Intermediate Programming School of Computing and Information">
+      <strong>University of Pittsburgh</strong>
+      <ul>
+        <li>CS 0445: Algorithms and Data Structures (Computer Science)</li>
+        <li>CMPINF 0401: Intermediate Programming (School of Computing and Information)</li>
+      </ul>
+    </div>
 
-**University of Melbourne**:
-- COMP10001: Foundations of Computing
+    <div class="university-entry" data-filter-text="UNSW Sydney INFS1701 Introduction to Networking and Security INFS1603 Introduction to Business Databases ADAD9113 Communication Skills for Creative Disciplines">
+      <strong>UNSW Sydney</strong>
+      <ul>
+        <li>INFS1701: Introduction to Networking and Security</li>
+        <li>INFS1603: Introduction to Business Databases</li>
+        <li>ADAD9113: Communication Skills for Creative Disciplines</li>
+      </ul>
+    </div>
 
-**University of Queensland**:
-- CSSE7030 Intro to Programming (Computer Science)
+    <div class="university-entry" data-filter-text="University of Melbourne COMP10001 Foundations of Computing">
+      <strong>University of Melbourne</strong>
+      <ul>
+        <li>COMP10001: Foundations of Computing</li>
+      </ul>
+    </div>
 
-**Cardiff University**:
-- CM6125: Database Systems
-- CM6123: Software Development Skills (School of Computer Science and Informatics)
-- CMT645: DevOps
-- CMT655: Manipulating and Exploring Data
+    <div class="university-entry" data-filter-text="University of Queensland CSSE7030 Intro to Programming Computer Science">
+      <strong>University of Queensland</strong>
+      <ul>
+        <li>CSSE7030 Intro to Programming (Computer Science)</li>
+      </ul>
+    </div>
 
-**NTU Singapore**:
-- CS2030DE Programming Methodology II (Functional Programming)
-- AB0403 Decision Making with Programming & Analytics
+    <div class="university-entry" data-filter-text="Cardiff University CM6125 Database Systems CM6123 Software Development Skills School of Computer Science and Informatics CMT645 DevOps CMT655 Manipulating and Exploring Data">
+      <strong>Cardiff University</strong>
+      <ul>
+        <li>CM6125: Database Systems</li>
+        <li>CM6123: Software Development Skills (School of Computer Science and Informatics)</li>
+        <li>CMT645: DevOps</li>
+        <li>CMT655: Manipulating and Exploring Data</li>
+      </ul>
+    </div>
 
-**James Cook University Singapore**:
-- CP1407 - Introductory Machine Learning and Data Science
+    <div class="university-entry" data-filter-text="NTU Singapore CS2030DE Programming Methodology II Functional Programming AB0403 Decision Making with Programming & Analytics">
+      <strong>NTU Singapore</strong>
+      <ul>
+        <li>CS2030DE Programming Methodology II (Functional Programming)</li>
+        <li>AB0403 Decision Making with Programming & Analytics</li>
+      </ul>
+    </div>
 
-**Queen Mary University of London**:
-- Undergradute Final Project: School of Electronic Engineering & Computer Science
+    <div class="university-entry" data-filter-text="James Cook University Singapore CP1407 Introductory Machine Learning and Data Science">
+      <strong>James Cook University Singapore</strong>
+      <ul>
+        <li>CP1407 - Introductory Machine Learning and Data Science</li>
+      </ul>
+    </div>
 
-**The University of Hongkong**:
-- COMP3340: Applied Deep Learning (School of Computing and Data Science)
-- COMP1117B: Computer Programming (School of Computing and Data Science)
+    <div class="university-entry" data-filter-text="Queen Mary University of London Undergradute Final Project School of Electronic Engineering & Computer Science">
+      <strong>Queen Mary University of London</strong>
+      <ul>
+        <li>Undergradute Final Project: School of Electronic Engineering & Computer Science</li>
+      </ul>
+    </div>
 
-**Hongkong Metropolitan University**:
-- COMP2030SEF: Intermediate Java Programming & User Interface Design
+    <div class="university-entry" data-filter-text="The University of Hongkong COMP3340 Applied Deep Learning School of Computing and Data Science COMP1117B Computer Programming">
+      <strong>The University of Hongkong</strong>
+      <ul>
+        <li>COMP3340: Applied Deep Learning (School of Computing and Data Science)</li>
+        <li>COMP1117B: Computer Programming (School of Computing and Data Science)</li>
+      </ul>
+    </div>
 
-**Hongkong Baptist University**:
-- COMP7025: Artificial Intelligence for Digital Transformation
+    <div class="university-entry" data-filter-text="Hongkong Metropolitan University COMP2030SEF Intermediate Java Programming & User Interface Design">
+      <strong>Hongkong Metropolitan University</strong>
+      <ul>
+        <li>COMP2030SEF: Intermediate Java Programming & User Interface Design</li>
+      </ul>
+    </div>
 
-**The National University of Malaysia**:
-- Technology for Success: Computer Concepts
+    <div class="university-entry" data-filter-text="Hongkong Baptist University COMP7025 Artificial Intelligence for Digital Transformation">
+      <strong>Hongkong Baptist University</strong>
+      <ul>
+        <li>COMP7025: Artificial Intelligence for Digital Transformation</li>
+      </ul>
+    </div>
+
+    <div class="university-entry" data-filter-text="The National University of Malaysia Technology for Success Computer Concepts">
+      <strong>The National University of Malaysia</strong>
+      <ul>
+        <li>Technology for Success: Computer Concepts</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Basic styling for the search input and list */
+  .course-list-container {
+    margin-bottom: 20px;
+  }
+  #courseSearchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+  }
+  .university-entry {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: block; /* Ensure it's visible by default */
+  }
+  .university-entry strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .university-entry ul {
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+</style>
