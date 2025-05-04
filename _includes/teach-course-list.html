@@ -1,61 +1,70 @@
 <div class="course-list-container">
-  <input type="text" id="courseSearchInput" onkeyup="filterCourses()" placeholder="Search courses or universities..." title="Type in a course or university name">
+    <input type="text" id="courseSearchInput" onkeyup="filterCourses()" placeholder="Search courses or universities..."
+        title="Type in a course or university name">
 
-  <div id="courseList">
-    {% comment %} Sort universities alphabetically for consistent order {% endcomment %}
-    {% assign courses_data = site.data.courses | sort: 'university' %}
+    <div id="courseList">
+        {% comment %} Sort universities alphabetically for consistent order {% endcomment %}
+        {% assign courses_data = site.data.courses | sort: 'university' %}
 
-    {% for entry in courses_data %}
-      {% comment %} Build the filter text dynamically {% endcomment %}
-      {% assign filter_text = entry.university %}
-      {% for course in entry.courses %}
-        {% assign filter_text = filter_text | append: ' ' | append: course.code | append: ' ' | append: course.title | append: ' ' | append: course.department %}
-      {% endfor %}
-      {% comment %} Remove extra spaces and escape for HTML attribute {% endcomment %}
-      {% assign filter_text = filter_text | strip | replace: '  ', ' ' | escape %}
+        {% for entry in courses_data %}
+        {% comment %} Build the filter text dynamically {% endcomment %}
+        {% assign filter_text = entry.university %}
+        {% for course in entry.courses %}
+        {% assign filter_text = filter_text | append: ' ' | append: course.code | append: ' ' | append: course.title |
+        append: ' ' | append: course.department %}
+        {% endfor %}
+        {% comment %} Remove extra spaces and escape for HTML attribute {% endcomment %}
+        {% assign filter_text = filter_text | strip | replace: ' ', ' ' | escape %}
 
-      <div class="university-entry" data-filter-text="{{ filter_text }}">
-        <strong>{{ entry.university | escape }}</strong>
-        <ul>
-          {% for course in entry.courses %}
-            <li>
-              {% if course.code %}{{ course.code | escape }}: {% endif %}{{ course.title | escape }}{% if course.department %} ({{ course.department | escape }}){% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
-  </div>
+        <div class="university-entry" data-filter-text="{{ filter_text }}">
+            <strong>{{ entry.university | escape }}</strong>
+            <ul>
+                {% for course in entry.courses %}
+                <li>
+                    {% if course.code %}{{ course.code | escape }}: {% endif %}{{ course.title | escape }}{% if
+                    course.department %} ({{ course.department | escape }}){% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
 <style>
-  /* Basic styling for the search input and list */
-  .course-list-container {
-    margin-bottom: 20px;
-  }
-  #courseSearchInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Include padding and border in element's total width/height */
-  }
-  .university-entry {
-    border: 1px solid #eee;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    display: block; /* Ensure it's visible by default, JS will hide */
-  }
-  .university-entry strong {
-    display: block;
-    margin-bottom: 5px;
-  }
-  .university-entry ul {
-    margin-top: 5px;
-    padding-left: 20px;
-  }
+    /* Basic styling for the search input and list */
+    .course-list-container {
+        margin-bottom: 20px;
+    }
+
+    #courseSearchInput {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        /* Include padding and border in element's total width/height */
+    }
+
+    .university-entry {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        display: block;
+        /* Ensure it's visible by default, JS will hide */
+    }
+
+    .university-entry strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .university-entry ul {
+        margin-top: 5px;
+        padding-left: 20px;
+    }
 </style>
 
 {% comment %} Ensure the filter script is loaded AFTER this HTML {% endcomment %}
