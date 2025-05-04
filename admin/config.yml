@@ -1,11 +1,23 @@
 backend:
   name: github
-  repo: zlu/zlu.github.io # Replace with your actual repo
-  branch: main # Or your default branch
+  repo: zlu/zlu.github.io
+  branch: main
 
 media_folder: "assets/images/uploads"
 
 collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: "courses" # Identifier for this collection
     label: "Tutored Courses" # Label shown in the CMS UI
     label_singular: "Course Entry"
