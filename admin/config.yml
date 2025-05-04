@@ -12,38 +12,25 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: "courses" # Identifier for this collection
-    label: "Tutored Courses" # Label shown in the CMS UI
-    label_singular: "Course Entry"
-    folder: "_data/courses_temp" # Temporary folder, see note below
-    create: true # Allow creating new entries
-    slug: "{{university}}-{{year}}-{{month}}-{{day}}" # How to name files, less relevant for data files
-    # Use file collection for single data file editing
-    files:
-      - label: "University Course List"
+  - name: "courses"
+    label: "Tutored Courses"
+    folder: "_data/courses/"
+    create: true
+    slug: "{{university | slugify}}"
+    format: "yaml-frontmatter"
+    extension: ".yml"
+    fields:
+      - { label: "University Name", name: "university", widget: "string" }
+      - label: "Courses"
         name: "courses"
-        file: "_data/courses.yml" # Path to your actual data file
-        fields: # These define the fields in the UI for the *entire file*
-          - label: "University Entries"
-            name: "universities" # Corresponds to the top-level list in your YAML
-            widget: "list" # A list of items
-            fields: # Fields for each item in the list (each university)
-              - {label: "University Name", name: "university", widget: "string"}
-              - label: "Courses"
-                name: "courses" # Corresponds to the nested 'courses' list
-                widget: "list"
-                fields: # Fields for each course under a university
-                  - {label: "Course Code", name: "code", widget: "string", required: false}
-                  - {label: "Course Title", name: "title", widget: "string"}
-                  - {label: "Department/Notes", name: "department", widget: "string", required: false}
-
-# Note: Editing structured YAML data files like this in some CMS can be tricky.
-# An alternative is to have one file per university in a _data/courses/ folder,
-# which might map more cleanly to some CMS UIs. However, the above 'files'
-# collection approach aims to edit the single courses.yml file.
+        widget: "list"
+        fields:
+          - { label: "Course Code", name: "code", widget: "string", required: false }
+          - { label: "Course Title", name: "title", widget: "string" }
+          - { label: "Department/Notes", name: "department", widget: "string", required: false }

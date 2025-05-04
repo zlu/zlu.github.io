@@ -3,30 +3,39 @@
         title="Type in a course or university name">
 
     <div id="courseList">
-        {% comment %} Sort universities alphabetically for consistent order {% endcomment %}
-        {% assign courses_data = site.data.courses | sort: 'university' %}
+        {% comment %} Get all course files and sort by university name {% endcomment %}
+        {% assign courses_data = site.data.courses | to_liquid | values %}
 
         {% for entry in courses_data %}
-        {% comment %} Build the filter text dynamically {% endcomment %}
-        {% assign filter_text = entry.university %}
-        {% for course in entry.courses %}
-        {% assign filter_text = filter_text | append: ' ' | append: course.code | append: ' ' | append: course.title |
-        append: ' ' | append: course.department %}
-        {% endfor %}
-        {% comment %} Remove extra spaces and escape for HTML attribute {% endcomment %}
-        {% assign filter_text = filter_text | strip | replace: ' ', ' ' | escape %}
+        {% if entry.university %}
+            {% comment %} Build the filter text dynamically {% endcomment %}
+            {% assign filter_text = entry.university %}
+            {% for course in entry.courses %}
+            {% if course.code %}
+                {% assign filter_text = filter_text | append: ' ' | append: course.code %}
+            {% endif %}
+            {% if course.title %}
+                {% assign filter_text = filter_text | append: ' ' | append: course.title %}
+            {% endif %}
+            {% if course.department %}
+                {% assign filter_text = filter_text | append: ' ' | append: course.department %}
+            {% endif %}
+            {% endfor %}
+            {% comment %} Remove extra spaces and escape for HTML attribute {% endcomment %}
+            {% assign filter_text = filter_text | strip | replace: ' ', ' ' | escape %}
 
-        <div class="university-entry" data-filter-text="{{ filter_text }}">
-            <strong>{{ entry.university | escape }}</strong>
-            <ul>
-                {% for course in entry.courses %}
-                <li>
-                    {% if course.code %}{{ course.code | escape }}: {% endif %}{{ course.title | escape }}{% if
-                    course.department %} ({{ course.department | escape }}){% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+            <div class="university-entry" data-filter-text="{{ filter_text }}">
+                <strong>{{ entry.university | escape }}</strong>
+                <ul>
+                    {% for course in entry.courses %}
+                    <li>
+                        {% if course.code %}{{ course.code | escape }}: {% endif %}
+                        {{ course.title | escape }}{% if course.department %} ({{ course.department | escape }}){% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
