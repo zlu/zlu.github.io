@@ -18,6 +18,20 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'drafts'
+    label: 'Drafts'
+    folder: '_drafts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    format: "frontmatter"
+    extension: ".md"
+    editor:
+      preview: true
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: "courses"
     label: "Tutored Courses"
     folder: "_data/courses/"
