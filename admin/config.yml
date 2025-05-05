@@ -2,6 +2,11 @@ backend:
   name: github
   repo: zlu/zlu.github.io
   branch: main
+  auth_type: implicit
+  auth_url: https://github.com/login/oauth/authorize
+  api_url: https://api.github.com
+  site_url: https://www.zlu.me
+  base_url: /admin
 
 media_folder: "assets/images/uploads"
 
