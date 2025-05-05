@@ -1,0 +1,9 @@
+---
+university: NTU Singapore
+courses:
+  - code: CS2030DE
+    title: Programming Methodology II
+    department: Functional Programming
+  - code: AB0403
+    title: Decision Making with Programming & Analytics
+---

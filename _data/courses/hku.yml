@@ -1,0 +1,10 @@
+---
+university: The University of Hongkong
+courses:
+  - code: COMP3340
+    title: Applied Deep Learning
+    department: School of Computing and Data Science
+  - code: COMP1117B
+    title: Computer Programming
+    department: School of Computing and Data Science
+---

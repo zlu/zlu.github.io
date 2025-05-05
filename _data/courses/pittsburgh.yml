@@ -1,0 +1,10 @@
+---
+university: University of Pittsburgh
+courses:
+  - code: CS 0445
+    title: Algorithms and Data Structures
+    department: Computer Science
+  - code: CMPINF 0401
+    title: Intermediate Programming
+    department: School of Computing and Information
+---

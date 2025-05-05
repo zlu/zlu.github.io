@@ -1,0 +1,13 @@
+---
+university: Cardiff University
+courses:
+  - code: CM6125
+    title: Database Systems
+  - code: CM6123
+    title: Software Development Skills
+    department: School of Computer Science and Informatics
+  - code: CMT645
+    title: DevOps
+  - code: CMT655
+    title: Manipulating and Exploring Data
+---

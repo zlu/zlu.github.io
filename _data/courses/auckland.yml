@@ -1,0 +1,8 @@
+---
+university: University of Auckland
+courses:
+  - code: STATS 220
+    title: Data Technologies
+  - code: COMPSCI101
+    title: Principle of Programming
+---
