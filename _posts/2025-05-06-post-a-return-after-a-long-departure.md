@@ -2,6 +2,7 @@
 layout: post
 title: A Return after a Long Departure
 date: 2025-05-06 05:54 +0800
+comments: true
 ---
 My last blog entry was in 2016, sometime after I left my beloved Brazil and colleagues from EasyTaxi.  Over the past nine years, I've spent most of my time in Europe, primarily in Switzerland and Germany, which are both wonderful countries.  Now I'm enjoying more time in Beijing, my birth place.
 
