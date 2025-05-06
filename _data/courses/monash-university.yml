@@ -1,0 +1,12 @@
+---
+university: Monash University
+courses:
+  - code: FIT5196
+    title: Data Wrangling
+  - code: FIT9136
+    title: Python Programming
+  - code: FIT2014
+    title: Theory of Computation
+  - code: FIT1045
+    title: Introduction to Programming
+---
