@@ -6,7 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="{{ site.keywords }}">
-  <title>{{ page.title_en }} | {{ page.title_suffix }}</title>
+  <title>
+      {% if page.title_en %}
+          {{ page.title_en }} | {{ page.title_suffix }}
+      {% else %}
+          {{ page.title }} | {{ site.name }}
+      {% endif %}
+  </title>
 
   <!-- syntax highlighting CSS -->
   <link rel="stylesheet" href="/css/syntax.css">
@@ -251,59 +257,61 @@
       const titleCn = "{{ page.title_cn }}";
 
       function updateLanguageContent(lang) {
-        // Update document title and language
-        document.title = (lang === 'zh-CN' ? titleCn : titleEn) + " | " + titleSuffix;
-        document.documentElement.lang = lang;
-
-        // Update all elements with data-en and data-cn attributes
-        document.querySelectorAll('[data-en]').forEach(el => {
-          const content = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}`);
-          if (content) {
-            if (el.tagName.toLowerCase() === 'p' || el.tagName.toLowerCase() === 'blockquote') {
-              el.innerHTML = content; // Use innerHTML for paragraphs and blockquotes
-            } else {
-              el.textContent = content;
-            }
+          // Update document title and language
+          if (titleEn && titleCn) {
+              document.title = (lang === 'zh-CN' ? titleCn : titleEn) + (titleSuffix ? " | " + titleSuffix : "");
           }
-        });
-
-        // Update href attributes
-        document.querySelectorAll('[data-en-href]').forEach(el => {
-          const href = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}-href`);
-          if (href) el.href = href;
-        });
-
-        // Update language buttons
-        langButtons.forEach(btn => {
-          btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-        });
-
-        // Toggle language-specific content
-        const enContent = document.getElementById('en-content');
-        const cnContent = document.getElementById('cn-content');
-        if (enContent && cnContent) {
-          enContent.style.display = lang === 'en' ? 'block' : 'none';
-          cnContent.style.display = lang === 'zh-CN' ? 'block' : 'none';
-        }
-
-        // Notify other components
-        document.dispatchEvent(new CustomEvent('languageChanged', {
-          detail: { language: lang === 'zh-CN' ? 'cn' : 'en' }
-        }));
+          document.documentElement.lang = lang;
+          
+          // Update all elements with data-en and data-cn attributes
+          document.querySelectorAll('[data-en]').forEach(el => {
+            const content = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}`);
+            if (content) {
+              if (el.tagName.toLowerCase() === 'p' || el.tagName.toLowerCase() === 'blockquote') {
+                el.innerHTML = content; // Use innerHTML for paragraphs and blockquotes
+              } else {
+                el.textContent = content;
+              }
+            }
+          });
+      
+          // Update href attributes
+          document.querySelectorAll('[data-en-href]').forEach(el => {
+            const href = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}-href`);
+            if (href) el.href = href;
+          });
+      
+          // Update language buttons
+          langButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+          });
+      
+          // Toggle language-specific content
+          const enContent = document.getElementById('en-content');
+          const cnContent = document.getElementById('cn-content');
+          if (enContent && cnContent) {
+            enContent.style.display = lang === 'en' ? 'block' : 'none';
+            cnContent.style.display = lang === 'zh-CN' ? 'block' : 'none';
+          }
+      
+          // Notify other components
+          document.dispatchEvent(new CustomEvent('languageChanged', {
+            detail: { language: lang === 'zh-CN' ? 'cn' : 'en' }
+          }));
       }
-
+      
       // Add click handlers to language buttons
       langButtons.forEach(btn => {
         btn.addEventListener('click', function() {
           updateLanguageContent(this.getAttribute('data-lang'));
         });
       });
-
+      
       // Set initial language based on URL or default to English
       const urlParams = new URLSearchParams(window.location.search);
       const initialLang = urlParams.get('lang') === 'cn' ? 'zh-CN' : 'en';
       updateLanguageContent(initialLang);
-
+      
       // Update language classes
       const enContent = document.querySelector('.lang-en');
       const cnContent = document.querySelector('.lang-cn');
