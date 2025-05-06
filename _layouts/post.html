@@ -4,7 +4,65 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date: "%m-%d-%Y" }}</p>
 
+{% if page.title_cn %}
+<div class="lang-switcher">
+    <button class="lang-btn" data-lang="en">English</button>
+    <button class="lang-btn active" data-lang="zh-CN">中文</button>
+</div>
+{% endif %}
+
 <article class="post">
+    {% if page.title_cn %}
+    <div class="lang-en">
+        {{ page.lang_en | markdownify }}
+    </div>
+    <div class="lang-cn">
+        {{ page.lang_cn | markdownify }}
+    </div>
+    {% else %}
     {{ content }}
+    {% endif %}
     {% include comments.html %}
 </article>
+
+{% if page.title_cn %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const enContent = document.querySelector('.lang-en');
+    const cnContent = document.querySelector('.lang-cn');
+    
+    // Get user's language preference from localStorage or default to Chinese
+    const savedLang = localStorage.getItem('preferred_language') || 'zh-CN';
+    
+    function switchLanguage(lang) {
+        // Update content visibility
+        enContent.style.display = lang === 'en' ? 'block' : 'none';
+        cnContent.style.display = lang === 'zh-CN' ? 'block' : 'none';
+        
+        // Update button states
+        langButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+        
+        // Update page title
+        document.title = lang === 'zh-CN' ? 
+            "{{ page.title_cn }} | {{ site.name }}" : 
+            "{{ page.title }} | {{ site.name }}";
+            
+        // Save preference
+        localStorage.setItem('preferred_language', lang);
+    }
+    
+    // Add click handlers
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            switchLanguage(btn.getAttribute('data-lang'));
+        });
+    });
+    
+    // Set initial language
+    switchLanguage(savedLang);
+});
+</script>
+{% endif %}

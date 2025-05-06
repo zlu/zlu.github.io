@@ -352,3 +352,35 @@ ul.posts span {
     color: #666;
     margin-top: 3px;
 }
+
+.lang-en,
+.lang-cn {
+    display: none;
+}
+
+.lang-en.active,
+.lang-cn.active {
+    display: block;
+}
+
+.lang-switcher {
+    margin: 1rem 0;
+    text-align: right;
+}
+
+.lang-switcher button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border: 1px solid #3b82f6;
+    border-radius: 0.25rem;
+    background: white;
+    color: #3b82f6;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.lang-switcher button.active,
+.lang-switcher button:hover {
+    background: #3b82f6;
+    color: white;
+}
