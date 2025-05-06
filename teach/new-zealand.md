@@ -19,22 +19,12 @@ hreflang:
 
 With Silicon Valley experience and understanding of New Zealand university curricula, I provide specialized computer science tutoring for Chinese students studying at NZ universities. My expertise in AI, Data Science, and Programming helps students excel in their coursework and research projects.
 
-### Universities Supported
+### Sample Universities Supported
 
 - **University of Auckland**
   - STATS 220: Data Technologies (R)
   - COMPSCI101: Principle of Programming (Python)
-  - Advanced Computer Science courses
 
-- **University of Canterbury**
-  - Computer Science
-  - Software Engineering
-  - Data Science
-
-- **Victoria University of Wellington**
-  - Computer Science
-  - Software Development
-  - Artificial Intelligence
 
 ### Why Choose My Tutoring Services?
 

@@ -19,27 +19,18 @@ hreflang:
 
 With Silicon Valley experience and deep understanding of Singapore's education system, I provide specialized computer science tutoring for students studying at Singapore universities. My expertise in AI, Data Science, and Programming helps students excel in their coursework and research projects.
 
-### Universities Supported
+### Sample Universities Supported
 
 - **Nanyang Technological University (NTU)**
   - CS2030DE: Programming Methodology II (Functional Programming)
   - AB0403: Decision Making with Programming & Analytics
-  - Advanced Computer Science modules
 
 - **National University of Singapore (NUS)**
   - Computer Science core modules
-  - Data Science & Analytics
-  - Software Engineering
 
 - **James Cook University Singapore**
   - CP1407: Introductory Machine Learning and Data Science
-  - Programming fundamentals
-  - Computer Science courses
 
-- **Singapore Management University (SMU)**
-  - Information Systems
-  - Computer Science
-  - Data Analytics
 
 ### Why Choose My Tutoring Services?
 

@@ -16,7 +16,7 @@ alternate_lang: zh-CN
 
 As a Silicon Valley veteran with over 15 years of experience, I provide specialized computer science tutoring for Chinese students studying at Australian universities. My expertise spans AI, Data Science, and Programming, with a proven track record of helping students excel in their coursework.
 
-### Universities Supported
+### Sample Universities Supported
 
 - **Monash University**
   - FIT5196: Data Wrangling
@@ -27,15 +27,12 @@ As a Silicon Valley veteran with over 15 years of experience, I provide speciali
 - **University of New South Wales (UNSW)**
   - INFS1701: Networking and Security
   - INFS1603: Business Databases
-  - Advanced Computer Science courses
 
 - **University of Melbourne**
   - COMP10001: Foundations of Computing
-  - Advanced programming courses
 
 - **University of Queensland**
-  - CSSE7030: Programming
-  - Computer Science fundamentals
+  - CSSE7030: Intro to Programming
 
 ### Why Choose My Tutoring Services?
 

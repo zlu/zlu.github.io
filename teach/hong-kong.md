@@ -19,22 +19,18 @@ hreflang:
 
 With extensive Silicon Valley experience and understanding of Hong Kong's university system, I provide specialized computer science tutoring for students studying at Hong Kong universities. My expertise in AI, Data Science, and Programming helps students excel in their coursework and research projects.
 
-### Universities Supported
+### Sample Universities Supported
 
 - **The University of Hong Kong (HKU)**
   - COMP3340: Applied Deep Learning
   - COMP1117B: Computer Programming
-  - Advanced Computer Science courses
 
 - **Hong Kong Baptist University (HKBU)**
   - COMP7025: Artificial Intelligence for Digital Transformation
-  - Computer Science core courses
-  - Data Science modules
 
 - **Hong Kong Metropolitan University**
   - COMP2030SEF: Intermediate Java Programming & User Interface Design
-  - Programming fundamentals
-  - Software development courses
+
 
 ### Why Choose My Tutoring Services?
 

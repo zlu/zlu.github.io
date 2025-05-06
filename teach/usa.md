@@ -19,7 +19,7 @@ hreflang:
 
 With 15+ years of Silicon Valley experience and deep understanding of US university curricula, I provide specialized computer science tutoring for Chinese students studying at American universities. My expertise in AI, Data Science, and Programming helps students excel in their coursework and research projects.
 
-### Universities Supported
+### Sample Universities Supported
 
 - **Johns Hopkins University**
   - Business Analytics & Artificial Intelligence

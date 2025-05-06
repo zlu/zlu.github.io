@@ -16,11 +16,10 @@ alternate_lang: zh-CN
 
 With extensive Silicon Valley experience and deep understanding of UK university curricula, I provide specialized computer science tutoring for Chinese students studying at British universities. My expertise in AI, Data Science, and Programming helps students excel in their coursework and research projects.
 
-### Universities Supported
+### Sample Universities Supported
 
 - **University of Birmingham**
-  - Artificial Intelligence
-  - Advanced Computer Science modules
+  - LC Artificial Intelligence
   - Final year projects
 
 - **Cardiff University**
@@ -30,7 +29,6 @@ With extensive Silicon Valley experience and deep understanding of UK university
   - CMT655: Data Manipulation and Exploration
 
 - **Queen Mary University of London**
-  - Electronic Engineering & Computer Science
   - Final Year Projects
   - Advanced Programming modules
 
