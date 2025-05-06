@@ -311,3 +311,44 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+
+.recent-posts {
+    margin: 30px 0;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.recent-posts:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+}
+
+.recent-posts h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.recent-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-posts li {
+    margin-bottom: 12px;
+    font-size: 0.9em;
+}
+
+.recent-posts .post-date {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 3px;
+}
