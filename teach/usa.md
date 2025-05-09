@@ -58,7 +58,7 @@ With 15+ years of Silicon Valley experience and deep understanding of US univers
 
 ### Contact
 
-Ready to excel in your US CS degree? [Book a session today](mailto:tutoring@zlu.me)
+Ready to excel in your US CS degree? [Book a session today](mailto:hello@zlu.me)
 {% endcapture %}
 
 {% capture cn_content %}
@@ -107,7 +107,7 @@ Ready to excel in your US CS degree? [Book a session today](mailto:tutoring@zlu.
 
 ### 联系方式
 
-准备在美国CS课程中脱颖而出？[立即预约课程](mailto:tutoring@zlu.me)
+准备在美国CS课程中脱颖而出？[立即预约课程](mailto:hello@zlu.me)
 {% endcapture %}
 
 <div class="lang-en" id="en-content">{{ en_content | markdownify }}</div>

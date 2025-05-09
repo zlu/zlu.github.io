@@ -58,7 +58,7 @@ With extensive Silicon Valley experience and understanding of Canadian universit
 
 ### Contact
 
-Ready to excel in your Canadian CS degree? [Book a session today](mailto:tutoring@zlu.me)
+Ready to excel in your Canadian CS degree? [Book a session today](mailto:hello@zlu.me)
 {% endcapture %}
 
 {% capture cn_content %}
@@ -107,7 +107,7 @@ Ready to excel in your Canadian CS degree? [Book a session today](mailto:tutorin
 
 ### 联系方式
 
-准备在加拿大CS课程中脱颖而出？[立即预约课程](mailto:tutoring@zlu.me)
+准备在加拿大CS课程中脱颖而出？[立即预约课程](mailto:hello@zlu.me)
 {% endcapture %}
 
 <div class="lang-en" id="en-content">{{ en_content | markdownify }}</div>

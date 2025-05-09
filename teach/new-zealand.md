@@ -48,7 +48,7 @@ With Silicon Valley experience and understanding of New Zealand university curri
 
 ### Contact
 
-Ready to excel in your New Zealand CS degree? [Book a session today](mailto:tutoring@zlu.me)
+Ready to excel in your New Zealand CS degree? [Book a session today](mailto:hello@zlu.me)
 {% endcapture %}
 
 {% capture cn_content %}
@@ -97,7 +97,7 @@ Ready to excel in your New Zealand CS degree? [Book a session today](mailto:tuto
 
 ### 联系方式
 
-准备在新西兰CS课程中脱颖而出？[立即预约课程](mailto:tutoring@zlu.me)
+准备在新西兰CS课程中脱颖而出？[立即预约课程](mailto:hello@zlu.me)
 {% endcapture %}
 
 <div class="lang-en" id="en-content">{{ en_content | markdownify }}</div>

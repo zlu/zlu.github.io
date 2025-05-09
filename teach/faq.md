@@ -104,11 +104,11 @@ I have 15+ years of Silicon Valley experience in AI, Data Science, and distribut
 ### Pricing and Sessions
 
 #### What is the cost per tutoring session?
-Tutoring fees are flexible based on course type and frequency. Please [contact me](mailto:tutoring@zlu.me) for a detailed quote tailored to your needs.
+Tutoring fees are flexible based on course type and frequency. Please [contact me](mailto:hello@zlu.me) for a detailed quote tailored to your needs.
 
 ### Ready to Start?
 
-Have more questions or ready to begin? [Contact me](mailto:tutoring@zlu.me) to discuss how I can help you excel in your CS studies.
+Have more questions or ready to begin? [Contact me](mailto:hello@zlu.me) to discuss how I can help you excel in your CS studies.
 {% endcapture %}
 
 {% capture cn_content %}
@@ -153,11 +153,11 @@ Have more questions or ready to begin? [Contact me](mailto:tutoring@zlu.me) to d
 ### 价格和课程
 
 #### 每节课辅导的费用是多少？
-费用根据课程类型和频率灵活调整。请[联系我](mailto:tutoring@zlu.me)获取详细的个性化报价。
+费用根据课程类型和频率灵活调整。请[联系我](mailto:hello@zlu.me)获取详细的个性化报价。
 
 ### 准备开始？
 
-还有其他问题或准备开始？[联系我](mailto:tutoring@zlu.me)讨论如何帮助您在CS学习中脱颖而出。
+还有其他问题或准备开始？[联系我](mailto:hello@zlu.me)讨论如何帮助您在CS学习中脱颖而出。
 {% endcapture %}
 
 <div class="lang-en" id="en-content">{{ en_content | markdownify }}</div>
