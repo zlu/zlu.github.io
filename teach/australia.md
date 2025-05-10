@@ -34,6 +34,14 @@ As a Silicon Valley veteran with over 15 years of experience, I provide speciali
 - **University of Queensland**
   - CSSE7030: Intro to Programming
 
+- **University of Sourth Australia**
+  - Diploma of Computing and Information Technology Studies
+  
+- **University of Western Australia**
+  - AI and Adaptive Systems
+  
+
+
 ### Why Choose My Tutoring Services?
 
 1. **Bilingual Instruction**: All tutorials available in both English and Chinese

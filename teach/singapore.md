@@ -17,7 +17,7 @@ hreflang:
 
 ### Supporting Chinese Students at Singapore Universities
 
-With Silicon Valley experience and deep understanding of Singapore's education system, I provide specialized computer science tutoring for students studying at Singapore universities. My expertise in AI, Data Science, and Programming helps students excel in their coursework and research projects.
+With Silicon Valley experience and deep understanding of Singapore's education system, I provide specialized computersing science tutoring for students studying at Singapore universities. My expertise in AI, Data Science, and Programming helps students excel in their coursework and research projects.
 
 ### Sample Universities Supported
 
