@@ -1,0 +1,10 @@
+---
+university: University of Sydney
+courses:
+  - code: COMP3221
+    title: "Distributed Systems "
+    department: Computer Science
+  - code: INFO1113
+    title: Object-Oriented Programming
+    department: Computer Science
+---
