@@ -149,3 +149,4 @@ def genetic_algorithm():
 best_solution, best_fitness = genetic_algorithm()
 print(f"找到的最佳解决方案: {best_solution}, 适应度: {best_fitness}")
 ```
+这就是遗传算法的简要介绍！从达尔文的观察到霍兰德的公式化，遗传算法为解决复杂的优化问题提供了一种强大且出人意料的直观方法。所以下次当你看到一个效率极高的设计或一个完美优化的时间表时，很有可能遗传算法（或者非常类似它的东西）在其中发挥了作用（或者我们应该说，是它的“基因”在发挥作用）！
