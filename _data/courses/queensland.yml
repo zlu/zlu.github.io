@@ -4,4 +4,6 @@ courses:
   - code: CSSE7030
     title: Intro to Programming
     department: Computer Science
+  - code: INFOS7900
+    title: Introduction to Information Systems
 ---
