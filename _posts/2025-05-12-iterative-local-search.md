@@ -40,7 +40,7 @@ function ILS():
 ```
 Where:
 - GenerateIntialialSolution() makes a random starting solution.  Alternatively we could also leverage other heuristic start such as based on some simple rules (greedy, random permutation, etc.).  It doesn't guarantee optimality, but it helps the algorithm expore various parts of the solution space.
-- LOcalSearch(solution) improves the solutin using simple, local changes.  In Travel Sales Man (TSP), it does so by swapping the cities; in JobShop Problem, it reassigns jobs.
+- LocalSearch(solution) improves the solutin using simple, local changes.  In Travel Sales Man (TSP), it does so by swapping the cities; in JobShop Problem, it reassigns jobs.
 - Cost(solution) computes how good the solution is (e.g. total path length or machine workload).
 - TimeLimitReached() is a contraint where the algorithm is allowed to loop a fixed number of iterations or time.
 
