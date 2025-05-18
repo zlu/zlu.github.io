@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "c"
+title: "分形艺术探秘：TypeScript 实现数学之美"
 title_suffix: "zlu.me"
 description: "学习如何使用 TypeScript 生成美丽的分形图像，了解分形背后的数学原理，探索其在艺术、金融等领域的实际应用。"
 keywords: "分形, 曼德博集合, typescript, d3.js, 数学可视化, 分形艺术, 金融市场, 赫斯特指数"
