@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "分形艺术探秘：TypeScript 实现数学之美"
+title: "c"
 title_suffix: "zlu.me"
 description: "学习如何使用 TypeScript 生成美丽的分形图像，了解分形背后的数学原理，探索其在艺术、金融等领域的实际应用。"
 keywords: "分形, 曼德博集合, typescript, d3.js, 数学可视化, 分形艺术, 金融市场, 赫斯特指数"
 date: 2025-05-18
 comments: true
 ---
+
+![fractal-mandel-brot](/assets/images/uploads/fractals-mandelbrot.png)
+
+看更多: [algo-scope.online](https://www.algo-scape.online/fractals)
 
 # 使用 TypeScript 生成分形图像
 
