@@ -1,17 +1,16 @@
 User-agent: *
 Allow: /
+Allow: /posts
+Allow: /archives
+Allow: /talks
 Allow: /teach/
-Allow: /teach/australia/
-Allow: /teach/uk/
-Allow: /teach/usa/
-Allow: /teach/canada/
-Allow: /teach/new-zealand/
-Allow: /teach/hong-kong/
-Allow: /teach/singapore/
-Allow: /teach/faq/
+Allow: /teach/*
 
-Sitemap: https://zlu.me/sitemap.xml
+Disallow: /admin/
+Disallow: /assets/
 
 # Ensure search engines can access both language versions
 Allow: /*?lang=cn
 Allow: /*?lang=en
+
+Sitemap: https://zlu.me/sitemap.xml
