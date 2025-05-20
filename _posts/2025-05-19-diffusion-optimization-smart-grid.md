@@ -71,18 +71,17 @@ Meaning that the weights assigned to neighbors by agent $i$ sums to 1,
 ensuring a proper convex combination. Also each individual weight $a_{i,j}$
 must be positive to avoid negative influence.
 
-
-```mermaid
+{% mermaid %}
 graph TD
     subgraph "Smart Home Network"
-        A[Home i<br/>θ_i^t] -->|"a_{i,j}ψ_j^{t+1}"| B[Home j<br/>θ_j^t]
-        B -->|"a_{j,k}ψ_k^{t+1}"| C[Home k<br/>θ_k^t]
-        C -->|"a_{k,i}ψ_i^{t+1}"| A
-        A -->|"Local Update<br/>ψ_i^{t+1} = θ_i^t - η∇L_i(θ_i^t)"| A
-        B -->|"Local Update<br/>ψ_j^{t+1} = θ_j^t - η∇L_j(θ_j^t)"| B
-        C -->|"Local Update<br/>ψ_k^{t+1} = θ_k^t - η∇L_k(θ_k^t)"| C
+        A[Home i<br/>θᵢᵗ] -->|"aᵢⱼψⱼ⁽ᵗ⁺¹⁾"| B[Home j<br/>θⱼᵗ]
+        B -->|"aⱼ,ₖψₖ⁽ᵗ⁺¹⁾"| C[Home k<br/>θₖᵗ]
+        C -->|"aₖᵢψᵢ⁽ᵗ⁺¹⁾"| A
+        A -->|"Local Update<br/>ψᵢ⁽ᵗ⁺¹⁾ = θᵢᵗ - η∇Lᵢ(θᵢᵗ)"| A
+        B -->|"Local Update<br/>ψⱼ⁽ᵗ⁺¹⁾ = θⱼᵗ - η∇Lⱼ(θⱼᵗ)"| B
+        C -->|"Local Update<br/>ψₖ⁽ᵗ⁺¹⁾ = θₖᵗ - η∇Lₖ(θₖᵗ)"| C
     end
-```
+{% endmermaid %}
 
 In conclusion, diffusion models offer a decentralized paradigm, allowing all
 homes to converge to a global optimum, purely via local computation and
