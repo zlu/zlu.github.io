@@ -71,17 +71,7 @@ Meaning that the weights assigned to neighbors by agent $i$ sums to 1,
 ensuring a proper convex combination. Also each individual weight $a_{i,j}$
 must be positive to avoid negative influence.
 
-{% mermaid %}
-graph TD
-    subgraph "Smart Home Network"
-        A[Home i<br/>θᵢᵗ] -->|"aᵢⱼψⱼ⁽ᵗ⁺¹⁾"| B[Home j<br/>θⱼᵗ]
-        B -->|"aⱼ,ₖψₖ⁽ᵗ⁺¹⁾"| C[Home k<br/>θₖᵗ]
-        C -->|"aₖᵢψᵢ⁽ᵗ⁺¹⁾"| A
-        A -->|"Local Update<br/>ψᵢ⁽ᵗ⁺¹⁾ = θᵢᵗ - η∇Lᵢ(θᵢᵗ)"| A
-        B -->|"Local Update<br/>ψⱼ⁽ᵗ⁺¹⁾ = θⱼᵗ - η∇Lⱼ(θⱼᵗ)"| B
-        C -->|"Local Update<br/>ψₖ⁽ᵗ⁺¹⁾ = θₖᵗ - η∇Lₖ(θₖᵗ)"| C
-    end
-{% endmermaid %}
+![Diffusion Optimization - Home Topology of Smart Grid](/assets/images/uploads/zlu-me-diffusion-optimization-smart-grid.png)
 
 In conclusion, diffusion models offer a decentralized paradigm, allowing all
 homes to converge to a global optimum, purely via local computation and

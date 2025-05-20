@@ -54,17 +54,7 @@ $$\theta_i^{t+1} = \sum_{j \in \mathcal{N}_i} a_{ij} \psi_j^{t+1}$$
 这意味着代理$i$分配给邻居的权重之和为1，确保适当的凸组合。同时，每个单独的权重
 $a_{i,j}$必须为正，以避免负面影响。
 
-{% mermaid %}
-graph TD
-    subgraph "智能家庭网络"
-        A[Home i<br/>θᵢᵗ] -->|"aᵢⱼψⱼ⁽ᵗ⁺¹⁾"| B[Home j<br/>θⱼᵗ]
-        B -->|"aⱼ,ₖψₖ⁽ᵗ⁺¹⁾"| C[Home k<br/>θₖᵗ]
-        C -->|"aₖᵢψᵢ⁽ᵗ⁺¹⁾"| A
-        A -->|"局部更新<br/>ψᵢ⁽ᵗ⁺¹⁾ = θᵢᵗ - η∇Lᵢ(θᵢᵗ)"| A
-        B -->|"局部更新<br/>ψⱼ⁽ᵗ⁺¹⁾ = θⱼᵗ - η∇Lⱼ(θⱼᵗ)"| B
-        C -->|"局部更新<br/>ψₖ⁽ᵗ⁺¹⁾ = θₖᵗ - η∇Lₖ(θₖᵗ)"| C
-    end
-{% endmermaid %}
+![Diffusion Optimization - Home Topology of Smart Grid](/assets/images/uploads/zlu-me-diffusion-optimization-smart-grid.png)
 
 总之，扩散模型提供了一种去中心化的范式，允许所有家庭仅通过本地计算和通信就能收敛
 到全局最优解。任何原始数据（如能源使用情况）都不会离开每个家庭，只共享模型更新。
