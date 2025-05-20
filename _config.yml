@@ -7,7 +7,7 @@ rss_path: feeds
 markdown: kramdown
 redcarpet:
   extensions: ["strikethrough"]
-pygments: true
+highlighter: rouge
 port: 4000
 exclude: ["vendor"]
 collections:
