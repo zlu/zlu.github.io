@@ -14,9 +14,6 @@ tags:
 description: "The Missing Bits - Easing into fastai and PyTorch - Part 1"
 permalink: /machine-learning/perceptrons-neural-networks-building-block/
 ---
-
-# The Missing Bits - Easing into fastai and PyTorch - Part 1
-
 ## Introduction
 Fastai is a popular Machine Learning library built on top of PyTorch.
 For some, it is a pure blessing, as it undertakes the tedious setup and heavy-lifting
