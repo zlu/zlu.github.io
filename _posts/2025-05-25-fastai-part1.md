@@ -1,80 +1,79 @@
 ---
 layout: post
-title: "缺失的部分 - 轻松入门 fastai 和 PyTorch - 第一部分"
+title: "The Missing Bits - Easing into fastai and PyTorch - Part 1"
 date: 2025-05-24
 comments: true
 categories: 
-  - 机器学习
-  - 神经网络
+  - machine learning
 tags:
-  - 感知机
-  - 神经网络
-  - 深度学习
-  - 机器学习
-  - 二元分类
-  - 算法
   - python
-  - 人工智能
-  - 机器学习基础
+  - artificial intelligence
+  - machine learning
   - fastai
   - PyTorch
-description: "了解感知机——神经网络的基本构建模块。包括实用的 Python 实现、可视化解释，以及垃圾邮件检测等真实应用。非常适合机器学习初学者。"
+description: "The Missing Bits - Easing into fastai and PyTorch - Part 1"
 permalink: /machine-learning/perceptrons-neural-networks-building-block/
 ---
 
-## 介绍
-Fastai 是一个流行的机器学习库，构建在 PyTorch 之上。
-对有些人来说，它是纯粹的福音，因为它承担了繁琐的设置和大量样板代码的工作。
-但对另一些人来说，它则是"伪装很深的福音"，因为：
-1. 看似简单的语句背后有很多逻辑，理解起来并不直观。
-2. 变量命名如果不了解背后的技术概念，很难理解。
-3. 命名的简写会让不熟悉的概念变得更加晦涩。
+# The Missing Bits - Easing into fastai and PyTorch - Part 1
 
-你当然可以死记硬背如何定义一个模型，甚至是训练和预测的简单流程。但乐趣也就到此为止了。
-一旦遇到有独特性的实际问题，照搬现有例子就不再适用。当出现错误时（编程中 100% 会发生），就很难修正。
+## Introduction
+Fastai is a popular Machine Learning library built on top of PyTorch.
+For some, it is a pure blessing, as it undertakes the tedious setup and heavy-lifting
+of boilerplates work.  For some though, it is a blessing in heavy disguise because:
+1. There are a lot of logic behind a seemingly simple statement, which can be unintuitive to understand.
+2. The naming of variables do not make much sense unless one understands the technical concepts behind it.
+3. The shortcuts in naming can make an unfamiliar concept even more cryptic.
 
-在这个系列中，我会尝试为读者拆解这些内容，希望大多数概念能变得更加清晰。
+One can certainly memorize how a model is defined, even a simple workflow of training and
+makinng predictions.  But the fun stops here.  As soon as the problem at hand exihibits 
+any uniqueness, mimicking an existing example will no longer make the cut.  When errors
+occur, which comes at a 100% possibility in programming, it will be hard to correct.
 
-## 本地环境搭建
-我推荐在本地环境中动手实践。当然，遇到大任务时我们也可以用免费的 Google Colab，但有一个可以随时查看和操作的本地环境总是好的。
+In this series, I'll try to unpack things for the reader in the hope that most concepts will become more clearer.
 
-这里分享一下我的个人配置——一台依然很好用但有些年头的 Macbook Pro M1。
+## Local Environment Setup
+Yes I recommend a local environment for playing around with code.  Of course, we should also get
+a free Google Colab account for heavy-lifting but it is _always_ good to have something you can 
+look around and poke around even without Internet.
 
-Apple Silicon (M1/M2) 对 CUDA（NVIDIA 专用）支持有限，但 PyTorch 为 M1 提供了原生的 MPS（Metal Performance Shaders）后端以实现 GPU 加速。
-- 从 PyTorch 1.12+ 开始，MPS 后端支持在 M1/M2 GPU 上训练。
-- 一旦配置好 PyTorch，fastai 也能正常运行。
+Let me share my personal setup - a still good but old Mackbook Pro M1.
 
-M1 GPU 跑 PyTorch 的局限：
-- MPS 仍处于实验阶段，并非所有功能都支持。
-- 有些操作可能会回退到 CPU。
-- 内存使用比独立显卡更受限。
+Apple Silicon (M1/M2) has limited support for CUDA (which is NVIDIA-specific), but PyTorch provides native MPS (Metal Performance Shaders) backend for GPU acceleration on M1.
+- As of PyTorch 1.12+, MPS backend supports training on M1/M2 GPUs.        
+- fastai works fine on top of this once PyTorch is configured.
 
-所以，如果你有以下需求建议用 Colab：
-- 训练大型模型，如 ResNet50、ViT、LLM。
-- 需要仅支持 CUDA 的操作。
-- 想免费用高端 GPU。
+Limitations of M1 GPU with PyTorch
+- MPS is still experimental, so not all features are supported.
+- Some operations might fall back to CPU.
+- Memory usage is more constrained than a full discrete GPU.
 
-### M1 本地环境安装步骤
-建议用 Conda 环境（miniforge 或 miniforge3 比 Anaconda 更适合 ARM 架构 Mac）：
+So use Colab if:
+- You're training large models like ResNet50, ViT, LLMs.
+- You need CUDA-only operations.
+- You want to leverage high-end GPUs for free.
 
-- 步骤 1：安装 miniforge（如果还没装）
-	- 访问 https://github.com/conda-forge/miniforge 并安装适用于 ARM64 的 miniforge3
-- 步骤 2：创建环境
+### Installation Steps for Local Setup on M1
+Use a Conda environment (miniforge or miniforge3 is preferred over Anaconda on ARM-based Macs):
+
+- Step 1: Install miniforge (if not installed)
+	- Go to https://github.com/conda-forge/miniforge and install miniforge3 for ARM64
+- Step 2: Create environment
 	- conda create -n fastai-m1 python=3.10
 	- conda activate fastai-m1
-- 步骤 3：安装支持 MPS 的 PyTorch
+- Step 3: Install PyTorch with MPS support
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
 
-- 注意：如果你用的是 macOS 12.3+，也可以尝试 MPS 后端：
+- NOTE: You can also try the MPS backend if you're on macOS 12.3+:
  - pip install torch torchvision torchaudio
-- 步骤 4：测试 MPS 是否可用：
+- Step 4: Test if MPS is available:
 	- python -c "import torch; print(torch.backends.mps.is_available())"
-- 步骤 5：安装 fastai
+- Step 5: Install fastai
 	- pip install fastai
 
 
 ```python
-# 另一种方式是用 python 代码验证环境
+# Another way is to verify the setup with python code
 import torch
 print("MPS available:", torch.backends.mps.is_available())
 print("MPS built:", torch.backends.mps.is_built())
@@ -86,17 +85,17 @@ print("MPS built:", torch.backends.mps.is_built())
 
 
 ```python
-# 训练一个小型玩具模型
+# Train a small toy model
 from fastai.vision.all import *
 
-# 加载著名的 mnist（手写数字识别）数据集
-# 每张图片是一个手写数字，比如 0、1、2、3。
-# 数据集以目录结构存储，包含验证集（mnist_sample/valid）
-# 和训练集（mnist_sample/train）
-# 子目录 3/ 里是数字 3 的图片；7/ 里是数字 7 的图片
-# 这是图像分类任务常见的数据格式，每个类别（这里是每个数字）
-# 都有自己的目录，里面放着属于该类别的图片。模型会在训练过程中
-# 学会区分这两个数字（3 和 7）。
+# load the famous mnist (hand-writing recogonition) dataset
+# each image is a hand-writing number, such as 0, 1, 2, 3.
+# dataset is stored in a director structure containing validation set (under mnist_sample/valid)
+# and training set (under mnist_sample/train)
+# the subdirectories 3/ contains images of digit 3; and 7/ contains images of digit 7
+# This is a common format for image classification tasks, where each class (in this case, each digit) 
+# has its own directory containing the images belonging to that class. The model will learn to 
+# distinguish between these two digits (3 and 7) during training.
 path = untar_data(URLs.MNIST_SAMPLE)
 print("Main path:", path)
 print("\nSubdirectories:")
@@ -104,7 +103,7 @@ for root, dirs, files in os.walk(path):
     level = root.replace(str(path), '').count(os.sep)
     indent = ' ' * 2 * level
     print(f"{indent}{os.path.basename(root)}/")
-    if level == 0:  # 只显示根目录下的文件
+    if level == 0:  # Only show files in root directory
         for f in files:
             print(f"{indent}    {f}")
 ```
@@ -125,7 +124,7 @@ for root, dirs, files in os.walk(path):
 
 ```python
 import pandas as pd
-# 查看标签数据
+# Peak into the label data
 labels_df = pd.read_csv(path/'labels.csv')
 print("\nlabels (first 5 rows):")
 print(labels_df.head())
@@ -143,24 +142,24 @@ print(labels_df.head())
 
 
 ```python
-# 从训练集中随机取一张图片
+# Get a random image from the training set
 train_path = path/'train'
 img_files = list((train_path/'7').ls())
 
-# Python Imaging Library (PIL) 是一个用于打开、处理和保存多种图片格式的库。
-# 它的一个分支叫 Pillow 被广泛使用。PIL 已经包含在 fastai.vision.all 里。
+# Python Imaging Library (PIL) is a library for opening, manipulating, and saving many different image file formats.  
+# A fork of it called Pillow is often used.  PIL comes with our import of fastai.vision.all.
 img = PILImage.create(img_files[0])
-print(f"这是一张手写数字 7")
+print(f"This is a handwritten digit 7")
 img.show(); 
-# 如果没有分号，会额外打印出 "<Axes: >"。这是 matplotlib 的内容，PIL 用它来显示图片。
-# 它是为绘图自动创建的默认坐标轴对象。
+# without this semi-colon, "<Axes: >" will also be printed out.  This comes from matplotlib, which is what PIL uses under the hood to display images.  It is the default axes object that was created for the plot.
 ```
 
-    这是一张手写数字 7
+    This is a handwritten digit 7
+
 
 
     
-![png](/assets/images/uploads/fastai/tutorial_4_1.png)
+![png](tutorial_files/tutorial_4_1.png)
     
 
 
@@ -169,12 +168,12 @@ img.show();
 dls = ImageDataLoaders.from_folder(path, valid='valid')
 ```
 
-dls 代表 DataLoaders。
-	• 它是对两个 PyTorch DataLoader 的封装：
-	• 一个用于训练（dls.train）
-	• 一个用于验证（dls.valid）
+dls stands for DataLoaders.
+	•	It's a wrapper around two PyTorch DataLoaders:
+	•	One for training (dls.train)
+	•	One for validation (dls.valid)
 
-fastai 提供 .from_folder 方法，可以根据如下目录结构快速创建：
+fastai provides the .from_folder method to quickly create this from a directory structure like:
 ```
     path/
     ├── train/
@@ -188,17 +187,17 @@ fastai 提供 .from_folder 方法，可以根据如下目录结构快速创建�
 
 ```python
 learn = vision_learner(dls, resnet18, metrics=accuracy)
-learn.fine_tune(1) # 1 表示只训练 1 个 epoch（即完整遍历一遍训练集）
+learn.fine_tune(1) # 1 means to train for only 1 epoch (a complete pass through the entire training dataset)
 ```
 
 
 
 <style>
-    /* 关闭部分样式 */
+    /* Turns off some styling */
     progress {
-        /* 去除 Firefox 和 Opera 的默认边框 */
+        /* gets rid of default border in Firefox and Opera. */
         border: none;
-        /* Safari polyfill 需要 */
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
         background-size: auto;
     }
     progress:not([value]), progress:not([value])::-webkit-progress-bar {
@@ -237,11 +236,11 @@ learn.fine_tune(1) # 1 表示只训练 1 个 epoch（即完整遍历一遍训练
 
 
 <style>
-    /* 关闭部分样式 */
+    /* Turns off some styling */
     progress {
-        /* 去除 Firefox 和 Opera 的默认边框 */
+        /* gets rid of default border in Firefox and Opera. */
         border: none;
-        /* Safari polyfill 需要 */
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
         background-size: auto;
     }
     progress:not([value]), progress:not([value])::-webkit-progress-bar {
@@ -278,36 +277,37 @@ learn.fine_tune(1) # 1 表示只训练 1 个 epoch（即完整遍历一遍训练
 
 
 ResNet
-ResNet-18 来自《深度残差学习用于图像识别》<https://arxiv.org/abs/1512.03385>。
-ResNet18 是一个预训练模型，最初在 ImageNet（包含 1000 个类别的通用图片）上训练。
+ResNet-18 from Deep Residual Learning for Image Recognition <https://arxiv.org/abs/1512.03385>.
+ResNet18 is a pre-trained model that was originally trained on ImageNet, which contains 1000 different classes of general images.
 
-fine_tune() 方法是 fastai 的便捷方法，实现了特定的训练策略：
-1. 首先冻结预训练层，只训练新的分类头
-2. 然后解冻所有层，训练整个模型
-3. 自动调整学习率和其他训练参数
-这就是"微调"之名的由来——我们用一个预训练模型（ResNet18）
-并将其适配到我们的具体任务（识别手写数字 3 和 7）。
+The fine_tune() method is a fastai convenience method that implements a specific training strategy:
+1. It first freezes the pre-trained layers and trains only the new classification head
+2. Then it unfreezes all layers and trains the entire model
+3. It automatically adjusts learning rates and other training parameters
+This is why it's called "fine-tuning" - we're taking a pre-trained model (ResNet18) 
+and adapting it to our specific task (recognizing handwritten digits 3 and 7).
 
-"head"
-在深度学习和迁移学习中，"head"指的是神经网络最后用于特定任务预测的层。
+'head'
+In the context of deep learning and transfer learning, the "head" refers to the final layers 
+of a neural network that are responsible for making the specific predictions for your task.
 
-在本例中：
-ResNet18 是一个在 ImageNet（大规模通用图片数据集）上预训练的模型
-"head"是我们在 ResNet18 顶部新加的分类层，使其适用于我们的任务（分类数字 3 和 7）
+In this case:
+ResNet18 is a pre-trained model that was originally trained on ImageNet (a large dataset of general images)
+The "head" is the new classification layer(s) that we add on top of ResNet18 to make it work for our specific task (classifying digits 3 and 7)
 
-可以这样理解：
+Think of it like this:
 
-ResNet18 的主体（"骨干"）已经学会了从图片中提取有用特征
-"head"就像我们加在顶部的新"大脑"，用来解释这些特征以完成具体任务
+The main body of ResNet18 (the "backbone") has learned to extract useful features from images
+The "head" is like a new brain that we add on top to interpret these features for our specific task
 
-"只训练新的分类头"意味着：
-保持所有预训练的 ResNet18 层冻结（不变）
-只训练我们新加的最后几层，用于数字分类
+When we say "train only the new classification head", we mean:
+Keep all the pre-trained ResNet18 layers frozen (unchanged)
+Only train the new final layers that we added to classify our digits
 
-这是迁移学习中常见的策略，因为：
-预训练骨干已经能提取有用特征
-我们只需训练 head，让它能解释这些特征以完成具体任务
-这比从头训练整个网络快得多，也需要更少的数据
+This is a common transfer learning strategy because:
+The pre-trained backbone already knows how to extract useful features from images
+We only need to train the head to interpret these features for our specific task
+This is much faster and requires less data than training the entire network from scratch
 
 
 ```python
@@ -317,11 +317,11 @@ learn.show_results(max_n=6, figsize=(4, 4))
 
 
 <style>
-    /* 关闭部分样式 */
+    /* Turns off some styling */
     progress {
-        /* 去除 Firefox 和 Opera 的默认边框 */
+        /* gets rid of default border in Firefox and Opera. */
         border: none;
-        /* Safari polyfill 需要 */
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
         background-size: auto;
     }
     progress:not([value]), progress:not([value])::-webkit-progress-bar {
@@ -340,19 +340,19 @@ learn.show_results(max_n=6, figsize=(4, 4))
 
 
     
-![png](/assets/images/uploads/fastai/tutorial_9_2.png)
+![png](tutorial_files/tutorial_9_2.png)
     
 
 
-在每张数字图片上方，有两个绿色数字。第一个是真实值（手写数字），第二个是预测值。
+On top of each number image, there are two green numbers.  The first is actual value (of the hand-written number), the 2nd is predicted value.  
 
-## 总结
+## Summary
 
-本教程我们介绍了：
-- 如何搭建 fastai 的本地环境
-- 如何加载和预处理 MNIST 数据集
-- 如何构建一个简单的图像分类模型
-- 如何训练和评估模型
-- 如何用训练好的模型进行预测
+In this tutorial, we've covered:
+- How to set up a local environment for fastai
+- How to load and preprocess the MNIST dataset
+- How to build a simple image classification model
+- How to train and evaluate the model
+- How to make predictions with the trained model
 
-下期我们会探索更复杂的话题。敬请期待，周六愉快！
+In the next tutorial, we'll explore some more complex topics.  Stay tuned and happy Saturday.
