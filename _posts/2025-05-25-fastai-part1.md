@@ -159,7 +159,7 @@ img.show();
 
 
     
-![png](tutorial_files/tutorial_4_1.png)
+![png](/assets/images/uploads/fastai/tutorial_4_1.png)
     
 
 
@@ -340,7 +340,7 @@ learn.show_results(max_n=6, figsize=(4, 4))
 
 
     
-![png](tutorial_files/tutorial_9_2.png)
+![png](/assets/images/uploads/fastai/tutorial_9_2.png)
     
 
 
