@@ -12,7 +12,6 @@ tags:
   - fastai
   - PyTorch
 description: "The Missing Bits - Easing into fastai and PyTorch - Part 1"
-permalink: /machine-learning/perceptrons-neural-networks-building-block/
 ---
 ## Introduction
 Fastai is a popular Machine Learning library built on top of PyTorch.
