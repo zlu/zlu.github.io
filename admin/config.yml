@@ -48,3 +48,15 @@ collections:
           - { label: "Course Code", name: "code", widget: "string", required: false }
           - { label: "Course Title", name: "title", widget: "string" }
           - { label: "Department/Notes", name: "department", widget: "string", required: false }
+  - name: "ai-glossary"
+    label: "AI Glossary"
+    folder: "_ai-glossary/"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Term", name: "title", widget: "string" }
+      - { label: "Synonyms", name: "synonyms", widget: "list", required: false }
+      - { label: "Related Terms", name: "related", widget: "list", required: false }
+      - { label: "Definition", name: "body", widget: "markdown" }

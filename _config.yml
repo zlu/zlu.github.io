@@ -14,6 +14,9 @@ collections:
   archives:
     output: true
     permalink: /archive/:title/
+  ai-glossary:
+    output: true
+    permalink: /ai-glossary/:name/ 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
