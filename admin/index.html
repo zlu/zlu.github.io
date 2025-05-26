@@ -22,6 +22,19 @@
                 console.error("Failed to load Decap CMS script");
             };
             document.body.appendChild(script);
+
+            // Load MathJax after Decap CMS
+            const mathjaxScript = document.createElement("script");
+            mathjaxScript.type = "text/javascript";
+            mathjaxScript.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+            mathjaxScript.async = true;
+            document.body.appendChild(mathjaxScript);
+
+            // Load custom Decap CMS preview logic
+            const cmsScript = document.createElement("script");
+            cmsScript.src = "./cms.js";
+            cmsScript.async = false;
+            document.body.appendChild(cmsScript);
         });
     </script>
 </body>
