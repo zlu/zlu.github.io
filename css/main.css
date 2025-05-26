@@ -507,3 +507,18 @@ article.post blockquote {
         font-size: 1em;
     }
 }
+
+.sidebar-read-more {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #3b82f6;
+  font-size: 1.05em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.sidebar-read-more:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
