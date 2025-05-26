@@ -225,7 +225,9 @@
   <div class="container">
     <div class="sidebar-wrapper">
       <aside class="sidebar">
-        <img src="/assets/images/avatar.png" class="sidebar-image" alt="Zhaolu" width="200px">
+        <a href="/">
+          <img src="/assets/images/avatar.png" class="sidebar-image" alt="Zhaolu" width="200px">
+        </a>
         <h2 class="sidebar-title"><a href="/">{{ site.name }}</a></h2>
         <p class="sidebar-tagline">Undefined.</p>
 
@@ -259,13 +261,15 @@
     </div>
 
     <main class="content">
-      {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
-      <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="zh-CN">中文</button>
-        <button class="lang-btn" data-lang="en">EN</button>        
+      <div class="site">
+        {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>        
+        </div>
+        {% endif %}
+        {{ content }}
       </div>
-      {% endif %}
-      {{ content }}
     </main>
 
   </div>
