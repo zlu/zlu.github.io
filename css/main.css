@@ -10,7 +10,9 @@
 
 @font-face {
   font-family: 'Trykker';
-  src: url('/assets/fonts/Trykker-Regular.otf') format('opentype');
+  src: url('/assets/fonts/Trykker-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Trykker-Regular.otf') format('opentype');
+  font-display: swap;
 }
 
 h1,
