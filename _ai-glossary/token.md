@@ -1,5 +1,5 @@
 ---
-title: token
+title: Token
 ---
 In Natural Language Processing (NLP), a token is a basic unit of text used for processing and analysis. It typically represents a word, subword, character, or symbol, depending on the tokenization strategy.
 
