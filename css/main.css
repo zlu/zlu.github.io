@@ -400,7 +400,7 @@ ul.posts span {
 
 /* Article content improvements */
 article.post {
-    font-size: 14px;
+    font-size: 1.1em;
     line-height: 1.7;
     color: #333;
 }
