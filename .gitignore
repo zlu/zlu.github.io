@@ -3,3 +3,4 @@ _site
 .jekyll-cache
 _drafts
 zlu.github.io.code-workspace
+.env.local
