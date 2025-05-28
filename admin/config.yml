@@ -6,32 +6,44 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: "travels"
+    label: "Travels"
+    folder: "travels/"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: true
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'drafts'
-    label: 'Drafts'
-    folder: '_drafts/'
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "drafts"
+    label: "Drafts"
+    folder: "_drafts/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     format: "frontmatter"
     extension: ".md"
     editor:
       preview: true
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "courses"
     label: "Tutored Courses"
     folder: "_data/courses/"
@@ -45,9 +57,19 @@ collections:
         name: "courses"
         widget: "list"
         fields:
-          - { label: "Course Code", name: "code", widget: "string", required: false }
+          - {
+              label: "Course Code",
+              name: "code",
+              widget: "string",
+              required: false,
+            }
           - { label: "Course Title", name: "title", widget: "string" }
-          - { label: "Department/Notes", name: "department", widget: "string", required: false }
+          - {
+              label: "Department/Notes",
+              name: "department",
+              widget: "string",
+              required: false,
+            }
   - name: "ai-glossary"
     label: "AI Glossary"
     folder: "_ai-glossary/"
@@ -58,5 +80,10 @@ collections:
     fields:
       - { label: "Term", name: "title", widget: "string" }
       - { label: "Synonyms", name: "synonyms", widget: "list", required: false }
-      - { label: "Related Terms", name: "related", widget: "list", required: false }
+      - {
+          label: "Related Terms",
+          name: "related",
+          widget: "list",
+          required: false,
+        }
       - { label: "Definition", name: "body", widget: "markdown" }
