@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="keywords" content="{{ site.keywords }}">
   <title>
       {% if page.title_en %}
@@ -129,6 +129,10 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
       padding: 2rem 0;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
     .card {
@@ -142,6 +146,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .card:hover {
@@ -183,6 +190,9 @@
     .lang-switcher {
       margin: 1rem 0;
       text-align: right;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .lang-switcher button {
@@ -205,11 +215,36 @@
     .lang-en,
     .lang-cn {
       display: none;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
     .lang-en.active,
     .lang-cn.active {
       display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    /* Additional mobile fixes */
+    @media (max-width: 480px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .card {
+        aspect-ratio: auto;
+      }
+      
+      .card h3 {
+        font-size: 1.2rem;
+      }
+      
+      .card p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>

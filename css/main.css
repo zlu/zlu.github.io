@@ -73,6 +73,9 @@ a:visited {
 .container {
   display: flex;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   /* Ensure the container spans the full viewport height */
 }
 
@@ -80,6 +83,10 @@ a:visited {
 .content {
   flex: 2;
   padding: 30px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Wrapper for the sidebar to handle full-height background */
@@ -189,12 +196,17 @@ a:visited {
   .container {
     flex-direction: column;
     min-height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     /* Remove full height on mobile */
   }
 
   .sidebar-wrapper {
     background: none;
     min-height: auto;
+    width: 100%;
+    max-width: 100%;
     /* Remove full height on mobile */
     display: block;
     /* Remove flex on mobile */
@@ -203,6 +215,8 @@ a:visited {
   .sidebar {
     position: static;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     padding: 20px;
   }
 
@@ -214,6 +228,61 @@ a:visited {
     width: 40px;
     height: 40px;
     font-size: 20px;
+  }
+
+  .site {
+    font-size: 1.1em;
+    padding: 0 0.5em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .content {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .site {
+    font-size: 1em;
+    padding: 0 0.25em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .content {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  /* Fix for potential horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure tables don't overflow */
+  table {
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
   }
 }
 
@@ -242,9 +311,13 @@ ul.posts span {
 .site {
   font-size: 1.25em;
   text-align: justify;
-  width: 42em;
+  max-width: 42em;
+  width: 100%;
   margin: 0 auto 2em;
+  padding: 0 1em;
   line-height: 1.7em;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .site .header a {
@@ -454,7 +527,7 @@ article.post p {
 }
 
 /* List improvements */
-article.post ul, 
+article.post ul,
 article.post ol {
     margin: 1em 0 1em 2em;
 }
@@ -492,6 +565,10 @@ article.post blockquote {
 @media (max-width: 600px) {
     body, html {
         font-size: 16px;
+    }
+    .site {
+        font-size: 1em;
+        padding: 0 0.5em;
     }
     article.post {
         font-size: 1em;
