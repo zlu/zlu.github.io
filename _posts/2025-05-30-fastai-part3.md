@@ -1,3 +1,19 @@
+---
+layout: post
+title: "Deep Dive into MNIST Dataset - Fastai Part 3"
+date: 2025-05-30
+comments: true
+categories: 
+  - machine learning
+tags:
+  - python
+  - artificial intelligence
+  - machine learning
+  - fastai
+  - PyTorch
+description: "Deep Dive into MNIST Dataset - Fastai Part 3"
+---
+
 In fastai part 1 we looked at how to categorize MNIST dataset.  In this tutorial, we will dive a bit deeper to see what happens under the hood.  First, we will take a deeper look at the MNIST dataset.
 
 ## Data Exploration
@@ -19,7 +35,7 @@ img.show();
 
 
     
-![png](fastai-part3_files/fastai-part3_1_0.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_1_0.png)
     
 
 
@@ -1292,7 +1308,7 @@ plt.tight_layout()
 
 
     
-![png](fastai-part3_files/fastai-part3_17_0.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_17_0.png)
     
 
 
@@ -1314,7 +1330,7 @@ plt.imshow(diff)
 
 
     
-![png](fastai-part3_files/fastai-part3_19_1.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_19_1.png)
     
 
 
@@ -1348,7 +1364,7 @@ plt.tight_layout()
 
 
     
-![png](fastai-part3_files/fastai-part3_21_0.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_21_0.png)
     
 
 
@@ -1413,7 +1429,7 @@ dls.show_batch(max_n=9, figsize=(4,4))
 
 
     
-![png](fastai-part3_files/fastai-part3_27_0.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_27_0.png)
     
 
 
@@ -1626,7 +1642,7 @@ plt.show()
 
 
     
-![png](fastai-part3_files/fastai-part3_32_2.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_32_2.png)
     
 
 
@@ -1687,7 +1703,7 @@ plt.show()
 
 
     
-![png](fastai-part3_files/fastai-part3_34_2.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_34_2.png)
     
 
 
@@ -1801,13 +1817,13 @@ plt.show()
 
 
     
-![png](fastai-part3_files/fastai-part3_38_0.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_38_0.png)
     
 
 
 
     
-![png](fastai-part3_files/fastai-part3_38_1.png)
+![png](/assets/images/uploads/fastai-part3_files/fastai-part3_38_1.png)
     
 
 
