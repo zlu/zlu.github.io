@@ -85,7 +85,6 @@ df.style.set_properties(**{'font-size':'6pt'}).background_gradient('Greys')
 
     torch.Size([28, 28])
 
-（此处省略 DataFrame 可视化样式代码，原文有 HTML 表格）
 
 在上述代码中：
 `arr[:,:,0]` 是常见的三维数组索引方式，: 表示所有元素，0 表示第一个通道。
