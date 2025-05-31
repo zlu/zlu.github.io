@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "中文NLP with fastai - Fastai Part 3"
+title: "中文NLP with fastai - Fastai Part 4"
 date: 2025-05-30
 comments: true
 categories: 
@@ -11,7 +11,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "中文NLP with fastai - Fastai Part 3"
+description: "中文NLP with fastai - Fastai Part 4"
 ---
 ## 使用fastai进行自然语言处理
 
