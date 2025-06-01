@@ -472,6 +472,7 @@ print(model.summary())
     - 置信水平：如 95%，表示重复实验时，真系数有 95% 概率落在该区间。
 - P 值：检验每个变量的影响是真实的还是随机噪声（P 值低=更确定是真实影响）。
 """
+```
 
 ![png](/assets/images/uploads/linear-regression_files/linear-regression_15_0.png)
 
@@ -520,6 +521,8 @@ plt.show()
 ```
 系数: [1.66666685 1.66666662 1.66666651]
 系数标准差: [2.35702053 2.35702053 2.35702053]
+
+
 ![png](/assets/images/uploads/linear-regression_files/linear-regression_17_0.png)
 
 
