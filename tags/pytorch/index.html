@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Tag: PyTorch"
+---
+<h1>Posts tagged with: PyTorch</h1>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'PyTorch' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+    {% endif %}
+  {% endfor %}
+</ul> 

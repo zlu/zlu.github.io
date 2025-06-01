@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Tag: math"
+---
+<h1>Posts tagged with: math</h1>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'math' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+    {% endif %}
+  {% endfor %}
+</ul> 

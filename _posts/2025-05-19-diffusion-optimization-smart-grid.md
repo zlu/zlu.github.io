@@ -5,7 +5,10 @@ date: 2025-05-19
 comments: true
 description: "A practical example of diffusion optimization in smart energy grid optimization in a city"
 keywords: "diffusion optimization, smart energy grid, privacy-preserving optimization, decentralized learning, machine learning"
-categories: [Machine Learning, Optimization, Privacy]
+tags: 
+- Machine Learning
+- Optimization
+- Privacy
 ---
 
 Diffusion and Stochastic Gradient Descent (SGD) optimization are fundamentally

@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Tag: typescript"
+---
+<h1>Posts tagged with: typescript</h1>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'typescript' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+    {% endif %}
+  {% endfor %}
+</ul> 

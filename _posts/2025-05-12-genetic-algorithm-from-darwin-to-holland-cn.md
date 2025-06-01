@@ -2,7 +2,11 @@
 layout: post
 title: '遗传算法：从达尔文到霍兰德'
 date: 2025-05-12 18:09 +0800
-tags: [优化, 遗传算法, GA, 进化, Python, 人工智能, AI]
+- Optimization
+- Metaheuristics
+- Genetic Algorithm
+- Python
+- Algorithm
 comments: true
 ---
 

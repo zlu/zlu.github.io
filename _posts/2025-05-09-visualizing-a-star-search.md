@@ -3,7 +3,10 @@ layout: post
 title: Visualizing A-Star Search
 date: 2025-05-09 09:21 +0800
 comments: true
-categories: [Data Structure, Javascript, Visualization]
+tags:
+- Data Structure
+- Javascript 
+- Visualization
 ---
 
 ![A* Search](/assets/images/uploads/a-star.png)

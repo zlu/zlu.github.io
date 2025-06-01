@@ -3,9 +3,6 @@ layout: post
 title: "感知器：神经网络的基础构建块（含Python代码）"
 date: 2025-05-16
 comments: true
-categories: 
-  - 机器学习
-  - 神经网络
 tags:
   - 感知器
   - 神经网络

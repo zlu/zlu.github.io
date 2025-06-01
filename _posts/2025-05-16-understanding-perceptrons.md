@@ -3,9 +3,6 @@ layout: post
 title: "Understanding Perceptrons: The Building Block of Neural Networks (With Python Code)"
 date: 2025-05-16
 comments: true
-categories: 
-  - Machine Learning
-  - Neural Networks
 tags:
   - perceptron
   - neural networks

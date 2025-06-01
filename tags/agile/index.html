@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Tag: agile"
+---
+<h1>Posts tagged with: agile</h1>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'agile' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+    {% endif %}
+  {% endfor %}
+</ul> 

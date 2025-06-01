@@ -3,9 +3,6 @@ layout: post
 title: "缺失的部分 - 轻松入门 fastai 和 PyTorch - 第一部分"
 date: 2025-05-24
 comments: true
-categories: 
-  - 机器学习
-  - 神经网络
 tags:
   - 感知机
   - 神经网络

@@ -3,8 +3,6 @@ layout: post
 title: "深入探究 MNIST 数据集 - Fastai 第三部分"
 date: 2025-05-30
 comments: true
-categories: 
-  - machine learning
 tags:
   - python
   - artificial intelligence

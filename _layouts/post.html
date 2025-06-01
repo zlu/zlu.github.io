@@ -4,6 +4,16 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date: "%m-%d-%Y" }}</p>
 
+{% if page.tags %}
+<div class="post-tags">
+  Tags:
+  {% for tag in page.tags %}
+    {%- assign tag_slug = tag | downcase | replace: ' ', '-' -%}
+    <a class="tag" href="/tags/{{ tag_slug }}/">{{ tag }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+
 {% if page.title_cn %}
 <div class="lang-switcher">
     <button class="lang-btn" data-lang="en">English</button>

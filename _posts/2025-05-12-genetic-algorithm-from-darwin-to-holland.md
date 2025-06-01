@@ -2,7 +2,13 @@
 layout: post
 title: 'Genetic Algorithm: From Darwin to Holland'
 date: 2025-05-12 18:09 +0800
-tags: [Optimization, Genetic Algorithm, GA, Evolution, Python, AI]
+tags: 
+tags: 
+- Optimization
+- Metaheuristics
+- Genetic Algorithm
+- Python
+- Algorithm
 comments: true
 ---
 

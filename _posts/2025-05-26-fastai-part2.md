@@ -3,8 +3,6 @@ layout: post
 title: "The Updated Guide to Image Classification - Fastai Part 2"
 date: 2025-05-26
 comments: true
-categories: 
-  - machine learning
 tags:
   - python
   - artificial intelligence

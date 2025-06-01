@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Tag: machine learning"
+---
+<h1>Posts tagged with: machine learning</h1>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'machine learning' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+    {% endif %}
+  {% endfor %}
+</ul> 

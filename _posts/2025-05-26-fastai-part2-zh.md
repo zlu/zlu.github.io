@@ -3,8 +3,6 @@ layout: post
 title: "图像分类最新指南 - Fastai 第二部分"
 date: 2025-05-26
 comments: true
-categories: 
-  - 机器学习
 tags:
   - python
   - 人工智能

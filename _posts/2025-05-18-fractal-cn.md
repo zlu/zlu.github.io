@@ -6,6 +6,10 @@ description: "学习如何使用 TypeScript 生成美丽的分形图像，了解
 keywords: "分形, 曼德博集合, typescript, d3.js, 数学可视化, 分形艺术, 金融市场, 赫斯特指数"
 date: 2025-05-18
 comments: true
+tags:
+- math
+- typescript
+- visualization
 ---
 
 ![fractal-mandel-brot](/assets/images/uploads/fractals-mandelbrot.png)

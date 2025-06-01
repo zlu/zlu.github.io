@@ -3,8 +3,6 @@ layout: post
 title: "The Missing Bits - Easing into fastai and PyTorch - Part 1"
 date: 2025-05-24
 comments: true
-categories: 
-  - machine learning
 tags:
   - python
   - artificial intelligence

@@ -3,7 +3,10 @@ layout: post
 title: "Predicting Employee Attrition with R: A Practical Guide"
 date: 2025-05-08 09:36 +0800
 comments: true
-categories: [R, Machine Learning, Data Science]
+tags:
+- R
+- Machine Learning
+- Data Science
 ---
 
 ### Introduction to Employee Attrition Prediction

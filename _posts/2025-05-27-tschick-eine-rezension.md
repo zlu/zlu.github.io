@@ -2,6 +2,8 @@
 layout: post
 title: Tschick - Eine Rezension
 date: 2025-05-27 11:40 +0800
+tags:
+  - book
 ---
 ![tschick-zlu-me](/assets/images/uploads/tschick.png)
 

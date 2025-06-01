@@ -4,14 +4,7 @@ title: "Understanding Gradient Descent with a Sprinkle of Math"
 date: 2025-05-17
 last_modified_at: 2025-05-17
 comments: true
-categories: 
-  - mathematics 
-  - machine-learning 
-  - optimization 
-  - calculus 
-  - programming
-  - data-science
-  - artificial-intelligence
+
 tags:
   - gradient descent
   - optimization algorithms

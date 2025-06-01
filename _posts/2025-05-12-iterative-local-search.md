@@ -2,7 +2,13 @@
 layout: post
 title: "Exploring Optimization: A Guide to Iterative Local Search (ILS)"
 date: 2025-05-12 15:30 +0800
-tags: [Optimization, Metaheuristics, Iterative Local Search, ILS, Python, Algorithm]
+tags: 
+- Optimization
+- Metaheuristics
+- Iterative Local Search
+- ILS
+- Python
+- Algorithm
 comments: true
 ---
 

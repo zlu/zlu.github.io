@@ -2,7 +2,13 @@
 layout: post
 title: "探索优化：迭代局部搜索（ILS）指南"
 date: 2025-05-12 15:30 +0800
-tags: [优化, 元启发式算法, 迭代局部搜索, ILS, Python, 算法]
+tags: 
+- Optimization
+- Metaheuristics
+- Iterative Local Search
+- ILS
+- Python
+- Algorithm
 comments: true
 ---
 

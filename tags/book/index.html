@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Tag: book"
+---
+<h1>Posts tagged with: book</h1>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'book' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+    {% endif %}
+  {% endfor %}
+</ul> 

@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Tag: artificial intelligence"
+---
+<h1>Posts tagged with: artificial intelligence</h1>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains 'artificial intelligence' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+    {% endif %}
+  {% endfor %}
+</ul> 

@@ -3,8 +3,6 @@ layout: post
 title: "中文NLP with fastai - Fastai Part 4"
 date: 2025-05-30
 comments: true
-categories: 
-  - machine learning, NLP
 tags:
   - python
   - artificial intelligence

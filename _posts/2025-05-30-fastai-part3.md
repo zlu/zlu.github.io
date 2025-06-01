@@ -3,8 +3,6 @@ layout: post
 title: "Deep Dive into MNIST Dataset - Fastai Part 3"
 date: 2025-05-30
 comments: true
-categories: 
-  - machine learning
 tags:
   - python
   - artificial intelligence

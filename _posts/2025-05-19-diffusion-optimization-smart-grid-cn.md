@@ -5,7 +5,10 @@ date: 2025-05-19
 comments: true
 description: "扩散优化与随机梯度下降(SGD)优化方法的全面比较，以城市智能电网优化为例"
 keywords: "扩散优化, SGD, 智能电网, 隐私保护优化, 分布式学习, 机器学习"
-categories: [机器学习, 优化, 隐私]
+tags: 
+- Machine Learning
+- Optimization
+- Privacy
 lang: zh
 ---
 
