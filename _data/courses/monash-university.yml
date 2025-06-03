@@ -9,4 +9,6 @@ courses:
     title: Theory of Computation
   - code: FIT1045
     title: Introduction to Programming
+  - code: FIT1047
+    title: Introduction to computer systems, networks and security
 ---
