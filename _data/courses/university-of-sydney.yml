@@ -7,4 +7,6 @@ courses:
   - code: INFO1113
     title: Object-Oriented Programming
     department: Computer Science
+  - code: COMP5310
+    title: Principles of Data Science
 ---
