@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "金融中的线性优化：投资组合分配与求解器 - Part 2"
-date: 2025-06-02
+date: 2025-06-03
 comments: true
 tags:
   - python
@@ -21,8 +21,10 @@ description: "金融中的线性优化：投资组合分配与求解器 - Part 2
 线性优化通过在给定约束下最大化或最小化目标函数，帮助实现投资组合的最优分配。
 
 ### 示例问题
+
 最大化：$ f(x, y) = 3x + 2y $
 约束条件：
+
 - $ 2x + y \leq 100 $
 - $ x + y \leq 80 $
 - $ x \leq 40 $
@@ -31,33 +33,42 @@ description: "金融中的线性优化：投资组合分配与求解器 - Part 2
 我们可以使用PuLP（`pip install pulp`）来解决这个问题。PuLP是一个线性规划库，支持多种优化求解器（如CBC、GLPK、CPLEX、Gurobi等）。其一大优势是可以用数学符号定义优化问题。
 
 例如，定义决策变量：
+
 ```python
 x = pulp.LpVariable("x", lowBound=0)
 y = pulp.LpVariable("y", lowBound=0)
 ```
+
 其中`x`和`y`称为决策变量，是我们要优化的对象。`lowBound=0`确保变量非负。实际中，这类变量常用于投资组合权重。
 
 定义优化问题：
+
 ```python
 problem = pulp.LpProblem("Maximization Problem", pulp.LpMaximize)
 ```
+
 `pulp.LpMaximize`表示我们要最大化目标函数。也可以用`pulp.LpMinimize`来最小化目标函数。
 
 接下来设置目标函数：
+
 ```python
 problem += 3*x + 2*y, "Objective Function"
 ```
+
 这表示我们要最大化f(x, y) = 3x + 2y。例如，这可以用来最大化收益或利润。
 
 然后添加约束条件：
+
 ```python
 problem += 2*x + y <= 100, "Constraint 1"
 problem += x + y <= 80, "Constraint 2"
 problem += x <= 40, "Constraint 3"
 ```
+
 这意味着两个资产的权重之和必须小于等于100，且权重之和还要小于等于80。我们还可以添加更多约束。
 
 最后调用`.solve()`来求解问题：
+
 ```python
 problem.solve()
 ```
@@ -96,13 +107,12 @@ for variable in problem.variables():
     print(f"{variable.name} = {variable.varValue}")
 ```
 
-    Welcome to the CBC MILP Solver 
-    Version: 2.10.3 
-    Build Date: Dec 15 2019 
+    Welcome to the CBC MILP Solver
+    Version: 2.10.3
+    Build Date: Dec 15 2019
     ...
     x = 20.0
     y = 60.0
-
 
 ### 线性优化的详细理解
 
@@ -121,6 +131,7 @@ $$Ax = b \text{ (等式约束)}$$
 $$x \geq 0 \text{ (非负约束)}$$
 
 其中：
+
 - $x = [x_1, x_2, \ldots, x_n]^T$ 为决策变量
 - $c = [c_1, c_2, \ldots, c_n]^T$ 为目标函数系数
 - $A$ 为约束矩阵
@@ -134,7 +145,6 @@ $$x \geq 0 \text{ (非负约束)}$$
 4. **凸性**：可行域总是凸集
 5. **对偶性**：每个LP问题都有一个对偶问题
 
-
 ### CBC MILP求解器：全面概述
 
 **CBC（Coin-or Branch and Cut）**是COIN-OR（运筹学计算基础设施）项目开发的开源混合整数线性规划（MILP）求解器，是最常用的优化求解器之一。
@@ -142,17 +152,20 @@ $$x \geq 0 \text{ (非负约束)}$$
 #### 什么是CBC MILP求解器？
 
 **CBC**代表：
+
 - **C**oin-or
 - **B**ranch and
 - **C**ut
 
 **MILP**代表：
+
 - **M**ixed
 - **I**nteger
 - **L**inear
 - **P**rogramming
 
 CBC可求解：
+
 1. **线性规划（LP）**：所有变量为连续型
 2. **整数规划（IP）**：所有变量为整数
 3. **混合整数规划（MIP）**：部分变量为整数，部分为连续型
@@ -168,10 +181,10 @@ CBC采用先进的**分支定界（Branch-and-Cut）**算法：
 4. **界定**：利用界限排除无法改进解的子问题
 5. **剪枝**：去除不可行或次优的分支
 
-
 #### CBC求解器在金融中的优势与应用
 
 **优势：**
+
 1. **开源免费**：无许可费用
 2. **健壮可靠**：经过充分测试
 3. **多功能**：支持LP、IP、MIP、BIP
@@ -179,6 +192,7 @@ CBC采用先进的**分支定界（Branch-and-Cut）**算法：
 5. **易集成**：可与Python（PuLP）、R等配合
 
 **金融应用：**
+
 1. **投资组合优化**：带约束的资产配置
 2. **风险管理**：VaR优化、压力测试
 3. **交易策略**：订单执行优化
@@ -189,9 +203,11 @@ CBC采用先进的**分支定界（Branch-and-Cut）**算法：
 8. **运筹优化**：网点选址、人员调度
 
 ## 整数规划
+
 整数规划是指部分或全部变量被约束为整数的优化问题。
 
 ### 示例问题
+
 在满足数量和成本约束的前提下，最小化从不同经销商采购合同的总成本。
 
 ```python
@@ -223,8 +239,8 @@ for variable in model.variables():
     print(f"{variable.name} = {variable.varValue}")
 ```
 
-    Welcome to the CBC MILP Solver 
-    Version: 2.10.3 
+    Welcome to the CBC MILP Solver
+    Version: 2.10.3
     ...
     orders_X = 0.0
     orders_Y = 0.0
@@ -239,5 +255,4 @@ for variable in model.variables():
 
 在下一篇文章中，我们将进一步探讨CBC在金融中解决更复杂问题的应用。
 
-
-*Next: A Deeper Look into CBC in Finance →* 
+_Next: A Deeper Look into CBC in Finance →_

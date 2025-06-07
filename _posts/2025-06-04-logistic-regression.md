@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Classification and Logistic Regression"
-date: 2025-06-01
+date: 2025-06-04
 comments: true
 tags:
   - python

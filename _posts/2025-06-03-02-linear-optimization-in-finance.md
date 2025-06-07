@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linear Optimization in Finance: Portfolio Allocation and Solvers - Part 2"
-date: 2025-06-02
+date: 2025-06-03
 comments: true
 tags:
   - python
