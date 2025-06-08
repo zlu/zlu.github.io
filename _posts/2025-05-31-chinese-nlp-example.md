@@ -84,9 +84,6 @@ df = df.sample(frac=1).reset_index(drop=True)  # Shuffle the data
 df.head()
 ```
 
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
