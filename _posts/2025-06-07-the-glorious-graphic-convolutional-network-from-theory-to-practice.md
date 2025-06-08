@@ -9,6 +9,7 @@ tags:
   - graph convolutional network
   - GCN
 description: The Glorious Graphic Convolutional Network - From Theory to Practice
+comments: true
 ---
 
 Graph Convolutional Networks (GCNs) have revolutionized the field of graph-based machine learning, enabling deep learning on non-Euclidean structures such as social networks, citation graphs, and molecular structures. In this blog, we will explain the intuition, math principles, and provide code snippets to help you understand and implement a basic GCN.  Traditional CNNs work well with grid-like data such as images or text but struggle with arbitrary graphs where node connections vary and there is no fixed spatial locality. GCNs overcome this by performing convolution operations on graphs.
