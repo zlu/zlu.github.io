@@ -9,7 +9,7 @@ tags:
   - data segment
   - unix
   - linux
-description: Variable Storage and Pointers in C: Back to Basics
+description: "Variable Storage and Pointers in C: Back to Basics"
 comments: true
 ---
 
