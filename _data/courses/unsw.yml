@@ -7,4 +7,8 @@ courses:
     title: Introduction to Business Databases
   - code: ADAD9113
     title: Communication Skills for Creative Disciplines
+  - code: COMP2107
+    title: System Programming
+  - code: COMP5310
+    title: Principles of Data Science
 ---
