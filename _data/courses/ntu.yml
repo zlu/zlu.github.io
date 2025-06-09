@@ -6,4 +6,10 @@ courses:
     department: Functional Programming
   - code: AB0403
     title: Decision Making with Programming & Analytics
+  - code: EE6407
+    title: Genetic Algorithms & Machine Learning
+    department: School of Electrical and Electronic Engineering
+  - code: EE7207
+    title: Neural Networks & Deep Learning
+    department: School of Electrical and Electronic Engineering
 ---
