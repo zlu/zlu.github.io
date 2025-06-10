@@ -2,6 +2,14 @@
 layout: post
 title: "Hugging Face MCP 与 OpenAI 集成 - 零代码配置指南"
 date: 2025-06-10 20:25 +0800
+comments: true
+tags:
+    - Hugging Face
+    - MCP
+    - OpenAI
+    - AI
+    - 零代码
+    - 集成
 ---
 
 Hugging Face 最近发布了其实验性的 MCP 服务器。它允许 AI 智能体访问 Hugging Face 庞大的模型库、数据集和 Spaces。它支持模型信息检索、数据集探索和自然语言处理等任务，成为 AI 驱动应用程序的强大工具。

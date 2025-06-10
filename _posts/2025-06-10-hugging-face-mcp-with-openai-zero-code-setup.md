@@ -2,6 +2,11 @@
 layout: post
 title: Hugging Face MCP with OpenAI - Zero Code Setup
 date: 2025-06-10 20:25 +0800
+comments: true
+tags:
+  - HuggingFace
+  - MCP
+  - OpenAI
 ---
 
 Hugging Face just announced its experimental MCP server.  It allows AI agents to access Hugging Face's vast repository of models, datasets, and Spaces. It enables tasks like model information retrieval, dataset exploration, and NLP processing, making it a powerful tool for AI-driven applications.
