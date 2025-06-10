@@ -38,12 +38,14 @@ $$ a_1x_1 +  \dots + a_nx_n $$
 linear maps such as:
 $$ (x_1,\dots,x_n) \mapsto a_1x_1 + \dots + a_nx_n $$
 and their represenations in vector spaces through matrices such as:
+$$
 \begin{bmatrix}
 a_11 & a_12 & a_13\\
 a_21 & a_22 & a_23\\
 \vdots & \vdots & \vdots\\
 a_m1 & a_m2 & a_m3
 \end{bmatrix}
+$$
 
 ### Design Matrix
 
