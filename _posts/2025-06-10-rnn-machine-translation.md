@@ -1,4 +1,15 @@
-# Recurrent Neural Network (RNN): From Theory to Translation
+---
+layout: post
+title: 'Recurrent Neural Network (RNN): From Theory to Translation'
+date: 2025-06-10
+tags:
+  - rnn
+  - machine learning
+  - machine translation
+  - GRU
+description: "Recurrent Neural Network (RNN): From Theory to Translation"
+comments: true
+---
 
 RNN is a type of artificial neural network designed for processing sequential data, such as time series, natural language, or speech. Unlike traditional feedforward neural networks, RNNs have a "memory" that allows them to use information from previous inputs by passing it through a loop, making them well-suited for tasks where context or order matters.  It comes before Transformers and is used widely in text generation, speech recognition, and time series forecasting (stock price forecast).
 
