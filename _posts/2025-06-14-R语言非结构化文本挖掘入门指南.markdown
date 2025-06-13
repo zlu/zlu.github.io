@@ -1,0 +1,194 @@
+---
+layout: post
+title: "R语言非结构化文本挖掘入门指南"
+date: 2025-06-14
+tags:
+  - 数据准备
+  - 机器学习
+  - 数据可视化
+  - 特征缩放
+description: "R语言非结构化文本挖掘入门指南"
+comments: true
+---
+
+文本挖掘（Text Mining），也称为文本分析（Text Analytics），是从非结构化文本数据中提取有意义的见解。全球约80%的数据是非结构化的。本篇博客将探讨文本挖掘和网络爬取的关键概念及基于R的实用技术。
+
+## 什么是文本挖掘？
+
+文本挖掘利用计算技术从非结构化文本源（如书籍、报告、文章、博客和社交媒体帖子）中提取结构化信息。它能够自动化地从海量数据集中发现知识，实现文本摘要和分析。
+
+### 关键点：
+- **非结构化文本**：自由格式的数据（如电子邮件、社交媒体、文档）
+- **目标**：提取高质量的结构化信息进行分析
+- **应用**：情感分析、主题建模、信息检索
+
+## 使用R的`tm`包提取文本
+
+R语言中的`tm`（text mining）包是一个强大的文本挖掘工具，其核心数据结构是*语料库*（corpus）——文本文档的集合。语料库支持批量处理多个文档。
+
+### 语料库类型：
+- **VCorpus（易失性语料库）**：临时存储在内存中，R会话结束时删除
+- **PCorpus（永久性语料库）**：存储在外部，跨会话持久化
+
+### 预定义数据源：
+- **DirSource**：从目录读取文本
+- **VectorSource**：处理向量中的文本
+- **DataframeSource**：处理类似数据框的结构
+
+### 示例：使用VectorSource创建语料库
+
+以下代码从文本字符串向量创建易失性语料库并检查其内容。
+
+```R
+library(tm)
+texts <- c("Hi!", "Welcome to My Blog!", "Blog1, 2, 3.....")
+mytext <- VectorSource(texts)
+mycorpus <- VCorpus(mytext)
+inspect(mycorpus)
+as.character(mycorpus[[1]])
+```
+说明：
+- inspect(mycorpus) 打印VCorpus对象的结构和元数据。此例中显示VCorpus包含3个文档，每个都是长度分别为3、19和16的`PlainTextDocument`
+- as.character(mycorpus[[2]]) 将语料库中的第二个文档转换为字符向量。此例中返回"Welcome to My Blog!"。`[[]]`用于访问R列表中的元素，由于语料库本质上是文档列表，因此这是访问单个文档的方式
+
+```R
+<<VCorpus>>
+Metadata:  corpus specific: 0, document level (indexed): 0
+Content:  documents: 3
+
+[[1]]
+<<PlainTextDocument>>
+Metadata:  7
+Content:  chars: 3
+
+[[2]]
+<<PlainTextDocument>>
+Metadata:  7
+Content:  chars: 19
+
+[[3]]
+<<PlainTextDocument>>
+Metadata:  7
+Content:  chars: 16
+```
+
+## 网络爬取文本数据
+
+网络爬取从网站检索数据，通常需要解析HTML以提取相关内容。`readLines()`、`httr`、`XML`和`rvest`等工具简化了这一过程。
+
+### 挑战：
+- 网络数据通常嵌入在复杂的HTML结构中
+- 需要解析以隔离有用文本
+
+### 技术与工具：
+- **readLines()**：从URL读取原始文本
+- **httr::GET()**：以编程方式获取网页内容
+- **XML::htmlParse()**：解析HTML，使用XPath提取特定元素
+- **rvest::read_html()**：读取和解析HTML，使用CSS选择器进行目标爬取
+
+### 示例：使用`rvest`进行网页爬取
+
+rvest是一个R包，专为网页爬取设计，可以轻松从HTML和XML网页中提取数据。它是tidyverse生态系统的一部分，对熟悉R的tidyverse语法的用户特别友好。
+
+rvest中的关键函数：
+- read_html()：从URL或字符串读取和解析HTML内容
+  - 示例：page <- read_html("https://example.com")
+- html_nodes()：使用CSS选择器提取HTML元素
+  - 示例：titles <- html_nodes(page, "h1")
+- html_text()：从HTML节点提取文本内容
+  - 示例：text_content <- html_text(titles)
+- html_attr()：从HTML元素提取属性（如href、src等）
+  - 示例：links <- html_attr(links, "href")
+
+以下代码使用HTML选择器从网页中抓取特定元素：
+
+```R
+library(rvest)
+url <- "https://zlu.me/teach"
+page <- read_html(url)
+nodes <- html_nodes(page, "h2")
+texts <- html_text(nodes)
+print(texts)
+```
+
+```R
+[1] ""          "Teach@zlu" "留学辅导" 
+```
+
+### 爬取结构化数据
+
+以下是从教学网站提取课程分类的示例：
+
+```R
+library(rvest)
+library(purrr)
+
+# 从教学页面爬取课程分类
+url <- "https://zlu.me/teach"
+page <- read_html(url)
+
+# 提取所有部分标题（h3元素）
+headers <- html_nodes(page, 'h3') %>% 
+  html_text() %>%
+  keep(~nchar(.) > 0)  # 移除空字符串
+
+# 打印标题
+cat("页面上的部分：\n")
+walk(headers, ~cat("- ", ., "\n"))
+
+# 提取课程分类
+categories <- html_nodes(page, 'h4') %>% 
+  html_text() %>%
+  keep(~nchar(.) > 0)  # 移除空字符串
+
+# 打印课程分类
+cat("\n课程分类：\n")
+walk(categories, ~cat("- ", ., "\n"))
+```
+
+部分结果：
+
+```R
+页面上的部分：
+-  Recent Posts 
+-  About Me 
+-  Popular Courses 
+-  Student Success 
+-  University Courses 
+-  FAQs 
+-  Book a Session 
+-  Introduction 
+-  About Me 
+-  Popular Courses 
+-  Course Categories 
+-  Student Testimonials 
+-  Frequently Asked Questions 
+-  简介 
+-  详细介绍 
+-  Popular Courses 
+-  课程分类 
+-  学生评价或成功案例 
+-  常见问题解答（FAQ）
+
+课程分类：
+-  Machine Learning 
+-  Artificial Intelligence 
+-  Data Analysis 
+-  Databases 
+-  Python Programming 
+-  CS Core 
+-  Advanced Topics 
+-  Machine Learning 
+-  Artificial Intelligence 
+-  Data Analysis 
+-  Databases 
+-  Python Programming 
+-  CS Core 
+-  Advanced Topics 
+```
+
+## 结论
+
+文本挖掘和网络爬虫技术能够从非结构化数据中提取有价值的洞察。R语言中的`tm`包简化了文本提取过程，而`rvest`和`httr`等工具则实现了高效的网络爬虫功能。通过结合这些技术，您可以有效地处理和分析海量的文本数据。
+
+祝大家周末愉快！
