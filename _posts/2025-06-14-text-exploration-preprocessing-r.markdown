@@ -85,7 +85,7 @@ Preprocessing transforms raw text into a structured format for analysis. The `tm
 3. **Tokenization**: Split text into tokens (words or phrases) for analysis.
    - **Stemming**: Reduce words to their root form (e.g., "running" → "run"). Beware of overstemming (e.g., "university" and "universe" → "univers") or understemming (e.g., "data" and "datum" → different stems).
    - **Lemmatization**: Use lexical knowledge to find correct base forms, preserving meaning.
-   **Key Difference**: While both reduce words to their base forms, lemmatization considers the context and part of speech to return a meaningful base word, whereas stemming just follows algorithmic rules to chop off word endings.
+   - **Key Difference**: While both reduce words to their base forms, lemmatization considers the context and part of speech to return a meaningful base word, whereas stemming just follows algorithmic rules to chop off word endings.
 4. **Create a Term-Document Matrix (TDM)**: Represent terms as rows, documents as columns, and weights (e.g., term frequency) as cell values.
 
 ### Example: Preprocessing with `tm`
