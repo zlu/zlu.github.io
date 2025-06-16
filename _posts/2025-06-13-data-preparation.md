@@ -11,6 +11,11 @@ description: "Data Preparation Example for Machine Learning"
 comments: true
 ---
 
+**Update 2025-06-16:**
+- Elaborated on the concept of SVD and added a code example.
+- Expanded the section on arbitury value imputation with explanation and code example.
+
+
 Effective data preparation is essential for building robust machine learning models. This document summarizes and elaborates on the key techniques involved in preparing data for supervised and unsupervised learning tasks.
 
 ##  1. Understanding Types of Data
@@ -103,9 +108,65 @@ Imputation is the process of replacing missing data with substituted values. It'
    - Best for: When patterns exist in the data
    - Most accurate but computationally expensive
 
-4. **Arbitrary Value Imputation**: Replace with a value like -999
-   - Best for: Tree-based models
-   - When to use: When you want to make missing values stand out
+4. **Arbitrary Value Imputation**: Replace missing values with a distinct value like -999 or 9999
+   - **Best for**: Tree-based models (Decision Trees, Random Forests, XGBoost)
+   - **When to use**: 
+     - When missingness itself might be informative
+     - When you want to highlight that the value was originally missing
+     - When missing values have a specific meaning (e.g., "not measured" vs "zero")
+   - **Why make them stand out?**:
+     1. **Preserves information**: The model can learn that "missing" is different from any actual value
+     2. **Pattern detection**: The model might discover that missing values correlate with the target variable
+     3. **Prevents false patterns**: Using mean/median might create artificial patterns that don't exist
+     4. **Handles MNAR**: Particularly useful when data is Missing Not At Random (MNAR)
+   - **Example**: In credit scoring, if income is missing, it might indicate self-employment or other special cases
+
+```python
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+# Sample credit scoring data
+data = {
+    'age': [25, 30, 35, 40, 45, 50, 55, 60],
+    'income': [50000, 75000, np.nan, 90000, np.nan, 120000, 150000, np.nan],
+    'credit_score': [650, 700, 720, 680, 800, 750, 820, 780],
+    'default': [0, 0, 1, 0, 0, 1, 1, 0]  # 1 = default, 0 = no default
+}
+
+df = pd.DataFrame(data)
+
+# Before imputation
+print("Before imputation:")
+print(df)
+
+# Using -999 as the arbitrary value for missing income
+ARBITRARY_VALUE = -999
+df_imputed = df.fillna(ARBITRARY_VALUE)
+
+print("\nAfter imputation:")
+print(df_imputed)
+
+# Train a simple Random Forest to see how it handles the arbitrary value
+X = df_imputed[['age', 'income', 'credit_score']]
+y = df_imputed['default']
+
+# The model will treat -999 as a special category
+model = RandomForestClassifier(random_state=42)
+model.fit(X, y)
+
+# Feature importance will show how much the 'missingness' matters
+feature_importance = pd.DataFrame({
+    'feature': X.columns,
+    'importance': model.feature_importances_
+}).sort_values('importance', ascending=False)
+
+print("\nFeature importance:")
+print(feature_importance)
+```
+
+This example shows how missing income values are replaced with -999, and how a tree-based model can use this information to make predictions. The feature importance output will show how much the model relies on the 'missingness' of income as a predictive feature.
 
 ###  Outliers
 Outliers are data points significantly different from other observations. They can be caused by measurement errors, data entry errors, or natural variations.
@@ -192,8 +253,73 @@ Reduces the number of features while preserving important information.
 - Before training models with many features
 - For noise reduction
 
-###  SVD (Singular Value Decomposition)
-- Matrix factorization method to identify latent features.
+### SVD (Singular Value Decomposition)
+- Matrix factorization method that decomposes a matrix A into three matrices: A = UΣVᵀ
+  - U: Left singular vectors (orthonormal)
+  - Σ: Diagonal matrix of singular values (in descending order)
+  - V: Right singular vectors (orthonormal)
+- Key properties:
+  - Captures latent features in data
+  - Preserves maximum variance with fewer dimensions
+  - Used in recommendation systems, image compression, and NLP
+
+#### Example: Document-Term Matrix
+Consider a simplified document-term matrix showing word counts in documents:
+
+|       | movie | film | show | book | read |
+|-------|-------|------|------|------|------|
+| Doc1  | 2     | 1    | 0    | 3    | 2    |
+| Doc2  | 1     | 1    | 2    | 1    | 1    |
+| Doc3  | 0     | 0    | 1    | 2    | 3    |
+
+After applying SVD (using 2 components), we can identify:
+- **Latent topics**: Underlying themes not directly visible in the raw data
+  - *Example*: Words like "movie", "film", "show" might form an "entertainment" topic
+  - *Example*: Words like "book", "read" might form a "reading" topic
+  - These topics emerge from patterns in how words co-occur across documents
+- Document similarity based on topic distribution
+- Important terms that define each topic
+
+**Understanding Latent Topics**:
+- They represent hidden themes that aren't explicitly labeled in the data
+- Each document can be a mixture of multiple topics
+- They help uncover the underlying structure in text data
+- Useful for organizing, searching, and analyzing large text collections
+
+*Example Interpretation*:
+- If a document scores high on the "entertainment" topic and low on "reading", it likely discusses movies/shows rather than books
+- The strength of topic associations helps in document clustering and recommendation systems
+
+#### Python Implementation
+```python
+from sklearn.decomposition import TruncatedSVD
+import numpy as np
+
+# Example document-term matrix
+dtm = np.array([
+    [2, 1, 0, 3, 2],
+    [1, 1, 2, 1, 1],
+    [0, 0, 1, 2, 3]
+])
+
+# Apply SVD with 2 components
+svd = TruncatedSVD(n_components=2)
+svd.fit(dtm)
+
+# Transformed data (documents in latent space)
+transformed = svd.transform(dtm)
+print("Transformed document vectors:")
+print(transformed)
+
+# Explained variance ratio
+print("\nExplained variance ratio:", svd.explained_variance_ratio_)
+```
+
+#### When to Use:
+- For high-dimensional data reduction
+- In recommendation systems (collaborative filtering)
+- For document clustering and topic modeling
+- When you need to capture latent relationships in data
 
 
 ##  7. Feature Selection
