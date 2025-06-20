@@ -22,5 +22,12 @@ plugins:
   - jekyll-sitemap
 mermaid:
   src: 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js'
+  initialize:
+    startOnLoad: true
+    theme: 'neutral'
+    flowchart:
+      useMaxWidth: true
+    sequence:
+      useMaxWidth: true
 twitter:
   username: zlu

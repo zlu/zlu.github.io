@@ -44,6 +44,38 @@
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+  <!-- Mermaid Diagram Support -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        themeVariables: {
+          primaryColor: '#3b82f6',
+          primaryTextColor: '#000',
+          primaryBorderColor: '#7C0000',
+          lineColor: '#666',
+          textColor: '#333',
+          fontSize: '16px'
+        },
+        flowchart: {
+          curve: 'basis',
+          htmlLabels: true
+        },
+        sequence: {
+          diagramMarginX: 50,
+          diagramMarginY: 10,
+          actorMargin: 50,
+          boxMargin: 10,
+          boxTextMargin: 5,
+          noteMargin: 10,
+          messageMargin: 35
+        }
+      });
+    });
+  </script>
+
   <!-- Latest compiled and minified JavaScript -->
   <script src="/assets/js/bootstrap.min.js"></script>
 
