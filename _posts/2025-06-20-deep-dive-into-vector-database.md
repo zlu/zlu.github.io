@@ -1,16 +1,20 @@
 ---
 layout: post
-title: Introduction to Vector Database
-date: 2025-06-09 06:33 +0800
-tags:
+title: Diving into Vector Database
+date: 2025-06-20
   - vector database
   - database
   - ANN
-description: Introduction to vector database
+description: Deep dive into vector database
 comments: true
 ---
 
+Update 2025-06-20
+
+- Add a section on ChromaDB/SQLLite sampling.
+
 Update: 2025-06-19
+
 - Add a new section on ANN algorithms.
 
 A vector database is a database that stores and manages vector data. Vector data is data that is represented as a vector, such as a point in space or a vector in time. Vector databases are used in a variety of applications, such as image and video search, natural language processing, and recommendation systems. In machine learning, we typically use vector db to storage embedding text data from models like BERT or OpenAI; image data (embedding from CNNs or CLIP), and audio/video/genomic data. Instead of traditional exact match queries like SQL's WHERE clause, vector db supports _similarity search_ like "find the top 10 documents most similar to the self-attention paper". Vector db are used in applications involving semantic search, recommendation systems, anomaly detection, and retrieval-augmented generation (RAG).
@@ -36,17 +40,17 @@ IVF clusters the dataset into _k_ coarse centroids via **k-means**. Each vector
 is assigned to its nearest neighbor. At query time, it first searches only the top-n
 centroids closest to the query (coarse quantization). It then perform an exact
 search in those clusters. Given the efficient time complexity for such search is
-Olog(k) + small local search, and the small memory consumption,  we generally
-use it as a baseline.  
+Olog(k) + small local search, and the small memory consumption, we generally
+use it as a baseline.
 
 #### Graph-Based
 
-There are several Graph-Based algorithms in this category.  Take **Hierarchical
+There are several Graph-Based algorithms in this category. Take **Hierarchical
 Navigatable Small World Graphs (HNSW)** for example, which builds a multi-layer
 graph, where the top layers are sparse with long-range links, and the bottom
-layers are dense with local links.  During the querying phase, it performs
-greedy search starting from the top and descending layer by layer.  The
-navigation of the graph uses neighbor vectors with the shortest distance.  It is
+layers are dense with local links. During the querying phase, it performs
+greedy search starting from the top and descending layer by layer. The
+navigation of the graph uses neighbor vectors with the shortest distance. It is
 an extremely fast algorithm with a time complexity of Olog(n), with added
 benefit of high accuracy.
 
@@ -54,9 +58,9 @@ benefit of high accuracy.
 
 One of the Hash-Based algorithm is called **Locality-Sensitive Hash (LSH)**.
 The algorithm projects high-dimensional vectors into hash buckets such that
-similar vectors map to the same buckets with high probability.  It also uses
-multiple hash tables to increase accuracy.  Time complexity is then O(1) + small
-candidate search with fast insert.  Although this algorithm suffers from poor
+similar vectors map to the same buckets with high probability. It also uses
+multiple hash tables to increase accuracy. Time complexity is then O(1) + small
+candidate search with fast insert. Although this algorithm suffers from poor
 performance in very high dimensions.
 
 Finally we should mention that there are several means for the similarity
@@ -65,7 +69,7 @@ calculation: L2 Euclidean, Cosine, inner product, and Jaccard/Hamming.
 Here is an example of IVF + PQ:
 
 ```python
- 
+
 import faiss
 import numpy as np
 
@@ -88,8 +92,50 @@ index.nprobe = 10  # how many clusters to search
 D, I = index.search(xq, 5)  # top 5 results
 ```
 
+### Vector databases
 
-Milvus is an open-source vector db optimized for storing and retrieving embedding vectors. It is a distributed vector db that can scale to handle large amounts of data. It is built on top of Apache Arrow and uses a columnar storage format to store data. It also provides gRPC as well as REST API for easy integration with other applications. It is written in Go and is available for Linux, Windows, and macOS. It capably handles large-scale (billions of vectors) similarity search using **Approximate Nearest Neighbor (ANN)** algorithms like HNSW, IVF, and ANNOY.
+**ChromaDB** uses SQLite as its backend and creates several tables to manage collections, embeddings, metadata, and more. Here’s a brief explanation of common tables you might see in a ChromaDB SQLite database:
+
+- collections: Stores information about each collection (a group of related embeddings/documents).
+- collection_metadata: Stores metadata (key-value pairs) associated with collections.
+- embeddings: Contains the actual vector embeddings and references to their associated documents.
+- embedding_metadata: Stores metadata for each embedding (such as document IDs, tags, etc.).
+- segments: Used for managing data segmentation, which helps with efficient storage and retrieval.
+- segment_metadata: Metadata about each segment.
+- embeddings_queue and embeddings_queue_config: Used for managing queued embedding operations, possibly for async processing.
+- databases: Stores information about different logical databases if multi-tenancy is used.
+- maintenance_log: Logs maintenance operations or background tasks.
+- migrations: Tracks schema migrations (database versioning).
+- embedding_fulltext_search and related tables: Support full-text search capabilities on embeddings or documents.
+
+Using SQLite CLI we can conveniently examine an actual chromaDB:
+
+The command .schema TABLENAME shows the structure of a table. In this example,
+we take a look at table embeddings. Then we turn on the header for columns so
+that the SELECT statement shows the column header and corresponding value of the
+selection.
+
+```sql
+
+sqlite> .schema embeddings
+CREATE TABLE embeddings (
+    id INTEGER PRIMARY KEY,
+    segment_id TEXT NOT NULL,
+    embedding_id TEXT NOT NULL,
+    seq_id BLOB NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (segment_id, embedding_id)
+);
+
+sqlite> .headers on
+sqlite> .mode column
+sqlite> select * from embeddings limit 1;
+id  segment_id                            embedding_id                          seq_id  created_at
+--  ------------------------------------  ------------------------------------  ------  -------------------
+1   33e29416-2f64-4d96-a0db-4d95ea626ee6  5d7365f3-286c-45d7-be70-0e0d24df12b3  1       2025-06-13 12:49:01
+```
+
+**Milvus** is an open-source vector db optimized for storing and retrieving embedding vectors. It is a distributed vector db that can scale to handle large amounts of data. It is built on top of Apache Arrow and uses a columnar storage format to store data. It also provides gRPC as well as REST API for easy integration with other applications. It is written in Go and is available for Linux, Windows, and macOS. It capably handles large-scale (billions of vectors) similarity search using **Approximate Nearest Neighbor (ANN)** algorithms like HNSW, IVF, and ANNOY.
 
 Milvus lite is a lightweight, local-only version of Milvus. It runs either in-memory or on file system. It is ideal for small-scale applications or for testing purposes.
 
