@@ -8,38 +8,41 @@ tags:
   - Knowledgebase
 ---
 
-In this blog, we will discuss how to build a local RAG-based knowledge base that protects both privacy and economics.  Local means that the documents to be analyzed will not get processed in any cloud-based LLMs.  It alsoIn this blog, we will discuss how to create a local RAG-based knowledge base that prioritizes both privacy and cost-effectiveness. By "local," we mean that the documents being analyzed will not be processed through any cloud-based language models. This approach also eliminates the need for API calls to services like OpenAI, resulting in cost savings. 
+In this blog, we will discuss how to build a local RAG-based knowledge base that prioritizes both privacy and cost-effectiveness. By "local," we mean that the documents being analyzed will not be processed through any cloud-based language models. This approach also eliminates the need for API calls to services like OpenAI, resulting in cost savings.
 
-We will start with a basic RAG implementation using Langchain and an open-source embedding model. Next, we will incorporate agent support to enhance the intelligence of the RAG. Finally, we will make improvements to optimize the RAG's performance. means that no API calls will be made against OpenAI and similar services, thus saving money.  We will start with a basic RAG based on Langchain and Opensource embedding model.  Then, we will add
-the support of the Agent to make the RAG smarter.  Lastly, we will enhance the RAG for improved performance.
-
+We will start with a basic RAG implementation using Langchain and an open-source embedding model. Next, we will incorporate agent support to enhance the intelligence of the RAG. Finally, we will make improvements to optimize the RAG's performance.
 
 ## RAG Architecture Overview
 
 Retrieval-Augmented Generation (RAG) combines the power of large language models with a knowledge base to provide accurate, context-aware responses. Here's the architecture breakdown:
 
 1. Document Processing Layer
+
    - Supports multiple document types (PDF, TXT, EPUB)
    - Documents are stored in a configurable Knowledge Base directory
    - Uses specialized loaders for each file type (PyPDF2, TextLoader, EbookLib)
 
 2. Text Processing Layer
+
    - Splits documents into manageable chunks using RecursiveCharacterTextSplitter
    - Default: 1000 characters per chunk with 200 character overlap
    - Maintains source metadata for each chunk
 
 3. Embedding Layer
+
    - Uses OllamaEmbeddings with "nomic-embed-text" model
    - Converts text chunks into vector representations
    - Optimized for semantic similarity matching
 
 4. Vector Storage Layer
+
    - Supports multiple vector databases:
      - Chroma (default): Persistent storage in "chroma_db"
      - FAISS: Index stored in "faiss_index"
    - Stores both embeddings and metadata
 
 5. Retrieval & Generation Layer
+
    - Similarity search finds relevant chunks (top-4 by default)
    - Local LLM (Deepseek via Ollama) processes query with context
    - Returns answer with source documentation
@@ -121,6 +124,7 @@ graph TB
     C3 --> D1
     D4 --> E1
     F3 --> A1
+
 </div>
 
 #### Agent-Assisted RAG Flow
@@ -136,7 +140,7 @@ sequenceDiagram
 
     U->>A: Complex Query
     A->>A: Analyze Query Requirements
-    
+
     par Tool Execution
         A->>KB: Search Local KB
         KB->>V: Vector Search
@@ -152,6 +156,7 @@ sequenceDiagram
     A->>U: Final Answer with Citations
 
     Note over A,LLM: Agent orchestrates multiple tools<br/>and knowledge sources
+
 </div>
 
 Now that we understand the architecture and flow of our RAG system, let's explore the implementation details using LangChain and local LLMs.
@@ -163,6 +168,7 @@ Let's look at how to implement a RAG system using LangChain and local LLMs.
 ### What is LangChain?
 
 LangChain is a framework for developing applications powered by language models. It provides:
+
 1. Components for common operations (loading documents, splitting text, managing prompts)
 2. Integration with various LLMs, embedding models, and vector stores
 3. Tools for building chains and agents
@@ -174,6 +180,7 @@ With this foundation, we can now implement our RAG system, starting with the bas
 Instead of using OpenAI's API (which requires an API key and is not free), we can use locally installed models via Ollama. Here's how to implement a basic RAG system using the Deepseek model:
 
 1. First, install Deepseek in Ollama:
+
 ```bash
 ollama pull deepseek-coder:1.3b
 ```
@@ -214,12 +221,14 @@ answer = qa_chain.run(question)
 ```
 
 This implementation:
+
 1. Takes the user query
 2. Retrieves relevant documents using the retriever (which gets the most similar chunks)
 3. "Stuffs" these documents into the prompt along with the query
 4. Sends this context-enriched prompt to the local LLM via Ollama
 
 The `RetrievalQA` chain from LangChain handles combining the context with the query and managing the interaction with the LLM. While this is a basic implementation, it provides a foundation that can be enhanced with:
+
 - Custom prompt templates
 - Better context preprocessing and selection
 - Advanced retrieval strategies
@@ -326,27 +335,27 @@ class EnhancedRAGAgent:
     def process_query(self, query: str) -> str:
         # 1. Query Analysis
         query_type = self.analyze_query_type(query)
-        
+
         # 2. Tool Selection
         selected_tools = self.select_tools(query_type)
-        
+
         # 3. Parallel Information Gathering
         with ThreadPoolExecutor() as executor:
             results = list(executor.map(
                 lambda tool: tool._run(query),
                 selected_tools
             ))
-        
+
         # 4. Context Management
         context = self.merge_results(results)
         context = self.filter_relevant_context(context, query)
-        
+
         # 5. Response Generation
         response = self.generate_response(query, context)
-        
+
         # 6. Add Citations
         final_response = self.add_citations(response, results)
-        
+
         self.history.append((query, final_response))
         return final_response
 
@@ -385,6 +394,7 @@ response = agent.process_query(
 ```
 
 This implementation:
+
 - Uses multiple tools in parallel
 - Handles errors gracefully
 - Provides source citations
@@ -395,18 +405,21 @@ This implementation:
 ## Future Challenges and Opportunities
 
 1. Advanced Context Understanding
+
    - Handling complex logical relationships between documents
    - Understanding and preserving document hierarchies
    - Cross-document coreference resolution
    - Dynamic context window management for different LLMs
 
 2. Quality and Trust
+
    - Real-time fact verification mechanisms
    - Confidence scoring for generated responses
    - Bias detection and mitigation
    - Privacy-preserving information retrieval
 
 3. Multi-Modal Support
+
    - Handling of images, audio, and video content
    - Cross-modal reasoning and retrieval
    - Multi-modal answer generation
