@@ -9,9 +9,50 @@ description: Deep dive into vector database
 comments: true
 ---
 
-Update 2025-06-20
+### 向量数据库
 
-- Add a section on ChromaDB/SQLLite sampling.
+**ChromaDB** 使用 SQLite 作为其后端，并创建多个表来管理集合、嵌入、元数据等。以下是对 ChromaDB SQLite 数据库中常见表的简要说明：
+
+- collections：存储每个集合（一组相关的嵌入/文档）的信息。
+- collection_metadata：存储与集合相关的元数据（键值对）。
+- embeddings：包含实际的向量嵌入及其关联文档的引用。
+- embedding_metadata：存储每个嵌入的元数据（如文档 ID、标签等）。
+- segments：用于管理数据分段，有助于高效存储和检索。
+- segment_metadata：每个分段的元数据。
+- embeddings_queue 和 embeddings_queue_config：用于管理队列中的嵌入操作，可能用于异步处理。
+- databases：存储多租户环境下不同逻辑数据库的信息。
+- maintenance_log：记录维护操作或后台任务。
+- migrations：跟踪模式迁移（数据库版本控制）。
+- embedding_fulltext_search 和相关表：支持对嵌入或文档进行全文搜索功能。
+
+使用 SQLite CLI，我们可以方便地查看实际的 chromaDB：
+
+命令 .schema TABLENAME 显示表的结构。在此示例中，
+我们查看 embeddings 表。然后我们启用列标题，以便
+SELECT 语句显示列标题和所选值的
+对应值。
+
+```sql
+
+sqlite> .schema embeddings
+CREATE TABLE embeddings (
+    id INTEGER PRIMARY KEY,
+    segment_id TEXT NOT NULL,
+    embedding_id TEXT NOT NULL,
+    seq_id BLOB NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (segment_id, embedding_id)
+);
+
+sqlite> .headers on
+sqlite> .mode column
+sqlite> select * from embeddings limit 1;
+id  segment_id                            embedding_id                          seq_id  created_at
+--  ----------------------------------- -  ------------------------------------  ------  -------------------
+1   33e29416-2f64-4d96-a0db-4d95ea626ee6  5d7365f3-286c-45d7-be70-0e0d24df12b3  1       2025-06-13 12:49:01
+```
+
+通过DeepL.com（免费版）翻译
 
 Update: 2025-06-19
 
