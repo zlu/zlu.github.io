@@ -575,6 +575,30 @@ article.post blockquote {
     max-width: 100%;
 }
 
+/* Post tags styling */
+.post-tags {
+    margin: 1em 0;
+    font-size: 0.9em;
+}
+
+.post-tags .tag {
+    display: inline-block;
+    padding: 0.2em 0.8em;
+    margin: 0.2em 0.4em 0.2em 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.post-tags .tag:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    border-color: #ccc;
+}
+
 /* Optimize for mobile */
 @media (max-width: 600px) {
     body, html {
