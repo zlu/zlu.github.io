@@ -1,19 +1,10 @@
 ---
 layout: post
 title: 使用 R 处理图像
-title_cn: true
 date: 2025-06-21 09:00 +0800
 tags:
   - R
   - 图像处理
-lang_en: |
-  Image processing in R, using packages like `imager`, enables powerful
-  analysis and manipulation of digital images. This blog demonstrates key
-  techniques—enhancement, denoising, and histogram equalization—using the
-  `imager` package, with visual results to illustrate their effects, based
-  on concepts from the "Image Data Analysis" document.
-lang_cn: |
-  在 R 中进行图像处理，使用像 `imager` 这样的包，可以实现强大的数字图像分析和处理。本博客将基于"图像数据分析"文档的概念，演示使用 `imager` 包进行的关键技术——图像增强、去噪和直方图均衡化，并通过可视化结果展示这些效果。
 ---
 
 ## 理解数字图像
@@ -154,6 +145,7 @@ dev.off()
 ## 应用场景
 
 R中的图像处理应用于以下领域：
+
 - **汽车工业**：车道检测、障碍物警告
 - **医疗**：诊断成像、手术辅助
 - **安防**：人脸识别、监控
