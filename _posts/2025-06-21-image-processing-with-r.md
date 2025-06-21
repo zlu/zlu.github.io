@@ -2,7 +2,7 @@
 layout: post
 title: Image Processing with R
 date: 2025-06-21 09:00 +0800
-tages:
+tags:
   - R
   - Image Processing
 ---

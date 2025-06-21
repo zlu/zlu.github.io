@@ -14,6 +14,7 @@ lang_en: |
   on concepts from the "Image Data Analysis" document.
 lang_cn: |
   在 R 中进行图像处理，使用像 `imager` 这样的包，可以实现强大的数字图像分析和处理。本博客将基于"图像数据分析"文档的概念，演示使用 `imager` 包进行的关键技术——图像增强、去噪和直方图均衡化，并通过可视化结果展示这些效果。
+---
 
 ## 理解数字图像
 
