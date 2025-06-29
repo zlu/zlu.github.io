@@ -21,7 +21,6 @@ Example in Code (PyTorch):
 import torch
 
 # 2D tensor (matrix)
-
 x = torch.tensor(\[[1.0, 2.0], \[3.0, 4.0]])
 print(x.shape)  # torch.Size(\[2, 2])
 ```
