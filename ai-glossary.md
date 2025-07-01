@@ -15,7 +15,7 @@ permalink: /ai-glossary/
         {{ term.title }}
       </span>
       <div class="glossary-definition" style="display:none; margin:0.5em 0 1em 1em;">
-        {{ term.content | markdownify }}
+        {{ term.content }}
       </div>
     </li>
   {% endfor %}
@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
     term.addEventListener('click', function() {
       const def = this.nextElementSibling;
       def.style.display = (def.style.display === 'none' || def.style.display === '') ? 'block' : 'none';
+      if (def.style.display === 'block' && window.MathJax && window.MathJax.typesetPromise) {
+        MathJax.typesetPromise([def]);
+      }
     });
   });
 });

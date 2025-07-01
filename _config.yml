@@ -31,3 +31,9 @@ mermaid:
       useMaxWidth: true
 twitter:
   username: zlu
+defaults:
+  - scope:
+      path: ""
+      type: ai-glossary
+    values:
+      layout: page
