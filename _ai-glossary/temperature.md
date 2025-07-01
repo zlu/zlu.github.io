@@ -12,7 +12,7 @@ $$
 {% endraw %}
 
 Where:
-- P_i is the original probability of token i,
-- T is the temperature.
+- $P_i$ is the original probability of token i,
+- $T$ is the temperature.
 
 
