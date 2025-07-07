@@ -3,4 +3,6 @@ university: Imperial College London
 courses:
   - department: Institute of Security Science and Technology
     title: "Graduation Paper - Security and Resilience: Science and Technology"
+  - code: PHYS70041
+    title: Long Summer Project
 ---
