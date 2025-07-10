@@ -11,4 +11,6 @@ courses:
     title: System Programming
   - code: COMP5310
     title: Principles of Data Science
+  - code: COMP9331
+    title: Computer Networks & Applications
 ---
