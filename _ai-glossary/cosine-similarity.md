@@ -15,7 +15,7 @@ It ignores magnitude, focusing on orientation, which makes it great for comparin
 
 For two vectors A and B:
 
-\( \text{cosine\_similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|} \)
+$ \text{cosine\_similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|} $
 
 Where:
 - $A \cdot B$ = dot product of vectors A and B
