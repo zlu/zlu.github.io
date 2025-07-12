@@ -17,7 +17,7 @@ Let:
 The Scaled Dot-Product Attention is:
 
 $\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right) V$
-- QK^T: Measures relevance between query and key.
-- \sqrt{d_k}: Scaling factor to stabilize gradients.
-- softmax: Converts scores to probabilities (attention weights).
+- $QK^T$: Measures relevance between query and key.
+- $\sqrt{d_k}$: Scaling factor to stabilize gradients.
+- $softmax$: Converts scores to probabilities (attention weights).
 - The result is a weighted sum of the values V, emphasizing relevant parts.
