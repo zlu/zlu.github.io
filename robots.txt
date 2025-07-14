@@ -1,10 +1,5 @@
 User-agent: *
 
-Allow: /posts
-Allow: /archives
-Allow: /talks
-Allow: /teach/
-
 Disallow: /admin/
 
 # Ensure search engines can access both language versions
