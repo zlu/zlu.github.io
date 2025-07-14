@@ -1,13 +1,11 @@
 User-agent: *
-Allow: /
+
 Allow: /posts
 Allow: /archives
 Allow: /talks
 Allow: /teach/
-Allow: /teach/*
 
 Disallow: /admin/
-Disallow: /assets/
 
 # Ensure search engines can access both language versions
 Allow: /*?lang=cn
