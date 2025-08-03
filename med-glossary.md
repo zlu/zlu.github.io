@@ -9,7 +9,7 @@ permalink: /med-glossary/
 </div>
 
 <ul id="glossary-list">
-  {% for term in site.ai-glossary %}
+  {% for term in site.med-glossary %}
     <li class="glossary-item">
       <span class="glossary-term" style="cursor:pointer; color:blue; text-decoration:underline;">
         {{ term.title }}
