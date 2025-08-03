@@ -17,6 +17,9 @@ collections:
   ai-glossary:
     output: true
     permalink: /ai-glossary/:name/ 
+  med-glossary:
+    output: true
+    permalink: /med-glossary/:name/
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -35,5 +38,10 @@ defaults:
   - scope:
       path: ""
       type: ai-glossary
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: med-glossary 
     values:
       layout: page

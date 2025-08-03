@@ -87,3 +87,20 @@ collections:
           required: false,
         }
       - { label: "Definition", name: "body", widget: "markdown" }
+  - name: "med-glossary"
+    label: "Medicine Glossary"
+    folder: "_med-glossary/"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Term", name: "title", widget: "string" }
+      - { label: "Term English", name: "term-en", widget: "list", required: false }
+      - {
+          label: "Related Terms",
+          name: "related",
+          widget: "list",
+          required: false,
+        }
+      - { label: "Definition", name: "body", widget: "markdown" }

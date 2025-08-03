@@ -41,6 +41,7 @@
     window.CMS.registerPreviewTemplate('blog', MathJaxPreview);
     window.CMS.registerPreviewTemplate('drafts', MathJaxPreview);
     window.CMS.registerPreviewTemplate('ai-glossary', MathJaxPreview);
+    window.CMS.registerPreviewTemplate('med-glossary', MathJaxPreview);
   }
 
   // Wait for CMS to be available
