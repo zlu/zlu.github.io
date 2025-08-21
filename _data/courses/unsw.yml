@@ -13,4 +13,6 @@ courses:
     title: Principles of Data Science
   - code: COMP9331
     title: Computer Networks & Applications
+  - code: INFO3616
+    title: Security Engineering
 ---
