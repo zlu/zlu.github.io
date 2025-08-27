@@ -11,4 +11,6 @@ courses:
     title: Introduction to Programming
   - code: FIT1047
     title: Introduction to computer systems, networks and security
+  - code: FIT5202
+    title: Big Data
 ---
