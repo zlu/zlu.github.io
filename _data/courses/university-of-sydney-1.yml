@@ -3,4 +3,6 @@ university: University of Sydney
 courses:
   - code: INFO1110
     title: Introduction to Programming
+  - title: Intro to Computer System
+    code: ELEC1601/ELEC9601
 ---
