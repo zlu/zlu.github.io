@@ -15,4 +15,6 @@ courses:
     title: Computer Networks & Applications
   - code: INFO3616
     title: Security Engineering
+  - code: INFO1110
+    title: Introduction to Programming
 ---
