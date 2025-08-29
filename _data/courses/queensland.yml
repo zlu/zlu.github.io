@@ -8,4 +8,9 @@ courses:
     title: Introduction to Information Systems
   - code: ENGG1001
     title: Programming for Engineers
+  - code: COMP3506
+    title: Algorithms and Data Structure
+    department: ""
+  - code: COMP7505
+    title: Algorithms and Data Structure
 ---
