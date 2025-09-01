@@ -13,4 +13,7 @@ courses:
     department: ""
   - code: COMP7505
     title: Algorithms and Data Structure
+  - code: INFS7410
+    title: Information Retrieval and Web Search
+    department: Elec Engineering, Comp Science
 ---
