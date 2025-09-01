@@ -13,4 +13,6 @@ courses:
     title: Introduction to computer systems, networks and security
   - code: FIT5202
     title: Big Data
+  - code: FIT3003
+    title: Business Intelligence and Data Warehousing
 ---
