@@ -7,4 +7,6 @@ courses:
     code: ELEC1601/ELEC9601
   - code: QBUS6600
     title: Data Analytics for Business Capstone
+  - code: COMP9210
+    title: Database Management Systems
 ---
