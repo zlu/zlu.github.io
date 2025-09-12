@@ -17,4 +17,7 @@ courses:
     title: Data Analytics for Business Capstone    
   - title: Database Management Systems
     code: COMP9120    
+  - title: Computing 1B OS and Network Platforms
+    code: INFO1112
+
 ---
