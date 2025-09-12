@@ -3,4 +3,6 @@ university: Hong Kong University of Science and Technology
 courses:
   - code: COMP1023
     title: Introduction to Python Programming
+  - code: DASC2010
+    title: Calculus for Data Analytics in Science
 ---
