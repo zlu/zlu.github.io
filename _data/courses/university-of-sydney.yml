@@ -9,4 +9,12 @@ courses:
     department: Computer Science
   - code: COMP5310
     title: Principles of Data Science
+  - code: INFO1110
+    title: Introduction to Programming
+  - title: Intro to Computer System
+    code: ELEC1601/ELEC9601
+  - code: QBUS6600
+    title: Data Analytics for Business Capstone    
+  - title: Database Management Systems
+    code: COMP9120    
 ---
