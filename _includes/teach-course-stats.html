@@ -1,0 +1,27 @@
+{% comment %}
+Computes and displays summary stats from site.data.courses
+Outputs bilingual text using data-en/data-cn for the site’s language switcher.
+{% endcomment %}
+
+{% assign uni_count = 0 %}
+{% assign course_count = 0 %}
+{% assign courses_data = site.data.courses %}
+
+{% for pair in courses_data %}
+  {% assign entry = pair[1] %}
+  {% if entry.university %}
+    {% assign uni_count = uni_count | plus: 1 %}
+    {% if entry.courses %}
+      {% assign course_count = course_count | plus: entry.courses.size %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<div class="course-stats" style="margin: 8px 0 12px; font-weight: 500; color: #374151;">
+  <span data-en="{{ uni_count }} universities · {{ course_count }}+ courses"
+        data-cn="{{ uni_count }} 所大学 · {{ course_count }}+ 门课程">
+    {{ uni_count }} universities · {{ course_count }}+ courses
+  </span>
+  
+</div>
+
