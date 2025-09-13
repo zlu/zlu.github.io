@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTabLanguage(initialLangCode);
 
     // 3. Wire up course search inputs and hide all courses initially
-    document.querySelectorAll('.course-search-input, #courseSearchInput').forEach(input => {
+    document.querySelectorAll('.course-search-input').forEach(input => {
         if (!input.hasAttribute('data-course-listener')) {
             const handler = function() { filterCourses(this); };
             input.addEventListener('input', handler);
