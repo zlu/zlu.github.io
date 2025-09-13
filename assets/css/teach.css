@@ -1,16 +1,16 @@
 /* Card Grid Styling */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .card {
     background: #ffffff;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
@@ -33,13 +33,13 @@
 .card h3 {
     margin: 0 0 1rem 0;
     color: #2c3e50;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .card p {
     margin: 0 0 1.5rem 0;
     color: #4b5563;
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.5;
     flex-grow: 1;
 }
