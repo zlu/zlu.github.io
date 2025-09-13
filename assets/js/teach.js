@@ -117,12 +117,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to filter the course list based on search input
 function filterCourses(inputEl) {
-  // If called without an input element, hide all items in all containers
+  // Utility to toggle hint/no-results within a container
+  function updateMessages(container, hasQuery, matchCount) {
+    const hint = container.querySelector('.course-search-hint');
+    const emptyMsg = container.querySelector('.course-no-results');
+    if (!hasQuery) {
+      if (hint) hint.style.display = '';
+      if (emptyMsg) emptyMsg.style.display = 'none';
+      return;
+    }
+    if (hint) hint.style.display = 'none';
+    if (emptyMsg) emptyMsg.style.display = matchCount === 0 ? '' : 'none';
+  }
+
+  // If called without an input element, hide all items and show hints
   if (!inputEl) {
     document.querySelectorAll('.course-list-container').forEach(container => {
       container.querySelectorAll('.university-entry').forEach(item => {
-        item.style.display = "none";
+        item.style.display = 'none';
       });
+      updateMessages(container, false, 0);
     });
     return;
   }
@@ -134,15 +148,20 @@ function filterCourses(inputEl) {
   const filter = (inputEl.value || '').toLowerCase();
   const items = container.querySelectorAll('.university-entry');
 
-  // If there's no search query, hide all items in this container
+  // If there's no search query, hide all items and show hint
   if (!filter) {
-    items.forEach(item => (item.style.display = "none"));
+    items.forEach(item => (item.style.display = 'none'));
+    updateMessages(container, false, 0);
     return;
   }
 
-  // Filter items in this container only
+  // Filter items in this container only and count matches
+  let matchCount = 0;
   items.forEach(item => {
-    const filterText = item.getAttribute('data-filter-text') || '';
-    item.style.display = filterText.toLowerCase().includes(filter) ? "" : "none";
+    const filterText = (item.getAttribute('data-filter-text') || '').toLowerCase();
+    const show = filterText.includes(filter);
+    item.style.display = show ? '' : 'none';
+    if (show) matchCount++;
   });
+  updateMessages(container, true, matchCount);
 }

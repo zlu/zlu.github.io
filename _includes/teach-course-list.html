@@ -2,6 +2,12 @@
     {% include teach-course-stats.html %}
     <input type="text" id="courseSearchInput" class="course-search-input" onkeyup="filterCourses(this)" placeholder="Search courses or universities..."
         title="Type in a course or university name">
+    <div class="course-search-hint" data-en="Start typing to search universities or courses…" data-cn="开始输入以搜索大学或课程…" style="margin: 8px 0; color: #6b7280; font-size: 0.95rem;">
+        Start typing to search universities or courses…
+    </div>
+    <div class="course-no-results" data-en="No matches found" data-cn="未找到匹配项" style="display:none; margin: 8px 0; color: #9ca3af; font-size: 0.95rem;">
+        No matches found
+    </div>
 
     <div id="courseList">
         {% comment %} Iterate over all course data files (hash → [key, value]) {% endcomment %}

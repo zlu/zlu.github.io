@@ -20,7 +20,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/zhaolu.css">
-  {% if page.title_en contains 'Computer Science Tutoring' %}
+  {% if page.url contains '/teach' %}
   <link rel="stylesheet" href="/assets/css/teach.css">
   {% endif %}
 
@@ -83,7 +83,7 @@
   <link href="/assets/css/remixicon.css" rel="stylesheet">
 
 
-  {% if page.title_en contains 'Computer Science Tutoring' or page.title_en == "Teach@zlu" %}
+  {% if page.url contains '/teach' %}
   <script src="/assets/js/teach.js"></script>
   {% endif %}
 

@@ -10,28 +10,7 @@ alternate_lang: zh-CN
 hreflang:
   en: https://zlu.me/teach/
   zh-CN: https://zlu.me/teach/?lang=cn
-region_pages:
-  - title: Australia
-    url: /teach/australia/
-    description: Expert CS tutoring for students at Monash, UNSW, Melbourne & more
-  - title: United Kingdom
-    url: /teach/uk/
-    description: Supporting students at Birmingham, Cardiff & Queen Mary
-  - title: United States
-    url: /teach/usa/
-    description: Tutoring for Johns Hopkins, Rochester & other US universities
-  - title: Canada
-    url: /teach/canada/
-    description: Help for UofT, UBC, Waterloo & other Canadian institutions
-  - title: New Zealand
-    url: /teach/new-zealand/
-    description: Supporting University of Auckland and other NZ students
-  - title: Hong Kong
-    url: /teach/hong-kong/
-    description: Tutoring for HKU, HKBU & other Hong Kong universities
-  - title: Singapore
-    url: /teach/singapore/
-    description: Supporting NTU, NUS, JCU & other Singapore institutions
+region_pages: []
 ---
 
 {% include tutoring-schema.html %}
