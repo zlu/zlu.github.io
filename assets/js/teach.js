@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Listen for language change events - ONLY update text
     document.addEventListener('languageChanged', function(e) {
-        // Ensure language code is consistent (e.g., 'en' or 'cn')
-        const langCode = e.detail.language === 'zh-cn' ? 'cn' : 'en';
+        // Ensure language code is consistent ('en' or 'cn')
+        const langCode = (e && e.detail && e.detail.language === 'cn') ? 'cn' : 'en';
         updateTabLanguage(langCode);
         // DO NOT re-initialize tabs here. Visibility is handled by the main language switcher.
     });
@@ -96,7 +96,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const initialLangCode = currentHtmlLang === 'zh-cn' ? 'cn' : 'en';
     updateTabLanguage(initialLangCode);
 
-    // 3. Hide all courses by default
+    // 3. Wire up course search inputs and hide all courses initially
+    document.querySelectorAll('.course-search-input, #courseSearchInput').forEach(input => {
+        if (!input.hasAttribute('data-course-listener')) {
+            const handler = function() { filterCourses(this); };
+            input.addEventListener('input', handler);
+            input.addEventListener('keyup', handler);
+            input.setAttribute('data-course-listener', 'true');
+        }
+    });
+
+    // Hide all until user starts typing in each list
     filterCourses();
 
     // Note: Ensure your main language switching logic correctly handles the
@@ -106,48 +116,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Function to filter the course list based on search input
-function filterCourses() {
-  // Get the search input element and the filter value (lowercase)
-  const input = document.getElementById('courseSearchInput');
-  const filter = input.value.toLowerCase();
-
-  // Get the container for the list items
-  const list = document.getElementById('courseList');
-  if (!list) return; // Exit if the list container isn't found
-
-  // Get all the university entry divs
-  const items = list.getElementsByClassName('university-entry');
-
-  // If there's no search query, hide all items
-  if (!filter) {
-    for (let i = 0; i < items.length; i++) {
-      items[i].style.display = "none";
-    }
+function filterCourses(inputEl) {
+  // If called without an input element, hide all items in all containers
+  if (!inputEl) {
+    document.querySelectorAll('.course-list-container').forEach(container => {
+      container.querySelectorAll('.university-entry').forEach(item => {
+        item.style.display = "none";
+      });
+    });
     return;
   }
 
-  // Loop through all list items, and show only those that match the search query
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    // Get the pre-compiled filter text from the data attribute
-    const filterText = item.getAttribute('data-filter-text');
+  // Scope filtering to the nearest course list container
+  const container = inputEl.closest('.course-list-container');
+  if (!container) return;
 
-    if (filterText) {
-      // Check if the filter text (lowercase) includes the search term
-      if (filterText.toLowerCase().indexOf(filter) > -1) {
-        item.style.display = ""; // Show the item
-      } else {
-        item.style.display = "none"; // Hide the item
-      }
-    }
+  const filter = (inputEl.value || '').toLowerCase();
+  const items = container.querySelectorAll('.university-entry');
+
+  // If there's no search query, hide all items in this container
+  if (!filter) {
+    items.forEach(item => (item.style.display = "none"));
+    return;
   }
+
+  // Filter items in this container only
+  items.forEach(item => {
+    const filterText = item.getAttribute('data-filter-text') || '';
+    item.style.display = filterText.toLowerCase().includes(filter) ? "" : "none";
+  });
 }
-
-// Optional: If you want to add the listener programmatically instead of using onkeyup in HTML
-// document.addEventListener('DOMContentLoaded', function() {
-//   const searchInput = document.getElementById('courseSearchInput');
-//   if (searchInput) {
-//     searchInput.addEventListener('keyup', filterCourses);
-//   }
-// });
-

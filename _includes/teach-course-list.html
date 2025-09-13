@@ -1,12 +1,13 @@
 <div class="course-list-container">
-    <input type="text" id="courseSearchInput" onkeyup="filterCourses()" placeholder="Search courses or universities..."
+    <input type="text" id="courseSearchInput" class="course-search-input" onkeyup="filterCourses(this)" placeholder="Search courses or universities..."
         title="Type in a course or university name">
 
     <div id="courseList">
-        {% comment %} Get all course files and sort by university name {% endcomment %}
-        {% assign courses_data = site.data.courses | to_liquid | values %}
+        {% comment %} Iterate over all course data files (hash → [key, value]) {% endcomment %}
+        {% assign courses_data = site.data.courses %}
 
-        {% for entry in courses_data %}
+        {% for pair in courses_data %}
+        {% assign entry = pair[1] %}
         {% if entry.university %}
             {% comment %} Build the filter text dynamically {% endcomment %}
             {% assign filter_text = entry.university %}

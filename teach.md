@@ -70,8 +70,8 @@ At universities in Australia, the UK, and the USA, computer science courses like
 
 {% include teach-faq-en.md %}
 
-<!-- ### University Courses {#university-courses}
-{% include teach-course-list.html %} -->
+### University Courses {#university-courses}
+{% include teach-course-list.html %}
 
 {% endcapture %}
 
@@ -106,6 +106,9 @@ At universities in Australia, the UK, and the USA, computer science courses like
 ### 常见问题解答（FAQ） {#常见问题解答-faq}
 
 {% include teach-faq-cn.md %}
+
+### 大学课程 {#大学课程}
+{% include teach-course-list.html %}
 
 {% endcapture %}
 
