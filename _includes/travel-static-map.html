@@ -1,0 +1,121 @@
+<div class="travel-hero">
+  <div class="travel-hero-bg"></div>
+
+  <!-- Featured markers by country (positions are approximate percentages) -->
+  <!-- USA -->
+  <div class="marker" style="--x: 20%; --y: 48%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇺🇸</span>United States</span>
+  </div>
+
+  <!-- United Kingdom -->
+  <div class="marker" style="--x: 47%; --y: 36%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇬🇧</span>United Kingdom</span>
+  </div>
+
+  <!-- Germany -->
+  <div class="marker" style="--x: 51%; --y: 37%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇩🇪</span>Germany</span>
+  </div>
+
+  <!-- China -->
+  <div class="marker" style="--x: 73%; --y: 45%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇨🇳</span>China</span>
+  </div>
+
+  <!-- Japan -->
+  <div class="marker" style="--x: 82%; --y: 45%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇯🇵</span>Japan</span>
+  </div>
+
+  <!-- Australia -->
+  <div class="marker" style="--x: 86%; --y: 78%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇦🇺</span>Australia</span>
+  </div>
+
+  <!-- Brazil -->
+  <div class="marker" style="--x: 35%; --y: 66%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇧🇷</span>Brazil</span>
+  </div>
+
+  <!-- Morocco -->
+  <div class="marker" style="--x: 44%; --y: 49%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇲🇦</span>Morocco</span>
+  </div>
+
+  <!-- Turkey -->
+  <div class="marker" style="--x: 54%; --y: 45%;">
+    <span class="marker-dot"></span>
+    <span class="marker-label"><span class="flag">🇹🇷</span>Turkey</span>
+  </div>
+</div>
+
+<style>
+  .travel-hero {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin: 16px 0 12px;
+    background: #eef2ff;
+  }
+  .travel-hero-bg {
+    position: absolute; inset: 0;
+    /* Layer order: overlays first (on top), then local custom map (if present), then Wikimedia world map */
+    background-image:
+      radial-gradient(1200px 600px at 10% 20%, rgba(59,130,246,0.12), transparent 60%),
+      radial-gradient(800px 400px at 90% 30%, rgba(16,185,129,0.12), transparent 60%),
+      radial-gradient(800px 400px at 50% 80%, rgba(244,114,182,0.10), transparent 60%),
+      linear-gradient(180deg, rgba(248,250,252,0.85) 0%, rgba(238,242,255,0.85) 100%),
+      url('/assets/images/uploads/travel-map.jpg'),
+      url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/4096px-World_map_-_low_resolution.svg.png');
+    background-blend-mode: multiply, multiply, multiply, normal, normal, normal;
+    background-size: auto, auto, auto, auto, cover, cover;
+    background-position: center;
+    filter: saturate(1.05) contrast(1.02);
+  }
+
+  .marker {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -100%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .marker-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ef4444, #b91c1c);
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 4px rgba(239,68,68,0.18), 0 6px 12px rgba(0,0,0,0.15);
+  }
+  .marker-label {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(229,231,235,0.9);
+    border-radius: 9999px;
+    padding: 4px 10px;
+    color: #111827;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    white-space: nowrap;
+  }
+  .marker-label .flag { margin-right: 6px; }
+
+  @media (max-width: 640px) {
+    .travel-hero { aspect-ratio: 4 / 3; }
+    .marker-label { font-size: 0.82rem; padding: 3px 8px; }
+    .marker-dot { width: 8px; height: 8px; box-shadow: 0 0 0 3px rgba(239,68,68,0.18), 0 4px 8px rgba(0,0,0,0.12); }
+  }
+</style>
