@@ -185,65 +185,105 @@ permalink: /travels/
 
 ### Countries Visited
 
-<details>
-  <summary style="font-size:1.1em; cursor:pointer;">Show Countries Visited</summary>
-  <ol style="margin-top:1em;">
-    <li>USA</li>
-    <li>Canada</li>
-    <li>Germany</li>
-    <li>Netherlands</li>
-    <li>Spain</li>
-    <li>UK</li>
-    <li>Switzerland</li>
-    <li>France</li>
-    <li>Belgium</li>
-    <li>Denmark</li>
-    <li>Portugal</li>
-    <li>Italy</li>
-    <li>Vatican City</li>
-    <li>Czech</li>
-    <li>Austria</li>
-    <li>Hungary</li>
-    <li>Israel</li>
-    <li>China</li>
-    <li>Panama</li>
-    <li>Mexico</li>
-    <li>Thailand</li>
-    <li>Cambodia</li>
-    <li>Viet Nam</li>
-    <li>Korea</li>
-    <li>Monaco</li>
-    <li>Japan</li>
-    <li>Brazil</li>
-    <li>Peru</li>
-    <li>Colombia</li>
-    <li>Argentina</li>
-    <li>Chile</li>
-    <li>Sweden</li>
-    <li>Finland</li>
-    <li>Estonia</li>
-    <li>Latvia</li>
-    <li>Lithuania</li>
-    <li>Poland</li>
-    <li>Slovakia</li>
-    <li>Serbia</li>
-    <li>Bulgaria</li>
-    <li>Greece</li>
-    <li>Morocco</li>
-    <li>Romania</li>
-    <li>Ireland</li>
-    <li>Albania</li>
-    <li>Montenegro</li>
-    <li>Croatia</li>
-    <li>Bosnia and Herzegovina</li>
-    <li>Turkey</li>
-    <li>Malta</li>
-    <li>Luxembourg</li>
-    <li>Macedonia</li>
-    <li>Laos</li>
-    <li>Georgia</li>
-    <li>Azerbaijan</li>
-    <li>Uzbekistan</li>
-    <li>Kazakhstan</li>
-  </ol>
-</details>
+<div class="country-stats" style="margin: 8px 0 12px;">
+  <span id="country-count" class="region-badge" style="display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:9999px;padding:2px 8px;font-size:0.9rem;">—</span>
+  <span style="margin-left:8px;color:#6b7280;font-size:0.95rem;">Tap a chip to explore the map.</span>
+  
+</div>
+
+<div class="country-chips" id="country-chips">
+  <span class="chip"><span class="flag">🇺🇸</span>USA</span>
+  <span class="chip"><span class="flag">🇨🇦</span>Canada</span>
+  <span class="chip"><span class="flag">🇩🇪</span>Germany</span>
+  <span class="chip"><span class="flag">🇳🇱</span>Netherlands</span>
+  <span class="chip"><span class="flag">🇪🇸</span>Spain</span>
+  <span class="chip"><span class="flag">🇬🇧</span>UK</span>
+  <span class="chip"><span class="flag">🇨🇭</span>Switzerland</span>
+  <span class="chip"><span class="flag">🇫🇷</span>France</span>
+  <span class="chip"><span class="flag">🇧🇪</span>Belgium</span>
+  <span class="chip"><span class="flag">🇩🇰</span>Denmark</span>
+  <span class="chip"><span class="flag">🇵🇹</span>Portugal</span>
+  <span class="chip"><span class="flag">🇮🇹</span>Italy</span>
+  <span class="chip"><span class="flag">🇻🇦</span>Vatican City</span>
+  <span class="chip"><span class="flag">🇨🇿</span>Czech</span>
+  <span class="chip"><span class="flag">🇦🇹</span>Austria</span>
+  <span class="chip"><span class="flag">🇭🇺</span>Hungary</span>
+  <span class="chip"><span class="flag">🇮🇱</span>Israel</span>
+  <span class="chip"><span class="flag">🇨🇳</span>China</span>
+  <span class="chip"><span class="flag">🇵🇦</span>Panama</span>
+  <span class="chip"><span class="flag">🇲🇽</span>Mexico</span>
+  <span class="chip"><span class="flag">🇹🇭</span>Thailand</span>
+  <span class="chip"><span class="flag">🇰🇭</span>Cambodia</span>
+  <span class="chip"><span class="flag">🇻🇳</span>Viet Nam</span>
+  <span class="chip"><span class="flag">🇰🇷</span>Korea</span>
+  <span class="chip"><span class="flag">🇲🇨</span>Monaco</span>
+  <span class="chip"><span class="flag">🇯🇵</span>Japan</span>
+  <span class="chip"><span class="flag">🇧🇷</span>Brazil</span>
+  <span class="chip"><span class="flag">🇵🇪</span>Peru</span>
+  <span class="chip"><span class="flag">🇨🇴</span>Colombia</span>
+  <span class="chip"><span class="flag">🇦🇷</span>Argentina</span>
+  <span class="chip"><span class="flag">🇨🇱</span>Chile</span>
+  <span class="chip"><span class="flag">🇸🇪</span>Sweden</span>
+  <span class="chip"><span class="flag">🇫🇮</span>Finland</span>
+  <span class="chip"><span class="flag">🇪🇪</span>Estonia</span>
+  <span class="chip"><span class="flag">🇱🇻</span>Latvia</span>
+  <span class="chip"><span class="flag">🇱🇹</span>Lithuania</span>
+  <span class="chip"><span class="flag">🇵🇱</span>Poland</span>
+  <span class="chip"><span class="flag">🇸🇰</span>Slovakia</span>
+  <span class="chip"><span class="flag">🇷🇸</span>Serbia</span>
+  <span class="chip"><span class="flag">🇧🇬</span>Bulgaria</span>
+  <span class="chip"><span class="flag">🇬🇷</span>Greece</span>
+  <span class="chip"><span class="flag">🇲🇦</span>Morocco</span>
+  <span class="chip"><span class="flag">🇷🇴</span>Romania</span>
+  <span class="chip"><span class="flag">🇮🇪</span>Ireland</span>
+  <span class="chip"><span class="flag">🇦🇱</span>Albania</span>
+  <span class="chip"><span class="flag">🇲🇪</span>Montenegro</span>
+  <span class="chip"><span class="flag">🇭🇷</span>Croatia</span>
+  <span class="chip"><span class="flag">🇧🇦</span>Bosnia and Herzegovina</span>
+  <span class="chip"><span class="flag">🇹🇷</span>Turkey</span>
+  <span class="chip"><span class="flag">🇲🇹</span>Malta</span>
+  <span class="chip"><span class="flag">🇱🇺</span>Luxembourg</span>
+  <span class="chip"><span class="flag">🇲🇰</span>Macedonia</span>
+  <span class="chip"><span class="flag">🇱🇦</span>Laos</span>
+  <span class="chip"><span class="flag">🇬🇪</span>Georgia</span>
+  <span class="chip"><span class="flag">🇦🇿</span>Azerbaijan</span>
+  <span class="chip"><span class="flag">🇺🇿</span>Uzbekistan</span>
+  <span class="chip"><span class="flag">🇰🇿</span>Kazakhstan</span>
+</div>
+
+<style>
+  .country-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+  }
+  .chip {
+    display: inline-block;
+    padding: .25rem .6rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    background: #fff;
+    color: #374151;
+    font-size: .95rem;
+    white-space: nowrap;
+    transition: background .2s ease, color .2s ease, border-color .2s ease;
+    cursor: default;
+  }
+  .chip:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+  }
+  .chip .flag { margin-right: .35rem; }
+  @media (max-width: 480px) {
+    .chip { font-size: .9rem; }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    const chips = document.querySelectorAll('#country-chips .chip');
+    const countEl = document.getElementById('country-count');
+    if (countEl) countEl.textContent = chips.length + ' countries';
+  });
+</script>
