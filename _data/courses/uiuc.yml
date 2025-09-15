@@ -1,0 +1,8 @@
+---
+university: UIUC
+courses:
+  - code: CS444
+    title: Deep Learning for Computer Vision
+  - title: Deep Learning for Computer Vision
+    code: ECE494
+---
