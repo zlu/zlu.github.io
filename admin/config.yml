@@ -2,8 +2,6 @@ backend:
   name: github
   repo: zlu/zlu.github.io
   branch: main
-  site_domain: zlu.me
-  app_id: Ov23lige46jUA9fP3amk
 
 media_folder: "assets/images/uploads"
 
