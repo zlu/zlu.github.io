@@ -3,4 +3,5 @@ university: City University of Hong Kong
 courses:
   - code: CS2115
     title: Computer Organization
+  - title: MIS 面试
 ---
