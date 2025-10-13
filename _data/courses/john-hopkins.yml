@@ -4,4 +4,7 @@ courses:
   - code: ""
     title: Business Analytics & Artificial Intelligence
     department: ""
+  - code: BU510 615
+    title: Python for Data Analysis
+    department: Carey Business School
 ---
