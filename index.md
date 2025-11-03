@@ -4,7 +4,7 @@ title: "Zhao Lü"
 permalink: /
 ---
 
-My name is Zhao Lü (吕钊). Zhao is pronounced as 'ciao' with a 'j' and it means to encourage oneself in Chinese. I was born in Beijing, China. I have lived in USA, UK, Brazil, Switzerland, France, and Germany. I travel quite a bit, 60 countries and counting.
+My name is Zhao Lü (吕钊). Zhao is pronounced as 'ciao' with a 'j' and it means to encourage oneself in Chinese. I was born in Beijing, China. I have lived in USA, UK, Brazil, Switzerland, France, and Germany. I travel quite a bit, <span id="country-count-home">60</span> countries and counting.
 
 I'm a programmer who enjoys practicing yoga.  
 
@@ -28,3 +28,21 @@ In general, I use **zlu** as my user name on networks and social channels when a
 [goodreads]: https://www.goodreads.com/zlulz "GoodReads"
 [500px]: https://500px.com/p/zlu?view=photos "500px"
 [flickr]: https://www.flickr.com/photos/zzlluu/ "Flickr"
+
+<script>
+  // Dynamically update country count from travels page
+  document.addEventListener('DOMContentLoaded', function(){
+    fetch('/travels/')
+      .then(response => response.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const chips = doc.querySelectorAll('#country-chips .chip');
+        const countEl = document.getElementById('country-count-home');
+        if (countEl && chips.length > 0) {
+          countEl.textContent = chips.length;
+        }
+      })
+      .catch(err => console.log('Could not fetch country count:', err));
+  });
+</script>
