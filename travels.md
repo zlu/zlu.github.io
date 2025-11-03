@@ -20,63 +20,66 @@ permalink: /travels/
 </div>
 
 <div class="country-chips" id="country-chips">
-  <span class="chip"><span class="flag">🇺🇸</span>USA</span>
-  <span class="chip"><span class="flag">🇨🇦</span>Canada</span>
-  <span class="chip"><span class="flag">🇩🇪</span>Germany</span>
-  <span class="chip"><span class="flag">🇳🇱</span>Netherlands</span>
-  <span class="chip"><span class="flag">🇪🇸</span>Spain</span>
-  <span class="chip"><span class="flag">🇬🇧</span>UK</span>
-  <span class="chip"><span class="flag">🇨🇭</span>Switzerland</span>
-  <span class="chip"><span class="flag">🇫🇷</span>France</span>
-  <span class="chip"><span class="flag">🇧🇪</span>Belgium</span>
-  <span class="chip"><span class="flag">🇩🇰</span>Denmark</span>
-  <span class="chip"><span class="flag">🇵🇹</span>Portugal</span>
-  <span class="chip"><span class="flag">🇮🇹</span>Italy</span>
-  <span class="chip"><span class="flag">🇻🇦</span>Vatican City</span>
-  <span class="chip"><span class="flag">🇨🇿</span>Czech</span>
-  <span class="chip"><span class="flag">🇦🇹</span>Austria</span>
-  <span class="chip"><span class="flag">🇭🇺</span>Hungary</span>
-  <span class="chip"><span class="flag">🇮🇱</span>Israel</span>
-  <span class="chip"><span class="flag">🇨🇳</span>China</span>
-  <span class="chip"><span class="flag">🇵🇦</span>Panama</span>
-  <span class="chip"><span class="flag">🇲🇽</span>Mexico</span>
-  <span class="chip"><span class="flag">🇹🇭</span>Thailand</span>
-  <span class="chip"><span class="flag">🇰🇭</span>Cambodia</span>
-  <span class="chip"><span class="flag">🇻🇳</span>Viet Nam</span>
-  <span class="chip"><span class="flag">🇰🇷</span>Korea</span>
-  <span class="chip"><span class="flag">🇲🇨</span>Monaco</span>
-  <span class="chip"><span class="flag">🇯🇵</span>Japan</span>
-  <span class="chip"><span class="flag">🇧🇷</span>Brazil</span>
-  <span class="chip"><span class="flag">🇵🇪</span>Peru</span>
-  <span class="chip"><span class="flag">🇨🇴</span>Colombia</span>
+  <span class="chip"><span class="flag">🇦🇱</span>Albania</span>
   <span class="chip"><span class="flag">🇦🇷</span>Argentina</span>
+  <span class="chip"><span class="flag">🇦🇲</span>Armenia</span>
+  <span class="chip"><span class="flag">🇦🇹</span>Austria</span>
+  <span class="chip"><span class="flag">🇦🇿</span>Azerbaijan</span>
+  <span class="chip"><span class="flag">🇧🇪</span>Belgium</span>
+  <span class="chip"><span class="flag">🇧🇦</span>Bosnia and Herzegovina</span>
+  <span class="chip"><span class="flag">🇧🇷</span>Brazil</span>
+  <span class="chip"><span class="flag">🇧🇬</span>Bulgaria</span>
+  <span class="chip"><span class="flag">🇰🇭</span>Cambodia</span>
+  <span class="chip"><span class="flag">🇨🇦</span>Canada</span>
   <span class="chip"><span class="flag">🇨🇱</span>Chile</span>
-  <span class="chip"><span class="flag">🇸🇪</span>Sweden</span>
-  <span class="chip"><span class="flag">🇫🇮</span>Finland</span>
+  <span class="chip"><span class="flag">🇨🇳</span>China</span>
+  <span class="chip"><span class="flag">🇨🇴</span>Colombia</span>
+  <span class="chip"><span class="flag">🇭🇷</span>Croatia</span>
+  <span class="chip"><span class="flag">🇨🇾</span>Cyprus</span>
+  <span class="chip"><span class="flag">🇨🇿</span>Czech</span>
+  <span class="chip"><span class="flag">🇩🇰</span>Denmark</span>
   <span class="chip"><span class="flag">🇪🇪</span>Estonia</span>
+  <span class="chip"><span class="flag">🇫🇮</span>Finland</span>
+  <span class="chip"><span class="flag">🇫🇷</span>France</span>
+  <span class="chip"><span class="flag">🇬🇪</span>Georgia</span>
+  <span class="chip"><span class="flag">🇩🇪</span>Germany</span>
+  <span class="chip"><span class="flag">🇬🇷</span>Greece</span>
+  <span class="chip"><span class="flag">🇭🇺</span>Hungary</span>
+  <span class="chip"><span class="flag">🇮🇪</span>Ireland</span>
+  <span class="chip"><span class="flag">🇮🇱</span>Israel</span>
+  <span class="chip"><span class="flag">🇮🇹</span>Italy</span>
+  <span class="chip"><span class="flag">🇯🇵</span>Japan</span>
+  <span class="chip"><span class="flag">🇰🇿</span>Kazakhstan</span>
+  <span class="chip"><span class="flag">🇰🇷</span>Korea</span>
+  <span class="chip"><span class="flag">🇱🇦</span>Laos</span>
   <span class="chip"><span class="flag">🇱🇻</span>Latvia</span>
   <span class="chip"><span class="flag">🇱🇹</span>Lithuania</span>
-  <span class="chip"><span class="flag">🇵🇱</span>Poland</span>
-  <span class="chip"><span class="flag">🇸🇰</span>Slovakia</span>
-  <span class="chip"><span class="flag">🇷🇸</span>Serbia</span>
-  <span class="chip"><span class="flag">🇧🇬</span>Bulgaria</span>
-  <span class="chip"><span class="flag">🇬🇷</span>Greece</span>
-  <span class="chip"><span class="flag">🇲🇦</span>Morocco</span>
-  <span class="chip"><span class="flag">🇷🇴</span>Romania</span>
-  <span class="chip"><span class="flag">🇮🇪</span>Ireland</span>
-  <span class="chip"><span class="flag">🇦🇱</span>Albania</span>
-  <span class="chip"><span class="flag">🇲🇪</span>Montenegro</span>
-  <span class="chip"><span class="flag">🇭🇷</span>Croatia</span>
-  <span class="chip"><span class="flag">🇧🇦</span>Bosnia and Herzegovina</span>
-  <span class="chip"><span class="flag">🇹🇷</span>Turkey</span>
-  <span class="chip"><span class="flag">🇲🇹</span>Malta</span>
   <span class="chip"><span class="flag">🇱🇺</span>Luxembourg</span>
   <span class="chip"><span class="flag">🇲🇰</span>Macedonia</span>
-  <span class="chip"><span class="flag">🇱🇦</span>Laos</span>
-  <span class="chip"><span class="flag">🇬🇪</span>Georgia</span>
-  <span class="chip"><span class="flag">🇦🇿</span>Azerbaijan</span>
+  <span class="chip"><span class="flag">🇲🇹</span>Malta</span>
+  <span class="chip"><span class="flag">🇲🇽</span>Mexico</span>
+  <span class="chip"><span class="flag">🇲🇩</span>Moldova</span>
+  <span class="chip"><span class="flag">🇲🇨</span>Monaco</span>
+  <span class="chip"><span class="flag">🇲🇪</span>Montenegro</span>
+  <span class="chip"><span class="flag">🇲🇦</span>Morocco</span>
+  <span class="chip"><span class="flag">🇳🇱</span>Netherlands</span>
+  <span class="chip"><span class="flag">🇵🇦</span>Panama</span>
+  <span class="chip"><span class="flag">🇵🇪</span>Peru</span>
+  <span class="chip"><span class="flag">🇵🇱</span>Poland</span>
+  <span class="chip"><span class="flag">🇵🇹</span>Portugal</span>
+  <span class="chip"><span class="flag">🇷🇴</span>Romania</span>
+  <span class="chip"><span class="flag">🇷🇸</span>Serbia</span>
+  <span class="chip"><span class="flag">🇸🇰</span>Slovakia</span>
+  <span class="chip"><span class="flag">🇪🇸</span>Spain</span>
+  <span class="chip"><span class="flag">🇸🇪</span>Sweden</span>
+  <span class="chip"><span class="flag">🇨🇭</span>Switzerland</span>
+  <span class="chip"><span class="flag">🇹🇭</span>Thailand</span>
+  <span class="chip"><span class="flag">🇹🇷</span>Turkey</span>
+  <span class="chip"><span class="flag">🇬🇧</span>UK</span>
+  <span class="chip"><span class="flag">🇺🇸</span>USA</span>
   <span class="chip"><span class="flag">🇺🇿</span>Uzbekistan</span>
-  <span class="chip"><span class="flag">🇰🇿</span>Kazakhstan</span>
+  <span class="chip"><span class="flag">🇻🇦</span>Vatican City</span>
+  <span class="chip"><span class="flag">🇻🇳</span>Viet Nam</span>
 </div>
 
 <style>
