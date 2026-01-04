@@ -41,7 +41,7 @@ In the context of **machine learning (especially few-shot learning)** and **prom
 
 #### Key Characteristics
 - More examples help the model grasp complex patterns (e.g., nuanced classification, named entity recognition).
-- The number of examples \(N\) is small compared to full fine-tuning (which uses thousands/millions of samples).
+- The number of examples $N$ is small compared to full fine-tuning (which uses thousands/millions of samples).
 
 #### Example (Named Entity Recognition, 2-shot)
 **Prompt**:

@@ -53,7 +53,7 @@ $$ \text{output} =
 $$
 
 Where:
-- If the weighted sum \(z\) is zero or more, the perceptron outputs 1.
+- If the weighted sum $z$ is zero or more, the perceptron outputs 1.
 - If the weighted sum is less than zero, the perceptron outputs 0.
 
 #### Example: Spam Detector

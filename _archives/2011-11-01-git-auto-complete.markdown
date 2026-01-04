@@ -39,7 +39,7 @@ And the steps to enable this
 
 If you want some color in git prompt
 
-`PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '`
+`PS1='$$\033[32m$$\u@\h$$\033[00m$$:$$\033[34m$$\w$$\033[31m$$$(__git_ps1)$$\033[00m$$\$ '`
 
 If you want the prompt to show git-ps1 state
 `GIT_PS1_SHOWDIRTYSTATE=true`

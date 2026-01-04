@@ -8,8 +8,8 @@ Formal Definition:
 A tensor is a multidimensional array of numerical values. Its rank (or order) denotes the number of dimensions:
 
 * 0D tensor: Scalar (e.g., 5)
-* 1D tensor: Vector (e.g., \[1, 2, 3])
-* 2D tensor: Matrix (e.g., \[[1, 2], \[3, 4]])
+* 1D tensor: Vector (e.g., $$1, 2, 3])
+* 2D tensor: Matrix (e.g., $$[1, 2], $$3, 4]])
 * 3D+ tensor: Higher-dimensional arrays (e.g., a stack of matrices)
 
 Why Tensors Matter in ML:

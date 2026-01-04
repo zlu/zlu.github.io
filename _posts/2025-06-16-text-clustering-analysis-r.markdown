@@ -31,8 +31,8 @@ Text clustering involves five stages:
 ## Clustering Algorithms
 
 ### K-Means Clustering
-K-means partitions documents into \( K \) clusters by:
-- Selecting \( K \) seed documents.
+K-means partitions documents into $ K $ clusters by:
+- Selecting $ K $ seed documents.
 - Assigning each document to the nearest seed based on Euclidean distance.
 - Iteratively updating cluster centers.
 
@@ -91,7 +91,7 @@ It identifies dense regions in data, separating clusters from sparse areas.
 
 ## Visualizing Clusters
 
-Visualize clusters using principal components or an elbow plot to determine optimal \( K \):
+Visualize clusters using principal components or an elbow plot to determine optimal $ K $:
 
 ```R
 library(colorspace)

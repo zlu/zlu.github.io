@@ -89,7 +89,7 @@ Consider a simple dataset with 3 observations and 2 features(`Length`and`Width`)
 
 
 
-The design matrix\(X\)(including an intercept term)would be:
+The design matrix$X$(including an intercept term)would be:
 
 $$
 X=

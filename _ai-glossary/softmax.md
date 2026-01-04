@@ -17,6 +17,7 @@ $$
 \quad i = 1,\dots,K
 $$
 
+* Logits are the raw, unnormalized outputs of a model before an activation function (such as sigmoid or softmax) is applied.
 ---
 
 ### Key properties
