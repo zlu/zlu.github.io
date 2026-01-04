@@ -9,7 +9,7 @@ title: Softmax
 ---
 
 ### Definition
-Given logits $ z = (z_1, z_2, \dots, z_K) $,
+Given logits $z = (z_1, z_2, \dots, z_K)$,
 
 $$
 \text{softmax}(z_i)
@@ -66,8 +66,3 @@ $$
 | Single output | Multiple outputs |
 | Independent probabilities | Competing probabilities |
 | $\sigma(z)\in(0,1)$ | $\sum_i p_i = 1$ |
-
----
-
-### One-line exam definition
-> Softmax maps a vector of real-valued scores into a probability distribution over classes by exponentiating and normalizing them.
