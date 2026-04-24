@@ -56,6 +56,7 @@ permalink: /travels/
   <span class="chip"><span class="flag">🇱🇹</span>Lithuania</span>
   <span class="chip"><span class="flag">🇱🇺</span>Luxembourg</span>
   <span class="chip"><span class="flag">🇲🇰</span>Macedonia</span>
+  <span class="chip"><span class="flag">🇲🇾</span>Malaysia</span>
   <span class="chip"><span class="flag">🇲🇹</span>Malta</span>
   <span class="chip"><span class="flag">🇲🇽</span>Mexico</span>
   <span class="chip"><span class="flag">🇲🇩</span>Moldova</span>

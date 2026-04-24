@@ -334,6 +334,14 @@ ul.posts span {
   overflow-x: hidden;
 }
 
+/* Global reset zeros out list padding; outside markers then sit left of the box
+   and get clipped by overflow-x:hidden (notably two-digit ol indices). */
+.site ol,
+.site ul {
+  list-style-position: inside;
+  padding-inline-start: 0;
+}
+
 .site .header a {
   font-weight: bold;
   text-decoration: none;
