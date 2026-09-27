@@ -1,7 +1,8 @@
 ---
 layout: default
-title_en: FAQ - Computer Science Tutoring | Common Questions Answered
-title_cn: 常见问题解答 | 计算机科学辅导
+title: "FAQ - Computer Science Tutoring — Common Questions Answered"
+title_en: "FAQ - Computer Science Tutoring | Common Questions Answered"
+title_cn: "常见问题解答 | 计算机科学辅导"
 description: Frequently asked questions about CS tutoring for Chinese students studying abroad. Get answers about online tutoring, course coverage, and teaching methods.
 keywords: cs tutoring faq, online tutoring questions, international student help, 计算机辅导问答, 留学生辅导常见问题
 permalink: /teach/faq/

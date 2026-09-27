@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Proper Goodbye"
+description: "Reflections on leaving Easy Taxi after 15 months of product and organization transformation in Brazil."
 date: 2016-09-30
 comments: true
 categories: [featured]

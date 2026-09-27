@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '遗传算法：从达尔文到霍兰德'
+description: "遗传算法从达尔文到霍兰德的演进讲解，配合 AlgoScope 动态可视化演示。"
 date: 2025-05-12 18:09 +0800
 tags:
 - Optimization

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Visualizing A-Star Search
+description: "Visual walkthrough of the A* pathfinding algorithm with an interactive live demo."
 date: 2025-05-09 09:21 +0800
 comments: true
 tags:

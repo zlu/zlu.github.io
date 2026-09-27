@@ -1,65 +1,79 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "EducationalService",
-  "name": "Computer Science Tutoring by Zhao Lü",
-  "description": "Expert computer science tutoring for Chinese students worldwide, specializing in AI, Data Science, and Programming",
-  "provider": {
-    "@type": "Person",
-    "name": "Zhao Lü",
-    "jobTitle": "Computer Science Tutor",
-    "alumniOf": "Silicon Valley",
-    "sameAs": "https://zlu.me"
-  },
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "Country",
-      "name": "Australia"
+      "@type": "EducationalOrganization",
+      "@id": "https://zlu.me/teach/#organization",
+      "name": "Zhao Lü Private Tutoring",
+      "alternateName": "Teach @ zlu.me",
+      "url": "https://zlu.me/teach/",
+      "logo": "https://zlu.me/assets/images/morpheon-logo.png",
+      "image": "https://zlu.me/assets/images/avatar.png",
+      "description": "Private tutoring for Chinese students studying abroad in Python, AI, Data Science, and Distributed Systems.",
+      "sameAs": [
+        "https://github.com/zlu",
+        "https://linkedin.com/in/zhaolu",
+        "https://zlu.me/"
+      ],
+      "areaServed": [
+        { "@type": "Country", "name": "Australia" },
+        { "@type": "Country", "name": "New Zealand" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "Canada" },
+        { "@type": "Country", "name": "Singapore" },
+        { "@type": "Country", "name": "China" }
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://zlu.me/#person",
+        "name": "Zhao Lü",
+        "url": "https://zlu.me/"
+      },
+      "availableLanguage": ["English", "Chinese"],
+      "keywords": "Python tutoring, AI tutoring, data science tutoring, 中国留学生, 1-1 Online Tutoring, Chinese student tutoring"
     },
     {
-      "@type": "Country",
-      "name": "United Kingdom"
-    },
-    {
-      "@type": "Country",
-      "name": "United States"
-    },
-    {
-      "@type": "Country",
-      "name": "Canada"
-    },
-    {
-      "@type": "Country",
-      "name": "New Zealand"
-    },
-    {
-      "@type": "Country",
-      "name": "China"
+      "@type": "EducationalService",
+      "@id": "https://zlu.me/teach/#service",
+      "name": "Computer Science Tutoring by Zhao Lü",
+      "url": "https://zlu.me/teach/",
+      "description": "Expert computer science tutoring for Chinese students worldwide, specializing in AI, Data Science, and Programming",
+      "provider": {
+        "@id": "https://zlu.me/teach/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "Australia" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "Canada" },
+        { "@type": "Country", "name": "New Zealand" },
+        { "@type": "Country", "name": "China" }
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Student",
+        "audienceType": "Chinese international students"
+      },
+      "teaches": [
+        "Computer Science",
+        "Artificial Intelligence",
+        "Data Science",
+        "Python Programming",
+        "Machine Learning",
+        "Database Systems"
+      ],
+      "educationalLevel": "University level",
+      "availableLanguage": ["English", "Chinese"],
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/OnlineOnly",
+        "availabilityStarts": "2024-01-01",
+        "category": "Educational service",
+        "url": "https://zlu.me/teach/"
+      }
     }
-  ],
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "Student",
-    "audienceType": "Chinese international students"
-  },
-  "teaches": [
-    "Computer Science",
-    "Artificial Intelligence",
-    "Data Science",
-    "Python Programming",
-    "Machine Learning",
-    "Database Systems"
-  ],
-  "educationalLevel": "University level",
-  "availableLanguage": [
-    "English",
-    "Chinese"
-  ],
-  "offers": {
-    "@type": "Offer",
-    "availability": "OnlineOnly",
-    "availabilityStarts": "2024-01-01",
-    "category": "Educational service"
-  }
+  ]
 }
 </script>

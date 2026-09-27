@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Return after a Long Departure
+description: "Returning to blogging after nine years away — reflections on Europe, career, and starting to write again."
 date: 2025-05-06 05:54 +0800
 comments: true
 ---

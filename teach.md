@@ -1,8 +1,9 @@
 ---
 layout: default
-title_en: Computer Science Tutoring for Chinese Students | AI & Data Science Expert
-title_cn: 计算机科学留学辅导 | 人工智能与数据科学专家
-title_suffix: Professional CS Tutor for International Students | zlu.me/teach
+title: "Computer Science Tutoring for Chinese Students — AI & Data Science Expert"
+title_en: "Computer Science Tutoring for Chinese Students | AI & Data Science Expert"
+title_cn: "计算机科学留学辅导 | 人工智能与数据科学专家"
+title_suffix: "Professional CS Tutor for International Students | zlu.me/teach"
 description: Expert computer science tutoring for Chinese students in Australia, USA, UK, Canada & NZ. Specialized in AI, Data Science, Python & University coursework. Bilingual instruction (中英双语) available. 15+ years Silicon Valley experience.
 keywords: computer science tutor, CS tuition, AI tutoring, data science help, Python programming, Chinese students abroad, 计算机科学辅导, 留学生辅导, 编程家教, 人工智能课程辅导
 lang: en
@@ -10,6 +11,7 @@ alternate_lang: zh-CN
 hreflang:
   en: https://zlu.me/teach/
   zh-CN: https://zlu.me/teach/?lang=cn
+permalink: /teach/
 region_pages: []
 ---
 

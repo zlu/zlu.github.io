@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Privacy-Aware RAG Based Knowledge Base
+description: "Build a privacy-aware local RAG knowledge base with agent support — no cloud LLM calls required."
 date: 2025-06-20
 comments: true
 tags:

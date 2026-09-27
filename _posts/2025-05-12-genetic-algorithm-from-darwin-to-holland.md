@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Genetic Algorithm: From Darwin to Holland'
+description: "Genetic algorithms from Darwin to Holland — theory, intuition, and an animated AlgoScope demo."
 date: 2025-05-12 18:09 +0800
 tags: 
 tags: 

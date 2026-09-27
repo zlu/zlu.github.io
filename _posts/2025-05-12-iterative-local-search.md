@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Exploring Optimization: A Guide to Iterative Local Search (ILS)"
+description: "A practical guide to Iterative Local Search (ILS) optimization, with AlgoScope visualization."
 date: 2025-05-12 15:30 +0800
 tags: 
 - Optimization

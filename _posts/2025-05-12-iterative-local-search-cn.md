@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "探索优化：迭代局部搜索（ILS）指南"
+description: "迭代局部搜索（ILS）优化算法指南，含 AlgoScope 可视化演示。"
 date: 2025-05-12 15:30 +0800
 tags: 
 - Optimization

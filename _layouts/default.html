@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% elsif page.url contains '/teach' %}
+  <meta name="keywords" content="{{ site.tutor_keywords }}">
+  {% else %}
   <meta name="keywords" content="{{ site.keywords }}">
-  <title>
-      {% if page.title_en %}
-          {{ page.title_en }} | {{ page.title_suffix }}
-      {% else %}
-          {{ page.title }} | {{ site.name }}
-      {% endif %}
-  </title>
+  {% endif %}
 
   <!-- syntax highlighting CSS -->
   <link rel="stylesheet" href="/assets/css/syntax.css">
@@ -90,6 +89,12 @@
   {%- comment -%} No interactive maps on travels; static include only {%- endcomment -%}
 
   {% seo %}
+  {% if page.hreflang %}
+    {% for lang_pair in page.hreflang %}
+  <link rel="alternate" hreflang="{{ lang_pair[0] }}" href="{{ lang_pair[1] }}">
+    {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ page.hreflang.en | default: page.url | absolute_url }}">
+  {% endif %}
   <meta name="baidu-site-verification" content="codeva-mW0JDcJWVu" />
 
   <!-- Google tag (gtag.js) -->
@@ -116,28 +121,27 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Zhao Lu Private Tutoring",
-    "alternateName": "Teach @ zlu.me",
-    "url": "https://zlu.me/teach",
-    "logo": "https://zlu.me/assets/images/morpheon-logo.png",
-    "description": "Private tutoring for Chinese students studying abroad in Python, AI, Data Science, and Distributed Systems.",
+    "@type": "Person",
+    "name": "Zhao Lü",
+    "alternateName": "zlu",
+    "url": "https://zlu.me/",
+    "image": "https://zlu.me/assets/images/avatar.png",
+    "jobTitle": "Software Engineer and Computer Science Tutor",
+    "description": "Silicon Valley engineer and bilingual CS tutor specializing in AI, machine learning, and data science for Chinese students studying abroad.",
     "sameAs": [
       "https://github.com/zlu",
-      "https://zlu.me"
+      "https://linkedin.com/in/zhaolu",
+      "https://twitter.com/zlu",
+      "https://x.com/zlu"
     ],
-    "areaServed": [
-      { "@type": "Country", "name": "Australia" },
-      { "@type": "Country", "name": "New Zealand" },
-      { "@type": "Country", "name": "United Kingdom" },
-      { "@type": "Country", "name": "Singapore" },
-      { "@type": "Country", "name": "China" }
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Zhao Lu"
-    },
-    "keywords": "Python tutoring, AI tutoring, data science tutoring, 中国留学生, 1-1 Online Tutoring, Chinese student tutoring"
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Science",
+      "Python",
+      "Distributed Systems",
+      "Computer Science Education"
+    ]
   }
   </script>
 
@@ -204,7 +208,7 @@
         <a href="/">
           <img src="/assets/images/avatar.png" class="sidebar-image" alt="Zhaolu" width="200px">
         </a>
-        <h2 class="sidebar-title"><a href="/">{{ site.name }}</a></h2>
+        <h2 class="sidebar-title"><a href="/">{{ site.title }}</a></h2>
         <p class="sidebar-tagline">Undefined.</p>
 
         <nav class="sidebar-nav">

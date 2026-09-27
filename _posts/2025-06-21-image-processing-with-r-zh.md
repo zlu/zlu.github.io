@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 使用 R 处理图像
+description: "使用 R 与 imager 进行数字图像处理：像素、灰度、滤波与基础视觉操作。"
 date: 2025-06-21 09:00 +0800
 tags:
   - R

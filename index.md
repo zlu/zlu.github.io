@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Zhao Lü"
+description: "Zhao Lü (吕钊) — Silicon Valley engineer, AI & data science educator, bilingual CS tutor, traveler, and yogi. Personal site at zlu.me."
 permalink: /
 ---
 

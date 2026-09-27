@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 隐私保护的RAG知识库
+description: "构建注重隐私与成本的本地 RAG 知识库，并加入智能体支持以提升检索与回答质量。"
 日期: 2025-06-20
 comments: true
 tags:

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "On Agile"
+description: "Thoughts on agile software development, rules programmers resist, and what actually helps teams ship."
 date: 2012-01-30 18:11
 comments: true
 tags: 

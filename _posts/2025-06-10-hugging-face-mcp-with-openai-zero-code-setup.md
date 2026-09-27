@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hugging Face MCP with OpenAI - Zero Code Setup
+description: "Zero-code setup for Hugging Face MCP with OpenAI so agents can access models, datasets, and Spaces."
 date: 2025-06-10 20:25 +0800
 comments: true
 tags:
