@@ -1,0 +1,20 @@
+---
+university: University of Alberta
+courses:
+  - code: CMPUT 174
+    title: Introduction to the Foundations of Computation I
+  - code: CMPUT 175
+    title: Introduction to the Foundations of Computation II
+  - code: CMPUT 201
+    title: Practical Programming Methodology
+  - code: CMPUT 204
+    title: Algorithms I
+  - code: CMPUT 229
+    title: Computer Organization and Architecture I
+  - code: CMPUT 291
+    title: Introduction to File and Database Management
+  - code: CMPUT 366
+    title: Intelligent Systems
+  - code: CMPUT 466
+    title: Machine Learning
+---

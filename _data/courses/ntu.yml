@@ -5,11 +5,37 @@ courses:
     title: Programming Methodology II
     department: Functional Programming
   - code: AB0403
-    title: Decision Making with Programming & Analytics
+    title: "Decision Making with Programming & Analytics"
   - code: EE6407
-    title: Genetic Algorithms & Machine Learning
+    title: "Genetic Algorithms & Machine Learning"
     department: School of Electrical and Electronic Engineering
   - code: EE7207
-    title: Neural Networks & Deep Learning
+    title: "Neural Networks & Deep Learning"
     department: School of Electrical and Electronic Engineering
+  - code: SC1003
+    title: Introduction to Computational Thinking and Programming
+  - code: SC1005
+    title: Digital Logic
+  - code: SC1006
+    title: Computer Organisation and Architecture
+  - code: SC1007
+    title: Data Structures and Algorithms
+  - code: SC2000
+    title: Object Oriented Design and Programming
+  - code: SC2001
+    title: Algorithm Design and Analysis
+  - code: SC2005
+    title: Operating Systems
+  - code: SC2006
+    title: Software Engineering
+  - code: SC3001
+    title: Introduction to Artificial Intelligence
+  - code: SC4001
+    title: Neural Networks and Deep Learning
+  - code: CZ3005
+    title: Artificial Intelligence
+  - code: CZ4042
+    title: Neural Networks and Deep Learning
+  - code: CE/CZ2001
+    title: Algorithms
 ---

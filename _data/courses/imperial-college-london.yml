@@ -1,9 +1,32 @@
 ---
 university: Imperial College London
 courses:
-  - department: Institute of Security Science and Technology
-    title: "Graduation Paper - Security and Resilience: Science and Technology"
   - code: PHYS70041
     title: Long Summer Project
-  - title: Computing Practical
+  - code: CO120
+    title: Programming I
+  - code: CO121
+    title: Programming II
+  - code: CO140
+    title: Logic
+  - code: CO142
+    title: Computer Architecture
+  - code: CO145
+    title: Mathematical Methods
+  - code: CO163
+    title: Computing Topics
+  - code: CO211
+    title: Operating Systems
+  - code: CO212
+    title: Networks and Communications
+  - code: CO221
+    title: Compilers
+  - code: CO276
+    title: Algorithms and Data Structures
+  - code: CO316
+    title: Introduction to Artificial Intelligence
+  - code: CO484
+    title: Quantum Computing
+  - code: CO493
+    title: Machine Learning
 ---

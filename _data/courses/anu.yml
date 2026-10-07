@@ -1,0 +1,28 @@
+---
+university: Australian National University
+courses:
+  - code: COMP1100
+    title: Programming as Problem Solving
+  - code: COMP1110
+    title: Structured Programming
+  - code: COMP1600
+    title: Foundations of Computing
+  - code: COMP2100
+    title: Software Construction
+  - code: COMP2300
+    title: Computer Organisation and Program Execution
+  - code: COMP2400
+    title: Relational Databases
+  - code: COMP3600
+    title: Algorithms
+  - code: COMP2620
+    title: Logic
+  - code: COMP3670
+    title: Introduction to Machine Learning
+  - code: COMP4620
+    title: Advanced Topics in AI
+  - code: COMP6670
+    title: Introduction to Machine Learning
+  - code: COMP6710
+    title: Structured Programming (Master)
+---

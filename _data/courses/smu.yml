@@ -1,0 +1,18 @@
+---
+university: Singapore Management University
+courses:
+  - code: IS111
+    title: Introduction to Programming
+  - code: IS112
+    title: Data Management
+  - code: IS210
+    title: Software Foundations
+  - code: IS211
+    title: Interaction Design and Prototyping
+  - code: CS102
+    title: Data Structures and Algorithms
+  - code: CS301
+    title: IT Solution Architecture
+  - code: CS401
+    title: Machine Learning
+---

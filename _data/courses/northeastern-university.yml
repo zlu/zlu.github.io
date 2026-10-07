@@ -1,6 +1,20 @@
 ---
 university: Northeastern University
 courses:
-  - code: ""
-    title: AI，机械选课指导
+  - code: CS2500
+    title: Fundamentals of Computer Science 1
+  - code: CS2510
+    title: Fundamentals of Computer Science 2
+  - code: CS3000
+    title: Algorithms and Data
+  - code: CS3500
+    title: Object-Oriented Design
+  - code: CS3650
+    title: Computer Systems
+  - code: CS4100
+    title: Artificial Intelligence
+  - code: CS4400
+    title: Programming Languages
+  - code: DS4400
+    title: Machine Learning and Data Mining 1
 ---

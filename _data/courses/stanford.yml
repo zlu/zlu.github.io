@@ -1,0 +1,24 @@
+---
+university: Stanford University
+courses:
+  - code: CS106A
+    title: Programming Methodology
+  - code: CS106B
+    title: Programming Abstractions
+  - code: CS107
+    title: Computer Organization and Systems
+  - code: CS109
+    title: Introduction to Probability for Computer Scientists
+  - code: CS110
+    title: Principles of Computer Systems
+  - code: CS161
+    title: Design and Analysis of Algorithms
+  - code: CS221
+    title: "Artificial Intelligence: Principles and Techniques"
+  - code: CS229
+    title: Machine Learning
+  - code: CS230
+    title: Deep Learning
+  - code: CS231N
+    title: Deep Learning for Computer Vision
+---

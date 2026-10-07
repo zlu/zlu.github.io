@@ -1,0 +1,18 @@
+---
+university: University of Texas at Austin
+courses:
+  - code: CS312
+    title: Introduction to Programming
+  - code: CS314
+    title: Data Structures
+  - code: CS429
+    title: Computer Architecture and Organization
+  - code: CS331
+    title: Algorithms and Complexity
+  - code: CS439
+    title: Principles of Computer Systems
+  - code: CS343
+    title: Artificial Intelligence
+  - code: CS391L
+    title: Machine Learning
+---

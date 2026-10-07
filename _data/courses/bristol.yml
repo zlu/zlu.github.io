@@ -1,0 +1,22 @@
+---
+university: University of Bristol
+courses:
+  - code: COMS10016
+    title: Imperative and Functional Programming
+  - code: COMS10014
+    title: Mathematics for Computer Science A
+  - code: COMS10015
+    title: Mathematics for Computer Science B
+  - code: COMS10008
+    title: Introduction to Computer Architecture
+  - code: COMS20007
+    title: Algorithms I
+  - code: COMS20008
+    title: Algorithms II
+  - code: COMS20010
+    title: Software Product Engineering
+  - code: COMS30042
+    title: Machine Learning
+  - code: COMS30050
+    title: Applied Data Science
+---

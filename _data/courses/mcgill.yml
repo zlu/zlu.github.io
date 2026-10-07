@@ -1,0 +1,22 @@
+---
+university: McGill University
+courses:
+  - code: COMP 202
+    title: Foundations of Programming
+  - code: COMP 206
+    title: Introduction to Software Systems
+  - code: COMP 250
+    title: Introduction to Computer Science
+  - code: COMP 251
+    title: Algorithms and Data Structures
+  - code: COMP 273
+    title: Introduction to Computer Systems
+  - code: COMP 302
+    title: Programming Languages and Paradigms
+  - code: COMP 303
+    title: Software Design
+  - code: COMP 424
+    title: Artificial Intelligence
+  - code: COMP 551
+    title: Applied Machine Learning
+---

@@ -1,0 +1,24 @@
+---
+university: University of Waterloo
+courses:
+  - code: CS 135
+    title: Designing Functional Programs
+  - code: CS 136
+    title: Elementary Algorithm Design and Data Abstraction
+  - code: CS 246
+    title: Object-Oriented Software Development
+  - code: CS 251
+    title: Computer Organization and Design
+  - code: CS 341
+    title: Algorithms
+  - code: CS 343
+    title: Concurrent and Parallel Programming
+  - code: CS 348
+    title: Introduction to Database Management
+  - code: CS 350
+    title: Operating Systems
+  - code: CS 480
+    title: Introduction to Machine Learning
+  - code: CS 486
+    title: Introduction to Artificial Intelligence
+---

@@ -1,0 +1,24 @@
+---
+university: UC Berkeley
+courses:
+  - code: CS 61A
+    title: Structure and Interpretation of Computer Programs
+  - code: CS 61B
+    title: Data Structures
+  - code: CS 61C
+    title: Great Ideas in Computer Architecture
+  - code: CS 70
+    title: Discrete Mathematics and Probability Theory
+  - code: CS 170
+    title: Efficient Algorithms and Intractable Problems
+  - code: CS 188
+    title: Introduction to Artificial Intelligence
+  - code: CS 189
+    title: Introduction to Machine Learning
+  - code: CS 186
+    title: Introduction to Database Systems
+  - code: CS 162
+    title: Operating Systems and System Programming
+  - code: DATA C100
+    title: Principles and Techniques of Data Science
+---

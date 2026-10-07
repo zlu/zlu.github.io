@@ -1,0 +1,30 @@
+---
+university: University of Toronto
+courses:
+  - code: CSC108H1
+    title: Introduction to Computer Programming
+  - code: CSC148H1
+    title: Introduction to Computer Science
+  - code: CSC165H1
+    title: Mathematical Expression and Reasoning for Computer Science
+  - code: CSC207H1
+    title: Software Design
+  - code: CSC209H1
+    title: Software Tools and Systems Programming
+  - code: CSC236H1
+    title: Introduction to the Theory of Computation
+  - code: CSC258H1
+    title: Computer Organization
+  - code: CSC263H1
+    title: Data Structures and Analysis
+  - code: CSC311H1
+    title: Introduction to Machine Learning
+  - code: CSC343H1
+    title: Introduction to Databases
+  - code: CSC373H1
+    title: Algorithm Design, Analysis and Complexity
+  - code: CSC384H1
+    title: Introduction to Artificial Intelligence
+  - code: CSC413H1
+    title: Neural Networks and Deep Learning
+---

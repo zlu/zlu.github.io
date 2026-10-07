@@ -34,6 +34,30 @@ layout: default
   </header>
 
   <section class="teach-landing-section">
+    <h2 data-en="Tutoring types"
+        data-cn="辅导类型">辅导类型</h2>
+    <div class="teach-region-links">
+      <a href="/teach/universities/{{ page.uni_slug }}/sync/">同步课程辅导</a>
+      <a href="/teach/universities/{{ page.uni_slug }}/assignment/">作业辅导</a>
+      <a href="/teach/universities/{{ page.uni_slug }}/exam/">考前突击</a>
+      <a href="/teach/universities/{{ page.uni_slug }}/preview/">课程预习</a>
+    </div>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Common struggles at this university"
+        data-cn="该校留学生常见痛点">该校留学生常见痛点</h2>
+    <ul class="teach-proof">
+      <li data-en="English lectures move fast; terminology is dense"
+          data-cn="英文课节奏快，术语密集，课后难以及时消化">英文课节奏快，术语密集，课后难以及时消化</li>
+      <li data-en="Assignments stack with labs, quizzes, and projects"
+          data-cn="作业、Lab、Quiz、Project 叠在一起，DDL 压力大">作业、Lab、Quiz、Project 叠在一起，DDL 压力大</li>
+      <li data-en="AI / ML math + coding both required"
+          data-cn="AI / 机器学习既要数学推导又要代码实现">AI / 机器学习既要数学推导又要代码实现</li>
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
     <h2 data-en="Courses I support"
         data-cn="可辅导课程">可辅导课程</h2>
     {% if page.courses and page.courses.size > 0 %}

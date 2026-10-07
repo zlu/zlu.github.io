@@ -17,8 +17,8 @@ layout: default
     <h1 data-en="Computer science tutoring in {{ page.region_en }}"
         data-cn="{{ page.region_cn }}留学生计算机一对一辅导">{{ page.region_cn }}留学生计算机一对一辅导</h1>
     <p class="teach-landing-lead"
-       data-en="Bilingual AI, data science, and programming support for university courses in {{ page.region_en }}. Online across time zones."
-       data-cn="为{{ page.region_cn }}高校中国留学生提供人工智能、数据科学与编程双语辅导，线上跨时区授课。">为{{ page.region_cn }}高校中国留学生提供人工智能、数据科学与编程双语辅导，线上跨时区授课。</p>
+       data-en="Bilingual AI, data science, and programming support for {{ page.universities.size }} universities in {{ page.region_en }}. Online across time zones."
+       data-cn="为{{ page.region_cn }} {{ page.universities.size }} 所高校中国留学生提供人工智能、数据科学与编程双语辅导，线上跨时区授课。">为{{ page.region_cn }} {{ page.universities.size }} 所高校中国留学生提供人工智能、数据科学与编程双语辅导，线上跨时区授课。</p>
     <div class="teach-hero-actions">
       <a class="btn btn-primary" href="/teach/"
          data-en="Book via WeChat"
@@ -29,29 +29,35 @@ layout: default
     </div>
   </header>
 
+  {% assign sorted = page.universities | sort: "name" %}
+  {% assign letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" %}
+  <nav class="teach-letter-nav" aria-label="A to Z">
+    {% for letter in letters %}
+      <a href="#letter-{{ letter }}">{{ letter }}</a>
+    {% endfor %}
+  </nav>
+
   <section class="teach-landing-section">
     <h2 data-en="Universities in this region"
         data-cn="本地区大学">本地区大学</h2>
-    <ul class="teach-uni-index">
-      {% for uni in page.universities %}
-      <li>
+    {% assign current_letter = "" %}
+    {% for uni in sorted %}
+      {% assign first = uni.name | slice: 0 | upcase %}
+      {% unless letters contains first %}
+        {% assign first = "#" %}
+      {% endunless %}
+      {% if first != current_letter %}
+        {% assign current_letter = first %}
+        <h3 id="letter-{{ current_letter }}" class="teach-letter-heading">{{ current_letter }}</h3>
+      {% endif %}
+      <div class="teach-uni-row">
         <a href="/teach/universities/{{ uni.slug }}/"><strong>{{ uni.name }}</strong></a>
+        {% if uni.courses.size > 0 %}
         <span class="teach-count"
               data-en="{{ uni.courses.size }} courses"
               data-cn="{{ uni.courses.size }} 门课">{{ uni.courses.size }} 门课</span>
-        {% if uni.courses.size > 0 %}
-        <ul class="teach-mini-courses">
-          {% for course in uni.courses limit:4 %}
-          <li>
-            <a href="/teach/courses/{{ uni.slug }}/{{ course.slug }}/">
-              {% if course.code != "" %}{{ course.code }} · {% endif %}{{ course.title }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
         {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
+      </div>
+    {% endfor %}
   </section>
 </article>

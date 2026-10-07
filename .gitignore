@@ -4,3 +4,6 @@ _site
 _drafts
 zlu.github.io.code-workspace
 .env.local
+.scripts/baidu.env
+.scripts/baidu_submit_state.json
+.scripts/baidu_submit.log

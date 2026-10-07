@@ -1,6 +1,6 @@
 ---
 university: University of South Australia
 courses:
-  - title: Problem Solving and Programming in Python
-    code: COMP1043
+  - code: COMP1043
+    title: Problem Solving and Programming in Python
 ---

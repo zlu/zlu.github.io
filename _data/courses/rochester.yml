@@ -1,6 +1,6 @@
 ---
 university: University of Rochester
 courses:
-  - title: Intro to Statistical Machine Learning
-    code: DSCC 465
+  - code: DSCC 465
+    title: Intro to Statistical Machine Learning
 ---

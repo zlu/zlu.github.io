@@ -877,3 +877,53 @@ body.teach-page-active .site {
 .university-entry a:hover {
     text-decoration: underline;
 }
+
+.teach-letter-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0 0 1.25rem;
+}
+
+.teach-letter-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.75rem;
+    padding: 0.25rem 0.4rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.3rem;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.teach-letter-nav a:hover {
+    background: #eff6ff;
+}
+
+.teach-letter-heading {
+    margin: 1.25rem 0 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e5e7eb;
+    color: #111827;
+    font-size: 1.1rem;
+}
+
+.teach-uni-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.teach-uni-row a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.teach-uni-row a:hover {
+    text-decoration: underline;
+}

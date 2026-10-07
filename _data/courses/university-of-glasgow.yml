@@ -4,5 +4,20 @@ courses:
   - code: COMPSCI5089
     title: Introduction to Data Science and Systems
     department: School of Computer Science
-  - title: Computer Systems Engineering (M.S.) - Graduate Paper
+  - code: COMPSCI1001
+    title: Computing Science 1P
+  - code: COMPSCI1006
+    title: Computing Science 1S
+  - code: COMPSCI2001
+    title: Algorithmic Foundations 2
+  - code: COMPSCI2003
+    title: Networks and Operating Systems Essentials 2
+  - code: COMPSCI2007
+    title: Object-Oriented Software Engineering 2
+  - code: COMPSCI3001
+    title: Algorithmics
+  - code: COMPSCI4009
+    title: Machine Learning
+  - code: COMPSCI4011
+    title: Artificial Intelligence
 ---

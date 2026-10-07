@@ -1,0 +1,22 @@
+---
+university: UCLA
+courses:
+  - code: COM SCI 31
+    title: Introduction to Computer Science I
+  - code: COM SCI 32
+    title: Introduction to Computer Science II
+  - code: COM SCI 33
+    title: Introduction to Computer Organization
+  - code: COM SCI 35L
+    title: Software Construction Laboratory
+  - code: COM SCI 111
+    title: Operating Systems Principles
+  - code: COM SCI 118
+    title: Computer Network Fundamentals
+  - code: COM SCI 161
+    title: Fundamentals of Artificial Intelligence
+  - code: COM SCI 180
+    title: Introduction to Algorithms and Complexity
+  - code: COM SCI M146
+    title: Introduction to Machine Learning
+---

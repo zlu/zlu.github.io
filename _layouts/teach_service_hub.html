@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<article class="teach-landing">
+  <nav class="teach-crumbs" aria-label="Breadcrumb">
+    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+    <span>/</span>
+    <span data-en="{{ page.service_title_en }}" data-cn="{{ page.service_title_cn }}">{{ page.service_title_cn }}</span>
+  </nav>
+
+  <header class="teach-landing-header">
+    <p class="teach-hero-eyebrow"
+       data-en="AU · UK · US · CA · HK · SG"
+       data-cn="澳英美加港新">澳英美加港新</p>
+    <h1 data-en="{{ page.service_title_en }} for Chinese CS students"
+        data-cn="留学生计算机{{ page.service_title_cn }}">留学生计算机{{ page.service_title_cn }}</h1>
+    <p class="teach-landing-lead"
+       data-en="{{ page.service_desc_en }}"
+       data-cn="{{ page.service_desc_cn }}">{{ page.service_desc_cn }}</p>
+    <div class="teach-hero-actions">
+      <a class="btn btn-primary" href="/teach/"
+         data-en="Book via WeChat"
+         data-cn="微信预约">微信预约</a>
+      <a class="btn btn-outline-primary" href="/teach/universities/"
+         data-en="Browse universities"
+         data-cn="按大学浏览">按大学浏览</a>
+    </div>
+  </header>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Universities"
+        data-cn="覆盖大学">覆盖大学</h2>
+    <ul class="teach-uni-index">
+      {% for uni in page.universities %}
+      <li>
+        <a href="/teach/universities/{{ uni.slug }}/{{ page.service_key }}/">
+          <strong>{{ uni.name }}</strong>
+          <span data-en="{{ page.service_cn }}" data-cn="{{ page.service_cn }}"> · {{ page.service_cn }}</span>
+        </a>
+        <span class="teach-count">{{ uni.courses.size }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Related services"
+        data-cn="相关服务">相关服务</h2>
+    <div class="teach-region-links">
+      <a href="/teach/services/sync/">同步课程辅导</a>
+      <a href="/teach/services/assignment/">作业辅导</a>
+      <a href="/teach/services/exam/">考前突击</a>
+      <a href="/teach/services/preview/">课程预习</a>
+    </div>
+  </section>
+</article>

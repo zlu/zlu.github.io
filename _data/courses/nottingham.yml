@@ -3,4 +3,22 @@ university: University of Nottingham
 courses:
   - code: COMP4030
     title: Data Science with Machine Learning
+  - code: COMP1001
+    title: Mathematics for Computer Scientists
+  - code: COMP1002
+    title: Programming and Algorithms
+  - code: COMP1003
+    title: Computer Systems Architecture
+  - code: COMP1005
+    title: Software Engineering
+  - code: COMP2001
+    title: Algorithm Design and Analysis
+  - code: COMP2003
+    title: Operating Systems and Concurrency
+  - code: COMP2012
+    title: Artificial Intelligence Methods
+  - code: COMP3001
+    title: Machine Learning
+  - code: COMP3010
+    title: Computer Vision
 ---

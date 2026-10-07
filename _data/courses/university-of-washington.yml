@@ -1,0 +1,22 @@
+---
+university: University of Washington
+courses:
+  - code: CSE 142
+    title: Computer Programming I
+  - code: CSE 143
+    title: Computer Programming II
+  - code: CSE 311
+    title: Foundations of Computing I
+  - code: CSE 312
+    title: Foundations of Computing II
+  - code: CSE 332
+    title: Data Structures and Parallelism
+  - code: CSE 333
+    title: Systems Programming
+  - code: CSE 351
+    title: The Hardware/Software Interface
+  - code: CSE 415
+    title: Introduction to Artificial Intelligence
+  - code: CSE 446
+    title: Machine Learning
+---

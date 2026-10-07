@@ -1,6 +1,20 @@
 ---
 university: Concordia University
 courses:
-  - title: Computational Art
-    department: ""
+  - code: COMP 248
+    title: Object-Oriented Programming I
+  - code: COMP 249
+    title: Object-Oriented Programming II
+  - code: COMP 352
+    title: Data Structures and Algorithms
+  - code: COMP 346
+    title: Operating Systems
+  - code: COMP 353
+    title: Databases
+  - code: COMP 472
+    title: Artificial Intelligence
+  - code: COMP 479
+    title: Information Retrieval and Web Search
+  - code: SOEN 287
+    title: Web Programming
 ---

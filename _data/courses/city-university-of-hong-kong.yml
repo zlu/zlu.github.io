@@ -3,5 +3,22 @@ university: City University of Hong Kong
 courses:
   - code: CS2115
     title: Computer Organization
-  - title: MIS 面试
+  - code: CS2310
+    title: Computer Programming
+  - code: CS2311
+    title: Object Oriented Programming
+  - code: CS3334
+    title: Data Structures
+  - code: CS3342
+    title: Software Design
+  - code: CS3481
+    title: Fundamentals of Data Science
+  - code: CS3483
+    title: Multimodal Interface Design
+  - code: CS4182
+    title: Computer Graphics
+  - code: CS4487
+    title: Machine Learning
+  - code: CS4296
+    title: Cloud Computing
 ---

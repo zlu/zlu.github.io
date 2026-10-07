@@ -4,5 +4,31 @@ courses:
   - code: COMP10001
     title: Foundations of Computing
   - code: COMP10002
-    title: Foundation of Algorithms
+    title: Foundations of Algorithms
+  - code: COMP20003
+    title: Algorithms and Data Structures
+  - code: COMP20007
+    title: Design of Algorithms
+  - code: COMP30023
+    title: Computer Systems
+  - code: COMP30024
+    title: Artificial Intelligence
+  - code: COMP30026
+    title: Models of Computation
+  - code: COMP30027
+    title: Machine Learning
+  - code: COMP90038
+    title: Algorithms and Complexity
+  - code: COMP90049
+    title: Introduction to Machine Learning
+  - code: COMP90051
+    title: Statistical Machine Learning
+  - code: COMP90054
+    title: AI Planning for Autonomy
+  - code: COMP90086
+    title: Computer Vision
+  - code: COMP90042
+    title: Natural Language Processing
+  - code: SWEN20003
+    title: Object Oriented Software Development
 ---

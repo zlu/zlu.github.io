@@ -3,4 +3,24 @@ university: University of Warwick
 courses:
   - code: BDAO-2AFT
     title: Big Data, Analytics and Optimisation
+  - code: CS118
+    title: Programming for Computer Scientists
+  - code: CS126
+    title: Design of Information Structures
+  - code: CS130
+    title: Computers and Society
+  - code: CS131
+    title: Mathematics for Software Engineering
+  - code: CS132
+    title: Computer Organisation and Architecture
+  - code: CS241
+    title: Operating Systems and Networks
+  - code: CS258
+    title: Database Systems
+  - code: CS260
+    title: Algorithms
+  - code: CS342
+    title: Machine Learning
+  - code: CS345
+    title: Advanced Computer Architecture
 ---

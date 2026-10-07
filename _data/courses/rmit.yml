@@ -1,0 +1,22 @@
+---
+university: RMIT University
+courses:
+  - code: COSC1076
+    title: Advanced Programming Techniques
+  - code: COSC1107
+    title: Computing Theory
+  - code: COSC2123
+    title: Algorithms and Analysis
+  - code: COSC2391
+    title: Further Programming
+  - code: COSC2627
+    title: Discrete Structures in Computing
+  - code: COSC2673
+    title: Machine Learning
+  - code: COSC2759
+    title: Machine Vision
+  - code: COSC2752
+    title: Cloud Computing
+  - code: ISYS1055
+    title: Database Concepts
+---

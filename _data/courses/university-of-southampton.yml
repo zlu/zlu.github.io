@@ -1,7 +1,22 @@
 ---
 university: University of Southampton
 courses:
-  - title: Graduation Research Paper
-    department: Faculty of Engineering and Physical Sciences, Electronics and
-      Computer Science
+  - code: COMP1202
+    title: Programming I
+  - code: COMP1203
+    title: Computer Systems I
+  - code: COMP1205
+    title: Data Management
+  - code: COMP1206
+    title: Programming II
+  - code: COMP2207
+    title: Distributed Systems and Networks
+  - code: COMP2208
+    title: Intelligent Systems
+  - code: COMP2209
+    title: Programming III
+  - code: COMP3200
+    title: Machine Learning
+  - code: COMP3201
+    title: Cyber Security
 ---

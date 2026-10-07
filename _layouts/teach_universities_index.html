@@ -12,9 +12,20 @@ layout: default
     <h1 data-en="University CS tutoring directory"
         data-cn="大学计算机辅导目录">大学计算机辅导目录</h1>
     <p class="teach-landing-lead"
-       data-en="{{ page.universities.size }} universities with course-level tutoring pages for Chinese students abroad."
-       data-cn="已覆盖 {{ page.universities.size }} 所大学，可按学校与课号进入详情页约课。">已覆盖 {{ page.universities.size }} 所大学，可按学校与课号进入详情页约课。</p>
+       data-en="{{ page.universities.size }} universities across AU / UK / US / CA / HK / SG. Open a school page, then message WeChat with your course code."
+       data-cn="已覆盖 {{ page.universities.size }} 所大学（澳英美加港新）。打开学校页，微信发送课号即可约课。">已覆盖 {{ page.universities.size }} 所大学（澳英美加港新）。打开学校页，微信发送课号即可约课。</p>
   </header>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Browse by service"
+        data-cn="按辅导类型">按辅导类型</h2>
+    <div class="teach-region-links">
+      <a href="/teach/services/sync/">同步课程辅导</a>
+      <a href="/teach/services/assignment/">作业辅导</a>
+      <a href="/teach/services/exam/">考前突击</a>
+      <a href="/teach/services/preview/">课程预习</a>
+    </div>
+  </section>
 
   <section class="teach-landing-section">
     <h2 data-en="Browse by region"
@@ -32,16 +43,21 @@ layout: default
   </section>
 
   <section class="teach-landing-section">
-    <h2 data-en="All universities"
-        data-cn="全部大学">全部大学</h2>
+    <h2 data-en="Universities with detailed course pages"
+        data-cn="已整理课号的大学">已整理课号的大学</h2>
     <ul class="teach-uni-index">
       {% assign sorted = page.universities | sort: "name" %}
       {% for uni in sorted %}
-      <li>
-        <a href="/teach/universities/{{ uni.slug }}/"><strong>{{ uni.name }}</strong></a>
-        <span class="teach-count">{{ uni.courses.size }}</span>
-      </li>
+        {% if uni.rich or uni.courses.size > 0 %}
+        <li>
+          <a href="/teach/universities/{{ uni.slug }}/"><strong>{{ uni.name }}</strong></a>
+          <span class="teach-count">{{ uni.courses.size }}</span>
+        </li>
+        {% endif %}
       {% endfor %}
     </ul>
+    <p class="teach-landing-back"
+       data-en="Full A–Z lists are on each region page (especially USA)."
+       data-cn="完整 A–Z 名单见各地区页（美国名单最长）。">完整 A–Z 名单见各地区页（美国名单最长）。</p>
   </section>
 </article>

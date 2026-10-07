@@ -12,7 +12,43 @@ courses:
   - code: COMP5310
     title: Principles of Data Science
   - code: COMP9331
-    title: Computer Networks & Applications
+    title: Computer Networks and Applications
   - code: INFO3616
     title: Security Engineering
+  - code: COMP1511
+    title: Programming Fundamentals
+  - code: COMP1521
+    title: Computer Systems Fundamentals
+  - code: COMP1531
+    title: Software Engineering Fundamentals
+  - code: COMP2521
+    title: Data Structures and Algorithms
+  - code: COMP3121
+    title: Algorithms and Programming Techniques
+  - code: COMP3141
+    title: Software System Design and Implementation
+  - code: COMP3311
+    title: Database Systems
+  - code: COMP3331
+    title: Computer Networks and Applications
+  - code: COMP3411
+    title: Artificial Intelligence
+  - code: COMP6080
+    title: Web Front-End Programming
+  - code: COMP6771
+    title: Advanced C++ Programming
+  - code: COMP9414
+    title: Artificial Intelligence
+  - code: COMP9417
+    title: Machine Learning and Data Mining
+  - code: COMP9444
+    title: Neural Networks and Deep Learning
+  - code: COMP9311
+    title: Database Systems
+  - code: COMP9315
+    title: Database Systems Implementation
+  - code: DATA1001
+    title: Introduction to Data Science and Decisions
+  - code: DATA9001
+    title: Fundamentals of Data Science
 ---

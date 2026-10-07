@@ -1,7 +1,22 @@
 ---
 university: UC Irvine
 courses:
-  - code: I&C SCI 31
-    title: Intro to Programming
-    department: Information and Computer Science
+  - code: "I&C SCI 31"
+    title: Introduction to Programming
+  - code: "I&C SCI 32"
+    title: Programming with Software Libraries
+  - code: "I&C SCI 33"
+    title: Intermediate Programming
+  - code: "I&C SCI 45C"
+    title: Programming in C/C++ as a Second Language
+  - code: "I&C SCI 46"
+    title: Data Structure Implementation and Analysis
+  - code: COMPSCI 161
+    title: Design and Analysis of Algorithms
+  - code: COMPSCI 171
+    title: Introduction to Artificial Intelligence
+  - code: COMPSCI 178
+    title: Machine Learning and Data Mining
+  - code: COMPSCI 122A
+    title: Introduction to Data Management
 ---

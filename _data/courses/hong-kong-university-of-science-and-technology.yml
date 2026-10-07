@@ -5,4 +5,26 @@ courses:
     title: Introduction to Python Programming
   - code: DASC2010
     title: Calculus for Data Analytics in Science
+  - code: COMP1002
+    title: Introduction to Programming
+  - code: COMP1021
+    title: Introduction to Programming with Python
+  - code: COMP1022P
+    title: Introduction to Computing with Java
+  - code: COMP2011
+    title: Programming with C++
+  - code: COMP2012
+    title: Object-Oriented Programming and Data Structures
+  - code: COMP2611
+    title: Computer Organization
+  - code: COMP2711
+    title: Discrete Mathematical Tools for Computer Science
+  - code: COMP3711
+    title: Design and Analysis of Algorithms
+  - code: COMP4211
+    title: Machine Learning
+  - code: COMP4331
+    title: Introduction to Data Mining
+  - code: COMP4411
+    title: Computer Graphics
 ---

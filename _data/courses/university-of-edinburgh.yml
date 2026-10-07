@@ -1,0 +1,24 @@
+---
+university: University of Edinburgh
+courses:
+  - code: INFR08012
+    title: Informatics 1 - Introduction to Computation
+  - code: INFR08013
+    title: Informatics 1 - Object-Oriented Programming
+  - code: INFR08014
+    title: Informatics 1 - Data and Analysis
+  - code: INFR08015
+    title: Informatics 1 - Functional Programming
+  - code: INFR08018
+    title: Informatics 2 - Algorithms, Data Structures, Learning
+  - code: INFR08019
+    title: Informatics 2 - Introduction to Algorithms and Data Structures
+  - code: INFR08024
+    title: Informatics 2 - Software Design and Modelling
+  - code: INFR10052
+    title: Machine Learning and Pattern Recognition
+  - code: INFR10076
+    title: Machine Learning Practical
+  - code: INFR11130
+    title: Machine Learning and Sensorimotor Control
+---

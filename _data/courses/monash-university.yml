@@ -4,7 +4,7 @@ courses:
   - code: FIT5196
     title: Data Wrangling
   - code: FIT9136
-    title: Python Programming
+    title: Algorithms and programming foundations in Python
   - code: FIT2014
     title: Theory of Computation
   - code: FIT1045
@@ -15,4 +15,22 @@ courses:
     title: Big Data
   - code: FIT3003
     title: Business Intelligence and Data Warehousing
+  - code: FIT1051
+    title: Programming fundamentals in java
+  - code: FIT2004
+    title: Algorithms and data structures
+  - code: FIT2099
+    title: Object oriented design and implementation
+  - code: FIT2102
+    title: Programming paradigms
+  - code: FIT3080
+    title: Intelligent systems
+  - code: FIT3152
+    title: Data analytics
+  - code: FIT3155
+    title: Advanced data structures and algorithms
+  - code: FIT5197
+    title: Modelling for data analysis
+  - code: FIT9137
+    title: Introduction to computer architecture and networks
 ---

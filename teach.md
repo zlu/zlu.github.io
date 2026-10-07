@@ -24,8 +24,14 @@ region_pages: []
       data-en="University courses"
       data-cn="大学课程目录">大学课程目录</h2>
   <p class="teach-directory-lead"
-     data-en="Search by school or course code, or browse the full <a href='/teach/universities/'>university directory</a>. Message on WeChat with your code and deadline."
-     data-cn="按学校或课号搜索，或打开完整 <a href='/teach/universities/'>大学目录</a>。微信发我课号与截止日期即可约课。">按学校或课号搜索，或打开完整 <a href="/teach/universities/">大学目录</a>。微信发我课号与截止日期即可约课。</p>
+     data-en="Search detailed course pages below, or open the full <a href='/teach/universities/'>1000+ university directory</a> (AU/UK/US/CA/HK/SG). Message WeChat with school + course code."
+     data-cn="下方可搜已整理课号；完整 <a href='/teach/universities/'>1000+ 所大学目录</a>（澳英美加港新）按地区浏览。微信发送学校 + 课号即可约课。">下方可搜已整理课号；完整 <a href="/teach/universities/">1000+ 所大学目录</a>（澳英美加港新）按地区浏览。微信发送学校 + 课号即可约课。</p>
+  <div class="teach-region-links teach-region-links-inline">
+    <a href="/teach/services/sync/">同步辅导</a>
+    <a href="/teach/services/assignment/">作业辅导</a>
+    <a href="/teach/services/exam/">考前突击</a>
+    <a href="/teach/services/preview/">课程预习</a>
+  </div>
   <div class="teach-region-links teach-region-links-inline">
     <a href="/teach/australia/">澳大利亚</a>
     <a href="/teach/uk/">英国</a>
@@ -33,7 +39,6 @@ region_pages: []
     <a href="/teach/hong-kong/">香港</a>
     <a href="/teach/singapore/">新加坡</a>
     <a href="/teach/canada/">加拿大</a>
-    <a href="/teach/new-zealand/">新西兰</a>
   </div>
   {% include teach-course-list.html %}
 </section>

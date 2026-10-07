@@ -1,10 +1,23 @@
 ---
-university: John Hopkins University
+university: Johns Hopkins University
 courses:
-  - code: ""
-    title: Business Analytics & Artificial Intelligence
-    department: ""
   - code: BU510 615
     title: Python for Data Analysis
     department: Carey Business School
+  - code: EN.601.220
+    title: Intermediate Programming
+  - code: EN.601.226
+    title: Data Structures
+  - code: EN.601.229
+    title: Computer System Fundamentals
+  - code: EN.601.318
+    title: Operating Systems
+  - code: EN.601.433
+    title: Introduction to Algorithms
+  - code: EN.601.464
+    title: Artificial Intelligence
+  - code: EN.601.475
+    title: Machine Learning
+  - code: EN.601.482
+    title: "Machine Learning: Deep Learning"
 ---

@@ -1,0 +1,24 @@
+---
+university: Chinese University of Hong Kong
+courses:
+  - code: CSCI1120
+    title: Introduction to Computing Using C++
+  - code: CSCI1130
+    title: Introduction to Computing Using Java
+  - code: CSCI1520
+    title: Computer Principles and C++ Programming
+  - code: CSCI2100
+    title: Data Structures
+  - code: CSCI2120
+    title: Introduction to Software Engineering
+  - code: CSCI3150
+    title: Introduction to Operating Systems
+  - code: CSCI3160
+    title: Design and Analysis of Algorithms
+  - code: CSCI3230
+    title: Fundamentals of Artificial Intelligence
+  - code: CSCI3320
+    title: Fundamentals of Machine Learning
+  - code: CSCI4180
+    title: Introduction to Cloud Computing and Storage
+---

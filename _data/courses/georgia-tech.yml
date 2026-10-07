@@ -1,0 +1,22 @@
+---
+university: Georgia Institute of Technology
+courses:
+  - code: CS1301
+    title: Introduction to Computing
+  - code: CS1331
+    title: Introduction to Object Oriented Programming
+  - code: CS1332
+    title: Data Structures and Algorithms
+  - code: CS2110
+    title: Computer Organization and Programming
+  - code: CS2200
+    title: Systems and Networks
+  - code: CS3510
+    title: Design and Analysis of Algorithms
+  - code: CS3600
+    title: Introduction to Artificial Intelligence
+  - code: CS4641
+    title: Machine Learning
+  - code: CS6476
+    title: Computer Vision
+---

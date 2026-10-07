@@ -7,4 +7,24 @@ courses:
     title: Fundamentals of Computer Science
   - code: COMP3770/6770
     title: Management of IT Systems and Projects
+  - code: COMP1000
+    title: Introduction to Computer Programming
+  - code: COMP1010
+    title: Fundamentals of Computer Science
+  - code: COMP1300
+    title: Introduction to Cyber Security
+  - code: COMP2000
+    title: Object-Oriented Programming Practices
+  - code: COMP2110
+    title: Web Technology
+  - code: COMP2200
+    title: Data Science
+  - code: COMP2250
+    title: Data Communications
+  - code: COMP3010
+    title: Algorithm Theory and Design
+  - code: COMP3100
+    title: Software Architecture and Design
+  - code: COMP3420
+    title: Artificial Intelligence
 ---

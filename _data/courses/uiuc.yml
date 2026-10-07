@@ -3,6 +3,32 @@ university: UIUC
 courses:
   - code: CS444
     title: Deep Learning for Computer Vision
-  - title: Deep Learning for Computer Vision
-    code: ECE494
+  - code: ECE494
+    title: Deep Learning for Computer Vision
+  - code: CS124
+    title: Introduction to Computer Science I
+  - code: CS128
+    title: Introduction to Computer Science II
+  - code: CS173
+    title: Discrete Structures
+  - code: CS225
+    title: Data Structures
+  - code: CS233
+    title: Computer Architecture
+  - code: CS241
+    title: System Programming
+  - code: CS374
+    title: Algorithms and Models of Computation
+  - code: CS411
+    title: Database Systems
+  - code: CS421
+    title: Programming Languages and Compilers
+  - code: CS440
+    title: Artificial Intelligence
+  - code: CS441
+    title: Applied Machine Learning
+  - code: CS446
+    title: Machine Learning
+  - code: CS498
+    title: Applied Machine Learning
 ---

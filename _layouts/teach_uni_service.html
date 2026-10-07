@@ -1,0 +1,94 @@
+---
+layout: default
+---
+<article class="teach-landing">
+  <nav class="teach-crumbs" aria-label="Breadcrumb">
+    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+    <span>/</span>
+    <a href="/teach/services/{{ page.service_key }}/"
+       data-en="{{ page.service_title_en }}"
+       data-cn="{{ page.service_title_cn }}">{{ page.service_title_cn }}</a>
+    <span>/</span>
+    <a href="/teach/universities/{{ page.uni_slug }}/">{{ page.university }}</a>
+  </nav>
+
+  <header class="teach-landing-header">
+    <p class="teach-hero-eyebrow"
+       data-en="{{ page.region_en }} · {{ page.service_en }}"
+       data-cn="{{ page.region_cn }} · {{ page.service_cn }}">{{ page.region_cn }} · {{ page.service_cn }}</p>
+    <h1 data-en="{{ page.university }} {{ page.service_title_en }}"
+        data-cn="{{ page.university }}{{ page.service_title_cn }}">{{ page.university }}{{ page.service_title_cn }}</h1>
+    <p class="teach-landing-lead"
+       data-en="{{ page.service_desc_en }}"
+       data-cn="{{ page.service_desc_cn }}">{{ page.service_desc_cn }}</p>
+    <div class="teach-hero-actions">
+      <a class="btn btn-primary" href="/teach/"
+         data-en="Book via WeChat"
+         data-cn="微信预约">微信预约</a>
+      <a class="btn btn-outline-primary" href="/teach/universities/{{ page.uni_slug }}/"
+         data-en="All {{ page.university }} courses"
+         data-cn="查看该校全部课程">查看该校全部课程</a>
+    </div>
+  </header>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Who this helps"
+        data-cn="适合谁">适合谁</h2>
+    <ul class="teach-proof">
+      {% if page.service_key == "sync" %}
+      <li data-en="Falling behind in English-medium CS lectures"
+          data-cn="英文 CS 课听不懂、笔记跟不上">英文 CS 课听不懂、笔记跟不上</li>
+      <li data-en="Need weekly bilingual catch-up aligned to the syllabus"
+          data-cn="需要按 syllabus 每周双语补课">需要按 syllabus 每周双语补课</li>
+      {% elsif page.service_key == "assignment" %}
+      <li data-en="Stuck on coding assignments or autograders"
+          data-cn="作业卡壳、报错看不懂、autograder 过不了">作业卡壳、报错看不懂、autograder 过不了</li>
+      <li data-en="Need structure for labs, essays, or group projects"
+          data-cn="Lab / Essay / 小组 project 需要拆解结构">Lab / Essay / 小组 project 需要拆解结构</li>
+      {% elsif page.service_key == "exam" %}
+      <li data-en="Midterm/final coming with unclear topic weights"
+          data-cn="期中期末临近，考点权重不清楚">期中期末临近，考点权重不清楚</li>
+      <li data-en="Want targeted drills instead of all-nighters"
+          data-cn="不想通宵刷题，要针对性突击">不想通宵刷题，要针对性突击</li>
+      {% else %}
+      <li data-en="Starting a new CS course next term"
+          data-cn="下学期新开 CS / AI / 数据科学课">下学期新开 CS / AI / 数据科学课</li>
+      <li data-en="Weak programming foundation before week 1"
+          data-cn="开学前编程基础弱，担心第一周掉队">开学前编程基础弱，担心第一周掉队</li>
+      {% endif %}
+      <li data-en="Prefer Chinese explanations with English terminology"
+          data-cn="希望中文讲透，同时记住英文术语">希望中文讲透，同时记住英文术语</li>
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="{{ page.university }} courses we support"
+        data-cn="{{ page.university }} 可辅导课程">{{ page.university }} 可辅导课程</h2>
+    {% if page.courses and page.courses.size > 0 %}
+    <ul class="teach-course-links">
+      {% for course in page.courses %}
+      <li>
+        <a href="/teach/courses/{{ page.uni_slug }}/{{ course.slug }}/">
+          {% if course.code != "" %}<strong>{{ course.code }}</strong>: {% endif %}{{ course.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Other services for this university"
+        data-cn="该校其他辅导类型">该校其他辅导类型</h2>
+    <div class="teach-region-links">
+      <a href="/teach/universities/{{ page.uni_slug }}/sync/">同步辅导</a>
+      <a href="/teach/universities/{{ page.uni_slug }}/assignment/">作业辅导</a>
+      <a href="/teach/universities/{{ page.uni_slug }}/exam/">考前突击</a>
+      <a href="/teach/universities/{{ page.uni_slug }}/preview/">课程预习</a>
+    </div>
+  </section>
+
+  <p class="teach-landing-back">
+    <a href="/teach/" data-en="← Tutoring home" data-cn="← 辅导首页">← 辅导首页</a>
+  </p>
+</article>

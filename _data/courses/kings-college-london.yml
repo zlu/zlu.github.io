@@ -1,0 +1,24 @@
+---
+university: King's College London
+courses:
+  - code: 4CCS1FC1
+    title: Foundations of Computing 1
+  - code: 4CCS1FC2
+    title: Foundations of Computing 2
+  - code: 4CCS1PRP
+    title: Programming Practice and Applications
+  - code: 4CCS1DST
+    title: Data Structures
+  - code: 5CCS2OSC
+    title: Operating Systems and Concurrency
+  - code: 5CCS2DBS
+    title: Database Systems
+  - code: 5CCS2AIN
+    title: Artificial Intelligence Reasoning and Decision Making
+  - code: 6CCS3AIN
+    title: Artificial Intelligence
+  - code: 6CCS3ML1
+    title: Machine Learning
+  - code: 7CCSMPNN
+    title: Pattern Recognition, Neural Networks and Deep Learning
+---

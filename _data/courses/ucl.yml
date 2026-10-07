@@ -1,0 +1,34 @@
+---
+university: University College London
+courses:
+  - code: COMP0002
+    title: Principles of Programming
+  - code: COMP0003
+    title: Theory of Computation
+  - code: COMP0004
+    title: Object-Oriented Programming
+  - code: COMP0005
+    title: Algorithms
+  - code: COMP0008
+    title: Computer Architecture and Concurrency
+  - code: COMP0010
+    title: Software Engineering
+  - code: COMP0011
+    title: Functional Programming
+  - code: COMP0015
+    title: Introduction to Database Systems
+  - code: COMP0016
+    title: Systems Engineering
+  - code: COMP0020
+    title: Artificial Intelligence and Neural Computing
+  - code: COMP0021
+    title: Machine Learning for Visual Computing
+  - code: COMP0025
+    title: Computer Graphics
+  - code: COMP0118
+    title: Computational Modelling for Biomedical Imaging
+  - code: COMP0123
+    title: Complex Networks and Web
+  - code: COMP0081
+    title: Applied Machine Learning
+---

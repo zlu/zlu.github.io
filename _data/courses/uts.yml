@@ -1,0 +1,24 @@
+---
+university: University of Technology Sydney
+courses:
+  - code: 31251
+    title: Data Structures and Algorithms
+  - code: 31271
+    title: Database Fundamentals
+  - code: 41025
+    title: Introduction to Software Development
+  - code: 41039
+    title: Programming 1
+  - code: 41040
+    title: Programming 2
+  - code: 31257
+    title: Information System Development Methodologies
+  - code: 32555
+    title: Fundamentals of Software Development
+  - code: 32513
+    title: Advanced Data Analytics Algorithms
+  - code: 42028
+    title: Deep Learning and Convolutional Neural Networks
+  - code: 42913
+    title: Social and Information Network Analysis
+---

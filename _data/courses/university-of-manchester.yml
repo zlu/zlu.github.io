@@ -1,5 +1,26 @@
 ---
 university: University of Manchester
 courses:
-  - title: Automated Grading System
+  - code: COMP11120
+    title: Mathematical Techniques for Computer Science
+  - code: COMP11212
+    title: Fundamentals of Computation
+  - code: COMP15111
+    title: Fundamentals of Computer Architecture
+  - code: COMP16121
+    title: Object Oriented Programming with Java 1
+  - code: COMP16212
+    title: Object Oriented Programming with Java 2
+  - code: COMP23111
+    title: Database Systems
+  - code: COMP23311
+    title: Software Engineering 1
+  - code: COMP26120
+    title: Algorithms and Imperative Programming
+  - code: COMP34120
+    title: AI and Games
+  - code: COMP37212
+    title: Computer Vision
+  - code: COMP61011
+    title: Machine Learning and Data Mining
 ---

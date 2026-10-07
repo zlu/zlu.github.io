@@ -1,0 +1,18 @@
+---
+university: New York University
+courses:
+  - code: CSCI-UA 101
+    title: Introduction to Computer Science
+  - code: CSCI-UA 102
+    title: Data Structures
+  - code: CSCI-UA 201
+    title: Computer Systems Organization
+  - code: CSCI-UA 310
+    title: Basic Algorithms
+  - code: CSCI-UA 473
+    title: Introduction to Machine Learning
+  - code: CSCI-GA 1170
+    title: Fundamental Algorithms
+  - code: CSCI-GA 2565
+    title: Machine Learning
+---

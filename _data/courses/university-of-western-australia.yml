@@ -1,6 +1,24 @@
 ---
 university: University of Western Australia
 courses:
-  - title: Artificial Intelligence and Adaptive Systems
-    code: " CITS4404"
+  - code: CITS4404
+    title: Artificial Intelligence and Adaptive Systems
+  - code: CITS1401
+    title: Computational Thinking with Python
+  - code: CITS1402
+    title: Relational Database Management Systems
+  - code: CITS2002
+    title: Systems Programming
+  - code: CITS2200
+    title: Data Structures and Algorithms
+  - code: CITS3001
+    title: Algorithms, Agents and Artificial Intelligence
+  - code: CITS3002
+    title: Computer Networks
+  - code: CITS3003
+    title: Graphics and Animation
+  - code: CITS3401
+    title: Data Warehousing
+  - code: CITS5508
+    title: Machine Learning
 ---

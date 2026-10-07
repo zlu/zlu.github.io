@@ -12,7 +12,8 @@ module Jekyll
         "cn" => "澳大利亚",
         "match" => /
           melbourne|monash|sydney|unsw|macquarie|queensland|western.?australia|
-          eynesbury|south.?australia
+          eynesbury|south.?australia|anu|australian.?national|uts|technology.?sydney|
+          adelaide|rmit|wollongong
         /xi
       },
       "uk" => {
@@ -20,7 +21,8 @@ module Jekyll
         "cn" => "英国",
         "match" => /
           manchester|imperial|nottingham|birmingham|glasgow|liverpool|southampton|
-          stirling|warwick|leeds|cardiff|queen.?mary|brunel|bayes|edingburgh|edinburgh
+          stirling|warwick|leeds|cardiff|queen.?mary|brunel|bayes|edingburgh|edinburgh|
+          ucl|university.?college.?london|kings.?college|bristol
         /xi
       },
       "usa" => {
@@ -28,23 +30,24 @@ module Jekyll
         "cn" => "美国",
         "match" => /
           carnegie|lehigh|northeastern|ohio|pittsburgh|rochester|san.?jose|
-          uc.?irvine|uiuc|william.?mary|john.?hopkins
+          uc.?irvine|uiuc|william.?mary|john.?hopkins|berkeley|stanford|georgia.?tech|
+          nyu|new.?york.?university|ucla|washington|umich|michigan|ut.?austin|texas.?at.?austin
         /xi
       },
       "canada" => {
         "en" => "Canada",
         "cn" => "加拿大",
-        "match" => /concordia/i
+        "match" => /concordia|toronto|ubc|british.?columbia|waterloo|mcgill|alberta/i
       },
       "hong-kong" => {
         "en" => "Hong Kong",
         "cn" => "香港",
-        "match" => /hong.?kong|hku|baptist|metropolitan|macau|north.?china/i
+        "match" => /hong.?kong|hku|baptist|metropolitan|macau|cuhk|chinese.?university|polyu|polytechnic/i
       },
       "singapore" => {
         "en" => "Singapore",
         "cn" => "新加坡",
-        "match" => /singapore|ntu|nus|jcu|national.?university.?of.?singapore/i
+        "match" => /singapore|ntu|nus|jcu|national.?university.?of.?singapore|smu|management.?university/i
       },
       "malaysia" => {
         "en" => "Malaysia",
@@ -58,12 +61,56 @@ module Jekyll
       }
     }.freeze
 
+    # Competitor-style service verticals (考而思/辅无忧 pattern)
+    SERVICES = {
+      "sync" => {
+        "en" => "Course sync tutoring",
+        "cn" => "同步课程辅导",
+        "title_en" => "Course Sync Tutoring",
+        "title_cn" => "同步课程辅导",
+        "desc_en" => "Keep up with lectures in Chinese and English — syllabus walkthrough, weekly Q&A, and assignment readiness.",
+        "desc_cn" => "中英双语跟课：大纲梳理、每周答疑、作业节奏对齐，解决英文课听不懂、进度掉队。"
+      },
+      "assignment" => {
+        "en" => "Assignment tutoring",
+        "cn" => "作业辅导",
+        "title_en" => "Assignment & Project Help",
+        "title_cn" => "作业与 Project 辅导",
+        "desc_en" => "Debug, approach review, and write-up feedback. You submit your own work — no ghostwriting.",
+        "desc_cn" => "拆题、debug、复盘思路与报告结构。作业由你本人提交 —— 不代写、不代考。"
+      },
+      "exam" => {
+        "en" => "Exam prep tutoring",
+        "cn" => "考前突击辅导",
+        "title_en" => "Exam Prep Tutoring",
+        "title_cn" => "考前突击辅导",
+        "desc_en" => "Topic maps, past-paper style practice, and weak-spot drills before midterms and finals.",
+        "desc_cn" => "考点地图、类 past paper 练习与薄弱点突击，服务期中/期末冲刺。"
+      },
+      "preview" => {
+        "en" => "Course preview tutoring",
+        "cn" => "课程预习辅导",
+        "title_en" => "Course Preview Tutoring",
+        "title_cn" => "课程预习辅导",
+        "desc_en" => "Pre-term head start: programming basics, course jargon, and assessment format before week 1.",
+        "desc_cn" => "开学前抢跑：编程基础、专业术语与考核方式预热，降低第一周冲击。"
+      }
+    }.freeze
+
     def generate(site)
       courses_data = site.data["courses"]
       return unless courses_data.is_a?(Hash)
 
+      # Bulk directory from _data/teach_universities.yml (array of name/region/slug)
+      bulk = site.data["teach_universities"]
+      bulk = [] unless bulk.is_a?(Array)
+
       universities = []
       slug_lookup = {}
+      seen_names = {}
+      seen_slugs = {}
+
+      # 1) Rich universities from course YAML (pages + services + course landings)
       courses_data.each do |slug, entry|
         next unless entry.is_a?(Hash) && entry["university"]
 
@@ -72,11 +119,20 @@ module Jekyll
         next if uni_slug.empty?
 
         university = entry["university"].to_s.strip
+        name_key = university.downcase
         course_list = Array(entry["courses"]).map { |c| normalize_course(c) }.compact
-        region_key = detect_region("#{data_key} #{uni_slug}", university)
+        region_key = detect_region("#{data_key} #{uni_slug} #{university}", university)
+
+        next if seen_slugs[uni_slug]
 
         uni_page = build_university_page(site, uni_slug, university, course_list, region_key)
         site.pages << uni_page
+
+        SERVICES.each_key do |service_key|
+          site.pages << build_uni_service_page(
+            site, uni_slug, university, course_list, region_key, service_key
+          )
+        end
 
         course_list.each do |course|
           site.pages << build_course_page(site, uni_slug, university, course, region_key)
@@ -86,14 +142,57 @@ module Jekyll
           "slug" => uni_slug,
           "name" => university,
           "region" => region_key,
-          "courses" => course_list
+          "courses" => course_list,
+          "rich" => true
         }
         universities << record
         slug_lookup[data_key] = uni_slug
+        seen_slugs[uni_slug] = true
+        seen_names[name_key] = uni_slug
       end
 
-      site.data["teach_universities"] = universities.sort_by { |u| u["name"].downcase }
+      rich_count = universities.size
+      course_count = universities.sum { |u| u["courses"].size }
+
+      # 2) Bulk directory universities (landing page only — keeps sitemap/build scalable)
+      bulk_added = 0
+      bulk.each do |entry|
+        next unless entry.is_a?(Hash)
+
+        university = entry["name"].to_s.strip
+        next if university.empty?
+
+        name_key = university.downcase
+        next if seen_names[name_key]
+
+        uni_slug = ascii_slug(entry["slug"].to_s)
+        uni_slug = ascii_slug(university) if uni_slug.empty?
+        next if uni_slug.empty? || seen_slugs[uni_slug]
+
+        region_key = entry["region"].to_s
+        region_key = detect_region("#{uni_slug} #{university}", university) if region_key.empty?
+        region_key = "international" if region_key.empty?
+
+        site.pages << build_university_page(site, uni_slug, university, [], region_key)
+
+        universities << {
+          "slug" => uni_slug,
+          "name" => university,
+          "region" => region_key,
+          "courses" => [],
+          "rich" => false
+        }
+        seen_slugs[uni_slug] = true
+        seen_names[name_key] = uni_slug
+        slug_lookup[uni_slug] = uni_slug
+        bulk_added += 1
+      end
+
+      universities.sort_by! { |u| u["name"].downcase }
+      site.data["teach_universities"] = universities
       site.data["teach_uni_slugs"] = slug_lookup
+      site.data["teach_services"] = SERVICES
+      site.data["teach_uni_count"] = universities.size
 
       REGION_MAP.each_key do |region_key|
         region_unis = universities.select { |u| u["region"] == region_key }
@@ -102,9 +201,17 @@ module Jekyll
         site.pages << build_region_page(site, region_key, region_unis)
       end
 
+      # Service hubs highlight universities that already have course-level pages
+      rich_unis = universities.select { |u| u["rich"] }
+      SERVICES.each_key do |service_key|
+        site.pages << build_service_hub_page(site, service_key, rich_unis)
+      end
+
       site.pages << build_universities_index(site, universities)
-      Jekyll.logger.info "TeachPages:", "generated #{universities.size} universities, " \
-        "#{universities.sum { |u| u['courses'].size }} courses, " \
+      Jekyll.logger.info "TeachPages:", "generated #{universities.size} universities " \
+        "(#{rich_count} with courses, #{bulk_added} directory), " \
+        "#{course_count} course pages, #{rich_count * SERVICES.size} uni-service pages, " \
+        "#{SERVICES.size} service hubs, " \
         "#{REGION_MAP.count { |k, _| universities.any? { |u| u['region'] == k } }} regions"
     end
 
@@ -189,7 +296,12 @@ module Jekyll
       title = course["title"]
       label = [code, title].reject(&:empty?).join(": ")
       title_en = "#{label} Tutoring | #{university} Computer Science Tutoring"
-      title_cn = "#{label} 辅导 | #{university} 计算机一对一"
+      # Match competitor title pattern: 大学 + 课号 + 辅导
+      title_cn = if code.empty?
+                   "#{university} #{title} 课程辅导 | 中英双语一对一"
+                 else
+                   "#{university} #{code} 课程辅导 | #{title}"
+                 end
       description = "1-1 tutoring for #{label} at #{university}. " \
                     "Bilingual Chinese/English help with assignments, projects, and exam prep. No ghostwriting."
 
@@ -205,7 +317,7 @@ module Jekyll
         "title_cn" => title_cn,
         "title_suffix" => "zlu.me/teach",
         "description" => description,
-        "keywords" => "#{code}, #{title}, #{university}, tutoring, 辅导, 留学生, AI, Python",
+        "keywords" => "#{code}, #{title}, #{university}, 作业辅导, 考前辅导, 同步辅导, 留学生, AI, Python",
         "university" => university,
         "uni_slug" => uni_slug,
         "course_code" => code,
@@ -215,6 +327,77 @@ module Jekyll
         "region" => region_key,
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
+        "lang" => "zh-CN",
+        "sitemap" => true
+      )
+      page
+    end
+
+    def build_uni_service_page(site, uni_slug, university, courses, region_key, service_key)
+      svc = SERVICES.fetch(service_key)
+      title_en = "#{university} #{svc['title_en']} | Computer Science Tutoring"
+      title_cn = "#{university}#{svc['title_cn']} | 计算机留学生一对一"
+      codes = courses.map { |c| c["code"] }.reject(&:empty?)
+      description = "#{svc['desc_en']} Popular at #{university}: #{codes.first(5).join(', ')}."
+
+      page = TeachGeneratedPage.new(
+        site,
+        site.source,
+        "teach/universities/#{uni_slug}/#{service_key}"
+      )
+      page.data.merge!(
+        "layout" => "teach_uni_service",
+        "title" => title_cn,
+        "title_en" => title_en,
+        "title_cn" => title_cn,
+        "title_suffix" => "zlu.me/teach",
+        "description" => description,
+        "keywords" => "#{university}, #{svc['cn']}, #{svc['en']}, 留学生辅导, #{codes.first(6).join(', ')}",
+        "university" => university,
+        "uni_slug" => uni_slug,
+        "courses" => courses,
+        "service_key" => service_key,
+        "service_en" => svc["en"],
+        "service_cn" => svc["cn"],
+        "service_title_en" => svc["title_en"],
+        "service_title_cn" => svc["title_cn"],
+        "service_desc_en" => svc["desc_en"],
+        "service_desc_cn" => svc["desc_cn"],
+        "region" => region_key,
+        "region_en" => region_label(region_key, "en"),
+        "region_cn" => region_label(region_key, "cn"),
+        "lang" => "zh-CN",
+        "sitemap" => true
+      )
+      page
+    end
+
+    def build_service_hub_page(site, service_key, universities)
+      svc = SERVICES.fetch(service_key)
+      title_en = "#{svc['title_en']} for Chinese Students Abroad | CS Tutoring"
+      title_cn = "留学生#{svc['title_cn']} | 计算机中英双语一对一"
+      focus = universities.select do |u|
+        %w[australia uk usa canada hong-kong singapore].include?(u["region"])
+      end
+      description = "#{svc['desc_en']} Covering #{focus.size} universities across AU/UK/US/CA/HK/SG."
+
+      page = TeachGeneratedPage.new(site, site.source, "teach/services/#{service_key}")
+      page.data.merge!(
+        "layout" => "teach_service_hub",
+        "title" => title_cn,
+        "title_en" => title_en,
+        "title_cn" => title_cn,
+        "title_suffix" => "zlu.me/teach",
+        "description" => description,
+        "keywords" => "#{svc['cn']}, #{svc['en']}, 留学生辅导, 计算机, AI, Python",
+        "service_key" => service_key,
+        "service_en" => svc["en"],
+        "service_cn" => svc["cn"],
+        "service_title_en" => svc["title_en"],
+        "service_title_cn" => svc["title_cn"],
+        "service_desc_en" => svc["desc_en"],
+        "service_desc_cn" => svc["desc_cn"],
+        "universities" => focus.sort_by { |u| u["name"].downcase },
         "lang" => "zh-CN",
         "sitemap" => true
       )

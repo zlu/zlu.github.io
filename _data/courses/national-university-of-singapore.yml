@@ -3,4 +3,34 @@ university: National University of Singapore
 courses:
   - code: CS1010E
     title: Programming Methodology
+  - code: CS1010
+    title: Programming Methodology
+  - code: CS1010S
+    title: Programming Methodology
+  - code: CS1101S
+    title: Programming Methodology
+  - code: CS1231
+    title: Discrete Structures
+  - code: CS2030
+    title: Programming Methodology II
+  - code: CS2040
+    title: Data Structures and Algorithms
+  - code: CS2100
+    title: Computer Organisation
+  - code: CS2102
+    title: Database Systems
+  - code: CS2103
+    title: Software Engineering
+  - code: CS2105
+    title: Introduction to Computer Networks
+  - code: CS2106
+    title: Introduction to Operating Systems
+  - code: CS3230
+    title: Design and Analysis of Algorithms
+  - code: CS3243
+    title: Introduction to Artificial Intelligence
+  - code: CS3244
+    title: Machine Learning
+  - code: CS4248
+    title: Natural Language Processing
 ---

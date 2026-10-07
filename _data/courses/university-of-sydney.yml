@@ -2,7 +2,7 @@
 university: University of Sydney
 courses:
   - code: COMP3221
-    title: "Distributed Systems "
+    title: Distributed Systems
     department: Computer Science
   - code: INFO1113
     title: Object-Oriented Programming
@@ -11,13 +11,34 @@ courses:
     title: Principles of Data Science
   - code: INFO1110
     title: Introduction to Programming
-  - title: Intro to Computer System
-    code: ELEC1601/ELEC9601
+  - code: ELEC1601/ELEC9601
+    title: Intro to Computer System
   - code: QBUS6600
-    title: Data Analytics for Business Capstone    
-  - title: Database Management Systems
-    code: COMP9120    
-  - title: Computing 1B OS and Network Platforms
-    code: INFO1112
-
+    title: Data Analytics for Business Capstone
+  - code: COMP9120
+    title: Database Management Systems
+  - code: INFO1112
+    title: Computing 1B OS and Network Platforms
+  - code: COMP2017
+    title: Systems Programming
+  - code: COMP2123
+    title: Data Structures and Algorithms
+  - code: COMP2823
+    title: Data Structures and Algorithms (Advanced)
+  - code: COMP3027
+    title: Algorithm Design
+  - code: COMP3308
+    title: Introduction to Artificial Intelligence
+  - code: COMP3608
+    title: Introduction to Artificial Intelligence (Advanced)
+  - code: COMP5318
+    title: Machine Learning and Data Mining
+  - code: COMP5328
+    title: Advanced Machine Learning
+  - code: COMP5349
+    title: Cloud Computing
+  - code: COMP9007
+    title: Algorithms
+  - code: DATA1002
+    title: "Informatics: Data and Computation"
 ---

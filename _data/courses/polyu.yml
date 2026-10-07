@@ -1,0 +1,22 @@
+---
+university: Hong Kong Polytechnic University
+courses:
+  - code: COMP1001
+    title: Problem Solving and Programming
+  - code: COMP2011
+    title: Data Structures
+  - code: COMP2012
+    title: Object Oriented Programming
+  - code: COMP2421
+    title: Computer Organization
+  - code: COMP3011
+    title: Design and Analysis of Algorithms
+  - code: COMP3121
+    title: Database Systems
+  - code: COMP3422
+    title: Creative Programming for Digital Media
+  - code: COMP4431
+    title: Artificial Intelligence
+  - code: COMP4432
+    title: Machine Learning
+---

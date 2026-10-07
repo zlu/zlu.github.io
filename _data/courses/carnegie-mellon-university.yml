@@ -1,7 +1,25 @@
 ---
-university: "Carnegie Mellon University "
+university: Carnegie Mellon University
 courses:
   - code: CMU 15-112
     title: Fundamentals of Programming and Computer Science
     department: Computer Science
+  - code: 15-112
+    title: Fundamentals of Programming and Computer Science
+  - code: 15-122
+    title: Principles of Imperative Computation
+  - code: 15-150
+    title: Principles of Functional Programming
+  - code: 15-210
+    title: Parallel and Sequential Data Structures and Algorithms
+  - code: 15-213
+    title: Introduction to Computer Systems
+  - code: 15-251
+    title: Great Ideas in Theoretical Computer Science
+  - code: 15-281
+    title: "Artificial Intelligence: Representation and Problem Solving"
+  - code: 10-301
+    title: Introduction to Machine Learning
+  - code: 10-701
+    title: Introduction to Machine Learning (PhD)
 ---

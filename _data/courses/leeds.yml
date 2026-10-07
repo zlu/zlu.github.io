@@ -4,4 +4,20 @@ courses:
   - code: LUBS3185
     title: "People Analytics: Strategy and Practice"
     department: Business School
+  - code: COMP1121
+    title: Introduction to Programming
+  - code: COMP1212
+    title: Computer Processors
+  - code: COMP1421
+    title: Computer Architecture
+  - code: COMP1511
+    title: Introduction to Discrete Mathematics
+  - code: COMP2221
+    title: Networks
+  - code: COMP2421
+    title: Numerical Computation
+  - code: COMP2611
+    title: Artificial Intelligence
+  - code: COMP3631
+    title: Machine Learning
 ---

@@ -1,0 +1,20 @@
+---
+university: University of Michigan
+courses:
+  - code: EECS 183
+    title: Elementary Programming Concepts
+  - code: EECS 280
+    title: Programming and Introductory Data Structures
+  - code: EECS 281
+    title: Data Structures and Algorithms
+  - code: EECS 370
+    title: Introduction to Computer Organization
+  - code: EECS 376
+    title: Foundations of Computer Science
+  - code: EECS 445
+    title: Introduction to Machine Learning
+  - code: EECS 481
+    title: Software Engineering
+  - code: EECS 492
+    title: Introduction to Artificial Intelligence
+---

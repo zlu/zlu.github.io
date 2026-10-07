@@ -1,5 +1,5 @@
 ---
-university: The University of Hongkong
+university: The University of Hong Kong
 courses:
   - code: COMP3340
     title: Applied Deep Learning
@@ -7,4 +7,24 @@ courses:
   - code: COMP1117B
     title: Computer Programming
     department: School of Computing and Data Science
+  - code: COMP1117
+    title: Computer Programming
+  - code: COMP2113
+    title: Programming Technologies
+  - code: COMP2119
+    title: Introduction to Data Structures and Algorithms
+  - code: COMP2120
+    title: Computer Organization
+  - code: COMP2121
+    title: Discrete Mathematics
+  - code: COMP3230
+    title: Principles of Operating Systems
+  - code: COMP3270
+    title: Artificial Intelligence
+  - code: COMP3278
+    title: Introduction to Database Management Systems
+  - code: COMP3314
+    title: Machine Learning
+  - code: COMP3357
+    title: Cryptography
 ---

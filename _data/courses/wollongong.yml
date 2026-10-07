@@ -1,0 +1,24 @@
+---
+university: University of Wollongong
+courses:
+  - code: CSIT110
+    title: Fundamental Programming with Python
+  - code: CSIT113
+    title: Problem Solving
+  - code: CSIT121
+    title: Object Oriented Design and Programming
+  - code: CSIT127
+    title: Networks and Communications
+  - code: CSCI203
+    title: Algorithms and Data Structures
+  - code: CSCI235
+    title: Database Systems
+  - code: CSCI251
+    title: Advanced Programming
+  - code: CSCI318
+    title: Software Engineering Practices and Principles
+  - code: CSCI433
+    title: Machine Learning
+  - code: CSCI446
+    title: Big Data Analytics
+---

@@ -1,0 +1,22 @@
+---
+university: University of Adelaide
+courses:
+  - code: COMP SCI 1101
+    title: Introduction to Programming
+  - code: COMP SCI 1102
+    title: Object Oriented Programming
+  - code: COMP SCI 2103
+    title: Algorithm Design and Data Structures
+  - code: COMP SCI 2201
+    title: Algorithm and Data Structure Analysis
+  - code: COMP SCI 3001
+    title: Computer Networks and Applications
+  - code: COMP SCI 3004
+    title: Operating Systems
+  - code: COMP SCI 3007
+    title: Artificial Intelligence
+  - code: COMP SCI 3314
+    title: Introduction to Statistical Machine Learning
+  - code: COMP SCI 7201
+    title: Algorithm and Data Structure Analysis
+---

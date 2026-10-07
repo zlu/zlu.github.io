@@ -1,0 +1,24 @@
+---
+university: University of British Columbia
+courses:
+  - code: CPSC 110
+    title: Computation, Programs, and Programming
+  - code: CPSC 121
+    title: Models of Computation
+  - code: CPSC 210
+    title: Software Construction
+  - code: CPSC 213
+    title: Introduction to Computer Systems
+  - code: CPSC 221
+    title: Basic Algorithms and Data Structures
+  - code: CPSC 310
+    title: Introduction to Software Engineering
+  - code: CPSC 320
+    title: Intermediate Algorithm Design and Analysis
+  - code: CPSC 322
+    title: Introduction to Artificial Intelligence
+  - code: CPSC 330
+    title: Applied Machine Learning
+  - code: CPSC 340
+    title: Machine Learning and Data Mining
+---

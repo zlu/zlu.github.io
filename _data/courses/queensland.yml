@@ -9,11 +9,26 @@ courses:
   - code: ENGG1001
     title: Programming for Engineers
   - code: COMP3506
-    title: Algorithms and Data Structure
-    department: ""
+    title: Algorithms and Data Structures
   - code: COMP7505
     title: Algorithms and Data Structure
   - code: INFS7410
     title: Information Retrieval and Web Search
     department: Elec Engineering, Comp Science
+  - code: CSSE1001
+    title: Introduction to Software Engineering
+  - code: CSSE2002
+    title: Programming in the Large
+  - code: CSSE2010
+    title: Introduction to Computer Systems
+  - code: COMP3702
+    title: Artificial Intelligence
+  - code: COMP4702
+    title: Machine Learning
+  - code: INFS1200
+    title: Introduction to Information Systems
+  - code: DATA7001
+    title: Introduction to Data Science
+  - code: DECO1400
+    title: Introduction to Web Design
 ---
