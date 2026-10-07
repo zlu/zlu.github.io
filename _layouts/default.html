@@ -265,68 +265,67 @@
       const titleCn = "{{ page.title_cn }}";
 
       function updateLanguageContent(lang) {
-          // Update document title and language
-          if (titleEn && titleCn) {
-              document.title = (lang === 'zh-CN' ? titleCn : titleEn) + (titleSuffix ? " | " + titleSuffix : "");
-          }
-          document.documentElement.lang = lang;
-          
-          // Update all elements with data-en and data-cn attributes
-          document.querySelectorAll('[data-en]').forEach(el => {
-            const content = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}`);
-            if (content) {
-              if (el.tagName.toLowerCase() === 'p' || el.tagName.toLowerCase() === 'blockquote') {
-                el.innerHTML = content; // Use innerHTML for paragraphs and blockquotes
-              } else {
-                el.textContent = content;
-              }
+        if (titleEn && titleCn) {
+          document.title = (lang === 'zh-CN' ? titleCn : titleEn) + (titleSuffix ? " | " + titleSuffix : "");
+        }
+        document.documentElement.lang = lang;
+        localStorage.setItem('preferred_language', lang);
+
+        document.querySelectorAll('[data-en]').forEach(el => {
+          const content = el.getAttribute(lang === 'zh-CN' ? 'data-cn' : 'data-en');
+          if (content) {
+            if (el.tagName.toLowerCase() === 'p' || el.tagName.toLowerCase() === 'blockquote') {
+              el.innerHTML = content;
+            } else {
+              el.textContent = content;
             }
-          });
-      
-          // Update href attributes
-          document.querySelectorAll('[data-en-href]').forEach(el => {
-            const href = el.getAttribute(`data-${lang === 'zh-CN' ? 'cn' : 'en'}-href`);
-            if (href) el.href = href;
-          });
-      
-          // Update language buttons
-          langButtons.forEach(btn => {
-            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-          });
-      
-          // Toggle language-specific content
-          const enContent = document.getElementById('en-content');
-          const cnContent = document.getElementById('cn-content');
-          if (enContent && cnContent) {
-            enContent.style.display = lang === 'en' ? 'block' : 'none';
-            cnContent.style.display = lang === 'zh-CN' ? 'block' : 'none';
           }
-      
-          // Notify other components
-          document.dispatchEvent(new CustomEvent('languageChanged', {
-            detail: { language: lang === 'zh-CN' ? 'cn' : 'en' }
-          }));
+        });
+
+        document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+          const ph = el.getAttribute(lang === 'zh-CN' ? 'data-cn-placeholder' : 'data-en-placeholder');
+          if (ph) el.setAttribute('placeholder', ph);
+        });
+
+        document.querySelectorAll('[data-en-href]').forEach(el => {
+          const href = el.getAttribute(lang === 'zh-CN' ? 'data-cn-href' : 'data-en-href');
+          if (href) el.href = href;
+        });
+
+        langButtons.forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+
+        const enContent = document.getElementById('en-content');
+        const cnContent = document.getElementById('cn-content');
+        if (enContent && cnContent) {
+          enContent.style.display = lang === 'en' ? 'block' : 'none';
+          cnContent.style.display = lang === 'zh-CN' ? 'block' : 'none';
+          enContent.classList.toggle('active', lang === 'en');
+          cnContent.classList.toggle('active', lang === 'zh-CN');
+        }
+
+        document.dispatchEvent(new CustomEvent('languageChanged', {
+          detail: { language: lang === 'zh-CN' ? 'cn' : 'en' }
+        }));
       }
-      
-      // Add click handlers to language buttons
+
       langButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
           updateLanguageContent(this.getAttribute('data-lang'));
         });
       });
-      
-      // Set initial language based on URL or default to English
+
+      // Chinese-first; honor ?lang= and saved preference
       const urlParams = new URLSearchParams(window.location.search);
-      const initialLang = urlParams.get('lang') === 'cn' ? 'zh-CN' : 'en';
+      const savedLang = localStorage.getItem('preferred_language');
+      const urlLang = urlParams.get('lang');
+      let initialLang = 'zh-CN';
+      if (urlLang === 'en') initialLang = 'en';
+      else if (urlLang === 'cn') initialLang = 'zh-CN';
+      else if (savedLang === 'en' || savedLang === 'zh-CN') initialLang = savedLang;
+
       updateLanguageContent(initialLang);
-      
-      // Update language classes
-      const enContent = document.querySelector('.lang-en');
-      const cnContent = document.querySelector('.lang-cn');
-      if (enContent && cnContent) {
-        enContent.classList.toggle('active', initialLang === 'en');
-        cnContent.classList.toggle('active', initialLang === 'zh-CN');
-      }
     });
   </script>
   {% endif %}

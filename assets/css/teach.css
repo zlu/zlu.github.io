@@ -377,3 +377,346 @@
         padding: 1.25rem;
     }
 }
+
+.teach-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Hero */
+.teach-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.8fr);
+    gap: 1.5rem;
+    align-items: start;
+    margin: 0 0 1.75rem;
+    padding: 1.25rem 0 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.teach-hero-eyebrow {
+    margin: 0 0 0.5rem;
+    color: #3b82f6;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.teach-hero h1 {
+    margin: 0 0 0.75rem;
+    color: #111827;
+    font-size: clamp(1.55rem, 2.4vw, 2rem);
+    line-height: 1.25;
+}
+
+.teach-hero-lead {
+    margin: 0 0 1rem;
+    color: #4b5563;
+    font-size: 1.05rem;
+    line-height: 1.55;
+}
+
+.teach-proof {
+    margin: 0 0 1.25rem;
+    padding: 0;
+    list-style: none;
+}
+
+.teach-proof li {
+    position: relative;
+    padding: 0.35rem 0 0.35rem 1.15rem;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.teach-proof li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: #3b82f6;
+}
+
+.teach-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.teach-hero-actions .btn {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 0.35rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.teach-hero-actions .btn-primary,
+.teach-sticky-actions .btn-primary {
+    background: #3b82f6;
+    border: 2px solid #3b82f6;
+    color: #fff;
+}
+
+.teach-hero-actions .btn-outline-primary,
+.teach-sticky-actions .btn-outline-primary {
+    background: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+}
+
+.teach-hero-book {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.1rem;
+    text-align: center;
+}
+
+.teach-hero-book.teach-book-pulse {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.teach-book-title {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+    color: #111827;
+}
+
+.teach-book-hint,
+.teach-book-note {
+    margin: 0.35rem 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.teach-hero-qr {
+    width: 140px;
+    height: 140px;
+    margin: 0.65rem auto;
+    display: block;
+}
+
+/* Scenes */
+.teach-scenes {
+    margin: 0 0 2rem;
+}
+
+.teach-scenes h2,
+.teach-directory h2 {
+    margin: 0 0 0.75rem;
+    color: #111827;
+    font-size: 1.35rem;
+}
+
+.teach-directory-lead {
+    margin: 0 0 0.85rem;
+    color: #6b7280;
+}
+
+.teach-scene-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.teach-scene {
+    display: block;
+    padding: 1rem 1.1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.teach-scene:hover {
+    border-color: #93c5fd;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.12);
+    text-decoration: none;
+}
+
+.teach-scene i {
+    color: #3b82f6;
+    font-size: 1.35rem;
+}
+
+.teach-scene strong {
+    display: block;
+    margin: 0.35rem 0 0.25rem;
+    color: #111827;
+}
+
+.teach-scene span {
+    display: block;
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+/* University chips */
+.teach-uni-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0 0 0.85rem;
+}
+
+.teach-uni-chips-label {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.teach-chip {
+    appearance: none;
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #1f2937;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.teach-chip:hover,
+.teach-chip.is-active {
+    background: #eff6ff;
+    border-color: #3b82f6;
+    color: #1d4ed8;
+}
+
+.course-list-container {
+    margin-bottom: 1.5rem;
+}
+
+.course-search-input {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.course-search-hint,
+.course-no-results {
+    margin: 0.35rem 0 0.75rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.university-entry {
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 0.65rem;
+    padding: 0.75rem 1rem;
+}
+
+.university-entry strong {
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+/* Sticky CTA */
+.teach-sticky-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(255, 255, 255, 0.97);
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.teach-sticky-cta .teach-sticky-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.teach-sticky-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teach-sticky-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+}
+
+.teach-sticky-copy strong {
+    color: #111827;
+    font-size: 0.98rem;
+}
+
+.teach-sticky-copy span {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+.teach-sticky-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.teach-sticky-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 0.35rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.teach-sticky-wechat {
+    border: none;
+}
+
+body.teach-page-active .content,
+body.teach-page-active .site {
+    padding-bottom: 5.5rem;
+}
+
+@media (max-width: 800px) {
+    .teach-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .teach-scene-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teach-sticky-inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .teach-sticky-actions .btn {
+        justify-content: center;
+        flex: 1;
+    }
+}

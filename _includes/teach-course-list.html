@@ -1,12 +1,22 @@
-<div class="course-list-container">
+<div class="course-list-container" id="university-courses">
     {% include teach-course-stats.html %}
-    <input type="text" class="course-search-input" onkeyup="filterCourses(this)" placeholder="Search courses or universities..."
-        title="Type in a course or university name">
-    <div class="course-search-hint" data-en="Start typing to search universities or courses…" data-cn="开始输入以搜索大学或课程…" style="margin: 8px 0; color: #6b7280; font-size: 0.95rem;">
-        Start typing to search universities or courses…
+    {% include teach-uni-chips.html %}
+    <label class="teach-sr-only" for="course-search-input"
+           data-en="Search universities or course codes"
+           data-cn="搜索大学或课号">搜索大学或课号</label>
+    <input type="search"
+           id="course-search-input"
+           class="course-search-input"
+           autocomplete="off"
+           placeholder="搜索大学或课号… / Search university or course code…"
+           data-en-placeholder="Search university or course code…"
+           data-cn-placeholder="搜索大学或课号…"
+           title="Type a university or course code">
+    <div class="course-search-hint" data-en="Start typing or tap a popular school…" data-cn="输入关键词，或点选上方热门学校…">
+        输入关键词，或点选上方热门学校…
     </div>
-    <div class="course-no-results" data-en="No matches found" data-cn="未找到匹配项" style="display:none; margin: 8px 0; color: #9ca3af; font-size: 0.95rem;">
-        No matches found
+    <div class="course-no-results" data-en="No matches found" data-cn="未找到匹配项" style="display:none;">
+        未找到匹配项
     </div>
 
     <div class="course-list">
