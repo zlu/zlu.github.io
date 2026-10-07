@@ -24,8 +24,17 @@ region_pages: []
       data-en="University courses"
       data-cn="大学课程目录">大学课程目录</h2>
   <p class="teach-directory-lead"
-     data-en="Search by school or course code. Message on WeChat with your code and deadline."
-     data-cn="按学校或课号搜索，微信发我课号与截止日期即可约课。">按学校或课号搜索，微信发我课号与截止日期即可约课。</p>
+     data-en="Search by school or course code, or browse the full <a href='/teach/universities/'>university directory</a>. Message on WeChat with your code and deadline."
+     data-cn="按学校或课号搜索，或打开完整 <a href='/teach/universities/'>大学目录</a>。微信发我课号与截止日期即可约课。">按学校或课号搜索，或打开完整 <a href="/teach/universities/">大学目录</a>。微信发我课号与截止日期即可约课。</p>
+  <div class="teach-region-links teach-region-links-inline">
+    <a href="/teach/australia/">澳大利亚</a>
+    <a href="/teach/uk/">英国</a>
+    <a href="/teach/usa/">美国</a>
+    <a href="/teach/hong-kong/">香港</a>
+    <a href="/teach/singapore/">新加坡</a>
+    <a href="/teach/canada/">加拿大</a>
+    <a href="/teach/new-zealand/">新西兰</a>
+  </div>
   {% include teach-course-list.html %}
 </section>
 

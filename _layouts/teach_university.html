@@ -1,0 +1,92 @@
+---
+layout: default
+---
+<article class="teach-landing">
+  <nav class="teach-crumbs" aria-label="Breadcrumb">
+    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+    <span>/</span>
+    <a href="/teach/universities/" data-en="Universities" data-cn="大学目录">大学目录</a>
+    {% if page.region and page.region != "international" %}
+    <span>/</span>
+    <a href="/teach/{{ page.region }}/">{{ page.region_cn }}</a>
+    {% endif %}
+    <span>/</span>
+    <span>{{ page.university }}</span>
+  </nav>
+
+  <header class="teach-landing-header">
+    <p class="teach-hero-eyebrow"
+       data-en="Bilingual CS tutoring · {{ page.region_en }}"
+       data-cn="中英双语 CS 辅导 · {{ page.region_cn }}">中英双语 CS 辅导 · {{ page.region_cn }}</p>
+    <h1 data-en="{{ page.university }} computer science tutoring"
+        data-cn="{{ page.university }} 计算机一对一辅导">{{ page.university }} 计算机一对一辅导</h1>
+    <p class="teach-landing-lead"
+       data-en="Help with AI, data science, and programming coursework at {{ page.university }} — explain, debug, review. No ghostwriting."
+       data-cn="针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。">针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。</p>
+    <div class="teach-hero-actions">
+      <a class="btn btn-primary" href="/teach/#university-courses"
+         data-en="Book via WeChat on teach page"
+         data-cn="回辅导页微信预约">回辅导页微信预约</a>
+      <a class="btn btn-outline-primary" href="mailto:hello@zlu.me?subject={{ page.university | url_encode }}%20tutoring"
+         data-en="Email about {{ page.university }}"
+         data-cn="邮件咨询 {{ page.university }}">邮件咨询 {{ page.university }}</a>
+    </div>
+  </header>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Courses I support"
+        data-cn="可辅导课程">可辅导课程</h2>
+    {% if page.courses and page.courses.size > 0 %}
+    <ul class="teach-course-links">
+      {% for course in page.courses %}
+      <li>
+        <a href="/teach/courses/{{ page.uni_slug }}/{{ course.slug }}/">
+          {% if course.code != "" %}<strong>{{ course.code }}</strong>: {% endif %}{{ course.title }}
+        </a>
+        {% if course.department != "" %}
+        <span class="teach-dept">{{ course.department }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p data-en="Tell me your course code on WeChat — coverage grows with student requests."
+       data-cn="微信发我课号即可咨询；目录会随学生需求持续更新。">微信发我课号即可咨询；目录会随学生需求持续更新。</p>
+    {% endif %}
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="How tutoring works"
+        data-cn="怎么上课">怎么上课</h2>
+    <ul class="teach-proof">
+      <li data-en="Send syllabus / assignment / errors before class"
+          data-cn="课前发送大纲、作业或报错">课前发送大纲、作业或报错</li>
+      <li data-en="Online via ClassIn, Tencent Meeting, Zoom, or WeChat"
+          data-cn="ClassIn / 腾讯会议 / Zoom / 微信视频">ClassIn / 腾讯会议 / Zoom / 微信视频</li>
+      <li data-en="Chinese + English explanations for lecture gaps"
+          data-cn="中英双语补齐英文课听不懂的部分">中英双语补齐英文课听不懂的部分</li>
+    </ul>
+  </section>
+
+  <p class="teach-landing-back">
+    <a href="/teach/universities/" data-en="← All universities" data-cn="← 全部大学">← 全部大学</a>
+    ·
+    <a href="/teach/" data-en="Tutoring home" data-cn="辅导首页">辅导首页</a>
+  </p>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": {{ page.university | append: " Computer Science Tutoring" | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "provider": {
+    "@type": "Person",
+    "name": "Zhao Lü",
+    "url": "https://zlu.me/teach/"
+  },
+  "url": {{ page.url | absolute_url | jsonify }},
+  "inLanguage": ["en", "zh-CN"]
+}
+</script>

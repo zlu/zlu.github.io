@@ -1,0 +1,91 @@
+---
+layout: default
+---
+<article class="teach-landing">
+  <nav class="teach-crumbs" aria-label="Breadcrumb">
+    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+    <span>/</span>
+    <a href="/teach/universities/{{ page.uni_slug }}/">{{ page.university }}</a>
+    <span>/</span>
+    <span>{% if page.course_code != "" %}{{ page.course_code }}{% else %}{{ page.course_title }}{% endif %}</span>
+  </nav>
+
+  <header class="teach-landing-header">
+    <p class="teach-hero-eyebrow"
+       data-en="{{ page.university }} · {{ page.region_en }}"
+       data-cn="{{ page.university }} · {{ page.region_cn }}">{{ page.university }} · {{ page.region_cn }}</p>
+    <h1>
+      {% if page.course_code != "" %}<span class="teach-code">{{ page.course_code }}</span> {% endif %}
+      <span data-en="{{ page.course_title }} tutoring"
+            data-cn="{{ page.course_title }} 辅导">{% if page.course_title != "" %}{{ page.course_title }} 辅导{% else %}课程辅导{% endif %}</span>
+    </h1>
+    <p class="teach-landing-lead"
+       data-en="1-1 bilingual help for this {{ page.university }} course: concepts, assignments, projects, and exam prep. You submit your own work."
+       data-cn="针对 {{ page.university }} 本课程的一对一双语辅导：讲概念、拆作业、冲 project、备考。作业由你本人提交。">针对 {{ page.university }} 本课程的一对一双语辅导：讲概念、拆作业、冲 project、备考。作业由你本人提交。</p>
+    {% if page.course_department != "" %}
+    <p class="teach-dept-line"
+       data-en="Department: {{ page.course_department }}"
+       data-cn="院系：{{ page.course_department }}">院系：{{ page.course_department }}</p>
+    {% endif %}
+    <div class="teach-hero-actions">
+      <a class="btn btn-primary" href="/teach/"
+         data-en="Book on WeChat"
+         data-cn="微信预约（发课号）">微信预约（发课号）</a>
+      <a class="btn btn-outline-primary"
+         href="mailto:hello@zlu.me?subject={{ page.course_code | default: page.course_title | url_encode }}%20{{ page.university | url_encode }}"
+         data-en="Email this course"
+         data-cn="邮件咨询本课">邮件咨询本课</a>
+    </div>
+  </header>
+
+  <section class="teach-landing-section">
+    <h2 data-en="What we can cover"
+        data-cn="可以帮你什么">可以帮你什么</h2>
+    <ul class="teach-proof">
+      <li data-en="Lecture catch-up in Chinese + English"
+          data-cn="用中英双语补课、理清知识点">用中英双语补课、理清知识点</li>
+      <li data-en="Assignment debugging and approach review"
+          data-cn="作业卡壳时一起 debug、梳思路">作业卡壳时一起 debug、梳思路</li>
+      <li data-en="Project / lab structure and write-up feedback"
+          data-cn="Project / Lab 结构与报告反馈">Project / Lab 结构与报告反馈</li>
+      <li data-en="Exam revision focused on weak spots"
+          data-cn="针对薄弱点的考试复习">针对薄弱点的考试复习</li>
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Before the first session"
+        data-cn="第一次课前请准备">第一次课前请准备</h2>
+    <p data-en="Send school, course code{% if page.course_code != "" %} ({{ page.course_code }}){% endif %}, deadline, and any starter files or error screenshots via WeChat."
+       data-cn="微信发送：学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目/代码/报错截图。">微信发送：学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目/代码/报错截图。</p>
+  </section>
+
+  <p class="teach-landing-back">
+    <a href="/teach/universities/{{ page.uni_slug }}/"
+       data-en="← All {{ page.university }} courses"
+       data-cn="← {{ page.university }} 全部课程">← {{ page.university }} 全部课程</a>
+    ·
+    <a href="/teach/" data-en="Tutoring home" data-cn="辅导首页">辅导首页</a>
+  </p>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": {{ page.course_code | append: " " | append: page.course_title | strip | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "provider": {
+    "@type": "Person",
+    "name": "Zhao Lü",
+    "url": "https://zlu.me/teach/"
+  },
+  "url": {{ page.url | absolute_url | jsonify }},
+  "isPartOf": {
+    "@type": "Course",
+    "name": {{ page.university | append: " Computer Science Tutoring" | jsonify }},
+    "url": {{ "/teach/universities/" | append: page.uni_slug | append: "/" | absolute_url | jsonify }}
+  },
+  "inLanguage": ["en", "zh-CN"]
+}
+</script>

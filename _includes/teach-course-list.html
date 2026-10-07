@@ -42,13 +42,23 @@
             {% comment %} Remove extra spaces and escape for HTML attribute {% endcomment %}
             {% assign filter_text = filter_text | strip | replace: ' ', ' ' | escape %}
 
+            {% assign uni_slug = site.data.teach_uni_slugs[pair[0]] | default: pair[0] %}
             <div class="university-entry" data-filter-text="{{ filter_text }}">
-                <strong>{{ entry.university | escape }}</strong>
+                <strong>
+                  <a href="/teach/universities/{{ uni_slug }}/">{{ entry.university | escape }}</a>
+                </strong>
                 <ul>
                     {% for course in entry.courses %}
+                    {% if course.code %}
+                      {% assign course_slug = course.code | downcase | replace: ' ', '-' %}
+                    {% else %}
+                      {% assign course_slug = course.title | downcase | replace: ' ', '-' | replace: '/', '-' %}
+                    {% endif %}
                     <li>
-                        {% if course.code %}{{ course.code | escape }}: {% endif %}
-                        {{ course.title | escape }}{% if course.department %} ({{ course.department | escape }}){% endif %}
+                        <a href="/teach/courses/{{ uni_slug }}/{{ course_slug }}/">
+                          {% if course.code %}{{ course.code | escape }}: {% endif %}
+                          {{ course.title | escape }}
+                        </a>{% if course.department %} <span class="teach-dept">({{ course.department | escape }})</span>{% endif %}
                     </li>
                     {% endfor %}
                 </ul>

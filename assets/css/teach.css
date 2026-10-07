@@ -720,3 +720,160 @@ body.teach-page-active .site {
         flex: 1;
     }
 }
+
+/* Generated SEO landing pages */
+.teach-landing {
+    max-width: 720px;
+}
+
+.teach-crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0 0 1rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.teach-crumbs a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.teach-crumbs a:hover {
+    text-decoration: underline;
+}
+
+.teach-landing-header {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.teach-landing-lead {
+    margin: 0 0 1rem;
+    color: #4b5563;
+    font-size: 1.05rem;
+    line-height: 1.55;
+}
+
+.teach-landing-section {
+    margin: 0 0 1.75rem;
+}
+
+.teach-landing-section h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+    color: #111827;
+}
+
+.teach-course-links,
+.teach-uni-index {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.teach-course-links li,
+.teach-uni-index li {
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.teach-course-links a,
+.teach-uni-index > li > a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.teach-course-links a:hover,
+.teach-uni-index a:hover {
+    text-decoration: underline;
+}
+
+.teach-dept,
+.teach-dept-line,
+.teach-count {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.teach-count {
+    margin-left: 0.5rem;
+}
+
+.teach-mini-courses {
+    margin: 0.35rem 0 0 1rem;
+    padding: 0;
+    list-style: disc;
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+.teach-mini-courses a {
+    color: #374151;
+    text-decoration: none;
+}
+
+.teach-mini-courses a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.teach-code {
+    display: inline-block;
+    margin-right: 0.25rem;
+    padding: 0.1rem 0.45rem;
+    border-radius: 0.3rem;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-size: 0.9em;
+}
+
+.teach-region-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0 0 1rem;
+}
+
+.teach-region-links a {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 0.9rem;
+    background: #fff;
+}
+
+.teach-region-links a:hover {
+    border-color: #3b82f6;
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.teach-region-links-inline {
+    margin-bottom: 1rem;
+}
+
+.teach-landing-back {
+    margin-top: 2rem;
+    color: #6b7280;
+}
+
+.teach-landing-back a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.university-entry a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.university-entry a:hover {
+    text-decoration: underline;
+}

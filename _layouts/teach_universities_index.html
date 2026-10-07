@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<article class="teach-landing">
+  <nav class="teach-crumbs" aria-label="Breadcrumb">
+    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+    <span>/</span>
+    <span data-en="Universities" data-cn="大学目录">大学目录</span>
+  </nav>
+
+  <header class="teach-landing-header">
+    <h1 data-en="University CS tutoring directory"
+        data-cn="大学计算机辅导目录">大学计算机辅导目录</h1>
+    <p class="teach-landing-lead"
+       data-en="{{ page.universities.size }} universities with course-level tutoring pages for Chinese students abroad."
+       data-cn="已覆盖 {{ page.universities.size }} 所大学，可按学校与课号进入详情页约课。">已覆盖 {{ page.universities.size }} 所大学，可按学校与课号进入详情页约课。</p>
+  </header>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Browse by region"
+        data-cn="按地区浏览">按地区浏览</h2>
+    <div class="teach-region-links">
+      <a href="/teach/australia/">澳大利亚</a>
+      <a href="/teach/uk/">英国</a>
+      <a href="/teach/usa/">美国</a>
+      <a href="/teach/hong-kong/">香港</a>
+      <a href="/teach/singapore/">新加坡</a>
+      <a href="/teach/canada/">加拿大</a>
+      <a href="/teach/new-zealand/">新西兰</a>
+      <a href="/teach/malaysia/">马来西亚</a>
+    </div>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="All universities"
+        data-cn="全部大学">全部大学</h2>
+    <ul class="teach-uni-index">
+      {% assign sorted = page.universities | sort: "name" %}
+      {% for uni in sorted %}
+      <li>
+        <a href="/teach/universities/{{ uni.slug }}/"><strong>{{ uni.name }}</strong></a>
+        <span class="teach-count">{{ uni.courses.size }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>
