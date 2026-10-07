@@ -4,8 +4,8 @@ title: "Computer Science Tutoring for Chinese Students — AI & Data Science Exp
 title_en: "Computer Science Tutoring for Chinese Students | AI & Data Science Expert"
 title_cn: "留学生计算机一对一辅导 | 人工智能与数据科学"
 title_suffix: "Professional CS Tutor for International Students | zlu.me/teach"
-description: Expert computer science tutoring for Chinese students in Australia, USA, UK, Canada & NZ. Specialized in AI, Data Science, Python & University coursework. Bilingual instruction (中英双语) available. 15+ years Silicon Valley experience.
-keywords: computer science tutor, CS tuition, AI tutoring, data science help, Python programming, Chinese students abroad, 计算机科学辅导, 留学生辅导, 编程家教, 人工智能课程辅导
+description: Direct 1-1 CS tutoring for Chinese students abroad — no middleman fee. Bilingual help with lectures, homework, exams, and project write-ups. Silicon Valley engineer, AI & data science.
+keywords: computer science tutor, no middleman, 无中介, 留学生辅导, 作业辅导, 考前突击, AI tutoring, 中英双语, WeChat tutoring
 lang: zh-CN
 alternate_lang: en
 hreflang:
@@ -18,6 +18,8 @@ region_pages: []
 {% include tutoring-schema.html %}
 {% include teach-hero.html %}
 {% include teach-scenes.html %}
+{% include teach-needs.html %}
+{% include teach-method.html %}
 
 <section class="teach-directory" aria-labelledby="uni-dir-title">
   <h2 id="uni-dir-title"
@@ -44,16 +46,19 @@ region_pages: []
 </section>
 
 {% capture en_content %}
-## Why study with me {#why-me}
+## Proof, not a sales script {#why-me}
 
-- **Silicon Valley engineer** with 15+ years across storage, telecom, and product systems
-- **Five patents** in storage systems and telephony
-- **Bilingual teaching** (中 / EN) for AI, ML, data science, and core CS
-- **Integrity first**: explain, debug, and review — never ghostwrite assignments or exams
+- **Direct booking** — WeChat me; consult and learn with the same person
+- **No middleman fee** — your tuition goes to the person teaching
+- **Silicon Valley engineer** — 15+ years, five patents, bilingual CS/AI/data science
+- **Integrity** — explain, debug, structure reports; never ghostwrite or sit exams
 
-### How sessions work {#how-it-works}
+### How a session runs {#how-it-works}
 
-Send the syllabus, assignment, or error log ahead of time. We meet on ClassIn, Tencent Meeting, Zoom, or WeChat video. Lessons focus on understanding and independent completion — not shortcuts that risk academic integrity.
+1. Send school, course code, deadline, and files (syllabus / errors / draft).
+2. Class on **ClassIn** or **Tencent Meeting** (install first). Also available: Zoom, Microsoft Teams, Slack, Google Meet, WeChat video.
+3. Live coding in your environment; bilingual explanation.
+4. You leave with next steps you can execute alone.
 
 ### Course categories {#course-categories}
 
@@ -70,16 +75,19 @@ Send the syllabus, assignment, or error log ahead of time. We meet on ClassIn, T
 {% endcapture %}
 
 {% capture cn_content %}
-## 为什么找我 {#为什么找我}
+## 实力证明，不是话术 {#为什么找我}
 
-- **硅谷工程师**，软件与系统工程 15+ 年（存储、通信、产品）
-- **五项专利**（存储系统与电话通信）
-- **中英双语**讲授 AI / 机器学习 / 数据科学 / 编程基础
-- **学术诚信**：讲思路、带调试、做复习 —— **不代写、不代考**
+- **直接约课** —— 微信找我；咨询和上课是同一个人
+- **无中介抽成** —— 学费付给真正上课的人
+- **硅谷工程师** —— 15+ 年、五项专利、中英双语 CS / AI / 数据科学
+- **学术诚信** —— 讲思路、带调试、梳报告结构；**不代写、不代考**
 
-### 上课方式 {#上课方式}
+### 一节课怎么进行 {#上课方式}
 
-课前发送大纲、作业或报错日志。通过 ClassIn、腾讯会议、Zoom 或微信视频上课。目标是你能独立完成，而不是代做导致学术风险。
+1. 发送学校、课号、截止日与资料（大纲 / 报错 / 草稿）。
+2. 主用 **ClassIn** 或 **腾讯会议**（请提前下载）。也可用 Zoom、Microsoft Teams、Slack、Google Meet、微信视频。
+3. 在你的环境里直播写代码；中英双语讲解。
+4. 课后给你可独立推进的下一步。
 
 ### 课程分类 {#课程分类}
 

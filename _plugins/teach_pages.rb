@@ -61,38 +61,38 @@ module Jekyll
       }
     }.freeze
 
-    # Competitor-style service verticals (考而思/辅无忧 pattern)
+    # Service verticals for tutoring SEO pages
     SERVICES = {
       "sync" => {
         "en" => "Course sync tutoring",
         "cn" => "同步课程辅导",
         "title_en" => "Course Sync Tutoring",
         "title_cn" => "同步课程辅导",
-        "desc_en" => "Keep up with lectures in Chinese and English — syllabus walkthrough, weekly Q&A, and assignment readiness.",
-        "desc_cn" => "中英双语跟课：大纲梳理、每周答疑、作业节奏对齐，解决英文课听不懂、进度掉队。"
+        "desc_en" => "Keep up with lectures in Chinese and English — syllabus walkthrough, weekly Q&A. Direct tutor, no middleman fee.",
+        "desc_cn" => "中英双语跟课：大纲梳理、每周答疑，解决听不懂与掉队。直接约老师，无中介抽成。"
       },
       "assignment" => {
         "en" => "Assignment tutoring",
         "cn" => "作业辅导",
         "title_en" => "Assignment & Project Help",
         "title_cn" => "作业与 Project 辅导",
-        "desc_en" => "Debug, approach review, and write-up feedback. You submit your own work — no ghostwriting.",
-        "desc_cn" => "拆题、debug、复盘思路与报告结构。作业由你本人提交 —— 不代写、不代考。"
+        "desc_en" => "Debug and approach review. You submit your own work — no ghostwriting, no middleman fee.",
+        "desc_cn" => "拆题、debug、复盘思路。作业本人提交；不代写；无中介抽成。"
       },
       "exam" => {
         "en" => "Exam prep tutoring",
         "cn" => "考前突击辅导",
         "title_en" => "Exam Prep Tutoring",
         "title_cn" => "考前突击辅导",
-        "desc_en" => "Topic maps, past-paper style practice, and weak-spot drills before midterms and finals.",
-        "desc_cn" => "考点地图、类 past paper 练习与薄弱点突击，服务期中/期末冲刺。"
+        "desc_en" => "Topic maps, past-paper style drills, weak-spot sprints before midterms and finals.",
+        "desc_cn" => "考点地图、类 past paper 练习与薄弱点突击，期中期末冲刺。"
       },
       "preview" => {
         "en" => "Course preview tutoring",
         "cn" => "课程预习辅导",
         "title_en" => "Course Preview Tutoring",
         "title_cn" => "课程预习辅导",
-        "desc_en" => "Pre-term head start: programming basics, course jargon, and assessment format before week 1.",
+        "desc_en" => "Pre-term head start: programming basics, jargon, and assessment format before week 1.",
         "desc_cn" => "开学前抢跑：编程基础、专业术语与考核方式预热，降低第一周冲击。"
       }
     }.freeze

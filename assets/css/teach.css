@@ -501,11 +501,128 @@
     line-height: 1.4;
 }
 
+.teach-tools {
+    margin-top: 0.65rem;
+    text-align: left;
+}
+
+.teach-tools-primary,
+.teach-tools-also {
+    margin: 0.25rem 0;
+    color: #4b5563;
+    font-size: 0.88rem;
+    line-height: 1.45;
+}
+
+.teach-tools-primary {
+    color: #1f2937;
+    font-weight: 500;
+}
+
 .teach-hero-qr {
     width: 140px;
     height: 140px;
     margin: 0.65rem auto;
     display: block;
+}
+
+/* Needs + method (competitor-style pain matrix, direct-tutor positioning) */
+.teach-needs,
+.teach-method {
+    margin: 0 0 2rem;
+}
+
+.teach-section-lead {
+    margin: 0 0 1rem;
+    color: #6b7280;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+.teach-need-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.teach-need {
+    padding: 1rem 1.1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.teach-need h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.teach-need p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.teach-diff-banner {
+    margin: 0 0 1rem;
+    padding: 1rem 1.15rem;
+    border-radius: 10px;
+    border: 1px solid #93c5fd;
+    background: #eff6ff;
+}
+
+.teach-diff-banner strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: #1d4ed8;
+    font-size: 1.05rem;
+}
+
+.teach-diff-banner p {
+    margin: 0;
+    color: #1f2937;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.teach-method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.teach-method-card {
+    padding: 1rem 1.1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.teach-method-card h3 {
+    margin: 0 0 0.55rem;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.teach-method-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: #4b5563;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.teach-method-card li + li {
+    margin-top: 0.35rem;
+}
+
+@media (max-width: 900px) {
+    .teach-need-grid,
+    .teach-method-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Scenes */

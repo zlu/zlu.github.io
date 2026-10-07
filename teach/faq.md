@@ -22,7 +22,7 @@ hreflang:
     "name": "How are online computer science tutoring sessions conducted?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Sessions are conducted through platforms like ClassIn, Zoom, Google Meet, or WeChat video. You can send code, assignments, or questions beforehand, and I'll prepare customized content for debugging Python programs or explaining AI algorithms."
+      "text": "Main classroom apps are ClassIn or Tencent Meeting (please install beforehand). Also available: Zoom, Microsoft Teams, Slack, Google Meet, WeChat video. Send code, assignments, or questions beforehand for a tailored session."
     }
   }, {
     "@type": "Question",
@@ -69,7 +69,7 @@ hreflang:
 ### About Online Tutoring
 
 #### How are online computer science tutoring sessions conducted?
-Sessions are conducted through platforms like ClassIn, Zoom, Google Meet, or WeChat video. You can send code, assignments, or questions beforehand, and I'll prepare customized content for debugging Python programs or explaining AI algorithms.
+Main classroom apps: **ClassIn** or **Tencent Meeting** — please install beforehand. Also available: Zoom, Microsoft Teams, Slack, Google Meet, WeChat video. Send code, assignments, or questions beforehand for a tailored session.
 
 #### Are AI and data science courses suitable for beginners?
 Yes! I adjust the content based on your level. For beginners, we start with Python basics and gradually introduce data science tools (like Pandas, scikit-learn) or AI concepts. Experienced students can directly learn advanced topics like deep learning or big data analysis.
@@ -118,7 +118,7 @@ Have more questions or ready to begin? [Contact me](mailto:hello@zlu.me) to disc
 ### 关于在线辅导
 
 #### 在线计算机科学辅导是如何进行的？
-课程通过ClassIn、Zoom、Google Meet或微信视频进行。您可以提前发送代码、作业或问题，我会为您定制课程内容，例如调试Python程序或讲解AI算法。
+主用 **ClassIn** 或 **腾讯会议**（请提前下载安装）。也可用 Zoom、Microsoft Teams、Slack、Google Meet、微信视频。课前发送代码、作业或问题，便于定制当节内容。
 
 #### 人工智能和数据科学课程适合初学者吗？
 当然适合！我会根据您的水平调整内容。对于初学者，我从Python基础讲起，逐步引入数据科学工具（如Pandas、scikit-learn）或AI概念。有经验的学生可以直接学习高级主题，如深度学习或大数据分析。
