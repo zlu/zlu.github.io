@@ -25,6 +25,9 @@ collections:
   med-glossary:
     output: true
     permalink: /med-glossary/:name/
+  tags:
+    output: true
+    permalink: /tags/:name/
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -55,3 +58,8 @@ defaults:
       type: med-glossary 
     values:
       layout: page
+  - scope:
+      path: ""
+      type: tags
+    values:
+      layout: tag

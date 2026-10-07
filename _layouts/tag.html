@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% assign needle = page.tag | downcase %}
+<h1>Posts tagged with: {{ page.tag }}</h1>
+<ul>
+  {% for post in site.posts %}
+    {% for t in post.tags %}
+      {% assign t_down = t | downcase %}
+      {% if t_down == needle %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: '%Y-%m-%d' }})</li>
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
