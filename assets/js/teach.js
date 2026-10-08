@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('teach-page-active');
 
     function initializeTabs() {
-        document.querySelectorAll('.lang-en .course-tabs, .lang-cn .course-tabs').forEach(tabContainer => {
+        document.querySelectorAll('.course-tabs').forEach(tabContainer => {
             const tabBtns = tabContainer.querySelectorAll('.tab-btn');
             const tabContents = tabContainer.querySelectorAll('.tab-content');
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateTabLanguage(lang) {
-        document.querySelectorAll('.lang-en .tab-btn, .lang-cn .tab-btn').forEach(btn => {
+        document.querySelectorAll('.tab-btn').forEach(btn => {
             const text = btn.getAttribute(`data-${lang}`);
             if (text) btn.textContent = text;
         });

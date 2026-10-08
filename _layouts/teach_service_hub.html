@@ -10,8 +10,8 @@ layout: default
 
   <header class="teach-landing-header">
     <p class="teach-hero-eyebrow"
-       data-en="AU · UK · US · CA · HK · SG"
-       data-cn="澳英美加港新">澳英美加港新</p>
+       data-en="AU · UK · US · CA · HK · SG · no middleman"
+       data-cn="澳英美加港新 · 无中介">澳英美加港新 · 无中介</p>
     <h1 data-en="{{ page.service_title_en }} for Chinese CS students"
         data-cn="留学生计算机{{ page.service_title_cn }}">留学生计算机{{ page.service_title_cn }}</h1>
     <p class="teach-landing-lead"
@@ -28,16 +28,51 @@ layout: default
   </header>
 
   <section class="teach-landing-section">
-    <h2 data-en="Universities"
-        data-cn="覆盖大学">覆盖大学</h2>
+    <h2 data-en="What you get"
+        data-cn="这节课怎么帮你">这节课怎么帮你</h2>
+    <ul class="teach-proof">
+      {% if page.service_key == "sync" %}
+      <li data-en="Rebuild lecture logic in Chinese; keep English terms for exams"
+          data-cn="用中文把课件逻辑重讲一遍，保留考试要用的英文术语">用中文把课件逻辑重讲一遍，保留考试要用的英文术语</li>
+      <li data-en="Syllabus-aligned weekly catch-up so you stop falling behind"
+          data-cn="按 syllabus 对齐进度，避免越掉越远">按 syllabus 对齐进度，避免越掉越远</li>
+      {% elsif page.service_key == "assignment" %}
+      <li data-en="Clarify the brief, pick an approach, debug together"
+          data-cn="先拆题意，再梳思路，一起 debug">先拆题意，再梳思路，一起 debug</li>
+      <li data-en="You write and submit the final work — no ghostwriting"
+          data-cn="最终代码与提交仍是你的；不代写">最终代码与提交仍是你的；不代写</li>
+      {% elsif page.service_key == "exam" %}
+      <li data-en="Topic map + weak-spot drills before midterms and finals"
+          data-cn="考点地图 + 薄弱点专项，期中期末冲刺">考点地图 + 薄弱点专项，期中期末冲刺</li>
+      <li data-en="Past-paper style walkthroughs instead of random all-nighters"
+          data-cn="类 past paper 带练，少靠通宵硬刷">类 past paper 带练，少靠通宵硬刷</li>
+      {% else %}
+      <li data-en="Pre-term head start on programming basics and jargon"
+          data-cn="开学前补编程基础与专业术语">开学前补编程基础与专业术语</li>
+      <li data-en="Know the assessment format before week 1 hits"
+          data-cn="提前摸清考核方式，降低第一周冲击">提前摸清考核方式，降低第一周冲击</li>
+      {% endif %}
+      <li data-en="Direct WeChat booking with the tutor — no middleman fee"
+          data-cn="微信直约授课老师，无中介抽成">微信直约授课老师，无中介抽成</li>
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Universities with course pages"
+        data-cn="已整理课号的大学">已整理课号的大学</h2>
+    <p class="teach-directory-lead"
+       data-en="Open a school for {{ page.service_en }}, or browse the full <a href='/teach/universities/'>directory</a> and message WeChat with school + course code."
+       data-cn="点进学校看「{{ page.service_cn }}」页；完整名单见 <a href='/teach/universities/'>大学目录</a>。微信发送学校 + 课号即可。">点进学校看「{{ page.service_cn }}」页；完整名单见 <a href="/teach/universities/">大学目录</a>。微信发送学校 + 课号即可。</p>
     <ul class="teach-uni-index">
       {% for uni in page.universities %}
       <li>
         <a href="/teach/universities/{{ uni.slug }}/{{ page.service_key }}/">
           <strong>{{ uni.name }}</strong>
-          <span data-en="{{ page.service_cn }}" data-cn="{{ page.service_cn }}"> · {{ page.service_cn }}</span>
+          <span> · {{ page.service_cn }}</span>
         </a>
+        {% if uni.courses.size > 0 %}
         <span class="teach-count">{{ uni.courses.size }}</span>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -53,4 +88,8 @@ layout: default
       <a href="/teach/services/preview/">课程预习</a>
     </div>
   </section>
+
+  <p class="teach-landing-back">
+    <a href="/teach/" data-en="← Tutoring home" data-cn="← 辅导首页">← 辅导首页</a>
+  </p>
 </article>

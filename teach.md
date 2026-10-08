@@ -18,6 +18,7 @@ region_pages: []
 {% include tutoring-schema.html %}
 {% include teach-hero.html %}
 {% include teach-scenes.html %}
+{% include teach-coverage.html %}
 
 <section class="teach-directory" aria-labelledby="uni-dir-title">
   <h2 id="uni-dir-title"
@@ -43,6 +44,16 @@ region_pages: []
 </section>
 
 {% include teach-steps.html %}
+
+<section class="teach-subjects" aria-labelledby="teach-subjects-title">
+  <h2 id="teach-subjects-title"
+      data-en="Subjects I tutor"
+      data-cn="可辅导方向">可辅导方向</h2>
+  <p class="teach-section-lead"
+     data-en="AI, data science, programming foundations, and advanced CS — examples below; send any course code on WeChat."
+     data-cn="人工智能、数据科学、编程基础与高级 CS —— 下方为示例；任意课号可微信询。">人工智能、数据科学、编程基础与高级 CS —— 下方为示例；任意课号可微信询。</p>
+  {% include teach-course-tabs.html %}
+</section>
 
 <section class="teach-social-proof" aria-labelledby="teach-testimonials-title">
   <h2 id="teach-testimonials-title"

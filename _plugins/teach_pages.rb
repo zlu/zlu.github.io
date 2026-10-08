@@ -154,7 +154,7 @@ module Jekyll
       rich_count = universities.size
       course_count = universities.sum { |u| u["courses"].size }
 
-      # 2) Bulk directory universities (landing page only — keeps sitemap/build scalable)
+      # 2) Bulk directory universities (+ service landings so uni→service links never 404)
       bulk_added = 0
       bulk.each do |entry|
         next unless entry.is_a?(Hash)
@@ -174,6 +174,13 @@ module Jekyll
         region_key = "international" if region_key.empty?
 
         site.pages << build_university_page(site, uni_slug, university, [], region_key)
+
+        # Service landings for directory unis too — university pages link these.
+        SERVICES.each_key do |service_key|
+          site.pages << build_uni_service_page(
+            site, uni_slug, university, [], region_key, service_key
+          )
+        end
 
         universities << {
           "slug" => uni_slug,
@@ -201,16 +208,20 @@ module Jekyll
         site.pages << build_region_page(site, region_key, region_unis)
       end
 
-      # Service hubs highlight universities that already have course-level pages
-      rich_unis = universities.select { |u| u["rich"] }
+      # Service hubs list course-backed schools (full directory is on /teach/universities/)
+      hub_unis = universities.select do |u|
+        u["courses"].size.positive? &&
+          %w[australia uk usa canada hong-kong singapore].include?(u["region"])
+      end
       SERVICES.each_key do |service_key|
-        site.pages << build_service_hub_page(site, service_key, rich_unis)
+        site.pages << build_service_hub_page(site, service_key, hub_unis)
       end
 
       site.pages << build_universities_index(site, universities)
+      uni_service_count = universities.size * SERVICES.size
       Jekyll.logger.info "TeachPages:", "generated #{universities.size} universities " \
         "(#{rich_count} with courses, #{bulk_added} directory), " \
-        "#{course_count} course pages, #{rich_count * SERVICES.size} uni-service pages, " \
+        "#{course_count} course pages, #{uni_service_count} uni-service pages, " \
         "#{SERVICES.size} service hubs, " \
         "#{REGION_MAP.count { |k, _| universities.any? { |u| u['region'] == k } }} regions"
     end
@@ -376,10 +387,13 @@ module Jekyll
       svc = SERVICES.fetch(service_key)
       title_en = "#{svc['title_en']} for Chinese Students Abroad | CS Tutoring"
       title_cn = "留学生#{svc['title_cn']} | 计算机中英双语一对一"
-      focus = universities.select do |u|
-        %w[australia uk usa canada hong-kong singapore].include?(u["region"])
+      # Prefer schools with course pages at the top of the hub list
+      ordered = universities.sort_by do |u|
+        [(u["courses"].size.positive? ? 0 : 1), u["name"].downcase]
       end
-      description = "#{svc['desc_en']} Covering #{focus.size} universities across AU/UK/US/CA/HK/SG."
+      with_courses = ordered.count { |u| u["courses"].size.positive? }
+      description = "#{svc['desc_en']} #{with_courses}+ course-mapped universities; " \
+                    "#{ordered.size} schools across AU/UK/US/CA/HK/SG."
 
       page = TeachGeneratedPage.new(site, site.source, "teach/services/#{service_key}")
       page.data.merge!(
@@ -397,7 +411,7 @@ module Jekyll
         "service_title_cn" => svc["title_cn"],
         "service_desc_en" => svc["desc_en"],
         "service_desc_cn" => svc["desc_cn"],
-        "universities" => focus.sort_by { |u| u["name"].downcase },
+        "universities" => ordered,
         "lang" => "zh-CN",
         "sitemap" => true
       )

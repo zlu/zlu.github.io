@@ -1,3 +1,56 @@
+/* Teach typography — Noto Sans SC (CJK) over Trykker fallback */
+body.teach-page-active .site,
+body.teach-page-active .site h1,
+body.teach-page-active .site h2,
+body.teach-page-active .site h3,
+body.teach-page-active .site h4,
+body.teach-page-active .site p,
+body.teach-page-active .site div,
+body.teach-page-active .site span,
+body.teach-page-active .site li,
+body.teach-page-active .site a,
+body.teach-page-active .site button,
+body.teach-page-active .site input,
+body.teach-page-active .site summary,
+body.teach-page-active .site strong,
+body.teach-page-active .site blockquote,
+body.teach-page-active .teach-sticky-cta {
+    font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+body.teach-page-active .site {
+    font-size: 17px;
+    line-height: 1.75;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.teach-page-active .site h1 {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+body.teach-page-active .site h2 {
+    font-weight: 700;
+    font-size: 1.35em;
+    letter-spacing: 0.01em;
+}
+
+body.teach-page-active .site h3,
+body.teach-page-active .site h4 {
+    font-weight: 600;
+}
+
+body.teach-page-active .lang-btn {
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 15px;
+}
+
+body.teach-page-active .teach-sticky-cta {
+    font-size: 16px;
+}
+
 /* Card Grid Styling */
 .card-grid {
     display: grid;
@@ -404,23 +457,23 @@
 .teach-hero-eyebrow {
     margin: 0 0 0.4rem;
     color: #2563eb;
-    font-size: 0.85rem;
+    font-size: 15px;
     font-weight: 600;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
 }
 
 .teach-hero h1 {
     margin: 0 0 0.55rem;
     color: #111827;
-    font-size: clamp(1.45rem, 2.2vw, 1.85rem);
-    line-height: 1.25;
+    font-size: clamp(26px, 3.2vw, 34px);
+    line-height: 1.35;
 }
 
 .teach-hero-lead {
     margin: 0 0 0.85rem;
     color: #4b5563;
-    font-size: 1rem;
-    line-height: 1.55;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 .teach-proof {
@@ -431,9 +484,9 @@
 
 .teach-proof li {
     position: relative;
-    padding: 0.2rem 0 0.2rem 1.05rem;
+    padding: 0.25rem 0 0.25rem 1.05rem;
     color: #374151;
-    font-size: 0.92rem;
+    font-size: 16px;
 }
 
 .teach-proof li::before {
@@ -455,9 +508,10 @@
 
 .teach-hero-actions .btn {
     display: inline-block;
-    padding: 0.55rem 0.95rem;
+    padding: 0.6rem 1.05rem;
     border-radius: 0.35rem;
     font-weight: 600;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -490,7 +544,7 @@
 
 .teach-book-title {
     margin: 0 0 0.3rem;
-    font-size: 1.05rem;
+    font-size: 18px;
     color: #111827;
 }
 
@@ -498,8 +552,8 @@
 .teach-book-note {
     margin: 0.25rem 0;
     color: #6b7280;
-    font-size: 0.85rem;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 .teach-tools {
@@ -535,14 +589,14 @@
 .teach-faq h2 {
     margin: 0 0 0.65rem;
     color: #111827;
-    font-size: 1.2rem;
+    font-size: 22px;
 }
 
 .teach-directory-lead {
     margin: 0 0 0.75rem;
     color: #6b7280;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.65;
 }
 
 /* Service + region nav */
@@ -556,12 +610,12 @@
 
 .teach-nav-row a {
     display: inline-block;
-    padding: 0.28rem 0.65rem;
+    padding: 0.32rem 0.7rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.3rem;
     color: #374151;
     text-decoration: none;
-    font-size: 0.86rem;
+    font-size: 15px;
     background: #fff;
 }
 
@@ -609,16 +663,16 @@
 
 .teach-scene strong {
     display: block;
-    margin: 0 0 0.2rem;
+    margin: 0 0 0.25rem;
     color: #111827;
-    font-size: 0.95rem;
+    font-size: 17px;
 }
 
 .teach-scene span {
     display: block;
     color: #6b7280;
-    font-size: 0.82rem;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.55;
 }
 
 /* Steps */
@@ -663,16 +717,100 @@
 
 .teach-steps-list strong {
     display: block;
-    margin: 0 0 0.2rem;
+    margin: 0 0 0.25rem;
     color: #111827;
-    font-size: 0.95rem;
+    font-size: 17px;
 }
 
 .teach-steps-list span {
     display: block;
     color: #6b7280;
-    font-size: 0.82rem;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+/* Coverage */
+.teach-coverage,
+.teach-subjects {
+    margin: 0 0 1.5rem;
+}
+
+.teach-coverage h2,
+.teach-subjects h2 {
+    margin: 0 0 0.65rem;
+    color: #111827;
+    font-size: 22px;
+}
+
+.teach-section-lead {
+    margin: 0 0 0.85rem;
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.teach-coverage-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+}
+
+.teach-coverage-list li {
+    padding: 0.75rem 0.85rem;
+    border-left: 2px solid #bfdbfe;
+    background: #f8fafc;
+}
+
+.teach-coverage-list strong {
+    display: block;
+    margin: 0 0 0.25rem;
+    color: #111827;
+    font-size: 17px;
+}
+
+.teach-coverage-list span {
+    display: block;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.teach-subjects .course-tabs {
+    margin: 0.5rem 0 0;
+}
+
+.teach-subjects .tab-nav {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.teach-subjects .tab-btn {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.9rem;
+}
+
+.teach-subjects .course-grid {
+    gap: 0.85rem;
+}
+
+.teach-subjects .course-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    box-shadow: none;
+    padding: 1rem;
+}
+
+.teach-subjects .course-card:hover {
+    transform: none;
+}
+
+@media (max-width: 520px) {
+    .teach-coverage-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Social proof / FAQ */
@@ -688,10 +826,10 @@
 
 .teach-faq-item summary {
     cursor: pointer;
-    padding: 0.7rem 0;
+    padding: 0.75rem 0;
     color: #111827;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 17px;
     list-style: none;
 }
 
@@ -716,8 +854,8 @@
     margin: 0 0 0.85rem;
     padding-left: 1.45rem;
     color: #4b5563;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.65;
 }
 
 /* Leaner testimonials on teach landing */
@@ -746,18 +884,18 @@
 }
 
 .teach-social-proof .student-name {
-    font-size: 0.95rem;
+    font-size: 17px;
 }
 
 .teach-social-proof .student-university {
     margin: 0.15rem 0 0;
     color: #6b7280;
-    font-size: 0.82rem;
+    font-size: 14px;
 }
 
 .teach-social-proof .testimonial-content {
-    font-size: 0.88rem;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.65;
 }
 
 /* University chips */
@@ -780,8 +918,8 @@
     background: #fff;
     color: #1f2937;
     border-radius: 999px;
-    padding: 0.35rem 0.75rem;
-    font-size: 0.88rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 15px;
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
@@ -799,12 +937,12 @@
 
 .course-search-input {
     width: 100%;
-    padding: 0.75rem 0.9rem;
+    padding: 0.8rem 0.95rem;
     margin-bottom: 0.5rem;
     border: 1px solid #d1d5db;
     border-radius: 0.4rem;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .course-search-hint,
@@ -861,12 +999,12 @@
 
 .teach-sticky-copy strong {
     color: #111827;
-    font-size: 0.98rem;
+    font-size: 16px;
 }
 
 .teach-sticky-copy span {
     color: #6b7280;
-    font-size: 0.85rem;
+    font-size: 14px;
 }
 
 .teach-sticky-actions {
@@ -954,8 +1092,17 @@ body.teach-page-active .site {
 .teach-landing-lead {
     margin: 0 0 1rem;
     color: #4b5563;
-    font-size: 1.05rem;
-    line-height: 1.55;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.teach-landing h1 {
+    font-size: clamp(26px, 3.2vw, 34px);
+    line-height: 1.35;
+}
+
+.teach-landing-section h2 {
+    font-size: 22px;
 }
 
 .teach-landing-section {

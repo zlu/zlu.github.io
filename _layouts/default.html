@@ -20,6 +20,13 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/zhaolu.css">
   {% if page.url contains '/teach' %}
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/chinese-simplified-400.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/chinese-simplified-500.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/chinese-simplified-700.css">
   <link rel="stylesheet" href="/assets/css/teach.css">
   {% endif %}
 
@@ -196,7 +203,7 @@
   </style>
 </head>
 
-<body>
+<body{% if page.url contains '/teach' %} class="teach-page-active"{% endif %}>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXBC2JCM" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
