@@ -52,14 +52,23 @@ defaults:
       path: ""
       type: ai-glossary
     values:
-      layout: page
+      layout: glossary
+      sitemap: true
   - scope:
       path: ""
-      type: med-glossary 
+      type: med-glossary
     values:
-      layout: page
+      layout: glossary
+      sitemap: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      sitemap: true
   - scope:
       path: ""
       type: tags
     values:
       layout: tag
+      sitemap: true

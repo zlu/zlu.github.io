@@ -2,49 +2,72 @@
 layout: page
 title: AI Glossary
 permalink: /ai-glossary/
+description: "Searchable AI and machine learning glossary — transformers, LLMs, LoRA, RAG, fine-tuning, and core ML terms with short definitions."
+keywords: "AI glossary, machine learning glossary, LLM terms, LoRA, RAG, transformer, fine-tuning, deep learning dictionary"
+sitemap: true
 ---
 
+<p class="glossary-intro">
+  Concise definitions for AI, machine learning, and LLM engineering.
+  Each term has its own indexable page — browse below or search.
+</p>
+
 <div id="glossary-search">
-  <input type="text" id="glossary-search-input" placeholder="Search terms...">
+  <label for="glossary-search-input" class="sr-only">Search terms</label>
+  <input type="text" id="glossary-search-input" placeholder="Search terms..." autocomplete="off">
 </div>
 
-<ul id="glossary-list">
-  {% for term in site.ai-glossary %}
-    <li class="glossary-item">
-      <span class="glossary-term" style="cursor:pointer; color:blue; text-decoration:underline;">
-        {{ term.title }}
-      </span>
-      <div class="glossary-definition" style="display:none; margin:0.5em 0 1em 1em;">
-        {{ term.content }}
+<p class="glossary-count">{{ site.ai-glossary.size }} terms</p>
+
+<ul id="glossary-list" class="glossary-list">
+  {% assign terms = site.ai-glossary | sort: "title" %}
+  {% for term in terms %}
+    <li class="glossary-item" id="{{ term.slug }}">
+      <a class="glossary-term" href="{{ term.url }}">{{ term.title }}</a>
+      {% if term.synonyms and term.synonyms.size > 0 %}
+        <span class="glossary-aka">({% for s in term.synonyms %}{{ s }}{% unless forloop.last %}, {% endunless %}{% endfor %})</span>
+      {% endif %}
+      <div class="glossary-definition">
+        {{ term.description }}
+        <a class="glossary-more" href="{{ term.url }}">Read full definition →</a>
       </div>
     </li>
   {% endfor %}
 </ul>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": "AI Glossary",
+  "description": {{ page.description | jsonify }},
+  "url": "https://zlu.me/ai-glossary/",
+  "hasDefinedTerm": [
+    {% assign terms = site.ai-glossary | sort: "title" %}
+    {% for term in terms %}
+    {
+      "@type": "DefinedTerm",
+      "name": {{ term.title | jsonify }},
+      "url": {{ term.url | absolute_url | jsonify }},
+      "description": {{ term.description | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Search functionality
   const input = document.getElementById('glossary-search-input');
   const list = document.getElementById('glossary-list');
   const items = Array.from(list.getElementsByTagName('li'));
 
   input.addEventListener('input', function() {
-    const query = input.value.toLowerCase();
+    const query = input.value.toLowerCase().trim();
     items.forEach(item => {
       const text = item.textContent.toLowerCase();
-      item.style.display = text.includes(query) ? '' : 'none';
-    });
-  });
-
-  // Inline definition toggle
-  document.querySelectorAll('.glossary-term').forEach(function(term) {
-    term.addEventListener('click', function() {
-      const def = this.nextElementSibling;
-      def.style.display = (def.style.display === 'none' || def.style.display === '') ? 'block' : 'none';
-      if (def.style.display === 'block' && window.MathJax && window.MathJax.typesetPromise) {
-        MathJax.typesetPromise([def]);
-      }
+      item.style.display = !query || text.includes(query) ? '' : 'none';
     });
   });
 });
-</script> 
+</script>

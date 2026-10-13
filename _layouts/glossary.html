@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<nav class="glossary-breadcrumb" aria-label="Breadcrumb">
+  <a href="{% if page.collection == 'med-glossary' %}/med-glossary/{% else %}/ai-glossary/{% endif %}">
+    {% if page.collection == 'med-glossary' %}Medicine Glossary{% else %}AI Glossary{% endif %}
+  </a>
+  <span aria-hidden="true"> / </span>
+  <span>{{ page.title }}</span>
+</nav>
+
+<article class="glossary-term-page post" itemscope itemtype="https://schema.org/DefinedTerm">
+  <h1 itemprop="name">{{ page.title }}</h1>
+
+  {% if page.synonyms and page.synonyms.size > 0 %}
+  <p class="glossary-synonyms">
+    <strong>Also known as:</strong>
+    {% for s in page.synonyms %}
+      <span itemprop="alternateName">{{ s }}</span>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  {% if page.term-en and page.term-en.size > 0 %}
+  <p class="glossary-synonyms">
+    <strong>English:</strong>
+    {% for s in page.term-en %}
+      <span>{{ s }}</span>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  <div class="glossary-body" itemprop="description">
+    {{ content }}
+  </div>
+
+  {% if page.related and page.related.size > 0 %}
+  <aside class="glossary-related">
+    <h2>Related terms</h2>
+    <ul>
+      {% for rel in page.related %}
+        {% assign rel_slug = rel | slugify %}
+        {% assign rel_doc = nil %}
+        {% if page.collection == 'med-glossary' %}
+          {% for t in site.med-glossary %}
+            {% if t.slug == rel_slug or t.title == rel %}{% assign rel_doc = t %}{% break %}{% endif %}
+          {% endfor %}
+        {% else %}
+          {% for t in site.ai-glossary %}
+            {% if t.slug == rel_slug or t.title == rel %}{% assign rel_doc = t %}{% break %}{% endif %}
+          {% endfor %}
+        {% endif %}
+        <li>
+          {% if rel_doc %}
+            <a href="{{ rel_doc.url }}">{{ rel_doc.title }}</a>
+          {% else %}
+            {{ rel }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+
+  <p class="glossary-back">
+    <a href="{% if page.collection == 'med-glossary' %}/med-glossary/{% else %}/ai-glossary/{% endif %}">
+      ← Back to {% if page.collection == 'med-glossary' %}Medicine{% else %}AI{% endif %} Glossary
+    </a>
+  </p>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "inDefinedTermSet": {{ page.collection | replace: 'ai-glossary', 'https://zlu.me/ai-glossary/' | replace: 'med-glossary', 'https://zlu.me/med-glossary/' | jsonify }}
+}
+</script>

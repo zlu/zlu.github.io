@@ -79,6 +79,8 @@ collections:
     format: "frontmatter"
     fields:
       - { label: "Term", name: "title", widget: "string" }
+      - { label: "SEO Description", name: "description", widget: "string", required: false }
+      - { label: "Keywords", name: "keywords", widget: "string", required: false }
       - { label: "Synonyms", name: "synonyms", widget: "list", required: false }
       - {
           label: "Related Terms",

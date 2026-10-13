@@ -1,0 +1,67 @@
+{% comment %} Series nav, glossary links, and Article JSON-LD for blog posts {% endcomment %}
+
+{% if page.series %}
+{% assign series_posts = site.posts | where: "series", page.series | sort: "part" %}
+<nav class="post-series" aria-label="Series navigation">
+  <strong>Series</strong>
+  <ol>
+    {% for sp in series_posts %}
+      <li>
+        {% if sp.url == page.url %}
+          <span aria-current="page">{{ sp.title }}</span>
+        {% else %}
+          <a href="{{ sp.url }}">{{ sp.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}
+
+{% if page.glossary and page.glossary.size > 0 %}
+<aside class="post-glossary-links">
+  <strong>Glossary</strong>
+  <ul>
+    {% for g in page.glossary %}
+      {% assign g_slug = g | slugify %}
+      {% assign g_doc = nil %}
+      {% for t in site.ai-glossary %}
+        {% if t.slug == g_slug or t.title == g %}{% assign g_doc = t %}{% break %}{% endif %}
+      {% endfor %}
+      <li>
+        {% if g_doc %}
+          <a href="{{ g_doc.url }}">{{ g_doc.title }}</a>
+        {% else %}
+          <a href="/ai-glossary/{{ g_slug }}/">{{ g }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 160 | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": "Zhao Lü",
+    "url": "https://zlu.me/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Zhao Lü",
+    "url": "https://zlu.me/"
+  },
+  "image": {{ page.image | default: site.logo | absolute_url | jsonify }},
+  "keywords": {{ page.keywords | default: page.tags | join: ', ' | jsonify }},
+  "inLanguage": {{ page.lang | default: site.lang | default: 'en' | jsonify }}
+}
+</script>
