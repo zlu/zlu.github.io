@@ -1,6 +1,7 @@
 ---
 layout: default
-title: My Travels
+title: "Travel Map and Countries Visited"
+description: "Travel map and country list for Zhao Lü — 60+ countries across Asia, Europe, the Americas, and beyond, with notes from places like Georgia and long-term stays abroad."
 permalink: /travels/
 ---
 

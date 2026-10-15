@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Medicine Glossary
+title: "Medicine Glossary — Lab Markers, Conditions, Nutrition"
 permalink: /med-glossary/
 description: "Searchable medicine and health glossary — plain-language definitions for common lab markers, conditions, and nutrition terms."
 keywords: "medicine glossary, health terms, medical dictionary, lab markers, nutrition"

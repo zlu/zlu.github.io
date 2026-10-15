@@ -1,5 +1,8 @@
 ---
 layout: default
+# Prefer page.title from collection file; fall back for thin tag stubs
+title: "Posts tagged {{ page.tag }} — Zhao Lü"
+description: "Articles and tutorials tagged {{ page.tag }} on zlu.me — AI, machine learning, data science, and systems programming by Zhao Lü."
 ---
 {% assign needle = page.tag | downcase %}
 <h1>Posts tagged with: {{ page.tag }}</h1>

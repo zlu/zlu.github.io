@@ -7,7 +7,7 @@ tags:
   - 数据库
   - 近似最近邻
   - ANN
-description: 向量数据库简介
+description: "向量数据库如何存储嵌入并做相似性检索——ANN 索引、ChromaDB/SQLite，以及在语义搜索与 RAG 中的适用场景。"
 comments: true
 ---
 

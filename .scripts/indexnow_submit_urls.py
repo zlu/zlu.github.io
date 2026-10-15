@@ -30,7 +30,8 @@ HOST = "zlu.me"
 SITEMAP_URL = f"{SITE}/sitemap.xml"
 ENDPOINT = "https://api.indexnow.org/indexnow"
 MAX_PER_REQUEST = 10000
-DEFAULT_LIMIT = 100
+# Bing prefers streaming changed URLs over large daily sitemap batches.
+DEFAULT_LIMIT = 20
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent

@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Talks"
+title: "Talks and Presentations on AI, Cloud, and Engineering"
+description: "Conference talks and presentations by Zhao Lü — autonomous vehicle fleets, Postgres on Heroku, Rails telephony, agile development, and yoga-tech talks across the US, Europe, China, and Latin America."
 ---
 
 ## Talks and Presentations

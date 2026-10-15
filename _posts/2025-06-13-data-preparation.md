@@ -7,7 +7,7 @@ tags:
   - machine learning
   - data visualization
   - feature scaling
-description: "Data Preparation Example for Machine Learning"
+description: "Practical data preparation for machine learning: imputation, scaling, encoding, SVD intuition, and feature hygiene before you train supervised models."
 comments: true
 ---
 

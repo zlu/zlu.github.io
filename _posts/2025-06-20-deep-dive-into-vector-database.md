@@ -6,7 +6,7 @@ tags:
   - vector database
   - database
   - ANN
-description: Deep dive into vector database
+description: "How vector databases store embeddings and run similarity search — ANN indexes, ChromaDB/SQLite, and when to use them for semantic search and RAG."
 comments: true
 ---
 

@@ -71,4 +71,10 @@ defaults:
       type: tags
     values:
       layout: tag
-      sitemap: true
+      # Thin tag indexes: keep crawlable via post links, omit from sitemap to save Bing crawl budget
+      sitemap: false
+  - scope:
+      path: "admin"
+    values:
+      sitemap: false
+      robots: noindex

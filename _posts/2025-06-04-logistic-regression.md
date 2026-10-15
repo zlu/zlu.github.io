@@ -10,7 +10,7 @@ tags:
   - logistic regression
   - classification
   - math
-description: "Classification and Logistic Regression"
+description: "Classification with logistic regression: parametric vs non-parametric models, the sigmoid, decision boundaries, and a clear path from linear regression intuition."
 ---
 
 Linear regression and logistic regression might be more similar than you think :)

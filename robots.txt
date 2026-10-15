@@ -1,6 +1,10 @@
 User-agent: *
 
+# CMS / private tooling — do not crawl
 Disallow: /admin/
+
+# Tag indexes are thin list pages; discover posts via sitemap + internal links instead
+Disallow: /tags/
 
 # Ensure search engines can access both language versions
 Allow: /*?lang=cn

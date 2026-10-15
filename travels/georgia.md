@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "Travel Notes from Georgia — Kutaisi, Wine, and Caucasus Roads"
+description: "Travel notes from Georgia: Wizz Air into Kutaisi, homemade wine culture, grocery-store milk, and following family embassy footsteps through the Caucasus."
 ---
 
 In October 2023, I decided to trace my parents’ footsteps through Central Asia and
