@@ -7,3 +7,6 @@ zlu.github.io.code-workspace
 .scripts/baidu.env
 .scripts/baidu_submit_state.json
 .scripts/baidu_submit.log
+.scripts/indexnow.env
+.scripts/indexnow_submit_state.json
+.scripts/indexnow_submit.log
