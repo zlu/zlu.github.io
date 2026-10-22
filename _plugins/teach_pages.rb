@@ -125,12 +125,12 @@ module Jekyll
 
         next if seen_slugs[uni_slug]
 
-        uni_page = build_university_page(site, uni_slug, university, course_list, region_key)
+        uni_page = build_university_page(site, uni_slug, university, course_list, region_key, true)
         site.pages << uni_page
 
         SERVICES.each_key do |service_key|
           site.pages << build_uni_service_page(
-            site, uni_slug, university, course_list, region_key, service_key
+            site, uni_slug, university, course_list, region_key, service_key, true
           )
         end
 
@@ -173,12 +173,14 @@ module Jekyll
         region_key = detect_region("#{uni_slug} #{university}", university) if region_key.empty?
         region_key = "international" if region_key.empty?
 
-        site.pages << build_university_page(site, uni_slug, university, [], region_key)
+        # Directory-only unis: still generate HTML so /teach links don't 404, but
+        # omit from sitemap (crawl budget — thousands of thin pages).
+        site.pages << build_university_page(site, uni_slug, university, [], region_key, false)
 
         # Service landings for directory unis too — university pages link these.
         SERVICES.each_key do |service_key|
           site.pages << build_uni_service_page(
-            site, uni_slug, university, [], region_key, service_key
+            site, uni_slug, university, [], region_key, service_key, false
           )
         end
 
@@ -273,7 +275,7 @@ module Jekyll
       REGION_MAP.fetch(key, {})[lang] || key
     end
 
-    def build_university_page(site, uni_slug, university, courses, region_key)
+    def build_university_page(site, uni_slug, university, courses, region_key, in_sitemap = true)
       codes = courses.map { |c| c["code"] }.reject(&:empty?)
       title_en = "#{university} Computer Science Tutoring | AI & Programming"
       title_cn = "#{university} 计算机辅导 | 人工智能与编程一对一"
@@ -297,7 +299,7 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => true
+        "sitemap" => in_sitemap
       )
       page
     end
@@ -344,7 +346,7 @@ module Jekyll
       page
     end
 
-    def build_uni_service_page(site, uni_slug, university, courses, region_key, service_key)
+    def build_uni_service_page(site, uni_slug, university, courses, region_key, service_key, in_sitemap = true)
       svc = SERVICES.fetch(service_key)
       title_en = "#{university} #{svc['title_en']} | Computer Science Tutoring"
       title_cn = "#{university}#{svc['title_cn']} | 计算机留学生一对一"
@@ -378,7 +380,7 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => true
+        "sitemap" => in_sitemap
       )
       page
     end
