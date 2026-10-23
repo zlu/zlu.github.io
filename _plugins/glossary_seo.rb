@@ -47,8 +47,8 @@ module Jekyll
     def strip_markdown(text)
       text.to_s
           .gsub(/\{%.*?%\}/m, " ")
-          .gsub(/\$\$.*?\$\$/m, " ")
-          .gsub(/\$.*?\$/m, " ")
+          .gsub(/\$\$(.*?)\$\$/m, ' \1 ')
+          .gsub(/\$(.*?)\$/m, ' \1 ')
           .gsub(/```.*?```/m, " ")
           .gsub(/`[^`]*`/, " ")
           .gsub(/!\[[^\]]*\]\([^)]*\)/, " ")

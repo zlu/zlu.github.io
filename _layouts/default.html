@@ -217,9 +217,20 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <script>
+    /* Apply saved sidebar preference before paint to avoid a flash */
+    (function () {
+      try {
+        if (window.matchMedia('(min-width: 769px)').matches &&
+            localStorage.getItem('sidebar-collapsed') === '1') {
+          document.documentElement.classList.add('sidebar-collapsed');
+        }
+      } catch (e) {}
+    })();
+  </script>
   <div class="container">
     <div class="sidebar-wrapper">
-      <aside class="sidebar">
+      <aside class="sidebar" id="site-sidebar">
         <a href="/">
           <img src="/assets/images/avatar.png" class="sidebar-image" alt="Zhaolu" width="200px">
         </a>
@@ -257,6 +268,15 @@
           <a href="mailto:hello@zlu.me" class="icon"><i class="ri-mail-fill"></i></a>
         </div>
       </aside>
+      <button type="button"
+              class="sidebar-toggle"
+              id="sidebar-toggle"
+              aria-controls="site-sidebar"
+              aria-expanded="true"
+              aria-label="Collapse sidebar"
+              title="Collapse sidebar">
+        <i class="ri-arrow-left-s-line sidebar-toggle-icon" aria-hidden="true"></i>
+      </button>
     </div>
 
     <main class="content">
@@ -345,6 +365,8 @@
     });
   </script>
   {% endif %}
+  <script src="/assets/js/glossary-tooltips.js" defer></script>
+  <script src="/assets/js/sidebar.js" defer></script>
 </body>
 
 </html>

@@ -1,23 +1,21 @@
 ---
 title: Attention
+synonyms:
+  - Soft Attention
+  - Attention Mechanism
 related:
+  - Self-Attention
+  - Multi-Head Attention
+  - Encoder–Decoder
+  - Encoder
+  - Decoder
   - Transformer
+  - Softmax
 ---
-The attention mechanism is a technique used in machine learning - especially in the natural language process (NLP) and computer vision - that allows models to focus on the most relevant parts of the input data when making decisions or predictions.
+**Attention** lets a model decide, at each step, which parts of a memory of vectors matter most—and then form a weighted average of those vectors.
 
-The core idea is to treat all parts of the input equally, attention assigns weights to different elements, indicating their importance for a given task.  These weights are learned during training.
+In the original soft-attention encoder–decoder setup (Bahdanau et al., 2015), the decoder compares its current state to every encoder state, turns the scores into weights with a softmax, and blends the encoder states into a *context vector*. That removed the need to crush the whole source into one fixed vector.
 
+Self-attention in Transformers uses the same skeleton inside one sequence: queries, keys, and values are projections of the tokens themselves.
 
-In the context of the Transformer architecture (e.g., GPT, BERT):
-Let:
-- Q: Query
-- K: Key
-- V: Value
-
-The Scaled Dot-Product Attention is:
-
-$\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right) V$
-- $QK^T$: Measures relevance between query and key.
-- $\sqrt{d_k}$: Scaling factor to stabilize gradients.
-- $softmax$: Converts scores to probabilities (attention weights).
-- The result is a weighted sum of the values V, emphasizing relevant parts.
+$$\text{Attention}(Q, K, V) = \mathrm{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right) V$$
