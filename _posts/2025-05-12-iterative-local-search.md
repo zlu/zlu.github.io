@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Exploring Optimization: A Guide to Iterative Local Search (ILS)"
-description: "A practical guide to Iterative Local Search (ILS) optimization, with AlgoScope visualization."
+description: "Learn Iterative Local Search (ILS): local search, perturbation, and acceptance to escape local optima—with Python code and a live AlgoScope visualization demo."
 date: 2025-05-12 15:30 +0800
 tags: 
 - Optimization

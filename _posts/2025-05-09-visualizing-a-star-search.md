@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualizing A-Star Search
-description: "Visual walkthrough of the A* pathfinding algorithm with an interactive live demo."
+description: "Visual walkthrough of A* pathfinding: how f(n)=g(n)+h(n) blends cost-so-far and heuristics vs Dijkstra, plus an interactive browser demo on AlgoScope."
 date: 2025-05-09 09:21 +0800
 comments: true
 tags:
