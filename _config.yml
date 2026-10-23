@@ -2,9 +2,11 @@ title: Zhao Lü
 url: https://zlu.me
 lang: en
 logo: /assets/images/avatar.png
-tagline: Silicon Valley engineer, AI educator, and CS tutor
-keywords: "Zhao Lü, zlu, AI, machine learning, data science, computer science, Silicon Valley"
-description: "Zhao Lü — Silicon Valley engineer, AI & data science educator, and bilingual CS tutor for Chinese students studying abroad. Teach, consult, technology, life."
+# Visible in the sidebar (and browser title via jekyll-seo-tag). Keep this personal.
+tagline: Coder, reader, fitness enthusiast
+keywords: "Zhao Lü, zlu, AI, machine learning, data science, computer science, Silicon Valley engineer, CS tutor, AI educator"
+# Meta description for search engines — credentials live here, not in the visible tagline.
+description: "Zhao Lü — Silicon Valley engineer, AI educator, and CS tutor. AI & data science educator and bilingual tutoring for Chinese students studying abroad."
 author: zlu
 # Tutor-focused keywords for teach pages that opt in via page.keywords or site.tutor_keywords
 tutor_keywords: "留学辅导，留学生辅导,留学生课程辅导,留学生补习,留学生在线辅导,留学生作业辅导,美国留学生辅导,英国留学生辅导,澳洲留学生辅导,新西兰留学辅导,加拿大留学生辅导,香港留学生辅导,留学生一对一辅导,留学生线上辅导，人工智能辅导，数据科学辅导，计算机课程辅导, AI辅导，Python辅导，online 1-1 tutoring for chinese students in australia, artificial intelligence tutoring"
