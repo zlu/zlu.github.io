@@ -7,6 +7,7 @@ tags:
   - R
   - LDA
 description: "使用LDA进行主题建模：发现文本中的隐藏主题"
+lang: zh
 comments: true
 ---
 

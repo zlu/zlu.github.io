@@ -10,6 +10,7 @@ tags:
   - fastai
   - PyTorch
 description: "深入探究 MNIST 数据集 - Fastai 第三部分"
+lang: zh
 ---
 
 在 fastai 第一部分中，我们学习了如何对 MNIST 数据集进行分类。在本教程中，我们将更深入地了解其底层原理。首先，我们将详细探索 MNIST 数据集。

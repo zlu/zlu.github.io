@@ -8,6 +8,7 @@ tags:
   - 数据可视化
   - 特征缩放
 description: "R语言非结构化文本挖掘入门指南"
+lang: zh
 comments: true
 ---
 

@@ -7,6 +7,7 @@ tags:
     - GRU
     - 机器翻译
 description: "循环神经网络(RNN)：从理论到实践"
+lang: zh
 comments: true
 ---
 

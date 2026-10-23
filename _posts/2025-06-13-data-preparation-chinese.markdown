@@ -8,6 +8,7 @@ tags:
   - 数据可视化
   - 特征缩放
 description: "机器学习数据准备实战：缺失值处理、特征缩放、编码、SVD 直觉，以及训练监督模型前的特征卫生检查。"
+lang: zh
 comments: true
 ---
 

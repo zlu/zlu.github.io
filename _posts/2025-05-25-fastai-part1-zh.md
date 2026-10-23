@@ -16,6 +16,7 @@ tags:
   - fastai
   - PyTorch
 description: "缺失的部分 - 轻松入门 fastai 和 PyTorch - 第一部分"
+lang: zh
 ---
 
 ## 介绍

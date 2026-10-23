@@ -6,6 +6,7 @@ tags:
   - 文本聚类分析
   - R
 description: "使用 R 进行文本聚类分析实战：通过预处理、TF-IDF、余弦距离与 K-means/层次聚类，按内容相似性自动分组文档，含 20 Newsgroups 示例、PCA 可视化与词云主题探索。"
+lang: zh
 comments: true
 ---
 

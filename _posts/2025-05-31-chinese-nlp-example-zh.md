@@ -10,6 +10,7 @@ tags:
   - fastai
   - PyTorch
 description: "中文NLP with fastai - Fastai Part 4"
+lang: zh
 ---
 ## 使用fastai进行自然语言处理
 

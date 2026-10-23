@@ -14,6 +14,7 @@ tags:
   - 人工智能
   - 机器学习基础
 description: "了解感知器 - 神经网络的基础构建块。包含实用的Python实现、可视化解释和垃圾邮件检测等实际应用。适合机器学习初学者。"
+lang: zh
 permalink: /zh/machine-learning/perceptrons-neural-networks-building-block/
 ---
 

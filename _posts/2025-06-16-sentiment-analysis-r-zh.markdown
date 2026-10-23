@@ -6,6 +6,7 @@ tags:
   - 情感分析
   - R
 description: "情感分析：解码文本中的情感"
+lang: zh
 comments: true
 ---
 

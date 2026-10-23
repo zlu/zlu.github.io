@@ -10,6 +10,7 @@ tags:
   - fastai
   - PyTorch
 description: "使用 fastai 进行文本分类的简明指南 - Fastai Part 5"
+lang: zh
 ---
 
 ## 子词分词

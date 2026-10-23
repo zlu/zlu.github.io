@@ -10,6 +10,7 @@ tags:
   - fastai
   - PyTorch
 description: "图像分类最新指南 - Fastai 第二部分"
+lang: zh
 ---
 在本指南中，我们将介绍如何获取图像数据并用其训练模型。
 
