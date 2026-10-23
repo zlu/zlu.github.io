@@ -51,23 +51,18 @@ body.teach-page-active .teach-sticky-cta {
     font-size: 16px;
 }
 
-/* Hub palette — ink + deep teal, not default SaaS blue */
+/* Hub palette — ink + deep teal (no page wash) */
 body.teach-page-active {
     --teach-ink: #1a2332;
     --teach-muted: #5c6b7a;
     --teach-line: #d5dde6;
     --teach-accent: #0f6b6b;
     --teach-accent-soft: #e6f2f2;
-    --teach-paper: #f4f1ec;
-    --teach-surface: #fbfaf8;
-    background:
-        radial-gradient(1200px 480px at 12% -10%, rgba(15, 107, 107, 0.07), transparent 55%),
-        linear-gradient(180deg, var(--teach-paper) 0%, #efebe4 100%);
+    --teach-surface: #ffffff;
 }
 
 body.teach-page-active .site {
     color: var(--teach-ink);
-    background: transparent;
 }
 
 body.teach-page-active .content {
@@ -1134,9 +1129,8 @@ body.teach-page-active .content {
     bottom: 0;
     z-index: 40;
     padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
-    background: rgba(251, 250, 248, 0.96);
+    background: rgba(255, 255, 255, 0.97);
     border-top: 1px solid var(--teach-line, #d5dde6);
-    backdrop-filter: blur(8px);
 }
 
 .teach-sticky-cta .teach-sticky-inner {
