@@ -334,6 +334,16 @@ ul.posts span {
   overflow-x: hidden;
 }
 
+/* Justify stretches word gaps on wrapped titles; keep headings flush left. */
+.site h1,
+.site h2,
+.site h3,
+.site h4,
+.site h5,
+.site h6 {
+  text-align: left;
+}
+
 /* Global reset zeros out list padding; outside markers then sit left of the box
    and get clipped by overflow-x:hidden (notably two-digit ol indices). */
 .site ol,

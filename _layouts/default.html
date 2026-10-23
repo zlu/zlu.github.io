@@ -39,12 +39,14 @@
 
   <script src="/assets/js/jquery-1.10.1.min.js"></script>
 
-  <!-- MathJax for LaTeX equation rendering -->
+  <!-- MathJax for LaTeX equation rendering.
+       Kramdown rewrites $$...$$ / $...$ into \[...\] / \(...\), so those
+       delimiters must be enabled or display math never typesets. -->
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['$', '$'], ['\$', '\$']],
-        displayMath: [['$$', '$$'], ['\$$', '\$$']]
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
       }
     };
   </script>
