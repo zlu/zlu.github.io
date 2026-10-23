@@ -173,14 +173,12 @@ module Jekyll
         region_key = detect_region("#{uni_slug} #{university}", university) if region_key.empty?
         region_key = "international" if region_key.empty?
 
-        # Directory-only unis: still generate HTML so /teach links don't 404, but
-        # omit from sitemap (crawl budget — thousands of thin pages).
-        site.pages << build_university_page(site, uni_slug, university, [], region_key, false)
+        site.pages << build_university_page(site, uni_slug, university, [], region_key, true)
 
         # Service landings for directory unis too — university pages link these.
         SERVICES.each_key do |service_key|
           site.pages << build_uni_service_page(
-            site, uni_slug, university, [], region_key, service_key, false
+            site, uni_slug, university, [], region_key, service_key, true
           )
         end
 
