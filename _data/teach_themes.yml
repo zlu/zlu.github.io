@@ -1,0 +1,543 @@
+# Theme packs for course SEO pages. Tutoring guidance only — not syllabi or assignment text.
+# Match order is defined in _plugins/teach_pages.rb (THEME_MATCH_ORDER).
+
+machine-learning:
+  label_en: Machine learning & AI
+  label_cn: 机器学习与人工智能
+  lead_en: >-
+    Intro ML / AI courses mix math intuition with coding labs. I tutor them the way
+    industry work is done: clarify the model idea in Chinese and English, then debug
+    the notebook or sklearn/PyTorch pipeline until metrics and write-ups make sense.
+  lead_cn: >-
+    入门机器学习 / AI 课通常既要数学直觉又要写代码。辅导时我会用中英双语先把模型在做什么讲清楚，
+    再一起 debug notebook 或 sklearn / PyTorch 流程，直到指标与报告说得通。
+  topics:
+    - en: Supervised vs unsupervised intuition
+      cn: 监督 / 无监督学习的直觉区分
+    - en: Loss, gradients, and what “training” actually updates
+      cn: 损失、梯度，以及“训练”到底在更新什么
+    - en: Train / validation / test splits and leakage
+      cn: 训练 / 验证 / 测试划分与数据泄漏
+    - en: Linear models, logistic regression, and decision boundaries
+      cn: 线性模型、逻辑回归与决策边界
+    - en: Trees, ensembles, and when they beat neural nets
+      cn: 树模型、集成方法，以及何时比神经网络更合适
+    - en: sklearn / notebook pipelines and reproducibility
+      cn: sklearn / notebook 流水线与可复现性
+    - en: Metrics, confusion matrices, and report figures
+      cn: 指标、混淆矩阵与报告图表
+    - en: Project structure and experiment write-up clarity
+      cn: Project 结构与实验报告表述
+  stuck:
+    - en: Formulae memorised without knowing what the code should look like
+      cn: 公式背下来了，但不知道代码该长什么样
+    - en: Autograder / notebook fails from shape mismatches or leakage
+      cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+    - en: Model “works” but the report cannot explain why
+      cn: 模型能跑，但报告说不清为什么有效
+    - en: English lecture slides move faster than the math catches up
+      cn: 英文课件节奏快于数学跟进速度
+  session_angles:
+    - en: Map the assignment brief to a short concept checklist
+      cn: 把作业 brief 映射成一份短概念清单
+    - en: Live-debug the failing cell or metric with you driving the keyboard
+      cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+    - en: Tighten the write-up so claims match the experiments
+      cn: 收紧报告表述，让结论与实验一致
+  match: >-
+    machine.?learn|deep.?learn|neural|artificial.?intelligen|\bai\b|
+    pattern.?recog|computer.?vision|natural.?language|\bnlp\b|
+    reinforc|perceptron|pytorch|tensorflow|sklearn|scikit
+  reading:
+    - kind: post
+      name: linear-algebra-ml
+      title_en: From linear algebra to linear regression
+      title_cn: 从线性代数到线性回归
+    - kind: post
+      name: logistic-regression
+      title_en: Logistic regression
+      title_cn: 逻辑回归
+    - kind: post
+      name: understanding-perceptrons
+      title_en: Understanding perceptrons
+      title_cn: 感知机入门
+    - kind: post
+      name: fastai-part1
+      title_en: Fastai practical deep learning (part 1)
+      title_cn: Fastai 实践深度学习（一）
+    - kind: glossary
+      name: backpropagation
+      title_en: Backpropagation
+      title_cn: 反向传播
+    - kind: glossary
+      name: overfitting
+      title_en: Overfitting
+      title_cn: 过拟合
+    - kind: glossary
+      name: supervised-learning
+      title_en: Supervised learning
+      title_cn: 监督学习
+    - kind: glossary
+      name: gradient-descent
+      title_en: Gradient descent
+      title_cn: 梯度下降
+
+data-science:
+  label_en: Data science & analytics
+  label_cn: 数据科学与分析
+  lead_en: >-
+    Data science courses reward clean pipelines more than flashy models. Sessions focus
+    on wrangling, EDA judgement, and turning notebook chaos into a story the marker can follow.
+  lead_cn: >-
+    数据科学课更看重干净的流水线，而不是花哨模型。课上重点是清洗与 EDA 判断力，
+    以及把凌乱 notebook 收成改卷人能跟上的叙事。
+  topics:
+    - en: Pandas / dplyr style transforms and joins
+      cn: Pandas / dplyr 风格的变换与 join
+    - en: EDA, distributions, and “what question am I answering?”
+      cn: 探索性分析、分布，以及“我在回答什么问题”
+    - en: Feature hygiene before modelling
+      cn: 建模前的特征卫生
+    - en: Visualisation that supports a claim
+      cn: 能支撑结论的可视化
+    - en: Group projects — ownership of one clear analysis thread
+      cn: 小组作业——把住一条清晰分析主线
+    - en: Reproducible notebooks and environments
+      cn: 可复现的 notebook 与环境
+  stuck:
+    - en: Messy merges and silent NaNs that break later metrics
+      cn: 混乱的 merge 与静默 NaN，后面指标全歪
+    - en: Pretty plots that do not answer the brief
+      cn: 图很漂亮，但没回答题目要求
+    - en: Last-minute modelling with no data story
+      cn: 临近 DDL 才建模，没有数据故事
+  session_angles:
+    - en: Rebuild the analysis pipeline step by step from the brief
+      cn: 按 brief 逐步重建分析流水线
+    - en: Sanity-check joins, missingness, and leakage risks
+      cn: 核验 join、缺失值与泄漏风险
+    - en: Shape the final narrative and figure set
+      cn: 定稿叙事与图表组合
+  match: >-
+    data.?scien|data.?analy|data.?wrangl|data.?mining|business.?analy|
+    analytic|visuali|exploratory|pandas|statistics.?for
+  reading:
+    - kind: post
+      name: deep-dive-into-vector-database
+      title_en: Vector databases deep dive
+      title_cn: 向量数据库深入
+    - kind: post
+      name: audio-analysis-r
+      title_en: Audio analysis in R
+      title_cn: 用 R 做音频分析
+    - kind: glossary
+      name: embedding
+      title_en: Embedding
+      title_cn: 向量嵌入
+    - kind: glossary
+      name: cosine-similarity
+      title_en: Cosine similarity
+      title_cn: 余弦相似度
+
+programming:
+  label_en: Programming & software construction
+  label_cn: 编程与软件构造
+  lead_en: >-
+    First- and second-year programming courses fail students on style, testing, and
+    debugging habits—not on “knowing syntax.” I tutor with bilingual walkthroughs of
+    the brief, then pair-debug until the design and tests hold.
+  lead_cn: >-
+    低年级编程课挂人的往往是风格、测试与调试习惯，不是“会不会语法”。
+    我会用中英双语先拆题目，再结对 debug，直到设计与测试站得住。
+  topics:
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Unit tests and autograder feedback loops
+      cn: 单元测试与 autograder 反馈循环
+    - en: Git basics when the course requires it
+      cn: 课程要求时的 Git 基础
+    - en: Memory / pointers when the language is C or C++
+      cn: C / C++ 下的内存与指针
+    - en: OOP design for Java / Python coursework
+      cn: Java / Python 课业中的 OOP 设计
+  stuck:
+    - en: Code that “almost works” with no systematic debug plan
+      cn: 代码“差不多能跑”，但没有系统调试计划
+    - en: Autograder mismatches from edge cases or I/O format
+      cn: 边界条件或 I/O 格式导致 autograder 不过
+    - en: Copy-paste solutions that cannot be explained in viva / demo
+      cn: 粘贴来的解法，演示或口头答不上来
+  session_angles:
+    - en: Restate the problem and sketch data flow on a whiteboard
+      cn: 复述题意，白板画出数据流
+    - en: Bisect the failing test with print / debugger discipline
+      cn: 用打印 / 调试器纪律二分定位失败用例
+    - en: Refactor for clarity before chasing extra marks
+      cn: 先为清晰度重构，再追额外分数
+  match: >-
+    program|software.?construct|structured.?program|imperative|functional.?program|
+    java\b|python|c\+\+|coding|object.?oriented|\boop\b|software.?design|
+    problem.?solving|introduct.*comput|foundations.?of.?comput
+  reading:
+    - kind: post
+      name: variable-storage-and-pointers-in-c-back-to-basics
+      title_en: Variable storage and pointers in C
+      title_cn: C 语言变量存储与指针
+    - kind: post
+      name: financial-python-part1
+      title_en: Financial Python (part 1)
+      title_cn: 金融 Python（一）
+    - kind: post
+      name: inter-process-communication-in-c-back-to-basics
+      title_en: Inter-process communication in C
+      title_cn: C 语言进程间通信
+
+algorithms:
+  label_en: Algorithms & data structures
+  label_cn: 算法与数据结构
+  lead_en: >-
+    Algorithms courses punish vague hand-waving. We build the invariant, complexity
+    argument, and implementation together so exam proofs and coding tasks stay aligned.
+  lead_cn: >-
+    算法课最怕含糊其辞。我们会一起把不变量、复杂度论证与实现对齐，
+    让考试证明题和编程题说的是同一件事。
+  topics:
+    - en: Asymptotic complexity and comparing candidates
+      cn: 渐近复杂度与方案比较
+    - en: Arrays, lists, trees, heaps, hash tables
+      cn: 数组、链表、树、堆、哈希表
+    - en: Sorting, searching, and graph traversals
+      cn: 排序、搜索与图遍历
+    - en: Greedy, divide-and-conquer, and dynamic programming patterns
+      cn: 贪心、分治与动态规划模式
+    - en: Invariants and proof sketches for exams
+      cn: 考试用的不变量与证明提纲
+    - en: Translating pseudocode into working submissions
+      cn: 把伪代码落到可提交实现
+  stuck:
+    - en: Correct intuition but wrong complexity or incomplete proof
+      cn: 直觉对，但复杂度写错或证明不完整
+    - en: DP / recursion without a clear state definition
+      cn: 动态规划 / 递归没有清晰状态定义
+    - en: Implementation bugs that hide a sound algorithm
+      cn: 算法本身没问题，实现 bug 把分扣光
+  session_angles:
+    - en: Write the invariant and recurrence before code
+      cn: 写代码前先写不变量与递推
+    - en: Dry-run on a small example, then generalise
+      cn: 先在小例子上手推，再一般化
+    - en: Exam-style short proofs under time pressure
+      cn: 限时练习考试风格的短证明
+  match: >-
+    algorithm|data.?struct|complexit|discrete.?math|combinator|
+    graph.?theory|dynamic.?program|computational.?thinking
+  reading:
+    - kind: post
+      name: genetic-algorithm-from-darwin-to-holland
+      title_en: Genetic algorithms from Darwin to Holland
+      title_cn: 从达尔文到 Holland 的遗传算法
+    - kind: post
+      name: fractal
+      title_en: Generating fractals
+      title_cn: 生成分形
+
+systems:
+  label_en: Systems, networks & architecture
+  label_cn: 系统、网络与体系结构
+  lead_en: >-
+    Systems courses stack abstractions fast: processes, memory, packets, concurrency.
+    Tutoring sessions slow that stack down in bilingual terms, then fix the lab where
+    theory and logs disagree.
+  lead_cn: >-
+    系统课抽象叠得快：进程、内存、报文、并发。辅导会用中英双语把这层栈放慢，
+    再修理论与日志对不上的 Lab。
+  topics:
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
+    - en: OS scheduling and concurrency bugs
+      cn: 操作系统调度与并发 bug
+    - en: Computer organisation and assembly when required
+      cn: 需要时的计算机组成与汇编
+    - en: Reading logs and reproducing race conditions
+      cn: 读日志与复现竞态
+  stuck:
+    - en: Labs that fail only under concurrency or load
+      cn: 只有并发或负载下才失败的 Lab
+    - en: Mixing up layers (app vs transport vs link)
+      cn: 把应用 / 传输 / 链路层概念混在一起
+    - en: English man pages and RFCs denser than lecture pace
+      cn: 英文 man page / RFC 比课堂节奏更密
+  session_angles:
+    - en: Draw the call / packet path before changing code
+      cn: 改代码前先画出调用 / 报文路径
+    - en: Instrument, reproduce, then patch the root cause
+      cn: 先插桩复现，再修根因
+    - en: Translate jargon into a bilingual cheat sheet for exams
+      cn: 把术语整理成考试用双语速查
+  match: >-
+    operat.?system|\bos\b|network|distributed|computer.?organ|
+    architect|concurren|parallel|embedded|compiler|cloud.?comput|
+    inter.?process|socket|tcp|udp
+  reading:
+    - kind: post
+      name: inter-process-communication-in-c-back-to-basics
+      title_en: Inter-process communication in C
+      title_cn: C 语言进程间通信
+    - kind: post
+      name: variable-storage-and-pointers-in-c-back-to-basics
+      title_en: Variable storage and pointers in C
+      title_cn: C 语言变量存储与指针
+    - kind: post
+      name: rag-based-knowledge-base-with-agent-support
+      title_en: RAG knowledge bases with agents
+      title_cn: 带 Agent 的 RAG 知识库
+
+databases:
+  label_en: Databases & information systems
+  label_cn: 数据库与信息系统
+  lead_en: >-
+    Database courses test modelling judgement and query discipline. We practice ER design,
+    SQL that matches the schema, and explaining why a plan is slow—not just “getting rows back.”
+  lead_cn: >-
+    数据库课考的是建模判断与查询纪律。我们练 ER 设计、贴合 schema 的 SQL，
+    以及解释计划为何慢——不只是“查出几行”。
+  topics:
+    - en: ER modelling and normalisation trade-offs
+      cn: ER 建模与范式权衡
+    - en: SQL joins, aggregation, and nested queries
+      cn: SQL join、聚合与嵌套查询
+    - en: Indexes, plans, and “why is this slow?”
+      cn: 索引、执行计划与“为什么慢”
+    - en: Transactions and isolation at intro level
+      cn: 入门级事务与隔离级别
+    - en: Application ↔ DB boundary in coursework projects
+      cn: 课设里应用与数据库的边界
+  stuck:
+    - en: Correct-looking SQL that fails hidden test schemas
+      cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+    - en: Over-normalised or under-normalised designs
+      cn: 过度范式或范式不足的设计
+    - en: ORM confusion masking missing SQL fundamentals
+      cn: 被 ORM 迷惑，SQL 基本功没补上
+  session_angles:
+    - en: Sketch the ER, then write queries against it
+      cn: 先画 ER，再对着写查询
+    - en: Explain a query plan in plain language
+      cn: 用白话解释执行计划
+    - en: Fix project schema / migration issues with you
+      cn: 一起修课设 schema / migration 问题
+  match: >-
+    database|\bsql\b|relational|information.?system|data.?manag|
+    mongodb|nosql|transaction
+  reading:
+    - kind: post
+      name: deep-dive-into-vector-database
+      title_en: Vector databases deep dive
+      title_cn: 向量数据库深入
+    - kind: glossary
+      name: approximate-nearest-neighbor
+      title_en: Approximate nearest neighbor
+      title_cn: 近似最近邻
+    - kind: glossary
+      name: dense-retrieval
+      title_en: Dense retrieval
+      title_cn: 稠密检索
+
+math-for-cs:
+  label_en: Math for computer science
+  label_cn: 计算机数学基础
+  lead_en: >-
+    CS math courses are where Chinese students often lose marks to English definitions,
+    not to raw calculation. Sessions rebuild the definition → example → exam question path
+    in both languages.
+  lead_cn: >-
+    计算机数学课上，留学生丢分常常在英文定义，而不在计算本身。
+    辅导会用双语重建「定义 → 例子 → 考题」这条路径。
+  topics:
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
+    - en: Discrete math proofs at coursework pace
+      cn: 课业节奏下的离散数学证明
+    - en: Translating lecture notation into worked examples
+      cn: 把课堂符号翻译成可下手的例子
+  stuck:
+    - en: Knowing the formula but not the exam phrasing
+      cn: 会公式，但吃不透英文考题表述
+    - en: Skipping definitions and jumping to plug-and-chug
+      cn: 跳过定义，直接套公式
+    - en: Weak link from math objects to code or ML use
+      cn: 数学对象与代码 / ML 用途之间断档
+  session_angles:
+    - en: Bilingual definition cards tied to one exam-style question each
+      cn: 每张双语定义卡对应一道考试风格题
+    - en: Worked examples before general proofs
+      cn: 先做例子，再写一般证明
+    - en: Connect the week’s math to the CS course that needs it
+      cn: 把当周数学接到真正用到它的 CS 课
+  match: >-
+    linear.?algebra|calculus|optim|probability|numer|discrete.?mathematic|
+    mathematical|multivariate|matrix
+  reading:
+    - kind: post
+      name: linear-algebra-ml
+      title_en: From linear algebra to linear regression
+      title_cn: 从线性代数到线性回归
+    - kind: post
+      name: linear-optimization-in-finance
+      title_en: Linear optimisation in finance
+      title_cn: 金融中的线性优化
+    - kind: glossary
+      name: gradient-descent
+      title_en: Gradient descent
+      title_cn: 梯度下降
+
+security:
+  label_en: Security & privacy
+  label_cn: 安全与隐私
+  lead_en: >-
+    Security coursework mixes threat models with hands-on labs. I help you state the
+    attacker model clearly, then walk the exploit/defend steps you are allowed to practice.
+  lead_cn: >-
+    安全课既有威胁模型也有动手 Lab。我会帮你先把攻击者模型说清楚，
+    再按课程允许的范围走攻防步骤。
+  topics:
+    - en: Threat models and trust boundaries
+      cn: 威胁模型与信任边界
+    - en: Crypto primitives at course depth (not CTF spoilers)
+      cn: 课业深度的密码学原语（非 CTF 剧透）
+    - en: Web / network attack patterns the syllabus names
+      cn: 大纲点名的 Web / 网络攻击模式
+    - en: Secure coding habits for assignments
+      cn: 作业里的安全编码习惯
+    - en: Write-ups that separate fact from speculation
+      cn: 区分事实与推测的实验报告
+  stuck:
+    - en: Labs that need precise setup before any “hacking”
+      cn: Lab 还没配好环境就急着“黑”
+    - en: Confusing confidentiality, integrity, and availability
+      cn: 把机密性、完整性、可用性搅在一起
+    - en: Reports that list tools without explaining the finding
+      cn: 报告只罗列工具，不解释发现
+  session_angles:
+    - en: Restate the threat model in one paragraph
+      cn: 用一段话重述威胁模型
+    - en: Reproduce the lab outcome, then explain the mechanism
+      cn: 先复现 Lab 结果，再讲清机制
+    - en: Structure the write-up around evidence
+      cn: 按证据组织报告结构
+  match: >-
+    secur|crypto|privacy|ethics|cyber|forensic|malware|authentica
+  reading:
+    - kind: post
+      name: rag-based-knowledge-base-with-agent-support
+      title_en: RAG knowledge bases with agents
+      title_cn: 带 Agent 的 RAG 知识库
+    - kind: glossary
+      name: alignment
+      title_en: Alignment
+      title_cn: 对齐
+
+web-mobile:
+  label_en: Web, mobile & HCI
+  label_cn: Web、移动与人机交互
+  lead_en: >-
+    Web and mobile courses grade shipped behaviour and clear UX reasoning. Sessions
+    focus on architecture choices, debugging the client/server boundary, and demo readiness.
+  lead_cn: >-
+    Web / 移动课看重可演示的行为与说得清的交互理由。辅导聚焦架构选择、
+    调试前后端边界，以及演示准备。
+  topics:
+    - en: Client / server responsibilities and APIs
+      cn: 前后端职责与 API
+    - en: State, routing, and common framework patterns
+      cn: 状态、路由与常见框架模式
+    - en: Mobile lifecycle and platform constraints
+      cn: 移动端生命周期与平台约束
+    - en: Accessibility and HCI evaluation basics
+      cn: 无障碍与 HCI 评估基础
+    - en: Demo scripts and marking rubrics
+      cn: 演示脚本与评分量表
+  stuck:
+    - en: UI looks done but integration tests fail
+      cn: 界面看起来完成了，集成测试不过
+    - en: Unclear ownership in group projects
+      cn: 小组项目里职责不清
+    - en: Demo crashes from environment / device mismatch
+      cn: 环境 / 设备不一致导致演示崩溃
+  session_angles:
+    - en: Trace one user action end-to-end
+      cn: 把一个用户操作端到端走通
+    - en: Fix the highest-risk demo path first
+      cn: 先修演示里最高风险的路径
+    - en: Align the write-up with what the rubric scores
+      cn: 让报告对齐评分量表真正打分的点
+  match: >-
+    \bweb\b|mobile|hci|human.?computer|user.?interface|user.?experience|
+    \bui\b|\bux\b|front.?end|android|ios\b|react|fullstack
+  reading:
+    - kind: post
+      name: hugging-face-mcp-with-openai-zero-code-setup
+      title_en: Hugging Face MCP with OpenAI setup
+      title_cn: Hugging Face MCP 与 OpenAI 零代码配置
+    - kind: glossary
+      name: agent
+      title_en: Agent
+      title_cn: Agent
+
+general:
+  label_en: Computer science coursework
+  label_cn: 计算机课业
+  lead_en: >-
+    Whatever the course code, the tutoring pattern stays the same: bilingual concept
+    catch-up, assignment debugging with you in control, and exam revision on weak spots.
+    You submit your own work.
+  lead_cn: >-
+    不论课号是什么，辅导节奏一致：中英双语补概念、你来操作我旁路 debug、
+    针对薄弱点备考。作业由你本人提交。
+  topics:
+    - en: Lecture catch-up in Chinese and English
+      cn: 中英双语补课与知识点梳理
+    - en: Assignment approach and debugging
+      cn: 作业思路与调试
+    - en: Project structure and write-up feedback
+      cn: Project 结构与报告反馈
+    - en: Exam topic maps on weak areas
+      cn: 针对薄弱点的考点地图
+    - en: Tools the course actually uses (Git, notebooks, LaTeX)
+      cn: 课程真正用到的工具（Git、notebook、LaTeX）
+  stuck:
+    - en: English lectures outpacing note-taking
+      cn: 英文课速度快于记笔记速度
+    - en: Stacked deadlines across labs and projects
+      cn: Lab 与 Project 截止日期叠在一起
+    - en: Not knowing what “good enough” looks like for the rubric
+      cn: 不清楚评分量表眼里的“够好”
+  session_angles:
+    - en: Start from your materials and the nearest deadline
+      cn: 从你的材料与最近 DDL 开始
+    - en: Leave with a concrete next-step checklist
+      cn: 课后带走一份可执行的下一步清单
+    - en: Book follow-ups only where they still move the grade
+      cn: 只在还能拉动成绩的地方约后续课
+  match: ""
+  reading:
+    - kind: post
+      name: linear-algebra-ml
+      title_en: From linear algebra to linear regression
+      title_cn: 从线性代数到线性回归
+    - kind: post
+      name: rag-based-knowledge-base-with-agent-support
+      title_en: RAG knowledge bases with agents
+      title_cn: 带 Agent 的 RAG 知识库

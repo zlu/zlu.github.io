@@ -1255,6 +1255,45 @@ body.teach-page-active .site {
     border-bottom: 1px solid #e5e7eb;
 }
 
+.teach-coverage-proof {
+    margin: 0.75rem 0 0;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.teach-section-note {
+    margin: 0 0 0.75rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.teach-topic-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.teach-topic-chips li {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.35rem;
+    background: #f9fafb;
+    color: #1f2937;
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+
+.teach-related-uni {
+    display: block;
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 0.15rem;
+}
+
 .teach-landing-lead {
     margin: 0 0 1rem;
     color: #4b5563;

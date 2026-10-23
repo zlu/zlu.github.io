@@ -12,8 +12,8 @@ layout: default
 
   <header class="teach-landing-header">
     <p class="teach-hero-eyebrow"
-       data-en="{{ page.university }} · {{ page.region_en }}"
-       data-cn="{{ page.university }} · {{ page.region_cn }}">{{ page.university }} · {{ page.region_cn }}</p>
+       data-en="{{ page.university }} · {{ page.region_en }} · {{ page.theme_label_en }}"
+       data-cn="{{ page.university }} · {{ page.region_cn }} · {{ page.theme_label_cn }}">{{ page.university }} · {{ page.region_cn }} · {{ page.theme_label_cn }}</p>
     <h1>
       {% if page.course_code != "" %}<span class="teach-code">{{ page.course_code }}</span> {% endif %}
       <span data-en="{{ page.course_title }} tutoring"
@@ -27,6 +27,9 @@ layout: default
        data-en="Department: {{ page.course_department }}"
        data-cn="院系：{{ page.course_department }}">院系：{{ page.course_department }}</p>
     {% endif %}
+    <p class="teach-coverage-proof"
+       data-en="Indexed coverage: {{ site.data.teach_uni_count }} universities · {{ site.data.teach_course_count }} course pages. Message WeChat with school + course code."
+       data-cn="已索引 {{ site.data.teach_uni_count }} 所大学 · {{ site.data.teach_course_count }} 门课页。微信发送学校 + 课号即可。">已索引 {{ site.data.teach_uni_count }} 所大学 · {{ site.data.teach_course_count }} 门课页。微信发送学校 + 课号即可。</p>
     <div class="teach-hero-actions">
       <a class="btn btn-primary" href="/teach/"
          data-en="Book on WeChat"
@@ -49,6 +52,49 @@ layout: default
     </div>
   </section>
 
+  {% if page.theme_lead_cn != "" or page.theme_lead_en != "" %}
+  <section class="teach-landing-section">
+    <h2 data-en="How I approach {{ page.theme_label_en | downcase }} courses"
+        data-cn="这类课（{{ page.theme_label_cn }}）我怎么辅导">这类课（{{ page.theme_label_cn }}）我怎么辅导</h2>
+    <p data-en="{{ page.theme_lead_en }}"
+       data-cn="{{ page.theme_lead_cn }}">{{ page.theme_lead_cn }}</p>
+    {% if page.theme_session_angles and page.theme_session_angles.size > 0 %}
+    <ul class="teach-proof">
+      {% for item in page.theme_session_angles %}
+      <li data-en="{{ item.en }}" data-cn="{{ item.cn }}">{{ item.cn }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if page.theme_topics and page.theme_topics.size > 0 %}
+  <section class="teach-landing-section">
+    <h2 data-en="Topics we typically work through"
+        data-cn="常见辅导主题">常见辅导主题</h2>
+    <p class="teach-section-note"
+       data-en="Thematic tutoring angles from real sessions — not a copy of any university syllabus."
+       data-cn="来自真实辅导经验的主题角度，不是任何学校的大纲搬迁。">来自真实辅导经验的主题角度，不是任何学校的大纲搬迁。</p>
+    <ul class="teach-topic-chips">
+      {% for topic in page.theme_topics %}
+      <li data-en="{{ topic.en }}" data-cn="{{ topic.cn }}">{{ topic.cn }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.theme_stuck and page.theme_stuck.size > 0 %}
+  <section class="teach-landing-section">
+    <h2 data-en="Where students usually get stuck"
+        data-cn="留学生常见卡点">留学生常见卡点</h2>
+    <ul class="teach-proof">
+      {% for item in page.theme_stuck %}
+      <li data-en="{{ item.en }}" data-cn="{{ item.cn }}">{{ item.cn }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   <section class="teach-landing-section">
     <h2 data-en="What we can cover"
         data-cn="可以帮你什么">可以帮你什么</h2>
@@ -63,6 +109,58 @@ layout: default
           data-cn="针对薄弱点的考试复习">针对薄弱点的考试复习</li>
     </ul>
   </section>
+
+  {% if page.related_same_uni and page.related_same_uni.size > 0 %}
+  <section class="teach-landing-section">
+    <h2 data-en="Also at {{ page.university }}"
+        data-cn="{{ page.university }} 相关课程">{{ page.university }} 相关课程</h2>
+    <ul class="teach-course-links">
+      {% for c in page.related_same_uni %}
+      <li>
+        <a href="{{ c.url }}">
+          {% if c.code != "" %}<strong>{{ c.code }}</strong>: {% endif %}{{ c.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.related_same_theme and page.related_same_theme.size > 0 %}
+  <section class="teach-landing-section">
+    <h2 data-en="Same subject at other universities"
+        data-cn="其他学校的同类课程">其他学校的同类课程</h2>
+    <p class="teach-section-note"
+       data-en="I tutor {{ page.theme_label_en | downcase }} coursework across schools — pick your code or message WeChat if yours is missing."
+       data-cn="同类（{{ page.theme_label_cn }}）课我跨校都在辅导；目录没有你的课号也可以微信发我。">同类（{{ page.theme_label_cn }}）课我跨校都在辅导；目录没有你的课号也可以微信发我。</p>
+    <ul class="teach-course-links">
+      {% for c in page.related_same_theme %}
+      <li>
+        <a href="{{ c.url }}">
+          <span class="teach-related-uni">{{ c.university }}</span>
+          {% if c.code != "" %}<strong>{{ c.code }}</strong>: {% endif %}{{ c.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if page.theme_reading and page.theme_reading.size > 0 %}
+  <section class="teach-landing-section">
+    <h2 data-en="Notes from my writing"
+        data-cn="我写过的相关笔记">我写过的相关笔记</h2>
+    <ul class="teach-course-links">
+      {% for r in page.theme_reading %}
+      <li>
+        <a href="{{ r.url }}"
+           data-en="{{ r.title_en }}"
+           data-cn="{{ r.title_cn }}">{{ r.title_cn }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
   <section class="teach-landing-section">
     <h2 data-en="Before the first session"
@@ -97,6 +195,8 @@ layout: default
     "name": {{ page.university | append: " Computer Science Tutoring" | jsonify }},
     "url": {{ "/teach/universities/" | append: page.uni_slug | append: "/" | absolute_url | jsonify }}
   },
+  "about": {{ page.theme_about | jsonify }},
+  "keywords": {{ page.keywords | jsonify }},
   "inLanguage": ["en", "zh-CN"]
 }
 </script>
