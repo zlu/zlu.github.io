@@ -546,6 +546,20 @@ body.teach-page-active .content {
     letter-spacing: 0.04em;
 }
 
+.teach-hero-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.teach-brand-mark {
+    width: 1.35em;
+    height: 1.35em;
+    border-radius: 0.28em;
+    display: block;
+    flex-shrink: 0;
+}
+
 .teach-hero h1 {
     margin: 0 0 0.75rem;
     color: var(--teach-ink, #1a2332);

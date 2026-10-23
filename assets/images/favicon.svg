@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="zlu">
+  <!-- Full-bleed teal field — no white frame -->
+  <rect width="1024" height="1024" fill="#0f6b6b"/>
+  <!-- Custom Z monogram (BetterReads-style split letterform), cream -->
+  <g fill="#F2ECE0">
+    <!-- Upper piece: top bar flowing into upper diagonal -->
+    <path d="
+      M 196 248
+      C 196 214 222 190 258 190
+      H 768
+      C 812 190 838 228 822 268
+      L 548 580
+      C 528 604 490 598 478 568
+      C 470 548 482 528 504 518
+      L 740 302
+      H 286
+      C 248 302 220 280 220 250
+      Z"/>
+    <!-- Lower piece: lower diagonal into bottom bar (gap along diagonal) -->
+    <path d="
+      M 546 456
+      C 562 438 592 440 606 458
+      L 780 668
+      H 286
+      C 242 668 216 704 230 744
+      C 240 776 268 802 304 802
+      H 766
+      C 810 802 836 764 820 724
+      C 812 704 790 690 768 690
+      H 392
+      L 546 456
+      Z"/>
+  </g>
+</svg>
