@@ -8,7 +8,8 @@ tags:
   - swift
   - developer-tools
   - product
-description: "My 1TB MacBook Pro kept screaming disk full. CleanMyMac wasn't finding the real culprits — so I built a native cleaner, found a 175GB .next cache, and reclaimed 500+ GB."
+description: "CleanMyMac missed my real disk hogs — a 175GB .next cache and a 60GB Cursor DB. I built a native macOS cleaner and reclaimed 500+ GB."
+keywords: "CleanMyMac, macOS disk cleaner, disk space, Swift, .next cache, Turbopack, Cursor state.vscdb, Android SDK, CoreSimulator, developer tools"
 comments: true
 ---
 
