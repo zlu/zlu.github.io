@@ -1,0 +1,22 @@
+{% comment %} Related glossary terms — same visual weight as ## References {% endcomment %}
+{% if page.glossary and page.glossary.size > 0 %}
+<section class="post-glossary-links">
+  <h2>Glossary</h2>
+  <ul>
+    {% for g in page.glossary %}
+      {% assign g_slug = g | slugify %}
+      {% assign g_doc = nil %}
+      {% for t in site.ai-glossary %}
+        {% if t.slug == g_slug or t.title == g %}{% assign g_doc = t %}{% break %}{% endif %}
+      {% endfor %}
+      <li>
+        {% if g_doc %}
+          <a href="{{ g_doc.url }}">{{ g_doc.title }}</a>
+        {% else %}
+          <a href="/ai-glossary/{{ g_slug }}/">{{ g }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

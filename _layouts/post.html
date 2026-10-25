@@ -35,6 +35,8 @@ layout: default
     {{ content }}
     {% endif %}
 
+    {% include post-glossary-links.html %}
+
     {% if page.previous or page.next %}
     <nav class="post-prev-next" aria-label="Adjacent posts">
       {% if page.previous %}

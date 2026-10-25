@@ -18,28 +18,6 @@
 </nav>
 {% endif %}
 
-{% if page.glossary and page.glossary.size > 0 %}
-<aside class="post-glossary-links">
-  <strong>Glossary</strong>
-  <ul>
-    {% for g in page.glossary %}
-      {% assign g_slug = g | slugify %}
-      {% assign g_doc = nil %}
-      {% for t in site.ai-glossary %}
-        {% if t.slug == g_slug or t.title == g %}{% assign g_doc = t %}{% break %}{% endif %}
-      {% endfor %}
-      <li>
-        {% if g_doc %}
-          <a href="{{ g_doc.url }}">{{ g_doc.title }}</a>
-        {% else %}
-          <a href="/ai-glossary/{{ g_slug }}/">{{ g }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
-{% endif %}
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

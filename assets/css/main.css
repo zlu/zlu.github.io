@@ -771,7 +771,7 @@ article.post blockquote {
   margin: 1.25em 0 1.75em;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0;
 }
 
 .attn-ladder-row {
@@ -783,16 +783,41 @@ article.post blockquote {
   gap: 0.45rem;
 }
 
-/* 4 → down → left → down → 5 */
+/* 4 → down → left → down → 5
+   Percentage SVG coords (no preserveAspectRatio stretch → no fat stems). */
 .attn-ladder-wrap {
-  display: block;
+  --wrap-to: 12.5%;
+  position: relative;
   width: 100%;
-  height: 1.35rem;
-  overflow: visible;
+  height: 2.75rem;
+  margin: 0;
+}
+
+.attn-ladder-wrap svg {
+  display: block;
+}
+
+.attn-ladder-wrap line {
+  stroke: #666;
+  stroke-width: 1.5;
+  stroke-linecap: square;
+  fill: none;
 }
 
 .attn-ladder-wrap-mobile {
   display: none;
+}
+
+.attn-ladder-wrap-arrow {
+  position: absolute;
+  left: var(--wrap-to);
+  bottom: -1px;
+  width: 0;
+  height: 0;
+  transform: translateX(-50%);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #666;
 }
 
 .attn-ladder .attn-ladder-row li {
@@ -842,6 +867,10 @@ article.post blockquote {
 
   .attn-ladder-row li:nth-child(2n)::after {
     content: none;
+  }
+
+  .attn-ladder-wrap {
+    --wrap-to: 25%;
   }
 
   .attn-ladder-wrap-desktop {
@@ -1151,9 +1180,8 @@ article.post blockquote {
   }
 }
 
-/* Post discoverability */
-.post-series,
-.post-glossary-links {
+/* Series nav (callout); glossary matches normal ## sections like References */
+.post-series {
   margin: 1em 0;
   padding: 0.75em 1em;
   background: #f8fafc;
@@ -1161,10 +1189,18 @@ article.post blockquote {
   font-size: 0.95em;
 }
 
-.post-series ol,
-.post-glossary-links ul {
+.post-series ol {
   margin: 0.4em 0 0;
   padding-left: 1.25em;
+}
+
+.post-glossary-links {
+  margin: 1.5em 0 0;
+}
+
+.post-glossary-links ul {
+  margin: 0.5em 0 0;
+  padding-left: 1.5em;
 }
 
 .post-prev-next {
