@@ -1,22 +1,71 @@
 ---
 layout: default
 ---
-<article class="teach-landing">
+<article class="teach-landing teach-uni-directory" id="teach-uni-directory">
   <nav class="teach-crumbs" aria-label="Breadcrumb">
     <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
     <span>/</span>
     <span data-en="Universities" data-cn="大学目录">大学目录</span>
   </nav>
 
-  <header class="teach-landing-header">
+  <header class="teach-landing-header teach-uni-dir-header">
+    <p class="teach-hero-eyebrow"
+       data-en="Evidence-backed directory"
+       data-cn="真实辅导覆盖目录">真实辅导覆盖目录</p>
     <h1 data-en="University CS tutoring directory"
         data-cn="大学计算机辅导目录">大学计算机辅导目录</h1>
     <p class="teach-landing-lead"
-       data-en="{{ page.universities.size }} universities I've actually tutored — course pages only when there is real coverage. Message WeChat with school + course code."
-       data-cn="{{ page.universities.size }} 所我实际辅导过的大学；有真实覆盖才建课页。微信发送学校 + 课号即可约课。">{{ page.universities.size }} 所我实际辅导过的大学；有真实覆盖才建课页。微信发送学校 + 课号即可约课。</p>
+       data-en="{{ page.universities.size }} universities · {{ page.course_count }} courses I’ve actually tutored. Course pages only when coverage is real — WeChat school + course code to book."
+       data-cn="{{ page.universities.size }} 所大学 · {{ page.course_count }} 门课；有真实覆盖才建课页。微信发送学校 + 课号即可约课。">{{ page.universities.size }} 所大学 · {{ page.course_count }} 门课；有真实覆盖才建课页。微信发送学校 + 课号即可约课。</p>
+
+    <dl class="teach-uni-stats" aria-label="Directory totals">
+      <div>
+        <dt data-en="Universities" data-cn="大学">大学</dt>
+        <dd>{{ page.universities.size }}</dd>
+      </div>
+      <div>
+        <dt data-en="Courses" data-cn="课程">课程</dt>
+        <dd>{{ page.course_count }}</dd>
+      </div>
+      <div>
+        <dt data-en="Regions" data-cn="地区">地区</dt>
+        <dd>{{ page.region_groups.size }}</dd>
+      </div>
+    </dl>
   </header>
 
-  <section class="teach-landing-section">
+  <section class="teach-landing-section teach-uni-dir-toolbar" aria-label="Directory filters">
+    <label class="teach-sr-only" for="teach-uni-search"
+           data-en="Search universities"
+           data-cn="搜索大学">搜索大学</label>
+    <input type="search"
+           id="teach-uni-search"
+           class="teach-uni-search"
+           autocomplete="off"
+           spellcheck="false"
+           data-en-placeholder="Search school name… e.g. UNSW, UCL, NUS"
+           data-cn-placeholder="搜索学校名… 如 UNSW、港大、南洋理工"
+           placeholder="搜索学校名… 如 UNSW、港大、南洋理工">
+    <p class="teach-uni-search-meta"
+       data-en="Filter by region or jump to a section below."
+       data-cn="可按地区筛选，或直接跳到下方分区。">可按地区筛选，或直接跳到下方分区。</p>
+    <p class="course-no-results teach-uni-no-results" hidden
+       data-en="No schools match. WeChat me the school + course code anyway."
+       data-cn="没有匹配的学校。仍可微信发我学校 + 课号。">没有匹配的学校。仍可微信发我学校 + 课号。</p>
+
+    <div class="teach-uni-filter-chips" role="group" aria-label="Region filter">
+      <button type="button" class="teach-chip is-active" data-region-filter="all"
+              data-en="All"
+              data-cn="全部">全部</button>
+      {% for group in page.region_groups %}
+      <button type="button" class="teach-chip" data-region-filter="{{ group.key }}"
+              data-en="{{ group.en }} ({{ group.count }})"
+              data-cn="{{ group.cn }} ({{ group.count }})">{{ group.cn }} ({{ group.count }})</button>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="teach-landing-section teach-uni-services">
     <h2 data-en="Browse by service"
         data-cn="按辅导类型">按辅导类型</h2>
     <div class="teach-region-links">
@@ -27,39 +76,74 @@ layout: default
     </div>
   </section>
 
-  <section class="teach-landing-section">
-    <h2 data-en="Browse by region"
-        data-cn="按地区浏览">按地区浏览</h2>
-    <div class="teach-region-links">
-      <a href="/teach/australia/" data-en="Australia" data-cn="澳大利亚">澳大利亚</a>
-      <a href="/teach/uk/" data-en="UK" data-cn="英国">英国</a>
-      <a href="/teach/usa/" data-en="USA" data-cn="美国">美国</a>
-      <a href="/teach/hong-kong/" data-en="Hong Kong" data-cn="香港">香港</a>
-      <a href="/teach/singapore/" data-en="Singapore" data-cn="新加坡">新加坡</a>
-      <a href="/teach/canada/" data-en="Canada" data-cn="加拿大">加拿大</a>
-      <a href="/teach/new-zealand/" data-en="New Zealand" data-cn="新西兰">新西兰</a>
-      <a href="/teach/malaysia/" data-en="Malaysia" data-cn="马来西亚">马来西亚</a>
-      <a href="/teach/germany/" data-en="Germany" data-cn="德国">德国</a>
-      <a href="/teach/ireland/" data-en="Ireland" data-cn="爱尔兰">爱尔兰</a>
-      <a href="/teach/china/" data-en="China / Macau" data-cn="中国 / 澳门">中国 / 澳门</a>
-    </div>
+  {% if page.featured and page.featured.size > 0 %}
+  <section class="teach-landing-section teach-uni-featured">
+    <h2 data-en="Deepest coverage"
+        data-cn="覆盖最深">覆盖最深</h2>
+    <p class="teach-section-note"
+       data-en="Schools with the most course pages linked from real tutoring work."
+       data-cn="课页最多的学校——来自实际辅导过的课号，不是空壳目录。">课页最多的学校——来自实际辅导过的课号，不是空壳目录。</p>
+    <ol class="teach-uni-featured-list">
+      {% for uni in page.featured %}
+      <li class="teach-uni-featured-item"
+          data-region="{{ uni.region }}"
+          data-filter-text="{{ uni.name | downcase }} {{ uni.slug }}">
+        <a href="/teach/universities/{{ uni.slug }}/">
+          <span class="teach-uni-featured-rank">{{ forloop.index }}</span>
+          <span class="teach-uni-featured-name">{{ uni.name }}</span>
+          <span class="teach-uni-badge"
+                data-en="{{ uni.courses.size }} courses"
+                data-cn="{{ uni.courses.size }} 门课">{{ uni.courses.size }} 门课</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
   </section>
+  {% endif %}
 
-  <section class="teach-landing-section">
-    <h2 data-en="Universities with real tutoring coverage"
-        data-cn="有真实辅导覆盖的大学">有真实辅导覆盖的大学</h2>
-    <ul class="teach-uni-index">
-      {% for uni in page.universities %}
-        {% if uni.courses.size > 0 %}
-        <li>
-          <a href="/teach/universities/{{ uni.slug }}/"><strong>{{ uni.name }}</strong></a>
-          <span class="teach-count">{{ uni.courses.size }}</span>
-        </li>
-        {% endif %}
+  <nav class="teach-uni-jump" aria-label="Jump to region">
+    {% for group in page.region_groups %}
+    <a href="#region-{{ group.key }}"
+       data-en="{{ group.en }}"
+       data-cn="{{ group.cn }}">{{ group.cn }}</a>
+    {% endfor %}
+  </nav>
+
+  {% for group in page.region_groups %}
+  <section class="teach-landing-section teach-uni-region"
+           id="region-{{ group.key }}"
+           data-region-section="{{ group.key }}">
+    <div class="teach-uni-region-head">
+      <h2>
+        <span data-en="{{ group.en }}" data-cn="{{ group.cn }}">{{ group.cn }}</span>
+        <span class="teach-uni-region-meta"
+              data-en="{{ group.count }} schools · {{ group.course_count }} courses"
+              data-cn="{{ group.count }} 所 · {{ group.course_count }} 门课">{{ group.count }} 所 · {{ group.course_count }} 门课</span>
+      </h2>
+      {% if group.key != "international" %}
+      <a class="teach-uni-region-link" href="/teach/{{ group.key }}/"
+         data-en="Region page →"
+         data-cn="地区页 →">地区页 →</a>
+      {% endif %}
+    </div>
+    <ul class="teach-uni-grid">
+      {% for uni in group.universities %}
+      <li class="teach-uni-item"
+          data-region="{{ group.key }}"
+          data-filter-text="{{ uni.name | downcase }} {{ uni.slug }} {{ group.en | downcase }} {{ group.cn }}">
+        <a href="/teach/universities/{{ uni.slug }}/">
+          <strong class="teach-uni-item-name">{{ uni.name }}</strong>
+          <span class="teach-uni-badge"
+                data-en="{{ uni.courses.size }} courses"
+                data-cn="{{ uni.courses.size }} 门课">{{ uni.courses.size }} 门课</span>
+        </a>
+      </li>
       {% endfor %}
     </ul>
-    <p class="teach-landing-back"
-       data-en="Empty school shells were removed from the index. If your course is missing, WeChat me the code."
-       data-cn="空壳学校页已从目录移除。若没有你的课号，微信发我即可。">空壳学校页已从目录移除。若没有你的课号，微信发我即可。</p>
   </section>
+  {% endfor %}
+
+  <p class="teach-landing-back"
+     data-en="Empty school shells were removed from the index. If your course is missing, WeChat me the code."
+     data-cn="空壳学校页已从目录移除。若没有你的课号，微信发我即可。">空壳学校页已从目录移除。若没有你的课号，微信发我即可。</p>
 </article>

@@ -773,6 +773,37 @@ module Jekyll
       description = "Directory of #{universities.size} universities and #{course_n} courses with " \
                     "real bilingual tutoring coverage — not an empty school list. AI, data science, programming."
 
+      region_groups = []
+      REGION_MAP.each do |key, meta|
+        unis = universities.select { |u| u["region"] == key }
+        next if unis.empty?
+
+        region_groups << {
+          "key" => key,
+          "en" => meta["en"],
+          "cn" => meta["cn"],
+          "count" => unis.size,
+          "course_count" => unis.sum { |u| Array(u["courses"]).size },
+          "universities" => unis.sort_by { |u| u["name"].to_s.downcase }
+        }
+      end
+      intl = universities.select { |u| u["region"] == "international" }
+      if intl.any?
+        region_groups << {
+          "key" => "international",
+          "en" => "International",
+          "cn" => "海外 / 其他",
+          "count" => intl.size,
+          "course_count" => intl.sum { |u| Array(u["courses"]).size },
+          "universities" => intl.sort_by { |u| u["name"].to_s.downcase }
+        }
+      end
+
+      featured = universities
+                   .select { |u| Array(u["courses"]).size.positive? }
+                   .sort_by { |u| [-Array(u["courses"]).size, -u["depth_score"].to_i, u["name"].to_s.downcase] }
+                   .first(8)
+
       page = TeachGeneratedPage.new(site, site.source, "teach/universities")
       page.data.merge!(
         "layout" => "teach_universities_index",
@@ -783,6 +814,9 @@ module Jekyll
         "description" => description,
         "keywords" => "university tutoring directory, 留学生辅导, computer science, AI",
         "universities" => universities,
+        "region_groups" => region_groups,
+        "featured" => featured,
+        "course_count" => course_n,
         "lang" => "zh-CN",
         "sitemap" => true
       )

@@ -1596,3 +1596,274 @@ body.teach-page-active .site {
 .teach-uni-row a:hover {
     text-decoration: underline;
 }
+
+/* ===== Universities directory ===== */
+.teach-uni-directory .teach-uni-dir-header {
+    border-bottom-color: var(--teach-line, #d5dde6);
+}
+
+.teach-uni-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 1.15rem 0 0;
+    padding: 0;
+}
+
+.teach-uni-stats > div {
+    padding: 0.85rem 0.9rem;
+    border: 1px solid var(--teach-line, #d5dde6);
+    border-radius: 2px;
+    background:
+        linear-gradient(160deg, var(--teach-accent-soft, #e6f2f2) 0%, #fff 55%);
+}
+
+.teach-uni-stats dt {
+    margin: 0;
+    color: var(--teach-muted, #5c6b7a);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}
+
+.teach-uni-stats dd {
+    margin: 0.2rem 0 0;
+    color: var(--teach-ink, #1a2332);
+    font-size: 1.65rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.teach-uni-dir-toolbar {
+    margin-bottom: 1.5rem;
+}
+
+.teach-uni-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid var(--teach-line, #d5dde6);
+    border-radius: 2px;
+    background: #fff;
+    color: var(--teach-ink, #1a2332);
+    font-size: 1.05rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.teach-uni-search:focus {
+    outline: none;
+    border-color: var(--teach-accent, #0f6b6b);
+    box-shadow: 0 0 0 3px rgba(15, 107, 107, 0.15);
+}
+
+.teach-uni-search-meta,
+.teach-uni-no-results {
+    margin: 0.55rem 0 0;
+    color: var(--teach-muted, #5c6b7a);
+    font-size: 0.95rem;
+}
+
+.teach-uni-no-results[hidden] {
+    display: none !important;
+}
+
+.teach-uni-filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0.85rem 0 0;
+}
+
+.teach-uni-directory .teach-chip {
+    border-color: var(--teach-line, #d5dde6);
+    border-radius: 2px;
+    color: var(--teach-ink, #1a2332);
+    background: #fff;
+}
+
+.teach-uni-directory .teach-chip:hover,
+.teach-uni-directory .teach-chip.is-active {
+    background: var(--teach-accent-soft, #e6f2f2);
+    border-color: var(--teach-accent, #0f6b6b);
+    color: var(--teach-accent, #0f6b6b);
+}
+
+.teach-uni-featured-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.teach-uni-featured-item a {
+    display: grid;
+    grid-template-columns: 1.75rem minmax(0, 1fr) auto;
+    gap: 0.65rem;
+    align-items: center;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--teach-line, #d5dde6);
+    border-radius: 2px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.teach-uni-featured-item a:hover {
+    border-color: var(--teach-accent, #0f6b6b);
+    background: var(--teach-accent-soft, #e6f2f2);
+}
+
+.teach-uni-featured-rank {
+    color: var(--teach-accent, #0f6b6b);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.teach-uni-featured-name {
+    color: var(--teach-ink, #1a2332);
+    font-weight: 600;
+    min-width: 0;
+}
+
+.teach-uni-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    background: var(--teach-accent-soft, #e6f2f2);
+    color: var(--teach-accent, #0f6b6b);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.teach-uni-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0 0 1.5rem;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--teach-line, #d5dde6);
+    border-bottom: 1px solid var(--teach-line, #d5dde6);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(6px);
+}
+
+.teach-uni-jump a {
+    color: var(--teach-ink, #1a2332);
+    text-decoration: none;
+    padding: 0.3rem 0.55rem;
+    border-radius: 2px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid transparent;
+}
+
+.teach-uni-jump a:hover {
+    color: var(--teach-accent, #0f6b6b);
+    border-bottom-color: var(--teach-accent, #0f6b6b);
+}
+
+.teach-uni-region-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin: 0 0 0.75rem;
+}
+
+.teach-uni-region-head h2 {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.45rem 0.75rem;
+}
+
+.teach-uni-region-meta {
+    color: var(--teach-muted, #5c6b7a);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.teach-uni-region-link {
+    color: var(--teach-accent, #0f6b6b);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.teach-uni-region-link:hover {
+    border-bottom: 1px solid var(--teach-accent, #0f6b6b);
+}
+
+.teach-uni-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.45rem;
+}
+
+.teach-uni-item a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.65rem;
+    min-height: 3rem;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid var(--teach-line, #d5dde6);
+    border-radius: 2px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.teach-uni-item a:hover {
+    border-color: var(--teach-accent, #0f6b6b);
+    background: var(--teach-accent-soft, #e6f2f2);
+}
+
+.teach-uni-item-name {
+    color: var(--teach-ink, #1a2332);
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.teach-uni-item.is-hidden,
+.teach-uni-featured-item.is-hidden,
+.teach-uni-region.is-hidden {
+    display: none !important;
+}
+
+@media (max-width: 560px) {
+    .teach-uni-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.45rem;
+    }
+
+    .teach-uni-stats > div {
+        padding: 0.65rem 0.55rem;
+    }
+
+    .teach-uni-stats dd {
+        font-size: 1.35rem;
+    }
+
+    .teach-uni-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teach-uni-featured-item a {
+        grid-template-columns: 1.4rem minmax(0, 1fr);
+    }
+
+    .teach-uni-featured-item .teach-uni-badge {
+        grid-column: 2;
+    }
+}

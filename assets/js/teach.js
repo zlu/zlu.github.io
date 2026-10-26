@@ -106,7 +106,107 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     filterCourses();
+    initUniDirectory();
 });
+
+function initUniDirectory() {
+    const root = document.getElementById('teach-uni-directory');
+    if (!root) return;
+
+    const search = root.querySelector('#teach-uni-search');
+    const chips = root.querySelectorAll('[data-region-filter]');
+    const emptyMsg = root.querySelector('.teach-uni-no-results');
+    const searchMeta = root.querySelector('.teach-uni-search-meta');
+    let activeRegion = 'all';
+
+    function applyLangPlaceholder(langCode) {
+        if (!search) return;
+        const key = langCode === 'cn' ? 'data-cn-placeholder' : 'data-en-placeholder';
+        const text = search.getAttribute(key);
+        if (text) search.setAttribute('placeholder', text);
+    }
+
+    function applyFilter() {
+        const query = ((search && search.value) || '').toLowerCase().trim();
+        let visibleCount = 0;
+
+        root.querySelectorAll('.teach-uni-item, .teach-uni-featured-item').forEach(item => {
+            const region = item.getAttribute('data-region') || '';
+            const hay = (item.getAttribute('data-filter-text') || '').toLowerCase();
+            const regionOk = activeRegion === 'all' || region === activeRegion;
+            const queryOk = !query || hay.includes(query);
+            const show = regionOk && queryOk;
+            item.classList.toggle('is-hidden', !show);
+            if (show && item.classList.contains('teach-uni-item')) visibleCount++;
+        });
+
+        root.querySelectorAll('[data-region-section]').forEach(section => {
+            const key = section.getAttribute('data-region-section');
+            const regionOk = activeRegion === 'all' || key === activeRegion;
+            const anyVisible = Array.from(section.querySelectorAll('.teach-uni-item'))
+                .some(item => !item.classList.contains('is-hidden'));
+            section.classList.toggle('is-hidden', !regionOk || !anyVisible);
+        });
+
+        const featured = root.querySelector('.teach-uni-featured');
+        if (featured) {
+            const anyFeatured = Array.from(featured.querySelectorAll('.teach-uni-featured-item'))
+                .some(item => !item.classList.contains('is-hidden'));
+            featured.classList.toggle('is-hidden', !anyFeatured);
+        }
+
+        const jump = root.querySelector('.teach-uni-jump');
+        if (jump) {
+            jump.querySelectorAll('a').forEach(link => {
+                const href = link.getAttribute('href') || '';
+                const key = href.replace('#region-', '');
+                const section = root.querySelector(`[data-region-section="${key}"]`);
+                const hide = activeRegion !== 'all'
+                    ? key !== activeRegion
+                    : !!(section && section.classList.contains('is-hidden'));
+                link.classList.toggle('is-hidden', hide);
+                if (hide) link.style.display = 'none';
+                else link.style.display = '';
+            });
+            const anyJump = Array.from(jump.querySelectorAll('a'))
+                .some(a => a.style.display !== 'none');
+            jump.style.display = anyJump ? '' : 'none';
+        }
+
+        if (emptyMsg) emptyMsg.hidden = visibleCount !== 0;
+        if (searchMeta) searchMeta.style.display = query || activeRegion !== 'all' ? 'none' : '';
+    }
+
+    if (search) {
+        const handler = () => applyFilter();
+        search.addEventListener('input', handler);
+        search.addEventListener('keyup', handler);
+    }
+
+    chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            activeRegion = chip.getAttribute('data-region-filter') || 'all';
+            chips.forEach(c => c.classList.remove('is-active'));
+            chip.classList.add('is-active');
+            applyFilter();
+            if (activeRegion !== 'all') {
+                const section = root.querySelector(`[data-region-section="${activeRegion}"]`);
+                if (section && !section.classList.contains('is-hidden')) {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    });
+
+    document.addEventListener('languageChanged', function(e) {
+        const langCode = (e && e.detail && e.detail.language === 'cn') ? 'cn' : 'en';
+        applyLangPlaceholder(langCode);
+    });
+
+    const htmlLang = document.documentElement.lang.toLowerCase();
+    applyLangPlaceholder(htmlLang === 'zh-cn' ? 'cn' : 'en');
+    applyFilter();
+}
 
 function filterCourses(inputEl) {
   function updateMessages(container, hasQuery, matchCount) {
