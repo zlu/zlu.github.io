@@ -10,6 +10,7 @@ tags:
   - product
 description: "CleanMyMac missed my real disk hogs — a 175GB .next cache and a 60GB Cursor DB. I built a native macOS cleaner and reclaimed 500+ GB."
 keywords: "CleanMyMac, macOS disk cleaner, disk space, Swift, .next cache, Turbopack, Cursor state.vscdb, Android SDK, CoreSimulator, developer tools"
+image: /assets/images/uploads/disk-cleaner/mac-cleaner.png
 comments: true
 ---
 
@@ -42,6 +43,10 @@ My app started as a space map: walk the Data volume, size the large folders, lab
 - **Emulator / simulator inventory** — iOS CoreSimulator, Android AVDs, even Huawei images, with apps inside you can remove selectively
 - **Android SDK package panel** — platforms, system images, NDK, CMake, build-tools, without opening Studio first
 - **Honest sizing** — allocated bytes instead of sparse logical size (DerivedData once claimed to be ~40 GB; on disk it was ~300 MB), plus a size cache that invalidates ancestors when a child shrinks
+
+![Similar photos review: Vision-matched near-duplicates with a recommended keep and reclaim total](/assets/images/uploads/disk-cleaner/mac-cleaner.png)
+
+*Similar photos in the cleaner — on-device Vision groups near-duplicates; keep the sharpest, reclaim the rest.*
 
 That last one mattered more than it sounds. After deleting a huge cache, the parent folder's mtime often **doesn't change**, so a naive cache keeps serving the old multi‑hundred‑GB number. I was lied to about a project that was already cleaned. Fixing the cache was as important as finding the junk.
 
