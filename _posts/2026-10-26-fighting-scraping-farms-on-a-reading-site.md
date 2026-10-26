@@ -118,7 +118,9 @@ These build **third-party SEO products**, not Google rankings. Blocking them doe
 | Token | Action |
 | --- | --- |
 | `AhrefsBot`, `AhrefsSiteAudit` | **Allow HTML** like search (deliberate — Site Explorer visibility). Named in robots. Still blocked on EPUB / APIs / reader. |
-| `SemrushBot` (+ variants), Moz `DotBot` / `rogerbot`, `MJ12bot`, SE Ranking, DataForSEO, Serpstat, Babbar, BLEXBot, Screaming Frog | **Automation** — rate-limit HTML, 403 expensive paths |
+| `SemrushBot` (+ variants) | **Automation** — rate-limit HTML, 403 expensive paths |
+| Moz `DotBot` / `rogerbot`, `MJ12bot` | Same automation posture |
+| SE Ranking, DataForSEO, Serpstat, Babbar, BLEXBot, Screaming Frog | Same automation posture |
 
 Open policy question I left documented: if we want competitors’ Semrush / SE Ranking graphs to show our link profile the same way Ahrefs does, promote those UAs the same way. Until then they stay throttled scrapers. `SERankingBacklinksBot` showed up in crawler logs ~Oct 2026; still on default automation posture.
 

@@ -1218,16 +1218,31 @@ article.post blockquote {
   text-align: right;
 }
 
-/* Markdown tables in posts */
+/* Markdown tables in posts.
+   First-column nowrap was making Token lists one long line, pushing Action
+   off-screen while .content { overflow-x: hidden } blocked scrolling — which
+   also left a tall empty Token cell matching the wrapped Action height. */
 .content table,
 article.post table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin: 1em 0 1.5em;
   font-size: 0.95em;
   line-height: 1.45;
+  table-layout: auto;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content table thead,
+.content table tbody,
+article.post table thead,
+article.post table tbody {
   display: table;
-  overflow-x: visible;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .content table th,
@@ -1238,6 +1253,8 @@ article.post table td {
   padding: 0.65em 0.85em;
   vertical-align: top;
   text-align: left;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .content table th,
@@ -1254,18 +1271,14 @@ article.post table tr:nth-child(even) td {
 
 .content table td:first-child,
 article.post table td:first-child {
-  white-space: nowrap;
   font-weight: 600;
   background: #f8fafc;
+  width: 34%;
 }
 
-@media (max-width: 480px) {
-  .content table,
-  article.post table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+.content table td:first-child code,
+article.post table td:first-child code {
+  white-space: normal;
 }
 
 /* In-post glossary hover tips */
