@@ -25,11 +25,13 @@ In general, I use **zlu** as my user name on networks and social channels when a
 - [SpeakerDeck](https://speakerdeck.com/zlu) - Some of the presentations I gave.  
 - [BetterReads][betterreads] - Books I read.
 - [Good Reads][goodreads] - Tracking of some books I read.
-- [500px][500px] - Some photos I took.
+- [Photos][photos] - Some photos I took.
+- [500px][500px] - Old storeage of some photos I took.
 
 
 [betterreads]: https://www.betterreads.dev/u/zlu "BetterReads"
 [goodreads]: https://www.goodreads.com/zlulz "GoodReads"
+[photos]: /photos/ "Photos"
 [500px]: https://500px.com/p/zlu?view=photos "500px"
 [flickr]: https://www.flickr.com/photos/zzlluu/ "Flickr"
 

@@ -106,3 +106,43 @@ collections:
           required: false,
         }
       - { label: "Definition", name: "body", widget: "markdown" }
+  - name: "photos"
+    label: "Photos"
+    folder: "_photos/"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}} — {{place}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Taken at", name: "taken_at", widget: "string", required: false, hint: "ISO datetime from EXIF, e.g. 2024-11-03T14:22:01+09:00" }
+      - { label: "Timezone", name: "timezone", widget: "string", required: false, hint: "e.g. +09:00" }
+      - { label: "Place", name: "place", widget: "string", required: false }
+      - { label: "Latitude", name: "lat", widget: "number", required: false, value_type: "float" }
+      - { label: "Longitude", name: "lon", widget: "number", required: false, value_type: "float" }
+      - { label: "Camera", name: "camera", widget: "string", required: false, hint: "e.g. Leica M6 / Summicron 35" }
+      - {
+          label: "Web image URL",
+          name: "image",
+          widget: "string",
+          hint: "Public R2 URL from photos_add.py, e.g. https://media.zlu.me/web/….jpg",
+        }
+      - {
+          label: "Thumb URL",
+          name: "thumb",
+          widget: "string",
+          required: false,
+          hint: "Optional; defaults to web image",
+        }
+      - {
+          label: "Original path (Baidu)",
+          name: "original",
+          widget: "string",
+          required: false,
+          hint: "Private archive path only — not shown on the public gallery",
+        }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Notes", name: "body", widget: "markdown", required: false }

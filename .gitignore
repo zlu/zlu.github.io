@@ -10,3 +10,5 @@ zlu.github.io.code-workspace
 .scripts/indexnow.env
 .scripts/indexnow_submit_state.json
 .scripts/indexnow_submit.log
+.scripts/r2.env
+.scripts/.photos-work/

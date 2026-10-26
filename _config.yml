@@ -17,6 +17,8 @@ redcarpet:
 highlighter: rouge
 port: 4000
 exclude: ["vendor"]
+# Public base URL for web-sized portfolio images on Cloudflare R2 (no Worker).
+photo_cdn: "https://media.zlu.me"
 collections:
   archives:
     output: true
@@ -30,6 +32,8 @@ collections:
   tags:
     output: true
     permalink: /tags/:name/
+  photos:
+    output: false
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -80,3 +84,8 @@ defaults:
     values:
       sitemap: false
       robots: noindex
+  - scope:
+      path: ""
+      type: photos
+    values:
+      published: true
