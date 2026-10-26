@@ -66,3 +66,11 @@ python3 .scripts/baidu_submit_urls.py --dry-run
 ## Deploy
 
 [`.github/workflows/jekyll.yml`](.github/workflows/jekyll.yml) runs `bundle exec jekyll build` and deploys the artifact to GitHub Pages. Custom plugins must run in CI (stock GitHub Pages Jekyll would skip them and leave `/teach/*` as 404).
+
+## Jekyll Compose
+- `bundle exec jekyll draft "My New Draft"`: Generates a new Markdown file inside your _drafts/ folder with basic predefined front matter.
+- `bundle exec jekyll post "Hello World"`: Creates a fresh blog post directly in _posts/, automatically prepending today's date to the filename (e.g., 2026-10-27-hello-world.md).
+- `bundle exec jekyll page "About Me"`: Instantly spins up a standalone site page (like about-me.md).
+- `bundle exec jekyll publish _drafts/my-new-draft.md`: Moves a draft file from your _drafts/ directory to _posts/, renaming it with the current date so it is ready to publish.
+- `bundle exec jekyll unpublish _posts/2026-10-27-hello-world.md`: Performs the reverse, stripping the date off the filename and shifting it back to your _drafts/ archive.
+- `bundle exec jekyll rename _posts/old-title.md "New Title"`: Safely renames an existing post or draft filename and updates its corresponding internal title attributes.
