@@ -63,5 +63,3 @@ Rangefinder work (and more) from travel and everyday wandering. Open an album fo
 {% endif %}
 
 {% endif %}
-
-<link rel="stylesheet" href="/assets/css/photos.css">
