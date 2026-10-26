@@ -5,6 +5,12 @@
   margin: 1.5em 0;
 }
 
+.photos-order-note {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
 .photos-empty code {
   font-size: 0.92em;
 }
@@ -150,7 +156,7 @@
 .photos-lightbox img {
   display: block;
   max-width: 96vw;
-  max-height: calc(94vh - 4.5rem);
+  max-height: calc(94vh - 7rem);
   width: auto;
   height: auto;
   margin: 0 auto;
@@ -158,7 +164,7 @@
 }
 
 .photos-lightbox-caption {
-  padding: 0.65rem 1rem 0.85rem;
+  padding: 0.65rem 1rem 0.95rem;
   font-size: 0.9rem;
 }
 
@@ -170,6 +176,15 @@
   color: #aaa;
   font-size: 0.85rem;
   margin-top: 0.15rem;
+}
+
+#photos-lightbox-desc {
+  color: #ddd;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin: 0.55rem 0 0;
+  max-width: 42em;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 560px) {

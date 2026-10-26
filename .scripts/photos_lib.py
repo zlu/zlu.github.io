@@ -158,13 +158,17 @@ def list_photo_entries() -> list[dict]:
                 fm[key] = val.lower() in ("true", "yes", "1")
             else:
                 fm[key] = val
+        # Body after front matter = lightbox description
+        body = parts[2].strip()
+        if body:
+            fm["description"] = body
         if fm.get("image"):
             entries.append(fm)
     return entries
 
 
 def update_photo_fields(slug: str, **fields) -> dict:
-    """Update selected front-matter fields on an existing _photos/<slug>.md."""
+    """Update selected front-matter fields (and optional description body)."""
     path = PHOTOS_DIR / f"{slug}.md"
     if not path.is_file():
         raise PhotosError(f"No photo entry: {slug}")
@@ -176,6 +180,8 @@ def update_photo_fields(slug: str, **fields) -> dict:
         raise PhotosError(f"Invalid front matter: {slug}")
     fm_lines = parts[1].splitlines()
     body = parts[2]
+    if "description" in fields and fields["description"] is not None:
+        body = "\n" + str(fields["description"]).strip() + "\n"
     allowed = {"title", "place", "camera", "date", "taken_at", "timezone", "published"}
     updates = {k: v for k, v in fields.items() if k in allowed and v is not None}
 

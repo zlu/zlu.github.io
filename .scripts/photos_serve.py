@@ -520,19 +520,23 @@ PAGE = r"""<!DOCTYPE html>
           '<div class="fields">' +
             '<input type="text" class="lib-title" value="">' +
             '<input type="text" class="lib-place" placeholder="Place" value="">' +
+            '<textarea class="lib-desc" rows="2" placeholder="Description (shown when clicked on /photos/)" style="width:100%;font:inherit;padding:0.35rem 0.5rem;border:1px solid var(--line);border-radius:3px;resize:vertical"></textarea>' +
             '<div class="meta">' + escapeHtml([p.date, p.camera].filter(Boolean).join(' · ')) + '</div>' +
           '</div>' +
           '<button type="button" class="primary lib-save" style="padding:0.4rem 0.7rem;align-self:center">Save</button>';
         li.querySelector('img').src = p.thumb || p.image;
         const titleInput = li.querySelector('.lib-title');
         const placeInput = li.querySelector('.lib-place');
+        const descInput = li.querySelector('.lib-desc');
         titleInput.value = p.title || '';
         placeInput.value = p.place || '';
+        descInput.value = p.description || '';
         li.querySelector('.lib-save').addEventListener('click', async () => {
           const body = {
             slug: p.slug,
             title: titleInput.value.trim(),
             place: placeInput.value.trim(),
+            description: descInput.value,
           };
           const r = await fetch('/api/library/update', {
             method: 'POST',
@@ -696,6 +700,7 @@ class Handler(BaseHTTPRequestHandler):
                     title=payload.get("title"),
                     place=payload.get("place"),
                     camera=payload.get("camera"),
+                    description=payload.get("description"),
                 )
                 raw = json.dumps(updated).encode("utf-8")
                 self._send(200, raw, "application/json")

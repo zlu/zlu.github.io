@@ -14,12 +14,18 @@ Rangefinder work (and more) from travel and everyday wandering. Web versions liv
 {% if gallery.size == 0 %}
 <p class="photos-empty">No photos published yet.</p>
 {% else %}
+<p class="photos-order-note">Newest first · left to right, top to bottom. Filter by place when there are several.</p>
 <div class="photos-filters" id="photos-filters" hidden>
   <button type="button" class="photos-filter is-active" data-place="">All</button>
 </div>
 
 <div class="photos-grid" id="photos-grid">
   {% for photo in gallery %}
+  {% assign desc = photo.description | default: '' | strip %}
+  {% assign body_text = photo.content | strip_html | strip | normalize_whitespace %}
+  {% if desc == blank and body_text != blank %}
+    {% assign desc = body_text %}
+  {% endif %}
   <figure class="photos-item"
           data-place="{{ photo.place | default: '' | escape }}"
           data-year="{{ photo.date | date: '%Y' }}">
@@ -36,6 +42,9 @@ Rangefinder work (and more) from travel and everyday wandering. Web versions liv
            width="600"
            height="400">
     </button>
+    {% if desc != blank %}
+    <p class="photos-item-desc" hidden>{{ desc | escape }}</p>
+    {% endif %}
     <figcaption>
       <span class="photos-caption-title">{{ photo.title }}</span>
       {% if photo.place or photo.date %}
@@ -57,6 +66,7 @@ Rangefinder work (and more) from travel and everyday wandering. Web versions liv
   <div class="photos-lightbox-caption">
     <div id="photos-lightbox-title"></div>
     <div id="photos-lightbox-meta"></div>
+    <p id="photos-lightbox-desc" hidden></p>
   </div>
 </dialog>
 

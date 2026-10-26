@@ -7,6 +7,7 @@
   var img = document.getElementById('photos-lightbox-img');
   var titleEl = document.getElementById('photos-lightbox-title');
   var metaEl = document.getElementById('photos-lightbox-meta');
+  var descEl = document.getElementById('photos-lightbox-desc');
   var items = Array.prototype.slice.call(grid.querySelectorAll('.photos-item'));
 
   // Build place filters from captions
@@ -52,10 +53,22 @@
     if (!thumb) return;
     var full = thumb.getAttribute('data-full');
     if (!full) return;
+    var item = thumb.closest('.photos-item');
+    var descNode = item ? item.querySelector('.photos-item-desc') : null;
+    var desc = descNode ? (descNode.textContent || '').trim() : '';
     img.src = full;
     img.alt = thumb.getAttribute('data-title') || '';
     titleEl.textContent = thumb.getAttribute('data-title') || '';
     metaEl.textContent = thumb.getAttribute('data-meta') || '';
+    if (descEl) {
+      if (desc) {
+        descEl.textContent = desc;
+        descEl.hidden = false;
+      } else {
+        descEl.textContent = '';
+        descEl.hidden = true;
+      }
+    }
     if (typeof dialog.showModal === 'function') {
       dialog.showModal();
     } else {
