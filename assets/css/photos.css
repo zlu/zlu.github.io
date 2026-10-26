@@ -11,6 +11,89 @@
   margin: 0 0 1rem;
 }
 
+.photos-back {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.photos-back a {
+  color: #666;
+  text-decoration: none;
+}
+
+.photos-back a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+.photos-album-meta {
+  color: #777;
+  font-size: 0.95rem;
+  margin: -0.35rem 0 1.25rem;
+}
+
+.photos-albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.35rem 1.1rem;
+  margin: 0 0 2.5rem;
+}
+
+.photos-album {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.photos-album:visited {
+  color: inherit;
+}
+
+.photos-album-cover {
+  display: block;
+  background: #eceae4;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.photos-album-cover img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: transform 0.35s ease, opacity 0.2s ease;
+}
+
+.photos-album:hover .photos-album-cover img,
+.photos-album:focus-visible .photos-album-cover img {
+  transform: scale(1.03);
+  opacity: 0.92;
+}
+
+.photos-album:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 3px;
+}
+
+.photos-album-info {
+  display: block;
+  margin-top: 0.5rem;
+  line-height: 1.35;
+}
+
+.photos-album-title {
+  display: block;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.photos-album-info .photos-album-meta {
+  display: block;
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+}
+
 .photos-empty code {
   font-size: 0.92em;
 }
@@ -108,15 +191,19 @@
   margin-top: 0.1rem;
 }
 
-/* Lightbox */
+/* Lightbox — centered in the viewport */
 .photos-lightbox {
   padding: 0;
   border: 0;
+  width: max-content;
   max-width: min(96vw, 1100px);
   max-height: 94vh;
   background: #111;
   color: #eee;
   overflow: hidden;
+  position: fixed;
+  inset: 0;
+  margin: auto;
 }
 
 .photos-lightbox::backdrop {

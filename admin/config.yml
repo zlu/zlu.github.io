@@ -6,6 +6,109 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
+  - name: "albums"
+    label: "Photo folders"
+    label_singular: "Folder"
+    description: "Trip folders on /photos/. Create a folder here, then assign photos to it from Photos."
+    folder: "_albums/"
+    create: true
+    delete: true
+    slug: "{{id}}"
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: title
+    summary: "{{title}} ({{id}})"
+    sortable_fields: ["title", "date", "place"]
+    fields:
+      - {
+          label: "Folder ID",
+          name: "id",
+          widget: "string",
+          hint: "URL slug — lowercase, hyphens. Example: austin-2018 → /photos/austin-2018/",
+          pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Use lowercase letters, numbers, and hyphens only"],
+        }
+      - { label: "Title", name: "title", widget: "string", hint: "Display name, e.g. Austin or Kyoto 2024" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+          hint: "Controls album sort order on /photos/ (newest first)",
+        }
+      - { label: "Place", name: "place", widget: "string", required: false }
+      - {
+          label: "Cover image URL",
+          name: "cover",
+          widget: "string",
+          required: false,
+          hint: "Optional R2 URL; otherwise the newest photo in the folder is used",
+        }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Description", name: "body", widget: "markdown", required: false }
+
+  - name: "photos"
+    label: "Photos"
+    label_singular: "Photo"
+    description: "Individual photos. Assign each to a Photo folder (trip)."
+    folder: "_photos/"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}} — {{place}}"
+    sortable_fields: ["title", "date", "place", "album"]
+    view_filters:
+      - { label: "In a folder", field: album, pattern: ".+" }
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - {
+          label: "Folder",
+          name: "album",
+          widget: "relation",
+          collection: "albums",
+          required: false,
+          search_fields: ["title", "id", "place"],
+          value_field: "id",
+          display_fields: ["title", "id"],
+          hint: "Pick a Photo folder. Create folders under Photo folders first.",
+        }
+      - { label: "Taken at", name: "taken_at", widget: "string", required: false, hint: "ISO datetime from EXIF" }
+      - { label: "Timezone", name: "timezone", widget: "string", required: false, hint: "e.g. +09:00" }
+      - { label: "Place", name: "place", widget: "string", required: false }
+      - { label: "Latitude", name: "lat", widget: "number", required: false, value_type: "float" }
+      - { label: "Longitude", name: "lon", widget: "number", required: false, value_type: "float" }
+      - { label: "Camera", name: "camera", widget: "string", required: false }
+      - {
+          label: "Web image URL",
+          name: "image",
+          widget: "string",
+          hint: "Public R2 URL from the local uploader",
+        }
+      - {
+          label: "Thumb URL",
+          name: "thumb",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Original path (Baidu)",
+          name: "original",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - {
+          label: "Description",
+          name: "body",
+          widget: "markdown",
+          required: false,
+          hint: "Shown in the lightbox when someone clicks the photo",
+        }
+
   - name: "travels"
     label: "Travels"
     folder: "travels/"
@@ -106,43 +209,3 @@ collections:
           required: false,
         }
       - { label: "Definition", name: "body", widget: "markdown" }
-  - name: "photos"
-    label: "Photos"
-    folder: "_photos/"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    summary: "{{title}} — {{place}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
-      - { label: "Taken at", name: "taken_at", widget: "string", required: false, hint: "ISO datetime from EXIF, e.g. 2024-11-03T14:22:01+09:00" }
-      - { label: "Timezone", name: "timezone", widget: "string", required: false, hint: "e.g. +09:00" }
-      - { label: "Place", name: "place", widget: "string", required: false }
-      - { label: "Latitude", name: "lat", widget: "number", required: false, value_type: "float" }
-      - { label: "Longitude", name: "lon", widget: "number", required: false, value_type: "float" }
-      - { label: "Camera", name: "camera", widget: "string", required: false, hint: "e.g. Leica M6 / Summicron 35" }
-      - {
-          label: "Web image URL",
-          name: "image",
-          widget: "string",
-          hint: "Public R2 URL from photos_add.py, e.g. https://media.zlu.me/web/….jpg",
-        }
-      - {
-          label: "Thumb URL",
-          name: "thumb",
-          widget: "string",
-          required: false,
-          hint: "Optional; defaults to web image",
-        }
-      - {
-          label: "Original path (Baidu)",
-          name: "original",
-          widget: "string",
-          required: false,
-          hint: "Private archive path only — not shown on the public gallery",
-        }
-      - { label: "Published", name: "published", widget: "boolean", default: true }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Description", name: "body", widget: "markdown", required: false, hint: "Shown in the lightbox when someone clicks the photo" }

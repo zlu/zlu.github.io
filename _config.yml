@@ -34,6 +34,9 @@ collections:
     permalink: /tags/:name/
   photos:
     output: false
+  albums:
+    output: true
+    permalink: /photos/:name/
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -89,3 +92,10 @@ defaults:
       type: photos
     values:
       published: true
+  - scope:
+      path: ""
+      type: albums
+    values:
+      layout: photo_album
+      published: true
+      sitemap: true

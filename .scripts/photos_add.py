@@ -37,6 +37,7 @@ def main() -> None:
     parser.add_argument("--date", default=None, help="YYYY-MM-DD (default: EXIF DateTimeOriginal)")
     parser.add_argument("--camera", default="", help="Camera / lens (default: EXIF Make/Model)")
     parser.add_argument("--original", default="", help="Baidu path to the master file")
+    parser.add_argument("--album", default="", help="Album/trip slug, e.g. austin-2018")
     parser.add_argument("--slug", default="", help="URL slug (default: from title)")
     parser.add_argument("--tag", action="append", default=[], dest="tags", help="Tag (repeatable)")
     parser.add_argument("--no-geocode", action="store_true", help="Skip Nominatim place lookup")
@@ -51,6 +52,7 @@ def main() -> None:
             when=parse_date(args.date),
             camera=args.camera,
             original=args.original,
+            album=args.album,
             slug=args.slug,
             tags=args.tags,
             dry_run=args.dry_run,

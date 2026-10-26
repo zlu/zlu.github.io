@@ -21,6 +21,7 @@ from PIL.ExifTags import GPSTAGS, IFD
 
 ROOT = Path(__file__).resolve().parents[1]
 PHOTOS_DIR = ROOT / "_photos"
+ALBUMS_DIR = ROOT / "_albums"
 WORK_DIR = Path(__file__).resolve().parent / ".photos-work"
 ENV_PATH = Path(__file__).resolve().parent / "r2.env"
 
@@ -130,41 +131,98 @@ def default_title(*, filename: str, place: str = "", when: date | None = None) -
     return "Untitled"
 
 
+def _parse_front_matter(path: Path) -> dict | None:
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---"):
+        return None
+    parts = text.split("---", 2)
+    if len(parts) < 3:
+        return None
+    fm: dict = {"slug": path.stem, "path": str(path.relative_to(ROOT))}
+    for line in parts[1].splitlines():
+        line = line.strip()
+        if not line or ":" not in line:
+            continue
+        key, _, val = line.partition(":")
+        key = key.strip()
+        val = val.strip().strip('"').strip("'")
+        if key in ("lat", "lon"):
+            try:
+                fm[key] = float(val)
+            except ValueError:
+                fm[key] = val
+        elif key == "published":
+            fm[key] = val.lower() in ("true", "yes", "1")
+        else:
+            fm[key] = val
+    body = parts[2].strip()
+    if body:
+        fm["description"] = body
+        fm["body"] = body
+    return fm
+
+
 def list_photo_entries() -> list[dict]:
     """Load published photo front matter for the local editor."""
     PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
     entries: list[dict] = []
     for path in sorted(PHOTOS_DIR.glob("*.md"), reverse=True):
-        text = path.read_text(encoding="utf-8")
-        if not text.startswith("---"):
-            continue
-        parts = text.split("---", 2)
-        if len(parts) < 3:
-            continue
-        fm: dict = {"slug": path.stem, "path": str(path.relative_to(ROOT))}
-        for line in parts[1].splitlines():
-            line = line.strip()
-            if not line or ":" not in line:
-                continue
-            key, _, val = line.partition(":")
-            key = key.strip()
-            val = val.strip().strip('"').strip("'")
-            if key in ("lat", "lon"):
-                try:
-                    fm[key] = float(val)
-                except ValueError:
-                    fm[key] = val
-            elif key == "published":
-                fm[key] = val.lower() in ("true", "yes", "1")
-            else:
-                fm[key] = val
-        # Body after front matter = lightbox description
-        body = parts[2].strip()
-        if body:
-            fm["description"] = body
-        if fm.get("image"):
+        fm = _parse_front_matter(path)
+        if fm and fm.get("image"):
             entries.append(fm)
     return entries
+
+
+def list_albums() -> list[dict]:
+    ALBUMS_DIR.mkdir(parents=True, exist_ok=True)
+    albums: list[dict] = []
+    for path in sorted(ALBUMS_DIR.glob("*.md"), reverse=True):
+        fm = _parse_front_matter(path)
+        if fm and fm.get("published") is not False:
+            albums.append(fm)
+    return albums
+
+
+def ensure_album(
+    slug: str,
+    *,
+    title: str = "",
+    place: str = "",
+    when: date | None = None,
+) -> dict:
+    """Create _albums/<slug>.md if missing; return album dict."""
+    slug = slugify(slug)
+    if not slug:
+        raise PhotosError("Album slug is empty")
+    ALBUMS_DIR.mkdir(parents=True, exist_ok=True)
+    path = ALBUMS_DIR / f"{slug}.md"
+    if path.is_file():
+        existing = _parse_front_matter(path) or {"slug": slug}
+        return existing
+
+    when = when or date.today()
+    title = (title or slug.replace("-", " ").title()).strip()
+    lines = [
+        "---",
+        f"id: {yaml_escape(slug)}",
+        f"title: {yaml_escape(title)}",
+        f"date: {when.isoformat()}",
+    ]
+    if place:
+        lines.append(f"place: {yaml_escape(place)}")
+    lines.append("published: true")
+    lines.append("---")
+    lines.append("")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return {
+        "slug": slug,
+        "id": slug,
+        "title": title,
+        "date": when.isoformat(),
+        "place": place,
+        "published": True,
+        "path": str(path.relative_to(ROOT)),
+    }
 
 
 def update_photo_fields(slug: str, **fields) -> dict:
@@ -182,7 +240,16 @@ def update_photo_fields(slug: str, **fields) -> dict:
     body = parts[2]
     if "description" in fields and fields["description"] is not None:
         body = "\n" + str(fields["description"]).strip() + "\n"
-    allowed = {"title", "place", "camera", "date", "taken_at", "timezone", "published"}
+    allowed = {
+        "title",
+        "place",
+        "camera",
+        "date",
+        "taken_at",
+        "timezone",
+        "published",
+        "album",
+    }
     updates = {k: v for k, v in fields.items() if k in allowed and v is not None}
 
     def format_value(key: str, value) -> str:
@@ -564,6 +631,7 @@ def write_photo_md(
     timezone_offset: str = "",
     lat: float | None = None,
     lon: float | None = None,
+    album: str = "",
 ) -> Path:
     PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
     path = PHOTOS_DIR / f"{slug}.md"
@@ -581,6 +649,8 @@ def write_photo_md(
         lines.append(f"timezone: {yaml_escape(timezone_offset)}")
     if place:
         lines.append(f"place: {yaml_escape(place)}")
+    if album:
+        lines.append(f"album: {yaml_escape(album)}")
     if lat is not None and lon is not None:
         lines.append(f"lat: {lat}")
         lines.append(f"lon: {lon}")
@@ -615,6 +685,8 @@ def add_photo(
     timezone_offset: str = "",
     lat: float | None = None,
     lon: float | None = None,
+    album: str = "",
+    album_title: str = "",
     dry_run: bool = False,
     geocode: bool = True,
     env: dict[str, str] | None = None,
@@ -645,6 +717,15 @@ def add_photo(
         filename=src.name, place=place, when=when
     )
 
+    album = slugify(album) if album else ""
+    if album:
+        ensure_album(
+            album,
+            title=album_title or album.replace("-", " ").title(),
+            place=place,
+            when=when,
+        )
+
     tags = tags or []
     base_slug = slugify(slug or title)
     if when.year and not base_slug.startswith(str(when.year)):
@@ -663,6 +744,7 @@ def add_photo(
             "title": title,
             "place": place,
             "camera": camera,
+            "album": album,
             "date": when.isoformat(),
             "taken_at": taken_at,
             "timezone": timezone_offset,
@@ -702,12 +784,14 @@ def add_photo(
         timezone_offset=timezone_offset,
         lat=lat,
         lon=lon,
+        album=album,
     )
     return {
         "slug": final_slug,
         "title": title,
         "place": place,
         "camera": camera,
+        "album": album,
         "date": when.isoformat(),
         "taken_at": taken_at,
         "timezone": timezone_offset,

@@ -24,10 +24,13 @@ try:
         PhotosError,
         add_photo_bytes,
         default_title,
+        ensure_album,
         inspect_photo_bytes,
+        list_albums,
         list_photo_entries,
         load_env,
         parse_date,
+        slugify,
         update_photo_fields,
     )
 except ImportError:
@@ -95,7 +98,7 @@ PAGE = r"""<!DOCTYPE html>
       color: var(--muted);
       margin-bottom: 0.25rem;
     }
-    input[type=text], input[type=date] {
+    input[type=text], input[type=date], select {
       width: 100%;
       padding: 0.55rem 0.65rem;
       border: 1px solid var(--line);
@@ -244,6 +247,16 @@ PAGE = r"""<!DOCTYPE html>
         <input type="text" id="original_prefix" placeholder="/Photos/2024/Kyoto" autocomplete="off">
       </label>
     </div>
+    <div class="row">
+      <label class="field"><span>Album (trip folder)</span>
+        <select id="album">
+          <option value="">— none / singles —</option>
+        </select>
+      </label>
+      <label class="field"><span>Or new album</span>
+        <input type="text" id="album_new" placeholder="Kyoto 2024" autocomplete="off">
+      </label>
+    </div>
 
     <div id="drop" tabindex="0" role="button" aria-label="Drop photos here">
       <strong>Drop photos here</strong> or click to choose<br>
@@ -276,7 +289,24 @@ PAGE = r"""<!DOCTYPE html>
     const placeInput = document.getElementById('place');
     const dateInput = document.getElementById('date');
     const cameraInput = document.getElementById('camera');
+    const albumSelect = document.getElementById('album');
+    const albumNew = document.getElementById('album_new');
     dateInput.value = new Date().toISOString().slice(0, 10);
+
+    async function loadAlbums(selected) {
+      const res = await fetch('/api/albums');
+      const data = await res.json();
+      const keep = selected || albumSelect.value;
+      albumSelect.innerHTML = '<option value="">— none / singles —</option>';
+      (data.albums || []).forEach((a) => {
+        const opt = document.createElement('option');
+        opt.value = a.slug;
+        opt.textContent = a.title + (a.place ? ' · ' + a.place : '');
+        albumSelect.appendChild(opt);
+      });
+      if (keep) albumSelect.value = keep;
+    }
+    loadAlbums();
 
     /** @type {Array<any>} */
     let items = [];
@@ -434,6 +464,8 @@ PAGE = r"""<!DOCTYPE html>
       const cameraFallback = cameraInput.value.trim();
       const dateFallback = dateInput.value;
       const originalPrefix = document.getElementById('original_prefix').value.trim().replace(/\/+$/, '');
+      const newAlbumTitle = albumNew.value.trim();
+      const albumSlug = newAlbumTitle ? '' : albumSelect.value;
       const results = [];
       const batch = items.slice();
 
@@ -446,6 +478,8 @@ PAGE = r"""<!DOCTYPE html>
         fd.append('place', (item.place || placeFallback));
         fd.append('camera', (item.camera || cameraFallback));
         fd.append('date', item.date || dateFallback);
+        if (albumSlug) fd.append('album', albumSlug);
+        if (newAlbumTitle) fd.append('album_new', newAlbumTitle);
         if (item.taken_at) fd.append('taken_at', item.taken_at);
         if (item.timezone) fd.append('timezone', item.timezone);
         if (item.lat != null) fd.append('lat', String(item.lat));
@@ -486,6 +520,10 @@ PAGE = r"""<!DOCTYPE html>
       if (okCount) {
         items = [];
         refresh();
+        const created = results.find((r) => r.ok && r.album);
+        await loadAlbums(created && created.album);
+        albumNew.value = '';
+        loadLibrary();
       } else {
         uploadBtn.disabled = false;
       }
@@ -520,22 +558,26 @@ PAGE = r"""<!DOCTYPE html>
           '<div class="fields">' +
             '<input type="text" class="lib-title" value="">' +
             '<input type="text" class="lib-place" placeholder="Place" value="">' +
-            '<textarea class="lib-desc" rows="2" placeholder="Description (shown when clicked on /photos/)" style="width:100%;font:inherit;padding:0.35rem 0.5rem;border:1px solid var(--line);border-radius:3px;resize:vertical"></textarea>' +
+            '<input type="text" class="lib-album" placeholder="Album slug (e.g. austin-2018)" value="">' +
+            '<textarea class="lib-desc" rows="2" placeholder="Description (shown when clicked)" style="width:100%;font:inherit;padding:0.35rem 0.5rem;border:1px solid var(--line);border-radius:3px;resize:vertical"></textarea>' +
             '<div class="meta">' + escapeHtml([p.date, p.camera].filter(Boolean).join(' · ')) + '</div>' +
           '</div>' +
           '<button type="button" class="primary lib-save" style="padding:0.4rem 0.7rem;align-self:center">Save</button>';
         li.querySelector('img').src = p.thumb || p.image;
         const titleInput = li.querySelector('.lib-title');
-        const placeInput = li.querySelector('.lib-place');
+        const placeInputEl = li.querySelector('.lib-place');
+        const albumInput = li.querySelector('.lib-album');
         const descInput = li.querySelector('.lib-desc');
         titleInput.value = p.title || '';
-        placeInput.value = p.place || '';
+        placeInputEl.value = p.place || '';
+        albumInput.value = p.album || '';
         descInput.value = p.description || '';
         li.querySelector('.lib-save').addEventListener('click', async () => {
           const body = {
             slug: p.slug,
             title: titleInput.value.trim(),
-            place: placeInput.value.trim(),
+            place: placeInputEl.value.trim(),
+            album: albumInput.value.trim(),
             description: descInput.value,
           };
           const r = await fetch('/api/library/update', {
@@ -683,6 +725,15 @@ class Handler(BaseHTTPRequestHandler):
                 raw = json.dumps({"error": str(err)}).encode("utf-8")
                 self._send(500, raw, "application/json")
             return
+        if path == "/api/albums":
+            try:
+                payload = {"albums": list_albums()}
+                raw = json.dumps(payload).encode("utf-8")
+                self._send(200, raw, "application/json")
+            except Exception as err:  # noqa: BLE001
+                raw = json.dumps({"error": str(err)}).encode("utf-8")
+                self._send(500, raw, "application/json")
+            return
         self._send(404, b"not found", "text/plain")
 
     def do_POST(self) -> None:
@@ -695,11 +746,15 @@ class Handler(BaseHTTPRequestHandler):
                 slug = str(payload.get("slug") or "").strip()
                 if not slug:
                     raise PhotosError("Missing slug")
+                album = str(payload.get("album") or "").strip()
+                if album:
+                    ensure_album(album, title=album.replace("-", " ").title())
                 updated = update_photo_fields(
                     slug,
                     title=payload.get("title"),
                     place=payload.get("place"),
                     camera=payload.get("camera"),
+                    album=slugify(album) if album else "",
                     description=payload.get("description"),
                 )
                 raw = json.dumps(updated).encode("utf-8")
@@ -741,6 +796,12 @@ class Handler(BaseHTTPRequestHandler):
             title = str(fields.get("title") or "").strip()
             if not title:
                 title = default_title(filename=filename, place=place, when=when)
+            album_new = str(fields.get("album_new") or "").strip()
+            album = str(fields.get("album") or "").strip()
+            album_title = ""
+            if album_new:
+                album_title = album_new
+                album = slugify(album_new)
             result = add_photo_bytes(
                 data,
                 filename,
@@ -753,6 +814,8 @@ class Handler(BaseHTTPRequestHandler):
                 timezone_offset=timezone_offset,
                 lat=lat,
                 lon=lon,
+                album=album,
+                album_title=album_title,
                 geocode=not place,
             )
             raw = json.dumps(result).encode("utf-8")

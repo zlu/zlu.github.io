@@ -1,0 +1,51 @@
+{% comment %}
+  Expects: gallery — array of photo documents
+{% endcomment %}
+{% if gallery.size == 0 %}
+<p class="photos-empty">No photos in this album yet.</p>
+{% else %}
+<p class="photos-order-note">Newest first · left to right, top to bottom.{% if show_place_filters %} Filter by place when there are several.{% endif %}</p>
+{% if show_place_filters %}
+<div class="photos-filters" id="photos-filters" hidden>
+  <button type="button" class="photos-filter is-active" data-place="">All</button>
+</div>
+{% endif %}
+
+<div class="photos-grid" id="photos-grid">
+  {% for photo in gallery %}
+  {% assign desc = photo.description | default: '' | strip %}
+  {% assign body_text = photo.content | strip_html | strip | normalize_whitespace %}
+  {% if desc == blank and body_text != blank %}
+    {% assign desc = body_text %}
+  {% endif %}
+  <figure class="photos-item"
+          data-place="{{ photo.place | default: '' | escape }}"
+          data-year="{{ photo.date | date: '%Y' }}">
+    <button type="button"
+            class="photos-thumb"
+            data-full="{{ photo.image }}"
+            data-title="{{ photo.title | escape }}"
+            data-meta="{% if photo.place %}{{ photo.place | escape }}{% endif %}{% if photo.place and photo.date %} · {% endif %}{% if photo.date %}{{ photo.date | date: '%Y' }}{% endif %}{% if photo.camera %} · {{ photo.camera | escape }}{% endif %}"
+            aria-label="View {{ photo.title | escape }}">
+      <img src="{{ photo.thumb | default: photo.image }}"
+           alt="{{ photo.title | escape }}"
+           loading="lazy"
+           decoding="async"
+           width="600"
+           height="400">
+    </button>
+    {% if desc != blank %}
+    <p class="photos-item-desc" hidden>{{ desc | escape }}</p>
+    {% endif %}
+    <figcaption>
+      <span class="photos-caption-title">{{ photo.title }}</span>
+      {% if photo.place or photo.date %}
+      <span class="photos-caption-meta">
+        {% if photo.place %}{{ photo.place }}{% endif %}{% if photo.place and photo.date %} · {% endif %}{% if photo.date %}{{ photo.date | date: "%Y" }}{% endif %}
+      </span>
+      {% endif %}
+    </figcaption>
+  </figure>
+  {% endfor %}
+</div>
+{% endif %}
