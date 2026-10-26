@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -112,8 +113,7 @@ def ensure_key_file(key: str) -> Path:
     return path
 
 
-def fetch_sitemap_urls(sitemap_url: str) -> list[tuple[str, str]]:
-    xml_bytes = urllib.request.urlopen(sitemap_url, timeout=60).read()
+def parse_sitemap_xml(xml_bytes: bytes, allow_localhost: bool = False) -> list[tuple[str, str]]:
     root = ET.fromstring(xml_bytes)
     tag = lambda el: el.tag.split("}")[-1] if "}" in el.tag else el.tag
 
@@ -139,9 +139,26 @@ def fetch_sitemap_urls(sitemap_url: str) -> list[tuple[str, str]]:
                 loc = child.text.strip()
             elif name == "lastmod" and child.text:
                 lastmod = child.text.strip()
-        if loc and (loc.startswith(SITE) or loc.startswith(f"https://www.{HOST}")):
+        if not loc:
+            continue
+        # Rewrite local build URLs to production before submit.
+        if "localhost" in loc or loc.startswith("http://127."):
+            if not allow_localhost:
+                loc = re.sub(r"^https?://[^/]+", SITE, loc)
+            else:
+                continue
+        if loc.startswith(SITE) or loc.startswith(f"https://www.{HOST}"):
             results.append((loc, lastmod))
     return results
+
+
+def fetch_sitemap_urls(sitemap_url: str) -> list[tuple[str, str]]:
+    xml_bytes = urllib.request.urlopen(sitemap_url, timeout=60).read()
+    return parse_sitemap_xml(xml_bytes)
+
+
+def load_sitemap_file(path: Path) -> list[tuple[str, str]]:
+    return parse_sitemap_xml(path.read_bytes())
 
 
 def pick_urls(
@@ -218,8 +235,12 @@ def post_indexnow(host: str, key: str, urls: list[str]) -> tuple[int, str]:
 
 def verify_key_live(host: str, key: str) -> tuple[bool, str]:
     url = f"https://{host}/{key}.txt"
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "zlu-indexnow/1.0 (+https://zlu.me)"},
+    )
     try:
-        with urllib.request.urlopen(url, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=30) as resp:
             body = resp.read().decode("utf-8", errors="replace").strip()
             if body == key:
                 return True, f"OK {url}"
@@ -243,6 +264,10 @@ def main() -> int:
         help="Re-queue already-submitted URLs after N days (default 30)",
     )
     parser.add_argument("--sitemap", default=SITEMAP_URL, help="Sitemap URL")
+    parser.add_argument(
+        "--sitemap-file",
+        help="Local sitemap.xml path (e.g. _site/sitemap.xml). Rewrites localhost → https://zlu.me.",
+    )
     parser.add_argument(
         "--url",
         action="append",
@@ -313,11 +338,16 @@ def main() -> int:
                 deduped.append(u)
         batch = deduped
     else:
-        print(f"[{utc_now()}] Fetching sitemap: {args.sitemap}")
         try:
-            sitemap = fetch_sitemap_urls(args.sitemap)
+            if args.sitemap_file:
+                path = Path(args.sitemap_file)
+                print(f"[{utc_now()}] Loading sitemap file: {path}")
+                sitemap = load_sitemap_file(path)
+            else:
+                print(f"[{utc_now()}] Fetching sitemap: {args.sitemap}")
+                sitemap = fetch_sitemap_urls(args.sitemap)
         except Exception as e:
-            print(f"Failed to fetch sitemap: {e}", file=sys.stderr)
+            print(f"Failed to load sitemap: {e}", file=sys.stderr)
             return 1
 
         seen = set()

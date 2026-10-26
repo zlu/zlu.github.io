@@ -4,4 +4,6 @@ teaching_folder: hkmu
 courses:
 - title: Comp S321f Advanced Database And Data Warehousing
 - title: COMP S460F Advanced Topics In Data Mining
+- code: COMP2030SEF
+  title: Intermediate Java Programming & User Interface Design
 ---

@@ -40,6 +40,8 @@ collections:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+# Soft-redirect ~3.8k retired empty uni shells → /teach/universities/ (sitemap: false).
+teach_retired_redirects: true
 mermaid:
   src: 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js'
   initialize:

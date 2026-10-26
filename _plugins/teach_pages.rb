@@ -22,7 +22,7 @@ module Jekyll
         "match" => /
           manchester|imperial|nottingham|birmingham|glasgow|liverpool|southampton|
           stirling|warwick|leeds|cardiff|queen.?mary|brunel|bayes|edingburgh|edinburgh|
-          ucl|university.?college.?london|kings.?college|bristol
+          \bucl\b|university.?college.?london|kings.?college|bristol|durham|newcastle
         /xi
       },
       "usa" => {
@@ -31,23 +31,42 @@ module Jekyll
         "match" => /
           carnegie|lehigh|northeastern|ohio|pittsburgh|rochester|san.?jose|
           uc.?irvine|uiuc|william.?mary|john.?hopkins|berkeley|stanford|georgia.?tech|
-          nyu|new.?york.?university|ucla|washington|umich|michigan|ut.?austin|texas.?at.?austin
+          nyu|new.?york.?university|ucla|\buc\b.?los.?angeles|washington|umich|michigan|
+          ut.?austin|texas.?at.?austin|cornell|baruch|oregon.?state|unc|chapel.?hill|
+          rensselaer|rpi
         /xi
       },
       "canada" => {
         "en" => "Canada",
         "cn" => "加拿大",
-        "match" => /concordia|toronto|ubc|british.?columbia|waterloo|mcgill|alberta/i
+        "match" => /
+          concordia|toronto|ubc|british.?columbia|waterloo|mcgill|alberta|
+          algonquin|western.?university
+        /xi
+      },
+      "china" => {
+        "en" => "China / Macau",
+        "cn" => "中国 / 澳门",
+        "match" => /
+          beijing.?normal|north.?china|nanyang.?institute|macau|macao|\bmust\b|
+          city.?university.?of.?macau|duke.?kunshan|cuhk.?shenzhen
+        /xi
       },
       "hong-kong" => {
         "en" => "Hong Kong",
         "cn" => "香港",
-        "match" => /hong.?kong|hku|baptist|metropolitan|macau|cuhk|chinese.?university|polyu|polytechnic/i
+        "match" => /
+          hong.?kong|hku|hkust|baptist|metropolitan|cuhk|chinese.?university|
+          \bpolyu\b|hk.?poly
+        /xi
       },
       "singapore" => {
         "en" => "Singapore",
         "cn" => "新加坡",
-        "match" => /singapore|ntu|nus|jcu|national.?university.?of.?singapore|smu|management.?university/i
+        "match" => /
+          singapore|ntu|\bnus\b|jcu|national.?university.?of.?singapore|smu|
+          management.?university|psb.?academy
+        /xi
       },
       "malaysia" => {
         "en" => "Malaysia",
@@ -68,14 +87,6 @@ module Jekyll
         "en" => "Ireland",
         "cn" => "爱尔兰",
         "match" => /dublin|ireland|ucd/i
-      },
-      "china" => {
-        "en" => "China / Macau",
-        "cn" => "中国 / 澳门",
-        "match" => /
-          beijing.?normal|north.?china|nanyang.?institute|macau|macao|must|
-          city.?university.?of.?macau|duke.?kunshan|cuhk.?shenzhen
-        /xi
       }
     }.freeze
 

@@ -31,4 +31,10 @@ courses:
   title: Quantum Computing
 - code: CO493
   title: Machine Learning
+- code: COMP6000
+  title: Advancedcomparchitecture
+  material: AdvancedCompArchitecture
+- code: MATH6002
+  title: 6 70026 Methods For Data Science
+  material: math60026-70026-methods-for-data-science
 ---

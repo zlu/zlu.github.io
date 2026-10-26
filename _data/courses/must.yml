@@ -1,5 +1,7 @@
 ---
 university: Macau University of Science and Technology
 teaching_folder: 澳门科技大学
-courses: []
+courses:
+- code: GIT001D05
+  title: 资讯科技
 ---
