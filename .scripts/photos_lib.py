@@ -79,11 +79,141 @@ def slugify(text: str) -> str:
     return s or "photo"
 
 
+_UUIDish = re.compile(
+    r"^[0-9a-f]{8}[-_ ]?[0-9a-f]{4}[-_ ]?[0-9a-f]{4}[-_ ]?[0-9a-f]{4}[-_ ]?[0-9a-f]{12}",
+    re.I,
+)
+# IMG_1234, DSC00001, P1234567, export hashes, etc.
+_BORING_NAME = re.compile(
+    r"^(img[_\- ]?\d+|dsc[_\- ]?\d+|p\d{4,}|\d{8,}[_-]?\d*|untitled|photo|image)([_\- ]+\d+)*$",
+    re.I,
+)
+
+
 def title_from_filename(name: str) -> str:
+    """Human title from filename; empty string if the name is a UUID/export hash."""
     stem = Path(name).stem
     stem = re.sub(r"[_\-]+", " ", stem).strip()
     stem = re.sub(r"\s+", " ", stem)
-    return stem or "Untitled"
+    if not stem:
+        return ""
+    compact = stem.replace(" ", "").replace("-", "")
+    if _UUIDish.match(stem.replace(" ", "-")) or _UUIDish.match(compact):
+        return ""
+    # UUID with trailing junk: "4268d494-…-1-105-c"
+    if re.match(r"^[0-9a-f]{8}[- ].+", stem, re.I) and len(re.findall(r"[0-9a-f]{4,}", stem, re.I)) >= 3:
+        return ""
+    if _BORING_NAME.match(stem.replace(" ", "")) or _BORING_NAME.match(stem):
+        return ""
+    return stem
+
+
+def _month_year(when: date) -> str:
+    return when.strftime("%B %Y")  # e.g. March 2018
+
+
+def default_title(*, filename: str, place: str = "", when: date | None = None) -> str:
+    """
+    Human gallery title. Prefer a meaningful filename; otherwise
+    "Austin, March 2018" / "March 2018" / "Untitled".
+    """
+    from_name = title_from_filename(filename)
+    if from_name:
+        return from_name
+    locality = (place.split(",")[0].strip() if place else "") or ""
+    if locality and when:
+        return f"{locality}, {_month_year(when)}"
+    if locality:
+        return locality
+    if when:
+        return _month_year(when)
+    return "Untitled"
+
+
+def list_photo_entries() -> list[dict]:
+    """Load published photo front matter for the local editor."""
+    PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
+    entries: list[dict] = []
+    for path in sorted(PHOTOS_DIR.glob("*.md"), reverse=True):
+        text = path.read_text(encoding="utf-8")
+        if not text.startswith("---"):
+            continue
+        parts = text.split("---", 2)
+        if len(parts) < 3:
+            continue
+        fm: dict = {"slug": path.stem, "path": str(path.relative_to(ROOT))}
+        for line in parts[1].splitlines():
+            line = line.strip()
+            if not line or ":" not in line:
+                continue
+            key, _, val = line.partition(":")
+            key = key.strip()
+            val = val.strip().strip('"').strip("'")
+            if key in ("lat", "lon"):
+                try:
+                    fm[key] = float(val)
+                except ValueError:
+                    fm[key] = val
+            elif key == "published":
+                fm[key] = val.lower() in ("true", "yes", "1")
+            else:
+                fm[key] = val
+        if fm.get("image"):
+            entries.append(fm)
+    return entries
+
+
+def update_photo_fields(slug: str, **fields) -> dict:
+    """Update selected front-matter fields on an existing _photos/<slug>.md."""
+    path = PHOTOS_DIR / f"{slug}.md"
+    if not path.is_file():
+        raise PhotosError(f"No photo entry: {slug}")
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---"):
+        raise PhotosError(f"Invalid front matter: {slug}")
+    parts = text.split("---", 2)
+    if len(parts) < 3:
+        raise PhotosError(f"Invalid front matter: {slug}")
+    fm_lines = parts[1].splitlines()
+    body = parts[2]
+    allowed = {"title", "place", "camera", "date", "taken_at", "timezone", "published"}
+    updates = {k: v for k, v in fields.items() if k in allowed and v is not None}
+
+    def format_value(key: str, value) -> str:
+        if key == "published":
+            flag = str(value).lower() in ("true", "yes", "1")
+            return "true" if flag else "false"
+        return yaml_escape(str(value).strip())
+
+    def set_line(lines: list[str], key: str, value) -> list[str]:
+        rendered = f"{key}: {format_value(key, value)}"
+        out: list[str] = []
+        found = False
+        for line in lines:
+            if line.strip().startswith(f"{key}:"):
+                out.append(rendered)
+                found = True
+            else:
+                out.append(line)
+        if not found and str(value).strip() != "":
+            insert_at = len(out)
+            for i, line in enumerate(out):
+                if line.strip().startswith("image:"):
+                    insert_at = i
+                    break
+            out.insert(insert_at, rendered)
+        return out
+
+    for key, value in updates.items():
+        fm_lines = set_line(fm_lines, key, value)
+
+    fm_block = "\n".join(fm_lines).strip("\n")
+    new_text = f"---\n{fm_block}\n---\n{body.lstrip(chr(10))}"
+    if not new_text.endswith("\n"):
+        new_text += "\n"
+    path.write_text(new_text, encoding="utf-8")
+    updated = next((e for e in list_photo_entries() if e["slug"] == slug), {"slug": slug})
+    return updated
 
 
 def parse_date(value: str | None) -> date | None:
@@ -268,9 +398,11 @@ def extract_photo_meta(src: Path) -> dict:
                 lat = _dms_to_decimal(gps.get("GPSLatitude"), gps.get("GPSLatitudeRef"))
                 lon = _dms_to_decimal(gps.get("GPSLongitude"), gps.get("GPSLongitudeRef"))
                 if lat is not None and lon is not None:
-                    meta["lat"] = round(lat, 6)
-                    meta["lon"] = round(lon, 6)
-                    meta["has_gps"] = True
+                    # (0,0) is almost always a bad/missing GPS fix
+                    if abs(lat) > 0.01 or abs(lon) > 0.01:
+                        meta["lat"] = round(lat, 6)
+                        meta["lon"] = round(lon, 6)
+                        meta["has_gps"] = True
     except OSError:
         return meta
     return meta
@@ -347,7 +479,10 @@ def enrich_meta(meta: dict, *, geocode: bool = True) -> dict:
 def inspect_photo(src: Path, *, geocode: bool = True) -> dict:
     meta = extract_photo_meta(src)
     meta = enrich_meta(meta, geocode=geocode)
-    meta["title_guess"] = title_from_filename(src.name)
+    when = date.fromisoformat(meta["date"]) if meta.get("date") else None
+    meta["title_guess"] = default_title(
+        filename=src.name, place=meta.get("place") or "", when=when
+    )
     return meta
 
 
@@ -485,7 +620,6 @@ def add_photo(
 
     exif = enrich_meta(extract_photo_meta(src), geocode=geocode and not place)
 
-    title = (title or title_from_filename(src.name)).strip()
     place = (place or exif.get("place") or "").strip()
     camera = (camera or exif.get("camera") or "").strip()
     taken_at = (taken_at or exif.get("taken_at") or "").strip()
@@ -500,6 +634,10 @@ def add_photo(
             when = date.fromisoformat(exif["date"])
         else:
             when = date.today()
+
+    title = (title or "").strip() or default_title(
+        filename=src.name, place=place, when=when
+    )
 
     tags = tags or []
     base_slug = slugify(slug or title)

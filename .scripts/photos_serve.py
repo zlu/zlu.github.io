@@ -23,10 +23,12 @@ try:
     from photos_lib import (
         PhotosError,
         add_photo_bytes,
+        default_title,
         inspect_photo_bytes,
+        list_photo_entries,
         load_env,
         parse_date,
-        title_from_filename,
+        update_photo_fields,
     )
 except ImportError:
     print(
@@ -224,7 +226,7 @@ PAGE = r"""<!DOCTYPE html>
 <body>
   <main>
     <h1>Photo upload</h1>
-    <p class="sub">Local only · EXIF auto-fills date, timezone, GPS → place, camera · then R2 + <code>_photos/*.md</code></p>
+    <p class="sub">Local only · titles default to place + month · edit freely before upload · EXIF fills the rest</p>
 
     <div class="row">
       <label class="field"><span>Place fallback</span>
@@ -257,7 +259,12 @@ PAGE = r"""<!DOCTYPE html>
     </div>
 
     <div id="status"></div>
-    <p class="hint">Per-photo fields win over the fallbacks above. Decap → Photos is still fine for caption tweaks later.</p>
+
+    <h2 style="margin:2.5rem 0 0.5rem;font-size:1.25rem;">Library</h2>
+    <p class="sub" style="margin-bottom:0.75rem">Edit titles of photos already on disk (then commit &amp; push). No Decap required.</p>
+    <ul id="library" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0.65rem"></ul>
+
+    <p class="hint">Per-photo fields win over the fallbacks above. Push <code>_photos/*.md</code> for the live site / Decap.</p>
   </main>
   <script>
     const queueEl = document.getElementById('queue');
@@ -300,7 +307,7 @@ PAGE = r"""<!DOCTYPE html>
         li.innerHTML =
           '<img alt="">' +
           '<div class="fields">' +
-            '<input type="text" data-k="title" placeholder="Title">' +
+            '<input type="text" data-k="title" placeholder="Title (edit me)" style="font-weight:600">' +
             '<div class="row" style="gap:0.35rem">' +
               '<input type="date" data-k="date">' +
               '<input type="text" data-k="place" placeholder="Place">' +
@@ -354,7 +361,8 @@ PAGE = r"""<!DOCTYPE html>
       const res = await fetch('/api/inspect', { method: 'POST', body: fd });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || res.statusText);
-      item.title = item.title || data.title_guess || item.file.name;
+      // Prefer EXIF-derived title (place/date); ignore UUID/export filenames
+      item.title = data.title_guess || item.title || 'Untitled';
       item.date = data.date || '';
       item.taken_at = data.taken_at || '';
       item.timezone = data.timezone || '';
@@ -365,10 +373,16 @@ PAGE = r"""<!DOCTYPE html>
       item.inspecting = false;
     }
 
+    function looksLikeHashName(name) {
+      const stem = name.replace(/\.[^.]+$/, '');
+      return /[0-9a-f]{8}[-_ ]?[0-9a-f]{4}/i.test(stem);
+    }
+
     async function addFiles(fileList) {
       const incoming = Array.from(fileList || []).filter((f) => f.type.startsWith('image/') || /\.(jpe?g|png|webp|heic|tif?f)$/i.test(f.name));
       for (const file of incoming) {
-        const title = file.name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ').trim() || 'Untitled';
+        const raw = file.name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ').trim();
+        const title = (!raw || looksLikeHashName(file.name)) ? '' : raw;
         const item = {
           file, title, url: URL.createObjectURL(file),
           date: '', taken_at: '', timezone: '', place: '', camera: '',
@@ -482,6 +496,67 @@ PAGE = r"""<!DOCTYPE html>
         '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
       })[c]);
     }
+
+    const libraryEl = document.getElementById('library');
+
+    async function loadLibrary() {
+      const res = await fetch('/api/library');
+      const data = await res.json();
+      if (!res.ok) {
+        libraryEl.innerHTML = '<li class="err">' + escapeHtml(data.error || 'Failed to load') + '</li>';
+        return;
+      }
+      const photos = data.photos || [];
+      if (!photos.length) {
+        libraryEl.innerHTML = '<li class="meta" style="color:var(--muted)">No photos in _photos/ yet.</li>';
+        return;
+      }
+      libraryEl.innerHTML = '';
+      photos.forEach((p) => {
+        const li = document.createElement('li');
+        li.className = 'item';
+        li.innerHTML =
+          '<img alt="" src="' + escapeHtml(p.thumb || p.image) + '">' +
+          '<div class="fields">' +
+            '<input type="text" class="lib-title" value="">' +
+            '<input type="text" class="lib-place" placeholder="Place" value="">' +
+            '<div class="meta">' + escapeHtml([p.date, p.camera].filter(Boolean).join(' · ')) + '</div>' +
+          '</div>' +
+          '<button type="button" class="primary lib-save" style="padding:0.4rem 0.7rem;align-self:center">Save</button>';
+        li.querySelector('img').src = p.thumb || p.image;
+        const titleInput = li.querySelector('.lib-title');
+        const placeInput = li.querySelector('.lib-place');
+        titleInput.value = p.title || '';
+        placeInput.value = p.place || '';
+        li.querySelector('.lib-save').addEventListener('click', async () => {
+          const body = {
+            slug: p.slug,
+            title: titleInput.value.trim(),
+            place: placeInput.value.trim(),
+          };
+          const r = await fetch('/api/library/update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+          });
+          const out = await r.json();
+          if (!r.ok) {
+            alert(out.error || 'Save failed');
+            return;
+          }
+          li.querySelector('.meta').textContent = 'Saved · ' + (out.title || '') +
+            (out.place ? ' · ' + out.place : '');
+        });
+        libraryEl.appendChild(li);
+      });
+    }
+
+    loadLibrary();
+    // Refresh library after successful uploads
+    const _statusObs = new MutationObserver(() => {
+      if (statusEl.querySelector('.ok')) loadLibrary();
+    });
+    _statusObs.observe(statusEl, { childList: true });
   </script>
 </body>
 </html>
@@ -595,10 +670,43 @@ class Handler(BaseHTTPRequestHandler):
             raw = json.dumps(payload).encode("utf-8")
             self._send(200 if payload["ok"] else 500, raw, "application/json")
             return
+        if path == "/api/library":
+            try:
+                payload = {"photos": list_photo_entries()}
+                raw = json.dumps(payload).encode("utf-8")
+                self._send(200, raw, "application/json")
+            except Exception as err:  # noqa: BLE001
+                raw = json.dumps({"error": str(err)}).encode("utf-8")
+                self._send(500, raw, "application/json")
+            return
         self._send(404, b"not found", "text/plain")
 
     def do_POST(self) -> None:
         path = urlparse(self.path).path
+        if path == "/api/library/update":
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                raw_body = self.rfile.read(length) if length else b"{}"
+                payload = json.loads(raw_body.decode("utf-8"))
+                slug = str(payload.get("slug") or "").strip()
+                if not slug:
+                    raise PhotosError("Missing slug")
+                updated = update_photo_fields(
+                    slug,
+                    title=payload.get("title"),
+                    place=payload.get("place"),
+                    camera=payload.get("camera"),
+                )
+                raw = json.dumps(updated).encode("utf-8")
+                self._send(200, raw, "application/json")
+            except PhotosError as err:
+                raw = json.dumps({"error": str(err)}).encode("utf-8")
+                self._send(400, raw, "application/json")
+            except Exception as err:  # noqa: BLE001
+                raw = json.dumps({"error": str(err)}).encode("utf-8")
+                self._send(500, raw, "application/json")
+            return
+
         if path not in ("/api/upload", "/api/inspect"):
             self._send(404, b'{"error":"not found"}', "application/json")
             return
@@ -617,7 +725,6 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(200, raw, "application/json")
                 return
 
-            title = (fields.get("title") or title_from_filename(filename)).strip()
             place = str(fields.get("place") or "").strip()
             camera = str(fields.get("camera") or "").strip()
             original = str(fields.get("original") or "").strip()
@@ -626,6 +733,9 @@ class Handler(BaseHTTPRequestHandler):
             lat = _optional_float(fields.get("lat"))
             lon = _optional_float(fields.get("lon"))
             when = parse_date(str(fields.get("date") or "") or None)
+            title = str(fields.get("title") or "").strip()
+            if not title:
+                title = default_title(filename=filename, place=place, when=when)
             result = add_photo_bytes(
                 data,
                 filename,
