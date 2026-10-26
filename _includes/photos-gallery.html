@@ -15,7 +15,7 @@
   {% for photo in gallery %}
   {% assign desc = photo.description | default: '' | strip %}
   {% assign body_text = photo.content | strip_html | strip | normalize_whitespace %}
-  {% if desc == blank and body_text != blank %}
+  {% if desc == empty and body_text != empty %}
     {% assign desc = body_text %}
   {% endif %}
   <figure class="photos-item"
@@ -34,7 +34,7 @@
            width="600"
            height="400">
     </button>
-    {% if desc != blank %}
+    {% if desc != empty %}
     <p class="photos-item-desc" hidden>{{ desc | escape }}</p>
     {% endif %}
     <figcaption>

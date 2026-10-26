@@ -14,7 +14,7 @@ Rangefinder work (and more) from travel and everyday wandering. Open an album fo
 {% assign loose = "" | split: "" %}
 {% for p in all_photos %}
   {% assign alb = p.album | default: "" | strip %}
-  {% if alb == blank %}
+  {% if alb == empty %}
     {% assign loose = loose | push: p %}
   {% endif %}
 {% endfor %}
@@ -29,13 +29,14 @@ Rangefinder work (and more) from travel and everyday wandering. Open an album fo
   {% for album in album_list %}
     {% assign album_key = album.key | default: album.id | default: album.slug %}
     {% assign shots = all_photos | where: "album", album_key %}
-    {% assign cover = album.cover | default: "" %}
-    {% if cover == blank and shots.size > 0 %}
-      {% assign cover = shots.first.thumb | default: shots.first.image %}
+    {% assign cover = album.cover | default: "" | strip %}
+    {% if cover == empty and shots.size > 0 %}
+      {% assign cover_photo = shots | first %}
+      {% assign cover = cover_photo.thumb | default: cover_photo.image %}
     {% endif %}
     <a class="photos-album" href="{{ album.url }}">
       <span class="photos-album-cover">
-        {% if cover != blank %}
+        {% if cover != empty %}
         <img src="{{ cover }}" alt="" loading="lazy" decoding="async" width="600" height="400">
         {% endif %}
       </span>
