@@ -6,35 +6,37 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
+  # First in the sidebar so it's obvious — New Trip folder is the blue "New …" button here
   - name: "albums"
-    label: "Photo folders"
-    label_singular: "Folder"
-    description: "Trip folders on /photos/. Create a folder here, then assign photos to it from Photos."
-    folder: "_albums/"
+    label: "Trip folders"
+    label_singular: "Trip folder"
+    description: "Create a trip folder here (New Trip folder). Then open Photos and set Folder on each shot."
+    folder: "_albums"
     create: true
     delete: true
-    slug: "{{id}}"
     extension: "md"
     format: "frontmatter"
-    identifier_field: title
-    summary: "{{title}} ({{id}})"
-    sortable_fields: ["title", "date", "place"]
+    slug: "{{fields.key}}"
+    identifier_field: "title"
+    summary: "{{title}} — {{key}}"
+    editor:
+      preview: false
     fields:
+      - { label: "Title", name: "title", widget: "string", hint: "Shown on /photos/, e.g. Kyoto 2024" }
       - {
-          label: "Folder ID",
-          name: "id",
+          label: "Folder key",
+          name: "key",
           widget: "string",
-          hint: "URL slug — lowercase, hyphens. Example: austin-2018 → /photos/austin-2018/",
-          pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Use lowercase letters, numbers, and hyphens only"],
+          hint: "URL id, lowercase + hyphens only. Example: kyoto-2024 → site path /photos/kyoto-2024/",
+          pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Lowercase letters, numbers, hyphens only"],
         }
-      - { label: "Title", name: "title", widget: "string", hint: "Display name, e.g. Austin or Kyoto 2024" }
       - {
           label: "Date",
           name: "date",
           widget: "datetime",
           date_format: "YYYY-MM-DD",
           time_format: false,
-          hint: "Controls album sort order on /photos/ (newest first)",
+          hint: "Sort order on /photos/ (newest first)",
         }
       - { label: "Place", name: "place", widget: "string", required: false }
       - {
@@ -42,7 +44,7 @@ collections:
           name: "cover",
           widget: "string",
           required: false,
-          hint: "Optional R2 URL; otherwise the newest photo in the folder is used",
+          hint: "Optional; otherwise newest photo in the folder",
         }
       - { label: "Published", name: "published", widget: "boolean", default: true }
       - { label: "Description", name: "body", widget: "markdown", required: false }
@@ -50,17 +52,15 @@ collections:
   - name: "photos"
     label: "Photos"
     label_singular: "Photo"
-    description: "Individual photos. Assign each to a Photo folder (trip)."
-    folder: "_photos/"
+    description: "Assign each photo to a Trip folder (create folders under Trip folders first)."
+    folder: "_photos"
     create: true
     delete: true
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
     summary: "{{title}} — {{place}}"
-    sortable_fields: ["title", "date", "place", "album"]
-    view_filters:
-      - { label: "In a folder", field: album, pattern: ".+" }
+    sortable_fields: ["title", "date", "place"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
@@ -70,10 +70,10 @@ collections:
           widget: "relation",
           collection: "albums",
           required: false,
-          search_fields: ["title", "id", "place"],
-          value_field: "id",
-          display_fields: ["title", "id"],
-          hint: "Pick a Photo folder. Create folders under Photo folders first.",
+          search_fields: ["title", "key", "place"],
+          value_field: "key",
+          display_fields: ["title", "key"],
+          hint: "Choose a trip. If the list is empty, create one under Trip folders first.",
         }
       - { label: "Taken at", name: "taken_at", widget: "string", required: false, hint: "ISO datetime from EXIF" }
       - { label: "Timezone", name: "timezone", widget: "string", required: false, hint: "e.g. +09:00" }

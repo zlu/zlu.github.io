@@ -13,7 +13,7 @@ layout: default
 
 {{ content }}
 
-{% assign album_key = page.id | default: page.slug %}
+{% assign album_key = page.key | default: page.id | default: page.slug %}
 {% assign gallery = site.photos | where: "album", album_key | where_exp: "p", "p.image" | where_exp: "p", "p.published != false" | sort: "date" | reverse %}
 {% assign show_place_filters = true %}
 {% include photos-gallery.html %}

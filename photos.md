@@ -27,7 +27,7 @@ Rangefinder work (and more) from travel and everyday wandering. Open an album fo
 <p class="photos-order-note">Albums · newest trips first</p>
 <div class="photos-albums">
   {% for album in album_list %}
-    {% assign album_key = album.id | default: album.slug %}
+    {% assign album_key = album.key | default: album.id | default: album.slug %}
     {% assign shots = all_photos | where: "album", album_key %}
     {% assign cover = album.cover | default: "" %}
     {% if cover == blank and shots.size > 0 %}

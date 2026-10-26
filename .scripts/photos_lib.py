@@ -204,8 +204,8 @@ def ensure_album(
     title = (title or slug.replace("-", " ").title()).strip()
     lines = [
         "---",
-        f"id: {yaml_escape(slug)}",
         f"title: {yaml_escape(title)}",
+        f"key: {yaml_escape(slug)}",
         f"date: {when.isoformat()}",
     ]
     if place:
@@ -216,7 +216,7 @@ def ensure_album(
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return {
         "slug": slug,
-        "id": slug,
+        "key": slug,
         "title": title,
         "date": when.isoformat(),
         "place": place,
