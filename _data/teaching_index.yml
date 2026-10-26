@@ -1,0 +1,385 @@
+note: Private teaching/ folder index (names only). Regenerate via sync-teach-catalog.py
+universities:
+- folder: algonguin-college
+  admin_slug: algonquin-college
+  materials:
+  - ESC4402
+  - ESC4503-intro-to-business-application-programming
+- folder: baruch
+  admin_slug: baruch-college
+  materials:
+  - mfe-tech-interview
+- folder: bayes-business-school
+  admin_slug: bayes-business-school
+  materials:
+  - intro-to-r
+- folder: beijing-normal-hk-baptist-u
+  admin_slug: beijing-normal-hongkong-baptist-university
+  materials:
+  - Research and Application of Language Models
+- folder: bristol-u
+  admin_slug: bristol
+  materials:
+  - MATH10017 Algorithms and Programming in C(++) and R
+- folder: brunel-university-of-london
+  admin_slug: brunel-university-of-london
+  materials:
+  - MA2624-ML-for-AI alias
+- folder: cardiff
+  admin_slug: cardiff
+  materials:
+  - 05.03.2025-softwaredev
+- folder: cmu
+  admin_slug: carnegie-mellon-university
+  materials:
+  - '112003'
+  - cmu-py-15-112
+  - cs15-112
+- folder: concordia
+  admin_slug: concordia-university
+  materials:
+  - cart211-final
+  - cart263-js-winter2026
+  - frogfrogfrog
+  - ps5.js
+- folder: cornell
+  admin_slug: cornell-university
+  materials:
+  - cs2110-java-test
+  - database
+- folder: cuhk
+  admin_slug: cuhk
+  materials:
+  - cs2115-computer-organization
+  - cs5187-vision-and-image
+  - sdsc8009-datamining
+- folder: cuhk-sz
+  admin_slug: cuhk-shenzhen
+  materials:
+  - dda3020-machine-learning
+- folder: duke-kunshan-u
+  admin_slug: duke-kunshan-university
+  materials:
+  - LIT111
+- folder: durham-university
+  admin_slug: durham-university
+  materials:
+  - 2026 DS
+  - DataScience
+- folder: hk-baptist
+  admin_slug: hong-kong-baptist-university
+  materials:
+  - COMP7025
+  - comp4330sef-advanced-ai
+  - comps413f-application-design-and-development-for-mobile-devices
+- folder: hk-polytech
+  admin_slug: hong-kong-polytechnic-university
+  materials:
+  - comp5941-ai-thesis
+- folder: hkmu
+  admin_slug: hong-kong-metropolitan-university
+  materials:
+  - COMP S460F Advanced Topics in Data Mining
+  - comp s321f - advanced-database-and-data-warehousing
+- folder: hku
+  admin_slug: hku
+  materials:
+  - IIMT 3601Database Management
+  - comp1117b
+  - cs-master-mock-exam
+  - data analysis in science
+- folder: hkust
+  admin_slug: hkust
+  materials:
+  - comp1023
+  - dasc2010
+  - fin-ml
+- folder: imperial-college-london
+  admin_slug: imperial-college
+  materials:
+  - AdvancedCompArchitecture
+  - PHYS70041
+  - math60026-70026-methods-for-data-science
+- folder: james-cook-singapore
+  admin_slug: jcu
+  materials:
+  - CP3404
+  - CP3406-android
+  - CP3501- Deep Learning
+- folder: johnhopkins
+  admin_slug: john-hopkins
+  materials: []
+- folder: kings-college-london
+  admin_slug: kings-college-london
+  materials:
+  - 4qqmn909-principles-of-programming
+- folder: leeds-university
+  admin_slug: leeds
+  materials:
+  - lubs3185
+- folder: lehigh-university
+  admin_slug: lehigh-university
+  materials:
+  - ENGR 010
+- folder: lmu-慕尼黑大学
+  admin_slug: lmu
+  materials:
+  - symbolische-programmierspache
+- folder: macquarie-university
+  admin_slug: macquarie
+  materials:
+  - COMP6010
+  - COMP6200-aug-2025
+  - comp3770
+  - comp6200-march-2025
+- folder: monash
+  admin_slug: monash
+  materials:
+  - FIT1058 Foundations of computing
+  - FIT5196-datawrangling
+  - FIT5202
+  - FITS9136 Python
+  - eng1014
+  - etx3500-5500-High-Dimensional-Data-Analysis
+  - fit1008
+  - fit1045
+  - fit1047
+  - fit5124-networking-ml
+- folder: national-university-of-malaysia
+  admin_slug: national-university-of-malaysia
+  materials:
+  - 6114非结构化数据分析(R)
+- folder: new-castle
+  admin_slug: newcastle
+  materials:
+  - 密码学
+- folder: north-eastern
+  admin_slug: northeastern
+  materials:
+  - phd-application-rp
+- folder: ntu
+  admin_slug: ntu
+  materials:
+  - EE6407-GENETIC ALGORITHMS & MACHINE LEARNING
+  - IE0005
+- folder: nus
+  admin_slug: nus
+  materials:
+  - CS1010E - Programming Methedology
+  - CS1101S-programming-methodology
+- folder: oregon-state
+  admin_slug: oregon-state-university
+  materials:
+  - computer-architecture
+- folder: psb-academy
+  admin_slug: psb-academy
+  materials:
+  - Introduction to Programming
+- folder: queensland
+  admin_slug: queensland
+  materials:
+  - comp4403-compiler
+  - coms3200
+- folder: rensselaer
+  admin_slug: rensselaer
+  materials:
+  - csci4850-modern-binary-exploitation
+- folder: sim
+  admin_slug: sim
+  materials:
+  - ITSD010 Computing and Cybersecurity Fundamentals
+- folder: sjsu
+  admin_slug: san-jose-state-university
+  materials:
+  - data 201
+- folder: tum
+  admin_slug: tum
+  materials:
+  - ' Intro to Computer Architecture'
+  - INHN0012 Computer Networking and IT Security
+- folder: u-birmingham
+  admin_slug: birmingham
+  materials:
+  - 07-3838153lm-analytics-micro-course-birmingham-business-school
+  - Computer Systems
+  - DSA 24-25
+  - Database and Web Programming
+  - LC Artificial Intelligence 1
+  - LI Artificial Intelligence 2
+  - LM Data Structures, Algorithms, and Databases
+  - LMLI Artificial Intelligence and Machine Learning
+- folder: u-bristol
+  admin_slug: bristol
+  materials:
+  - COMS10016-Imperative-and-functional-programming
+  - MATH10017 Algorithms and Programming in C(++) and R
+- folder: u-edinburgh
+  admin_slug: edinburgh
+  materials:
+  - econ-math
+- folder: u-glasgow
+  admin_slug: glasgow
+  materials:
+  - 4039 Programming
+  - 4043 Systems and Networks
+  - 5057 HCI Design & Evaluation
+  - 5076 Database & Data Analytics
+  - 5077 Enterprise Cyber Security
+  - compsci5077
+  - compsci508-intro-to-datascience
+  - compsci5089-intro-to-datascience
+  - datastructure
+  - 往期试卷
+- folder: u-manchester
+  admin_slug: university-of-manchester
+  materials:
+  - automated_grading_system alias
+- folder: u-melborne
+  admin_slug: melbourne
+  materials:
+  - COMP20005 - Intro. to Numerical Computation in C
+  - comp10002
+  - comp10002-foundations-of-algo
+  - comp20005-intro-to-numerical-computation-in-c
+  - comp90050-advanced-db
+  - math-Term 1
+- folder: u-nottingham
+  admin_slug: nottingham
+  materials:
+  - eeee4119-ai-and-intelligent-systems
+- folder: u-pittsburg
+  admin_slug: pittsburgh
+  materials:
+  - compinfo401
+- folder: u-queensland
+  admin_slug: queensland
+  materials:
+  - BISM1201
+  - CSSE7100
+  - INFS7203-data-mining
+  - INFS7410
+  - MECH2700
+  - MECH2700 Revision
+  - SEMT20003
+  - infs9700
+  - intro-to-software-engr
+- folder: u-south-australia
+  admin_slug: universifty-of-south-australia
+  materials:
+  - prob solving and programming
+- folder: u-southampton
+  admin_slug: university-of-southampton
+  materials:
+  - MANG2092
+  - MATH6161
+  - git-critique
+  - git-paper&marks
+  - git-rp
+  - math6164
+- folder: u-sydney
+  admin_slug: university-of-sydney
+  materials:
+  - INFO1110 Introduction to Programming
+  - INFO1112
+  - INFO3616-Principles of Security and Security Eng
+  - INFO3616：Principles of Security and Security Eng
+  - MKTG1011-Foundamentals of Marketing Analytics
+  - QBUS6600
+  - distributed systems
+  - elec1601
+  - info-1113-java
+  - soft2201-comp9201
+- folder: u-warwick
+  admin_slug: university-of-warwick
+  materials: []
+- folder: u-western-australia
+  admin_slug: university-of-western-australia
+  materials:
+  - AI&AS
+- folder: uc-berkeley
+  admin_slug: berkeley
+  materials:
+  - CS70离散数学
+  - Data 8-the Foundations of Data Science
+- folder: ucl
+  admin_slug: ucl
+  materials:
+  - Connected system资料
+- folder: uiuc
+  admin_slug: uiuc
+  materials:
+  - cs444-ece494-deep-learning-for-computer-vision
+- folder: unc-chapel-hill
+  admin_slug: unc-chapel-hill
+  materials:
+  - APPL 101-Exploring Engineering
+- folder: university-college-dublin
+  admin_slug: university-college-dublin
+  materials:
+  - Computer Graphics
+  - Distributed Systems
+  - Mobile Computing
+  - Multi-Paradigm Programming
+  - Software Methodology
+  - Web Application Development
+- folder: university-college-london
+  admin_slug: ucl
+  materials:
+  - COMP0161
+  - MMA
+- folder: unsw-sydney
+  admin_slug: unsw
+  materials:
+  - 12.03.2025-networking-security
+  - '2048'
+  - COMP9517-computer-vision
+  - Comp5310简化
+  - Comp9601简化
+  - MTHS1313
+  - comp2017-9017-system-programming
+  - comp2511-software-design-and-architecture
+  - comp3211
+  - comp4337-9337-securing-fixed-and-wireless-networks
+  - comp4920-computer-ethics
+  - comp9021 25T3 期末班资料
+  - comp9331-networking
+  - comp9414-ai
+  - info3616
+- folder: uts
+  admin_slug: uts
+  materials:
+  - IWBS001-web-systems
+  - networking
+  - programming2-java-2026-u503
+- folder: western-university
+  admin_slug: western-university
+  materials:
+  - ds1000b-data-science-concepts
+- folder: 北师大
+  admin_slug: beijing-normal-university
+  materials:
+  - deutsch-a1
+- folder: 北方工业大
+  admin_slug: north-china-university-of-technology
+  materials:
+  - MA2623-linear-abstract-algebra
+  - MA2634-ML-for-AI
+- folder: 南阳理工
+  admin_slug: nanyang-institute-of-technology
+  materials: []
+- folder: 慕尼黑工业大学
+  admin_slug: tum
+  materials:
+  - formale sprache
+  - rechnerarchitekture
+- folder: 澳门城市大学
+  admin_slug: city-university-of-macau
+  materials:
+  - BCS010-數據庫系統
+- folder: 澳门理工大学
+  admin_slug: macao-polytechnic-university
+  materials: []
+- folder: 澳门科技大学
+  admin_slug: must
+  materials:
+  - 资讯科技

@@ -1,0 +1,11 @@
+---
+university: Algonquin College
+teaching_folder: algonguin-college
+courses:
+- code: ESC4402
+  title: ESC4402
+  material: ESC4402
+- code: ESC4503
+  title: Intro To Business Application Programming
+  material: ESC4503-intro-to-business-application-programming
+---

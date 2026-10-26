@@ -1,20 +1,28 @@
 ---
 university: University of Birmingham
+teaching_folder: u-birmingham
 courses:
-  - code: 06-21255
-    title: Introduction to Computer Science
-  - code: 06-28213
-    title: Data Structures and Algorithms
-  - code: 06-25078
-    title: Object Oriented Programming
-  - code: 06-28212
-    title: Artificial Intelligence
-  - code: 06-35324
-    title: Machine Learning
-  - code: 06-28211
-    title: Computer Networks
-  - code: 06-25080
-    title: Software Engineering
-  - code: 06-35326
-    title: Neural Computation
+- code: 06-21255
+  title: Introduction to Computer Science
+- code: 06-28213
+  title: Data Structures and Algorithms
+- code: 06-25078
+  title: Object Oriented Programming
+- code: 06-28212
+  title: Artificial Intelligence
+- code: 06-35324
+  title: Machine Learning
+- code: 06-28211
+  title: Computer Networks
+- code: 06-25080
+  title: Software Engineering
+- code: 06-35326
+  title: Neural Computation
+- title: Database And Web Programming
+- title: LC Artificial Intelligence 1
+- title: LMLI Artificial Intelligence And Machine Learning
+- title: DSA 24 25
+- title: LM Data Structures, Algorithms, And Databases
+- title: Computer Systems
+- title: LI Artificial Intelligence 2
 ---

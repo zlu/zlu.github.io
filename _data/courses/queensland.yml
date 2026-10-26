@@ -1,34 +1,52 @@
 ---
 university: University of Queensland
+teaching_folder: queensland
 courses:
-  - code: CSSE7030
-    title: Intro to Programming
-    department: Computer Science
-  - code: INFOS7900
-    title: Introduction to Information Systems
-  - code: ENGG1001
-    title: Programming for Engineers
-  - code: COMP3506
-    title: Algorithms and Data Structures
-  - code: COMP7505
-    title: Algorithms and Data Structure
-  - code: INFS7410
-    title: Information Retrieval and Web Search
-    department: Elec Engineering, Comp Science
-  - code: CSSE1001
-    title: Introduction to Software Engineering
-  - code: CSSE2002
-    title: Programming in the Large
-  - code: CSSE2010
-    title: Introduction to Computer Systems
-  - code: COMP3702
-    title: Artificial Intelligence
-  - code: COMP4702
-    title: Machine Learning
-  - code: INFS1200
-    title: Introduction to Information Systems
-  - code: DATA7001
-    title: Introduction to Data Science
-  - code: DECO1400
-    title: Introduction to Web Design
+- code: CSSE7030
+  title: Intro to Programming
+  department: Computer Science
+- code: INFOS7900
+  title: Introduction to Information Systems
+- code: ENGG1001
+  title: Programming for Engineers
+- code: COMP3506
+  title: Algorithms and Data Structures
+- code: COMP7505
+  title: Algorithms and Data Structure
+- code: INFS7410
+  title: Information Retrieval and Web Search
+  department: Elec Engineering, Comp Science
+- code: CSSE1001
+  title: Introduction to Software Engineering
+- code: CSSE2002
+  title: Programming in the Large
+- code: CSSE2010
+  title: Introduction to Computer Systems
+- code: COMP3702
+  title: Artificial Intelligence
+- code: COMP4702
+  title: Machine Learning
+- code: INFS1200
+  title: Introduction to Information Systems
+- code: DATA7001
+  title: Introduction to Data Science
+- code: DECO1400
+  title: Introduction to Web Design
+- code: CSSE7100
+  title: CSSE7100
+- code: INFS7203
+  title: Data Mining
+- title: Intro To Software Engr
+- title: Mech2700 Revision
+- title: Mech2700
+- code: INFS9700
+  title: INFS9700
+- title: SEMT 3
+- title: Bism1201
+- code: COMP4403
+  title: Compiler
+  material: comp4403-compiler
+- code: COMS3200
+  title: COMS3200
+  material: coms3200
 ---

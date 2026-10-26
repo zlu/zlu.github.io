@@ -1,0 +1,9 @@
+---
+university: Cornell University
+teaching_folder: cornell
+courses:
+- code: CS2110
+  title: Java Test
+  material: cs2110-java-test
+- title: Database
+---

@@ -1,0 +1,12 @@
+---
+university: Hong Kong Baptist University
+teaching_folder: hk-baptist
+courses:
+- title: Comps413f Application Design And Development For Mobile Devices
+- code: COMP4330S
+  title: Ef Advanced Ai
+  material: comp4330sef-advanced-ai
+- code: COMP7025
+  title: COMP7025
+  material: COMP7025
+---

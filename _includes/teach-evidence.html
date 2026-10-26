@@ -1,0 +1,51 @@
+{% comment %}
+  Public tutoring-coverage signals derived from local teaching inventory.
+  Never dumps lecture PDFs, assignment text, or solutions.
+{% endcomment %}
+{% if page.coverage_summary_cn != "" or page.coverage_summary_en != "" or page.evidence_topics.size > 0 or page.evidence_signals %}
+<section class="teach-landing-section teach-evidence">
+  <h2 data-en="Real tutoring coverage (not an empty directory)"
+      data-cn="真实辅导覆盖（不是空目录）">真实辅导覆盖（不是空目录）</h2>
+  {% if page.coverage_summary_cn != "" or page.coverage_summary_en != "" %}
+  <p class="teach-landing-lead teach-evidence-summary"
+     data-en="{{ page.coverage_summary_en }}"
+     data-cn="{{ page.coverage_summary_cn }}">{{ page.coverage_summary_cn }}</p>
+  {% endif %}
+
+  {% if page.evidence_signals %}
+  <ul class="teach-proof teach-signal-list">
+    {% if page.evidence_signals.weekly_lecture_arc %}
+    <li data-en="Weekly lecture catch-up — keep pace with the term"
+        data-cn="可按周进度同步答疑，跟上学期节奏">可按周进度同步答疑，跟上学期节奏</li>
+    {% endif %}
+    {% if page.evidence_signals.assignment_lab_materials %}
+    <li data-en="Assignment / lab debug sessions — you submit your own work"
+        data-cn="作业 / Lab 拆题与 debug（作业本人提交，不代写）">作业 / Lab 拆题与 debug（作业本人提交，不代写）</li>
+    {% endif %}
+    {% if page.evidence_signals.exam_prep_materials %}
+    <li data-en="Exam-prep drills on weak spots before midterms and finals"
+        data-cn="期中期末前针对薄弱点突击">期中期末前针对薄弱点突击</li>
+    {% endif %}
+  </ul>
+  {% endif %}
+
+  {% if page.evidence_topics and page.evidence_topics.size > 0 %}
+  <h3 data-en="Themes that show up in sessions"
+      data-cn="辅导中常见主题">辅导中常见主题</h3>
+  <p class="teach-section-note"
+     data-en="Topic labels inferred from materials I've used while tutoring — not a copy of any syllabus or assignment."
+     data-cn="主题来自我实际辅导时接触过的材料类型标签，不是任何学校大纲或作业原文。">主题来自我实际辅导时接触过的材料类型标签，不是任何学校大纲或作业原文。</p>
+  <ul class="teach-topic-chips">
+    {% for topic in page.evidence_topics limit:10 %}
+    <li data-en="{{ topic.en }}" data-cn="{{ topic.cn }}">{{ topic.cn }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.evidence_shape and page.evidence_shape.week_span %}
+  <p class="teach-coverage-proof"
+     data-en="Typical lecture arc seen in tutoring: weeks {{ page.evidence_shape.week_span[0] }}–{{ page.evidence_shape.week_span[1] }}."
+     data-cn="辅导中常见的周进度跨度：第 {{ page.evidence_shape.week_span[0] }}–{{ page.evidence_shape.week_span[1] }} 周。">辅导中常见的周进度跨度：第 {{ page.evidence_shape.week_span[0] }}–{{ page.evidence_shape.week_span[1] }} 周。</p>
+  {% endif %}
+</section>
+{% endif %}

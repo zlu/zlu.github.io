@@ -1,6 +1,8 @@
 ---
 university: San Jose State University
+teaching_folder: sjsu
 courses:
-  - code: DATA201
-    title: Database Systems
+- code: DATA201
+  title: Database Systems
+  material: data 201
 ---

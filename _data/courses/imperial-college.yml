@@ -1,0 +1,11 @@
+---
+university: Imperial College London
+teaching_folder: imperial-college-london
+courses:
+- code: COMP6000
+  title: Advancedcomparchitecture
+  material: AdvancedCompArchitecture
+- code: MATH6002
+  title: 6 70026 Methods For Data Science
+  material: math60026-70026-methods-for-data-science
+---

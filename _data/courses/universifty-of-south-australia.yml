@@ -1,6 +1,7 @@
 ---
 university: University of South Australia
+teaching_folder: u-south-australia
 courses:
-  - code: COMP1043
-    title: Problem Solving and Programming in Python
+- code: COMP1043
+  title: Problem Solving and Programming in Python
 ---

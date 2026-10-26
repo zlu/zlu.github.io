@@ -68,7 +68,10 @@ layout: default
   </section>
   {% endif %}
 
-  {% if page.theme_topics and page.theme_topics.size > 0 %}
+  {% include teach-evidence.html %}
+
+  {% assign evidence_topic_count = page.evidence_topics | size %}
+  {% if page.theme_topics and page.theme_topics.size > 0 and evidence_topic_count == 0 %}
   <section class="teach-landing-section">
     <h2 data-en="Topics we typically work through"
         data-cn="常见辅导主题">常见辅导主题</h2>

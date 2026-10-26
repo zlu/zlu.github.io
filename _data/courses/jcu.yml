@@ -1,6 +1,16 @@
 ---
 university: James Cook University Singapore
+teaching_folder: james-cook-singapore
 courses:
-  - code: CP1407
-    title: Introductory Machine Learning and Data Science
+- code: CP1407
+  title: Introductory Machine Learning and Data Science
+- code: CP3406
+  title: Android
+  material: CP3406-android
+- code: CP3404
+  title: CP3404
+  material: CP3404
+- code: CP3501
+  title: Deep Learning
+  material: CP3501- Deep Learning
 ---

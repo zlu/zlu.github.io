@@ -1,6 +1,8 @@
 ---
 university: Lehigh University
+teaching_folder: lehigh-university
 courses:
-  - code: ENGR 010
-    title: Applied Engineering Computer Methods
+- code: ENGR 010
+  title: Applied Engineering Computer Methods
+  material: ENGR 010
 ---

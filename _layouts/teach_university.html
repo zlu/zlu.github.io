@@ -21,8 +21,8 @@ layout: default
     <h1 data-en="{{ page.university }} computer science tutoring"
         data-cn="{{ page.university }} 计算机一对一辅导">{{ page.university }} 计算机一对一辅导</h1>
     <p class="teach-landing-lead"
-       data-en="Help with AI, data science, and programming coursework at {{ page.university }} — explain, debug, review. No ghostwriting."
-       data-cn="针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。">针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。</p>
+       data-en="{% if page.coverage_summary_en != '' %}{{ page.coverage_summary_en }}{% else %}Help with AI, data science, and programming coursework at {{ page.university }} — explain, debug, review. No ghostwriting.{% endif %}"
+       data-cn="{% if page.coverage_summary_cn != '' %}{{ page.coverage_summary_cn }}{% else %}针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。{% endif %}">{% if page.coverage_summary_cn != "" %}{{ page.coverage_summary_cn }}{% else %}针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。{% endif %}</p>
     <div class="teach-hero-actions">
       <a class="btn btn-primary" href="/teach/#teach-book-qr"
          data-en="Book via WeChat on teach page"
@@ -43,6 +43,8 @@ layout: default
       <a href="/teach/universities/{{ page.uni_slug }}/preview/" data-en="Course preview" data-cn="课程预习">课程预习</a>
     </div>
   </section>
+
+  {% include teach-evidence.html %}
 
   <section class="teach-landing-section">
     <h2 data-en="Common struggles at this university"
@@ -67,6 +69,15 @@ layout: default
         <a href="/teach/courses/{{ page.uni_slug }}/{{ course.slug }}/">
           {% if course.code != "" %}<strong>{{ course.code }}</strong>: {% endif %}{{ course.title }}
         </a>
+        {% if course.linked %}
+        <span class="teach-link-badge teach-link-badge--on"
+              data-en="materials linked"
+              data-cn="已关联资料">已关联资料</span>
+        {% else %}
+        <span class="teach-link-badge teach-link-badge--off"
+              data-en="meta only"
+              data-cn="仅目录">仅目录</span>
+        {% endif %}
         {% if course.department != "" %}
         <span class="teach-dept">{{ course.department }}</span>
         {% endif %}

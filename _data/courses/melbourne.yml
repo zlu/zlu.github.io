@@ -1,34 +1,46 @@
 ---
 university: University of Melbourne
+teaching_folder: u-melborne
 courses:
-  - code: COMP10001
-    title: Foundations of Computing
-  - code: COMP10002
-    title: Foundations of Algorithms
-  - code: COMP20003
-    title: Algorithms and Data Structures
-  - code: COMP20007
-    title: Design of Algorithms
-  - code: COMP30023
-    title: Computer Systems
-  - code: COMP30024
-    title: Artificial Intelligence
-  - code: COMP30026
-    title: Models of Computation
-  - code: COMP30027
-    title: Machine Learning
-  - code: COMP90038
-    title: Algorithms and Complexity
-  - code: COMP90049
-    title: Introduction to Machine Learning
-  - code: COMP90051
-    title: Statistical Machine Learning
-  - code: COMP90054
-    title: AI Planning for Autonomy
-  - code: COMP90086
-    title: Computer Vision
-  - code: COMP90042
-    title: Natural Language Processing
-  - code: SWEN20003
-    title: Object Oriented Software Development
+- code: COMP10001
+  title: Foundations of Computing
+- code: COMP10002
+  title: Foundations of Algorithms
+  material: comp10002
+- code: COMP20003
+  title: Algorithms and Data Structures
+- code: COMP20007
+  title: Design of Algorithms
+- code: COMP30023
+  title: Computer Systems
+- code: COMP30024
+  title: Artificial Intelligence
+- code: COMP30026
+  title: Models of Computation
+- code: COMP30027
+  title: Machine Learning
+- code: COMP90038
+  title: Algorithms and Complexity
+- code: COMP90049
+  title: Introduction to Machine Learning
+- code: COMP90051
+  title: Statistical Machine Learning
+- code: COMP90054
+  title: AI Planning for Autonomy
+- code: COMP90086
+  title: Computer Vision
+- code: COMP90042
+  title: Natural Language Processing
+- code: SWEN20003
+  title: Object Oriented Software Development
+- code: COMP9005
+  title: 0 Advanced Db
+  material: comp90050-advanced-db
+- title: Math Term 1
+- code: COMP1000
+  title: COMP1000
+  material: comp10002
+- code: COMP2000
+  title: COMP 5 Intro. To Numerical Computation In C
+  material: COMP20005 - Intro. to Numerical Computation in C
 ---

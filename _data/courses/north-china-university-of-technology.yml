@@ -1,6 +1,13 @@
 ---
 university: 北方工业大
+teaching_folder: 北方工业大
 courses:
-  - code: MA2624
-    title: Machine Learning for Artificial Intelligence
+- code: MA2624
+  title: Machine Learning for Artificial Intelligence
+- code: MA2623
+  title: Linear Abstract Algebra
+  material: MA2623-linear-abstract-algebra
+- code: MA2634
+  title: ML For AI
+  material: MA2634-ML-for-AI
 ---

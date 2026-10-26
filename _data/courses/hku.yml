@@ -1,30 +1,35 @@
 ---
 university: The University of Hong Kong
+teaching_folder: hku
 courses:
-  - code: COMP3340
-    title: Applied Deep Learning
-    department: School of Computing and Data Science
-  - code: COMP1117B
-    title: Computer Programming
-    department: School of Computing and Data Science
-  - code: COMP1117
-    title: Computer Programming
-  - code: COMP2113
-    title: Programming Technologies
-  - code: COMP2119
-    title: Introduction to Data Structures and Algorithms
-  - code: COMP2120
-    title: Computer Organization
-  - code: COMP2121
-    title: Discrete Mathematics
-  - code: COMP3230
-    title: Principles of Operating Systems
-  - code: COMP3270
-    title: Artificial Intelligence
-  - code: COMP3278
-    title: Introduction to Database Management Systems
-  - code: COMP3314
-    title: Machine Learning
-  - code: COMP3357
-    title: Cryptography
+- code: COMP3340
+  title: Applied Deep Learning
+  department: School of Computing and Data Science
+- code: COMP1117B
+  title: Computer Programming
+  department: School of Computing and Data Science
+  material: comp1117b
+- code: COMP1117
+  title: Computer Programming
+  material: comp1117b
+- code: COMP2113
+  title: Programming Technologies
+- code: COMP2119
+  title: Introduction to Data Structures and Algorithms
+- code: COMP2120
+  title: Computer Organization
+- code: COMP2121
+  title: Discrete Mathematics
+- code: COMP3230
+  title: Principles of Operating Systems
+- code: COMP3270
+  title: Artificial Intelligence
+- code: COMP3278
+  title: Introduction to Database Management Systems
+- code: COMP3314
+  title: Machine Learning
+- code: COMP3357
+  title: Cryptography
+- title: IIMT 3601database Management
+- title: Cs Master Exam
 ---

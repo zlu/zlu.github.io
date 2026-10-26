@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Computer Science Tutoring for Chinese Students — AI & Data Science Expert"
-title_en: "Computer Science Tutoring for Chinese Students | AI & Data Science Expert"
-title_cn: "留学生计算机一对一辅导 | 人工智能与数据科学"
-title_suffix: "Professional CS Tutor for International Students | zlu.me/teach"
-description: Direct 1-1 CS tutoring for Chinese students abroad — no middleman fee. Bilingual help with lectures, homework, exams, and project write-ups. Silicon Valley engineer, AI & data science.
-keywords: computer science tutor, no middleman, 无中介, 留学生辅导, 作业辅导, 考前突击, AI tutoring, 中英双语, WeChat tutoring
+title: "留学生计算机一对一辅导 | 无中介 · AI与数据科学"
+title_en: "1-1 CS Tutoring for Chinese Students Abroad | No Middleman"
+title_cn: "留学生计算机一对一辅导 | 无中介 · AI与数据科学"
+title_suffix: "zlu.me/teach"
+description: 海外中国留学生计算机一对一辅导：同步课程、作业 debug、考前突击。硅谷工程师，中英双语，无中介抽成。微信预约。
+keywords: 留学生辅导, 无中介, 计算机辅导, 作业辅导, 考前突击, AI tutoring, WeChat tutoring, bilingual CS tutor
 lang: zh-CN
 alternate_lang: en
 hreflang:

@@ -1,6 +1,8 @@
 ---
 university: Brunel University of London
+teaching_folder: brunel-university-of-london
 courses:
   - code: MA2624
     title: Machine Learning for Artificial Intelligence
+    material: MA2624-ML-for-AI alias
 ---

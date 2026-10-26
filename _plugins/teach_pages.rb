@@ -58,6 +58,24 @@ module Jekyll
         "en" => "New Zealand",
         "cn" => "新西兰",
         "match" => /auckland/i
+      },
+      "germany" => {
+        "en" => "Germany",
+        "cn" => "德国",
+        "match" => /munich|tum|lmu|technical.?university.?of.?munich|technische/i
+      },
+      "ireland" => {
+        "en" => "Ireland",
+        "cn" => "爱尔兰",
+        "match" => /dublin|ireland|ucd/i
+      },
+      "china" => {
+        "en" => "China / Macau",
+        "cn" => "中国 / 澳门",
+        "match" => /
+          beijing.?normal|north.?china|nanyang.?institute|macau|macao|must|
+          city.?university.?of.?macau|duke.?kunshan|cuhk.?shenzhen
+        /xi
       }
     }.freeze
 
@@ -117,18 +135,16 @@ module Jekyll
       themes = site.data["teach_themes"]
       themes = {} unless themes.is_a?(Hash)
 
-      # Bulk directory from _data/teach_universities.yml (array of name/region/slug)
-      bulk = site.data["teach_universities"]
-      bulk = [] unless bulk.is_a?(Array)
+      # Evidence catalog from .scripts/sync-teach-catalog.py (filenames/counts only).
+      # Empty bulk directory pages were dropped — only real tutoring coverage ships.
+      catalog = catalog_by_slug(site)
 
       universities = []
       slug_lookup = {}
-      seen_names = {}
       seen_slugs = {}
       rich_uni_payloads = []
       theme_index = Hash.new { |h, k| h[k] = [] }
 
-      # 1) Collect rich universities + index courses by theme (pages built after index)
       courses_data.each do |slug, entry|
         next unless entry.is_a?(Hash) && entry["university"]
 
@@ -137,17 +153,21 @@ module Jekyll
         next if uni_slug.empty?
 
         university = entry["university"].to_s.strip
-        name_key = university.downcase
         course_list = Array(entry["courses"]).map { |c| normalize_course(c, themes) }.compact
-        region_key = detect_region("#{data_key} #{uni_slug} #{university}", university)
+        next if course_list.empty?
 
+        region_key = detect_region("#{data_key} #{uni_slug} #{university}", university)
         next if seen_slugs[uni_slug]
+
+        evidence = catalog[uni_slug] || {}
+        course_list = merge_course_evidence(course_list, evidence)
 
         rich_uni_payloads << {
           "uni_slug" => uni_slug,
           "university" => university,
           "course_list" => course_list,
-          "region_key" => region_key
+          "region_key" => region_key,
+          "evidence" => evidence
         }
 
         course_list.each do |course|
@@ -158,17 +178,20 @@ module Jekyll
           }
         end
 
-        record = {
+        universities << {
           "slug" => uni_slug,
           "name" => university,
           "region" => region_key,
           "courses" => course_list,
-          "rich" => true
+          "rich" => true,
+          "topics" => Array(evidence["topics"]),
+          "signals" => evidence["signals"].is_a?(Hash) ? evidence["signals"] : {},
+          "coverage_summary_en" => evidence["coverage_summary_en"].to_s,
+          "coverage_summary_cn" => evidence["coverage_summary_cn"].to_s,
+          "depth_score" => evidence["total_depth"].to_i
         }
-        universities << record
         slug_lookup[data_key] = uni_slug
         seen_slugs[uni_slug] = true
-        seen_names[name_key] = uni_slug
       end
 
       rich_count = universities.size
@@ -182,18 +205,20 @@ module Jekyll
         reading_by_theme[theme_id.to_s] = resolve_theme_reading(site, meta["reading"])
       end
 
-      # Emit rich uni + service + course pages (courses need theme_index)
       rich_uni_payloads.each do |payload|
         uni_slug = payload["uni_slug"]
         university = payload["university"]
         course_list = payload["course_list"]
         region_key = payload["region_key"]
+        evidence = payload["evidence"]
 
-        site.pages << build_university_page(site, uni_slug, university, course_list, region_key, true)
+        site.pages << build_university_page(
+          site, uni_slug, university, course_list, region_key, true, evidence
+        )
 
         SERVICES.each_key do |service_key|
           site.pages << build_uni_service_page(
-            site, uni_slug, university, course_list, region_key, service_key, true
+            site, uni_slug, university, course_list, region_key, service_key, true, evidence
           )
         end
 
@@ -208,58 +233,20 @@ module Jekyll
             theme_index: theme_index,
             reading_by_theme: reading_by_theme,
             course_count: course_count,
-            siblings: course_list
+            siblings: course_list,
+            evidence: evidence
           )
         end
       end
 
-      # 2) Bulk directory universities (+ service landings so uni→service links never 404)
-      bulk_added = 0
-      bulk.each do |entry|
-        next unless entry.is_a?(Hash)
-
-        university = entry["name"].to_s.strip
-        next if university.empty?
-
-        name_key = university.downcase
-        next if seen_names[name_key]
-
-        uni_slug = ascii_slug(entry["slug"].to_s)
-        uni_slug = ascii_slug(university) if uni_slug.empty?
-        next if uni_slug.empty? || seen_slugs[uni_slug]
-
-        region_key = entry["region"].to_s
-        region_key = detect_region("#{uni_slug} #{university}", university) if region_key.empty?
-        region_key = "international" if region_key.empty?
-
-        site.pages << build_university_page(site, uni_slug, university, [], region_key, true)
-
-        # Service landings for directory unis too — university pages link these.
-        SERVICES.each_key do |service_key|
-          site.pages << build_uni_service_page(
-            site, uni_slug, university, [], region_key, service_key, true
-          )
-        end
-
-        universities << {
-          "slug" => uni_slug,
-          "name" => university,
-          "region" => region_key,
-          "courses" => [],
-          "rich" => false
-        }
-        seen_slugs[uni_slug] = true
-        seen_names[name_key] = uni_slug
-        slug_lookup[uni_slug] = uni_slug
-        bulk_added += 1
-      end
-
-      universities.sort_by! { |u| u["name"].downcase }
+      universities.sort_by! { |u| [-u["depth_score"].to_i, u["name"].downcase] }
       site.data["teach_universities"] = universities
       site.data["teach_uni_slugs"] = slug_lookup
       site.data["teach_services"] = SERVICES
       site.data["teach_uni_count"] = universities.size
       site.data["teach_course_count"] = course_count
+      # Keep bulk YAML off generated pages (legacy file may still exist on disk).
+      site.data["teach_bulk_disabled"] = true
 
       REGION_MAP.each_key do |region_key|
         region_unis = universities.select { |u| u["region"] == region_key }
@@ -268,10 +255,9 @@ module Jekyll
         site.pages << build_region_page(site, region_key, region_unis)
       end
 
-      # Service hubs list course-backed schools (full directory is on /teach/universities/)
       hub_unis = universities.select do |u|
         u["courses"].size.positive? &&
-          %w[australia uk usa canada hong-kong singapore].include?(u["region"])
+          %w[australia uk usa canada hong-kong singapore malaysia new-zealand].include?(u["region"])
       end
       SERVICES.each_key do |service_key|
         site.pages << build_service_hub_page(site, service_key, hub_unis)
@@ -280,15 +266,69 @@ module Jekyll
       site.pages << build_universities_index(site, universities)
       uni_service_count = universities.size * SERVICES.size
       theme_counts = theme_index.transform_values(&:size)
-      Jekyll.logger.info "TeachPages:", "generated #{universities.size} universities " \
-        "(#{rich_count} with courses, #{bulk_added} directory), " \
-        "#{course_count} course pages, #{uni_service_count} uni-service pages, " \
-        "#{SERVICES.size} service hubs, " \
+      Jekyll.logger.info "TeachPages:", "generated #{universities.size} evidence-backed universities " \
+        "(dropped empty bulk directory), #{course_count} course pages, " \
+        "#{uni_service_count} uni-service pages, #{SERVICES.size} service hubs, " \
         "#{REGION_MAP.count { |k, _| universities.any? { |u| u['region'] == k } }} regions; " \
         "themes=#{theme_counts.map { |k, v| "#{k}:#{v}" }.join(', ')}"
     end
 
     private
+
+    def catalog_by_slug(site)
+      raw = site.data["teach_catalog"]
+      list = if raw.is_a?(Hash)
+               Array(raw["universities"])
+             elsif raw.is_a?(Array)
+               raw
+             else
+               []
+             end
+      list.each_with_object({}) do |entry, acc|
+        next unless entry.is_a?(Hash)
+
+        slug = ascii_slug(entry["slug"].to_s)
+        next if slug.empty?
+
+        acc[slug] = entry
+      end
+    end
+
+    def merge_course_evidence(course_list, evidence)
+      evidence_courses = Array(evidence["courses"])
+      course_list.map do |course|
+        match = find_evidence_course(course, evidence_courses)
+        next course unless match
+
+        linked = match["link"].to_s != "" && match["link"].to_s != "unlinked" &&
+                 !match["link"].to_s.end_with?("missing on disk")
+        course.merge(
+          "topics" => Array(match["topics"]),
+          "signals" => match["signals"].is_a?(Hash) ? match["signals"] : {},
+          "shape" => match["shape"].is_a?(Hash) ? match["shape"] : {},
+          "depth_score" => match["depth_score"].to_i,
+          "material" => match["material"].to_s,
+          "link_how" => match["link"].to_s,
+          "linked" => linked
+        )
+      end
+    end
+
+    def find_evidence_course(course, evidence_courses)
+      code_key = course["code"].to_s.gsub(/\s+/, "").upcase
+      title_key = ascii_slug(course["title"].to_s)
+      material_key = course["material"].to_s.strip
+      evidence_courses.find do |ec|
+        next false unless ec.is_a?(Hash)
+
+        ec_code = ec["code"].to_s.gsub(/\s+/, "").upcase
+        ec_title = ascii_slug(ec["title"].to_s)
+        ec_material = ec["material"].to_s.strip
+        (material_key != "" && ec_material == material_key) ||
+          (code_key != "" && ec_code == code_key) ||
+          (title_key != "" && (ec_title == title_key || ec_title.include?(title_key) || title_key.include?(ec_title)))
+      end
+    end
 
     def normalize_course(course, themes = {})
       return nil unless course.is_a?(Hash)
@@ -308,6 +348,7 @@ module Jekyll
         "code" => code,
         "title" => title,
         "department" => course["department"].to_s.strip,
+        "material" => course["material"].to_s.strip,
         "slug" => course_slug(code, title),
         "theme" => theme_id
       }
@@ -458,13 +499,19 @@ module Jekyll
       REGION_MAP.fetch(key, {})[lang] || key
     end
 
-    def build_university_page(site, uni_slug, university, courses, region_key, in_sitemap = true)
+    def build_university_page(site, uni_slug, university, courses, region_key, in_sitemap = true, evidence = {})
+      evidence = {} unless evidence.is_a?(Hash)
       codes = courses.map { |c| c["code"] }.reject(&:empty?)
+      topic_en = Array(evidence["topics"]).filter_map { |t| t["en"] if t.is_a?(Hash) }.first(4)
       title_en = "#{university} Computer Science Tutoring | AI & Programming"
       title_cn = "#{university} 计算机辅导 | 人工智能与编程一对一"
-      description = "Bilingual CS tutoring for #{university} students. " \
-                    "Coverage includes #{codes.first(6).join(', ')}#{codes.size > 6 ? ' and more' : ''}. " \
-                    "WeChat booking · 中英双语."
+      description = evidence["coverage_summary_en"].to_s
+      if description.empty?
+        description = "Bilingual CS tutoring for #{university} students. "
+        description += "Coverage includes #{codes.first(6).join(', ')}#{codes.size > 6 ? ' and more' : ''}. " if codes.any?
+        description += "Themes: #{topic_en.join(', ')}. " if topic_en.any?
+        description += "WeChat booking · 中英双语."
+      end
 
       page = TeachGeneratedPage.new(site, site.source, "teach/universities/#{uni_slug}")
       page.data.merge!(
@@ -482,14 +529,19 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => in_sitemap
+        "sitemap" => in_sitemap,
+        "evidence_topics" => Array(evidence["topics"]),
+        "evidence_signals" => evidence["signals"].is_a?(Hash) ? evidence["signals"] : {},
+        "coverage_summary_en" => evidence["coverage_summary_en"].to_s,
+        "coverage_summary_cn" => evidence["coverage_summary_cn"].to_s,
+        "evidence_backed" => true
       )
       page
     end
 
     def build_course_page(
       site, uni_slug, university, course, region_key,
-      themes:, theme_index:, reading_by_theme:, course_count:, siblings:
+      themes:, theme_index:, reading_by_theme:, course_count:, siblings:, evidence: {}
     )
       code = course["code"]
       title = course["title"]
@@ -535,6 +587,19 @@ module Jekyll
       theme_reading = Array(reading_by_theme[theme_id]).first(4)
 
       about_topics = topics.first(8).map { |t| t["en"].to_s }.reject(&:empty?)
+      course_topics = Array(course["topics"])
+      course_signals = course["signals"].is_a?(Hash) ? course["signals"] : {}
+      course_shape = course["shape"].is_a?(Hash) ? course["shape"] : {}
+      if course_topics.any?
+        about_topics = (course_topics.filter_map { |t| t["en"] if t.is_a?(Hash) } + about_topics).uniq.first(10)
+      end
+      if course_topics.any?
+        topic_bits = course_topics.first(4).filter_map { |t| t["en"] if t.is_a?(Hash) }
+        description = "1-1 tutoring for #{label} at #{university}"
+        description += " (#{theme_label_en})" unless theme_label_en.empty?
+        description += ". Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
+        description += "Bilingual Chinese/English — assignments, projects, exam prep. No ghostwriting."
+      end
 
       page = TeachGeneratedPage.new(
         site,
@@ -572,17 +637,34 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => true
+        "sitemap" => true,
+        "evidence_topics" => course_topics,
+        "evidence_signals" => course_signals,
+        "evidence_shape" => course_shape,
+        "evidence_backed" => course_topics.any? || course_shape.any?,
+        "coverage_summary_en" => (evidence.is_a?(Hash) ? evidence["coverage_summary_en"] : "").to_s,
+        "coverage_summary_cn" => (evidence.is_a?(Hash) ? evidence["coverage_summary_cn"] : "").to_s
       )
       page
     end
 
-    def build_uni_service_page(site, uni_slug, university, courses, region_key, service_key, in_sitemap = true)
+    def build_uni_service_page(
+      site, uni_slug, university, courses, region_key, service_key, in_sitemap = true, evidence = {}
+    )
+      evidence = {} unless evidence.is_a?(Hash)
       svc = SERVICES.fetch(service_key)
       title_en = "#{university} #{svc['title_en']} | Computer Science Tutoring"
       title_cn = "#{university}#{svc['title_cn']} | 计算机留学生一对一"
       codes = courses.map { |c| c["code"] }.reject(&:empty?)
-      description = "#{svc['desc_en']} Popular at #{university}: #{codes.first(5).join(', ')}."
+      code_bit = codes.first(5).join(", ")
+      description = "#{svc['desc_en']} "
+      description += if code_bit.empty?
+                       "Courses I actually tutor at #{university}."
+                     else
+                       "Popular at #{university}: #{code_bit}."
+                     end
+      topics = Array(evidence["topics"]).filter_map { |t| t["en"] if t.is_a?(Hash) }.first(3)
+      description += " Themes: #{topics.join(', ')}." if topics.any?
 
       page = TeachGeneratedPage.new(
         site,
@@ -611,7 +693,12 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => in_sitemap
+        "sitemap" => in_sitemap,
+        "evidence_topics" => Array(evidence["topics"]),
+        "evidence_signals" => evidence["signals"].is_a?(Hash) ? evidence["signals"] : {},
+        "coverage_summary_en" => evidence["coverage_summary_en"].to_s,
+        "coverage_summary_cn" => evidence["coverage_summary_cn"].to_s,
+        "evidence_backed" => true
       )
       page
     end
@@ -680,10 +767,11 @@ module Jekyll
     end
 
     def build_universities_index(site, universities)
-      title_en = "University CS Tutoring Directory | Computer Science Tutoring"
-      title_cn = "大学计算机辅导目录 | 留学生一对一"
-      description = "Browse #{universities.size} universities for bilingual CS tutoring — " \
-                    "AI, data science, and programming course support for Chinese students abroad."
+      title_en = "University CS Tutoring Directory | Schools I've Actually Tutored"
+      title_cn = "大学计算机辅导目录 | 真实辅导过的学校"
+      course_n = universities.sum { |u| Array(u["courses"]).size }
+      description = "Directory of #{universities.size} universities and #{course_n} courses with " \
+                    "real bilingual tutoring coverage — not an empty school list. AI, data science, programming."
 
       page = TeachGeneratedPage.new(site, site.source, "teach/universities")
       page.data.merge!(
@@ -694,7 +782,7 @@ module Jekyll
         "title_suffix" => "zlu.me/teach",
         "description" => description,
         "keywords" => "university tutoring directory, 留学生辅导, computer science, AI",
-        "universities" => universities.sort_by { |u| u["name"].downcase },
+        "universities" => universities,
         "lang" => "zh-CN",
         "sitemap" => true
       )

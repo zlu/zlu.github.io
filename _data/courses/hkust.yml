@@ -1,0 +1,10 @@
+---
+university: The Hong Kong University of Science and Technology
+teaching_folder: hkust
+courses:
+- title: Fin Ml
+- title: Dasc
+- code: COMP1023
+  title: COMP1023
+  material: comp1023
+---

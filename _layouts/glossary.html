@@ -6,11 +6,11 @@ layout: default
     {% if page.collection == 'med-glossary' %}Medicine Glossary{% else %}AI Glossary{% endif %}
   </a>
   <span aria-hidden="true"> / </span>
-  <span>{{ page.title }}</span>
+  <span>{{ page.title_short | default: page.title }}</span>
 </nav>
 
 <article class="glossary-term-page post" itemscope itemtype="https://schema.org/DefinedTerm">
-  <h1 itemprop="name">{{ page.title }}</h1>
+  <h1 itemprop="name">{{ page.title_short | default: page.title }}</h1>
 
   {% if page.synonyms and page.synonyms.size > 0 %}
   <p class="glossary-synonyms">

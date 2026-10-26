@@ -1,0 +1,11 @@
+---
+university: Technical University of Munich
+teaching_folder: tum
+courses:
+- code: INHN0012
+  title: Computer Networking And IT Security
+  material: INHN0012 Computer Networking and IT Security
+- title: Rechnerarchitekture
+- title: Intro To Computer Architecture
+- title: Formale Sprache
+---

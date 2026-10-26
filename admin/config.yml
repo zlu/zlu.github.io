@@ -156,6 +156,13 @@ collections:
     extension: ".yml"
     fields:
       - { label: "University Name", name: "university", widget: "string" }
+      - {
+          label: "Teaching folder",
+          name: "teaching_folder",
+          widget: "string",
+          required: false,
+          hint: "Folder name under ~/baidu-sync/teaching (e.g. cardiff). Defaults to this file’s slug.",
+        }
       - label: "Courses"
         name: "courses"
         widget: "list"
@@ -172,6 +179,13 @@ collections:
               name: "department",
               widget: "string",
               required: false,
+            }
+          - {
+              label: "Material folder",
+              name: "material",
+              widget: "string",
+              required: false,
+              hint: "Subfolder under teaching/<uni>/ — private materials only; never published.",
             }
   - name: "ai-glossary"
     label: "AI Glossary"

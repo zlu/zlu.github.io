@@ -1342,6 +1342,40 @@ body.teach-page-active .site {
     font-size: 1.05rem;
 }
 
+.teach-link-badge {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.45rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  border-radius: 3px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.teach-link-badge--on {
+  color: #0f5132;
+  background: #d1e7dd;
+}
+
+.teach-link-badge--off {
+  color: #664d03;
+  background: #fff3cd;
+}
+
+.teach-evidence-summary {
+  margin-bottom: 0.75rem;
+}
+
+.teach-signal-list {
+  margin-bottom: 1rem;
+}
+
+.teach-evidence h3 {
+  font-size: 1.05rem;
+  margin: 1rem 0 0.5rem;
+}
+
 .teach-topic-chips {
     display: flex;
     flex-wrap: wrap;

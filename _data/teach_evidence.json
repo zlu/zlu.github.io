@@ -1,0 +1,525 @@
+{
+  "source": "/Users/zlu/baidu-sync/teaching",
+  "generated_note": "Filenames/counts only — no lecture/assignment body text",
+  "folders": {
+    "algonguin-college": {
+      "preferred_slug": "algonquin-college",
+      "materials": [
+        "ESC4503-intro-to-business-application-programming",
+        "ESC4402"
+      ]
+    },
+    "baruch": {
+      "preferred_slug": "baruch-college",
+      "materials": [
+        "mfe-tech-interview"
+      ]
+    },
+    "bayes-business-school": {
+      "preferred_slug": "bayes-business-school",
+      "materials": [
+        "intro-to-r"
+      ]
+    },
+    "beijing-normal-hk-baptist-u": {
+      "preferred_slug": "beijing-normal-hongkong-baptist-university",
+      "materials": [
+        "Research and Application of Language Models"
+      ]
+    },
+    "bristol-u": {
+      "preferred_slug": "bristol",
+      "materials": [
+        "MATH10017 Algorithms and Programming in C(++) and R"
+      ]
+    },
+    "brunel-university-of-london": {
+      "preferred_slug": "brunel-university-of-london",
+      "materials": [
+        "MA2624-ML-for-AI alias"
+      ]
+    },
+    "cardiff": {
+      "preferred_slug": "cardiff",
+      "materials": [
+        "05.03.2025-softwaredev"
+      ]
+    },
+    "cmu": {
+      "preferred_slug": "carnegie-mellon-university",
+      "materials": [
+        "cmu-py-15-112",
+        "112003",
+        "cs15-112"
+      ]
+    },
+    "concordia": {
+      "preferred_slug": "concordia-university",
+      "materials": [
+        "ps5.js",
+        "cart211-final",
+        "cart263-js-winter2026",
+        "frogfrogfrog"
+      ]
+    },
+    "cornell": {
+      "preferred_slug": "cornell-university",
+      "materials": [
+        "database",
+        "cs2110-java-test"
+      ]
+    },
+    "cuhk": {
+      "preferred_slug": "cuhk",
+      "materials": [
+        "sdsc8009-datamining",
+        "cs2115-computer-organization",
+        "cs5187-vision-and-image"
+      ]
+    },
+    "cuhk-sz": {
+      "preferred_slug": "cuhk-shenzhen",
+      "materials": [
+        "dda3020-machine-learning"
+      ]
+    },
+    "duke-kunshan-u": {
+      "preferred_slug": "duke-kunshan-university",
+      "materials": [
+        "LIT111"
+      ]
+    },
+    "durham-university": {
+      "preferred_slug": "durham-university",
+      "materials": [
+        "2026 DS",
+        "DataScience"
+      ]
+    },
+    "hk-baptist": {
+      "preferred_slug": "hong-kong-baptist-university",
+      "materials": [
+        "comp4330sef-advanced-ai",
+        "comps413f-application-design-and-development-for-mobile-devices",
+        "COMP7025"
+      ]
+    },
+    "hk-polytech": {
+      "preferred_slug": "hong-kong-polytechnic-university",
+      "materials": [
+        "comp5941-ai-thesis"
+      ]
+    },
+    "hkmu": {
+      "preferred_slug": "hong-kong-metropolitan-university",
+      "materials": [
+        "COMP S460F Advanced Topics in Data Mining",
+        "comp s321f - advanced-database-and-data-warehousing"
+      ]
+    },
+    "hku": {
+      "preferred_slug": "hku",
+      "materials": [
+        "IIMT 3601Database Management",
+        "comp1117b",
+        "cs-master-mock-exam",
+        "data analysis in science"
+      ]
+    },
+    "hkust": {
+      "preferred_slug": "hkust",
+      "materials": [
+        "fin-ml",
+        "dasc2010",
+        "comp1023"
+      ]
+    },
+    "imperial-college-london": {
+      "preferred_slug": "imperial-college",
+      "materials": [
+        "AdvancedCompArchitecture",
+        "PHYS70041",
+        "math60026-70026-methods-for-data-science"
+      ]
+    },
+    "james-cook-singapore": {
+      "preferred_slug": "jcu",
+      "materials": [
+        "CP3406-android",
+        "CP3404",
+        "CP3501- Deep Learning"
+      ]
+    },
+    "johnhopkins": {
+      "preferred_slug": "john-hopkins",
+      "materials": []
+    },
+    "kings-college-london": {
+      "preferred_slug": "kings-college-london",
+      "materials": [
+        "4qqmn909-principles-of-programming"
+      ]
+    },
+    "leeds-university": {
+      "preferred_slug": "leeds",
+      "materials": [
+        "lubs3185"
+      ]
+    },
+    "lehigh-university": {
+      "preferred_slug": "lehigh-university",
+      "materials": [
+        "ENGR 010"
+      ]
+    },
+    "lmu-慕尼黑大学": {
+      "preferred_slug": "lmu",
+      "materials": [
+        "symbolische-programmierspache"
+      ]
+    },
+    "macquarie-university": {
+      "preferred_slug": "macquarie",
+      "materials": [
+        "COMP6200-aug-2025",
+        "COMP6010",
+        "comp6200-march-2025",
+        "comp3770"
+      ]
+    },
+    "monash": {
+      "preferred_slug": "monash",
+      "materials": [
+        "etx3500-5500-High-Dimensional-Data-Analysis",
+        "fit1045",
+        "FITS9136 Python",
+        "fit1008",
+        "FIT5202",
+        "fit5124-networking-ml",
+        "fit1047",
+        "eng1014",
+        "FIT5196-datawrangling",
+        "FIT1058 Foundations of computing"
+      ]
+    },
+    "national-university-of-malaysia": {
+      "preferred_slug": "national-university-of-malaysia",
+      "materials": [
+        "6114非结构化数据分析(R)"
+      ]
+    },
+    "new-castle": {
+      "preferred_slug": "newcastle",
+      "materials": [
+        "密码学"
+      ]
+    },
+    "north-eastern": {
+      "preferred_slug": "northeastern",
+      "materials": [
+        "phd-application-rp"
+      ]
+    },
+    "ntu": {
+      "preferred_slug": "ntu",
+      "materials": [
+        "EE6407-GENETIC ALGORITHMS & MACHINE LEARNING",
+        "IE0005"
+      ]
+    },
+    "nus": {
+      "preferred_slug": "nus",
+      "materials": [
+        "CS1101S-programming-methodology",
+        "CS1010E - Programming Methedology"
+      ]
+    },
+    "oregon-state": {
+      "preferred_slug": "oregon-state-university",
+      "materials": [
+        "computer-architecture"
+      ]
+    },
+    "psb-academy": {
+      "preferred_slug": "psb-academy",
+      "materials": [
+        "Introduction to Programming"
+      ]
+    },
+    "queensland": {
+      "preferred_slug": "queensland",
+      "materials": [
+        "coms3200",
+        "comp4403-compiler"
+      ]
+    },
+    "rensselaer": {
+      "preferred_slug": "rensselaer",
+      "materials": [
+        "csci4850-modern-binary-exploitation"
+      ]
+    },
+    "sim": {
+      "preferred_slug": "sim",
+      "materials": [
+        "ITSD010 Computing and Cybersecurity Fundamentals"
+      ]
+    },
+    "sjsu": {
+      "preferred_slug": "san-jose-state-university",
+      "materials": [
+        "data 201"
+      ]
+    },
+    "tum": {
+      "preferred_slug": "tum",
+      "materials": [
+        " Intro to Computer Architecture",
+        "INHN0012 Computer Networking and IT Security"
+      ]
+    },
+    "u-birmingham": {
+      "preferred_slug": "birmingham",
+      "materials": [
+        "LM Data Structures, Algorithms, and Databases",
+        "Computer Systems",
+        "LMLI Artificial Intelligence and Machine Learning",
+        "07-3838153lm-analytics-micro-course-birmingham-business-school",
+        "LC Artificial Intelligence 1",
+        "Database and Web Programming",
+        "DSA 24-25",
+        "LI Artificial Intelligence 2"
+      ]
+    },
+    "u-bristol": {
+      "preferred_slug": "bristol",
+      "materials": [
+        "COMS10016-Imperative-and-functional-programming",
+        "MATH10017 Algorithms and Programming in C(++) and R"
+      ]
+    },
+    "u-edinburgh": {
+      "preferred_slug": "edinburgh",
+      "materials": [
+        "econ-math"
+      ]
+    },
+    "u-glasgow": {
+      "preferred_slug": "glasgow",
+      "materials": [
+        "5057 HCI Design & Evaluation",
+        "compsci5089-intro-to-datascience",
+        "4043 Systems and Networks",
+        "compsci508-intro-to-datascience",
+        "datastructure",
+        "往期试卷",
+        "5077 Enterprise Cyber Security",
+        "5076 Database & Data Analytics",
+        "compsci5077",
+        "4039 Programming"
+      ]
+    },
+    "u-manchester": {
+      "preferred_slug": "university-of-manchester",
+      "materials": [
+        "automated_grading_system alias"
+      ]
+    },
+    "u-melborne": {
+      "preferred_slug": "melbourne",
+      "materials": [
+        "comp90050-advanced-db",
+        "math-Term 1",
+        "COMP20005 - Intro. to Numerical Computation in C",
+        "comp10002",
+        "comp20005-intro-to-numerical-computation-in-c",
+        "comp10002-foundations-of-algo"
+      ]
+    },
+    "u-nottingham": {
+      "preferred_slug": "nottingham",
+      "materials": [
+        "eeee4119-ai-and-intelligent-systems"
+      ]
+    },
+    "u-pittsburg": {
+      "preferred_slug": "pittsburgh",
+      "materials": [
+        "compinfo401"
+      ]
+    },
+    "u-queensland": {
+      "preferred_slug": "queensland",
+      "materials": [
+        "MECH2700",
+        "INFS7410",
+        "CSSE7100",
+        "intro-to-software-engr",
+        "MECH2700 Revision",
+        "INFS7203-data-mining",
+        "infs9700",
+        "BISM1201",
+        "SEMT20003"
+      ]
+    },
+    "u-south-australia": {
+      "preferred_slug": "universifty-of-south-australia",
+      "materials": [
+        "prob solving and programming"
+      ]
+    },
+    "u-southampton": {
+      "preferred_slug": "university-of-southampton",
+      "materials": [
+        "MANG2092",
+        "git-critique",
+        "math6164",
+        "git-paper&marks",
+        "git-rp",
+        "MATH6161"
+      ]
+    },
+    "u-sydney": {
+      "preferred_slug": "university-of-sydney",
+      "materials": [
+        "elec1601",
+        "MKTG1011-Foundamentals of Marketing Analytics",
+        "INFO1112",
+        "soft2201-comp9201",
+        "distributed systems",
+        "INFO3616-Principles of Security and Security Eng",
+        "info-1113-java",
+        "INFO3616：Principles of Security and Security Eng",
+        "QBUS6600",
+        "INFO1110 Introduction to Programming"
+      ]
+    },
+    "u-warwick": {
+      "preferred_slug": "university-of-warwick",
+      "materials": []
+    },
+    "u-western-australia": {
+      "preferred_slug": "university-of-western-australia",
+      "materials": [
+        "AI&AS"
+      ]
+    },
+    "uc-berkeley": {
+      "preferred_slug": "berkeley",
+      "materials": [
+        "CS70离散数学",
+        "Data 8-the Foundations of Data Science"
+      ]
+    },
+    "ucl": {
+      "preferred_slug": "ucl",
+      "materials": [
+        "Connected system资料"
+      ]
+    },
+    "uiuc": {
+      "preferred_slug": "uiuc",
+      "materials": [
+        "cs444-ece494-deep-learning-for-computer-vision"
+      ]
+    },
+    "unc-chapel-hill": {
+      "preferred_slug": "unc-chapel-hill",
+      "materials": [
+        "APPL 101-Exploring Engineering"
+      ]
+    },
+    "university-college-dublin": {
+      "preferred_slug": "university-college-dublin",
+      "materials": [
+        "Computer Graphics",
+        "Software Methodology",
+        "Web Application Development",
+        "Multi-Paradigm Programming",
+        "Distributed Systems",
+        "Mobile Computing"
+      ]
+    },
+    "university-college-london": {
+      "preferred_slug": "ucl",
+      "materials": [
+        "COMP0161",
+        "MMA"
+      ]
+    },
+    "unsw-sydney": {
+      "preferred_slug": "unsw",
+      "materials": [
+        "comp2017-9017-system-programming",
+        "2048",
+        "comp9414-ai",
+        "comp4920-computer-ethics",
+        "Comp5310简化",
+        "info3616",
+        "12.03.2025-networking-security",
+        "comp9021 25T3 期末班资料",
+        "comp2511-software-design-and-architecture",
+        "Comp9601简化",
+        "COMP9517-computer-vision",
+        "MTHS1313",
+        "comp3211",
+        "comp9331-networking",
+        "comp4337-9337-securing-fixed-and-wireless-networks"
+      ]
+    },
+    "uts": {
+      "preferred_slug": "uts",
+      "materials": [
+        "IWBS001-web-systems",
+        "networking",
+        "programming2-java-2026-u503"
+      ]
+    },
+    "western-university": {
+      "preferred_slug": "western-university",
+      "materials": [
+        "ds1000b-data-science-concepts"
+      ]
+    },
+    "北师大": {
+      "preferred_slug": "beijing-normal-university",
+      "materials": [
+        "deutsch-a1"
+      ]
+    },
+    "北方工业大": {
+      "preferred_slug": "north-china-university-of-technology",
+      "materials": [
+        "MA2634-ML-for-AI",
+        "MA2623-linear-abstract-algebra"
+      ]
+    },
+    "南阳理工": {
+      "preferred_slug": "nanyang-institute-of-technology",
+      "materials": []
+    },
+    "慕尼黑工业大学": {
+      "preferred_slug": "tum",
+      "materials": [
+        "rechnerarchitekture",
+        "formale sprache"
+      ]
+    },
+    "澳门城市大学": {
+      "preferred_slug": "city-university-of-macau",
+      "materials": [
+        "BCS010-數據庫系統"
+      ]
+    },
+    "澳门理工大学": {
+      "preferred_slug": "macao-polytechnic-university",
+      "materials": []
+    },
+    "澳门科技大学": {
+      "preferred_slug": "must",
+      "materials": [
+        "资讯科技"
+      ]
+    }
+  }
+}

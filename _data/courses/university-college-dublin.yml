@@ -1,0 +1,17 @@
+---
+university: University College Dublin
+teaching_folder: university-college-dublin
+courses:
+- code: COMP3038J
+  title: Multi Paradigm Programming
+  material: Multi-Paradigm Programming
+- code: COMP3019J
+  title: Web Application Development
+  material: Web Application Development
+- title: Mobile Computing
+- title: Computer Graphics
+- title: Software Methodology
+- code: COMP3008J
+  title: Distributed Systems
+  material: Distributed Systems
+---
