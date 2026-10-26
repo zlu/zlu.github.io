@@ -1,84 +1,68 @@
-zlu.github.io
-=============
+# [zlu.github.io](http://zlu.github.io)
 
-[Live site](https://www.zlu.me)
+Personal site for [Zhao Lü](https://zlu.me).
 
-## China Specificity
+Built with **Jekyll 4** and custom `_plugins`. Deployed to **GitHub Pages** on push to `main`.
 
-## 1. **How It Works**
-- By default, load CDN versions (fast for most users).
-- Use a GeoIP service (like ipapi.co) to detect if the user is in China.
-- If in China, dynamically switch to local versions (which you must host in your `/assets` directory).
+## Local development
 
----
+Requires Ruby (see `.ruby-version` / `mise.toml`).
 
-## 2. **Implementation**
-
-### Download and host local versions of CSS/JS
-  - Bootstrap CSS/JS (e.g. `/assets/bootstrap/css/bootstrap.min.css`, `/assets/bootstrap/js/bootstrap.bundle.min.js`)
-  - MathJax
-  - Any other CDN resources you want to serve locally
-
-### **A. In `<head>`:**
-```html
-<!-- Bootstrap CSS: CDN by default, local fallback for China -->
-<link id="bootstrap-cdn" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-<link id="bootstrap-local" rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" disabled>
-
-<!-- Font Awesome (if used) -->
-<link id="fa-cdn" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
-<link id="fa-local" rel="stylesheet" href="/assets/fontawesome/css/all.min.css" disabled>
-
-<!-- MathJax (if used) -->
-<script id="mathjax-cdn" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script id="mathjax-local" async src="/assets/js/mathjax/es5/tex-mml-chtml.js" disabled></script>
+```bash
+bundle install
+bundle exec jekyll serve
 ```
 
-### **B. Before `</body>`:**
-```html
-<!-- Bootstrap JS: CDN by default, local fallback for China -->
-<script id="bootstrap-js-cdn" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script id="bootstrap-js-local" src="/assets/bootstrap/js/bootstrap.bundle.min.js" disabled></script>
+Site: [http://127.0.0.1:4000](http://127.0.0.1:4000)
 
-<script>
-fetch('https://ipapi.co/json/')
-  .then(response => response.json())
-  .then(data => {
-    if (data && data.country_code === 'CN') {
-      // Bootstrap CSS
-      document.getElementById('bootstrap-cdn').setAttribute('disabled', 'disabled');
-      document.getElementById('bootstrap-local').removeAttribute('disabled');
-      // Bootstrap JS
-      document.getElementById('bootstrap-js-cdn').setAttribute('disabled', 'disabled');
-      document.getElementById('bootstrap-js-local').removeAttribute('disabled');
-      // Font Awesome
-      document.getElementById('fa-cdn').setAttribute('disabled', 'disabled');
-      document.getElementById('fa-local').removeAttribute('disabled');
-      // MathJax
-      document.getElementById('mathjax-cdn').setAttribute('disabled', 'disabled');
-      document.getElementById('mathjax-local').removeAttribute('disabled');
-      // Optionally, remove Google Analytics/Tag Manager and add Baidu Analytics here
-    }
-  });
-</script>
+Drafts live in `_drafts/` (gitignored). Publish by moving a draft into `_posts/`.
+
+## Layout
+
+| Path | Role |
+|------|------|
+| `_posts/` | Blog posts |
+| `_ai-glossary/`, `_med-glossary/` | Glossary collections |
+| `_albums/`, `_photos/` | Photo trips + per-shot front matter (images on R2) |
+| `_data/courses/` | Teach catalog (source of truth for university/course SEO pages) |
+| `_plugins/` | Custom generators (required for `/teach/*`) |
+| `redirects/` | Soft redirects for retired URLs |
+| `admin/` | Decap CMS config |
+| `.scripts/` | Photos upload, teach sync, IndexNow / Baidu URL push |
+
+Web-sized photos are served from Cloudflare R2 (`photo_cdn` in `_config.yml` → `https://media.zlu.me`).
+
+## Photos
+
+```bash
+pip install -r .scripts/requirements-photos.txt
+cp .scripts/r2.env.example .scripts/r2.env   # fill R2 credentials
+python3 .scripts/photos_serve.py             # drag-and-drop UI → http://127.0.0.1:8787
+# or CLI:
+python3 .scripts/photos_add.py ./IMG.jpg --title "…" --album austin-2018
 ```
 
----
+Commit the generated `_photos/*.md` (and album files) after upload.
 
-## 3. **Updates**
-- Place the above `<link>` and `<script>` tags in your layout.
-- Download and host the local versions of the libraries in your `/assets` directory.
-- Adjust the paths if your local files are in a different location.
+## Teach catalog
 
----
+Admin YAML under `_data/courses/` drives public `/teach/` pages via `teach_pages.rb`. Optional sync against private teaching materials:
 
-## 4. **Optional: Baidu Analytics for China**
-As Google Analytics does not work for China, use Baidu Analytics script in the same JS block if `country_code === 'CN'`.
+```bash
+python3 .scripts/sync-teach-catalog.py
+python3 .scripts/sync-teach-catalog.py --suggest
+```
 
----
+## SEO helpers
 
-## 5. **Summary**
-- This approach is robust, works for any static site, and is easy to maintain.
-- Users in China will get fast, reliable access to your site’s CSS/JS.
-- All other users will continue to benefit from CDN speed.
+```bash
+# IndexNow (Bing et al.) — needs .scripts/indexnow.env
+python3 .scripts/indexnow_submit_urls.py --dry-run
 
+# Baidu active push — needs .scripts/baidu.env
+python3 .scripts/baidu_submit_urls.py --dry-run
+```
+
+## Deploy
+
+[`.github/workflows/jekyll.yml`](.github/workflows/jekyll.yml) runs `bundle exec jekyll build` and deploys the artifact to GitHub Pages. Custom plugins must run in CI (stock GitHub Pages Jekyll would skip them and leave `/teach/*` as 404).
