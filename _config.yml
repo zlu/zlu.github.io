@@ -10,13 +10,15 @@ description: "Zhao Lü — Silicon Valley engineer, AI educator, and CS tutor. A
 author: zlu
 # Tutor-focused keywords for teach pages that opt in via page.keywords or site.tutor_keywords
 tutor_keywords: "留学辅导，留学生辅导,留学生课程辅导,留学生补习,留学生在线辅导,留学生作业辅导,美国留学生辅导,英国留学生辅导,澳洲留学生辅导,新西兰留学辅导,加拿大留学生辅导,香港留学生辅导,留学生一对一辅导,留学生线上辅导，人工智能辅导，数据科学辅导，计算机课程辅导, AI辅导，Python辅导，online 1-1 tutoring for chinese students in australia, artificial intelligence tutoring"
-rss_path: feeds
 markdown: kramdown
-redcarpet:
-  extensions: ["strikethrough"]
 highlighter: rouge
 port: 4000
-exclude: ["vendor"]
+exclude:
+  - vendor
+  - README.md
+  - mise.toml
+  - .scripts
+  - .github
 # Public base URL for web-sized portfolio images on Cloudflare R2 (no Worker).
 photo_cdn: "https://media.zlu.me"
 collections:
