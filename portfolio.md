@@ -17,9 +17,10 @@ Side projects and products I build and run.
 
 ### Tools
 
+- **[MacHygienist](https://machygienist.app)** — Clean up and reclaim Mac disk space.
+- **[Been Together](https://beentogether.app)** — Travel log for solo trips or shared groups.
 - **[HourHustle](https://hh.zlu.me)** — Track freelancing time.
 - **[AlgoScape](https://algoscape.zlu.me)** — Algorithms visualized.
 - **[Pixelator](https://pixelator.zlu.me)** — Mask sensitive information in PDFs before sharing.
 - **[LucidLens](https://lucidlens.zlu.me)** — Check bias in specific news sources.
 - **[AI Detector](https://ai-detector.zlu.me)** — Check AI authorship in text.
-- **[Been Together](https://beentogether.app)** — Record your travels, solo or in a group.
