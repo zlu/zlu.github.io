@@ -1,0 +1,29 @@
+/* Portfolio project list — quiet icons, no card chrome */
+
+.portfolio-projects {
+  list-style: none;
+  padding: 0;
+  margin: 0.75em 0 1.5em;
+}
+
+.portfolio-projects li {
+  display: grid;
+  grid-template-columns: 1.65em 1fr;
+  column-gap: 0.65em;
+  align-items: start;
+  margin: 0.55em 0;
+  line-height: 1.45;
+}
+
+.portfolio-icon {
+  grid-column: 1;
+  width: 1.65em;
+  height: 1.65em;
+  margin-top: 0.05em;
+  border-radius: 0.35em;
+  object-fit: cover;
+}
+
+.portfolio-projects li > span {
+  grid-column: 2;
+}
