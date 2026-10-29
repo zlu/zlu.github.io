@@ -674,4 +674,4 @@ From here, the next pieces of a decoder-only Transformer are residual connection
    Read in [BetterReads](https://www.betterreads.dev/reader?bookId=bahdanau_nmt_align_translate&type=pdf&preview=1){:target="_blank" rel="noopener noreferrer"}
 2. <span id="ref-vaswani"></span>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. “Attention Is All You Need.” In *Advances in Neural Information Processing Systems (NeurIPS)*, 2017. [arXiv:1706.03762](https://arxiv.org/abs/1706.03762){:target="_blank" rel="noopener noreferrer"}.  
    Read in [BetterReads](https://www.betterreads.dev/reader?bookId=vaswani_attention_is_all_you_need&type=pdf&preview=1){:target="_blank" rel="noopener noreferrer"}
-3. Zhao Lü. [*Recurrent Neural Network (RNN): From Theory to Translation*](/2025/06/10/rnn-machine-translation/){:target="_blank" rel="noopener noreferrer"}. Encoder/decoder RNNs before attention.
+3. Zhao Lü. [*Recurrent Neural Network (RNN): From Theory to Translation*](/2025/06/10/rnn-machine-translation.html){:target="_blank" rel="noopener noreferrer"}. Encoder/decoder RNNs before attention.

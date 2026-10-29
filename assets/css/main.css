@@ -207,8 +207,8 @@ html.sidebar-collapsed .sidebar-toggle-icon {
 
 /* Sidebar title */
 .sidebar-title {
-  font-size: 2.4em;
-  font-weight: 700;
+  font-size: 2.1em;
+  font-weight: 600;
   margin: 0 0 10px;
   color: #333;
 }
@@ -647,12 +647,16 @@ article.post pre {
     white-space: pre-wrap;
 }
 
-/* Post page title sits outside article.post; global h* reset makes it body-sized. */
+/* Post page title sits outside article.post; global h* reset makes it body-sized.
+   Must read clearly larger than article.post h2 (1.8em section headings).
+   Mirrored inline in _layouts/post.html so GH Pages CSS CDN cache cannot hide it. */
+.site h2.post-title,
 .post-title {
-    font-size: 2.1em;
-    line-height: 1.25;
-    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
     margin: 0 0 0.35em;
+    color: #222;
 }
 
 /* Better spacing for headings */
@@ -752,8 +756,9 @@ article.post blockquote {
     article.post {
         font-size: 1em;
     }
+    .site h2.post-title,
     .post-title {
-        font-size: 1.65em;
+        font-size: 1.85rem;
     }
     article.post h2 {
         font-size: 1.2em;

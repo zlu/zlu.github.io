@@ -1,0 +1,30 @@
+---
+description: Plain writing rules for blog posts and drafts
+globs: "{_posts,_drafts}/**/*.md"
+alwaysApply: false
+---
+
+# Blog writing
+
+Apply when editing `_posts/` or `_drafts/` markdown.
+
+## Hard bans
+
+- **No metaphors.** Do not compare training to ladders, journeys, machines that "become" something poetic, poisoning signals, nudging weights, looking up dictionaries, or similar. State the mechanism directly.
+- **No em dashes** (`—`). Use a period, comma, colon, or parentheses instead. Prefer ASCII hyphens for ranges (`1-8`), not en dashes.
+- **No AI-filler vocabulary.** Do not use these for style (technical API names like `reshape` are fine when they are real code):
+
+  shape (as verb/noun for "form" or "influence"), prose, craft, landscape, journey, tapestry, delve, leverage, unlock, empower, robust, seamless / seamlessly, nuanced, holistic, vibrant, realm, paradigm, interplay, underscore, foster, showcase, pivotal, multifaceted, backdrop, lens, spirit, ladder, intuition (as a section label), "in one sentence", "the story is"
+
+## Prefer
+
+- Short declarative sentences. Name the object: loss, logits, targets, batch.
+- Concrete numbers and tables over vague claims.
+- "Training feeds true prefixes" over figurative restatements of the same fact.
+- Keep glossary links and code blocks; strip ornamental framing around them.
+
+## Check before finishing a rewrite
+
+1. Search the draft for `—` and remove every hit.
+2. Search for banned words above; rewrite those sentences.
+3. Read section titles: if a title is metaphorical ("Putting the ladder together"), rename it to a factual label ("Summary").

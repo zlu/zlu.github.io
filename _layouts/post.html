@@ -1,6 +1,23 @@
 ---
 layout: default
 ---
+{% comment %}
+  Title size is inlined here on purpose: GitHub Pages caches /assets/css/main.css
+  for hours (max-age=14400). HTML updates land sooner; without this, h2.post-title
+  stays stuck at the global h* { font-size: 100% } reset (14px) until CSS cache dies.
+{% endcomment %}
+<style>
+  .site h2.post-title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 0.35em;
+    color: #111;
+  }
+  @media (max-width: 600px) {
+    .site h2.post-title { font-size: 1.75rem; }
+  }
+</style>
 <h2 class="post-title">{{ page.title }}</h2>
 <p class="meta">{{ page.date | date: "%m-%d-%Y" }}</p>
 
