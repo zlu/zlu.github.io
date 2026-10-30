@@ -1,4 +1,4 @@
-{% comment %} Series nav, glossary links, and Article JSON-LD for blog posts {% endcomment %}
+{% comment %} Series nav for blog posts. BlogPosting JSON-LD comes from {% seo %}. {% endcomment %}
 
 {% if page.series %}
 {% assign series_posts = site.posts | where: "series", page.series | sort: "part" %}
@@ -17,29 +17,3 @@
   </ol>
 </nav>
 {% endif %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ page.title | jsonify }},
-  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 160 | jsonify }},
-  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
-  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
-  "url": {{ page.url | absolute_url | jsonify }},
-  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
-  "author": {
-    "@type": "Person",
-    "name": "Zhao Lü",
-    "url": "https://zlu.me/"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "Zhao Lü",
-    "url": "https://zlu.me/"
-  },
-  "image": {{ page.image | default: site.logo | absolute_url | jsonify }},
-  "keywords": {{ page.keywords | default: page.tags | join: ', ' | jsonify }},
-  "inLanguage": {{ page.lang | default: site.lang | default: 'en' | jsonify }}
-}
-</script>
