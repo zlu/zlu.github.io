@@ -39,6 +39,7 @@ REPO_ROOT = SCRIPT_DIR.parent
 ENV_FILE = SCRIPT_DIR / "indexnow.env"
 STATE_FILE = SCRIPT_DIR / "indexnow_submit_state.json"
 LOG_FILE = SCRIPT_DIR / "indexnow_submit.log"
+USER_AGENT = "zlu-indexnow/1.0 (+https://zlu.me)"
 
 
 def load_env_file(path: Path) -> None:
@@ -153,7 +154,12 @@ def parse_sitemap_xml(xml_bytes: bytes, allow_localhost: bool = False) -> list[t
 
 
 def fetch_sitemap_urls(sitemap_url: str) -> list[tuple[str, str]]:
-    xml_bytes = urllib.request.urlopen(sitemap_url, timeout=60).read()
+    # Cloudflare (and similar) reject Python's default User-Agent with 403.
+    req = urllib.request.Request(
+        sitemap_url,
+        headers={"User-Agent": USER_AGENT},
+    )
+    xml_bytes = urllib.request.urlopen(req, timeout=60).read()
     return parse_sitemap_xml(xml_bytes)
 
 
@@ -237,7 +243,7 @@ def verify_key_live(host: str, key: str) -> tuple[bool, str]:
     url = f"https://{host}/{key}.txt"
     req = urllib.request.Request(
         url,
-        headers={"User-Agent": "zlu-indexnow/1.0 (+https://zlu.me)"},
+        headers={"User-Agent": USER_AGENT},
     )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
