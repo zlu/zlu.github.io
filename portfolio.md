@@ -57,3 +57,23 @@ Side projects and products I build and run.
     <span><strong><a href="https://ai-detector.zlu.me">AI Detector</a></strong> — Check AI authorship in text.</span>
   </li>
 </ul>
+
+### Games
+
+<ul class="portfolio-projects">
+  <li>
+    <img class="portfolio-icon" src="/assets/images/portfolio/2048.png" alt="" width="128" height="128">
+    <span>
+      <strong><a href="https://github.com/zlu/2048/releases/">2048</a></strong> — Slide and merge numbered tiles on a 4×4 grid. <a href="https://github.com/zlu/2048/releases/">Download</a>.
+
+      <ul class="portfolio-notes">
+        <li><strong>Goal:</strong> Combine tiles until you make a 2048 tile (then you can keep going for 4096 and up).</li>
+        <li><strong>Controls:</strong> Use arrow keys to move all tiles up, down, left, or right.</li>
+        <li><strong>Merging:</strong> Two tiles with the same number that collide become one tile with double the value (2+2->4).</li>
+        <li><strong>Spawns:</strong> After each move, a new 2 (sometimes 4) appears in a random empty cell.</li>
+        <li><strong>Game over:</strong> The board is full and no two neighbors can merge.</li>
+      </ul>
+
+    </span>
+  </li>
+</ul>

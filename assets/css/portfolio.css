@@ -6,7 +6,7 @@
   margin: 0.75em 0 1.5em;
 }
 
-.portfolio-projects li {
+.portfolio-projects > li {
   display: grid;
   grid-template-columns: 1.65em 1fr;
   column-gap: 0.65em;
@@ -24,6 +24,25 @@
   object-fit: cover;
 }
 
-.portfolio-projects li > span {
+.portfolio-projects > li > span {
   grid-column: 2;
+}
+
+.portfolio-notes {
+  list-style: none;
+  padding: 0;
+  margin: 0.45em 0 0;
+  font-size: 0.95em;
+  color: inherit;
+  opacity: 0.92;
+}
+
+.portfolio-notes li {
+  margin: 0.28em 0;
+  padding-left: 0.9em;
+  text-indent: -0.9em;
+}
+
+.portfolio-notes li::before {
+  content: "– ";
 }

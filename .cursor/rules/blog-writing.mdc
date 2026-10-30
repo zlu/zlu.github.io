@@ -14,14 +14,22 @@ Apply when editing `_posts/` or `_drafts/` markdown.
 - **No em dashes** (`—`). Use a period, comma, colon, or parentheses instead. Prefer ASCII hyphens for ranges (`1-8`), not en dashes.
 - **No AI-filler vocabulary.** Do not use these for style (technical API names like `reshape` are fine when they are real code):
 
-  shape (as verb/noun for "form" or "influence"), prose, craft, landscape, journey, tapestry, delve, leverage, unlock, empower, robust, seamless / seamlessly, nuanced, holistic, vibrant, realm, paradigm, interplay, underscore, foster, showcase, pivotal, multifaceted, backdrop, lens, spirit, ladder, intuition (as a section label), "in one sentence", "the story is"
+  shape (as verb/noun for "form" or "influence"), prose, craft, landscape, journey, tapestry, delve, leverage, unlock, empower, robust, seamless / seamlessly, nuanced, holistic, vibrant, realm, paradigm, interplay, underscore, foster, showcase, pivotal, multifaceted, backdrop, lens, spirit, ladder, intuition (as a section label), "in one sentence", "the story is",
+  checkpoint (as a synonym for "model": "Qwen checkpoint", "instruct checkpoint", "same checkpoint"). Say **model** or **weights**. "Save the weights to disk" is fine when the topic is actually saving files.
 
 ## Prefer
 
-- Short declarative sentences. Name the object: loss, logits, targets, batch.
+- Short declarative sentences. Name the object: loss, logits, targets, batch, model, weights.
 - Concrete numbers and tables over vague claims.
 - "Training feeds true prefixes" over figurative restatements of the same fact.
 - Keep glossary links and code blocks; strip ornamental framing around them.
+- Product hooks only when the post is actually a product note. Theory posts define the mechanism first.
+
+## Pretraining vs continued pretraining
+
+- **Pretraining** = first stage: broad corpus → base model. Do not redefine it as "refine a generic model for a product."
+- **Continued pretraining (CPT)** = same next-token loss on a new domain corpus, starting from an already pretrained open model (e.g. Qwen → classic-lit text).
+- Keep CPT / BetterReads domain adaptation out of from-scratch theory posts. Park that material for BetterReads Research (`betterreads.dev/research` / `br/betterreads-product/research/`).
 
 ## Check before finishing a rewrite
 
