@@ -1,0 +1,117 @@
+/* Algorithm hub + per-algo pages — quiet list, no card chrome */
+
+.algo-intro {
+  margin: 0.5em 0 1.25em;
+  line-height: 1.55;
+  max-width: 40em;
+}
+
+.algo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.75em;
+}
+
+.algo-list > li {
+  margin: 0 0 1.35em;
+  padding: 0 0 1.25em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  line-height: 1.5;
+}
+
+.algo-list > li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.algo-list h2 {
+  font-size: 1.15em;
+  margin: 0 0 0.35em;
+  font-weight: 600;
+}
+
+.algo-list h2 a {
+  text-decoration: none;
+}
+
+.algo-list h2 a:hover {
+  text-decoration: underline;
+}
+
+.algo-list .algo-blurb {
+  margin: 0 0 0.45em;
+  max-width: 40em;
+}
+
+.algo-list .algo-links {
+  margin: 0;
+  font-size: 0.95em;
+  opacity: 0.92;
+}
+
+.algo-list .algo-links a + a::before {
+  content: " · ";
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.algo-page .algo-breadcrumb {
+  margin: 0 0 0.75em;
+  font-size: 0.92em;
+  opacity: 0.85;
+}
+
+.algo-page h1 {
+  margin: 0 0 0.4em;
+  font-size: 1.65em;
+  line-height: 1.25;
+}
+
+.algo-page .algo-lede {
+  margin: 0 0 0.85em;
+  max-width: 40em;
+  line-height: 1.55;
+}
+
+.algo-page .algo-demo-cta {
+  margin: 0 0 1.25em;
+}
+
+.algo-page .algo-body {
+  max-width: 42em;
+  line-height: 1.55;
+}
+
+.algo-page .algo-body p {
+  margin: 0 0 0.9em;
+}
+
+.algo-page .algo-body h2 {
+  margin: 1.35em 0 0.5em;
+  font-size: 1.2em;
+}
+
+.algo-page .algo-related {
+  margin: 1.75em 0 0;
+  max-width: 40em;
+}
+
+.algo-page .algo-related h2 {
+  font-size: 1.15em;
+  margin: 0 0 0.45em;
+}
+
+.algo-page .algo-related ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.algo-page .algo-related li {
+  margin: 0.3em 0;
+}
+
+.algo-page .algo-back {
+  margin: 1.75em 0 0;
+  font-size: 0.95em;
+}

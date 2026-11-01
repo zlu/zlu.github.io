@@ -15,7 +15,7 @@ comments: true
 
 ![Genetic Algorithm: Algo-Scope.online](/assets/images/uploads/ga.png)
 
-To view an animated version: **[Genetic Algorithm: Algo-Scope.online](https://www.algo-scape.online/ga)**
+To view an animated version: **[Genetic Algorithm demo](https://algoscape.zlu.me/ga)** · [Guide on zlu.me](/algos/genetic-algorithm/)
 
 Have you ever wondered how engineers optimize aircraft wing designs for the best fuel efficiency, lift, and drag under tricky aerodynamic constraints? Or how universities manage to schedule thousands of classes, avoiding timetable clashes and making sure every course has a classroom? These are just a couple of typical applications for Genetic Algorithms (GA), a fascinating approach inspired by Charles Darwin's theory of **evolution**.
 

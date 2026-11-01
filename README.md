@@ -26,6 +26,7 @@ Drafts live in `_drafts/` (gitignored). Publish by moving a draft into `_posts/`
 | `_ai-glossary/`, `_med-glossary/` | Glossary collections |
 | `_albums/`, `_photos/` | Photo trips + per-shot front matter (images on R2) |
 | `_data/courses/` | Teach catalog (source of truth for university/course SEO pages) |
+| `_algos/` | Algorithm guides on `/algos/` (hub + per-algo pages linking AlgoScape demos) |
 | `_plugins/` | Custom generators (required for `/teach/*`) |
 | `redirects/` | Soft redirects for retired URLs |
 | `admin/` | Decap CMS config |

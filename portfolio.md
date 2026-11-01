@@ -45,7 +45,7 @@ Side projects and products I build and run.
     <span><strong><a href="https://hh.zlu.me">HourHustle</a></strong> — Track freelancing time.</span>
   </li>
   <li>
-    <span><strong><a href="https://algoscape.zlu.me">AlgoScape</a></strong> — Algorithms visualized.</span>
+    <span><strong><a href="https://algoscape.zlu.me">AlgoScape</a></strong> — Algorithms visualized. Guides: <a href="/algos/">zlu.me/algos</a>.</span>
   </li>
   <li>
     <span><strong><a href="https://pixelator.zlu.me">Pixelator</a></strong> — Mask sensitive information in PDFs before sharing.</span>

@@ -12,7 +12,7 @@ tags:
 
 ![A* Search](/assets/images/uploads/a-star.png)
 
-[Live A* Demo](https://algo-scape.online/astar)
+[Live A* Demo](https://algoscape.zlu.me/astar) · [Guide on zlu.me](/algos/astar/)
 
 ## A* Search Simplied Explained
 
@@ -236,7 +236,7 @@ The shortest path from $ S $ to $ G $ is:
 
 
 ### Example Implementation in Javascript
-You may find it helpful to play with a live demo here: [Live A* Demo](https://algo-scape.online/astar)
+You may find it helpful to play with a live demo here: [Live A* Demo](https://algoscape.zlu.me/astar) · [Guide on zlu.me](/algos/astar/)
 
 Feel free to change the start, goal, grid size and even define your own barriers!
 

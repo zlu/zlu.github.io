@@ -15,7 +15,7 @@ tags:
 
 ![fractal-mandel-brot](/assets/images/uploads/fractals-mandelbrot.png)
 
-看更多: [algo-scope.online](https://www.algo-scape.online/fractals)
+看更多: [AlgoScape 分形](https://algoscape.zlu.me/fractals) · [指南](/algos/fractals/)
 
 # 使用 TypeScript 生成分形图像
 

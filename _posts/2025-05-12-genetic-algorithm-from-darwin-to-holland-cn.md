@@ -15,7 +15,7 @@ comments: true
 
 ![Genetic Algorithm: Algo-Scope.online](/assets/images/uploads/ga.png)
 
-看动态视觉演示: **[Genetic Algorithm: Algo-Scope.online](https://www.algo-scape.online/ga)**
+看动态视觉演示: **[Genetic Algorithm 演示](https://algoscape.zlu.me/ga)** · [指南](/algos/genetic-algorithm/)
 
 你是否曾想过，工程师们是如何在复杂的空气动力学约束下优化飞机机翼设计，以达到最佳的燃油效率、升力和阻力平衡的？或者大学是如何安排数千门课程，既要避免课程表冲突，又要确保每门课都有教室的？这些只是遗传算法（Genetic Algorithm, GA）的一些典型应用。遗传算法这个名字的灵感来源于查尔斯·达尔文的**进化论 (evolution)**。
 

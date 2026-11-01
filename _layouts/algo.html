@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<article class="algo-page">
+  <p class="algo-breadcrumb"><a href="/algos/">Algorithms</a> / {{ page.title }}</p>
+
+  <h1>{{ page.title }}</h1>
+
+  {% if page.description %}
+  <p class="algo-lede">{{ page.description }}</p>
+  {% endif %}
+
+  {% if page.demo %}
+  <p class="algo-demo-cta">
+    <a href="{{ page.demo }}">Open live demo on AlgoScape →</a>
+  </p>
+  {% endif %}
+
+  <div class="algo-body">
+    {{ content }}
+  </div>
+
+  {% if page.related_posts and page.related_posts.size > 0 %}
+  <section class="algo-related">
+    <h2>Related writing</h2>
+    <ul>
+      {% for path in page.related_posts %}
+        {% assign related = site.posts | where: "path", path | first %}
+        {% if related %}
+        <li><a href="{{ related.url }}">{{ related.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <p class="algo-back"><a href="/algos/">← All algorithm visualizations</a></p>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": "Zhao Lü",
+    "url": "https://zlu.me"
+  },
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }}{% if page.demo %},
+  "isBasedOn": {{ page.demo | jsonify }}{% endif %}
+}
+</script>

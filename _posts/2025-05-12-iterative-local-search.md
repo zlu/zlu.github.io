@@ -15,7 +15,7 @@ comments: true
 
 ![Iterative Local Search]({{ site.url }}/assets/images/uploads/ils.png)
 
-To view a visualization of ILS (and Tabu Search) in action: [AlgoScope](https://www.algo-scape.online/optimization)
+To view a visualization of ILS (and Tabu Search) in action: [AlgoScape demo](https://algoscape.zlu.me/optimization) · [Guide on zlu.me](/algos/iterative-local-search/)
 
 Many real-world problems, from logistics to scheduling, involve finding the best possible solution from a vast number of possibilities. These are known as optimization problems. While finding the absolute *best* solution (the global optimum) can be computationally expensive or even impossible for complex scenarios, metaheuristic algorithms offer powerful strategies to find very good solutions in a reasonable amount of time.
 

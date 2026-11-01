@@ -16,7 +16,7 @@ comments: true
 
 ![迭代局部搜索]({{ site.url }}/assets/images/uploads/ils.png)
 
-查看 ILS 的可视化演示：[AlgoScope](https://www.algo-scape.online/optimization)
+查看 ILS 的可视化演示：[AlgoScape 演示](https://algoscape.zlu.me/optimization) · [指南](/algos/iterative-local-search/)
 
 许多现实世界的问题，从物流到调度，都涉及到从大量可能性中寻找最佳解决方案。这些被称为优化问题。虽然找到绝对的*最佳*解决方案（全局最优解）对于复杂场景来说可能计算成本高昂甚至不可能，但元启发式算法提供了强大的策略，可以在合理的时间内找到非常好的解决方案。
 

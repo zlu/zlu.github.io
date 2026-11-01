@@ -39,6 +39,9 @@ collections:
   albums:
     output: true
     permalink: /photos/:name/
+  algos:
+    output: true
+    permalink: /algos/:name/
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -102,4 +105,10 @@ defaults:
     values:
       layout: photo_album
       published: true
+      sitemap: true
+  - scope:
+      path: ""
+      type: algos
+    values:
+      layout: algo
       sitemap: true
