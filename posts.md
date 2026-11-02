@@ -15,25 +15,34 @@ Practical notes on AI/ML, data science, and systems.
 {% assign zh_posts = site.posts | where_exp: "post", "post.lang == 'zh'" %}
 
 <div class="posts-index" id="posts-index" data-per-page="8">
-  <div class="posts-search">
-    <label for="posts-search-input" class="sr-only">Search posts</label>
-    <input
-      type="search"
-      id="posts-search-input"
-      placeholder="Search by title, tag, or description…"
-      autocomplete="off"
-      spellcheck="false"
-      enterkeyhint="search">
-    <p class="posts-search-status" id="posts-search-status" aria-live="polite" hidden></p>
-  </div>
+  <div class="posts-toolbar">
+    <div class="posts-search">
+      <label for="posts-search-input" class="sr-only">Search posts</label>
+      <span class="posts-search-icon" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 10l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <input
+        type="search"
+        id="posts-search-input"
+        placeholder="Search titles, tags…"
+        autocomplete="off"
+        spellcheck="false"
+        enterkeyhint="search">
+      <button type="button" class="posts-search-clear" id="posts-search-clear" aria-label="Clear search" hidden>×</button>
+    </div>
+    <span class="posts-search-status" id="posts-search-status" aria-live="polite" hidden></span>
 
-  <div class="posts-lang-tabs" role="tablist" aria-label="Language">
-    <button type="button" class="posts-lang-tab is-active" role="tab" aria-selected="true" data-lang="en" id="tab-en">
-      English <span class="posts-lang-count">{{ en_posts.size }}</span>
-    </button>
-    <button type="button" class="posts-lang-tab" role="tab" aria-selected="false" data-lang="zh" id="tab-zh">
-      中文 <span class="posts-lang-count">{{ zh_posts.size }}</span>
-    </button>
+    <div class="posts-lang-tabs" role="tablist" aria-label="Language">
+      <button type="button" class="posts-lang-tab is-active" role="tab" aria-selected="true" data-lang="en" id="tab-en">
+        EN <span class="posts-lang-count">{{ en_posts.size }}</span>
+      </button>
+      <button type="button" class="posts-lang-tab" role="tab" aria-selected="false" data-lang="zh" id="tab-zh">
+        中文 <span class="posts-lang-count">{{ zh_posts.size }}</span>
+      </button>
+    </div>
   </div>
 
   <div class="posts-list" id="posts-list">

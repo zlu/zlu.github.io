@@ -4,16 +4,19 @@
 
   var perPage = parseInt(root.getAttribute('data-per-page'), 10) || 8;
   var tabs = root.querySelectorAll('.posts-lang-tab');
+  var listEl = document.getElementById('posts-list');
   var items = Array.prototype.slice.call(root.querySelectorAll('.post-index-item'));
   var pagination = document.getElementById('posts-pagination');
   var statusEl = document.getElementById('posts-page-status');
   var emptyEl = document.getElementById('posts-empty');
   var searchInput = document.getElementById('posts-search-input');
   var searchStatus = document.getElementById('posts-search-status');
+  var clearBtn = document.getElementById('posts-search-clear');
   var prevBtn = pagination.querySelector('[data-action="prev"]');
   var nextBtn = pagination.querySelector('[data-action="next"]');
 
   var state = { lang: 'en', page: 1, query: '' };
+  var originalOrder = items.slice();
 
   function normalize(s) {
     return String(s || '')
@@ -23,26 +26,26 @@
       .trim();
   }
 
-  // Subsequence fuzzy score (fzf-style). Higher is better; -1 = no match.
-  function fuzzyScore(haystack, needle) {
+  function wordsOf(s) {
+    return normalize(s)
+      .split(/[^a-z0-9\u4e00-\u9fff]+/)
+      .filter(Boolean);
+  }
+
+  // Typo-tolerant subsequence within one word (at most 2 skipped chars).
+  // Exact whole-word / prefix matches are handled separately; mid-word
+  // substrings like "lora" inside "exploration" must not rank.
+  function fuzzyWordScore(word, needle) {
     if (!needle) return 0;
-    if (!haystack) return -1;
+    if (!word || needle.length < 3) return -1;
 
-    var h = normalize(haystack);
-    var n = normalize(needle);
-    if (!n) return 0;
-
-    // Prefer substring hits.
-    var subIdx = h.indexOf(n);
-    if (subIdx !== -1) {
-      return 1000 - subIdx * 2 - (h.length - n.length);
-    }
+    var h = word;
+    var n = needle;
+    if (h.indexOf(n) !== -1) return -1;
 
     var hi = 0;
-    var score = 0;
-    var consecutive = 0;
     var first = -1;
-
+    var last = -1;
     for (var ni = 0; ni < n.length; ni++) {
       var ch = n.charAt(ni);
       var found = -1;
@@ -55,30 +58,56 @@
       }
       if (found === -1) return -1;
       if (first === -1) first = found;
-      if (ni > 0 && found === hi - 1 && consecutive > 0) {
-        consecutive += 1;
-        score += 8 * consecutive;
-      } else {
-        consecutive = 1;
-        score += 2;
-      }
-      // Slight preference for earlier matches.
-      score += Math.max(0, 12 - found);
+      last = found;
     }
 
-    score -= (h.length - n.length) * 0.1;
-    score -= first;
-    return score;
+    var span = last - first + 1;
+    if (span > n.length + 2) return -1;
+    return 220 - (span - n.length) * 40 - (h.length - n.length);
   }
 
-  function fieldScore(title, tags, desc, token) {
-    var t = fuzzyScore(title, token);
-    var g = fuzzyScore(tags, token);
-    var d = fuzzyScore(desc, token);
+  function isWordChar(ch) {
+    return /[a-z0-9\u4e00-\u9fff]/.test(ch);
+  }
+
+  function hasWordBoundedPhrase(haystack, phrase) {
+    var h = normalize(haystack);
+    var n = normalize(phrase);
+    if (!n || !h) return -1;
+    var idx = h.indexOf(n);
+    while (idx !== -1) {
+      var beforeOk = idx === 0 || !isWordChar(h.charAt(idx - 1));
+      var afterOk =
+        idx + n.length >= h.length || !isWordChar(h.charAt(idx + n.length));
+      if (beforeOk && afterOk) return idx;
+      idx = h.indexOf(n, idx + 1);
+    }
+    return -1;
+  }
+
+  function fieldTokenScore(haystack, token) {
+    var n = normalize(token);
+    if (!n) return 0;
+    var words = wordsOf(haystack);
+    if (!words.length) return -1;
+
     var best = -1;
-    if (t >= 0) best = Math.max(best, t * 3);
-    if (g >= 0) best = Math.max(best, g * 2.2);
-    if (d >= 0) best = Math.max(best, d);
+    for (var i = 0; i < words.length; i++) {
+      var w = words[i];
+      if (w === n) {
+        best = Math.max(best, 1500);
+        continue;
+      }
+      // Prefix of a word: "pretrain" → "pretraining"
+      if (w.indexOf(n) === 0) {
+        best = Math.max(best, 1200 - (w.length - n.length));
+        continue;
+      }
+      // Short tokens must be whole words (or prefixes above).
+      if (n.length < 3) continue;
+      var fz = fuzzyWordScore(w, n);
+      if (fz > best) best = fz;
+    }
     return best;
   }
 
@@ -92,11 +121,53 @@
     var tokens = q.split(/\s+/).filter(Boolean);
     var total = 0;
 
-    for (var i = 0; i < tokens.length; i++) {
-      var s = fieldScore(title, tags, desc, tokens[i]);
-      if (s < 0) return -1;
-      total += s;
+    // Word-bounded phrase in title wins outright ("xiaomi tv", not "lora" in "exploration").
+    var phraseIdx = hasWordBoundedPhrase(title, q);
+    if (phraseIdx !== -1) {
+      return (
+        100000 -
+        phraseIdx * 10 -
+        Math.max(0, normalize(title).length - q.length)
+      );
     }
+
+    // All query tokens match title words in order → strong boost.
+    var titleWords = wordsOf(title);
+    var ordered = 0;
+    var wi = 0;
+    for (var ti = 0; ti < tokens.length; ti++) {
+      var tok = tokens[ti];
+      var hit = -1;
+      for (; wi < titleWords.length; wi++) {
+        if (
+          titleWords[wi] === tok ||
+          titleWords[wi].indexOf(tok) === 0 ||
+          (tok.length >= 3 && fuzzyWordScore(titleWords[wi], tok) >= 0)
+        ) {
+          hit = wi;
+          wi++;
+          break;
+        }
+      }
+      if (hit === -1) break;
+      ordered += 1;
+    }
+    if (ordered === tokens.length) {
+      total += 50000 - wi;
+    }
+
+    for (var i = 0; i < tokens.length; i++) {
+      var t = fieldTokenScore(title, tokens[i]);
+      var g = fieldTokenScore(tags, tokens[i]);
+      var d = fieldTokenScore(desc, tokens[i]);
+      var best = -1;
+      if (t >= 0) best = Math.max(best, t * 4);
+      if (g >= 0) best = Math.max(best, g * 2.5);
+      if (d >= 0) best = Math.max(best, d * 0.55);
+      if (best < 0) return -1;
+      total += best;
+    }
+
     return total;
   }
 
@@ -136,7 +207,8 @@
     }
     if (state.query) {
       scored.sort(function (a, b) {
-        return b.score - a.score;
+        if (b.score !== a.score) return b.score - a.score;
+        return originalOrder.indexOf(a.el) - originalOrder.indexOf(b.el);
       });
     }
     return scored.map(function (row) {
@@ -148,6 +220,11 @@
     return Math.max(1, Math.ceil(n / perPage));
   }
 
+  function syncClearBtn() {
+    if (!clearBtn) return;
+    clearBtn.hidden = !searchInput || !searchInput.value;
+  }
+
   function render() {
     var list = filtered();
     var pages = pageCount(list.length);
@@ -156,6 +233,22 @@
 
     var start = (state.page - 1) * perPage;
     var end = start + perPage;
+
+    // Reorder DOM so score order is visual order (not just pagination order).
+    var frag = document.createDocumentFragment();
+    if (state.query) {
+      list.forEach(function (el) {
+        frag.appendChild(el);
+      });
+      originalOrder.forEach(function (el) {
+        if (list.indexOf(el) === -1) frag.appendChild(el);
+      });
+    } else {
+      originalOrder.forEach(function (el) {
+        frag.appendChild(el);
+      });
+    }
+    listEl.appendChild(frag);
 
     items.forEach(function (el) {
       el.hidden = true;
@@ -174,18 +267,24 @@
       emptyEl.hidden = list.length > 0;
     }
 
+    root.classList.toggle('is-searching', !!state.query);
+
     if (searchStatus) {
       if (state.query) {
         searchStatus.hidden = false;
         searchStatus.textContent =
-          list.length === 1
-            ? '1 match'
-            : list.length + ' matches';
+          list.length === 0
+            ? 'No matches'
+            : list.length === 1
+              ? '1 match'
+              : list.length + ' matches';
       } else {
         searchStatus.hidden = true;
         searchStatus.textContent = '';
       }
     }
+
+    syncClearBtn();
 
     if (list.length === 0) {
       pagination.hidden = true;
@@ -199,6 +298,13 @@
     nextBtn.disabled = state.page >= pages;
 
     writeParams();
+  }
+
+  function setQuery(value, fromInput) {
+    state.query = String(value || '').trim();
+    state.page = 1;
+    if (!fromInput && searchInput) searchInput.value = value || '';
+    render();
   }
 
   tabs.forEach(function (tab) {
@@ -228,21 +334,26 @@
     var debounceTimer = null;
     searchInput.addEventListener('input', function () {
       var value = searchInput.value;
+      syncClearBtn();
       window.clearTimeout(debounceTimer);
       debounceTimer = window.setTimeout(function () {
-        state.query = value.trim();
-        state.page = 1;
-        render();
-      }, 120);
+        setQuery(value, true);
+      }, 80);
     });
 
     searchInput.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && searchInput.value) {
-        searchInput.value = '';
-        state.query = '';
-        state.page = 1;
-        render();
+        e.preventDefault();
+        setQuery('');
+        searchInput.focus();
       }
+    });
+  }
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      setQuery('');
+      if (searchInput) searchInput.focus();
     });
   }
 
