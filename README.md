@@ -57,9 +57,14 @@ python3 .scripts/sync-teach-catalog.py --suggest
 
 ## SEO helpers
 
+IndexNow should **stream** only changed URLs (Bing flags sitemap dumps as batch mode).
+
 ```bash
-# IndexNow (Bing et al.) — needs .scripts/indexnow.env
+# After publishing: stream URLs from the last commit (default)
 python3 .scripts/indexnow_submit_urls.py --dry-run
+python3 .scripts/indexnow_submit_urls.py --url https://zlu.me/2026/10/29/slug.html
+
+# Needs .scripts/indexnow.env (or root {key}.txt)
 
 # Baidu active push — needs .scripts/baidu.env
 python3 .scripts/baidu_submit_urls.py --dry-run

@@ -7,7 +7,7 @@ keywords: "AI blog, machine learning tutorials, LLM fine-tuning, data science, c
 sitemap: true
 ---
 
-## Posts
+# Posts
 
 Practical notes on AI/ML, data science, and systems.
 

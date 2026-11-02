@@ -5,6 +5,8 @@ description: "Zhao Lü (吕钊) — Silicon Valley engineer, AI & data science e
 permalink: /
 ---
 
+# Zhao Lü
+
 My name is Zhao Lü (吕钊). Zhao is pronounced as 'ciao' with a 'j' and it means to encourage oneself in Chinese. I was born in Beijing, China. I have lived in USA, UK, Brazil, Switzerland, France, and Germany. I travel quite a bit, <span id="country-count-home">60</span> countries and counting.
 
 I'm a programmer who enjoys practicing yoga.  

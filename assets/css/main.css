@@ -647,10 +647,11 @@ article.post pre {
     white-space: pre-wrap;
 }
 
-/* Post page title sits outside article.post; global h* reset makes it body-sized.
+/* Page / post title sits outside article.post; global h* reset makes it body-sized.
    Must read clearly larger than article.post h2 (1.8em section headings).
    Mirrored inline in _layouts/post.html so GH Pages CSS CDN cache cannot hide it. */
-.site h2.post-title,
+.site > h1,
+.site h1.post-title,
 .post-title {
     font-size: 2.25rem;
     line-height: 1.2;
@@ -756,7 +757,8 @@ article.post blockquote {
     article.post {
         font-size: 1em;
     }
-    .site h2.post-title,
+    .site > h1,
+    .site h1.post-title,
     .post-title {
         font-size: 1.85rem;
     }
