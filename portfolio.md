@@ -22,7 +22,7 @@ Side projects and products I build and run.
   </li>
   <li>
     <img class="portfolio-icon" src="/assets/images/portfolio/matheion.png" alt="" width="128" height="128">
-    <span><strong><a href="https://matheion.zlu.me">Matheion</a></strong> — CS self-learning and tutoring. Open lessons: <a href="https://matheion.zlu.me/learn/python/">Python</a>, <a href="https://matheion.zlu.me/learn/java/">Java</a>.</span>
+    <span><strong><a href="https://matheion.zlu.me">Matheion</a></strong> — CS self-learning and tutoring. Open lessons: <a href="https://matheion.zlu.me/learn/python/">Python</a>, <a href="https://matheion.zlu.me/learn/java/">Java</a>, <a href="https://matheion.zlu.me/learn/sql/">SQL</a>, <a href="https://matheion.zlu.me/learn/web/">Web</a>.</span>
   </li>
 </ul>
 

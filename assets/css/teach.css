@@ -44,7 +44,7 @@ body.teach-page-active .teach-sticky-cta {
 
 /* Body copy: em relative to .site (22px), not rem→16px root */
 
-body.teach-page-active .teach-hero-lead, body.teach-page-active .teach-section-lead, body.teach-page-active .teach-about-body p, body.teach-page-active .teach-subject-list li, body.teach-page-active .teach-service-links-label, body.teach-page-active .teach-service-links, body.teach-page-active .teach-find-primary, body.teach-page-active .teach-region-links, body.teach-page-active .teach-session-steps strong, body.teach-page-active .teach-session-steps span, body.teach-page-active .teach-faq-item summary, body.teach-page-active .teach-faq-item p, body.teach-page-active .teach-landing-lead, body.teach-page-active .teach-landing-section p, body.teach-page-active .teach-landing .teach-proof, body.teach-page-active .teach-landing .teach-proof li, body.teach-page-active .teach-coverage-proof, body.teach-page-active .teach-section-note, body.teach-page-active .teach-course-links a, body.teach-page-active .teach-topic-chips li {
+body.teach-page-active .teach-hero-lead, body.teach-page-active .teach-section-lead, body.teach-page-active .teach-about-body p, body.teach-page-active .teach-subject-list li, body.teach-page-active .teach-service-links-label, body.teach-page-active .teach-service-links, body.teach-page-active .teach-find-primary, body.teach-page-active .teach-region-links, body.teach-page-active .teach-session-steps strong, body.teach-page-active .teach-session-steps span, body.teach-page-active .teach-faq-item summary, body.teach-page-active .teach-faq-item p, body.teach-page-active .teach-landing-lead, body.teach-page-active .teach-landing-section p, body.teach-page-active .teach-landing .teach-proof, body.teach-page-active .teach-landing .teach-proof li, body.teach-page-active .teach-coverage-proof, body.teach-page-active .teach-section-note, body.teach-page-active .teach-course-links a, body.teach-page-active .teach-topic-chips li, body.teach-page-active .teach-matheion-courses a {
   font-size: 1em;
   line-height: 1.75;
 }
@@ -261,12 +261,12 @@ body.teach-page-active .content {
 
 /* Shared hub section rhythm */
 
-.teach-about, .teach-session, .teach-subjects-simple, .teach-find-school, .teach-faq {
+.teach-about, .teach-session, .teach-subjects-simple, .teach-matheion, .teach-find-school, .teach-faq {
   margin: 0 0 2.25rem;
   padding-top: 0.15rem;
 }
 
-.teach-about h2, .teach-session h2, .teach-subjects-simple h2, .teach-find-school h2, .teach-faq h2 {
+.teach-about h2, .teach-session h2, .teach-subjects-simple h2, .teach-matheion h2, .teach-find-school h2, .teach-faq h2 {
   margin: 0 0 0.75rem;
   color: var(--teach-ink, #1a2332);
   font-size: 1.35rem;
@@ -396,6 +396,54 @@ body.teach-page-active .content {
 
 .teach-service-links a:hover {
   border-bottom-color: var(--teach-accent, #0f6b6b);
+}
+
+.teach-matheion-courses {
+  margin: 0 0 1.15rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0;
+}
+
+.teach-matheion-courses li {
+  border-top: 1px solid var(--teach-line, #d5dde6);
+}
+
+.teach-matheion-courses li:last-child {
+  border-bottom: 1px solid var(--teach-line, #d5dde6);
+}
+
+.teach-matheion-courses a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  color: var(--teach-ink, #1a2332);
+  text-decoration: none;
+}
+
+.teach-matheion-courses a:hover strong {
+  color: var(--teach-accent, #0f6b6b);
+}
+
+.teach-matheion-courses strong {
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.teach-matheion-courses span {
+  flex-shrink: 0;
+  color: var(--teach-muted, #5c6b7a);
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.teach-matheion .teach-section-note {
+  margin-top: 0.35rem;
+  max-width: 40em;
 }
 
 .teach-find-primary {
