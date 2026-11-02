@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pretraining from Scratch: Loss, Training Loop, and Decoding"
-date: 2026-10-31
+date: 2026-11-02
 comments: true
 tags:
   - pretraining
