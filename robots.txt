@@ -10,4 +10,8 @@ Disallow: /admin/
 Allow: /*?lang=cn
 Allow: /*?lang=en
 
+# AI agents / citation: curated site map for LLMs (regenerated on build)
+# https://llmstxt.org/
+# https://zlu.me/llms.txt
+
 Sitemap: https://zlu.me/sitemap.xml
