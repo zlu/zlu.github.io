@@ -58,7 +58,8 @@ python3 .scripts/sync-teach-catalog.py --suggest
 ## SEO helpers
 
 `/llms.txt` is generated on every build by [`_plugins/llms_txt.rb`](_plugins/llms_txt.rb)
-(curated hubs + recent posts + products for AI search / citation; see [llmstxt.org](https://llmstxt.org/)).
+(all posts, glossaries, algos, teach universities/courses, Matheion lessons, products;
+see [llmstxt.org](https://llmstxt.org/)).
 
 Dead teach shells still appearing in GSC: submit URLs from
 [`.scripts/gsc_removals_teach_dead_urls.txt`](.scripts/gsc_removals_teach_dead_urls.txt)
