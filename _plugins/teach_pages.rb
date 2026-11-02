@@ -567,7 +567,12 @@ module Jekyll
       topics = Array(theme_meta["topics"]).select { |t| t.is_a?(Hash) }
       topic_bits = topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
 
-      title_en = "#{label} Tutoring | #{university} Computer Science Tutoring"
+      # Lead with course code for SERP queries like "fit2102" / "etx3500".
+      title_en = if code.empty?
+                   "#{title} tutoring | #{university} CS tutoring"
+                 else
+                   "#{code} #{title} tutoring | #{university}"
+                 end
       # Match competitor title pattern: 大学 + 课号 + 辅导
       title_cn = if code.empty?
                    "#{university} #{title} 课程辅导 | 中英双语一对一"

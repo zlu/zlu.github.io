@@ -57,6 +57,11 @@ python3 .scripts/sync-teach-catalog.py --suggest
 
 ## SEO helpers
 
+Dead teach shells still appearing in GSC: submit URLs from
+[`.scripts/gsc_removals_teach_dead_urls.txt`](.scripts/gsc_removals_teach_dead_urls.txt)
+via Search Console → Removals (temporary). Soft redirects cover retired uni
+`preview|assignment|exam|sync` paths after deploy.
+
 IndexNow should **stream** only changed URLs (Bing flags sitemap dumps as batch mode).
 
 ```bash
@@ -68,6 +73,9 @@ python3 .scripts/indexnow_submit_urls.py --url https://zlu.me/2026/10/29/slug.ht
 
 # Baidu active push — needs .scripts/baidu.env
 python3 .scripts/baidu_submit_urls.py --dry-run
+
+# After matheion.zlu.me serves the Next.js site (not Flutter):
+#   cd ../matheion-site && python3 scripts/indexnow_submit_learn.py --dry-run
 ```
 
 ## Deploy

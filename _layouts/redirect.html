@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting…</title>
+  <meta name="robots" content="{{ page.robots | default: 'noindex, follow' }}">
   <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
   <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
   <script>location.replace({{ page.redirect_to | jsonify }});</script>
