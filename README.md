@@ -78,6 +78,18 @@ python3 .scripts/baidu_submit_urls.py --dry-run
 #   cd ../tutor_me/site && npm run indexnow -- --dry-run
 ```
 
+## Web analytics (BetterReads admin)
+
+First-party funnel (no GA). Browser → `PUT https://www.betterreads.dev/api/zlume-web-stats`
+→ `zlume_web_visitor_stats` → BetterReads `/admin/analytics?app=zlume`.
+
+GitHub Pages is static, so ingest lives on betterreads-fe (same project as `/admin`),
+not a Cloudflare Worker.
+
+1. Run [`docs/supabase-zlume-web-analytics.sql`](docs/supabase-zlume-web-analytics.sql) once in the BR Supabase SQL editor.
+2. Deploy betterreads-fe (registry + `/api/zlume-web-stats`).
+3. Ship the Jekyll site (tracker: [`assets/js/web-analytics.js`](assets/js/web-analytics.js)).
+
 ## Deploy
 
 [`.github/workflows/jekyll.yml`](.github/workflows/jekyll.yml) runs `bundle exec jekyll build` and deploys the artifact to GitHub Pages. Custom plugins must run in CI (stock GitHub Pages Jekyll would skip them and leave `/teach/*` as 404).

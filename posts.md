@@ -15,6 +15,18 @@ Practical notes on AI/ML, data science, and systems.
 {% assign zh_posts = site.posts | where_exp: "post", "post.lang == 'zh'" %}
 
 <div class="posts-index" id="posts-index" data-per-page="8">
+  <div class="posts-search">
+    <label for="posts-search-input" class="sr-only">Search posts</label>
+    <input
+      type="search"
+      id="posts-search-input"
+      placeholder="Search by title, tag, or description…"
+      autocomplete="off"
+      spellcheck="false"
+      enterkeyhint="search">
+    <p class="posts-search-status" id="posts-search-status" aria-live="polite" hidden></p>
+  </div>
+
   <div class="posts-lang-tabs" role="tablist" aria-label="Language">
     <button type="button" class="posts-lang-tab is-active" role="tab" aria-selected="true" data-lang="en" id="tab-en">
       English <span class="posts-lang-count">{{ en_posts.size }}</span>
@@ -27,7 +39,14 @@ Practical notes on AI/ML, data science, and systems.
   <div class="posts-list" id="posts-list">
     {% for post in site.posts %}
     {% assign post_lang = post.lang | default: 'en' %}
-    <article class="post-index-item" data-lang="{{ post_lang }}" hidden>
+    {% assign post_tags = post.tags | join: ' ' %}
+    <article
+      class="post-index-item"
+      data-lang="{{ post_lang }}"
+      data-title="{{ post.title | escape }}"
+      data-tags="{{ post_tags | escape }}"
+      data-desc="{{ post.description | default: '' | escape }}"
+      hidden>
       <h3 class="post-index-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <div class="post-index-meta">
         <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
@@ -46,6 +65,8 @@ Practical notes on AI/ML, data science, and systems.
     </article>
     {% endfor %}
   </div>
+
+  <p class="posts-empty" id="posts-empty" hidden>No posts match that search.</p>
 
   <nav class="posts-pagination" id="posts-pagination" aria-label="Posts pagination" hidden>
     <button type="button" class="posts-page-btn" data-action="prev" aria-label="Previous page">← Prev</button>

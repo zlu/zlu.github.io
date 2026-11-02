@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('[data-teach-scroll-book]').forEach(function (btn) {
     btn.addEventListener('click', function () {
+      if (window.ZlumeWebAnalytics && window.ZlumeWebAnalytics.trackFunnelMilestone) {
+        window.ZlumeWebAnalytics.trackFunnelMilestone('wechat_cta_clicked');
+      }
       var book = document.querySelector('.teach-hero-book');
       if (!book) return;
       book.scrollIntoView({ behavior: 'smooth', block: 'center' });
