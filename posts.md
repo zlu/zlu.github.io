@@ -7,12 +7,22 @@ keywords: "AI blog, machine learning tutorials, LLM fine-tuning, data science, c
 sitemap: true
 ---
 
-# Posts
-
-Practical notes on AI/ML, data science, and systems.
-
 {% assign en_posts = site.posts | where_exp: "post", "post.lang != 'zh'" %}
 {% assign zh_posts = site.posts | where_exp: "post", "post.lang == 'zh'" %}
+
+<div class="posts-heading-row">
+  <h1>Posts</h1>
+  <div class="posts-lang-tabs" role="tablist" aria-label="Language">
+    <button type="button" class="posts-lang-tab is-active" role="tab" aria-selected="true" data-lang="en" id="tab-en">
+      EN <span class="posts-lang-count">{{ en_posts.size }}</span>
+    </button>
+    <button type="button" class="posts-lang-tab" role="tab" aria-selected="false" data-lang="zh" id="tab-zh">
+      中文 <span class="posts-lang-count">{{ zh_posts.size }}</span>
+    </button>
+  </div>
+</div>
+
+Practical notes on AI/ML, data science, and systems.
 
 <div class="posts-index" id="posts-index" data-per-page="8">
   <div class="posts-toolbar">
@@ -34,15 +44,6 @@ Practical notes on AI/ML, data science, and systems.
       <button type="button" class="posts-search-clear" id="posts-search-clear" aria-label="Clear search" hidden>×</button>
     </div>
     <span class="posts-search-status" id="posts-search-status" aria-live="polite" hidden></span>
-
-    <div class="posts-lang-tabs" role="tablist" aria-label="Language">
-      <button type="button" class="posts-lang-tab is-active" role="tab" aria-selected="true" data-lang="en" id="tab-en">
-        EN <span class="posts-lang-count">{{ en_posts.size }}</span>
-      </button>
-      <button type="button" class="posts-lang-tab" role="tab" aria-selected="false" data-lang="zh" id="tab-zh">
-        中文 <span class="posts-lang-count">{{ zh_posts.size }}</span>
-      </button>
-    </div>
   </div>
 
   <div class="posts-list" id="posts-list">

@@ -3,7 +3,7 @@
   if (!root) return;
 
   var perPage = parseInt(root.getAttribute('data-per-page'), 10) || 8;
-  var tabs = root.querySelectorAll('.posts-lang-tab');
+  var tabs = document.querySelectorAll('.posts-lang-tab');
   var listEl = document.getElementById('posts-list');
   var items = Array.prototype.slice.call(root.querySelectorAll('.post-index-item'));
   var pagination = document.getElementById('posts-pagination');

@@ -652,6 +652,7 @@ article.post pre {
    Mirrored inline in _layouts/post.html so GH Pages CSS CDN cache cannot hide it. */
 .site > h1,
 .site h1.post-title,
+.posts-heading-row h1,
 .post-title {
     font-size: 2.25rem;
     line-height: 1.2;
@@ -759,6 +760,7 @@ article.post blockquote {
     }
     .site > h1,
     .site h1.post-title,
+    .posts-heading-row h1,
     .post-title {
         font-size: 1.85rem;
     }
@@ -1015,6 +1017,18 @@ article.post blockquote {
 }
 
 /* Posts index */
+.posts-heading-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.75rem;
+  margin: 0 0 0.35rem;
+}
+
+.posts-heading-row h1 {
+  margin: 0;
+}
+
 .posts-index {
   margin-top: 1.25rem;
 }
@@ -1120,9 +1134,9 @@ article.post blockquote {
   border: 0;
   background: transparent;
   color: #555;
-  padding: 0.5rem 0.85rem;
+  padding: 0.2rem 0.5rem;
   font: inherit;
-  font-size: 0.9em;
+  font-size: 0.72em;
   cursor: pointer;
   line-height: 1.2;
   transition: background 0.15s ease, color 0.15s ease;
@@ -1151,10 +1165,6 @@ article.post blockquote {
 }
 
 .posts-lang-tab.is-active .posts-lang-count {
-  opacity: 0.85;
-}
-
-.posts-index.is-searching .posts-lang-tabs {
   opacity: 0.85;
 }
 
@@ -1275,14 +1285,9 @@ article.post blockquote {
 }
 
 @media (max-width: 600px) {
-  .posts-lang-tabs {
-    display: flex;
-    width: 100%;
-  }
-
-  .posts-lang-tab {
-    flex: 1;
-    text-align: center;
+  .posts-heading-row .posts-lang-tabs {
+    display: inline-flex;
+    width: auto;
   }
 }
 
