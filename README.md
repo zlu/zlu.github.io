@@ -74,8 +74,8 @@ python3 .scripts/indexnow_submit_urls.py --url https://zlu.me/2026/10/29/slug.ht
 # Baidu active push — needs .scripts/baidu.env
 python3 .scripts/baidu_submit_urls.py --dry-run
 
-# After matheion.zlu.me serves the Next.js site (not Flutter):
-#   cd ../matheion-site && python3 scripts/indexnow_submit_learn.py --dry-run
+# After matheion.zlu.me serves Next from tutor_me/site (monorepo):
+#   cd ../tutor_me/site && npm run indexnow -- --dry-run
 ```
 
 ## Deploy
