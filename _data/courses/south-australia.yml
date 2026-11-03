@@ -4,6 +4,7 @@ teaching_folder: u-south-australia
 courses:
 - code: COMP1039
   title: Prob Solving And Programming
+  material: prob solving and programming
 - code: COMP1043
   title: Problem Solving and Programming in Python
 ---

@@ -3,4 +3,5 @@ university: Baruch College
 teaching_folder: baruch
 courses:
 - title: Mfe Tech Interview
+  material: mfe-tech-interview
 ---

@@ -223,13 +223,23 @@ module Jekyll
         region_key = payload["region_key"]
         evidence = payload["evidence"]
 
+        # Indexability gate (SEO combo): uni hub only when at least one course
+        # has linked private materials; uni-service shells never index; course
+        # pages index only when that course is linked.
+        linked_n = evidence.is_a?(Hash) ? evidence["linked_course_count"].to_i : 0
+        if linked_n <= 0
+          linked_n = course_list.count { |c| c["linked"] }
+        end
+        uni_in_sitemap = linked_n >= 1
+
         site.pages << build_university_page(
-          site, uni_slug, university, course_list, region_key, true, evidence
+          site, uni_slug, university, course_list, region_key, uni_in_sitemap, evidence
         )
 
         SERVICES.each_key do |service_key|
           site.pages << build_uni_service_page(
-            site, uni_slug, university, course_list, region_key, service_key, true, evidence
+            site, uni_slug, university, course_list, region_key, service_key,
+            false, evidence
           )
         end
 
@@ -305,21 +315,29 @@ module Jekyll
       end
     end
 
+    # Must match confident how-strings from .scripts/sync-teach-catalog.py
+    LINKED_HOW = [
+      "material field",
+      "material alias",
+      "code match",
+      "title fuzzy"
+    ].freeze
+
     def merge_course_evidence(course_list, evidence)
       evidence_courses = Array(evidence["courses"])
       course_list.map do |course|
         match = find_evidence_course(course, evidence_courses)
-        next course unless match
+        next course.merge("linked" => false) unless match
 
-        linked = match["link"].to_s != "" && match["link"].to_s != "unlinked" &&
-                 !match["link"].to_s.end_with?("missing on disk")
+        how = match["link"].to_s
+        linked = LINKED_HOW.include?(how) && match["depth_score"].to_i.positive?
         course.merge(
           "topics" => Array(match["topics"]),
           "signals" => match["signals"].is_a?(Hash) ? match["signals"] : {},
           "shape" => match["shape"].is_a?(Hash) ? match["shape"] : {},
           "depth_score" => match["depth_score"].to_i,
           "material" => match["material"].to_s,
-          "link_how" => match["link"].to_s,
+          "link_how" => how,
           "linked" => linked
         )
       end
@@ -541,11 +559,12 @@ module Jekyll
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
         "sitemap" => in_sitemap,
+        "robots" => (in_sitemap ? nil : "noindex, follow"),
         "evidence_topics" => Array(evidence["topics"]),
         "evidence_signals" => evidence["signals"].is_a?(Hash) ? evidence["signals"] : {},
         "coverage_summary_en" => evidence["coverage_summary_en"].to_s,
         "coverage_summary_cn" => evidence["coverage_summary_cn"].to_s,
-        "evidence_backed" => true
+        "evidence_backed" => in_sitemap
       )
       page
     end
@@ -653,11 +672,12 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => true,
+        "sitemap" => !!course["linked"],
+        "robots" => (course["linked"] ? nil : "noindex, follow"),
         "evidence_topics" => course_topics,
         "evidence_signals" => course_signals,
         "evidence_shape" => course_shape,
-        "evidence_backed" => course_topics.any? || course_shape.any?,
+        "evidence_backed" => !!course["linked"],
         "coverage_summary_en" => (evidence.is_a?(Hash) ? evidence["coverage_summary_en"] : "").to_s,
         "coverage_summary_cn" => (evidence.is_a?(Hash) ? evidence["coverage_summary_cn"] : "").to_s
       )
@@ -665,7 +685,7 @@ module Jekyll
     end
 
     def build_uni_service_page(
-      site, uni_slug, university, courses, region_key, service_key, in_sitemap = true, evidence = {}
+      site, uni_slug, university, courses, region_key, service_key, in_sitemap = false, evidence = {}
     )
       evidence = {} unless evidence.is_a?(Hash)
       svc = SERVICES.fetch(service_key)
@@ -709,12 +729,14 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => in_sitemap,
+        # Always omit uni-service shells from sitemap / index (SEO combo 2A).
+        "sitemap" => false,
+        "robots" => "noindex, follow",
         "evidence_topics" => Array(evidence["topics"]),
         "evidence_signals" => evidence["signals"].is_a?(Hash) ? evidence["signals"] : {},
         "coverage_summary_en" => evidence["coverage_summary_en"].to_s,
         "coverage_summary_cn" => evidence["coverage_summary_cn"].to_s,
-        "evidence_backed" => true
+        "evidence_backed" => false
       )
       page
     end

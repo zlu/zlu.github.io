@@ -17,6 +17,12 @@ Apply when editing `_posts/` or `_drafts/` markdown.
   shape (as verb/noun for "form" or "influence"), prose, craft, landscape, journey, tapestry, delve, leverage, unlock, empower, robust, seamless / seamlessly, nuanced, holistic, vibrant, realm, paradigm, interplay, underscore, foster, showcase, pivotal, multifaceted, backdrop, lens, spirit, ladder, intuition (as a section label), "in one sentence", "the story is",
   checkpoint (as a synonym for "model": "Qwen checkpoint", "instruct checkpoint", "same checkpoint"). Say **model** or **weights**. "Save the weights to disk" is fine when the topic is actually saving files.
 
+## Voice and tone
+
+- **First person.** Prefer "I" for choices, mistakes, and procedures ("I rent a GPU for the epoch", "I have seen the base model and the adapter give the same wrong fact"). Avoid anonymous "one should" and corporate "we" unless the post is genuinely co-authored.
+- **Casual but academic.** Conversational enough to read like notes from someone who ran the experiment, still precise enough for a technical paper. Short clauses, concrete nouns, named objects (loss, logits, batch, weights). Mild asides and failure stories are fine; slang, hype, and pep-talk closings are not.
+- **Sound like a researcher who ships.** State what worked, what failed, and the numbers. Do not perform enthusiasm or solemnity.
+
 ## Prefer
 
 - Short declarative sentences. Name the object: loss, logits, targets, batch, model, weights.
@@ -29,7 +35,9 @@ Apply when editing `_posts/` or `_drafts/` markdown.
 
 - **Pretraining** = first stage: broad corpus → base model. Do not redefine it as "refine a generic model for a product."
 - **Continued pretraining (CPT)** = same next-token loss on a new domain corpus, starting from an already pretrained open model (e.g. Qwen → classic-lit text).
-- Keep CPT / BetterReads domain adaptation out of from-scratch theory posts. Park that material for BetterReads Research (`betterreads.dev/research` / `br/betterreads-product/research/`).
+- Keep CPT / BetterReads domain adaptation out of from-scratch theory posts. Domain-adaptation writeups belong in the `domain-llm` series (or BetterReads Research), with concrete run facts when they exist.
+- **Pedagogy, not citation.** When explaining CPT / SFT, follow the usual from-scratch LLM teaching order (unlabeled next-token training, then a separate instruction/format fine-tuning stage). Do not cite or name that book unless the user asks for a formal reference.
+- Prefer measured run records from the training repo (`betterreads-rag` logs, `br_train_meta.json`, Runpod scripts) over vague "overnight" claims when numbers are available.
 
 ## Check before finishing a rewrite
 

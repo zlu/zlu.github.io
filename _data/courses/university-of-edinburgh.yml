@@ -23,4 +23,5 @@ courses:
 - code: INFR11130
   title: Machine Learning and Sensorimotor Control
 - title: Econ Math
+  material: econ-math
 ---

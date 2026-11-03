@@ -48,6 +48,7 @@
     "cmu": {
       "preferred_slug": "carnegie-mellon-university",
       "materials": [
+        "07-120-intro-to-software-construction",
         "cmu-py-15-112",
         "112003",
         "cs15-112"
@@ -81,6 +82,12 @@
       "preferred_slug": "cuhk-shenzhen",
       "materials": [
         "dda3020-machine-learning"
+      ]
+    },
+    "duke": {
+      "preferred_slug": "duke",
+      "materials": [
+        "compsci316-intro-db"
       ]
     },
     "duke-kunshan-u": {
@@ -470,6 +477,7 @@
     "uts": {
       "preferred_slug": "uts",
       "materials": [
+        "database foundamentals",
         "IWBS001-web-systems",
         "networking",
         "programming2-java-2026-u503"

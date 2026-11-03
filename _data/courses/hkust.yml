@@ -3,12 +3,14 @@ university: The Hong Kong University of Science and Technology
 teaching_folder: hkust
 courses:
 - title: Fin Ml
+  material: fin-ml
 - title: Dasc
 - code: COMP1023
   title: COMP1023
   material: comp1023
 - code: DASC2010
   title: Calculus for Data Analytics in Science
+  material: dasc2010
 - code: COMP1002
   title: Introduction to Programming
 - code: COMP1021

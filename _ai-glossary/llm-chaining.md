@@ -1,31 +1,29 @@
 ---
 title: LLM Chaining
+description: "LLM chaining connects multiple model calls so each step’s output feeds the next. Used to split research, drafting, and formatting into controlled stages."
+keywords: "llm chaining, LLM chain, prompt chain, sequential LLM, agent pipeline"
 related:
   - Revise&Reflect
+  - RAG
 ---
-LLM chaining is the process of connecting multiple calls to a language model — each with a specific purpose — so that the output of one step becomes the input to the next.
+**LLM chaining** connects multiple language-model calls so the output of one step becomes the input to the next. Each call has a narrow job.
 
-#### Common Use Case Example:
+#### Example: blog draft from a topic
 
-Task: Generate a well-researched blog post from a user-supplied topic.
+1. Summarize key points about the topic → bullets  
+2. Expand each bullet into a paragraph → body  
+3. Write a title and meta description from the body → SERP fields  
 
-Chain:
-- Prompt 1: “Summarize the key points about ‘climate change and agriculture’.”
-  - → Output: High-level bullet points.
-- Prompt 2: “Expand each bullet point into a detailed paragraph.”
-  - → Output: Full article body.
-- Prompt 3: “Generate a title and meta description based on this article.”
-  - → Output: SEO-friendly title + summary.
+#### Why chain
 
-Each stage builds on the previous one.
+- Split hard tasks into smaller steps  
+- Isolate reasoning from formatting  
+- Reuse steps across products  
 
-#### Why Use LLM Chaining?
-- Decomposes complex tasks into manageable steps.
-- Improves accuracy by isolating reasoning from generation.
-- Enables control over different stages (reasoning, formatting, summarizing, etc.).
-- Supports modularity — you can reuse steps across tasks.
+#### Variants
 
-#### Variants:
-- Sequential Chaining: Step-by-step flow, as described above.
-- Conditional Chaining: Path depends on a decision made at runtime.
-- Parallel Chaining: Multiple prompts run independently, then merged.
+- **Sequential:** fixed step order  
+- **Conditional:** branch on a runtime decision  
+- **Parallel:** independent calls, then merge  
+
+Related product pattern: [RAG](/ai-glossary/rag/) retrieves context before a generate step; chaining can wrap retrieval, drafting, and citation checks as separate calls.

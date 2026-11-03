@@ -7,6 +7,7 @@ courses:
   material: cs444-ece494-deep-learning-for-computer-vision
 - code: ECE494
   title: Deep Learning for Computer Vision
+  material: cs444-ece494-deep-learning-for-computer-vision
 - code: CS124
   title: Introduction to Computer Science I
 - code: CS128

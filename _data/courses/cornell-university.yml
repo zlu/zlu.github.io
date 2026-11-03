@@ -6,4 +6,5 @@ courses:
   title: Java Test
   material: cs2110-java-test
 - title: Database
+  material: database
 ---

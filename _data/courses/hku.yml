@@ -31,5 +31,7 @@ courses:
 - code: COMP3357
   title: Cryptography
 - title: IIMT 3601database Management
+  material: IIMT 3601Database Management
 - title: Cs Master Exam
+  material: cs-master-mock-exam
 ---

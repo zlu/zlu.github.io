@@ -23,7 +23,9 @@ courses:
 - code: FIT1047
   title: FIT1047
   material: fit1047
-- title: Etx3500 5500 High Dimensional Data Analysis
+- code: ETX3500
+  title: High Dimensional Data Analysis
+  material: etx3500-5500-High-Dimensional-Data-Analysis
 - code: FIT5124
   title: Networking Ml
   material: fit5124-networking-ml

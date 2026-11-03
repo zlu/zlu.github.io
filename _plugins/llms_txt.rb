@@ -78,9 +78,12 @@ module Jekyll
           name = uni["name"].to_s
           slug = uni["slug"].to_s
           next if name.empty? || slug.empty?
+          # Only evidence-linked unis (depth / linked courses) — not empty shells.
+          next unless uni_linked?(uni)
 
           note = one_line(uni["coverage_summary_en"])
-          note = "#{uni["courses"].size} courses" if note.empty? && uni["courses"].is_a?(Array)
+          linked = Array(uni["courses"]).count { |c| c["linked"] }
+          note = "#{linked} linked courses" if note.empty? && linked.positive?
           lines << "- #{md_link(name, "#{base}/teach/universities/#{slug}/", note)}"
         end
       end
@@ -90,6 +93,8 @@ module Jekyll
           uni_name = uni["name"].to_s
           uni_slug = uni["slug"].to_s
           Array(uni["courses"]).each do |course|
+            next unless course["linked"]
+
             code = course["code"].to_s.strip
             title = course["title"].to_s.strip
             slug = course["slug"].to_s
@@ -210,6 +215,12 @@ module Jekyll
 
     def teach_universities(site)
       Array(site.data["teach_universities"])
+    end
+
+    def uni_linked?(uni)
+      return true if uni["depth_score"].to_i.positive?
+
+      Array(uni["courses"]).any? { |c| c["linked"] }
     end
 
     def md_link(title, url, note = nil)

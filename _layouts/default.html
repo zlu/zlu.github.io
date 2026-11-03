@@ -95,6 +95,9 @@
 
   {%- comment -%} No interactive maps on travels; static include only {%- endcomment -%}
 
+  {% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
   {% seo %}
   {% if page.hreflang %}
     {% for lang_pair in page.hreflang %}

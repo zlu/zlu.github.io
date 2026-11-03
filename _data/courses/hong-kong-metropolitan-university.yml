@@ -3,7 +3,9 @@ university: Hong Kong Metropolitan University
 teaching_folder: hkmu
 courses:
 - title: Comp S321f Advanced Database And Data Warehousing
+  material: comp s321f - advanced-database-and-data-warehousing
 - title: COMP S460F Advanced Topics In Data Mining
+  material: COMP S460F Advanced Topics in Data Mining
 - code: COMP2030SEF
   title: Intermediate Java Programming & User Interface Design
 ---

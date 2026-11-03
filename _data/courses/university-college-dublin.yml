@@ -9,8 +9,11 @@ courses:
   title: Web Application Development
   material: Web Application Development
 - title: Mobile Computing
+  material: Mobile Computing
 - title: Computer Graphics
+  material: Computer Graphics
 - title: Software Methodology
+  material: Software Methodology
 - code: COMP3008J
   title: Distributed Systems
   material: Distributed Systems

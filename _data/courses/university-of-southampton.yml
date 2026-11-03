@@ -22,8 +22,11 @@ courses:
   title: Cyber Security
 - code: MANG2092
   title: MANG
+  material: MANG2092
 - code: MATH6161
   title: MATH6161
+  material: MATH6161
 - code: MATH6164
   title: MATH6164
+  material: math6164
 ---

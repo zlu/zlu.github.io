@@ -1,0 +1,131 @@
+# zlu.me SEO keyword plan (BetterReads-style combo)
+# Rules:
+#   1. One primary query per URL (unique across this file).
+#   2. Supporting phrases may overlap; primaries may not.
+#   3. Prefer GSC almost-wins before minting new URLs.
+#   4. Scorecards are judged separately — never mix weekly work.
+#
+# Regenerate judgment from Search Console Queries/Pages exports.
+# status: optimize | expand | monitor | ship
+
+scorecards:
+  ai_authority:
+    surfaces:
+      - blog posts
+      - /ai-glossary/
+      - /algos/
+    weekly_signal: "rising non-brand impressions + clicks on posts/glossary"
+  tutor_leads:
+    surfaces:
+      - /teach/
+      - /teach/courses/ (linked only)
+      - /teach/universities/ (linked only)
+    weekly_signal: "Monash/UTS/course-code clicks; ignore uni-service shell impressions"
+  hygiene:
+    surfaces:
+      - sitemap.xml
+      - retired redirects
+    weekly_signal: "uni-service URLs absent from sitemap; dead-shell impressions falling"
+
+entries:
+  # --- ai_authority ---
+  - primary: causal language modeling
+    url: /ai-glossary/causal-language-model/
+    scorecard: ai_authority
+    supporting:
+      - causal language model
+      - causal LM
+    status: optimize
+    note: "GSC impressions ~11 at pos ~66"
+
+  - primary: soft prompt
+    url: /ai-glossary/soft-prompt/
+    scorecard: ai_authority
+    supporting:
+      - soft prompts
+      - soft prompting
+    status: optimize
+
+  - primary: prompt tuning
+    url: /ai-glossary/prompt-tuning/
+    scorecard: ai_authority
+    supporting:
+      - tune prompt
+    status: optimize
+
+  - primary: matrix embedding
+    url: /ai-glossary/matrix-embedding/
+    scorecard: ai_authority
+    supporting:
+      - embedding matrix
+    status: optimize
+
+  - primary: llm chaining
+    url: /ai-glossary/llm-chaining/
+    scorecard: ai_authority
+    supporting:
+      - LLM chain
+    status: optimize
+
+  - primary: continued pretraining
+    url: /2026/11/12/domain-llm-part1-overview.html
+    scorecard: ai_authority
+    supporting:
+      - CPT vs SFT
+      - domain LLM
+      - continued pretraining LoRA
+    status: ship
+    note: "Owns CPT/domain-LLM head; draft _drafts/2026-11-12-domain-llm-part1-overview.md; glossary /ai-glossary/continued-pretraining/ is supporting"
+
+  - primary: image processing with r
+    url: /2025/06/21/image-processing-with-r.html
+    scorecard: ai_authority
+    supporting:
+      - image processing in r
+      - how to process images with r
+      - imager r
+    status: optimize
+    note: "Best current click winner (~3 clicks)"
+
+  - primary: CleanMyMac disk space
+    url: /2026/10/25/when-cleanmymac-isnt-enough-building-a-disk-cleaner.html
+    scorecard: ai_authority
+    supporting:
+      - macOS disk cleaner
+      - Cursor state.vscdb disk
+    status: monitor
+
+  # --- tutor_leads (linked courses only) ---
+  - primary: etx3500
+    url: /teach/courses/monash/etx3500/
+    scorecard: tutor_leads
+    supporting:
+      - ETX3500 tutoring
+      - Monash high dimensional data analysis
+    status: optimize
+
+  - primary: fit5196
+    url: /teach/courses/monash/fit5196/
+    scorecard: tutor_leads
+    supporting:
+      - FIT5196 data wrangling
+    status: optimize
+
+  - primary: uts 41040
+    url: /teach/courses/uts/41040/
+    scorecard: tutor_leads
+    supporting:
+      - UTS Programming 2
+      - programming2 java u503
+    status: expand
+    note: "Linked to teaching/uts/programming2-java-2026-u503"
+
+  - primary: uts IWBS001
+    url: /teach/courses/uts/iwbs001/
+    scorecard: tutor_leads
+    supporting:
+      - UTS web systems tutoring
+    status: monitor
+
+  # Pending material (do not index until sync links a folder):
+  # fit2102, fit5197, fit2099, fit3152, fit3155 → /teach/courses/monash/{code}/

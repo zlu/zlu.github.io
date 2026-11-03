@@ -1,18 +1,26 @@
 ---
 title: Causal Language Model
+description: "Causal language modeling predicts the next token from left context only. Used by GPT, LLaMA, Gemma, and other decoder-only LLMs."
+keywords: "causal language modeling, causal language model, causal LM, next-token prediction, GPT, decoder-only"
 related:
   - Masked Model
+  - Next-Token Prediction
+  - Pretraining
 ---
-A causal language model is a model trained to predict the next word in a sequence, using only the tokens to its left (previous context). It’s unidirectional.
+**Causal language modeling** is training (or running) a model to predict the next token given only the tokens to its left. The model is unidirectional: it never attends to future positions.
 
-For example:
+Example:
 
-`Input: “The weather is” →
-Predict: “sunny”`
+`Input: “The weather is” → Predict: “sunny”`
 
-Popular causal LMs:
-- GPT-2 / GPT-3
+Decoder-only LLMs are causal language models:
+
+- GPT-2 / GPT-3 / GPT-4-class models
 - Gemma
 - LLaMA
 - Falcon
-Contrast this with masked models (like BERT), which predict missing words in the middle.
+- Qwen
+
+Contrast with a [masked model](/ai-glossary/masked-model/) (BERT-style), which predicts a blank in the middle of a sequence using both sides.
+
+Related: [next-token prediction](/ai-glossary/next-token-prediction/), [pretraining](/ai-glossary/pretraining/). For adapting an already-trained causal LM to a private corpus, see [continued pretraining](/ai-glossary/continued-pretraining/).

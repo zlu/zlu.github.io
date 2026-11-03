@@ -7,5 +7,6 @@ courses:
   material: INHN0012 Computer Networking and IT Security
 - title: Rechnerarchitekture
 - title: Intro To Computer Architecture
+  material: ' Intro to Computer Architecture'
 - title: Formale Sprache
 ---

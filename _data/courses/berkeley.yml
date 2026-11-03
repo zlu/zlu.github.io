@@ -24,4 +24,5 @@ courses:
 - code: DATA C100
   title: Principles and Techniques of Data Science
 - title: The Foundations of Data Science
+  material: Data 8-the Foundations of Data Science
 ---

@@ -12,6 +12,7 @@ courses:
   title: Introduction to Computer Architecture
 - code: COMS20007
   title: Algorithms I
+  material: MATH10017 Algorithms and Programming in C(++) and R
 - code: COMS20008
   title: Algorithms II
 - code: COMS20010

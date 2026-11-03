@@ -3,4 +3,5 @@ university: Oregon State University
 teaching_folder: oregon-state
 courses:
 - title: Computer Architecture
+  material: computer-architecture
 ---

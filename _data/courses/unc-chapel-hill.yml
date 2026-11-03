@@ -3,4 +3,5 @@ university: University of North Carolina at Chapel Hill
 teaching_folder: unc-chapel-hill
 courses:
 - title: APPL 101 Exploring Engineering
+  material: APPL 101-Exploring Engineering
 ---

@@ -7,10 +7,13 @@ courses:
   material: CS1010E - Programming Methedology
 - code: CS1010
   title: Programming Methodology
+  material: CS1010E - Programming Methedology
 - code: CS1010S
   title: Programming Methodology
+  material: CS1101S-programming-methodology
 - code: CS1101S
   title: Programming Methodology
+  material: CS1101S-programming-methodology
 - code: CS1231
   title: Discrete Structures
 - code: CS2030

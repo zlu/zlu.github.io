@@ -10,6 +10,7 @@ courses:
   title: Communication Skills for Creative Disciplines
 - code: COMP2107
   title: System Programming
+  material: comp2017-9017-system-programming
 - code: COMP5310
   title: Principles of Data Science
   material: Comp5310简化
@@ -66,6 +67,7 @@ courses:
   title: Computer Systems
   material: Comp9601简化
 - title: Mths1313
+  material: MTHS1313
 - code: COMP3211
   title: Computer Architecture
   material: comp3211

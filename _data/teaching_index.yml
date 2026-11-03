@@ -32,6 +32,7 @@ universities:
 - folder: cmu
   admin_slug: carnegie-mellon-university
   materials:
+  - 07-120-intro-to-software-construction
   - '112003'
   - cmu-py-15-112
   - cs15-112
@@ -57,6 +58,10 @@ universities:
   admin_slug: cuhk-shenzhen
   materials:
   - dda3020-machine-learning
+- folder: duke
+  admin_slug: duke
+  materials:
+  - compsci316-intro-db
 - folder: duke-kunshan-u
   admin_slug: duke-kunshan-university
   materials:
@@ -349,6 +354,7 @@ universities:
   admin_slug: uts
   materials:
   - IWBS001-web-systems
+  - database foundamentals
   - networking
   - programming2-java-2026-u503
 - folder: western-university

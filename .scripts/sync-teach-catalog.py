@@ -203,6 +203,17 @@ def ascii_slug(text: str) -> str:
     return re.sub(r"^-+|-+$", "", text)
 
 
+def digit_glue(slug: str) -> str:
+    """Collapse hyphens between letters and digits: programming-1 → programming1."""
+    s = ascii_slug(slug)
+    prev = None
+    while prev != s:
+        prev = s
+        s = re.sub(r"([a-z])-(\d)", r"\1\2", s)
+        s = re.sub(r"(\d)-([a-z])", r"\1\2", s)
+    return s
+
+
 def code_key(code: str) -> str:
     return re.sub(r"\s+", "", code or "").upper()
 
@@ -397,6 +408,66 @@ def folder_has_exact_code(folder_name: str, scan: dict, code: str) -> bool:
     return False
 
 
+def _alias_list(course: dict) -> list[str]:
+    raw = course.get("material_aliases") or course.get("material_alias") or []
+    if isinstance(raw, str):
+        return [raw.strip()] if raw.strip() else []
+    if isinstance(raw, list):
+        return [str(a).strip() for a in raw if str(a).strip()]
+    return []
+
+
+def title_fuzzy_candidates(
+    title: str, materials: dict[str, dict]
+) -> list[tuple[str, dict]]:
+    """Unique folder matches for an admin course title.
+
+    Uses digit-glue equality / prefix, then token containment so
+    Programming 1 ↔ programming1-java and Programming 2 ↔
+    programming2-java-2026-u503 without cross-matching.
+    """
+    title_slug = ascii_slug(title)
+    title_glued = digit_glue(title_slug)
+    if not title_slug or len(title_glued) < 6:
+        return []
+
+    # Drop year / semester noise tokens from folder names when scoring.
+    noise = re.compile(r"^(19|20)\d{2}$|^u\d+$|^s\d+$|^t\d+$|^\d{2}t\d$", re.I)
+
+    title_tokens = [t for t in title_slug.split("-") if t and not noise.match(t)]
+    if not title_tokens:
+        return []
+
+    hits: list[tuple[str, dict]] = []
+    for name, scan in materials.items():
+        nslug = ascii_slug(name)
+        nglued = digit_glue(nslug)
+        folder_tokens = [t for t in nslug.split("-") if t and not noise.match(t)]
+
+        prefix_ok = (
+            nglued == title_glued
+            or nglued.startswith(title_glued)
+            or title_glued.startswith(nglued)
+        )
+        # All non-noise title tokens must appear (digit-glued) in the folder.
+        token_ok = all(
+            digit_glue(tok) in nglued or tok in folder_tokens for tok in title_tokens
+        )
+        if prefix_ok or token_ok:
+            # Reject weak token-only hits when a digit in the title disagrees
+            # with a digit glued into the folder stem (Programming 1 vs …2…).
+            title_digits = re.findall(r"\d+", title_glued)
+            folder_stem_digits = re.findall(r"\d+", nglued.split("-")[0] if "-" in nglued else nglued)
+            if title_digits and folder_stem_digits and title_digits[0] != folder_stem_digits[0]:
+                # Also check first digit after the shared alpha prefix.
+                m_t = re.search(r"[a-z]+(\d+)", title_glued)
+                m_f = re.search(r"[a-z]+(\d+)", nglued)
+                if m_t and m_f and m_t.group(1) != m_f.group(1):
+                    continue
+            hits.append((name, scan))
+    return hits
+
+
 def match_material(
     course: dict, materials: dict[str, dict]
 ) -> tuple[str | None, dict | None, str]:
@@ -410,23 +481,34 @@ def match_material(
             return key, materials[key], "material field"
         return explicit, None, "material field missing on disk"
 
+    for alias in _alias_list(course):
+        if alias in materials:
+            return alias, materials[alias], "material alias"
+        key = alias.strip("/").split("/")[-1]
+        if key in materials:
+            return key, materials[key], "material alias"
+
     code = code_key(str(course.get("code") or ""))
     if code:
         for name, scan in materials.items():
             if folder_has_exact_code(name, scan, code):
                 return name, scan, "code match"
 
-    title = ascii_slug(str(course.get("title") or ""))
-    if title and len(title) >= 8:
-        for name, scan in materials.items():
-            nslug = ascii_slug(name)
-            if nslug == title or nslug.startswith(title) or title.startswith(nslug):
-                return name, scan, "title fuzzy"
+    title = str(course.get("title") or "").strip()
+    hits = title_fuzzy_candidates(title, materials)
+    if len(hits) == 1:
+        name, scan = hits[0]
+        return name, scan, "title fuzzy"
+    if len(hits) > 1:
+        # Ambiguous — do not guess; caller leaves unlinked / yellow.
+        names = ", ".join(h[0] for h in hits[:5])
+        return None, None, f"title fuzzy ambiguous ({names})"
 
     return None, None, "unlinked"
 
 
-CONFIDENT_LINK_HOW = frozenset({"material field", "code match"})
+# Unique title fuzzy is safe to persist; ambiguous fuzzy is not.
+CONFIDENT_LINK_HOW = frozenset({"material field", "material alias", "code match", "title fuzzy"})
 
 
 def coverage_summary(n: int, signals: dict, topics: list, lang: str) -> str:

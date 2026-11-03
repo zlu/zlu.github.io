@@ -3,4 +3,5 @@ university: Rensselaer Polytechnic Institute
 teaching_folder: rensselaer
 courses:
 - title: Csci4850 Modern Binary Exploitation
+  material: csci4850-modern-binary-exploitation
 ---
