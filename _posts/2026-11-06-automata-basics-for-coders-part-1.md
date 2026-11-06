@@ -365,13 +365,13 @@ Done. So it holds for all $n \ge 1$.
 
 Circles + arrows. That is an FSA picture.
 
-```mermaid
+<div class="mermaid">
 stateDiagram-v2
   direction LR
   [*] --> q0
   q0 --> q1: a
   q1 --> q1: b
-```
+</div>
 
 - vertices = states  
 - directed edges = transitions  
@@ -680,12 +680,12 @@ Same state-machine idea, but it also **emits outputs** as it goes (streaming enc
 
 Finite automata = validator/recognizer **with no unbounded extra memory**: only the finite state.
 
-```mermaid
+<div class="mermaid">
 flowchart LR
   IN["input string"] --> SM["finite state machine"]
   SM --> Y["accept = in the language"]
   SM --> N["reject = not in the language"]
-```
+</div>
 
 ---
 
