@@ -2,6 +2,12 @@
   "source": "/Users/zlu/baidu-sync/teaching",
   "generated_note": "Filenames/counts only — no lecture/assignment body text",
   "folders": {
+    "adelaide-university": {
+      "preferred_slug": "adelaide-university",
+      "materials": [
+        "Comp_4023-event-driven-computing"
+      ]
+    },
     "algonguin-college": {
       "preferred_slug": "algonquin-college",
       "materials": [
@@ -289,6 +295,7 @@
     "u-birmingham": {
       "preferred_slug": "birmingham",
       "materials": [
+        "29903 - LI Multidisciplinary Systems and Software Engineering",
         "LM Data Structures, Algorithms, and Databases",
         "Building Useable Software",
         "Computer Systems",

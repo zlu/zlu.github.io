@@ -1,5 +1,9 @@
 note: Private teaching/ folder index (names only). Regenerate via sync-teach-catalog.py
 universities:
+- folder: adelaide-university
+  admin_slug: adelaide-university
+  materials:
+  - Comp_4023-event-driven-computing
 - folder: algonguin-college
   admin_slug: algonquin-college
   materials:
@@ -207,6 +211,7 @@ universities:
   admin_slug: birmingham
   materials:
   - 07-3838153lm-analytics-micro-course-birmingham-business-school
+  - 29903 - LI Multidisciplinary Systems and Software Engineering
   - Building Useable Software
   - Computer Systems
   - DSA 24-25
