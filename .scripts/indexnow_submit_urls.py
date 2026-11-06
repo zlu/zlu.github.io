@@ -15,12 +15,18 @@ Usage:
 
   # Explicit URLs (best after publishing a post)
   python3 .scripts/indexnow_submit_urls.py --url https://zlu.me/2026/10/29/slug.html
+  # After a data-only "sync course map" commit sitting on top of a post:
   python3 .scripts/indexnow_submit_urls.py --from-git HEAD~3..HEAD
 
   # Rare: sitemap-driven (still streams one URL per request)
   python3 .scripts/indexnow_submit_urls.py --from-sitemap --limit 5
 
   python3 .scripts/indexnow_submit_urls.py --ensure-key-file
+
+Notes:
+  - `_data/courses/{slug}.yml` maps to `/teach/universities/{slug}/` plus linked
+    course pages from `_data/teach_catalog.yml` (run sync-teach-catalog first).
+  - Catalog/report-only commits still yield 0 URLs; widen `--from-git` or pass `--url`.
 """
 
 from __future__ import annotations
@@ -227,32 +233,66 @@ def parse_lastmod(raw: str) -> datetime | None:
     return None
 
 
+def _sitemap_priority(url: str) -> int:
+    """Lower = more important when lastmods collide after a full rebuild."""
+    path = urllib.parse.urlparse(url).path or "/"
+    if re.match(r"^/\d{4}/\d{2}/\d{2}/", path):
+        return 0  # blog posts
+    if path.startswith("/teach/courses/") or path.startswith("/teach/universities/"):
+        return 1
+    if path.startswith("/ai-glossary/") or path.startswith("/algos/"):
+        return 2
+    if path.startswith("/teach/"):
+        return 3
+    return 4
+
+
 def pick_changed_sitemap_urls(
     sitemap: list[tuple[str, str]],
     state: dict,
     limit: int,
     since: datetime | None,
+    *,
+    only_new: bool = True,
 ) -> list[str]:
-    """Only URLs with lastmod after `since` (or never submitted if since is None)."""
+    """Pick sitemap URLs worth streaming.
+
+    Default: **never-submitted** URLs (diff vs indexnow_submit_state.json).
+    Jekyll often stamps the same lastmod on half the site after deploy, so
+    lastmod-alone + --limit is a lottery and can miss the new post.
+    """
     submitted: dict = state["submitted"]
-    changed: list[tuple[str, str]] = []
+    candidates: list[tuple[str, datetime | None, bool]] = []
 
     for url, lastmod in sitemap:
         lm = parse_lastmod(lastmod)
-        if since is not None:
-            if lm is None or lm < since:
+        is_new = url not in submitted
+        if only_new:
+            if not is_new:
                 continue
+            # New sitemap URLs always qualify; lastmod is only a sort signal.
         else:
-            if url in submitted:
+            if since is not None:
+                if lm is None or lm < since:
+                    continue
+            elif not is_new:
                 continue
-        changed.append((url, lastmod or ""))
+        candidates.append((url, lm, is_new))
 
-    def sort_key(item: tuple[str, str]) -> tuple:
-        url, lastmod = item
-        return (0 if lastmod else 1, lastmod, url)
+    def sort_key(item: tuple[str, datetime | None, bool]) -> tuple:
+        url, lm, is_new = item
+        recent = 0
+        if since is not None and lm is not None and lm >= since:
+            recent = 0
+        elif lm is not None:
+            recent = 1
+        else:
+            recent = 2
+        lm_ord = lm.timestamp() if lm else 0.0
+        return (0 if is_new else 1, recent, -lm_ord, _sitemap_priority(url), url)
 
-    changed.sort(key=sort_key, reverse=True)
-    return [u for u, _ in changed][:limit]
+    candidates.sort(key=sort_key)
+    return [u for u, *_ in candidates][:limit]
 
 
 def normalize_url(url: str) -> str:
@@ -290,51 +330,144 @@ def is_indexnow_excluded(meta: dict[str, str]) -> bool:
     return "noindex" in robots
 
 
-def path_to_url(rel: str) -> str | None:
-    """Map a repo-relative content path to its public URL, or None to skip."""
+COURSE_YML_RE = re.compile(r"^_data/courses/([^/]+)\.ya?ml$")
+LINKED_HOW = frozenset(
+    {"material field", "material alias", "code match", "title fuzzy"}
+)
+
+
+def ascii_slug(text: str) -> str:
+    text = text.lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return re.sub(r"^-+|-+$", "", text)
+
+
+def course_page_slug(code: str, title: str) -> str:
+    """Match teach_pages.rb course_slug (code preferred, else title)."""
+    base = (code or "").strip() or (title or "").strip()
+    slug = ascii_slug(base)
+    if slug:
+        return slug
+    import hashlib
+
+    digest = hashlib.md5(base.encode("utf-8")).hexdigest()[:8]
+    return f"course-{digest}"
+
+
+def load_teach_catalog_by_slug() -> dict[str, dict]:
+    path = REPO_ROOT / "_data" / "teach_catalog.yml"
+    if not path.is_file():
+        return {}
+    try:
+        import yaml  # type: ignore
+    except ImportError:
+        return {}
+    try:
+        raw = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    unis = []
+    if isinstance(raw, dict):
+        unis = list(raw.get("universities") or [])
+    elif isinstance(raw, list):
+        unis = raw
+    out: dict[str, dict] = {}
+    for entry in unis:
+        if not isinstance(entry, dict):
+            continue
+        slug = ascii_slug(str(entry.get("slug") or ""))
+        if slug:
+            out[slug] = entry
+    return out
+
+
+def teach_urls_for_course_yml(rel: str, catalog: dict[str, dict]) -> list[str]:
+    """Expand `_data/courses/{slug}.yml` → indexable teach URLs."""
+    m = COURSE_YML_RE.match(rel)
+    if not m:
+        return []
+    slug = ascii_slug(m.group(1))
+    if not slug:
+        return []
+    entry = catalog.get(slug)
+    urls = [f"{SITE}/teach/universities/{slug}/"]
+    if not entry:
+        # Uni hub may still exist from admin YAML even before catalog refresh.
+        return urls
+    linked_n = int(entry.get("linked_course_count") or 0)
+    if linked_n <= 0:
+        # Uni hub is noindex when nothing is linked — skip spam.
+        return []
+    for course in entry.get("courses") or []:
+        if not isinstance(course, dict):
+            continue
+        how = str(course.get("link") or "")
+        if how not in LINKED_HOW or int(course.get("depth_score") or 0) <= 0:
+            continue
+        cslug = course_page_slug(
+            str(course.get("code") or ""), str(course.get("title") or "")
+        )
+        if cslug:
+            urls.append(f"{SITE}/teach/courses/{slug}/{cslug}/")
+    return urls
+
+
+def path_to_urls(rel: str, catalog: dict[str, dict] | None = None) -> list[str]:
+    """Map a repo-relative content path to public URL(s), or [] to skip."""
     rel = rel.replace("\\", "/").lstrip("./")
     if not rel or rel.endswith("/"):
-        return None
+        return []
+
+    # Course admin YAML → generated teach pages (exception to SKIP_PREFIXES).
+    if COURSE_YML_RE.match(rel):
+        return teach_urls_for_course_yml(rel, catalog or load_teach_catalog_by_slug())
+
     if any(rel.startswith(p) for p in SKIP_PREFIXES):
-        return None
+        return []
     if rel in {".gitignore", "CNAME", "robots.txt", "Gemfile", "Gemfile.lock", "README.md"}:
-        return None
+        return []
     if not rel.endswith((".md", ".markdown", ".html", ".htm")):
-        return None
+        return []
 
     src = REPO_ROOT / rel
     meta = read_front_matter(src) if src.is_file() else {}
     if is_indexnow_excluded(meta):
-        return None
+        return []
 
     m = POST_RE.match(rel)
     if m:
         y, mo, d, slug, _ext = m.groups()
-        return f"{SITE}/{y}/{mo}/{d}/{slug}.html"
+        return [f"{SITE}/{y}/{mo}/{d}/{slug}.html"]
 
     for prefix, collection in COLLECTION_DIRS.items():
         if rel.startswith(prefix + "/"):
             name = Path(rel).stem
             if name.startswith("_"):
-                return None
-            return f"{SITE}/{collection}/{name}/"
+                return []
+            return [f"{SITE}/{collection}/{name}/"]
 
     if rel.startswith("_tags/"):
         # Thin tag indexes: sitemap: false — don't IndexNow-spam them.
-        return None
+        return []
 
     if "/" not in rel:
         permalink = meta.get("permalink")
         if permalink:
             if not permalink.startswith("/"):
                 permalink = "/" + permalink
-            return SITE.rstrip("/") + permalink
+            return [SITE.rstrip("/") + permalink]
         stem = Path(rel).stem
         if stem in {"index", "home"}:
-            return f"{SITE}/"
-        return f"{SITE}/{stem}/"
+            return [f"{SITE}/"]
+        return [f"{SITE}/{stem}/"]
 
-    return None
+    return []
+
+
+def path_to_url(rel: str) -> str | None:
+    """Back-compat: first URL for a path, or None."""
+    urls = path_to_urls(rel)
+    return urls[0] if urls else None
 
 
 def git_changed_paths(revision_range: str) -> list[str]:
@@ -362,16 +495,34 @@ def urls_from_git(revision_range: str) -> list[str]:
     urls: list[str] = []
     seen: set[str] = set()
     skipped: list[str] = []
+    catalog = load_teach_catalog_by_slug()
     for path in git_changed_paths(revision_range):
-        url = path_to_url(path)
-        if not url:
+        mapped = path_to_urls(path, catalog)
+        if not mapped:
             skipped.append(path)
             continue
-        if url not in seen:
-            seen.add(url)
-            urls.append(url)
+        for url in mapped:
+            if url not in seen:
+                seen.add(url)
+                urls.append(url)
     if skipped:
         print(f"Skipped {len(skipped)} non-page path(s) (shared/infra/assets).")
+    if not urls and skipped:
+        data_only = all(
+            p.startswith("_data/") or p in {"README.md"} for p in skipped
+        )
+        if data_only:
+            print(
+                "Hint: last commit looks data/report-only. "
+                "Widen the range, e.g. --from-git HEAD~3..HEAD, "
+                "or pass --url for the post."
+            )
+        course_ymls = [p for p in skipped if COURSE_YML_RE.match(p)]
+        if course_ymls:
+            print(
+                "Hint: course YAML changed but no linked materials in teach_catalog.yml. "
+                "Run: python3 .scripts/sync-teach-catalog.py && retry."
+            )
     return urls
 
 
@@ -448,14 +599,22 @@ def main() -> int:
     parser.add_argument(
         "--from-sitemap",
         action="store_true",
-        help="Opt-in: pick recently lastmod'd sitemap URLs (still streamed one-by-one). "
-        "Do not use this for full-site backfills.",
+        help="Pick never-submitted sitemap URLs (vs indexnow_submit_state.json), "
+        "preferring posts/teach. Still streamed one-by-one. "
+        "Also used automatically when --from-git finds 0 page URLs.",
     )
     parser.add_argument(
         "--changed-since-days",
         type=int,
-        default=2,
-        help="With --from-sitemap: only URLs whose lastmod is within N days (default 2)",
+        default=14,
+        help="With --from-sitemap: prefer URLs whose lastmod is within N days "
+        "(default 14). Never-submitted URLs are still eligible.",
+    )
+    parser.add_argument(
+        "--include-resubmit",
+        action="store_true",
+        help="With --from-sitemap: also consider already-submitted URLs "
+        "(lastmod filter only). Default is new-to-IndexNow only.",
     )
     parser.add_argument("--sitemap", default=SITEMAP_URL, help="Sitemap URL")
     parser.add_argument(
@@ -523,6 +682,47 @@ def main() -> int:
     use_sitemap = bool(args.from_sitemap or args.sitemap_file)
     use_git = args.from_git is not None or (not explicit and not use_sitemap)
 
+    def collect_sitemap_urls(*, label: str) -> list[str]:
+        try:
+            if args.sitemap_file:
+                path = Path(args.sitemap_file)
+                print(f"[{utc_now()}] Loading sitemap file: {path}")
+                sitemap = load_sitemap_file(path)
+            else:
+                print(f"[{utc_now()}] Fetching sitemap: {args.sitemap}")
+                sitemap = fetch_sitemap_urls(args.sitemap)
+        except Exception as e:
+            print(f"Failed to load sitemap: {e}", file=sys.stderr)
+            return []
+
+        seen: set[str] = set()
+        unique: list[tuple[str, str]] = []
+        for url, lastmod in sitemap:
+            if url not in seen:
+                seen.add(url)
+                unique.append((url, lastmod))
+
+        since = datetime.now(timezone.utc).timestamp() - max(0, args.changed_since_days) * 86400
+        since_dt = datetime.fromtimestamp(since, tz=timezone.utc)
+        state = load_state()
+        limit = max(1, args.limit)
+        only_new = not args.include_resubmit
+        picked = pick_changed_sitemap_urls(
+            unique, state, limit, since_dt, only_new=only_new
+        )
+        mode = "new-to-IndexNow" if only_new else "lastmod window (incl. resubmit)"
+        print(
+            f"{label}: sitemap={len(unique)} | {mode} | "
+            f"lastmod≥{since_dt.date()} | streaming={len(picked)} (limit {limit})"
+        )
+        if len(picked) > 20:
+            print(
+                "Warning: >20 URLs looks like IndexNow batch mode to Bing. "
+                "Lower --limit or submit with --url after publish.",
+                file=sys.stderr,
+            )
+        return picked
+
     urls: list[str] = []
     if explicit:
         for u in args.url:
@@ -536,46 +736,18 @@ def main() -> int:
                     urls.append(normalize_url(line))
         urls = dedupe(urls)
     elif use_sitemap:
-        try:
-            if args.sitemap_file:
-                path = Path(args.sitemap_file)
-                print(f"[{utc_now()}] Loading sitemap file: {path}")
-                sitemap = load_sitemap_file(path)
-            else:
-                print(f"[{utc_now()}] Fetching sitemap: {args.sitemap}")
-                sitemap = fetch_sitemap_urls(args.sitemap)
-        except Exception as e:
-            print(f"Failed to load sitemap: {e}", file=sys.stderr)
-            return 1
-
-        seen = set()
-        unique: list[tuple[str, str]] = []
-        for url, lastmod in sitemap:
-            if url not in seen:
-                seen.add(url)
-                unique.append((url, lastmod))
-
-        since = datetime.now(timezone.utc).timestamp() - max(0, args.changed_since_days) * 86400
-        since_dt = datetime.fromtimestamp(since, tz=timezone.utc)
-        state = load_state()
-        limit = max(1, args.limit)
-        urls = pick_changed_sitemap_urls(unique, state, limit, since_dt)
-        print(
-            f"Sitemap URLs: {len(unique)} | lastmod since {since_dt.date()} | "
-            f"streaming: {len(urls)} (limit {limit})"
-        )
-        if len(unique) > 100 and args.limit > 20:
-            print(
-                "Warning: large sitemap pulls look like IndexNow batch mode to Bing. "
-                "Prefer --url / --from-git for change-driven streaming.",
-                file=sys.stderr,
-            )
+        urls = collect_sitemap_urls(label="Sitemap mode")
     else:
         revision = args.from_git or "HEAD~1..HEAD"
         print(f"[{utc_now()}] Mapping git changes: {revision}")
         urls = urls_from_git(revision)
         urls = urls[: max(1, args.limit)] if urls else []
         print(f"Changed page URL(s): {len(urls)}")
+        if not urls:
+            # Data-only tip commit (teach catalog sync) often sits on top of a
+            # published post. Fall back to never-submitted sitemap URLs.
+            print("Git mapped 0 page URLs — falling back to sitemap new-URL diff.")
+            urls = collect_sitemap_urls(label="Sitemap fallback")
 
     if not urls:
         print("Nothing to submit.")

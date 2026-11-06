@@ -70,9 +70,17 @@ via Search Console → Removals (temporary). Soft redirects cover retired uni
 IndexNow should **stream** only changed URLs (Bing flags sitemap dumps as batch mode).
 
 ```bash
-# After publishing: stream URLs from the last commit (default)
+# After publishing: git-map the last commit (default). If that commit is
+# data-only (teach catalog sync), the script falls back to sitemap URLs that
+# are new vs .scripts/indexnow_submit_state.json (never-submitted first).
 python3 .scripts/indexnow_submit_urls.py --dry-run
-python3 .scripts/indexnow_submit_urls.py --url https://zlu.me/2026/10/29/slug.html
+python3 .scripts/indexnow_submit_urls.py
+
+# Explicit post URL (safest right after publish)
+python3 .scripts/indexnow_submit_urls.py --url https://zlu.me/2026/11/06/automata-basics-for-coders-part-1.html
+
+# Or force sitemap new-URL diff
+python3 .scripts/indexnow_submit_urls.py --from-sitemap --dry-run
 
 # Needs .scripts/indexnow.env (or root {key}.txt)
 
