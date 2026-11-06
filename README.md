@@ -51,8 +51,9 @@ Commit the generated `_photos/*.md` (and album files) after upload.
 Admin YAML under `_data/courses/` drives public `/teach/` pages via `teach_pages.rb`. Optional sync against private teaching materials:
 
 ```bash
-python3 .scripts/sync-teach-catalog.py
 python3 .scripts/sync-teach-catalog.py --suggest
+python3 .scripts/sync-teach-catalog.py --write-links
+python3 .scripts/sync-teach-catalog.py
 ```
 
 ## SEO helpers

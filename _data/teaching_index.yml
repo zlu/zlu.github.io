@@ -157,6 +157,7 @@ universities:
 - folder: new-castle
   admin_slug: newcastle
   materials:
+  - INU1128 Introduction to Programming Languages
   - 密码学
 - folder: north-eastern
   admin_slug: northeastern
@@ -206,6 +207,7 @@ universities:
   admin_slug: birmingham
   materials:
   - 07-3838153lm-analytics-micro-course-birmingham-business-school
+  - Building Useable Software
   - Computer Systems
   - DSA 24-25
   - Database and Web Programming
@@ -306,10 +308,15 @@ universities:
   materials:
   - CS70离散数学
   - Data 8-the Foundations of Data Science
+  - Math54-linear-algebra-and-differential-equations
 - folder: ucl
   admin_slug: ucl
   materials:
   - Connected system资料
+- folder: ucsb
+  admin_slug: ucsb
+  materials:
+  - compsc16
 - folder: uiuc
   admin_slug: uiuc
   materials:
@@ -332,6 +339,10 @@ universities:
   materials:
   - COMP0161
   - MMA
+- folder: university-of-waterloo
+  admin_slug: university-of-waterloo
+  materials:
+  - ece-150-foundamentals-of-programming
 - folder: unsw-sydney
   admin_slug: unsw
   materials:
@@ -356,6 +367,7 @@ universities:
   - IWBS001-web-systems
   - database foundamentals
   - networking
+  - programming1-java
   - programming2-java-2026-u503
 - folder: western-university
   admin_slug: western-university

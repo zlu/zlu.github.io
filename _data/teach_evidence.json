@@ -218,6 +218,7 @@
     "new-castle": {
       "preferred_slug": "newcastle",
       "materials": [
+        "INU1128 Introduction to Programming Languages",
         "密码学"
       ]
     },
@@ -289,6 +290,7 @@
       "preferred_slug": "birmingham",
       "materials": [
         "LM Data Structures, Algorithms, and Databases",
+        "Building Useable Software",
         "Computer Systems",
         "LMLI Artificial Intelligence and Machine Learning",
         "07-3838153lm-analytics-micro-course-birmingham-business-school",
@@ -414,6 +416,7 @@
     "uc-berkeley": {
       "preferred_slug": "berkeley",
       "materials": [
+        "Math54-linear-algebra-and-differential-equations",
         "CS70离散数学",
         "Data 8-the Foundations of Data Science"
       ]
@@ -422,6 +425,12 @@
       "preferred_slug": "ucl",
       "materials": [
         "Connected system资料"
+      ]
+    },
+    "ucsb": {
+      "preferred_slug": "ucsb",
+      "materials": [
+        "compsc16"
       ]
     },
     "uiuc": {
@@ -454,6 +463,12 @@
         "MMA"
       ]
     },
+    "university-of-waterloo": {
+      "preferred_slug": "university-of-waterloo",
+      "materials": [
+        "ece-150-foundamentals-of-programming"
+      ]
+    },
     "unsw-sydney": {
       "preferred_slug": "unsw",
       "materials": [
@@ -478,6 +493,7 @@
       "preferred_slug": "uts",
       "materials": [
         "database foundamentals",
+        "programming1-java",
         "IWBS001-web-systems",
         "networking",
         "programming2-java-2026-u503"
