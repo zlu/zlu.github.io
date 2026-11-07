@@ -73,7 +73,7 @@ That is the chapter. Details below.
 
 ## Mathematical preliminaries
 
-### Sets (you already use these)
+### Sets
 
 A set is a bag of things with **no duplicates** and **no order**.
 
@@ -149,7 +149,7 @@ So $\Sigma^* - L$ literally means: start from the set of all strings, remove the
 
 ### DeMorgan: NOT of OR / NOT of AND
 
-In code / boolean logic you already know:
+In code / boolean logic:
 
 ```text
 !(A || B)  ===  (!A) && (!B)
@@ -373,8 +373,6 @@ stateDiagram-v2 direction LR [*] --> q0 q0 --> q1: a q1 --> q1: b
 - directed edges = transitions  
 - edge label = symbol read (or event)  
 - a **loop** = arrow from a state to itself
-
-You already know this if you have drawn Redux flows, game AI states, or TCP state diagrams.
 
 ---
 
@@ -642,7 +640,6 @@ Two grammars are **equivalent** if they generate the **same set of strings** (li
 
 **Job 1: validate / recognise a string (Linz: "accepter")**
 
-You already write these:
 
 ```text
 isValidId("a0")           → true

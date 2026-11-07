@@ -179,4 +179,3 @@ lang_cn: |
     X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
     ```
     [1]: https://www.cdc.gov/brfss/annual_data/annual_data.htm
----
