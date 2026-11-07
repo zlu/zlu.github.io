@@ -3,7 +3,7 @@ layout: post
 title: "Demystifying สวัสดีครับ: why Thai “hello” looks hard (and why the second ส sounds like t)"
 description: "My first crack at reading Thai hello: letter by letter, Sanskrit svasti, and the ending-sound rule that turns the second ส into /t/."
 keywords: "Thai, สวัสดี, sawatdee, sawasdee, Sanskrit svasti, Thai pronunciation, ending consonants, language learning, NidNoi"
-date: 2026-11-06
+date: 2026-11-07
 comments: true
 image: /assets/images/koh-samui-longtail-2012.jpg
 tags:
