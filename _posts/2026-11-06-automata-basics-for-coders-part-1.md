@@ -71,7 +71,7 @@ That is the chapter. Details below.
 
 ---
 
-## 1.1 Mathematical preliminaries
+## Mathematical preliminaries
 
 ### Sets (you already use these)
 
@@ -312,7 +312,7 @@ It must obey three properties:
 | **Symmetric** | $x \equiv y \Rightarrow y \equiv x$ | order does not matter | if A same age as B, then B same age as A ✓ |
 | **Transitive** | $x \equiv y$ and $y \equiv z \Rightarrow x \equiv z$ | it chains | if A~B and B~C then A~C ✓ |
 
-**Classic example (Linz):**  
+**Classic example:**  
 $x \equiv y$ iff $x \bmod 3 = y \bmod 3$ (same remainder mod 3).
 
 ```text
@@ -378,7 +378,7 @@ You already know this if you have drawn Redux flows, game AI states, or TCP stat
 
 ---
 
-## 1.2 Languages, with examples for every operation
+## Languages, with examples for every operation
 
 ### Alphabet, string, language
 
@@ -386,7 +386,7 @@ You already know this if you have drawn Redux flows, game AI states, or TCP stat
 Alphabet Σ = {a, b}          ← like the charset { 'a', 'b' }
 
 Some strings over Σ:
-  λ      empty string (Linz). Some texts write ε. Same as "".
+  λ      empty string. Some texts write ε. Same as "".
   a
   b
   ab
@@ -570,7 +570,7 @@ English rules:
 1. An id starts with a letter.
 2. Then zero or more letters or digits.
 
-BNF / grammar form (same as Linz, just with angle-name variables):
+BNF / grammar form:
 
 ```text
 <id>     → <letter> <rest>
@@ -604,7 +604,7 @@ BNF / grammar form (same as Linz, just with angle-name variables):
 The **language of this grammar** = the set of all strings you can derive this way = all legal ids.  
 Again: the language is the **set**; `a0` is one **sentence** in that set.
 
-### Linz’s classic abstract grammar (same mechanism)
+### Classic abstract grammar (same mechanism)
 
 $$
 S \to aSb \mid \lambda
@@ -680,7 +680,7 @@ flowchart LR IN["input string"] --> SM["finite state machine"] SM --> Y["accept 
 
 ---
 
-## 1.3 Applications (Linz’s motivation, in coder words)
+## Applications
 
 1. **Grammar for C identifiers**: BNF for names.
 2. **Validator/recognizer (accepter) for C identifiers**: state machine that accepts the same set.
@@ -710,12 +710,12 @@ automaton      state machine: validator/recognizer (accepter) or transducer
 
 ---
 
-## Self-check (use examples, not slogans)
+## Self-check
 
 1. Give a language $L$ with exactly three sentences. Name one string that is *not* a sentence of $L$.
 2. With $\Sigma=0,1$ and $L=0,00$, write three strings in $\overline{L}$.
 3. With $L_1=a$, $L_2=b$, write $L_1 L_2$ and $L_1^*$.
-4. Explain reflexive / symmetric / transitive using "same Git branch name" or invent your own.
+4. Explain reflexive / symmetric / transitive using "same Git branch name", Java `String.equals`, or invent your own.
 5. Write a tiny grammar (BNF) for integers like `0`, `42`, `7` (digits, no sign). Derive `42`.
 
 ### Answers
@@ -748,16 +748,26 @@ $$
 L_1^* = \{ a \}^* = \{ \lambda,\ a,\ aa,\ aaa,\ \ldots \}
 $$
 
-**4.** Let $x \equiv y$ mean “$x$ and $y$ are the same Git branch name” (string equality on the name).
+**4.** Two workable examples:
+
+**Git.** Let $x \equiv y$ mean “$x$ and $y$ are the same Git branch name” (string equality on the name).
 
 | Property | Check |
 |----------|--------|
 | Reflexive | `main ≡ main`: every branch name equals itself. |
-| Symmetric | if `feature/foo ≡ feature/foo`, the reverse holds too (equality is symmetric). |
+| Symmetric | if `feature/foo ≡ feature/foo`, the reverse holds too. |
 | Transitive | if A’s checkout name equals B’s, and B’s equals C’s, then A’s equals C’s. |
 
-So same-branch-name is an equivalence.  
-Counterexample that fails: “$x$ is a parent of $y$ in the commit graph” is not reflexive and not symmetric.
+**Java.** Let $x \equiv y$ mean `x.equals(y)` for non-null `String` values (the usual `Object.equals` contract).
+
+| Property | Check |
+|----------|--------|
+| Reflexive | `"hi".equals("hi")` is true: every string equals itself. |
+| Symmetric | if `a.equals(b)`, then `b.equals(a)`. |
+| Transitive | if `a.equals(b)` and `b.equals(c)`, then `a.equals(c)`. |
+
+So both are equivalences.  
+Counterexamples that fail: “$x$ is a parent of $y$ in the commit graph” (not reflexive, not symmetric); Java `x.compareTo(y) < 0` on `String` (not reflexive, not symmetric).
 
 **5.** One grammar for unsigned digit strings (no leading-zero rule; `07` is allowed):
 
