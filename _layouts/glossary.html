@@ -1,10 +1,22 @@
 ---
 layout: default
 ---
+{% case page.collection %}
+{% when 'med-glossary' %}
+  {% assign glossary_label = 'Medicine Glossary' %}
+  {% assign glossary_short = 'Medicine' %}
+{% when 'cs-glossary' %}
+  {% assign glossary_label = 'CS Glossary' %}
+  {% assign glossary_short = 'CS' %}
+{% else %}
+  {% assign glossary_label = 'AI Glossary' %}
+  {% assign glossary_short = 'AI' %}
+{% endcase %}
+{% assign glossary_index = '/' | append: page.collection | append: '/' %}
+{% assign glossary_terms = site[page.collection] %}
+
 <nav class="glossary-breadcrumb" aria-label="Breadcrumb">
-  <a href="{% if page.collection == 'med-glossary' %}/med-glossary/{% else %}/ai-glossary/{% endif %}">
-    {% if page.collection == 'med-glossary' %}Medicine Glossary{% else %}AI Glossary{% endif %}
-  </a>
+  <a href="{{ glossary_index }}">{{ glossary_label }}</a>
   <span aria-hidden="true"> / </span>
   <span>{{ page.title_short | default: page.title }}</span>
 </nav>
@@ -41,15 +53,9 @@ layout: default
       {% for rel in page.related %}
         {% assign rel_slug = rel | slugify %}
         {% assign rel_doc = nil %}
-        {% if page.collection == 'med-glossary' %}
-          {% for t in site.med-glossary %}
-            {% if t.slug == rel_slug or t.title == rel %}{% assign rel_doc = t %}{% break %}{% endif %}
-          {% endfor %}
-        {% else %}
-          {% for t in site.ai-glossary %}
-            {% if t.slug == rel_slug or t.title == rel %}{% assign rel_doc = t %}{% break %}{% endif %}
-          {% endfor %}
-        {% endif %}
+        {% for t in glossary_terms %}
+          {% if t.slug == rel_slug or t.title == rel %}{% assign rel_doc = t %}{% break %}{% endif %}
+        {% endfor %}
         <li>
           {% if rel_doc %}
             <a href="{{ rel_doc.url }}">{{ rel_doc.title }}</a>
@@ -63,9 +69,7 @@ layout: default
   {% endif %}
 
   <p class="glossary-back">
-    <a href="{% if page.collection == 'med-glossary' %}/med-glossary/{% else %}/ai-glossary/{% endif %}">
-      ← Back to {% if page.collection == 'med-glossary' %}Medicine{% else %}AI{% endif %} Glossary
-    </a>
+    <a href="{{ glossary_index }}">← Back to {{ glossary_short }} Glossary</a>
   </p>
 </article>
 
@@ -76,6 +80,6 @@ layout: default
   "name": {{ page.title | jsonify }},
   "description": {{ page.description | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
-  "inDefinedTermSet": {{ page.collection | replace: 'ai-glossary', 'https://zlu.me/ai-glossary/' | replace: 'med-glossary', 'https://zlu.me/med-glossary/' | jsonify }}
+  "inDefinedTermSet": {{ glossary_index | absolute_url | jsonify }}
 }
 </script>

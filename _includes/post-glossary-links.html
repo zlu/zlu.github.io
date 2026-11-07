@@ -9,6 +9,16 @@
       {% for t in site.ai-glossary %}
         {% if t.slug == g_slug or t.title == g %}{% assign g_doc = t %}{% break %}{% endif %}
       {% endfor %}
+      {% unless g_doc %}
+        {% for t in site.cs-glossary %}
+          {% if t.slug == g_slug or t.title == g %}{% assign g_doc = t %}{% break %}{% endif %}
+        {% endfor %}
+      {% endunless %}
+      {% unless g_doc %}
+        {% for t in site.med-glossary %}
+          {% if t.slug == g_slug or t.title == g %}{% assign g_doc = t %}{% break %}{% endif %}
+        {% endfor %}
+      {% endunless %}
       <li>
         {% if g_doc %}
           <a href="{{ g_doc.url }}">{{ g_doc.title }}</a>

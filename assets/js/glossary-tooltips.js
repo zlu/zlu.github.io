@@ -1,11 +1,11 @@
 /**
- * Hover / focus popovers for in-post links to /ai-glossary/… and /med-glossary/….
- * Definitions come from /assets/data/{ai,med}-glossary.json (built by Jekyll).
+ * Hover / focus popovers for in-post links to /ai-glossary/…, /med-glossary/…, /cs-glossary/….
+ * Definitions come from /assets/data/{ai,med,cs}-glossary.json (built by Jekyll).
  */
 (function () {
-  const LINK_RE = /^\/(ai-glossary|med-glossary)\/([^/]+)\/?$/;
-  const cache = { "ai-glossary": null, "med-glossary": null };
-  const loading = { "ai-glossary": null, "med-glossary": null };
+  const LINK_RE = /^\/(ai-glossary|med-glossary|cs-glossary)\/([^/]+)\/?$/;
+  const cache = { "ai-glossary": null, "med-glossary": null, "cs-glossary": null };
+  const loading = { "ai-glossary": null, "med-glossary": null, "cs-glossary": null };
 
   let tip = null;
   let activeLink = null;
@@ -128,7 +128,7 @@
 
   function markGlossaryLinks(root) {
     const scope = root || document;
-    scope.querySelectorAll('a[href*="/ai-glossary/"], a[href*="/med-glossary/"]').forEach((a) => {
+    scope.querySelectorAll('a[href*="/ai-glossary/"], a[href*="/med-glossary/"], a[href*="/cs-glossary/"]').forEach((a) => {
       const parsed = parseGlossaryHref(a.getAttribute("href"));
       if (!parsed) return;
       if (a.dataset.glossaryBound) return;

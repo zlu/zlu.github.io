@@ -31,6 +31,9 @@ collections:
   med-glossary:
     output: true
     permalink: /med-glossary/:name/
+  cs-glossary:
+    output: true
+    permalink: /cs-glossary/:name/
   tags:
     output: true
     permalink: /tags/:name/
@@ -73,6 +76,12 @@ defaults:
   - scope:
       path: ""
       type: med-glossary
+    values:
+      layout: glossary
+      sitemap: true
+  - scope:
+      path: ""
+      type: cs-glossary
     values:
       layout: glossary
       sitemap: true

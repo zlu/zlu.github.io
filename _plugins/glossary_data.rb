@@ -2,7 +2,7 @@
 
 require "json"
 
-# Emit /assets/data/{ai,med}-glossary.json for in-page hover tooltips.
+# Emit /assets/data/{ai,med,cs}-glossary.json for in-page hover tooltips.
 module Jekyll
   class GlossaryData < Generator
     safe true
@@ -10,7 +10,8 @@ module Jekyll
 
     COLLECTIONS = {
       "ai-glossary" => "ai-glossary.json",
-      "med-glossary" => "med-glossary.json"
+      "med-glossary" => "med-glossary.json",
+      "cs-glossary" => "cs-glossary.json"
     }.freeze
 
     def generate(site)

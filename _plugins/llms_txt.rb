@@ -62,6 +62,13 @@ module Jekyll
         end
       end
 
+      section(lines, "CS glossary") do
+        lines << "- #{md_link("CS glossary index", "#{base}/cs-glossary/", "Algorithms, complexity, and systems terms")}"
+        collection_docs(site, "cs-glossary").each do |doc|
+          lines << "- #{md_link(doc.data["title"], absolute_url(base, doc.url), doc.data["description"])}"
+        end
+      end
+
       section(lines, "Algorithms") do
         lines << "- #{md_link("Algorithms index", "#{base}/algos/", "Guides with AlgoScape demos")}"
         collection_docs(site, "algos").each do |doc|
@@ -136,6 +143,7 @@ module Jekyll
         md_link("Posts index", "#{base}/posts/", "All blog posts"),
         md_link("AI glossary", "#{base}/ai-glossary/", "LLM, ML, and deep learning terms"),
         md_link("Medicine glossary", "#{base}/med-glossary/", "Short medical term pages"),
+        md_link("CS glossary", "#{base}/cs-glossary/", "Algorithms, complexity, and systems terms"),
         md_link("Algorithms", "#{base}/algos/", "Guides with AlgoScape demos"),
         md_link("Teach / tutoring", "#{base}/teach/", "1-1 CS tutoring for Chinese students abroad (bilingual)"),
         md_link("Teach universities", "#{base}/teach/universities/", "University tutoring landing pages"),

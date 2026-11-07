@@ -157,6 +157,7 @@
       /^\/20\d{2}\//.test(p) ||
       p.indexOf("/ai-glossary/") === 0 ||
       p.indexOf("/med-glossary/") === 0 ||
+      p.indexOf("/cs-glossary/") === 0 ||
       p.indexOf("/algos/") === 0
     ) {
       return "post_opened";
@@ -176,6 +177,7 @@
     if (/^\/20\d{2}\//.test(p)) return "post";
     if (p.indexOf("/ai-glossary/") === 0) return "ai_glossary";
     if (p.indexOf("/med-glossary/") === 0) return "med_glossary";
+    if (p.indexOf("/cs-glossary/") === 0) return "cs_glossary";
     if (p.indexOf("/algos/") === 0) return "algos";
     return null;
   }

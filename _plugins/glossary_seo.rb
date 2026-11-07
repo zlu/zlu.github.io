@@ -7,7 +7,7 @@ module Jekyll
     safe true
     priority :high
 
-    COLLECTIONS = %w[ai-glossary med-glossary].freeze
+    COLLECTIONS = %w[ai-glossary med-glossary cs-glossary].freeze
 
     def generate(site)
       COLLECTIONS.each do |name|
@@ -34,13 +34,20 @@ module Jekyll
       plain = strip_markdown(doc.content)
       doc.data["description"] ||= truncate(plain, 155)
 
-      label = collection_name == "ai-glossary" ? "AI glossary" : "medicine glossary"
+      label = case collection_name
+              when "ai-glossary" then "AI glossary"
+              when "med-glossary" then "medicine glossary"
+              when "cs-glossary" then "CS glossary"
+              else "glossary"
+              end
       parts = [doc.data["title"]]
       parts.concat(Array(doc.data["synonyms"]))
       parts.concat(Array(doc.data["term-en"])) if doc.data["term-en"]
       parts << label
       parts << "machine learning" if collection_name == "ai-glossary"
       parts << "LLM" if collection_name == "ai-glossary"
+      parts << "complexity theory" if collection_name == "cs-glossary"
+      parts << "algorithms" if collection_name == "cs-glossary"
       doc.data["keywords"] ||= parts.compact.map(&:to_s).uniq.join(", ")
     end
 
