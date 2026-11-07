@@ -384,11 +384,9 @@ html.sidebar-collapsed .sidebar-toggle-icon {
     height: auto;
   }
   
-  /* Ensure tables don't overflow */
+  /* Tables stay display:table so columns stay aligned; article scrolls. */
   table {
     max-width: 100%;
-    display: block;
-    overflow-x: auto;
   }
 }
 
@@ -1330,9 +1328,11 @@ article.post blockquote {
 }
 
 /* Markdown tables in posts.
-   First-column nowrap was making Token lists one long line, pushing Action
-   off-screen while .content { overflow-x: hidden } blocked scrolling — which
-   also left a tall empty Token cell matching the wrapped Action height. */
+   Keep a real table layout so thead/tbody share one column grid.
+   (display:block + thead/tbody { display:table; table-layout:fixed }
+   made header and body compute widths separately and misalign.)
+   Horizontal overflow: scroll the table wrapper via max-width, not by
+   splitting thead/tbody into independent tables. */
 .content table,
 article.post table {
   width: 100%;
@@ -1342,18 +1342,7 @@ article.post table {
   font-size: 0.95em;
   line-height: 1.45;
   table-layout: auto;
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.content table thead,
-.content table tbody,
-article.post table thead,
-article.post table tbody {
   display: table;
-  width: 100%;
-  table-layout: fixed;
 }
 
 .content table th,
@@ -1384,12 +1373,18 @@ article.post table tr:nth-child(even) td {
 article.post table td:first-child {
   font-weight: 600;
   background: #f8fafc;
-  width: 34%;
+  white-space: nowrap;
 }
 
 .content table td:first-child code,
 article.post table td:first-child code {
   white-space: normal;
+}
+
+/* Wide tables: allow the article column to scroll instead of clipping. */
+article.post {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* In-post glossary hover tips */

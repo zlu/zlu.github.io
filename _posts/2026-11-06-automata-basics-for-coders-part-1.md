@@ -9,12 +9,13 @@ tags:
   - compilers
   - theory of computation
   - regex
-description: "Linz Chapter 1 for programmers: alphabets, languages as sets of strings, set operations, grammars as BNF, and automata as validators. Every definition tied to code."
+description: "Automata for programmers-alphabets, languages as sets of strings, set operations, grammars as BNF, and automata as validators. Every definition tied to code."
 ---
 
 I am working through Linz and Rodger, *An Introduction to Formal Languages and Automata* (7th ed.), Chapter 1. This post is for coders who want the theoretical foundation of programming languages and parsers. I relate each concept to something you already write: regex, BNF, validators, state machines.
 
 This post covers:
+
 1. The one idea the subject is about
 2. Mathematical preliminaries (sets, complement, products, partitions, functions, equivalence, induction, graphs)
 3. Languages and operations on them
@@ -22,6 +23,7 @@ This post covers:
 5. Automata as validators (accepters) and transducers
 6. Where this shows up in compilers
 7. Cheat sheet and self-check
+8. Greek letter pronunciation (for the symbols in this blog)
 
 ## The one idea this whole subject is about
 
@@ -158,7 +160,7 @@ DeMorgan is the **same fact for sets**, with:
 
 - $\cup$ playing the role of `||`
 - $\cap$ playing the role of `&&`
-- complement $\overline{\,\cdot\,}$ playing the role of `!`
+- complement $\overline{\cdot}$ playing the role of `!`
 
 $$
 \overline{S_1 \cup S_2} = \overline{S_1} \cap \overline{S_2}
@@ -365,13 +367,7 @@ Done. So it holds for all $n \ge 1$.
 
 Circles + arrows. That is an FSA picture.
 
-<div class="mermaid">
-stateDiagram-v2
-  direction LR
-  [*] --> q0
-  q0 --> q1: a
-  q1 --> q1: b
-</div>
+stateDiagram-v2 direction LR [*] --> q0 q0 --> q1: a q1 --> q1: b
 
 - vertices = states  
 - directed edges = transitions  
@@ -452,7 +448,7 @@ every string over {a,b} EXCEPT "a" and "ab"
 includes: λ, b, aa, ba, bb, aaa, aba, ...
 ```
 
-**Reverse** $L_1^R = \{ w^R : w \in L_1 \}$:
+**Reverse** $L_1^R =  w^R : w \in L_1 $:
 
 ```text
 "a"^R  = "a"
@@ -460,7 +456,7 @@ includes: λ, b, aa, ba, bb, aaa, aba, ...
 so L1^R = { a, ba }
 ```
 
-**Concatenation** $L_1 L_2 = \{ xy : x \in L_1,\ y \in L_2 \}$  
+**Concatenation** $L_1 L_2 =  xy : x \in L_1,\ y \in L_2 $  
 (glue *any* string from $L_1$ in front of *any* string from $L_2$):
 
 ```text
@@ -472,11 +468,11 @@ ab + ba = abba
 L1 L2 = { ab, aba, abb, abba }
 ```
 
-**Star** $L_1^*$: think regex `…*`, but the unit you may repeat is **any whole string from $L_1$**, not a single character.
+**Star** $L_1^*$: think regex `…`*, but the unit you may repeat is **any whole string from $L_1$**, not a single character.
 
 You already know: in regex, `a*` means "zero or more `a`’s" → `""`, `"a"`, `"aa"`, `"aaa"`, …
 
-Here $L_1 = \{ a,\ ab \}$. So $L_1^*$ means: glue **zero or more** pieces end-to-end, and **each piece** must be either `"a"` or `"ab"`.
+Here $L_1 =  a,\ ab $. So $L_1^*$ means: glue **zero or more** pieces end-to-end, and **each piece** must be either `"a"` or `"ab"`.
 
 **Build it by how many pieces you use**
 
@@ -622,7 +618,7 @@ S
 = aabb
 ```
 
-Language = $\{ a^n b^n : n \ge 0 \}$ = balanced `a`s then `b`s.  
+Language = $ a^n b^n : n \ge 0 $ = balanced `a`s then `b`s.  
 Same kind of object as the identifier language: just a different rule set.
 
 ### Formal definition
@@ -680,12 +676,7 @@ Same state-machine idea, but it also **emits outputs** as it goes (streaming enc
 
 Finite automata = validator/recognizer **with no unbounded extra memory**: only the finite state.
 
-<div class="mermaid">
-flowchart LR
-  IN["input string"] --> SM["finite state machine"]
-  SM --> Y["accept = in the language"]
-  SM --> N["reject = not in the language"]
-</div>
+flowchart LR IN["input string"] --> SM["finite state machine"] SM --> Y["accept = in the language"] SM --> N["reject = not in the language"]
 
 ---
 
@@ -722,8 +713,8 @@ automaton      state machine: validator/recognizer (accepter) or transducer
 ## Self-check (use examples, not slogans)
 
 1. Give a language $L$ with exactly three sentences. Name one string that is *not* a sentence of $L$.
-2. With $\Sigma=\{0,1\}$ and $L=\{0,00\}$, write three strings in $\overline{L}$.
-3. With $L_1=\{a\}$, $L_2=\{b\}$, write $L_1 L_2$ and $L_1^*$.
+2. With $\Sigma=0,1$ and $L=0,00$, write three strings in $\overline{L}$.
+3. With $L_1=a$, $L_2=b$, write $L_1 L_2$ and $L_1^*$.
 4. Explain reflexive / symmetric / transitive using "same Git branch name" or invent your own.
 5. Write a tiny grammar (BNF) for integers like `0`, `42`, `7` (digits, no sign). Derive `42`.
 
@@ -738,7 +729,7 @@ $$
 Sentences of $L$: `"hi"`, `"hey"`, `"yo"`.  
 Not a sentence: `"hello"` (or $\lambda$, or `"h"`, …).
 
-**2.** $\overline{L} = \Sigma^* - L = \{0,1\}^* - \{0,00\}$.  
+**2.** $\overline{L} = \Sigma^* - L = 0,1^* - 0,00$.  
 Any three strings that are *not* `"0"` or `"00"` work, for example:
 
 ```text
@@ -788,4 +779,29 @@ Derivation of `42`:
 = 42
 ```
 
-Language of this grammar = $\{0,1,\ldots,9\}^+$ (all nonempty digit strings).
+Language of this grammar = $0,1,\ldots,9^+$ (all nonempty digit strings).
+
+---
+
+## Greek letter pronunciation guide
+
+Formal-language texts reuse a small set of Greek letters as fixed roles.
+
+| Letter | Write it | Say it | Role in this chapter (and nearby) |
+|--------|----------|--------|-----------------------------------|
+| $\Sigma$ | Sigma (capital) | **SIG-muh** | Alphabet: the finite set of allowed symbols. Think charset. |
+| $\sigma$ | sigma (lowercase) | **SIG-muh** | Often one symbol from $\Sigma$, or a generic string/substitution. |
+| $\lambda$ | lambda | **LAM-duh** | An empty string: same as `""`. |
+| $\varepsilon$ / $\epsilon$ | epsilon | **EP-si-lon** | A variation of $\lambda$. |
+| $\delta$ | delta | **DEL-tuh** | Transition function of an automaton: $\delta(q, a) =$ next state. |
+| $\Gamma$ | Gamma (capital) | **GAM-uh** | A second alphabet for machine *storage* (stack symbols, or tape symbols), not the input charset $\Sigma$. |
+| $\gamma$ | gamma (lowercase) | **GAM-uh** | One symbol from that storage alphabet $\Gamma$. |
+| $\emptyset$ | (not Greek; empty-set symbol) | **empty set** | The set with no elements. Different from $\lambda$: $\emptyset$ is a set; $\lambda$ is a string. |
+
+Quick contrasts that trip people up:
+
+- **$\Sigma$ vs $L$:** $\Sigma$ is the character set. $L$ is a *set of strings* built from those characters.
+- **$\lambda$ / $\varepsilon$ vs $\emptyset$:** $\lambda \in \Sigma^*$ (one string, length 0). $\emptyset$ has no members at all. $\lambda$ is a language with one sentence: the empty string.
+- **$\Sigma^*$:** say “sigma star” = every finite string over $\Sigma$, including $\lambda$.
+- **$\overline{L}$:** “L bar” / “complement of L” = $\Sigma^* - L$. The bar is not a Greek letter.
+
