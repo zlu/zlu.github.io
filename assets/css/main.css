@@ -15,6 +15,36 @@
   font-display: swap;
 }
 
+/* Same pair NidNoi uses: print (loopless) vs school (looped). */
+@font-face {
+  font-family: 'Noto Sans Thai';
+  src: url('/assets/fonts/NotoSansThai-Regular.woff2') format('woff2'),
+       url('/assets/fonts/NotoSansThai-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0E00-0E7F, U+200C-200D, U+25CC;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai Looped';
+  src: url('/assets/fonts/NotoSansThaiLooped-Regular.woff2') format('woff2'),
+       url('/assets/fonts/NotoSansThaiLooped-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0E00-0E7F, U+200C-200D, U+25CC;
+}
+
+/* Opt-in Thai faces for loop vs loopless comparisons in posts. */
+.thai-loopless {
+  font-family: 'Noto Sans Thai', 'Leelawadee UI', sans-serif;
+}
+
+.thai-looped {
+  font-family: 'Noto Sans Thai Looped', Thonburi, Tahoma, sans-serif;
+}
+
 h1,
 h2,
 h3,
