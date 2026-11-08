@@ -2,55 +2,55 @@
 university: Monash University
 teaching_folder: monash
 courses:
-- code: FIT1045
-  title: FIT1045
-  material: fit1045
-- code: FIT5202
-  title: FIT5202
-  material: FIT5202
-- code: ENG1014
-  title: ENG1014
-  material: eng1014
-- code: FIT5196
-  title: Datawrangling
-  material: FIT5196-datawrangling
-- code: FIT1058
-  title: Foundations Of Computing
-  material: FIT1058 Foundations of computing
-- code: FIT1008
-  title: FIT1008
-  material: fit1008
-- code: FIT1047
-  title: FIT1047
-  material: fit1047
-- code: ETX3500
-  title: High Dimensional Data Analysis
-  material: etx3500-5500-High-Dimensional-Data-Analysis
-- code: FIT5124
-  title: Networking Ml
-  material: fit5124-networking-ml
-- code: FIT9136
-  title: Algorithms and programming foundations in Python
-- code: FIT2014
-  title: Theory of Computation
-- code: FIT3003
-  title: Business Intelligence and Data Warehousing
-- code: FIT1051
-  title: Programming fundamentals in java
-- code: FIT2004
-  title: Algorithms and data structures
-- code: FIT2099
-  title: Object oriented design and implementation
-- code: FIT2102
-  title: Programming paradigms
-- code: FIT3080
-  title: Intelligent systems
-- code: FIT3152
-  title: Data analytics
-- code: FIT3155
-  title: Advanced data structures and algorithms
-- code: FIT5197
-  title: Modelling for data analysis
-- code: FIT9137
-  title: Introduction to computer architecture and networks
+  - code: FIT1045
+    title: Intro to Programming
+    material: fit1045
+  - code: FIT5202
+    title: Data Processing for Big Data
+    material: FIT5202
+  - code: ENG1014
+    title: Engineering Numerical Analysis
+    material: eng1014
+  - code: FIT5196
+    title: Datawrangling
+    material: FIT5196-datawrangling
+  - code: FIT1058
+    title: Foundations Of Computing
+    material: FIT1058 Foundations of computing
+  - code: FIT1008
+    title: Fundamentals of Algorithms
+    material: fit1008
+  - code: FIT1047
+    title: Introduction to computer systems, networks and security
+    material: fit1047
+  - code: ETX3500
+    title: High Dimensional Data Analysis
+    material: etx3500-5500-High-Dimensional-Data-Analysis
+  - code: FIT5124
+    title: Advanced Topics in Security
+    material: fit5124-networking-ml
+  - code: FIT9136
+    title: Algorithms and programming foundations in Python
+  - code: FIT2014
+    title: Theory of Computation
+  - code: FIT3003
+    title: Business Intelligence and Data Warehousing
+  - code: FIT1051
+    title: Programming fundamentals in java
+  - code: FIT2004
+    title: Algorithms and data structures
+  - code: FIT2099
+    title: Object oriented design and implementation
+  - code: FIT2102
+    title: Programming paradigms
+  - code: FIT3080
+    title: Intelligent systems
+  - code: FIT3152
+    title: Data analytics
+  - code: FIT3155
+    title: Advanced data structures and algorithms
+  - code: FIT5197
+    title: Modelling for data analysis
+  - code: FIT9137
+    title: Introduction to computer architecture and networks
 ---
