@@ -37,8 +37,6 @@ universities:
   admin_slug: carnegie-mellon-university
   materials:
   - 07-120-intro-to-software-construction
-  - '112003'
-  - cmu-py-15-112
   - cs15-112
 - folder: concordia
   admin_slug: concordia-university
