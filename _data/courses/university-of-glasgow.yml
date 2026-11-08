@@ -14,9 +14,6 @@ courses:
   - material: 5099 Information Visualisation
     code: COMSCI5099
     title: Information Visualization
-  - material: 5077 Enterprise Cyber Security
-    title: Enterprise Cyber Security
-    code: COMPSCI5077
   - material: 5076 Database & Data Analytics
     title: Database & Data Analytics
     code: COMPSCI5076
