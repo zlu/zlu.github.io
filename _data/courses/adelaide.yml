@@ -1,5 +1,6 @@
 ---
 university: University of Adelaide
+teaching_folder: ~/baidu-sync/teaching/adelaide-university
 courses:
   - code: COMP SCI 1101
     title: Introduction to Programming
