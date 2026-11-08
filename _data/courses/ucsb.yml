@@ -1,0 +1,8 @@
+---
+university: UCSB
+teaching_folder: ucsb
+courses:
+  - code: COMPSC_16
+    material: compsc16
+    title: Problem Solving with Computers I
+---
