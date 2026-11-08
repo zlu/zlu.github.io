@@ -147,7 +147,6 @@ module Jekyll
       themes = {} unless themes.is_a?(Hash)
 
       # Evidence catalog from .scripts/sync-teach-catalog.py (filenames/counts only).
-      # Empty bulk directory pages were dropped — only real tutoring coverage ships.
       catalog = catalog_by_slug(site)
 
       universities = []
@@ -809,7 +808,7 @@ module Jekyll
       title_cn = "大学计算机辅导目录 | 真实辅导过的学校"
       course_n = universities.sum { |u| Array(u["courses"]).size }
       description = "Directory of #{universities.size} universities and #{course_n} courses with " \
-                    "real bilingual tutoring coverage — not an empty school list. AI, data science, programming."
+                    "bilingual tutoring coverage. AI, data science, programming."
 
       region_groups = []
       REGION_MAP.each do |key, meta|
