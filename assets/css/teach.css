@@ -748,6 +748,46 @@ body.teach-page-active .content, body.teach-page-active .site {
   line-height: 1.35;
 }
 
+.teach-course-method-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: teach-method;
+}
+
+.teach-course-method-list li {
+  position: relative;
+  margin: 0 0 1rem;
+  padding: 0 0 1rem 2.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+.teach-course-method-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.teach-course-method-list li::before {
+  counter-increment: teach-method;
+  content: counter(teach-method);
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 999px;
+  background: #0f3d3e;
+  color: #f7f3ea;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.85rem;
+  text-align: center;
+}
+
 .teach-landing-section {
   margin: 0 0 1.75rem;
 }

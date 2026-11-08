@@ -1,22 +1,34 @@
 {% comment %}
   Public tutoring-coverage signals derived from local teaching inventory.
   Never dumps lecture PDFs, assignment text, or solutions.
+  On curated course pages (overview / tutoring copy), skip the generic summary
+  and topic chips — those are already written for the course.
 {% endcomment %}
+{% assign curated_course = false %}
+{% if page.overview_cn != "" or page.overview_en != "" %}
+  {% assign curated_course = true %}
+{% endif %}
+{% if page.tutoring and page.tutoring.size > 0 %}
+  {% assign curated_course = true %}
+{% endif %}
+
 {% if page.coverage_summary_cn != "" or page.coverage_summary_en != "" or page.evidence_topics.size > 0 or page.evidence_signals %}
 <section class="teach-landing-section teach-evidence">
   <h2 data-en="Tutoring coverage"
       data-cn="辅导覆盖">辅导覆盖</h2>
+  {% unless curated_course %}
   {% if page.coverage_summary_cn != "" or page.coverage_summary_en != "" %}
   <p class="teach-landing-lead teach-evidence-summary"
      data-en="{{ page.coverage_summary_en }}"
      data-cn="{{ page.coverage_summary_cn }}">{{ page.coverage_summary_cn }}</p>
   {% endif %}
+  {% endunless %}
 
   {% if page.evidence_signals %}
   <ul class="teach-proof teach-signal-list">
     {% if page.evidence_signals.weekly_lecture_arc %}
-    <li data-en="Weekly lecture catch-up — keep pace with the term"
-        data-cn="可按周进度同步答疑，跟上学期节奏">可按周进度同步答疑，跟上学期节奏</li>
+    <li data-en="Lecture catch-up — bilingual walkthrough of the course arc"
+        data-cn="同步跟课：用中英双语把课程主线讲透">同步跟课：用中英双语把课程主线讲透</li>
     {% endif %}
     {% if page.evidence_signals.assignment_lab_materials %}
     <li data-en="Assignment / lab debug sessions — you submit your own work"
@@ -29,6 +41,7 @@
   </ul>
   {% endif %}
 
+  {% unless curated_course %}
   {% if page.evidence_topics and page.evidence_topics.size > 0 %}
   <h3 data-en="Themes that show up in sessions"
       data-cn="辅导中常见主题">辅导中常见主题</h3>
@@ -41,11 +54,6 @@
     {% endfor %}
   </ul>
   {% endif %}
-
-  {% if page.evidence_shape and page.evidence_shape.week_span %}
-  <p class="teach-coverage-proof"
-     data-en="Typical lecture arc seen in tutoring: weeks {{ page.evidence_shape.week_span[0] }}–{{ page.evidence_shape.week_span[1] }}."
-     data-cn="辅导中常见的周进度跨度：第 {{ page.evidence_shape.week_span[0] }}–{{ page.evidence_shape.week_span[1] }} 周。">辅导中常见的周进度跨度：第 {{ page.evidence_shape.week_span[0] }}–{{ page.evidence_shape.week_span[1] }} 周。</p>
-  {% endif %}
+  {% endunless %}
 </section>
 {% endif %}

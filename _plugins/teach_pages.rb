@@ -132,6 +132,7 @@ module Jekyll
       data-science
       security
       databases
+      automata
       math-for-cs
       algorithms
       systems
@@ -330,8 +331,10 @@ module Jekyll
 
         how = match["link"].to_s
         linked = LINKED_HOW.include?(how) && match["depth_score"].to_i.positive?
+        curated = Array(course["curated_topics"])
         course.merge(
-          "topics" => Array(match["topics"]),
+          # Prefer hand-written focus topics over filename heuristics.
+          "topics" => curated.any? ? curated : Array(match["topics"]),
           "signals" => match["signals"].is_a?(Hash) ? match["signals"] : {},
           "shape" => match["shape"].is_a?(Hash) ? match["shape"] : {},
           "depth_score" => match["depth_score"].to_i,
@@ -358,6 +361,10 @@ module Jekyll
       end
     end
 
+    def bilingual_items(raw)
+      Array(raw).select { |t| t.is_a?(Hash) && (t["en"].to_s.strip != "" || t["cn"].to_s.strip != "") }
+    end
+
     def normalize_course(course, themes = {})
       return nil unless course.is_a?(Hash)
 
@@ -378,7 +385,15 @@ module Jekyll
         "department" => course["department"].to_s.strip,
         "material" => course["material"].to_s.strip,
         "slug" => course_slug(code, title),
-        "theme" => theme_id
+        "theme" => theme_id,
+        "overview_en" => course["overview_en"].to_s.strip,
+        "overview_cn" => course["overview_cn"].to_s.strip,
+        "lead_en" => course["lead_en"].to_s.strip,
+        "lead_cn" => course["lead_cn"].to_s.strip,
+        "curated_topics" => bilingual_items(course["topics"]),
+        "stuck" => bilingual_items(course["stuck"]),
+        "session_angles" => bilingual_items(course["session_angles"]),
+        "tutoring" => bilingual_items(course["tutoring"])
       }
     end
 
@@ -464,7 +479,8 @@ module Jekyll
     end
 
     def related_same_uni(siblings, course, limit = 4)
-      others = siblings.reject { |c| c["slug"] == course["slug"] }
+      # Only link evidence-backed siblings — unlinked meta rows are thin shells.
+      others = siblings.reject { |c| c["slug"] == course["slug"] || !c["linked"] }
       same_theme = others.select { |c| c["theme"] == course["theme"] }
       rest = others - same_theme
       (same_theme + rest).first(limit).map do |c|
@@ -481,7 +497,9 @@ module Jekyll
     end
 
     def related_same_theme(theme_index, theme_id, uni_slug, limit = 6)
-      pool = theme_index.fetch(theme_id, []).reject { |r| r["uni_slug"] == uni_slug }
+      pool = theme_index.fetch(theme_id, []).reject do |r|
+        r["uni_slug"] == uni_slug || !r.dig("course", "linked")
+      end
       by_uni = pool.group_by { |r| r["uni_slug"] }
       ordered_unis = by_uni.keys.sort
       picked = []
@@ -594,8 +612,26 @@ module Jekyll
 
       theme_label_en = theme_meta["label_en"].to_s
       theme_label_cn = theme_meta["label_cn"].to_s
-      topics = Array(theme_meta["topics"]).select { |t| t.is_a?(Hash) }
-      topic_bits = topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
+      theme_topics = Array(theme_meta["topics"]).select { |t| t.is_a?(Hash) }
+      course_topics = Array(course["topics"]).select { |t| t.is_a?(Hash) }
+      course_signals = course["signals"].is_a?(Hash) ? course["signals"] : {}
+      course_shape = course["shape"].is_a?(Hash) ? course["shape"] : {}
+      stuck = bilingual_items(course["stuck"])
+      stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) } if stuck.empty?
+      session_angles = bilingual_items(course["session_angles"])
+      if session_angles.empty?
+        session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }
+      end
+      lead_en = course["lead_en"].to_s
+      lead_cn = course["lead_cn"].to_s
+      lead_en = theme_meta["lead_en"].to_s if lead_en.empty?
+      lead_cn = theme_meta["lead_cn"].to_s if lead_cn.empty?
+      overview_en = course["overview_en"].to_s
+      overview_cn = course["overview_cn"].to_s
+      tutoring = bilingual_items(course["tutoring"])
+
+      focus_topics = course_topics.any? ? course_topics : theme_topics
+      topic_bits = focus_topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
 
       # Lead with course code for SERP queries like "fit2102" / "etx3500".
       title_en = if code.empty?
@@ -609,16 +645,24 @@ module Jekyll
                  else
                    "#{university} #{code} 课程辅导 | #{title}"
                  end
-      description = "1-1 tutoring for #{label} at #{university}"
-      description += " (#{theme_label_en})" unless theme_label_en.empty?
-      description += ". "
-      description += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
-      description += "Bilingual Chinese/English — assignments, projects, exam prep. No ghostwriting."
+      description = if overview_en.length.between?(80, 160)
+                      overview_en
+                    else
+                      desc = "1-1 tutoring for #{label} at #{university}"
+                      desc += " (#{theme_label_en})" unless theme_label_en.empty?
+                      desc += ". "
+                      desc += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
+                      desc += "Bilingual Chinese/English — lecture sync, assignments, exam prep. No ghostwriting."
+                      desc
+                    end
+      if description.length > 160
+        description = description[0, 157].sub(/\s+\S*\z/, "").sub(/[.,;:]\z/, "") + "…"
+      end
 
-      topic_kw = topics.first(6).flat_map { |t| [t["en"], t["cn"]] }.compact.map(&:to_s).reject(&:empty?)
+      topic_kw = focus_topics.first(6).flat_map { |t| [t["en"], t["cn"]] }.compact.map(&:to_s).reject(&:empty?)
       keywords = [
         code, title, university, theme_label_en, theme_label_cn,
-        "作业辅导", "考前辅导", "同步辅导", "留学生", "AI", "Python",
+        "作业辅导", "考前辅导", "同步辅导", "留学生",
         *topic_kw.first(8)
       ].reject(&:empty?).join(", ")
 
@@ -632,20 +676,7 @@ module Jekyll
       same_theme = related_same_theme(theme_index, theme_id, uni_slug, 6)
       theme_reading = Array(reading_by_theme[theme_id]).first(4)
 
-      about_topics = topics.first(8).map { |t| t["en"].to_s }.reject(&:empty?)
-      course_topics = Array(course["topics"])
-      course_signals = course["signals"].is_a?(Hash) ? course["signals"] : {}
-      course_shape = course["shape"].is_a?(Hash) ? course["shape"] : {}
-      if course_topics.any?
-        about_topics = (course_topics.filter_map { |t| t["en"] if t.is_a?(Hash) } + about_topics).uniq.first(10)
-      end
-      if course_topics.any?
-        topic_bits = course_topics.first(4).filter_map { |t| t["en"] if t.is_a?(Hash) }
-        description = "1-1 tutoring for #{label} at #{university}"
-        description += " (#{theme_label_en})" unless theme_label_en.empty?
-        description += ". Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
-        description += "Bilingual Chinese/English — assignments, projects, exam prep. No ghostwriting."
-      end
+      about_topics = focus_topics.first(8).map { |t| t["en"].to_s }.reject(&:empty?)
 
       page = TeachGeneratedPage.new(
         site,
@@ -669,11 +700,14 @@ module Jekyll
         "theme" => theme_id,
         "theme_label_en" => theme_label_en,
         "theme_label_cn" => theme_label_cn,
-        "theme_lead_en" => theme_meta["lead_en"].to_s,
-        "theme_lead_cn" => theme_meta["lead_cn"].to_s,
-        "theme_topics" => topics,
-        "theme_stuck" => Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) },
-        "theme_session_angles" => Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) },
+        "theme_lead_en" => lead_en,
+        "theme_lead_cn" => lead_cn,
+        "overview_en" => overview_en,
+        "overview_cn" => overview_cn,
+        "theme_topics" => focus_topics,
+        "theme_stuck" => stuck,
+        "theme_session_angles" => session_angles,
+        "tutoring" => tutoring,
         "theme_reading" => theme_reading,
         "theme_about" => about_topics,
         "related_same_uni" => same_uni,

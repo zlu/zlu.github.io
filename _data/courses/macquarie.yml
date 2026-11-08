@@ -9,6 +9,53 @@ courses:
   material: COMP6010
 - code: COMP3770/6770
   title: Management of IT Systems and Projects
+  material: comp3770
+  theme: programming
+  lead_en: >-
+    COMP3770 is English-heavy project and systems management: briefs, reports, and
+    process vocabulary. The hard part is turning abstract management frameworks into
+    a concrete submission the marker recognises — not only knowing the buzzwords.
+  lead_cn: >-
+    COMP3770 是英文很重的项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架
+    收成改卷人认得的具体提交物，而不只是会黑话。
+  overview_en: >-
+    Management of IT Systems and Projects emphasises structured reports, assignment
+    guidelines, and defending decisions in English. Students stall when report
+    templates feel vague, or when technical and managerial language collide in one
+    document.
+  overview_cn: >-
+    Management of IT Systems and Projects 强调结构化报告、作业指南，以及用英文为决策辩护。
+    卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
+  topics:
+    - en: "Reading assignment guidelines into a section plan"
+      cn: "把作业指南收成章节计划"
+    - en: "Project / IT management vocabulary in English"
+      cn: "英文项目 / IT 管理术语"
+    - en: "Report structure that matches the brief"
+      cn: "与 brief 对齐的报告结构"
+    - en: "Defending decisions without empty buzzwords"
+      cn: "为决策辩护，不用空黑话"
+  stuck:
+    - en: "Knows the topic, cannot structure the English report"
+      cn: "懂主题，却搭不起英文报告结构"
+    - en: "Guideline language denser than the lecture examples"
+      cn: "指南用语比课堂例子更密"
+    - en: "Technical detail without answering the management question"
+      cn: "技术细节很多，却没回答管理问题"
+  session_angles:
+    - en: "Brief → outline → evidence bullets → draft"
+      cn: "Brief → 大纲 → 证据要点 → 草稿"
+    - en: "You write; we stress-test clarity against the guideline"
+      cn: "你来写；我们按指南压测是否说清"
+    - en: "Short rewrite drills on weak sections"
+      cn: "针对薄弱段落的短改写练习"
+  tutoring:
+    - en: "Lecture sync: bilingual management vocabulary tied to the assessment brief."
+      cn: "同步跟课：用中英双语把管理术语绑到作业 brief 上。"
+    - en: "Assignments: outline review and section-by-section feedback. You submit your own work."
+      cn: "作业辅导：大纲评审与分段反馈。作业本人提交。"
+    - en: "Deadline sprints: clarify the weakest report sections under time pressure."
+      cn: "DDL 冲刺：限时把最弱的报告段落说清楚。"
 - code: COMP1000
   title: Introduction to Computer Programming
 - code: COMP1010
@@ -33,7 +80,54 @@ courses:
 - code: COMP6200
   title: COMP6200
   material: COMP6200-aug-2025
+# GSC: comp3770
 - code: COMP3770
-  title: COMP3770
+  title: Management of IT Systems and Projects
   material: comp3770
+  theme: programming
+  lead_en: >-
+    COMP3770 is English-heavy project and systems management: briefs, reports, and
+    process vocabulary. The hard part is turning abstract management frameworks into
+    a concrete submission the marker recognises — not only knowing the buzzwords.
+  lead_cn: >-
+    COMP3770 是英文很重的项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架
+    收成改卷人认得的具体提交物，而不只是会黑话。
+  overview_en: >-
+    Management of IT Systems and Projects emphasises structured reports, assignment
+    guidelines, and defending decisions in English. Students stall when report
+    templates feel vague, or when technical and managerial language collide in one
+    document.
+  overview_cn: >-
+    Management of IT Systems and Projects 强调结构化报告、作业指南，以及用英文为决策辩护。
+    卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
+  topics:
+    - en: "Reading assignment guidelines into a section plan"
+      cn: "把作业指南收成章节计划"
+    - en: "Project / IT management vocabulary in English"
+      cn: "英文项目 / IT 管理术语"
+    - en: "Report structure that matches the brief"
+      cn: "与 brief 对齐的报告结构"
+    - en: "Defending decisions without empty buzzwords"
+      cn: "为决策辩护，不用空黑话"
+  stuck:
+    - en: "Knows the topic, cannot structure the English report"
+      cn: "懂主题，却搭不起英文报告结构"
+    - en: "Guideline language denser than the lecture examples"
+      cn: "指南用语比课堂例子更密"
+    - en: "Technical detail without answering the management question"
+      cn: "技术细节很多，却没回答管理问题"
+  session_angles:
+    - en: "Brief → outline → evidence bullets → draft"
+      cn: "Brief → 大纲 → 证据要点 → 草稿"
+    - en: "You write; we stress-test clarity against the guideline"
+      cn: "你来写；我们按指南压测是否说清"
+    - en: "Short rewrite drills on weak sections"
+      cn: "针对薄弱段落的短改写练习"
+  tutoring:
+    - en: "Lecture sync: bilingual management vocabulary tied to the assessment brief."
+      cn: "同步跟课：用中英双语把管理术语绑到作业 brief 上。"
+    - en: "Assignments: outline review and section-by-section feedback. You submit your own work."
+      cn: "作业辅导：大纲评审与分段反馈。作业本人提交。"
+    - en: "Deadline sprints: clarify the weakest report sections under time pressure."
+      cn: "DDL 冲刺：限时把最弱的报告段落说清楚。"
 ---

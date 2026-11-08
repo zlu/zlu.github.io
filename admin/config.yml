@@ -187,6 +187,65 @@ collections:
               required: false,
               hint: "Subfolder under teaching/<uni>/ — private materials only; never published.",
             }
+          - {
+              label: "Theme",
+              name: "theme",
+              widget: "string",
+              required: false,
+              hint: "Optional override, e.g. automata, algorithms, machine-learning.",
+            }
+          - {
+              label: "Lead (EN)",
+              name: "lead_en",
+              widget: "text",
+              required: false,
+            }
+          - {
+              label: "Lead (CN)",
+              name: "lead_cn",
+              widget: "text",
+              required: false,
+            }
+          - {
+              label: "Overview (EN)",
+              name: "overview_en",
+              widget: "text",
+              required: false,
+            }
+          - {
+              label: "Overview (CN)",
+              name: "overview_cn",
+              widget: "text",
+              required: false,
+            }
+          - label: "Focus topics"
+            name: "topics"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "EN", name: "en", widget: "string" }
+              - { label: "CN", name: "cn", widget: "string" }
+          - label: "Stuck points"
+            name: "stuck"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "EN", name: "en", widget: "string" }
+              - { label: "CN", name: "cn", widget: "string" }
+          - label: "Session angles"
+            name: "session_angles"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "EN", name: "en", widget: "string" }
+              - { label: "CN", name: "cn", widget: "string" }
+          - label: "Tutoring method (sync / HW / exam)"
+            name: "tutoring"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "EN", name: "en", widget: "text" }
+              - { label: "CN", name: "cn", widget: "text" }
   - name: "ai-glossary"
     label: "AI Glossary"
     folder: "_ai-glossary/"

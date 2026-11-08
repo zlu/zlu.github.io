@@ -124,6 +124,12 @@ TOPIC_PATTERNS = [
     (r"\bnetwork|tcp|udp|socket", "networking", "计算机网络"),
     (r"\bstat|regression|bayes|probability", "stats / probability", "统计 / 概率"),
     (r"\blinear.?algebra|matrix|vector.?space", "linear algebra", "线性代数"),
+    # Prefer subject labels over generic "exam prep" / language tags when both hit.
+    (r"\bpetri", "Petri nets", "Petri 网"),
+    (r"\bfsa\b|\bdfa\b|\bnfa\b|finite.?state|automata|event.?driven", "automata / FSA", "自动机 / FSA"),
+    (r"\bmoore\b|\bmealy\b", "Moore / Mealy machines", "Moore / Mealy 机"),
+    (r"\bregex\b|regular.?expr|e.?nfa|ε.?nfa", "regex / ε-NFA", "正则 / ε-NFA"),
+    (r"\bfrp\b|functional.?reactive|observer", "FRP / observers", "FRP / Observer"),
     (r"\bexam|midterm|final|mock", "exam prep", "考前突击"),
     (r"\bassignment|coursework|homework|lab\b", "assignments / labs", "作业 / Lab"),
     (r"\bdata.?struct", "data structures", "数据结构"),
@@ -264,26 +270,37 @@ def scan_material_dir(course_dir: Path) -> dict | None:
 
     topics = []
     for f in content_files[:120]:
-        topics.extend(topic_hits(f"{course_dir.name} {f.name}"))
+        rel = str(f.relative_to(course_dir))
+        topics.extend(topic_hits(f"{course_dir.name} {rel}"))
+    # Also score directory names (week7, exam, assignment) even when files are images.
+    for root, dirs, _fnames in os.walk(course_dir):
+        dirs[:] = [d for d in dirs if d not in IGNORE_IN_COUNT and not d.startswith(".")]
+        for d in dirs:
+            topics.extend(topic_hits(d))
     # dedupe topics preserving order
     topic_map = {(t["en"], t["cn"]): t for t in topics}
     top_topics = list(topic_map.values())[:8]
 
     ext_counts = collections.Counter(f.suffix.lower() for f in content_files)
     weeks = set()
-    for f in content_files:
+    path_parts_lower = []
+    for f in files:
+        try:
+            parts = f.relative_to(course_dir).parts
+        except ValueError:
+            parts = (f.name,)
+        path_parts_lower.extend(p.lower() for p in parts)
+        for part in parts:
+            for m in re.finditer(r"(?:week|w|lecture|lec)[_\s\-]*(\d{1,2})", part, re.I):
+                weeks.add(int(m.group(1)))
         for m in re.finditer(r"(?:week|w|lecture|lec)[_\s\-]*(\d{1,2})", f.name, re.I):
             weeks.add(int(m.group(1)))
 
     codes = extract_codes(course_dir.name, *[f.name for f in content_files[:50]])
-    has_exam = any(
-        any(k in f.name.lower() for k in ("exam", "mock", "midterm", "final"))
-        for f in content_files
-    )
-    has_assign = any(
-        any(k in f.name.lower() for k in ("assignment", "homework", "coursework", "lab", "project"))
-        for f in content_files
-    )
+    assign_keys = ("assignment", "homework", "coursework", "lab", "project", "workshop")
+    exam_keys = ("exam", "mock", "midterm", "final")
+    has_exam = any(any(k in p for k in exam_keys) for p in path_parts_lower)
+    has_assign = any(any(k in p for k in assign_keys) for p in path_parts_lower)
     return {
         "folder": course_dir.name,
         "codes": codes,
@@ -745,6 +762,19 @@ def write_links_into_admin(admin: dict, tree: dict[str, dict]) -> tuple[int, int
                 row["material"] = course["material"]
             if course.get("theme") not in (None, ""):
                 row["theme"] = course["theme"]
+            # Preserve hand-written course landing copy.
+            for key in (
+                "lead_en",
+                "lead_cn",
+                "overview_en",
+                "overview_cn",
+                "topics",
+                "stuck",
+                "session_angles",
+                "tutoring",
+            ):
+                if course.get(key) not in (None, "", []):
+                    row[key] = course[key]
             if row:
                 clean_courses.append(row)
         doc["courses"] = clean_courses

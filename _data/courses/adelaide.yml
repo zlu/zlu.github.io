@@ -21,6 +21,69 @@ courses:
   - code: COMP SCI 4023
     title: Event Driven Computing
     material: Comp_4023-event-driven-computing
+    theme: automata
+    lead_en: >-
+      This course is hard for many Chinese students abroad: English lectures move fast,
+      Greek letters (δ, Δ̂, ε, Σ) pile up, the ideas are abstract, and exam figures look
+      cryptic until you have a reading method. Tutoring turns that fog into steps you can
+      repeat on paper.
+    lead_cn: >-
+      这门课对很多留学生特别难：英文课节奏快，希腊字母（δ、Δ̂、ε、Σ）堆在一起，
+      概念抽象，考试图又像天书。辅导把这团雾拆成纸上能一步步做的方法。
+    overview_en: >-
+      Event Driven Computing mixes formal models with reactive software: finite automata
+      (DFA / NFA / ε-NFA), regular expressions, Moore machines, Petri nets, observers /
+      events, and FRP-style transforms. The pain is rarely “I never saw this once.” It is
+      English terminology under time pressure, symbols that do not stick, abstract
+      definitions with no picture in your head, and graphs you cannot decode when the
+      figure is new.
+    overview_cn: >-
+      Event Driven Computing 把形式模型与反应式软件绑在一起：有限自动机（DFA / NFA / ε-NFA）、
+      正则、Moore 机、Petri 网、observer / 事件，以及 FRP 风格变换。真正卡人的往往不是
+      「完全没见过」，而是限时英文术语、记不住的符号、脑子里没有画面的抽象定义，
+      以及换一张图就不会读的暗号式状态图 / Petri 网。
+    topics:
+      - en: Reading FSAs and computing extended transitions Δ̂
+        cn: 读 FSA 图并计算扩展转移 Δ̂
+      - en: NFA design and subset construction
+        cn: NFA 设计与子集构造
+      - en: Regex membership and ε-NFA → NFA
+        cn: 正则判定与 ε-NFA → NFA
+      - en: Moore machines from a short brief
+        cn: 按简短 brief 画 Moore 机
+      - en: Petri nets — marking, enabled transitions, firing
+        cn: Petri 网：标识、使能变迁与激发
+      - en: Observers, event logs, and FRP map / miss patterns
+        cn: Observer、事件日志与 FRP map / miss
+      - en: Workshop-style construction and verification drills
+        cn: Workshop 风格的构造与核对练习
+      - en: Timed past-paper blocks with wrong-answer analysis
+        cn: 限时真题块 + 错题方法复盘
+    stuck:
+      - en: English lecture + Greek symbols (δ, Δ̂, ε, Σ) — vocabulary outruns understanding
+        cn: 英文课 + 希腊字母（δ、Δ̂、ε、Σ）——术语比理解跑得快
+      - en: Abstract definitions with no mental picture of what the machine is doing
+        cn: 抽象定义对不上脑子里的「机器在干什么」
+      - en: Cryptic state / Petri diagrams that look familiar until the exam figure is new
+        cn: 状态图 / Petri 网像暗号：课堂图眼熟，考试换一张就不会读
+      - en: DFA / NFA / ε rules mixed up when writing the transition table
+        cn: 写转移表时 DFA / NFA / ε 规则搅在一起
+      - en: Petri answers by intuition instead of checking the net step by step
+        cn: Petri 凭直觉答题，不按网逐步核对
+    session_angles:
+      - en: "Lecture sync with the same vocabulary workshops and exams use"
+        cn: "同步跟课，术语与 workshop、考试一致"
+      - en: "Programming assignments: you drive; I debug the model and the edge cases"
+        cn: "编程作业你来操作；我帮你对齐模型与边界情况"
+      - en: "Exam blocks with a fixed method per question type (FSA, NFA, regex, Moore, Petri, FRP)"
+        cn: "按题型固定方法做考试块（FSA、NFA、正则、Moore、Petri、FRP）"
+    tutoring:
+      - en: "Lecture sync: bilingual walkthrough of the course arc (automata → machines → Petri → events / FRP) so workshop and exam language match."
+        cn: "同步跟课：用中英双语把课程主线讲透（自动机 → 机器 → Petri → 事件 / FRP），让 workshop 与考试用语对齐。"
+      - en: "Assignments: approach review and live debug. You keep authorship and submit yourself — no ghostwriting."
+        cn: "作业辅导：拆 brief、梳模型、现场 debug。你保有作者身份并本人提交——不代写。"
+      - en: "Exam prep: timed drills on the recurring question shapes (FSA inspection, NFA / subset, regex / ε-NFA, Moore from brief, Petri, observer / FRP), then wrong-answer analysis."
+        cn: "考前突击：针对反复出现的题型限时练（FSA 读图、NFA / 子集、正则 / ε-NFA、按 brief 画 Moore、Petri、observer / FRP），再做错题方法复盘。"
   - code: COMP SCI 7201
     title: Algorithm and Data Structure Analysis
 ---
