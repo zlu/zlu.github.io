@@ -6837,8 +6837,8 @@ universities:
   course_count: 1
   linked_course_count: 1
   courses:
-  - code: ''
-    title: Ds1000b Data Science Concepts
+  - code: DS1000b
+    title: Data Science Concepts
     material: ds1000b-data-science-concepts
     link: material field
     topics:
