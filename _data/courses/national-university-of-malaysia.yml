@@ -2,6 +2,9 @@
 university: National University of Malaysia
 teaching_folder: national-university-of-malaysia
 courses:
-- code: STQD6114
-  title: Data Analytics in R
+  - code: STQD6114
+    title: Data Analytics in R
+  - material: 6114非结构化数据分析(R)
+    title: 非结构化数据分析(R)
+    code: "6114"
 ---
