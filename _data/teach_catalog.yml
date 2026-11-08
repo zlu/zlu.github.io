@@ -2,8 +2,8 @@ source: Admin _data/courses + linked private teaching/ metadata
 policy: Class files stay private. Run with --write-links to persist empty teaching_folder/material
   into admin YAML.
 university_count: 89
-course_count: 697
-linked_course_count: 155
+course_count: 698
+linked_course_count: 156
 universities:
 - slug: unsw
   university: UNSW Sydney
@@ -4997,6 +4997,161 @@ universities:
     private materials. Weekly lecture catch-up. Exam-prep drills. Typical themes:
     exam prep. No ghostwriting — you submit your own work.'
   coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。考前突击。常见主题：考前突击。不代写、不代考。
+- slug: berkeley
+  university: UC Berkeley
+  teaching_folder: uc-berkeley
+  hand_curated: true
+  course_count: 12
+  linked_course_count: 3
+  courses:
+  - code: CS 61A
+    title: Structure and Interpretation of Computer Programs
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CS 61B
+    title: Data Structures
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CS 61C
+    title: Great Ideas in Computer Architecture
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CS 70
+    title: Discrete Mathematics and Probability Theory
+    material: CS70离散数学
+    link: material field
+    topics: []
+    shape:
+      pdf: 31
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 0
+      total_content_files: 31
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 31
+  - code: CS 170
+    title: Efficient Algorithms and Intractable Problems
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CS 188
+    title: Introduction to Artificial Intelligence
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CS 189
+    title: Introduction to Machine Learning
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CS 186
+    title: Introduction to Database Systems
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CS 162
+    title: Operating Systems and System Programming
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: DATA C100
+    title: Principles and Techniques of Data Science
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: Data 8
+    title: The Foundations of Data Science
+    material: Data 8-the Foundations of Data Science
+    link: material field
+    topics:
+    - &id203
+      en: web front-end
+      cn: 前端
+    shape:
+      pdf: 0
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 0
+      total_content_files: 18
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 18
+  - code: MATH54
+    title: Linear Algebra and Differential Equations
+    material: Math54-linear-algebra-and-differential-equations
+    link: material field
+    topics:
+    - &id204
+      en: linear algebra
+      cn: 线性代数
+    - &id205
+      en: exam prep
+      cn: 考前突击
+    shape:
+      pdf: 3
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 0
+      total_content_files: 3
+      week_span: null
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 8
+  topics:
+  - *id203
+  - *id204
+  - *id205
+  signals:
+    exam_prep_materials: true
+    assignment_lab_materials: false
+    weekly_lecture_arc: false
+  total_depth: 57
+  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
+    private materials. Exam-prep drills. Typical themes: web front-end, linear algebra,
+    exam prep. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。考前突击。常见主题：前端、线性代数、考前突击。不代写、不代考。
 - slug: hku
   university: The University of Hong Kong
   teaching_folder: hku
@@ -5016,11 +5171,11 @@ universities:
     title: Computer Programming
     material: comp1117b
     link: material field
-    topics: &id203
-    - &id206
+    topics: &id206
+    - &id209
       en: assignments / labs
       cn: 作业 / Lab
-    shape: &id204
+    shape: &id207
       pdf: 10
       slides: 0
       notebooks: 0
@@ -5028,7 +5183,7 @@ universities:
       notes_md: 8
       total_content_files: 20
       week_span: null
-    signals: &id205
+    signals: &id208
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
@@ -5037,9 +5192,9 @@ universities:
     title: Computer Programming
     material: comp1117b
     link: material field
-    topics: *id203
-    shape: *id204
-    signals: *id205
+    topics: *id206
+    shape: *id207
+    signals: *id208
     depth_score: 23
   - code: COMP2113
     title: Programming Technologies
@@ -5136,7 +5291,7 @@ universities:
     material: cs-master-mock-exam
     link: material field
     topics:
-    - &id207
+    - &id210
       en: exam prep
       cn: 考前突击
     shape:
@@ -5153,8 +5308,8 @@ universities:
       weekly_lecture_arc: false
     depth_score: 2
   topics:
-  - *id206
-  - *id207
+  - *id209
+  - *id210
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
@@ -5176,10 +5331,10 @@ universities:
     material: fin-ml
     link: material field
     topics:
-    - &id208
+    - &id211
       en: machine learning
       cn: 机器学习
-    - &id209
+    - &id212
       en: stats / probability
       cn: 统计 / 概率
     shape:
@@ -5330,8 +5485,8 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id208
-  - *id209
+  - *id211
+  - *id212
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
@@ -5355,13 +5510,13 @@ universities:
     material: data 201
     link: material field
     topics:
-    - &id210
+    - &id213
       en: databases
       cn: 数据库
-    - &id211
+    - &id214
       en: SQL / databases
       cn: SQL / 数据库
-    - &id212
+    - &id215
       en: assignments / labs
       cn: 作业 / Lab
     shape:
@@ -5380,9 +5535,9 @@ universities:
       weekly_lecture_arc: true
     depth_score: 55
   topics:
-  - *id210
-  - *id211
-  - *id212
+  - *id213
+  - *id214
+  - *id215
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
@@ -5482,7 +5637,7 @@ universities:
     material: COMP6200-aug-2025
     link: material field
     topics: []
-    shape: &id213
+    shape: &id216
       pdf: 7
       slides: 0
       notebooks: 0
@@ -5492,7 +5647,7 @@ universities:
       week_span:
       - 1
       - 4
-    signals: &id214
+    signals: &id217
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
@@ -5534,8 +5689,8 @@ universities:
     material: COMP6200-aug-2025
     link: material field
     topics: []
-    shape: *id213
-    signals: *id214
+    shape: *id216
+    signals: *id217
     depth_score: 19
   - code: COMP3770
     title: COMP3770
@@ -5564,135 +5719,6 @@ universities:
   coverage_summary_en: Hands-on tutoring coverage across 4 course(s) with linked private
     materials. Weekly lecture catch-up. No ghostwriting — you submit your own work.
   coverage_summary_cn: 基于已关联的 4 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。不代写、不代考。
-- slug: berkeley
-  university: UC Berkeley
-  teaching_folder: uc-berkeley
-  hand_curated: true
-  course_count: 11
-  linked_course_count: 2
-  courses:
-  - code: CS 61A
-    title: Structure and Interpretation of Computer Programs
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CS 61B
-    title: Data Structures
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CS 61C
-    title: Great Ideas in Computer Architecture
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CS 70
-    title: Discrete Mathematics and Probability Theory
-    material: CS70离散数学
-    link: material field
-    topics: []
-    shape:
-      pdf: 31
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 31
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 31
-  - code: CS 170
-    title: Efficient Algorithms and Intractable Problems
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CS 188
-    title: Introduction to Artificial Intelligence
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CS 189
-    title: Introduction to Machine Learning
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CS 186
-    title: Introduction to Database Systems
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CS 162
-    title: Operating Systems and System Programming
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: DATA C100
-    title: Principles and Techniques of Data Science
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: ''
-    title: The Foundations of Data Science
-    material: Data 8-the Foundations of Data Science
-    link: material field
-    topics:
-    - &id215
-      en: web front-end
-      cn: 前端
-    shape:
-      pdf: 0
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 18
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 18
-  topics:
-  - *id215
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: false
-    weekly_lecture_arc: false
-  total_depth: 49
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Typical themes: web front-end. No ghostwriting — you submit
-    your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。常见主题：前端。不代写、不代考。
 - slug: baruch-college
   university: Baruch College
   teaching_folder: baruch
@@ -5705,28 +5731,28 @@ universities:
     material: mfe-tech-interview
     link: material field
     topics:
-    - &id216
+    - &id218
       en: memory / pointers
       cn: 内存 / 指针
-    - &id217
+    - &id219
       en: OOP
       cn: 面向对象
-    - &id218
+    - &id220
       en: assignments / labs
       cn: 作业 / Lab
-    - &id219
+    - &id221
       en: Python
       cn: Python
-    - &id220
+    - &id222
       en: C++
       cn: C++
-    - &id221
+    - &id223
       en: C++ STL
       cn: C++ STL
-    - &id222
+    - &id224
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
-    - &id223
+    - &id225
       en: operating systems
       cn: 操作系统
     shape:
@@ -5743,14 +5769,14 @@ universities:
       weekly_lecture_arc: false
     depth_score: 47
   topics:
-  - *id216
-  - *id217
   - *id218
   - *id219
   - *id220
   - *id221
   - *id222
   - *id223
+  - *id224
+  - *id225
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
@@ -5774,19 +5800,19 @@ universities:
     material: dda3020-machine-learning
     link: material field
     topics:
-    - &id224
+    - &id226
       en: machine learning
       cn: 机器学习
-    - &id225
+    - &id227
       en: stats / probability
       cn: 统计 / 概率
-    - &id226
+    - &id228
       en: networking
       cn: 计算机网络
-    - &id227
+    - &id229
       en: deep learning
       cn: 深度学习
-    - &id228
+    - &id230
       en: LLMs / NLP
       cn: 大模型 / NLP
     shape:
@@ -5805,11 +5831,11 @@ universities:
       weekly_lecture_arc: true
     depth_score: 40
   topics:
-  - *id224
-  - *id225
   - *id226
   - *id227
   - *id228
+  - *id229
+  - *id230
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
@@ -5968,7 +5994,7 @@ universities:
     material: Connected system资料
     link: material field
     topics:
-    - &id229
+    - &id231
       en: exam prep
       cn: 考前突击
     shape:
@@ -5987,7 +6013,7 @@ universities:
       weekly_lecture_arc: true
     depth_score: 31
   topics:
-  - *id229
+  - *id231
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
@@ -6009,10 +6035,10 @@ universities:
     material: compsc16
     link: material field
     topics:
-    - &id230
+    - &id232
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
-    - &id231
+    - &id233
       en: C++
       cn: C++
     shape:
@@ -6029,8 +6055,8 @@ universities:
       weekly_lecture_arc: false
     depth_score: 27
   topics:
-  - *id230
-  - *id231
+  - *id232
+  - *id233
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
@@ -6052,7 +6078,7 @@ universities:
     material: cs2110-java-test
     link: material field
     topics:
-    - &id232
+    - &id234
       en: Java
       cn: Java
     shape:
@@ -6073,7 +6099,7 @@ universities:
     material: database
     link: material field
     topics:
-    - &id233
+    - &id235
       en: databases
       cn: 数据库
     shape:
@@ -6090,8 +6116,8 @@ universities:
       weekly_lecture_arc: false
     depth_score: 6
   topics:
-  - *id232
-  - *id233
+  - *id234
+  - *id235
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
@@ -6113,13 +6139,13 @@ universities:
     material: APPL 101-Exploring Engineering
     link: material field
     topics:
-    - &id234
+    - &id236
       en: algorithms
       cn: 算法
-    - &id235
+    - &id237
       en: assignments / labs
       cn: 作业 / Lab
-    - &id236
+    - &id238
       en: APIs / HTTP
       cn: API / HTTP
     shape:
@@ -6136,9 +6162,9 @@ universities:
       weekly_lecture_arc: false
     depth_score: 23
   topics:
-  - *id234
-  - *id235
   - *id236
+  - *id237
+  - *id238
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
@@ -6161,10 +6187,10 @@ universities:
     material: lubs3185
     link: material field
     topics:
-    - &id237
+    - &id239
       en: exam prep
       cn: 考前突击
-    - &id238
+    - &id240
       en: web front-end
       cn: 前端
     shape:
@@ -6247,8 +6273,8 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id237
-  - *id238
+  - *id239
+  - *id240
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
@@ -6446,7 +6472,7 @@ universities:
     material: comp4403-compiler
     link: material field
     topics:
-    - &id239
+    - &id241
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
     shape:
@@ -6467,10 +6493,10 @@ universities:
     material: coms3200
     link: material field
     topics:
-    - &id240
+    - &id242
       en: assignments / labs
       cn: 作业 / Lab
-    - &id241
+    - &id243
       en: web front-end
       cn: 前端
     shape:
@@ -6487,9 +6513,9 @@ universities:
       weekly_lecture_arc: false
     depth_score: 9
   topics:
-  - *id239
-  - *id240
   - *id241
+  - *id242
+  - *id243
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
@@ -6630,13 +6656,13 @@ universities:
     material: Introduction to Programming
     link: material field
     topics:
-    - &id242
+    - &id244
       en: data structures
       cn: 数据结构
-    - &id243
+    - &id245
       en: assignments / labs
       cn: 作业 / Lab
-    - &id244
+    - &id246
       en: OOP
       cn: 面向对象
     shape:
@@ -6653,9 +6679,9 @@ universities:
       weekly_lecture_arc: false
     depth_score: 17
   topics:
-  - *id242
-  - *id243
   - *id244
+  - *id245
+  - *id246
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
@@ -6678,7 +6704,7 @@ universities:
     material: prob solving and programming
     link: material field
     topics:
-    - &id245
+    - &id247
       en: exam prep
       cn: 考前突击
     shape:
@@ -6705,7 +6731,7 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id245
+  - *id247
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
@@ -6727,7 +6753,7 @@ universities:
     material: csci4850-modern-binary-exploitation
     link: material field
     topics:
-    - &id246
+    - &id248
       en: memory / pointers
       cn: 内存 / 指针
     shape:
@@ -6746,7 +6772,7 @@ universities:
       weekly_lecture_arc: true
     depth_score: 16
   topics:
-  - *id246
+  - *id248
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
@@ -6768,7 +6794,7 @@ universities:
     material: ds1000b-data-science-concepts
     link: material field
     topics:
-    - &id247
+    - &id249
       en: exam prep
       cn: 考前突击
     shape:
@@ -6785,7 +6811,7 @@ universities:
       weekly_lecture_arc: false
     depth_score: 16
   topics:
-  - *id247
+  - *id249
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
@@ -7015,7 +7041,7 @@ universities:
     material: intro-to-r
     link: material field
     topics:
-    - &id248
+    - &id250
       en: web front-end
       cn: 前端
     shape:
@@ -7032,7 +7058,7 @@ universities:
       weekly_lecture_arc: false
     depth_score: 5
   topics:
-  - *id248
+  - *id250
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
@@ -7152,7 +7178,7 @@ universities:
     material: computer-architecture
     link: material field
     topics:
-    - &id249
+    - &id251
       en: computer architecture
       cn: 计算机体系结构
     shape:
@@ -7171,7 +7197,7 @@ universities:
       weekly_lecture_arc: true
     depth_score: 5
   topics:
-  - *id249
+  - *id251
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
