@@ -2,7 +2,7 @@
 layout: page
 title: "AI Glossary — LLM, ML, and Deep Learning Terms"
 permalink: /ai-glossary/
-description: "Searchable AI and machine learning glossary — transformers, LLMs, LoRA, RAG, fine-tuning, and core ML terms with short definitions."
+description: "Searchable AI and machine learning glossary covering transformers, LLMs, LoRA, RAG, fine-tuning, and core ML terms, each with its own indexable definition page."
 keywords: "AI glossary, machine learning glossary, LLM terms, LoRA, RAG, transformer, fine-tuning, deep learning dictionary"
 sitemap: true
 ---

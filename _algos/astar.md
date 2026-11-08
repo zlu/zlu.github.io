@@ -1,6 +1,6 @@
 ---
 title: "A* pathfinding"
-description: "How A* finds shortest paths with f(n) = g(n) + h(n), compared with Dijkstra and greedy best-first search — plus a browser grid demo."
+description: "How A* finds shortest paths with f(n)=g(n)+h(n), compared with Dijkstra and greedy best-first search, plus a browser grid demo on AlgoScope you can step through."
 keywords: "A* algorithm, A-star pathfinding, heuristic search, Dijkstra, shortest path visualization"
 demo: "https://algoscape.zlu.me/astar"
 order: 10

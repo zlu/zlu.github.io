@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "An Unbiased Yogic Guide to San Francisco"
-description: "An unbiased guide to yoga studios and teachers in San Francisco, from Iyengar to Ashtanga."
+title: "An Unbiased Yogic Guide to San Francisco Studios and Teachers"
+description: "An unbiased guide to yoga studios and teachers in San Francisco, covering Iyengar, Ashtanga, and other styles with practical notes for beginners and visitors."
 date: 2014-05-26
 comments: true
 categories: [featured, yoga]

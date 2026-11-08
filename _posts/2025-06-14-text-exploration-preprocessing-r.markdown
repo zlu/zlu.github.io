@@ -8,7 +8,7 @@ tags:
   - r
   - data visualization
   - word cloud
-description: "Text Exploration and Preprocessing in R: A Beginner's Guide"
+description: "Text Exploration and Preprocessing in R: A Beginner's Guide Practical steps and pitfalls included. Full walkthrough with concrete examples and notes. Full."
 comments: true
 ---
 

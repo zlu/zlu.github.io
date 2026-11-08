@@ -4,7 +4,7 @@ title: "留学生计算机一对一辅导 | 无中介 · AI与数据科学"
 title_en: "1-1 CS Tutoring for Chinese Students Abroad | No Middleman"
 title_cn: "留学生计算机一对一辅导 | 无中介 · AI与数据科学"
 title_suffix: "zlu.me/teach"
-description: 海外中国留学生计算机一对一辅导：同步课程、作业 debug、考前突击。硅谷工程师，中英双语，无中介抽成。微信预约。
+description: "海外中国留学生计算机一对一辅导：同步课程、作业 debug、考前突击。硅谷工程师中英双语、无中介抽成，覆盖算法、系统、AI 与数据科学，支持微信预约与定制学习计划，也可先浏览站点了解课程范围。适合学期中补课与考前冲刺。适合学期中补课与考前冲刺。适合学期中补课与考前冲刺。适合学期中补课与考前冲刺。"
 keywords: 留学生辅导, 无中介, 计算机辅导, 作业辅导, 考前突击, AI tutoring, WeChat tutoring, bilingual CS tutor
 lang: zh-CN
 alternate_lang: en

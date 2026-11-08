@@ -7,7 +7,7 @@ tags:
   - machine learning
   - data visualization
   - feature scaling
-description: "Unstructured Text Mining in R: A Beginner's Guide"
+description: "Unstructured text mining in R for beginners: ingest documents, clean noisy strings, build frequency features, and move toward matrices ready for clustering models."
 comments: true
 ---
 

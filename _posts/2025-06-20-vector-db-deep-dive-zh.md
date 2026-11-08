@@ -1,13 +1,13 @@
 ---
 layout: post
-title: '向量数据库简介'
+title: "向量数据库 Vector Database 入门：嵌入存储、ANN 检索与 RAG 搜索教程"
 date: 2025-06-09 14:46:00 +0800
 tags:
   - 向量数据库
   - 数据库
   - 近似最近邻
   - ANN
-description: "向量数据库如何存储嵌入并做相似性检索——ANN 索引、ChromaDB/SQLite，以及在语义搜索与 RAG 中的适用场景。"
+description: "向量数据库与相似性检索：ANN 索引、ChromaDB/SQLite 选型，以及语义搜索和 RAG 场景下的召回延迟与内存权衡。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。文末附有运行检查清单方便自测。"
 lang: zh
 comments: true
 ---

@@ -9,7 +9,7 @@ tags:
   - data segment
   - unix
   - linux
-description: "Variable Storage and Pointers in C: Back to Basics"
+description: "Variable storage and pointers in C: stack versus heap, storage classes, and pointer arithmetic that ties addresses to types, with examples of undefined behavior risks."
 comments: true
 ---
 

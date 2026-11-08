@@ -6,7 +6,7 @@ tags:
   - Text Cluster Analysis
   - R
   - KNN
-description: "Text Cluster Analysis: Grouping Documents by Similarity"
+description: "Text Cluster Analysis: Grouping Documents by Similarity Practical steps and pitfalls included for. Full walkthrough with concrete examples and notes. Full."
 comments: true
 ---
 

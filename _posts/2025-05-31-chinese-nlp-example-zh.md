@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "中文NLP with fastai - Fastai Part 4"
+title: "中文自然语言处理 NLP 实战：用 fastai 做文本分类（Fastai Part 4）"
 date: 2025-05-30
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "中文NLP with fastai - Fastai Part 4"
+description: "fastai 中文 NLP 第四部分：分词差异、语言模型微调与文本分类，避免把中文当成去空格英文，并给出可复现实验顺序。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。阅读时建议打开示例一边改一边跑。"
 lang: zh
 ---
 ## 使用fastai进行自然语言处理

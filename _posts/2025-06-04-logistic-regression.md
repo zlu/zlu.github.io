@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Classification and Logistic Regression"
+title: "Classification and Logistic Regression: Sigmoid, Boundaries, Models"
 date: 2025-06-04
 comments: true
 tags:

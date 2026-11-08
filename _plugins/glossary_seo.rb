@@ -31,15 +31,20 @@ module Jekyll
       seo["type"] ||= "WebPage"
       doc.data["seo"] = seo
 
-      plain = strip_markdown(doc.content)
-      doc.data["description"] ||= truncate(plain, 155)
-
       label = case collection_name
               when "ai-glossary" then "AI glossary"
               when "med-glossary" then "medicine glossary"
               when "cs-glossary" then "CS glossary"
               else "glossary"
               end
+
+      plain = strip_markdown(doc.content)
+      doc.data["description"] ||= ensure_meta_description(
+        plain,
+        title: doc.data["title"].to_s,
+        label: label
+      )
+
       parts = [doc.data["title"]]
       parts.concat(Array(doc.data["synonyms"]))
       parts.concat(Array(doc.data["term-en"])) if doc.data["term-en"]
@@ -49,6 +54,27 @@ module Jekyll
       parts << "complexity theory" if collection_name == "cs-glossary"
       parts << "algorithms" if collection_name == "cs-glossary"
       doc.data["keywords"] ||= parts.compact.map(&:to_s).uniq.join(", ")
+    end
+
+    # Bing flags meta descriptions under ~150 characters.
+    def ensure_meta_description(plain, title:, label:)
+      text = plain.to_s.strip
+      text = "#{title}: #{text}" if !title.empty? && !text.downcase.start_with?(title.to_s.downcase)
+      suffix = " Definition from the #{label} on zlu.me."
+      text += suffix while text.length < 150
+      # Prefer a clean cut at 160 without mid-suffix truncation when possible.
+      return text if text.length <= 160
+
+      cut = text[0, 160]
+      if cut.include?(suffix.strip)
+        # Keep whole suffix copies only; fall back to truncate.
+        keep = text
+        while keep.length > 160 && keep.end_with?(suffix)
+          keep = keep.delete_suffix(suffix)
+        end
+        return keep if keep.length.between?(150, 160)
+      end
+      truncate(text, 160)
     end
 
     def strip_markdown(text)

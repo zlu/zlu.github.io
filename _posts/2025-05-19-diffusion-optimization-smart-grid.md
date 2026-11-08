@@ -3,7 +3,7 @@ layout: post
 title: Diffusion Optimization - Optimizing Smart Energy Grid in a City
 date: 2025-05-19
 comments: true
-description: "A practical example of diffusion optimization in smart energy grid optimization in a city"
+description: "A practical example of diffusion optimization in smart energy grid optimization in a city Practical. Full walkthrough with concrete examples and notes."
 keywords: "diffusion optimization, smart energy grid, privacy-preserving optimization, decentralized learning, machine learning"
 tags: 
 - Machine Learning

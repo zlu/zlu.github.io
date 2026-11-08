@@ -10,7 +10,7 @@ tags:
   - fastai
   - PyTorch
   - math
-description: "From Linear Algebra to Linear Regression - the ML Perspective"
+description: "From Linear Algebra to Linear Regression - the ML Perspective Practical steps and pitfalls included. Full walkthrough with concrete examples and notes."
 ---
 
 The idea of truly understanding machine learning without any math is a myth.  I would argue that AI can be understood and applied in business world without knowing any math or even programming.  But for a tech person, some rather rudimentary math is a must.  This article collect what I believe to be neccessary to grasp, at least at the conceptual level, to truly understand the foundamental aspects of learning.  After all, ML is about math formulas at its core.

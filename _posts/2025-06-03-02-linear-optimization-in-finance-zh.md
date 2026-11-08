@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "金融中的线性优化：投资组合分配与求解器 - Part 2"
+title: "金融线性优化 Linear Optimization：投资组合分配、约束建模与求解器 Part 2 教程"
 date: 2025-06-03
 comments: true
 tags:
@@ -11,7 +11,7 @@ tags:
   - linear optimization
   - CBC
   - PuLP
-description: "用 Python、PuLP 与开源 CBC 求解器实现金融线性优化：在预算与风险等约束下最大化收益或最小化波动，完成投资组合分配、建模与实战求解，并衔接 Part 1 的线性金融定价基础。"
+description: "金融线性优化第二部分：用 Python、PuLP 与 CBC 在预算与风险约束下做组合分配，衔接 Part 1 并回读可解释仓位。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。关键概念均配有简短对照说明。"
 lang: zh
 ---
 

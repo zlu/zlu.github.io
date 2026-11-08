@@ -533,12 +533,24 @@ module Jekyll
       topic_en = Array(evidence["topics"]).filter_map { |t| t["en"] if t.is_a?(Hash) }.first(4)
       title_en = "#{university} Computer Science Tutoring | AI & Programming"
       title_cn = "#{university} 计算机辅导 | 人工智能与编程一对一"
-      description = evidence["coverage_summary_en"].to_s
-      if description.empty?
-        description = "Bilingual CS tutoring for #{university} students. "
-        description += "Coverage includes #{codes.first(6).join(', ')}#{codes.size > 6 ? ' and more' : ''}. " if codes.any?
-        description += "Themes: #{topic_en.join(', ')}. " if topic_en.any?
-        description += "WeChat booking · 中英双语."
+      # Prefer a university-specific meta description (~150-160 chars). Generic
+      # coverage_summary_en values often collide across unis with the same course
+      # count, which triggers Bing/Google duplicate-description warnings.
+      summary = evidence["coverage_summary_en"].to_s.strip
+      code_bit = if codes.any?
+                   " Courses: #{codes.first(5).join(', ')}#{codes.size > 5 ? '…' : ''}."
+                 else
+                   ""
+                 end
+      theme_bit = topic_en.any? ? " Themes: #{topic_en.first(3).join(', ')}." : ""
+      if !summary.empty? && summary.downcase.include?(university.downcase)
+        description = summary
+      else
+        description = "Bilingual CS tutoring for #{university} students.#{code_bit}#{theme_bit} " \
+                      "Assignments, projects, exam prep. No ghostwriting."
+      end
+      if description.length > 160
+        description = description[0, 157].sub(/\s+\S*\z/, "").sub(/[.,;:]\z/, "") + "…"
       end
 
       page = TeachGeneratedPage.new(site, site.source, "teach/universities/#{uni_slug}")

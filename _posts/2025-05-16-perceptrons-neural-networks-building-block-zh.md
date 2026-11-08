@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "感知器：神经网络的基础构建块（含Python代码）"
+title: "感知器 Perceptron 入门：神经网络基础构建块与 Python 实现示例"
 date: 2025-05-16
 comments: true
 tags:
@@ -13,7 +13,7 @@ tags:
   - python
   - 人工智能
   - 机器学习基础
-description: "了解感知器 - 神经网络的基础构建块。包含实用的Python实现、可视化解释和垃圾邮件检测等实际应用。适合机器学习初学者。"
+description: "感知器入门：Python 实现、决策边界可视化与垃圾邮件检测示例，讲清权重更新与线性可分性，并说明为何需要多层网络。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。阅读时建议打开示例一边改一边跑。"
 lang: zh
 permalink: /zh/machine-learning/perceptrons-neural-networks-building-block/
 ---

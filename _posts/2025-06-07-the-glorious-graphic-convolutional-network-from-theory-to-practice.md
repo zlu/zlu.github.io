@@ -8,7 +8,7 @@ tags:
   - machine learning
   - graph convolutional network
   - GCN
-description: The Glorious Graphic Convolutional Network - From Theory to Practice
+description: "Graph convolutional networks from theory to practice: message passing, neighborhood aggregation, and a path from adjacency matrices to a working GCN training loop."
 comments: true
 ---
 

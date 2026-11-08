@@ -6,7 +6,7 @@ tags:
   - topic modeling
   - R
   - LDA
-description: "Topic Modeling with LDA: Uncovering Hidden Themes in Text"
+description: "Topic Modeling with LDA: Uncovering Hidden Themes in Text Practical steps and pitfalls included for. Full walkthrough with concrete examples and notes."
 comments: true
 ---
 

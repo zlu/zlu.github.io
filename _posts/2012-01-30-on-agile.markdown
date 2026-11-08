@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "On Agile"
-description: "Thoughts on agile software development, rules programmers resist, and what actually helps teams ship."
+title: "On Agile: Rules Programmers Resist and What Actually Works"
+description: "Thoughts on agile software development: which rules programmers push back on, what actually helps teams ship, and how process should serve delivery instead."
 date: 2012-01-30 18:11
 comments: true
 tags: 

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "文本聚类分析：基于相似性的文档分组"
+title: "使用 R 做文本聚类分析：TF-IDF、K-means 与层次聚类按相似性分组文档"
 date: 2025-06-16
 tags:
   - 文本聚类分析
   - R
-description: "使用 R 进行文本聚类分析实战：通过预处理、TF-IDF、余弦距离与 K-means/层次聚类，按内容相似性自动分组文档，含 20 Newsgroups 示例、PCA 可视化与词云主题探索。"
+description: "用 R 做文本聚类：TF-IDF、余弦距离与 K-means/层次聚类，含 20 Newsgroups、PCA 与词云，检查簇是否可读可命名。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。"
 lang: zh
 comments: true
 ---

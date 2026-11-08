@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Taming Postgres on Heroku"
-description: "How to diagnose and fix slow Postgres on Heroku as your app grows — indexes, cache, and practical tuning tips."
+title: "Taming Postgres on Heroku: Slow Queries, Indexes, and Growth"
+description: "How to diagnose and fix slow Postgres on Heroku as your app grows: indexes, cache hit rates, connection limits, and practical tuning tips from production pain."
 date: 2016-03-02
 comments: true
 categories: [featured, heroku, postgres, performance]

@@ -1,6 +1,6 @@
 ---
 title: "Iterative local search (ILS)"
-description: "Iterative local search escapes local optima with perturbation and acceptance criteria — visualized alongside tabu search on continuous landscapes."
+description: "Iterative local search escapes local optima with perturbation and acceptance criteria, with an AlgoScope demo that shows restarts after local search stalls."
 keywords: "iterative local search, ILS, tabu search, metaheuristic, local optima, optimization visualization"
 demo: "https://algoscape.zlu.me/optimization"
 order: 30

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fighting Scraping Farms on a Reading Site"
+title: "Fighting Scraping Farms on a Reading Site: Bots, EPUB, Defense"
 date: 2026-10-26
 tags:
   - security

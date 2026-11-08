@@ -2,7 +2,7 @@
 layout: default
 title: "Blog Posts on AI, Machine Learning, and Systems"
 permalink: /posts/
-description: "Essays and tutorials on AI, machine learning, data science, systems programming, and tutoring — by Zhao Lü."
+description: "Essays and tutorials by Zhao Lü on AI, machine learning, data science, systems programming, and tutoring, with English and Chinese posts you can browse by topic."
 keywords: "AI blog, machine learning tutorials, LLM fine-tuning, data science, computer science, Zhao Lü"
 sitemap: true
 ---

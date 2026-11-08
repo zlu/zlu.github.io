@@ -9,7 +9,7 @@ tags:
   - anonymous pipes
   - unix
   - linux
-description: Interprocess communication (IPC) with anonymous pipes.
+description: "Inter-process communication in C with anonymous pipes: fork, dup, and read/write for parent-child data flow, plus pitfalls when buffering and lifetimes go wrong."
 comments: true
 ---
 Interprocess communication (IPC) refers to the mechanisms and methods that allow processes to communicate with each other and synchronize their execution.  By default, processes have separate memory spaces and don't share data.  In reality, processes often need to share data and resources.  In addition, they will need to coordinate their executions to achieve desired behavior.  This is called process synchronization.

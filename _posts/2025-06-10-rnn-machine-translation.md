@@ -7,7 +7,7 @@ tags:
   - machine learning
   - machine translation
   - GRU
-description: "Recurrent Neural Network (RNN): From Theory to Translation"
+description: "Recurrent Neural Network (RNN): From Theory to Translation Practical steps and pitfalls included for. Full walkthrough with concrete examples and notes."
 comments: true
 ---
 

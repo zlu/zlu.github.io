@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python 在金融中的应用- Part 1"
+title: "Python 在金融中的应用 Part 1 完整指南：市场数据、收益率与基础量化建模"
 date: 2025-06-02
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
   - machine learning
   - finance
   - math
-description: "Python 在金融中的应用- Part 1"
+description: "Python 金融应用第一部分：定价与投资组合基础，把表格直觉接到 NumPy 与 pandas，为后续线性优化与约束求解铺路。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。文末附有运行检查清单方便自测。"
 lang: zh
 ---
 

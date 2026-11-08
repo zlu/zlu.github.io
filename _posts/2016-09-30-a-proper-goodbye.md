@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A Proper Goodbye"
-description: "Reflections on leaving Easy Taxi after 15 months of product and organization transformation in Brazil."
+title: "A Proper Goodbye: Reflections on Leaving Easy Taxi"
+description: "Reflections on leaving Easy Taxi after 15 months of product and organization transformation in Brazil, and lessons about shipping under real growth pressure."
 date: 2016-09-30
 comments: true
 categories: [featured]

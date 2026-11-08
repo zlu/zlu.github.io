@@ -1,6 +1,6 @@
 ---
 title: "Fractal generator"
-description: "Generate Mandelbrot-style fractals in the browser — the math of complex iteration, escape-time coloring, and links to pattern and finance applications."
+description: "Interactive fractal explorations on AlgoScope: pan and recolor fractal families while tying escape-time math to the visual patterns you see on screen."
 keywords: "fractal generator, Mandelbrot set, Julia set, TypeScript fractal, mathematical visualization"
 demo: "https://algoscape.zlu.me/fractals"
 order: 40

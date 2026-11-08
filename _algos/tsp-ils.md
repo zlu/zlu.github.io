@@ -1,6 +1,6 @@
 ---
 title: "TSP with iterative local search"
-description: "Traveling salesman tours improved by iterative local search — watch city routes shorten as perturbation and local improvement iterate."
+description: "Traveling salesman tours improved by iterative local search: watch city routes shorten across iterations in the AlgoScope TSP view paired with the ILS guide."
 keywords: "traveling salesman problem, TSP visualization, iterative local search, combinatorial optimization"
 demo: "https://algoscape.zlu.me/tsp-ils"
 order: 50

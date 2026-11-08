@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用 fastai 进行文本分类的简明指南 - Fastai Part 5"
+title: "使用 fastai 进行文本分类 Text Classification 简明指南（Part 5）"
 date: 2025-05-30
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "使用 fastai 进行文本分类的简明指南 - Fastai Part 5"
+description: "fastai 文本分类第五部分：语料准备、微调与验证指标，搭建可复现 NLP 基线，并说明分类头如何衔接语言模型预训练。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。阅读时建议打开示例一边改一边跑。"
 lang: zh
 ---
 

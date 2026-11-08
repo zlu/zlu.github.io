@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python in Finance - Part 1"
+title: "Python in Finance Part 1: Market Data, Returns, and Basic Models"
 date: 2025-06-02
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
   - machine learning
   - finance
   - math
-description: "Python in Finance - Part 1"
+description: "Python in Finance - Part 1 Practical steps. Full walkthrough with concrete examples and notes. Full walkthrough with concrete examples and notes. Full."
 ---
 
 Back in 2018, I got interested in capital market. Understanding the fundamental theories of capital market is critical to accumulation of wealth. I started reading all the classics such as The Intelligent Investor and Security Analysis. In this series of posts, I'd like to share with my reader the journey of understanding financial theories in the context of Python programming language. In the first big part of the posts, we will focus on the linearity aspect of financial models, Capital Asset Pricing Model (CAPM), Arbitrage Pricing Theory (APT) and the linear optimization. Later sections will cover the non-linear models.

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Portfolio"
-description: "Portfolio of projects by Zhao Lü — reading, language learning, CS tutoring, freelancing tools, algorithms, privacy, media bias, and AI authorship."
+description: "Portfolio of projects by Zhao Lü spanning reading products, language learning, CS tutoring, algorithm visualizations, and other side projects linked from zlu.me."
 permalink: /portfolio/
 ---
 

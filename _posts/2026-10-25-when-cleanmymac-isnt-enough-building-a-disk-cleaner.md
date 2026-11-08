@@ -8,7 +8,7 @@ tags:
   - swift
   - developer-tools
   - product
-description: "CleanMyMac missed my real disk hogs: a 175GB .next cache and a 60GB Cursor DB. I built MacHygienist, a native macOS cleaner, and reclaimed 500+ GB."
+description: "CleanMyMac missed my real disk hogs: a 175GB .next cache and a 60GB Cursor DB. I built MacHygienist and reclaimed over 500 GB with clearer large-folder scans."
 keywords: "MacHygienist, CleanMyMac, macOS disk cleaner, disk space, Swift, .next cache, Turbopack, Cursor state.vscdb, Android SDK, CoreSimulator, developer tools"
 image: /assets/images/uploads/disk-cleaner/mac-cleaner.png
 comments: true

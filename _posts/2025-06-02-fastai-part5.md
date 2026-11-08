@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "Succinct Guide Guide on Text Classification with fastai - Fastai Part 5"
+description: "Succinct Guide Guide on Text Classification with fastai - Fastai Part 5 Practical steps and pitfalls. Full walkthrough with concrete examples and notes."
 ---
 ## Subword Tokenization
 For Chinese, where the concept of "word" does not exist, fastai's `subword` support via `SentencePiece` becomes crucial.  As there is no whitespace between words:

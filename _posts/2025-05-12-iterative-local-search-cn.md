@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "探索优化：迭代局部搜索（ILS）指南"
-description: "迭代局部搜索（ILS）优化算法指南，含 AlgoScope 可视化演示。"
+title: "迭代局部搜索 Iterative Local Search：扰动、局部搜索与可视化教程"
+description: "迭代局部搜索（ILS）：局部搜索、扰动与接受准则如何跳出局部最优，含 Python 与 AlgoScope 演示，并对照 TSP 与调度问题。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。"
 lang: zh
 date: 2025-05-12 15:30 +0800
 tags: 

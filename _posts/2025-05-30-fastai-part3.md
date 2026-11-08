@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "Deep Dive into MNIST Dataset - Fastai Part 3"
+description: "Deep Dive into MNIST Dataset - Fastai Part 3 Full walkthrough with concrete examples and notes. Full walkthrough with concrete examples and notes. Full."
 ---
 
 In fastai part 1 we looked at how to categorize MNIST dataset.  In this tutorial, we will dive a bit deeper to see what happens under the hood.  First, we will take a deeper look at the MNIST dataset.

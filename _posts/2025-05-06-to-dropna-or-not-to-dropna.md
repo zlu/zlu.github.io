@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "To dropna() or not to dropna()"
-description: "When to use pandas dropna() vs imputation for missing data in machine learning, with BRFSS examples."
-title_cn: "是否使用 dropna()？"
+title: "To dropna() or not to dropna(): Handling Missing Data in Pandas"
+description: "When to use pandas dropna() vs imputation for missing data in machine learning, with BRFSS examples. Full walkthrough with concrete examples and notes."
+title_cn: "是否使用 dropna()：Pandas 缺失值处理与机器学习数据准备指南"
 date: 2025-05-06 07:17 +0800
 comments: true
 lang_en: |

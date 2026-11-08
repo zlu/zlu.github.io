@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hugging Face MCP 与 OpenAI 集成 - 零代码配置指南"
-description: "零代码配置 Hugging Face MCP 服务器与 OpenAI，让 AI 智能体访问模型库、数据集与 Spaces。"
+title: "Hugging Face MCP 与 OpenAI 集成：零代码配置智能体访问模型与数据集"
+description: "零代码配置 Hugging Face MCP 与 OpenAI：让智能体访问模型库、数据集与 Spaces，写明鉴权步骤与连通性检查顺序。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。"
 lang: zh
 date: 2025-06-10 20:25 +0800
 comments: true

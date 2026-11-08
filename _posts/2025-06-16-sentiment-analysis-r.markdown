@@ -5,7 +5,7 @@ date: 2025-06-16
 tags:
   - Sentiment Analysis
   - R
-description: "Sentiment Analysis: Decoding Emotions in Text"
+description: "Sentiment Analysis: Decoding Emotions in Text Full walkthrough with concrete examples and notes. Full walkthrough with concrete examples and notes. Full."
 comments: true
 ---
 

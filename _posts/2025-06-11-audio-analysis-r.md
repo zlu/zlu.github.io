@@ -6,7 +6,7 @@ tags:
   - audio
   - r
   - visualization
-description: "Analyzing Audio Signals in R: A Deep Dive into Baby Cry Analysis"
+description: "Analyzing Audio Signals in R: A Deep Dive into Baby Cry Analysis Practical steps and pitfalls. Full walkthrough with concrete examples and notes. Full."
 comments: true
 ---
 

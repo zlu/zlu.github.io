@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A Return after a Long Departure
-description: "Returning to blogging after nine years away — reflections on Europe, career, and starting to write again."
+title: "A Return after a Long Departure: Blogging Again after Nine Years"
+description: "Returning to blogging after nine years away: reflections on Europe, career shifts, and why I am writing engineering notes again on algorithms, ML, and systems."
 date: 2025-05-06 05:54 +0800
 comments: true
 ---

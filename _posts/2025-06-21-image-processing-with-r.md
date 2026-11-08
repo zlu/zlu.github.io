@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Image Processing with R: imager Tutorial (Pixels, Filters, Examples)"
-description: "Image processing with R and the imager package: load images, inspect pixels and intensity, apply filters, and follow practical visual examples."
+description: "Image processing with R and the imager package: load images, inspect pixels and intensity, apply filters, and follow practical visual examples. Practical."
 date: 2025-06-21 09:00 +0800
 tags:
   - R

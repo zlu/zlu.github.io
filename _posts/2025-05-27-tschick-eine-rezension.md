@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tschick - Eine Rezension
-description: "Rezension zu Wolfgang Herrndorfs Roman Tschick — eine Sommerreise zweier Teenager im geklauten Lada."
+title: "Tschick – Eine Rezension: Herrndorfs Sommerreise zweier Teenager"
+description: "Rezension zu Wolfgang Herrndorfs Roman Tschick — eine Sommerreise zweier Teenager im geklauten Lada. Full walkthrough with concrete examples and notes."
 date: 2025-05-27 11:40 +0800
 tags:
   - book

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "缺失的部分 - 轻松入门 fastai 和 PyTorch - 第一部分"
+title: "缺失的部分：轻松入门 fastai 与 PyTorch 深度学习基础（第一部分）"
 date: 2025-05-24
 comments: true
 tags:
@@ -15,7 +15,7 @@ tags:
   - 机器学习基础
   - fastai
   - PyTorch
-description: "缺失的部分 - 轻松入门 fastai 和 PyTorch - 第一部分"
+description: "fastai 与 PyTorch 入门第一部分：补齐环境、DataLoader 与训练循环细节，把课程演示拆成可复现步骤并理解损失回传。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。阅读时建议打开示例一边改一边跑。"
 lang: zh
 ---
 

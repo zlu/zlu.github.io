@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "The Missing Bits - Easing into fastai and PyTorch - Part 1"
+description: "The Missing Bits - Easing into fastai and PyTorch - Part 1 Practical steps and pitfalls included for. Full walkthrough with concrete examples and notes."
 ---
 ## Introduction
 Fastai is a popular Machine Learning library built on top of PyTorch.

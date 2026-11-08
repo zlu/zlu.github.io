@@ -11,7 +11,7 @@ tags:
   - linear optimization
   - CBC
   - PuLP
-description: "Linear Optimization in Finance: Portfolio Allocation and Solvers - Part 2"
+description: "Linear Optimization in Finance: Portfolio Allocation and Solvers - Part 2 Practical steps and. Full walkthrough with concrete examples and notes. Full."
 ---
 
 In the last post, we looked at the liearity in finance. We implicitly assumed that linearity can solve CAPM and APT pricing models.  But what if the numbe rof securities increases and certain limitations appear?  How might one handle such a constraint-based system?  Linear optimization shines here because it focuses on minimizing (such as volatility) or maximizing (such as profit) an objective function under given constraints.  In this post, we explore how linear optimization techniques power portfolio allocation and other financial decisions. We'll see how Python and open-source solvers like CBC make these methods accessible.

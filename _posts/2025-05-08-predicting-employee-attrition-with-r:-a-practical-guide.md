@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Predicting Employee Attrition with R: Logistic Regression Tutorial"
-description: "Step-by-step R tutorial for employee attrition prediction — logistic regression, feature prep, and retention insights you can reuse."
+description: "Step-by-step R tutorial for employee attrition prediction — logistic regression, feature prep, and retention insights you can reuse. Practical steps and."
 date: 2025-05-08 09:36 +0800
 comments: true
 tags:

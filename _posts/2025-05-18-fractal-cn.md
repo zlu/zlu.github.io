@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "分形艺术探秘：TypeScript 实现数学之美"
+title: "分形艺术探秘 Fractals：用 TypeScript 实现数学之美与交互图像生成"
 title_suffix: "zlu.me"
-description: "学习如何使用 TypeScript 生成美丽的分形图像，了解分形背后的数学原理，探索其在艺术、金融等领域的实际应用。"
+description: "用 TypeScript 生成分形图像：讲解复平面迭代与逃逸时间算法，探讨艺术与可视化用途，并给出可调参数的可运行示例。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。阅读时建议打开示例一边改一边跑。"
 lang: zh
 keywords: "分形, 曼德博集合, typescript, d3.js, 数学可视化, 分形艺术, 金融市场, 赫斯特指数"
 date: 2025-05-18

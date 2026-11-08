@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Is your TV spying on you?
+title: "Is Your TV Spying on You? Capturing Xiaomi Mi TV Network Traffic"
 comments: true
 tags:
 - networking
@@ -8,9 +8,7 @@ tags:
 - wireshark
 - xiaomi
 - android-tv
-description: I captured my Xiaomi Mi TV through Mac Internet Sharing after reading
-  LG and Samsung ACR tracking writeups. Here are the DNS and TLS destinations while
-  idle and on HDMI, and the proxy decrypt I still want to try.
+description: "I captured my Xiaomi Mi TV through Mac Internet Sharing after LG/Samsung ACR writeups: DNS and TLS destinations while idle and on HDMI, plus proxy decrypt still ahead."
 date: 2026-11-02 21:49 +0800
 ---
 I recently read about [LG and Samsung ACR tracking](https://www.ucl.ac.uk/news/2024/nov/smart-tv-tracking-raises-privacy-concerns): smart TVs fingerprinting what is on screen (and audio) and shipping a surprising amount of data to vendor servers, even when you use the set as a dumb HDMI display. The Samsung side of those writeups stuck with me more: audio-style content recognition on the network, which reads a lot like the TV "listening" to what you are watching. I have a Xiaomi Mi TV in the living room. I wanted to know what *mine* talks to when I am not opening Netflix or YouTube.

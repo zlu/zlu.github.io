@@ -1,6 +1,6 @@
 ---
 title: "Genetic algorithm"
-description: "Genetic algorithms from selection, crossover, and mutation to an animated fitness demo that evolves a binary string toward more 1s."
+description: "Genetic algorithms from selection, crossover, and mutation to an animated fitness demo that evolves a population toward better solutions in the browser."
 keywords: "genetic algorithm, GA, evolutionary algorithm, selection crossover mutation, metaheuristic visualization"
 demo: "https://algoscape.zlu.me/ga"
 order: 20

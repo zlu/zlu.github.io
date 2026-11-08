@@ -2,7 +2,7 @@
 layout: page
 title: "CS Glossary — Algorithms, Complexity, and Systems Terms"
 permalink: /cs-glossary/
-description: "Searchable computer science glossary — complexity classes, algorithms, and systems terms with short definitions."
+description: "Searchable computer science glossary covering complexity classes, algorithms, and systems terms, each with a short definition page you can link from posts and notes."
 keywords: "CS glossary, computer science glossary, NP-hard, complexity theory, algorithms dictionary"
 sitemap: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "深入探究 MNIST 数据集 - Fastai 第三部分"
+title: "深入探究 MNIST 数据集完整指南：Fastai 与深度学习图像识别（第三部分）"
 date: 2025-05-30
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "深入探究 MNIST 数据集 - Fastai 第三部分"
+description: "fastai 第三部分深入 MNIST：搭建基线分类器，解读混淆类别与训练曲线，并讨论迁到真实图像任务时该保留哪些习惯。正文含关键公式、示例代码与结果解读，并标出初学者易忽略的边界条件。可按步骤在本地复现实验，对照输出检查自己是否真懂。也适合当作自学提纲，按小节推进并留下改参记录。阅读时建议打开示例一边改一边跑。"
 lang: zh
 ---
 

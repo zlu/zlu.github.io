@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "Chinese Natural Language Processing with fastai - Fastai Part 4"
+description: "Chinese NLP with fastai Part 4: tokenization quirks, language-model fine-tuning, and classification that respects Chinese text instead of spaced English."
 ---
 ## NLP with fastai
 

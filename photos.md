@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Photos"
-description: "Photography by Zhao Lü — rangefinder travel and street work, organized by trip."
+description: "Photography by Zhao Lü: rangefinder travel and street work organized by trip albums, with full-frame views and captions from journeys across dozens of countries."
 permalink: /photos/
 ---
 

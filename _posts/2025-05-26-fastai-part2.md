@@ -9,7 +9,7 @@ tags:
   - machine learning
   - fastai
   - PyTorch
-description: "The Updated Guide to Image Classification - Fastai Part 2"
+description: "The Updated Guide to Image Classification - Fastai Part 2 Practical steps and pitfalls included for. Full walkthrough with concrete examples and notes."
 ---
 In this guide, we'll cover how to obtain image data and use it to train a model.
 
