@@ -2,6 +2,7 @@
 university: Western University
 teaching_folder: western-university
 courses:
-- title: Ds1000b Data Science Concepts
-  material: ds1000b-data-science-concepts
+  - title: Data Science Concepts
+    material: ds1000b-data-science-concepts
+    code: DS1000b
 ---
