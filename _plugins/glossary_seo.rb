@@ -39,8 +39,10 @@ module Jekyll
               end
 
       plain = strip_markdown(doc.content)
-      doc.data["description"] ||= ensure_meta_description(
-        plain,
+      existing = doc.data["description"].to_s.strip
+      source = existing.empty? ? plain : existing
+      doc.data["description"] = ensure_meta_description(
+        source,
         title: doc.data["title"].to_s,
         label: label
       )
