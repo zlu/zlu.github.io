@@ -1,7 +1,8 @@
 ---
-university: Bayes Business School
+university: City St George's, University of London
 teaching_folder: bayes-business-school
 courses:
-- title: Intro To R
-  material: intro-to-r
+  - title: Introduction To R - Business Analytics Module
+    material: intro-to-r
+    department: Bayes Business School
 ---
