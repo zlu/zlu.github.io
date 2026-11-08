@@ -67,7 +67,7 @@ layout: default
       {% for course in page.courses %}
       <li>
         <a href="/teach/courses/{{ page.uni_slug }}/{{ course.slug }}/">
-          {% if course.code != "" %}<strong>{{ course.code }}</strong>: {% endif %}{{ course.title }}
+          {% if course.code != "" %}<strong>{{ course.code }}</strong>{% endif %}{% if course.aliases and course.aliases.size > 0 %} <span class="teach-aliases">({% for a in course.aliases %}{{ a }}{% unless forloop.last %} / {% endunless %}{% endfor %})</span>{% endif %}{% if course.code != "" or course.aliases.size > 0 %}: {% endif %}{{ course.title }}
         </a>
         {% if course.department != "" %}
         <span class="teach-dept">{{ course.department }}</span>

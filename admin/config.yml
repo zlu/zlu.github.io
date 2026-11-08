@@ -172,6 +172,14 @@ collections:
               name: "code",
               widget: "string",
               required: false,
+              hint: "Canonical code only (drives the URL). Example: COMP4330SEF",
+            }
+          - {
+              label: "Aliases",
+              name: "aliases",
+              widget: "list",
+              required: false,
+              hint: "Other searchable codes for the same course, comma-separated — e.g. S333F, COMP S333F. Do not put these in Course Code.",
             }
           - { label: "Course Title", name: "title", widget: "string" }
           - {

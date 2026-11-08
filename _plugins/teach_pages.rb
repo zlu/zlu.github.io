@@ -243,6 +243,7 @@ module Jekyll
           )
         end
 
+        occupied_course_slugs = course_list.map { |c| c["slug"].to_s }.reject(&:empty?).to_h { |s| [s, true] }
         course_list.each do |course|
           site.pages << build_course_page(
             site,
@@ -257,6 +258,7 @@ module Jekyll
             siblings: course_list,
             evidence: evidence
           )
+          emit_course_alias_redirects(site, uni_slug, course, occupied_course_slugs)
         end
       end
 
@@ -346,7 +348,7 @@ module Jekyll
     end
 
     def find_evidence_course(course, evidence_courses)
-      code_key = course["code"].to_s.gsub(/\s+/, "").upcase
+      code_keys = course_code_keys(course)
       title_key = ascii_slug(course["title"].to_s)
       material_key = course["material"].to_s.strip
       evidence_courses.find do |ec|
@@ -356,9 +358,13 @@ module Jekyll
         ec_title = ascii_slug(ec["title"].to_s)
         ec_material = ec["material"].to_s.strip
         (material_key != "" && ec_material == material_key) ||
-          (code_key != "" && ec_code == code_key) ||
+          (ec_code != "" && code_keys.include?(ec_code)) ||
           (title_key != "" && (ec_title == title_key || ec_title.include?(title_key) || title_key.include?(ec_title)))
       end
+    end
+
+    def course_code_keys(course)
+      ([course["code"]] + Array(course["aliases"])).map { |c| c.to_s.gsub(/\s+/, "").upcase }.reject(&:empty?).uniq
     end
 
     def bilingual_items(raw)
@@ -487,15 +493,17 @@ module Jekyll
       title = course["title"].to_s.strip
       return nil if code.empty? && title.empty?
 
+      aliases = normalize_aliases(course["aliases"], code)
       override = course["theme"].to_s.strip
       theme_id = if !override.empty? && themes.key?(override)
                    override
                  else
-                   infer_theme("#{code} #{title}", themes)
+                   infer_theme("#{code} #{aliases.join(' ')} #{title}", themes)
                  end
 
       {
         "code" => code,
+        "aliases" => aliases,
         "title" => title,
         "department" => course["department"].to_s.strip,
         "material" => course["material"].to_s.strip,
@@ -510,6 +518,59 @@ module Jekyll
         "session_angles" => bilingual_items(course["session_angles"]),
         "tutoring" => bilingual_items(course["tutoring"])
       }
+    end
+
+    # Accept Decap list-of-strings, list-of-objects, or a comma/semicolon string.
+    def normalize_aliases(raw, primary_code)
+      items = case raw
+              when Array then raw
+              when String then raw.split(/[,;|]/)
+              else []
+              end
+      primary_norm = primary_code.to_s.gsub(/\s+/, "").upcase
+      primary_slug = ascii_slug(primary_code)
+      items.filter_map do |item|
+        text = case item
+               when Hash then (item["alias"] || item["code"] || item["name"]).to_s
+               else item.to_s
+               end
+        text = text.strip
+        next if text.empty?
+
+        norm = text.gsub(/\s+/, "").upcase
+        next if !primary_norm.empty? && norm == primary_norm
+        next if !primary_slug.empty? && ascii_slug(text) == primary_slug
+
+        text
+      end.uniq
+    end
+
+    def emit_course_alias_redirects(site, uni_slug, course, occupied_course_slugs)
+      canonical = course["slug"].to_s
+      return if canonical.empty?
+
+      target = "/teach/courses/#{uni_slug}/#{canonical}/"
+      Array(course["aliases"]).each do |alias_code|
+        alias_slug = ascii_slug(alias_code)
+        next if alias_slug.empty? || alias_slug == canonical
+        next if occupied_course_slugs[alias_slug]
+
+        site.pages << TeachGeneratedPage.new(
+          site,
+          site.source,
+          "teach/courses/#{uni_slug}/#{alias_slug}"
+        ).tap do |page|
+          page.data.merge!(
+            "layout" => "redirect",
+            "redirect_to" => target,
+            "sitemap" => false,
+            "robots" => "noindex, follow",
+            "title" => "Redirecting…",
+            "permalink" => "/teach/courses/#{uni_slug}/#{alias_slug}/"
+          )
+        end
+        occupied_course_slugs[alias_slug] = true
+      end
     end
 
     def infer_theme(haystack, themes)
@@ -659,7 +720,7 @@ module Jekyll
 
     def build_university_page(site, uni_slug, university, courses, region_key, in_sitemap = true, evidence = {})
       evidence = {} unless evidence.is_a?(Hash)
-      codes = courses.map { |c| c["code"] }.reject(&:empty?)
+      codes = courses.flat_map { |c| [c["code"], *Array(c["aliases"])] }.reject(&:empty?).uniq
       topic_en = Array(evidence["topics"]).filter_map { |t| t["en"] if t.is_a?(Hash) }.first(4)
       title_en = "#{university} Computer Science Tutoring | AI & Programming"
       title_cn = "#{university} 计算机辅导 | 人工智能与编程一对一"
@@ -715,7 +776,9 @@ module Jekyll
       themes:, theme_index:, reading_by_theme:, course_count:, siblings:, evidence: {}
     )
       code = course["code"]
+      aliases = Array(course["aliases"])
       title = course["title"]
+      alias_bit = aliases.any? ? " (#{aliases.first})" : ""
       label = [code, title].reject(&:empty?).join(": ")
       theme_id = course["theme"].to_s
       theme_id = "general" if theme_id.empty?
@@ -761,21 +824,23 @@ module Jekyll
       topic_bits = focus_topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
 
       # Lead with course code for SERP queries like "fit2102" / "etx3500".
+      # Include the first alias so dual-code searches still match the title.
       title_en = if code.empty?
                    "#{title} tutoring | #{university} CS tutoring"
                  else
-                   "#{code} #{title} tutoring | #{university}"
+                   "#{code}#{alias_bit} #{title} tutoring | #{university}"
                  end
       # Match competitor title pattern: 大学 + 课号 + 辅导
       title_cn = if code.empty?
                    "#{university} #{title} 课程辅导 | 中英双语一对一"
                  else
-                   "#{university} #{code} 课程辅导 | #{title}"
+                   "#{university} #{code}#{alias_bit} 课程辅导 | #{title}"
                  end
       description = if overview_en.length.between?(80, 160)
                       overview_en
                     else
                       desc = "1-1 tutoring for #{label} at #{university}"
+                      desc += " (also #{aliases.join(', ')})" if aliases.any?
                       desc += " (#{theme_label_en})" unless theme_label_en.empty?
                       desc += ". "
                       desc += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
@@ -788,7 +853,7 @@ module Jekyll
 
       topic_kw = focus_topics.first(6).flat_map { |t| [t["en"], t["cn"]] }.compact.map(&:to_s).reject(&:empty?)
       keywords = [
-        code, title, university, theme_label_en, theme_label_cn,
+        code, *aliases, title, university, theme_label_en, theme_label_cn,
         "作业辅导", "考前辅导", "同步辅导", "留学生",
         *topic_kw.first(8)
       ].reject(&:empty?).join(", ")
@@ -821,6 +886,7 @@ module Jekyll
         "university" => university,
         "uni_slug" => uni_slug,
         "course_code" => code,
+        "course_aliases" => aliases,
         "course_title" => title,
         "course_department" => course["department"],
         "course_slug" => course["slug"],
@@ -865,7 +931,7 @@ module Jekyll
       svc = SERVICES.fetch(service_key)
       title_en = "#{university} #{svc['title_en']} | Computer Science Tutoring"
       title_cn = "#{university}#{svc['title_cn']} | 计算机留学生一对一"
-      codes = courses.map { |c| c["code"] }.reject(&:empty?)
+      codes = courses.flat_map { |c| [c["code"], *Array(c["aliases"])] }.reject(&:empty?).uniq
       code_bit = codes.first(5).join(", ")
       description = "#{svc['desc_en']} "
       description += if code_bit.empty?

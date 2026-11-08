@@ -15,7 +15,10 @@ layout: default
        data-en="{{ page.university }} · {{ page.region_en }} · {{ page.theme_label_en }}"
        data-cn="{{ page.university }} · {{ page.region_cn }} · {{ page.theme_label_cn }}">{{ page.university }} · {{ page.region_cn }} · {{ page.theme_label_cn }}</p>
     <h1>
-      {% if page.course_code != "" %}<span class="teach-code">{{ page.course_code }}</span> {% endif %}
+      {% if page.course_code != "" %}<span class="teach-code">{{ page.course_code }}</span>{% endif %}
+      {% if page.course_aliases and page.course_aliases.size > 0 %}
+      <span class="teach-aliases">({% for a in page.course_aliases %}{{ a }}{% unless forloop.last %} / {% endunless %}{% endfor %})</span>
+      {% endif %}
       <span data-en="{{ page.course_title }} tutoring"
             data-cn="{{ page.course_title }} 辅导">{% if page.course_title != "" %}{{ page.course_title }} 辅导{% else %}课程辅导{% endif %}</span>
     </h1>
@@ -27,6 +30,11 @@ layout: default
     <p class="teach-landing-lead"
        data-en="1-1 bilingual help for this {{ page.university }} course: lecture sync, assignments, and exam prep. You submit your own work."
        data-cn="针对 {{ page.university }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。作业由你本人提交。">针对 {{ page.university }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。作业由你本人提交。</p>
+    {% endif %}
+    {% if page.course_aliases and page.course_aliases.size > 0 %}
+    <p class="teach-alias-line"
+       data-en="Also listed as: {{ page.course_aliases | join: ', ' }}"
+       data-cn="同课其他课号：{{ page.course_aliases | join: '、' }}">同课其他课号：{{ page.course_aliases | join: "、" }}</p>
     {% endif %}
     {% if page.course_department != "" %}
     <p class="teach-dept-line"
@@ -194,6 +202,9 @@ layout: default
   "@context": "https://schema.org",
   "@type": "Course",
   "name": {{ page.course_code | append: " " | append: page.course_title | strip | jsonify }},
+  {% if page.course_aliases and page.course_aliases.size > 0 %}
+  "alternateName": {{ page.course_aliases | jsonify }},
+  {% endif %}
   "description": {{ page.description | jsonify }},
   "provider": {
     "@type": "Person",
