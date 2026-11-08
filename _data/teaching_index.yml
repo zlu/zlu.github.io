@@ -203,8 +203,8 @@ universities:
 - folder: tum
   admin_slug: tum
   materials:
-  - ' Intro to Computer Architecture'
   - INHN0012 Computer Networking and IT Security
+  - Intro to Computer Architecture
 - folder: u-birmingham
   admin_slug: birmingham
   materials:
@@ -235,11 +235,10 @@ universities:
   - 5057 HCI Design & Evaluation
   - 5076 Database & Data Analytics
   - 5077 Enterprise Cyber Security
+  - 5099 Information Visualisation
+  - COMPSCI2007-datastructure
   - compsci5077
-  - compsci508-intro-to-datascience
   - compsci5089-intro-to-datascience
-  - datastructure
-  - 往期试卷
 - folder: u-manchester
   admin_slug: university-of-manchester
   materials:

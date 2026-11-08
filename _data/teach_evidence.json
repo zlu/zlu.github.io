@@ -286,8 +286,8 @@
     "tum": {
       "preferred_slug": "tum",
       "materials": [
-        " Intro to Computer Architecture",
-        "INHN0012 Computer Networking and IT Security"
+        "INHN0012 Computer Networking and IT Security",
+        "Intro to Computer Architecture"
       ]
     },
     "u-birmingham": {
@@ -324,13 +324,12 @@
         "5057 HCI Design & Evaluation",
         "compsci5089-intro-to-datascience",
         "4043 Systems and Networks",
-        "compsci508-intro-to-datascience",
-        "datastructure",
-        "往期试卷",
         "5077 Enterprise Cyber Security",
         "5076 Database & Data Analytics",
         "compsci5077",
-        "4039 Programming"
+        "COMPSCI2007-datastructure",
+        "4039 Programming",
+        "5099 Information Visualisation"
       ]
     },
     "u-manchester": {
