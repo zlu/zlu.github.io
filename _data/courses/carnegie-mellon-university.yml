@@ -6,10 +6,6 @@ courses:
     title: Fundamentals of Programming and Computer Science
     department: Computer Science
     material: cs15-112
-  - code: 15-112
-    title: Fundamentals of Programming and Computer Science
-  - code: 15-122
-    title: Principles of Imperative Computation
   - code: 15-150
     title: Principles of Functional Programming
   - code: 15-210
@@ -24,6 +20,4 @@ courses:
     title: Introduction to Machine Learning
   - code: 10-701
     title: Introduction to Machine Learning (PhD)
-  - title: Cmu Py 15 112
-    material: cmu-py-15-112
 ---
