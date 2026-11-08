@@ -13,11 +13,6 @@ courses:
     title: Algorithms and Data Structures
   - code: COMP7505
     title: Algorithms and Data Structure
-  - code: INFS7410
-    title: Information Retrieval and Web Search
-    department: Elec Engineering, Comp Science
-  - code: CSSE1001
-    title: Introduction to Software Engineering
   - code: CSSE2002
     title: Programming in the Large
   - code: CSSE2010
@@ -35,61 +30,58 @@ courses:
   - code: CSSE7100
     title: CSSE7100
     material: CSSE7100
-  # GSC: infs7203
-  - code: INFS7203
-    title: Data Mining
+  - topics:
+      - en: Classification basics and evaluation
+        cn: 分类基础与评估
+      - en: Decision trees, kNN, Naive Bayes
+        cn: 决策树、kNN、朴素贝叶斯
+      - en: Clustering — k-means, density, hierarchical
+        cn: 聚类：k-means、密度、层次
+      - en: Association rules and anomaly detection
+        cn: 关联规则与异常检测
+      - en: Text / web mining overviews
+        cn: 文本 / Web 挖掘概览
+      - en: Tutorial problem methods under English prompts
+        cn: 英文题干下的 tutorial 解题方法
     material: INFS7203-data-mining
     theme: data-science
-    lead_en: >-
-      INFS7203 packs many mining methods into English lectures and tutorials:
-      classification, clustering, association rules, anomaly detection, text / web
-      mining. The hard part is knowing which method fits the question — and explaining
-      it without drowning in jargon.
-    lead_cn: >-
-      INFS7203 把大量挖掘方法塞进英文课与 tutorial：分类、聚类、关联规则、异常检测、文本 / Web
-      挖掘。难的是判断哪一种方法适合问题，并用不太黑话的方式说清。
-    overview_en: >-
-      Data Mining walks through classic supervised and unsupervised techniques with
-      lecture slides and tutorial drills. Students struggle when English method names
-      blur together, when evaluation metrics feel abstract, or when tutorial figures
-      look cryptic without a step checklist.
-    overview_cn: >-
-      Data Mining 用课件与 tutorial 覆盖经典监督 / 无监督技术。卡点常在英文方法名搅在一起、
-      评估指标过于抽象，或 tutorial 图没有步骤清单就像天书。
-    topics:
-      - en: "Classification basics and evaluation"
-        cn: "分类基础与评估"
-      - en: "Decision trees, kNN, Naive Bayes"
-        cn: "决策树、kNN、朴素贝叶斯"
-      - en: "Clustering — k-means, density, hierarchical"
-        cn: "聚类：k-means、密度、层次"
-      - en: "Association rules and anomaly detection"
-        cn: "关联规则与异常检测"
-      - en: "Text / web mining overviews"
-        cn: "文本 / Web 挖掘概览"
-      - en: "Tutorial problem methods under English prompts"
-        cn: "英文题干下的 tutorial 解题方法"
-    stuck:
-      - en: "Method catalogue memorised, selection criteria missing"
-        cn: "方法目录背下来了，却不会选"
-      - en: "English metric names (precision, recall, silhouette…) without a picture"
-        cn: "英文指标名（precision、recall、silhouette…）没有画面"
-      - en: "Tutorial graphs and tables that look cryptic under time pressure"
-        cn: "限时下 tutorial 图表像暗号"
     session_angles:
       - en: "For each method: input → idea → when to use → how to evaluate"
-        cn: "每个方法：输入 → 思想 → 何时用 → 怎么评估"
-      - en: "Tutorial walkthroughs with you attempting first"
-        cn: "Tutorial 你先做，再一起改方法"
-      - en: "Short comparison drills like exam wording"
-        cn: "考试措辞下的短对比练习"
+        cn: 每个方法：输入 → 思想 → 何时用 → 怎么评估
+      - en: Tutorial walkthroughs with you attempting first
+        cn: Tutorial 你先做，再一起改方法
+      - en: Short comparison drills like exam wording
+        cn: 考试措辞下的短对比练习
+    lead_en: "INFS7203 packs many mining methods into English lectures and
+      tutorials: classification, clustering, association rules, anomaly
+      detection, text / web mining. The hard part is knowing which method fits
+      the question — and explaining it without drowning in jargon."
     tutoring:
-      - en: "Lecture sync: bilingual walkthrough of mining methods so tutorial language matches."
-        cn: "同步跟课：用中英双语把挖掘方法讲透，与 tutorial 用语对齐。"
-      - en: "Tutorials / assignments: method choice and live problem-solving with you driving."
-        cn: "Tutorial / 作业：选方法、现场解题，你来主导。"
+      - en: "Lecture sync: bilingual walkthrough of mining methods so tutorial language
+          matches."
+        cn: 同步跟课：用中英双语把挖掘方法讲透，与 tutorial 用语对齐。
+      - en: "Tutorials / assignments: method choice and live problem-solving with you
+          driving."
+        cn: Tutorial / 作业：选方法、现场解题，你来主导。
       - en: "Exam prep: timed drills comparing methods and reading evaluation output."
-        cn: "考前突击：限时对比方法、解读评估输出。"
+        cn: 考前突击：限时对比方法、解读评估输出。
+    code: INFS7203
+    lead_cn: INFS7203 把大量挖掘方法塞进英文课与 tutorial：分类、聚类、关联规则、异常检测、文本 / Web
+      挖掘。难的是判断哪一种方法适合问题，并用不太黑话的方式说清。
+    overview_en: Data Mining walks through classic supervised and unsupervised
+      techniques with lecture slides and tutorial drills. Students struggle when
+      English method names blur together, when evaluation metrics feel abstract,
+      or when tutorial figures look cryptic without a step checklist.
+    overview_cn: Data Mining 用课件与 tutorial 覆盖经典监督 / 无监督技术。卡点常在英文方法名搅在一起、 评估指标过于抽象，或
+      tutorial 图没有步骤清单就像天书。
+    title: Data Mining
+    stuck:
+      - en: Method catalogue memorised, selection criteria missing
+        cn: 方法目录背下来了，却不会选
+      - en: English metric names (precision, recall, silhouette…) without a picture
+        cn: 英文指标名（precision、recall、silhouette…）没有画面
+      - en: Tutorial graphs and tables that look cryptic under time pressure
+        cn: 限时下 tutorial 图表像暗号
   - title: Intro To Software Engeering
     code: CSSE1001
     material: CSSE1001-intro-to-software-engr
