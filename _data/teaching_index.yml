@@ -169,7 +169,9 @@ universities:
   admin_slug: ntu
   materials:
   - EE6407-GENETIC ALGORITHMS & MACHINE LEARNING
+  - EE6430 – SPECIAL TOPICS IN MACHINE LEARNING
   - IE0005
+  - KM6307
 - folder: nus
   admin_slug: nus
   materials:
@@ -264,14 +266,13 @@ universities:
   admin_slug: queensland
   materials:
   - BISM1201
+  - CSSE1001-intro-to-software-engr
   - CSSE7100
   - INFS7203-data-mining
   - INFS7410
   - MECH2700
-  - MECH2700 Revision
   - SEMT20003
-  - infs9700
-  - intro-to-software-engr
+  - infs7900
 - folder: u-south-australia
   admin_slug: universifty-of-south-australia
   materials:
@@ -384,9 +385,6 @@ universities:
   materials:
   - MA2623-linear-abstract-algebra
   - MA2634-ML-for-AI
-- folder: 南阳理工
-  admin_slug: nanyang-institute-of-technology
-  materials: []
 - folder: 慕尼黑工业大学
   admin_slug: tum
   materials:

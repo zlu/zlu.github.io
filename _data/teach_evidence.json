@@ -236,6 +236,8 @@
       "preferred_slug": "ntu",
       "materials": [
         "EE6407-GENETIC ALGORITHMS & MACHINE LEARNING",
+        "EE6430 – SPECIAL TOPICS IN MACHINE LEARNING",
+        "KM6307",
         "IE0005"
       ]
     },
@@ -367,10 +369,9 @@
         "MECH2700",
         "INFS7410",
         "CSSE7100",
-        "intro-to-software-engr",
-        "MECH2700 Revision",
+        "CSSE1001-intro-to-software-engr",
+        "infs7900",
         "INFS7203-data-mining",
-        "infs9700",
         "BISM1201",
         "SEMT20003"
       ]
@@ -521,10 +522,6 @@
         "MA2634-ML-for-AI",
         "MA2623-linear-abstract-algebra"
       ]
-    },
-    "南阳理工": {
-      "preferred_slug": "nanyang-institute-of-technology",
-      "materials": []
     },
     "慕尼黑工业大学": {
       "preferred_slug": "tum",
