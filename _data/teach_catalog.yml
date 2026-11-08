@@ -5113,8 +5113,8 @@ universities:
     shape: {}
     signals: {}
     depth_score: 0
-  - code: ''
-    title: IIMT 3601database Management
+  - code: IIMT 3601
+    title: Database Management
     material: IIMT 3601Database Management
     link: material field
     topics: []
