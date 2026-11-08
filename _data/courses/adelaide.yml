@@ -18,6 +18,9 @@ courses:
     title: Artificial Intelligence
   - code: COMP SCI 3314
     title: Introduction to Statistical Machine Learning
+  - code: COMP SCI 4023
+    title: Event Driven Computing
+    material: Comp_4023-event-driven-computing
   - code: COMP SCI 7201
     title: Algorithm and Data Structure Analysis
 ---
