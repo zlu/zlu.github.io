@@ -2,40 +2,31 @@
 university: University of Glasgow
 teaching_folder: u-glasgow
 courses:
-- code: COMPSCI5089
-  title: Intro To Datascience
-  material: compsci5089-intro-to-datascience
-- code: COMPSCI1001
-  title: Computing Science 1P
-  material: 往期试卷
-- code: COMPSCI1006
-  title: Computing Science 1S
-  material: 往期试卷
-- code: COMPSCI2001
-  title: Algorithmic Foundations 2
-  material: 往期试卷
-- code: COMPSCI2003
-  title: Networks and Operating Systems Essentials 2
-  material: 往期试卷
-- code: COMPSCI2007
-  title: Object-Oriented Software Engineering 2
-  material: 往期试卷
-- code: COMPSCI3001
-  title: Algorithmics
-  material: 往期试卷
-- code: COMPSCI4009
-  title: Machine Learning
-  material: 往期试卷
-- code: COMPSCI4011
-  title: Artificial Intelligence
-  material: 往期试卷
-- code: COMPSCI508
-  title: Intro To Datascience
-  material: compsci508-intro-to-datascience
-- code: COMPSCI5077
-  title: COMPSCI5077
-  material: compsci5077
-- title: Datastructure
-- code: COMPSCI5076
-  title: 往期试卷
+  - code: COMPSCI5089
+    title: Introduction to Data Science and Systems
+    material: compsci5089-intro-to-datascience
+  - code: COMPSCI5077
+    title: Enterprise Cyber Security
+    material: compsci5077
+  - code: COMPSCI2007
+    title: Data Structure
+    material: COMPSCI2007-datastructure
+  - material: 5099 Information Visualisation
+    code: COMSCI5099
+    title: Information Visualization
+  - material: 5077 Enterprise Cyber Security
+    title: Enterprise Cyber Security
+    code: COMPSCI5077
+  - material: 5076 Database & Data Analytics
+    title: Database & Data Analytics
+    code: COMPSCI5076
+  - material: 5057 HCI Design & Evaluation
+    title: HCI Design & Evaluation
+    code: COMPSCI5057
+  - material: 4043 Systems and Networks
+    title: Systems and Networks
+    code: COMPSCI4043
+  - material: 4039 Programming
+    title: Programming
+    code: COMPSCI4039
 ---
