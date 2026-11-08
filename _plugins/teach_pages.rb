@@ -365,6 +365,121 @@ module Jekyll
       Array(raw).select { |t| t.is_a?(Hash) && (t["en"].to_s.strip != "" || t["cn"].to_s.strip != "") }
     end
 
+    # Per-theme difficulty hooks for Chinese students abroad (public copy, not inventory).
+    THEME_DIFFICULTY = {
+      "automata" => {
+        "en" => "English lectures, Greek letters, abstract machines, and cryptic state / Petri diagrams",
+        "cn" => "英文课、希腊字母、抽象自动机，以及暗号式状态图 / Petri 网"
+      },
+      "algorithms" => {
+        "en" => "English proofs, complexity talk, and pseudocode under time pressure",
+        "cn" => "英文证明、复杂度表述，以及限时伪代码"
+      },
+      "machine-learning" => {
+        "en" => "English math+code lectures, loss jargon, and notebooks that fail on shape mismatches",
+        "cn" => "英文数理+代码课、损失相关黑话，以及维度一错就挂的 notebook"
+      },
+      "data-science" => {
+        "en" => "English briefs, messy tables, and write-ups that must defend every plot",
+        "cn" => "英文 brief、脏表，以及每张图都要说得清的报告"
+      },
+      "programming" => {
+        "en" => "English assignment wording, unfamiliar toolchains, and autograders that punish edge cases",
+        "cn" => "英文作业措辞、不熟的工具链，以及专卡边界情况的 autograder"
+      },
+      "systems" => {
+        "en" => "Dense English systems vocabulary, diagrams, and labs that fail for opaque reasons",
+        "cn" => "密集的英文系统术语、图表，以及原因不透明的 Lab 失败"
+      },
+      "databases" => {
+        "en" => "English schema / query jargon and assignments where one wrong join wrecks results",
+        "cn" => "英文 schema / 查询黑话，以及一个 join 写错结果全歪的作业"
+      },
+      "math-for-cs" => {
+        "en" => "English proofs, symbol-heavy slides, and abstractions without a picture",
+        "cn" => "英文证明、符号密集的课件，以及没有画面的抽象"
+      },
+      "security" => {
+        "en" => "English threat / crypto vocabulary and labs with cryptic failure modes",
+        "cn" => "英文威胁 / 密码学术语，以及失败模式很隐晦的 Lab"
+      },
+      "web-mobile" => {
+        "en" => "English UI / API briefs and stacks where front-end and back-end errors blur together",
+        "cn" => "英文 UI / API brief，以及前后端报错搅在一起的技术栈"
+      },
+      "general" => {
+        "en" => "Fast English lectures, dense terminology, and abstract ideas that do not stick from slides alone",
+        "cn" => "偏快的英文课、密集术语，以及单靠课件记不住的抽象概念"
+      }
+    }.freeze
+
+    def theme_difficulty(theme_id)
+      THEME_DIFFICULTY[theme_id.to_s] || THEME_DIFFICULTY["general"]
+    end
+
+    # Public course-page copy from theme knowledge when admin YAML has no hand-written fields.
+    def synthesize_course_copy(course, university, theme_id, theme_meta)
+      code = course["code"].to_s
+      title = course["title"].to_s
+      label = [code, title].reject(&:empty?).join(" ")
+      label = title if label.empty?
+      hard = theme_difficulty(theme_id)
+      theme_label_en = theme_meta["label_en"].to_s
+      theme_label_cn = theme_meta["label_cn"].to_s
+      topic_ens = Array(theme_meta["topics"]).filter_map { |t| t["en"].to_s if t.is_a?(Hash) }.first(4)
+      topic_cns = Array(theme_meta["topics"]).filter_map { |t| t["cn"].to_s if t.is_a?(Hash) }.first(4)
+
+      lead_en = "#{label} at #{university} is hard for many Chinese students abroad: " \
+                "#{hard['en']}. Tutoring turns that fog into steps you can repeat."
+      lead_cn = "#{university} 的 #{label} 对很多留学生特别难：#{hard['cn']}。" \
+                "辅导把这团雾拆成能一步步做的方法。"
+
+      overview_en = "#{label} sits in #{theme_label_en.to_s.downcase}. "
+      overview_en += "Typical focus includes #{topic_ens.join('; ')}. " if topic_ens.any?
+      overview_en += "The pain is rarely never having seen the topic — it is English terminology " \
+                     "under time pressure, symbols that do not stick, and questions that look " \
+                     "cryptic until you have a method."
+
+      overview_cn = "#{label} 属于「#{theme_label_cn}」类课。"
+      overview_cn += "常见重点包括：#{topic_cns.join('；')}。" if topic_cns.any?
+      overview_cn += "真正卡人的往往不是完全没见过，而是限时英文术语、记不住的符号，" \
+                     "以及没有方法时看起来像天书的题目。"
+
+      stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) }.map(&:dup)
+      english_stuck = {
+        "en" => "English lecture speed + dense #{theme_label_en.downcase} vocabulary outruns note-taking",
+        "cn" => "英文课节奏 + 密集的「#{theme_label_cn}」术语超过记笔记速度"
+      }
+      stuck = [english_stuck] + stuck unless stuck.any? { |t| t["en"].to_s.downcase.include?("english") }
+
+      session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }
+      tutoring = [
+        {
+          "en" => "Lecture sync for #{label}: bilingual catch-up so workshop / tutorial language matches the English course.",
+          "cn" => "#{label} 同步跟课：用中英双语补概念，让 workshop / tutorial 用语与英文课对齐。"
+        },
+        {
+          "en" => "Assignments: approach review and live debug. You keep authorship and submit yourself — no ghostwriting.",
+          "cn" => "作业辅导：拆 brief、梳思路、现场 debug。你保有作者身份并本人提交——不代写。"
+        },
+        {
+          "en" => "Exam prep: timed drills on weak spots and recurring question shapes for this course.",
+          "cn" => "考前突击：针对本课薄弱点与反复出现的题型做限时练习。"
+        }
+      ]
+
+      {
+        "lead_en" => lead_en,
+        "lead_cn" => lead_cn,
+        "overview_en" => overview_en,
+        "overview_cn" => overview_cn,
+        "stuck" => stuck,
+        "session_angles" => session_angles,
+        "tutoring" => tutoring,
+        "topics" => Array(theme_meta["topics"]).select { |t| t.is_a?(Hash) }
+      }
+    end
+
     def normalize_course(course, themes = {})
       return nil unless course.is_a?(Hash)
 
@@ -479,8 +594,7 @@ module Jekyll
     end
 
     def related_same_uni(siblings, course, limit = 4)
-      # Only link evidence-backed siblings — unlinked meta rows are thin shells.
-      others = siblings.reject { |c| c["slug"] == course["slug"] || !c["linked"] }
+      others = siblings.reject { |c| c["slug"] == course["slug"] }
       same_theme = others.select { |c| c["theme"] == course["theme"] }
       rest = others - same_theme
       (same_theme + rest).first(limit).map do |c|
@@ -497,9 +611,7 @@ module Jekyll
     end
 
     def related_same_theme(theme_index, theme_id, uni_slug, limit = 6)
-      pool = theme_index.fetch(theme_id, []).reject do |r|
-        r["uni_slug"] == uni_slug || !r.dig("course", "linked")
-      end
+      pool = theme_index.fetch(theme_id, []).reject { |r| r["uni_slug"] == uni_slug }
       by_uni = pool.group_by { |r| r["uni_slug"] }
       ordered_unis = by_uni.keys.sort
       picked = []
@@ -616,21 +728,36 @@ module Jekyll
       course_topics = Array(course["topics"]).select { |t| t.is_a?(Hash) }
       course_signals = course["signals"].is_a?(Hash) ? course["signals"] : {}
       course_shape = course["shape"].is_a?(Hash) ? course["shape"] : {}
+
+      hand_curated = [
+        course["lead_en"], course["lead_cn"], course["overview_en"], course["overview_cn"]
+      ].any? { |v| v.to_s.strip != "" }
+      synth = synthesize_course_copy(course, university, theme_id, theme_meta)
+
       stuck = bilingual_items(course["stuck"])
-      stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) } if stuck.empty?
+      stuck = synth["stuck"] if stuck.empty?
       session_angles = bilingual_items(course["session_angles"])
-      if session_angles.empty?
-        session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }
-      end
+      session_angles = synth["session_angles"] if session_angles.empty?
       lead_en = course["lead_en"].to_s
       lead_cn = course["lead_cn"].to_s
-      lead_en = theme_meta["lead_en"].to_s if lead_en.empty?
-      lead_cn = theme_meta["lead_cn"].to_s if lead_cn.empty?
+      lead_en = synth["lead_en"] if lead_en.empty?
+      lead_cn = synth["lead_cn"] if lead_cn.empty?
       overview_en = course["overview_en"].to_s
       overview_cn = course["overview_cn"].to_s
+      overview_en = synth["overview_en"] if overview_en.empty?
+      overview_cn = synth["overview_cn"] if overview_cn.empty?
       tutoring = bilingual_items(course["tutoring"])
+      tutoring = synth["tutoring"] if tutoring.empty?
 
-      focus_topics = course_topics.any? ? course_topics : theme_topics
+      # Prefer catalog/evidence topics, then hand-curated YAML topics, then theme topics.
+      curated_topics = Array(course["curated_topics"]).select { |t| t.is_a?(Hash) }
+      focus_topics = if course_topics.any?
+                       course_topics
+                     elsif curated_topics.any?
+                       curated_topics
+                     else
+                       theme_topics
+                     end
       topic_bits = focus_topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
 
       # Lead with course code for SERP queries like "fit2102" / "etx3500".
@@ -717,14 +844,16 @@ module Jekyll
         "region_en" => region_label(region_key, "en"),
         "region_cn" => region_label(region_key, "cn"),
         "lang" => "zh-CN",
-        "sitemap" => !!course["linked"],
-        "robots" => (course["linked"] ? nil : "noindex, follow"),
+        # All course pages now carry theme/course copy — index them.
+        "sitemap" => true,
+        "robots" => nil,
         "evidence_topics" => course_topics,
         "evidence_signals" => course_signals,
         "evidence_shape" => course_shape,
         "evidence_backed" => !!course["linked"],
-        "coverage_summary_en" => (evidence.is_a?(Hash) ? evidence["coverage_summary_en"] : "").to_s,
-        "coverage_summary_cn" => (evidence.is_a?(Hash) ? evidence["coverage_summary_cn"] : "").to_s
+        "hand_curated" => hand_curated,
+        "coverage_summary_en" => "",
+        "coverage_summary_cn" => ""
       )
       page
     end

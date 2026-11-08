@@ -530,9 +530,9 @@ CONFIDENT_LINK_HOW = frozenset({"material field", "material alias", "code match"
 
 def coverage_summary(n: int, signals: dict, topics: list, lang: str) -> str:
     if lang == "en":
-        bits = [f"Hands-on tutoring coverage across {n} course(s) with linked private materials."]
+        bits = [f"Bilingual tutoring across {n} course(s) at this school."]
         if signals.get("weekly_lecture_arc"):
-            bits.append("Weekly lecture catch-up.")
+            bits.append("Lecture catch-up.")
         if signals.get("assignment_lab_materials"):
             bits.append("Assignment / lab debug sessions.")
         if signals.get("exam_prep_materials"):
@@ -543,9 +543,9 @@ def coverage_summary(n: int, signals: dict, topics: list, lang: str) -> str:
         bits.append("No ghostwriting — you submit your own work.")
         return " ".join(bits)
 
-    bits = [f"基于已关联的 {n} 门课私有资料整理（资料本身不公开）。"]
+    bits = [f"本校可辅导约 {n} 门相关课程。"]
     if signals.get("weekly_lecture_arc"):
-        bits.append("可跟周进度同步答疑。")
+        bits.append("可同步跟课答疑。")
     if signals.get("assignment_lab_materials"):
         bits.append("作业 / Lab 拆题与 debug。")
     if signals.get("exam_prep_materials"):

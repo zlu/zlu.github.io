@@ -3,7 +3,7 @@ policy: Class files stay private. Run with --write-links to persist empty teachi
   into admin YAML.
 university_count: 89
 course_count: 700
-linked_course_count: 166
+linked_course_count: 167
 universities:
 - slug: unsw
   university: UNSW Sydney
@@ -526,11 +526,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 999
-  coverage_summary_en: 'Hands-on tutoring coverage across 15 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: operating systems, memory / pointers, lists / stacks /
-    queues, algorithms. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 15 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：操作系统、内存
+  coverage_summary_en: 'Bilingual tutoring across 15 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: operating
+    systems, memory / pointers, lists / stacks / queues, algorithms. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 15 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：操作系统、内存
     / 指针、链表 / 栈 / 队列、算法。不代写、不代考。
 - slug: birmingham
   university: University of Birmingham
@@ -817,11 +817,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 752
-  coverage_summary_en: 'Hands-on tutoring coverage across 9 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: databases, APIs / HTTP, web front-end, Java. No ghostwriting
-    — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、API
+  coverage_summary_en: 'Bilingual tutoring across 9 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: databases,
+    APIs / HTTP, web front-end, Java. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、API
     / HTTP、前端、Java。不代写、不代考。
 - slug: university-of-sydney
   university: University of Sydney
@@ -1204,11 +1203,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 679
-  coverage_summary_en: 'Hands-on tutoring coverage across 11 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: distributed systems, operating systems, computer architecture,
-    exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 11 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：分布式系统、操作系统、计算机体系结构、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 11 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: distributed
+    systems, operating systems, computer architecture, exam prep. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 11 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：分布式系统、操作系统、计算机体系结构、考前突击。不代写、不代考。
 - slug: carnegie-mellon-university
   university: Carnegie Mellon University
   teaching_folder: cmu
@@ -1362,11 +1361,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 525
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: web front-end, graphs, OOP, exam prep. No ghostwriting
-    — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：前端、图算法、面向对象、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: web
+    front-end, graphs, OOP, exam prep. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：前端、图算法、面向对象、考前突击。不代写、不代考。
 - slug: monash
   university: Monash University
   teaching_folder: monash
@@ -1712,11 +1710,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 491
-  coverage_summary_en: 'Hands-on tutoring coverage across 9 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: OOP, assignments / labs, machine learning, algorithms.
-    No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：面向对象、作业
+  coverage_summary_en: 'Bilingual tutoring across 9 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: OOP,
+    assignments / labs, machine learning, algorithms. No ghostwriting — you submit
+    your own work.'
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：面向对象、作业
     / Lab、机器学习、算法。不代写、不代考。
 - slug: queensland
   university: University of Queensland
@@ -2063,11 +2061,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 406
-  coverage_summary_en: 'Hands-on tutoring coverage across 10 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: exam prep, OOP, web front-end, software engineering. No
-    ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 10 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、面向对象、前端、软件工程。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 10 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, OOP, web front-end, software engineering. No ghostwriting — you submit your
+    own work.'
+  coverage_summary_cn: 本校可辅导约 10 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、面向对象、前端、软件工程。不代写、不代考。
 - slug: university-college-dublin
   university: University College Dublin
   teaching_folder: university-college-dublin
@@ -2255,11 +2253,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 307
-  coverage_summary_en: 'Hands-on tutoring coverage across 6 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: exam prep, OOP, web front-end, assignments / labs. No
-    ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 6 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、面向对象、前端、作业
+  coverage_summary_en: 'Bilingual tutoring across 6 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, OOP, web front-end, assignments / labs. No ghostwriting — you submit your
+    own work.'
+  coverage_summary_cn: 本校可辅导约 6 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、面向对象、前端、作业
     / Lab。不代写、不代考。
 - slug: university-of-glasgow
   university: University of Glasgow
@@ -2500,12 +2498,12 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 307
-  coverage_summary_en: 'Hands-on tutoring coverage across 9 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: stats / probability, assignments / labs, machine learning,
-    C++ STL. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：统计
-    / 概率、作业 / Lab、机器学习、C++ STL。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 9 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: stats
+    / probability, assignments / labs, machine learning, C++ STL. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：统计 / 概率、作业
+    / Lab、机器学习、C++ STL。不代写、不代考。
 - slug: tum
   university: Technical University of Munich
   teaching_folder: tum
@@ -2603,11 +2601,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: false
   total_depth: 274
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Assignment / lab debug sessions. Exam-prep drills. Typical
-    themes: security, networking, web front-end, exam prep. No ghostwriting — you
-    submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。作业 / Lab 拆题与 debug。考前突击。常见主题：安全、计算机网络、前端、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Assignment
+    / lab debug sessions. Exam-prep drills. Typical themes: security, networking,
+    web front-end, exam prep. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。作业 / Lab 拆题与 debug。考前突击。常见主题：安全、计算机网络、前端、考前突击。不代写、不代考。
 - slug: ntu
   university: NTU Singapore
   teaching_folder: ntu
@@ -2861,11 +2858,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 235
-  coverage_summary_en: 'Hands-on tutoring coverage across 5 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: machine learning, algorithms, stats / probability, computer
-    architecture. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 5 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：机器学习、算法、统计
+  coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: machine
+    learning, algorithms, stats / probability, computer architecture. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：机器学习、算法、统计
     / 概率、计算机体系结构。不代写、不代考。
 - slug: melbourne
   university: University of Melbourne
@@ -3090,11 +3087,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 206
-  coverage_summary_en: 'Hands-on tutoring coverage across 5 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Typical
-    themes: databases, linear algebra, assignments / labs. No ghostwriting — you submit
-    your own work.'
-  coverage_summary_cn: 基于已关联的 5 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。常见主题：数据库、线性代数、作业
+  coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Typical themes: databases, linear algebra,
+    assignments / labs. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：数据库、线性代数、作业
     / Lab。不代写、不代考。
 - slug: lmu
   university: lmu-慕尼黑大学
@@ -3157,11 +3153,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 163
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: machine learning, stats / probability, regex / ε-NFA,
-    exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：机器学习、统计
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: machine
+    learning, stats / probability, regex / ε-NFA, exam prep. No ghostwriting — you
+    submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：机器学习、统计
     / 概率、正则 / ε-NFA、考前突击。不代写、不代考。
 - slug: bristol
   university: University of Bristol
@@ -3284,10 +3280,10 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 160
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Weekly lecture catch-up. Exam-prep drills. Typical themes:
-    algorithms, exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。考前突击。常见主题：算法、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Exam-prep drills. Typical themes: algorithms, exam prep. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。考前突击。常见主题：算法、考前突击。不代写、不代考。
 - slug: jcu
   university: James Cook University Singapore
   teaching_folder: james-cook-singapore
@@ -3387,12 +3383,12 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 145
-  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: security, assignments / labs, networking, exam prep. No
-    ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：安全、作业
-    / Lab、计算机网络、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: security,
+    assignments / labs, networking, exam prep. No ghostwriting — you submit your own
+    work.'
+  coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：安全、作业 /
+    Lab、计算机网络、考前突击。不代写、不代考。
 - slug: lehigh-university
   university: Lehigh University
   teaching_folder: lehigh-university
@@ -3446,11 +3442,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 142
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: Python, web / JS, OOP, exam prep. No ghostwriting — you
-    submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：Python、Web
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: Python,
+    web / JS, OOP, exam prep. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：Python、Web
     / JS、面向对象、考前突击。不代写、不代考。
 - slug: nus
   university: National University of Singapore
@@ -3625,11 +3620,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 142
-  coverage_summary_en: 'Hands-on tutoring coverage across 4 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: exam prep, assignments / labs. No ghostwriting — you submit
-    your own work.'
-  coverage_summary_cn: 基于已关联的 4 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、作业
+  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, assignments / labs. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、作业
     / Lab。不代写、不代考。
 - slug: university-of-southampton
   university: University of Southampton
@@ -3798,12 +3792,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 131
-  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: assignments / labs, exam prep, linear algebra, OOP. No
-    ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：作业
-    / Lab、考前突击、线性代数、面向对象。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: assignments
+    / labs, exam prep, linear algebra, OOP. No ghostwriting — you submit your own
+    work.'
+  coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：作业 / Lab、考前突击、线性代数、面向对象。不代写、不代考。
 - slug: concordia-university
   university: Concordia University
   teaching_folder: concordia
@@ -3935,11 +3928,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 123
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: web front-end, exam prep, C++ STL. No ghostwriting — you
-    submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：前端、考前突击、C++
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: web
+    front-end, exam prep, C++ STL. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：前端、考前突击、C++
     STL。不代写、不代考。
 - slug: cuhk
   university: Chinese University of Hong Kong
@@ -4114,11 +4106,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 123
-  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: Python, exam prep, assignments / labs, stats / probability.
-    No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：Python、考前突击、作业
+  coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: Python,
+    exam prep, assignments / labs, stats / probability. No ghostwriting — you submit
+    your own work.'
+  coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：Python、考前突击、作业
     / Lab、统计 / 概率。不代写、不代考。
 - slug: uts
   university: University of Technology Sydney
@@ -4335,12 +4327,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 121
-  coverage_summary_en: 'Hands-on tutoring coverage across 5 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: SQL / databases, databases, Java, exam prep. No ghostwriting
-    — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 5 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：SQL
-    / 数据库、数据库、Java、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: SQL
+    / databases, databases, Java, exam prep. No ghostwriting — you submit your own
+    work.'
+  coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：SQL / 数据库、数据库、Java、考前突击。不代写、不代考。
 - slug: algonquin-college
   university: Algonquin College
   teaching_folder: algonguin-college
@@ -4420,11 +4411,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 119
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: exam prep, assignments / labs, stats / probability, web
-    front-end. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、作业
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, assignments / labs, stats / probability, web front-end. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、作业
     / Lab、统计 / 概率、前端。不代写、不代考。
 - slug: imperial-college-london
   university: Imperial College London
@@ -4635,12 +4626,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 106
-  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: LLMs / NLP, web front-end, graphs, computer architecture.
-    No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：大模型
-    / NLP、前端、图算法、计算机体系结构。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: LLMs
+    / NLP, web front-end, graphs, computer architecture. No ghostwriting — you submit
+    your own work.'
+  coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：大模型 / NLP、前端、图算法、计算机体系结构。不代写、不代考。
 - slug: hong-kong-baptist-university
   university: Hong Kong Baptist University
   teaching_folder: hk-baptist
@@ -4720,10 +4710,10 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 105
-  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
-    private materials. Weekly lecture catch-up. Exam-prep drills. Typical themes:
-    operating systems, exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。考前突击。常见主题：操作系统、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
+    catch-up. Exam-prep drills. Typical themes: operating systems, exam prep. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。考前突击。常见主题：操作系统、考前突击。不代写、不代考。
 - slug: uiuc
   university: UIUC
   teaching_folder: uiuc
@@ -4877,10 +4867,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 102
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Typical
-    themes: deep learning, linear algebra. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。常见主题：深度学习、线性代数。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Typical themes: deep learning, linear
+    algebra. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：深度学习、线性代数。不代写、不代考。
 - slug: newcastle
   university: Newcastle University
   teaching_folder: new-castle
@@ -4934,11 +4924,11 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 83
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: OOP, security, assignments / labs, exam prep. No ghostwriting
-    — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：面向对象、安全、作业
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: OOP,
+    security, assignments / labs, exam prep. No ghostwriting — you submit your own
+    work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：面向对象、安全、作业
     / Lab、考前突击。不代写、不代考。
 - slug: adelaide
   university: University of Adelaide
@@ -5069,12 +5059,12 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 81
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: automata / FSA, Java, FRP / observers, exam prep. No ghostwriting
-    — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：自动机
-    / FSA、Java、FRP / Observer、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: automata
+    / FSA, Java, FRP / observers, exam prep. No ghostwriting — you submit your own
+    work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：自动机 / FSA、Java、FRP
+    / Observer、考前突击。不代写、不代考。
 - slug: hong-kong-metropolitan-university
   university: Hong Kong Metropolitan University
   teaching_folder: hkmu
@@ -5162,12 +5152,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: false
   total_depth: 76
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Assignment / lab debug sessions. Exam-prep drills. Typical
-    themes: databases, SQL / databases, security, web front-end. No ghostwriting —
-    you submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、SQL
-    / 数据库、安全、前端。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Assignment
+    / lab debug sessions. Exam-prep drills. Typical themes: databases, SQL / databases,
+    security, web front-end. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、SQL / 数据库、安全、前端。不代写、不代考。
 - slug: north-china-university-of-technology
   university: 北方工业大
   teaching_folder: 北方工业大
@@ -5249,12 +5237,10 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 74
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Weekly lecture catch-up. Exam-prep drills. Typical themes:
-    exam prep, machine learning, stats / probability, C++ STL. No ghostwriting — you
-    submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。考前突击。常见主题：考前突击、机器学习、统计
-    / 概率、C++ STL。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Exam-prep drills. Typical themes: exam prep, machine learning, stats
+    / probability, C++ STL. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。考前突击。常见主题：考前突击、机器学习、统计 / 概率、C++ STL。不代写、不代考。
 - slug: pittsburgh
   university: University of Pittsburgh
   teaching_folder: u-pittsburg
@@ -5304,9 +5290,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 67
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. Weekly lecture catch-up. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. No ghostwriting — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。不代写、不代考。
 - slug: national-university-of-malaysia
   university: National University of Malaysia
   teaching_folder: national-university-of-malaysia
@@ -5352,10 +5338,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 66
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Typical
-    themes: data structures. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。常见主题：数据结构。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Typical themes: data structures. No
+    ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：数据结构。不代写、不代考。
 - slug: berkeley
   university: UC Berkeley
   teaching_folder: uc-berkeley
@@ -5515,10 +5501,10 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 62
-  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
-    private materials. Exam-prep drills. Typical themes: web front-end, Python, distributed
-    systems, linear algebra. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。考前突击。常见主题：前端、Python、分布式系统、线性代数。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Exam-prep
+    drills. Typical themes: web front-end, Python, distributed systems, linear algebra.
+    No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 3 门相关课程。考前突击。常见主题：前端、Python、分布式系统、线性代数。不代写、不代考。
 - slug: nottingham
   university: University of Nottingham
   teaching_folder: u-nottingham
@@ -5636,10 +5622,10 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 59
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Exam-prep drills. Typical themes:
-    exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。考前突击。常见主题：考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Exam-prep drills. Typical themes: exam prep. No ghostwriting — you submit
+    your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。考前突击。常见主题：考前突击。不代写、不代考。
 - slug: hku
   university: The University of Hong Kong
   teaching_folder: hku
@@ -5803,10 +5789,180 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: false
   total_depth: 57
-  coverage_summary_en: 'Hands-on tutoring coverage across 4 course(s) with linked
-    private materials. Assignment / lab debug sessions. Typical themes: assignments
-    / labs, exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 4 门课私有资料整理（资料本身不公开）。作业 / Lab 拆题与 debug。常见主题：作业 / Lab、考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Assignment
+    / lab debug sessions. Typical themes: assignments / labs, exam prep. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 4 门相关课程。作业 / Lab 拆题与 debug。常见主题：作业 / Lab、考前突击。不代写、不代考。
+- slug: macquarie
+  university: Macquarie University
+  teaching_folder: macquarie-university
+  hand_curated: true
+  course_count: 15
+  linked_course_count: 5
+  courses:
+  - code: COMP2200/COMP6200
+    title: Data Science
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP6010
+    title: Fundamentals of Computer Science
+    material: COMP6010
+    link: material field
+    topics: []
+    shape:
+      pdf: 5
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 0
+      total_content_files: 5
+      week_span:
+      - 2
+      - 3
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 11
+  - code: COMP3770/6770
+    title: Management of IT Systems and Projects
+    material: comp3770
+    link: material field
+    topics: []
+    shape: &id245
+      pdf: 1
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 4
+      week_span: null
+    signals: &id246
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 4
+  - code: COMP1000
+    title: Introduction to Computer Programming
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1010
+    title: Fundamentals of Computer Science
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1300
+    title: Introduction to Cyber Security
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2000
+    title: Object-Oriented Programming Practices
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2110
+    title: Web Technology
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2200
+    title: Data Science
+    material: COMP6200-aug-2025
+    link: material field
+    topics: []
+    shape: &id243
+      pdf: 7
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 0
+      total_content_files: 7
+      week_span:
+      - 1
+      - 4
+    signals: &id244
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 19
+  - code: COMP2250
+    title: Data Communications
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3010
+    title: Algorithm Theory and Design
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3100
+    title: Software Architecture and Design
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3420
+    title: Artificial Intelligence
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP6200
+    title: COMP6200
+    material: COMP6200-aug-2025
+    link: material field
+    topics: []
+    shape: *id243
+    signals: *id244
+    depth_score: 19
+  - code: COMP3770
+    title: Management of IT Systems and Projects
+    material: comp3770
+    link: material field
+    topics: []
+    shape: *id245
+    signals: *id246
+    depth_score: 4
+  topics: []
+  signals:
+    exam_prep_materials: false
+    assignment_lab_materials: false
+    weekly_lecture_arc: true
+  total_depth: 57
+  coverage_summary_en: Bilingual tutoring across 5 course(s) at this school. Lecture
+    catch-up. No ghostwriting — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。不代写、不代考。
 - slug: hkust
   university: The Hong Kong University of Science and Technology
   teaching_folder: hkust
@@ -5819,10 +5975,10 @@ universities:
     material: fin-ml
     link: material field
     topics:
-    - &id243
+    - &id247
       en: machine learning
       cn: 机器学习
-    - &id244
+    - &id248
       en: stats / probability
       cn: 统计 / 概率
     shape:
@@ -5973,19 +6129,17 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id243
-  - *id244
+  - *id247
+  - *id248
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 56
-  coverage_summary_en: 'Hands-on tutoring coverage across 3 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Typical
-    themes: machine learning, stats / probability. No ghostwriting — you submit your
-    own work.'
-  coverage_summary_cn: 基于已关联的 3 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。常见主题：机器学习、统计
-    / 概率。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Typical themes: machine learning, stats
+    / probability. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：机器学习、统计 / 概率。不代写、不代考。
 - slug: san-jose-state-university
   university: San Jose State University
   teaching_folder: sjsu
@@ -5998,13 +6152,13 @@ universities:
     material: data 201
     link: material field
     topics:
-    - &id245
+    - &id249
       en: databases
       cn: 数据库
-    - &id246
+    - &id250
       en: SQL / databases
       cn: SQL / 数据库
-    - &id247
+    - &id251
       en: assignments / labs
       cn: 作业 / Lab
     shape:
@@ -6023,190 +6177,19 @@ universities:
       weekly_lecture_arc: true
     depth_score: 55
   topics:
-  - *id245
-  - *id246
-  - *id247
+  - *id249
+  - *id250
+  - *id251
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 55
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: databases, SQL / databases, assignments / labs. No ghostwriting
-    — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、SQL
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: databases,
+    SQL / databases, assignments / labs. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、SQL
     / 数据库、作业 / Lab。不代写、不代考。
-- slug: macquarie
-  university: Macquarie University
-  teaching_folder: macquarie-university
-  hand_curated: true
-  course_count: 15
-  linked_course_count: 4
-  courses:
-  - code: COMP2200/COMP6200
-    title: Data Science
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP6010
-    title: Fundamentals of Computer Science
-    material: COMP6010
-    link: material field
-    topics: []
-    shape:
-      pdf: 5
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 5
-      week_span:
-      - 2
-      - 3
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 11
-  - code: COMP3770/6770
-    title: Management of IT Systems and Projects
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1000
-    title: Introduction to Computer Programming
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1010
-    title: Fundamentals of Computer Science
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1300
-    title: Introduction to Cyber Security
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2000
-    title: Object-Oriented Programming Practices
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2110
-    title: Web Technology
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2200
-    title: Data Science
-    material: COMP6200-aug-2025
-    link: material field
-    topics: []
-    shape: &id248
-      pdf: 7
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 7
-      week_span:
-      - 1
-      - 4
-    signals: &id249
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 19
-  - code: COMP2250
-    title: Data Communications
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3010
-    title: Algorithm Theory and Design
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3100
-    title: Software Architecture and Design
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3420
-    title: Artificial Intelligence
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP6200
-    title: COMP6200
-    material: COMP6200-aug-2025
-    link: material field
-    topics: []
-    shape: *id248
-    signals: *id249
-    depth_score: 19
-  - code: COMP3770
-    title: Management of IT Systems and Projects
-    material: comp3770
-    link: material field
-    topics: []
-    shape:
-      pdf: 1
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 2
-      total_content_files: 4
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 4
-  topics: []
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: false
-    weekly_lecture_arc: true
-  total_depth: 53
-  coverage_summary_en: Hands-on tutoring coverage across 4 course(s) with linked private
-    materials. Weekly lecture catch-up. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 4 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。不代写、不代考。
 - slug: ucl
   university: University College London
   teaching_folder: ucl
@@ -6355,7 +6338,7 @@ universities:
     material: Connected system资料
     link: material field
     topics:
-    - &id250
+    - &id252
       en: exam prep
       cn: 考前突击
     shape:
@@ -6374,16 +6357,16 @@ universities:
       weekly_lecture_arc: true
     depth_score: 49
   topics:
-  - *id250
+  - *id252
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 49
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Exam-prep drills. Typical themes:
-    exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。考前突击。常见主题：考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Exam-prep drills. Typical themes: exam prep. No ghostwriting — you submit
+    your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。考前突击。常见主题：考前突击。不代写、不代考。
 - slug: baruch-college
   university: Baruch College
   teaching_folder: baruch
@@ -6396,28 +6379,28 @@ universities:
     material: mfe-tech-interview
     link: material field
     topics:
-    - &id251
+    - &id253
       en: memory / pointers
       cn: 内存 / 指针
-    - &id252
+    - &id254
       en: OOP
       cn: 面向对象
-    - &id253
+    - &id255
       en: assignments / labs
       cn: 作业 / Lab
-    - &id254
+    - &id256
       en: Python
       cn: Python
-    - &id255
+    - &id257
       en: C++
       cn: C++
-    - &id256
+    - &id258
       en: C++ STL
       cn: C++ STL
-    - &id257
+    - &id259
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
-    - &id258
+    - &id260
       en: operating systems
       cn: 操作系统
     shape:
@@ -6434,25 +6417,24 @@ universities:
       weekly_lecture_arc: false
     depth_score: 47
   topics:
-  - *id251
-  - *id252
   - *id253
   - *id254
   - *id255
   - *id256
   - *id257
   - *id258
+  - *id259
+  - *id260
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: false
   total_depth: 47
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Assignment / lab debug sessions. Exam-prep drills. Typical
-    themes: memory / pointers, OOP, assignments / labs, Python. No ghostwriting —
-    you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。作业 / Lab 拆题与 debug。考前突击。常见主题：内存
-    / 指针、面向对象、作业 / Lab、Python。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
+    / lab debug sessions. Exam-prep drills. Typical themes: memory / pointers, OOP,
+    assignments / labs, Python. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。考前突击。常见主题：内存 / 指针、面向对象、作业
+    / Lab、Python。不代写、不代考。
 - slug: cuhk-shenzhen
   university: The Chinese University of Hong Kong, Shenzhen
   teaching_folder: cuhk-sz
@@ -6465,19 +6447,19 @@ universities:
     material: dda3020-machine-learning
     link: material field
     topics:
-    - &id259
+    - &id261
       en: machine learning
       cn: 机器学习
-    - &id260
+    - &id262
       en: stats / probability
       cn: 统计 / 概率
-    - &id261
+    - &id263
       en: networking
       cn: 计算机网络
-    - &id262
+    - &id264
       en: deep learning
       cn: 深度学习
-    - &id263
+    - &id265
       en: LLMs / NLP
       cn: 大模型 / NLP
     shape:
@@ -6496,21 +6478,20 @@ universities:
       weekly_lecture_arc: true
     depth_score: 40
   topics:
-  - *id259
-  - *id260
   - *id261
   - *id262
   - *id263
+  - *id264
+  - *id265
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 40
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Typical themes: machine learning,
-    stats / probability, networking, deep learning. No ghostwriting — you submit your
-    own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。常见主题：机器学习、统计 / 概率、计算机网络、深度学习。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Typical themes: machine learning, stats / probability, networking, deep
+    learning. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。常见主题：机器学习、统计 / 概率、计算机网络、深度学习。不代写、不代考。
 - slug: ucsb
   university: UCSB
   teaching_folder: ucsb
@@ -6523,10 +6504,10 @@ universities:
     material: compsc16
     link: material field
     topics:
-    - &id264
+    - &id266
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
-    - &id265
+    - &id267
       en: C++
       cn: C++
     shape:
@@ -6543,17 +6524,16 @@ universities:
       weekly_lecture_arc: false
     depth_score: 27
   topics:
-  - *id264
-  - *id265
+  - *id266
+  - *id267
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 27
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Typical themes: lists / stacks / queues, C++. No ghostwriting
-    — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。常见主题：链表 / 栈 / 队列、C++。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Typical
+    themes: lists / stacks / queues, C++. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。常见主题：链表 / 栈 / 队列、C++。不代写、不代考。
 - slug: city-university-of-macau
   university: City University of Macau
   teaching_folder: 澳门城市大学
@@ -6587,9 +6567,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 26
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. Weekly lecture catch-up. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. No ghostwriting — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。不代写、不代考。
 - slug: cornell-university
   university: Cornell University
   teaching_folder: cornell
@@ -6602,7 +6582,7 @@ universities:
     material: cs2110-java-test
     link: material field
     topics:
-    - &id266
+    - &id268
       en: Java
       cn: Java
     shape:
@@ -6625,7 +6605,7 @@ universities:
     material: database
     link: material field
     topics:
-    - &id267
+    - &id269
       en: databases
       cn: 数据库
     shape:
@@ -6642,17 +6622,17 @@ universities:
       weekly_lecture_arc: false
     depth_score: 6
   topics:
-  - *id266
-  - *id267
+  - *id268
+  - *id269
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 26
-  coverage_summary_en: 'Hands-on tutoring coverage across 2 course(s) with linked
-    private materials. Weekly lecture catch-up. Typical themes: Java, databases. No
-    ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。常见主题：Java、数据库。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Typical themes: Java, databases. No ghostwriting — you submit your own
+    work.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。常见主题：Java、数据库。不代写、不代考。
 - slug: leeds
   university: Leeds University
   teaching_folder: leeds-university
@@ -6665,10 +6645,10 @@ universities:
     material: lubs3185
     link: material field
     topics:
-    - &id268
+    - &id270
       en: exam prep
       cn: 考前突击
-    - &id269
+    - &id271
       en: web front-end
       cn: 前端
     shape:
@@ -6751,18 +6731,17 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id268
-  - *id269
+  - *id270
+  - *id271
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 23
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. Typical themes: exam prep, web front-end. No ghostwriting — you submit
-    your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、前端。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, web front-end. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、前端。不代写、不代考。
 - slug: unc-chapel-hill
   university: University of North Carolina at Chapel Hill
   teaching_folder: unc-chapel-hill
@@ -6775,16 +6754,16 @@ universities:
     material: APPL 101-Exploring Engineering
     link: material field
     topics:
-    - &id270
+    - &id272
       en: OOP
       cn: 面向对象
-    - &id271
+    - &id273
       en: algorithms
       cn: 算法
-    - &id272
+    - &id274
       en: assignments / labs
       cn: 作业 / Lab
-    - &id273
+    - &id275
       en: APIs / HTTP
       cn: API / HTTP
     shape:
@@ -6801,20 +6780,20 @@ universities:
       weekly_lecture_arc: false
     depth_score: 23
   topics:
-  - *id270
-  - *id271
   - *id272
   - *id273
+  - *id274
+  - *id275
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
     weekly_lecture_arc: false
   total_depth: 23
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Assignment / lab debug sessions. Typical themes: OOP, algorithms,
-    assignments / labs, APIs / HTTP. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。作业 / Lab 拆题与 debug。常见主题：面向对象、算法、作业
-    / Lab、API / HTTP。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
+    / lab debug sessions. Typical themes: OOP, algorithms, assignments / labs, APIs
+    / HTTP. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。常见主题：面向对象、算法、作业 / Lab、API
+    / HTTP。不代写、不代考。
 - slug: university-of-edinburgh
   university: University of Edinburgh
   teaching_folder: u-edinburgh
@@ -6928,10 +6907,10 @@ universities:
     assignment_lab_materials: true
     weekly_lecture_arc: true
   total_depth: 23
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. Weekly lecture catch-up. Assignment / lab debug sessions. Exam-prep
-    drills. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。作业 / Lab 拆题与 debug。考前突击。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. No ghostwriting —
+    you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。不代写、不代考。
 - slug: psb-academy
   university: PSB Academy
   teaching_folder: psb-academy
@@ -6944,13 +6923,13 @@ universities:
     material: Introduction to Programming
     link: material field
     topics:
-    - &id274
+    - &id276
       en: data structures
       cn: 数据结构
-    - &id275
+    - &id277
       en: assignments / labs
       cn: 作业 / Lab
-    - &id276
+    - &id278
       en: OOP
       cn: 面向对象
     shape:
@@ -6967,19 +6946,18 @@ universities:
       weekly_lecture_arc: false
     depth_score: 17
   topics:
-  - *id274
-  - *id275
   - *id276
+  - *id277
+  - *id278
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
     weekly_lecture_arc: false
   total_depth: 17
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Assignment / lab debug sessions. Typical themes: data structures,
-    assignments / labs, OOP. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。作业 / Lab 拆题与 debug。常见主题：数据结构、作业
-    / Lab、面向对象。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
+    / lab debug sessions. Typical themes: data structures, assignments / labs, OOP.
+    No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。常见主题：数据结构、作业 / Lab、面向对象。不代写、不代考。
 - slug: south-australia
   university: University of South Australia
   teaching_folder: u-south-australia
@@ -6992,7 +6970,7 @@ universities:
     material: prob solving and programming
     link: material field
     topics:
-    - &id277
+    - &id279
       en: exam prep
       cn: 考前突击
     shape:
@@ -7019,16 +6997,16 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id277
+  - *id279
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 17
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Exam-prep drills. Typical themes:
-    exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。考前突击。常见主题：考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Exam-prep drills. Typical themes: exam prep. No ghostwriting — you submit
+    your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。考前突击。常见主题：考前突击。不代写、不代考。
 - slug: rensselaer
   university: Rensselaer Polytechnic Institute
   teaching_folder: rensselaer
@@ -7041,7 +7019,7 @@ universities:
     material: csci4850-modern-binary-exploitation
     link: material field
     topics:
-    - &id278
+    - &id280
       en: memory / pointers
       cn: 内存 / 指针
     shape:
@@ -7060,16 +7038,16 @@ universities:
       weekly_lecture_arc: true
     depth_score: 16
   topics:
-  - *id278
+  - *id280
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 16
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Typical themes: memory / pointers.
-    No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。常见主题：内存 / 指针。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Typical themes: memory / pointers. No ghostwriting — you submit your
+    own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。常见主题：内存 / 指针。不代写、不代考。
 - slug: western-university
   university: Western University
   teaching_folder: western-university
@@ -7082,7 +7060,7 @@ universities:
     material: ds1000b-data-science-concepts
     link: material field
     topics:
-    - &id279
+    - &id281
       en: exam prep
       cn: 考前突击
     shape:
@@ -7099,16 +7077,16 @@ universities:
       weekly_lecture_arc: false
     depth_score: 16
   topics:
-  - *id279
+  - *id281
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: false
   total_depth: 16
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Assignment / lab debug sessions. Exam-prep drills. Typical
-    themes: exam prep. No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
+    / lab debug sessions. Exam-prep drills. Typical themes: exam prep. No ghostwriting
+    — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击。不代写、不代考。
 - slug: sim
   university: Singapore Institute of Management
   teaching_folder: sim
@@ -7140,9 +7118,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 8
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: beijing-normal-university
   university: Beijing Normal University
   teaching_folder: 北师大
@@ -7174,9 +7152,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 6
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: polyu
   university: Hong Kong Polytechnic University
   teaching_folder: hk-polytech
@@ -7280,9 +7258,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 6
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: bayes-business-school
   university: Bayes Business School
   teaching_folder: bayes-business-school
@@ -7295,7 +7273,7 @@ universities:
     material: intro-to-r
     link: material field
     topics:
-    - &id280
+    - &id282
       en: web front-end
       cn: 前端
     shape:
@@ -7312,16 +7290,15 @@ universities:
       weekly_lecture_arc: false
     depth_score: 5
   topics:
-  - *id280
+  - *id282
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 5
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Typical themes: web front-end. No ghostwriting — you submit
-    your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。常见主题：前端。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Typical
+    themes: web front-end. No ghostwriting — you submit your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。常见主题：前端。不代写、不代考。
 - slug: northeastern-university
   university: Northeastern University
   teaching_folder: north-eastern
@@ -7417,9 +7394,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 5
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: oregon-state-university
   university: Oregon State University
   teaching_folder: oregon-state
@@ -7432,7 +7409,7 @@ universities:
     material: computer-architecture
     link: material field
     topics:
-    - &id281
+    - &id283
       en: computer architecture
       cn: 计算机体系结构
     shape:
@@ -7451,16 +7428,16 @@ universities:
       weekly_lecture_arc: true
     depth_score: 5
   topics:
-  - *id281
+  - *id283
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
   total_depth: 5
-  coverage_summary_en: 'Hands-on tutoring coverage across 1 course(s) with linked
-    private materials. Weekly lecture catch-up. Typical themes: computer architecture.
-    No ghostwriting — you submit your own work.'
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。可跟周进度同步答疑。常见主题：计算机体系结构。不代写、不代考。
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Typical themes: computer architecture. No ghostwriting — you submit
+    your own work.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。常见主题：计算机体系结构。不代写、不代考。
 - slug: beijing-normal-hongkong-baptist-university
   university: Beijing Normal-Hongkong Baptist University
   teaching_folder: beijing-normal-hk-baptist-u
@@ -7492,9 +7469,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 3
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: cardiff
   university: Cardiff University
   teaching_folder: cardiff
@@ -7550,9 +7527,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 3
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: durham-university
   university: Durham University
   teaching_folder: durham-university
@@ -7584,9 +7561,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 3
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: duke-kunshan-university
   university: Duke Kunshan University
   teaching_folder: duke-kunshan-u
@@ -7618,9 +7595,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 2
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: brunel-university-of-london
   university: Brunel University of London
   teaching_folder: brunel-university-of-london
@@ -7647,9 +7624,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 1
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: anu
   university: Australian National University
   teaching_folder: ''
@@ -7759,9 +7736,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 12 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 12 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 12 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 12 门相关课程。不代写、不代考。
 - slug: auckland
   university: University of Auckland
   teaching_folder: ''
@@ -7791,9 +7768,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 2 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 2 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 2 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。不代写、不代考。
 - slug: city-university-of-hong-kong
   university: City University of Hong Kong
   teaching_folder: ''
@@ -7887,9 +7864,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 10 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 10 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 10 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 10 门相关课程。不代写、不代考。
 - slug: eynesbury-college
   university: Eynesbury College
   teaching_folder: ''
@@ -7911,9 +7888,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: georgia-tech
   university: Georgia Institute of Technology
   teaching_folder: ''
@@ -7999,9 +7976,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 9 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 9 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。不代写、不代考。
 - slug: john-hopkins
   university: Johns Hopkins University
   teaching_folder: johnhopkins
@@ -8087,9 +8064,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 9 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 9 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。不代写、不代考。
 - slug: kings-college-london
   university: King's College London
   teaching_folder: kings-college-london
@@ -8183,9 +8160,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 10 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 10 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 10 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 10 门相关课程。不代写、不代考。
 - slug: mcgill
   university: McGill University
   teaching_folder: ''
@@ -8271,9 +8248,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 9 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 9 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。不代写、不代考。
 - slug: must
   university: Macau University of Science and Technology
   teaching_folder: 澳门科技大学
@@ -8295,9 +8272,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: nyu
   university: New York University
   teaching_folder: ''
@@ -8367,9 +8344,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 7 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 7 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 7 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 7 门相关课程。不代写、不代考。
 - slug: ohio-state-university
   university: Ohio State University
   teaching_folder: ''
@@ -8391,9 +8368,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: queen-mary
   university: Queen Mary University of London
   teaching_folder: ''
@@ -8471,9 +8448,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 8 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 8 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 8 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 8 门相关课程。不代写、不代考。
 - slug: rmit
   university: RMIT University
   teaching_folder: ''
@@ -8559,9 +8536,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 9 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 9 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。不代写、不代考。
 - slug: rochester
   university: University of Rochester
   teaching_folder: ''
@@ -8583,9 +8560,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 1 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 1 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。不代写、不代考。
 - slug: smu
   university: Singapore Management University
   teaching_folder: ''
@@ -8655,9 +8632,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 7 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 7 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 7 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 7 门相关课程。不代写、不代考。
 - slug: stanford
   university: Stanford University
   teaching_folder: ''
@@ -8751,9 +8728,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 10 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 10 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 10 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 10 门相关课程。不代写、不代考。
 - slug: ubc
   university: University of British Columbia
   teaching_folder: ''
@@ -8847,9 +8824,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 10 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 10 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 10 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 10 门相关课程。不代写、不代考。
 - slug: uc-irvine
   university: UC Irvine
   teaching_folder: ''
@@ -8935,9 +8912,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 9 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 9 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。不代写、不代考。
 - slug: ucla
   university: UCLA
   teaching_folder: ''
@@ -9023,9 +9000,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 9 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 9 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。不代写、不代考。
 - slug: umich
   university: University of Michigan
   teaching_folder: ''
@@ -9103,9 +9080,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 8 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 8 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 8 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 8 门相关课程。不代写、不代考。
 - slug: university-of-alberta
   university: University of Alberta
   teaching_folder: ''
@@ -9183,9 +9160,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 8 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 8 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 8 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 8 门相关课程。不代写、不代考。
 - slug: university-of-manchester
   university: University of Manchester
   teaching_folder: u-manchester
@@ -9287,9 +9264,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 11 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 11 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 11 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 11 门相关课程。不代写、不代考。
 - slug: university-of-toronto
   university: University of Toronto
   teaching_folder: ''
@@ -9407,9 +9384,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 13 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 13 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 13 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 13 门相关课程。不代写、不代考。
 - slug: university-of-warwick
   university: University of Warwick
   teaching_folder: u-warwick
@@ -9511,9 +9488,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 11 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 11 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 11 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 11 门相关课程。不代写、不代考。
 - slug: university-of-washington
   university: University of Washington
   teaching_folder: ''
@@ -9599,9 +9576,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 9 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 9 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 9 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 9 门相关课程。不代写、不代考。
 - slug: university-of-western-australia
   university: University of Western Australia
   teaching_folder: u-western-australia
@@ -9703,9 +9680,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 11 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 11 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 11 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 11 门相关课程。不代写、不代考。
 - slug: ut-austin
   university: University of Texas at Austin
   teaching_folder: ''
@@ -9775,9 +9752,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 7 course(s) with linked private
-    materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 7 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 7 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 7 门相关课程。不代写、不代考。
 - slug: waterloo
   university: University of Waterloo
   teaching_folder: ''
@@ -9871,9 +9848,9 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 10 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 10 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 10 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 10 门相关课程。不代写、不代考。
 - slug: wollongong
   university: University of Wollongong
   teaching_folder: ''
@@ -9967,6 +9944,6 @@ universities:
     assignment_lab_materials: false
     weekly_lecture_arc: false
   total_depth: 0
-  coverage_summary_en: Hands-on tutoring coverage across 10 course(s) with linked
-    private materials. No ghostwriting — you submit your own work.
-  coverage_summary_cn: 基于已关联的 10 门课私有资料整理（资料本身不公开）。不代写、不代考。
+  coverage_summary_en: Bilingual tutoring across 10 course(s) at this school. No ghostwriting
+    — you submit your own work.
+  coverage_summary_cn: 本校可辅导约 10 门相关课程。不代写、不代考。

@@ -69,15 +69,6 @@ layout: default
         <a href="/teach/courses/{{ page.uni_slug }}/{{ course.slug }}/">
           {% if course.code != "" %}<strong>{{ course.code }}</strong>: {% endif %}{{ course.title }}
         </a>
-        {% if course.linked %}
-        <span class="teach-link-badge teach-link-badge--on"
-              data-en="materials linked"
-              data-cn="已关联资料">已关联资料</span>
-        {% else %}
-        <span class="teach-link-badge teach-link-badge--off"
-              data-en="meta only"
-              data-cn="仅目录">仅目录</span>
-        {% endif %}
         {% if course.department != "" %}
         <span class="teach-dept">{{ course.department }}</span>
         {% endif %}
