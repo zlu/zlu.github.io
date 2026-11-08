@@ -20,4 +20,7 @@ courses:
     title: Introduction to Machine Learning
   - code: 10-701
     title: Introduction to Machine Learning (PhD)
+  - code: 07-120
+    title: Introduction to Software Construction
+    material: 07-120-intro-to-software-construction
 ---
