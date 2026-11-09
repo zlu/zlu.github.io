@@ -90,7 +90,7 @@ data-science:
     on wrangling, EDA judgement, and turning notebook chaos into a story the marker can follow.
   lead_cn: >-
     数据科学课更看重干净的流水线，而不是花哨模型。课上重点是清洗与 EDA 判断力，
-    以及把凌乱 notebook 收成改卷人能跟上的叙事。
+    以及把凌乱 notebook 转化成改卷人能跟上的叙事。
   topics:
     - en: Pandas / dplyr style transforms and joins
       cn: Pandas / dplyr 风格的变换与 join

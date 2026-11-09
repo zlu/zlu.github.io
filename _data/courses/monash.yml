@@ -47,7 +47,7 @@ courses:
         cn: 会抄 workshop 演示，但分不清哪一行才是关键逻辑
     session_angles:
       - en: "Translate the brief into a short checklist before typing code"
-        cn: "写代码前先把 brief 收成短清单"
+        cn: "写代码前先把 brief 转化成短清单"
       - en: "You drive the IDE; we chase the failing case together"
         cn: "你来操作 IDE，我们一起追失败测例"
       - en: "Exam / quiz drills on the same patterns workshops use"
@@ -157,7 +157,7 @@ courses:
         cn: "图做出来了，报告却说不清为何选这个模型"
     session_angles:
       - en: "Rebuild each method as: input table → transform → what to report"
-        cn: "每个方法都收成：输入表 → 变换 → 要报告什么"
+        cn: "每个方法都转化成：输入表 → 变换 → 要报告什么"
       - en: "Bilingual symbol glossary for the week’s Greek letters and terms"
         cn: "用中英对照本周希腊字母与术语"
       - en: "Exercise drills that force interpretation, not only computation"
@@ -239,7 +239,7 @@ courses:
       mental model, or when code works but the design story fails the rubric.
     overview_cn: >-
       Object Oriented Design and Implementation 强调用对象建模、落地实现，并用图与设计术语
-      讲清结构。卡点常在英文设计黑话跑在前面，或代码能跑但设计叙事过不了评分。
+      讲清结构。卡点常在英文设计技术用语跑在前面，或代码能跑但设计叙事过不了评分。
     topics:
       - en: "Objects, responsibilities, and collaboration"
         cn: "对象、职责与协作"
@@ -279,7 +279,7 @@ courses:
       FIT3152 mixes analytics tools with English statistical storytelling. The hard part
       is turning a brief into a justified analysis — not producing charts that look busy.
     lead_cn: >-
-      FIT3152 把分析工具和英文统计叙事绑在一起。难的是把 brief 收成站得住脚的分析，
+      FIT3152 把分析工具和英文统计叙事绑在一起。难的是把 brief 转化成站得住脚的分析，
       而不是做出看起来很忙的图。
     overview_en: >-
       Data Analytics covers exploratory analysis, modelling choices, and communicating

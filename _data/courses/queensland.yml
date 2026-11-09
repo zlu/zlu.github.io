@@ -67,7 +67,7 @@ courses:
         cn: 考前突击：限时对比方法、解读评估输出。
     code: INFS7203
     lead_cn: INFS7203 把大量挖掘方法塞进英文课与 tutorial：分类、聚类、关联规则、异常检测、文本 / Web
-      挖掘。难的是判断哪一种方法适合问题，并用不太黑话的方式说清。
+      挖掘。难的是判断哪一种方法适合问题，并用不太技术用语的方式说清。
     overview_en: Data Mining walks through classic supervised and unsupervised
       techniques with lecture slides and tutorial drills. Students struggle when
       English method names blur together, when evaluation metrics feel abstract,

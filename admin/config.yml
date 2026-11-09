@@ -166,6 +166,9 @@ collections:
       - label: "Courses"
         name: "courses"
         widget: "list"
+        summary: "{{code}} — {{title}}"
+        collapsed: true
+        hint: "Sorted by course code on save. Duplicate codes are blocked."
         fields:
           - {
               label: "Course Code",

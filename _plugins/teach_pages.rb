@@ -391,7 +391,7 @@ module Jekyll
       },
       "machine-learning" => {
         "en" => "English math+code lectures, loss jargon, and notebooks that fail on shape mismatches",
-        "cn" => "英文数理+代码课、损失相关黑话，以及维度一错就挂的 notebook"
+        "cn" => "英文数理+代码课、损失相关技术用语，以及维度一错就挂的 notebook"
       },
       "data-science" => {
         "en" => "English briefs, messy tables, and write-ups that must defend every plot",
@@ -407,7 +407,7 @@ module Jekyll
       },
       "databases" => {
         "en" => "English schema / query jargon and assignments where one wrong join wrecks results",
-        "cn" => "英文 schema / 查询黑话，以及一个 join 写错结果全歪的作业"
+        "cn" => "英文 schema / 查询技术用语，以及一个 join 写错结果全歪的作业"
       },
       "math-for-cs" => {
         "en" => "English proofs, symbol-heavy slides, and abstractions without a picture",
