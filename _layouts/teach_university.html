@@ -11,67 +11,40 @@ layout: default
     <a href="/teach/{{ page.region }}/">{{ page.region_cn }}</a>
     {% endif %}
     <span>/</span>
-    <span>{{ page.university }}</span>
+    <span data-en="{{ page.university_label_en }}"
+          data-cn="{{ page.university_label_cn }}">{{ page.university_label_cn }}</span>
   </nav>
 
   <header class="teach-landing-header">
     <p class="teach-hero-eyebrow"
        data-en="Bilingual CS tutoring · {{ page.region_en }}"
        data-cn="中英双语 CS 辅导 · {{ page.region_cn }}">中英双语 CS 辅导 · {{ page.region_cn }}</p>
-    <h1 data-en="{{ page.university }} computer science tutoring"
-        data-cn="{{ page.university }} 计算机一对一辅导">{{ page.university }} 计算机一对一辅导</h1>
-    <p class="teach-landing-lead"
-       data-en="{% if page.coverage_summary_en != '' %}{{ page.coverage_summary_en }}{% else %}Help with AI, data science, and programming coursework at {{ page.university }} — explain, debug, review. No ghostwriting.{% endif %}"
-       data-cn="{% if page.coverage_summary_cn != '' %}{{ page.coverage_summary_cn }}{% else %}针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。{% endif %}">{% if page.coverage_summary_cn != "" %}{{ page.coverage_summary_cn }}{% else %}针对 {{ page.university }} 的人工智能、数据科学与编程课业：讲思路、带调试、做复习。不代写、不代考。{% endif %}</p>
+    <h1 data-en="{{ page.university_label_en }} computer science tutoring"
+        data-cn="{{ page.university_label_cn }} 计算机一对一辅导">{{ page.university_label_cn }} 计算机一对一辅导</h1>
     <div class="teach-hero-actions">
       <a class="btn btn-primary" href="/teach/#teach-book-qr"
          data-en="Book via WeChat on teach page"
          data-cn="回辅导页微信预约">回辅导页微信预约</a>
-      <a class="btn btn-outline-primary" href="mailto:hello@zlu.me?subject={{ page.university | url_encode }}%20tutoring"
-         data-en="Email about {{ page.university }}"
-         data-cn="邮件咨询 {{ page.university }}">邮件咨询 {{ page.university }}</a>
+      <a class="btn btn-outline-primary" href="mailto:hello@zlu.me?subject={{ page.university_label_en | url_encode }}%20tutoring"
+         data-en="Email about {{ page.university_label_en }}"
+         data-cn="邮件咨询 {{ page.university_label_cn }}">邮件咨询 {{ page.university_label_cn }}</a>
     </div>
   </header>
-
-  <section class="teach-landing-section">
-    <h2 data-en="Tutoring types"
-        data-cn="辅导类型">辅导类型</h2>
-    <div class="teach-region-links">
-      <a href="/teach/universities/{{ page.uni_slug }}/sync/" data-en="Course sync" data-cn="同步课程辅导">同步课程辅导</a>
-      <a href="/teach/universities/{{ page.uni_slug }}/assignment/" data-en="Assignment help" data-cn="作业辅导">作业辅导</a>
-      <a href="/teach/universities/{{ page.uni_slug }}/exam/" data-en="Exam prep" data-cn="考前突击">考前突击</a>
-      <a href="/teach/universities/{{ page.uni_slug }}/preview/" data-en="Course preview" data-cn="课程预习">课程预习</a>
-    </div>
-  </section>
-
-  {% include teach-evidence.html %}
-
-  <section class="teach-landing-section">
-    <h2 data-en="Common struggles at this university"
-        data-cn="该校留学生常见痛点">该校留学生常见痛点</h2>
-    <ul class="teach-proof">
-      <li data-en="English lectures move fast; terminology is dense"
-          data-cn="英文课节奏快，术语密集，课后难以及时消化">英文课节奏快，术语密集，课后难以及时消化</li>
-      <li data-en="Assignments stack with labs, quizzes, and projects"
-          data-cn="作业、Lab、Quiz、Project 叠在一起，DDL 压力大">作业、Lab、Quiz、Project 叠在一起，DDL 压力大</li>
-      <li data-en="AI / ML math + coding both required"
-          data-cn="AI / 机器学习既要数学推导又要代码实现">AI / 机器学习既要数学推导又要代码实现</li>
-    </ul>
-  </section>
 
   <section class="teach-landing-section">
     <h2 data-en="Courses I support"
         data-cn="可辅导课程">可辅导课程</h2>
     {% if page.courses and page.courses.size > 0 %}
-    <ul class="teach-course-links">
+    <p class="teach-section-note"
+       data-en="{{ page.courses.size }} courses, A–Z by code. Open a course for the approach; WeChat me if yours is missing."
+       data-cn="共 {{ page.courses.size }} 门，按课号字母序。点进课号看怎么上；目录没有的也可微信问。">共 {{ page.courses.size }} 门，按课号字母序。点进课号看怎么上；目录没有的也可微信问。</p>
+    <ul class="teach-course-links teach-course-links--grid">
       {% for course in page.courses %}
       <li>
         <a href="/teach/courses/{{ page.uni_slug }}/{{ course.slug }}/">
-          {% if course.code != "" %}<strong>{{ course.code }}</strong>{% endif %}{% if course.aliases and course.aliases.size > 0 %} <span class="teach-aliases">({% for a in course.aliases %}{{ a }}{% unless forloop.last %} / {% endunless %}{% endfor %})</span>{% endif %}{% if course.code != "" or course.aliases.size > 0 %}: {% endif %}{{ course.title }}
+          {% if course.code != "" %}<strong class="teach-course-code">{{ course.code }}</strong>{% endif %}{% if course.aliases and course.aliases.size > 0 %} <span class="teach-aliases">({% for a in course.aliases %}{{ a }}{% unless forloop.last %} / {% endunless %}{% endfor %})</span>{% endif %}
+          <span class="teach-course-title">{{ course.title }}</span>
         </a>
-        {% if course.department != "" %}
-        <span class="teach-dept">{{ course.department }}</span>
-        {% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -105,12 +78,18 @@ layout: default
 {
   "@context": "https://schema.org",
   "@type": "Course",
-  "name": {{ page.university | append: " Computer Science Tutoring" | jsonify }},
+  "name": {{ page.university_label_en | append: " Computer Science Tutoring" | jsonify }},
+  "alternateName": {{ page.university_label_cn | append: " 计算机辅导" | jsonify }},
   "description": {{ page.description | jsonify }},
   "provider": {
     "@type": "Person",
     "name": "Zhao Lü",
     "url": "https://zlu.me/teach/"
+  },
+  "about": {
+    "@type": "CollegeOrUniversity",
+    "name": {{ page.university | jsonify }}{% if page.uni_abbr != "" or page.uni_name_cn != "" %},
+    "alternateName": [{% if page.uni_abbr != "" %}{{ page.uni_abbr | jsonify }}{% endif %}{% if page.uni_abbr != "" and page.uni_name_cn != "" %}, {% endif %}{% if page.uni_name_cn != "" %}{{ page.uni_name_cn | jsonify }}{% endif %}]{% endif %}
   },
   "url": {{ page.url | absolute_url | jsonify }},
   "inLanguage": ["en", "zh-CN"]

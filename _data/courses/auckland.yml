@@ -1,5 +1,7 @@
 ---
 university: University of Auckland
+abbr: Auckland
+name_cn: "奥克兰大学"
 courses:
   - code: STATS 220
     title: Data Technologies

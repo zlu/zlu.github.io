@@ -1,5 +1,7 @@
 ---
 university: The Hong Kong University of Science and Technology
+abbr: HKUST
+name_cn: "香港科技大学"
 teaching_folder: hkust
 courses:
 - title: Fin Ml

@@ -1,5 +1,7 @@
 ---
 university: University of Southampton
+abbr: Southampton
+name_cn: "南安普顿大学"
 teaching_folder: u-southampton
 courses:
 - code: COMP1202

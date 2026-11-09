@@ -1,5 +1,7 @@
 ---
 university: Concordia University
+abbr: Concordia
+name_cn: "康考迪亚大学"
 teaching_folder: concordia
 courses:
 - code: COMP 248

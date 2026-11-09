@@ -1,5 +1,7 @@
 ---
 university: RMIT University
+abbr: RMIT
+name_cn: "皇家墨尔本理工大学"
 courses:
   - code: COSC1076
     title: Advanced Programming Techniques

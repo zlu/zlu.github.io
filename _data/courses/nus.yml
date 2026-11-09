@@ -1,5 +1,7 @@
 ---
 university: National University of Singapore
+abbr: NUS
+name_cn: "新加坡国立大学"
 teaching_folder: nus
 courses:
 - code: CS1010E

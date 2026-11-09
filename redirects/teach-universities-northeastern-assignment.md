@@ -1,6 +1,6 @@
 ---
 layout: redirect
 permalink: /teach/universities/northeastern/assignment/
-redirect_to: /teach/universities/northeastern-university/assignment/
+redirect_to: /teach/universities/northeastern-university/
 sitemap: false
 ---

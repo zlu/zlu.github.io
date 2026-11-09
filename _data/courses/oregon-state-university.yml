@@ -1,5 +1,7 @@
 ---
 university: Oregon State University
+abbr: Oregon State
+name_cn: "俄勒冈州立大学"
 teaching_folder: oregon-state
 courses:
 - title: Computer Architecture

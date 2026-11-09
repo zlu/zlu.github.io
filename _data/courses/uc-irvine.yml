@@ -1,5 +1,7 @@
 ---
-university: UC Irvine
+university: "University of California, Irvine"
+abbr: UC Irvine
+name_cn: "加州大学欧文分校"
 courses:
   - code: "I&C SCI 31"
     title: Introduction to Programming

@@ -1,5 +1,7 @@
 ---
 university: McGill University
+abbr: McGill
+name_cn: "麦吉尔大学"
 courses:
   - code: COMP 202
     title: Foundations of Programming

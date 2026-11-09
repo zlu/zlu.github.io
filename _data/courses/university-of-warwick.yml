@@ -1,5 +1,7 @@
 ---
 university: University of Warwick
+abbr: Warwick
+name_cn: "华威大学"
 teaching_folder: u-warwick
 courses:
 - code: BDAO-2AFT

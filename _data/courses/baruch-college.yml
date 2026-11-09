@@ -1,5 +1,7 @@
 ---
 university: Baruch College
+abbr: Baruch
+name_cn: "巴鲁克学院"
 teaching_folder: baruch
 courses:
 - title: Mfe Tech Interview

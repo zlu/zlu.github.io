@@ -1,5 +1,7 @@
 ---
 university: University of Sydney
+abbr: Sydney
+name_cn: "悉尼大学"
 teaching_folder: u-sydney
 courses:
 - code: COMP3221

@@ -1,5 +1,7 @@
 ---
 university: Western University
+abbr: Western
+name_cn: "西安大略大学"
 teaching_folder: western-university
 courses:
   - title: Data Science Concepts

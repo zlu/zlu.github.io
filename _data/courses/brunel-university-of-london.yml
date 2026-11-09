@@ -1,5 +1,7 @@
 ---
 university: Brunel University of London
+abbr: Brunel
+name_cn: "布鲁内尔大学"
 teaching_folder: brunel-university-of-london
 courses:
   - code: MA2624

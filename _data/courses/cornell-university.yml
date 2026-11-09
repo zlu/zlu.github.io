@@ -1,5 +1,7 @@
 ---
 university: Cornell University
+abbr: Cornell
+name_cn: "康奈尔大学"
 teaching_folder: cornell
 courses:
 - code: CS2110

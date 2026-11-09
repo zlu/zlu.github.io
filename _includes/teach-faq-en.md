@@ -25,7 +25,3 @@ Yes — topic discussion, outline, experiment design, figures, and structure. I 
 **What should I send before the first lesson?**
 
 School, course code, deadline, plus the brief / code / errors / slide screenshots. Better materials = a more useful first hour.
-
-**Is there free material before booking?**
-
-Yes. Open lessons on [Matheion](https://matheion.zlu.me/learn/) cover Introductory Python, Java foundations, SQL, and Intro to Web — free on the web. Book tutoring when you need help with your university course.

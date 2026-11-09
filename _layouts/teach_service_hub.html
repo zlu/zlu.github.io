@@ -61,13 +61,14 @@ layout: default
     <h2 data-en="Universities with course pages"
         data-cn="已整理课号的大学">已整理课号的大学</h2>
     <p class="teach-directory-lead"
-       data-en="Open a school for {{ page.service_en }}, or browse the full <a href='/teach/universities/'>directory</a> and message WeChat with school + course code."
-       data-cn="点进学校看「{{ page.service_cn }}」页；完整名单见 <a href='/teach/universities/'>大学目录</a>。微信发送学校 + 课号即可。">点进学校看「{{ page.service_cn }}」页；完整名单见 <a href="/teach/universities/">大学目录</a>。微信发送学校 + 课号即可。</p>
+       data-en="Open a school for its course list and tutoring approach, or browse the full <a href='/teach/universities/'>directory</a>. Message WeChat with school + course code."
+       data-cn="点进学校看课号与辅导方式；完整名单见 <a href='/teach/universities/'>大学目录</a>。微信发送学校 + 课号即可。">点进学校看课号与辅导方式；完整名单见 <a href="/teach/universities/">大学目录</a>。微信发送学校 + 课号即可。</p>
     <ul class="teach-uni-index">
       {% for uni in page.universities %}
       <li>
-        <a href="/teach/universities/{{ uni.slug }}/{{ page.service_key }}/">
-          <strong>{{ uni.name }}</strong>
+        <a href="/teach/universities/{{ uni.slug }}/">
+          <strong data-en="{{ uni.label_en | default: uni.name }}"
+                  data-cn="{{ uni.label_cn | default: uni.name }}">{{ uni.label_cn | default: uni.name }}</strong>
           <span> · {{ page.service_cn }}</span>
         </a>
         {% if uni.courses.size > 0 %}

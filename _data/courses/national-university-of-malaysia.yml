@@ -1,5 +1,7 @@
 ---
 university: National University of Malaysia
+abbr: UKM
+name_cn: "马来西亚国立大学"
 teaching_folder: national-university-of-malaysia
 courses:
   - code: STQD6114

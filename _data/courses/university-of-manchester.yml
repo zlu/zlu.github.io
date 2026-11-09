@@ -1,5 +1,7 @@
 ---
 university: University of Manchester
+abbr: Manchester
+name_cn: "曼彻斯特大学"
 teaching_folder: u-manchester
 courses:
 - code: COMP11120

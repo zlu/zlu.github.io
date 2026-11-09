@@ -1,5 +1,7 @@
 ---
 university: Singapore Institute of Management
+abbr: SIM
+name_cn: "新加坡管理学院"
 teaching_folder: sim
 courses:
 - title: Itsd010 Computing And Cybersecurity Fundamentals

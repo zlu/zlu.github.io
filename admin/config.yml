@@ -155,7 +155,26 @@ collections:
     format: "yaml-frontmatter"
     extension: ".yml"
     fields:
-      - { label: "University Name", name: "university", widget: "string" }
+      - {
+          label: "University (English)",
+          name: "university",
+          widget: "string",
+          hint: "Full English / legal name. Example: University of California, Santa Barbara",
+        }
+      - {
+          label: "Abbreviation",
+          name: "abbr",
+          widget: "string",
+          required: false,
+          hint: "Common short form students search. Example: UCSB, LMU, HKUST",
+        }
+      - {
+          label: "Chinese name",
+          name: "name_cn",
+          widget: "string",
+          required: false,
+          hint: "Common Chinese name. Example: 加州大学圣塔芭芭拉分校",
+        }
       - {
           label: "Teaching folder",
           name: "teaching_folder",

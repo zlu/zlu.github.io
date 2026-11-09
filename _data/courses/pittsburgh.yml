@@ -1,5 +1,7 @@
 ---
 university: University of Pittsburgh
+abbr: Pitt
+name_cn: "匹兹堡大学"
 teaching_folder: u-pittsburg
 courses:
 - code: CS 0445

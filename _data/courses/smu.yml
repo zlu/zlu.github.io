@@ -1,5 +1,7 @@
 ---
 university: Singapore Management University
+abbr: SMU
+name_cn: "新加坡管理大学"
 courses:
   - code: IS111
     title: Introduction to Programming

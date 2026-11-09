@@ -1,5 +1,7 @@
 ---
 university: Carnegie Mellon University
+abbr: CMU
+name_cn: "卡内基梅隆大学"
 teaching_folder: cmu
 courses:
   - code: 15-112

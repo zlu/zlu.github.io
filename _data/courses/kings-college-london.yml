@@ -1,5 +1,7 @@
 ---
-university: King's College London
+university: "King's College London"
+abbr: KCL
+name_cn: "伦敦国王学院"
 teaching_folder: kings-college-london
 courses:
 - code: 4CCS1FC1

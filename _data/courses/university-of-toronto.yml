@@ -1,5 +1,7 @@
 ---
 university: University of Toronto
+abbr: UofT
+name_cn: "多伦多大学"
 courses:
   - code: CSC108H1
     title: Introduction to Computer Programming

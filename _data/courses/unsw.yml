@@ -1,5 +1,7 @@
 ---
-university: UNSW Sydney
+university: University of New South Wales
+abbr: UNSW
+name_cn: "新南威尔士大学"
 teaching_folder: unsw-sydney
 courses:
 - code: INFS1701

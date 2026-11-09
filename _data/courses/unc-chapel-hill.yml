@@ -1,5 +1,7 @@
 ---
 university: University of North Carolina at Chapel Hill
+abbr: UNC
+name_cn: "北卡罗来纳大学教堂山分校"
 teaching_folder: unc-chapel-hill
 courses:
 - title: APPL 101 Exploring Engineering

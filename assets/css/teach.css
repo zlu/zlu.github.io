@@ -44,7 +44,7 @@ body.teach-page-active .teach-sticky-cta {
 
 /* Body copy: em relative to .site (22px), not rem→16px root */
 
-body.teach-page-active .teach-hero-lead, body.teach-page-active .teach-section-lead, body.teach-page-active .teach-about-body p, body.teach-page-active .teach-subject-list li, body.teach-page-active .teach-service-links-label, body.teach-page-active .teach-service-links, body.teach-page-active .teach-find-primary, body.teach-page-active .teach-region-links, body.teach-page-active .teach-session-steps strong, body.teach-page-active .teach-session-steps span, body.teach-page-active .teach-faq-item summary, body.teach-page-active .teach-faq-item p, body.teach-page-active .teach-landing-lead, body.teach-page-active .teach-landing-section p, body.teach-page-active .teach-landing .teach-proof, body.teach-page-active .teach-landing .teach-proof li, body.teach-page-active .teach-coverage-proof, body.teach-page-active .teach-section-note, body.teach-page-active .teach-course-links a, body.teach-page-active .teach-topic-chips li, body.teach-page-active .teach-matheion-courses a {
+body.teach-page-active .teach-hero-lead, body.teach-page-active .teach-section-lead, body.teach-page-active .teach-about-body p, body.teach-page-active .teach-subject-list li, body.teach-page-active .teach-subject-tab, body.teach-page-active .teach-subject-table th, body.teach-page-active .teach-subject-table td, body.teach-page-active .teach-service-links-label, body.teach-page-active .teach-service-links, body.teach-page-active .teach-find-primary, body.teach-page-active .teach-region-links, body.teach-page-active .teach-hub-search-hint, body.teach-page-active .teach-hub-search-empty, body.teach-page-active .teach-hub-search-results a, body.teach-page-active .teach-session-steps strong, body.teach-page-active .teach-session-steps span, body.teach-page-active .teach-faq-item summary, body.teach-page-active .teach-faq-item p, body.teach-page-active .teach-landing-lead, body.teach-page-active .teach-landing-section p, body.teach-page-active .teach-landing .teach-proof, body.teach-page-active .teach-landing .teach-proof li, body.teach-page-active .teach-coverage-proof, body.teach-page-active .teach-section-note, body.teach-page-active .teach-course-links a, body.teach-page-active .teach-topic-chips li, body.teach-page-active .teach-matheion-courses a {
   font-size: 1em;
   line-height: 1.75;
 }
@@ -372,6 +372,189 @@ body.teach-page-active .content {
   border-bottom: 1px solid var(--teach-line, #d5dde6);
 }
 
+.teach-subject-tabs {
+  margin: 0 0 0.25rem;
+}
+
+.teach-subject-tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0 0 0.15rem;
+  border-bottom: 1px solid var(--teach-line, #d5dde6);
+}
+
+.teach-subject-tab {
+  appearance: none;
+  margin: 0;
+  padding: 0.7rem 0.95rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  background: transparent;
+  color: var(--teach-muted, #5c6b7a);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.teach-subject-tab:hover {
+  color: var(--teach-ink, #1a2332);
+}
+
+.teach-subject-tab.is-active {
+  color: var(--teach-accent, #0f6b6b);
+  border-bottom-color: var(--teach-accent, #0f6b6b);
+}
+
+.teach-subject-panel[hidden] {
+  display: none;
+}
+
+.teach-subject-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.teach-subject-table thead th {
+  padding: 0.65rem 0.75rem 0.65rem 0;
+  border-bottom: 1px solid var(--teach-line, #d5dde6);
+  color: var(--teach-muted, #5c6b7a);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+
+.teach-subject-table tbody th,
+.teach-subject-table tbody td {
+  padding: 0.85rem 0.85rem 0.85rem 0;
+  border-bottom: 1px solid var(--teach-line, #d5dde6);
+  vertical-align: top;
+  text-align: left;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.teach-subject-table tbody th {
+  width: 34%;
+  color: var(--teach-ink, #1a2332);
+  font-weight: 600;
+}
+
+.teach-subject-table tbody td {
+  color: var(--teach-muted, #5c6b7a);
+}
+
+@media (max-width: 560px) {
+  .teach-subject-tab {
+    flex: 1 1 calc(50% - 0.1rem);
+    padding: 0.65rem 0.55rem;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .teach-subject-table,
+  .teach-subject-table thead,
+  .teach-subject-table tbody,
+  .teach-subject-table tr,
+  .teach-subject-table th,
+  .teach-subject-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .teach-subject-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .teach-subject-table tbody th {
+    padding-bottom: 0.25rem;
+    border-bottom: 0;
+  }
+
+  .teach-subject-table tbody td {
+    padding-top: 0.2rem;
+  }
+
+  .teach-subject-table tbody tr {
+    padding: 0.35rem 0 0.85rem;
+    border-bottom: 1px solid var(--teach-line, #d5dde6);
+  }
+}
+
+.teach-hub-search {
+  margin: 0 0 1.15rem;
+}
+
+.teach-hub-search-hint,
+.teach-hub-search-empty {
+  margin: 0.55rem 0 0;
+  color: var(--teach-muted, #5c6b7a);
+  font-size: 0.95rem;
+}
+
+.teach-hub-search-empty[hidden],
+.teach-hub-search-results[hidden] {
+  display: none !important;
+}
+
+.teach-hub-search-results {
+  list-style: none;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  border: 1px solid var(--teach-line, #d5dde6);
+  border-radius: 2px;
+  background: #fff;
+  max-height: 22rem;
+  overflow: auto;
+}
+
+.teach-hub-search-results li {
+  border-top: 1px solid var(--teach-line, #d5dde6);
+}
+
+.teach-hub-search-results li:first-child {
+  border-top: 0;
+}
+
+.teach-hub-search-results a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.75rem 0.9rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.teach-hub-search-results a:hover,
+.teach-hub-search-results a:focus {
+  background: var(--teach-accent-soft, #e6f2f2);
+}
+
+.teach-hub-search-results strong {
+  color: var(--teach-ink, #1a2332);
+  font-weight: 600;
+}
+
+.teach-hub-search-results span {
+  color: var(--teach-muted, #5c6b7a);
+  font-size: 0.92rem;
+}
+
+.teach-hub-search-kind {
+  color: var(--teach-accent, #0f6b6b) !important;
+  font-weight: 600;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.02em;
+}
+
 .teach-service-links-label {
   margin: 0 0 0.45rem;
   color: var(--teach-muted, #5c6b7a);
@@ -399,29 +582,38 @@ body.teach-page-active .content {
 }
 
 .teach-matheion-courses {
-  margin: 0 0 1.15rem;
+  margin: 0 0 1rem;
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 0;
-}
-
-.teach-matheion-courses li {
-  border-top: 1px solid var(--teach-line, #d5dde6);
-}
-
-.teach-matheion-courses li:last-child {
-  border-bottom: 1px solid var(--teach-line, #d5dde6);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
 }
 
 .teach-matheion-courses a {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.8rem 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  min-height: 3.4rem;
+  padding: 0.65rem 0.8rem;
   color: var(--teach-ink, #1a2332);
   text-decoration: none;
+  border: 1px solid var(--teach-line, #d5dde6);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(247, 249, 251, 0.9));
+  line-height: 1.25;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+body.teach-page-active .teach-matheion-courses a {
+  font-size: 0.95em;
+  line-height: 1.25;
+}
+
+.teach-matheion-courses a:hover {
+  border-color: var(--teach-accent, #0f6b6b);
+  background: rgba(15, 107, 107, 0.05);
 }
 
 .teach-matheion-courses a:hover strong {
@@ -429,21 +621,76 @@ body.teach-page-active .content {
 }
 
 .teach-matheion-courses strong {
-  font-size: 1.08rem;
+  font-size: 0.98rem;
   font-weight: 600;
+  line-height: 1.25;
 }
 
 .teach-matheion-courses span {
-  flex-shrink: 0;
   color: var(--teach-muted, #5c6b7a);
-  font-size: 0.92rem;
+  font-size: 0.78rem;
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
-.teach-matheion .teach-section-note {
-  margin-top: 0.35rem;
-  max-width: 40em;
+.teach-matheion-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem 1.1rem;
+  margin: 0 0 0.25rem;
+}
+
+.teach-app-store {
+  display: inline-flex;
+  line-height: 0;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.teach-app-store:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.teach-app-store:focus-visible {
+  outline: 2px solid var(--teach-accent, #0f6b6b);
+  outline-offset: 3px;
+}
+
+.teach-app-store-badge {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.teach-matheion-browse {
+  color: var(--teach-ink, #1a2332);
+  font-size: 1em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--teach-line, #d5dde6);
+}
+
+.teach-matheion-browse:hover {
+  color: var(--teach-accent, #0f6b6b);
+  border-bottom-color: var(--teach-accent, #0f6b6b);
+}
+
+@media (max-width: 420px) {
+  .teach-matheion-courses {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.45rem;
+  }
+
+  .teach-matheion-courses a {
+    min-height: 3.1rem;
+    padding: 0.55rem 0.65rem;
+  }
+
+  .teach-matheion-courses strong {
+    font-size: 0.9rem;
+  }
 }
 
 .teach-find-primary {
@@ -822,6 +1069,51 @@ body.teach-page-active .content, body.teach-page-active .site {
 
 .teach-course-links a:hover, .teach-uni-index a:hover {
   text-decoration: underline;
+}
+
+/* Compact A-Z course directory on university hubs */
+.teach-course-links--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+  column-gap: 1.25rem;
+  row-gap: 0;
+  margin-top: 0.35rem;
+}
+
+.teach-course-links--grid li {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.teach-course-links--grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.teach-course-links--grid .teach-course-code {
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+  color: #1d4ed8;
+}
+
+.teach-course-links--grid .teach-course-title {
+  color: #4b5563;
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
+.teach-course-links--grid .teach-aliases {
+  margin-right: 0;
+}
+
+@media (max-width: 560px) {
+  .teach-course-links--grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .teach-dept, .teach-dept-line, .teach-alias-line, .teach-count {

@@ -1,5 +1,7 @@
 ---
 university: University of Adelaide
+abbr: Adelaide
+name_cn: "阿德莱德大学"
 teaching_folder: adelaide-university
 courses:
   - code: COMP SCI 1101

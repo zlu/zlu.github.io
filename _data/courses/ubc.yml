@@ -1,5 +1,7 @@
 ---
 university: University of British Columbia
+abbr: UBC
+name_cn: "英属哥伦比亚大学"
 courses:
   - code: CPSC 110
     title: Computation, Programs, and Programming

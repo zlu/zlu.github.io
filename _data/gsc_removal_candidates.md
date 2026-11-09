@@ -2,7 +2,7 @@
 
 Submit these in [Google Search Console → Removals](https://search.google.com/search-console)
 (Temporary removal → Remove this URL only / prefix as needed) after deploy ships
-`noindex` on uni-service shells and retired redirects.
+soft-redirects of live uni-service shells → uni hub, plus retired redirects (`noindex`, out of sitemap).
 
 Source: GSC Pages export 2026-11-02 (high impressions, 0 clicks, thin/dead teach shells).
 

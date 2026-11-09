@@ -1,5 +1,7 @@
 ---
 university: Imperial College London
+abbr: Imperial
+name_cn: "伦敦帝国理工学院"
 teaching_folder: imperial-college-london
 courses:
 - code: PHYS70041

@@ -1,5 +1,7 @@
 ---
 university: University of Wollongong
+abbr: UOW
+name_cn: "卧龙岗大学"
 courses:
   - code: CSIT110
     title: Fundamental Programming with Python

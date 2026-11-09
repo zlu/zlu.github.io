@@ -51,7 +51,10 @@ layout: default
         <h3 id="letter-{{ current_letter }}" class="teach-letter-heading">{{ current_letter }}</h3>
       {% endif %}
       <div class="teach-uni-row">
-        <a href="/teach/universities/{{ uni.slug }}/"><strong>{{ uni.name }}</strong></a>
+        <a href="/teach/universities/{{ uni.slug }}/">
+          <strong data-en="{{ uni.label_en | default: uni.name }}"
+                  data-cn="{{ uni.label_cn | default: uni.name }}">{{ uni.label_cn | default: uni.name }}</strong>
+        </a>
         {% if uni.courses.size > 0 %}
         <span class="teach-count"
               data-en="{{ uni.courses.size }} courses"

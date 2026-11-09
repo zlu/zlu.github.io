@@ -1,5 +1,7 @@
 ---
-university: San Jose State University
+university: San José State University
+abbr: SJSU
+name_cn: "圣何塞州立大学"
 teaching_folder: sjsu
 courses:
 - code: DATA201

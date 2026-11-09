@@ -1,5 +1,7 @@
 ---
 university: University of Queensland
+abbr: UQ
+name_cn: "昆士兰大学"
 teaching_folder: u-queensland
 courses:
   - code: CSSE7030

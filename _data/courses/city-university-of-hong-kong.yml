@@ -1,5 +1,7 @@
 ---
 university: City University of Hong Kong
+abbr: CityU
+name_cn: "香港城市大学"
 courses:
   - code: CS2115
     title: Computer Organization

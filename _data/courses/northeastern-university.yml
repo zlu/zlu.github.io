@@ -1,5 +1,7 @@
 ---
 university: Northeastern University
+abbr: NEU
+name_cn: "东北大学（美国）"
 teaching_folder: north-eastern
 courses:
 - code: CS2500

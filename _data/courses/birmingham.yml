@@ -1,5 +1,7 @@
 ---
 university: University of Birmingham
+abbr: Birmingham
+name_cn: "伯明翰大学"
 teaching_folder: u-birmingham
 courses:
   - title: Database And Web Programming

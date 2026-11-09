@@ -1,5 +1,7 @@
 ---
 university: University of Waterloo
+abbr: Waterloo
+name_cn: "滑铁卢大学"
 courses:
   - code: CS 135
     title: Designing Functional Programs

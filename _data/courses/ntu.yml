@@ -1,5 +1,7 @@
 ---
-university: NTU Singapore
+university: Nanyang Technological University
+abbr: NTU
+name_cn: "南洋理工大学"
 teaching_folder: ntu
 courses:
   - code: CS2030DE

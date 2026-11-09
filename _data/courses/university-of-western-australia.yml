@@ -1,5 +1,7 @@
 ---
 university: University of Western Australia
+abbr: UWA
+name_cn: "西澳大学"
 teaching_folder: u-western-australia
 courses:
 - code: CITS4404

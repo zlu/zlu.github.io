@@ -1,5 +1,7 @@
 ---
 university: Beijing Normal University
+abbr: BNU
+name_cn: "北京师范大学"
 teaching_folder: 北师大
 courses:
 - title: Deutsch A1

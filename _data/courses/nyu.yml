@@ -1,5 +1,7 @@
 ---
 university: New York University
+abbr: NYU
+name_cn: "纽约大学"
 courses:
   - code: CSCI-UA 101
     title: Introduction to Computer Science

@@ -1,5 +1,7 @@
 ---
-university: The Chinese University of Hong Kong, Shenzhen
+university: "The Chinese University of Hong Kong, Shenzhen"
+abbr: CUHK-Shenzhen
+name_cn: "香港中文大学（深圳）"
 teaching_folder: cuhk-sz
 courses:
 - title: Dda3020 Machine Learning

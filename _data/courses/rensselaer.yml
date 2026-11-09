@@ -1,5 +1,7 @@
 ---
 university: Rensselaer Polytechnic Institute
+abbr: RPI
+name_cn: "伦斯勒理工学院"
 teaching_folder: rensselaer
 courses:
 - title: Csci4850 Modern Binary Exploitation

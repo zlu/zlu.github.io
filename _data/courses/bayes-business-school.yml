@@ -1,5 +1,7 @@
 ---
-university: City St George's, University of London
+university: "City St George's, University of London"
+abbr: Bayes
+name_cn: "伦敦城市大学贝叶斯商学院"
 teaching_folder: bayes-business-school
 courses:
   - title: Introduction To R - Business Analytics Module

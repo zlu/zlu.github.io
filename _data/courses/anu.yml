@@ -1,5 +1,7 @@
 ---
 university: Australian National University
+abbr: ANU
+name_cn: "澳大利亚国立大学"
 courses:
   - code: COMP1100
     title: Programming as Problem Solving

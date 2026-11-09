@@ -1,5 +1,7 @@
 ---
 university: Ohio State University
+abbr: Ohio State
+name_cn: "俄亥俄州立大学"
 courses:
   - code: CES2231
     title: "Software II: Software Development and Design"

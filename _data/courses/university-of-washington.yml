@@ -1,5 +1,7 @@
 ---
 university: University of Washington
+abbr: UW
+name_cn: "华盛顿大学"
 courses:
   - code: CSE 142
     title: Computer Programming I

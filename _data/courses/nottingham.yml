@@ -1,5 +1,7 @@
 ---
 university: University of Nottingham
+abbr: Nottingham
+name_cn: "诺丁汉大学"
 teaching_folder: u-nottingham
 courses:
 - code: COMP4030

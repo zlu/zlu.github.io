@@ -1,5 +1,7 @@
 ---
-university: UCLA
+university: "University of California, Los Angeles"
+abbr: UCLA
+name_cn: "加州大学洛杉矶分校"
 courses:
   - code: COM SCI 31
     title: Introduction to Computer Science I

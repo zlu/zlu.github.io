@@ -1,5 +1,7 @@
 ---
 university: Georgia Institute of Technology
+abbr: Georgia Tech
+name_cn: "佐治亚理工学院"
 courses:
   - code: CS1301
     title: Introduction to Computing

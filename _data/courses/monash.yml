@@ -1,5 +1,7 @@
 ---
 university: Monash University
+abbr: Monash
+name_cn: "莫纳什大学"
 teaching_folder: monash
 courses:
   # GSC: fit1045 is a high-attraction intro CS code; deep private materials on disk.

@@ -1,5 +1,7 @@
 ---
 university: Technical University of Munich
+abbr: TUM
+name_cn: "慕尼黑工业大学"
 teaching_folder: tum
 courses:
 - code: INHN0012

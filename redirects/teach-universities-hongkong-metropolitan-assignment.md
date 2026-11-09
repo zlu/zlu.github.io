@@ -1,6 +1,6 @@
 ---
 layout: redirect
 permalink: /teach/universities/hongkong-metropolitan/assignment/
-redirect_to: /teach/universities/hong-kong-metropolitan-university/assignment/
+redirect_to: /teach/universities/hong-kong-metropolitan-university/
 sitemap: false
 ---

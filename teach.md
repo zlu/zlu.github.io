@@ -20,7 +20,7 @@ region_pages: []
 {% include teach-about.html %}
 {% include teach-session.html %}
 {% include teach-subjects-simple.html %}
-{% include teach-matheion.html %}
 {% include teach-find-school.html %}
 {% include teach-faq.html %}
+{% include teach-matheion.html %}
 {% include teach-sticky-cta.html %}

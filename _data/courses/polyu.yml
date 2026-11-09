@@ -1,5 +1,7 @@
 ---
-university: Hong Kong Polytechnic University
+university: The Hong Kong Polytechnic University
+abbr: PolyU
+name_cn: "香港理工大学"
 teaching_folder: hk-polytech
 courses:
 - code: COMP1001

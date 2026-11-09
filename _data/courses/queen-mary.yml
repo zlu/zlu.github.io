@@ -1,5 +1,7 @@
 ---
 university: Queen Mary University of London
+abbr: QMUL
+name_cn: "伦敦玛丽女王大学"
 courses:
   - code: ECS401U
     title: Procedural Programming

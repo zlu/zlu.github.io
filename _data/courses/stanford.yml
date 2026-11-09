@@ -1,5 +1,7 @@
 ---
 university: Stanford University
+abbr: Stanford
+name_cn: "斯坦福大学"
 courses:
   - code: CS106A
     title: Programming Methodology

@@ -1,5 +1,7 @@
 ---
 university: Macquarie University
+abbr: Macquarie
+name_cn: "麦考瑞大学"
 teaching_folder: macquarie-university
 courses:
 - code: COMP2200/COMP6200

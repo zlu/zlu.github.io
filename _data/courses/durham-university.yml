@@ -1,5 +1,7 @@
 ---
 university: Durham University
+abbr: Durham
+name_cn: "杜伦大学"
 teaching_folder: durham-university
 courses:
 - code: COMP2271

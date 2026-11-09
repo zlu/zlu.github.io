@@ -1,5 +1,7 @@
 ---
-university: lmu-慕尼黑大学
+university: Ludwig-Maximilians-Universität München
+abbr: LMU
+name_cn: "慕尼黑大学"
 teaching_folder: lmu-慕尼黑大学
 courses:
 - title: Symbolische Programmierspache

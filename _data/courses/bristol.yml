@@ -1,5 +1,7 @@
 ---
 university: University of Bristol
+abbr: Bristol
+name_cn: "布里斯托大学"
 teaching_folder: bristol-u
 courses:
 - code: COMS10016

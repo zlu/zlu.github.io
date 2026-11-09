@@ -1,5 +1,7 @@
 ---
-university: UIUC
+university: University of Illinois Urbana-Champaign
+abbr: UIUC
+name_cn: "伊利诺伊大学厄巴纳-香槟分校"
 teaching_folder: uiuc
 courses:
 - code: CS444

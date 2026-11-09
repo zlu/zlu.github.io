@@ -10,13 +10,13 @@ layout: default
 
   <header class="teach-landing-header teach-uni-dir-header">
     <p class="teach-hero-eyebrow"
-       data-en="Evidence-backed directory"
-       data-cn="真实辅导覆盖目录">真实辅导覆盖目录</p>
+       data-en="University directory"
+       data-cn="大学目录">大学目录</p>
     <h1 data-en="University CS tutoring directory"
         data-cn="大学计算机辅导目录">大学计算机辅导目录</h1>
     <p class="teach-landing-lead"
-       data-en="{{ page.universities.size }} universities · {{ page.course_count }} courses I’ve actually tutored. Course pages only when coverage is real — WeChat school + course code to book."
-       data-cn="{{ page.universities.size }} 所大学 · {{ page.course_count }} 门课；有真实覆盖才建课页。微信发送学校 + 课号即可约课。">{{ page.universities.size }} 所大学 · {{ page.course_count }} 门课；有真实覆盖才建课页。微信发送学校 + 课号即可约课。</p>
+       data-en="{{ page.universities.size }} universities · {{ page.course_count }} courses. WeChat school + course code to book."
+       data-cn="{{ page.universities.size }} 所大学 · {{ page.course_count }} 门课；微信发送学校 + 课号即可约课。">{{ page.universities.size }} 所大学 · {{ page.course_count }} 门课；微信发送学校 + 课号即可约课。</p>
 
     <dl class="teach-uni-stats" aria-label="Directory totals">
       <div>
@@ -87,10 +87,12 @@ layout: default
       {% for uni in page.featured %}
       <li class="teach-uni-featured-item"
           data-region="{{ uni.region }}"
-          data-filter-text="{{ uni.name | downcase }} {{ uni.slug }}">
+          data-filter-text="{{ uni.name | downcase }} {{ uni.abbr | downcase }} {{ uni.name_cn }} {{ uni.slug }}">
         <a href="/teach/universities/{{ uni.slug }}/">
           <span class="teach-uni-featured-rank">{{ forloop.index }}</span>
-          <span class="teach-uni-featured-name">{{ uni.name }}</span>
+          <span class="teach-uni-featured-name"
+                data-en="{{ uni.label_en }}"
+                data-cn="{{ uni.label_cn }}">{{ uni.label_cn }}</span>
           <span class="teach-uni-badge"
                 data-en="{{ uni.courses.size }} courses"
                 data-cn="{{ uni.courses.size }} 门课">{{ uni.courses.size }} 门课</span>
@@ -130,9 +132,11 @@ layout: default
       {% for uni in group.universities %}
       <li class="teach-uni-item"
           data-region="{{ group.key }}"
-          data-filter-text="{{ uni.name | downcase }} {{ uni.slug }} {{ group.en | downcase }} {{ group.cn }}">
+          data-filter-text="{{ uni.name | downcase }} {{ uni.abbr | downcase }} {{ uni.name_cn }} {{ uni.slug }} {{ group.en | downcase }} {{ group.cn }}">
         <a href="/teach/universities/{{ uni.slug }}/">
-          <strong class="teach-uni-item-name">{{ uni.name }}</strong>
+          <strong class="teach-uni-item-name"
+                  data-en="{{ uni.label_en }}"
+                  data-cn="{{ uni.label_cn }}">{{ uni.label_cn }}</strong>
           <span class="teach-uni-badge"
                 data-en="{{ uni.courses.size }} courses"
                 data-cn="{{ uni.courses.size }} 门课">{{ uni.courses.size }} 门课</span>
@@ -144,6 +148,6 @@ layout: default
   {% endfor %}
 
   <p class="teach-landing-back"
-     data-en="Empty school shells were removed from the index. If your course is missing, WeChat me the code."
-     data-cn="空壳学校页已从目录移除。若没有你的课号，微信发我即可。">空壳学校页已从目录移除。若没有你的课号，微信发我即可。</p>
+     data-en="If your course is missing, WeChat me the code."
+     data-cn="若没找到你的课号，微信发我即可。">若没有你的课号，微信联系我即可。</p>
 </article>

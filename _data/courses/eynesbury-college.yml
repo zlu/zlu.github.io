@@ -1,5 +1,7 @@
 ---
 university: Eynesbury College
+abbr: Eynesbury
+name_cn: "Eynesbury学院"
 courses:
   - code: COMP1039
     title: Problem Solving and Programming

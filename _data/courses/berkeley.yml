@@ -1,5 +1,7 @@
 ---
-university: UC Berkeley
+university: "University of California, Berkeley"
+abbr: UC Berkeley
+name_cn: "加州大学伯克利分校"
 teaching_folder: uc-berkeley
 courses:
   - code: CS 61A

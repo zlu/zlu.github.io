@@ -1,5 +1,7 @@
 ---
 university: Lehigh University
+abbr: Lehigh
+name_cn: "里海大学"
 teaching_folder: lehigh-university
 courses:
 - code: ENGR 010

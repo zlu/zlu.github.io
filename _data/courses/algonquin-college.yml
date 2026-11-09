@@ -1,5 +1,7 @@
 ---
 university: Algonquin College
+abbr: Algonquin
+name_cn: "亚岗昆学院"
 teaching_folder: algonguin-college
 courses:
 - code: ESC4402

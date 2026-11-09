@@ -25,7 +25,7 @@ scorecards:
     surfaces:
       - sitemap.xml
       - retired redirects
-    weekly_signal: "uni-service URLs absent from sitemap; dead-shell impressions falling"
+    weekly_signal: "uni-service /exam|/assignment|/sync|/preview soft-redirect to uni hub; absent from sitemap/IndexNow"
 
 entries:
   # --- ai_authority ---

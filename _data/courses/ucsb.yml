@@ -1,5 +1,7 @@
 ---
-university: UCSB
+university: "University of California, Santa Barbara"
+abbr: UCSB
+name_cn: "加州大学圣塔芭芭拉分校"
 teaching_folder: ucsb
 courses:
   - code: COMPSC_16

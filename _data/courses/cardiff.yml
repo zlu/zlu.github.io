@@ -1,5 +1,7 @@
 ---
 university: Cardiff University
+abbr: Cardiff
+name_cn: "卡迪夫大学"
 teaching_folder: cardiff
 courses:
   - code: CM6125

@@ -1,5 +1,7 @@
 ---
 university: The University of Hong Kong
+abbr: HKU
+name_cn: "香港大学"
 teaching_folder: hku
 courses:
   - code: COMP3340

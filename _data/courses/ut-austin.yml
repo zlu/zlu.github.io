@@ -1,5 +1,7 @@
 ---
 university: University of Texas at Austin
+abbr: UT Austin
+name_cn: "得克萨斯大学奥斯汀分校"
 courses:
   - code: CS312
     title: Introduction to Programming

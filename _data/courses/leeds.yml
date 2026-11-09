@@ -1,5 +1,7 @@
 ---
-university: Leeds University
+university: University of Leeds
+abbr: Leeds
+name_cn: "利兹大学"
 teaching_folder: leeds-university
 courses:
   - code: COMP1121

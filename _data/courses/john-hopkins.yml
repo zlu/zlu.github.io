@@ -1,5 +1,7 @@
 ---
 university: Johns Hopkins University
+abbr: JHU
+name_cn: "约翰霍普金斯大学"
 teaching_folder: johnhopkins
 courses:
 - code: BU510 615

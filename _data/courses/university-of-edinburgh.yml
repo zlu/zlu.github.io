@@ -1,5 +1,7 @@
 ---
 university: University of Edinburgh
+abbr: Edinburgh
+name_cn: "爱丁堡大学"
 teaching_folder: u-edinburgh
 courses:
 - code: INFR08012

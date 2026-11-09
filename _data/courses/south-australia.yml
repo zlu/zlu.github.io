@@ -1,5 +1,7 @@
 ---
 university: University of South Australia
+abbr: UniSA
+name_cn: "南澳大学"
 teaching_folder: u-south-australia
 courses:
 - code: COMP1039

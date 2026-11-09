@@ -1,5 +1,7 @@
 ---
 university: Newcastle University
+abbr: Newcastle
+name_cn: "纽卡斯尔大学"
 teaching_folder: new-castle
 courses:
 - code: CSC8202

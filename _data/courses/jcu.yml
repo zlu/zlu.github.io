@@ -1,5 +1,7 @@
 ---
 university: James Cook University Singapore
+abbr: JCU
+name_cn: "詹姆斯库克大学（新加坡）"
 teaching_folder: james-cook-singapore
 courses:
 - code: CP1407

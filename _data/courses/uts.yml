@@ -1,5 +1,7 @@
 ---
 university: University of Technology Sydney
+abbr: UTS
+name_cn: "悉尼科技大学"
 teaching_folder: uts
 courses:
 - code: 31251

@@ -1,5 +1,7 @@
 ---
 university: University of Michigan
+abbr: UMich
+name_cn: "密歇根大学"
 courses:
   - code: EECS 183
     title: Elementary Programming Concepts

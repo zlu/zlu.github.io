@@ -553,7 +553,7 @@ def coverage_summary(n: int, signals: dict, topics: list, lang: str) -> str:
     cns = [t["cn"] for t in topics[:4] if isinstance(t, dict) and t.get("cn")]
     if cns:
         bits.append("常见主题：" + "、".join(cns) + "。")
-    bits.append("不代写、不代考。")
+    bits.append("。")
     return "".join(bits)
 
 

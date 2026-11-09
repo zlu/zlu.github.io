@@ -1,5 +1,7 @@
 ---
 university: University of Alberta
+abbr: UAlberta
+name_cn: "阿尔伯塔大学"
 courses:
   - code: CMPUT 174
     title: Introduction to the Foundations of Computation I

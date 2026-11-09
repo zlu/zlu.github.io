@@ -1,5 +1,7 @@
 ---
 university: University College Dublin
+abbr: UCD
+name_cn: "都柏林大学"
 teaching_folder: university-college-dublin
 courses:
 - code: COMP3038J

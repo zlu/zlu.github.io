@@ -1,5 +1,7 @@
 ---
-university: Beijing Normal-Hongkong Baptist University
+university: Beijing Normal-Hong Kong Baptist University
+abbr: BNBU
+name_cn: "北京师范大学-香港浸会大学联合国际学院"
 teaching_folder: beijing-normal-hk-baptist-u
 courses:
 - title: Research And Application Of Language Models

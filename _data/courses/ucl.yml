@@ -1,5 +1,7 @@
 ---
 university: University College London
+abbr: UCL
+name_cn: "伦敦大学学院"
 teaching_folder: ucl
 courses:
 - code: COMP0002
