@@ -1,0 +1,44 @@
+---
+label_en: Data science & analytics
+label_cn: 数据科学与分析
+lead_en: Data science courses reward clean pipelines more than flashy models. Sessions focus on wrangling, EDA judgement, and turning notebook chaos into a story the marker can follow.
+lead_cn: 数据科学课更看重干净的流水线，而不是花哨模型。课上重点是清洗与 EDA 判断力， 以及把凌乱 notebook 转化成改卷人能跟上的叙事。
+topics:
+- en: Pandas / dplyr style transforms and joins
+  cn: Pandas / dplyr 风格的变换与 join
+- en: EDA, distributions, and “what question am I answering?”
+  cn: 探索性分析、分布，以及“我在回答什么问题”
+- en: Feature hygiene before modelling
+  cn: 建模前的特征卫生
+- en: Visualisation that supports a claim
+  cn: 能支撑结论的可视化
+- en: Group projects — ownership of one clear analysis thread
+  cn: 小组作业——把住一条清晰分析主线
+- en: Reproducible notebooks and environments
+  cn: 可复现的 notebook 与环境
+stuck:
+- en: Messy merges and silent NaNs that break later metrics
+  cn: 混乱的 merge 与静默 NaN，后面指标全歪
+- en: Pretty plots that do not answer the brief
+  cn: 图很漂亮，但没回答题目要求
+- en: Last-minute modelling with no data story
+  cn: 临近 DDL 才建模，没有数据故事
+session_angles:
+- en: Rebuild the analysis pipeline step by step from the brief
+  cn: 按 brief 逐步重建分析流水线
+- en: Sanity-check joins, missingness, and leakage risks
+  cn: 核验 join、缺失值与泄漏风险
+- en: Shape the final narrative and figure set
+  cn: 定稿叙事与图表组合
+match: data.?scien|data.?analy|data.?wrangl|data.?mining|business.?analy| analytic|visuali|exploratory|pandas|statistics.?for
+reading:
+- kind: post
+  name: deep-dive-into-vector-database
+  title_en: Vector databases deep dive
+  title_cn: 向量数据库深入
+- kind: post
+  name: audio-analysis-r
+  title_en: Audio analysis in R
+  title_cn: 用 R 做音频分析
+
+---

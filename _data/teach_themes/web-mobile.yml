@@ -1,0 +1,38 @@
+---
+label_en: Web, mobile & HCI
+label_cn: Web、移动与人机交互
+lead_en: Web and mobile courses grade shipped behaviour and clear UX reasoning. Sessions focus on architecture choices, debugging the client/server boundary, and demo readiness.
+lead_cn: Web / 移动课看重可演示的行为与说得清的交互理由。辅导聚焦架构选择、 调试前后端边界，以及演示准备。
+topics:
+- en: Client / server responsibilities and APIs
+  cn: 前后端职责与 API
+- en: State, routing, and common framework patterns
+  cn: 状态、路由与常见框架模式
+- en: Mobile lifecycle and platform constraints
+  cn: 移动端生命周期与平台约束
+- en: Accessibility and HCI evaluation basics
+  cn: 无障碍与 HCI 评估基础
+- en: Demo scripts and marking rubrics
+  cn: 演示脚本与评分量表
+stuck:
+- en: UI looks done but integration tests fail
+  cn: 界面看起来完成了，集成测试不过
+- en: Unclear ownership in group projects
+  cn: 小组项目里职责不清
+- en: Demo crashes from environment / device mismatch
+  cn: 环境 / 设备不一致导致演示崩溃
+session_angles:
+- en: Trace one user action end-to-end
+  cn: 把一个用户操作端到端走通
+- en: Fix the highest-risk demo path first
+  cn: 先修演示里最高风险的路径
+- en: Align the write-up with what the rubric scores
+  cn: 让报告对齐评分量表真正打分的点
+match: \bweb\b|mobile|hci|human.?computer|user.?interface|user.?experience| \bui\b|\bux\b|front.?end|android|ios\b|react|fullstack
+reading:
+- kind: post
+  name: hugging-face-mcp-with-openai-zero-code-setup
+  title_en: Hugging Face MCP with OpenAI setup
+  title_cn: Hugging Face MCP 与 OpenAI 零代码配置
+
+---

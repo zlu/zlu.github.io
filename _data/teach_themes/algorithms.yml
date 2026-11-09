@@ -1,0 +1,44 @@
+---
+label_en: Algorithms & data structures
+label_cn: 算法与数据结构
+lead_en: Algorithms courses punish vague hand-waving. We build the invariant, complexity argument, and implementation together so exam proofs and coding tasks stay aligned.
+lead_cn: 算法课最怕含糊其辞。我们会一起把不变量、复杂度论证与实现对齐， 让考试证明题和编程题说的是同一件事。
+topics:
+- en: Asymptotic complexity and comparing candidates
+  cn: 渐近复杂度与方案比较
+- en: Arrays, lists, trees, heaps, hash tables
+  cn: 数组、链表、树、堆、哈希表
+- en: Sorting, searching, and graph traversals
+  cn: 排序、搜索与图遍历
+- en: Greedy, divide-and-conquer, and dynamic programming patterns
+  cn: 贪心、分治与动态规划模式
+- en: Invariants and proof sketches for exams
+  cn: 考试用的不变量与证明提纲
+- en: Translating pseudocode into working submissions
+  cn: 把伪代码落到可提交实现
+stuck:
+- en: Correct intuition but wrong complexity or incomplete proof
+  cn: 直觉对，但复杂度写错或证明不完整
+- en: DP / recursion without a clear state definition
+  cn: 动态规划 / 递归没有清晰状态定义
+- en: Implementation bugs that hide a sound algorithm
+  cn: 算法本身没问题，实现 bug 把分扣光
+session_angles:
+- en: Write the invariant and recurrence before code
+  cn: 写代码前先写不变量与递推
+- en: Dry-run on a small example, then generalise
+  cn: 先在小例子上手推，再一般化
+- en: Exam-style short proofs under time pressure
+  cn: 限时练习考试风格的短证明
+match: algorithm|data.?struct|complexit|discrete.?math|combinator| graph.?theory|dynamic.?program|computational.?thinking
+reading:
+- kind: post
+  name: genetic-algorithm-from-darwin-to-holland
+  title_en: Genetic algorithms from Darwin to Holland
+  title_cn: 从达尔文到 Holland 的遗传算法
+- kind: post
+  name: fractal
+  title_en: Generating fractals
+  title_cn: 生成分形
+
+---

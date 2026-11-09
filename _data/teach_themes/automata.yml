@@ -1,0 +1,50 @@
+---
+label_en: Automata & event-driven systems
+label_cn: 自动机与事件驱动系统
+lead_en: These courses mix formal models (automata, Petri nets) with event-driven design. Sessions go concept → tiny example → you attempt the exam-style step → we mark the method, not a memorised answer. Lecture sync, workshops, and past-paper drills stay on the same vocabulary.
+lead_cn: 这类课把形式模型（自动机、Petri 网）和事件驱动设计绑在一起。辅导节奏固定： 先讲概念 → 小例子 → 你自己做考试风格的一步 → 一起改「方法」而不是背答案。 跟课、workshop、past paper 用同一套术语。
+topics:
+- en: DFA / NFA / ε-NFA reading and extended transitions
+  cn: DFA / NFA / ε-NFA 读图与扩展转移
+- en: Regex membership and ε-elimination
+  cn: 正则判定与消 ε
+- en: Moore / Mealy machines from a brief
+  cn: 按 brief 画 Moore / Mealy 机
+- en: Petri nets — places, transitions, firing sequences
+  cn: Petri 网：库所、变迁与激发序列
+- en: Observers, events, and FRP-style maps
+  cn: Observer、事件与 FRP 风格变换
+- en: Exam method under time pressure
+  cn: 限时考试方法
+stuck:
+- en: Diagrams look familiar but Δ̂ / subset construction falls apart on paper
+  cn: 图眼熟，但纸上写 Δ̂ / 子集构造就乱
+- en: Mixing up accept states mid-run with “accepted after the whole string”
+  cn: 把中途经过接受态当成整串已被接受
+- en: Petri firing rules guessed instead of checked against the net
+  cn: Petri 激发靠猜，不按网核对
+- en: FRP / observer questions answered in prose instead of a precise transform
+  cn: FRP / observer 题用散文答，没有精确变换
+session_angles:
+- en: Teach the checklist for reading a machine before touching the exam figure
+  cn: 碰考试图之前，先练读机检查清单
+- en: Tiny paper example, then the real past-paper block
+  cn: 先纸上小例子，再做真题块
+- en: 'Wrong-answer analysis: which step of the method broke'
+  cn: 错题复盘：方法的哪一步断了
+match: automata|event.?driven|finite.?state|\bfsa\b|\bnfa\b|\bdfa\b|petri| moore.?machine|mealy|formal.?lang|regular.?expr|\bregex\b|\bfrp\b| reactive.?program|theory.?of.?computation|computability
+reading:
+- kind: post
+  name: automata-basics-for-coders-part-1
+  title_en: Automata basics for coders (part 1)
+  title_cn: 写给程序员的自动机基础（一）
+- kind: post
+  name: automata-basics-for-coders-part-2
+  title_en: Automata basics for coders (part 2)
+  title_cn: 写给程序员的自动机基础（二）
+- kind: post
+  name: automata-basics-for-coders-part-3
+  title_en: Automata basics for coders (part 3)
+  title_cn: 写给程序员的自动机基础（三）
+
+---

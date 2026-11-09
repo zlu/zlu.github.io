@@ -1,0 +1,58 @@
+---
+label_en: Machine learning & AI
+label_cn: 机器学习与人工智能
+lead_en: 'Intro ML / AI courses mix math intuition with coding labs. I tutor them the way industry work is done: clarify the model idea in Chinese and English, then debug the notebook or sklearn/PyTorch pipeline until metrics and write-ups make sense.'
+lead_cn: 入门机器学习 / AI 课通常既要数学直觉又要写代码。辅导时我会用中英双语先把模型在做什么讲清楚， 再一起 debug notebook 或 sklearn / PyTorch 流程，直到指标与报告说得通。
+topics:
+- en: Supervised vs unsupervised intuition
+  cn: 监督 / 无监督学习的直觉区分
+- en: Loss, gradients, and what “training” actually updates
+  cn: 损失、梯度，以及“训练”到底在更新什么
+- en: Train / validation / test splits and leakage
+  cn: 训练 / 验证 / 测试划分与数据泄漏
+- en: Linear models, logistic regression, and decision boundaries
+  cn: 线性模型、逻辑回归与决策边界
+- en: Trees, ensembles, and when they beat neural nets
+  cn: 树模型、集成方法，以及何时比神经网络更合适
+- en: sklearn / notebook pipelines and reproducibility
+  cn: sklearn / notebook 流水线与可复现性
+- en: Metrics, confusion matrices, and report figures
+  cn: 指标、混淆矩阵与报告图表
+- en: Project structure and experiment write-up clarity
+  cn: Project 结构与实验报告表述
+stuck:
+- en: Formulae memorised without knowing what the code should look like
+  cn: 公式背下来了，但不知道代码该长什么样
+- en: Autograder / notebook fails from shape mismatches or leakage
+  cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+- en: Model “works” but the report cannot explain why
+  cn: 模型能跑，但报告说不清为什么有效
+- en: Lecture slides move faster than the math catches up
+  cn: 课件节奏快于数学跟进速度
+session_angles:
+- en: Map the assignment brief to a short concept checklist
+  cn: 把作业 brief 映射成一份短概念清单
+- en: Live-debug the failing cell or metric with you driving the keyboard
+  cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+- en: Tighten the write-up so claims match the experiments
+  cn: 收紧报告表述，让结论与实验一致
+match: machine.?learn|deep.?learn|neural|artificial.?intelligen|\bai\b| pattern.?recog|computer.?vision|natural.?language|\bnlp\b| reinforc|perceptron|pytorch|tensorflow|sklearn|scikit
+reading:
+- kind: post
+  name: linear-algebra-ml
+  title_en: From linear algebra to linear regression
+  title_cn: 从线性代数到线性回归
+- kind: post
+  name: logistic-regression
+  title_en: Logistic regression
+  title_cn: 逻辑回归
+- kind: post
+  name: understanding-perceptrons
+  title_en: Understanding perceptrons
+  title_cn: 感知机入门
+- kind: post
+  name: fastai-part1
+  title_en: Fastai practical deep learning (part 1)
+  title_cn: Fastai 实践深度学习（一）
+
+---

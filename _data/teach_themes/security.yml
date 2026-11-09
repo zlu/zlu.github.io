@@ -1,0 +1,38 @@
+---
+label_en: Security & privacy
+label_cn: 安全与隐私
+lead_en: Security coursework mixes threat models with hands-on labs. I help you state the attacker model clearly, then walk the exploit/defend steps you are allowed to practice.
+lead_cn: 安全课既有威胁模型也有动手 Lab。我会帮你先把攻击者模型说清楚， 再按课程允许的范围走攻防步骤。
+topics:
+- en: Threat models and trust boundaries
+  cn: 威胁模型与信任边界
+- en: Crypto primitives at course depth (not CTF spoilers)
+  cn: 课业深度的密码学原语（非 CTF 剧透）
+- en: Web / network attack patterns the syllabus names
+  cn: 大纲点名的 Web / 网络攻击模式
+- en: Secure coding habits for assignments
+  cn: 作业里的安全编码习惯
+- en: Write-ups that separate fact from speculation
+  cn: 区分事实与推测的实验报告
+stuck:
+- en: Labs that need precise setup before any “hacking”
+  cn: Lab 还没配好环境就急着“黑”
+- en: Confusing confidentiality, integrity, and availability
+  cn: 把机密性、完整性、可用性搅在一起
+- en: Reports that list tools without explaining the finding
+  cn: 报告只罗列工具，不解释发现
+session_angles:
+- en: Restate the threat model in one paragraph
+  cn: 用一段话重述威胁模型
+- en: Reproduce the lab outcome, then explain the mechanism
+  cn: 先复现 Lab 结果，再讲清机制
+- en: Structure the write-up around evidence
+  cn: 按证据组织报告结构
+match: secur|crypto|privacy|ethics|cyber|forensic|malware|authentica
+reading:
+- kind: post
+  name: rag-based-knowledge-base-with-agent-support
+  title_en: RAG knowledge bases with agents
+  title_cn: 带 Agent 的 RAG 知识库
+
+---

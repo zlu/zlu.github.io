@@ -128,6 +128,7 @@ module Jekyll
     }.freeze
 
     # More specific themes first; "general" is the fallback (not listed here).
+    # Theme packs live in _data/teach_themes/*.yml (admin: Course Themes).
     THEME_MATCH_ORDER = %w[
       machine-learning
       data-science

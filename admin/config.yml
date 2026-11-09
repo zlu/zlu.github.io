@@ -222,7 +222,7 @@ collections:
               name: "theme",
               widget: "string",
               required: false,
-              hint: "Optional override, e.g. automata, algorithms, machine-learning.",
+              hint: "Theme id from Course Themes (filename), e.g. automata, algorithms, machine-learning.",
             }
           - {
               label: "Lead (EN)",
@@ -276,6 +276,82 @@ collections:
             fields:
               - { label: "EN", name: "en", widget: "text" }
               - { label: "CN", name: "cn", widget: "text" }
+
+  - name: "teach_themes"
+    label: "Course Themes"
+    label_singular: "Course Theme"
+    description: "Shared theme packs for course SEO pages (labels, topics, match regex, Notes from my writing). Filename is the theme id courses reference."
+    folder: "_data/teach_themes/"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    format: "yaml-frontmatter"
+    extension: ".yml"
+    identifier_field: "label_en"
+    summary: "{{label_en}} / {{label_cn}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Label (EN)",
+          name: "label_en",
+          widget: "string",
+          hint: "Shown on course pages. Theme id is the filename (set when creating), e.g. automata.yml.",
+        }
+      - { label: "Label (CN)", name: "label_cn", widget: "string" }
+      - { label: "Lead (EN)", name: "lead_en", widget: "text", required: false }
+      - { label: "Lead (CN)", name: "lead_cn", widget: "text", required: false }
+      - label: "Focus topics"
+        name: "topics"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "EN", name: "en", widget: "string" }
+          - { label: "CN", name: "cn", widget: "string" }
+      - label: "Stuck points"
+        name: "stuck"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "EN", name: "en", widget: "string" }
+          - { label: "CN", name: "cn", widget: "string" }
+      - label: "Session angles"
+        name: "session_angles"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "EN", name: "en", widget: "string" }
+          - { label: "CN", name: "cn", widget: "string" }
+      - {
+          label: "Match regex",
+          name: "match",
+          widget: "text",
+          required: false,
+          hint: "Used when a course has no explicit theme. Whitespace is stripped at build time. Leave empty for general.",
+        }
+      - label: "Notes from my writing"
+        name: "reading"
+        widget: "list"
+        required: false
+        hint: "Blog posts only. name = post slug without date (e.g. automata-basics-for-coders-part-1)."
+        summary: "{{title_en}} ({{name}})"
+        fields:
+          - {
+              label: "Kind",
+              name: "kind",
+              widget: "select",
+              options: ["post"],
+              default: "post",
+            }
+          - {
+              label: "Post name",
+              name: "name",
+              widget: "string",
+              hint: "Filename stem after the date, e.g. automata-basics-for-coders-part-1",
+            }
+          - { label: "Title (EN)", name: "title_en", widget: "string" }
+          - { label: "Title (CN)", name: "title_cn", widget: "string" }
+
   - name: "ai-glossary"
     label: "AI Glossary"
     folder: "_ai-glossary/"

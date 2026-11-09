@@ -1,0 +1,42 @@
+---
+label_en: Math for computer science
+label_cn: 计算机数学基础
+lead_en: CS math courses are where Chinese students often lose marks to definitions and phrasing, not to raw calculation. Sessions rebuild the definition → example → exam question path in both languages.
+lead_cn: 计算机数学课上，留学生丢分常常在定义与题干表述，而不在计算本身。 辅导会用双语重建「定义 → 例子 → 考题」这条路径。
+topics:
+- en: Linear algebra objects used in ML and graphics
+  cn: 机器学习与图形学里用到的线性代数对象
+- en: Probability language for algorithms and ML
+  cn: 算法与机器学习用的概率语言
+- en: Optimisation intuition (gradients, constraints)
+  cn: 优化直觉（梯度、约束）
+- en: Discrete math proofs at coursework pace
+  cn: 课业节奏下的离散数学证明
+- en: Translating lecture notation into worked examples
+  cn: 把课堂符号翻译成可下手的例子
+stuck:
+- en: Knowing the formula but not the exam phrasing
+  cn: 会公式，但吃不透考题表述
+- en: Skipping definitions and jumping to plug-and-chug
+  cn: 跳过定义，直接套公式
+- en: Weak link from math objects to code or ML use
+  cn: 数学对象与代码 / ML 用途之间断档
+session_angles:
+- en: Bilingual definition cards tied to one exam-style question each
+  cn: 每张双语定义卡对应一道考试风格题
+- en: Worked examples before general proofs
+  cn: 先做例子，再写一般证明
+- en: Connect the week’s math to the CS course that needs it
+  cn: 把当周数学接到真正用到它的 CS 课
+match: linear.?algebra|calculus|optim|probability|numer|discrete.?mathematic| mathematical|multivariate|matrix
+reading:
+- kind: post
+  name: linear-algebra-ml
+  title_en: From linear algebra to linear regression
+  title_cn: 从线性代数到线性回归
+- kind: post
+  name: linear-optimization-in-finance
+  title_en: Linear optimisation in finance
+  title_cn: 金融中的线性优化
+
+---

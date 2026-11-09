@@ -1,0 +1,38 @@
+---
+label_en: Databases & information systems
+label_cn: 数据库与信息系统
+lead_en: Database courses test modelling judgement and query discipline. We practice ER design, SQL that matches the schema, and explaining why a plan is slow—not just “getting rows back.”
+lead_cn: 数据库课考的是建模判断与查询纪律。我们练 ER 设计、贴合 schema 的 SQL， 以及解释计划为何慢——不只是“查出几行”。
+topics:
+- en: ER modelling and normalisation trade-offs
+  cn: ER 建模与范式权衡
+- en: SQL joins, aggregation, and nested queries
+  cn: SQL join、聚合与嵌套查询
+- en: Indexes, plans, and “why is this slow?”
+  cn: 索引、执行计划与“为什么慢”
+- en: Transactions and isolation at intro level
+  cn: 入门级事务与隔离级别
+- en: Application ↔ DB boundary in coursework projects
+  cn: 课设里应用与数据库的边界
+stuck:
+- en: Correct-looking SQL that fails hidden test schemas
+  cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+- en: Over-normalised or under-normalised designs
+  cn: 过度范式或范式不足的设计
+- en: ORM confusion masking missing SQL fundamentals
+  cn: 被 ORM 迷惑，SQL 基本功没补上
+session_angles:
+- en: Sketch the ER, then write queries against it
+  cn: 先画 ER，再对着写查询
+- en: Explain a query plan in plain language
+  cn: 用白话解释执行计划
+- en: Fix project schema / migration issues with you
+  cn: 一起修课设 schema / migration 问题
+match: database|\bsql\b|relational|information.?system|data.?manag| mongodb|nosql|transaction
+reading:
+- kind: post
+  name: deep-dive-into-vector-database
+  title_en: Vector databases deep dive
+  title_cn: 向量数据库深入
+
+---

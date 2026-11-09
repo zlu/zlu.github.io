@@ -1,0 +1,42 @@
+---
+label_en: Computer science coursework
+label_cn: 计算机课业
+lead_en: 'Whatever the course code, the tutoring pattern stays the same: bilingual concept catch-up, assignment debugging with you in control, and exam revision on weak spots.'
+lead_cn: 不论课号是什么，辅导节奏一致：中英双语补概念、你来操作我旁路 debug、 针对薄弱点备考。
+topics:
+- en: Lecture catch-up in Chinese and English
+  cn: 中英双语补课与知识点梳理
+- en: Assignment approach and debugging
+  cn: 作业思路与调试
+- en: Project structure and write-up feedback
+  cn: Project 结构与报告反馈
+- en: Exam topic maps on weak areas
+  cn: 针对薄弱点的考点地图
+- en: Tools the course actually uses (Git, notebooks, LaTeX)
+  cn: 课程真正用到的工具（Git、notebook、LaTeX）
+stuck:
+- en: Lectures outpacing note-taking
+  cn: 课速度快于记笔记速度
+- en: Stacked deadlines across labs and projects
+  cn: Lab 与 Project 截止日期叠在一起
+- en: Not knowing what “good enough” looks like for the rubric
+  cn: 不清楚评分量表眼里的“够好”
+session_angles:
+- en: Start from your materials and the nearest deadline
+  cn: 从你的材料与最近 DDL 开始
+- en: Leave with a concrete next-step checklist
+  cn: 课后带走一份可执行的下一步清单
+- en: Book follow-ups only where they still move the grade
+  cn: 只在还能拉动成绩的地方约后续课
+match: ''
+reading:
+- kind: post
+  name: linear-algebra-ml
+  title_en: From linear algebra to linear regression
+  title_cn: 从线性代数到线性回归
+- kind: post
+  name: rag-based-knowledge-base-with-agent-support
+  title_en: RAG knowledge bases with agents
+  title_cn: 带 Agent 的 RAG 知识库
+
+---
