@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="teach-landing">
+<article class="teach-landing teach-course-page">
   <nav class="teach-crumbs" aria-label="Breadcrumb">
     <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
     <span>/</span>
@@ -78,95 +78,118 @@ layout: default
   </section>
   {% endif %}
 
-  {% if page.theme_topics and page.theme_topics.size > 0 %}
-  <section class="teach-landing-section">
-    <h2 data-en="Topics we work through"
-        data-cn="辅导会覆盖的主题">辅导会覆盖的主题</h2>
-    <p class="teach-section-note"
-       data-en="Common tutoring focus for this kind of course — not a copy of any university syllabus."
-       data-cn="这类课常见的辅导重点，不是任何学校大纲原文。">这类课常见的辅导重点，不是任何学校大纲原文。</p>
-    <ul class="teach-topic-chips">
-      {% for topic in page.theme_topics %}
-      <li data-en="{{ topic.en }}" data-cn="{{ topic.cn }}">{{ topic.cn }}</li>
-      {% endfor %}
-    </ul>
-  </section>
+  {% assign has_topics = false %}
+  {% if page.theme_topics and page.theme_topics.size > 0 %}{% assign has_topics = true %}{% endif %}
+  {% assign has_stuck = false %}
+  {% if page.theme_stuck and page.theme_stuck.size > 0 %}{% assign has_stuck = true %}{% endif %}
+  {% if has_topics or has_stuck %}
+  <div class="teach-course-split{% unless has_topics and has_stuck %} teach-course-split--single{% endunless %}">
+    {% if has_topics %}
+    <section class="teach-landing-section teach-course-panel">
+      <h2 data-en="Topics we work through"
+          data-cn="辅导会覆盖的主题">辅导会覆盖的主题</h2>
+      <p class="teach-section-note"
+         data-en="Common tutoring focus for this kind of course — not a copy of any university syllabus."
+         data-cn="这类课常见的辅导重点，不是任何学校大纲原文。">这类课常见的辅导重点，不是任何学校大纲原文。</p>
+      <ul class="teach-topic-chips">
+        {% for topic in page.theme_topics %}
+        <li data-en="{{ topic.en }}" data-cn="{{ topic.cn }}">{{ topic.cn }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if has_stuck %}
+    <section class="teach-landing-section teach-course-panel teach-course-panel--stuck">
+      <h2 data-en="Where students usually get stuck"
+          data-cn="这门课常见卡点">这门课常见卡点</h2>
+      <ul class="teach-stuck-list">
+        {% for item in page.theme_stuck %}
+        <li data-en="{{ item.en }}" data-cn="{{ item.cn }}">{{ item.cn }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </div>
   {% endif %}
 
   {% if page.evidence_backed %}
   {% include teach-evidence.html %}
   {% endif %}
 
-  {% if page.theme_stuck and page.theme_stuck.size > 0 %}
-  <section class="teach-landing-section">
-    <h2 data-en="Where students usually get stuck"
-        data-cn="这门课常见卡点">这门课常见卡点</h2>
-    <ul class="teach-proof">
-      {% for item in page.theme_stuck %}
-      <li data-en="{{ item.en }}" data-cn="{{ item.cn }}">{{ item.cn }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-
-  {% if page.related_same_uni and page.related_same_uni.size > 0 %}
-  <section class="teach-landing-section">
-    <h2 data-en="Also tutoring at {{ page.university_label_en }}"
-        data-cn="{{ page.university_label_cn }} 其他已辅导课程">{{ page.university_label_cn }} 其他已辅导课程</h2>
-    <ul class="teach-course-links">
-      {% for c in page.related_same_uni %}
-      <li>
-        <a href="{{ c.url }}">
-          {% if c.code != "" %}<strong>{{ c.code }}</strong>: {% endif %}{{ c.title }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-
-  {% if page.related_same_theme and page.related_same_theme.size > 0 %}
-  <section class="teach-landing-section">
-    <h2 data-en="Same subject at other universities"
-        data-cn="其他学校的同类课程">其他学校的同类课程</h2>
-    <p class="teach-section-note"
-       data-en="Other {{ page.theme_label_en | downcase }} courses I tutor. Message WeChat if your code is missing."
-       data-cn="其他「{{ page.theme_label_cn }}」课。目录没有你的课号也可以微信发我。">其他「{{ page.theme_label_cn }}」课。目录没有你的课号也可以微信发我。</p>
-    <ul class="teach-course-links">
-      {% for c in page.related_same_theme %}
-      <li>
-        <a href="{{ c.url }}">
-          <span class="teach-related-uni">{{ c.university }}</span>
-          {% if c.code != "" %}<strong>{{ c.code }}</strong>: {% endif %}{{ c.title }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-
-  {% if page.theme_reading and page.theme_reading.size > 0 %}
-  <section class="teach-landing-section">
-    <h2 data-en="Notes from my writing"
-        data-cn="我写过的相关笔记">我写过的相关笔记</h2>
-    <ul class="teach-course-links">
-      {% for r in page.theme_reading %}
-      <li>
-        <a href="{{ r.url }}"
-           data-en="{{ r.title_en }}"
-           data-cn="{{ r.title_cn }}">{{ r.title_cn }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-
-  <section class="teach-landing-section">
+  <section class="teach-landing-section teach-course-prep">
     <h2 data-en="Before the first session"
         data-cn="第一次课前请准备">第一次课前请准备</h2>
     <p data-en="Send school, course code{% if page.course_code != "" %} ({{ page.course_code }}){% endif %}, deadline, and any starter files, workshop questions, or error screenshots via WeChat."
        data-cn="微信发送：学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 / 代码 / workshop 题 / 报错截图。">微信发送：学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 / 代码 / workshop 题 / 报错截图。</p>
+    <a class="btn btn-primary" href="/teach/#teach-book-qr"
+       data-en="Book on WeChat"
+       data-cn="微信预约（发课号）">微信预约（发课号）</a>
   </section>
+
+  {% assign has_same_uni = false %}
+  {% if page.related_same_uni and page.related_same_uni.size > 0 %}{% assign has_same_uni = true %}{% endif %}
+  {% assign has_same_theme = false %}
+  {% if page.related_same_theme and page.related_same_theme.size > 0 %}{% assign has_same_theme = true %}{% endif %}
+  {% assign has_reading = false %}
+  {% if page.theme_reading and page.theme_reading.size > 0 %}{% assign has_reading = true %}{% endif %}
+  {% if has_same_uni or has_same_theme or has_reading %}
+  <aside class="teach-course-more" aria-label="Related courses and notes">
+    {% if has_same_uni %}
+    <section class="teach-landing-section">
+      <h2 data-en="Also tutoring at {{ page.university_label_en }}"
+          data-cn="{{ page.university_label_cn }} 其他已辅导课程">{{ page.university_label_cn }} 其他已辅导课程</h2>
+      <ul class="teach-course-links teach-course-links--grid">
+        {% for c in page.related_same_uni %}
+        <li>
+          <a href="{{ c.url }}">
+            {% if c.code != "" %}<strong class="teach-course-code">{{ c.code }}</strong>{% endif %}
+            <span class="teach-course-title">{{ c.title }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if has_same_theme %}
+    <section class="teach-landing-section">
+      <h2 data-en="Same subject at other universities"
+          data-cn="其他学校的同类课程">其他学校的同类课程</h2>
+      <p class="teach-section-note"
+         data-en="Other {{ page.theme_label_en | downcase }} courses I tutor. Message WeChat if your code is missing."
+         data-cn="其他「{{ page.theme_label_cn }}」课。目录没有你的课号也可以微信发我。">其他「{{ page.theme_label_cn }}」课。目录没有你的课号也可以微信发我。</p>
+      <ul class="teach-course-links teach-course-links--cards">
+        {% for c in page.related_same_theme %}
+        <li>
+          <a href="{{ c.url }}">
+            <span class="teach-related-uni">{{ c.university }}</span>
+            {% if c.code != "" %}<strong class="teach-course-code">{{ c.code }}</strong>{% endif %}
+            <span class="teach-course-title">{{ c.title }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if has_reading %}
+    <section class="teach-landing-section teach-course-notes">
+      <h2 data-en="Notes from my writing"
+          data-cn="我写过的相关笔记">我写过的相关笔记</h2>
+      <ul class="teach-course-links teach-course-links--notes">
+        {% for r in page.theme_reading %}
+        <li>
+          <a href="{{ r.url }}"
+             data-en="{{ r.title_en }}"
+             data-cn="{{ r.title_cn }}">{{ r.title_cn }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </aside>
+  {% endif %}
 
   <p class="teach-landing-back">
     <a href="/teach/universities/{{ page.uni_slug }}/"

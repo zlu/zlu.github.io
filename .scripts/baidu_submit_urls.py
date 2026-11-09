@@ -79,7 +79,12 @@ def save_state(state: dict) -> None:
 
 def fetch_sitemap_urls(sitemap_url: str) -> list[tuple[str, str]]:
     """Return list of (url, lastmod) from sitemap (or sitemap index)."""
-    xml_bytes = urllib.request.urlopen(sitemap_url, timeout=60).read()
+    # Cloudflare rejects Python's default User-Agent with 403.
+    req = urllib.request.Request(
+        sitemap_url,
+        headers={"User-Agent": "zlu-baidu-submit/1.0 (+https://zlu.me)"},
+    )
+    xml_bytes = urllib.request.urlopen(req, timeout=60).read()
     root = ET.fromstring(xml_bytes)
     # Handle default xmlns by ignoring namespaces
     tag = lambda el: el.tag.split("}")[-1] if "}" in el.tag else el.tag

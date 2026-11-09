@@ -14,32 +14,32 @@ courses:
   material: comp3770
   theme: programming
   lead_en: >-
-    COMP3770 is English-heavy project and systems management: briefs, reports, and
-    process vocabulary. The hard part is turning abstract management frameworks into
-    a concrete submission the marker recognises — not only knowing the buzzwords.
+    COMP3770 is project and systems management: briefs, reports, and process
+    vocabulary. The hard part is turning abstract management frameworks into a
+    concrete submission the marker recognises — not only knowing the buzzwords.
   lead_cn: >-
-    COMP3770 是英文很重的项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架
+    COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架
     转化成改卷人认得的具体提交物，而不只是会技术用语。
   overview_en: >-
     Management of IT Systems and Projects emphasises structured reports, assignment
-    guidelines, and defending decisions in English. Students stall when report
+    guidelines, and defending decisions clearly. Students stall when report
     templates feel vague, or when technical and managerial language collide in one
     document.
   overview_cn: >-
-    Management of IT Systems and Projects 强调结构化报告、作业指南，以及用英文为决策辩护。
+    Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。
     卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
   topics:
     - en: "Reading assignment guidelines into a section plan"
       cn: "把作业指南转化成章节计划"
-    - en: "Project / IT management vocabulary in English"
-      cn: "英文项目 / IT 管理术语"
+    - en: "Project / IT management vocabulary"
+      cn: "项目 / IT 管理术语"
     - en: "Report structure that matches the brief"
       cn: "与 brief 对齐的报告结构"
     - en: "Defending decisions without empty buzzwords"
       cn: "为决策辩护，不用空技术用语"
   stuck:
-    - en: "Knows the topic, cannot structure the English report"
-      cn: "懂主题，却搭不起英文报告结构"
+    - en: "Knows the topic, cannot structure the report"
+      cn: "懂主题，却搭不起报告结构"
     - en: "Guideline language denser than the lecture examples"
       cn: "指南用语比课堂例子更密"
     - en: "Technical detail without answering the management question"
@@ -88,32 +88,32 @@ courses:
   material: comp3770
   theme: programming
   lead_en: >-
-    COMP3770 is English-heavy project and systems management: briefs, reports, and
-    process vocabulary. The hard part is turning abstract management frameworks into
-    a concrete submission the marker recognises — not only knowing the buzzwords.
+    COMP3770 is project and systems management: briefs, reports, and process
+    vocabulary. The hard part is turning abstract management frameworks into a
+    concrete submission the marker recognises — not only knowing the buzzwords.
   lead_cn: >-
-    COMP3770 是英文很重的项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架
+    COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架
     转化成改卷人认得的具体提交物，而不只是会技术用语。
   overview_en: >-
     Management of IT Systems and Projects emphasises structured reports, assignment
-    guidelines, and defending decisions in English. Students stall when report
+    guidelines, and defending decisions clearly. Students stall when report
     templates feel vague, or when technical and managerial language collide in one
     document.
   overview_cn: >-
-    Management of IT Systems and Projects 强调结构化报告、作业指南，以及用英文为决策辩护。
+    Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。
     卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
   topics:
     - en: "Reading assignment guidelines into a section plan"
       cn: "把作业指南转化成章节计划"
-    - en: "Project / IT management vocabulary in English"
-      cn: "英文项目 / IT 管理术语"
+    - en: "Project / IT management vocabulary"
+      cn: "项目 / IT 管理术语"
     - en: "Report structure that matches the brief"
       cn: "与 brief 对齐的报告结构"
     - en: "Defending decisions without empty buzzwords"
       cn: "为决策辩护，不用空技术用语"
   stuck:
-    - en: "Knows the topic, cannot structure the English report"
-      cn: "懂主题，却搭不起英文报告结构"
+    - en: "Knows the topic, cannot structure the report"
+      cn: "懂主题，却搭不起报告结构"
     - en: "Guideline language denser than the lecture examples"
       cn: "指南用语比课堂例子更密"
     - en: "Technical detail without answering the management question"

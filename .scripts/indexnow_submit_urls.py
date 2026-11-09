@@ -784,15 +784,31 @@ def main() -> int:
         if status in (200, 202):
             state["submitted"][url] = {"at": at}
             ok_count += 1
-            print(f"  [{i + 1}/{len(urls)}] HTTP {status} {url}")
+            print(f"  [{i + 1}/{len(urls)}] HTTP {status} {url}", flush=True)
+            # Persist after each OK so a mid-stream hang keeps progress.
+            state["last_run"] = {
+                "at": at,
+                "mode": "stream",
+                "requested": len(urls),
+                "ok": ok_count,
+                "failed": fail_count,
+                "status": last_status,
+                "response": last_raw,
+                "progress": f"{i + 1}/{len(urls)}",
+            }
+            save_state(state)
         else:
             fail_count += 1
-            print(f"  [{i + 1}/{len(urls)}] HTTP {status} {url}", file=sys.stderr)
+            print(f"  [{i + 1}/{len(urls)}] HTTP {status} {url}", file=sys.stderr, flush=True)
             if raw:
-                print(f"    {raw}", file=sys.stderr)
+                print(f"    {raw}", file=sys.stderr, flush=True)
             if status == 429:
-                print("Rate limited; stopping.", file=sys.stderr)
+                print("Rate limited; stopping.", file=sys.stderr, flush=True)
                 break
+            # Transient network/SSL blips: brief pause, then continue.
+            if status == 0 and i + 1 < len(urls):
+                time.sleep(max(args.delay, 1.5))
+                continue
         if i + 1 < len(urls) and args.delay > 0:
             time.sleep(args.delay)
 

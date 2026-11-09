@@ -35,8 +35,8 @@ machine-learning:
       cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
     - en: Model “works” but the report cannot explain why
       cn: 模型能跑，但报告说不清为什么有效
-    - en: English lecture slides move faster than the math catches up
-      cn: 英文课件节奏快于数学跟进速度
+    - en: Lecture slides move faster than the math catches up
+      cn: 课件节奏快于数学跟进速度
   session_angles:
     - en: Map the assignment brief to a short concept checklist
       cn: 把作业 brief 映射成一份短概念清单
@@ -65,22 +65,6 @@ machine-learning:
       name: fastai-part1
       title_en: Fastai practical deep learning (part 1)
       title_cn: Fastai 实践深度学习（一）
-    - kind: glossary
-      name: backpropagation
-      title_en: Backpropagation
-      title_cn: 反向传播
-    - kind: glossary
-      name: overfitting
-      title_en: Overfitting
-      title_cn: 过拟合
-    - kind: glossary
-      name: supervised-learning
-      title_en: Supervised learning
-      title_cn: 监督学习
-    - kind: glossary
-      name: gradient-descent
-      title_en: Gradient descent
-      title_cn: 梯度下降
 
 data-science:
   label_en: Data science & analytics
@@ -130,14 +114,6 @@ data-science:
       name: audio-analysis-r
       title_en: Audio analysis in R
       title_cn: 用 R 做音频分析
-    - kind: glossary
-      name: embedding
-      title_en: Embedding
-      title_cn: 向量嵌入
-    - kind: glossary
-      name: cosine-similarity
-      title_en: Cosine similarity
-      title_cn: 余弦相似度
 
 programming:
   label_en: Programming & software construction
@@ -273,8 +249,8 @@ systems:
       cn: 只有并发或负载下才失败的 Lab
     - en: Mixing up layers (app vs transport vs link)
       cn: 把应用 / 传输 / 链路层概念混在一起
-    - en: English man pages and RFCs denser than lecture pace
-      cn: 英文 man page / RFC 比课堂节奏更密
+    - en: Man pages and RFCs denser than lecture pace
+      cn: Man page / RFC 比课堂节奏更密
   session_angles:
     - en: Draw the call / packet path before changing code
       cn: 改代码前先画出调用 / 报文路径
@@ -342,24 +318,16 @@ databases:
       name: deep-dive-into-vector-database
       title_en: Vector databases deep dive
       title_cn: 向量数据库深入
-    - kind: glossary
-      name: approximate-nearest-neighbor
-      title_en: Approximate nearest neighbor
-      title_cn: 近似最近邻
-    - kind: glossary
-      name: dense-retrieval
-      title_en: Dense retrieval
-      title_cn: 稠密检索
 
 math-for-cs:
   label_en: Math for computer science
   label_cn: 计算机数学基础
   lead_en: >-
-    CS math courses are where Chinese students often lose marks to English definitions,
-    not to raw calculation. Sessions rebuild the definition → example → exam question path
-    in both languages.
+    CS math courses are where Chinese students often lose marks to definitions and
+    phrasing, not to raw calculation. Sessions rebuild the definition → example → exam
+    question path in both languages.
   lead_cn: >-
-    计算机数学课上，留学生丢分常常在英文定义，而不在计算本身。
+    计算机数学课上，留学生丢分常常在定义与题干表述，而不在计算本身。
     辅导会用双语重建「定义 → 例子 → 考题」这条路径。
   topics:
     - en: Linear algebra objects used in ML and graphics
@@ -374,7 +342,7 @@ math-for-cs:
       cn: 把课堂符号翻译成可下手的例子
   stuck:
     - en: Knowing the formula but not the exam phrasing
-      cn: 会公式，但吃不透英文考题表述
+      cn: 会公式，但吃不透考题表述
     - en: Skipping definitions and jumping to plug-and-chug
       cn: 跳过定义，直接套公式
     - en: Weak link from math objects to code or ML use
@@ -398,10 +366,6 @@ math-for-cs:
       name: linear-optimization-in-finance
       title_en: Linear optimisation in finance
       title_cn: 金融中的线性优化
-    - kind: glossary
-      name: gradient-descent
-      title_en: Gradient descent
-      title_cn: 梯度下降
 
 security:
   label_en: Security & privacy
@@ -444,10 +408,6 @@ security:
       name: rag-based-knowledge-base-with-agent-support
       title_en: RAG knowledge bases with agents
       title_cn: 带 Agent 的 RAG 知识库
-    - kind: glossary
-      name: alignment
-      title_en: Alignment
-      title_cn: 对齐
 
 web-mobile:
   label_en: Web, mobile & HCI
@@ -491,10 +451,6 @@ web-mobile:
       name: hugging-face-mcp-with-openai-zero-code-setup
       title_en: Hugging Face MCP with OpenAI setup
       title_cn: Hugging Face MCP 与 OpenAI 零代码配置
-    - kind: glossary
-      name: agent
-      title_en: Agent
-      title_cn: Agent
 
 automata:
   label_en: Automata & event-driven systems
@@ -569,8 +525,8 @@ general:
     - en: Tools the course actually uses (Git, notebooks, LaTeX)
       cn: 课程真正用到的工具（Git、notebook、LaTeX）
   stuck:
-    - en: English lectures outpacing note-taking
-      cn: 英文课速度快于记笔记速度
+    - en: Lectures outpacing note-taking
+      cn: 课速度快于记笔记速度
     - en: Stacked deadlines across labs and projects
       cn: Lab 与 Project 截止日期叠在一起
     - en: Not knowing what “good enough” looks like for the rubric

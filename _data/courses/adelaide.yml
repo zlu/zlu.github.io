@@ -25,24 +25,23 @@ courses:
     material: Comp_4023-event-driven-computing
     theme: automata
     lead_en: >-
-      This course is hard for many Chinese students abroad: English lectures move fast,
-      Greek letters (δ, Δ̂, ε, Σ) pile up, the ideas are abstract, and exam figures look
-      cryptic until you have a reading method. Tutoring turns that fog into steps you can
-      repeat on paper.
+      This course is hard for many Chinese students abroad: lectures move fast, Greek
+      letters (δ, Δ̂, ε, Σ) pile up, the ideas are abstract, and exam figures look cryptic
+      until you have a reading method. Tutoring turns that fog into steps you can repeat
+      on paper.
     lead_cn: >-
-      这门课对很多留学生特别难：英文课节奏快，希腊字母（δ、Δ̂、ε、Σ）堆在一起，
+      这门课对很多留学生特别难：课节奏快，希腊字母（δ、Δ̂、ε、Σ）堆在一起，
       概念抽象，考试图又像天书。辅导把这团雾拆成纸上能一步步做的方法。
     overview_en: >-
       Event Driven Computing mixes formal models with reactive software: finite automata
       (DFA / NFA / ε-NFA), regular expressions, Moore machines, Petri nets, observers /
       events, and FRP-style transforms. The pain is rarely “I never saw this once.” It is
-      English terminology under time pressure, symbols that do not stick, abstract
-      definitions with no picture in your head, and graphs you cannot decode when the
-      figure is new.
+      terminology under time pressure, symbols that do not stick, abstract definitions
+      with no picture in your head, and graphs you cannot decode when the figure is new.
     overview_cn: >-
       Event Driven Computing 把形式模型与反应式软件绑在一起：有限自动机（DFA / NFA / ε-NFA）、
       正则、Moore 机、Petri 网、observer / 事件，以及 FRP 风格变换。真正卡人的往往不是
-      「完全没见过」，而是限时英文术语、记不住的符号、脑子里没有画面的抽象定义，
+      「完全没见过」，而是限时术语、记不住的符号、脑子里没有画面的抽象定义，
       以及换一张图就不会读的暗号式状态图 / Petri 网。
     topics:
       - en: Reading FSAs and computing extended transitions Δ̂
@@ -62,8 +61,8 @@ courses:
       - en: Timed past-paper blocks with wrong-answer analysis
         cn: 限时真题块 + 错题方法复盘
     stuck:
-      - en: English lecture + Greek symbols (δ, Δ̂, ε, Σ) — vocabulary outruns understanding
-        cn: 英文课 + 希腊字母（δ、Δ̂、ε、Σ）——术语比理解跑得快
+      - en: Lecture pace + Greek symbols (δ, Δ̂, ε, Σ) — vocabulary outruns understanding
+        cn: 课速 + 希腊字母（δ、Δ̂、ε、Σ）——术语比理解跑得快
       - en: Abstract definitions with no mental picture of what the machine is doing
         cn: 抽象定义对不上脑子里的「机器在干什么」
       - en: Cryptic state / Petri diagrams that look familiar until the exam figure is new

@@ -10,28 +10,28 @@ courses:
     material: fit1045
     theme: programming
     lead_en: >-
-      FIT1045 is many students' first real programming unit. English briefs, Python
-      syntax, and workshop logic hit at once. The hard part is not memorising keywords —
-      it is turning a wordy task into working code without freezing in the IDE.
+      FIT1045 is many students' first real programming unit. Briefs, Python syntax, and
+      workshop logic hit at once. The hard part is not memorising keywords — it is turning
+      a wordy task into working code without freezing in the IDE.
     lead_cn: >-
-      FIT1045 往往是留学生第一门正经编程课。英文 brief、Python 语法、workshop 逻辑一起压过来。
-      难的不是背关键字，而是把一段英文题意变成能跑的代码，而不是在 IDE 里卡住。
+      FIT1045 往往是留学生第一门正经编程课。Brief、Python 语法、workshop 逻辑一起压过来。
+      难的不是背关键字，而是把题意变成能跑的代码，而不是在 IDE 里卡住。
     overview_en: >-
       Introduction to Programming covers Python fundamentals through workshops, quizzes,
       and coding tasks (control flow, functions, strings, simple algorithms such as
-      classical ciphers). Students get stuck when English task wording is unclear, when
+      classical ciphers). Students get stuck when the task wording is unclear, when
       errors look random, or when a solution “almost works” but fails hidden cases.
     overview_cn: >-
       Introduction to Programming 用 workshop、quiz 与编程任务带你入门 Python（控制流、函数、
-      字符串，以及恺撒 / 维吉尼亚一类经典密码练习）。真正卡人的是英文题意读不清、报错像随机事件，
+      字符串，以及恺撒 / 维吉尼亚一类经典密码练习）。真正卡人的是题意读不清、报错像随机事件，
       或代码「差不多能跑」却过不了隐藏测例。
     topics:
       - en: Python basics — variables, control flow, functions
         cn: Python 基础：变量、控制流、函数
       - en: Strings, lists, and simple data processing
         cn: 字符串、列表与简单数据处理
-      - en: Reading an English brief into a step-by-step plan
-        cn: 把英文 brief 拆成可执行步骤
+      - en: Reading a brief into a step-by-step plan
+        cn: 把 brief 拆成可执行步骤
       - en: Debugging with traces instead of random edits
         cn: 用跟踪思路 debug，而不是乱改
       - en: Workshop and quiz-style practice problems
@@ -39,8 +39,8 @@ courses:
       - en: Classic cipher-style string tasks as algorithm warm-ups
         cn: 经典密码类字符串题作为算法热身
     stuck:
-      - en: "English assignment text makes sense in class, then freezes you alone at the keyboard"
-        cn: "课上听得懂英文题，自己对着键盘就停住"
+      - en: "Assignment text makes sense in class, then freezes you alone at the keyboard"
+        cn: "课上听得懂题，自己对着键盘就停住"
       - en: Syntax errors and stack traces feel random instead of diagnostic
         cn: 语法错误和堆栈像随机事件，不会当诊断信息读
       - en: A program that works on the sample input fails the autograder edge cases
@@ -55,8 +55,8 @@ courses:
       - en: "Exam / quiz drills on the same patterns workshops use"
         cn: "用与 workshop 同构的题型做 quiz / 考试练习"
     tutoring:
-      - en: "Lecture sync: bilingual walkthrough of Python concepts so workshop language matches what you hear in English class."
-        cn: "同步跟课：用中英双语把 Python 概念讲透，让 workshop 用语与英文课对齐。"
+      - en: "Lecture sync: bilingual walkthrough of Python concepts so workshop language matches the lectures."
+        cn: "同步跟课：用中英双语把 Python 概念讲透，与 workshop / 课堂用语对齐。"
       - en: "Assignments: approach review and live debug. You keep authorship and submit yourself — no ghostwriting."
         cn: "作业辅导：拆 brief、梳思路、现场 debug。你保有作者身份并本人提交——不代写。"
       - en: "Quiz / exam prep: short timed drills on control flow, strings, and reading error messages under pressure."
@@ -68,11 +68,11 @@ courses:
     material: FIT5196-datawrangling
     theme: data-science
     lead_en: >-
-      FIT5196 punishes messy notebooks. English assessment briefs, dirty tables, and
-      group deadlines stack together. The hard part is building a clean, reproducible
+      FIT5196 punishes messy notebooks. Assessment briefs, dirty tables, and group
+      deadlines stack together. The hard part is building a clean, reproducible
       wrangling pipeline the marker can follow — not running one lucky pandas line.
     lead_cn: >-
-      FIT5196 最怕凌乱 notebook。英文作业 brief、脏表、小组 DDL 叠在一起。难的不是碰巧跑通
+      FIT5196 最怕凌乱 notebook。作业 brief、脏表、小组 DDL 叠在一起。难的不是碰巧跑通
       一行 pandas，而是交出改卷人跟得上的干净、可复现清洗流水线。
     overview_en: >-
       Data Wrangling focuses on importing, cleaning, exploring, and reshaping real-world
@@ -97,8 +97,8 @@ courses:
       - en: "Reproducible notebooks the marker can re-run"
         cn: "改卷人能复跑的 notebook"
     stuck:
-      - en: "English brief + rubric language — unsure what 'enough cleaning' means"
-        cn: "英文 brief + 评分表述——不清楚「清洗到什么程度算够」"
+      - en: "Brief + rubric language — unsure what 'enough cleaning' means"
+        cn: "Brief + 评分表述——不清楚「清洗到什么程度算够」"
       - en: "Pretty plots that do not support the required claim"
         cn: "图很漂亮，却撑不起题目要求的结论"
       - en: "Group notebooks with unclear ownership and broken paths"
@@ -126,26 +126,26 @@ courses:
     material: etx3500-5500-High-Dimensional-Data-Analysis
     theme: data-science
     lead_en: >-
-      ETX3500 mixes statistics language with high-dimensional intuition. English lectures
-      move through formulae and plots quickly. The hard part is knowing what the method
-      is doing to the data — not copying a slide title into the assignment.
+      ETX3500 mixes statistics language with high-dimensional intuition. Lectures move
+      through formulae and plots quickly. The hard part is knowing what the method is
+      doing to the data — not copying a slide title into the assignment.
     lead_cn: >-
-      ETX3500 把统计术语和高维直觉绑在一起。英文课公式与图切换很快。难的不是把课件标题抄进作业，
+      ETX3500 把统计术语和高维直觉绑在一起。课上公式与图切换很快。难的不是把课件标题抄进作业，
       而是说清这个方法对数据到底做了什么。
     overview_en: >-
       High Dimensional Data Analysis covers statistical tools and exercises for data with
       many variables: dimension reduction intuition, modelling choices, and interpreting
-      plots under English terminology. Students stall when Greek letters and matrix talk
-      outrun the picture of “what changed in my table.”
+      plots. Students stall when Greek letters and matrix talk outrun the picture of
+      “what changed in my table.”
     overview_cn: >-
       High Dimensional Data Analysis 面向多变量数据的统计工具与练习：降维直觉、建模选择，
-      以及在英文术语下解读图表。卡点常在希腊字母和矩阵表述跑在前面，脑子里却没有
+      以及解读图表。卡点常在希腊字母和矩阵表述跑在前面，脑子里却没有
       「我的表到底发生了什么变化」的画面。
     topics:
       - en: "High-dimensional intuition vs ordinary regression habits"
         cn: "高维直觉 vs 普通回归习惯"
-      - en: "Reading English stats terminology next to the formula"
-        cn: "英文统计术语与公式对照着读"
+      - en: "Reading stats terminology next to the formula"
+        cn: "统计术语与公式对照着读"
       - en: "Tutorial / exercise walkthroughs with a method checklist"
         cn: "Tutorial / 练习：带着方法清单过"
       - en: "Interpreting plots without hand-waving"
@@ -153,8 +153,8 @@ courses:
     stuck:
       - en: "Formulae memorised without knowing what the output table should look like"
         cn: "公式背下来了，却不知道输出表该长什么样"
-      - en: "English lecture speed outruns note-taking on symbols and assumptions"
-        cn: "英文课速度超过记符号与假设的速度"
+      - en: "Lecture speed outruns note-taking on symbols and assumptions"
+        cn: "课速超过记符号与假设的速度"
       - en: "Plots produced, but the write-up cannot defend the modelling choice"
         cn: "图做出来了，报告却说不清为何选这个模型"
     session_angles:
@@ -165,8 +165,8 @@ courses:
       - en: "Exercise drills that force interpretation, not only computation"
         cn: "练习既要算，也要解释"
     tutoring:
-      - en: "Lecture sync: bilingual concept catch-up so English stats vocabulary matches the exercises."
-        cn: "同步跟课：用中英双语补概念，让英文统计词汇与练习对齐。"
+      - en: "Lecture sync: bilingual concept catch-up so stats vocabulary matches the exercises."
+        cn: "同步跟课：用中英双语补概念，让统计词汇与练习对齐。"
       - en: "Assignments / tutorials: approach review with you driving the computation."
         cn: "作业 / tutorial：你来操作计算，我旁路梳思路。"
       - en: "Exam prep: short drills on method choice, assumptions, and reading output."
@@ -177,26 +177,25 @@ courses:
     title: Programming Paradigms
     theme: programming
     lead_en: >-
-      FIT2102 switches the ground rules of programming. English lectures introduce a new
-      paradigm (often functional-style thinking) while assessment expects precise
-      reasoning. The hard part is abstract rules that do not feel like “normal” Python /
-      Java habits.
+      FIT2102 switches the ground rules of programming. Lectures introduce a new paradigm
+      (often functional-style thinking) while assessment expects precise reasoning. The
+      hard part is abstract rules that do not feel like “normal” Python / Java habits.
     lead_cn: >-
-      FIT2102 会换掉你习惯的编程规则。英文课引入新范式（常偏函数式思维），考核却要求推理精确。
+      FIT2102 会换掉你习惯的编程规则。课上引入新范式（常偏函数式思维），考核却要求推理精确。
       难的是那些抽象规则，和「普通」Python / Java 手感对不上。
     overview_en: >-
       Programming Paradigms asks you to think in more than one model of computation and
-      write programs that match the paradigm’s rules. Students struggle when English
-      definitions stay abstract, when error messages come from a unfamiliar toolchain,
-      or when exam questions test reasoning instead of syntax recall.
+      write programs that match the paradigm’s rules. Students struggle when definitions
+      stay abstract, when error messages come from an unfamiliar toolchain, or when exam
+      questions test reasoning instead of syntax recall.
     overview_cn: >-
       Programming Paradigms 要求你用不止一种计算模型思考，并按该范式的规则写程序。卡点常在
-      英文定义停在抽象层、不熟悉的工具链报错，或考试考的是推理而不是背语法。
+      定义停在抽象层、不熟悉的工具链报错，或考试考的是推理而不是背语法。
     topics:
       - en: "Paradigm shift — what changes vs ordinary imperative code"
         cn: "范式切换：相对命令式代码改了什么"
-      - en: "Reading English definitions into small executable examples"
-        cn: "把英文定义落到可执行小例子"
+      - en: "Reading definitions into small executable examples"
+        cn: "把定义落到可执行小例子"
       - en: "Tooling / compiler errors as diagnostic text"
         cn: "把工具链 / 编译报错当诊断文本读"
       - en: "Exam-style reasoning, not only coding syntax"
@@ -206,8 +205,8 @@ courses:
         cn: "把课堂术语变成第一个能跑的例子"
       - en: "Abstract concepts with no picture of data flow"
         cn: "抽象概念对不上数据怎么流动的画面"
-      - en: "English exam wording hides which paradigm rule is being tested"
-        cn: "英文考题措辞让人看不出在考哪条范式规则"
+      - en: "Exam wording hides which paradigm rule is being tested"
+        cn: "考题措辞让人看不出在考哪条范式规则"
     session_angles:
       - en: "One concept → one tiny example → you extend it"
         cn: "一个概念 → 一个小例子 → 你来扩展"
@@ -220,40 +219,40 @@ courses:
         cn: "同步跟课：用中英双语把范式概念讲到例子落地。"
       - en: "Assignments: approach review and live debug with you at the keyboard."
         cn: "作业辅导：拆题、现场 debug，你来操作键盘。"
-      - en: "Exam prep: drills on reasoning under English question wording."
-        cn: "考前突击：练在英文题干下做推理。"
+      - en: "Exam prep: drills on reasoning under exam question wording."
+        cn: "考前突击：练在考题措辞下做推理。"
 
   # GSC: fit2099
   - code: FIT2099
     title: Object Oriented Design and Implementation
     theme: programming
     lead_en: >-
-      FIT2099 is design under English briefs: classes, responsibilities, and diagrams
-      before the code compiles. The hard part is justifying a design — not only making
-      Java (or similar) run.
+      FIT2099 is a design-first course: classes, responsibilities, and diagrams before
+      the code compiles. The hard part is justifying a design — not only making Java
+      (or similar) run.
     lead_cn: >-
-      FIT2099 是英文 brief 下的设计课：先谈类、职责与图，再谈编译通过。难的是说清为什么这样设计，
+      FIT2099 是设计课：先谈类、职责与图，再谈编译通过。难的是说清为什么这样设计，
       而不只是让 Java（或类似语言）跑起来。
     overview_en: >-
       Object Oriented Design and Implementation focuses on modelling problems with
       objects, implementing designs, and communicating structure (often with diagrams
-      and design vocabulary). Students stall when English design jargon outruns the
-      mental model, or when code works but the design story fails the rubric.
+      and design vocabulary). Students stall when design jargon outruns the mental
+      model, or when code works but the design story fails the rubric.
     overview_cn: >-
       Object Oriented Design and Implementation 强调用对象建模、落地实现，并用图与设计术语
-      讲清结构。卡点常在英文设计技术用语跑在前面，或代码能跑但设计叙事过不了评分。
+      讲清结构。卡点常在设计技术用语跑在前面，或代码能跑但设计叙事过不了评分。
     topics:
       - en: "Objects, responsibilities, and collaboration"
         cn: "对象、职责与协作"
-      - en: "Design vocabulary in English vs the code you write"
-        cn: "英文设计术语与你写的代码对照"
+      - en: "Design vocabulary vs the code you write"
+        cn: "设计术语与你写的代码对照"
       - en: "Diagrams that match the implementation"
         cn: "与实现对齐的图"
       - en: "Refactoring a messy design without breaking behaviour"
         cn: "在不破坏行为的前提下重构乱设计"
     stuck:
-      - en: "Can code features but cannot explain the design choices in English"
-        cn: "功能能写，却用英文说不清设计选择"
+      - en: "Can code features but cannot explain the design choices"
+        cn: "功能能写，却说不清设计选择"
       - en: "Diagrams look neat but diverge from the actual classes"
         cn: "图很整齐，却和真实类结构对不上"
       - en: "Inheritance / coupling choices that fight later requirements"
@@ -270,40 +269,40 @@ courses:
         cn: "同步跟课：用中英双语把 OOP 设计术语绑到小例子上。"
       - en: "Assignments: design review + implementation debug. You submit your own work."
         cn: "作业辅导：设计评审 + 实现 debug。作业本人提交。"
-      - en: "Exam / review prep: justify designs under English prompts."
-        cn: "考试 / review 突击：在英文提示下为设计辩护。"
+      - en: "Exam / review prep: justify designs under exam / review prompts."
+        cn: "考试 / review 突击：在题目要求下为设计辩护。"
 
   # GSC: fit3152
   - code: FIT3152
     title: Data Analytics
     theme: data-science
     lead_en: >-
-      FIT3152 mixes analytics tools with English statistical storytelling. The hard part
-      is turning a brief into a justified analysis — not producing charts that look busy.
+      FIT3152 mixes analytics tools with statistical storytelling. The hard part is
+      turning a brief into a justified analysis — not producing charts that look busy.
     lead_cn: >-
-      FIT3152 把分析工具和英文统计叙事绑在一起。难的是把 brief 转化成站得住脚的分析，
+      FIT3152 把分析工具和统计叙事绑在一起。难的是把 brief 转化成站得住脚的分析，
       而不是做出看起来很忙的图。
     overview_en: >-
       Data Analytics covers exploratory analysis, modelling choices, and communicating
-      results for assessment. Students struggle with English method names, when to trust
-      a plot, and write-ups that must defend assumptions.
+      results for assessment. Students struggle with method names, when to trust a plot,
+      and write-ups that must defend assumptions.
     overview_cn: >-
-      Data Analytics 覆盖探索性分析、建模选择，以及为评估写清结果。卡点常在英文方法名、
+      Data Analytics 覆盖探索性分析、建模选择，以及为评估写清结果。卡点常在方法名混在一起、
       何时相信一张图，以及报告必须为假设辩护。
     topics:
       - en: "EDA with a question, not only plots"
         cn: "带着问题做 EDA，而不只是画图"
       - en: "Model choice and assumption checks"
         cn: "模型选择与假设检查"
-      - en: "English analytics vocabulary next to the output"
-        cn: "英文分析术语与输出对照"
+      - en: "Analytics vocabulary next to the output"
+        cn: "分析术语与输出对照"
       - en: "Write-ups that match the evidence in the tables"
         cn: "报告结论与表格证据一致"
     stuck:
       - en: "Tool output produced, interpretation missing"
         cn: "工具输出有了，解释没有"
-      - en: "English brief terms map poorly onto the buttons you clicked"
-        cn: "英文 brief 术语对不上你点过的按钮"
+      - en: "Brief terms map poorly onto the buttons you clicked"
+        cn: "Brief 术语对不上你点过的按钮"
       - en: "Overfitting a story to whatever the software spat out"
         cn: "软件吐什么就编什么故事"
     session_angles:
@@ -318,33 +317,33 @@ courses:
         cn: "同步跟课：用中英双语对齐分析概念与评估用语。"
       - en: "Assignments: pipeline and write-up review with you driving the tools."
         cn: "作业辅导：流水线与报告评审，你来操作工具。"
-      - en: "Exam prep: interpret outputs under timed English prompts."
-        cn: "考前突击：限时英文提示下解读输出。"
+      - en: "Exam prep: interpret outputs under timed prompts."
+        cn: "考前突击：限时提示下解读输出。"
 
   # GSC: fit3155
   - code: FIT3155
     title: Advanced Data Structures and Algorithms
     theme: algorithms
     lead_en: >-
-      FIT3155 is algorithms under time pressure: English proofs, complexity talk, and
+      FIT3155 is algorithms under time pressure: proofs, complexity talk, and
       implementations that must match the argument. The hard part is keeping the
       invariant, the complexity claim, and the code aligned.
     lead_cn: >-
-      FIT3155 是限时压力下的算法课：英文证明、复杂度表述，以及必须与论证对齐的实现。
+      FIT3155 是限时压力下的算法课：证明、复杂度表述，以及必须与论证对齐的实现。
       难的是让不变量、复杂度结论和代码说的是同一件事。
     overview_en: >-
       Advanced Data Structures and Algorithms goes beyond intro DSA into harder
       structures, algorithm design patterns, and exam-style reasoning. Students stall
-      when English proof sketches feel abstract, or when a correct idea dies in
-      implementation bugs.
+      when proof sketches feel abstract, or when a correct idea dies in implementation
+      bugs.
     overview_cn: >-
       Advanced Data Structures and Algorithms 在入门 DSA 之上进入更难的结构、算法设计模式
-      与考试风格推理。卡点常在英文证明提纲过于抽象，或思路正确却死在实现 bug 上。
+      与考试风格推理。卡点常在证明提纲过于抽象，或思路正确却死在实现 bug 上。
     topics:
       - en: "Advanced structures and when to reach for them"
         cn: "进阶结构及其适用场景"
-      - en: "Invariants and short proof sketches in English"
-        cn: "不变量与英文短证明提纲"
+      - en: "Invariants and short proof sketches"
+        cn: "不变量与短证明提纲"
       - en: "Complexity arguments that survive marker scrutiny"
         cn: "经得起改卷的复杂度论证"
       - en: "Implementation that matches the algorithm you claimed"
@@ -376,35 +375,35 @@ courses:
     title: Modelling for Data Analysis
     theme: data-science
     lead_en: >-
-      FIT5197 is statistical modelling in English: choose a model, check assumptions,
-      and defend the fit. The hard part is interpretation under terminology denser than
-      the software UI.
+      FIT5197 is statistical modelling: choose a model, check assumptions, and defend
+      the fit. The hard part is interpretation under terminology denser than the
+      software UI.
     lead_cn: >-
-      FIT5197 是英文语境下的统计建模：选模型、查假设、为拟合辩护。难的是术语比软件界面更密，
+      FIT5197 是统计建模：选模型、查假设、为拟合辩护。难的是术语比软件界面更密，
       解释跟不上。
     overview_en: >-
       Modelling for Data Analysis focuses on building and justifying statistical models
-      for assessment. Students struggle when English model names blur together, when
-      diagnostics are ignored, or when the write-up cannot explain a coefficient or plot.
+      for assessment. Students struggle when model names blur together, when diagnostics
+      are ignored, or when the write-up cannot explain a coefficient or plot.
     overview_cn: >-
-      Modelling for Data Analysis 重点是为评估建立并论证统计模型。卡点常在英文模型名搅在一起、
+      Modelling for Data Analysis 重点是为评估建立并论证统计模型。卡点常在模型名搅在一起、
       忽略诊断，或报告解释不清系数 / 图。
     topics:
       - en: "Model choice for the question being asked"
         cn: "针对问题选择模型"
       - en: "Assumption checks and diagnostics"
         cn: "假设检查与诊断"
-      - en: "English stats vocabulary next to software output"
-        cn: "英文统计术语与软件输出对照"
+      - en: "Stats vocabulary next to software output"
+        cn: "统计术语与软件输出对照"
       - en: "Write-ups that defend fit quality honestly"
         cn: "诚实为拟合质量辩护的报告"
     stuck:
       - en: "Running a model without knowing what success looks like"
-        cn: "模型跑了，却不知道怎样算成功"
+        cn: "模型跑了，结果不理想或不知道成功的标准"
       - en: "Diagnostic plots produced but not read"
-        cn: "诊断图做了却不读"
-      - en: "English exam questions that test interpretation, not button clicks"
-        cn: "英文考题考解读，不考点哪里"
+        cn: "诊断图做了却不会读"
+      - en: "Exam questions that test interpretation, not button clicks"
+        cn: "考题考解读，不考点哪里"
     session_angles:
       - en: "Question → candidate models → diagnostics → claim"
         cn: "问题 → 候选模型 → 诊断 → 结论"
@@ -426,24 +425,24 @@ courses:
     theme: programming
     lead_en: >-
       FIT9136 rebuilds programming and algorithm foundations in Python for postgraduate
-      or conversion students. English lectures move quickly across basics and problem
-      solving. The hard part is catching up on both language and algorithmic thinking at
+      or conversion students. Lectures move quickly across basics and problem solving.
+      The hard part is catching up on both coding fluency and algorithmic thinking at
       once.
     lead_cn: >-
-      FIT9136 用 Python 为研究生 / 转专业学生重建编程与算法基础。英文课在基础与解题之间切得很快。
-      难的是语言和算法思维要同时补。
+      FIT9136 用 Python 为研究生 / 转专业学生重建编程与算法基础。课上在基础与解题之间切得很快。
+      难的是编程手感与算法思维要同时补。
     overview_en: >-
       Algorithms and programming foundations in Python covers core coding skills plus
-      introductory algorithmic problem solving. Students stall when English briefs assume
-      prior CS habits, or when “it runs” is treated as “it is correct.”
+      introductory algorithmic problem solving. Students stall when briefs assume prior
+      CS habits, or when “it runs” is treated as “it is correct.”
     overview_cn: >-
       Algorithms and programming foundations in Python 覆盖核心编码与入门算法解题。卡点常在
-      英文 brief 默认你已有 CS 习惯，或把「能跑」当成「正确」。
+      brief 默认你已有 CS 习惯，或把「能跑」当成「正确」。
     topics:
       - en: "Python foundations for algorithm tasks"
         cn: "面向算法任务的 Python 基础"
-      - en: "Problem decomposition from English briefs"
-        cn: "从英文 brief 分解问题"
+      - en: "Problem decomposition from briefs"
+        cn: "从 brief 分解问题"
       - en: "Basic complexity intuition"
         cn: "基础复杂度直觉"
       - en: "Testing edge cases before submission"
@@ -451,8 +450,8 @@ courses:
     stuck:
       - en: "Syntax OK, algorithmic plan missing"
         cn: "语法没问题，算法计划没有"
-      - en: "English problem statements denser than the examples in slides"
-        cn: "英文题干比课件例子密得多"
+      - en: "Problem statements denser than the examples in slides"
+        cn: "题干比课件例子密得多"
       - en: "Autograder failures with no debugging method"
         cn: "autograder 挂了却没有 debug 方法"
     session_angles:

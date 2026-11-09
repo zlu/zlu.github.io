@@ -408,48 +408,48 @@ module Jekyll
     # Per-theme difficulty hooks for Chinese students abroad (public copy, not inventory).
     THEME_DIFFICULTY = {
       "automata" => {
-        "en" => "English lectures, Greek letters, abstract machines, and cryptic state / Petri diagrams",
-        "cn" => "英文课、希腊字母、抽象自动机，以及暗号式状态图 / Petri 网"
+        "en" => "Greek letters, abstract machines, and cryptic state / Petri diagrams",
+        "cn" => "希腊字母、抽象自动机，以及暗号式状态图 / Petri 网"
       },
       "algorithms" => {
-        "en" => "English proofs, complexity talk, and pseudocode under time pressure",
-        "cn" => "英文证明、复杂度表述，以及限时伪代码"
+        "en" => "Proofs, complexity talk, and pseudocode under time pressure",
+        "cn" => "证明、复杂度表述，以及限时伪代码"
       },
       "machine-learning" => {
-        "en" => "English math+code lectures, loss jargon, and notebooks that fail on shape mismatches",
-        "cn" => "英文数理+代码课、损失相关技术用语，以及维度一错就挂的 notebook"
+        "en" => "Math+code lectures, loss jargon, and notebooks that fail on shape mismatches",
+        "cn" => "数理+代码课、损失相关技术用语，以及维度一错就挂的 notebook"
       },
       "data-science" => {
-        "en" => "English briefs, messy tables, and write-ups that must defend every plot",
-        "cn" => "英文 brief、脏表，以及每张图都要说得清的报告"
+        "en" => "Assessment briefs, messy tables, and write-ups that must defend every plot",
+        "cn" => "作业 brief、脏表，以及每张图都要说得清的报告"
       },
       "programming" => {
-        "en" => "English assignment wording, unfamiliar toolchains, and autograders that punish edge cases",
-        "cn" => "英文作业措辞、不熟的工具链，以及专卡边界情况的 autograder"
+        "en" => "Dense assignment wording, unfamiliar toolchains, and autograders that punish edge cases",
+        "cn" => "密集的作业措辞、不熟的工具链，以及专卡边界情况的 autograder"
       },
       "systems" => {
-        "en" => "Dense English systems vocabulary, diagrams, and labs that fail for opaque reasons",
-        "cn" => "密集的英文系统术语、图表，以及原因不透明的 Lab 失败"
+        "en" => "Dense systems vocabulary, diagrams, and labs that fail for opaque reasons",
+        "cn" => "密集的系统术语、图表，以及原因不透明的 Lab 失败"
       },
       "databases" => {
-        "en" => "English schema / query jargon and assignments where one wrong join wrecks results",
-        "cn" => "英文 schema / 查询技术用语，以及一个 join 写错结果全歪的作业"
+        "en" => "Schema / query jargon and assignments where one wrong join wrecks results",
+        "cn" => "Schema / 查询技术用语，以及一个 join 写错结果全歪的作业"
       },
       "math-for-cs" => {
-        "en" => "English proofs, symbol-heavy slides, and abstractions without a picture",
-        "cn" => "英文证明、符号密集的课件，以及没有画面的抽象"
+        "en" => "Proofs, symbol-heavy slides, and abstractions without a picture",
+        "cn" => "证明、符号密集的课件，以及没有画面的抽象"
       },
       "security" => {
-        "en" => "English threat / crypto vocabulary and labs with cryptic failure modes",
-        "cn" => "英文威胁 / 密码学术语，以及失败模式很隐晦的 Lab"
+        "en" => "Threat / crypto vocabulary and labs with cryptic failure modes",
+        "cn" => "威胁 / 密码学术语，以及失败模式很隐晦的 Lab"
       },
       "web-mobile" => {
-        "en" => "English UI / API briefs and stacks where front-end and back-end errors blur together",
-        "cn" => "英文 UI / API brief，以及前后端报错搅在一起的技术栈"
+        "en" => "UI / API briefs and stacks where front-end and back-end errors blur together",
+        "cn" => "UI / API brief，以及前后端报错搅在一起的技术栈"
       },
       "general" => {
-        "en" => "Fast English lectures, dense terminology, and abstract ideas that do not stick from slides alone",
-        "cn" => "偏快的英文课、密集术语，以及单靠课件记不住的抽象概念"
+        "en" => "Fast lectures, dense terminology, and abstract ideas that do not stick from slides alone",
+        "cn" => "偏快的课、密集术语，以及单靠课件记不住的抽象概念"
       }
     }.freeze
 
@@ -476,27 +476,30 @@ module Jekyll
 
       overview_en = "#{label} sits in #{theme_label_en.to_s.downcase}. "
       overview_en += "Typical focus includes #{topic_ens.join('; ')}. " if topic_ens.any?
-      overview_en += "The pain is rarely never having seen the topic — it is English terminology " \
+      overview_en += "The pain is rarely never having seen the topic — it is terminology " \
                      "under time pressure, symbols that do not stick, and questions that look " \
                      "cryptic until you have a method."
 
       overview_cn = "#{label} 属于「#{theme_label_cn}」类课。"
       overview_cn += "常见重点包括：#{topic_cns.join('；')}。" if topic_cns.any?
-      overview_cn += "真正卡人的往往不是完全没见过，而是限时英文术语、记不住的符号，" \
+      overview_cn += "真正卡人的往往不是完全没见过，而是限时术语、记不住的符号，" \
                      "以及没有方法时看起来像天书的题目。"
 
       stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) }.map(&:dup)
-      english_stuck = {
-        "en" => "English lecture speed + dense #{theme_label_en.downcase} vocabulary outruns note-taking",
-        "cn" => "英文课节奏 + 密集的「#{theme_label_cn}」术语超过记笔记速度"
+      pace_stuck = {
+        "en" => "Lecture speed + dense #{theme_label_en.downcase} vocabulary outruns note-taking",
+        "cn" => "课速 + 密集的「#{theme_label_cn}」术语超过记笔记速度"
       }
-      stuck = [english_stuck] + stuck unless stuck.any? { |t| t["en"].to_s.downcase.include?("english") }
+      stuck = [pace_stuck] + stuck unless stuck.any? { |t|
+        en = t["en"].to_s.downcase
+        en.include?("lecture speed") || en.include?("outruns note")
+      }
 
       session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }
       tutoring = [
         {
-          "en" => "Lecture sync for #{label}: bilingual catch-up so workshop / tutorial language matches the English course.",
-          "cn" => "#{label} 同步跟课：用中英双语补概念，让 workshop / tutorial 用语与英文课对齐。"
+          "en" => "Lecture sync for #{label}: bilingual catch-up so workshop / tutorial language matches the lectures.",
+          "cn" => "#{label} 同步跟课：用中英双语补概念，与 workshop / tutorial 用语对齐。"
         },
         {
           "en" => "Assignments: approach review and live debug. You keep authorship and submit yourself — no ghostwriting.",
@@ -621,20 +624,16 @@ module Jekyll
       "general"
     end
 
+    # Course "Notes from my writing" is posts only — never glossary term pages.
     def resolve_theme_reading(site, reading_list)
       Array(reading_list).filter_map do |item|
         next unless item.is_a?(Hash)
+        next unless item["kind"].to_s == "post"
 
-        kind = item["kind"].to_s
         name = item["name"].to_s.strip
         next if name.empty?
 
-        url = case kind
-              when "glossary"
-                find_glossary_url(site, name)
-              when "post"
-                find_post_url(site, name)
-              end
+        url = find_post_url(site, name)
         next unless url
 
         {
@@ -643,16 +642,6 @@ module Jekyll
           "title_cn" => item["title_cn"].to_s
         }
       end
-    end
-
-    def find_glossary_url(site, name)
-      docs = site.collections["ai-glossary"]&.docs
-      return nil unless docs
-
-      doc = docs.find do |d|
-        File.basename(d.path, ".*") == name || d.data["slug"].to_s == name
-      end
-      doc&.url
     end
 
     def find_post_url(site, name)
