@@ -5,7 +5,7 @@ description: "Portfolio of projects by Zhao Lü spanning reading products, langu
 permalink: /portfolio/
 ---
 
-## Portfolio
+# Portfolio
 
 Side projects and products I build and run.
 

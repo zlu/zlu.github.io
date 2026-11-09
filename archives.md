@@ -5,7 +5,7 @@ description: "Archive of older blog posts by Zhao Lü — engineering notes, Pos
 permalink: /archives/
 ---
 
-## Blog Archive
+# Blog Archive
 
 {% for post in site.archives %}
   [{{ post.title }}]({{ post.url }}) – {{ post.date | date: "%B %d, %Y" }}

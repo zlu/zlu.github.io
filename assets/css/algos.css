@@ -64,8 +64,16 @@
 
 .algo-page h1 {
   margin: 0 0 0.4em;
-  font-size: 1.65em;
-  line-height: 1.25;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  .algo-page h1 {
+    font-size: 1.85rem;
+  }
 }
 
 .algo-page .algo-lede {

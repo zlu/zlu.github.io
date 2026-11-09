@@ -4,7 +4,7 @@ title: "Talks and Presentations on AI, Cloud, and Engineering"
 description: "Conference talks and presentations by Zhao Lü — autonomous vehicle fleets, Postgres on Heroku, Rails telephony, agile development, and yoga-tech talks across the US, Europe, China, and Latin America."
 ---
 
-## Talks and Presentations
+# Talks and Presentations
 
 - _Jun 2018, Bucharest, Romania_ - **Operating and Optimizing Autonomous Vehicle Fleets** A talk given at [DevTalks.ro](https://www.devtalks.ro/).
 - _Jun 2018, Stuttgart, Germany_ - **Operating and optimising autonomous vehicle fleets** – distributed cloud platform A talk given at Autonomous Vehicle Symposium.

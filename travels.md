@@ -5,6 +5,8 @@ description: "Travel map and country list for Zhao Lü — 60+ countries across 
 permalink: /travels/
 ---
 
+# Travels
+
 ### Map of Some Places I Visited
 
 {% include travel-static-map.html %}

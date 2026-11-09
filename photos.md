@@ -5,7 +5,7 @@ description: "Photography by Zhao Lü: rangefinder travel and street work organi
 permalink: /photos/
 ---
 
-## Photos
+# Photos
 
 Rangefinder work (and more) from travel and everyday wandering. Open an album for a trip; click a photo for the full frame and description.
 

@@ -81,6 +81,7 @@ body.teach-page-active {
   --teach-muted: #5c6b7a;
   --teach-line: #d5dde6;
   --teach-accent: #0f6b6b;
+  --teach-accent-strong: #0c5757;
   --teach-accent-soft: #e6f2f2;
   --teach-surface: #ffffff;
 }
@@ -192,26 +193,27 @@ body.teach-page-active .content {
 }
 
 .teach-hero-actions .btn-primary, .teach-sticky-actions .btn-primary {
-  background: var(--teach-ink, #1a2332);
-  border: 1.5px solid var(--teach-ink, #1a2332);
+  background: var(--teach-accent, #0f6b6b);
+  border: 1.5px solid var(--teach-accent, #0f6b6b);
   color: #fff;
 }
 
 .teach-hero-actions .btn-primary:hover, .teach-sticky-actions .btn-primary:hover {
-  background: var(--teach-accent, #0f6b6b);
-  border-color: var(--teach-accent, #0f6b6b);
+  background: var(--teach-accent-strong, #0c5757);
+  border-color: var(--teach-accent-strong, #0c5757);
   color: #fff;
 }
 
 .teach-hero-actions .btn-outline-primary, .teach-sticky-actions .btn-outline-primary {
   background: transparent;
-  border: 1.5px solid var(--teach-ink, #1a2332);
-  color: var(--teach-ink, #1a2332);
+  border: 1.5px solid var(--teach-accent, #0f6b6b);
+  color: var(--teach-accent, #0f6b6b);
 }
 
 .teach-hero-actions .btn-outline-primary:hover, .teach-sticky-actions .btn-outline-primary:hover {
-  border-color: var(--teach-accent, #0f6b6b);
-  color: var(--teach-accent, #0f6b6b);
+  background: var(--teach-accent-soft, #e6f2f2);
+  border-color: var(--teach-accent-strong, #0c5757);
+  color: var(--teach-accent-strong, #0c5757);
 }
 
 .teach-hero-book {
@@ -1225,14 +1227,14 @@ body.teach-page-active .content, body.teach-page-active .site {
 }
 
 .teach-course-prep .btn-primary {
-  background: var(--teach-ink, #1a2332);
-  border: 1.5px solid var(--teach-ink, #1a2332);
+  background: var(--teach-accent, #0f6b6b);
+  border: 1.5px solid var(--teach-accent, #0f6b6b);
   color: #fff;
 }
 
 .teach-course-prep .btn-primary:hover {
-  background: var(--teach-accent, #0f6b6b);
-  border-color: var(--teach-accent, #0f6b6b);
+  background: var(--teach-accent-strong, #0c5757);
+  border-color: var(--teach-accent-strong, #0c5757);
   color: #fff;
 }
 
