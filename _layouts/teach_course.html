@@ -91,9 +91,6 @@ layout: default
     <section class="teach-landing-section teach-course-panel">
       <h2 data-en="Topics we work through"
           data-cn="辅导会覆盖的主题">辅导会覆盖的主题</h2>
-      <p class="teach-section-note"
-         data-en="Common tutoring focus for this kind of course — not a copy of any university syllabus."
-         data-cn="这类课常见的辅导重点，不是任何学校大纲原文。">这类课常见的辅导重点，不是任何学校大纲原文。</p>
       <ul class="teach-topic-chips">
         {% for topic in page.theme_topics %}
         <li data-en="{{ topic.en }}" data-cn="{{ topic.cn }}">{{ topic.cn }}</li>
@@ -180,15 +177,27 @@ layout: default
     <section class="teach-landing-section teach-course-notes">
       <h2 data-en="Notes from my writing"
           data-cn="我写过的相关笔记">我写过的相关笔记</h2>
-      <ul class="teach-course-links teach-course-links--notes">
+      <p class="teach-section-note"
+         data-en="Related essays on this site — open one if you want the long-form explanation."
+         data-cn="站内相关长文，需要展开讲的时候可以直接点开。">站内相关长文，需要展开讲的时候可以直接点开。</p>
+      <ol class="teach-course-links teach-course-links--notes">
         {% for r in page.theme_reading %}
         <li>
-          <a href="{{ r.url }}"
-             data-en="{{ r.title_en }}"
-             data-cn="{{ r.title_cn }}">{{ r.title_cn }}</a>
+          <a href="{{ r.url }}" class="teach-note-link">
+            <span class="teach-note-meta">
+              <span class="teach-note-kind" data-en="Essay" data-cn="笔记">笔记</span>
+              {% if r.date_label != "" %}
+              <time datetime="{{ r.date }}">{{ r.date_label }}</time>
+              {% endif %}
+            </span>
+            <span class="teach-note-title"
+                  data-en="{{ r.title_en }}"
+                  data-cn="{{ r.title_cn }}">{{ r.title_cn }}</span>
+            <span class="teach-note-arrow" aria-hidden="true">→</span>
+          </a>
         </li>
         {% endfor %}
-      </ul>
+      </ol>
     </section>
     {% endif %}
   </aside>

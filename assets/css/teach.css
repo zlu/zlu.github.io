@@ -1426,18 +1426,95 @@ body.teach-page-active .content, body.teach-page-active .site {
 }
 
 .teach-course-links--notes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 1.1rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 0.55rem;
+  counter-reset: teach-note;
 }
 
 .teach-course-links--notes li {
   padding: 0;
   border-bottom: 0;
+  counter-increment: teach-note;
 }
 
-.teach-course-links--notes a {
-  font-size: 1rem;
+.teach-course-links--notes .teach-note-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 0.65rem;
+  row-gap: 0.28rem;
+  align-items: start;
+  height: 100%;
+  padding: 0.85rem 0.9rem 0.85rem 2.55rem;
+  border: 1px solid var(--teach-line, #d5dde6);
+  border-radius: 2px;
+  background: #fff;
+  color: var(--teach-ink, #1a2332);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.teach-course-links--notes .teach-note-link::before {
+  content: counter(teach-note, decimal-leading-zero);
+  position: absolute;
+  top: 0.9rem;
+  left: 0.75rem;
+  color: var(--teach-accent, #0f6b6b);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.teach-course-links--notes .teach-note-link:hover {
+  border-color: var(--teach-accent, #0f6b6b);
+  background: var(--teach-accent-soft, #e6f2f2);
+  text-decoration: none;
+}
+
+.teach-note-meta {
+  grid-column: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--teach-muted, #5c6b7a);
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+
+.teach-note-kind {
+  color: var(--teach-accent, #0f6b6b);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.teach-note-title {
+  grid-column: 1;
+  color: var(--teach-ink, #1a2332);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.teach-note-arrow {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--teach-accent, #0f6b6b);
+  font-size: 1.05rem;
+  line-height: 1;
+  opacity: 0.7;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.teach-course-links--notes .teach-note-link:hover .teach-note-arrow {
+  opacity: 1;
+  transform: translateX(2px);
 }
 
 @media (max-width: 640px) {
@@ -1446,7 +1523,8 @@ body.teach-page-active .content, body.teach-page-active .site {
   }
 
   .teach-course-links--grid,
-  .teach-course-links--cards {
+  .teach-course-links--cards,
+  .teach-course-links--notes {
     grid-template-columns: 1fr;
   }
 }

@@ -633,18 +633,25 @@ module Jekyll
         name = item["name"].to_s.strip
         next if name.empty?
 
-        url = find_post_url(site, name)
-        next unless url
+        post = find_post(site, name)
+        next unless post
 
+        date = post.date
         {
-          "url" => url,
+          "url" => post.url,
           "title_en" => item["title_en"].to_s,
-          "title_cn" => item["title_cn"].to_s
+          "title_cn" => item["title_cn"].to_s,
+          "date" => date ? date.strftime("%Y-%m-%d") : "",
+          "date_label" => date ? date.strftime("%b %Y") : ""
         }
       end
     end
 
     def find_post_url(site, name)
+      find_post(site, name)&.url
+    end
+
+    def find_post(site, name)
       posts = site.posts.docs.select do |p|
         base = File.basename(p.path, ".*").sub(/^\d{4}-\d{2}-\d{2}-/, "")
         base == name ||
@@ -662,7 +669,7 @@ module Jekyll
       preferred ||= posts.find do |p|
         !File.basename(p.path, ".*").match?(/-(zh|cn)$/)
       end
-      (preferred || posts.first)&.url
+      preferred || posts.first
     end
 
     def uni_labels(university, abbr, name_cn)
