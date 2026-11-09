@@ -243,8 +243,16 @@ module Jekyll
           )
         end
 
-        occupied_course_slugs = course_list.map { |c| c["slug"].to_s }.reject(&:empty?).to_h { |s| [s, true] }
+        occupied_course_slugs = {}
         course_list.each do |course|
+          course_slug = course["slug"].to_s
+          if course_slug.empty? || occupied_course_slugs[course_slug]
+            Jekyll.logger.warn "TeachPages:", "skipping duplicate course slug " \
+              "#{uni_slug}/#{course_slug} (#{course['code']})" unless course_slug.empty?
+            next
+          end
+
+          occupied_course_slugs[course_slug] = true
           site.pages << build_course_page(
             site,
             uni_slug,
