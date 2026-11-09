@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automata Basics for Coders, Part III: Regular Expressions and ε-NFAs"
-date: 2026-11-08
+date: 2026-11-09
 comments: true
 tags:
   - automata
