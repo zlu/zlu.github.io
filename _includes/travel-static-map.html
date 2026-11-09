@@ -84,16 +84,15 @@
   }
   .travel-hero-bg {
     position: absolute; inset: 0;
-    /* Layer order: overlays first (on top), then local custom map (if present), then Wikimedia world map */
+    /* Overlays first (on top), then the local world map. */
     background-image:
       radial-gradient(1200px 600px at 10% 20%, rgba(59,130,246,0.12), transparent 60%),
       radial-gradient(800px 400px at 90% 30%, rgba(16,185,129,0.12), transparent 60%),
       radial-gradient(800px 400px at 50% 80%, rgba(244,114,182,0.10), transparent 60%),
-      linear-gradient(180deg, rgba(248,250,252,0.85) 0%, rgba(238,242,255,0.85) 100%),
-      url('/assets/images/uploads/travel-map.jpg'),
-      url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/4096px-World_map_-_low_resolution.svg.png');
-    background-blend-mode: multiply, multiply, multiply, normal, normal, normal;
-    background-size: auto, auto, auto, auto, cover, cover;
+      linear-gradient(180deg, rgba(248,250,252,0.62) 0%, rgba(238,242,255,0.62) 100%),
+      url('/assets/images/uploads/travel-map.svg');
+    background-blend-mode: multiply, multiply, multiply, normal, normal;
+    background-size: auto, auto, auto, auto, cover;
     background-position: center;
     filter: saturate(1.05) contrast(1.02);
   }
