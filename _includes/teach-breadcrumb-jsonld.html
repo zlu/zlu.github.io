@@ -1,0 +1,23 @@
+{%- comment -%}
+  BreadcrumbList JSON-LD. Pass crumbs as an array of hashes with name + url
+  (last crumb may omit url for the current page). Access via include.crumbs.
+{%- endcomment -%}
+{%- assign crumbs = include.crumbs -%}
+{%- if crumbs and crumbs.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {%- for c in crumbs -%}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "name": {{ c.name | jsonify }}{% if c.url and c.url != "" %},
+      "item": {{ c.url | absolute_url | jsonify }}{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}

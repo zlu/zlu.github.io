@@ -2,7 +2,7 @@
 label_en: Programming & software construction
 label_cn: 编程与软件构造
 lead_en: First- and second-year programming courses fail students on style, testing, and debugging habits—not on “knowing syntax.” I tutor with bilingual walkthroughs of the brief, then pair-debug until the design and tests hold.
-lead_cn: 低年级编程课挂人的往往是风格、测试与调试习惯，不是“会不会语法”。 我会用中英双语先拆题目，再结对 debug，直到设计与测试站得住。
+lead_cn: 低年级编程课真正挂人的，常常不是「语法会不会」，而是 brief 读不清、风格和测试习惯没建立、autograder 一卡边界就不会排查。辅导时我会先用中英双语把题意和设计拆开，再在你的环境里结对 debug，直到你能自己解释每一处改动。
 topics:
 - en: Reading the brief and designing before typing
   cn: 先读题、先设计，再动手写
@@ -34,6 +34,14 @@ session_angles:
   cn: 先为清晰度重构，再追额外分数
 match: program|software.?construct|structured.?program|imperative|functional.?program| java\b|python|c\+\+|coding|object.?oriented|\boop\b|software.?design| problem.?solving|introduct.*comput|foundations.?of.?comput
 reading:
+- kind: post
+  name: unsw-comp1511-assignment-howto-zh
+  title_en: How to break down UNSW COMP1511 assignments
+  title_cn: UNSW COMP1511 作业怎么拆
+- kind: post
+  name: monash-fit2102-exam-prep-zh
+  title_en: Monash FIT2102 exam prep
+  title_cn: Monash FIT2102 考前怎么复习
 - kind: post
   name: variable-storage-and-pointers-in-c-back-to-basics
   title_en: Variable storage and pointers in C

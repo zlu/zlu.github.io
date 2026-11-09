@@ -2,7 +2,9 @@
 label_en: Automata & event-driven systems
 label_cn: 自动机与事件驱动系统
 lead_en: These courses mix formal models (automata, Petri nets) with event-driven design. Sessions go concept → tiny example → you attempt the exam-style step → we mark the method, not a memorised answer. Lecture sync, workshops, and past-paper drills stay on the same vocabulary.
-lead_cn: 这类课把形式模型（自动机、Petri 网）和事件驱动设计绑在一起。辅导节奏固定： 先讲概念 → 小例子 → 你自己做考试风格的一步 → 一起改「方法」而不是背答案。 跟课、workshop、past paper 用同一套术语。
+lead_cn: >-
+  这类课把形式模型（自动机、Petri 网）和事件驱动设计绑在一起。辅导节奏固定：先讲概念 → 小例子 →
+  你自己做考试风格的一步 → 一起改「方法」而不是背答案。跟课、workshop、past paper 用同一套术语。
 topics:
 - en: DFA / NFA / ε-NFA reading and extended transitions
   cn: DFA / NFA / ε-NFA 读图与扩展转移

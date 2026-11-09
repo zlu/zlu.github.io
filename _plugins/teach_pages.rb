@@ -99,7 +99,9 @@ module Jekyll
         "title_en" => "Course Sync Tutoring",
         "title_cn" => "同步课程辅导",
         "desc_en" => "Keep up with lectures in Chinese and English — syllabus walkthrough, weekly Q&A. Direct tutor, no middleman fee.",
-        "desc_cn" => "中英双语跟课：大纲梳理、每周答疑，解决听不懂与掉队。直接约老师，无中介抽成。"
+        "desc_cn" => "很多同学不是完全听不懂，而是教授口音重、语速快，专业词一闪就过，回去对着课件更对不上。" \
+                     "同步跟课会按你学校的周进度，用中文把当周概念补清楚，同时保留 tutorial 和考试要用的英文说法，避免越掉越远。" \
+                     "微信直约我本人，没有顾问转手。"
       },
       "assignment" => {
         "en" => "Assignment tutoring",
@@ -107,7 +109,9 @@ module Jekyll
         "title_en" => "Assignment & Project Help",
         "title_cn" => "作业与 Project 辅导",
         "desc_en" => "Debug and approach review. Direct tutor, no middleman fee.",
-        "desc_cn" => "拆题、debug、复盘思路。直接约老师，无中介抽成。"
+        "desc_cn" => "作业卡壳往往卡在 brief 读不透、思路立不住，或本地能跑一提交就被边界情况打回来。" \
+                     "我们会先一起读题、梳一条你能写下去的路，再对着报错现场排查；代码和推导仍由你完成提交，我负责把方法讲透。" \
+                     "微信直约，无中介加价。"
       },
       "exam" => {
         "en" => "Exam prep tutoring",
@@ -115,7 +119,8 @@ module Jekyll
         "title_en" => "Exam Prep Tutoring",
         "title_cn" => "考前突击辅导",
         "desc_en" => "Topic maps, past-paper style drills, weak-spot sprints before midterms and finals.",
-        "desc_cn" => "考点地图、类 past paper 练习与薄弱点突击，期中期末冲刺。"
+        "desc_cn" => "临考最怕的不是「没刷够题」，而是不知道这门课反复考什么、自己弱在哪、下手顺序怎么排。" \
+                     "期中期末前会先梳考点地图，再按常考题型和你的薄弱点做限时练习，练审题、表述和得分点，而不是无目的地刷题。"
       },
       "preview" => {
         "en" => "Course preview tutoring",
@@ -123,7 +128,8 @@ module Jekyll
         "title_en" => "Course Preview Tutoring",
         "title_cn" => "课程预习辅导",
         "desc_en" => "Pre-term head start: programming basics, jargon, and assessment format before week 1.",
-        "desc_cn" => "开学前抢跑：编程基础、专业术语与考核方式预热，降低第一周冲击。"
+        "desc_cn" => "开学第一周最容易懵：课速突然加快，英文术语一串串砸过来，作业格式和评分点也还没摸清。" \
+                     "开学前先把编程基础、专业说法和考核方式过一遍，后面跟课会轻松很多，不必从第二周就开始追进度。"
       }
     }.freeze
 
@@ -407,51 +413,67 @@ module Jekyll
     end
 
     # Per-theme difficulty hooks for Chinese students abroad (public copy, not inventory).
+    # CN lines should read like a tutor talking to a student, not a keyword list.
     THEME_DIFFICULTY = {
       "automata" => {
         "en" => "Greek letters, abstract machines, and cryptic state / Petri diagrams",
-        "cn" => "希腊字母、抽象自动机，以及暗号式状态图 / Petri 网"
+        "cn" => "希腊字母一串串往下写，状态机和 Petri 网图看起来像暗号，课件翻完仍对不上作业到底在问哪一步"
       },
       "algorithms" => {
         "en" => "Proofs, complexity talk, and pseudocode under time pressure",
-        "cn" => "证明、复杂度表述，以及限时伪代码"
+        "cn" => "证明要写严谨、复杂度一问就懵；限时伪代码往往不是语法不会，而是思路还没想清时间就没了"
       },
       "machine-learning" => {
         "en" => "Math+code lectures, loss jargon, and notebooks that fail on shape mismatches",
-        "cn" => "数理+代码课、损失相关技术用语，以及维度一错就挂的 notebook"
+        "cn" => "课上公式和代码交错讲，loss、梯度听过却对不上 notebook；维度一错，报错信息又读不明白"
       },
       "data-science" => {
         "en" => "Assessment briefs, messy tables, and write-ups that must defend every plot",
-        "cn" => "作业 brief、脏表，以及每张图都要说得清的报告"
+        "cn" => "作业 brief 又长、表又脏，报告里每张图都要说得出为什么这样画；英文表述一卡，整段就写不动"
       },
       "programming" => {
         "en" => "Dense assignment wording, unfamiliar toolchains, and autograders that punish edge cases",
-        "cn" => "密集的作业措辞、不熟的工具链，以及专卡边界情况的 autograder"
+        "cn" => "作业说明密、工具链不熟，autograder 专挑边界情况扣分——本地能跑，交上去却红一片"
       },
       "systems" => {
         "en" => "Dense systems vocabulary, diagrams, and labs that fail for opaque reasons",
-        "cn" => "密集的系统术语、图表，以及原因不透明的 Lab 失败"
+        "cn" => "系统术语又多又密，图一多就乱；Lab 挂了却分不清是环境、配置，还是概念本身没对齐"
       },
       "databases" => {
         "en" => "Schema / query jargon and assignments where one wrong join wrecks results",
-        "cn" => "Schema / 查询技术用语，以及一个 join 写错结果全歪的作业"
+        "cn" => "Schema 和查询说法搅在一起，一个 join 写偏后面结果全歪，改来改去仍不敢确定对不对"
       },
       "math-for-cs" => {
         "en" => "Proofs, symbol-heavy slides, and abstractions without a picture",
-        "cn" => "证明、符号密集的课件，以及没有画面的抽象"
+        "cn" => "证明步骤要求严，课件符号又密；很多抽象概念若没有画面，单靠背公式很难真正用起来"
       },
       "security" => {
         "en" => "Threat / crypto vocabulary and labs with cryptic failure modes",
-        "cn" => "威胁 / 密码学术语，以及失败模式很隐晦的 Lab"
+        "cn" => "威胁模型和密码学术语叠在一起；Lab 一失败日志又含糊，很难判断是实现错了还是概念没对齐"
       },
       "web-mobile" => {
         "en" => "UI / API briefs and stacks where front-end and back-end errors blur together",
-        "cn" => "UI / API brief，以及前后端报错搅在一起的技术栈"
+        "cn" => "UI 和 API 要求缠在一起，前后端报错互相掩盖，排查时常常分不清问题到底出在哪一层"
       },
       "general" => {
         "en" => "Fast lectures, dense terminology, and abstract ideas that do not stick from slides alone",
-        "cn" => "偏快的课、密集术语，以及单靠课件记不住的抽象概念"
+        "cn" => "课讲得快、术语密，很多抽象点单靠课件记不住，一到 tutorial 或作业就露馅"
       }
+    }.freeze
+
+    # Theme-specific CN lead openers (avoid one mechanical sentence for every course).
+    THEME_LEAD_CN = {
+      "automata" => "形式化这门课最折磨人的，往往不是定义背不下来，而是图和符号对不上作业在问的那一步。",
+      "algorithms" => "算法课劝退，常常不是「完全没听过」，而是证明写不严谨、复杂度一问就空，限时题还没想清就结束了。",
+      "machine-learning" => "机器学习课最容易卡在「词都听过、手却跟不上」：公式、代码、notebook 对不齐，维度一错整晚都在读报错。",
+      "data-science" => "数据课的压力经常来自 brief 太长、表太脏，再加上报告要用英文把每张图的理由说圆。",
+      "programming" => "入门和进阶编程课，难的往往不是语法本身，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界情况。",
+      "systems" => "系统课最怕「课能听个大概、Lab 却挂得莫名其妙」——术语密、图多，失败原因又不透明。",
+      "databases" => "数据库作业看起来像在写查询，真正费时的是 Schema 关系没理清，一个 join 偏了后面全歪。",
+      "math-for-cs" => "计算机数学课劝退，多半是符号太密、证明要求严，没有画面就只能死记，一到题目就不会用。",
+      "security" => "安全课的门槛常常是术语墙：威胁模型、密码学说法叠在一起，Lab 失败时还分不清概念错还是实现错。",
+      "web-mobile" => "前后端缠在同一份 brief 里时，最耗人的是排查——报错互相掩盖，分不清到底坏在哪一层。",
+      "general" => "很多同学不是完全听不懂，而是课速一快、术语一密，笔记一断档，作业换个问法就不会下手。"
     }.freeze
 
     def theme_difficulty(theme_id)
@@ -459,56 +481,82 @@ module Jekyll
     end
 
     # Public course-page copy from theme knowledge when admin YAML has no hand-written fields.
-    def synthesize_course_copy(course, university, theme_id, theme_meta)
+    def synthesize_course_copy(course, university, theme_id, theme_meta, label_cn: nil)
       code = course["code"].to_s
       title = course["title"].to_s
       label = [code, title].reject(&:empty?).join(" ")
       label = title if label.empty?
+      # Prefer short course handle in Chinese prose; dump full English title only when needed.
+      cn_course = code.empty? ? title : code
+      school = label_cn.to_s.strip
+      school = university.to_s if school.empty?
       hard = theme_difficulty(theme_id)
       theme_label_en = theme_meta["label_en"].to_s
       theme_label_cn = theme_meta["label_cn"].to_s
       topic_ens = Array(theme_meta["topics"]).filter_map { |t| t["en"].to_s if t.is_a?(Hash) }.first(4)
-      topic_cns = Array(theme_meta["topics"]).filter_map { |t| t["cn"].to_s if t.is_a?(Hash) }.first(4)
+      topic_cns = Array(theme_meta["topics"]).filter_map { |t|
+        polish_cn(t["cn"]) if t.is_a?(Hash)
+      }.first(3)
 
       lead_en = "#{label} at #{university} is hard for many Chinese students abroad: " \
                 "#{hard['en']}. Tutoring turns that fog into steps you can repeat."
-      lead_cn = "#{university} 的 #{label} 对很多留学生特别难：#{hard['cn']}。" \
-                "辅导把这团雾拆成能一步步做的方法。"
+      opener = THEME_LEAD_CN[theme_id.to_s] || THEME_LEAD_CN["general"]
+      lead_cn = polish_cn(
+        "#{opener}在#{school}上 #{cn_course}，#{hard['cn']}。" \
+        "一对一不会只给你更长的笔记，而是先把卡点拆开，按你跟得上的节奏把方法练熟，练到作业和考试能自己下手。"
+      )
 
       overview_en = "#{label} sits in #{theme_label_en.to_s.downcase}. "
       overview_en += "Typical focus includes #{topic_ens.join('; ')}. " if topic_ens.any?
-      overview_en += "The pain is rarely never having seen the topic — it is terminology " \
+      overview_en += "The pain is rarely never having seen the topic; it is terminology " \
                      "under time pressure, symbols that do not stick, and questions that look " \
                      "cryptic until you have a method."
 
-      overview_cn = "#{label} 属于「#{theme_label_cn}」类课。"
-      overview_cn += "常见重点包括：#{topic_cns.join('；')}。" if topic_cns.any?
-      overview_cn += "真正卡人的往往不是完全没见过，而是限时术语、记不住的符号，" \
-                     "以及没有方法时看起来像天书的题目。"
+      overview_cn = "#{cn_course} 是 #{school}「#{theme_label_cn}」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。"
+      if topic_cns.any?
+        overview_cn += "学期里常会绕着#{topic_cns.join('、')}这些点转。"
+      end
+      overview_cn += "留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、符号记不牢，" \
+                     "作业和考试一换问法就不知道从哪下笔。" \
+                     "辅导里会先帮你把方法立住，再对着你手里的题目练到能自己写、自己改。"
+      overview_cn = polish_cn(overview_cn)
 
-      stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) }.map(&:dup)
+      stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) }.map do |t|
+        t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
+      end
       pace_stuck = {
         "en" => "Lecture speed + dense #{theme_label_en.downcase} vocabulary outruns note-taking",
-        "cn" => "课速 + 密集的「#{theme_label_cn}」术语超过记笔记速度"
+        "cn" => polish_cn("课速偏快，「#{theme_label_cn}」术语又密，笔记一跟丢，下课后更难自己补回来")
       }
       stuck = [pace_stuck] + stuck unless stuck.any? { |t|
         en = t["en"].to_s.downcase
         en.include?("lecture speed") || en.include?("outruns note")
       }
 
-      session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }
+      session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }.map do |t|
+        t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
+      end
       tutoring = [
         {
           "en" => "Lecture sync for #{label}: bilingual catch-up so workshop / tutorial language matches the lectures.",
-          "cn" => "#{label} 同步跟课：用中英双语补概念，与 workshop / tutorial 用语对齐。"
+          "cn" => polish_cn(
+            "按 #{cn_course} 当周进度跟课：用中文把课件里没听清的概念补上，" \
+            "同时保留 workshop / tutorial 会用到的英文说法，避免听课和写作业变成两套语言。"
+          )
         },
         {
           "en" => "Assignments: approach review and live debug.",
-          "cn" => "作业辅导：拆 brief、梳思路、现场 debug。"
+          "cn" => polish_cn(
+            "作业卡壳时，先一起读透 brief 和评分点，梳一条你能写下去的思路；" \
+            "你来写代码或推导，我在旁边盯卡点、一起看报错和边界，而不是代写交差。"
+          )
         },
         {
           "en" => "Exam prep: timed drills on weak spots and recurring question shapes for this course.",
-          "cn" => "考前突击：针对本课薄弱点与反复出现的题型做限时练习。"
+          "cn" => polish_cn(
+            "期中期末前先摸清这门课常考的题型和你自己的薄弱点，再做限时练习；" \
+            "练的是审题、下手顺序和表述，而不是临考前无目的地刷题。"
+          )
         }
       ]
 
@@ -770,6 +818,74 @@ module Jekyll
       REGION_MAP.fetch(key, {})[lang] || key
     end
 
+    # Tighten CN prose: YAML folded newlines often leave spaces after ：。） etc.
+    def polish_cn(text)
+      text.to_s
+          .gsub(/\s+/, " ")
+          .gsub(/([：:;。；！？])\s+/, '\1')
+          .gsub(/\s+([，。；！？、])/, '\1')
+          .gsub(/([）』」])\s+/, '\1')
+          .strip
+    end
+
+    # Baidu snippets prefer ~70–120 Chinese chars; cut on punctuation when possible.
+    def truncate_meta(text, max = 120)
+      s = polish_cn(text)
+      return s if s.length <= max
+
+      cut = s[0, max]
+      idx = cut.rindex(/[。；;！？!?，,、\s]/)
+      cut = cut[0, idx] if idx && idx > (max * 0.55)
+      "#{cut.sub(/[。；;！？!?，,\s、]+\z/, '')}…"
+    end
+
+    # On-page + FAQPage items for course long-tail (作业 / 考前 / 英语).
+    def course_faq_items(label_cn, code, title, tutoring, stuck)
+      code_bit = code.to_s.strip
+      code_bit = title.to_s.strip if code_bit.empty?
+      code_bit = "本课" if code_bit.empty?
+      stuck_cn = Array(stuck).first(2).filter_map { |t|
+        polish_cn(t["cn"]) if t.is_a?(Hash)
+      }.reject(&:empty?)
+      stuck_note = if stuck_cn.any?
+                     "这门课里同学特别容易卡在：#{stuck_cn.join('；')}。课上会优先对着这些点练，而不是泛泛重讲一遍课件。"
+                   else
+                     "课上会先问清你卡在读题、实现还是调试，再对着那一点往下推进。"
+                   end
+      [
+        {
+          "q" => "#{label_cn}#{code_bit}作业怎么辅导？能直接帮我写吗？",
+          "a" => polish_cn(
+            "不会代写交差。#{code_bit} 更常见的上法是：先一起把 brief、DDL 和评分点读透，梳一条你自己能写下去的思路，" \
+            "再对着报错和边界情况现场排查；代码或推导仍由你完成提交。" \
+            "这样考试换题时才不会只会看答案、自己仍下不了手。#{stuck_note}"
+          )
+        },
+        {
+          "q" => "#{code_bit}期末或期中临近，考前怎么突击更有效？",
+          "a" => polish_cn(
+            "临考最怕时间不够、题型不熟、下手顺序乱。不会带你无目的地刷题，而是先摸清 #{code_bit} 反复出现的考法和你自己的薄弱点，" \
+            "再做限时练习：练审题、写步骤，以及答案该怎么组织才像在答教授的问题，尽量把有限的复习时间用在得分点上。"
+          )
+        },
+        {
+          "q" => "英语听力一般，跟得上这门课的辅导吗？",
+          "a" => polish_cn(
+            "跟得上。教授口音重、语速快、专业词一闪就过，本来就是很多同学来约 #{code_bit} 的原因。" \
+            "课上会先用中文把直觉和推导讲透，再把作业、考试里会出现的英文术语对齐，" \
+            "避免「中文听懂了、英文卷面仍写不出来」的断层。"
+          )
+        },
+        {
+          "q" => "想约 #{code_bit}，第一次怎么联系？",
+          "a" => polish_cn(
+            "微信直接发我即可：学校、课号（#{code_bit}）、截止日期，再加上题目 PDF、代码或报错截图。" \
+            "资料越齐，第一节课就能对着你的卡点开讲，不必把半节课花在来回确认需求上。"
+          )
+        }
+      ]
+    end
+
     def build_university_page(
       site, uni_slug, university, courses, region_key, in_sitemap = true, evidence = {},
       uni_abbr: "", uni_name_cn: "", label_en: nil, label_cn: nil
@@ -781,22 +897,28 @@ module Jekyll
         [c["code"].to_s.downcase, c["title"].to_s.downcase]
       end
       codes = courses_sorted.flat_map { |c| [c["code"], *Array(c["aliases"])] }.reject(&:empty?).uniq
-      topic_en = Array(evidence["topics"]).filter_map { |t| t["en"] if t.is_a?(Hash) }.first(4)
       title_en = "#{label_en} Computer Science Tutoring | AI & Programming"
       title_cn = "#{label_cn} 计算机辅导 | 人工智能与编程一对一"
-      # Meta description: prefer course codes over generic coverage_summary text
-      # (those collide across unis and read as template on the hub page).
+      # Chinese meta for Baidu: scenario-led, not a keyword dump.
       code_bit = if codes.any?
-                   " Courses: #{codes.first(8).join(', ')}#{codes.size > 8 ? '…' : ''}."
+                   "目录里已整理 #{codes.first(6).join('、')}#{codes.size > 6 ? ' 等课号' : ''}，"
+                 else
+                   "也可微信直接发课号咨询，"
+                 end
+      description = truncate_meta(
+        "#{label_cn}计算机一对一辅导：课听不懂、作业卡壳、考前来不及，都可中英双语讲透。" \
+        "#{code_bit}同步跟课、作业与考前突击均可约；咨询和上课是同一个人，无中介。"
+      )
+      en_codes = if codes.any?
+                   "Courses: #{codes.first(8).join(', ')}#{codes.size > 8 ? '…' : ''}. "
                  else
                    ""
                  end
-      theme_bit = topic_en.any? ? " Themes: #{topic_en.first(3).join(', ')}." : ""
-      description = "Bilingual CS tutoring for #{label_en} students.#{code_bit}#{theme_bit} " \
-                    "Assignments, projects, exam prep."
-      if description.length > 160
-        description = description[0, 157].sub(/\s+\S*\z/, "").sub(/[.,;:]\z/, "") + "…"
-      end
+      description_en = truncate_meta(
+        "Bilingual CS tutoring for #{label_en} students. #{en_codes}" \
+        "Assignments, lecture sync, exam prep.",
+        160
+      )
       keyword_bits = [university, uni_abbr, uni_name_cn, "CS tutoring", "留学生辅导",
                       *codes.first(6), "计算机辅导"].reject { |x| x.to_s.strip.empty? }
 
@@ -808,6 +930,7 @@ module Jekyll
         "title_cn" => title_cn,
         "title_suffix" => "zlu.me/teach",
         "description" => description,
+        "description_en" => description_en,
         "keywords" => keyword_bits.join(", "),
         "university" => university,
         "uni_abbr" => uni_abbr,
@@ -858,22 +981,39 @@ module Jekyll
       hand_curated = [
         course["lead_en"], course["lead_cn"], course["overview_en"], course["overview_cn"]
       ].any? { |v| v.to_s.strip != "" }
-      synth = synthesize_course_copy(course, university, theme_id, theme_meta)
+      synth = synthesize_course_copy(
+        course, university, theme_id, theme_meta, label_cn: label_cn
+      )
 
       stuck = bilingual_items(course["stuck"])
       stuck = synth["stuck"] if stuck.empty?
+      stuck = stuck.map { |t|
+        next t unless t.is_a?(Hash)
+
+        t.merge("cn" => polish_cn(t["cn"]))
+      }
       session_angles = bilingual_items(course["session_angles"])
       session_angles = synth["session_angles"] if session_angles.empty?
+      session_angles = session_angles.map { |t|
+        next t unless t.is_a?(Hash)
+
+        t.merge("cn" => polish_cn(t["cn"]))
+      }
       lead_en = course["lead_en"].to_s
-      lead_cn = course["lead_cn"].to_s
+      lead_cn = polish_cn(course["lead_cn"])
       lead_en = synth["lead_en"] if lead_en.empty?
       lead_cn = synth["lead_cn"] if lead_cn.empty?
       overview_en = course["overview_en"].to_s
-      overview_cn = course["overview_cn"].to_s
+      overview_cn = polish_cn(course["overview_cn"])
       overview_en = synth["overview_en"] if overview_en.empty?
       overview_cn = synth["overview_cn"] if overview_cn.empty?
       tutoring = bilingual_items(course["tutoring"])
       tutoring = synth["tutoring"] if tutoring.empty?
+      tutoring = tutoring.map { |t|
+        next t unless t.is_a?(Hash)
+
+        t.merge("cn" => polish_cn(t["cn"]))
+      }
 
       # Prefer catalog/evidence topics, then hand-curated YAML topics, then theme topics.
       curated_topics = Array(course["curated_topics"]).select { |t| t.is_a?(Hash) }
@@ -885,6 +1025,7 @@ module Jekyll
                        theme_topics
                      end
       topic_bits = focus_topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
+      topic_bits_cn = focus_topics.first(4).map { |t| t["cn"].to_s }.reject(&:empty?)
 
       # Lead with course code for SERP queries like "fit2102" / "etx3500".
       # Include the first alias so dual-code searches still match the title.
@@ -899,20 +1040,32 @@ module Jekyll
                  else
                    "#{label_cn} #{code}#{alias_bit} 课程辅导 | #{title}"
                  end
-      description = if overview_en.length.between?(80, 160)
-                      overview_en
+
+      # Chinese meta for Baidu (primary description). Prefer a tightened overview_cn.
+      description = if overview_cn.length >= 40
+                      truncate_meta(overview_cn, 120)
                     else
-                      desc = "1-1 tutoring for #{label} at #{label_en}"
-                      desc += " (also #{aliases.join(', ')})" if aliases.any?
-                      desc += " (#{theme_label_en})" unless theme_label_en.empty?
-                      desc += ". "
-                      desc += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
-                      desc += "Bilingual Chinese/English — lecture sync, assignments, exam prep."
-                      desc
+                      alias_note = aliases.any? ? "（同课也写作 #{aliases.first}）" : ""
+                      topic_note = topic_bits_cn.any? ? "常见会碰到#{topic_bits_cn.first(3).join('、')}等。" : ""
+                      truncate_meta(
+                        "#{label_cn}#{code.empty? ? '' : code}#{alias_note}一对一辅导。" \
+                        "#{topic_note}课听不懂、作业卡壳、考前突击都可约；中英双语讲透，咨询和上课同一人。",
+                        120
+                      )
                     end
-      if description.length > 160
-        description = description[0, 157].sub(/\s+\S*\z/, "").sub(/[.,;:]\z/, "") + "…"
-      end
+      description_en = if overview_en.length.between?(80, 160)
+                         overview_en
+                       else
+                         desc = "1-1 tutoring for #{label} at #{label_en}"
+                         desc += " (also #{aliases.join(', ')})" if aliases.any?
+                         desc += " (#{theme_label_en})" unless theme_label_en.empty?
+                         desc += ". "
+                         desc += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
+                         desc += "Bilingual Chinese/English: lecture sync, assignments, exam prep."
+                         truncate_meta(desc, 160)
+                       end
+
+      course_faq = course_faq_items(label_cn, code, title, tutoring, stuck)
 
       topic_kw = focus_topics.first(6).flat_map { |t| [t["en"], t["cn"]] }.compact.map(&:to_s).reject(&:empty?)
       keywords = [
@@ -946,6 +1099,7 @@ module Jekyll
         "title_cn" => title_cn,
         "title_suffix" => "zlu.me/teach",
         "description" => description,
+        "description_en" => description_en,
         "keywords" => keywords,
         "university" => university,
         "uni_abbr" => uni_abbr,
@@ -969,6 +1123,7 @@ module Jekyll
         "theme_stuck" => stuck,
         "theme_session_angles" => session_angles,
         "tutoring" => tutoring,
+        "course_faq" => course_faq,
         "theme_reading" => theme_reading,
         "theme_about" => about_topics,
         "related_same_uni" => same_uni,
@@ -1024,8 +1179,16 @@ module Jekyll
         [(u["courses"].size.positive? ? 0 : 1), u["name"].downcase]
       end
       with_courses = ordered.count { |u| u["courses"].size.positive? }
-      description = "#{svc['desc_en']} #{with_courses}+ course-mapped universities; " \
-                    "#{ordered.size} schools across AU/UK/US/CA/HK/SG."
+      description = truncate_meta(
+        "留学生计算机#{svc['title_cn']}：#{svc['desc_cn']}" \
+        "目前已整理 #{with_courses} 所高校的课程入口，覆盖澳英美加港新等地。",
+        120
+      )
+      description_en = truncate_meta(
+        "#{svc['desc_en']} #{with_courses}+ course-mapped universities; " \
+        "#{ordered.size} schools across AU/UK/US/CA/HK/SG.",
+        160
+      )
 
       page = TeachGeneratedPage.new(site, site.source, "teach/services/#{service_key}")
       page.data.merge!(
@@ -1035,6 +1198,7 @@ module Jekyll
         "title_cn" => title_cn,
         "title_suffix" => "zlu.me/teach",
         "description" => description,
+        "description_en" => description_en,
         "keywords" => "#{svc['cn']}, #{svc['en']}, 留学生辅导, 计算机, AI, Python",
         "service_key" => service_key,
         "service_en" => svc["en"],
@@ -1056,8 +1220,17 @@ module Jekyll
       title_en = "CS Tutoring for Chinese Students in #{en} | Computer Science Tutoring"
       title_cn = "#{cn}留学生计算机辅导 | 中英双语一对一"
       course_count = universities.sum { |u| u["courses"].size }
-      description = "Bilingual computer science tutoring for Chinese students in #{en}. " \
-                    "#{universities.size} universities · #{course_count}+ courses. WeChat booking."
+      description = truncate_meta(
+        "#{cn}中国留学生的计算机一对一：教授口音重、课速快听不清，作业 brief 读不透，或考前来不及，" \
+        "都可以用中英双语把概念讲透、对着题目练到手。本地区已整理 #{universities.size} 所高校、" \
+        "#{course_count} 门课；微信发学校和课号即可约，咨询和上课是同一人。",
+        120
+      )
+      description_en = truncate_meta(
+        "Bilingual computer science tutoring for Chinese students in #{en}. " \
+        "#{universities.size} universities · #{course_count}+ courses. WeChat booking.",
+        160
+      )
 
       page = TeachGeneratedPage.new(site, site.source, "teach/#{region_key}")
       page.data.merge!(
@@ -1067,6 +1240,7 @@ module Jekyll
         "title_cn" => title_cn,
         "title_suffix" => "zlu.me/teach",
         "description" => description,
+        "description_en" => description_en,
         "keywords" => "#{en}, #{cn}, 留学生辅导, computer science tutoring, AI, Python",
         "region" => region_key,
         "region_en" => en,
@@ -1082,8 +1256,16 @@ module Jekyll
       title_en = "University CS Tutoring Directory"
       title_cn = "大学计算机辅导目录"
       course_n = universities.sum { |u| Array(u["courses"]).size }
-      description = "Directory of #{universities.size} universities and #{course_n} courses with " \
-                    "bilingual tutoring coverage. AI, data science, programming."
+      description = truncate_meta(
+        "大学计算机辅导目录已整理 #{universities.size} 所高校、#{course_n} 门课。" \
+        "按地区找到你的学校和课号后，可约同步跟课、作业与考前突击；中英双语，微信直约，无中介。",
+        120
+      )
+      description_en = truncate_meta(
+        "Directory of #{universities.size} universities and #{course_n} courses with " \
+        "bilingual tutoring coverage. AI, data science, programming.",
+        160
+      )
 
       region_groups = []
       REGION_MAP.each do |key, meta|
@@ -1124,6 +1306,7 @@ module Jekyll
         "title_cn" => title_cn,
         "title_suffix" => "zlu.me/teach",
         "description" => description,
+        "description_en" => description_en,
         "keywords" => "university tutoring directory, 留学生辅导, computer science, AI",
         "universities" => universities,
         "region_groups" => region_groups,

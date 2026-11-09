@@ -181,16 +181,18 @@ courses:
       (often functional-style thinking) while assessment expects precise reasoning. The
       hard part is abstract rules that do not feel like “normal” Python / Java habits.
     lead_cn: >-
-      FIT2102 会换掉你习惯的编程规则。课上引入新范式（常偏函数式思维），考核却要求推理精确。
-      难的是那些抽象规则，和「普通」Python / Java 手感对不上。
+      FIT2102 会换掉很多同学习惯的编程手感。课上引入偏函数式的规则后，考核却要求推理写清楚：
+      不是代码能跑就够，而是要说明在当前范式下为什么这样写才合法。抽象规则一旦和原先的 Python / Java
+      习惯拧着，作业和考试都会突然变难。
     overview_en: >-
       Programming Paradigms asks you to think in more than one model of computation and
       write programs that match the paradigm’s rules. Students struggle when definitions
       stay abstract, when error messages come from an unfamiliar toolchain, or when exam
       questions test reasoning instead of syntax recall.
     overview_cn: >-
-      Programming Paradigms 要求你用不止一种计算模型思考，并按该范式的规则写程序。卡点常在
-      定义停在抽象层、不熟悉的工具链报错，或考试考的是推理而不是背语法。
+      Programming Paradigms 要求你用不止一种计算模型思考，并按该范式的规则写程序。留学生常见卡点是：
+      定义停在抽象层、小例子写不出来；工具链报错其实在提示规则被破坏，却被当成环境问题；考题措辞绕，
+      看不出在考哪条范式规则。辅导会按「概念 → 小例子 → 你来扩展 → 限时短问」推进。
     topics:
       - en: "Paradigm shift — what changes vs ordinary imperative code"
         cn: "范式切换：相对命令式代码改了什么"

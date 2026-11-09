@@ -34,7 +34,7 @@ layout: default
     {% else %}
     <p class="teach-landing-lead"
        data-en="1-1 bilingual help for this {{ page.university_label_en }} course: lecture sync, assignments, and exam prep."
-       data-cn="针对 {{ page.university_label_cn }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。">针对 {{ page.university_label_cn }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。</p>
+       data-cn="针对 {{ page.university_label_cn }} 这门课的一对一辅导：课听不懂可以同步补，作业卡壳一起拆题排查，考前再按薄弱点限时练习。">针对 {{ page.university_label_cn }} 这门课的一对一辅导：课听不懂可以同步补，作业卡壳一起拆题排查，考前再按薄弱点限时练习。</p>
     {% endif %}
     {% if page.course_aliases and page.course_aliases.size > 0 %}
     <p class="teach-alias-line"
@@ -72,7 +72,7 @@ layout: default
         data-cn="我怎么辅导这门课">我怎么辅导这门课</h2>
     <p class="teach-section-note"
        data-en="Lecture sync, assignment help, and exam prep for this course."
-       data-cn="针对本课的同步跟课、作业与考前突击。">针对本课的同步跟课、作业与考前突击。</p>
+       data-cn="不是把课件再念一遍，而是按你这周真正卡住的地方补：跟课、作业、考前各有侧重点。">不是把课件再念一遍，而是按你这周真正卡住的地方补：跟课、作业、考前各有侧重点。</p>
     <ol class="teach-course-method-list">
       {% for item in page.tutoring %}
       <li data-en="{{ item.en }}" data-cn="{{ item.cn }}">{{ item.cn }}</li>
@@ -117,11 +117,30 @@ layout: default
   {% include teach-evidence.html %}
   {% endif %}
 
+  {% if page.course_faq and page.course_faq.size > 0 %}
+  <section class="teach-landing-section teach-faq teach-course-faq" aria-labelledby="teach-course-faq-title">
+    <h2 id="teach-course-faq-title"
+        data-en="FAQ for this course"
+        data-cn="这门课常见问题">这门课常见问题</h2>
+    {% for item in page.course_faq %}
+    <details class="teach-faq-item"{% if forloop.first %} open{% endif %}>
+      <summary>{{ item.q }}</summary>
+      <p>{{ item.a }}</p>
+    </details>
+    {% endfor %}
+    <p class="teach-section-note">
+      <a href="/teach/#teach-book-qr"
+         data-en="Book on WeChat with this course code"
+         data-cn="微信发课号预约">微信发课号预约</a>
+    </p>
+  </section>
+  {% endif %}
+
   <section class="teach-landing-section teach-course-prep">
     <h2 data-en="Before the first session"
         data-cn="第一次课前请准备">第一次课前请准备</h2>
     <p data-en="Send school, course code{% if page.course_code != "" %} ({{ page.course_code }}){% endif %}, deadline, and any starter files, workshop questions, or error screenshots via WeChat."
-       data-cn="微信发送：学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 / 代码 / workshop 题 / 报错截图。">微信发送：学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 / 代码 / workshop 题 / 报错截图。</p>
+       data-cn="微信请发学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 PDF、代码、workshop 题或报错截图。资料越齐，第一节课就越能直接对着卡点开讲。">微信请发学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 PDF、代码、workshop 题或报错截图。资料越齐，第一节课就越能直接对着卡点开讲。</p>
     <a class="btn btn-primary" href="/teach/#teach-book-qr"
        data-en="Book on WeChat"
        data-cn="微信预约（发课号）">微信预约（发课号）</a>
@@ -209,8 +228,38 @@ layout: default
        data-cn="← {{ page.university_label_cn }}">← {{ page.university_label_cn }}</a>
     ·
     <a href="/teach/" data-en="Tutoring home" data-cn="辅导首页">辅导首页</a>
+    ·
+    <a href="/teach/sitemap/" data-en="Sitemap" data-cn="站点地图">站点地图</a>
   </p>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "留学辅导",
+      "item": {{ "/teach/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.university_label_cn | jsonify }},
+      "item": {{ "/teach/universities/" | append: page.uni_slug | append: "/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {% if page.course_code != "" %}{{ page.course_code | jsonify }}{% else %}{{ page.course_title | jsonify }}{% endif %}
+    }
+  ]
+}
+</script>
+
+{% include teach-faq-jsonld.html faq_items=page.course_faq %}
 
 <script type="application/ld+json">
 {
@@ -229,11 +278,11 @@ layout: default
   "url": {{ page.url | absolute_url | jsonify }},
   "isPartOf": {
     "@type": "Course",
-    "name": {{ page.university_label_en | append: " Computer Science Tutoring" | jsonify }},
+    "name": {{ page.university_label_cn | append: " 计算机辅导" | jsonify }},
     "url": {{ "/teach/universities/" | append: page.uni_slug | append: "/" | absolute_url | jsonify }}
   },
   "about": {{ page.theme_about | jsonify }},
   "keywords": {{ page.keywords | jsonify }},
-  "inLanguage": ["en", "zh-CN"]
+  "inLanguage": ["zh-CN", "en"]
 }
 </script>

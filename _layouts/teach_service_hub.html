@@ -95,5 +95,27 @@ layout: default
 
   <p class="teach-landing-back">
     <a href="/teach/" data-en="← Tutoring home" data-cn="← 辅导首页">← 辅导首页</a>
+    ·
+    <a href="/teach/sitemap/" data-en="Sitemap" data-cn="站点地图">站点地图</a>
   </p>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "留学辅导",
+      "item": {{ "/teach/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.service_title_cn | jsonify }}
+    }
+  ]
+}
+</script>

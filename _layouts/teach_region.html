@@ -66,4 +66,38 @@ layout: default
       </div>
     {% endfor %}
   </section>
+
+  <p class="teach-landing-back">
+    <a href="/teach/universities/" data-en="← All universities" data-cn="← 全部大学">← 全部大学</a>
+    ·
+    <a href="/teach/" data-en="Tutoring home" data-cn="辅导首页">辅导首页</a>
+    ·
+    <a href="/teach/sitemap/" data-en="Sitemap" data-cn="站点地图">站点地图</a>
+  </p>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "留学辅导",
+      "item": {{ "/teach/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "大学目录",
+      "item": {{ "/teach/universities/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.region_cn | jsonify }}
+    }
+  ]
+}
+</script>

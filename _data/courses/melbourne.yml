@@ -9,6 +9,14 @@ courses:
 - code: COMP10002
   title: Foundations of Algorithms
   material: comp10002
+  theme: algorithms
+  lead_cn: >-
+    COMP10002 课速快，伪代码和复杂度一起上，笔记稍一掉队，作业就对不齐课件在问什么。
+    同步跟课会先抓住本周两三个核心过程，各自配小例子走完，再对齐 tutorial 的表述。
+  overview_cn: >-
+    Foundations of Algorithms 是墨大算法路线上的入门坎：既要听懂抽象步骤，又要落成能解释的实现。
+    留学生常见问题是课上符号记不全、作业分不清「算法步骤不清」还是「语言细节在拖后腿」。
+    辅导会先对齐题意，再写最小可运行版本，最后才谈优化和复杂度说法。
 - code: COMP20003
   title: Algorithms and Data Structures
 - code: COMP20007

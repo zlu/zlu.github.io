@@ -2,7 +2,7 @@
 label_en: Algorithms & data structures
 label_cn: 算法与数据结构
 lead_en: Algorithms courses punish vague hand-waving. We build the invariant, complexity argument, and implementation together so exam proofs and coding tasks stay aligned.
-lead_cn: 算法课最怕含糊其辞。我们会一起把不变量、复杂度论证与实现对齐， 让考试证明题和编程题说的是同一件事。
+lead_cn: 算法课最怕含糊其辞：直觉好像对，一写证明或复杂度就空，一落到代码又被边界打穿。辅导时我们会先把不变量和状态定义说清楚，再对齐实现与考试表述，让证明题和编程题说的是同一件事。
 topics:
 - en: Asymptotic complexity and comparing candidates
   cn: 渐近复杂度与方案比较
@@ -32,6 +32,14 @@ session_angles:
   cn: 限时练习考试风格的短证明
 match: algorithm|data.?struct|complexit|discrete.?math|combinator| graph.?theory|dynamic.?program|computational.?thinking
 reading:
+- kind: post
+  name: unsw-comp2521-dsa-stuck-zh
+  title_en: Why UNSW COMP2521 feels stuck
+  title_cn: UNSW COMP2521 为什么特别卡
+- kind: post
+  name: melbourne-comp10002-follow-lectures-zh
+  title_en: Keeping up with Melbourne COMP10002
+  title_cn: 墨尔本大学 COMP10002 怎么跟上
 - kind: post
   name: genetic-algorithm-from-darwin-to-holland
   title_en: Genetic algorithms from Darwin to Holland

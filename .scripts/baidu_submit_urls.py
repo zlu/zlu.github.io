@@ -9,7 +9,8 @@ Baidu limits:
 With ~10/day, never-submitted URLs are ranked before push:
   0 home /teach  → 1 region hubs  → 2 faq/uni index
   → 3 uni hubs (more courses first)  → 4 course pages
-  → 5 Chinese posts  → 6 other posts  → 7 glossaries  → 8 rest
+  → 5 Chinese posts (-zh)  → 6 other posts  → 7 glossaries  → 8 rest
+  Priority also bumps /teach/sitemap and /teach/faq early.
 
 Usage:
   export BAIDU_TOKEN=your_token   # or put it in .scripts/baidu.env
@@ -173,13 +174,17 @@ def url_priority(url: str, course_counts: dict[str, int]) -> tuple:
     if path in ("/", "/teach"):
         return (0, 0, path)
 
-    # /teach/{region} hubs (not universities/courses/faq indexes)
+    # HTML teach sitemap + FAQ: Baidu discovery hubs
+    if path in ("/teach/sitemap", "/teach/faq"):
+        return (0, 1, path)
+
+    # /teach/{region} hubs (not universities/courses/faq/sitemap indexes)
     m = re.fullmatch(r"/teach/([^/]+)", path)
-    if m and m.group(1) not in ("universities", "courses", "faq"):
+    if m and m.group(1) not in ("universities", "courses", "faq", "sitemap", "services"):
         region = m.group(1)
         return (1, 0 if region in PRIORITY_REGIONS else 1, region)
 
-    if path in ("/teach/universities", "/teach/faq"):
+    if path in ("/teach/universities",) or path.startswith("/teach/services/"):
         return (2, 0, path)
 
     # University hubs: denser catalogs first (more course spokes = more intent).

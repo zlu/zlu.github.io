@@ -152,5 +152,30 @@ layout: default
 
   <p class="teach-landing-back"
      data-en="If your course is missing, WeChat me the code."
-     data-cn="若没找到你的课号，微信发我即可。">若没有你的课号，微信联系我即可。</p>
+     data-cn="若没找到你的课号，微信发我即可。目录会随实际约课持续补全。">若没找到你的课号，微信发我即可。目录会随实际约课持续补全。</p>
+  <p class="teach-landing-back">
+    <a href="/teach/" data-en="← Tutoring home" data-cn="← 辅导首页">← 辅导首页</a>
+    ·
+    <a href="/teach/sitemap/" data-en="Sitemap" data-cn="站点地图">站点地图</a>
+  </p>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "留学辅导",
+      "item": {{ "/teach/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "大学目录"
+    }
+  ]
+}
+</script>
