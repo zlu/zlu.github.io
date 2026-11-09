@@ -2,11 +2,14 @@
 layout: default
 ---
 <article class="teach-landing teach-uni-directory" id="teach-uni-directory">
-  <nav class="teach-crumbs" aria-label="Breadcrumb">
-    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
-    <span>/</span>
-    <span data-en="Universities" data-cn="大学目录">大学目录</span>
-  </nav>
+  <div class="teach-topbar">
+    <nav class="teach-crumbs" aria-label="Breadcrumb">
+      <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+      <span>/</span>
+      <span data-en="Universities" data-cn="大学目录">大学目录</span>
+    </nav>
+    {% include teach-lang-switcher.html %}
+  </div>
 
   <header class="teach-landing-header teach-uni-dir-header">
     <p class="teach-hero-eyebrow"

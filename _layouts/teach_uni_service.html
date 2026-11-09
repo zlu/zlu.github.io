@@ -2,15 +2,18 @@
 layout: default
 ---
 <article class="teach-landing">
-  <nav class="teach-crumbs" aria-label="Breadcrumb">
-    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
-    <span>/</span>
-    <a href="/teach/services/{{ page.service_key }}/"
-       data-en="{{ page.service_title_en }}"
-       data-cn="{{ page.service_title_cn }}">{{ page.service_title_cn }}</a>
-    <span>/</span>
-    <a href="/teach/universities/{{ page.uni_slug }}/">{{ page.university }}</a>
-  </nav>
+  <div class="teach-topbar">
+    <nav class="teach-crumbs" aria-label="Breadcrumb">
+      <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+      <span>/</span>
+      <a href="/teach/services/{{ page.service_key }}/"
+         data-en="{{ page.service_title_en }}"
+         data-cn="{{ page.service_title_cn }}">{{ page.service_title_cn }}</a>
+      <span>/</span>
+      <a href="/teach/universities/{{ page.uni_slug }}/">{{ page.university }}</a>
+    </nav>
+    {% include teach-lang-switcher.html %}
+  </div>
 
   <header class="teach-landing-header">
     <p class="teach-hero-eyebrow"

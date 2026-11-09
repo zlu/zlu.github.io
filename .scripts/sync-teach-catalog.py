@@ -540,7 +540,6 @@ def coverage_summary(n: int, signals: dict, topics: list, lang: str) -> str:
         ens = [t["en"] for t in topics[:4] if isinstance(t, dict) and t.get("en")]
         if ens:
             bits.append("Typical themes: " + ", ".join(ens) + ".")
-        bits.append("No ghostwriting — you submit your own work.")
         return " ".join(bits)
 
     bits = [f"本校可辅导约 {n} 门相关课程。"]

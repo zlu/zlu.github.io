@@ -54,8 +54,8 @@ courses:
   tutoring:
     - en: "Lecture sync: bilingual management vocabulary tied to the assessment brief."
       cn: "同步跟课：用中英双语把管理术语绑到作业 brief 上。"
-    - en: "Assignments: outline review and section-by-section feedback. You submit your own work."
-      cn: "作业辅导：大纲评审与分段反馈。作业本人提交。"
+    - en: "Assignments: outline review and section-by-section feedback."
+      cn: "作业辅导：大纲评审与分段反馈。"
     - en: "Deadline sprints: clarify the weakest report sections under time pressure."
       cn: "DDL 冲刺：限时把最弱的报告段落说清楚。"
 - code: COMP1000
@@ -128,8 +128,8 @@ courses:
   tutoring:
     - en: "Lecture sync: bilingual management vocabulary tied to the assessment brief."
       cn: "同步跟课：用中英双语把管理术语绑到作业 brief 上。"
-    - en: "Assignments: outline review and section-by-section feedback. You submit your own work."
-      cn: "作业辅导：大纲评审与分段反馈。作业本人提交。"
+    - en: "Assignments: outline review and section-by-section feedback."
+      cn: "作业辅导：大纲评审与分段反馈。"
     - en: "Deadline sprints: clarify the weakest report sections under time pressure."
       cn: "DDL 冲刺：限时把最弱的报告段落说清楚。"
 ---

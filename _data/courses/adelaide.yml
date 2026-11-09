@@ -81,8 +81,8 @@ courses:
     tutoring:
       - en: "Lecture sync: bilingual walkthrough of the course arc (automata → machines → Petri → events / FRP) so workshop and exam language match."
         cn: "同步跟课：用中英双语把课程主线讲透（自动机 → 机器 → Petri → 事件 / FRP），让 workshop 与考试用语对齐。"
-      - en: "Assignments: approach review and live debug. You keep authorship and submit yourself — no ghostwriting."
-        cn: "作业辅导：拆 brief、梳模型、现场 debug。你保有作者身份并本人提交——不代写。"
+      - en: "Assignments: approach review and live debug."
+        cn: "作业辅导：拆 brief、梳模型、现场 debug。"
       - en: "Exam prep: timed drills on the recurring question shapes (FSA inspection, NFA / subset, regex / ε-NFA, Moore from brief, Petri, observer / FRP), then wrong-answer analysis."
         cn: "考前突击：针对反复出现的题型限时练（FSA 读图、NFA / 子集、正则 / ε-NFA、按 brief 画 Moore、Petri、observer / FRP），再做错题方法复盘。"
   - code: COMP SCI 7201

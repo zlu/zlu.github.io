@@ -2,15 +2,18 @@
 layout: default
 ---
 <article class="teach-landing teach-course-page">
-  <nav class="teach-crumbs" aria-label="Breadcrumb">
-    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
-    <span>/</span>
-    <a href="/teach/universities/{{ page.uni_slug }}/"
-       data-en="{{ page.university_label_en }}"
-       data-cn="{{ page.university_label_cn }}">{{ page.university_label_cn }}</a>
-    <span>/</span>
-    <span>{% if page.course_code != "" %}{{ page.course_code }}{% else %}{{ page.course_title }}{% endif %}</span>
-  </nav>
+  <div class="teach-topbar">
+    <nav class="teach-crumbs" aria-label="Breadcrumb">
+      <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+      <span>/</span>
+      <a href="/teach/universities/{{ page.uni_slug }}/"
+         data-en="{{ page.university_label_en }}"
+         data-cn="{{ page.university_label_cn }}">{{ page.university_label_cn }}</a>
+      <span>/</span>
+      <span>{% if page.course_code != "" %}{{ page.course_code }}{% else %}{{ page.course_title }}{% endif %}</span>
+    </nav>
+    {% include teach-lang-switcher.html %}
+  </div>
 
   <header class="teach-landing-header">
     <p class="teach-hero-eyebrow"
@@ -30,8 +33,8 @@ layout: default
        data-cn="{{ page.theme_lead_cn }}">{{ page.theme_lead_cn }}</p>
     {% else %}
     <p class="teach-landing-lead"
-       data-en="1-1 bilingual help for this {{ page.university_label_en }} course: lecture sync, assignments, and exam prep. You submit your own work."
-       data-cn="针对 {{ page.university_label_cn }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。作业由你本人提交。">针对 {{ page.university_label_cn }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。作业由你本人提交。</p>
+       data-en="1-1 bilingual help for this {{ page.university_label_en }} course: lecture sync, assignments, and exam prep."
+       data-cn="针对 {{ page.university_label_cn }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。">针对 {{ page.university_label_cn }} 本课程的一对一双语辅导：同步跟课、作业与考前突击。</p>
     {% endif %}
     {% if page.course_aliases and page.course_aliases.size > 0 %}
     <p class="teach-alias-line"

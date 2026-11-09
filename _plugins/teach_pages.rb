@@ -106,8 +106,8 @@ module Jekyll
         "cn" => "作业辅导",
         "title_en" => "Assignment & Project Help",
         "title_cn" => "作业与 Project 辅导",
-        "desc_en" => "Debug and approach review. You submit your own work — no ghostwriting, no middleman fee.",
-        "desc_cn" => "拆题、debug、复盘思路。作业本人提交；不代写；无中介抽成。"
+        "desc_en" => "Debug and approach review. Direct tutor, no middleman fee.",
+        "desc_cn" => "拆题、debug、复盘思路。直接约老师，无中介抽成。"
       },
       "exam" => {
         "en" => "Exam prep tutoring",
@@ -502,8 +502,8 @@ module Jekyll
           "cn" => "#{label} 同步跟课：用中英双语补概念，与 workshop / tutorial 用语对齐。"
         },
         {
-          "en" => "Assignments: approach review and live debug. You keep authorship and submit yourself — no ghostwriting.",
-          "cn" => "作业辅导：拆 brief、梳思路、现场 debug。你保有作者身份并本人提交——不代写。"
+          "en" => "Assignments: approach review and live debug.",
+          "cn" => "作业辅导：拆 brief、梳思路、现场 debug。"
         },
         {
           "en" => "Exam prep: timed drills on weak spots and recurring question shapes for this course.",
@@ -785,7 +785,7 @@ module Jekyll
                  end
       theme_bit = topic_en.any? ? " Themes: #{topic_en.first(3).join(', ')}." : ""
       description = "Bilingual CS tutoring for #{label_en} students.#{code_bit}#{theme_bit} " \
-                    "Assignments, projects, exam prep. No ghostwriting."
+                    "Assignments, projects, exam prep."
       if description.length > 160
         description = description[0, 157].sub(/\s+\S*\z/, "").sub(/[.,;:]\z/, "") + "…"
       end
@@ -899,7 +899,7 @@ module Jekyll
                       desc += " (#{theme_label_en})" unless theme_label_en.empty?
                       desc += ". "
                       desc += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
-                      desc += "Bilingual Chinese/English — lecture sync, assignments, exam prep. No ghostwriting."
+                      desc += "Bilingual Chinese/English — lecture sync, assignments, exam prep."
                       desc
                     end
       if description.length > 160

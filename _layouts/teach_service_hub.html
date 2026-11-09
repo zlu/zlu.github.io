@@ -2,11 +2,14 @@
 layout: default
 ---
 <article class="teach-landing">
-  <nav class="teach-crumbs" aria-label="Breadcrumb">
-    <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
-    <span>/</span>
-    <span data-en="{{ page.service_title_en }}" data-cn="{{ page.service_title_cn }}">{{ page.service_title_cn }}</span>
-  </nav>
+  <div class="teach-topbar">
+    <nav class="teach-crumbs" aria-label="Breadcrumb">
+      <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
+      <span>/</span>
+      <span data-en="{{ page.service_title_en }}" data-cn="{{ page.service_title_cn }}">{{ page.service_title_cn }}</span>
+    </nav>
+    {% include teach-lang-switcher.html %}
+  </div>
 
   <header class="teach-landing-header">
     <p class="teach-hero-eyebrow"
@@ -39,8 +42,8 @@ layout: default
       {% elsif page.service_key == "assignment" %}
       <li data-en="Clarify the brief, pick an approach, debug together"
           data-cn="先拆题意，再梳思路，一起 debug">先拆题意，再梳思路，一起 debug</li>
-      <li data-en="You write and submit the final work — no ghostwriting"
-          data-cn="最终代码与提交仍是你的；不代写">最终代码与提交仍是你的；不代写</li>
+      <li data-en="Clarify edge cases and walk through failing tests together"
+          data-cn="一起过边界情况与失败测试">一起过边界情况与失败测试</li>
       {% elsif page.service_key == "exam" %}
       <li data-en="Topic map + weak-spot drills before midterms and finals"
           data-cn="考点地图 + 薄弱点专项，期中期末冲刺">考点地图 + 薄弱点专项，期中期末冲刺</li>

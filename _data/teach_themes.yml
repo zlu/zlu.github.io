@@ -509,10 +509,9 @@ general:
   lead_en: >-
     Whatever the course code, the tutoring pattern stays the same: bilingual concept
     catch-up, assignment debugging with you in control, and exam revision on weak spots.
-    You submit your own work.
   lead_cn: >-
     不论课号是什么，辅导节奏一致：中英双语补概念、你来操作我旁路 debug、
-    针对薄弱点备考。作业由你本人提交。
+    针对薄弱点备考。
   topics:
     - en: Lecture catch-up in Chinese and English
       cn: 中英双语补课与知识点梳理

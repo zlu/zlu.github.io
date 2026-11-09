@@ -57,8 +57,8 @@ courses:
     tutoring:
       - en: "Lecture sync: bilingual walkthrough of Python concepts so workshop language matches the lectures."
         cn: "同步跟课：用中英双语把 Python 概念讲透，与 workshop / 课堂用语对齐。"
-      - en: "Assignments: approach review and live debug. You keep authorship and submit yourself — no ghostwriting."
-        cn: "作业辅导：拆 brief、梳思路、现场 debug。你保有作者身份并本人提交——不代写。"
+      - en: "Assignments: approach review and live debug."
+        cn: "作业辅导：拆 brief、梳思路、现场 debug。"
       - en: "Quiz / exam prep: short timed drills on control flow, strings, and reading error messages under pressure."
         cn: "Quiz / 考前突击：限时练控制流、字符串，以及在压力下读懂报错。"
 
@@ -115,8 +115,8 @@ courses:
     tutoring:
       - en: "Lecture sync: bilingual walkthrough of wrangling ideas (import → clean → explore → reshape) aligned with workshop language."
         cn: "同步跟课：用中英双语把清洗主线讲透（导入 → 清洗 → 探索 → 重塑），与 workshop 用语对齐。"
-      - en: "Assignments: approach review and live notebook debug. You submit your own work — no ghostwriting."
-        cn: "作业辅导：拆 brief、梳流水线、现场 debug notebook。作业本人提交——不代写。"
+      - en: "Assignments: approach review and live notebook debug."
+        cn: "作业辅导：拆 brief、梳流水线、现场 debug notebook。"
       - en: "Assessment prep: rubric-focused drills so each task leaves a clear method trail."
         cn: "评估突击：按评分量表练，让每个任务都留下清晰方法轨迹。"
 
@@ -267,8 +267,8 @@ courses:
     tutoring:
       - en: "Lecture sync: bilingual OOP design vocabulary tied to small examples."
         cn: "同步跟课：用中英双语把 OOP 设计术语绑到小例子上。"
-      - en: "Assignments: design review + implementation debug. You submit your own work."
-        cn: "作业辅导：设计评审 + 实现 debug。作业本人提交。"
+      - en: "Assignments: design review + implementation debug."
+        cn: "作业辅导：设计评审 + 实现 debug。"
       - en: "Exam / review prep: justify designs under exam / review prompts."
         cn: "考试 / review 突击：在题目要求下为设计辩护。"
 
@@ -464,8 +464,8 @@ courses:
     tutoring:
       - en: "Lecture sync: bilingual foundations so Python and algorithm vocabulary match."
         cn: "同步跟课：用中英双语对齐 Python 与算法术语。"
-      - en: "Assignments: plan review and live debug. You submit your own work."
-        cn: "作业辅导：计划评审与现场 debug。作业本人提交。"
+      - en: "Assignments: plan review and live debug."
+        cn: "作业辅导：计划评审与现场 debug。"
       - en: "Exam / quiz prep: timed foundation drills."
         cn: "考试 / quiz 突击：限时基础练习。"
 
