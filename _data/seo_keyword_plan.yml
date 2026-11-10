@@ -111,14 +111,15 @@ entries:
       - FIT5196 data wrangling
     status: optimize
 
-  - primary: uts 41040
-    url: /teach/courses/uts/41040/
+  - primary: uts ipro002
+    url: /teach/courses/uts/ipro002/
     scorecard: tutor_leads
     supporting:
       - UTS Programming 2
-      - programming2 java u503
+      - IPRO002 tutoring
+      - UTS IPRO001
     status: expand
-    note: "Linked to teaching/uts/programming2-java-2026-u503"
+    note: "Linked to teaching/uts/programming2-IPRO002; IPRO001 sibling at /teach/courses/uts/ipro001/"
 
   - primary: uts IWBS001
     url: /teach/courses/uts/iwbs001/

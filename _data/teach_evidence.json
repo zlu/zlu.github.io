@@ -376,6 +376,12 @@
         "SEMT20003"
       ]
     },
+    "u-sheffield": {
+      "preferred_slug": "u-sheffield",
+      "materials": [
+        "ele455-systems-design-2026"
+      ]
+    },
     "u-south-australia": {
       "preferred_slug": "universifty-of-south-australia",
       "materials": [
@@ -498,10 +504,10 @@
       "preferred_slug": "uts",
       "materials": [
         "database foundamentals",
-        "programming1-java",
+        "INEF001-networking",
         "IWBS001-web-systems",
-        "networking",
-        "programming2-java-2026-u503"
+        "programming2-IPRO002",
+        "programming1-IPRO001"
       ]
     },
     "western-university": {
