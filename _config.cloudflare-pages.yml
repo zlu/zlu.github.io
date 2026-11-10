@@ -1,0 +1,4 @@
+# Overlay for Cloudflare Pages deploys (merged after _config.yml).
+# Free Pages allows ≤20,000 files; retired teach uni soft-redirects alone are ~19k HTML pages.
+# Keep those on GitHub Pages for now, or later replace with a Cloudflare Function / Bulk Redirects.
+teach_retired_redirects: false
