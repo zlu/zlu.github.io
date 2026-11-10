@@ -705,9 +705,18 @@ module Jekyll
       "title_cn" => "Java 基础"
     }.freeze
 
+    MATHEION_NET = {
+      "id" => "net",
+      "url" => "https://matheion.zlu.me/learn/net/",
+      "code" => "MA-NET1",
+      "title_en" => "Computer networking",
+      "title_cn" => "计算机网络"
+    }.freeze
+
     def matheion_lessons_for_course(course, focus_topics = [])
       lessons = []
       lessons << MATHEION_JAVA if java_fundamental_course?(course, focus_topics)
+      lessons << MATHEION_NET if networking_course?(course, focus_topics)
       lessons
     end
 
@@ -735,6 +744,40 @@ module Jekyll
 
       # Classic OOP course titles in this catalog are usually Java.
       text.match?(/object[-\s]?oriented(\s+(programming|design|software(\s+development)?))?/i)
+    end
+
+    # Intro computer-networking courses (UTS INEF001, COMP9331, …) — not neural nets
+    # or social/complex network analysis. Theme + title/material/code signals.
+    def networking_course?(course, curated_topics = [])
+      return true if course["theme"].to_s == "networking"
+
+      hay = [
+        course["code"], course["title"], course["material"],
+        *Array(course["aliases"])
+      ].compact.join(" ")
+      topic_hay = Array(curated_topics).filter_map { |t|
+        next unless t.is_a?(Hash)
+
+        "#{t['en']} #{t['cn']}"
+      }.join(" ")
+      text = "#{hay} #{topic_hay}"
+
+      return false if text.match?(
+        /\b(neural|deep learning|social and information network|complex networks|pattern recognition)\b/i
+      )
+      return true if text.match?(/\b(inef001|comp9331|fit5124|inhn0012)\b/i)
+      # Prefer plural-aware stems (Computer Networks, Systems and Networks, …).
+      text.match?(
+        /\b(
+          computer\s+networks?|
+          networking|
+          network\s+fundamentals|
+          networks?\s+and\s+(applications|communications|security)|
+          (computer\s+)?systems?\s+and\s+networks?|
+          architecture\s+and\s+networks?|
+          wireless\s+networks?
+        )\b/ix
+      )
     end
 
     def find_post_url(site, name)

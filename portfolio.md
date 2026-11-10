@@ -21,8 +21,12 @@ Side projects and products I build and run.
     <span><strong><a href="https://nidnoi.dev">NidNoi</a></strong> — Thai, Chinese, and Japanese language learning.</span>
   </li>
   <li>
+    <img class="portfolio-icon" src="/assets/images/portfolio/redekontur.png" alt="" width="128" height="128">
+    <span><strong><a href="https://redekontur.zlu.me">Redekontur</a></strong> — Advanced German (C1/C2) through public-domain classics: reading, grammar, and writing rubrics. <a href="https://apps.apple.com/de/app/redekontur-deutsch-lernen/id6777393928">App Store</a>.</span>
+  </li>
+  <li>
     <img class="portfolio-icon" src="/assets/images/portfolio/matheion.png" alt="" width="128" height="128">
-    <span><strong><a href="https://matheion.zlu.me">Matheion</a></strong> — CS self-learning and tutoring. Open lessons: <a href="https://matheion.zlu.me/learn/python/">Python</a>, <a href="https://matheion.zlu.me/learn/java/">Java</a>, <a href="https://matheion.zlu.me/learn/sql/">SQL</a>, <a href="https://matheion.zlu.me/learn/web/">Web</a>.</span>
+    <span><strong><a href="https://matheion.zlu.me">Matheion</a></strong> — CS self-learning and tutoring. Open lessons: <a href="https://matheion.zlu.me/learn/python/">Python</a>, <a href="https://matheion.zlu.me/learn/java/">Java</a>, <a href="https://matheion.zlu.me/learn/sql/">SQL</a>, <a href="https://matheion.zlu.me/learn/web/">Web</a>, <a href="https://matheion.zlu.me/learn/cli/">CLI</a>, <a href="https://matheion.zlu.me/learn/net/">Networking</a>.</span>
   </li>
 </ul>
 

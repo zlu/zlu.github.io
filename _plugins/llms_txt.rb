@@ -13,7 +13,8 @@ module Jekyll
       ["Java", "https://matheion.zlu.me/learn/java/"],
       ["SQL", "https://matheion.zlu.me/learn/sql/"],
       ["Web", "https://matheion.zlu.me/learn/web/"],
-      ["CLI", "https://matheion.zlu.me/learn/cli/"]
+      ["CLI", "https://matheion.zlu.me/learn/cli/"],
+      ["Networking", "https://matheion.zlu.me/learn/net/"]
     ].freeze
 
     def generate(site)
