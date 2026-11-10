@@ -17,6 +17,36 @@ courses:
     Foundations of Algorithms 是墨大算法路线上的入门坎：既要听懂抽象步骤，又要落成能解释的实现。
     留学生常见问题是课上符号记不全、作业分不清「算法步骤不清」还是「语言细节在拖后腿」。
     辅导会先对齐题意，再写最小可运行版本，最后才谈优化和复杂度说法。
+  topics:
+    - en: "2–3 core processes per week, each with a small walkthrough"
+      cn: "每周抓住 2–3 个核心过程，各自配小例子走完"
+    - en: "Align lecture ideas with tutorial / assignment wording"
+      cn: "把课件直觉对齐 tutorial / 作业的表述"
+    - en: "Separate algorithm steps from language / tooling drag"
+      cn: "分清算法步骤不清，还是语言 / 工具细节在拖后腿"
+    - en: "Minimal runnable version before optimisation talk"
+      cn: "先写最小可运行版本，再谈优化和复杂度"
+  stuck:
+    - en: "Lecture pace + symbols: notes become half formulas"
+      cn: "课速快、符号密，笔记只剩半截公式"
+    - en: "Homework does not match what the slides seemed to ask"
+      cn: "作业对不齐课件好像在问什么"
+    - en: "Mixing algorithm confusion with language bugs"
+      cn: "算法步骤和语言细节混在一起修，特别耗时"
+  tutoring:
+    - en: "Lecture sync: pick the week's core processes, walk small inputs, keep exam English terms."
+      cn: "同步跟课：抓住本周核心过程，小输入走完，英文术语只留卷面要用的。"
+    - en: "Assignments: align the ask, ship a minimal runnable version, then complexity."
+      cn: "作业：先对齐题意，写最小可运行版本，最后才谈复杂度说法。"
+    - en: "Priority across DDLs if you are juggling another implementation-heavy course."
+      cn: "若同时在上更偏实现的课，可把两门课 DDL 一起发来排优先级。"
+  session_angles:
+    - en: "Do not translate the whole week's slides first — walk core processes"
+      cn: "不要先把整周课件翻译一遍，先走核心过程"
+    - en: "Chinese for intuition; keep English terms the exam and tutorials use"
+      cn: "中文把直觉说顺，英文术语只留卷面和讨论会用到的"
+    - en: "Name whether the block is algorithm or language before coding more"
+      cn: "再写代码前，先分清卡在算法还是语言"
 - code: COMP20003
   title: Algorithms and Data Structures
 - code: COMP20007

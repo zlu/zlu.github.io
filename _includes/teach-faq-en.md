@@ -4,7 +4,7 @@ Main classroom apps: **ClassIn** or **Tencent Meeting** — please install befor
 
 **Why book directly?**
 
-Intake, prep, and teaching are the same person. You **WeChat the tutor directly**. **No middleman fee**, and no sales handoff to someone else.
+Agencies often route through sales, then matching, then a package — extra handoffs when the deadline is soon. Intake, prep, and teaching here are the same person: **WeChat the tutor directly**, **no middleman fee**, no sales handoff. Multi-subject account managers or parent reports may still suit a larger team; for course-level CS help, booking the tutor is usually faster.
 
 **How much does it cost? Is there a middleman fee?**
 

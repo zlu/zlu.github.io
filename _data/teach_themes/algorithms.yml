@@ -33,14 +33,6 @@ session_angles:
 match: algorithm|data.?struct|complexit|discrete.?math|combinator| graph.?theory|dynamic.?program|computational.?thinking
 reading:
 - kind: post
-  name: unsw-comp2521-dsa-stuck-zh
-  title_en: Why UNSW COMP2521 feels stuck
-  title_cn: UNSW COMP2521 为什么特别卡
-- kind: post
-  name: melbourne-comp10002-follow-lectures-zh
-  title_en: Keeping up with Melbourne COMP10002
-  title_cn: 墨尔本大学 COMP10002 怎么跟上
-- kind: post
   name: genetic-algorithm-from-darwin-to-holland
   title_en: Genetic algorithms from Darwin to Holland
   title_cn: 从达尔文到 Holland 的遗传算法

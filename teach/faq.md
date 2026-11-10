@@ -30,7 +30,7 @@ hreflang:
     "name": "为什么建议微信直接约？",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "咨询、排课和上课都是我本人，没有销售先接待再转接老师的环节，也就没有机构抽成。说清楚学校、课号和截止日期后，可以直接谈怎么上。"
+      "text": "不少机构会先由顾问接待，再匹配老师、再推套餐；急单多一轮转述就容易耽误。咨询、排课和上课都是我本人，没有销售剧本，也没有中介抽成。说清楚学校、课号、截止日期和题目/报错后，可以直接谈同步跟课、作业拆题还是考前练习。需要多科目管家或家长周报时，大团队可能更合适；要的是把这门计算机课讲透的人，直约通常更快。"
     }
   }, {
     "@type": "Question",
@@ -107,7 +107,7 @@ hreflang:
 Main apps: **ClassIn** or **Tencent Meeting** (install beforehand). Also Zoom, Teams, Google Meet, WeChat video. Send materials ahead; we screen-share, explain bilingually, and debug together.
 
 ### Why book on WeChat directly?
-Intake and teaching are the same person: no sales handoff, no agency markup.
+Agencies often start with sales intake, then matching, then a package. Intake and teaching here are the same person: no sales script, no agency markup. Message school, course code, deadline, and the stuck brief / error; we decide how to run the session. Big teams can still fit multi-subject management; for course-level CS help, booking the tutor is usually faster.
 
 ### Can you help with assignments and exams?
 Yes. Assignment help and exam prep are most of what I do: unpack briefs, debug together, drill weak spots before midterms and finals.
@@ -135,7 +135,7 @@ Flexible by course type and frequency. Message WeChat with school + course code 
 主用 **ClassIn** 或 **腾讯会议**，请提前装好；也可用 Zoom、Teams、Google Meet 或微信视频。课前尽量把大纲、作业题、代码或报错截图发过来，课上共享屏幕，用中英双语把卡点讲透，再一起排查问题，避免把时间耗在来回确认需求上。
 
 ### 为什么建议微信直接约？
-咨询、排课和上课都是我本人，没有销售先接待再转接老师的环节，也就没有机构抽成。你说清楚学校、课号和截止日期后，我们可以直接谈怎么上，而不是先听一长串套餐推销。
+不少机构会先由顾问接待，再匹配老师、再推套餐；对「这周作业卡报错」「后天考试」这种急单，多一轮转述就容易耽误。咨询、排课和上课都是我本人：没有销售剧本，也没有中介抽成。微信发学校、课号、截止日期和题目/报错，直接谈同步跟课、作业拆题还是考前限时练习。若你需要多科目管家或家长周报，大团队可能更合适；若要的是把这门计算机课讲透的人，直约通常更快，责任也更清楚。
 
 ### 作业和考试都能辅导吗？
 可以，而且这本来就是我日常做得最多的两类课。作业会先一起读懂 brief 和评分点，再梳你能自己写下去的思路，现场对着报错排查；考前则按这门课常考题型和你的薄弱点做限时练习，练的是审题和下手顺序，不是临考前无目的地刷题。

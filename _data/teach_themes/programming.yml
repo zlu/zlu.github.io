@@ -35,14 +35,6 @@ session_angles:
 match: program|software.?construct|structured.?program|imperative|functional.?program| java\b|python|c\+\+|coding|object.?oriented|\boop\b|software.?design| problem.?solving|introduct.*comput|foundations.?of.?comput
 reading:
 - kind: post
-  name: unsw-comp1511-assignment-howto-zh
-  title_en: How to break down UNSW COMP1511 assignments
-  title_cn: UNSW COMP1511 作业怎么拆
-- kind: post
-  name: monash-fit2102-exam-prep-zh
-  title_en: Monash FIT2102 exam prep
-  title_cn: Monash FIT2102 考前怎么复习
-- kind: post
   name: variable-storage-and-pointers-in-c-back-to-basics
   title_en: Variable storage and pointers in C
   title_cn: C 语言变量存储与指针
