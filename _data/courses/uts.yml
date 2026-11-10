@@ -27,7 +27,7 @@ courses:
     title: Deep Learning and Convolutional Neural Networks
   - code: 42913
     title: Social and Information Network Analysis
-  - title: Networking
+  - title: Networking Fundamentals
     material: INEF001-networking
     code: INEF001
     theme: networking
