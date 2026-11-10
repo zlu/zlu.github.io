@@ -8,9 +8,6 @@ courses:
     title: Data Structures and Algorithms
   - code: 31257
     title: Information System Development Methodologies
-  - code: 31271
-    title: Database Fundamentals
-    material: database foundamentals
   - code: 32513
     title: Advanced Data Analytics Algorithms
   - code: 32555
@@ -21,121 +18,127 @@ courses:
     title: Deep Learning and Convolutional Neural Networks
   - code: 42913
     title: Social and Information Network Analysis
+  - code: IDBF001
+    title: Database Fundamentals
+    material: IDBF001-database foundamentals
   - title: Networking Fundamentals
     material: INEF001-networking
     code: INEF001
     theme: networking
-  - code: IPRO001
-    title: Programming 1
+  - topics:
+      - en: Java syntax and console I/O with a text menu
+        cn: Java 语法与带文本菜单的控制台输入输出
+      - en: Classes, fields, methods, and toString()
+        cn: 类、字段、方法与 toString()
+      - en: Lists / maps at the level the first weeks use
+        cn: 前几周会用到的 List / Map
+      - en: Reading a brief before typing
+        cn: 动手写之前先读清 brief
+      - en: Debug habits that carry into IPRO002
+        cn: 能带到 IPRO002 的调试习惯
     material: programming1-IPRO001
     theme: programming
+    lead_en: "IPRO001 is the Java foundation before Programming 2: menus, classes,
+      and small programs that still have to compile, run, and be explainable.
+      Tutoring builds habits you will reuse in IPRO002 group work."
+    tutoring:
+      - en: "Lecture sync: bilingual walkthrough of weekly Java ideas until you can
+          restate them and match lab wording."
+        cn: 同步跟课：用中英双语把本周 Java 概念讲透，能复述并能对齐 lab 用语。
+      - en: "Assignments: you drive; we place behaviour in the right class, fix the menu
+          path, and debug until you can explain the change."
+        cn: 作业：你来操作；一起把行为放到正确的类，理顺菜单路径，debug 到你能自己解释每一处改动。
+      - en: "Exam / practice: timed drills on class design and short programs, then
+          wrong-answer review before IPRO002."
+        cn: 考前 / 练习：针对类设计与短程序限时练，做错题复盘，为 IPRO002 打底。
+    code: IPRO001
+    lead_cn: IPRO001 是 Programming 2 之前的 Java 基础：菜单驱动、类与小程序既要能编译运行，
+      又要能讲清楚。辅导会把这些习惯立住，后面 IPRO002 小组作业才能接得上。
+    overview_en: Programming 1 at UTS (Diploma of IT) introduces Java through text
+      menus, objects, and simple collections. Students usually struggle less
+      with "never saw syntax" and more with reading the brief, placing behaviour
+      in the right class, and debugging when the menu path and data do not
+      match. IPRO002 extends the same line into inheritance, interfaces, and a
+      group project.
+    overview_cn: UTS（Diploma of IT）的 Programming 1 用 Java 把文本菜单、对象和小集合跑通。
+      真正卡人的往往不是「语法完全没见过」，而是 brief 读不清、行为该放哪个类、 菜单路径和数据对不上时不会排查。IPRO002
+      在同一条线上继续：继承、接口与小组项目。
+    title: Programming 1
+    stuck:
+      - en: Code that almost runs but the student cannot explain each step
+        cn: 代码差不多能跑，但每一步自己讲不清楚
+      - en: Mixing menu I/O with business logic in one class
+        cn: 把菜单输入输出和业务逻辑塞进同一个类
+      - en: Collections used by copy-paste without knowing what is stored
+        cn: 集合靠粘贴用上了，却说不清里面存的是什么
+      - en: Falling behind early, then IPRO002 group work feels impossible
+        cn: 前面掉队，到 IPRO002 小组作业就接不住
     aliases:
       - "41039"
-    lead_en: >-
-      IPRO001 is the Java foundation before Programming 2: menus, classes, and
-      small programs that still have to compile, run, and be explainable. Tutoring
-      builds habits you will reuse in IPRO002 group work.
-    lead_cn: >-
-      IPRO001 是 Programming 2 之前的 Java 基础：菜单驱动、类与小程序既要能编译运行，
-      又要能讲清楚。辅导会把这些习惯立住，后面 IPRO002 小组作业才能接得上。
-    overview_en: >-
-      Programming 1 at UTS (Diploma of IT) introduces Java through text menus,
-      objects, and simple collections. Students usually struggle less with "never
-      saw syntax" and more with reading the brief, placing behaviour in the right
-      class, and debugging when the menu path and data do not match. IPRO002
-      extends the same line into inheritance, interfaces, and a group project.
-    overview_cn: >-
-      UTS（Diploma of IT）的 Programming 1 用 Java 把文本菜单、对象和小集合跑通。
-      真正卡人的往往不是「语法完全没见过」，而是 brief 读不清、行为该放哪个类、
-      菜单路径和数据对不上时不会排查。IPRO002 在同一条线上继续：继承、接口与小组项目。
-    topics:
-      - en: "Java syntax and console I/O with a text menu"
-        cn: "Java 语法与带文本菜单的控制台输入输出"
-      - en: "Classes, fields, methods, and toString()"
-        cn: "类、字段、方法与 toString()"
-      - en: "Lists / maps at the level the first weeks use"
-        cn: "前几周会用到的 List / Map"
-      - en: "Reading a brief before typing"
-        cn: "动手写之前先读清 brief"
-      - en: "Debug habits that carry into IPRO002"
-        cn: "能带到 IPRO002 的调试习惯"
-    stuck:
-      - en: "Code that almost runs but the student cannot explain each step"
-        cn: "代码差不多能跑，但每一步自己讲不清楚"
-      - en: "Mixing menu I/O with business logic in one class"
-        cn: "把菜单输入输出和业务逻辑塞进同一个类"
-      - en: "Collections used by copy-paste without knowing what is stored"
-        cn: "集合靠粘贴用上了，却说不清里面存的是什么"
-      - en: "Falling behind early, then IPRO002 group work feels impossible"
-        cn: "前面掉队，到 IPRO002 小组作业就接不住"
-    tutoring:
-      - en: "Lecture sync: bilingual walkthrough of weekly Java ideas until you can restate them and match lab wording."
-        cn: "同步跟课：用中英双语把本周 Java 概念讲透，能复述并能对齐 lab 用语。"
-      - en: "Assignments: you drive; we place behaviour in the right class, fix the menu path, and debug until you can explain the change."
-        cn: "作业：你来操作；一起把行为放到正确的类，理顺菜单路径，debug 到你能自己解释每一处改动。"
-      - en: "Exam / practice: timed drills on class design and short programs, then wrong-answer review before IPRO002."
-        cn: "考前 / 练习：针对类设计与短程序限时练，做错题复盘，为 IPRO002 打底。"
-  - code: IPRO002
-    title: Programming 2
+  - topics:
+      - en: Scenario and use-cases that fit weeks 1–6 only
+        cn: 选题与用例只落在前几周已教内容里
+      - en: Decompose the domain into high-cohesion / low-coupling tasks
+        cn: 把问题域拆成高内聚、低耦合的任务
+      - en: "GitHub collaboration: branches, ownership, merge interfaces"
+        cn: GitHub 协作：分支、职责归属、合并接口
+      - en: "Class design: parent / child, enum, lists and maps"
+        cn: 类设计：父类 / 子类、枚举、List 与 Map
+      - en: Assign responsibilities and integrate with the shared menu
+        cn: 分配职责并与共享菜单、集合集成
+      - en: Explain inheritance, interfaces, overload / override, polymorphism
+        cn: 能讲清继承、接口、重载 / 重写与多态
     material: programming2-IPRO002
     theme: programming
+    lead_en: "IPRO002 extends Programming 1 into OO design and a group project:
+      scenario, use-cases, class relationships, and code that stays inside weeks
+      1–6. Tutoring turns an open topic into cohesive tasks, GitHub ownership,
+      and an integrable design."
+    tutoring:
+      - en: "Lecture sync: bilingual walkthrough of weeks 1–6 (OOP, collections,
+          inheritance / interfaces) so lab and project language match."
+        cn: 同步跟课：用中英双语把前几周主线讲透（OOP、集合、继承 / 接口），让 lab 与项目用语对齐。
+      - en: "Group project: pick a scenario inside taught constructs; decompose
+          use-cases into cohesive tasks with clear owners; set GitHub branches
+          and merge interfaces; design classes, assign responsibilities, and
+          integrate with the rest of the program."
+        cn: 小组项目：选题落在已教内容；把用例拆成高内聚任务并明确负责人；约定 GitHub 分支与合并接口；设计类、分配职责，再与整组菜单和集合集成。
+      - en: "Implementation sessions: you drive your owned classes; we debug boundaries,
+          naming, and integration until the design holds and you can explain
+          each OO choice."
+        cn: 实现课：你负责自己的类；一起排查边界、命名与集成，直到设计站得住，并且你能解释每一处 OO 选择。
+      - en: "Exam / practice: short drills on inheritance, interfaces, and collection
+          use when you are not in project mode."
+        cn: 考前 / 练习：非项目周针对继承、接口与集合用法做短练。
+    code: IPRO002
+    lead_cn: IPRO002 在 Programming 1 之上做 OO 设计与小组项目：场景、用例、类关系，
+      以及只用前几周教过的写法。辅导把开放选题拆成高内聚低耦合的任务、GitHub 分工， 再落到能合并进整组程序的类设计。
+    overview_en: "Programming 2 at UTS (Diploma of IT) builds on IPRO001:
+      inheritance, interfaces, enums, lists and maps, and a group
+      object-oriented application. The hard part is rarely typing Java alone. It
+      is choosing a scenario that fits taught constructs, splitting use-cases
+      into high-cohesion / low-coupling tasks for 2–3 people, collaborating on
+      GitHub, then designing classes and integrating with the shared menu and
+      collections so the explanation can justify inheritance, interfaces,
+      overload / override, and polymorphism."
+    overview_cn: UTS（Diploma of IT）的 Programming 2 接在 IPRO001 后面：继承、接口、枚举、 List /
+      Map，以及一个小组面向对象应用。真正难的往往不是「会不会敲 Java」， 而是选题是否落在已教内容里、把用例拆成 2–3
+      人可并行的高内聚低耦合任务、 用 GitHub 协作，再设计类并并入共享菜单与集合，使说明能讲清继承、接口、 重载 / 重写与多态。
+    title: Programming 2
+    stuck:
+      - en: Open topic, but the design needs libraries or ideas not yet taught
+        cn: 选题太开放，设计却用了还没教的库或写法
+      - en: Use-cases that are really one CRUD path counted as three tasks
+        cn: 其实是同一条增删改路径，却拆成三个假任务
+      - en: Everyone edits the same classes; merges fight and nobody owns an interface
+        cn: 所有人改同一批类，合并冲突不断，没有人守住接口约定
+      - en: Classes exist but responsibilities are mixed; integration breaks the menu
+        cn: 类有了但职责搅在一起，一集成菜单或集合就断
+      - en: Code runs, but the write-up cannot justify OO choices
+        cn: 程序能跑，说明里却讲不清为什么这样用 OO
     aliases:
       - "41040"
-    lead_en: >-
-      IPRO002 extends Programming 1 into OO design and a group project: scenario,
-      use-cases, class relationships, and code that stays inside weeks 1–6. Tutoring
-      turns an open topic into cohesive tasks, GitHub ownership, and an integrable design.
-    lead_cn: >-
-      IPRO002 在 Programming 1 之上做 OO 设计与小组项目：场景、用例、类关系，
-      以及只用前几周教过的写法。辅导把开放选题拆成高内聚低耦合的任务、GitHub 分工，
-      再落到能合并进整组程序的类设计。
-    overview_en: >-
-      Programming 2 at UTS (Diploma of IT) builds on IPRO001: inheritance, interfaces,
-      enums, lists and maps, and a group object-oriented application. The hard part is
-      rarely typing Java alone. It is choosing a scenario that fits taught constructs,
-      splitting use-cases into high-cohesion / low-coupling tasks for 2–3 people,
-      collaborating on GitHub, then designing classes and integrating with the shared
-      menu and collections so the explanation can justify inheritance, interfaces,
-      overload / override, and polymorphism.
-    overview_cn: >-
-      UTS（Diploma of IT）的 Programming 2 接在 IPRO001 后面：继承、接口、枚举、
-      List / Map，以及一个小组面向对象应用。真正难的往往不是「会不会敲 Java」，
-      而是选题是否落在已教内容里、把用例拆成 2–3 人可并行的高内聚低耦合任务、
-      用 GitHub 协作，再设计类并并入共享菜单与集合，使说明能讲清继承、接口、
-      重载 / 重写与多态。
-    topics:
-      - en: "Scenario and use-cases that fit weeks 1–6 only"
-        cn: "选题与用例只落在前几周已教内容里"
-      - en: "Decompose the domain into high-cohesion / low-coupling tasks"
-        cn: "把问题域拆成高内聚、低耦合的任务"
-      - en: "GitHub collaboration: branches, ownership, merge interfaces"
-        cn: "GitHub 协作：分支、职责归属、合并接口"
-      - en: "Class design: parent / child, enum, lists and maps"
-        cn: "类设计：父类 / 子类、枚举、List 与 Map"
-      - en: "Assign responsibilities and integrate with the shared menu"
-        cn: "分配职责并与共享菜单、集合集成"
-      - en: "Explain inheritance, interfaces, overload / override, polymorphism"
-        cn: "能讲清继承、接口、重载 / 重写与多态"
-    stuck:
-      - en: "Open topic, but the design needs libraries or ideas not yet taught"
-        cn: "选题太开放，设计却用了还没教的库或写法"
-      - en: "Use-cases that are really one CRUD path counted as three tasks"
-        cn: "其实是同一条增删改路径，却拆成三个假任务"
-      - en: "Everyone edits the same classes; merges fight and nobody owns an interface"
-        cn: "所有人改同一批类，合并冲突不断，没有人守住接口约定"
-      - en: "Classes exist but responsibilities are mixed; integration breaks the menu"
-        cn: "类有了但职责搅在一起，一集成菜单或集合就断"
-      - en: "Code runs, but the write-up cannot justify OO choices"
-        cn: "程序能跑，说明里却讲不清为什么这样用 OO"
-    tutoring:
-      - en: "Lecture sync: bilingual walkthrough of weeks 1–6 (OOP, collections, inheritance / interfaces) so lab and project language match."
-        cn: "同步跟课：用中英双语把前几周主线讲透（OOP、集合、继承 / 接口），让 lab 与项目用语对齐。"
-      - en: "Group project: pick a scenario inside taught constructs; decompose use-cases into cohesive tasks with clear owners; set GitHub branches and merge interfaces; design classes, assign responsibilities, and integrate with the rest of the program."
-        cn: "小组项目：选题落在已教内容；把用例拆成高内聚任务并明确负责人；约定 GitHub 分支与合并接口；设计类、分配职责，再与整组菜单和集合集成。"
-      - en: "Implementation sessions: you drive your owned classes; we debug boundaries, naming, and integration until the design holds and you can explain each OO choice."
-        cn: "实现课：你负责自己的类；一起排查边界、命名与集成，直到设计站得住，并且你能解释每一处 OO 选择。"
-      - en: "Exam / practice: short drills on inheritance, interfaces, and collection use when you are not in project mode."
-        cn: "考前 / 练习：非项目周针对继承、接口与集合用法做短练。"
   - code: IWBS001
     title: Web Systems
     material: IWBS001-web-systems
+---
