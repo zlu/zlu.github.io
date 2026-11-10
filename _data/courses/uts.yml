@@ -20,9 +20,6 @@ courses:
   - code: 41039
     title: Programming 1
     material: programming1-java
-  - code: 41040
-    title: Programming 2
-    material: programming2-java-2026-u503
   - code: 42028
     title: Deep Learning and Convolutional Neural Networks
   - code: 42913
@@ -31,6 +28,10 @@ courses:
     material: INEF001-networking
     code: INEF001
     theme: networking
+  - code: IPRO002
+    title: Programming 2
+    material: programming2-IPRO002
+    theme: java, oop
   - code: IWBS001
     title: Web Systems
     material: IWBS001-web-systems
