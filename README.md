@@ -64,8 +64,9 @@ see [llmstxt.org](https://llmstxt.org/)).
 
 Dead teach shells still appearing in GSC: submit URLs from
 [`.scripts/gsc_removals_teach_dead_urls.txt`](.scripts/gsc_removals_teach_dead_urls.txt)
-via Search Console → Removals (temporary). Soft redirects cover retired uni
-`preview|assignment|exam|sync` paths after deploy.
+via Search Console → Removals (temporary). `teach_retired_redirects` is off in
+`_config.yml` so GitHub Pages deploys stay under the sync timeout; prefer Removals
+(+ later CF Bulk Redirects) over regenerating ~19k soft-redirect HTML pages.
 
 IndexNow should **stream** only changed URLs (Bing flags sitemap dumps as batch mode).
 
