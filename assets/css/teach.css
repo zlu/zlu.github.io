@@ -1309,7 +1309,7 @@ body.teach-page-active .content, body.teach-page-active .site {
 
 .teach-course-more {
   margin: 0 0 0.5rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0 1.5rem;
   border-top: 1px solid var(--teach-line, #d5dde6);
 }
 
