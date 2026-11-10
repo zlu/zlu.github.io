@@ -371,9 +371,9 @@ universities:
 - folder: uts
   admin_slug: uts
   materials:
+  - IDBF001-database foundamentals
   - INEF001-networking
   - IWBS001-web-systems
-  - database foundamentals
   - programming1-IPRO001
   - programming2-IPRO002
 - folder: western-university

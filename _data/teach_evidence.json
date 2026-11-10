@@ -503,11 +503,11 @@
     "uts": {
       "preferred_slug": "uts",
       "materials": [
-        "database foundamentals",
         "INEF001-networking",
         "IWBS001-web-systems",
         "programming2-IPRO002",
-        "programming1-IPRO001"
+        "programming1-IPRO001",
+        "IDBF001-database foundamentals"
       ]
     },
     "western-university": {

@@ -21,6 +21,9 @@ courses:
   - code: IDBF001
     title: Database Fundamentals
     material: IDBF001-database foundamentals
+    theme: databases
+    aliases:
+      - "31271"
   - title: Networking Fundamentals
     material: INEF001-networking
     code: INEF001
@@ -141,4 +144,3 @@ courses:
   - code: IWBS001
     title: Web Systems
     material: IWBS001-web-systems
----

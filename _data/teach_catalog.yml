@@ -3050,6 +3050,230 @@ universities:
     assignments / labs.'
   coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：数据库、线性代数、作业
     / Lab。。
+- slug: uts
+  university: University of Technology Sydney
+  teaching_folder: uts
+  hand_curated: true
+  course_count: 12
+  linked_course_count: 5
+  courses:
+  - code: '31251'
+    title: Data Structures and Algorithms
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: '31257'
+    title: Information System Development Methodologies
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: '32513'
+    title: Advanced Data Analytics Algorithms
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: '32555'
+    title: Fundamentals of Software Development
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: '41025'
+    title: Introduction to Software Development
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: '42028'
+    title: Deep Learning and Convolutional Neural Networks
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: '42913'
+    title: Social and Information Network Analysis
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: IDBF001
+    title: Database Fundamentals
+    material: IDBF001-database foundamentals
+    link: material field
+    topics:
+    - en: databases
+      cn: 数据库
+    - &id128
+      en: SQL / databases
+      cn: SQL / 数据库
+    shape:
+      pdf: 1
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 4
+      week_span:
+      - 7
+      - 7
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 7
+  - code: INEF001
+    title: Networking Fundamentals
+    material: INEF001-networking
+    link: material field
+    topics:
+    - &id129
+      en: networking
+      cn: 计算机网络
+    - en: assignments / labs
+      cn: 作业 / Lab
+    - &id131
+      en: APIs / HTTP
+      cn: API / HTTP
+    - en: databases
+      cn: 数据库
+    - &id132
+      en: operating systems
+      cn: 操作系统
+    - en: web front-end
+      cn: 前端
+    shape:
+      pdf: 13
+      slides: 0
+      notebooks: 0
+      code: 6
+      notes_md: 3
+      total_content_files: 38
+      week_span:
+      - 1
+      - 7
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 62
+  - code: IPRO001
+    title: Programming 1
+    material: programming1-IPRO001
+    link: material field
+    topics:
+    - en: exam prep
+      cn: 考前突击
+    shape:
+      pdf: 2
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 0
+      total_content_files: 2
+      week_span: null
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 7
+  - code: IPRO002
+    title: Programming 2
+    material: programming2-IPRO002
+    link: material field
+    topics:
+    - en: Java
+      cn: Java
+    - &id127
+      en: databases
+      cn: 数据库
+    shape:
+      pdf: 1
+      slides: 0
+      notebooks: 0
+      code: 57
+      notes_md: 6
+      total_content_files: 64
+      week_span:
+      - 5
+      - 5
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 70
+  - code: IWBS001
+    title: Web Systems
+    material: IWBS001-web-systems
+    link: material field
+    topics:
+    - &id134
+      en: exam prep
+      cn: 考前突击
+    - &id135
+      en: Java
+      cn: Java
+    - &id133
+      en: web front-end
+      cn: 前端
+    - &id136
+      en: OOP
+      cn: 面向对象
+    - &id130
+      en: assignments / labs
+      cn: 作业 / Lab
+    shape:
+      pdf: 1
+      slides: 2
+      notebooks: 0
+      code: 2
+      notes_md: 5
+      total_content_files: 13
+      week_span:
+      - 3
+      - 3
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 24
+  topics:
+  - *id127
+  - *id128
+  - *id129
+  - *id130
+  - *id131
+  - *id132
+  - *id133
+  - *id134
+  - *id135
+  - *id136
+  signals:
+    exam_prep_materials: true
+    assignment_lab_materials: true
+    weekly_lecture_arc: true
+  total_depth: 170
+  coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: databases,
+    SQL / databases, networking, assignments / labs.'
+  coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、SQL
+    / 数据库、计算机网络、作业 / Lab。。
 - slug: lmu
   university: Ludwig-Maximilians-Universität München
   teaching_folder: lmu-慕尼黑大学
@@ -3062,25 +3286,25 @@ universities:
     material: symbolische-programmierspache
     link: material field
     topics:
-    - &id127
+    - &id137
       en: machine learning
       cn: 机器学习
-    - &id128
+    - &id138
       en: stats / probability
       cn: 统计 / 概率
-    - &id129
+    - &id139
       en: regex / ε-NFA
       cn: 正则 / ε-NFA
-    - &id130
+    - &id140
       en: exam prep
       cn: 考前突击
-    - &id131
+    - &id141
       en: assignments / labs
       cn: 作业 / Lab
-    - &id132
+    - &id142
       en: C++ STL
       cn: C++ STL
-    - &id133
+    - &id143
       en: OOP
       cn: 面向对象
     shape:
@@ -3099,13 +3323,13 @@ universities:
       weekly_lecture_arc: true
     depth_score: 163
   topics:
-  - *id127
-  - *id128
-  - *id129
-  - *id130
-  - *id131
-  - *id132
-  - *id133
+  - *id137
+  - *id138
+  - *id139
+  - *id140
+  - *id141
+  - *id142
+  - *id143
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
@@ -3159,14 +3383,14 @@ universities:
     title: Algorithms I
     material: MATH10017 Algorithms and Programming in C(++) and R
     link: material field
-    topics: &id134
-    - &id137
+    topics: &id144
+    - &id147
       en: algorithms
       cn: 算法
-    - &id138
+    - &id148
       en: exam prep
       cn: 考前突击
-    shape: &id135
+    shape: &id145
       pdf: 21
       slides: 0
       notebooks: 0
@@ -3176,7 +3400,7 @@ universities:
       week_span:
       - 0
       - 17
-    signals: &id136
+    signals: &id146
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
@@ -3217,9 +3441,9 @@ universities:
     title: 7 Algorithms And Programming In C(++) And R
     material: MATH10017 Algorithms and Programming in C(++) and R
     link: material field
-    topics: *id134
-    shape: *id135
-    signals: *id136
+    topics: *id144
+    shape: *id145
+    signals: *id146
     depth_score: 80
   - code: COMS1001
     title: 6 Imperative And Functional Programming
@@ -3230,8 +3454,8 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id137
-  - *id138
+  - *id147
+  - *id148
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
@@ -3240,228 +3464,6 @@ universities:
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
     catch-up. Exam-prep drills. Typical themes: algorithms, exam prep.'
   coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。考前突击。常见主题：算法、考前突击。。
-- slug: uts
-  university: University of Technology Sydney
-  teaching_folder: uts
-  hand_curated: true
-  course_count: 12
-  linked_course_count: 5
-  courses:
-  - code: '31251'
-    title: Data Structures and Algorithms
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: '31257'
-    title: Information System Development Methodologies
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: '31271'
-    title: Database Fundamentals
-    material: database foundamentals
-    link: material field
-    topics:
-    - &id139
-      en: SQL / databases
-      cn: SQL / 数据库
-    - en: databases
-      cn: 数据库
-    shape:
-      pdf: 0
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 2
-      total_content_files: 2
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 2
-  - code: '32513'
-    title: Advanced Data Analytics Algorithms
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: '32555'
-    title: Fundamentals of Software Development
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: '41025'
-    title: Introduction to Software Development
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: '42028'
-    title: Deep Learning and Convolutional Neural Networks
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: '42913'
-    title: Social and Information Network Analysis
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: INEF001
-    title: Networking Fundamentals
-    material: INEF001-networking
-    link: material field
-    topics:
-    - &id141
-      en: networking
-      cn: 计算机网络
-    - en: databases
-      cn: 数据库
-    - en: assignments / labs
-      cn: 作业 / Lab
-    - &id143
-      en: APIs / HTTP
-      cn: API / HTTP
-    - &id144
-      en: operating systems
-      cn: 操作系统
-    - en: web front-end
-      cn: 前端
-    shape:
-      pdf: 6
-      slides: 0
-      notebooks: 0
-      code: 6
-      notes_md: 3
-      total_content_files: 24
-      week_span:
-      - 1
-      - 7
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 48
-  - code: IPRO001
-    title: Programming 1
-    material: programming1-IPRO001
-    link: material field
-    topics:
-    - en: exam prep
-      cn: 考前突击
-    shape:
-      pdf: 2
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 2
-      week_span: null
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 7
-  - code: IPRO002
-    title: Programming 2
-    material: programming2-IPRO002
-    link: material field
-    topics:
-    - en: Java
-      cn: Java
-    - &id140
-      en: databases
-      cn: 数据库
-    shape:
-      pdf: 1
-      slides: 0
-      notebooks: 0
-      code: 57
-      notes_md: 6
-      total_content_files: 64
-      week_span:
-      - 5
-      - 5
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 70
-  - code: IWBS001
-    title: Web Systems
-    material: IWBS001-web-systems
-    link: material field
-    topics:
-    - &id146
-      en: exam prep
-      cn: 考前突击
-    - &id147
-      en: Java
-      cn: Java
-    - &id145
-      en: web front-end
-      cn: 前端
-    - &id148
-      en: OOP
-      cn: 面向对象
-    - &id142
-      en: assignments / labs
-      cn: 作业 / Lab
-    shape:
-      pdf: 1
-      slides: 2
-      notebooks: 0
-      code: 2
-      notes_md: 5
-      total_content_files: 13
-      week_span:
-      - 3
-      - 3
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 24
-  topics:
-  - *id139
-  - *id140
-  - *id141
-  - *id142
-  - *id143
-  - *id144
-  - *id145
-  - *id146
-  - *id147
-  - *id148
-  signals:
-    exam_prep_materials: true
-    assignment_lab_materials: true
-    weekly_lecture_arc: true
-  total_depth: 151
-  coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: SQL
-    / databases, databases, networking, assignments / labs.'
-  coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：SQL / 数据库、数据库、计算机网络、作业
-    / Lab。。
 - slug: jcu
   university: James Cook University Singapore
   teaching_folder: james-cook-singapore
