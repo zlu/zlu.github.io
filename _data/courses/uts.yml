@@ -1,35 +1,37 @@
 ---
 university: University of Technology Sydney
 abbr: UTS
-name_cn: "悉尼科技大学"
+name_cn: 悉尼科技大学
 teaching_folder: uts
 courses:
-- code: 31251
-  title: Data Structures and Algorithms
-- code: 31271
-  title: Database Fundamentals
-  material: database foundamentals
-- code: 41025
-  title: Introduction to Software Development
-- code: 41039
-  title: Programming 1
-  material: programming1-java
-- code: 41040
-  title: Programming 2
-  material: programming2-java-2026-u503
-- code: 31257
-  title: Information System Development Methodologies
-- code: 32555
-  title: Fundamentals of Software Development
-- code: 32513
-  title: Advanced Data Analytics Algorithms
-- code: 42028
-  title: Deep Learning and Convolutional Neural Networks
-- code: 42913
-  title: Social and Information Network Analysis
-- code: IWBS001
-  title: Web Systems
-  material: IWBS001-web-systems
-- title: Networking
-  material: networking
+  - code: 31251
+    title: Data Structures and Algorithms
+  - code: 31257
+    title: Information System Development Methodologies
+  - code: 31271
+    title: Database Fundamentals
+    material: database foundamentals
+  - code: 32513
+    title: Advanced Data Analytics Algorithms
+  - code: 32555
+    title: Fundamentals of Software Development
+  - code: 41025
+    title: Introduction to Software Development
+  - code: 41039
+    title: Programming 1
+    material: programming1-java
+  - code: 41040
+    title: Programming 2
+    material: programming2-java-2026-u503
+  - code: 42028
+    title: Deep Learning and Convolutional Neural Networks
+  - code: 42913
+    title: Social and Information Network Analysis
+  - title: Networking
+    material: INEF001-networking
+    code: INEF001
+    theme: networking
+  - code: IWBS001
+    title: Web Systems
+    material: IWBS001-web-systems
 ---
