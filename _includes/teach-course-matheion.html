@@ -1,0 +1,25 @@
+{% comment %}
+  Compact Matheion open-lesson links on matching course pages
+  (e.g. fundamental Java → MA-JAVA0). Set via page.matheion_lessons.
+{% endcomment %}
+{% if page.matheion_lessons and page.matheion_lessons.size > 0 %}
+<section class="teach-landing-section teach-course-matheion" aria-labelledby="teach-course-matheion-title">
+  <h2 id="teach-course-matheion-title"
+      data-en="Self-study on Matheion"
+      data-cn="Matheion 开放课（自学）">Matheion 开放课（自学）</h2>
+  <p class="teach-section-note"
+     data-en="Free open lessons for the foundations this course builds on. Use them before or between tutoring sessions — concepts, examples, practice, quizzes."
+     data-cn="这门课会用到的基础，可以先在 Matheion 免费开放课里过一遍：概念、例题、练习与测验。辅导前后都适合自学。">这门课会用到的基础，可以先在 Matheion 免费开放课里过一遍：概念、例题、练习与测验。辅导前后都适合自学。</p>
+  <ul class="teach-matheion-courses teach-course-matheion-list">
+    {% for lesson in page.matheion_lessons %}
+    <li>
+      <a href="{{ lesson.url }}" rel="noopener">
+        <strong data-en="{{ lesson.title_en }}"
+                data-cn="{{ lesson.title_cn }}">{{ lesson.title_cn }}</strong>
+        <span>{{ lesson.code }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

@@ -1267,6 +1267,16 @@ body.teach-page-active .content, body.teach-page-active .site {
   top: 0.55em;
 }
 
+.teach-course-matheion {
+  margin: 0 0 1.75rem;
+}
+
+.teach-course-matheion-list {
+  margin-bottom: 0;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 14rem));
+  max-width: 28rem;
+}
+
 .teach-course-prep {
   margin: 0 0 2rem;
   padding: 1.15rem 1.2rem 1.25rem;

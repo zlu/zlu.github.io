@@ -696,6 +696,47 @@ module Jekyll
       end
     end
 
+    # Free Matheion open lessons surfaced on matching course pages.
+    MATHEION_JAVA = {
+      "id" => "java",
+      "url" => "https://matheion.zlu.me/learn/java/",
+      "code" => "MA-JAVA0",
+      "title_en" => "Java foundations",
+      "title_cn" => "Java 基础"
+    }.freeze
+
+    def matheion_lessons_for_course(course, focus_topics = [])
+      lessons = []
+      lessons << MATHEION_JAVA if java_fundamental_course?(course, focus_topics)
+      lessons
+    end
+
+    # Intro / foundation Java (and typical Java OOP) course pages — not Python/C++/web.
+    # Signals: code/title/material/aliases + hand-curated YAML topics only.
+    def java_fundamental_course?(course, curated_topics = [])
+      hay = [
+        course["code"], course["title"], course["material"],
+        *Array(course["aliases"])
+      ].compact.join(" ")
+      topic_hay = Array(curated_topics).filter_map { |t|
+        next unless t.is_a?(Hash)
+
+        "#{t['en']} #{t['cn']}"
+      }.join(" ")
+      text = "#{hay} #{topic_hay}"
+
+      has_java = text.match?(/\bjava\b/i)
+      other_lang = text.match?(
+        /\b(python|c\+\+|javascript|typescript|web systems|data wrangling|foundations of computing)\b/i
+      )
+      return false if other_lang && !has_java
+      return true if has_java
+      return true if text.match?(/\bipro00[12]\b/i)
+
+      # Classic OOP course titles in this catalog are usually Java.
+      text.match?(/object[-\s]?oriented(\s+(programming|design|software(\s+development)?))?/i)
+    end
+
     def find_post_url(site, name)
       find_post(site, name)&.url
     end
@@ -1084,6 +1125,9 @@ module Jekyll
       end
       same_theme = related_same_theme(theme_index, theme_id, uni_slug, 6)
       theme_reading = Array(reading_by_theme[theme_id]).first(4)
+      # Hand-curated YAML topics only — catalog evidence topics are filename heuristics
+      # and can falsely tag web/Python courses with "Java".
+      matheion_lessons = matheion_lessons_for_course(course, Array(course["curated_topics"]))
 
       about_topics = focus_topics.first(8).map { |t| t["en"].to_s }.reject(&:empty?)
 
@@ -1125,6 +1169,7 @@ module Jekyll
         "tutoring" => tutoring,
         "course_faq" => course_faq,
         "theme_reading" => theme_reading,
+        "matheion_lessons" => matheion_lessons,
         "theme_about" => about_topics,
         "related_same_uni" => same_uni,
         "related_same_theme" => same_theme,

@@ -17,13 +17,10 @@ layout: default
 
   <header class="teach-landing-header">
     <p class="teach-hero-eyebrow"
-       data-en="{{ page.university_label_en }} · {{ page.region_en }} · {{ page.theme_label_en }}"
-       data-cn="{{ page.university_label_cn }} · {{ page.region_cn }} · {{ page.theme_label_cn }}">{{ page.university_label_cn }} · {{ page.region_cn }} · {{ page.theme_label_cn }}</p>
+       data-en="{{ page.region_en }} · {{ page.theme_label_en }}"
+       data-cn="{{ page.region_cn }} · {{ page.theme_label_cn }}">{{ page.region_cn }} · {{ page.theme_label_cn }}</p>
     <h1>
       {% if page.course_code != "" %}<span class="teach-code">{{ page.course_code }}</span>{% endif %}
-      {% if page.course_aliases and page.course_aliases.size > 0 %}
-      <span class="teach-aliases">({% for a in page.course_aliases %}{{ a }}{% unless forloop.last %} / {% endunless %}{% endfor %})</span>
-      {% endif %}
       <span data-en="{{ page.course_title }} tutoring"
             data-cn="{{ page.course_title }} 辅导">{% if page.course_title != "" %}{{ page.course_title }} 辅导{% else %}课程辅导{% endif %}</span>
     </h1>
@@ -80,6 +77,8 @@ layout: default
     </ol>
   </section>
   {% endif %}
+
+  {% include teach-course-matheion.html %}
 
   {% assign has_topics = false %}
   {% if page.theme_topics and page.theme_topics.size > 0 %}{% assign has_topics = true %}{% endif %}
