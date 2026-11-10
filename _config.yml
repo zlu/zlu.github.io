@@ -51,8 +51,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 # Soft-redirect ~19k retired empty uni shells → /teach/universities/ (sitemap: false).
-# Off for GitHub Pages: artifact sync times out (~10m) with those pages enabled.
-# Re-enable after GSC Removals clear dead-shell impressions, or move to CF Bulk Redirects.
+# Off for GitHub Pages (deploy sync timeout). Live 301s for GSC-hit shells only:
+# Cloudflare Bulk Redirects via .scripts/generate_teach_bulk_redirects.py (+ dashboard/API).
 teach_retired_redirects: false
 mermaid:
   src: 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js'

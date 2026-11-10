@@ -65,8 +65,16 @@ see [llmstxt.org](https://llmstxt.org/)).
 Dead teach shells still appearing in GSC: submit URLs from
 [`.scripts/gsc_removals_teach_dead_urls.txt`](.scripts/gsc_removals_teach_dead_urls.txt)
 via Search Console → Removals (temporary). `teach_retired_redirects` is off in
-`_config.yml` so GitHub Pages deploys stay under the sync timeout; prefer Removals
-(+ later CF Bulk Redirects) over regenerating ~19k soft-redirect HTML pages.
+`_config.yml` (GitHub Pages sync timeout). For visitors, import only GSC-hit
+retired shells as Cloudflare **Bulk Redirects** (Free ≤10k; we generate ~2.5k):
+
+```bash
+# After exporting GSC Performance → Pages CSV:
+python3 .scripts/generate_teach_bulk_redirects.py --gsc-pages Pages.csv
+# Dashboard: Bulk redirects → import .scripts/teach-uni-bulk-redirects.csv
+# Or API (needs Account Filter Lists Edit + Rulesets Write token):
+CLOUDFLARE_API_TOKEN=… .scripts/deploy-teach-bulk-redirects.sh
+```
 
 IndexNow should **stream** only changed URLs (Bing flags sitemap dumps as batch mode).
 
