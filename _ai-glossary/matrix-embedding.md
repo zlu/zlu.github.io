@@ -1,7 +1,7 @@
 ---
-title: Matrix Embedding
-description: "A matrix embedding (embedding matrix) stacks token or item vectors into a 2D array of shape (seq_len × dim), the usual transformer input after embedding lookup."
-keywords: "matrix embedding, embedding matrix, word embedding matrix, sequence embedding, embedding table"
+title: Matrix Embedding (Embedding Matrix)
+description: "Matrix embedding vs embedding matrix: stacked token vectors (seq_len × dim) after lookup, or the |V| × dim weight table itself — shapes and when each term appears."
+keywords: "matrix embedding, embedding matrix, embedded matrix, word embedding matrix, sequence embedding, embedding table"
 related:
   - Embedding
   - Word Embedding
@@ -10,7 +10,7 @@ related:
   - Transformer
   - Soft Prompt
 ---
-A **matrix embedding** (often called an **embedding matrix** in code) stacks multiple vectors into a 2D array. Typical cases:
+A **matrix embedding** (often called an **embedding matrix** in code; searchers also type **embedded matrix**) stacks multiple vectors into a 2D array. Typical cases:
 
 - A sentence: word embeddings stacked to `(seq_len, dim)`
 - A paragraph: sentence vectors stacked

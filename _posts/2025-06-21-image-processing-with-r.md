@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Image Processing with R: imager Tutorial (Pixels, Filters, Examples)"
-description: "Image processing with R using the imager package: load images, inspect pixels, apply filters, and run practical examples. Covers image processing in R and imager R workflows."
+title: "Image Processing with R (imager): Load, Filter, and Equalize Images"
+description: "Image processing with R using imager: load images, inspect pixels, blur and denoise, and run histogram equalization with copy-paste examples. For R users who want visual workflows without leaving a stats notebook."
 date: 2025-06-21 09:00 +0800
 tags:
   - R
   - Image Processing
 ---
 
-Image processing with R (and the `imager` package) is a practical way to
+**Image processing with R** (via the `imager` package) is a practical way to
 load images, inspect pixels, and apply filters without leaving a
-statistics workflow. This post walks through enhancement, denoising, and
-histogram equalization with visual outputs, based on concepts from the
-"Image Data Analysis" document.
+statistics workflow. This tutorial walks through enhancement, denoising, and
+histogram equalization with visual outputs — useful if you searched for
+*image processing in R*, *imager R*, or *R image processing*.
 
 ## Contents
 

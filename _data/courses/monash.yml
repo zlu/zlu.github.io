@@ -62,11 +62,15 @@ courses:
       - en: "Quiz / exam prep: short timed drills on control flow, strings, and reading error messages under pressure."
         cn: "Quiz / 考前突击：限时练控制流、字符串，以及在压力下读懂报错。"
 
-  # GSC top page click: /teach/courses/monash/fit5196/
+  # Bing/GSC top page click: /teach/courses/monash/fit5196/
   - code: FIT5196
     title: Data Wrangling
     material: FIT5196-datawrangling
     theme: data-science
+    meta_description_en: >-
+      FIT5196 Monash tutoring (Data Wrangling). Brief + rubric unclear on “enough
+      cleaning”? Bilingual Chinese/English pandas pipelines, joins, and reproducible
+      notebooks for assessment.
     lead_en: >-
       FIT5196 punishes messy notebooks. Assessment briefs, dirty tables, and group
       deadlines stack together. The hard part is building a clean, reproducible
@@ -120,11 +124,15 @@ courses:
       - en: "Assessment prep: rubric-focused drills so each task leaves a clear method trail."
         cn: "评估突击：按评分量表练，让每个任务都留下清晰方法轨迹。"
 
-  # GSC: etx3500 + page clicks on the course URL
+  # Bing/GSC: etx3500 + page clicks on the course URL
   - code: ETX3500
     title: High Dimensional Data Analysis
     material: etx3500-5500-High-Dimensional-Data-Analysis
     theme: data-science
+    meta_description_en: >-
+      ETX3500 / ETX5500 Monash tutoring (High Dimensional Data Analysis). Lectures
+      move fast between formulae and plots — bilingual Chinese/English help on method
+      choice, assumptions, and assessment write-ups.
     lead_en: >-
       ETX3500 mixes statistics language with high-dimensional intuition. Lectures move
       through formulae and plots quickly. The hard part is knowing what the method is
@@ -172,10 +180,14 @@ courses:
       - en: "Exam prep: short drills on method choice, assumptions, and reading output."
         cn: "考前突击：短练方法选择、假设与读输出。"
 
-  # GSC #1 course query: fit2102 (unlinked meta — difficulty-led page)
+  # Bing/GSC #1 course query: fit2102 (unlinked meta — difficulty-led page)
   - code: FIT2102
     title: Programming Paradigms
     theme: programming
+    meta_description_en: >-
+      FIT2102 Monash tutoring (Programming Paradigms). Stuck translating lecture
+      vocabulary into a first working example? Bilingual Chinese/English lecture sync,
+      assignments, and exam reasoning drills.
     lead_en: >-
       FIT2102 switches the ground rules of programming. Lectures introduce a new paradigm
       (often functional-style thinking) while assessment expects precise reasoning. The
@@ -224,10 +236,14 @@ courses:
       - en: "Exam prep: drills on reasoning under exam question wording."
         cn: "考前突击：练在考题措辞下做推理。"
 
-  # GSC: fit2099
+  # Bing/GSC: fit2099
   - code: FIT2099
     title: Object Oriented Design and Implementation
     theme: programming
+    meta_description_en: >-
+      FIT2099 Monash tutoring (Object Oriented Design). Can code features but cannot
+      explain the design choices? Bilingual Chinese/English design review, diagrams,
+      and exam / review prep.
     lead_en: >-
       FIT2099 is a design-first course: classes, responsibilities, and diagrams before
       the code compiles. The hard part is justifying a design — not only making Java
@@ -274,10 +290,14 @@ courses:
       - en: "Exam / review prep: justify designs under exam / review prompts."
         cn: "考试 / review 突击：在题目要求下为设计辩护。"
 
-  # GSC: fit3152
+  # Bing/GSC: fit3152
   - code: FIT3152
     title: Data Analytics
     theme: data-science
+    meta_description_en: >-
+      FIT3152 Monash tutoring (Data Analytics). Tool output produced but
+      interpretation missing? Bilingual Chinese/English help on EDA, model choice,
+      and assessment write-ups.
     lead_en: >-
       FIT3152 mixes analytics tools with statistical storytelling. The hard part is
       turning a brief into a justified analysis — not producing charts that look busy.
@@ -322,10 +342,14 @@ courses:
       - en: "Exam prep: interpret outputs under timed prompts."
         cn: "考前突击：限时提示下解读输出。"
 
-  # GSC: fit3155
+  # Bing/GSC: fit3155 — high impressions, 0 clicks → CTR-led meta
   - code: FIT3155
     title: Advanced Data Structures and Algorithms
     theme: algorithms
+    meta_description_en: >-
+      FIT3155 Monash tutoring (Advanced Data Structures and Algorithms). Correct
+      intuition but incomplete proof or wrong complexity? Bilingual drills on
+      invariants, complexity, and exam pseudocode.
     lead_en: >-
       FIT3155 is algorithms under time pressure: proofs, complexity talk, and
       implementations that must match the argument. The hard part is keeping the
@@ -372,10 +396,14 @@ courses:
       - en: "Exam prep: timed drills on proofs, complexity, and reading pseudocode."
         cn: "考前突击：限时练证明、复杂度与读伪代码。"
 
-  # GSC: fit5197
+  # Bing/GSC: fit5197
   - code: FIT5197
     title: Modelling for Data Analysis
     theme: data-science
+    meta_description_en: >-
+      FIT5197 Monash tutoring (Modelling for Data Analysis). Running a model without
+      knowing what success looks like? Bilingual help on model choice, diagnostics,
+      and timed exam interpretation.
     lead_en: >-
       FIT5197 is statistical modelling: choose a model, check assumptions, and defend
       the fit. The hard part is interpretation under terminology denser than the

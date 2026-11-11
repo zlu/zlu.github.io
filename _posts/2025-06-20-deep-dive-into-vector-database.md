@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Diving into Vector Databases: Embeddings, ANN Indexes, and RAG"
+title: "Vector Database Explained: Embeddings, ANN Indexes, and RAG"
 date: 2025-06-20
 tags:
   - vector database
   - database
   - ANN
-description: "How vector databases store embeddings and run similarity search — ANN indexes, ChromaDB/SQLite, and when to use them for semantic search and RAG. Practical."
+description: "What a vector database is, how embeddings and ANN indexes power similarity search, and when to use one for semantic search and RAG — with ChromaDB/SQLite notes."
 comments: true
 ---
 

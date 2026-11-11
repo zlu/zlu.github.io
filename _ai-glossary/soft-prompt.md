@@ -1,6 +1,6 @@
 ---
 title: Soft Prompt
-description: "A soft prompt is a learned embedding vector prepended to the input. It is not a readable token string; it is optimized for a task during prompt tuning."
+description: "Soft prompt (soft prompting): a learned embedding vector sequence prepended to the input — not readable tokens. Optimized in prompt tuning while the base model stays frozen."
 keywords: "soft prompt, soft prompts, soft prompting, prompt tuning, continuous prompt, PEFT"
 related:
   - Hard Prompt

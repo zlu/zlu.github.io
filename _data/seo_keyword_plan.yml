@@ -5,8 +5,10 @@
 #   3. Prefer GSC almost-wins before minting new URLs.
 #   4. Scorecards are judged separately — never mix weekly work.
 #
-# Regenerated judgment from Search Console Queries/Pages exports
-# (Web · last 3 months · ~2026-09-20 → 2026-11-09).
+# Regenerated judgment from Google Search Console + Bing Webmaster
+# Queries/Pages exports (Web · last 3 months · ~2026-09-20 → 2026-11-09).
+# Bing confirm: ~8.2k impr / ~22 clicks (0.27% CTR); thin uni shells dominate
+# impressions (BR/RU); Monash course codes + image-processing-with-r convert.
 # status: optimize | expand | monitor | ship
 
 scorecards:
@@ -15,18 +17,18 @@ scorecards:
       - blog posts
       - /ai-glossary/
       - /algos/
-    weekly_signal: "rising non-brand impressions + clicks on posts/glossary"
+    weekly_signal: "rising non-brand impressions + clicks on posts/glossary; Bing: image-processing-with-r + vector-db title CTR"
   tutor_leads:
     surfaces:
       - /teach/
       - /teach/courses/ (linked only)
       - /teach/universities/ (linked only)
-    weekly_signal: "Monash/UTS/course-code clicks in AU; ignore uni-service shell + BR/RU/IN name impressions"
+    weekly_signal: "Monash/UTS/course-code clicks in AU (+ Bing TW/AU CTR); ignore uni-service shell + BR/RU/IN name impressions"
   hygiene:
     surfaces:
       - sitemap.xml
       - retired redirects
-    weekly_signal: "uni-service /exam|/assignment|/sync|/preview soft-redirect to uni hub; absent from sitemap/IndexNow; collapse st-cloud/saint-cloud + miami art-design slug twins; 301 old etx3500-5500-… slug → /etx3500/"
+    weekly_signal: "uni-service /exam|/assignment|/sync|/preview soft-redirect to uni hub; absent from sitemap/IndexNow; collapse st-cloud/saint-cloud + miami art-design slug twins; Bing URL Removal for same corpses; 301 old etx3500-5500-… slug → /etx3500/"
 
 entries:
   # --- ai_authority ---
@@ -100,15 +102,15 @@ entries:
       - imager r
       - r image processing
     status: optimize
-    note: "Best non-tutor click winner (~3 clicks / 114 impr / pos ~10); refresh title + TOC"
+    note: "Best non-tutor Bing+GSC click winner (Bing ~3 clicks / 114 impr / pos ~10); title/meta refreshed 2026-11-12"
 
   - primary: vector database
     url: /2025/06/20/deep-dive-into-vector-database.html
     scorecard: ai_authority
     supporting:
       - vector database explained
-    status: monitor
-    note: "GSC ~24 impr / pos ~7.8 / 0 clicks — title/meta rewrite candidate"
+    status: optimize
+    note: "Bing/GSC ~24 impr / pos ~7.8 / 0 clicks — title now leads with Vector Database Explained"
 
   - primary: CleanMyMac disk space
     url: /2026/10/25/when-cleanmymac-isnt-enough-building-a-disk-cleaner.html
@@ -137,7 +139,7 @@ entries:
       - FIT2102 Monash
       - Monash programming paradigms
     status: optimize
-    note: "GSC #1 course query (~1 click / 95 impr / pos ~8.9); title lead with code"
+    note: "Bing/GSC #1 course query (~1 click / 95 impr / pos ~8.9); title now FIT2102 Monash tutoring | … + meta_description_en"
 
   - primary: fit3152
     url: /teach/courses/monash/fit3152/

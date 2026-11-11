@@ -1111,12 +1111,12 @@ module Jekyll
       topic_bits = focus_topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
       topic_bits_cn = focus_topics.first(4).map { |t| t["cn"].to_s }.reject(&:empty?)
 
-      # Google SERP (AU course-code queries) sees title/description via jekyll-seo.
-      # Put the code next to "tutoring" first; keep CN titles for the in-page lang switch.
+      # Bing/GSC SERP (AU course-code queries) via jekyll-seo.
+      # Keep code + uni adjacent ("fit2102 monash"); CN titles stay for in-page lang switch.
       title_en = if code.empty?
                    "#{title} tutoring | #{label_en}"
                  else
-                   "#{code} tutoring | #{label_en} #{title}#{alias_bit}"
+                   "#{code} #{label_en} tutoring | #{title}#{alias_bit}"
                  end
       # Match competitor title pattern: 大学 + 课号 + 辅导
       title_cn = if code.empty?
@@ -1137,8 +1137,11 @@ module Jekyll
                            120
                          )
                        end
-      description_en = if overview_en.length.between?(80, 160)
-                         overview_en
+      # Always lead EN snippets with tutoring intent (never ship raw overview alone —
+      # Bing/GSC show pos ~8–10 with ~1% CTR when the meta reads like a syllabus).
+      serp_en = course["meta_description_en"].to_s.strip
+      description_en = if !serp_en.empty?
+                         truncate_meta(serp_en, 160)
                        else
                          head = if code.empty?
                                   "#{title} tutoring at #{label_en}"
@@ -1146,8 +1149,16 @@ module Jekyll
                                   "#{code} tutoring at #{label_en} (#{title})"
                                 end
                          head += " — also #{aliases.join(', ')}" if aliases.any?
+                         stuck_en = Array(stuck).filter_map { |t|
+                           t["en"].to_s.strip if t.is_a?(Hash)
+                         }.reject(&:empty?).first.to_s
                          desc = "#{head}. "
-                         desc += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
+                         if stuck_en.length.between?(18, 88)
+                           hook = stuck_en.sub(/\A[[:upper:]]/) { |c| c.downcase }
+                           desc += "Stuck on #{hook}? "
+                         elsif topic_bits.any?
+                           desc += "Focus: #{topic_bits.first(3).join('; ')}. "
+                         end
                          desc += "Bilingual Chinese/English: lecture sync, assignments, exam prep."
                          truncate_meta(desc, 160)
                        end

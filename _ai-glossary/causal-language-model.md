@@ -1,6 +1,6 @@
 ---
-title: Causal Language Model
-description: "Causal language modeling predicts the next token from left context only. Used by GPT, LLaMA, Gemma, and other decoder-only LLMs."
+title: Causal Language Modeling (Causal LM)
+description: "Causal language modeling (causal LM): predict the next token from left context only. The training objective behind GPT, LLaMA, Gemma, and other decoder-only LLMs."
 keywords: "causal language modeling, causal language model, causal LM, next-token prediction, GPT, decoder-only"
 related:
   - Masked Model
