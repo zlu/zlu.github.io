@@ -5,7 +5,8 @@
 #   3. Prefer GSC almost-wins before minting new URLs.
 #   4. Scorecards are judged separately — never mix weekly work.
 #
-# Regenerate judgment from Search Console Queries/Pages exports.
+# Regenerated judgment from Search Console Queries/Pages exports
+# (Web · last 3 months · ~2026-09-20 → 2026-11-09).
 # status: optimize | expand | monitor | ship
 
 scorecards:
@@ -20,12 +21,12 @@ scorecards:
       - /teach/
       - /teach/courses/ (linked only)
       - /teach/universities/ (linked only)
-    weekly_signal: "Monash/UTS/course-code clicks; ignore uni-service shell impressions"
+    weekly_signal: "Monash/UTS/course-code clicks in AU; ignore uni-service shell + BR/RU/IN name impressions"
   hygiene:
     surfaces:
       - sitemap.xml
       - retired redirects
-    weekly_signal: "uni-service /exam|/assignment|/sync|/preview soft-redirect to uni hub; absent from sitemap/IndexNow"
+    weekly_signal: "uni-service /exam|/assignment|/sync|/preview soft-redirect to uni hub; absent from sitemap/IndexNow; collapse st-cloud/saint-cloud + miami art-design slug twins; 301 old etx3500-5500-… slug → /etx3500/"
 
 entries:
   # --- ai_authority ---
@@ -36,7 +37,7 @@ entries:
       - causal language model
       - causal LM
     status: optimize
-    note: "GSC impressions ~11 at pos ~66"
+    note: "GSC ~11–17 impr at pos ~50–66; deepen + link from domain-LLM series"
 
   - primary: soft prompt
     url: /ai-glossary/soft-prompt/
@@ -45,6 +46,7 @@ entries:
       - soft prompts
       - soft prompting
     status: optimize
+    note: "GSC ~5–14 impr at pos ~49–71; pair with prompt-tuning"
 
   - primary: prompt tuning
     url: /ai-glossary/prompt-tuning/
@@ -52,6 +54,7 @@ entries:
     supporting:
       - tune prompt
     status: optimize
+    note: "GSC ~3–10 impr at pos ~55–89; PEFT cluster with soft-prompt + CPT post"
 
   - primary: matrix embedding
     url: /ai-glossary/matrix-embedding/
@@ -59,6 +62,16 @@ entries:
     supporting:
       - embedding matrix
     status: optimize
+    note: "Priority almost-win — query pos ~7 / page avg ~29 (~22 impr); deepen definition + diagram"
+
+  - primary: masked model
+    url: /ai-glossary/masked-model/
+    scorecard: ai_authority
+    supporting:
+      - maskedmodel
+      - MLM
+    status: optimize
+    note: "GSC query+page ~pos 8.6–8.7 (~12 impr); add MLM vs CLM table"
 
   - primary: llm chaining
     url: /ai-glossary/llm-chaining/
@@ -66,6 +79,7 @@ entries:
     supporting:
       - LLM chain
     status: optimize
+    note: "GSC ~3–6 impr at pos ~24–41"
 
   - primary: continued pretraining
     url: /2026/11/12/domain-llm-part1-overview.html
@@ -84,8 +98,17 @@ entries:
       - image processing in r
       - how to process images with r
       - imager r
+      - r image processing
     status: optimize
-    note: "Best current click winner (~3 clicks)"
+    note: "Best non-tutor click winner (~3 clicks / 114 impr / pos ~10); refresh title + TOC"
+
+  - primary: vector database
+    url: /2025/06/20/deep-dive-into-vector-database.html
+    scorecard: ai_authority
+    supporting:
+      - vector database explained
+    status: monitor
+    note: "GSC ~24 impr / pos ~7.8 / 0 clicks — title/meta rewrite candidate"
 
   - primary: CleanMyMac disk space
     url: /2026/10/25/when-cleanmymac-isnt-enough-building-a-disk-cleaner.html
@@ -95,21 +118,82 @@ entries:
       - Cursor state.vscdb disk
     status: monitor
 
-  # --- tutor_leads (linked courses only) ---
+  # --- tutor_leads (course pages that already earn GSC demand) ---
   - primary: etx3500
     url: /teach/courses/monash/etx3500/
     scorecard: tutor_leads
     supporting:
       - ETX3500 tutoring
+      - ETX5500
       - Monash high dimensional data analysis
     status: optimize
+    note: "Top tutor CTR (~3 clicks); canonical is /etx3500/ — 301 legacy /etx3500-5500-high-dimensional-data-analysis/ if still hit"
+
+  - primary: fit2102
+    url: /teach/courses/monash/fit2102/
+    scorecard: tutor_leads
+    supporting:
+      - FIT2102 tutoring
+      - FIT2102 Monash
+      - Monash programming paradigms
+    status: optimize
+    note: "GSC #1 course query (~1 click / 95 impr / pos ~8.9); title lead with code"
+
+  - primary: fit3152
+    url: /teach/courses/monash/fit3152/
+    scorecard: tutor_leads
+    supporting:
+      - FIT3152 tutoring
+      - FIT3152 Monash
+      - Monash data analytics tutoring
+    status: optimize
+    note: "GSC ~1 click / 57 impr / pos ~9.6"
+
+  - primary: fit2099
+    url: /teach/courses/monash/fit2099/
+    scorecard: tutor_leads
+    supporting:
+      - FIT2099 tutoring
+      - Monash object oriented design
+    status: optimize
+    note: "GSC ~1 click / 30 impr / pos ~9.2"
+
+  - primary: fit5197
+    url: /teach/courses/monash/fit5197/
+    scorecard: tutor_leads
+    supporting:
+      - FIT5197 tutoring
+      - Monash modelling for data analysis
+    status: optimize
+    note: "GSC ~1 click / 25 impr / pos ~8.3"
+
+  - primary: fit3155
+    url: /teach/courses/monash/fit3155/
+    scorecard: tutor_leads
+    supporting:
+      - FIT3155 tutoring
+      - FIT3155 Monash
+      - Monash advanced data structures
+    status: optimize
+    note: "GSC ~0 clicks / 27–42 impr / pos ~8.1–8.7 — snippet rewrite"
 
   - primary: fit5196
     url: /teach/courses/monash/fit5196/
     scorecard: tutor_leads
     supporting:
       - FIT5196 data wrangling
+      - FIT5196 tutoring
     status: optimize
+    note: "GSC ~1 click / 23–36 impr / pos ~7.9–8.5; tighten title to data-wrangling tutoring"
+
+  - primary: fit9136
+    url: /teach/courses/monash/fit9136/
+    scorecard: tutor_leads
+    supporting:
+      - FIT9136 tutoring
+      - Monash Python algorithms foundations
+    status: monitor
+    note: "GSC ~12 impr / pos ~7.2 / 0 clicks; curated copy only — watch before expanding"
 
   - primary: uts ipro002
     url: /teach/courses/uts/ipro002/
@@ -119,7 +203,7 @@ entries:
       - IPRO002 tutoring
       - UTS IPRO001
     status: expand
-    note: "Linked to teaching/uts/programming2-IPRO002; IPRO001 sibling at /teach/courses/uts/ipro001/"
+    note: "Linked to teaching/uts/programming2-IPRO002; IPRO001 sibling at /teach/courses/uts/ipro001/; GSC also hits legacy /programming2-java-u503/"
 
   - primary: uts IWBS001
     url: /teach/courses/uts/iwbs001/
@@ -127,6 +211,3 @@ entries:
     supporting:
       - UTS web systems tutoring
     status: monitor
-
-  # Pending material (do not index until sync links a folder):
-  # fit2102, fit5197, fit2099, fit3152, fit3155 → /teach/courses/monash/{code}/

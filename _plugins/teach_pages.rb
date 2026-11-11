@@ -1111,12 +1111,12 @@ module Jekyll
       topic_bits = focus_topics.first(4).map { |t| t["en"].to_s }.reject(&:empty?)
       topic_bits_cn = focus_topics.first(4).map { |t| t["cn"].to_s }.reject(&:empty?)
 
-      # Lead with course code for SERP queries like "fit2102" / "etx3500".
-      # Include the first alias so dual-code searches still match the title.
+      # Google SERP (AU course-code queries) sees title/description via jekyll-seo.
+      # Put the code next to "tutoring" first; keep CN titles for the in-page lang switch.
       title_en = if code.empty?
-                   "#{title} tutoring | #{label_en} CS tutoring"
+                   "#{title} tutoring | #{label_en}"
                  else
-                   "#{code}#{alias_bit} #{title} tutoring | #{label_en}"
+                   "#{code} tutoring | #{label_en} #{title}#{alias_bit}"
                  end
       # Match competitor title pattern: 大学 + 课号 + 辅导
       title_cn = if code.empty?
@@ -1125,29 +1125,33 @@ module Jekyll
                    "#{label_cn} #{code}#{alias_bit} 课程辅导 | #{title}"
                  end
 
-      # Chinese meta for Baidu (primary description). Prefer a tightened overview_cn.
-      description = if overview_cn.length >= 40
-                      truncate_meta(overview_cn, 120)
-                    else
-                      alias_note = aliases.any? ? "（同课也写作 #{aliases.first}）" : ""
-                      topic_note = topic_bits_cn.any? ? "常见会碰到#{topic_bits_cn.first(3).join('、')}等。" : ""
-                      truncate_meta(
-                        "#{label_cn}#{code.empty? ? '' : code}#{alias_note}一对一辅导。" \
-                        "#{topic_note}课听不懂、作业卡壳、考前突击都可约；中英双语讲透，咨询和上课同一人。",
-                        120
-                      )
-                    end
+      # CN snippet kept for Baidu / lang switch; EN is the indexed description.
+      description_cn = if overview_cn.length >= 40
+                         truncate_meta(overview_cn, 120)
+                       else
+                         alias_note = aliases.any? ? "（同课也写作 #{aliases.first}）" : ""
+                         topic_note = topic_bits_cn.any? ? "常见会碰到#{topic_bits_cn.first(3).join('、')}等。" : ""
+                         truncate_meta(
+                           "#{label_cn}#{code.empty? ? '' : code}#{alias_note}一对一辅导。" \
+                           "#{topic_note}课听不懂、作业卡壳、考前突击都可约；中英双语讲透，咨询和上课同一人。",
+                           120
+                         )
+                       end
       description_en = if overview_en.length.between?(80, 160)
                          overview_en
                        else
-                         desc = "1-1 tutoring for #{label} at #{label_en}"
-                         desc += " (also #{aliases.join(', ')})" if aliases.any?
-                         desc += " (#{theme_label_en})" unless theme_label_en.empty?
-                         desc += ". "
+                         head = if code.empty?
+                                  "#{title} tutoring at #{label_en}"
+                                else
+                                  "#{code} tutoring at #{label_en} (#{title})"
+                                end
+                         head += " — also #{aliases.join(', ')}" if aliases.any?
+                         desc = "#{head}. "
                          desc += "Typical focus: #{topic_bits.join('; ')}. " unless topic_bits.empty?
                          desc += "Bilingual Chinese/English: lecture sync, assignments, exam prep."
                          truncate_meta(desc, 160)
                        end
+      description = description_en
 
       course_faq = course_faq_items(label_cn, code, title, tutoring, stuck)
 
@@ -1181,12 +1185,14 @@ module Jekyll
       )
       page.data.merge!(
         "layout" => "teach_course",
-        "title" => title_cn,
+        # Indexed title/description are English (GSC course-code queries).
+        "title" => title_en,
         "title_en" => title_en,
         "title_cn" => title_cn,
         "title_suffix" => "zlu.me/teach",
         "description" => description,
         "description_en" => description_en,
+        "description_cn" => description_cn,
         "keywords" => keywords,
         "university" => university,
         "uni_abbr" => uni_abbr,

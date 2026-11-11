@@ -1,5 +1,5 @@
-impressed_retired_slugs=492
-redirect_rows=2460
+impressed_retired_slugs=468
+redirect_rows=2340
 target=https://zlu.me/teach/universities/
 limit=10000
 top_slugs:
@@ -8,28 +8,28 @@ top_slugs:
     455  canadian-mennonite-university
     205  miami-international-university-of-art-and-design
     200  miami-international-university-of-art-design
-    178  york-technical-college
+    187  york-technical-college
     174  north-central-kansas-technical-college
     165  elizabethtown-community-and-technical-college
     164  mcdaniel-college
+    125  miami-jacobs-career-college
     125  wayne-state-university
     121  northwest-kansas-technical-college
     119  diablo-valley-college
-    117  miami-jacobs-career-college
     115  cape-cod-community-college
-    103  charles-sturt-university
+    107  charles-sturt-university
      95  williams-baptist-university
-     83  cloud-county-community-college
-     79  lincoln-memorial-university
+     89  cloud-county-community-college
+     87  lincoln-memorial-university
      67  the-king-s-university-texas
-     62  francis-marion-university
-     56  siena-university
+     63  francis-marion-university
+     59  siena-university
      53  pine-technical-and-community-college
-     51  southeastern-technical-college
+     53  southeastern-technical-college
+     51  nhti-concord-s-community-college
      50  delta-state-university
-     49  nhti-concord-s-community-college
      47  jacksonville-university
+     44  louisiana-state-university
      43  california-state-university-dominguez-hills
-     41  florida-polytechnic-university
-     40  louisiana-state-university
-     40  siena-university-new-york
+     43  siena-university-new-york
+     42  florida-polytechnic-university
