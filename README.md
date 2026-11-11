@@ -79,17 +79,18 @@ CLOUDFLARE_API_TOKEN=… .scripts/deploy-teach-bulk-redirects.sh
 IndexNow should **stream** only changed URLs (Bing flags sitemap dumps as batch mode).
 
 ```bash
-# After publishing: git-map the last commit (default). If that commit is
-# data-only (teach catalog sync), the script falls back to sitemap URLs that
-# are new vs .scripts/indexnow_submit_state.json (never-submitted first).
+# After publishing: git-map the last commit (default; submits ALL mapped page
+# URLs — no 5-URL cap). If that commit is data-only (teach catalog sync),
+# falls back to sitemap new-vs-state URLs (sitemap fallback still caps at 5).
 python3 .scripts/indexnow_submit_urls.py --dry-run
 python3 .scripts/indexnow_submit_urls.py
 
 # Explicit post URL (safest right after publish)
 python3 .scripts/indexnow_submit_urls.py --url https://zlu.me/2026/11/06/automata-basics-for-coders-part-1.html
 
-# Or force sitemap new-URL diff
+# Sitemap new-URL diff (default --limit 5). Catch-up: --limit 0
 python3 .scripts/indexnow_submit_urls.py --from-sitemap --dry-run
+python3 .scripts/indexnow_submit_urls.py --sitemap-file _site/sitemap.xml --limit 0
 
 # Needs .scripts/indexnow.env (or root {key}.txt)
 

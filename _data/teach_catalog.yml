@@ -1545,7 +1545,7 @@ universities:
       weekly_lecture_arc: true
     depth_score: 73
   - code: FIT1058
-    title: Foundations Of Computing
+    title: Foundations of Computing
     material: FIT1058 Foundations of computing
     link: material field
     topics:

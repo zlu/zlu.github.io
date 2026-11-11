@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 400" width="540" height="400">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#222"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="#222" stroke-width="1.55" marker-end="url(#a)">
+    <!-- Alice: local -> enter -> deploy -> exit -->
+    <path d="M110 72 V96"/>
+    <path d="M110 140 V168"/>
+    <path d="M110 232 V256"/>
+    <!-- aExit -> aliceLocal -->
+    <path d="M102 272 C48 272 48 48 86 48"/>
+    <!-- Bob chain -->
+    <path d="M430 72 V96"/>
+    <path d="M430 140 V168"/>
+    <path d="M430 232 V256"/>
+    <!-- bExit -> bobLocal -->
+    <path d="M438 272 C492 272 492 48 454 48"/>
+    <!-- serverFree -> enters (aligned) -->
+    <path d="M246 118 H126"/>
+    <path d="M294 118 H414"/>
+    <!-- exits -> serverFree -->
+    <path d="M126 272 H210 V142"/>
+    <path d="M414 272 H330 V142"/>
+  </g>
+
+  <!-- places -->
+  <g fill="#fff" stroke="#111" stroke-width="2">
+    <circle cx="110" cy="48" r="24"/>
+    <circle cx="110" cy="192" r="24"/>
+    <circle cx="270" cy="118" r="24"/>
+    <circle cx="430" cy="48" r="24"/>
+    <circle cx="430" cy="192" r="24"/>
+  </g>
+
+  <!-- tokens -->
+  <g fill="#111">
+    <circle cx="110" cy="48" r="5.5"/>
+    <circle cx="270" cy="118" r="5.5"/>
+    <circle cx="430" cy="48" r="5.5"/>
+  </g>
+
+  <!-- thin transition bars -->
+  <g fill="#111">
+    <rect x="105" y="100" width="10" height="36" rx="1"/>
+    <rect x="105" y="260" width="10" height="36" rx="1"/>
+    <rect x="425" y="100" width="10" height="36" rx="1"/>
+    <rect x="425" y="260" width="10" height="36" rx="1"/>
+  </g>
+
+  <g fill="#111" font-size="12" font-family="ui-monospace, Menlo, Consolas, monospace">
+    <text text-anchor="end" x="80" y="52">aliceLocal</text>
+    <text text-anchor="end" x="80" y="196">aliceDeploy</text>
+    <text text-anchor="middle" x="270" y="90">serverFree</text>
+    <text text-anchor="start" x="460" y="52">bobLocal</text>
+    <text text-anchor="start" x="460" y="196">bobDeploy</text>
+    <text text-anchor="end" x="98" y="122">aEnter</text>
+    <text text-anchor="end" x="98" y="282">aExit</text>
+    <text text-anchor="start" x="442" y="122">bEnter</text>
+    <text text-anchor="start" x="442" y="282">bExit</text>
+  </g>
+</svg>

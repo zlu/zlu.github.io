@@ -18,8 +18,11 @@ Usage:
   # After a data-only "sync course map" commit sitting on top of a post:
   python3 .scripts/indexnow_submit_urls.py --from-git HEAD~3..HEAD
 
-  # Rare: sitemap-driven (still streams one URL per request)
+  # Rare: sitemap-driven (still streams one URL per request; default cap 5)
   python3 .scripts/indexnow_submit_urls.py --from-sitemap --limit 5
+
+  # Submit every never-seen glossary / page URL from a local sitemap build
+  python3 .scripts/indexnow_submit_urls.py --sitemap-file _site/sitemap.xml --limit 0
 
   python3 .scripts/indexnow_submit_urls.py --ensure-key-file
 
@@ -27,6 +30,10 @@ Notes:
   - `_data/courses/{slug}.yml` maps to `/teach/universities/{slug}/` plus linked
     course pages from `_data/teach_catalog.yml` (run sync-teach-catalog first).
   - Catalog/report-only commits still yield 0 URLs; widen `--from-git` or pass `--url`.
+  - Git / --url mode submits **all** mapped URLs (no default cap). Sitemap mode
+    defaults to --limit 5 so Bing does not treat the run as a dump; use
+    --limit 0 for an uncapped sitemap new-URL stream when you intentionally
+    need a large catch-up (still one HTTP request per URL).
 """
 
 from __future__ import annotations
@@ -49,8 +56,9 @@ SITE = "https://zlu.me"
 HOST = "zlu.me"
 SITEMAP_URL = f"{SITE}/sitemap.xml"
 ENDPOINT = "https://api.indexnow.org/indexnow"
-# Streaming default: one URL per request. Keep sitemap pulls tiny if used.
-DEFAULT_LIMIT = 5
+# Sitemap-mode default cap (Bing treats huge sitemap dumps as batch mode).
+# Git / explicit --url mode is uncapped unless --limit is set (>0).
+DEFAULT_SITEMAP_LIMIT = 5
 STREAM_DELAY_SEC = 0.35
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -66,6 +74,7 @@ POST_RE = re.compile(
 COLLECTION_DIRS = {
     "_ai-glossary": "ai-glossary",
     "_med-glossary": "med-glossary",
+    "_cs-glossary": "cs-glossary",
     "_algos": "algos",
     "_albums": "photos",
     "_archives": "archive",
@@ -240,11 +249,23 @@ def _sitemap_priority(url: str) -> int:
         return 0  # blog posts
     if path.startswith("/teach/courses/") or path.startswith("/teach/universities/"):
         return 1
-    if path.startswith("/ai-glossary/") or path.startswith("/algos/"):
+    if (
+        path.startswith("/ai-glossary/")
+        or path.startswith("/med-glossary/")
+        or path.startswith("/cs-glossary/")
+        or path.startswith("/algos/")
+    ):
         return 2
     if path.startswith("/teach/"):
         return 3
     return 4
+
+
+def apply_limit(urls: list[str], limit: int | None) -> list[str]:
+    """limit None/≤0 → no cap; else first N URLs."""
+    if limit is None or limit <= 0:
+        return urls
+    return urls[:limit]
 
 
 def pick_changed_sitemap_urls(
@@ -585,8 +606,12 @@ def main() -> int:
     parser.add_argument(
         "--limit",
         type=int,
-        default=DEFAULT_LIMIT,
-        help=f"Max URLs this run (default {DEFAULT_LIMIT})",
+        default=None,
+        help=(
+            "Max URLs this run. Git/--url default: unlimited. "
+            f"Sitemap default: {DEFAULT_SITEMAP_LIMIT}. "
+            "Pass 0 for unlimited in sitemap mode."
+        ),
     )
     parser.add_argument(
         "--from-git",
@@ -705,20 +730,27 @@ def main() -> int:
         since = datetime.now(timezone.utc).timestamp() - max(0, args.changed_since_days) * 86400
         since_dt = datetime.fromtimestamp(since, tz=timezone.utc)
         state = load_state()
-        limit = max(1, args.limit)
+        # Sitemap stays capped by default; 0/negative = unlimited catch-up.
+        if args.limit is None:
+            limit = DEFAULT_SITEMAP_LIMIT
+        elif args.limit <= 0:
+            limit = len(unique)
+        else:
+            limit = args.limit
         only_new = not args.include_resubmit
         picked = pick_changed_sitemap_urls(
             unique, state, limit, since_dt, only_new=only_new
         )
         mode = "new-to-IndexNow" if only_new else "lastmod window (incl. resubmit)"
+        lim_label = "unlimited" if args.limit is not None and args.limit <= 0 else str(limit)
         print(
             f"{label}: sitemap={len(unique)} | {mode} | "
-            f"lastmod≥{since_dt.date()} | streaming={len(picked)} (limit {limit})"
+            f"lastmod≥{since_dt.date()} | streaming={len(picked)} (limit {lim_label})"
         )
         if len(picked) > 20:
             print(
                 "Warning: >20 URLs looks like IndexNow batch mode to Bing. "
-                "Lower --limit or submit with --url after publish.",
+                "Prefer git/--url after publish; use large --limit only for catch-up.",
                 file=sys.stderr,
             )
         return picked
@@ -741,8 +773,15 @@ def main() -> int:
         revision = args.from_git or "HEAD~1..HEAD"
         print(f"[{utc_now()}] Mapping git changes: {revision}")
         urls = urls_from_git(revision)
-        urls = urls[: max(1, args.limit)] if urls else []
-        print(f"Changed page URL(s): {len(urls)}")
+        before_cap = len(urls)
+        urls = apply_limit(urls, args.limit)
+        if args.limit is not None and args.limit > 0 and before_cap > len(urls):
+            print(
+                f"Changed page URL(s): {len(urls)} "
+                f"(capped from {before_cap} by --limit {args.limit})"
+            )
+        else:
+            print(f"Changed page URL(s): {len(urls)}")
         if not urls:
             # Data-only tip commit (teach catalog sync) often sits on top of a
             # published post. Fall back to never-submitted sitemap URLs.
