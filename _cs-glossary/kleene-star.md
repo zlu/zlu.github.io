@@ -2,7 +2,13 @@
 title: Kleene star
 synonyms:
   - Kleene closure
+related:
+  - Regular expression
+  - Regular language
+  - Alphabet
 ---
-**Kleene star** (or Kleene closure) is a unary operation in computer science and formal language theory that means "zero or more" repetitions of a set of symbols or strings.
+**Kleene star** (or Kleene closure) is the unary “zero or more” operation on languages (and on [regular expressions](/cs-glossary/regular-expression/)).
 
-If $L$ is a language, $L^*$ contains the empty string and every string made by concatenating zero or more strings from $L$. In a regular expression, `a*` matches the empty string, `a`, `aa`, and so on.
+If $L$ is a [formal language](/cs-glossary/formal-language/), $L^*$ contains the empty string $\lambda$ (or $\varepsilon$) and every finite concatenation of strings from $L$. So $\{\mathtt{a}\}^*$ is $\{\lambda, \mathtt{a}, \mathtt{aa}, \mathtt{aaa}, \ldots\}$.
+
+In a regex, `a*` matches that same set. Star is why [regular languages](/cs-glossary/regular-language/) are closed under unbounded repetition without leaving the finite-automaton world: Thompson builds a small [ε-NFA](/cs-glossary/epsilon-nfa/) loop for each `*`.

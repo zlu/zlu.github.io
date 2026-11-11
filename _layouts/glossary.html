@@ -54,11 +54,11 @@ layout: default
         {% assign rel_slug = rel | slugify %}
         {% assign rel_doc = nil %}
         {% for t in glossary_terms %}
-          {% if t.slug == rel_slug or t.title == rel %}{% assign rel_doc = t %}{% break %}{% endif %}
+          {% if t.slug == rel_slug or t.title == rel or t.title_short == rel %}{% assign rel_doc = t %}{% break %}{% endif %}
         {% endfor %}
         <li>
           {% if rel_doc %}
-            <a href="{{ rel_doc.url }}">{{ rel_doc.title }}</a>
+            <a href="{{ rel_doc.url }}">{{ rel_doc.title_short | default: rel_doc.title }}</a>
           {% else %}
             {{ rel }}
           {% endif %}

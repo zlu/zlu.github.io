@@ -1,20 +1,25 @@
 ---
 title: Word Embedding
+synonyms:
+  - Static Embedding
+related:
+  - Embedding
+  - Cosine Similarity
+  - Tokenizer
+  - Representation Learning
+  - Contrastive Learning
 ---
-A word embedding is a type of embedding specifically used in Natural Language Processing (NLP). It maps words (or subwords) to real-valued vectors in a continuous vector space, where semantically similar words are close together.
+A **word embedding** maps a word (or subword) to a real-valued vector so that semantic similarity becomes geometric closeness in the vector space. Classic static methods assign one vector per vocabulary item; contextual models (BERT-style) produce a different vector for the same word depending on its sentence.
 
-### Example word embeddings:
-- Word2Vec
-- GloVe
-- FastText
-- BERT (contextual embeddings)
+### Classic static methods
+- **Word2Vec** — skip-gram / CBOW predictive training
+- **GloVe** — global co-occurrence factorization
+- **FastText** — subword n-grams help rare and morphologically rich words
 
-### Properties:
-- Vectors are typically 50 to 1,024 dimensions
-- Similar meanings → similar vectors (cosine similarity)
+### Properties
+- Typical width: tens to hundreds of dimensions (modern LLM [embeddings](/ai-glossary/embedding/) are larger)
+- Nearby vectors ↔ related meaning or usage ([cosine similarity](/ai-glossary/cosine-similarity/))
+- Linear analogies were a famous (if brittle) demo: `king − man + woman ≈ queen`
 
-### Example:
-```python
-word_vectors["king"] - word_vectors["man"] + word_vectors["woman"] ≈ word_vectors["queen"]
-```
-See: Cosine Similarity
+### How it shows up today
+LLM stacks still begin with an embedding matrix over [tokenizer](/ai-glossary/tokenizer/) ids, then contextualize those vectors with attention. Retrieval systems often embed passages with a dedicated [embedding model](/ai-glossary/embedding-model/) rather than raw Word2Vec. Prefer contextual or instruction-tuned embedders for search; keep static word vectors for pedagogy, lexicons, and lightweight features.

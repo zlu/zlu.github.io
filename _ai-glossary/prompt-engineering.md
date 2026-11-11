@@ -3,15 +3,24 @@ title: Prompt Engineering
 related:
   - Prompt Tuning
   - Chain-of-Thought
+  - Prompt
+  - System Prompt
+  - Few-Shot
+  - Zero-Shot
+  - Soft Prompt
 ---
-Prompt engineering is a manual, human-driven approach to designing effective prompts that elicit the desired output from a pre-trained language model. This method relies on understanding the behavior and limitations of the LLM and crafting input prompts accordingly. The process is akin to writing a clever query or instruction to get the best possible result without changing the underlying model parameters.
+**Prompt engineering** is the craft of writing and structuring inputs so a frozen pretrained model does what you want—without updating weights. It is product logic expressed as text: roles, constraints, examples, and output formats.
 
-For example, consider a sentiment analysis task. A naive prompt might be:
+Unlike [prompt tuning](/ai-glossary/prompt-tuning/) (learned [soft prompts](/ai-glossary/soft-prompt/)), prompt engineering edits readable [hard prompts](/ai-glossary/hard-prompt/) and [system prompts](/ai-glossary/system-prompt/). Iteration is empirical: change wording, measure task metrics, keep versioned templates.
 
-"The movie was okay."
+### Common techniques
+- Clear instructions and schemas (JSON keys, bullet rules)
+- [Zero-shot](/ai-glossary/zero-shot/) vs [few-shot](/ai-glossary/few-shot/) exemplars
+- [Chain-of-thought](/ai-glossary/chain-of-thought-prompting/) for multi-step reasoning
+- Separating system policy from user content
 
-This may not give you a useful output unless you explicitly instruct the model. A prompt-engineered version would look like:
+### Example
+Weak: `The movie was okay.`  
+Stronger: `Classify the sentiment as Positive, Negative, or Neutral. Review: "The movie was okay."`
 
-"Classify the sentiment of the following review as Positive, Negative, or Neutral: 'The movie was okay.'"
-
-Prompt engineering involves iterations of trial-and-error, understanding model quirks, and using techniques like few-shot learning (giving examples in the prompt) or zero-shot learning (giving just the instruction) to guide the model
+Prompt engineering does not replace retrieval, tools, or fine-tuning when the model lacks facts or format fidelity—but it is the cheapest first lever.

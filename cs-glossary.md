@@ -8,7 +8,7 @@ sitemap: true
 ---
 
 <p class="glossary-intro">
-  Concise definitions for algorithms, complexity, and systems concepts.
+  Concise definitions for algorithms, complexity, automata, and systems concepts.
   Each term has its own indexable page — browse below or search.
 </p>
 

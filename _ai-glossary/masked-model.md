@@ -1,6 +1,22 @@
 ---
 title: Masked Model
+synonyms:
+  - Masked Language Model
+  - MLM
 related:
   - Causal Model
+  - Causal Language Model
+  - Self-Supervised Learning
+  - Encoder
 ---
-Masked models are machine learning models, often used in natural language processing, that predict missing or masked parts of input data during training. For example, in models like BERT, random tokens in a sentence are hidden (masked), and the model learns to predict them based on context. This helps the model understand relationships in data, improving tasks like text generation or classification.
+A **masked model** (masked language model, MLM) is trained to recover deliberately hidden spans of the input using bidirectional context. BERT-style [encoders](/ai-glossary/encoder/) replace random [tokens](/ai-glossary/token/) with a mask token and predict the originals—classic [self-supervised](/ai-glossary/self-supervised-learning/) pretraining.
+
+### Why it matters
+- Strong for understanding tasks: classification, NER, embeddings
+- Sees left *and* right context, unlike [causal LMs](/ai-glossary/causal-language-model/)
+- Less natural for open-ended left-to-right generation
+
+### How it shows up
+Training objective: minimize cross-entropy on masked positions only. At inference, you typically fine-tune or pool hidden states rather than “unmask” free-form prose. Modern LLMs are mostly [decoder-only](/ai-glossary/decoder-only/) / causal; masked (and encoder–decoder) models still matter for retrieval encoders, rerankers, and classical NLU pipelines.
+
+Related: span corruption (T5) is a close cousin that corrupts contiguous spans instead of single tokens.

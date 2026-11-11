@@ -8,24 +8,28 @@ sitemap: true
 ---
 
 <p class="glossary-intro">
-  Plain-language medicine and health terms. Each entry has its own page for easy linking and search.
+  Short bilingual (中文 / English) medicine and health terms — lab markers, conditions, nutrition.
+  Browse or search; each entry is a concise definition page for linking.
 </p>
 
 <div id="glossary-search">
   <label for="glossary-search-input" class="sr-only">Search terms</label>
-  <input type="text" id="glossary-search-input" placeholder="Search terms..." autocomplete="off">
+  <input type="text" id="glossary-search-input" placeholder="Search 中文 or English..." autocomplete="off">
 </div>
 
 <p class="glossary-count">{{ site.med-glossary.size }} terms</p>
 
 <ul id="glossary-list" class="glossary-list">
-  {% assign terms = site.med-glossary | sort: "title" %}
+  {% assign terms = site.med-glossary | sort: "title_short" %}
   {% for term in terms %}
     <li class="glossary-item" id="{{ term.slug }}">
-      <a class="glossary-term" href="{{ term.url }}">{{ term.title }}</a>
+      <a class="glossary-term" href="{{ term.url }}">{{ term.title_short | default: term.title }}</a>
+      {% if term.term-en and term.term-en.size > 0 %}
+        <span class="glossary-aka">({{ term.term-en | join: ", " }})</span>
+      {% endif %}
       <div class="glossary-definition">
         {{ term.description }}
-        <a class="glossary-more" href="{{ term.url }}">Read full definition →</a>
+        <a class="glossary-more" href="{{ term.url }}">词条 →</a>
       </div>
     </li>
   {% endfor %}

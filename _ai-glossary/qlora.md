@@ -6,7 +6,13 @@ related:
   - LoRA
   - Quantization
   - PEFT
+  - Fine-Tuning
+  - Mixed Precision
 ---
-**QLoRA** combines 4-bit (or similar) quantization of the base model with LoRA adapters trained in higher precision. The frozen base stays memory-cheap; gradients flow through the adapters.
+**QLoRA** fine-tunes [LoRA](/ai-glossary/lora/) adapters on a base model stored in low-bit [quantization](/ai-glossary/quantization/) (commonly 4-bit, e.g. NF4). The frozen base stays memory-cheap; adapters and optimizer states use higher precision so gradients remain usable.
 
-It is popular for fine-tuning 7B–70B models on a single consumer or mid-tier GPU. Quality depends on quantization scheme, LoRA capacity, and data — not magic by itself.
+### Why it exists
+Full fine-tunes of 7B–70B models need a lot of VRAM. QLoRA makes [PEFT](/ai-glossary/peft/) feasible on a single consumer or mid-tier GPU by stacking quantization + LoRA (plus paging tricks in the original recipe).
+
+### Knobs
+Quantization type/bits, LoRA rank and target modules, and data quality dominate outcomes. Expect some quality gap vs full-precision LoRA; measure on your eval set rather than assuming “4-bit is free.”

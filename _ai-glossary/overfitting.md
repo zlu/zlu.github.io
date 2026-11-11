@@ -5,7 +5,14 @@ related:
   - Regularization
   - Dropout
   - Early Stopping
+  - Evaluation
 ---
-**Overfitting** means the model fits training data idiosyncrasies and generalizes poorly to new data. Signals: train loss ↓ while validation loss ↑.
+**Overfitting** means the model fits training idiosyncrasies and generalizes poorly. Classic signal: train loss keeps falling while validation / held-out metrics worsen.
 
-Mitigations: more data, stronger regularization, dropout, early stopping, data augmentation, and smaller adapters for small corpora.
+### Common causes
+- Small or narrow datasets relative to capacity (full fine-tunes on tiny corpora)
+- Training too long without [early stopping](/ai-glossary/early-stopping/)
+- Weak [regularization](/ai-glossary/regularization/) ([dropout](/ai-glossary/dropout/), weight decay)
+
+### Mitigations
+More diverse data, stronger regularization, augmentation, smaller adapters / lower LoRA rank, and honest [evaluation](/ai-glossary/evaluation/) on held-out domains. Opposite failure mode: [underfitting](/ai-glossary/underfitting/) — capacity or training too weak to fit the signal.
