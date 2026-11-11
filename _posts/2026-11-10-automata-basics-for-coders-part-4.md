@@ -440,5 +440,9 @@ design       inputs → outputs → Moore/Mealy → states → assumptions
 ## References
 
 - Linz and Rodger, 7th ed., Appendix A.2–A.4.  
+- Moore, E. F. Gedanken-Experiments on Sequential Machines. In Shannon and McCarthy (eds.), *Automata Studies*, Princeton University Press, 1956.  
+  Read in [BetterReads](https://www.betterreads.dev/reader?bookId=moore_gedanken_experiments_sequential_machines&type=pdf&preview=1){:target="_blank" rel="noopener noreferrer"}
+- Mealy, G. H. A Method for Synthesizing Sequential Circuits. *Bell System Technical Journal*, 1955.  
+  Read in [BetterReads](https://www.betterreads.dev/reader?bookId=mealy_synthesizing_sequential_circuits&type=pdf&preview=1){:target="_blank" rel="noopener noreferrer"}
 - [Part I](/2026/11/06/automata-basics-for-coders-part-1/)–[Part III](/2026/11/09/automata-basics-for-coders-part-3/).  
 - Next in this series: [Part V](/2026/11/08/automata-basics-for-coders-part-5/) (Petri nets and reachability).

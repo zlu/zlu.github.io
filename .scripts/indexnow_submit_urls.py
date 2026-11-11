@@ -42,6 +42,7 @@ import argparse
 import json
 import os
 import re
+import socket
 import subprocess
 import sys
 import time
@@ -571,6 +572,9 @@ def stream_indexnow(host: str, key: str, url: str) -> tuple[int, str]:
         return e.code, raw or str(e)
     except urllib.error.URLError as e:
         return 0, str(e.reason)
+    except (TimeoutError, socket.timeout, OSError) as e:
+        # socket.timeout is not always wrapped as URLError; keep streaming.
+        return 0, str(e)
 
 
 def verify_key_live(host: str, key: str) -> tuple[bool, str]:
