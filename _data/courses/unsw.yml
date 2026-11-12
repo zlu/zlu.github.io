@@ -1,167 +1,177 @@
 ---
 university: University of New South Wales
 abbr: UNSW
-name_cn: "新南威尔士大学"
+name_cn: 新南威尔士大学
 teaching_folder: unsw-sydney
 courses:
-- code: INFS1701
-  title: Introduction to Networking and Security
-- code: INFS1603
-  title: Introduction to Business Databases
-- code: ADAD9113
-  title: Communication Skills for Creative Disciplines
-- code: COMP2107
-  title: System Programming
-  material: comp2017-9017-system-programming
-- code: COMP5310
-  title: Principles of Data Science
-  material: Comp5310简化
-- code: COMP9331
-  title: Computer Networks and Applications
-  material: comp9331-networking
-- code: INFO3616
-  title: Security Engineering
-  material: info3616
-- code: COMP1511
-  title: Programming Fundamentals
-  theme: programming
-  lead_cn: >-
-    COMP1511 很难的地方，常常不是「完全不会写 C」，而是 brief 读了三遍仍不确定要你实现什么，
-    样例能过一提交就被边界和 I/O 卡住。辅导会先把题意和测试对齐，再在你的环境里一起排查。
-  overview_cn: >-
-    Programming Fundamentals 是 UNSW 入门编程课，作业规格写得很细，autograder 也严。
-    留学生常见会卡在：题意翻译成步骤不完整、指针和字符串细节不熟、本地能跑交上去却一片红。
-    一对一会按拆题、动手、复盘推进；代码仍由你完成提交，我负责把方法和排查路径讲透。
-  topics:
-    - en: "Unpack the brief: I/O, edge cases, and marking points before coding"
-      cn: "先拆 brief：输入输出、边界和评分点，再动手写"
-    - en: "Hand-trace a minimal sample so state changes are clear"
-      cn: "先手推最小样例，把状态变化走清楚"
-    - en: "Pointers, strings, and file I/O as implementation details"
-      cn: "指针、字符串与文件读写等实现细节"
-    - en: "Autograder failures: format, edges, and missing cases"
-      cn: "autograder 挂掉：格式、边界与漏测用例"
-  stuck:
-    - en: "Sample cases pass locally; submission fails on edges or I/O"
-      cn: "本地样例能过，一提交就被边界或 I/O 卡住"
-    - en: "Brief read three times, still unsure what to implement"
-      cn: "brief 读了三遍，仍不确定要你实现什么"
-    - en: "Mixing understanding gaps with pointer / string bugs"
-      cn: "理解不清和指针 / 字符串细节混在一起修"
-  tutoring:
-    - en: "Assignments: align the brief, sketch a path you can finish, then debug with you at the keyboard."
-      cn: "作业：先对齐 brief，梳一条你能写完的思路，再在你的环境里一起排查。"
-    - en: "Lecture sync: bilingual walkthrough of the week's ideas until you can restate them."
-      cn: "同步跟课：用中英双语把本周概念讲到你能复述为止。"
-    - en: "Habits for later COMP2521: break problems down before chasing structures and complexity."
-      cn: "为后面的 COMP2521 打底：先练拆题习惯，再谈结构和复杂度。"
-  session_angles:
-    - en: "List inputs, outputs, edges, and marks — separate from guesses about intent"
-      cn: "先列输入输出、边界和评分点，和「我以为老师想要什么」分开"
-    - en: "Pseudocode the smallest sample before opening the editor"
-      cn: "打开编辑器前，先用伪代码走最小样例"
-    - en: "Ask: is this failure understanding or an implementation detail?"
-      cn: "先问：这次失败是理解问题，还是实现细节？"
-- code: COMP1521
-  title: Computer Systems Fundamentals
-- code: COMP1531
-  title: Software Engineering Fundamentals
-- code: COMP2521
-  title: Data Structures and Algorithms
-  theme: algorithms
-  lead_cn: >-
-    COMP2521 同时考结构选择、实现细节和复杂度表述。很多同学卡在「本地样例能过、大数据或边界就崩」，
-    或代码勉强对却说不清为什么不用另一种结构。辅导会先画清状态，再落到实现和表述。
-  overview_cn: >-
-    Data Structures and Algorithms 要求你在正确性、效率和口头/书面解释之间同时站得住。
-    常见痛点是指针与服务函数缠在一起、空表等边界没测全、复杂度一问就空——样例能过，大数据或边界却崩。
-    一对一会先在纸上画清状态，再落到最小例子和实现，最后才谈优化与怎么把理由说清楚。
-  topics:
-    - en: "Lists, trees, and graphs: choose structure before coding"
-      cn: "链表、树、图：先选结构再写代码"
-    - en: "Paper state diagrams before pointer-heavy C"
-      cn: "写指针密集的 C 之前，先在纸上画状态"
-    - en: "Complexity language: why this structure, not another"
-      cn: "复杂度表述：为什么用这种结构，不用另一种"
-    - en: "Edges: empty structures, duplicates, memory free"
-      cn: "边界：空结构、重复键、内存释放"
-  stuck:
-    - en: "Clear on paper; tangled in C by pointers and helpers"
-      cn: "纸上清楚，一写进 C 就被指针和服务函数缠住"
-    - en: "Know which structure, cannot explain the trade-off"
-      cn: "知道用哪种结构，却说不清为什么不用另一种"
-    - en: "Tests hit empty tables, dupes, free — fix one, two appear"
-      cn: "测试专卡空表、重复键、释放；修一个冒出两个"
-  tutoring:
-    - en: "Assignments: state on paper → minimal repro → implementation → complexity talk last."
-      cn: "作业：先画状态 → 最小可复现 → 再实现 → 最后才谈复杂度。"
-    - en: "Live debug in your environment: name whether the block is structure, code, or explanation."
-      cn: "在你的环境里现场排查：分清现在卡在结构、实现还是表述。"
-    - en: "If COMP1511 habits are shaky, shore up breakdown and debug first."
-      cn: "若 COMP1511 拆题和调试还不稳，先把习惯补上。"
-  session_angles:
-    - en: "Draw state changes before touching code"
-      cn: "碰代码前先画清状态变化"
-    - en: "Minimal examples for each operation, including empty and extreme inputs"
-      cn: "每个操作写最小例子，含空结构和极端输入"
-    - en: "Optimise and talk big-O only after the implementation is sound"
-      cn: "实现站得住之后，再优化和谈大 O"
-- code: COMP3121
-  title: Algorithms and Programming Techniques
-- code: COMP3141
-  title: Software System Design and Implementation
-- code: COMP3311
-  title: Database Systems
-- code: COMP3331
-  title: Computer Networks and Applications
-- code: COMP3411
-  title: Artificial Intelligence
-- code: COMP6080
-  title: Web Front-End Programming
-- code: COMP6771
-  title: Advanced C++ Programming
-- code: COMP9414
-  title: Artificial Intelligence
-  material: comp9414-ai
-- code: COMP9417
-  title: Machine Learning and Data Mining
-- code: COMP9444
-  title: Neural Networks and Deep Learning
-- code: COMP9311
-  title: Database Systems
-- code: COMP9315
-  title: Database Systems Implementation
-- code: DATA1001
-  title: Introduction to Data Science and Decisions
-- code: DATA9001
-  title: Fundamentals of Data Science
-- code: COMP9021
-  title: Principles of Programming
-  material: comp9021 25T3 期末班资料
-- code: COMP2017
-  title: Systems Programming
-  material: comp2017-9017-system-programming
-- code: COMP9601
-  title: Computer Systems
-  material: Comp9601简化
-- title: Mths1313
-  material: MTHS1313
-- code: COMP3211
-  title: Computer Architecture
-  material: comp3211
-- code: COMP9517
-  title: Computer Vision
-  material: COMP9517-computer-vision
-- code: COMP4337
-  title: 9337 Securing Fixed And Wireless Networks
-  material: comp4337-9337-securing-fixed-and-wireless-networks
-- code: COMP2511
-  title: Software Design And Architecture
-  material: comp2511-software-design-and-architecture
-- code: COMP4920
-  title: Computer Ethics
-  material: comp4920-computer-ethics
-- code: INFO1113
-  title: Object-Oriented Programming
-  material: '2048'
+  - code: ADAD9113
+    title: Communication Skills for Creative Disciplines
+  - topics:
+      - en: "Unpack the brief: I/O, edge cases, and marking points before coding"
+        cn: 先拆 brief：输入输出、边界和评分点，再动手写
+      - en: Hand-trace a minimal sample so state changes are clear
+        cn: 先手推最小样例，把状态变化走清楚
+      - en: Pointers, strings, and file I/O as implementation details
+        cn: 指针、字符串与文件读写等实现细节
+      - en: "Autograder failures: format, edges, and missing cases"
+        cn: autograder 挂掉：格式、边界与漏测用例
+    theme: programming
+    session_angles:
+      - en: List inputs, outputs, edges, and marks — separate from guesses about intent
+        cn: 先列输入输出、边界和评分点，和「我以为老师想要什么」分开
+      - en: Pseudocode the smallest sample before opening the editor
+        cn: 打开编辑器前，先用伪代码走最小样例
+      - en: "Ask: is this failure understanding or an implementation detail?"
+        cn: 先问：这次失败是理解问题，还是实现细节？
+    tutoring:
+      - en: "Assignments: align the brief, sketch a path you can finish, then debug with
+          you at the keyboard."
+        cn: 作业：先对齐 brief，梳一条你能写完的思路，再在你的环境里一起排查。
+      - en: "Lecture sync: bilingual walkthrough of the week's ideas until you can
+          restate them."
+        cn: 同步跟课：用中英双语把本周概念讲到你能复述为止。
+      - en: "Habits for later COMP2521: break problems down before chasing structures
+          and complexity."
+        cn: 为后面的 COMP2521 打底：先练拆题习惯，再谈结构和复杂度。
+    code: COMP1511
+    lead_cn: COMP1511 很难的地方，常常不是「完全不会写 C」，而是 brief 读了三遍仍不确定要你实现什么， 样例能过一提交就被边界和 I/O
+      卡住。辅导会先把题意和测试对齐，再在你的环境里一起排查。
+    overview_cn: Programming Fundamentals 是 UNSW 入门编程课，作业规格写得很细，autograder 也严。
+      留学生常见会卡在：题意翻译成步骤不完整、指针和字符串细节不熟、本地能跑交上去却一片红。
+      一对一会按拆题、动手、复盘推进；代码仍由你完成提交，我负责把方法和排查路径讲透。
+    title: Programming Fundamentals
+    stuck:
+      - en: Sample cases pass locally; submission fails on edges or I/O
+        cn: 本地样例能过，一提交就被边界或 I/O 卡住
+      - en: Brief read three times, still unsure what to implement
+        cn: brief 读了三遍，仍不确定要你实现什么
+      - en: Mixing understanding gaps with pointer / string bugs
+        cn: 理解不清和指针 / 字符串细节混在一起修
+  - code: COMP1521
+    title: Computer Systems Fundamentals
+  - code: COMP1531
+    title: Software Engineering Fundamentals
+  - code: COMP2017
+    title: Systems Programming
+    material: comp2017-9017-system-programming
+  - code: COMP2107
+    title: System Programming
+    material: comp2017-9017-system-programming
+  - code: COMP2511
+    title: Software Design And Architecture
+    material: comp2511-software-design-and-architecture
+  - topics:
+      - en: "Lists, trees, and graphs: choose structure before coding"
+        cn: 链表、树、图：先选结构再写代码
+      - en: Paper state diagrams before pointer-heavy C
+        cn: 写指针密集的 C 之前，先在纸上画状态
+      - en: "Complexity language: why this structure, not another"
+        cn: 复杂度表述：为什么用这种结构，不用另一种
+      - en: "Edges: empty structures, duplicates, memory free"
+        cn: 边界：空结构、重复键、内存释放
+    theme: algorithms
+    session_angles:
+      - en: Draw state changes before touching code
+        cn: 碰代码前先画清状态变化
+      - en: Minimal examples for each operation, including empty and extreme inputs
+        cn: 每个操作写最小例子，含空结构和极端输入
+      - en: Optimise and talk big-O only after the implementation is sound
+        cn: 实现站得住之后，再优化和谈大 O
+    tutoring:
+      - en: "Assignments: state on paper → minimal repro → implementation → complexity
+          talk last."
+        cn: 作业：先画状态 → 最小可复现 → 再实现 → 最后才谈复杂度。
+      - en: "Live debug in your environment: name whether the block is structure, code,
+          or explanation."
+        cn: 在你的环境里现场排查：分清现在卡在结构、实现还是表述。
+      - en: If COMP1511 habits are shaky, shore up breakdown and debug first.
+        cn: 若 COMP1511 拆题和调试还不稳，先把习惯补上。
+    code: COMP2521
+    lead_cn: COMP2521 同时考结构选择、实现细节和复杂度表述。很多同学卡在「本地样例能过、大数据或边界就崩」，
+      或代码勉强对却说不清为什么不用另一种结构。辅导会先画清状态，再落到实现和表述。
+    overview_cn: Data Structures and Algorithms 要求你在正确性、效率和口头/书面解释之间同时站得住。
+      常见痛点是指针与服务函数缠在一起、空表等边界没测全、复杂度一问就空——样例能过，大数据或边界却崩。
+      一对一会先在纸上画清状态，再落到最小例子和实现，最后才谈优化与怎么把理由说清楚。
+    title: Data Structures and Algorithms
+    stuck:
+      - en: Clear on paper; tangled in C by pointers and helpers
+        cn: 纸上清楚，一写进 C 就被指针和服务函数缠住
+      - en: Know which structure, cannot explain the trade-off
+        cn: 知道用哪种结构，却说不清为什么不用另一种
+      - en: Tests hit empty tables, dupes, free — fix one, two appear
+        cn: 测试专卡空表、重复键、释放；修一个冒出两个
+  - code: COMP3121
+    title: Algorithms and Programming Techniques
+  - code: COMP3141
+    title: Software System Design and Implementation
+  - code: COMP3153
+    aliases:
+      - COMP9153
+    title: Algorithmic Verification
+    material: comp3153-9153-algorithmic-verification
+    theme: algorithms, automata
+  - code: COMP3211
+    title: Computer Architecture
+    material: comp3211
+  - code: COMP3311
+    title: Database Systems
+  - code: COMP3331
+    title: Computer Networks and Applications
+  - code: COMP3411
+    title: Artificial Intelligence
+  - code: COMP4337
+    title: 9337 Securing Fixed And Wireless Networks
+    material: comp4337-9337-securing-fixed-and-wireless-networks
+  - code: COMP4920
+    title: Computer Ethics
+    material: comp4920-computer-ethics
+  - code: COMP5310
+    title: Principles of Data Science
+    material: Comp5310简化
+  - code: COMP6080
+    title: Web Front-End Programming
+  - code: COMP6771
+    title: Advanced C++ Programming
+  - code: COMP9021
+    title: Principles of Programming
+    material: comp9021 25T3 期末班资料
+  - code: COMP9311
+    title: Database Systems
+  - code: COMP9315
+    title: Database Systems Implementation
+  - code: COMP9331
+    title: Computer Networks and Applications
+    material: comp9331-networking
+  - code: COMP9414
+    title: Artificial Intelligence
+    material: comp9414-ai
+  - code: COMP9417
+    title: Machine Learning and Data Mining
+  - code: COMP9444
+    title: Neural Networks and Deep Learning
+  - code: COMP9517
+    title: Computer Vision
+    material: COMP9517-computer-vision
+  - code: COMP9601
+    title: Computer Systems
+    material: Comp9601简化
+  - code: DATA1001
+    title: Introduction to Data Science and Decisions
+  - code: DATA9001
+    title: Fundamentals of Data Science
+  - code: INFO1113
+    title: Object-Oriented Programming
+    material: "2048"
+  - code: INFO3616
+    title: Security Engineering
+    material: info3616
+  - code: INFS1603
+    title: Introduction to Business Databases
+  - code: INFS1701
+    title: Introduction to Networking and Security
+  - title: Mathematics 1A
+    material: MTHS1313
+    code: MATH1131
+    aliases:
+      - MTHS1313
 ---
