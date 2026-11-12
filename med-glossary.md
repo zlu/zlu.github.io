@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Medicine Glossary — Lab Markers, Conditions, Nutrition"
+title: "Medicine Glossary — Lab Markers, Conditions, Eye & Nutrition"
 permalink: /med-glossary/
-description: "Searchable medicine and health glossary with plain-language definitions for common lab markers, conditions, and nutrition terms, each on its own linkable page."
-keywords: "medicine glossary, health terms, medical dictionary, lab markers, nutrition"
+description: "Searchable medicine and health glossary with plain-language definitions for lab markers, conditions, eye terms, and nutrition, each on its own linkable page."
+keywords: "medicine glossary, health terms, medical dictionary, lab markers, eye terms, glaucoma, dry eye, nutrition"
 sitemap: true
 ---
 
 <p class="glossary-intro">
-  Short bilingual (中文 / English) medicine and health terms — lab markers, conditions, nutrition.
+  Short bilingual (中文 / English) medicine and health terms — lab markers, conditions, eye care, nutrition.
   Browse or search; each entry is a concise definition page for linking.
 </p>
 
