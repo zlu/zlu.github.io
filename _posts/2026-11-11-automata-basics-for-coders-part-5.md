@@ -11,7 +11,7 @@ tags:
 description: "Start from a real concurrency problem (two teammates, one staging server), model it with a Petri net, then read mutual exclusion, B-safety, and deadlock-freedom off the reachability DFA."
 ---
 
-Parts [I](/2026/11/06/automata-basics-for-coders-part-1/)–[IV](/2026/11/10/automata-basics-for-coders-part-4/) stayed with languages and single machines: accepters, NFAs, transducers. Real software is rarely one machine. Two processes, one lock, a bounded queue—**several control flows share resources**. That is concurrency, and a single Moore diagram for “the whole system” gets painful fast.
+Parts [I](/2026/11/06/automata-basics-for-coders-part-1/)–[IV](/2026/11/10/automata-basics-for-coders-part-4/) stayed with languages and single machines: accepters, NFAs, [transducers](/cs-glossary/transducer/). Real software is rarely one machine. Two processes, one lock, a bounded queue: **several control flows share resources**. That is concurrency, and a single Moore diagram for “the whole system” gets painful fast.
 
 **Petri nets** are a standard way to draw that sharing. They are not a Linz chapter. Useful references: Murata’s survey (*Petri Nets: Properties, Analysis and Applications*, Proc. IEEE, 1989) and Reisig, *Understanding Petri Nets*.
 
