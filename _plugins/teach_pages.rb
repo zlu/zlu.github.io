@@ -98,40 +98,50 @@ module Jekyll
         "cn" => "同步课程辅导",
         "title_en" => "Course Sync Tutoring",
         "title_cn" => "同步课程辅导",
-        "desc_en" => "Keep up with lectures in Chinese and English — syllabus walkthrough, weekly Q&A. Direct tutor, no middleman fee.",
-        "desc_cn" => "很多同学不是完全听不懂，而是教授口音重、语速快，专业词一闪就过，回去对着课件更对不上。" \
-                     "同步跟课会按你学校的周进度，用中文把当周概念补清楚，同时保留 tutorial 和考试要用的英文说法，避免越掉越远。" \
-                     "微信直约我本人，没有顾问转手。"
+        "desc_en" => "Learn on the course’s rhythm: rebuild each week’s material in Chinese, keep English terms for tutorials and exams, keep assignments tied to lectures. Aim for a strong score; at least stay on a clear pass path. Direct WeChat with me.",
+        "desc_cn" => "按课程节奏学下去：当周内容用中文重建，保留 tutorial 和考试英文术语，作业和课堂对上。" \
+                     "冲好成绩；至少把及格路径走稳。微信直约我本人。"
       },
       "assignment" => {
         "en" => "Assignment tutoring",
         "cn" => "作业辅导",
         "title_en" => "Assignment & Project Help",
         "title_cn" => "作业与 Project 辅导",
-        "desc_en" => "Debug and approach review. Direct tutor, no middleman fee.",
-        "desc_cn" => "作业卡壳往往卡在 brief 读不透、思路立不住，或本地能跑一提交就被边界情况打回来。" \
-                     "我们会先一起读题、梳一条你能写下去的路，再对着报错现场排查；代码和推导仍由你完成提交，我负责把方法讲透。" \
-                     "微信直约，无中介加价。"
+        "desc_en" => "Analyse the brief against the rubric, define a task plan, and work through the hard parts with assistance so the submission matches what actually earns marks. Direct WeChat with me.",
+        "desc_cn" => "按 rubric 拆清需求，定出任务计划，难的地方带着协助一起推进，" \
+                     "让交上去的作业 / project / 论文对得上真正给分的点。微信直约我本人。"
       },
       "exam" => {
         "en" => "Exam prep tutoring",
         "cn" => "考前突击辅导",
         "title_en" => "Exam Prep Tutoring",
         "title_cn" => "考前突击辅导",
-        "desc_en" => "Topic maps, past-paper style drills, weak-spot sprints before midterms and finals.",
-        "desc_cn" => "临考最怕的不是「没刷够题」，而是不知道这门课反复考什么、自己弱在哪、下手顺序怎么排。" \
-                     "期中期末前会先梳考点地图，再按常考题型和你的薄弱点做限时练习，练审题、表述和得分点，而不是无目的地刷题。"
+        "desc_en" => "Quizzes and midterms already went badly; the final looks like the last gate. Topic map, rebuild what lectures never made clear, timed drills under exam wording. Direct WeChat with me.",
+        "desc_cn" => "quiz、期中已经考砸，期末像这门课过不过的最后一道关。" \
+                     "按 syllabus 和 past paper 梳考点，把课上从没听懂的部分重建起来，" \
+                     "再按考试英文措辞限时练。微信直约我本人。"
       },
       "preview" => {
         "en" => "Course preview tutoring",
         "cn" => "课程预习辅导",
         "title_en" => "Course Preview Tutoring",
         "title_cn" => "课程预习辅导",
-        "desc_en" => "Pre-term head start: programming basics, jargon, and assessment format before week 1.",
-        "desc_cn" => "开学第一周最容易懵：课速突然加快，英文术语一串串砸过来，作业格式和评分点也还没摸清。" \
-                     "开学前先把编程基础、专业说法和考核方式过一遍，后面跟课会轻松很多，不必从第二周就开始追进度。"
+        "desc_en" => "First time leaving China for a new country: language, culture, and a new CS classroom land together. Efficient prep-study before week 1 so they start the semester in much better shape. Direct WeChat with me.",
+        "desc_cn" => "第一次离开中国去新国家读书：语言、文化、新的计算机课堂一起砸过来。" \
+                     "开学前高效预习这门课，开学时状态好很多。微信直约我本人。"
       }
     }.freeze
+
+    # Service-hub / directory highlights: schools I've taught a lot, plus a couple
+    # name-brand campuses. Order is display order (not catalog size).
+    HUB_FEATURED_UNI_SLUGS = %w[
+      monash
+      unsw
+      birmingham
+      carnegie-mellon-university
+      berkeley
+    ].freeze
+    HUB_FEATURED_COURSES_PER_UNI = 3
 
     # More specific themes first; "general" is the fallback (not listed here).
     # Theme packs live in _data/teach_themes/*.yml (admin: Course Themes).
@@ -1279,11 +1289,13 @@ module Jekyll
       svc = SERVICES.fetch(service_key)
       title_en = "#{svc['title_en']} for Chinese Students Abroad | CS Tutoring"
       title_cn = "留学生#{svc['title_cn']} | 计算机中英双语一对一"
-      # Prefer schools with course pages at the top of the hub list
-      ordered = universities.sort_by do |u|
-        [(u["courses"].size.positive? ? 0 : 1), u["name"].downcase]
-      end
-      with_courses = ordered.count { |u| u["courses"].size.positive? }
+      featured = hub_featured_universities(universities)
+      # Remaining directory: teaching depth first (not thin catalog size)
+      featured_slugs = featured.map { |u| u["slug"] }
+      rest = universities
+               .reject { |u| featured_slugs.include?(u["slug"]) }
+               .sort_by { |u| [-u["depth_score"].to_i, u["name"].downcase] }
+      with_courses = universities.count { |u| u["courses"].size.positive? }
       description = truncate_meta(
         "留学生计算机#{svc['title_cn']}：#{svc['desc_cn']}" \
         "目前已整理 #{with_courses} 所高校的课程入口，覆盖澳英美加港新等地。",
@@ -1291,7 +1303,7 @@ module Jekyll
       )
       description_en = truncate_meta(
         "#{svc['desc_en']} #{with_courses}+ course-mapped universities; " \
-        "#{ordered.size} schools across AU/UK/US/CA/HK/SG.",
+        "#{universities.size} schools across AU/UK/US/CA/HK/SG.",
         160
       )
 
@@ -1312,11 +1324,31 @@ module Jekyll
         "service_title_cn" => svc["title_cn"],
         "service_desc_en" => svc["desc_en"],
         "service_desc_cn" => svc["desc_cn"],
-        "universities" => ordered,
+        "featured_universities" => featured,
+        "universities" => rest,
+        "university_count" => universities.size,
         "lang" => "zh-CN",
         "sitemap" => true
       )
       page
+    end
+
+    def hub_featured_universities(universities)
+      by_slug = universities.each_with_object({}) { |u, h| h[u["slug"]] = u }
+      HUB_FEATURED_UNI_SLUGS.filter_map do |slug|
+        uni = by_slug[slug]
+        next unless uni
+
+        top_courses = Array(uni["courses"])
+                        .select { |c| c["depth_score"].to_i.positive? || c["linked"] }
+                        .sort_by { |c| [-c["depth_score"].to_i, c["code"].to_s] }
+                        .first(HUB_FEATURED_COURSES_PER_UNI)
+        # Fall back to any courses if evidence scores are missing
+        if top_courses.empty?
+          top_courses = Array(uni["courses"]).first(HUB_FEATURED_COURSES_PER_UNI)
+        end
+        uni.merge("featured_courses" => top_courses)
+      end
     end
 
     def build_region_page(site, region_key, universities)
@@ -1398,10 +1430,7 @@ module Jekyll
         }
       end
 
-      featured = universities
-                   .select { |u| Array(u["courses"]).size.positive? }
-                   .sort_by { |u| [-Array(u["courses"]).size, -u["depth_score"].to_i, u["name"].to_s.downcase] }
-                   .first(8)
+      featured = hub_featured_universities(universities)
 
       page = TeachGeneratedPage.new(site, site.source, "teach/universities")
       page.data.merge!(

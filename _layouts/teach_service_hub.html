@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="teach-landing">
+<article class="teach-landing teach-service-hub">
   <div class="teach-topbar">
     <nav class="teach-crumbs" aria-label="Breadcrumb">
       <a href="/teach/" data-en="Tutoring" data-cn="留学辅导">留学辅导</a>
@@ -11,17 +11,17 @@ layout: default
     {% include teach-lang-switcher.html %}
   </div>
 
-  <header class="teach-landing-header">
+  <header class="teach-landing-header teach-service-hero">
     <p class="teach-hero-eyebrow"
        data-en="AU · UK · US · CA · HK · SG · no middleman"
        data-cn="澳英美加港新 · 无中介">澳英美加港新 · 无中介</p>
-    <h1 data-en="{{ page.service_title_en }} for Chinese CS students"
+    <h1 data-en="{{ page.service_title_en }} for Chinese CS students abroad"
         data-cn="留学生计算机{{ page.service_title_cn }}">留学生计算机{{ page.service_title_cn }}</h1>
     <p class="teach-landing-lead"
        data-en="{{ page.service_desc_en }}"
        data-cn="{{ page.service_desc_cn }}">{{ page.service_desc_cn }}</p>
     <div class="teach-hero-actions">
-      <a class="btn btn-primary" href="/teach/"
+      <a class="btn btn-primary" href="#teach-service-book"
          data-en="Book via WeChat"
          data-cn="微信预约">微信预约</a>
       <a class="btn btn-outline-primary" href="/teach/universities/"
@@ -30,56 +30,402 @@ layout: default
     </div>
   </header>
 
+  {% if page.service_key == "preview" %}
+
   <section class="teach-landing-section">
-    <h2 data-en="What you get"
-        data-cn="这节课怎么帮你">这节课怎么帮你</h2>
+    <h2 data-en="Leaving China for a new campus"
+        data-cn="第一次出国读书，真正怕的是什么">第一次出国读书，真正怕的是什么</h2>
+    <p data-en="For many families, this is the first time the child leaves China for a new country. New language, new classroom habits, new ways professors talk and mark work. Parents worry they will not adjust. Students worry they will freeze in week 1 and never catch the rhythm. Course preview is for that window before the semester starts: arrive already knowing how this CS course talks, what it asks for, and how to study it efficiently."
+       data-cn="对很多家庭来说，这是孩子第一次离开中国，去一个全新的国家读书。语言不同，课堂习惯不同，教授怎么讲、怎么给分也不同。家长怕的是适应不了；学生怕的是第一周就懵住，后面再也跟不上。课程预习，就是开学前这一段窗口：让他带着「这门计算机课怎么说、要什么、怎么高效学」过去，而不是两眼一抹黑开学。">对很多家庭来说，这是孩子第一次离开中国，去一个全新的国家读书。语言不同，课堂习惯不同，教授怎么讲、怎么给分也不同。家长怕的是适应不了；学生怕的是第一周就懵住，后面再也跟不上。课程预习，就是开学前这一段窗口：让他带着「这门计算机课怎么说、要什么、怎么高效学」过去，而不是两眼一抹黑开学。</p>
     <ul class="teach-proof">
-      {% if page.service_key == "sync" %}
-      <li data-en="Rebuild lecture logic in Chinese; keep English terms for exams"
-          data-cn="用中文把课件逻辑重讲一遍，保留考试要用的英文术语">用中文把课件逻辑重讲一遍，保留考试要用的英文术语</li>
-      <li data-en="Syllabus-aligned weekly catch-up so you stop falling behind"
-          data-cn="按 syllabus 对齐进度，避免越掉越远">按 syllabus 对齐进度，避免越掉越远</li>
-      {% elsif page.service_key == "assignment" %}
-      <li data-en="Clarify the brief, pick an approach, debug together"
-          data-cn="先拆题意，再梳思路，一起 debug">先拆题意，再梳思路，一起 debug</li>
-      <li data-en="Clarify edge cases and walk through failing tests together"
-          data-cn="一起过边界情况与失败测试">一起过边界情况与失败测试</li>
-      {% elsif page.service_key == "exam" %}
-      <li data-en="Topic map + weak-spot drills before midterms and finals"
-          data-cn="考点地图 + 薄弱点专项，期中期末冲刺">考点地图 + 薄弱点专项，期中期末冲刺</li>
-      <li data-en="Past-paper style walkthroughs instead of random all-nighters"
-          data-cn="类 past paper 带练，少靠通宵硬刷">类 past paper 带练，少靠通宵硬刷</li>
-      {% else %}
-      <li data-en="Pre-term head start on programming basics and jargon"
-          data-cn="开学前补编程基础与专业术语">开学前补编程基础与专业术语</li>
-      <li data-en="Know the assessment format before week 1 hits"
-          data-cn="提前摸清考核方式，降低第一周冲击">提前摸清考核方式，降低第一周冲击</li>
-      {% endif %}
-      <li data-en="Direct WeChat booking with the tutor — no middleman fee"
-          data-cn="微信直约授课老师，无中介抽成">微信直约授课老师，无中介抽成</li>
+      <li data-en="First time abroad: language + culture + campus life land at once"
+          data-cn="第一次出国：语言、文化、校园节奏一起砸过来">第一次出国：语言、文化、校园节奏一起砸过来</li>
+      <li data-en="Fear of not adjusting, not “just one hard course”"
+          data-cn="怕的是适应不了、读不下来，不只是某一门难">怕的是适应不了、读不下来，不只是某一门难</li>
+      <li data-en="English lectures and CS jargon hit before friendships or routines form"
+          data-cn="英文课和专业术语，往往比交朋友、稳住生活更早来">英文课和专业术语，往往比交朋友、稳住生活更早来</li>
+      <li data-en="A strong start beats a whole semester of catching up"
+          data-cn="开学状态好，远胜过整学期追进度">开学状态好，远胜过整学期追进度</li>
     </ul>
   </section>
 
   <section class="teach-landing-section">
-    <h2 data-en="Universities with course pages"
-        data-cn="已整理课号的大学">已整理课号的大学</h2>
-    <p class="teach-directory-lead"
-       data-en="Open a school for its course list and tutoring approach, or browse the full <a href='/teach/universities/'>directory</a>. Message WeChat with school + course code."
-       data-cn="点进学校看课号与辅导方式；完整名单见 <a href='/teach/universities/'>大学目录</a>。微信发送学校 + 课号即可。">点进学校看课号与辅导方式；完整名单见 <a href="/teach/universities/">大学目录</a>。微信发送学校 + 课号即可。</p>
-    <ul class="teach-uni-index">
-      {% for uni in page.universities %}
+    <h2 data-en="What preview actually does"
+        data-cn="预习具体怎么帮">预习具体怎么帮</h2>
+    <p data-en="We prep-study the real course ahead: programming foundation, the English terms they will hear in week 1, how labs and assessments usually work, and a study rhythm that fits overseas CS. The goal is simple. When the semester starts, they are already in much better shape: less panic, faster comprehension, and a clearer sense of how to succeed in that classroom."
+       data-cn="我们会对准即将上的那门课做预习：补编程基础，过第一周就会听到的英文术语，摸清 lab 和考核大致怎么走，再养成适合海外计算机课的学习节奏。目标很直接：开学时状态好很多，少一点慌，听得进，也更清楚在那个课堂里怎样才能学好。">我们会对准即将上的那门课做预习：补编程基础，过第一周就会听到的英文术语，摸清 lab 和考核大致怎么走，再养成适合海外计算机课的学习节奏。目标很直接：开学时状态好很多，少一点慌，听得进，也更清楚在那个课堂里怎样才能学好。</p>
+    <ul class="teach-proof">
+      <li data-en="Tied to school + course code when you have them"
+          data-cn="有学校和课号，就按真实课号准备">有学校和课号，就按真实课号准备</li>
+      <li data-en="Efficient prep: high-leverage topics first, not random coding drills"
+          data-cn="高效预习：先抓高杠杆内容，不是盲目刷题">高效预习：先抓高杠杆内容，不是盲目刷题</li>
+      <li data-en="Chinese explanations; English terms for the real classroom"
+          data-cn="中文讲透；英文术语对齐真实课堂">中文讲透；英文术语对齐真实课堂</li>
+      <li data-en="Direct WeChat with me: no sales handoff, no middleman fee"
+          data-cn="微信直约我本人：没有销售转接，也没有中介抽成">微信直约我本人：没有销售转接，也没有中介抽成</li>
+    </ul>
+  </section>
+
+  {% elsif page.service_key == "assignment" %}
+
+  <section class="teach-landing-section">
+    <h2 data-en="When the brief is open and nothing moves"
+        data-cn="brief 打开了，却推不动">brief 打开了，却推不动</h2>
+    <p data-en="Assignments, projects, and papers are where the course grade often gets decided. Students stare at a long English brief, cannot tell what “done” means against the rubric, and burn days without a plan. Parents see the due date coming and hear “I am working on it,” while the file is still empty. The real block is usually requirement analysis and a workable path, not a missing pep talk."
+       data-cn="作业、project、论文，经常才是这门课分数真正落下的地方。学生盯着很长的英文 brief，对照 rubric 也说不清「交什么才算完成」，几天过去还没有计划。家长看着截止日期逼近，听他说「在做」，文件却还是空的。真正卡住的，多半是需求分析和方法路径，不是再鼓励两句就能好。">作业、project、论文，经常才是这门课分数真正落下的地方。学生盯着很长的英文 brief，对照 rubric 也说不清「交什么才算完成」，几天过去还没有计划。家长看着截止日期逼近，听他说「在做」，文件却还是空的。真正卡住的，多半是需求分析和方法路径，不是再鼓励两句就能好。</p>
+    <ul class="teach-proof">
+      <li data-en="Cannot map the brief to deliverables and rubric marks"
+          data-cn="brief 对不上要交什么、rubric 怎么给分">brief 对不上要交什么、rubric 怎么给分</li>
+      <li data-en="No plan: which part first, what “good enough” looks like"
+          data-cn="没有计划：先做哪块、怎样才算做到位">没有计划：先做哪块、怎样才算做到位</li>
+      <li data-en="Stuck on design, code, write-up, or all three at once"
+          data-cn="卡在设计、代码、写作，或三处一起卡">卡在设计、代码、写作，或三处一起卡</li>
+      <li data-en="One weak project can pull down the whole course result"
+          data-cn="一个 project 做砸，整门课结果都可能跟着掉">一个 project 做砸，整门课结果都可能跟着掉</li>
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="How we work the assignment"
+        data-cn="作业辅导怎么做">作业辅导怎么做</h2>
+    <p data-en="We start by analysing the requirements against the rubric: what must be submitted, what earns marks, what can wait. Then we define a concrete plan for the tasks and work through it with my assistance: structure, approach, debugging, write-up shape, edge cases. Students are encouraged to keep building under that plan; when a part is still blocked, we go deeper on that part in the next session. The aim is a submission that matches what the rubric actually rewards."
+       data-cn="先按 rubric 把需求拆清楚：必须交什么、分在哪、哪些可以后做。再定出可执行的任务计划，带着我的协助往下推进：结构、思路、调试、写作框架、边界情况。鼓励学生按计划自己持续做；哪里还卡住，下一节就对准那一块往下挖。目标是交上去的东西，对得上 rubric 真正给分的点。">先按 rubric 把需求拆清楚：必须交什么、分在哪、哪些可以后做。再定出可执行的任务计划，带着我的协助往下推进：结构、思路、调试、写作框架、边界情况。鼓励学生按计划自己持续做；哪里还卡住，下一节就对准那一块往下挖。目标是交上去的东西，对得上 rubric 真正给分的点。</p>
+    <ul class="teach-proof">
+      <li data-en="Requirement analysis first, then a task plan"
+          data-cn="先需求分析，再定任务计划">先需求分析，再定任务计划</li>
+      <li data-en="Work with assistance on the hard parts as they appear"
+          data-cn="难的地方带着协助一起过">难的地方带着协助一起过</li>
+      <li data-en="Align the solution to the rubric, not to a vague “try harder”"
+          data-cn="按 rubric 对齐做法，而不是空喊加油">按 rubric 对齐做法，而不是空喊加油</li>
+      <li data-en="Need more depth on a stuck module? We keep going there"
+          data-cn="某一块特别卡住，可以继续往深里帮">某一块特别卡住，可以继续往深里帮</li>
+    </ul>
+  </section>
+
+  {% elsif page.service_key == "exam" %}
+
+  <section class="teach-landing-section">
+    <h2 data-en="When the final is the last gate"
+        data-cn="期末像最后一道关">期末像最后一道关</h2>
+    <p data-en="Quizzes and midterms already went badly. The final looks like the last chance before the course fails. Students “review” by rereading slides they never understood in lecture. Parents cannot build a CS exam plan from another time zone. What they need is priority: what still moves the grade, what was never clear, and how to practise under real exam wording."
+       data-cn="quiz、期中已经考砸。期末像这门课过不过的最后一道关。学生所谓复习，往往是把课上从没听懂的课件再看一遍。家长隔着时差，也排不出计算机考试该先练什么。这时候要的是优先级：哪些分还能动，哪些概念从没真正懂，怎样按真实考试措辞练。">quiz、期中已经考砸。期末像这门课过不过的最后一道关。学生所谓复习，往往是把课上从没听懂的课件再看一遍。家长隔着时差，也排不出计算机考试该先练什么。这时候要的是优先级：哪些分还能动，哪些概念从没真正懂，怎样按真实考试措辞练。</p>
+    <ul class="teach-proof">
+      <li data-en="Already weak scores; final carries heavy weight"
+          data-cn="前面分数已经弱，期末权重很大">前面分数已经弱，期末权重很大</li>
+      <li data-en="Slides and past papers exist; no clear order"
+          data-cn="课件和 past paper 都有，却排不出顺序">课件和 past paper 都有，却排不出顺序</li>
+      <li data-en="Know it when reading; freeze under exam phrasing"
+          data-cn="看书觉得会，一遇上考试措辞就卡">看书觉得会，一遇上考试措辞就卡</li>
+      <li data-en="Lecture gaps + English wording stack together"
+          data-cn="课没听懂，再叠上英文题干，压力翻倍">课没听懂，再叠上英文题干，压力翻倍</li>
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="How exam prep runs"
+        data-cn="考前突击怎么做">考前突击怎么做</h2>
+    <p data-en="We build a topic map from the syllabus and past-paper patterns, rebuild the ideas lectures never made clear, and drill weak spots under real exam wording. Chinese first for the logic; English for the phrasing the paper uses. If the professor was hard to reach or lectures were messy, we still reconstruct what the exam is likely to mark from the materials that remain."
+       data-cn="按 syllabus 和历年题型梳考点地图，把课上从没讲清的概念重建起来，再在真实考试措辞下做薄弱点限时练习。先用中文把逻辑讲透，再对齐试卷上的英文说法。就算教授难联系、lecture 本身糊，也还得从现有材料把该考的东西建出来。">按 syllabus 和历年题型梳考点地图，把课上从没讲清的概念重建起来，再在真实考试措辞下做薄弱点限时练习。先用中文把逻辑讲透，再对齐试卷上的英文说法。就算教授难联系、lecture 本身糊，也还得从现有材料把该考的东西建出来。</p>
+    <ul class="teach-proof">
+      <li data-en="Topic map: what to prioritise with the days left"
+          data-cn="考点地图：剩下几天先练什么">考点地图：剩下几天先练什么</li>
+      <li data-en="Rebuild unclear lecture ideas before drilling"
+          data-cn="先重建没听懂的课，再刷题">先重建没听懂的课，再刷题</li>
+      <li data-en="Timed practice under exam-style English"
+          data-cn="按考试英文措辞做限时练习">按考试英文措辞做限时练习</li>
+      <li data-en="Direct WeChat with me: no sales handoff, no middleman fee"
+          data-cn="微信直约我本人：没有销售转接，也没有中介抽成">微信直约我本人：没有销售转接，也没有中介抽成</li>
+    </ul>
+  </section>
+
+  {% else %}
+
+  <section class="teach-landing-section">
+    <h2 data-en="Keep pace with the course, not just survive it"
+        data-cn="跟着课走，而不只是熬过每一周">跟着课走，而不只是熬过每一周</h2>
+    <p data-en="Course sync is for students who are still in the semester and need to learn on the course’s rhythm. Lectures are fast and accent-heavy; tutorials assume last week already landed; each week the gap grows. The goal is not a one-off rescue. It is to understand each week’s material in time, keep assignments connected to lectures, and finish the course with a solid result: a good score if we can, and at least a clear path to pass."
+       data-cn="同步跟课，给的是还在学期中、需要按课程节奏学下去的同学。lecture 快、口音重，tutorial 默认上周已经懂，每周差距在加大。目标不是偶尔救一次火，而是当周内容当周弄懂，作业和课堂对上，整门课走出好看的结果：能拿高分更好，至少把及格和稳定发挥走稳。">同步跟课，给的是还在学期中、需要按课程节奏学下去的同学。lecture 快、口音重，tutorial 默认上周已经懂，每周差距在加大。目标不是偶尔救一次火，而是当周内容当周弄懂，作业和课堂对上，整门课走出好看的结果：能拿高分更好，至少把及格和稳定发挥走稳。</p>
+    <ul class="teach-proof">
+      <li data-en="Half-understanding week after week compounds fast"
+          data-cn="每周只听懂一半，欠账滚得很快">每周只听懂一半，欠账滚得很快</li>
+      <li data-en="Assignments fail because lecture ideas never stuck"
+          data-cn="作业挂，往往因为课上概念从没落下">作业挂，往往因为课上概念从没落下</li>
+      <li data-en="Parents hear “busy but okay” while the gap widens"
+          data-cn="家长听到「忙但还行」，差距其实在拉大">家长听到「忙但还行」，差距其实在拉大</li>
+      <li data-en="CS courses stack: next week needs this week"
+          data-cn="计算机课环环相扣：下周建立在这周之上">计算机课环环相扣：下周建立在这周之上</li>
+    </ul>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="What weekly sync is for"
+        data-cn="同步跟课要达成什么">同步跟课要达成什么</h2>
+    <p data-en="Each session rebuilds that week’s lecture logic in Chinese, keeps the English terms for tutorials and exams, and ties the ideas back to the assignments coming due. We follow the syllabus rhythm so learning stays aligned with the class, not a random backlog dump. Over the term, that is how scores stabilize: understand on schedule, practise on schedule, walk into assessments prepared."
+       data-cn="每节课按当周进度，用中文把课件逻辑重建一遍，保留 tutorial 和考试要用的英文说法，并把概念接到即将到来的作业上。跟着 syllabus 的节奏学，而不是把欠账堆成一次乱补。一学期下来，分数才稳得住：当周懂、当周练，考核前有准备。">每节课按当周进度，用中文把课件逻辑重建一遍，保留 tutorial 和考试要用的英文说法，并把概念接到即将到来的作业上。跟着 syllabus 的节奏学，而不是把欠账堆成一次乱补。一学期下来，分数才稳得住：当周懂、当周练，考核前有准备。</p>
+    <ul class="teach-proof">
+      <li data-en="Syllabus-aligned weekly learning"
+          data-cn="按 syllabus 对齐每周学习">按 syllabus 对齐每周学习</li>
+      <li data-en="Bilingual: Chinese to learn, English for assessment language"
+          data-cn="双语：中文学会，英文对齐考核用语">双语：中文学会，英文对齐考核用语</li>
+      <li data-en="Aim for a strong course result; at minimum, stay on a pass path"
+          data-cn="冲好成绩；至少把及格路径走稳">冲好成绩；至少把及格路径走稳</li>
+      <li data-en="Direct WeChat with me: no sales handoff, no middleman fee"
+          data-cn="微信直约我本人：没有销售转接，也没有中介抽成">微信直约我本人：没有销售转接，也没有中介抽成</li>
+    </ul>
+  </section>
+
+  {% endif %}
+
+  <section class="teach-landing-section">
+    <h2 data-en="How a session runs"
+        data-cn="一节课怎么上">一节课怎么上</h2>
+    <ol class="teach-session-steps">
+      {% if page.service_key == "preview" %}
       <li>
-        <a href="/teach/universities/{{ uni.slug }}/">
+        <strong data-en="Send school + course"
+                data-cn="先发学校和课号">先发学校和课号</strong>
+        <span data-en="School, course code or name, start date, and what they already know. Syllabus if available."
+              data-cn="学校、课号或课名、开学时间、现有基础；有 syllabus 更好。">学校、课号或课名、开学时间、现有基础；有 syllabus 更好。</span>
+      </li>
+      <li>
+        <strong data-en="Prep-study the real course"
+                data-cn="对准真实课程预习">对准真实课程预习</strong>
+        <span data-en="Foundation, jargon, and assessment shape for that course. Efficient focus, not random drills."
+              data-cn="补基础、过术语、摸考核；抓高效内容，不盲目刷。">补基础、过术语、摸考核；抓高效内容，不盲目刷。</span>
+      </li>
+      <li>
+        <strong data-en="Arrive ready for week 1"
+                data-cn="带着状态去开学">带着状态去开学</strong>
+        <span data-en="A short study rhythm and checklist so the first weeks feel familiar."
+              data-cn="留下开学后可用的学习节奏和清单，让前几周熟悉起来。">留下开学后可用的学习节奏和清单，让前几周熟悉起来。</span>
+      </li>
+      {% elsif page.service_key == "assignment" %}
+      <li>
+        <strong data-en="Send the brief and rubric"
+                data-cn="先发 brief 和 rubric">先发 brief 和 rubric</strong>
+        <span data-en="School, course code, deadline, brief, rubric, current draft or code, and any feedback so far."
+              data-cn="学校、课号、截止日、brief、rubric、现有草稿或代码，以及已有反馈。">学校、课号、截止日、brief、rubric、现有草稿或代码，以及已有反馈。</span>
+      </li>
+      <li>
+        <strong data-en="Analyse, plan, then work"
+                data-cn="分析、定计划、再推进">分析、定计划、再推进</strong>
+        <span data-en="Requirement analysis against the rubric, a task plan, then assisted work on the hard parts."
+              data-cn="按 rubric 做需求分析，定任务计划，再带着协助攻难的部分。">按 rubric 做需求分析，定任务计划，再带着协助攻难的部分。</span>
+      </li>
+      <li>
+        <strong data-en="Keep building under the plan"
+                data-cn="按计划继续做">按计划继续做</strong>
+        <span data-en="Student keeps executing; when a module is still stuck, we go deeper there next."
+              data-cn="学生按计划继续推进；某一块仍卡，下一节就往那一块深挖。">学生按计划继续推进；某一块仍卡，下一节就往那一块深挖。</span>
+      </li>
+      {% elsif page.service_key == "exam" %}
+      <li>
+        <strong data-en="Send scores and materials"
+                data-cn="先发分数和材料">先发分数和材料</strong>
+        <span data-en="Current scores, exam date, syllabus, slides, past papers, and where they feel weakest."
+              data-cn="目前分数、考试日期、大纲、课件、past paper，以及自认最弱的部分。">目前分数、考试日期、大纲、课件、past paper，以及自认最弱的部分。</span>
+      </li>
+      <li>
+        <strong data-en="Map, rebuild, drill"
+                data-cn="地图、重建、限时练">地图、重建、限时练</strong>
+        <span data-en="Topic map first, rebuild unclear ideas, then timed drills under exam wording."
+              data-cn="先考点地图，再重建没懂的概念，再按考试措辞限时练。">先考点地图，再重建没懂的概念，再按考试措辞限时练。</span>
+      </li>
+      <li>
+        <strong data-en="Walk into the exam with a plan"
+                data-cn="带着计划进考场">带着计划进考场</strong>
+        <span data-en="A short priority list for the final days: what to revisit, what to skip, how to allocate time."
+              data-cn="考前几天的短优先级：复习什么、可先放下什么、时间怎么分配。">考前几天的短优先级：复习什么、可先放下什么、时间怎么分配。</span>
+      </li>
+      {% else %}
+      <li>
+        <strong data-en="Send this week’s materials"
+                data-cn="先发当周材料">先发当周材料</strong>
+        <span data-en="Syllabus week, slides, notes, upcoming assignment if any, and where they got lost in lecture."
+              data-cn="当周进度、课件、笔记、即将到来的作业，以及课上卡在哪。">当周进度、课件、笔记、即将到来的作业，以及课上卡在哪。</span>
+      </li>
+      <li>
+        <strong data-en="Rebuild on the course rhythm"
+                data-cn="按课程节奏重建">按课程节奏重建</strong>
+        <span data-en="That week’s logic in Chinese, English terms kept, tied to tutorials and assignments."
+              data-cn="用中文重建当周逻辑，保留英文术语，接到 tutorial 和作业。">用中文重建当周逻辑，保留英文术语，接到 tutorial 和作业。</span>
+      </li>
+      <li>
+        <strong data-en="Stay aligned for the next week"
+                data-cn="对准下一周继续">对准下一周继续</strong>
+        <span data-en="A short checklist so next lecture and next assessment stay connected."
+              data-cn="留下短清单，让下周听课和考核继续对上。">留下短清单，让下周听课和考核继续对上。</span>
+      </li>
+      {% endif %}
+      <li>
+        <strong data-en="You talk to the tutor"
+                data-cn="约到的就是上课的人">约到的就是上课的人</strong>
+        <span data-en="Consultation and teaching are the same person. No advisor retelling the story to a stranger tutor."
+              data-cn="咨询和上课是同一个人。没有顾问先聊一轮，再把故事转述给陌生老师。">咨询和上课是同一个人。没有顾问先聊一轮，再把故事转述给陌生老师。</span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="teach-landing-section" id="teach-service-book" aria-labelledby="teach-service-book-title">
+    <h2 id="teach-service-book-title"
+        data-en="Book on WeChat"
+        data-cn="微信预约">微信预约</h2>
+    <div class="teach-service-book">
+      <div class="teach-service-book-copy">
+        {% if page.service_key == "preview" %}
+        <p data-en="Scan and send: school + course code + start date + what they already know. Syllabus if you have it."
+           data-cn="扫码后请发：学校、课号、开学时间、现有基础；有 syllabus 更好。">扫码后请发：学校、课号、开学时间、现有基础；有 syllabus 更好。</p>
+        {% elsif page.service_key == "assignment" %}
+        <p data-en="Scan and send: school + course code + deadline + brief/rubric. Draft, code, or feedback screenshots help."
+           data-cn="扫码后请发：学校、课号、截止日、brief/rubric；有草稿、代码或反馈截图更好。">扫码后请发：学校、课号、截止日、brief/rubric；有草稿、代码或反馈截图更好。</p>
+        {% elsif page.service_key == "exam" %}
+        <p data-en="Scan and send: school + course code + exam date + current scores. Syllabus and past papers help."
+           data-cn="扫码后请发：学校、课号、考试日期、目前分数；有大纲和 past paper 更好。">扫码后请发：学校、课号、考试日期、目前分数；有大纲和 past paper 更好。</p>
+        {% else %}
+        <p data-en="Scan and send: school + course code + this week’s slides or notes. Upcoming assignment links help."
+           data-cn="扫码后请发：学校、课号、当周课件或笔记；有即将到来的作业更好。">扫码后请发：学校、课号、当周课件或笔记；有即将到来的作业更好。</p>
+        {% endif %}
+        <p class="teach-section-note"
+           data-en="Prefer email? Write hello@zlu.me with the same details."
+           data-cn="更习惯邮件？把同样信息发到 hello@zlu.me。">更习惯邮件？把同样信息发到 <a href="mailto:hello@zlu.me?subject=CS%20tutoring%20inquiry">hello@zlu.me</a>。</p>
+      </div>
+      <img src="/assets/images/br-wechat-qr.JPG"
+           class="wechat-qr teach-service-qr"
+           alt="WeChat QR code"
+           width="148"
+           height="148">
+    </div>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Questions before booking"
+        data-cn="约课前常问">约课前常问</h2>
+    <div class="teach-faq">
+      {% if page.service_key == "preview" %}
+      <details class="teach-faq-item">
+        <summary data-en="First time leaving China. Is preview still useful?"
+                 data-cn="第一次出国，预习有用吗？">第一次出国，预习有用吗？</summary>
+        <p data-en="Yes. Language and classroom culture hit at the same time as the first CS course. Prep-studying the course before week 1 is one of the few levers you still control."
+           data-cn="有用。语言和课堂文化，往往和第一门计算机课一起砸过来。开学前把课预习好，是你还能主动握住的少数杠杆之一。">有用。语言和课堂文化，往往和第一门计算机课一起砸过来。开学前把课预习好，是你还能主动握住的少数杠杆之一。</p>
+      </details>
+      <details class="teach-faq-item">
+        <summary data-en="We do not have the syllabus yet."
+                 data-cn="还没有 syllabus，能先上吗？">还没有 syllabus，能先上吗？</summary>
+        <p data-en="Yes. Send school + course name and current foundation. We start from the usual topic stack for that course type, then tighten when materials arrive."
+           data-cn="可以。先发学校、课名和现有基础。按这类课常见主题栈开始，材料到了再收紧。">可以。先发学校、课名和现有基础。按这类课常见主题栈开始，材料到了再收紧。</p>
+      </details>
+      {% elsif page.service_key == "assignment" %}
+      <details class="teach-faq-item">
+        <summary data-en="They have stared at the brief for days."
+                 data-cn="brief 看了几天，仍不知道怎么开始？">brief 看了几天，仍不知道怎么开始？</summary>
+        <p data-en="That is a common first hour: requirement analysis against the rubric, a task plan, then assisted work on the first hard block."
+           data-cn="第一节经常就是干这个：按 rubric 做需求分析，定任务计划，再带着协助过第一块难的。">第一节经常就是干这个：按 rubric 做需求分析，定任务计划，再带着协助过第一块难的。</p>
+      </details>
+      <details class="teach-faq-item">
+        <summary data-en="How involved can the help get?"
+                 data-cn="协助可以深到什么程度？">协助可以深到什么程度？</summary>
+        <p data-en="We go as deep as the stuck part needs: requirements, design, implementation details, debugging, write-up structure. Students keep working under the plan; when a module still blocks, we keep digging there."
+           data-cn="卡在哪，就往哪深挖：需求、设计、实现细节、调试、写作结构。学生按计划继续做；某一块仍过不去，我们就继续在那一块帮。">卡在哪，就往哪深挖：需求、设计、实现细节、调试、写作结构。学生按计划继续做；某一块仍过不去，我们就继续在那一块帮。</p>
+      </details>
+      {% elsif page.service_key == "exam" %}
+      <details class="teach-faq-item">
+        <summary data-en="Quizzes and the midterm already went badly."
+                 data-cn="quiz 和期中都已经考砸了？">quiz 和期中都已经考砸了？</summary>
+        <p data-en="Then the final usually has to carry more. We map what still matters, rebuild weak topics, and practise under exam wording with the time left."
+           data-cn="那期末往往要扛更大比重。标出还剩哪些分能动，重建薄弱考点，用剩下的时间按考试措辞练。">那期末往往要扛更大比重。标出还剩哪些分能动，重建薄弱考点，用剩下的时间按考试措辞练。</p>
+      </details>
+      <details class="teach-faq-item">
+        <summary data-en="How many sessions before the exam?"
+                 data-cn="考前要上几节？">考前要上几节？</summary>
+        <p data-en="Depends on how far behind they are and how soon the exam is. Send syllabus and past papers; we size a short sprint."
+           data-cn="取决于掉队多少、离考试还有多久。把大纲和 past paper 发来，按短冲刺来定。">取决于掉队多少、离考试还有多久。把大纲和 past paper 发来，按短冲刺来定。</p>
+      </details>
+      {% else %}
+      <details class="teach-faq-item">
+        <summary data-en="Weekly sync or only when stuck?"
+                 data-cn="要每周跟，还是卡住再约？">要每周跟，还是卡住再约？</summary>
+        <p data-en="If the goal is learning on the course rhythm and a stable score, weekly is usually better. Occasional unblock sessions also work if they say so."
+           data-cn="若目标是按课程节奏学、分数稳住，按周跟更合适。如果只要偶尔解卡，直接说即可。">若目标是按课程节奏学、分数稳住，按周跟更合适。如果只要偶尔解卡，直接说即可。</p>
+      </details>
+      <details class="teach-faq-item">
+        <summary data-en="What does a “good result” mean here?"
+                 data-cn="这里说的好成绩是什么？">这里说的好成绩是什么？</summary>
+        <p data-en="Understand each week on schedule, keep assignments tied to lectures, and finish the course strongly when possible. At minimum, stay on a clear pass path instead of drifting."
+           data-cn="当周内容当周懂，作业和课堂对上，能冲高分就冲；至少把及格路径走清楚，而不是一路漂。">当周内容当周懂，作业和课堂对上，能冲高分就冲；至少把及格路径走清楚，而不是一路漂。</p>
+      </details>
+      {% endif %}
+      <details class="teach-faq-item">
+        <summary data-en="English is part of the struggle."
+                 data-cn="英语听不懂，算不算？">英语听不懂，算不算？</summary>
+        <p data-en="Yes. We rebuild ideas in Chinese, then lock the English terms needed for that course’s lectures, briefs, and exams."
+           data-cn="算。用中文把概念建起来，再对齐这门课 lecture、brief、考试要用的英文术语。">算。用中文把概念建起来，再对齐这门课 lecture、brief、考试要用的英文术语。</p>
+      </details>
+      <details class="teach-faq-item">
+        <summary data-en="Why book you instead of a big agency?"
+                 data-cn="和大机构比，为什么找你？">和大机构比，为什么找你？</summary>
+        <p data-en="Parents who've dealt with agencies usually already know the pattern: sales intake, then matching, then a prepaid package — after payment, it's often unclear who actually teaches, how steady that person is, or who owns the outcome. Tutor pools are uneven: some can teach well; others are fresh out of school and still finding their footing, yet get assigned to upper-level CS. Agencies pitch “current student / recent grad” as young and easy to talk to; for algorithms, systems, and debugging, what usually matters more is judgment — reading a messy brief, pinning down an odd bug — the kind that comes from shipping real systems, not from having just sat a similar exam. Other familiar frictions: a strong trial tutor, then a swap; advisors leave and the brief gets retold; large prepaid packs with murky refunds and rush markups; one deck for every university. That's less bad luck than the middleman model itself — commission in the middle, accountability split. Here there's no layer in between. Intake, scheduling, and teaching are the same person; CS-focused; Chinese for intuition, native-level English for briefs and exams, German at C1/C2 when the course needs it; tuition without agency markup. When one computer science course is the bottleneck and the deadline is close, booking direct is usually faster — and clear on who is responsible."
+           data-cn="很多家长其实已经尝过机构那一套：先销售、再匹配、再推大课包；钱交出去之后，真正上课的是谁、水平稳不稳、出问题找谁，常常说不清。师资池本身也参差不齐——同一家机构里，有人能讲透，也有人刚从学校出来、自己作业还在摸索期，就被排去带高年级计算机课。销售爱说「名校在读 / 刚毕业」显得年轻好沟通；可对算法、系统、报错排查这类课，真正缺的往往不是同龄感，而是把 brief 读透、把奇怪 bug 定住的判断力——那多半来自真正写过产品、踩过坑的经验，不是刚考完同类课就能自动具备的。还有些更常见的摩擦：试听是一套人、正式课又换人；顾问离职后需求重讲一遍；整学期大额预付，退费条款绕、急单还加价；课件一套套所有学校。这些不完全是某家运气差，而是中介抽成模式把责任拆散了。我这边没有那一层。咨询、排课、上课都是我本人；只做计算机；中文讲透，英文近母语，德语 C1/C2；学费不经中介。卡在一门课、作业或考试节点紧的时候，直约通常更快，出了问题也知道该找谁。">很多家长其实已经尝过机构那一套：先销售、再匹配、再推大课包；钱交出去之后，真正上课的是谁、水平稳不稳、出问题找谁，常常说不清。师资池本身也参差不齐——同一家机构里，有人能讲透，也有人刚从学校出来、自己作业还在摸索期，就被排去带高年级计算机课。销售爱说「名校在读 / 刚毕业」显得年轻好沟通；可对算法、系统、报错排查这类课，真正缺的往往不是同龄感，而是把 brief 读透、把奇怪 bug 定住的判断力——那多半来自真正写过产品、踩过坑的经验，不是刚考完同类课就能自动具备的。还有些更常见的摩擦：试听是一套人、正式课又换人；顾问离职后需求重讲一遍；整学期大额预付，退费条款绕、急单还加价；课件一套套所有学校。这些不完全是某家运气差，而是中介抽成模式把责任拆散了。我这边没有那一层。咨询、排课、上课都是我本人；只做计算机；中文讲透，英文近母语，德语 C1/C2；学费不经中介。卡在一门课、作业或考试节点紧的时候，直约通常更快，出了问题也知道该找谁。</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="teach-landing-section">
+    <h2 data-en="Find your school / course"
+        data-cn="找学校 / 课号">找学校 / 课号</h2>
+    <p class="teach-directory-lead"
+       data-en="These are schools I’ve taught a lot. Open a course page, or message WeChat with school + course code even if yours is not listed."
+       data-cn="下面是我带过很多的学校。点进课号页，或不在名单里也直接微信发学校 + 课号。">下面是我带过很多的学校。点进课号页，或不在名单里也直接微信发学校 + 课号。</p>
+    {% if page.featured_universities and page.featured_universities.size > 0 %}
+    <ul class="teach-hub-featured">
+      {% for uni in page.featured_universities %}
+      <li class="teach-hub-featured-item">
+        <a class="teach-hub-featured-uni" href="/teach/universities/{{ uni.slug }}/">
           <strong data-en="{{ uni.label_en | default: uni.name }}"
                   data-cn="{{ uni.label_cn | default: uni.name }}">{{ uni.label_cn | default: uni.name }}</strong>
-          <span> · {{ page.service_cn }}</span>
+          {% if uni.abbr and uni.abbr != "" %}
+          <span class="teach-hub-featured-abbr">{{ uni.abbr }}</span>
+          {% endif %}
         </a>
-        {% if uni.courses.size > 0 %}
-        <span class="teach-count">{{ uni.courses.size }}</span>
+        {% if uni.featured_courses and uni.featured_courses.size > 0 %}
+        <ul class="teach-hub-featured-courses">
+          {% for course in uni.featured_courses %}
+          <li>
+            <a href="/teach/courses/{{ uni.slug }}/{{ course.slug }}/">
+              {% if course.code != "" %}<span class="teach-course-code">{{ course.code }}</span>{% endif %}
+              <span class="teach-course-title">{{ course.title }}</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
         {% endif %}
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
+    {% if page.universities.size > 0 %}
+    <details class="teach-uni-more">
+      <summary data-en="More schools in the directory ({{ page.university_count }})"
+               data-cn="展开目录里的其他学校（共 {{ page.university_count }} 所）">展开目录里的其他学校（共 {{ page.university_count }} 所）</summary>
+      <ul class="teach-uni-index teach-uni-index--compact">
+        {% for uni in page.universities %}
+        <li>
+          <a href="/teach/universities/{{ uni.slug }}/">
+            <strong data-en="{{ uni.label_en | default: uni.name }}"
+                    data-cn="{{ uni.label_cn | default: uni.name }}">{{ uni.label_cn | default: uni.name }}</strong>
+          </a>
+          {% if uni.courses.size > 0 %}
+          <span class="teach-count">{{ uni.courses.size }}</span>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+    <p class="teach-section-note">
+      <a href="/teach/universities/"
+         data-en="Full university directory →"
+         data-cn="完整大学目录 →">完整大学目录 →</a>
+    </p>
   </section>
 
   <section class="teach-landing-section">
@@ -119,3 +465,104 @@ layout: default
   ]
 }
 </script>
+{% if page.service_key == "preview" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "第一次出国，预习有用吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "有用。语言和课堂文化往往和第一门计算机课一起砸过来。开学前把课预习好，是还能主动握住的少数杠杆之一。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "还没有 syllabus，能先上吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。先发学校、课名和现有基础，按这类课常见主题栈开始，材料到了再收紧。"
+      }
+    }
+  ]
+}
+</script>
+{% elsif page.service_key == "assignment" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "brief 看了几天，仍不知道怎么开始？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "第一节经常就是干这个：按 rubric 做需求分析，定任务计划，再带着协助过第一块难的。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "协助可以深到什么程度？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "卡在哪，就往哪深挖：需求、设计、实现细节、调试、写作结构。学生按计划继续做；某一块仍过不去，就继续在那一块帮。"
+      }
+    }
+  ]
+}
+</script>
+{% elsif page.service_key == "exam" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "quiz 和期中都已经考砸了？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "那期末往往要扛更大比重。标出还剩哪些分能动，重建薄弱考点，用剩下的时间按考试措辞练。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "考前要上几节？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "取决于掉队多少、离考试还有多久。把大纲和 past paper 发来，按短冲刺来定。"
+      }
+    }
+  ]
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "要每周跟，还是卡住再约？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "若目标是按课程节奏学、分数稳住，按周跟更合适。如果只要偶尔解卡，直接说即可。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "这里说的好成绩是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "当周内容当周懂，作业和课堂对上，能冲高分就冲；至少把及格路径走清楚，而不是一路漂。"
+      }
+    }
+  ]
+}
+</script>
+{% endif %}

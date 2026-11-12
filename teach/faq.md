@@ -30,7 +30,7 @@ hreflang:
     "name": "为什么建议微信直接约？",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "不少机构会先由顾问接待，再匹配老师、再推套餐；急单多一轮转述就容易耽误。咨询、排课和上课都是我本人，没有销售剧本，也没有中介抽成。说清楚学校、课号、截止日期和题目/报错后，可以直接谈同步跟课、作业拆题还是考前练习。需要多科目管家或家长周报时，大团队可能更合适；要的是把这门计算机课讲透的人，直约通常更快。"
+      "text": "很多家长其实已经尝过机构那一套：先销售、再匹配、再推大课包；钱交出去之后，真正上课的是谁、水平稳不稳、出问题找谁，常常说不清。师资池参差不齐；「名校在读 / 刚毕业」常被说成年轻好沟通，可对算法、系统、报错排查这类课，真正缺的往往不是同龄感，而是把 brief 读透、把奇怪 bug 定住的判断力——那多半来自真正写过产品、踩过坑的经验。试听换人、顾问离职、大额预付退费绕、急单加价，也是常见摩擦。咨询、排课和上课都是我本人，没有销售剧本，也没有中介抽成；中文讲透，英文近母语，德语 C1/C2。说清楚学校、课号、截止日期和题目/报错后，可以直接谈怎么上。需要多科目管家或家长周报时，大团队可能更合适；要的是把这门计算机课讲透的人，直约通常更快，责任也更清楚。"
     }
   }, {
     "@type": "Question",
@@ -107,7 +107,7 @@ hreflang:
 Main apps: **ClassIn** or **Tencent Meeting** (install beforehand). Also Zoom, Teams, Google Meet, WeChat video. Send materials ahead; we screen-share, explain bilingually, and debug together.
 
 ### Why book on WeChat directly?
-Agencies often start with sales intake, then matching, then a package. Intake and teaching here are the same person: no sales script, no agency markup. Message school, course code, deadline, and the stuck brief / error; we decide how to run the session. Big teams can still fit multi-subject management; for course-level CS help, booking the tutor is usually faster.
+Parents who've dealt with agencies usually already know the pattern: sales intake, then matching, then a prepaid package — after payment, it's often unclear who actually teaches, how steady that person is, or who owns the outcome. Tutor pools are uneven; “current student / recent grad” gets sold as young and easy to talk to, but for algorithms, systems, and debugging, what usually matters more is judgment from real shipping experience — reading a messy brief, pinning down an odd bug — not having just sat a similar exam. Other familiar frictions: a strong trial tutor then a swap, advisors leaving mid-brief, large prepaid packs with murky refunds and rush markups, one deck for every university. That's the middleman model: commission in the middle, accountability split. Intake and teaching here are the same person: no sales script, no agency markup. Chinese for intuition, native-level English for briefs and exams, German at C1/C2 when needed. Message school, course code, deadline, and the stuck brief / error; we decide how to run the session. Big teams can still fit multi-subject management; for course-level CS help, booking the tutor is usually faster and clearer on who is responsible.
 
 ### Can you help with assignments and exams?
 Yes. Assignment help and exam prep are most of what I do: unpack briefs, debug together, drill weak spots before midterms and finals.
@@ -135,7 +135,7 @@ Flexible by course type and frequency. Message WeChat with school + course code 
 主用 **ClassIn** 或 **腾讯会议**，请提前装好；也可用 Zoom、Teams、Google Meet 或微信视频。课前尽量把大纲、作业题、代码或报错截图发过来，课上共享屏幕，用中英双语把卡点讲透，再一起排查问题，避免把时间耗在来回确认需求上。
 
 ### 为什么建议微信直接约？
-不少机构会先由顾问接待，再匹配老师、再推套餐；对「这周作业卡报错」「后天考试」这种急单，多一轮转述就容易耽误。咨询、排课和上课都是我本人：没有销售剧本，也没有中介抽成。微信发学校、课号、截止日期和题目/报错，直接谈同步跟课、作业拆题还是考前限时练习。若你需要多科目管家或家长周报，大团队可能更合适；若要的是把这门计算机课讲透的人，直约通常更快，责任也更清楚。
+很多家长其实已经尝过机构那一套：先销售、再匹配、再推大课包；钱交出去之后，真正上课的是谁、水平稳不稳、出问题找谁，常常说不清。师资池参差不齐；「名校在读 / 刚毕业」常被说成年轻好沟通，可对算法、系统、报错排查这类课，真正缺的往往不是同龄感，而是把 brief 读透、把奇怪 bug 定住的判断力——那多半来自真正写过产品、踩过坑的经验，不是刚考完同类课就能自动具备的。试听换人、顾问离职后需求重讲、整学期大额预付退费绕、急单加价、一套课件套所有学校——这些不完全是某家运气差，而是中介抽成模式把责任拆散了。咨询、排课和上课都是我本人：没有销售剧本，也没有中介抽成；中文讲透，英文近母语，德语 C1/C2。微信发学校、课号、截止日期和题目/报错，直接谈同步跟课、作业拆题还是考前限时练习。若你需要多科目管家或家长周报，大团队可能更合适；若要的是把这门计算机课讲透的人，直约通常更快，责任也更清楚。
 
 ### 作业和考试都能辅导吗？
 可以，而且这本来就是我日常做得最多的两类课。作业会先一起读懂 brief 和评分点，再梳你能自己写下去的思路，现场对着报错排查；考前则按这门课常考题型和你的薄弱点做限时练习，练的是审题和下手顺序，不是临考前无目的地刷题。

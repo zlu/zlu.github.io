@@ -1915,3 +1915,204 @@ body.teach-page-active .content, body.teach-page-active .site {
     grid-column: 2;
   }
 }
+
+/* Service hubs: featured schools I've taught a lot */
+.teach-hub-featured {
+  list-style: none;
+  margin: 0.75rem 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.teach-hub-featured-item {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--teach-line, #d5dde6);
+  border-radius: 2px;
+  background: #fff;
+}
+
+.teach-hub-featured-uni {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  color: var(--teach-accent, #0f6b6b);
+  text-decoration: none;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+
+.teach-hub-featured-uni:hover {
+  text-decoration: underline;
+}
+
+.teach-hub-featured-abbr {
+  color: var(--teach-muted, #5c6b7a);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.teach-hub-featured-courses {
+  list-style: none;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.teach-hub-featured-courses a {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.55rem;
+  align-items: baseline;
+  color: var(--teach-ink, #1a2332);
+  text-decoration: none;
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.teach-hub-featured-courses a:hover {
+  color: var(--teach-accent, #0f6b6b);
+  text-decoration: underline;
+}
+
+.teach-hub-featured-courses .teach-course-code {
+  color: var(--teach-accent, #0f6b6b);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.teach-hub-featured-courses .teach-course-title {
+  color: var(--teach-muted, #5c6b7a);
+  font-weight: 400;
+}
+
+/* Service hubs: parent-facing landings */
+.teach-service-book {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.25rem 1.75rem;
+  margin: 0.25rem 0 0;
+}
+
+.teach-service-book-copy {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.teach-service-book-copy p {
+  margin: 0 0 0.75rem;
+}
+
+.teach-service-qr {
+  flex: 0 0 auto;
+  width: 148px;
+  height: 148px;
+  border: 1px solid var(--teach-line, #d5dde6);
+  border-radius: 2px;
+  background: #fff;
+}
+
+.teach-uni-index--compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+  column-gap: 0.75rem;
+  row-gap: 0;
+  margin: 0.5rem 0 0.85rem;
+}
+
+.teach-uni-index--compact li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.teach-uni-index--compact a {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.teach-uni-index--compact .teach-count {
+  flex: 0 0 auto;
+  color: var(--teach-muted, #5c6b7a);
+  font-size: 0.85rem;
+}
+
+.teach-uni-more {
+  margin: 0 0 0.85rem;
+  border-top: 1px solid var(--teach-line, #d5dde6);
+  padding-top: 0.35rem;
+}
+
+.teach-uni-more > summary {
+  cursor: pointer;
+  padding: 0.65rem 0;
+  color: var(--teach-accent, #0f6b6b);
+  font-weight: 600;
+  font-size: 1.02rem;
+  list-style: none;
+}
+
+.teach-uni-more > summary::-webkit-details-marker {
+  display: none;
+}
+
+.teach-uni-more > summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.1rem;
+  margin-right: 0.25rem;
+  font-weight: 700;
+}
+
+.teach-uni-more[open] > summary::before {
+  content: "–";
+}
+
+.teach-service-hub .teach-proof {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.teach-service-hub .teach-proof li {
+  position: relative;
+  margin: 0 0 0.55rem;
+  padding: 0 0 0.55rem 1.1rem;
+  border-bottom: 1px solid #eef0f3;
+  color: var(--teach-ink, #1a2332);
+}
+
+.teach-service-hub .teach-proof li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.teach-service-hub .teach-proof li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--teach-accent, #0f6b6b);
+}
+
+@media (max-width: 640px) {
+  .teach-uni-index--compact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teach-service-book {
+    flex-direction: column;
+  }
+}
