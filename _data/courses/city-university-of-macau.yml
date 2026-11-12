@@ -1,9 +1,10 @@
 ---
 university: City University of Macau
 abbr: CityU Macau
-name_cn: "澳门城市大学"
+name_cn: 澳门城市大学
 teaching_folder: 澳门城市大学
 courses:
-- title: Bcs010 數據庫系統
-  material: BCS010-數據庫系統
+  - title: " 數據庫系統"
+    material: BCS010-數據庫系統
+    code: BCS010
 ---
