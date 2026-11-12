@@ -10,4 +10,82 @@ courses:
     title: Introduction to Programming
     material: ecs-032a
     theme: programming
+    meta_description_en: >-
+      ECS 032A UC Davis tutoring (Fall 2026). Gentle Python for non-CS majors
+      (econ and beyond), oriented toward data analysis. Bilingual help on weekly
+      quizzes, Gradescope homework, and the concepts that actually stick.
+    lead_en: >-
+      ECS 032A is built for students outside Computer Science — economics and other
+      majors who need useful Python, not a CS pipeline. The workload is real, but the
+      pacing is gentle: short weekly quizzes instead of midterms, and homework that
+      builds from I/O toward files and data. Success is mostly consistency — show up
+      for every quiz, finish the HWs, and learn the concepts instead of patching
+      until Gradescope goes green.
+    lead_cn: >-
+      ECS 032A 面向非计算机专业（经济等）的同学，目标是写出对自己专业有用的 Python，
+      而不是走 CS 主线。节奏偏温和：用短周测代替期中，作业从输入输出逐步做到文件与数据。
+      真正拉开差距的是坚持——每次 quiz 都去、作业按时交、把概念学透，而不是只会改到
+      Gradescope 变绿。
+    overview_en: >-
+      Introduction to Programming (FQ 2026, sections B01–B06) teaches Python as a
+      practical tool for problem-solving and light data analysis: talking to the user,
+      working with data files, and using built-in structures so you can automate work
+      in your own field. The usual text is Severance’s Python for Everybody (exploring
+      data with Python 3), with lecture readings and a core-Python cheat sheet on
+      Canvas. Assessment is split evenly: about half from frequent in-lab open-note
+      quizzes (best eight count; an optional final pair of comprehensive quizzes can
+      only help), and half from programming homework (eight full assignments after a
+      short welcome task — typically the top six count, with a small share for code
+      comments). Late work often uses a blend of on-time and late scores. Staffed
+      “stay late and code” nights support weeks with due dates. Plan on substantial
+      weekly practice; fluency comes from writing programs, not from rereading slides.
+    overview_cn: >-
+      Introduction to Programming（2026 秋，B01–B06）把 Python 当成解决实际问题、
+      做轻度数据分析的工具：与用户交互、读写数据文件、使用内置数据结构，好把本专业的
+      重复劳动自动化。常用教材是 Severance《Python for Everybody》（用 Python 3
+      探索数据），Canvas 上还有讲义阅读与 Core Python 速查表。成绩大致对半开：一半来自
+      讨论课机房的开卷短测（取最好的八次；可选期末综合测验只会抬分不会拉低），一半来自
+      编程作业（欢迎作业之后约八次完整作业，通常取最高六次，另有一小部分看代码注释）。
+      迟交常按准时分与迟交分的折中计。作业周有 SLAC 晚间答疑。每周要留出够用的练习时间；
+      编程靠写，不靠反复看幻灯片。
+    topics:
+      - en: "Python for non-CS majors — gentle path from first programs to useful scripts"
+        cn: "面向非 CS 专业的 Python：从第一段程序到真正能用的脚本"
+      - en: "Data-oriented work — files, tables of numbers, and built-in structures"
+        cn: "偏数据分析：文件、数值表与内置数据结构"
+      - en: "I/O, control flow, functions, strings, and lists as the weekly building blocks"
+        cn: "输入输出、控制流、函数、字符串与列表——每周的积木"
+      - en: "Textbook spine — Severance, Python for Everybody (Python 3 / exploring data)"
+        cn: "教材主线：Severance《Python for Everybody》（Python 3 / 探索数据）"
+      - en: "FQ 2026 grade mix — quizzes ≈ 50%, homework ≈ 50% (incl. a small comment share)"
+        cn: "2026 秋成绩构成：测验约 50%，作业约 50%（含少量注释分）"
+      - en: "Keys to success — every quiz, every HW cycle, concepts before last-minute patches"
+        cn: "过关关键：每次测验、每轮作业，先懂概念再临期补丁"
+    stuck:
+      - en: "Skipping a quiz week or treating lab quizzes as optional — the best-eight rule still needs attempts"
+        cn: "某周 quiz 缺席，或把机房测验当可选项——即便取最高八次，也得先有成绩可取"
+      - en: "Starting Gradescope the night it is due; autograder feedback arrives too late to revise"
+        cn: "截止当晚才第一次交 Gradescope，测例反馈来不及改"
+      - en: "Homework that ‘runs once’ locally but fails file paths, formatting, or edge inputs"
+        cn: "本地碰巧跑通，却栽在路径、输出格式或边界输入上"
+      - en: "Memorising syntax without the concepts — next week’s data-file task feels brand new"
+        cn: "只背语法不懂概念，下周的数据文件题又像从没学过"
+    session_angles:
+      - en: "Map this week’s reading to one small data task before opening the assignment"
+        cn: "写作业前，先把本周阅读对应到一个小数据任务"
+      - en: "You drive the IDE; we read Gradescope failures as diagnostics, not as a score scare"
+        cn: "你来操作 IDE，我们把 Gradescope 失败当诊断信息，而不是分数惊吓"
+      - en: "Quiz drills in the same open-note, short-problem style as discussion section"
+        cn: "按讨论课开卷短题风格做 quiz 练习"
+      - en: "After each HW, name the concept you reused — that is what the next quiz actually checks"
+        cn: "每次作业后点名你复用的概念——那才是下次 quiz 真正在考的"
+    tutoring:
+      - en: "Lecture sync: bilingual walkthrough of the week’s Python ideas with a data-analysis lens (files, lists, simple summaries)."
+        cn: "同步跟课：用中英双语按数据分析视角过本周 Python 概念（文件、列表、简单汇总）。"
+      - en: "Homework: brief → plan → live debug in your environment; comments that match what the code really does."
+        cn: "作业：拆题 → 梳步骤 → 在你的环境里现场 debug；注释写清代码实际在做什么。"
+      - en: "Quiz prep: short timed drills so weekly lab quizzes and the optional final pair feel familiar."
+        cn: "测验突击：短时限练习，让每周机房 quiz 和可选期末综合测验手感熟悉。"
+      - en: "Success habits: keep the quiz streak, submit HW early enough to iterate, and lock concepts before the next unit."
+        cn: "成功习惯：测验不断档、作业提早交好留改分轮次，并在进入下一单元前把概念钉牢。"
 ---
