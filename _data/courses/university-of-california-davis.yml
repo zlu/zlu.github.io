@@ -1,0 +1,13 @@
+---
+university: University of California, Davis
+abbr: UC Davis
+name_cn: 加州大学戴维斯分校
+teaching_folder: uc-davis
+courses:
+  - code: ecs-032a
+    aliases:
+      - ecs-032av
+    title: Introduction to Programming
+    material: ecs-032a
+    theme: programming
+---
