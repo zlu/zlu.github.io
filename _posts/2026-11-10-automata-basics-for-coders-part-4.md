@@ -246,7 +246,7 @@ Arcs carry only `tick`. The lamp colour is $\lambda$ of the current state, not o
 4. Pressing **On** while already on leaves the lamp on.  
 5. Pressing **Off** while already off leaves the lamp off.
 
-### Assumptions (write them down)
+### Assumptions
 
 1. Power-up starts in `Off`.  
 2. Inputs are instantaneous press events `on`, `off`.  
@@ -304,7 +304,7 @@ Same control behaviour class; different place to write the output. The echo demo
 
 A longer controller brief. Same design habit: inputs, outputs, modes, assumptions, then a Moore diagram with commands **on states**.
 
-### Brief (plain English)
+### Brief
 
 - The oven has a magnetron (cook power) and a lamp.  
 - Events: door opens / closes, user presses Start or Cancel, cook timer expires (`tickDone`).  
@@ -346,6 +346,11 @@ Write $\lambda$ as a pair `(magnetron, lamp)`.
 stateDiagram-v2
     direction LR
     [*] --> Idle
+    Idle: (OFF, OFF)
+    DoorOpen: (OFF, ON)
+    Cooking: (ON, OFF)
+    Paused: (OFF, ON)
+    Done: (OFF, ON)
     Idle --> DoorOpen: doorOpen
     Idle --> Cooking: start
     DoorOpen --> Idle: doorClose
@@ -358,7 +363,7 @@ stateDiagram-v2
     Done --> DoorOpen: doorOpen
 </div>
 
-On paper, write the `(magnetron, lamp)` pair **inside** each bubble. Arcs carry only events.
+Each bubble carries its $\lambda$ pair. Arcs carry only events.
 
 ### Trace against the brief
 
