@@ -624,7 +624,44 @@ module Jekyll
         "method_title_en" => course["method_title_en"].to_s.strip,
         "method_title_cn" => course["method_title_cn"].to_s.strip,
         "method_note_en" => course["method_note_en"].to_s.strip,
-        "method_note_cn" => course["method_note_cn"].to_s.strip
+        "method_note_cn" => course["method_note_cn"].to_s.strip,
+        "sample_slides" => normalize_sample_slides(course["sample_slides"])
+      }
+    end
+
+    # Optional public teaser deck: bilingual copy + image list (never the full PDF).
+    def normalize_sample_slides(raw)
+      return nil unless raw.is_a?(Hash)
+
+      slides = Array(raw["slides"]).filter_map do |item|
+        next unless item.is_a?(Hash)
+
+        src = item["src"].to_s.strip
+        next if src.empty?
+
+        alt_en = item["alt_en"].to_s.strip
+        alt_cn = item["alt_cn"].to_s.strip
+        alt_cn = alt_en if alt_cn.empty?
+        alt_en = alt_cn if alt_en.empty?
+        {
+          "src" => src,
+          "alt_en" => alt_en,
+          "alt_cn" => alt_cn,
+          "caption_en" => item["caption_en"].to_s.strip,
+          "caption_cn" => item["caption_cn"].to_s.strip
+        }
+      end
+      return nil if slides.empty?
+
+      {
+        "title_en" => raw["title_en"].to_s.strip,
+        "title_cn" => raw["title_cn"].to_s.strip,
+        "lead_en" => raw["lead_en"].to_s.strip,
+        "lead_cn" => polish_cn(raw["lead_cn"]),
+        "bullets" => bilingual_items(raw["bullets"]),
+        "slides" => slides,
+        "cta_en" => raw["cta_en"].to_s.strip,
+        "cta_cn" => polish_cn(raw["cta_cn"])
       }
     end
 
@@ -1213,11 +1250,9 @@ module Jekyll
       description = description_en
 
       custom_faq = Array(course["faq"]).select { |t| t.is_a?(Hash) }
-      course_faq = if custom_faq.any?
-                     custom_faq
-                   else
-                     course_faq_items(label_cn, code, title, tutoring, stuck)
-                   end
+      generated_faq = course_faq_items(label_cn, code, title, tutoring, stuck)
+      # Hand-written FAQ prepends defaults (e.g. free sample teaser) instead of replacing.
+      course_faq = custom_faq + generated_faq
 
       topic_kw = focus_topics.first(6).flat_map { |t| [t["en"], t["cn"]] }.compact.map(&:to_s).reject(&:empty?)
       keywords = [
@@ -1291,6 +1326,7 @@ module Jekyll
         "method_title_cn" => course["method_title_cn"].to_s,
         "method_note_en" => course["method_note_en"].to_s,
         "method_note_cn" => course["method_note_cn"].to_s,
+        "sample_slides" => course["sample_slides"],
         "theme_reading" => theme_reading,
         "matheion_lessons" => matheion_lessons,
         "theme_about" => about_topics,

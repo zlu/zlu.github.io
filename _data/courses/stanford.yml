@@ -1,10 +1,11 @@
 ---
 university: Stanford University
 abbr: Stanford
-name_cn: "斯坦福大学"
+name_cn: 斯坦福大学
 courses:
   - code: CS106A
     title: Programming Methodology
+    material: cs106a
   - code: CS106B
     title: Programming Abstractions
   - code: CS107
@@ -17,8 +18,12 @@ courses:
     title: Design and Analysis of Algorithms
   - code: CS221
     title: "Artificial Intelligence: Principles and Techniques"
+    material: cs221-ai-principles-and-techniques
+    theme: machine-learning
   - code: CS229
     title: Machine Learning
+    material: cs229-machine-learning
+    theme: machine-learning
   - code: CS230
     title: Deep Learning
   - code: CS231N

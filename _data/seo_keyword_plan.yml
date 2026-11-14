@@ -207,6 +207,17 @@ entries:
     status: expand
     note: "Linked to teaching/uts/programming2-IPRO002; IPRO001 sibling at /teach/courses/uts/ipro001/; GSC also hits legacy /programming2-java-u503/"
 
+  - primary: uts inef001
+    url: /teach/courses/uts/inef001/
+    scorecard: tutor_leads
+    supporting:
+      - UTS Networking Fundamentals
+      - INEF001 tutoring
+      - UTS Wireshark lab
+      - Kurose networking workshop
+    status: expand
+    note: "Kurose top-down; tutoring tracks = workshops→online quiz, Wireshark/CLI labs, socket programming; legacy /teach/courses/uts/networking/ redirects here"
+
   - primary: uts IWBS001
     url: /teach/courses/uts/iwbs001/
     scorecard: tutor_leads
