@@ -1,0 +1,7 @@
+torch>=2.1
+transformers>=4.45
+accelerate>=0.33
+safetensors>=0.4
+Pillow>=10.0
+# optional; script falls back to passing PIL images if missing
+qwen-vl-utils>=0.0.8
