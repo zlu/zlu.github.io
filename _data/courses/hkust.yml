@@ -35,6 +35,104 @@ courses:
   - title: MSc DDM Written Exam
     code: DDM 理学硕士笔试
     material: MSc DDM Written Exam
+    theme: math-for-cs
+    lead_en: >-
+      HKUST MSc DDM written-exam prep: rebuild the diagnostic’s four parts
+      (calculus, linear algebra, probability, programming logic) in bilingual
+      steps you can write under time.
+    lead_cn: >-
+      港科大 MSc DDM 笔试辅导：按诊断卷四个部分（微积分、线性代数、概率、编程逻辑）
+      用双语把概念与英文步骤练到限时能写出来。
+    overview_en: >-
+      The HKUST MSc in Data-Driven Modeling admission written exam rewards
+      method and English write-ups, not only the final number. Tutoring follows
+      the diagnostic shape: extrema and first-order ODEs, 2×2 eigenpairs,
+      Bayes and stars-and-bars, nested-loop counting and coin-to-bits. A free
+      sample of the concept-review deck is on this page; the full 90-minute pack
+      comes with tutoring.
+    overview_cn: >-
+      港科大 Data-Driven Modeling 理学硕士入学笔试更看重方法与英文书写步骤，而不只是最终数字。
+      辅导对齐诊断卷结构：极值与一阶 ODE、2×2 特征对、Bayes 与 stars-and-bars、嵌套循环计数与
+      硬币到比特。本页有概念复习课件样例；完整 90 分钟讲义在预约辅导后提供。
+    topics:
+      - en: "Calculus — critical points, concavity, separable ODEs"
+        cn: "微积分 — 临界点、凹凸性、可分离 ODE"
+      - en: "Linear algebra — eigenvalues, eigenvectors, discriminant"
+        cn: "线性代数 — 特征值、特征向量、判别式"
+      - en: "Probability — Bayes updates and stars-and-bars counting"
+        cn: "概率 — Bayes 更新与 stars-and-bars 计数"
+      - en: "Programming logic — nested-loop counts, Big-O, fair bits"
+        cn: "编程逻辑 — 嵌套循环计数、Big-O、公平比特"
+    stuck:
+      - en: "Knowing the formula but freezing on English method steps"
+        cn: "会公式，但英文步骤写不出来就卡住"
+      - en: "Mixing posterior vs sensitivity on Bayes-style items"
+        cn: "Bayes 题里把后验与灵敏度搅在一起"
+      - en: "Skipping endpoints on closed-interval global extrema"
+        cn: "闭区间全局极值漏掉端点"
+    sample_slides:
+      title_en: "HKUST MSc DDM written exam — concept review (sample)"
+      title_cn: "港科大 MSc DDM 笔试概念复习（免费样例）"
+      lead_en: >-
+        Six slides from the 90-minute concept-review deck: title, session roadmap,
+        and the four part intros. Full worked examples and the remaining slides
+        come with tutoring — book on WeChat.
+      lead_cn: >-
+        来自 90 分钟概念复习课件的 6 页样例：封面、课程路线图，以及 A–D 四部分导言。
+        完整例题与其余页在预约辅导后提供 — 微信约课即可。
+      bullets:
+        - en: "Calculus — extrema & first-order ODE"
+          cn: "微积分 — 极值与一阶 ODE"
+        - en: "Linear algebra — eigenpairs & discriminant"
+          cn: "线性代数 — 特征对与判别式"
+        - en: "Probability — Bayes & stars-and-bars"
+          cn: "概率 — Bayes 与 stars-and-bars"
+        - en: "Programming logic — nested loops & random bits"
+          cn: "编程逻辑 — 嵌套循环与随机比特"
+      slides:
+        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/01-title.webp
+          alt_en: "HKUST MSc DDM written exam concept review title slide"
+          alt_cn: "港科大 MSc DDM 笔试概念复习封面页"
+          caption_en: "Title — 90-minute concept walkthrough"
+          caption_cn: "封面 — 90 分钟概念串讲"
+        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/02-roadmap.webp
+          alt_en: "Session roadmap covering calculus, linear algebra, probability, and programming logic"
+          alt_cn: "课程路线图：微积分、线性代数、概率与编程逻辑"
+          caption_en: "Roadmap — four parts in 90 minutes"
+          caption_cn: "路线图 — 四部分共 90 分钟"
+        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/03-calculus.webp
+          alt_en: "Part A calculus intro — extrema and one ODE for the DDM written exam"
+          alt_cn: "Part A 微积分导言 — DDM 笔试极值与一道 ODE"
+          caption_en: "Part A · Calculus"
+          caption_cn: "Part A · 微积分"
+        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/04-linear-algebra.webp
+          alt_en: "Part B linear algebra intro — eigenpairs for the DDM written exam"
+          alt_cn: "Part B 线性代数导言 — DDM 笔试特征对"
+          caption_en: "Part B · Linear algebra"
+          caption_cn: "Part B · 线性代数"
+        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/05-probability.webp
+          alt_en: "Part C probability intro — Bayes and counting for the DDM written exam"
+          alt_cn: "Part C 概率导言 — DDM 笔试 Bayes 与计数"
+          caption_en: "Part C · Probability"
+          caption_cn: "Part C · 概率"
+        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/06-programming-logic.webp
+          alt_en: "Part D programming logic intro — nested loops and coin-to-bits"
+          alt_cn: "Part D 编程逻辑导言 — 嵌套循环与硬币到比特"
+          caption_en: "Part D · Programming logic"
+          caption_cn: "Part D · 编程逻辑"
+      cta_en: "Book on WeChat for the full concept-review pack + tutoring"
+      cta_cn: "微信预约，领取完整概念复习课件 + 一对一辅导"
+    faq:
+      - q_en: "Is there a free sample of the DDM concept-review slides?"
+        q_cn: "有没有 DDM 概念复习课件的免费样例？"
+        a_en: >-
+          Yes — this page shows the title, roadmap, and four part-intro slides.
+          The full 90-minute deck (worked examples, notation sheet, tactics,
+          homework) is for students who book tutoring; message WeChat with
+          HKUST MSc DDM written exam.
+        a_cn: >-
+          有——本页公开封面、路线图和 A–D 四部分导言。完整 90 分钟课件（例题、符号表、
+          应试习惯、作业）在预约辅导后提供；微信请注明港科大 MSc DDM 笔试。
   - title: Fin Ml
     material: fin-ml
 ---

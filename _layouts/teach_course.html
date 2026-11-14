@@ -124,6 +124,58 @@ layout: default
   {% include teach-evidence.html %}
   {% endif %}
 
+  {% if page.sample_slides and page.sample_slides.slides and page.sample_slides.slides.size > 0 %}
+  {% assign sample = page.sample_slides %}
+  {% assign sample_title_en = sample.title_en | default: "" | strip %}
+  {% if sample_title_en == "" %}{% assign sample_title_en = "Concept review sample" %}{% endif %}
+  {% assign sample_title_cn = sample.title_cn | default: "" | strip %}
+  {% if sample_title_cn == "" %}{% assign sample_title_cn = "概念复习样例" %}{% endif %}
+  {% assign sample_cta_en = sample.cta_en | default: "" | strip %}
+  {% if sample_cta_en == "" %}{% assign sample_cta_en = "Book on WeChat for the full pack" %}{% endif %}
+  {% assign sample_cta_cn = sample.cta_cn | default: "" | strip %}
+  {% if sample_cta_cn == "" %}{% assign sample_cta_cn = "微信预约领取完整课件" %}{% endif %}
+  <section class="teach-landing-section teach-course-sample" aria-labelledby="teach-course-sample-title">
+    <h2 id="teach-course-sample-title"
+        data-en="{{ sample_title_en }}"
+        data-cn="{{ sample_title_cn }}">{{ sample_title_cn }}</h2>
+    {% if sample.lead_en != "" or sample.lead_cn != "" %}
+    <p class="teach-section-note"
+       data-en="{{ sample.lead_en }}"
+       data-cn="{{ sample.lead_cn }}">{{ sample.lead_cn }}</p>
+    {% endif %}
+    {% if sample.bullets and sample.bullets.size > 0 %}
+    <ul class="teach-sample-bullets">
+      {% for b in sample.bullets %}
+      <li data-en="{{ b.en }}" data-cn="{{ b.cn }}">{{ b.cn }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="teach-sample-slides">
+      {% for slide in sample.slides %}
+      <figure class="teach-sample-slide">
+        <img src="{{ slide.src }}"
+             alt="{{ slide.alt_cn | default: slide.alt_en }}"
+             width="1440"
+             height="810"
+             {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+             decoding="async">
+        {% if slide.caption_cn != "" or slide.caption_en != "" %}
+        <figcaption
+          data-en="{{ slide.caption_en }}"
+          data-cn="{{ slide.caption_cn }}">{{ slide.caption_cn }}</figcaption>
+        {% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    <p class="teach-sample-cta-note"
+       data-en="Full deck stays with tutoring — not a public download."
+       data-cn="完整课件随辅导提供，不设公开下载。">完整课件随辅导提供，不设公开下载。</p>
+    <a class="btn btn-primary" href="/teach/#teach-book-qr"
+       data-en="{{ sample_cta_en }}"
+       data-cn="{{ sample_cta_cn }}">{{ sample_cta_cn }}</a>
+  </section>
+  {% endif %}
+
   {% if page.course_faq and page.course_faq.size > 0 %}
   {% assign faq_title_en = page.faq_title_en | default: "" | strip %}
   {% if faq_title_en == "" %}{% assign faq_title_en = "FAQ for this course" %}{% endif %}

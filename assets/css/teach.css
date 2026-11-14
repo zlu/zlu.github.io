@@ -1267,6 +1267,100 @@ body.teach-page-active .content, body.teach-page-active .site {
   top: 0.55em;
 }
 
+.teach-course-sample {
+  margin: 0 0 1.75rem;
+}
+
+.teach-sample-bullets {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.teach-sample-bullets li {
+  position: relative;
+  padding-left: 0.95rem;
+  color: var(--teach-ink, #1a2332);
+  font-size: 0.95em;
+  line-height: 1.45;
+}
+
+.teach-sample-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--teach-accent, #0f6b6b);
+}
+
+.teach-sample-slides {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0 0 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .teach-sample-slides {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.teach-sample-slide {
+  margin: 0;
+  border: 1px solid var(--teach-line, #d5dde6);
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.teach-sample-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.teach-sample-slide figcaption {
+  padding: 0.45rem 0.65rem 0.55rem;
+  font-size: 0.88em;
+  color: var(--teach-muted, #5c6b7a);
+  border-top: 1px solid var(--teach-line, #d5dde6);
+}
+
+.teach-sample-cta-note {
+  margin: 0 0 0.75rem;
+  font-size: 0.92em;
+  color: var(--teach-muted, #5c6b7a);
+}
+
+.teach-course-sample .btn {
+  display: inline-block;
+  padding: 0.6rem 1.05rem;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.teach-course-sample .btn-primary {
+  background: var(--teach-accent, #0f6b6b);
+  border: 1.5px solid var(--teach-accent, #0f6b6b);
+  color: #fff;
+}
+
+.teach-course-sample .btn-primary:hover {
+  background: var(--teach-accent-strong, #0c5757);
+  border-color: var(--teach-accent-strong, #0c5757);
+  color: #fff;
+}
+
 .teach-course-matheion {
   margin: 0 0 1.75rem;
 }
