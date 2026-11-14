@@ -1,38 +1,41 @@
 ---
 university: The Hong Kong University of Science and Technology
 abbr: HKUST
-name_cn: "香港科技大学"
+name_cn: 香港科技大学
 teaching_folder: hkust
 courses:
-- title: Fin Ml
-  material: fin-ml
-- title: Dasc
-- code: COMP1023
-  title: COMP1023
-  material: comp1023
-- code: DASC2010
-  title: Calculus for Data Analytics in Science
-  material: dasc2010
-- code: COMP1002
-  title: Introduction to Programming
-- code: COMP1021
-  title: Introduction to Programming with Python
-- code: COMP1022P
-  title: Introduction to Computing with Java
-- code: COMP2011
-  title: Programming with C++
-- code: COMP2012
-  title: Object-Oriented Programming and Data Structures
-- code: COMP2611
-  title: Computer Organization
-- code: COMP2711
-  title: Discrete Mathematical Tools for Computer Science
-- code: COMP3711
-  title: Design and Analysis of Algorithms
-- code: COMP4211
-  title: Machine Learning
-- code: COMP4331
-  title: Introduction to Data Mining
-- code: COMP4411
-  title: Computer Graphics
+  - code: COMP1002
+    title: Introduction to Programming
+  - code: COMP1021
+    title: Introduction to Programming with Python
+  - code: COMP1022P
+    title: Introduction to Computing with Java
+  - code: COMP1023
+    title: COMP1023
+    material: comp1023
+  - code: COMP2011
+    title: Programming with C++
+  - code: COMP2012
+    title: Object-Oriented Programming and Data Structures
+  - code: COMP2611
+    title: Computer Organization
+  - code: COMP2711
+    title: Discrete Mathematical Tools for Computer Science
+  - code: COMP3711
+    title: Design and Analysis of Algorithms
+  - code: COMP4211
+    title: Machine Learning
+  - code: COMP4331
+    title: Introduction to Data Mining
+  - code: COMP4411
+    title: Computer Graphics
+  - code: DASC2010
+    title: Calculus for Data Analytics in Science
+    material: dasc2010
+  - title: MSc DDM Written Exam
+    code: DDM 理学硕士笔试
+    material: MSc DDM Written Exam
+  - title: Dasc
+  - title: Fin Ml
+    material: fin-ml
 ---
