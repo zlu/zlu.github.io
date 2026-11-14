@@ -1,10 +1,61 @@
 ---
 university: Lehigh University
 abbr: Lehigh
-name_cn: "里海大学"
+name_cn: 里海大学
 teaching_folder: lehigh-university
 courses:
 - code: ENGR 010
   title: Applied Engineering Computer Methods
   material: ENGR 010
+  theme: programming
+  meta_description_en: ENGR 010 Lehigh tutoring (Applied Engineering Computer Methods). Assignment brief
+    (“E4 Manufacturing Data Level C”) makes sense in class, freezes you…
+  lead_en: ENGR 010 Applied Engineering Computer Methods at Lehigh University is where briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Private materials show assignment briefs
+    / labs on disk, notebooks, code submissions / practice files. The hard part is turning that arc into
+    a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在里海大学上 ENGR 010，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到磁盘上的作业 brief / lab、notebook、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: ENGR 010 Applied Engineering Computer Methods sits in programming & software construction.
+    Evidence from the course folder points to Programming foundations and debugging; Web / mobile app
+    structure. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit.
+  overview_cn: ENGR 010 是里海大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Notebook workflows the marker can re-run
+    cn: 改卷人能复跑的 notebook 工作流
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“E4 Manufacturing Data Level C”) makes sense in class, freezes you alone
+    cn: 作业 brief（「E4 Manufacturing Data Level C」）课上听得懂，自己对着就停住
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  tutoring:
+  - en: 'Lecture sync for ENGR 010: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 ENGR 010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as E4 Manufacturing Data Level C, E4 Manufacturing
+      Data Level A, with you at the keyboard.'
+    cn: 作业辅导：针对 E4 Manufacturing Data Level C, E4 Manufacturing Data Level A 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

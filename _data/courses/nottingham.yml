@@ -1,7 +1,7 @@
 ---
 university: University of Nottingham
 abbr: Nottingham
-name_cn: "诺丁汉大学"
+name_cn: 诺丁汉大学
 teaching_folder: u-nottingham
 courses:
 - code: COMP4030
@@ -26,4 +26,58 @@ courses:
   title: Computer Vision
 - title: Eeee4119 Ai And Intelligent Systems
   material: eeee4119-ai-and-intelligent-systems
+  code: EEEE4119
+  theme: machine-learning
+  meta_description_en: EEEE4119 Nottingham tutoring (Eeee4119 Ai And Intelligent Systems). Tool output
+    produced, write-up cannot defend method choice?
+  lead_en: EEEE4119 Eeee4119 Ai And Intelligent Systems at University of Nottingham is where method names
+    blur together until pipelines, metrics, and write-ups diverge. Private materials show lecture and
+    practice materials. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在诺丁汉大学上 EEEE4119，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: EEEE4119 Eeee4119 Ai And Intelligent Systems sits in machine learning & ai. Evidence from
+    the course folder points to Neural nets / deep learning / AI; ML pipelines, features, and model choice.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: EEEE4119 是诺丁汉大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、ML
+    流水线、特征与模型选择这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Supervised vs unsupervised intuition
+    cn: 监督 / 无监督学习的直觉区分
+  - en: Loss, gradients, and what “training” actually updates
+    cn: 损失、梯度，以及“训练”到底在更新什么
+  - en: Train / validation / test splits and leakage
+    cn: 训练 / 验证 / 测试划分与数据泄漏
+  - en: Linear models, logistic regression, and decision boundaries
+    cn: 线性模型、逻辑回归与决策边界
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model “works” but the report cannot explain why
+    cn: 模型能跑，但报告说不清为什么有效
+  - en: Lecture slides move faster than the math catches up
+    cn: 课件节奏快于数学跟进速度
+  session_angles:
+  - en: Map the assignment brief to a short concept checklist
+    cn: 把作业 brief 映射成一份短概念清单
+  - en: Live-debug the failing cell or metric with you driving the keyboard
+    cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+  - en: Tighten the write-up so claims match the experiments
+    cn: 收紧报告表述，让结论与实验一致
+  tutoring:
+  - en: 'Lecture sync for EEEE4119: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 EEEE4119 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

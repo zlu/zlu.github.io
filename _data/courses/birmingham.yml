@@ -1,35 +1,553 @@
 ---
 university: University of Birmingham
 abbr: Birmingham
-name_cn: "伯明翰大学"
+name_cn: 伯明翰大学
 teaching_folder: u-birmingham
 courses:
-  - title: Database And Web Programming
-    material: Database and Web Programming
-    code: Database And Web Programming
-  - title: LC Artificial Intelligence 1
-    material: LC Artificial Intelligence 1
-    code: LC Artificial Intelligence 1
-  - title: LMLI Artificial Intelligence And Machine Learning
-    material: LMLI Artificial Intelligence and Machine Learning
-    code: LMLI Artificial Intelligence And Machine Learning
-  - title: Data Structures and Algorithms
-    material: DSA 24-25
-    code: Data Structures and Algorithms
-  - title: LM Data Structures, Algorithms, And Databases
-    material: LM Data Structures, Algorithms, and Databases
-    code: LM Data Structures, Algorithms, And Databases
-  - title: Computer Systems
-    material: Computer Systems
-    code: Computer Systems
-  - title: LI Artificial Intelligence 2
-    material: LI Artificial Intelligence 2
-    code: LI Artificial Intelligence 2
-  - material: 29903 - LI Multidisciplinary Systems and Software Engineering
-    code: "29903"
-    title: LI Multidisciplinary Systems and Software Engineering
-  - material: 07-3838153lm-analytics-micro-course-birmingham-business-school
-    title: LM Analytics Micro-Course
-    department: Birmingham Business School
-    code: 07-38153
+- title: Database and Web Programming
+  material: Database and Web Programming
+  code: Database And Web Programming
+  theme: databases
+  meta_description_en: Database And Web Programming Birmingham tutoring (Database and Web Programming).
+    Weekly lecture arc moves on before last week’s method is solid?
+  lead_en: Database and Web Programming at University of Birmingham is where one wrong schema or join
+    quietly breaks every later query. Private materials show weekly notes spanning roughly week 6–6, code
+    submissions / practice files. The hard part is turning that arc into a method you can repeat on the
+    next brief — not rereading slides the night before.
+  lead_cn: 在伯明翰大学上 Database And Web Programming，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到大约第 6–6 周的周课笔记、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: Database and Web Programming sits in databases & information systems. Evidence from the
+    course folder points to SQL, schema design, and databases; Security / privacy threat models and labs;
+    Programming foundations and debugging; Web / mobile app structure. There is a weekly arc (about week
+    6–6) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: Database And Web Programming 是伯明翰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema
+    与数据库、安全 / 隐私威胁模型与实验、编程基础与调试这些点转。大约第 6–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: 'Week 6: 9 comprehensive quiz'
+    cn: 第 6 周：9 comprehensive quiz
+  - en: 'Week 6: 9 quiz questions only'
+    cn: 第 6 周：9 quiz questions only
+  - en: 'Week 6: ACTIVATE USER'
+    cn: 第 6 周：ACTIVATE USER
+  - en: 'Week 6: AbstractAuditingEntity'
+    cn: 第 6 周：AbstractAuditingEntity
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for Database And Web Programming outruns bilingual notes
+    cn: Database And Web Programming 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  tutoring:
+  - en: 'Lecture sync for Database And Web Programming: bilingual catch-up so workshop / tutorial language
+      matches the lectures.'
+    cn: 按 Database And Web Programming 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Artificial Intelligence 1
+  material: LC Artificial Intelligence 1
+  code: LC AI1
+  theme: machine-learning
+  meta_description_en: LC AI1 Birmingham tutoring (Artificial Intelligence 1). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: LC Artificial Intelligence 1 at University of Birmingham is where method names blur together
+    until pipelines, metrics, and write-ups diverge. Private materials show weekly notes spanning roughly
+    week 1–11, assignment briefs / labs on disk, notebooks. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在伯明翰大学上 LC Artificial Intelligence 1，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到大约第 1–11 周的周课笔记、磁盘上的作业
+    brief / lab、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: LC Artificial Intelligence 1 sits in machine learning & ai. Evidence from the course folder
+    points to Neural nets / deep learning / AI; ML pipelines, features, and model choice; Algorithms,
+    ADTs, and complexity. There is a weekly arc (about week 1–11) plus assessed work that expects you
+    to apply the same ideas under deadline pressure. Students stall when terminology outruns notes, when
+    a demo makes sense in class but not alone, or when the write-up / autograder asks for a method the
+    notebook never made explicit.
+  overview_cn: LC Artificial Intelligence 1 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络
+    / 深度学习 / AI、ML 流水线、特征与模型选择、算法、ADT 与复杂度这些点转。大约第 1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 1: W1.1 Intro canvas'
+    cn: 第 1 周：W1.1 Intro canvas
+  - en: 'Week 1: W1.2 Differentiation canvas'
+    cn: 第 1 周：W1.2 Differentiation canvas
+  - en: 'Week 2: 2019 Building energy performance forecasting A multiple l…'
+    cn: 第 2 周：2019 Building energy performance forecasting A multiple l…
+  - en: 'Week 2: W2.1 Intro to Supervised Learnin canvas'
+    cn: 第 2 周：W2.1 Intro to Supervised Learnin canvas
+  - en: 'Week 2: W2.2 Linear Regression and Gradient Descent canvas'
+    cn: 第 2 周：W2.2 Linear Regression and Gradient Descent canvas
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“A37228 LC Artificial Intelligence 1 Main v2”) makes sense in class, freezes
+      you alone
+    cn: 作业 brief（「A37228 LC Artificial Intelligence 1 Main v2」）课上听得懂，自己对着就停住
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for LC Artificial Intelligence 1: bilingual catch-up so workshop / tutorial language
+      matches the lectures.'
+    cn: 按 LC Artificial Intelligence 1 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as A37228 LC Artificial Intelligence 1 Main
+      v2, with you at the keyboard.'
+    cn: 作业辅导：针对 A37228 LC Artificial Intelligence 1 Main v2 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Artificial Intelligence and Machine Learning
+  material: LMLI Artificial Intelligence and Machine Learning
+  code: LMLI AI/ML
+  theme: machine-learning
+  meta_description_en: LMLI AI/ML Birmingham tutoring (Artificial Intelligence and…). Tool output produced,
+    write-up cannot defend method choice? Bilingual Chinese/English help.
+  lead_en: LMLI Artificial Intelligence And Machine Learning Artificial Intelligence and Machine Learning
+    at University of Birmingham is where method names blur together until pipelines, metrics, and write-ups
+    diverge. Private materials show assignment briefs / labs on disk. The hard part is turning that arc
+    into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在伯明翰大学上 LMLI Artificial Intelligence And Machine Learning，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到磁盘上的作业
+    brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: LMLI Artificial Intelligence And Machine Learning Artificial Intelligence and Machine Learning
+    sits in machine learning & ai. Evidence from the course folder points to Neural nets / deep learning
+    / AI; ML pipelines, features, and model choice; SQL, schema design, and databases; Networking layers,
+    packets, and protocols. Assessed work expects you to apply lecture ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: LMLI Artificial Intelligence And Machine Learning 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络
+    / 深度学习 / AI、ML 流水线、特征与模型选择、SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“4QQMN909 Full Coursework Assessment Brief”) makes sense in class, freezes you
+      alone
+    cn: 作业 brief（「4QQMN909 Full Coursework Assessment Brief」）课上听得懂，自己对着就停住
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model “works” but the report cannot explain why
+    cn: 模型能跑，但报告说不清为什么有效
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Map the assignment brief to a short concept checklist
+    cn: 把作业 brief 映射成一份短概念清单
+  - en: Live-debug the failing cell or metric with you driving the keyboard
+    cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+  tutoring:
+  - en: 'Lecture sync for LMLI Artificial Intelligence And Machine Learning: bilingual catch-up so workshop
+      / tutorial language matches the lectures.'
+    cn: 按 LMLI Artificial Intelligence And Machine Learning 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial
+      会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as 4QQMN909 Full Coursework Assessment Brief,
+      with you at the keyboard.'
+    cn: 作业辅导：针对 4QQMN909 Full Coursework Assessment Brief 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: DSA 24 25
+  material: DSA 24-25
+  code: Data Structures and Algorithms
+  theme: algorithms
+  meta_description_en: Data Structures and Algorithms Birmingham tutoring (DSA 24 25). Weekly lecture
+    arc moves on before last week’s method is solid?
+  lead_en: Data Structures and Algorithms DSA 24 25 at University of Birmingham is where invariants, complexity
+    claims, and code must stay aligned under time pressure. Private materials show weekly notes spanning
+    roughly week 7–11. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在伯明翰大学上 Data Structures and Algorithms，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到大约第 7–11 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: Data Structures and Algorithms DSA 24 25 sits in algorithms & data structures. Evidence
+    from the course folder points to Algorithms, ADTs, and complexity. There is a weekly arc (about week
+    7–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: Data Structures and Algorithms 是伯明翰大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT
+    与复杂度这些点转。大约第 7–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 11: final (1)'
+    cn: 第 11 周：final (1)
+  - en: Asymptotic complexity and comparing candidates
+    cn: 渐近复杂度与方案比较
+  - en: Arrays, lists, trees, heaps, hash tables
+    cn: 数组、链表、树、堆、哈希表
+  - en: Sorting, searching, and graph traversals
+    cn: 排序、搜索与图遍历
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  tutoring:
+  - en: 'Lecture sync for Data Structures and Algorithms: bilingual catch-up so workshop / tutorial language
+      matches the lectures.'
+    cn: 按 Data Structures and Algorithms 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Data Structures, Algorithms, and Databases
+  material: LM Data Structures, Algorithms, and Databases
+  code: LM DSA/DB
+  theme: algorithms
+  meta_description_en: LM DSA/DB Birmingham tutoring (Data Structures, Algorithms, and…). Weekly lecture
+    arc moves on before last week’s method is solid?
+  lead_en: LM Data Structures, Algorithms, And Databases Data Structures, Algorithms, and Databases at
+    University of Birmingham is where one wrong schema or join quietly breaks every later query. Private
+    materials show weekly notes spanning roughly week 1–11. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在伯明翰大学上 LM Data Structures, Algorithms, And Databases，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到大约第
+    1–11 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: LM Data Structures, Algorithms, And Databases Data Structures, Algorithms, and Databases
+    sits in databases & information systems. Evidence from the course folder points to SQL, schema design,
+    and databases; Computer architecture and organisation; Algorithms, ADTs, and complexity. There is
+    a weekly arc (about week 1–11) plus assessed work that expects you to apply the same ideas under deadline
+    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
+    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: LM Data Structures, Algorithms, And Databases 是伯明翰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema
+    与数据库、计算机体系结构与组成、算法、ADT 与复杂度这些点转。大约第 1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 1: DSAD Lecture1'
+    cn: 第 1 周：DSAD Lecture1
+  - en: 'Week 1: DSAD Lecture2'
+    cn: 第 1 周：DSAD Lecture2
+  - en: 'Week 1: DSAD Lecture3'
+    cn: 第 1 周：DSAD Lecture3
+  - en: 'Week 2: DSAD Lecture1'
+    cn: 第 2 周：DSAD Lecture1
+  - en: 'Week 2: DSAD Lecture2&3'
+    cn: 第 2 周：DSAD Lecture2&3
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for LM Data Structures, Algorithms, And Databases outruns bilingual notes
+    cn: LM Data Structures, Algorithms, And Databases 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  tutoring:
+  - en: 'Lecture sync for LM Data Structures, Algorithms, And Databases: bilingual catch-up so workshop
+      / tutorial language matches the lectures.'
+    cn: 按 LM Data Structures, Algorithms, And Databases 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial
+      会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Computer Systems
+  material: Computer Systems
+  code: Computer Systems
+  theme: systems
+  meta_description_en: Computer Systems Birmingham tutoring (Computer Systems). Stuck on labs that fail
+    only under concurrency or load? Bilingual Chinese/English help.
+  lead_en: Computer Systems at University of Birmingham is where abstractions stack fast and labs fail
+    for reasons that look opaque. Private materials show lecture and practice materials. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在伯明翰大学上 Computer Systems，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: Computer Systems sits in systems, networks & architecture. Evidence from the course folder
+    points to Networking layers, packets, and protocols; OS / systems programming; Computer architecture
+    and organisation; Algorithms, ADTs, and complexity. Students stall when terminology outruns notes,
+    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
+    the notebook never made explicit.
+  overview_cn: Computer Systems 是伯明翰大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、操作系统
+    / 系统编程、计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  stuck:
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture vocabulary for Computer Systems outruns bilingual notes
+    cn: Computer Systems 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  - en: Instrument, reproduce, then patch the root cause
+    cn: 先插桩复现，再修根因
+  - en: Translate jargon into a bilingual cheat sheet for exams
+    cn: 把术语整理成考试用双语速查
+  tutoring:
+  - en: 'Lecture sync for Computer Systems: bilingual catch-up so workshop / tutorial language matches
+      the lectures.'
+    cn: 按 Computer Systems 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Artificial Intelligence 2
+  material: LI Artificial Intelligence 2
+  code: LI AI2
+  theme: machine-learning
+  meta_description_en: LI AI2 Birmingham tutoring (Artificial Intelligence 2). Tool output produced, write-up
+    cannot defend method choice? Bilingual Chinese/English help.
+  lead_en: LI Artificial Intelligence 2 at University of Birmingham is where method names blur together
+    until pipelines, metrics, and write-ups diverge. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在伯明翰大学上 LI Artificial Intelligence 2，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: LI Artificial Intelligence 2 sits in machine learning & ai. Evidence from the course folder
+    points to Neural nets / deep learning / AI; Math foundations and proof habits. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: LI Artificial Intelligence 2 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络
+    / 深度学习 / AI、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Supervised vs unsupervised intuition
+    cn: 监督 / 无监督学习的直觉区分
+  - en: Loss, gradients, and what “training” actually updates
+    cn: 损失、梯度，以及“训练”到底在更新什么
+  - en: Train / validation / test splits and leakage
+    cn: 训练 / 验证 / 测试划分与数据泄漏
+  - en: Linear models, logistic regression, and decision boundaries
+    cn: 线性模型、逻辑回归与决策边界
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model “works” but the report cannot explain why
+    cn: 模型能跑，但报告说不清为什么有效
+  - en: Lecture slides move faster than the math catches up
+    cn: 课件节奏快于数学跟进速度
+  session_angles:
+  - en: Map the assignment brief to a short concept checklist
+    cn: 把作业 brief 映射成一份短概念清单
+  - en: Live-debug the failing cell or metric with you driving the keyboard
+    cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+  - en: Tighten the write-up so claims match the experiments
+    cn: 收紧报告表述，让结论与实验一致
+  tutoring:
+  - en: 'Lecture sync for LI Artificial Intelligence 2: bilingual catch-up so workshop / tutorial language
+      matches the lectures.'
+    cn: 按 LI Artificial Intelligence 2 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- material: 29903 - LI Multidisciplinary Systems and Software Engineering
+  code: '29903'
+  title: LI Multidisciplinary Systems and Software Engineering
+  theme: programming
+  meta_description_en: 29903 Birmingham tutoring (LI Multidisciplinary Systems and…). Assignment brief
+    (“Lab 1 Rectifier 2026”) makes sense in class, freezes you alone?
+  lead_en: 29903 LI Multidisciplinary Systems and Software Engineering at University of Birmingham is
+    where briefs, tooling, and autograder edge cases hit harder than syntax itself. Private materials
+    show assignment briefs / labs on disk, notebooks. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在伯明翰大学上 29903，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到磁盘上的作业 brief / lab、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: 29903 LI Multidisciplinary Systems and Software Engineering sits in programming & software
+    construction. Evidence from the course folder points to Programming foundations and debugging. Assessed
+    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: 29903 是伯明翰大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Notebook workflows the marker can re-run
+    cn: 改卷人能复跑的 notebook 工作流
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  stuck:
+  - en: Assignment brief (“Lab 1 Rectifier 2026”) makes sense in class, freezes you alone
+    cn: 作业 brief（「Lab 1 Rectifier 2026」）课上听得懂，自己对着就停住
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  tutoring:
+  - en: 'Lecture sync for 29903: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 29903 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as Lab 1 Rectifier 2026, Lab 1 Rectifier 2026
+      ANSWERS, with you at the keyboard.'
+    cn: 作业辅导：针对 Lab 1 Rectifier 2026, Lab 1 Rectifier 2026 ANSWERS 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- material: 07-3838153lm-analytics-micro-course-birmingham-business-school
+  title: LM Analytics Micro-Course
+  department: Birmingham Business School
+  code: 07-38153
+  theme: data-science
+  meta_description_en: 07-38153 Birmingham tutoring (LM Analytics Micro-Course). Tool output produced,
+    write-up cannot defend method choice? Bilingual Chinese/English help.
+  lead_en: 07-38153 LM Analytics Micro-Course at University of Birmingham is where messy notebooks and
+    weak method stories lose marks even when a model runs. Private materials show lecture and practice
+    materials. The hard part is turning that arc into a method you can repeat on the next brief — not
+    rereading slides the night before.
+  lead_cn: 在伯明翰大学上 07-38153，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: 07-38153 LM Analytics Micro-Course sits in data science & analytics. Evidence from the
+    course folder points to Programming foundations and debugging. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: 07-38153 是伯明翰大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  - en: Last-minute modelling with no data story
+    cn: 临近 DDL 才建模，没有数据故事
+  - en: Lecture vocabulary for 07-38153 outruns bilingual notes
+    cn: 07-38153 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  - en: Sanity-check joins, missingness, and leakage risks
+    cn: 核验 join、缺失值与泄漏风险
+  - en: Shape the final narrative and figure set
+    cn: 定稿叙事与图表组合
+  tutoring:
+  - en: 'Lecture sync for 07-38153: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 07-38153 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

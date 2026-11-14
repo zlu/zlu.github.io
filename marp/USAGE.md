@@ -12,6 +12,8 @@ Lives with the site repo: [`zlu.github.io/marp`](https://github.com/zlu/zlu.gith
 | `TEMPLATE.pdf` | Visual preview of the template |
 | `marp.config.mjs` | CLI defaults (`html`, theme set) |
 
+Teaching decks live in each course folder under `teaching/…/decks/` (not here). Point those files at this theme via absolute path in VS Code settings.
+
 ## Preview in VS Code
 
 In this repo (or any deck that points at the theme):
@@ -84,7 +86,9 @@ Put on the line **before** the slide content:
 
 Use `$inline$` and `$$display$$` only. LaTeX `\(...\)` will not render in Marp.
 
-**Do not put `$...$` inside raw HTML** (`<div>`, `<h3>`, callouts). Marp’s math engine skips HTML blocks — use Unicode (`f″ > 0`) or keep the formula in Markdown outside the HTML.
+**Do not put `$...$` inside raw HTML** (`<div>`, `<h3>`, callouts, roadmap rows). Marp’s math engine skips HTML blocks — use Unicode (`f″ > 0`, `β̂`) or keep the formula in Markdown **outside** the HTML.
+
+**Tables:** prefer bullets or a display `$$...$$` above a plain-language list. Pipe tables often mangle `$...$` (especially subscripts / `\mid`).
 
 ## Brand tokens
 

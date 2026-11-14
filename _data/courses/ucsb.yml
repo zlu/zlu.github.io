@@ -1,10 +1,60 @@
 ---
-university: "University of California, Santa Barbara"
+university: University of California, Santa Barbara
 abbr: UCSB
-name_cn: "加州大学圣塔芭芭拉分校"
+name_cn: 加州大学圣塔芭芭拉分校
 teaching_folder: ucsb
 courses:
-  - code: COMPSC_16
-    material: compsc16
-    title: Problem Solving with Computers I
+- code: COMPSC_16
+  material: compsc16
+  title: Problem Solving with Computers I
+  theme: programming
+  meta_description_en: COMPSC_16 UCSB tutoring (Problem Solving with Computers I). Code that “almost works”
+    with no systematic debug plan?
+  lead_en: COMPSC_16 Problem Solving with Computers I at University of California, Santa Barbara is where
+    briefs, tooling, and autograder edge cases hit harder than syntax itself. Private materials show lecture
+    and practice materials. The hard part is turning that arc into a method you can repeat on the next
+    brief — not rereading slides the night before.
+  lead_cn: 在加州大学圣塔芭芭拉分校上 COMPSC_16，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMPSC_16 Problem Solving with Computers I sits in programming & software construction.
+    Evidence from the course folder points to Computer architecture and organisation; Algorithms, ADTs,
+    and complexity; Automata, formal languages, and proofs; Math foundations and proof habits. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMPSC_16 是加州大学圣塔芭芭拉分校「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成、算法、ADT
+    与复杂度、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Automata, formal languages, and proofs
+    cn: 自动机、形式语言与证明
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  stuck:
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for COMPSC_16 outruns bilingual notes
+    cn: COMPSC_16 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Refactor for clarity before chasing extra marks
+    cn: 先为清晰度重构，再追额外分数
+  tutoring:
+  - en: 'Lecture sync for COMPSC_16: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMPSC_16 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

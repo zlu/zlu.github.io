@@ -1,9 +1,61 @@
 ---
 university: University of North Carolina at Chapel Hill
 abbr: UNC
-name_cn: "北卡罗来纳大学教堂山分校"
+name_cn: 北卡罗来纳大学教堂山分校
 teaching_folder: unc-chapel-hill
 courses:
-- title: APPL 101 Exploring Engineering
+- title: Exploring Engineering
   material: APPL 101-Exploring Engineering
+  code: APPL 101
+  theme: programming
+  meta_description_en: APPL 101 UNC tutoring (Exploring Engineering). Assignment brief (“FA2025 APPL 101
+    Calendar”) makes sense in class, freezes you alone?
+  lead_en: APPL 101 APPL 101 Exploring Engineering at University of North Carolina at Chapel Hill is where
+    invariants, complexity claims, and code must stay aligned under time pressure. Private materials show
+    assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat on
+    the next brief — not rereading slides the night before.
+  lead_cn: 在北卡罗来纳大学教堂山分校上 APPL 101，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: APPL 101 APPL 101 Exploring Engineering sits in algorithms & data structures. Evidence
+    from the course folder points to Algorithms, ADTs, and complexity; Math foundations and proof habits;
+    R / MATLAB scientific workflow. Assessed work expects you to apply lecture ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: APPL 101 是北卡罗来纳大学教堂山分校「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯、R
+    / MATLAB 科研工作流这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: R / MATLAB scientific workflow
+    cn: R / MATLAB 科研工作流
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“FA2025 APPL 101 Calendar”) makes sense in class, freezes you alone
+    cn: 作业 brief（「FA2025 APPL 101 Calendar」）课上听得懂，自己对着就停住
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  tutoring:
+  - en: 'Lecture sync for APPL 101: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 APPL 101 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as FA2025 APPL 101 Calendar, S1 bike share
+      intro, with you at the keyboard.'
+    cn: 作业辅导：针对 FA2025 APPL 101 Calendar, S1 bike share intro 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

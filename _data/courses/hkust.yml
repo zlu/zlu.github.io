@@ -4,135 +4,281 @@ abbr: HKUST
 name_cn: 香港科技大学
 teaching_folder: hkust
 courses:
-  - code: COMP1002
-    title: Introduction to Programming
-  - code: COMP1021
-    title: Introduction to Programming with Python
-  - code: COMP1022P
-    title: Introduction to Computing with Java
-  - code: COMP1023
-    title: COMP1023
-    material: comp1023
-  - code: COMP2011
-    title: Programming with C++
-  - code: COMP2012
-    title: Object-Oriented Programming and Data Structures
-  - code: COMP2611
-    title: Computer Organization
-  - code: COMP2711
-    title: Discrete Mathematical Tools for Computer Science
-  - code: COMP3711
-    title: Design and Analysis of Algorithms
-  - code: COMP4211
-    title: Machine Learning
-  - code: COMP4331
-    title: Introduction to Data Mining
-  - code: COMP4411
-    title: Computer Graphics
-  - code: DASC2010
-    title: Calculus for Data Analytics in Science
-    material: dasc2010
-  - title: MSc DDM Written Exam
-    code: DDM 理学硕士笔试
-    material: MSc DDM Written Exam
-    theme: math-for-cs
-    lead_en: >-
-      HKUST MSc DDM written-exam prep: rebuild the diagnostic’s four parts
-      (calculus, linear algebra, probability, programming logic) in bilingual
-      steps you can write under time.
-    lead_cn: >-
-      港科大 MSc DDM 笔试辅导：按诊断卷四个部分（微积分、线性代数、概率、编程逻辑）
-      用双语把概念与英文步骤练到限时能写出来。
-    overview_en: >-
-      The HKUST MSc in Data-Driven Modeling admission written exam rewards
-      method and English write-ups, not only the final number. Tutoring follows
-      the diagnostic shape: extrema and first-order ODEs, 2×2 eigenpairs,
-      Bayes and stars-and-bars, nested-loop counting and coin-to-bits. A free
-      sample of the concept-review deck is on this page; the full 90-minute pack
-      comes with tutoring.
-    overview_cn: >-
-      港科大 Data-Driven Modeling 理学硕士入学笔试更看重方法与英文书写步骤，而不只是最终数字。
-      辅导对齐诊断卷结构：极值与一阶 ODE、2×2 特征对、Bayes 与 stars-and-bars、嵌套循环计数与
-      硬币到比特。本页有概念复习课件样例；完整 90 分钟讲义在预约辅导后提供。
-    topics:
-      - en: "Calculus — critical points, concavity, separable ODEs"
-        cn: "微积分 — 临界点、凹凸性、可分离 ODE"
-      - en: "Linear algebra — eigenvalues, eigenvectors, discriminant"
-        cn: "线性代数 — 特征值、特征向量、判别式"
-      - en: "Probability — Bayes updates and stars-and-bars counting"
-        cn: "概率 — Bayes 更新与 stars-and-bars 计数"
-      - en: "Programming logic — nested-loop counts, Big-O, fair bits"
-        cn: "编程逻辑 — 嵌套循环计数、Big-O、公平比特"
-    stuck:
-      - en: "Knowing the formula but freezing on English method steps"
-        cn: "会公式，但英文步骤写不出来就卡住"
-      - en: "Mixing posterior vs sensitivity on Bayes-style items"
-        cn: "Bayes 题里把后验与灵敏度搅在一起"
-      - en: "Skipping endpoints on closed-interval global extrema"
-        cn: "闭区间全局极值漏掉端点"
-    sample_slides:
-      title_en: "HKUST MSc DDM written exam — concept review (sample)"
-      title_cn: "港科大 MSc DDM 笔试概念复习（免费样例）"
-      lead_en: >-
-        Six slides from the 90-minute concept-review deck: title, session roadmap,
-        and the four part intros. Full worked examples and the remaining slides
-        come with tutoring — book on WeChat.
-      lead_cn: >-
-        来自 90 分钟概念复习课件的 6 页样例：封面、课程路线图，以及 A–D 四部分导言。
-        完整例题与其余页在预约辅导后提供 — 微信约课即可。
-      bullets:
-        - en: "Calculus — extrema & first-order ODE"
-          cn: "微积分 — 极值与一阶 ODE"
-        - en: "Linear algebra — eigenpairs & discriminant"
-          cn: "线性代数 — 特征对与判别式"
-        - en: "Probability — Bayes & stars-and-bars"
-          cn: "概率 — Bayes 与 stars-and-bars"
-        - en: "Programming logic — nested loops & random bits"
-          cn: "编程逻辑 — 嵌套循环与随机比特"
-      slides:
-        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/01-title.webp
-          alt_en: "HKUST MSc DDM written exam concept review title slide"
-          alt_cn: "港科大 MSc DDM 笔试概念复习封面页"
-          caption_en: "Title — 90-minute concept walkthrough"
-          caption_cn: "封面 — 90 分钟概念串讲"
-        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/02-roadmap.webp
-          alt_en: "Session roadmap covering calculus, linear algebra, probability, and programming logic"
-          alt_cn: "课程路线图：微积分、线性代数、概率与编程逻辑"
-          caption_en: "Roadmap — four parts in 90 minutes"
-          caption_cn: "路线图 — 四部分共 90 分钟"
-        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/03-calculus.webp
-          alt_en: "Part A calculus intro — extrema and one ODE for the DDM written exam"
-          alt_cn: "Part A 微积分导言 — DDM 笔试极值与一道 ODE"
-          caption_en: "Part A · Calculus"
-          caption_cn: "Part A · 微积分"
-        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/04-linear-algebra.webp
-          alt_en: "Part B linear algebra intro — eigenpairs for the DDM written exam"
-          alt_cn: "Part B 线性代数导言 — DDM 笔试特征对"
-          caption_en: "Part B · Linear algebra"
-          caption_cn: "Part B · 线性代数"
-        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/05-probability.webp
-          alt_en: "Part C probability intro — Bayes and counting for the DDM written exam"
-          alt_cn: "Part C 概率导言 — DDM 笔试 Bayes 与计数"
-          caption_en: "Part C · Probability"
-          caption_cn: "Part C · 概率"
-        - src: /assets/teach/hkust/msc-ddm-written-exam/sample/06-programming-logic.webp
-          alt_en: "Part D programming logic intro — nested loops and coin-to-bits"
-          alt_cn: "Part D 编程逻辑导言 — 嵌套循环与硬币到比特"
-          caption_en: "Part D · Programming logic"
-          caption_cn: "Part D · 编程逻辑"
-      cta_en: "Book on WeChat for the full concept-review pack + tutoring"
-      cta_cn: "微信预约，领取完整概念复习课件 + 一对一辅导"
-    faq:
-      - q_en: "Is there a free sample of the DDM concept-review slides?"
-        q_cn: "有没有 DDM 概念复习课件的免费样例？"
-        a_en: >-
-          Yes — this page shows the title, roadmap, and four part-intro slides.
-          The full 90-minute deck (worked examples, notation sheet, tactics,
-          homework) is for students who book tutoring; message WeChat with
-          HKUST MSc DDM written exam.
-        a_cn: >-
-          有——本页公开封面、路线图和 A–D 四部分导言。完整 90 分钟课件（例题、符号表、
-          应试习惯、作业）在预约辅导后提供；微信请注明港科大 MSc DDM 笔试。
-  - title: Fin Ml
-    material: fin-ml
+- code: COMP1002
+  title: Introduction to Programming
+- code: COMP1021
+  title: Introduction to Programming with Python
+- code: COMP1022P
+  title: Introduction to Computing with Java
+- code: COMP1023
+  title: Introduction to Programming
+  material: comp1023
+  theme: programming
+  meta_description_en: COMP1023 HKUST tutoring (Introduction to Programming). Code that “almost works”
+    with no systematic debug plan? Bilingual Chinese/English help.
+  lead_en: COMP1023 Introduction to Programming / Python at The Hong Kong University of Science and Technology
+    is where briefs, tooling, and autograder edge cases hit harder than syntax itself. Private materials
+    show lecture and practice materials. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在香港科技大学上 COMP1023，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP1023 Introduction to Programming / Python sits in programming & software construction.
+    Evidence from the course folder points to Programming foundations and debugging. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP1023 是香港科技大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  - en: Git basics when the course requires it
+    cn: 课程要求时的 Git 基础
+  stuck:
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for COMP1023 outruns bilingual notes
+    cn: COMP1023 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Refactor for clarity before chasing extra marks
+    cn: 先为清晰度重构，再追额外分数
+  tutoring:
+  - en: 'Lecture sync for COMP1023: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP1023 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP2011
+  title: Programming with C++
+- code: COMP2012
+  title: Object-Oriented Programming and Data Structures
+- code: COMP2611
+  title: Computer Organization
+- code: COMP2711
+  title: Discrete Mathematical Tools for Computer Science
+- code: COMP3711
+  title: Design and Analysis of Algorithms
+- code: COMP4211
+  title: Machine Learning
+- code: COMP4331
+  title: Introduction to Data Mining
+- code: COMP4411
+  title: Computer Graphics
+- code: DASC2010
+  title: Calculus for Data Analytics in Science
+  material: dasc2010
+  theme: data-science
+  meta_description_en: DASC2010 HKUST tutoring (Calculus for Data Analytics in…). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: DASC2010 Calculus for Data Analytics in Science at The Hong Kong University of Science and
+    Technology is where messy notebooks and weak method stories lose marks even when a model runs. Private
+    materials show weekly notes spanning roughly week 1–1, assignment briefs / labs on disk. The hard
+    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
+    night before.
+  lead_cn: 在香港科技大学上 DASC2010，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到大约第 1–1 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: DASC2010 Calculus for Data Analytics in Science sits in data science & analytics. Evidence
+    from the course folder points to ML pipelines, features, and model choice. There is a weekly arc (about
+    week 1–1) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: DASC2010 是香港科技大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML 流水线、特征与模型选择这些点转。大约第
+    1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“hw1”) makes sense in class, freezes you alone
+    cn: 作业 brief（「hw1」）课上听得懂，自己对着就停住
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  tutoring:
+  - en: 'Lecture sync for DASC2010: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 DASC2010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as hw1, with you at the keyboard.'
+    cn: 作业辅导：针对 hw1 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: MSc DDM Written Exam
+  code: DDM 理学硕士笔试
+  material: MSc DDM Written Exam
+  theme: math-for-cs
+  lead_en: 'HKUST MSc DDM written-exam prep: rebuild the diagnostic’s four parts (calculus, linear algebra,
+    probability, programming logic) in bilingual steps you can write under time.'
+  lead_cn: 港科大 MSc DDM 笔试辅导：按诊断卷四个部分（微积分、线性代数、概率、编程逻辑） 用双语把概念与英文步骤练到限时能写出来。
+  overview_en: 'The HKUST MSc in Data-Driven Modeling admission written exam rewards method and English
+    write-ups, not only the final number. Tutoring follows the diagnostic shape: extrema and first-order
+    ODEs, 2×2 eigenpairs, Bayes and stars-and-bars, nested-loop counting and coin-to-bits. A free sample
+    of the concept-review deck is on this page; the full 90-minute pack comes with tutoring.'
+  overview_cn: 港科大 Data-Driven Modeling 理学硕士入学笔试更看重方法与英文书写步骤，而不只是最终数字。 辅导对齐诊断卷结构：极值与一阶 ODE、2×2 特征对、Bayes
+    与 stars-and-bars、嵌套循环计数与 硬币到比特。本页有概念复习课件样例；完整 90 分钟讲义在预约辅导后提供。
+  topics:
+  - en: Calculus — critical points, concavity, separable ODEs
+    cn: 微积分 — 临界点、凹凸性、可分离 ODE
+  - en: Linear algebra — eigenvalues, eigenvectors, discriminant
+    cn: 线性代数 — 特征值、特征向量、判别式
+  - en: Probability — Bayes updates and stars-and-bars counting
+    cn: 概率 — Bayes 更新与 stars-and-bars 计数
+  - en: Programming logic — nested-loop counts, Big-O, fair bits
+    cn: 编程逻辑 — 嵌套循环计数、Big-O、公平比特
+  stuck:
+  - en: Knowing the formula but freezing on English method steps
+    cn: 会公式，但英文步骤写不出来就卡住
+  - en: Mixing posterior vs sensitivity on Bayes-style items
+    cn: Bayes 题里把后验与灵敏度搅在一起
+  - en: Skipping endpoints on closed-interval global extrema
+    cn: 闭区间全局极值漏掉端点
+  sample_slides:
+    title_en: HKUST MSc DDM written exam — concept review (sample)
+    title_cn: 港科大 MSc DDM 笔试概念复习（免费样例）
+    lead_en: 'Six slides from the 90-minute concept-review deck: title, session roadmap, and the four
+      part intros. Full worked examples and the remaining slides come with tutoring — book on WeChat.'
+    lead_cn: 来自 90 分钟概念复习课件的 6 页样例：封面、课程路线图，以及 A–D 四部分导言。 完整例题与其余页在预约辅导后提供 — 微信约课即可。
+    bullets:
+    - en: Calculus — extrema & first-order ODE
+      cn: 微积分 — 极值与一阶 ODE
+    - en: Linear algebra — eigenpairs & discriminant
+      cn: 线性代数 — 特征对与判别式
+    - en: Probability — Bayes & stars-and-bars
+      cn: 概率 — Bayes 与 stars-and-bars
+    - en: Programming logic — nested loops & random bits
+      cn: 编程逻辑 — 嵌套循环与随机比特
+    slides:
+    - src: /assets/teach/hkust/msc-ddm-written-exam/sample/01-title.webp
+      alt_en: HKUST MSc DDM written exam concept review title slide
+      alt_cn: 港科大 MSc DDM 笔试概念复习封面页
+      caption_en: Title — 90-minute concept walkthrough
+      caption_cn: 封面 — 90 分钟概念串讲
+    - src: /assets/teach/hkust/msc-ddm-written-exam/sample/02-roadmap.webp
+      alt_en: Session roadmap covering calculus, linear algebra, probability, and programming logic
+      alt_cn: 课程路线图：微积分、线性代数、概率与编程逻辑
+      caption_en: Roadmap — four parts in 90 minutes
+      caption_cn: 路线图 — 四部分共 90 分钟
+    - src: /assets/teach/hkust/msc-ddm-written-exam/sample/03-calculus.webp
+      alt_en: Part A calculus intro — extrema and one ODE for the DDM written exam
+      alt_cn: Part A 微积分导言 — DDM 笔试极值与一道 ODE
+      caption_en: Part A · Calculus
+      caption_cn: Part A · 微积分
+    - src: /assets/teach/hkust/msc-ddm-written-exam/sample/04-linear-algebra.webp
+      alt_en: Part B linear algebra intro — eigenpairs for the DDM written exam
+      alt_cn: Part B 线性代数导言 — DDM 笔试特征对
+      caption_en: Part B · Linear algebra
+      caption_cn: Part B · 线性代数
+    - src: /assets/teach/hkust/msc-ddm-written-exam/sample/05-probability.webp
+      alt_en: Part C probability intro — Bayes and counting for the DDM written exam
+      alt_cn: Part C 概率导言 — DDM 笔试 Bayes 与计数
+      caption_en: Part C · Probability
+      caption_cn: Part C · 概率
+    - src: /assets/teach/hkust/msc-ddm-written-exam/sample/06-programming-logic.webp
+      alt_en: Part D programming logic intro — nested loops and coin-to-bits
+      alt_cn: Part D 编程逻辑导言 — 嵌套循环与硬币到比特
+      caption_en: Part D · Programming logic
+      caption_cn: Part D · 编程逻辑
+    cta_en: Book on WeChat for the full concept-review pack + tutoring
+    cta_cn: 微信预约，领取完整概念复习课件 + 一对一辅导
+  faq:
+  - q_en: Is there a free sample of the DDM concept-review slides?
+    q_cn: 有没有 DDM 概念复习课件的免费样例？
+    a_en: Yes — this page shows the title, roadmap, and four part-intro slides. The full 90-minute deck
+      (worked examples, notation sheet, tactics, homework) is for students who book tutoring; message
+      WeChat with HKUST MSc DDM written exam.
+    a_cn: 有——本页公开封面、路线图和 A–D 四部分导言。完整 90 分钟课件（例题、符号表、 应试习惯、作业）在预约辅导后提供；微信请注明港科大 MSc DDM 笔试。
+  meta_description_en: DDM 理学硕士笔试 HKUST tutoring (MSc DDM Written Exam). Knowing the formula but freezing
+    on English method steps? Bilingual Chinese/English help.
+- title: Financial Machine Learning
+  material: fin-ml
+  code: FINA ML
+  theme: machine-learning
+  meta_description_en: FINA ML HKUST tutoring (Financial Machine Learning). Tool output produced, write-up
+    cannot defend method choice? Bilingual Chinese/English help.
+  lead_en: FINA ML Financial Machine Learning at The Hong Kong University of Science and Technology is
+    where method names blur together until pipelines, metrics, and write-ups diverge. Private materials
+    show code submissions / practice files. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在香港科技大学上 FINA ML，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: FINA ML Financial Machine Learning sits in machine learning & ai. Evidence from the course
+    folder points to Web / mobile app structure; NLP / language-model coursework. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: FINA ML 是香港科技大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着Web / 移动应用结构、NLP /
+    语言模型课业这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: NLP / language-model coursework
+    cn: NLP / 语言模型课业
+  - en: Supervised vs unsupervised intuition
+    cn: 监督 / 无监督学习的直觉区分
+  - en: Loss, gradients, and what “training” actually updates
+    cn: 损失、梯度，以及“训练”到底在更新什么
+  - en: Train / validation / test splits and leakage
+    cn: 训练 / 验证 / 测试划分与数据泄漏
+  - en: Linear models, logistic regression, and decision boundaries
+    cn: 线性模型、逻辑回归与决策边界
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model “works” but the report cannot explain why
+    cn: 模型能跑，但报告说不清为什么有效
+  - en: Lecture slides move faster than the math catches up
+    cn: 课件节奏快于数学跟进速度
+  session_angles:
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Map the assignment brief to a short concept checklist
+    cn: 把作业 brief 映射成一份短概念清单
+  - en: Live-debug the failing cell or metric with you driving the keyboard
+    cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+  tutoring:
+  - en: 'Lecture sync for FINA ML: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 FINA ML 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

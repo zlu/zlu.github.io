@@ -1,7 +1,7 @@
 ---
 university: University of Edinburgh
 abbr: Edinburgh
-name_cn: "爱丁堡大学"
+name_cn: 爱丁堡大学
 teaching_folder: u-edinburgh
 courses:
 - code: INFR08012
@@ -24,6 +24,60 @@ courses:
   title: Machine Learning Practical
 - code: INFR11130
   title: Machine Learning and Sensorimotor Control
-- title: Econ Math
+- title: Economics Mathematics
   material: econ-math
+  code: Econ Math
+  theme: math-for-cs
+  meta_description_en: Econ Math Edinburgh tutoring (Economics Mathematics). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: Econ Math Economics Mathematics at University of Edinburgh is where symbols and proof phrasing
+    outrun calculation skill. Private materials show weekly notes spanning roughly week 1–1, notebooks,
+    code submissions / practice files. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在爱丁堡大学上 Econ Math，符号与证明表述往往比计算本身更劝退。现有材料里能看到大约第 1–1 周的周课笔记、notebook、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: Econ Math Economics Mathematics sits in math for computer science. There is a weekly arc
+    (about week 1–1) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: Econ Math 是爱丁堡大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: 'Week 1: TSLA 2 review'
+    cn: 第 1 周：TSLA 2 review
+  - en: Notebook workflows the marker can re-run
+    cn: 改卷人能复跑的 notebook 工作流
+  - en: Linear algebra objects used in ML and graphics
+    cn: 机器学习与图形学里用到的线性代数对象
+  - en: Probability language for algorithms and ML
+    cn: 算法与机器学习用的概率语言
+  - en: Optimisation intuition (gradients, constraints)
+    cn: 优化直觉（梯度、约束）
+  - en: Discrete math proofs at coursework pace
+    cn: 课业节奏下的离散数学证明
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Knowing the formula but not the exam phrasing
+    cn: 会公式，但吃不透考题表述
+  - en: Skipping definitions and jumping to plug-and-chug
+    cn: 跳过定义，直接套公式
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Bilingual definition cards tied to one exam-style question each
+    cn: 每张双语定义卡对应一道考试风格题
+  tutoring:
+  - en: 'Lecture sync for Econ Math: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 Econ Math 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

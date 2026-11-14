@@ -25,10 +25,11 @@ universities:
   admin_slug: bristol
   materials:
   - MATH10017 Algorithms and Programming in C(++) and R
+  - SEMT20003
 - folder: brunel-university-of-london
   admin_slug: brunel-university-of-london
   materials:
-  - MA2624-ML-for-AI alias
+  - MA2624-ML-for-AI
 - folder: cardiff
   admin_slug: cardiff
   materials:
@@ -98,13 +99,16 @@ universities:
 - folder: hkust
   admin_slug: hkust
   materials:
+  - MSc DDM Written Exam
   - comp1023
   - dasc2010
   - fin-ml
 - folder: imperial-college-london
   admin_slug: imperial-college
   materials:
+  - 40009-computing-practical-1
   - AdvancedCompArchitecture
+  - CIVE70107-ANALYTICAL METHODS
   - PHYS70041
   - math60026-70026-methods-for-data-science
 - folder: james-cook-singapore
@@ -115,7 +119,8 @@ universities:
   - CP3501- Deep Learning
 - folder: johnhopkins
   admin_slug: john-hopkins
-  materials: []
+  materials:
+  - bu.510.615-python-for-data-analysis
 - folder: kings-college-london
   admin_slug: kings-college-london
   materials:
@@ -202,6 +207,11 @@ universities:
   admin_slug: san-jose-state-university
   materials:
   - data 201
+- folder: stanford
+  admin_slug: stanford
+  materials:
+  - cs106a
+  - cs221-ai-principles-and-techniques
 - folder: tum
   admin_slug: tum
   materials:
@@ -225,6 +235,7 @@ universities:
   materials:
   - COMS10016-Imperative-and-functional-programming
   - MATH10017 Algorithms and Programming in C(++) and R
+  - SEMT20003
 - folder: u-edinburgh
   admin_slug: edinburgh
   materials:
@@ -271,7 +282,8 @@ universities:
   - INFS7203-data-mining
   - INFS7410
   - MECH2700
-  - SEMT20003
+  - comp4403-compiler
+  - coms3200
   - infs7900
 - folder: u-sheffield
   admin_slug: u-sheffield
@@ -316,6 +328,10 @@ universities:
   - CS70离散数学
   - Data 8-the Foundations of Data Science
   - Math54-linear-algebra-and-differential-equations
+- folder: uc-davis
+  admin_slug: uc-davis
+  materials:
+  - ecs-032a
 - folder: ucl
   admin_slug: ucl
   materials:
@@ -361,6 +377,7 @@ universities:
   - MTHS1313
   - comp2017-9017-system-programming
   - comp2511-software-design-and-architecture
+  - comp3153-9153-algorithmic-verification
   - comp3211
   - comp4337-9337-securing-fixed-and-wireless-networks
   - comp4920-computer-ethics
@@ -389,6 +406,10 @@ universities:
   materials:
   - MA2623-linear-abstract-algebra
   - MA2634-ML-for-AI
+- folder: 北航
+  admin_slug: ''
+  materials:
+  - 电子信息工程-机器狗自主巡检项目
 - folder: 慕尼黑工业大学
   admin_slug: tum
   materials:

@@ -1,7 +1,7 @@
 ---
 university: University of Melbourne
 abbr: Melbourne
-name_cn: "墨尔本大学"
+name_cn: 墨尔本大学
 teaching_folder: u-melborne
 courses:
 - code: COMP10001
@@ -10,43 +10,64 @@ courses:
   title: Foundations of Algorithms
   material: comp10002
   theme: algorithms
-  lead_cn: >-
-    COMP10002 课速快，伪代码和复杂度一起上，笔记稍一掉队，作业就对不齐课件在问什么。
-    同步跟课会先抓住本周两三个核心过程，各自配小例子走完，再对齐 tutorial 的表述。
-  overview_cn: >-
-    Foundations of Algorithms 是墨大算法路线上的入门坎：既要听懂抽象步骤，又要落成能解释的实现。
-    留学生常见问题是课上符号记不全、作业分不清「算法步骤不清」还是「语言细节在拖后腿」。
-    辅导会先对齐题意，再写最小可运行版本，最后才谈优化和复杂度说法。
+  lead_cn: 在墨尔本大学上 COMP10002，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到大约第 1–12 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_cn: COMP10002 是墨尔本大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统 / 系统编程这些点转。大约第
+    1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
   topics:
-    - en: "2–3 core processes per week, each with a small walkthrough"
-      cn: "每周抓住 2–3 个核心过程，各自配小例子走完"
-    - en: "Align lecture ideas with tutorial / assignment wording"
-      cn: "把课件直觉对齐 tutorial / 作业的表述"
-    - en: "Separate algorithm steps from language / tooling drag"
-      cn: "分清算法步骤不清，还是语言 / 工具细节在拖后腿"
-    - en: "Minimal runnable version before optimisation talk"
-      cn: "先写最小可运行版本，再谈优化和复杂度"
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: 'Week 1: Download systems programming'
+    cn: 第 1 周：Download systems programming
+  - en: 'Week 1: Lecture 1 Presentation Slides COMP10002 2025s1'
+    cn: 第 1 周：Lecture 1 Presentation Slides COMP10002 2025s1
+  - en: 'Week 2: Lecture 2 Presentation Slides COMP10002 2025s1'
+    cn: 第 2 周：Lecture 2 Presentation Slides COMP10002 2025s1
+  - en: 'Week 3: Lecture 3 Presentation Slides COMP10002 2025s1'
+    cn: 第 3 周：Lecture 3 Presentation Slides COMP10002 2025s1
+  - en: 'Week 4: Lecture 4 Presentation Slides COMP10002 2025s1'
+    cn: 第 4 周：Lecture 4 Presentation Slides COMP10002 2025s1
+  - en: 'Week 5: Lecture 5 Presentation Slides COMP10002 2025s1'
+    cn: 第 5 周：Lecture 5 Presentation Slides COMP10002 2025s1
+  - en: 'Week 7: Lecture 7 Presentation Slides COMP10002 2025s1'
+    cn: 第 7 周：Lecture 7 Presentation Slides COMP10002 2025s1
   stuck:
-    - en: "Lecture pace + symbols: notes become half formulas"
-      cn: "课速快、符号密，笔记只剩半截公式"
-    - en: "Homework does not match what the slides seemed to ask"
-      cn: "作业对不齐课件好像在问什么"
-    - en: "Mixing algorithm confusion with language bugs"
-      cn: "算法步骤和语言细节混在一起修，特别耗时"
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
   tutoring:
-    - en: "Lecture sync: pick the week's core processes, walk small inputs, keep exam English terms."
-      cn: "同步跟课：抓住本周核心过程，小输入走完，英文术语只留卷面要用的。"
-    - en: "Assignments: align the ask, ship a minimal runnable version, then complexity."
-      cn: "作业：先对齐题意，写最小可运行版本，最后才谈复杂度说法。"
-    - en: "Priority across DDLs if you are juggling another implementation-heavy course."
-      cn: "若同时在上更偏实现的课，可把两门课 DDL 一起发来排优先级。"
+  - en: 'Lecture sync for COMP10002: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP10002 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   session_angles:
-    - en: "Do not translate the whole week's slides first — walk core processes"
-      cn: "不要先把整周课件翻译一遍，先走核心过程"
-    - en: "Chinese for intuition; keep English terms the exam and tutorials use"
-      cn: "中文把直觉说顺，英文术语只留卷面和讨论会用到的"
-    - en: "Name whether the block is algorithm or language before coding more"
-      cn: "再写代码前，先分清卡在算法还是语言"
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  meta_description_en: COMP10002 Melbourne tutoring (Foundations of Algorithms). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP10002 Foundations of Algorithms at University of Melbourne is where invariants, complexity
+    claims, and code must stay aligned under time pressure. Private materials show weekly notes spanning
+    roughly week 1–12. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  overview_en: COMP10002 Foundations of Algorithms sits in algorithms & data structures. Evidence from
+    the course folder points to OS / systems programming. There is a weekly arc (about week 1–12) plus
+    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
 - code: COMP20003
   title: Algorithms and Data Structures
 - code: COMP20007
@@ -76,12 +97,242 @@ courses:
 - code: COMP9005
   title: 0 Advanced Db
   material: comp90050-advanced-db
-- title: Math Term 1
+  theme: databases
+  meta_description_en: COMP9005 Melbourne tutoring (0 Advanced Db). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP9005 0 Advanced Db at University of Melbourne is where one wrong schema or join quietly
+    breaks every later query. Private materials show weekly notes spanning roughly week 1–9. The hard
+    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
+    night before.
+  lead_cn: 在墨尔本大学上 COMP9005，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到大约第 1–9 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP9005 0 Advanced Db sits in databases & information systems. Evidence from the course
+    folder points to SQL, schema design, and databases; OS / systems programming. There is a weekly arc
+    (about week 1–9) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP9005 是墨尔本大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、操作系统
+    / 系统编程这些点转。大约第 1–9 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: 'Week 1: comp90050 advanced database systems lecture 2 notes'
+    cn: 第 1 周：comp90050 advanced database systems lecture 2 notes
+  - en: 'Week 1: comp90050 advanced database systems lecture notes'
+    cn: 第 1 周：comp90050 advanced database systems lecture notes
+  - en: 'Week 1: comp90050 advanced database systems lecture notes on faul…'
+    cn: 第 1 周：comp90050 advanced database systems lecture notes on faul…
+  - en: 'Week 1: comp90050 advanced database systems lecture notes on locks'
+    cn: 第 1 周：comp90050 advanced database systems lecture notes on locks
+  - en: 'Week 1: comp90050 advanced database systems lecture notes on tran…'
+    cn: 第 1 周：comp90050 advanced database systems lecture notes on tran…
+  - en: 'Week 1: comp90050 advanced database systems lecture on isolation …'
+    cn: 第 1 周：comp90050 advanced database systems lecture on isolation …
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for COMP9005 outruns bilingual notes
+    cn: COMP9005 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  tutoring:
+  - en: 'Lecture sync for COMP9005: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP9005 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Mathematics (Term 1)
   material: math-Term 1
+  code: MAST Term1
+  theme: math-for-cs
+  meta_description_en: MAST Term1 Melbourne tutoring (Mathematics (Term 1)). Can follow a worked example,
+    cannot start from a blank page under time pressure?
+  lead_en: MAST Term1 Mathematics (Term 1) at University of Melbourne is where symbols and proof phrasing
+    outrun calculation skill. Private materials show lecture and practice materials. The hard part is
+    turning that arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在墨尔本大学上 MAST Term1，符号与证明表述往往比计算本身更劝退。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: MAST Term1 Mathematics (Term 1) sits in math for computer science. Evidence from the course
+    folder points to Math foundations and proof habits. Students stall when terminology outruns notes,
+    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
+    the notebook never made explicit.
+  overview_cn: MAST Term1 是墨尔本大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Linear algebra objects used in ML and graphics
+    cn: 机器学习与图形学里用到的线性代数对象
+  - en: Probability language for algorithms and ML
+    cn: 算法与机器学习用的概率语言
+  - en: Optimisation intuition (gradients, constraints)
+    cn: 优化直觉（梯度、约束）
+  - en: Discrete math proofs at coursework pace
+    cn: 课业节奏下的离散数学证明
+  - en: Translating lecture notation into worked examples
+    cn: 把课堂符号翻译成可下手的例子
+  stuck:
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Knowing the formula but not the exam phrasing
+    cn: 会公式，但吃不透考题表述
+  - en: Skipping definitions and jumping to plug-and-chug
+    cn: 跳过定义，直接套公式
+  - en: Weak link from math objects to code or ML use
+    cn: 数学对象与代码 / ML 用途之间断档
+  - en: Lecture vocabulary for MAST Term1 outruns bilingual notes
+    cn: MAST Term1 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Bilingual definition cards tied to one exam-style question each
+    cn: 每张双语定义卡对应一道考试风格题
+  - en: Worked examples before general proofs
+    cn: 先做例子，再写一般证明
+  - en: Connect the week’s math to the CS course that needs it
+    cn: 把当周数学接到真正用到它的 CS 课
+  tutoring:
+  - en: 'Lecture sync for MAST Term1: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 MAST Term1 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP1000
-  title: COMP1000
+  title: Foundations of Algorithms
   material: comp10002
+  theme: algorithms
+  meta_description_en: COMP1000 / COMP10002 Melbourne tutoring (Foundations of Algorithms). Weekly lecture
+    arc moves on before last week’s method is solid?
+  lead_en: COMP1000 Foundations of Algorithms at University of Melbourne is where invariants, complexity
+    claims, and code must stay aligned under time pressure. Private materials show weekly notes spanning
+    roughly week 1–12. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在墨尔本大学上 COMP1000，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到大约第 1–12 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP1000 Foundations of Algorithms sits in algorithms & data structures. Evidence from
+    the course folder points to OS / systems programming. There is a weekly arc (about week 1–12) plus
+    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP1000 是墨尔本大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统 / 系统编程这些点转。大约第 1–12
+    周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。
+  topics:
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: 'Week 1: Download systems programming'
+    cn: 第 1 周：Download systems programming
+  - en: 'Week 1: Lecture 1 Presentation Slides COMP10002 2025s1'
+    cn: 第 1 周：Lecture 1 Presentation Slides COMP10002 2025s1
+  - en: 'Week 2: Lecture 2 Presentation Slides COMP10002 2025s1'
+    cn: 第 2 周：Lecture 2 Presentation Slides COMP10002 2025s1
+  - en: 'Week 3: Lecture 3 Presentation Slides COMP10002 2025s1'
+    cn: 第 3 周：Lecture 3 Presentation Slides COMP10002 2025s1
+  - en: 'Week 4: Lecture 4 Presentation Slides COMP10002 2025s1'
+    cn: 第 4 周：Lecture 4 Presentation Slides COMP10002 2025s1
+  - en: 'Week 5: Lecture 5 Presentation Slides COMP10002 2025s1'
+    cn: 第 5 周：Lecture 5 Presentation Slides COMP10002 2025s1
+  - en: 'Week 7: Lecture 7 Presentation Slides COMP10002 2025s1'
+    cn: 第 7 周：Lecture 7 Presentation Slides COMP10002 2025s1
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  tutoring:
+  - en: 'Lecture sync for COMP1000: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP1000 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  aliases:
+  - COMP10002
 - code: COMP2000
   title: COMP 5 Intro. To Numerical Computation In C
   material: COMP20005 - Intro. to Numerical Computation in C
+  theme: math-for-cs
+  meta_description_en: COMP2000 Melbourne tutoring (COMP 5 Intro. To Numerical…). Can follow a worked
+    example, cannot start from a blank page under time pressure?
+  lead_en: COMP2000 COMP 5 Intro. To Numerical Computation In C at University of Melbourne is where symbols
+    and proof phrasing outrun calculation skill. Private materials show assignment briefs / labs on disk,
+    code submissions / practice files. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在墨尔本大学上 COMP2000，符号与证明表述往往比计算本身更劝退。现有材料里能看到磁盘上的作业 brief / lab、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP2000 COMP 5 Intro. To Numerical Computation In C sits in math for computer science.
+    Evidence from the course folder points to SQL, schema design, and databases; Networking layers, packets,
+    and protocols; Security / privacy threat models and labs; Math foundations and proof habits. Assessed
+    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: COMP2000 是墨尔本大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、安全
+    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“COMP20005 Assignment 1 Contact Tracing Program D”) makes sense in class, freezes
+      you alone
+    cn: 作业 brief（「COMP20005 Assignment 1 Contact Tracing Program D」）课上听得懂，自己对着就停住
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Knowing the formula but not the exam phrasing
+    cn: 会公式，但吃不透考题表述
+  - en: Skipping definitions and jumping to plug-and-chug
+    cn: 跳过定义，直接套公式
+  - en: Weak link from math objects to code or ML use
+    cn: 数学对象与代码 / ML 用途之间断档
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Bilingual definition cards tied to one exam-style question each
+    cn: 每张双语定义卡对应一道考试风格题
+  tutoring:
+  - en: 'Lecture sync for COMP2000: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP2000 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as COMP20005 Assignment 1 Contact Tracing Program
+      Details, Assignment 1 Melody Similarity Search in C, with you at the keyboard.'
+    cn: 作业辅导：针对 COMP20005 Assignment 1 Contact Tracing Program Details, Assignment 1 Melody Similarity
+      Search in C 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

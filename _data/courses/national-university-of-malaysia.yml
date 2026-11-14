@@ -1,12 +1,70 @@
 ---
 university: National University of Malaysia
 abbr: UKM
-name_cn: "马来西亚国立大学"
+name_cn: 马来西亚国立大学
 teaching_folder: national-university-of-malaysia
 courses:
-  - code: STQD6114
-    title: Data Analytics in R
-  - material: 6114非结构化数据分析(R)
-    title: 非结构化数据分析(R)
-    code: "6114"
+- code: STQD6114
+  title: Data Analytics in R
+- material: 6114非结构化数据分析(R)
+  title: 非结构化数据分析(R)
+  code: '6114'
+  theme: data-science
+  meta_description_en: 6114 UKM tutoring (非结构化数据分析(R)). Weekly lecture arc moves on before last week’s
+    method is solid? Bilingual Chinese/English help.
+  lead_en: 6114 非结构化数据分析(R) at National University of Malaysia is where messy notebooks and weak method
+    stories lose marks even when a model runs. Private materials show weekly notes spanning roughly week
+    3–3, assignment briefs / labs on disk, code submissions / practice files. The hard part is turning
+    that arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在马来西亚国立大学上 6114，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到大约第 3–3 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: 6114 非结构化数据分析(R) sits in data science & analytics. Evidence from the course folder points
+    to Spark / distributed data processing; Data wrangling / analytics tables; ML pipelines, features,
+    and model choice; Computer architecture and organisation. There is a weekly arc (about week 3–3) plus
+    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: 6114 是马来西亚国立大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着Spark / 分布式数据处理、数据清洗 /
+    分析表、ML 流水线、特征与模型选择这些点转。大约第 3–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Spark / distributed data processing
+    cn: Spark / 分布式数据处理
+  - en: Data wrangling / analytics tables
+    cn: 数据清洗 / 分析表
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 3: W3 Text Exploration'
+    cn: 第 3 周：W3 Text Exploration
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“PROJECT 2”) makes sense in class, freezes you alone
+    cn: 作业 brief（「PROJECT 2」）课上听得懂，自己对着就停住
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for 6114: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 6114 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as PROJECT 2, PROJECT 1, with you at the keyboard.'
+    cn: 作业辅导：针对 PROJECT 2, PROJECT 1 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

@@ -1,17 +1,72 @@
 ---
 university: Cardiff University
 abbr: Cardiff
-name_cn: "卡迪夫大学"
+name_cn: 卡迪夫大学
 teaching_folder: cardiff
 courses:
-  - code: CM6125
-    title: Database Systems
-  - code: CM6123
-    title: Software Development Skills
-    department: School of Computer Science and Informatics
-    material: 05.03.2025-softwaredev
-  - code: CMT645
-    title: DevOps
-  - code: CMT655
-    title: Manipulating and Exploring Data
+- code: CM6125
+  title: Database Systems
+- code: CM6123
+  title: Software Development Skills
+  department: School of Computer Science and Informatics
+  material: 05.03.2025-softwaredev
+  theme: databases
+  meta_description_en: CM6123 Cardiff tutoring (Software Development Skills). Assignment brief (“Assessment
+    CM6123 1 2024 2025 1”) makes sense in class, freezes you alone?
+  lead_en: CM6123 Software Development Skills at Cardiff University is where one wrong schema or join
+    quietly breaks every later query. Private materials show assignment briefs / labs on disk. The hard
+    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
+    night before.
+  lead_cn: 在卡迪夫大学上 CM6123，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: CM6123 Software Development Skills sits in databases & information systems. Evidence from
+    the course folder points to SQL, schema design, and databases; Software design and construction. Assessed
+    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: CM6123 是卡迪夫大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、软件设计与构造这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Software design and construction
+    cn: 软件设计与构造
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: ER modelling and normalisation trade-offs
+    cn: ER 建模与范式权衡
+  - en: SQL joins, aggregation, and nested queries
+    cn: SQL join、聚合与嵌套查询
+  - en: Indexes, plans, and “why is this slow?”
+    cn: 索引、执行计划与“为什么慢”
+  stuck:
+  - en: Assignment brief (“Assessment CM6123 1 2024 2025 1”) makes sense in class, freezes you alone
+    cn: 作业 brief（「Assessment CM6123 1 2024 2025 1」）课上听得懂，自己对着就停住
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for CM6123 outruns bilingual notes
+    cn: CM6123 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  tutoring:
+  - en: 'Lecture sync for CM6123: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CM6123 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as Assessment CM6123 1 2024 2025 1, with you
+      at the keyboard.'
+    cn: 作业辅导：针对 Assessment CM6123 1 2024 2025 1 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: CMT645
+  title: DevOps
+- code: CMT655
+  title: Manipulating and Exploring Data
 ---

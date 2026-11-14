@@ -4,174 +4,1061 @@ abbr: UNSW
 name_cn: 新南威尔士大学
 teaching_folder: unsw-sydney
 courses:
-  - code: ADAD9113
-    title: Communication Skills for Creative Disciplines
-  - topics:
-      - en: "Unpack the brief: I/O, edge cases, and marking points before coding"
-        cn: 先拆 brief：输入输出、边界和评分点，再动手写
-      - en: Hand-trace a minimal sample so state changes are clear
-        cn: 先手推最小样例，把状态变化走清楚
-      - en: Pointers, strings, and file I/O as implementation details
-        cn: 指针、字符串与文件读写等实现细节
-      - en: "Autograder failures: format, edges, and missing cases"
-        cn: autograder 挂掉：格式、边界与漏测用例
-    theme: programming
-    session_angles:
-      - en: List inputs, outputs, edges, and marks — separate from guesses about intent
-        cn: 先列输入输出、边界和评分点，和「我以为老师想要什么」分开
-      - en: Pseudocode the smallest sample before opening the editor
-        cn: 打开编辑器前，先用伪代码走最小样例
-      - en: "Ask: is this failure understanding or an implementation detail?"
-        cn: 先问：这次失败是理解问题，还是实现细节？
-    tutoring:
-      - en: "Assignments: align the brief, sketch a path you can finish, then debug with
-          you at the keyboard."
-        cn: 作业：先对齐 brief，梳一条你能写完的思路，再在你的环境里一起排查。
-      - en: "Lecture sync: bilingual walkthrough of the week's ideas until you can
-          restate them."
-        cn: 同步跟课：用中英双语把本周概念讲到你能复述为止。
-      - en: "Habits for later COMP2521: break problems down before chasing structures
-          and complexity."
-        cn: 为后面的 COMP2521 打底：先练拆题习惯，再谈结构和复杂度。
-    code: COMP1511
-    lead_cn: COMP1511 很难的地方，常常不是「完全不会写 C」，而是 brief 读了三遍仍不确定要你实现什么， 样例能过一提交就被边界和 I/O
-      卡住。辅导会先把题意和测试对齐，再在你的环境里一起排查。
-    overview_cn: Programming Fundamentals 是 UNSW 入门编程课，作业规格写得很细，autograder 也严。
-      留学生常见会卡在：题意翻译成步骤不完整、指针和字符串细节不熟、本地能跑交上去却一片红。
-      一对一会按拆题、动手、复盘推进；代码仍由你完成提交，我负责把方法和排查路径讲透。
-    title: Programming Fundamentals
-    stuck:
-      - en: Sample cases pass locally; submission fails on edges or I/O
-        cn: 本地样例能过，一提交就被边界或 I/O 卡住
-      - en: Brief read three times, still unsure what to implement
-        cn: brief 读了三遍，仍不确定要你实现什么
-      - en: Mixing understanding gaps with pointer / string bugs
-        cn: 理解不清和指针 / 字符串细节混在一起修
-  - code: COMP1521
-    title: Computer Systems Fundamentals
-  - code: COMP1531
-    title: Software Engineering Fundamentals
-  - code: COMP2017
-    title: Systems Programming
-    material: comp2017-9017-system-programming
-  - code: COMP2107
-    title: System Programming
-    material: comp2017-9017-system-programming
-  - code: COMP2511
-    title: Software Design And Architecture
-    material: comp2511-software-design-and-architecture
-  - topics:
-      - en: "Lists, trees, and graphs: choose structure before coding"
-        cn: 链表、树、图：先选结构再写代码
-      - en: Paper state diagrams before pointer-heavy C
-        cn: 写指针密集的 C 之前，先在纸上画状态
-      - en: "Complexity language: why this structure, not another"
-        cn: 复杂度表述：为什么用这种结构，不用另一种
-      - en: "Edges: empty structures, duplicates, memory free"
-        cn: 边界：空结构、重复键、内存释放
-    theme: algorithms
-    session_angles:
-      - en: Draw state changes before touching code
-        cn: 碰代码前先画清状态变化
-      - en: Minimal examples for each operation, including empty and extreme inputs
-        cn: 每个操作写最小例子，含空结构和极端输入
-      - en: Optimise and talk big-O only after the implementation is sound
-        cn: 实现站得住之后，再优化和谈大 O
-    tutoring:
-      - en: "Assignments: state on paper → minimal repro → implementation → complexity
-          talk last."
-        cn: 作业：先画状态 → 最小可复现 → 再实现 → 最后才谈复杂度。
-      - en: "Live debug in your environment: name whether the block is structure, code,
-          or explanation."
-        cn: 在你的环境里现场排查：分清现在卡在结构、实现还是表述。
-      - en: If COMP1511 habits are shaky, shore up breakdown and debug first.
-        cn: 若 COMP1511 拆题和调试还不稳，先把习惯补上。
-    code: COMP2521
-    lead_cn: COMP2521 同时考结构选择、实现细节和复杂度表述。很多同学卡在「本地样例能过、大数据或边界就崩」，
-      或代码勉强对却说不清为什么不用另一种结构。辅导会先画清状态，再落到实现和表述。
-    overview_cn: Data Structures and Algorithms 要求你在正确性、效率和口头/书面解释之间同时站得住。
-      常见痛点是指针与服务函数缠在一起、空表等边界没测全、复杂度一问就空——样例能过，大数据或边界却崩。
-      一对一会先在纸上画清状态，再落到最小例子和实现，最后才谈优化与怎么把理由说清楚。
-    title: Data Structures and Algorithms
-    stuck:
-      - en: Clear on paper; tangled in C by pointers and helpers
-        cn: 纸上清楚，一写进 C 就被指针和服务函数缠住
-      - en: Know which structure, cannot explain the trade-off
-        cn: 知道用哪种结构，却说不清为什么不用另一种
-      - en: Tests hit empty tables, dupes, free — fix one, two appear
-        cn: 测试专卡空表、重复键、释放；修一个冒出两个
-  - code: COMP3121
-    title: Algorithms and Programming Techniques
-  - code: COMP3141
-    title: Software System Design and Implementation
-  - code: COMP3153
-    aliases:
-      - COMP9153
-    title: Algorithmic Verification
-    material: comp3153-9153-algorithmic-verification
-    theme: algorithms, automata
-  - code: COMP3211
-    title: Computer Architecture
-    material: comp3211
-  - code: COMP3311
-    title: Database Systems
-  - code: COMP3331
-    title: Computer Networks and Applications
-  - code: COMP3411
-    title: Artificial Intelligence
-  - code: COMP4337
-    title: 9337 Securing Fixed And Wireless Networks
-    material: comp4337-9337-securing-fixed-and-wireless-networks
-  - code: COMP4920
-    title: Computer Ethics
-    material: comp4920-computer-ethics
-  - code: COMP5310
-    title: Principles of Data Science
-    material: Comp5310简化
-  - code: COMP6080
-    title: Web Front-End Programming
-  - code: COMP6771
-    title: Advanced C++ Programming
-  - code: COMP9021
-    title: Principles of Programming
-    material: comp9021 25T3 期末班资料
-  - code: COMP9311
-    title: Database Systems
-  - code: COMP9315
-    title: Database Systems Implementation
-  - code: COMP9331
-    title: Computer Networks and Applications
-    material: comp9331-networking
-  - code: COMP9414
-    title: Artificial Intelligence
-    material: comp9414-ai
-  - code: COMP9417
-    title: Machine Learning and Data Mining
-  - code: COMP9444
-    title: Neural Networks and Deep Learning
-  - code: COMP9517
-    title: Computer Vision
-    material: COMP9517-computer-vision
-  - code: COMP9601
-    title: Computer Systems
-    material: Comp9601简化
-  - code: DATA1001
-    title: Introduction to Data Science and Decisions
-  - code: DATA9001
-    title: Fundamentals of Data Science
-  - code: INFO1113
-    title: Object-Oriented Programming
-    material: "2048"
-  - code: INFO3616
-    title: Security Engineering
-    material: info3616
-  - code: INFS1603
-    title: Introduction to Business Databases
-  - code: INFS1701
-    title: Introduction to Networking and Security
-  - title: Mathematics 1A
-    material: MTHS1313
-    code: MATH1131
-    aliases:
-      - MTHS1313
+- code: ADAD9113
+  title: Communication Skills for Creative Disciplines
+- topics:
+  - en: 'Unpack the brief: I/O, edge cases, and marking points before coding'
+    cn: 先拆 brief：输入输出、边界和评分点，再动手写
+  - en: Hand-trace a minimal sample so state changes are clear
+    cn: 先手推最小样例，把状态变化走清楚
+  - en: Pointers, strings, and file I/O as implementation details
+    cn: 指针、字符串与文件读写等实现细节
+  - en: 'Autograder failures: format, edges, and missing cases'
+    cn: autograder 挂掉：格式、边界与漏测用例
+  theme: programming
+  session_angles:
+  - en: List inputs, outputs, edges, and marks — separate from guesses about intent
+    cn: 先列输入输出、边界和评分点，和「我以为老师想要什么」分开
+  - en: Pseudocode the smallest sample before opening the editor
+    cn: 打开编辑器前，先用伪代码走最小样例
+  - en: 'Ask: is this failure understanding or an implementation detail?'
+    cn: 先问：这次失败是理解问题，还是实现细节？
+  tutoring:
+  - en: 'Assignments: align the brief, sketch a path you can finish, then debug with you at the keyboard.'
+    cn: 作业：先对齐 brief，梳一条你能写完的思路，再在你的环境里一起排查。
+  - en: 'Lecture sync: bilingual walkthrough of the week''s ideas until you can restate them.'
+    cn: 同步跟课：用中英双语把本周概念讲到你能复述为止。
+  - en: 'Habits for later COMP2521: break problems down before chasing structures and complexity.'
+    cn: 为后面的 COMP2521 打底：先练拆题习惯，再谈结构和复杂度。
+  code: COMP1511
+  lead_cn: COMP1511 很难的地方，常常不是「完全不会写 C」，而是 brief 读了三遍仍不确定要你实现什么， 样例能过一提交就被边界和 I/O 卡住。辅导会先把题意和测试对齐，再在你的环境里一起排查。
+  overview_cn: Programming Fundamentals 是 UNSW 入门编程课，作业规格写得很细，autograder 也严。 留学生常见会卡在：题意翻译成步骤不完整、指针和字符串细节不熟、本地能跑交上去却一片红。
+    一对一会按拆题、动手、复盘推进；代码仍由你完成提交，我负责把方法和排查路径讲透。
+  title: Programming Fundamentals
+  stuck:
+  - en: Sample cases pass locally; submission fails on edges or I/O
+    cn: 本地样例能过，一提交就被边界或 I/O 卡住
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍，仍不确定要你实现什么
+  - en: Mixing understanding gaps with pointer / string bugs
+    cn: 理解不清和指针 / 字符串细节混在一起修
+- code: COMP1521
+  title: Computer Systems Fundamentals
+- code: COMP1531
+  title: Software Engineering Fundamentals
+- code: COMP2017
+  title: Systems Programming
+  material: comp2017-9017-system-programming
+  theme: systems
+  meta_description_en: COMP2017 UNSW tutoring (Systems Programming). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP2017 Systems Programming at University of New South Wales is where briefs, tooling, and
+    autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
+    roughly week 0–12, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在新南威尔士大学上 COMP2017，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 0–12 周的周课笔记、磁盘上的作业
+    brief / lab、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: COMP2017 Systems Programming sits in programming & software construction. Evidence from
+    the course folder points to OS / systems programming; Security / privacy threat models and labs; Algorithms,
+    ADTs, and complexity. There is a weekly arc (about week 0–12) plus assessed work that expects you
+    to apply the same ideas under deadline pressure. Students stall when terminology outruns notes, when
+    a demo makes sense in class but not alone, or when the write-up / autograder asks for a method the
+    notebook never made explicit.
+  overview_cn: COMP2017 是新南威尔士大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统 / 系统编程、安全 / 隐私威胁模型与实验、算法、ADT
+    与复杂度这些点转。大约第 0–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。
+  topics:
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 0: Administrivia'
+    cn: 第 0 周：Administrivia
+  - en: 'Week 0: Unit introduction'
+    cn: 第 0 周：Unit introduction
+  - en: 'Week 1: C Intro'
+    cn: 第 1 周：C Intro
+  - en: 'Week 1: Intro, UNIX, memory'
+    cn: 第 1 周：Intro, UNIX, memory
+  - en: 'Week 1: More Administrivia'
+    cn: 第 1 周：More Administrivia
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“guideline”) makes sense in class, freezes you alone
+    cn: 作业 brief（「guideline」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for COMP2017: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP2017 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as guideline, COMP2017 2025 Assignment 2, with
+      you at the keyboard.'
+    cn: 作业辅导：针对 guideline, COMP2017 2025 Assignment 2 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP2107
+  title: Systems Programming
+  material: comp2017-9017-system-programming
+  theme: systems
+  meta_description_en: COMP2107 UNSW tutoring (Systems Programming). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP2107 System Programming at University of New South Wales is where briefs, tooling, and
+    autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
+    roughly week 0–12, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在新南威尔士大学上 COMP2107，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 0–12 周的周课笔记、磁盘上的作业
+    brief / lab、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: COMP2107 System Programming sits in programming & software construction. Evidence from
+    the course folder points to OS / systems programming; Security / privacy threat models and labs; Algorithms,
+    ADTs, and complexity. There is a weekly arc (about week 0–12) plus assessed work that expects you
+    to apply the same ideas under deadline pressure. Students stall when terminology outruns notes, when
+    a demo makes sense in class but not alone, or when the write-up / autograder asks for a method the
+    notebook never made explicit.
+  overview_cn: COMP2107 是新南威尔士大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统 / 系统编程、安全 / 隐私威胁模型与实验、算法、ADT
+    与复杂度这些点转。大约第 0–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。
+  topics:
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 0: Administrivia'
+    cn: 第 0 周：Administrivia
+  - en: 'Week 0: Unit introduction'
+    cn: 第 0 周：Unit introduction
+  - en: 'Week 1: C Intro'
+    cn: 第 1 周：C Intro
+  - en: 'Week 1: Intro, UNIX, memory'
+    cn: 第 1 周：Intro, UNIX, memory
+  - en: 'Week 1: More Administrivia'
+    cn: 第 1 周：More Administrivia
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“guideline”) makes sense in class, freezes you alone
+    cn: 作业 brief（「guideline」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for COMP2107: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP2107 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as guideline, COMP2017 2025 Assignment 2, with
+      you at the keyboard.'
+    cn: 作业辅导：针对 guideline, COMP2017 2025 Assignment 2 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP2511
+  title: Object-Oriented Design and Programming
+  material: comp2511-software-design-and-architecture
+  theme: programming
+  meta_description_en: COMP2511 UNSW tutoring (Object-Oriented Design and…). Code almost works; edge cases
+    and error messages have no debug method?
+  lead_en: COMP2511 Software Design And Architecture at University of New South Wales is where abstractions
+    stack fast and labs fail for reasons that look opaque. Private materials show code submissions / practice
+    files. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
+    slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP2511，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP2511 Software Design And Architecture sits in systems, networks & architecture. Evidence
+    from the course folder points to Programming foundations and debugging; Web / mobile app structure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP2511 是新南威尔士大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Processes, threads, and synchronisation basics
+    cn: 进程、线程与同步基础
+  - en: Virtual memory and caching intuition
+    cn: 虚拟内存与缓存直觉
+  - en: Sockets, HTTP, and common networking labs
+    cn: Socket、HTTP 与常见网络实验
+  - en: OS scheduling and concurrency bugs
+    cn: 操作系统调度与并发 bug
+  stuck:
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture vocabulary for COMP2511 outruns bilingual notes
+    cn: COMP2511 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  - en: Instrument, reproduce, then patch the root cause
+    cn: 先插桩复现，再修根因
+  tutoring:
+  - en: 'Lecture sync for COMP2511: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP2511 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- topics:
+  - en: 'Lists, trees, and graphs: choose structure before coding'
+    cn: 链表、树、图：先选结构再写代码
+  - en: Paper state diagrams before pointer-heavy C
+    cn: 写指针密集的 C 之前，先在纸上画状态
+  - en: 'Complexity language: why this structure, not another'
+    cn: 复杂度表述：为什么用这种结构，不用另一种
+  - en: 'Edges: empty structures, duplicates, memory free'
+    cn: 边界：空结构、重复键、内存释放
+  theme: algorithms
+  session_angles:
+  - en: Draw state changes before touching code
+    cn: 碰代码前先画清状态变化
+  - en: Minimal examples for each operation, including empty and extreme inputs
+    cn: 每个操作写最小例子，含空结构和极端输入
+  - en: Optimise and talk big-O only after the implementation is sound
+    cn: 实现站得住之后，再优化和谈大 O
+  tutoring:
+  - en: 'Assignments: state on paper → minimal repro → implementation → complexity talk last.'
+    cn: 作业：先画状态 → 最小可复现 → 再实现 → 最后才谈复杂度。
+  - en: 'Live debug in your environment: name whether the block is structure, code, or explanation.'
+    cn: 在你的环境里现场排查：分清现在卡在结构、实现还是表述。
+  - en: If COMP1511 habits are shaky, shore up breakdown and debug first.
+    cn: 若 COMP1511 拆题和调试还不稳，先把习惯补上。
+  code: COMP2521
+  lead_cn: COMP2521 同时考结构选择、实现细节和复杂度表述。很多同学卡在「本地样例能过、大数据或边界就崩」， 或代码勉强对却说不清为什么不用另一种结构。辅导会先画清状态，再落到实现和表述。
+  overview_cn: Data Structures and Algorithms 要求你在正确性、效率和口头/书面解释之间同时站得住。 常见痛点是指针与服务函数缠在一起、空表等边界没测全、复杂度一问就空——样例能过，大数据或边界却崩。
+    一对一会先在纸上画清状态，再落到最小例子和实现，最后才谈优化与怎么把理由说清楚。
+  title: Data Structures and Algorithms
+  stuck:
+  - en: Clear on paper; tangled in C by pointers and helpers
+    cn: 纸上清楚，一写进 C 就被指针和服务函数缠住
+  - en: Know which structure, cannot explain the trade-off
+    cn: 知道用哪种结构，却说不清为什么不用另一种
+  - en: Tests hit empty tables, dupes, free — fix one, two appear
+    cn: 测试专卡空表、重复键、释放；修一个冒出两个
+- code: COMP3121
+  title: Algorithms and Programming Techniques
+- code: COMP3141
+  title: Software System Design and Implementation
+- code: COMP3153
+  aliases:
+  - COMP9153
+  title: Algorithmic Verification
+  material: comp3153-9153-algorithmic-verification
+  theme: algorithms
+  meta_description_en: COMP3153 / COMP9153 UNSW tutoring (Algorithmic Verification). Can follow a worked
+    example, cannot start from a blank page under time pressure?
+  lead_en: COMP3153 Algorithmic Verification at University of New South Wales is where invariants, complexity
+    claims, and code must stay aligned under time pressure. Private materials show lecture and practice
+    materials. The hard part is turning that arc into a method you can repeat on the next brief — not
+    rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP3153，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: COMP3153 Algorithmic Verification sits in algorithms & data structures. Evidence from the
+    course folder points to Automata, formal languages, and proofs. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: COMP3153 是新南威尔士大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Automata, formal languages, and proofs
+    cn: 自动机、形式语言与证明
+  - en: Asymptotic complexity and comparing candidates
+    cn: 渐近复杂度与方案比较
+  - en: Arrays, lists, trees, heaps, hash tables
+    cn: 数组、链表、树、堆、哈希表
+  - en: Sorting, searching, and graph traversals
+    cn: 排序、搜索与图遍历
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Invariants and proof sketches for exams
+    cn: 考试用的不变量与证明提纲
+  stuck:
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  - en: Lecture vocabulary for COMP3153 outruns bilingual notes
+    cn: COMP3153 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  - en: Exam-style short proofs under time pressure
+    cn: 限时练习考试风格的短证明
+  tutoring:
+  - en: 'Lecture sync for COMP3153: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP3153 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP3211
+  title: Computer Architecture
+  material: comp3211
+  theme: systems
+  meta_description_en: COMP3211 UNSW tutoring (Computer Architecture). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP3211 Computer Architecture at University of New South Wales is where abstractions stack
+    fast and labs fail for reasons that look opaque. Private materials show weekly notes spanning roughly
+    week 1–3, assignment briefs / labs on disk. The hard part is turning that arc into a method you can
+    repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP3211，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–3 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP3211 Computer Architecture sits in systems, networks & architecture. Evidence from
+    the course folder points to Computer architecture and organisation. There is a weekly arc (about week
+    1–3) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP3211 是新南威尔士大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成这些点转。大约第
+    1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: 'Week 1: MIPS ref data'
+    cn: 第 1 周：MIPS ref data
+  - en: 'Week 1: wk1 1 notes'
+    cn: 第 1 周：wk1 1 notes
+  - en: 'Week 1: wk1 2 notes'
+    cn: 第 1 周：wk1 2 notes
+  - en: 'Week 2: wk2 2 notes'
+    cn: 第 2 周：wk2 2 notes
+  - en: 'Week 3: wk3 1 notes'
+    cn: 第 3 周：wk3 1 notes
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“lab1”) makes sense in class, freezes you alone
+    cn: 作业 brief（「lab1」）课上听得懂，自己对着就停住
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  tutoring:
+  - en: 'Lecture sync for COMP3211: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP3211 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as lab1, dfx runtime, with you at the keyboard.'
+    cn: 作业辅导：针对 lab1, dfx runtime 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP3311
+  title: Database Systems
+- code: COMP3331
+  title: Computer Networks and Applications
+- code: COMP3411
+  title: Artificial Intelligence
+- code: COMP4337
+  title: Securing Fixed and Wireless Networks
+  material: comp4337-9337-securing-fixed-and-wireless-networks
+  theme: security
+  meta_description_en: COMP4337 / COMP9337 UNSW tutoring (Securing Fixed and Wireless Networks). Weekly
+    lecture arc moves on before last week’s method is solid?
+  lead_en: COMP4337 9337 Securing Fixed And Wireless Networks at University of New South Wales is where
+    threat models, crypto vocabulary, and lab setup form a terminology wall. Private materials show weekly
+    notes spanning roughly week 1–8, assignment briefs / labs on disk, code submissions / practice files.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在新南威尔士大学上 COMP4337，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到大约第 1–8 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: COMP4337 9337 Securing Fixed And Wireless Networks sits in security & privacy. Evidence
+    from the course folder points to Networking layers, packets, and protocols; Security / privacy threat
+    models and labs; Algorithms, ADTs, and complexity; Programming foundations and debugging. There is
+    a weekly arc (about week 1–8) plus assessed work that expects you to apply the same ideas under deadline
+    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
+    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP4337 是新南威尔士大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、算法、ADT
+    与复杂度这些点转。大约第 1–8 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。
+  topics:
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: 'Week 1: WK01 01 CourseIntro'
+    cn: 第 1 周：WK01 01 CourseIntro
+  - en: 'Week 1: WK01 02 Intro Fixed WirelessNet'
+    cn: 第 1 周：WK01 02 Intro Fixed WirelessNet
+  - en: 'Week 1: WK01 02 Intro Fixed WirelessNet tutorial'
+    cn: 第 1 周：WK01 02 Intro Fixed WirelessNet tutorial
+  - en: 'Week 1: WK01 03 cryptoIntro'
+    cn: 第 1 周：WK01 03 cryptoIntro
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“Lab1 Crypto Concepts Tutor Guide”) makes sense in class, freezes you alone
+    cn: 作业 brief（「Lab1 Crypto Concepts Tutor Guide」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Lab setup unfinished; report lists tools without a clear finding
+    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
+  - en: Labs that need precise setup before any “hacking”
+    cn: Lab 还没配好环境就急着“黑”
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for COMP4337: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP4337 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as Lab1 Crypto Concepts Tutor Guide, Lab1,
+      with you at the keyboard.'
+    cn: 作业辅导：针对 Lab1 Crypto Concepts Tutor Guide, Lab1 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  aliases:
+  - COMP9337
+- code: COMP4920
+  title: Computer Ethics
+  material: comp4920-computer-ethics
+  theme: security
+  meta_description_en: COMP4920 UNSW tutoring (Computer Ethics). Weekly lecture arc moves on before last
+    week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP4920 Computer Ethics at University of New South Wales is where threat models, crypto vocabulary,
+    and lab setup form a terminology wall. Private materials show weekly notes spanning roughly week 1–1.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在新南威尔士大学上 COMP4920，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到大约第 1–1 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP4920 Computer Ethics sits in security & privacy. There is a weekly arc (about week
+    1–1) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP4920 是新南威尔士大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: 'Week 1: COMP4920 26T3 READING W1L1a Ethics in Computing'
+    cn: 第 1 周：COMP4920 26T3 READING W1L1a Ethics in Computing
+  - en: 'Week 1: COMP4920 26T3 READING W1L1b Ethics in Computing'
+    cn: 第 1 周：COMP4920 26T3 READING W1L1b Ethics in Computing
+  - en: 'Week 1: COMP4920 26T3 READING W1L2a HCD Research Ethics'
+    cn: 第 1 周：COMP4920 26T3 READING W1L2a HCD Research Ethics
+  - en: 'Week 1: COMP4920 26T3 READING W1L2b HCD Research Ethics'
+    cn: 第 1 周：COMP4920 26T3 READING W1L2b HCD Research Ethics
+  - en: 'Week 1: COMP4920 26T3 SLIDES W1L1'
+    cn: 第 1 周：COMP4920 26T3 SLIDES W1L1
+  - en: 'Week 1: COMP4920 26T3 SLIDES W1L2'
+    cn: 第 1 周：COMP4920 26T3 SLIDES W1L2
+  - en: 'Week 1: COMP4920 W1 glossary EN ZH'
+    cn: 第 1 周：COMP4920 W1 glossary EN ZH
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Lab setup unfinished; report lists tools without a clear finding
+    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
+  - en: Labs that need precise setup before any “hacking”
+    cn: Lab 还没配好环境就急着“黑”
+  - en: Confusing confidentiality, integrity, and availability
+    cn: 把机密性、完整性、可用性搅在一起
+  - en: Reports that list tools without explaining the finding
+    cn: 报告只罗列工具，不解释发现
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Restate the threat model in one paragraph
+    cn: 用一段话重述威胁模型
+  - en: Reproduce the lab outcome, then explain the mechanism
+    cn: 先复现 Lab 结果，再讲清机制
+  tutoring:
+  - en: 'Lecture sync for COMP4920: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP4920 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP5310
+  title: Principles of Data Science
+  material: Comp5310简化
+  theme: data-science
+  meta_description_en: COMP5310 UNSW tutoring (Principles of Data Science). Weekly lecture arc moves on
+    before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP5310 Principles of Data Science at University of New South Wales is where messy notebooks
+    and weak method stories lose marks even when a model runs. Private materials show weekly notes spanning
+    roughly week 1–13, notebooks. The hard part is turning that arc into a method you can repeat on the
+    next brief — not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP5310，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到大约第 1–13 周的周课笔记、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP5310 Principles of Data Science sits in data science & analytics. Evidence from the
+    course folder points to Data wrangling / analytics tables; ML pipelines, features, and model choice;
+    SQL, schema design, and databases; Math foundations and proof habits. There is a weekly arc (about
+    week 1–13) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP5310 是新南威尔士大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表、ML 流水线、特征与模型选择、SQL、Schema
+    与数据库这些点转。大约第 1–13 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。
+  topics:
+  - en: Data wrangling / analytics tables
+    cn: 数据清洗 / 分析表
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: 'Week 1: 01 introduction'
+    cn: 第 1 周：01 introduction
+  - en: 'Week 2: 02 data exploration with spreadsheets'
+    cn: 第 2 周：02 data exploration with spreadsheets
+  - en: 'Week 2: 02 data exploration with spreadsheets UPDATED 02 08 24'
+    cn: 第 2 周：02 data exploration with spreadsheets UPDATED 02 08 24
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  tutoring:
+  - en: 'Lecture sync for COMP5310: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP5310 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP6080
+  title: Web Front-End Programming
+- code: COMP6771
+  title: Advanced C++ Programming
+- code: COMP9021
+  title: Principles of Programming
+  material: comp9021 25T3 期末班资料
+  theme: programming
+  meta_description_en: COMP9021 UNSW tutoring (Principles of Programming). Notebook runs on the sample
+    cell, fails on the hidden / full dataset case?
+  lead_en: COMP9021 Principles of Programming at University of New South Wales is where briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Private materials show notebooks, code submissions
+    / practice files. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP9021，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到notebook、代码提交 /
+    练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: COMP9021 Principles of Programming sits in programming & software construction. Evidence
+    from the course folder points to Computer architecture and organisation; Programming foundations and
+    debugging. Students stall when terminology outruns notes, when a demo makes sense in class but not
+    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP9021 是新南威尔士大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Notebook workflows the marker can re-run
+    cn: 改卷人能复跑的 notebook 工作流
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  stuck:
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  session_angles:
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  tutoring:
+  - en: 'Lecture sync for COMP9021: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP9021 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP9311
+  title: Database Systems
+- code: COMP9315
+  title: Database Systems Implementation
+- code: COMP9331
+  title: Computer Networks and Applications
+  material: comp9331-networking
+  theme: systems
+  meta_description_en: COMP9331 UNSW tutoring (Computer Networks and Applications). Weekly lecture arc
+    moves on before last week’s method is solid?
+  lead_en: COMP9331 Computer Networks and Applications at University of New South Wales is where abstractions
+    stack fast and labs fail for reasons that look opaque. Private materials show weekly notes spanning
+    roughly week 1–3. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP9331，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–3 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP9331 Computer Networks and Applications sits in systems, networks & architecture. Evidence
+    from the course folder points to Networking layers, packets, and protocols; Math foundations and proof
+    habits. There is a weekly arc (about week 1–3) plus assessed work that expects you to apply the same
+    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
+    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
+    explicit.
+  overview_cn: COMP9331 是新南威尔士大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、数学基础与证明习惯这些点转。大约第
+    1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: 'Week 1: Lec Quiz W1'
+    cn: 第 1 周：Lec Quiz W1
+  - en: 'Week 2: Lec Quiz W2'
+    cn: 第 2 周：Lec Quiz W2
+  - en: 'Week 3: Lec Quiz W3'
+    cn: 第 3 周：Lec Quiz W3
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture vocabulary for COMP9331 outruns bilingual notes
+    cn: COMP9331 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  - en: Instrument, reproduce, then patch the root cause
+    cn: 先插桩复现，再修根因
+  tutoring:
+  - en: 'Lecture sync for COMP9331: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP9331 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP9414
+  title: Artificial Intelligence
+  material: comp9414-ai
+  theme: machine-learning
+  meta_description_en: COMP9414 UNSW tutoring (Artificial Intelligence). Assignment brief (“COMP9414 Assignment
+    1 NN 25T2”) makes sense in class, freezes you alone?
+  lead_en: COMP9414 Artificial Intelligence at University of New South Wales is where method names blur
+    together until pipelines, metrics, and write-ups diverge. Private materials show assignment briefs
+    / labs on disk, notebooks. The hard part is turning that arc into a method you can repeat on the next
+    brief — not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP9414，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到磁盘上的作业 brief / lab、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP9414 Artificial Intelligence sits in machine learning & ai. Evidence from the course
+    folder points to Neural nets / deep learning / AI; Networking layers, packets, and protocols; Security
+    / privacy threat models and labs. Assessed work expects you to apply lecture ideas under deadline
+    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
+    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP9414 是新南威尔士大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
+    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Notebook workflows the marker can re-run
+    cn: 改卷人能复跑的 notebook 工作流
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“COMP9414 Assignment 1 NN 25T2”) makes sense in class, freezes you alone
+    cn: 作业 brief（「COMP9414 Assignment 1 NN 25T2」）课上听得懂，自己对着就停住
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Map the assignment brief to a short concept checklist
+    cn: 把作业 brief 映射成一份短概念清单
+  tutoring:
+  - en: 'Lecture sync for COMP9414: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP9414 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as COMP9414 Assignment 1 NN 25T2, COMP9414
+      Assignment 1 Solution, with you at the keyboard.'
+    cn: 作业辅导：针对 COMP9414 Assignment 1 NN 25T2, COMP9414 Assignment 1 Solution 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP9417
+  title: Machine Learning and Data Mining
+- code: COMP9444
+  title: Neural Networks and Deep Learning
+- code: COMP9517
+  title: Computer Vision
+  material: COMP9517-computer-vision
+  theme: machine-learning
+  meta_description_en: COMP9517 UNSW tutoring (Computer Vision). Tool output produced, write-up cannot
+    defend method choice? Bilingual Chinese/English help.
+  lead_en: COMP9517 Computer Vision at University of New South Wales is where method names blur together
+    until pipelines, metrics, and write-ups diverge. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在新南威尔士大学上 COMP9517，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP9517 Computer Vision sits in machine learning & ai. Evidence from the course folder
+    points to Neural nets / deep learning / AI; Algorithms, ADTs, and complexity; Automata, formal languages,
+    and proofs; Computer vision pipelines. Students stall when terminology outruns notes, when a demo
+    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
+    never made explicit.
+  overview_cn: COMP9517 是新南威尔士大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、算法、ADT
+    与复杂度、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Automata, formal languages, and proofs
+    cn: 自动机、形式语言与证明
+  - en: Computer vision pipelines
+    cn: 计算机视觉流水线
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model “works” but the report cannot explain why
+    cn: 模型能跑，但报告说不清为什么有效
+  - en: Lecture slides move faster than the math catches up
+    cn: 课件节奏快于数学跟进速度
+  session_angles:
+  - en: Map the assignment brief to a short concept checklist
+    cn: 把作业 brief 映射成一份短概念清单
+  - en: Live-debug the failing cell or metric with you driving the keyboard
+    cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+  - en: Tighten the write-up so claims match the experiments
+    cn: 收紧报告表述，让结论与实验一致
+  tutoring:
+  - en: 'Lecture sync for COMP9517: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP9517 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP9601
+  title: Computer Systems
+  material: Comp9601简化
+  theme: systems
+  meta_description_en: COMP9601 UNSW tutoring (Computer Systems). Weekly lecture arc moves on before last
+    week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP9601 Computer Systems at University of New South Wales is where abstractions stack fast
+    and labs fail for reasons that look opaque. Private materials show weekly notes spanning roughly week
+    1–13, assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 COMP9601，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–13 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP9601 Computer Systems sits in systems, networks & architecture. Evidence from the course
+    folder points to Networking layers, packets, and protocols; Computer architecture and organisation.
+    There is a weekly arc (about week 1–13) plus assessed work that expects you to apply the same ideas
+    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
+    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP9601 是新南威尔士大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、计算机体系结构与组成这些点转。大约第
+    1–13 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: 'Week 1: Lecture'
+    cn: 第 1 周：Lecture
+  - en: 'Week 2: Lecture 2'
+    cn: 第 2 周：Lecture 2
+  - en: 'Week 2: Tutorial'
+    cn: 第 2 周：Tutorial
+  - en: 'Week 2: Tutorial Solution'
+    cn: 第 2 周：Tutorial Solution
+  - en: 'Week 3: Lecture 3'
+    cn: 第 3 周：Lecture 3
+  - en: 'Week 3: Tutorial'
+    cn: 第 3 周：Tutorial
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“ASS1 solution”) makes sense in class, freezes you alone
+    cn: 作业 brief（「ASS1 solution」）课上听得懂，自己对着就停住
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  tutoring:
+  - en: 'Lecture sync for COMP9601: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP9601 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as ASS1 solution, with you at the keyboard.'
+    cn: 作业辅导：针对 ASS1 solution 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: DATA1001
+  title: Introduction to Data Science and Decisions
+- code: DATA9001
+  title: Fundamentals of Data Science
+- code: INFO1113
+  title: Object-Oriented Programming
+  material: '2048'
+  theme: programming
+  meta_description_en: INFO1113 UNSW tutoring (Object-Oriented Programming). Assignment brief (“INFO1113
+    Assignment 1 v1.1”) makes sense in class, freezes you alone?
+  lead_en: INFO1113 Object-Oriented Programming at University of New South Wales is where briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Private materials show assignment briefs
+    / labs on disk. The hard part is turning that arc into a method you can repeat on the next brief —
+    not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 INFO1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到磁盘上的作业 brief /
+    lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: INFO1113 Object-Oriented Programming sits in programming & software construction. Assessed
+    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: INFO1113 是新南威尔士大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  - en: Git basics when the course requires it
+    cn: 课程要求时的 Git 基础
+  stuck:
+  - en: Assignment brief (“INFO1113 Assignment 1 v1.1”) makes sense in class, freezes you alone
+    cn: 作业 brief（「INFO1113 Assignment 1 v1.1」）课上听得懂，自己对着就停住
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for INFO1113 outruns bilingual notes
+    cn: INFO1113 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  tutoring:
+  - en: 'Lecture sync for INFO1113: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFO1113 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as INFO1113 Assignment 1 v1.1, with you at
+      the keyboard.'
+    cn: 作业辅导：针对 INFO1113 Assignment 1 v1.1 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: INFO3616
+  title: Security Engineering
+  material: info3616
+  theme: security
+  meta_description_en: INFO3616 UNSW tutoring (Security Engineering). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: INFO3616 Security Engineering at University of New South Wales is where threat models, crypto
+    vocabulary, and lab setup form a terminology wall. Private materials show weekly notes spanning roughly
+    week 1–3. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
+    slides the night before.
+  lead_cn: 在新南威尔士大学上 INFO3616，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到大约第 1–3 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: INFO3616 Security Engineering sits in security & privacy. Evidence from the course folder
+    points to OS / systems programming; Security / privacy threat models and labs. There is a weekly arc
+    (about week 1–3) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: INFO3616 是新南威尔士大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统 / 系统编程、安全 / 隐私威胁模型与实验这些点转。大约第
+    1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Threat models and trust boundaries
+    cn: 威胁模型与信任边界
+  - en: Crypto primitives at course depth (not CTF spoilers)
+    cn: 课业深度的密码学原语（非 CTF 剧透）
+  - en: Web / network attack patterns the syllabus names
+    cn: 大纲点名的 Web / 网络攻击模式
+  - en: Secure coding habits for assignments
+    cn: 作业里的安全编码习惯
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Lab setup unfinished; report lists tools without a clear finding
+    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
+  - en: Labs that need precise setup before any “hacking”
+    cn: Lab 还没配好环境就急着“黑”
+  - en: Confusing confidentiality, integrity, and availability
+    cn: 把机密性、完整性、可用性搅在一起
+  - en: Reports that list tools without explaining the finding
+    cn: 报告只罗列工具，不解释发现
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Restate the threat model in one paragraph
+    cn: 用一段话重述威胁模型
+  - en: Reproduce the lab outcome, then explain the mechanism
+    cn: 先复现 Lab 结果，再讲清机制
+  tutoring:
+  - en: 'Lecture sync for INFO3616: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFO3616 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: INFS1603
+  title: Introduction to Business Databases
+- code: INFS1701
+  title: Introduction to Networking and Security
+- title: Mathematics 1A
+  material: MTHS1313
+  code: MATH1131
+  aliases:
+  - MTHS1313
+  theme: math-for-cs
+  meta_description_en: MATH1131 / MTHS1313 UNSW tutoring (Mathematics 1A). Assignment brief (“Unassigning
+    Variables”) makes sense in class, freezes you alone?
+  lead_en: MATH1131 Mathematics 1A at University of New South Wales is where symbols and proof phrasing
+    outrun calculation skill. Private materials show assignment briefs / labs on disk. The hard part is
+    turning that arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在新南威尔士大学上 MATH1131，符号与证明表述往往比计算本身更劝退。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: MATH1131 Mathematics 1A sits in math for computer science. Evidence from the course folder
+    points to Math foundations and proof habits. Assessed work expects you to apply lecture ideas under
+    deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in class
+    but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: MATH1131 是新南威尔士大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: Linear algebra objects used in ML and graphics
+    cn: 机器学习与图形学里用到的线性代数对象
+  - en: Probability language for algorithms and ML
+    cn: 算法与机器学习用的概率语言
+  - en: Optimisation intuition (gradients, constraints)
+    cn: 优化直觉（梯度、约束）
+  - en: Discrete math proofs at coursework pace
+    cn: 课业节奏下的离散数学证明
+  stuck:
+  - en: Assignment brief (“Unassigning Variables”) makes sense in class, freezes you alone
+    cn: 作业 brief（「Unassigning Variables」）课上听得懂，自己对着就停住
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Knowing the formula but not the exam phrasing
+    cn: 会公式，但吃不透考题表述
+  - en: Skipping definitions and jumping to plug-and-chug
+    cn: 跳过定义，直接套公式
+  - en: Weak link from math objects to code or ML use
+    cn: 数学对象与代码 / ML 用途之间断档
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Bilingual definition cards tied to one exam-style question each
+    cn: 每张双语定义卡对应一道考试风格题
+  - en: Worked examples before general proofs
+    cn: 先做例子，再写一般证明
+  tutoring:
+  - en: 'Lecture sync for MATH1131: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 MATH1131 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as Unassigning Variables, Assigning Variables,
+      with you at the keyboard.'
+    cn: 作业辅导：针对 Unassigning Variables, Assigning Variables 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

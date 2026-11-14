@@ -1,9 +1,57 @@
 ---
 university: Beijing Normal University
 abbr: BNU
-name_cn: "北京师范大学"
+name_cn: 北京师范大学
 teaching_folder: 北师大
 courses:
-- title: Deutsch A1
+- title: German A1
   material: deutsch-a1
+  code: Deutsch A1
+  theme: general
+  meta_description_en: Deutsch A1 BNU tutoring (German A1). Lectures outpacing note-taking? Bilingual
+    Chinese/English lecture sync, assignments, exam prep.
+  lead_en: Deutsch A1 German A1 at Beijing Normal University is where lecture speed and dense vocabulary
+    outrun note-taking. Private materials show lecture and practice materials. The hard part is turning
+    that arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在北京师范大学上 Deutsch A1，课速一快、术语一密，笔记一断档后面就更难补。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: Deutsch A1 German A1 sits in computer science coursework. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: Deutsch A1 是北京师范大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Lecture catch-up in Chinese and English
+    cn: 中英双语补课与知识点梳理
+  - en: Assignment approach and debugging
+    cn: 作业思路与调试
+  - en: Project structure and write-up feedback
+    cn: Project 结构与报告反馈
+  - en: Exam topic maps on weak areas
+    cn: 针对薄弱点的考点地图
+  - en: Tools the course actually uses (Git, notebooks, LaTeX)
+    cn: 课程真正用到的工具（Git、notebook、LaTeX）
+  stuck:
+  - en: Lectures outpacing note-taking
+    cn: 课速度快于记笔记速度
+  - en: Stacked deadlines across labs and projects
+    cn: Lab 与 Project 截止日期叠在一起
+  - en: Not knowing what “good enough” looks like for the rubric
+    cn: 不清楚评分量表眼里的“够好”
+  - en: Lecture vocabulary for Deutsch A1 outruns bilingual notes
+    cn: Deutsch A1 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Start from your materials and the nearest deadline
+    cn: 从你的材料与最近 DDL 开始
+  - en: Leave with a concrete next-step checklist
+    cn: 课后带走一份可执行的下一步清单
+  - en: Book follow-ups only where they still move the grade
+    cn: 只在还能拉动成绩的地方约后续课
+  tutoring:
+  - en: 'Lecture sync for Deutsch A1: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 Deutsch A1 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

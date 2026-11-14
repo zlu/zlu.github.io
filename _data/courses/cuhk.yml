@@ -1,7 +1,7 @@
 ---
 university: The Chinese University of Hong Kong
 abbr: CUHK
-name_cn: "香港中文大学"
+name_cn: 香港中文大学
 teaching_folder: cuhk
 courses:
 - code: CSCI1120
@@ -25,12 +25,170 @@ courses:
 - code: CSCI4180
   title: Introduction to Cloud Computing and Storage
 - code: CS5187
-  title: Vision And Image
+  title: Vision and Image Processing
   material: cs5187-vision-and-image
+  theme: machine-learning
+  meta_description_en: CS5187 CUHK tutoring (Vision and Image Processing). Lectures outpacing note-taking?
+    Bilingual Chinese/English help.
+  lead_en: CS5187 Vision And Image at The Chinese University of Hong Kong is where lecture speed and dense
+    vocabulary outrun note-taking. Private materials show lecture and practice materials. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在香港中文大学上 CS5187，课速一快、术语一密，笔记一断档后面就更难补。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: CS5187 Vision And Image sits in computer science coursework. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: CS5187 是香港中文大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Lecture catch-up in Chinese and English
+    cn: 中英双语补课与知识点梳理
+  - en: Assignment approach and debugging
+    cn: 作业思路与调试
+  - en: Project structure and write-up feedback
+    cn: Project 结构与报告反馈
+  - en: Exam topic maps on weak areas
+    cn: 针对薄弱点的考点地图
+  - en: Tools the course actually uses (Git, notebooks, LaTeX)
+    cn: 课程真正用到的工具（Git、notebook、LaTeX）
+  stuck:
+  - en: Lectures outpacing note-taking
+    cn: 课速度快于记笔记速度
+  - en: Stacked deadlines across labs and projects
+    cn: Lab 与 Project 截止日期叠在一起
+  - en: Not knowing what “good enough” looks like for the rubric
+    cn: 不清楚评分量表眼里的“够好”
+  - en: Lecture vocabulary for CS5187 outruns bilingual notes
+    cn: CS5187 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Start from your materials and the nearest deadline
+    cn: 从你的材料与最近 DDL 开始
+  - en: Leave with a concrete next-step checklist
+    cn: 课后带走一份可执行的下一步清单
+  - en: Book follow-ups only where they still move the grade
+    cn: 只在还能拉动成绩的地方约后续课
+  tutoring:
+  - en: 'Lecture sync for CS5187: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CS5187 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: SDSC8009
   title: Datamining
   material: sdsc8009-datamining
+  theme: data-science
+  meta_description_en: SDSC8009 CUHK tutoring (Datamining). Weekly lecture arc moves on before last week’s
+    method is solid? Bilingual Chinese/English help.
+  lead_en: SDSC8009 Datamining at The Chinese University of Hong Kong is where messy notebooks and weak
+    method stories lose marks even when a model runs. Private materials show weekly notes spanning roughly
+    week 1–6, assignment briefs / labs on disk, notebooks, code submissions / practice files. The hard
+    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
+    night before.
+  lead_cn: 在香港中文大学上 SDSC8009，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到大约第 1–6 周的周课笔记、磁盘上的作业 brief / lab、notebook、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: SDSC8009 Datamining sits in data science & analytics. Evidence from the course folder points
+    to Data wrangling / analytics tables; Computer architecture and organisation; Math foundations and
+    proof habits; Programming foundations and debugging. There is a weekly arc (about week 1–6) plus assessed
+    work that expects you to apply the same ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: SDSC8009 是香港中文大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表、计算机体系结构与组成、数学基础与证明习惯这些点转。大约第
+    1–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Data wrangling / analytics tables
+    cn: 数据清洗 / 分析表
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: 'Week 1: course introduction'
+    cn: 第 1 周：course introduction
+  - en: 'Week 1: lecture notes detailed'
+    cn: 第 1 周：lecture notes detailed
+  - en: 'Week 1: lecture notes simple'
+    cn: 第 1 周：lecture notes simple
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“solution”) makes sense in class, freezes you alone
+    cn: 作业 brief（「solution」）课上听得懂，自己对着就停住
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for SDSC8009: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 SDSC8009 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as solution, assignment, with you at the keyboard.'
+    cn: 作业辅导：针对 solution, assignment 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: CS2115
   title: Computer Organization
   material: cs2115-computer-organization
+  theme: systems
+  meta_description_en: CS2115 CUHK tutoring (Computer Organization). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: CS2115 Computer Organization at The Chinese University of Hong Kong is where abstractions stack
+    fast and labs fail for reasons that look opaque. Private materials show weekly notes spanning roughly
+    week 1–1, assignment briefs / labs on disk. The hard part is turning that arc into a method you can
+    repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在香港中文大学上 CS2115，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–1 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: CS2115 Computer Organization sits in systems, networks & architecture. There is a weekly
+    arc (about week 1–1) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: CS2115 是香港中文大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: 'Week 1: CS2115 HW1 model solutions'
+    cn: 第 1 周：CS2115 HW1 model solutions
+  - en: 'Week 1: HW 1'
+    cn: 第 1 周：HW 1
+  - en: 'Week 1: HW 1 answer student'
+    cn: 第 1 周：HW 1 answer student
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“CS2115 HW1 model solutions”) makes sense in class, freezes you alone
+    cn: 作业 brief（「CS2115 HW1 model solutions」）课上听得懂，自己对着就停住
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  tutoring:
+  - en: 'Lecture sync for CS2115: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CS2115 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as CS2115 HW1 model solutions, with you at
+      the keyboard.'
+    cn: 作业辅导：针对 CS2115 HW1 model solutions 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---
