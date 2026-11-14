@@ -33,8 +33,122 @@ courses:
     title: Calculus for Data Analytics in Science
     material: dasc2010
   - title: MSc DDM Written Exam
-    code: DDM 理学硕士笔试
+    code: DDM
+    aliases:
+      - DDM 理学硕士笔试
+      - MSc Data-Driven Modeling
+      - HKUST DDM Written Exam
     material: MSc DDM Written Exam
+    theme: math-for-cs
+    meta_description_en: >-
+      HKUST MSc DDM written-exam tutoring. Four tested areas: calculus, linear
+      algebra, probability & statistics, and logic for coding — keypoints,
+      common traps, and timed English write-up drills (no question leaks).
+    lead_en: >-
+      The HKUST MSc Data-Driven Modeling (DDM) admission written exam is a
+      closed-book, timed paper across four foundations: calculus, linear algebra,
+      probability & statistics, and logic for coding. The hard part is rarely
+      “never seen the topic” — it is finishing two short sessions with clear
+      English steps, under proctoring rules, without a calculator.
+    lead_cn: >-
+      港科大 MSc Data-Driven Modeling（DDM）入学笔试是闭卷限时卷，官方范围就四块：微积分、线性代数、概率统计、以及面向编程的逻辑推理。真正难的往往不是「从没学过」，而是在监考规则下、不能用计算器，两场短时里用英文把步骤写清楚并按时交卷。
+    overview_en: >-
+      This page is for applicants preparing the DDM Round written exam (not a
+      coursework unit). Official scope covers calculus, linear algebra, logic for
+      coding, and probability & statistics. Tutoring maps each area’s keypoints and
+      typical traps, then drills timed English write-ups and process (show steps,
+      scan/submit). We do not publish or recreate live or archived exam wording
+      here — only the skill map and how sessions work.
+    overview_cn: >-
+      本页面向准备 DDM 入学笔试（不是学期课程）的申请者。官方范围覆盖微积分、线性代数、面向编程的逻辑，以及概率与统计。辅导会按四块梳理考点与常见卡点，再练限时英文步骤与交卷流程（写过程、扫描提交）。
+    topics:
+      - en: "Calculus — derivatives, integrals, extrema, simple ODEs, multivariable partials"
+        cn: "微积分：求导 / 积分、极值、简单常微分方程、多元偏导判断"
+      - en: "Linear algebra — 2×2 eigenpairs, independence, parametric systems"
+        cn: "线性代数：2×2 特征值/向量、线性无关、带参数的方程组"
+      - en: "Probability & statistics — PDF normalize, Bayes, variance of linear combos, counting"
+        cn: "概率统计：密度归一化、贝叶斯、线性组合方差、计数模型"
+      - en: "Logic for coding — bit/randomization reasoning and short logic write-ups (no IDE coding)"
+        cn: "编程逻辑：比特/随机化推理与短逻辑论述（不是现场敲代码）"
+      - en: "Exam craft — English steps only, partial credit under time, no-calculator exact forms"
+        cn: "应试写法：只用英文步骤、限时也写 setup 拿过程分、无计算器保留精确式"
+    stuck:
+      - en: "Knowing the formula but freezing when the question asks True / False / Maybe with a counterexample"
+        cn: "公式会背，一到「对 / 错 / 不确定 + 反例」就停住"
+      - en: "Bayes and conditional probability mixed up under time (P(A|B) vs P(B|A))"
+        cn: "限时下把贝叶斯和条件概率搞反（P(A|B) 与 P(B|A)）"
+      - en: "Eigenvalues with a free parameter — cases for none / one / two real roots feel messy"
+        cn: "带参数的特征值：无实根 / 一个 / 两个的分情形写乱"
+      - en: "Counting and balls-in-bags limits look simple until the model assumptions slip"
+        cn: "计数与球袋极限题看起来简单，模型假设一偏就整题塌"
+      - en: "Logic / coin-to-bits and hat-or-liar puzzles — ideas clear in Chinese, English paragraphs stall"
+        cn: "硬币造均匀比特、帽子/说谎者类逻辑：中文思路有，英文段落写不动"
+      - en: "Answers-only habit — final number without Given / Formula / Steps risks zero under the rubric"
+        cn: "只写答案不写过程：在评分要求下可能整题零分"
+    session_angles:
+      - en: "Diagnostic across the four official blocks → rebuild only the weakest 1–2"
+        cn: "先按官方四块摸底，只重建最弱的 1–2 块"
+      - en: "Every drill: write full English steps on paper (Given / Formula / Substitute / Box)"
+        cn: "每道题在纸上写完整英文步骤（Given / Formula / Substitute / Box）"
+      - en: "Timed mini-sets that match two short sessions + submit-window rehearsal"
+        cn: "按两场短时 + 交卷窗口做限时小套卷与提交演练"
+    tutoring:
+      - en: "Scope map: walk the four tested areas (calculus, linear algebra, probability & stats, logic for coding) with keypoints and traps — not leaked questions."
+        cn: "考点地图：按官方四块（微积分、线代、概率统计、编程逻辑）讲清关键点与坑点——不泄露题面。"
+      - en: "Weak-area rebuild: bilingual intuition first, then English write-up templates you can reuse under time."
+        cn: "薄弱块重建：先用中英双语把直觉立住，再练限时能复用的英文书写模板。"
+      - en: "Mock & process: timed papers plus scan-to-one-PDF and Chat-aware exam-day habits."
+        cn: "模考与流程：限时套卷，外加扫成单一 PDF。"
+    method_title_en: How I prep you for this written exam
+    method_title_cn: 我怎么带笔试冲刺
+    method_note_en: >-
+      Not weekly lecture sync. Diagnostic → rebuild the weakest blocks → timed
+      English write-ups and submit rehearsal before exam day.
+    method_note_cn: >-
+      不是按周跟课。先摸底四块强弱，再重建最弱的，最后限时练英文步骤和交卷流程，对准考试日。
+    faq_title_en: FAQ for this written exam
+    faq_title_cn: 笔试常见问题
+    faq:
+      - q_en: Is this semester coursework tutoring or admission written-exam prep?
+        q_cn: 这是学期课辅导，还是入学笔试冲刺？
+        a_en: >-
+          Admission written-exam prep for HKUST MSc DDM. Sessions follow the
+          official four blocks (calculus, linear algebra, probability & stats,
+          logic for coding): diagnose weak areas, rebuild under time, and
+          rehearse English steps plus submit habits — not weekly lecture sync
+          or assignment debugging.
+        a_cn: >-
+          这是港科大 MSc DDM 入学笔试冲刺，不是学期跟课。课上按官方四块（微积分、线代、概率统计、编程逻辑）摸底薄弱点，再限时重建，并练英文步骤与交卷习惯——不是按周补课件，也不是作业 debug。
+      - q_en: My English handwriting for math is weak — can I still keep up?
+        q_cn: 数学英文书写一般，跟得上吗？
+        a_en: >-
+          Yes. The exam requires English steps (Chinese answers get no marks).
+          We start from bilingual intuition, then lock a reusable template
+          (Given / Formula / Substitute / Box) so you can write under the
+          two short timed sessions.
+        a_cn: >-
+          跟得上。笔试要求英文写步骤（中文作答不得分）。会先用中英双语把直觉立住，再固定一套可复用模板（Given / Formula / Substitute / Box），让你在两场短时里写得出来。
+      - q_en: How do I book the first DDM exam-prep session?
+        q_cn: 想约 DDM 笔试辅导，第一次怎么联系？
+        a_en: >-
+          WeChat me: HKUST DDM written exam, your exam date (or Round/Group
+          if known), which of the four blocks feel weakest, and whether you
+          already have the official guideline / Honor Code / dry-run info.
+          The more of that you send, the faster session 1 becomes a diagnostic
+          instead of an intake interview.
+        a_cn: >-
+          微信直接发：港科大 DDM 笔试、考试日期（或已知的 Round/Group）、四块里哪几块最虚，以及是否已有官方 Guideline / Honor Code / 试考信息。资料越齐，第一节就越能直接摸底，而不是先花半节课问背景。
+    prep_title_en: Before the first exam-prep session
+    prep_title_cn: 第一次笔试辅导前请准备
+    prep_en: >-
+      WeChat: HKUST DDM written exam, exam date (or Round/Group), self-rating
+      of the four blocks (calculus / linear algebra / probability & stats /
+      logic for coding), and any official attachments you already have
+      (guideline, checklist, blank answer sheet). Optional: recent timed
+      practice photos of your English steps. No need to send recalled exam
+      papers — we will not use leaked wording.
+    prep_cn: >-
+      微信请发：港科大 DDM 笔试、考试日期（或 Round/Group）、对四块（微积分 / 线代 / 概率统计 / 编程逻辑）的自评强弱，以及你已有的官方材料（Guideline、清单、空白答题纸）。可选：近期限时练习的英文步骤拍照。
   - title: Dasc
   - title: Fin Ml
     material: fin-ml

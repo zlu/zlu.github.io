@@ -609,11 +609,49 @@ module Jekyll
         "overview_cn" => course["overview_cn"].to_s.strip,
         "lead_en" => course["lead_en"].to_s.strip,
         "lead_cn" => course["lead_cn"].to_s.strip,
+        "meta_description_en" => course["meta_description_en"].to_s.strip,
         "curated_topics" => bilingual_items(course["topics"]),
         "stuck" => bilingual_items(course["stuck"]),
         "session_angles" => bilingual_items(course["session_angles"]),
-        "tutoring" => bilingual_items(course["tutoring"])
+        "tutoring" => bilingual_items(course["tutoring"]),
+        "faq" => normalize_faq_items(course["faq"]),
+        "faq_title_en" => course["faq_title_en"].to_s.strip,
+        "faq_title_cn" => course["faq_title_cn"].to_s.strip,
+        "prep_en" => course["prep_en"].to_s.strip,
+        "prep_cn" => course["prep_cn"].to_s.strip,
+        "prep_title_en" => course["prep_title_en"].to_s.strip,
+        "prep_title_cn" => course["prep_title_cn"].to_s.strip,
+        "method_title_en" => course["method_title_en"].to_s.strip,
+        "method_title_cn" => course["method_title_cn"].to_s.strip,
+        "method_note_en" => course["method_note_en"].to_s.strip,
+        "method_note_cn" => course["method_note_cn"].to_s.strip
       }
+    end
+
+    # Optional hand-written FAQ: {q,a} or {q_en,q_cn,a_en,a_cn}.
+    def normalize_faq_items(raw)
+      Array(raw).filter_map do |item|
+        next unless item.is_a?(Hash)
+
+        q_en = (item["q_en"] || item["q"]).to_s.strip
+        q_cn = (item["q_cn"] || item["q"]).to_s.strip
+        a_en = (item["a_en"] || item["a"]).to_s.strip
+        a_cn = (item["a_cn"] || item["a"]).to_s.strip
+        next if q_en.empty? && q_cn.empty?
+
+        q_cn = q_en if q_cn.empty?
+        a_cn = a_en if a_cn.empty?
+        q_en = q_cn if q_en.empty?
+        a_en = a_cn if a_en.empty?
+        {
+          "q" => q_cn,
+          "a" => a_cn,
+          "q_en" => q_en,
+          "q_cn" => q_cn,
+          "a_en" => a_en,
+          "a_cn" => a_cn
+        }
+      end
     end
 
     # Accept Decap list-of-strings, list-of-objects, or a comma/semicolon string.
@@ -1174,7 +1212,12 @@ module Jekyll
                        end
       description = description_en
 
-      course_faq = course_faq_items(label_cn, code, title, tutoring, stuck)
+      custom_faq = Array(course["faq"]).select { |t| t.is_a?(Hash) }
+      course_faq = if custom_faq.any?
+                     custom_faq
+                   else
+                     course_faq_items(label_cn, code, title, tutoring, stuck)
+                   end
 
       topic_kw = focus_topics.first(6).flat_map { |t| [t["en"], t["cn"]] }.compact.map(&:to_s).reject(&:empty?)
       keywords = [
@@ -1238,6 +1281,16 @@ module Jekyll
         "theme_session_angles" => session_angles,
         "tutoring" => tutoring,
         "course_faq" => course_faq,
+        "faq_title_en" => course["faq_title_en"].to_s,
+        "faq_title_cn" => course["faq_title_cn"].to_s,
+        "prep_en" => course["prep_en"].to_s,
+        "prep_cn" => course["prep_cn"].to_s,
+        "prep_title_en" => course["prep_title_en"].to_s,
+        "prep_title_cn" => course["prep_title_cn"].to_s,
+        "method_title_en" => course["method_title_en"].to_s,
+        "method_title_cn" => course["method_title_cn"].to_s,
+        "method_note_en" => course["method_note_en"].to_s,
+        "method_note_cn" => course["method_note_cn"].to_s,
         "theme_reading" => theme_reading,
         "matheion_lessons" => matheion_lessons,
         "theme_about" => about_topics,

@@ -64,12 +64,20 @@ layout: default
   {% endif %}
 
   {% if page.tutoring and page.tutoring.size > 0 %}
+  {% assign method_title_en = page.method_title_en | default: "" | strip %}
+  {% if method_title_en == "" %}{% assign method_title_en = "How I tutor this course" %}{% endif %}
+  {% assign method_title_cn = page.method_title_cn | default: "" | strip %}
+  {% if method_title_cn == "" %}{% assign method_title_cn = "我怎么辅导这门课" %}{% endif %}
+  {% assign method_note_en = page.method_note_en | default: "" | strip %}
+  {% if method_note_en == "" %}{% assign method_note_en = "Lecture sync, assignment help, and exam prep for this course." %}{% endif %}
+  {% assign method_note_cn = page.method_note_cn | default: "" | strip %}
+  {% if method_note_cn == "" %}{% assign method_note_cn = "不是把课件再念一遍，而是按你这周真正卡住的地方补：跟课、作业、考前各有侧重点。" %}{% endif %}
   <section class="teach-landing-section teach-course-method">
-    <h2 data-en="How I tutor this course"
-        data-cn="我怎么辅导这门课">我怎么辅导这门课</h2>
+    <h2 data-en="{{ method_title_en }}"
+        data-cn="{{ method_title_cn }}">{{ method_title_cn }}</h2>
     <p class="teach-section-note"
-       data-en="Lecture sync, assignment help, and exam prep for this course."
-       data-cn="不是把课件再念一遍，而是按你这周真正卡住的地方补：跟课、作业、考前各有侧重点。">不是把课件再念一遍，而是按你这周真正卡住的地方补：跟课、作业、考前各有侧重点。</p>
+       data-en="{{ method_note_en }}"
+       data-cn="{{ method_note_cn }}">{{ method_note_cn }}</p>
     <ol class="teach-course-method-list">
       {% for item in page.tutoring %}
       <li data-en="{{ item.en }}" data-cn="{{ item.cn }}">{{ item.cn }}</li>
@@ -117,24 +125,44 @@ layout: default
   {% endif %}
 
   {% if page.course_faq and page.course_faq.size > 0 %}
+  {% assign faq_title_en = page.faq_title_en | default: "" | strip %}
+  {% if faq_title_en == "" %}{% assign faq_title_en = "FAQ for this course" %}{% endif %}
+  {% assign faq_title_cn = page.faq_title_cn | default: "" | strip %}
+  {% if faq_title_cn == "" %}{% assign faq_title_cn = "这门课常见问题" %}{% endif %}
   <section class="teach-landing-section teach-faq teach-course-faq" aria-labelledby="teach-course-faq-title">
     <h2 id="teach-course-faq-title"
-        data-en="FAQ for this course"
-        data-cn="这门课常见问题">这门课常见问题</h2>
+        data-en="{{ faq_title_en }}"
+        data-cn="{{ faq_title_cn }}">{{ faq_title_cn }}</h2>
     {% for item in page.course_faq %}
+    {% assign faq_q_en = item.q_en | default: item.q %}
+    {% assign faq_q_cn = item.q_cn | default: item.q %}
+    {% assign faq_a_en = item.a_en | default: item.a %}
+    {% assign faq_a_cn = item.a_cn | default: item.a %}
     <details class="teach-faq-item"{% if forloop.first %} open{% endif %}>
-      <summary>{{ item.q }}</summary>
-      <p>{{ item.a }}</p>
+      <summary data-en="{{ faq_q_en }}" data-cn="{{ faq_q_cn }}">{{ faq_q_cn }}</summary>
+      <p data-en="{{ faq_a_en }}" data-cn="{{ faq_a_cn }}">{{ faq_a_cn }}</p>
     </details>
     {% endfor %}
   </section>
   {% endif %}
 
+  {% assign prep_title_en = page.prep_title_en | default: "" | strip %}
+  {% if prep_title_en == "" %}{% assign prep_title_en = "Before the first session" %}{% endif %}
+  {% assign prep_title_cn = page.prep_title_cn | default: "" | strip %}
+  {% if prep_title_cn == "" %}{% assign prep_title_cn = "第一次课前请准备" %}{% endif %}
+  {% assign prep_en = page.prep_en | default: "" | strip %}
+  {% if prep_en == "" %}
+    {% capture prep_en %}Send school, course code{% if page.course_code != "" %} ({{ page.course_code }}){% endif %}, deadline, and any starter files, workshop questions, or error screenshots via WeChat.{% endcapture %}
+  {% endif %}
+  {% assign prep_cn = page.prep_cn | default: "" | strip %}
+  {% if prep_cn == "" %}
+    {% capture prep_cn %}微信请发学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 PDF、代码、workshop 题或报错截图。资料越齐，第一节课就越能直接对着卡点开讲。{% endcapture %}
+  {% endif %}
   <section class="teach-landing-section teach-course-prep">
-    <h2 data-en="Before the first session"
-        data-cn="第一次课前请准备">第一次课前请准备</h2>
-    <p data-en="Send school, course code{% if page.course_code != "" %} ({{ page.course_code }}){% endif %}, deadline, and any starter files, workshop questions, or error screenshots via WeChat."
-       data-cn="微信请发学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 PDF、代码、workshop 题或报错截图。资料越齐，第一节课就越能直接对着卡点开讲。">微信请发学校、课号{% if page.course_code != "" %}（{{ page.course_code }}）{% endif %}、截止日期，以及题目 PDF、代码、workshop 题或报错截图。资料越齐，第一节课就越能直接对着卡点开讲。</p>
+    <h2 data-en="{{ prep_title_en }}"
+        data-cn="{{ prep_title_cn }}">{{ prep_title_cn }}</h2>
+    <p data-en="{{ prep_en }}"
+       data-cn="{{ prep_cn }}">{{ prep_cn }}</p>
     <a class="btn btn-primary" href="/teach/#teach-book-qr"
        data-en="Book on WeChat"
        data-cn="微信预约（发课号）">微信预约（发课号）</a>
