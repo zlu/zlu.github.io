@@ -27,8 +27,9 @@ Usage:
   python3 .scripts/indexnow_submit_urls.py --ensure-key-file
 
 Notes:
-  - `_data/courses/{slug}.yml` maps to `/teach/universities/{slug}/` plus linked
-    course pages from `_data/teach_catalog.yml` (run sync-teach-catalog first).
+  - `_data/courses/{slug}.yml` maps to `/teach/universities/{slug}/` plus the
+    course page(s) that actually changed in that commit (admin YAML is the
+    source of truth; teach_catalog is no longer required for IndexNow).
   - Catalog/report-only commits still yield 0 URLs; widen `--from-git` or pass `--url`.
   - Git / --url mode submits **all** mapped URLs (no default cap). Sitemap mode
     defaults to --limit 5 so Bing does not treat the run as a dump; use
@@ -353,9 +354,6 @@ def is_indexnow_excluded(meta: dict[str, str]) -> bool:
 
 
 COURSE_YML_RE = re.compile(r"^_data/courses/([^/]+)\.ya?ml$")
-LINKED_HOW = frozenset(
-    {"material field", "material alias", "code match", "title fuzzy"}
-)
 
 
 def ascii_slug(text: str) -> str:
@@ -376,65 +374,154 @@ def course_page_slug(code: str, title: str) -> str:
     return f"course-{digest}"
 
 
-def load_teach_catalog_by_slug() -> dict[str, dict]:
-    path = REPO_ROOT / "_data" / "teach_catalog.yml"
-    if not path.is_file():
-        return {}
+def _load_yaml_docs(text: str) -> list:
     try:
         import yaml  # type: ignore
     except ImportError:
-        return {}
+        return []
     try:
-        raw = yaml.safe_load(path.read_text(encoding="utf-8"))
+        return [d for d in yaml.safe_load_all(text) if d is not None]
     except Exception:
-        return {}
-    unis = []
-    if isinstance(raw, dict):
-        unis = list(raw.get("universities") or [])
-    elif isinstance(raw, list):
-        unis = raw
-    out: dict[str, dict] = {}
-    for entry in unis:
-        if not isinstance(entry, dict):
+        return []
+
+
+def load_course_admin_doc(text: str) -> dict:
+    """First mapping doc that looks like a Decap course admin file."""
+    for doc in _load_yaml_docs(text):
+        if isinstance(doc, dict) and (
+            "courses" in doc or "university" in doc or "teaching_folder" in doc
+        ):
+            return doc
+    return {}
+
+
+def course_identity(course: dict) -> tuple[str, str]:
+    return (str(course.get("code") or "").strip(), str(course.get("title") or "").strip())
+
+
+def course_urls_from_admin(
+    uni_slug: str,
+    courses: list,
+    *,
+    include_hub: bool = True,
+) -> list[str]:
+    urls: list[str] = []
+    if include_hub:
+        urls.append(f"{SITE}/teach/universities/{uni_slug}/")
+    seen: set[str] = set(urls)
+    for course in courses:
+        if not isinstance(course, dict):
             continue
-        slug = ascii_slug(str(entry.get("slug") or ""))
-        if slug:
-            out[slug] = entry
+        cslug = course_page_slug(
+            str(course.get("code") or ""), str(course.get("title") or "")
+        )
+        if not cslug:
+            continue
+        url = f"{SITE}/teach/courses/{uni_slug}/{cslug}/"
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
+    return urls
+
+
+def changed_courses(old_doc: dict, new_doc: dict) -> list[dict]:
+    """Courses added or edited between two admin YAML docs."""
+    old_map = {
+        course_identity(c): c
+        for c in (old_doc.get("courses") or [])
+        if isinstance(c, dict) and (course_identity(c) != ("", ""))
+    }
+    out: list[dict] = []
+    seen_slugs: set[str] = set()
+    for course in new_doc.get("courses") or []:
+        if not isinstance(course, dict):
+            continue
+        key = course_identity(course)
+        if key == ("", ""):
+            continue
+        prev = old_map.get(key)
+        if prev is not None and prev == course:
+            continue
+        cslug = course_page_slug(key[0], key[1])
+        if not cslug or cslug in seen_slugs:
+            continue
+        seen_slugs.add(cslug)
+        out.append(course)
+    # Code/title rename: old identity gone, new identity added — already covered.
+    # Also catch slug collision renames where identity key changed but page slug
+    # stayed the same (e.g. code "DDM 笔试" → "DDM"): include new course above.
     return out
 
 
-def teach_urls_for_course_yml(rel: str, catalog: dict[str, dict]) -> list[str]:
-    """Expand `_data/courses/{slug}.yml` → indexable teach URLs."""
+def git_file_at(revision: str, rel: str) -> str | None:
+    """Return file contents at revision, or None if missing."""
+    cmd = ["git", "-C", str(REPO_ROOT), "show", f"{revision}:{rel}"]
+    try:
+        return subprocess.check_output(cmd, stderr=subprocess.DEVNULL).decode(
+            "utf-8", errors="replace"
+        )
+    except subprocess.CalledProcessError:
+        return None
+
+
+def parse_git_range(revision_range: str) -> tuple[str, str]:
+    """Split 'A..B' / 'A...B' into (old, new). Bare ref → (ref^, ref)."""
+    for sep in ("...", ".."):
+        if sep in revision_range:
+            left, right = revision_range.split(sep, 1)
+            return (left or "HEAD~1", right or "HEAD")
+    return (f"{revision_range}~1", revision_range)
+
+
+def teach_urls_for_course_yml(
+    rel: str,
+    *,
+    revision_range: str | None = None,
+) -> list[str]:
+    """Expand `_data/courses/{slug}.yml` → uni hub + changed (or all) course URLs."""
     m = COURSE_YML_RE.match(rel)
     if not m:
         return []
     slug = ascii_slug(m.group(1))
     if not slug:
         return []
-    entry = catalog.get(slug)
-    urls = [f"{SITE}/teach/universities/{slug}/"]
-    if not entry:
-        # Uni hub may still exist from admin YAML even before catalog refresh.
-        return urls
-    linked_n = int(entry.get("linked_course_count") or 0)
-    if linked_n <= 0:
-        # Uni hub is noindex when nothing is linked — skip spam.
-        return []
-    for course in entry.get("courses") or []:
-        if not isinstance(course, dict):
-            continue
-        how = str(course.get("link") or "")
-        if how not in LINKED_HOW or int(course.get("depth_score") or 0) <= 0:
-            continue
-        cslug = course_page_slug(
-            str(course.get("code") or ""), str(course.get("title") or "")
-        )
-        if cslug:
-            urls.append(f"{SITE}/teach/courses/{slug}/{cslug}/")
-    return urls
+
+    new_text: str | None = None
+    path = REPO_ROOT / rel
+    if path.is_file():
+        new_text = path.read_text(encoding="utf-8")
+    if revision_range:
+        _old_rev, new_rev = parse_git_range(revision_range)
+        at_new = git_file_at(new_rev, rel)
+        if at_new is not None:
+            new_text = at_new
+    if not new_text:
+        return [f"{SITE}/teach/universities/{slug}/"]
+
+    new_doc = load_course_admin_doc(new_text)
+    courses = list(new_doc.get("courses") or [])
+
+    if revision_range:
+        old_rev, _new_rev = parse_git_range(revision_range)
+        old_text = git_file_at(old_rev, rel)
+        if old_text is None:
+            # Brand-new uni YAML: hub + every course.
+            return course_urls_from_admin(slug, courses, include_hub=True)
+        old_doc = load_course_admin_doc(old_text)
+        changed = changed_courses(old_doc, new_doc)
+        if changed:
+            return course_urls_from_admin(slug, changed, include_hub=True)
+        # YAML touched but course bodies identical (e.g. only abbr/name) → hub only.
+        return [f"{SITE}/teach/universities/{slug}/"]
+
+    return course_urls_from_admin(slug, courses, include_hub=True)
 
 
-def path_to_urls(rel: str, catalog: dict[str, dict] | None = None) -> list[str]:
+def path_to_urls(
+    rel: str,
+    *,
+    revision_range: str | None = None,
+) -> list[str]:
     """Map a repo-relative content path to public URL(s), or [] to skip."""
     rel = rel.replace("\\", "/").lstrip("./")
     if not rel or rel.endswith("/"):
@@ -442,7 +529,7 @@ def path_to_urls(rel: str, catalog: dict[str, dict] | None = None) -> list[str]:
 
     # Course admin YAML → generated teach pages (exception to SKIP_PREFIXES).
     if COURSE_YML_RE.match(rel):
-        return teach_urls_for_course_yml(rel, catalog or load_teach_catalog_by_slug())
+        return teach_urls_for_course_yml(rel, revision_range=revision_range)
 
     if any(rel.startswith(p) for p in SKIP_PREFIXES):
         return []
@@ -467,7 +554,6 @@ def path_to_urls(rel: str, catalog: dict[str, dict] | None = None) -> list[str]:
             if name.startswith("_"):
                 return []
             return [f"{SITE}/{collection}/{name}/"]
-
     if rel.startswith("_tags/"):
         # Thin tag indexes: sitemap: false — don't IndexNow-spam them.
         return []
@@ -517,9 +603,8 @@ def urls_from_git(revision_range: str) -> list[str]:
     urls: list[str] = []
     seen: set[str] = set()
     skipped: list[str] = []
-    catalog = load_teach_catalog_by_slug()
     for path in git_changed_paths(revision_range):
-        mapped = path_to_urls(path, catalog)
+        mapped = path_to_urls(path, revision_range=revision_range)
         if not mapped:
             skipped.append(path)
             continue
@@ -538,12 +623,6 @@ def urls_from_git(revision_range: str) -> list[str]:
                 "Hint: last commit looks data/report-only. "
                 "Widen the range, e.g. --from-git HEAD~3..HEAD, "
                 "or pass --url for the post."
-            )
-        course_ymls = [p for p in skipped if COURSE_YML_RE.match(p)]
-        if course_ymls:
-            print(
-                "Hint: course YAML changed but no linked materials in teach_catalog.yml. "
-                "Run: python3 .scripts/sync-teach-catalog.py && retry."
             )
     return urls
 
