@@ -31,6 +31,7 @@ Drafts live in `_drafts/` (gitignored). Publish by moving a draft into `_posts/`
 | `redirects/` | Soft redirects for retired URLs |
 | `admin/` | Decap CMS config |
 | `.scripts/` | Photos upload, teach sync, IndexNow / Baidu URL push |
+| `marp/` | Personal Marp brand theme (`zlu`) — slides template, not published by Jekyll |
 
 Web-sized photos are served from Cloudflare R2 (`photo_cdn` in `_config.yml` → `https://media.zlu.me`).
 

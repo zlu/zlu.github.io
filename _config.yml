@@ -21,6 +21,7 @@ exclude:
   - mise.toml
   - .scripts
   - .github
+  - marp
 # Public base URL for web-sized portfolio images on Cloudflare R2 (no Worker).
 photo_cdn: "https://media.zlu.me"
 collections:
