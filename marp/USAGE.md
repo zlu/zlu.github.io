@@ -91,6 +91,6 @@ Use `$inline$` and `$$display$$` only. LaTeX `\(...\)` will not render in Marp.
 - **Ink / Navy** — covers, titles
 - **Signal blue** — accent bar, badges, links
 - **Mist / Paper** — content ground
-- **Green / Amber** — tip / pitfall
-- **Fonts** — Sora (display), Manrope (body)
+- **Mist + left accent** — tip / pitfall / note (cool slate · brand blue, not traffic-light fills)
+- **Fonts** — Sora (display), Manrope (body), IBM Plex Mono (code)
 - **Mark** — **zlu** (footer / cover signature)

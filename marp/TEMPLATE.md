@@ -37,9 +37,9 @@ A short supporting line — what this session will do, and how you’ll walk it.
 | Ink / Navy | Covers, titles, emphasis |
 | Signal blue | Accent bar, badges, links |
 | Mist / Paper | Content slide ground |
-| Green / Amber | Tip / pitfall callouts |
+| Mist + left accent | Tip / pitfall / note callouts |
 
-Fonts: **Sora** (display) + **Manrope** (body). Brand mark: **zlu**.
+Fonts: **Sora** (display) + **Manrope** (body) + **IBM Plex Mono** (code). Brand mark: **zlu**.
 
 ---
 
