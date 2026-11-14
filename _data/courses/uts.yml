@@ -24,10 +24,102 @@ courses:
     theme: databases
     aliases:
       - "31271"
-  - title: Networking Fundamentals
+  - code: INEF001
+    title: Networking Fundamentals
     material: INEF001-networking
-    code: INEF001
     theme: networking
+    meta_description_en: >-
+      INEF001 UTS tutoring (Networking Fundamentals). Kurose top-down workshops
+      for online quiz marks, Wireshark + CLI labs that make concepts concrete, and
+      socket / network programming assignments — bilingual Chinese/English.
+    lead_en: >-
+      INEF001 is Kurose & Ross top-down networking. The hard part is not “never
+      heard of packets” — it is workshop questions that look easy until the online
+      quiz, labs where abstract layers only click once you see them in Wireshark
+      or the terminal, and socket assignments that mix protocol rules with code.
+      Tutoring follows those three tracks.
+    lead_cn: >-
+      INEF001 用的是 Kurose & Ross《自顶向下方法》。真正难的不是「从没听过包」——而是
+      workshop 题看起来简单、一上 online quiz 就丢分；Lab 里抽象分层要靠 Wireshark
+      和命令行才看得见；再加上 Socket / 网络编程作业要把协议规则落到代码。辅导就按
+      这三条线走。
+    overview_en: >-
+      Networking Fundamentals at UTS (Diploma of IT) uses the classic Computer
+      Networking: A Top-Down Approach textbook. Weekly workshops review core ideas
+      — delay and throughput, the protocol stack, HTTP/DNS/email, UDP/TCP, IP and
+      routing — and drill the same shapes that show up on the online quiz. Labs
+      push the same concepts into the real network with Wireshark packet captures
+      and command-line tools (ping, traceroute, nslookup, and friends), so
+      students see headers, filters, and round trips instead of only slide
+      diagrams. Network / socket programming assignments then ask you to build
+      something that speaks the protocol (for example a simple TCP web server).
+      Tutoring is bilingual: Chinese for intuition, English for quiz wording,
+      lab write-ups, and code comments.
+    overview_cn: >-
+      UTS（Diploma of IT）的 Networking Fundamentals 教材是经典的《计算机网络：自顶向下方法》。
+      每周 workshop 复习核心概念——时延与吞吐、协议栈、HTTP/DNS/邮件、UDP/TCP、IP 与路由——
+      并练 online quiz 会考的同构题型。Lab 则用 Wireshark 抓包和命令行工具（ping、
+      traceroute、nslookup 等）把同一套抽象概念落到真实网络上，让你看见首部、过滤器
+      和往返，而不只是课件上的图。网络 / Socket 编程作业再要求你写出能说话的协议程序
+      （例如简单的 TCP Web 服务器）。辅导中英双语：中文讲清直觉，英文对齐 quiz 问法、
+      Lab 表述与代码用语。
+    method_note_en: >-
+      Three tracks, same Kurose spine: workshop practice for quiz marks, labs that
+      make the abstraction visible, and socket assignments you drive yourself.
+    method_note_cn: >-
+      三条线、同一本 Kurose：workshop 练到 quiz 能得分，Lab 把抽象变看得见，
+      Socket 作业由你动手、我在旁边盯卡点。
+    topics:
+      - en: "Workshop concept review aligned to the online quiz"
+        cn: "对准 online quiz 的 workshop 概念复习与练习"
+      - en: "Delay, throughput, and the five-layer stack (Kurose top-down)"
+        cn: "时延、吞吐与五层协议栈（Kurose 自顶向下）"
+      - en: "Application protocols: HTTP, DNS, email roles"
+        cn: "应用层协议：HTTP、DNS、邮件各角色"
+      - en: "Transport: UDP vs TCP services, demux, reliability basics"
+        cn: "传输层：UDP vs TCP 服务、复用、可靠传输基础"
+      - en: "Labs with Wireshark — filters, headers, and what the capture actually shows"
+        cn: "Wireshark Lab：过滤器、首部，以及抓包真正说明了什么"
+      - en: "Command-line network tools (ping, traceroute, nslookup, …)"
+        cn: "命令行网络工具（ping、traceroute、nslookup 等）"
+      - en: "Socket / network programming assignments (TCP server lifecycle, HTTP framing)"
+        cn: "Socket / 网络编程作业（TCP 服务器生命周期、HTTP 报文格式）"
+      - en: "IP, subnetting, routing, and link-layer ideas when the term reaches them"
+        cn: "学期推进到时的 IP、子网、路由与链路层概念"
+    stuck:
+      - en: "Workshop feels fine in class, then the online quiz wording flips the same idea"
+        cn: "Workshop 课上觉得会了，online quiz 一换问法就丢分"
+      - en: "Slide diagrams of layers never connect to a real packet or CLI output"
+        cn: "课件上的分层图对不上真实报文或命令行输出"
+      - en: "Wireshark open, but the wrong filter / cached reply makes the trace look empty or meaningless"
+        cn: "Wireshark 打开了，过滤器不对或缓存回复让抓包像空白、读不出东西"
+      - en: "Mixing which protocol does what (e.g. SMTP vs retrieval, UDP vs TCP demux)"
+        cn: "协议角色搅在一起（例如 SMTP vs 收信、UDP vs TCP 怎么复用）"
+      - en: "Socket code almost runs — bind/listen/accept or request/response framing still fuzzy"
+        cn: "Socket 代码差不多能跑，但 bind/listen/accept 或请求 / 响应格式仍糊"
+    session_angles:
+      - en: "Drill workshop questions in quiz shape until the wording stops tricking you"
+        cn: "把 workshop 题练成 quiz 问法，直到换表述也不慌"
+      - en: "In labs: capture or run the command first, then name the concept the evidence shows"
+        cn: "Lab：先抓包或跑命令，再对照证据说出对应概念"
+      - en: "On programming tasks: you type; we debug the socket path and protocol framing together"
+        cn: "编程作业：你来敲；一起排查 Socket 路径与协议报文格式"
+    tutoring:
+      - en: "Workshops → online quiz: bilingual review of that week’s Kurose core ideas, then practice in the same shape as the quiz so marks follow understanding — not last-minute cramming of answers."
+        cn: "Workshop → online quiz：用中英双语复习当周 Kurose 核心概念，再按 quiz 同构题型练，让分数跟在理解后面，而不是临考背答案。"
+      - en: "Labs: Wireshark and the command line make abstract layers concrete — choose filters, read headers, run ping / traceroute / nslookup, and tie each observation back to the concept the lab is testing."
+        cn: "Lab：用 Wireshark 和命令行把抽象分层变具体——选过滤器、读首部、跑 ping / traceroute / nslookup，并把每一次观察扣回 Lab 在考的概念。"
+      - en: "Socket / network programming assignments: you drive the editor; we walk the server or client lifecycle, fix protocol framing and runtime errors, and stop when you can explain the design — no ghost-writing the submission."
+        cn: "Socket / 网络编程作业：你来操作编辑器；一起走服务器或客户端生命周期，修协议报文格式与运行报错，直到你能讲清设计——不代写交差。"
+    prep_en: >-
+      Send school, INEF001, deadline, and what you are stuck on: this week’s
+      workshop questions, a Wireshark screenshot / capture, CLI output, or the
+      socket assignment brief and error text. Concrete evidence gets session one
+      onto the real blocker faster.
+    prep_cn: >-
+      微信请发学校、课号（INEF001）、截止日期，以及你卡在哪：当周 workshop 题、
+      Wireshark 截图 / 抓包、命令行输出，或 Socket 作业 brief 与报错原文。证据越具体，
+      第一节课越快对着真问题开讲。
   - topics:
       - en: Java syntax and console I/O with a text menu
         cn: Java 语法与带文本菜单的控制台输入输出
