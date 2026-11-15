@@ -113,6 +113,9 @@ courses:
   - code: COMP3211
     title: Computer Architecture
     material: comp3211
+  - code: COMP3221
+    title: Distributed Systems
+    material: comp3221
   - code: COMP3311
     title: Database Systems
   - code: COMP3331
