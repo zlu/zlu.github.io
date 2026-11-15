@@ -116,6 +116,84 @@ courses:
   - code: COMP3221
     title: Distributed Systems
     material: comp3221
+    theme: distributed-systems
+    meta_description_en: >-
+      COMP3221 UNSW tutoring (Distributed Systems). Classic distributed-systems
+      textbook plus the professor’s blockchain text; two assignments that are hard
+      to get fully right — bilingual Chinese/English.
+    lead_en: >-
+      COMP3221 teaches traditional distributed systems from the classic textbook,
+      then blockchain from the professor’s own book. The hard part is rarely “never
+      heard of consensus” — it is two assignments where almost-correct protocols
+      still fail on races, message loss, or edge cases the autograder / marker
+      actually checks.
+    lead_cn: >-
+      COMP3221 用经典分布式教材讲传统分布式系统，再用教授自己的区块链教材往下推。
+      真正难的往往不是「从没听过共识」——而是两份作业：协议差不多对，一碰上竞态、
+      丢包或评分真正卡的边界就挂。
+    overview_en: >-
+      Distributed Systems at UNSW spans the classic distributed-systems spine —
+      architecture, communication, synchronisation, consistency and replication,
+      fault tolerance and consensus — and blockchain foundations from the course
+      professor’s textbook. Theory on the page can look clear while the two
+      programming assignments stay unforgiving: correct under the happy path, wrong
+      under concurrency, partial failure, or subtle protocol states. Tutoring is
+      bilingual: Chinese for the model, English for briefs, logs, and how the
+      marker / tests phrase failures.
+    overview_cn: >-
+      UNSW 的 Distributed Systems 一条线走经典分布式教材——体系结构、通信、同步、
+      一致性与复制、容错与共识——另一条线用教授自己的区块链教材打基础。纸上概念
+      可以很清楚，两份编程作业却很苛刻：快乐路径能过，一碰上并发、部分失败或协议
+      细状态就错。辅导中英双语：中文讲清模型，英文对齐 brief、日志和评分 / 测试
+      怎么描述失败。
+    topics:
+      - en: "Classic DS spine: architecture, communication, sync, consistency, fault tolerance"
+        cn: "经典分布式主线：体系结构、通信、同步、一致性、容错"
+      - en: "Logical time, ordering, and what ‘happened-before’ actually constrains"
+        cn: "逻辑时钟、次序，以及 happens-before 真正约束什么"
+      - en: "Replication, consistency models, and when a ‘correct’ replica still looks wrong"
+        cn: "复制、一致性模型，以及副本「对」却看起来仍不对"
+      - en: "Consensus and failure models — crash vs Byzantine at the level the course uses"
+        cn: "共识与故障模型——课上用到的 crash vs Byzantine"
+      - en: "Blockchain foundations from the professor’s textbook (security + scale intuition)"
+        cn: "教授区块链教材里的基础（安全与可扩展直觉）"
+      - en: "Both assignments: protocol design that survives races, loss, and edge cases"
+        cn: "两份作业：协议要扛得住竞态、丢包与边界"
+      - en: "Debug distributed code from logs and interleavings, not only local unit tests"
+        cn: "从日志与交错排查分布式代码，而不只靠本地单测"
+    stuck:
+      - en: "Happy-path demo works; one more process, delay, or lost message and it breaks"
+        cn: "快乐路径演示能过；多一个进程、一点延迟或丢一条消息就崩"
+      - en: "Classic textbook ideas clear; cannot map them onto the assignment brief"
+        cn: "经典教材概念清楚，对不上作业 brief"
+      - en: "Blockchain chapters read fine; security / consensus wording on tasks still fuzzy"
+        cn: "区块链章节能读，作业里的安全 / 共识措辞仍糊"
+      - en: "Both assignments nearly done, but ‘almost correct’ never clears the last cases"
+        cn: "两份作业都快做完，但「差不多对」过不了最后几组用例"
+      - en: "Logs look noisy; cannot tell ordering bug from state-machine bug"
+        cn: "日志很吵，分不清是次序 bug 还是状态机 bug"
+    session_angles:
+      - en: "Name the failure model and invariants before opening the editor"
+        cn: "打开编辑器前先写清故障模型与不变量"
+      - en: "Reproduce the failing interleaving on paper, then change one assumption at a time"
+        cn: "先在纸上复现失败交错，再一次只改一个假设"
+      - en: "You drive the code; we separate protocol error from plumbing (sockets, threads, I/O)"
+        cn: "你来写；一起分清是协议错，还是套接字 / 线程 / I/O 管道错"
+    tutoring:
+      - en: "Lecture sync: bilingual walkthrough of the classic DS arc and the professor’s blockchain chapters until you can restate invariants in exam / brief language."
+        cn: "同步跟课：用中英双语把经典分布式主线与教授区块链章节讲透，直到能用考试 / brief 用语复述不变量。"
+      - en: "Assignments (both are hard to get right): align the brief to the protocol model, sketch message and failure cases, then live-debug interleavings with you at the keyboard — no ghost-writing the submission."
+        cn: "作业（两份都很难一次做对）：先把 brief 对齐协议模型，画出消息与失败情形，再在你的环境里一起排查交错——不代写交差。"
+      - en: "Exam / theory: drill consistency, consensus, and blockchain foundations in the same wording the course uses beside the classic + professor texts."
+        cn: "考试 / 理论：用课上用语练一致性、共识与区块链基础，并对照经典教材与教授教材。"
+    prep_en: >-
+      Send school, COMP3221, deadline, and what you are stuck on: assignment brief,
+      failing log / trace, or the textbook chapter (classic DS vs professor blockchain)
+      that does not connect to the task. Concrete evidence gets session one onto the
+      real blocker faster.
+    prep_cn: >-
+      发学校、COMP3221、截止日期，以及卡点：作业 brief、失败日志 / 轨迹，或对不上任务的
+      教材章节（经典分布式 vs 教授区块链）。有具体证据，第一节课更快落到真问题。
   - code: COMP3311
     title: Database Systems
   - code: COMP3331
