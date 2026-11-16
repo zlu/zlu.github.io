@@ -10,6 +10,8 @@
 # Bing confirm: ~8.2k impr / ~22 clicks (0.27% CTR); thin uni shells dominate
 # impressions (BR/RU); Monash course codes + image-processing-with-r convert.
 # status: optimize | expand | monitor | ship
+# Also 2026-11-15: depth-promoted linked course pages (material-backed) into tutor_leads
+# as expand/ship — do not wait for clicks when private teaching depth is already strong.
 
 scorecards:
   ai_authority:
@@ -224,3 +226,580 @@ entries:
     supporting:
       - UTS web systems tutoring
     status: monitor
+
+  # --- tutor_leads (depth-promoted: linked materials + curated copy, 2026-11-15) ---
+  # Promoted without waiting for GSC clicks: private teaching depth + hand-curated pages.
+  - primary: "fit1045"
+    url: /teach/courses/monash/fit1045/
+    scorecard: tutor_leads
+    supporting:
+      - "FIT1045 tutoring"
+      - "FIT1045 Monash"
+      - "Monash Introduction to Programming"
+    status: expand
+    note: "Depth-promoted (70 content files); theme=programming; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "fit5202"
+    url: /teach/courses/monash/fit5202/
+    scorecard: tutor_leads
+    supporting:
+      - "FIT5202 tutoring"
+      - "FIT5202 Monash"
+      - "Monash Data Processing for Big Data"
+    status: expand
+    note: "Depth-promoted (61 content files); theme=data-science; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "eng1014"
+    url: /teach/courses/monash/eng1014/
+    scorecard: tutor_leads
+    supporting:
+      - "ENG1014 tutoring"
+      - "ENG1014 Monash"
+      - "Monash Engineering Numerical Analysis"
+    status: expand
+    note: "Depth-promoted (35 content files); theme=math-for-cs; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "fit1008"
+    url: /teach/courses/monash/fit1008/
+    scorecard: tutor_leads
+    supporting:
+      - "FIT1008 tutoring"
+      - "FIT1008 Monash"
+      - "Monash Fundamentals of Algorithms"
+      - "FIT2085"
+    status: expand
+    note: "Depth-promoted (31 content files); theme=algorithms; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "fit1058"
+    url: /teach/courses/monash/fit1058/
+    scorecard: tutor_leads
+    supporting:
+      - "FIT1058 tutoring"
+      - "FIT1058 Monash"
+      - "Monash Foundations of Computing"
+    status: ship
+    note: "Depth-promoted (27 content files); theme=math-for-cs; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "fit1047"
+    url: /teach/courses/monash/fit1047/
+    scorecard: tutor_leads
+    supporting:
+      - "FIT1047 tutoring"
+      - "FIT1047 Monash"
+      - "Monash Introduction to Computer Systems, Networks and Security"
+    status: ship
+    note: "Depth-promoted (15 content files); theme=systems; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp9021"
+    url: /teach/courses/unsw/comp9021/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP9021 tutoring"
+      - "COMP9021 UNSW"
+      - "UNSW Principles of Programming"
+    status: expand
+    note: "Depth-promoted (301 content files); theme=programming; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "07-120"
+    url: /teach/courses/carnegie-mellon-university/07-120/
+    scorecard: tutor_leads
+    supporting:
+      - "07-120 tutoring"
+      - "07-120 CMU"
+      - "CMU Introduction to Software Construction"
+    status: expand
+    note: "Depth-promoted (298 content files); theme=programming; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "inhn0012"
+    url: /teach/courses/tum/inhn0012/
+    scorecard: tutor_leads
+    supporting:
+      - "INHN0012 tutoring"
+      - "INHN0012 TUM"
+      - "TUM Computer Networking And IT Security"
+    status: expand
+    note: "Depth-promoted (243 content files); theme=security; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "cs221"
+    url: /teach/courses/stanford/cs221/
+    scorecard: tutor_leads
+    supporting:
+      - "CS221 tutoring"
+      - "CS221 Stanford"
+      - "Stanford Artificial Intelligence: Principles and Techniques"
+    status: expand
+    note: "Depth-promoted (234 content files); theme=machine-learning; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "info3616"
+    url: /teach/courses/university-of-sydney/info3616/
+    scorecard: tutor_leads
+    supporting:
+      - "INFO3616 tutoring"
+      - "INFO3616 Sydney"
+      - "Sydney Principles Of Security And Security Eng"
+    status: expand
+    note: "Depth-promoted (211 content files); theme=security; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "birmingham database and web programming"
+    url: /teach/courses/birmingham/database-and-web-programming/
+    scorecard: tutor_leads
+    supporting:
+      - "Database And Web Programming tutoring"
+      - "Database And Web Programming Birmingham"
+      - "Birmingham Database and Web Programming"
+    status: expand
+    note: "Depth-promoted (183 content files); theme=databases; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "compsci5089"
+    url: /teach/courses/university-of-glasgow/compsci5089/
+    scorecard: tutor_leads
+    supporting:
+      - "COMPSCI5089 tutoring"
+      - "COMPSCI5089 Glasgow"
+      - "Glasgow Introduction to Data Science and Systems"
+    status: expand
+    note: "Depth-promoted (154 content files); theme=data-science; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "lmu symbolische programmiersprache"
+    url: /teach/courses/lmu/symbolische-programmiersprache/
+    scorecard: tutor_leads
+    supporting:
+      - "Symbolische Programmiersprache tutoring"
+      - "Symbolische Programmiersprache LMU"
+      - "LMU Symbolische Programmiersprache"
+    status: expand
+    note: "Depth-promoted (122 content files); theme=programming; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "engr 010"
+    url: /teach/courses/lehigh-university/engr-010/
+    scorecard: tutor_leads
+    supporting:
+      - "ENGR 010 tutoring"
+      - "ENGR 010 Lehigh"
+      - "Lehigh Applied Engineering Computer Methods"
+    status: expand
+    note: "Depth-promoted (115 content files); theme=programming; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "ie0005"
+    url: /teach/courses/ntu/ie0005/
+    scorecard: tutor_leads
+    supporting:
+      - "IE0005 tutoring"
+      - "IE0005 NTU"
+      - "NTU Introduction to Data Science and Artificial Intelligence"
+    status: expand
+    note: "Depth-promoted (68 content files); theme=machine-learning; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "lc ai1"
+    url: /teach/courses/birmingham/lc-ai1/
+    scorecard: tutor_leads
+    supporting:
+      - "LC AI1 tutoring"
+      - "LC AI1 Birmingham"
+      - "Birmingham Artificial Intelligence 1"
+    status: expand
+    note: "Depth-promoted (65 content files); theme=machine-learning; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "ucd mobile computing"
+    url: /teach/courses/university-college-dublin/mobile-computing/
+    scorecard: tutor_leads
+    supporting:
+      - "Mobile Computing tutoring"
+      - "Mobile Computing UCD"
+      - "UCD Mobile Computing"
+    status: expand
+    note: "Depth-promoted (64 content files); theme=web-mobile; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp9331"
+    url: /teach/courses/unsw/comp9331/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP9331 tutoring"
+      - "COMP9331 UNSW"
+      - "UNSW Computer Networks and Applications"
+    status: expand
+    note: "Depth-promoted (64 content files); theme=systems; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp6000"
+    url: /teach/courses/imperial-college-london/comp6000/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP6000 tutoring"
+      - "COMP6000 Imperial"
+      - "Imperial Advanced Computer Architecture"
+    status: expand
+    note: "Depth-promoted (63 content files); theme=systems; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "csc8202"
+    url: /teach/courses/newcastle/csc8202/
+    scorecard: tutor_leads
+    supporting:
+      - "CSC8202 tutoring"
+      - "CSC8202 Newcastle"
+      - "Newcastle Cryptography"
+    status: expand
+    note: "Depth-promoted (63 content files); theme=security; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "6114"
+    url: /teach/courses/national-university-of-malaysia/6114/
+    scorecard: tutor_leads
+    supporting:
+      - "6114 tutoring"
+      - "6114 UKM"
+      - "UKM 非结构化数据分析(R)"
+    status: expand
+    note: "Depth-promoted (57 content files); theme=data-science; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "math1131"
+    url: /teach/courses/unsw/math1131/
+    scorecard: tutor_leads
+    supporting:
+      - "MATH1131 tutoring"
+      - "MATH1131 UNSW"
+      - "UNSW Mathematics 1A"
+      - "MTHS1313"
+    status: expand
+    note: "Depth-promoted (57 content files); theme=math-for-cs; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "cp3404"
+    url: /teach/courses/jcu/cp3404/
+    scorecard: tutor_leads
+    supporting:
+      - "CP3404 tutoring"
+      - "CP3404 JCU"
+      - "JCU Network Security and Cryptography"
+    status: expand
+    note: "Depth-promoted (45 content files); theme=security; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "compsci5077"
+    url: /teach/courses/university-of-glasgow/compsci5077/
+    scorecard: tutor_leads
+    supporting:
+      - "COMPSCI5077 tutoring"
+      - "COMPSCI5077 Glasgow"
+      - "Glasgow Enterprise Cyber Security"
+    status: expand
+    note: "Depth-promoted (44 content files); theme=security; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp4337"
+    url: /teach/courses/unsw/comp4337/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP4337 tutoring"
+      - "COMP4337 UNSW"
+      - "UNSW Securing Fixed and Wireless Networks"
+      - "COMP9337"
+    status: expand
+    note: "Depth-promoted (43 content files); theme=security; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp5310"
+    url: /teach/courses/unsw/comp5310/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP5310 tutoring"
+      - "COMP5310 UNSW"
+      - "UNSW Principles of Data Science"
+    status: expand
+    note: "Depth-promoted (43 content files); theme=data-science; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "cs1010"
+    url: /teach/courses/nus/cs1010/
+    scorecard: tutor_leads
+    supporting:
+      - "CS1010 tutoring"
+      - "CS1010 NUS"
+      - "NUS Programming Methodology"
+    status: expand
+    note: "Depth-promoted (42 content files); theme=programming; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "cs1010e"
+    url: /teach/courses/nus/cs1010e/
+    scorecard: tutor_leads
+    supporting:
+      - "CS1010E tutoring"
+      - "CS1010E NUS"
+      - "NUS Programming Methodology"
+    status: expand
+    note: "Depth-promoted (42 content files); theme=programming; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "cs444"
+    url: /teach/courses/uiuc/cs444/
+    scorecard: tutor_leads
+    supporting:
+      - "CS444 tutoring"
+      - "CS444 UIUC"
+      - "UIUC Deep Learning for Computer Vision"
+    status: expand
+    note: "Depth-promoted (42 content files); theme=machine-learning; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "ece494"
+    url: /teach/courses/uiuc/ece494/
+    scorecard: tutor_leads
+    supporting:
+      - "ECE494 tutoring"
+      - "ECE494 UIUC"
+      - "UIUC Deep Learning for Computer Vision"
+    status: expand
+    note: "Depth-promoted (42 content files); theme=machine-learning; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "comp sci 4023"
+    url: /teach/courses/adelaide/comp-sci-4023/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP SCI 4023 tutoring"
+      - "COMP SCI 4023 Adelaide"
+      - "Adelaide Event Driven Computing"
+    status: expand
+    note: "Depth-promoted (41 content files); theme=automata; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "esc4402"
+    url: /teach/courses/algonquin-college/esc4402/
+    scorecard: tutor_leads
+    supporting:
+      - "ESC4402 tutoring"
+      - "ESC4402 Algonquin"
+      - "Algonquin Engineering Software Computing"
+    status: expand
+    note: "Depth-promoted (41 content files); theme=programming; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "baruch mfe technical interview prep"
+    url: /teach/courses/baruch-college/mfe-interview/
+    scorecard: tutor_leads
+    supporting:
+      - "MFE Interview tutoring"
+      - "MFE Interview Baruch"
+      - "Baruch MFE Technical Interview Prep"
+    status: expand
+    note: "Depth-promoted (39 content files); theme=systems; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp3211"
+    url: /teach/courses/unsw/comp3211/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP3211 tutoring"
+      - "COMP3211 UNSW"
+      - "UNSW Computer Architecture"
+    status: expand
+    note: "Depth-promoted (38 content files); theme=systems; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp3221"
+    url: /teach/courses/university-of-sydney/comp3221/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP3221 tutoring"
+      - "COMP3221 Sydney"
+      - "Sydney Distributed Systems"
+    status: expand
+    note: "Depth-promoted (34 content files); theme=systems; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "mast term1"
+    url: /teach/courses/melbourne/mast-term1/
+    scorecard: tutor_leads
+    supporting:
+      - "MAST Term1 tutoring"
+      - "MAST Term1 Melbourne"
+      - "Melbourne Mathematics (Term 1)"
+    status: expand
+    note: "Depth-promoted (33 content files); theme=math-for-cs; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "comp9601"
+    url: /teach/courses/unsw/comp9601/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP9601 tutoring"
+      - "COMP9601 UNSW"
+      - "UNSW Computer Systems"
+    status: expand
+    note: "Depth-promoted (33 content files); theme=systems; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "soft2201"
+    url: /teach/courses/university-of-sydney/soft2201/
+    scorecard: tutor_leads
+    supporting:
+      - "SOFT2201 tutoring"
+      - "SOFT2201 Sydney"
+      - "Sydney Software Construction / Design"
+    status: expand
+    note: "Depth-promoted (32 content files); theme=programming; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "cs 70"
+    url: /teach/courses/berkeley/cs-70/
+    scorecard: tutor_leads
+    supporting:
+      - "CS 70 tutoring"
+      - "CS 70 UC Berkeley"
+      - "UC Berkeley Discrete Mathematics and Probability Theory"
+    status: expand
+    note: "Depth-promoted (31 content files); theme=algorithms; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "cive70107"
+    url: /teach/courses/imperial-college-london/cive70107/
+    scorecard: tutor_leads
+    supporting:
+      - "CIVE70107 tutoring"
+      - "CIVE70107 Imperial"
+      - "Imperial ANALYTICAL METHODS"
+    status: expand
+    note: "Depth-promoted (31 content files); theme=data-science; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "ma2623"
+    url: /teach/courses/north-china-university-of-technology/ma2623/
+    scorecard: tutor_leads
+    supporting:
+      - "MA2623 tutoring"
+      - "MA2623 NCUT"
+      - "NCUT Linear and Abstract Algebra"
+    status: expand
+    note: "Depth-promoted (31 content files); theme=math-for-cs; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "hkust msc ddm written exam"
+    url: /teach/courses/hkust/ddm/
+    scorecard: tutor_leads
+    supporting:
+      - "DDM 理学硕士笔试 tutoring"
+      - "DDM 理学硕士笔试 HKUST"
+      - "HKUST MSc DDM Written Exam"
+    status: expand
+    note: "Depth-promoted (30 content files); theme=math-for-cs; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "mang2092"
+    url: /teach/courses/university-of-southampton/mang2092/
+    scorecard: tutor_leads
+    supporting:
+      - "MANG2092 tutoring"
+      - "MANG2092 Southampton"
+      - "Southampton Business Analytics / Management Analytics"
+    status: expand
+    note: "Depth-promoted (30 content files); theme=data-science; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "comp2511"
+    url: /teach/courses/unsw/comp2511/
+    scorecard: tutor_leads
+    supporting:
+      - "COMP2511 tutoring"
+      - "COMP2511 UNSW"
+      - "UNSW Object-Oriented Design and Programming"
+    status: expand
+    note: "Depth-promoted (30 content files); theme=programming; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "infs7203"
+    url: /teach/courses/queensland/infs7203/
+    scorecard: tutor_leads
+    supporting:
+      - "INFS7203 tutoring"
+      - "INFS7203 UQ"
+      - "UQ Data Mining"
+    status: ship
+    note: "Depth-promoted (29 content files); theme=data-science; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "esc4503"
+    url: /teach/courses/algonquin-college/esc4503/
+    scorecard: tutor_leads
+    supporting:
+      - "ESC4503 tutoring"
+      - "ESC4503 Algonquin"
+      - "Algonquin Intro To Business Application Programming"
+    status: ship
+    note: "Depth-promoted (27 content files); theme=programming; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "cp3406"
+    url: /teach/courses/jcu/cp3406/
+    scorecard: tutor_leads
+    supporting:
+      - "CP3406 tutoring"
+      - "CP3406 JCU"
+      - "JCU Android"
+    status: ship
+    note: "Depth-promoted (27 content files); theme=web-mobile; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "eeee4119"
+    url: /teach/courses/nottingham/eeee4119/
+    scorecard: tutor_leads
+    supporting:
+      - "EEEE4119 tutoring"
+      - "EEEE4119 Nottingham"
+      - "Nottingham Eeee4119 Ai And Intelligent Systems"
+    status: ship
+    note: "Depth-promoted (27 content files); theme=machine-learning; curated meta + difficulty\
+  \ copy live"
+
+  - primary: "csse1001"
+    url: /teach/courses/queensland/csse1001/
+    scorecard: tutor_leads
+    supporting:
+      - "CSSE1001 tutoring"
+      - "CSSE1001 UQ"
+      - "UQ Intro To Software Engeering"
+    status: ship
+    note: "Depth-promoted (27 content files); theme=web-mobile; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "infs7410"
+    url: /teach/courses/queensland/infs7410/
+    scorecard: tutor_leads
+    supporting:
+      - "INFS7410 tutoring"
+      - "INFS7410 UQ"
+      - "UQ Information Retrieval and Web Search"
+    status: ship
+    note: "Depth-promoted (27 content files); theme=web-mobile; curated meta + difficulty copy\
+  \ live"
+
+  - primary: "fit5124"
+    url: /teach/courses/monash/fit5124/
+    scorecard: tutor_leads
+    supporting:
+      - "FIT5124 tutoring"
+      - "FIT5124 Monash"
+      - "Monash Emerging Topics for Cybersecurity"
+    status: ship
+    note: "Depth-promoted (curated ML privacy attack assessment); theme=security; curated meta + difficulty copy live"
+

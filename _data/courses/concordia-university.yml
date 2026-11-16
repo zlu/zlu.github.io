@@ -1,7 +1,7 @@
 ---
 university: Concordia University
 abbr: Concordia
-name_cn: "康考迪亚大学"
+name_cn: 康考迪亚大学
 teaching_folder: concordia
 courses:
 - code: COMP 248
@@ -21,9 +21,106 @@ courses:
 - code: SOEN 287
   title: Web Programming
 - code: CART263
-  title: Js
+  title: Creative Computation (JavaScript)
   material: cart263-js-winter2026
+  theme: programming
+  meta_description_en: CART263 Concordia tutoring (Creative Computation (JavaScript)). Code that “almost
+    works” with no systematic debug plan?
+  lead_en: CART263 Creative Computation (JavaScript) at Concordia University is where briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Private materials show lecture and practice
+    materials. The hard part is turning that arc into a method you can repeat on the next brief — not
+    rereading slides the night before.
+  lead_cn: 在康考迪亚大学上 CART263，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: CART263 Creative Computation (JavaScript) sits in programming & software construction.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: CART263 是康考迪亚大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  - en: Git basics when the course requires it
+    cn: 课程要求时的 Git 基础
+  - en: Memory / pointers when the language is C or C++
+    cn: C / C++ 下的内存与指针
+  stuck:
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for CART263 outruns bilingual notes
+    cn: CART263 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Refactor for clarity before chasing extra marks
+    cn: 先为清晰度重构，再追额外分数
+  tutoring:
+  - en: 'Lecture sync for CART263: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CART263 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: CART211
-  title: CART211
+  title: Creative Computation Studio
   material: cart211-final
+  theme: web-mobile
+  meta_description_en: CART211 Concordia tutoring (Creative Computation Studio). Lectures outpacing note-taking?
+    Bilingual Chinese/English help.
+  lead_en: CART211 Creative Computation Studio at Concordia University is where lecture speed and dense
+    vocabulary outrun note-taking. Private materials show lecture and practice materials. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在康考迪亚大学上 CART211，课速一快、术语一密，笔记一断档后面就更难补。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: CART211 Creative Computation Studio sits in computer science coursework. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit.
+  overview_cn: CART211 是康考迪亚大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Lecture catch-up in Chinese and English
+    cn: 中英双语补课与知识点梳理
+  - en: Assignment approach and debugging
+    cn: 作业思路与调试
+  - en: Project structure and write-up feedback
+    cn: Project 结构与报告反馈
+  - en: Exam topic maps on weak areas
+    cn: 针对薄弱点的考点地图
+  - en: Tools the course actually uses (Git, notebooks, LaTeX)
+    cn: 课程真正用到的工具（Git、notebook、LaTeX）
+  stuck:
+  - en: Lectures outpacing note-taking
+    cn: 课速度快于记笔记速度
+  - en: Stacked deadlines across labs and projects
+    cn: Lab 与 Project 截止日期叠在一起
+  - en: Not knowing what “good enough” looks like for the rubric
+    cn: 不清楚评分量表眼里的“够好”
+  - en: Lecture vocabulary for CART211 outruns bilingual notes
+    cn: CART211 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Start from your materials and the nearest deadline
+    cn: 从你的材料与最近 DDL 开始
+  - en: Leave with a concrete next-step checklist
+    cn: 课后带走一份可执行的下一步清单
+  - en: Book follow-ups only where they still move the grade
+    cn: 只在还能拉动成绩的地方约后续课
+  tutoring:
+  - en: 'Lecture sync for CART211: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CART211 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

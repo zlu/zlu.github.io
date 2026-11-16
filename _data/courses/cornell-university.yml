@@ -1,12 +1,114 @@
 ---
 university: Cornell University
 abbr: Cornell
-name_cn: "康奈尔大学"
+name_cn: 康奈尔大学
 teaching_folder: cornell
 courses:
 - code: CS2110
   title: Java Test
   material: cs2110-java-test
-- title: Database
+  theme: programming
+  meta_description_en: CS2110 Cornell tutoring (Java Test). Assignment brief (“A2 CS 2110”) makes sense
+    in class, freezes you alone? Bilingual Chinese/English help.
+  lead_en: CS2110 Java Test at Cornell University is where briefs, tooling, and autograder edge cases
+    hit harder than syntax itself. Private materials show assignment briefs / labs on disk, code submissions
+    / practice files. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在康奈尔大学上 CS2110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: CS2110 Java Test sits in programming & software construction. Evidence from the course
+    folder points to Algorithms, ADTs, and complexity; Programming foundations and debugging. Assessed
+    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: CS2110 是康奈尔大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  stuck:
+  - en: Assignment brief (“A2 CS 2110”) makes sense in class, freezes you alone
+    cn: 作业 brief（「A2 CS 2110」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  tutoring:
+  - en: 'Lecture sync for CS2110: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CS2110 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as A2 CS 2110, with you at the keyboard.'
+    cn: 作业辅导：针对 A2 CS 2110 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Database Systems
   material: database
+  code: Database
+  theme: databases
+  meta_description_en: Database Cornell tutoring (Database Systems). Stuck on correct-looking SQL that
+    fails hidden test schemas? Bilingual Chinese/English help.
+  lead_en: Database Database Systems at Cornell University is where one wrong schema or join quietly breaks
+    every later query. Private materials show lecture and practice materials. The hard part is turning
+    that arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在康奈尔大学上 Database，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: Database Database Systems sits in databases & information systems. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: Database 是康奈尔大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: ER modelling and normalisation trade-offs
+    cn: ER 建模与范式权衡
+  - en: SQL joins, aggregation, and nested queries
+    cn: SQL join、聚合与嵌套查询
+  - en: Indexes, plans, and “why is this slow?”
+    cn: 索引、执行计划与“为什么慢”
+  - en: Transactions and isolation at intro level
+    cn: 入门级事务与隔离级别
+  - en: Application ↔ DB boundary in coursework projects
+    cn: 课设里应用与数据库的边界
+  stuck:
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for Database outruns bilingual notes
+    cn: Database 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  - en: Fix project schema / migration issues with you
+    cn: 一起修课设 schema / migration 问题
+  tutoring:
+  - en: 'Lecture sync for Database: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 Database 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

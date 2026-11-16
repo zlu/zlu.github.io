@@ -4,235 +4,320 @@ abbr: UTS
 name_cn: 悉尼科技大学
 teaching_folder: uts
 courses:
-  - code: 31251
-    title: Data Structures and Algorithms
-  - code: 31257
-    title: Information System Development Methodologies
-  - code: 32513
-    title: Advanced Data Analytics Algorithms
-  - code: 32555
-    title: Fundamentals of Software Development
-  - code: 41025
-    title: Introduction to Software Development
-  - code: 42028
-    title: Deep Learning and Convolutional Neural Networks
-  - code: 42913
-    title: Social and Information Network Analysis
-  - code: IDBF001
-    title: Database Fundamentals
-    material: IDBF001-database foundamentals
-    theme: databases
-    aliases:
-      - "31271"
-  - code: INEF001
-    title: Networking Fundamentals
-    material: INEF001-networking
-    theme: networking
-    meta_description_en: >-
-      INEF001 UTS tutoring (Networking Fundamentals). Kurose top-down workshops
-      for online quiz marks, Wireshark + CLI labs that make concepts concrete, and
-      socket / network programming assignments — bilingual Chinese/English.
-    lead_en: >-
-      INEF001 is Kurose & Ross top-down networking. The hard part is not “never
-      heard of packets” — it is workshop questions that look easy until the online
-      quiz, labs where abstract layers only click once you see them in Wireshark
-      or the terminal, and socket assignments that mix protocol rules with code.
-      Tutoring follows those three tracks.
-    lead_cn: >-
-      INEF001 用的是 Kurose & Ross《自顶向下方法》。真正难的不是「从没听过包」——而是
-      workshop 题看起来简单、一上 online quiz 就丢分；Lab 里抽象分层要靠 Wireshark
-      和命令行才看得见；再加上 Socket / 网络编程作业要把协议规则落到代码。辅导就按
-      这三条线走。
-    overview_en: >-
-      Networking Fundamentals at UTS (Diploma of IT) uses the classic Computer
-      Networking: A Top-Down Approach textbook. Weekly workshops review core ideas
-      — delay and throughput, the protocol stack, HTTP/DNS/email, UDP/TCP, IP and
-      routing — and drill the same shapes that show up on the online quiz. Labs
-      push the same concepts into the real network with Wireshark packet captures
-      and command-line tools (ping, traceroute, nslookup, and friends), so
-      students see headers, filters, and round trips instead of only slide
-      diagrams. Network / socket programming assignments then ask you to build
-      something that speaks the protocol (for example a simple TCP web server).
-      Tutoring is bilingual: Chinese for intuition, English for quiz wording,
-      lab write-ups, and code comments.
-    overview_cn: >-
-      UTS（Diploma of IT）的 Networking Fundamentals 教材是经典的《计算机网络：自顶向下方法》。
-      每周 workshop 复习核心概念——时延与吞吐、协议栈、HTTP/DNS/邮件、UDP/TCP、IP 与路由——
-      并练 online quiz 会考的同构题型。Lab 则用 Wireshark 抓包和命令行工具（ping、
-      traceroute、nslookup 等）把同一套抽象概念落到真实网络上，让你看见首部、过滤器
-      和往返，而不只是课件上的图。网络 / Socket 编程作业再要求你写出能说话的协议程序
-      （例如简单的 TCP Web 服务器）。辅导中英双语：中文讲清直觉，英文对齐 quiz 问法、
-      Lab 表述与代码用语。
-    method_note_en: >-
-      Three tracks, same Kurose spine: workshop practice for quiz marks, labs that
-      make the abstraction visible, and socket assignments you drive yourself.
-    method_note_cn: >-
-      三条线、同一本 Kurose：workshop 练到 quiz 能得分，Lab 把抽象变看得见，
-      Socket 作业由你动手、我在旁边盯卡点。
-    topics:
-      - en: "Workshop concept review aligned to the online quiz"
-        cn: "对准 online quiz 的 workshop 概念复习与练习"
-      - en: "Delay, throughput, and the five-layer stack (Kurose top-down)"
-        cn: "时延、吞吐与五层协议栈（Kurose 自顶向下）"
-      - en: "Application protocols: HTTP, DNS, email roles"
-        cn: "应用层协议：HTTP、DNS、邮件各角色"
-      - en: "Transport: UDP vs TCP services, demux, reliability basics"
-        cn: "传输层：UDP vs TCP 服务、复用、可靠传输基础"
-      - en: "Labs with Wireshark — filters, headers, and what the capture actually shows"
-        cn: "Wireshark Lab：过滤器、首部，以及抓包真正说明了什么"
-      - en: "Command-line network tools (ping, traceroute, nslookup, …)"
-        cn: "命令行网络工具（ping、traceroute、nslookup 等）"
-      - en: "Socket / network programming assignments (TCP server lifecycle, HTTP framing)"
-        cn: "Socket / 网络编程作业（TCP 服务器生命周期、HTTP 报文格式）"
-      - en: "IP, subnetting, routing, and link-layer ideas when the term reaches them"
-        cn: "学期推进到时的 IP、子网、路由与链路层概念"
-    stuck:
-      - en: "Workshop feels fine in class, then the online quiz wording flips the same idea"
-        cn: "Workshop 课上觉得会了，online quiz 一换问法就丢分"
-      - en: "Slide diagrams of layers never connect to a real packet or CLI output"
-        cn: "课件上的分层图对不上真实报文或命令行输出"
-      - en: "Wireshark open, but the wrong filter / cached reply makes the trace look empty or meaningless"
-        cn: "Wireshark 打开了，过滤器不对或缓存回复让抓包像空白、读不出东西"
-      - en: "Mixing which protocol does what (e.g. SMTP vs retrieval, UDP vs TCP demux)"
-        cn: "协议角色搅在一起（例如 SMTP vs 收信、UDP vs TCP 怎么复用）"
-      - en: "Socket code almost runs — bind/listen/accept or request/response framing still fuzzy"
-        cn: "Socket 代码差不多能跑，但 bind/listen/accept 或请求 / 响应格式仍糊"
-    session_angles:
-      - en: "Drill workshop questions in quiz shape until the wording stops tricking you"
-        cn: "把 workshop 题练成 quiz 问法，直到换表述也不慌"
-      - en: "In labs: capture or run the command first, then name the concept the evidence shows"
-        cn: "Lab：先抓包或跑命令，再对照证据说出对应概念"
-      - en: "On programming tasks: you type; we debug the socket path and protocol framing together"
-        cn: "编程作业：你来敲；一起排查 Socket 路径与协议报文格式"
-    tutoring:
-      - en: "Workshops → online quiz: bilingual review of that week’s Kurose core ideas, then practice in the same shape as the quiz so marks follow understanding — not last-minute cramming of answers."
-        cn: "Workshop → online quiz：用中英双语复习当周 Kurose 核心概念，再按 quiz 同构题型练，让分数跟在理解后面，而不是临考背答案。"
-      - en: "Labs: Wireshark and the command line make abstract layers concrete — choose filters, read headers, run ping / traceroute / nslookup, and tie each observation back to the concept the lab is testing."
-        cn: "Lab：用 Wireshark 和命令行把抽象分层变具体——选过滤器、读首部、跑 ping / traceroute / nslookup，并把每一次观察扣回 Lab 在考的概念。"
-      - en: "Socket / network programming assignments: you drive the editor; we walk the server or client lifecycle, fix protocol framing and runtime errors, and stop when you can explain the design — no ghost-writing the submission."
-        cn: "Socket / 网络编程作业：你来操作编辑器；一起走服务器或客户端生命周期，修协议报文格式与运行报错，直到你能讲清设计——不代写交差。"
-    prep_en: >-
-      Send school, INEF001, deadline, and what you are stuck on: this week’s
-      workshop questions, a Wireshark screenshot / capture, CLI output, or the
-      socket assignment brief and error text. Concrete evidence gets session one
-      onto the real blocker faster.
-    prep_cn: >-
-      微信请发学校、课号（INEF001）、截止日期，以及你卡在哪：当周 workshop 题、
-      Wireshark 截图 / 抓包、命令行输出，或 Socket 作业 brief 与报错原文。证据越具体，
-      第一节课越快对着真问题开讲。
-  - topics:
-      - en: Java syntax and console I/O with a text menu
-        cn: Java 语法与带文本菜单的控制台输入输出
-      - en: Classes, fields, methods, and toString()
-        cn: 类、字段、方法与 toString()
-      - en: Lists / maps at the level the first weeks use
-        cn: 前几周会用到的 List / Map
-      - en: Reading a brief before typing
-        cn: 动手写之前先读清 brief
-      - en: Debug habits that carry into IPRO002
-        cn: 能带到 IPRO002 的调试习惯
-    material: programming1-IPRO001
-    theme: programming
-    lead_en: "IPRO001 is the Java foundation before Programming 2: menus, classes,
-      and small programs that still have to compile, run, and be explainable.
-      Tutoring builds habits you will reuse in IPRO002 group work."
-    tutoring:
-      - en: "Lecture sync: bilingual walkthrough of weekly Java ideas until you can
-          restate them and match lab wording."
-        cn: 同步跟课：用中英双语把本周 Java 概念讲透，能复述并能对齐 lab 用语。
-      - en: "Assignments: you drive; we place behaviour in the right class, fix the menu
-          path, and debug until you can explain the change."
-        cn: 作业：你来操作；一起把行为放到正确的类，理顺菜单路径，debug 到你能自己解释每一处改动。
-      - en: "Exam / practice: timed drills on class design and short programs, then
-          wrong-answer review before IPRO002."
-        cn: 考前 / 练习：针对类设计与短程序限时练，做错题复盘，为 IPRO002 打底。
-    code: IPRO001
-    lead_cn: IPRO001 是 Programming 2 之前的 Java 基础：菜单驱动、类与小程序既要能编译运行，
-      又要能讲清楚。辅导会把这些习惯立住，后面 IPRO002 小组作业才能接得上。
-    overview_en: Programming 1 at UTS (Diploma of IT) introduces Java through text
-      menus, objects, and simple collections. Students usually struggle less
-      with "never saw syntax" and more with reading the brief, placing behaviour
-      in the right class, and debugging when the menu path and data do not
-      match. IPRO002 extends the same line into inheritance, interfaces, and a
-      group project.
-    overview_cn: UTS（Diploma of IT）的 Programming 1 用 Java 把文本菜单、对象和小集合跑通。
-      真正卡人的往往不是「语法完全没见过」，而是 brief 读不清、行为该放哪个类、 菜单路径和数据对不上时不会排查。IPRO002
-      在同一条线上继续：继承、接口与小组项目。
-    title: Programming 1
-    stuck:
-      - en: Code that almost runs but the student cannot explain each step
-        cn: 代码差不多能跑，但每一步自己讲不清楚
-      - en: Mixing menu I/O with business logic in one class
-        cn: 把菜单输入输出和业务逻辑塞进同一个类
-      - en: Collections used by copy-paste without knowing what is stored
-        cn: 集合靠粘贴用上了，却说不清里面存的是什么
-      - en: Falling behind early, then IPRO002 group work feels impossible
-        cn: 前面掉队，到 IPRO002 小组作业就接不住
-    aliases:
-      - "41039"
-  - topics:
-      - en: Scenario and use-cases that fit weeks 1–6 only
-        cn: 选题与用例只落在前几周已教内容里
-      - en: Decompose the domain into high-cohesion / low-coupling tasks
-        cn: 把问题域拆成高内聚、低耦合的任务
-      - en: "GitHub collaboration: branches, ownership, merge interfaces"
-        cn: GitHub 协作：分支、职责归属、合并接口
-      - en: "Class design: parent / child, enum, lists and maps"
-        cn: 类设计：父类 / 子类、枚举、List 与 Map
-      - en: Assign responsibilities and integrate with the shared menu
-        cn: 分配职责并与共享菜单、集合集成
-      - en: Explain inheritance, interfaces, overload / override, polymorphism
-        cn: 能讲清继承、接口、重载 / 重写与多态
-    material: programming2-IPRO002
-    theme: programming
-    lead_en: "IPRO002 extends Programming 1 into OO design and a group project:
-      scenario, use-cases, class relationships, and code that stays inside weeks
-      1–6. Tutoring turns an open topic into cohesive tasks, GitHub ownership,
-      and an integrable design."
-    tutoring:
-      - en: "Lecture sync: bilingual walkthrough of weeks 1–6 (OOP, collections,
-          inheritance / interfaces) so lab and project language match."
-        cn: 同步跟课：用中英双语把前几周主线讲透（OOP、集合、继承 / 接口），让 lab 与项目用语对齐。
-      - en: "Group project: pick a scenario inside taught constructs; decompose
-          use-cases into cohesive tasks with clear owners; set GitHub branches
-          and merge interfaces; design classes, assign responsibilities, and
-          integrate with the rest of the program."
-        cn: 小组项目：选题落在已教内容；把用例拆成高内聚任务并明确负责人；约定 GitHub 分支与合并接口；设计类、分配职责，再与整组菜单和集合集成。
-      - en: "Implementation sessions: you drive your owned classes; we debug boundaries,
-          naming, and integration until the design holds and you can explain
-          each OO choice."
-        cn: 实现课：你负责自己的类；一起排查边界、命名与集成，直到设计站得住，并且你能解释每一处 OO 选择。
-      - en: "Exam / practice: short drills on inheritance, interfaces, and collection
-          use when you are not in project mode."
-        cn: 考前 / 练习：非项目周针对继承、接口与集合用法做短练。
-    code: IPRO002
-    lead_cn: IPRO002 在 Programming 1 之上做 OO 设计与小组项目：场景、用例、类关系，
-      以及只用前几周教过的写法。辅导把开放选题拆成高内聚低耦合的任务、GitHub 分工， 再落到能合并进整组程序的类设计。
-    overview_en: "Programming 2 at UTS (Diploma of IT) builds on IPRO001:
-      inheritance, interfaces, enums, lists and maps, and a group
-      object-oriented application. The hard part is rarely typing Java alone. It
-      is choosing a scenario that fits taught constructs, splitting use-cases
-      into high-cohesion / low-coupling tasks for 2–3 people, collaborating on
-      GitHub, then designing classes and integrating with the shared menu and
-      collections so the explanation can justify inheritance, interfaces,
-      overload / override, and polymorphism."
-    overview_cn: UTS（Diploma of IT）的 Programming 2 接在 IPRO001 后面：继承、接口、枚举、 List /
-      Map，以及一个小组面向对象应用。真正难的往往不是「会不会敲 Java」， 而是选题是否落在已教内容里、把用例拆成 2–3
-      人可并行的高内聚低耦合任务、 用 GitHub 协作，再设计类并并入共享菜单与集合，使说明能讲清继承、接口、 重载 / 重写与多态。
-    title: Programming 2
-    stuck:
-      - en: Open topic, but the design needs libraries or ideas not yet taught
-        cn: 选题太开放，设计却用了还没教的库或写法
-      - en: Use-cases that are really one CRUD path counted as three tasks
-        cn: 其实是同一条增删改路径，却拆成三个假任务
-      - en: Everyone edits the same classes; merges fight and nobody owns an interface
-        cn: 所有人改同一批类，合并冲突不断，没有人守住接口约定
-      - en: Classes exist but responsibilities are mixed; integration breaks the menu
-        cn: 类有了但职责搅在一起，一集成菜单或集合就断
-      - en: Code runs, but the write-up cannot justify OO choices
-        cn: 程序能跑，说明里却讲不清为什么这样用 OO
-    aliases:
-      - "41040"
-  - code: IWBS001
-    title: Web Systems
-    material: IWBS001-web-systems
+- code: '31251'
+  title: Data Structures and Algorithms
+- code: '31257'
+  title: Information System Development Methodologies
+- code: '32513'
+  title: Advanced Data Analytics Algorithms
+- code: '32555'
+  title: Fundamentals of Software Development
+- code: '41025'
+  title: Introduction to Software Development
+- code: '42028'
+  title: Deep Learning and Convolutional Neural Networks
+- code: '42913'
+  title: Social and Information Network Analysis
+- code: IDBF001
+  title: Database Fundamentals
+  material: IDBF001-database foundamentals
+  theme: databases
+  aliases:
+  - '31271'
+  meta_description_en: IDBF001 / 31271 UTS tutoring (Database Fundamentals). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: IDBF001 Database Fundamentals at University of Technology Sydney is where one wrong schema
+    or join quietly breaks every later query. Private materials show weekly notes spanning roughly week
+    7–7, assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在悉尼科技大学上 IDBF001，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到大约第 7–7 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: IDBF001 Database Fundamentals sits in databases & information systems. Evidence from the
+    course folder points to SQL, schema design, and databases. There is a weekly arc (about week 7–7)
+    plus assessed work that expects you to apply the same ideas under deadline pressure. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit.
+  overview_cn: IDBF001 是悉尼科技大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库这些点转。大约第
+    7–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: 'Week 7: Reading Assessment Template (Database Design )'
+    cn: 第 7 周：Reading Assessment Template (Database Design )
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: ER modelling and normalisation trade-offs
+    cn: ER 建模与范式权衡
+  - en: SQL joins, aggregation, and nested queries
+    cn: SQL join、聚合与嵌套查询
+  - en: Indexes, plans, and “why is this slow?”
+    cn: 索引、执行计划与“为什么慢”
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“Reading Assessment Template (Database Design Wee”) makes sense in class, freezes
+      you alone
+    cn: 作业 brief（「Reading Assessment Template (Database Design Wee」）课上听得懂，自己对着就停住
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  tutoring:
+  - en: 'Lecture sync for IDBF001: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 IDBF001 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as Reading Assessment Template (Database Design
+      Week 7), Reading Assessment Template (Database Design Week 7), with you at the keyboard.'
+    cn: 作业辅导：针对 Reading Assessment Template (Database Design Week 7), Reading Assessment Template (Database
+      Design Week 7) 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: INEF001
+  title: Networking Fundamentals
+  material: INEF001-networking
+  theme: systems
+  meta_description_en: INEF001 UTS tutoring (Networking Fundamentals). Kurose top-down workshops for online
+    quiz marks, Wireshark + CLI labs, and socket assignments — bilingual.
+  lead_en: INEF001 is Kurose & Ross top-down networking. The hard part is not “never heard of packets”
+    — it is workshop questions that look easy until the online quiz, labs where abstract layers only click
+    once you see them in Wireshark or the terminal, and socket assignments that mix protocol rules with
+    code. Tutoring follows those three tracks.
+  lead_cn: INEF001 用的是 Kurose & Ross《自顶向下方法》。真正难的不是「从没听过包」——而是 workshop 题看起来简单、一上 online quiz 就丢分；Lab
+    里抽象分层要靠 Wireshark 和命令行才看得见；再加上 Socket / 网络编程作业要把协议规则落到代码。辅导就按 这三条线走。
+  overview_en: 'Networking Fundamentals at UTS (Diploma of IT) uses the classic Computer Networking: A
+    Top-Down Approach textbook. Weekly workshops review core ideas — delay and throughput, the protocol
+    stack, HTTP/DNS/email, UDP/TCP, IP and routing — and drill the same shapes that show up on the online
+    quiz. Labs push the same concepts into the real network with Wireshark packet captures and command-line
+    tools (ping, traceroute, nslookup, and friends), so students see headers, filters, and round trips
+    instead of only slide diagrams. Network / socket programming assignments then ask you to build something
+    that speaks the protocol (for example a simple TCP web server). Tutoring is bilingual: Chinese for
+    intuition, English for quiz wording, lab write-ups, and code comments.'
+  overview_cn: UTS（Diploma of IT）的 Networking Fundamentals 教材是经典的《计算机网络：自顶向下方法》。 每周 workshop 复习核心概念——时延与吞吐、协议栈、HTTP/DNS/邮件、UDP/TCP、IP
+    与路由—— 并练 online quiz 会考的同构题型。Lab 则用 Wireshark 抓包和命令行工具（ping、 traceroute、nslookup 等）把同一套抽象概念落到真实网络上，让你看见首部、过滤器
+    和往返，而不只是课件上的图。网络 / Socket 编程作业再要求你写出能说话的协议程序 （例如简单的 TCP Web 服务器）。辅导中英双语：中文讲清直觉，英文对齐 quiz 问法、 Lab 表述与代码用语。
+  method_note_en: 'Three tracks, same Kurose spine: workshop practice for quiz marks, labs that make the
+    abstraction visible, and socket assignments you drive yourself.'
+  method_note_cn: 三条线、同一本 Kurose：workshop 练到 quiz 能得分，Lab 把抽象变看得见， Socket 作业由你动手、我在旁边盯卡点。
+  topics:
+  - en: Workshop concept review aligned to the online quiz
+    cn: 对准 online quiz 的 workshop 概念复习与练习
+  - en: Delay, throughput, and the five-layer stack (Kurose top-down)
+    cn: 时延、吞吐与五层协议栈（Kurose 自顶向下）
+  - en: 'Application protocols: HTTP, DNS, email roles'
+    cn: 应用层协议：HTTP、DNS、邮件各角色
+  - en: 'Transport: UDP vs TCP services, demux, reliability basics'
+    cn: 传输层：UDP vs TCP 服务、复用、可靠传输基础
+  - en: Labs with Wireshark — filters, headers, and what the capture actually shows
+    cn: Wireshark Lab：过滤器、首部，以及抓包真正说明了什么
+  - en: Command-line network tools (ping, traceroute, nslookup, …)
+    cn: 命令行网络工具（ping、traceroute、nslookup 等）
+  - en: Socket / network programming assignments (TCP server lifecycle, HTTP framing)
+    cn: Socket / 网络编程作业（TCP 服务器生命周期、HTTP 报文格式）
+  - en: IP, subnetting, routing, and link-layer ideas when the term reaches them
+    cn: 学期推进到时的 IP、子网、路由与链路层概念
+  stuck:
+  - en: Workshop feels fine in class, then the online quiz wording flips the same idea
+    cn: Workshop 课上觉得会了，online quiz 一换问法就丢分
+  - en: Slide diagrams of layers never connect to a real packet or CLI output
+    cn: 课件上的分层图对不上真实报文或命令行输出
+  - en: Wireshark open, but the wrong filter / cached reply makes the trace look empty or meaningless
+    cn: Wireshark 打开了，过滤器不对或缓存回复让抓包像空白、读不出东西
+  - en: Mixing which protocol does what (e.g. SMTP vs retrieval, UDP vs TCP demux)
+    cn: 协议角色搅在一起（例如 SMTP vs 收信、UDP vs TCP 怎么复用）
+  - en: Socket code almost runs — bind/listen/accept or request/response framing still fuzzy
+    cn: Socket 代码差不多能跑，但 bind/listen/accept 或请求 / 响应格式仍糊
+  session_angles:
+  - en: Drill workshop questions in quiz shape until the wording stops tricking you
+    cn: 把 workshop 题练成 quiz 问法，直到换表述也不慌
+  - en: 'In labs: capture or run the command first, then name the concept the evidence shows'
+    cn: Lab：先抓包或跑命令，再对照证据说出对应概念
+  - en: 'On programming tasks: you type; we debug the socket path and protocol framing together'
+    cn: 编程作业：你来敲；一起排查 Socket 路径与协议报文格式
+  tutoring:
+  - en: 'Workshops → online quiz: bilingual review of that week’s Kurose core ideas, then practice in
+      the same shape as the quiz so marks follow understanding — not last-minute cramming of answers.'
+    cn: Workshop → online quiz：用中英双语复习当周 Kurose 核心概念，再按 quiz 同构题型练，让分数跟在理解后面，而不是临考背答案。
+  - en: 'Labs: Wireshark and the command line make abstract layers concrete — choose filters, read headers,
+      run ping / traceroute / nslookup, and tie each observation back to the concept the lab is testing.'
+    cn: Lab：用 Wireshark 和命令行把抽象分层变具体——选过滤器、读首部、跑 ping / traceroute / nslookup，并把每一次观察扣回 Lab 在考的概念。
+  - en: 'Socket / network programming assignments: you drive the editor; we walk the server or client
+      lifecycle, fix protocol framing and runtime errors, and stop when you can explain the design — no
+      ghost-writing the submission.'
+    cn: Socket / 网络编程作业：你来操作编辑器；一起走服务器或客户端生命周期，修协议报文格式与运行报错，直到你能讲清设计——不代写交差。
+  prep_en: 'Send school, INEF001, deadline, and what you are stuck on: this week’s workshop questions,
+    a Wireshark screenshot / capture, CLI output, or the socket assignment brief and error text. Concrete
+    evidence gets session one onto the real blocker faster.'
+  prep_cn: 微信请发学校、课号（INEF001）、截止日期，以及你卡在哪：当周 workshop 题、 Wireshark 截图 / 抓包、命令行输出，或 Socket 作业 brief 与报错原文。证据越具体，
+    第一节课越快对着真问题开讲。
+- topics:
+  - en: Java syntax and console I/O with a text menu
+    cn: Java 语法与带文本菜单的控制台输入输出
+  - en: Classes, fields, methods, and toString()
+    cn: 类、字段、方法与 toString()
+  - en: Lists / maps at the level the first weeks use
+    cn: 前几周会用到的 List / Map
+  - en: Reading a brief before typing
+    cn: 动手写之前先读清 brief
+  - en: Debug habits that carry into IPRO002
+    cn: 能带到 IPRO002 的调试习惯
+  material: programming1-IPRO001
+  theme: programming
+  lead_en: 'IPRO001 is the Java foundation before Programming 2: menus, classes, and small programs that
+    still have to compile, run, and be explainable. Tutoring builds habits you will reuse in IPRO002 group
+    work.'
+  tutoring:
+  - en: 'Lecture sync: bilingual walkthrough of weekly Java ideas until you can restate them and match
+      lab wording.'
+    cn: 同步跟课：用中英双语把本周 Java 概念讲透，能复述并能对齐 lab 用语。
+  - en: 'Assignments: you drive; we place behaviour in the right class, fix the menu path, and debug until
+      you can explain the change.'
+    cn: 作业：你来操作；一起把行为放到正确的类，理顺菜单路径，debug 到你能自己解释每一处改动。
+  - en: 'Exam / practice: timed drills on class design and short programs, then wrong-answer review before
+      IPRO002.'
+    cn: 考前 / 练习：针对类设计与短程序限时练，做错题复盘，为 IPRO002 打底。
+  code: IPRO001
+  lead_cn: IPRO001 是 Programming 2 之前的 Java 基础：菜单驱动、类与小程序既要能编译运行， 又要能讲清楚。辅导会把这些习惯立住，后面 IPRO002 小组作业才能接得上。
+  overview_en: Programming 1 at UTS (Diploma of IT) introduces Java through text menus, objects, and simple
+    collections. Students usually struggle less with "never saw syntax" and more with reading the brief,
+    placing behaviour in the right class, and debugging when the menu path and data do not match. IPRO002
+    extends the same line into inheritance, interfaces, and a group project.
+  overview_cn: UTS（Diploma of IT）的 Programming 1 用 Java 把文本菜单、对象和小集合跑通。 真正卡人的往往不是「语法完全没见过」，而是 brief 读不清、行为该放哪个类、
+    菜单路径和数据对不上时不会排查。IPRO002 在同一条线上继续：继承、接口与小组项目。
+  title: Programming 1
+  stuck:
+  - en: Code that almost runs but the student cannot explain each step
+    cn: 代码差不多能跑，但每一步自己讲不清楚
+  - en: Mixing menu I/O with business logic in one class
+    cn: 把菜单输入输出和业务逻辑塞进同一个类
+  - en: Collections used by copy-paste without knowing what is stored
+    cn: 集合靠粘贴用上了，却说不清里面存的是什么
+  - en: Falling behind early, then IPRO002 group work feels impossible
+    cn: 前面掉队，到 IPRO002 小组作业就接不住
+  aliases:
+  - '41039'
+  meta_description_en: IPRO001 / 41039 UTS tutoring (Programming 1). Code that almost runs but the student
+    cannot explain each step? Bilingual Chinese/English help.
+- topics:
+  - en: Scenario and use-cases that fit weeks 1–6 only
+    cn: 选题与用例只落在前几周已教内容里
+  - en: Decompose the domain into high-cohesion / low-coupling tasks
+    cn: 把问题域拆成高内聚、低耦合的任务
+  - en: 'GitHub collaboration: branches, ownership, merge interfaces'
+    cn: GitHub 协作：分支、职责归属、合并接口
+  - en: 'Class design: parent / child, enum, lists and maps'
+    cn: 类设计：父类 / 子类、枚举、List 与 Map
+  - en: Assign responsibilities and integrate with the shared menu
+    cn: 分配职责并与共享菜单、集合集成
+  - en: Explain inheritance, interfaces, overload / override, polymorphism
+    cn: 能讲清继承、接口、重载 / 重写与多态
+  material: programming2-IPRO002
+  theme: programming
+  lead_en: 'IPRO002 extends Programming 1 into OO design and a group project: scenario, use-cases, class
+    relationships, and code that stays inside weeks 1–6. Tutoring turns an open topic into cohesive tasks,
+    GitHub ownership, and an integrable design.'
+  tutoring:
+  - en: 'Lecture sync: bilingual walkthrough of weeks 1–6 (OOP, collections, inheritance / interfaces)
+      so lab and project language match.'
+    cn: 同步跟课：用中英双语把前几周主线讲透（OOP、集合、继承 / 接口），让 lab 与项目用语对齐。
+  - en: 'Group project: pick a scenario inside taught constructs; decompose use-cases into cohesive tasks
+      with clear owners; set GitHub branches and merge interfaces; design classes, assign responsibilities,
+      and integrate with the rest of the program.'
+    cn: 小组项目：选题落在已教内容；把用例拆成高内聚任务并明确负责人；约定 GitHub 分支与合并接口；设计类、分配职责，再与整组菜单和集合集成。
+  - en: 'Implementation sessions: you drive your owned classes; we debug boundaries, naming, and integration
+      until the design holds and you can explain each OO choice.'
+    cn: 实现课：你负责自己的类；一起排查边界、命名与集成，直到设计站得住，并且你能解释每一处 OO 选择。
+  - en: 'Exam / practice: short drills on inheritance, interfaces, and collection use when you are not
+      in project mode.'
+    cn: 考前 / 练习：非项目周针对继承、接口与集合用法做短练。
+  code: IPRO002
+  lead_cn: IPRO002 在 Programming 1 之上做 OO 设计与小组项目：场景、用例、类关系， 以及只用前几周教过的写法。辅导把开放选题拆成高内聚低耦合的任务、GitHub 分工，
+    再落到能合并进整组程序的类设计。
+  overview_en: 'Programming 2 at UTS (Diploma of IT) builds on IPRO001: inheritance, interfaces, enums,
+    lists and maps, and a group object-oriented application. The hard part is rarely typing Java alone.
+    It is choosing a scenario that fits taught constructs, splitting use-cases into high-cohesion / low-coupling
+    tasks for 2–3 people, collaborating on GitHub, then designing classes and integrating with the shared
+    menu and collections so the explanation can justify inheritance, interfaces, overload / override,
+    and polymorphism.'
+  overview_cn: UTS（Diploma of IT）的 Programming 2 接在 IPRO001 后面：继承、接口、枚举、 List / Map，以及一个小组面向对象应用。真正难的往往不是「会不会敲
+    Java」， 而是选题是否落在已教内容里、把用例拆成 2–3 人可并行的高内聚低耦合任务、 用 GitHub 协作，再设计类并并入共享菜单与集合，使说明能讲清继承、接口、 重载 / 重写与多态。
+  title: Programming 2
+  stuck:
+  - en: Open topic, but the design needs libraries or ideas not yet taught
+    cn: 选题太开放，设计却用了还没教的库或写法
+  - en: Use-cases that are really one CRUD path counted as three tasks
+    cn: 其实是同一条增删改路径，却拆成三个假任务
+  - en: Everyone edits the same classes; merges fight and nobody owns an interface
+    cn: 所有人改同一批类，合并冲突不断，没有人守住接口约定
+  - en: Classes exist but responsibilities are mixed; integration breaks the menu
+    cn: 类有了但职责搅在一起，一集成菜单或集合就断
+  - en: Code runs, but the write-up cannot justify OO choices
+    cn: 程序能跑，说明里却讲不清为什么这样用 OO
+  aliases:
+  - '41040'
+  meta_description_en: IPRO002 / 41040 UTS tutoring (Programming 2). Open topic, but the design needs
+    libraries or ideas not yet taught? Bilingual Chinese/English help.
+- code: IWBS001
+  title: Web Systems
+  material: IWBS001-web-systems
+  theme: web-mobile
+  meta_description_en: IWBS001 UTS tutoring (Web Systems). Weekly lecture arc moves on before last week’s
+    method is solid? Bilingual Chinese/English help.
+  lead_en: IWBS001 Web Systems at University of Technology Sydney is where front-end and back-end failures
+    mask each other inside one brief. Private materials show weekly notes spanning roughly week 3–3, assignment
+    briefs / labs on disk, code submissions / practice files. The hard part is turning that arc into a
+    method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在悉尼科技大学上 IWBS001，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到大约第 3–3 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: IWBS001 Web Systems sits in web, mobile & hci. Evidence from the course folder points to
+    Programming foundations and debugging; Web / mobile app structure. There is a weekly arc (about week
+    3–3) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: IWBS001 是悉尼科技大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。大约第
+    3–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: 'Week 3: tutorial a solutions'
+    cn: 第 3 周：tutorial a solutions
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“IWBS001 Assignment 2 Assessment Brief”) makes sense in class, freezes you alone
+    cn: 作业 brief（「IWBS001 Assignment 2 Assessment Brief」）课上听得懂，自己对着就停住
+  - en: UI looks done but integration tests fail
+    cn: 界面看起来完成了，集成测试不过
+  - en: Unclear ownership in group projects
+    cn: 小组项目里职责不清
+  - en: Demo crashes from environment / device mismatch
+    cn: 环境 / 设备不一致导致演示崩溃
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for IWBS001: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 IWBS001 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as IWBS001 Assignment 2 Assessment Brief, with
+      you at the keyboard.'
+    cn: 作业辅导：针对 IWBS001 Assignment 2 Assessment Brief 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+---

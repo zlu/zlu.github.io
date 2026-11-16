@@ -1,10 +1,55 @@
 ---
 university: Brunel University of London
 abbr: Brunel
-name_cn: "布鲁内尔大学"
+name_cn: 布鲁内尔大学
 teaching_folder: brunel-university-of-london
 courses:
-  - code: MA2624
-    title: Machine Learning for Artificial Intelligence
-    material: MA2624-ML-for-AI alias
+- code: MA2624
+  title: Machine Learning for Artificial Intelligence
+  material: MA2624-ML-for-AI
+  theme: machine-learning
+  meta_description_en: MA2624 Brunel tutoring (Machine Learning for Artificial…). Matrix worksheet OK;
+    cannot connect it to the learning rule? Bilingual Chinese/English help.
+  lead_en: 'MA2624 at Brunel University of London is machine learning with linear algebra underneath:
+    perceptrons, polynomial regression, matrix decompositions, and ANN notes plus mock exams. The hard
+    part is connecting the matrix worksheet to the learning rule — not memorising slide titles.'
+  lead_cn: Brunel 的 MA2624 是带线性代数底子的机器学习：感知机、多项式回归、矩阵分解、ANN 笔记和 mock exam。难的不是背课件标题，而是把矩阵练习接到学习规则上。
+  overview_en: 'Machine Learning for Artificial Intelligence covers core ML ideas with heavy linear-algebra
+    practice: matrices, decompositions, perceptrons, polynomial regression, and neural-net notes, with
+    worksheets and a mock exam. Students stall when worksheet algebra and ML updates feel like two subjects,
+    or when exam questions ask for a derivation the notes only showed once.'
+  overview_cn: Machine Learning for Artificial Intelligence 用大量线性代数练习撑起核心 ML：矩阵、分解、感知机、多项式回归与神经网络笔记，还有
+    worksheet 与 mock exam。卡点常在代数练习和 ML 更新像两门课，或考题要的推导笔记只演示过一次。
+  topics:
+  - en: Matrices and decompositions for ML coursework
+    cn: 机器学习课业用的矩阵与分解
+  - en: Perceptrons and basic neural-net updates
+    cn: 感知机与基础神经网络更新
+  - en: Polynomial regression and model fit checks
+    cn: 多项式回归与拟合检查
+  - en: Worksheet drills tied to lecture notation
+    cn: 与课堂记号对齐的 worksheet 练习
+  - en: Mock-exam style short derivations
+    cn: Mock exam 风格的短推导
+  stuck:
+  - en: Matrix worksheet OK; cannot connect it to the learning rule
+    cn: 矩阵练习会做，却接不到学习规则
+  - en: Perceptron / ANN update written without saying what success means
+    cn: 感知机 / ANN 更新写了，却说不清何谓成功
+  - en: Mock exam notation differs slightly from the week’s notes
+    cn: Mock exam 记号和当周笔记略有出入就慌
+  session_angles:
+  - en: Worksheet algebra → name the ML object it feeds
+    cn: 先做 worksheet 代数 → 说出它喂给哪个 ML 对象
+  - en: You derive; we check the missing step against the notes
+    cn: 你来推导；我们按笔记核对缺步
+  - en: Timed mock-exam short questions
+    cn: 限时 mock exam 短问
+  tutoring:
+  - en: 'Lecture sync: bilingual rebuild of ML + matrix vocabulary for the week.'
+    cn: 同步跟课：用中英双语重建当周 ML + 矩阵术语。
+  - en: 'Worksheets / assignments: you drive the derivation; we catch notation gaps.'
+    cn: Worksheet / 作业：你来推导；我们抓记号缺口。
+  - en: 'Mock exam prep: timed drills on recurring question shapes.'
+    cn: Mock exam 突击：按常考题型限时练。
 ---

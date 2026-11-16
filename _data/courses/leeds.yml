@@ -1,27 +1,79 @@
 ---
 university: University of Leeds
 abbr: Leeds
-name_cn: "利兹大学"
+name_cn: 利兹大学
 teaching_folder: leeds-university
 courses:
-  - code: COMP1121
-    title: Introduction to Programming
-  - code: COMP1212
-    title: Computer Processors
-  - code: COMP1421
-    title: Computer Architecture
-  - code: COMP1511
-    title: Introduction to Discrete Mathematics
-  - code: COMP2221
-    title: Networks
-  - code: COMP2421
-    title: Numerical Computation
-  - code: COMP2611
-    title: Artificial Intelligence
-  - code: COMP3631
-    title: Machine Learning
-  - code: LUBS3185
-    title: "People Analytics: Strategy and Practice"
-    department: Leeds Business School
-    material: lubs3185
+- code: COMP1121
+  title: Introduction to Programming
+- code: COMP1212
+  title: Computer Processors
+- code: COMP1421
+  title: Computer Architecture
+- code: COMP1511
+  title: Introduction to Discrete Mathematics
+- code: COMP2221
+  title: Networks
+- code: COMP2421
+  title: Numerical Computation
+- code: COMP2611
+  title: Artificial Intelligence
+- code: COMP3631
+  title: Machine Learning
+- code: LUBS3185
+  title: 'People Analytics: Strategy and Practice'
+  department: Leeds Business School
+  material: lubs3185
+  theme: data-science
+  meta_description_en: 'LUBS3185 Leeds tutoring (People Analytics: Strategy and…). Tool output produced,
+    write-up cannot defend method choice? Bilingual Chinese/English help.'
+  lead_en: 'LUBS3185 People Analytics: Strategy and Practice at University of Leeds is where messy notebooks
+    and weak method stories lose marks even when a model runs. Private materials show code submissions
+    / practice files. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.'
+  lead_cn: 在利兹大学上 LUBS3185，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: 'LUBS3185 People Analytics: Strategy and Practice sits in data science & analytics. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.'
+  overview_cn: LUBS3185 是利兹大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
+  - en: Reproducible notebooks and environments
+    cn: 可复现的 notebook 与环境
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  - en: Last-minute modelling with no data story
+    cn: 临近 DDL 才建模，没有数据故事
+  - en: Lecture vocabulary for LUBS3185 outruns bilingual notes
+    cn: LUBS3185 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  - en: Sanity-check joins, missingness, and leakage risks
+    cn: 核验 join、缺失值与泄漏风险
+  tutoring:
+  - en: 'Lecture sync for LUBS3185: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 LUBS3185 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

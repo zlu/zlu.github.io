@@ -1,0 +1,698 @@
+/* @theme zlu */
+
+/*
+  zlu — personal Marp brand theme
+  --------------------------------
+  Home: zlu.github.io/marp/  (excluded from Jekyll publish)
+  Use: theme: zlu   +   --theme-set marp/zlu-theme.css
+*/
+
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap');
+
+:root {
+  --zlu-ink: #07111f;
+  --zlu-navy: #12263f;
+  --zlu-blue: #2f6fed;
+  --zlu-blue-bright: #4d8aff;
+  --zlu-blue-soft: #e7effe;
+  --zlu-mist: #eef1f5;
+  --zlu-paper: #f7f8fb;
+  --zlu-text: #142033;
+  --zlu-muted: #5c6b7c;
+  --zlu-line: #d5dde8;
+  /* Callout accents — cool slate / brand blue (not Bootstrap green·amber) */
+  --zlu-ok: #1e3a5f;
+  --zlu-ok-soft: #f1f4f8;
+  --zlu-ok-line: #c5d0de;
+  --zlu-warn: #3d4554;
+  --zlu-warn-soft: #f3f2f4;
+  --zlu-warn-line: #cfc8d4;
+  --zlu-warn-accent: #7c6b8a;
+  --zlu-danger: #6b3a42;
+  --zlu-danger-soft: #f5f1f2;
+  --zlu-danger-line: #d4c4c8;
+
+  --zlu-font-display: 'Sora', 'Avenir Next', sans-serif;
+  --zlu-font-body: 'Manrope', 'Avenir Next', sans-serif;
+  --zlu-font-mono: 'IBM Plex Mono', 'SF Mono', 'Menlo', 'Consolas', monospace;
+
+  font-family: var(--zlu-font-body);
+  font-size: 28px;
+  color: var(--zlu-text);
+}
+
+/* ---------- Base slide ---------- */
+
+section {
+  background:
+    radial-gradient(1200px 500px at 100% -10%, rgba(47, 111, 237, 0.08), transparent 55%),
+    linear-gradient(180deg, #fbfcfe 0%, var(--zlu-paper) 100%);
+  color: var(--zlu-text);
+  padding: 48px 56px 56px;
+  font-family: var(--zlu-font-body);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+section::after {
+  /* page number */
+  color: var(--zlu-muted);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--zlu-font-body);
+}
+
+header,
+footer {
+  font-family: var(--zlu-font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--zlu-muted);
+}
+
+footer {
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--zlu-font-display);
+  font-weight: 650;
+  color: var(--zlu-navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.55em;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+/* Accent bar under main title (content slides) */
+section:not(.cover):not(.section):not(.end) h1::after {
+  content: '';
+  display: block;
+  width: 3.25rem;
+  height: 4px;
+  margin-top: 0.55rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--zlu-blue), var(--zlu-blue-bright));
+}
+
+h2 {
+  font-size: 30px;
+  color: var(--zlu-blue);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 24px;
+  color: var(--zlu-navy);
+}
+
+p,
+li {
+  font-size: 24px;
+}
+
+ul,
+ol {
+  margin: 0.4em 0 0.6em;
+}
+
+li + li {
+  margin-top: 0.28em;
+}
+
+strong {
+  color: var(--zlu-navy);
+  font-weight: 700;
+}
+
+a {
+  color: var(--zlu-blue);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--zlu-line);
+  margin: 1em 0;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  align-self: stretch;
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  font-size: 26px;
+  margin: 0.75em 0 0.35em;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--zlu-line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid var(--zlu-line);
+  padding: 0.65em 1.15em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background: var(--zlu-blue-soft);
+  color: var(--zlu-navy);
+  font-family: var(--zlu-font-display);
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+tr:nth-child(even) td {
+  background: rgba(238, 241, 245, 0.45);
+}
+
+/* ---------- Code (light theme — readable hljs on paper) ---------- */
+
+code {
+  font-family: var(--zlu-font-mono);
+  font-size: 0.86em;
+  font-feature-settings: 'ss01' on, 'ss02' on;
+  background: var(--zlu-mist);
+  color: var(--zlu-navy);
+  padding: 0.08em 0.35em;
+  border-radius: 6px;
+}
+
+pre {
+  background: #f4f6fa !important;
+  border-radius: 12px;
+  padding: 0.85em 1em !important;
+  border: 1px solid var(--zlu-line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+pre code {
+  background: transparent;
+  color: var(--zlu-text);
+  padding: 0;
+}
+
+/* highlight.js tokens — cool editorial light palette */
+pre code .hljs-comment,
+pre code .hljs-quote {
+  color: #7a8799;
+  font-style: italic;
+}
+
+pre code .hljs-keyword,
+pre code .hljs-selector-tag,
+pre code .hljs-addition {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+pre code .hljs-string,
+pre code .hljs-meta .hljs-string,
+pre code .hljs-attr {
+  color: #0f766e;
+}
+
+pre code .hljs-number,
+pre code .hljs-literal,
+pre code .hljs-bullet,
+pre code .hljs-symbol {
+  color: #b45309;
+}
+
+pre code .hljs-built_in,
+pre code .hljs-type,
+pre code .hljs-title,
+pre code .hljs-section,
+pre code .hljs-name,
+pre code .hljs-selector-id,
+pre code .hljs-selector-class {
+  color: #1e3a5f;
+  font-weight: 600;
+}
+
+pre code .hljs-variable,
+pre code .hljs-template-variable,
+pre code .hljs-params {
+  color: #334155;
+}
+
+pre code .hljs-meta,
+pre code .hljs-doctag,
+pre code .hljs-deletion {
+  color: #64748b;
+}
+
+pre code .hljs-emphasis {
+  font-style: italic;
+}
+
+pre code .hljs-strong {
+  font-weight: 700;
+}
+
+/* ---------- Math breathing room ---------- */
+
+mjx-container,
+.katex-display {
+  margin: 0.55em 0 !important;
+}
+
+/* ---------- Cover / lead ---------- */
+/* Atmospheric navy title card — layered gradient + soft blue bloom */
+
+section.cover,
+section.lead {
+  background:
+    radial-gradient(1100px 620px at 100% -5%, rgba(96, 165, 250, 0.45), transparent 52%),
+    radial-gradient(820px 540px at -5% 105%, rgba(47, 111, 237, 0.28), transparent 50%),
+    radial-gradient(640px 400px at 62% 58%, rgba(30, 80, 160, 0.22), transparent 65%),
+    linear-gradient(145deg, #050d18 0%, #0a1628 34%, #153056 68%, #0f1f38 100%);
+  color: #f4f7fb;
+  padding: 72px 72px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section.cover h1,
+section.lead h1,
+section.cover h2,
+section.lead h2,
+section.cover h3,
+section.lead h3,
+section.cover p,
+section.lead p,
+section.cover li,
+section.lead li,
+section.cover strong,
+section.lead strong {
+  color: #ffffff;
+}
+
+section.cover h1,
+section.lead h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.15em;
+  max-width: 16em;
+}
+
+section.cover h1::after,
+section.lead h1::after {
+  content: '';
+  display: block;
+  width: 3.75rem;
+  height: 3px;
+  margin-top: 1.05rem;
+  margin-bottom: 0.15rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #60a5fa, #3b82f6 55%, rgba(59, 130, 246, 0.15));
+}
+
+section.cover h2,
+section.lead h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: -0.01em;
+}
+
+section.cover p,
+section.lead p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 32em;
+  margin: 1.1em 0 0;
+}
+
+/* Hide default Marp footer / page on cover — parts strip replaces them */
+section.cover header,
+section.cover footer,
+section.lead header,
+section.lead footer,
+section.cover::after,
+section.lead::after {
+  color: transparent !important;
+}
+
+/* Eyebrow */
+section.cover > p:first-of-type,
+section.lead > p:first-of-type {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #3b82f6 !important;
+  margin: 0 0 1.35em !important;
+  max-width: none;
+}
+
+section.cover > p:first-of-type + h1,
+section.lead > p:first-of-type + h1 {
+  margin-top: 0;
+}
+
+/* Bottom parts strip (use <div class="cover-parts">…</div>) */
+section.cover .cover-parts,
+section.lead .cover-parts {
+  position: absolute;
+  left: 72px;
+  right: 72px;
+  bottom: 48px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(180, 196, 214, 0.78);
+  line-height: 1.4;
+}
+
+/* ---------- Section divider (Part A / B / …) ---------- */
+
+section.section {
+  background:
+    radial-gradient(800px 400px at 100% 0%, rgba(47, 111, 237, 0.28), transparent 55%),
+    linear-gradient(160deg, var(--zlu-navy), #0d1c30 70%);
+  color: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.section h1,
+section.section h2,
+section.section p,
+section.section strong {
+  color: #f7faff;
+}
+
+section.section h1 {
+  font-size: 48px;
+}
+
+section.section h1::after {
+  content: '';
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  margin-top: 0.65rem;
+  border-radius: 999px;
+  background: var(--zlu-blue-bright);
+}
+
+section.section h2 {
+  color: #9cbcf5;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section.section header,
+section.section footer,
+section.section::after {
+  color: rgba(190, 205, 224, 0.7);
+}
+
+/* ---------- Utility layouts ---------- */
+
+section.tight {
+  font-size: 24px;
+}
+
+section.tight p,
+section.tight li {
+  font-size: 21px;
+}
+
+section.tight h1 {
+  font-size: 36px;
+}
+
+section.tight table {
+  font-size: 24px;
+}
+
+section.center {
+  text-align: center;
+  justify-content: center;
+}
+
+section.center h1::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.equation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.equation h1 {
+  margin-bottom: 0.8em;
+}
+
+/* Two-column: wrap body in columns via Marp HTML */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  align-items: start;
+  margin-top: 0.4rem;
+}
+
+.columns > div {
+  min-width: 0;
+}
+
+.columns h2,
+.columns h3 {
+  margin-top: 0;
+}
+
+/* Roadmap / agenda rows */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-top: 0.6rem;
+}
+
+.roadmap-row {
+  display: grid;
+  grid-template-columns: 3rem 1fr auto;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.7rem 0.85rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--zlu-line);
+  border-radius: 12px;
+}
+
+.roadmap-row .badge {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--zlu-blue);
+  color: white;
+  font-family: var(--zlu-font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.roadmap-row .meta {
+  color: var(--zlu-blue);
+  font-weight: 700;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+.roadmap-row strong {
+  display: block;
+  font-size: 0.95em;
+  margin-bottom: 0.1em;
+}
+
+.roadmap-row span.desc {
+  display: block;
+  color: var(--zlu-muted);
+  font-size: 0.78em;
+  line-height: 1.35;
+}
+
+/* Inline badge / eyebrow */
+.eyebrow {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--zlu-blue) !important;
+  margin: 0 0 0.35em !important;
+}
+
+.badge-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6em;
+  height: 1.6em;
+  padding: 0 0.4em;
+  border-radius: 8px;
+  background: var(--zlu-blue);
+  color: #fff !important;
+  font-family: var(--zlu-font-display);
+  font-weight: 700;
+  font-size: 0.75em;
+  vertical-align: middle;
+  margin-right: 0.35em;
+}
+
+/* Callouts — editorial cards: mist ground + left accent (not traffic-light fills) */
+.tip,
+.pitfall,
+.note {
+  border-radius: 10px;
+  padding: 0.8rem 1.05rem 0.8rem 1.1rem;
+  margin: 0.7rem 0 0;
+  border: 1px solid var(--zlu-line);
+  border-left-width: 3px;
+  font-size: 0.86em;
+  line-height: 1.45;
+  box-shadow: 0 1px 0 rgba(18, 38, 63, 0.03);
+}
+
+.tip {
+  background: var(--zlu-ok-soft);
+  border-color: var(--zlu-ok-line);
+  border-left-color: var(--zlu-blue);
+  color: var(--zlu-text);
+}
+
+.pitfall {
+  background: var(--zlu-warn-soft);
+  border-color: var(--zlu-warn-line);
+  border-left-color: var(--zlu-warn-accent);
+  color: var(--zlu-text);
+}
+
+.note {
+  background: #f3f6fb;
+  border-color: #c9d6ea;
+  border-left-color: var(--zlu-blue-bright);
+  color: var(--zlu-text);
+}
+
+.tip strong,
+.pitfall strong,
+.note strong {
+  color: var(--zlu-navy);
+  font-weight: 700;
+}
+
+/* Visual cup / cap cards (concavity) */
+.shape-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.shape-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--zlu-line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+.shape-card .glyph {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.shape-card.up .glyph {
+  color: var(--zlu-blue);
+}
+
+.shape-card.down .glyph {
+  color: #d97706;
+}
+
+.shape-card h3,
+.shape-card .eq {
+  margin: 0 0 0.25em;
+  font-size: 1.05rem;
+  font-family: var(--zlu-font-display);
+  font-weight: 700;
+  color: var(--zlu-navy);
+  letter-spacing: -0.02em;
+}
+
+.shape-card p {
+  margin: 0;
+  font-size: 0.82em;
+  color: var(--zlu-muted);
+}
+
+/* End slide */
+section.end {
+  background:
+    radial-gradient(700px 380px at 20% 20%, rgba(47, 111, 237, 0.3), transparent 55%),
+    linear-gradient(150deg, var(--zlu-ink), var(--zlu-navy));
+  color: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.end h1,
+section.end p,
+section.end strong {
+  color: #f7faff;
+}
+
+section.end h1::after {
+  content: '';
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  margin-top: 0.65rem;
+  border-radius: 999px;
+  background: var(--zlu-blue-bright);
+}
+
+section.end header,
+section.end footer,
+section.end::after {
+  color: rgba(190, 205, 224, 0.7);
+}

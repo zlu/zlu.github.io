@@ -1,32 +1,317 @@
 ---
 university: University of Sydney
 abbr: Sydney
-name_cn: "悉尼大学"
+name_cn: 悉尼大学
 teaching_folder: u-sydney
 courses:
 - code: COMP3221
   title: Distributed Systems
   department: Computer Science
   material: distributed systems
+  theme: systems
+  meta_description_en: COMP3221 Sydney tutoring (Distributed Systems). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP3221 Distributed Systems at University of Sydney is where abstractions stack fast and labs
+    fail for reasons that look opaque. Private materials show weekly notes spanning roughly week 1–12,
+    assignment briefs / labs on disk, code submissions / practice files. The hard part is turning that
+    arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–12 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. Evidence from the
+    course folder points to SQL, schema design, and databases; Networking layers, packets, and protocols;
+    OS / systems programming; Computer architecture and organisation. There is a weekly arc (about week
+    1–12) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
+    / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
+    autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Distributed systems ideas
+    cn: 分布式系统概念
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“test peers 6001”) makes sense in class, freezes you alone
+    cn: 作业 brief（「test peers 6001」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for COMP3221: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP3221 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as test peers 6001, test peers 6002, with you
+      at the keyboard.'
+    cn: 作业辅导：针对 test peers 6001, test peers 6002 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: INFO1113
   title: Object-Oriented Programming
   department: Computer Science
   material: info-1113-java
+  theme: programming
+  meta_description_en: INFO1113 Sydney tutoring (Object-Oriented Programming). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: INFO1113 Object-Oriented Programming at University of Sydney is where briefs, tooling, and
+    autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
+    roughly week 1–11, code submissions / practice files. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在悉尼大学上 INFO1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 1–11 周的周课笔记、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: INFO1113 Object-Oriented Programming sits in programming & software construction. Evidence
+    from the course folder points to SQL, schema design, and databases; Programming foundations and debugging.
+    There is a weekly arc (about week 1–11) plus assessed work that expects you to apply the same ideas
+    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
+    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: INFO1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
+    1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: 'Week 1: Intro'
+    cn: 第 1 周：Intro
+  - en: 'Week 2: Loops and Arrays'
+    cn: 第 2 周：Loops and Arrays
+  - en: 'Week 3: Exceptions, inheritance and polymorphism'
+    cn: 第 3 周：Exceptions, inheritance and polymorphism
+  - en: 'Week 4: Collections'
+    cn: 第 4 周：Collections
+  - en: 'Week 5: Inheritance, Method Overloading & Packages'
+    cn: 第 5 周：Inheritance, Method Overloading & Packages
+  - en: 'Week 6: Abstract Class and Interface'
+    cn: 第 6 周：Abstract Class and Interface
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  tutoring:
+  - en: 'Lecture sync for INFO1113: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFO1113 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP5310
   title: Principles of Data Science
 - code: INFO1110
   title: Introduction to Programming
   material: INFO1110 Introduction to Programming
+  theme: programming
+  meta_description_en: INFO1110 Sydney tutoring (Introduction to Programming). Code that “almost works”
+    with no systematic debug plan? Bilingual Chinese/English help.
+  lead_en: INFO1110 Introduction to Programming at University of Sydney is where briefs, tooling, and
+    autograder edge cases hit harder than syntax itself. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在悉尼大学上 INFO1110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: INFO1110 Introduction to Programming sits in programming & software construction. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: INFO1110 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  - en: Git basics when the course requires it
+    cn: 课程要求时的 Git 基础
+  - en: Memory / pointers when the language is C or C++
+    cn: C / C++ 下的内存与指针
+  stuck:
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for INFO1110 outruns bilingual notes
+    cn: INFO1110 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Refactor for clarity before chasing extra marks
+    cn: 先为清晰度重构，再追额外分数
+  tutoring:
+  - en: 'Lecture sync for INFO1110: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFO1110 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: ELEC1601/ELEC9601
   title: Intro to Computer System
 - code: QBUS6600
   title: Data Analytics for Business Capstone
   material: QBUS6600
+  theme: data-science
+  meta_description_en: QBUS6600 Sydney tutoring (Data Analytics for Business Capstone). Assignment brief
+    (“project1 model”) makes sense in class, freezes you alone?
+  lead_en: QBUS6600 Data Analytics for Business Capstone at University of Sydney is where messy notebooks
+    and weak method stories lose marks even when a model runs. Private materials show assignment briefs
+    / labs on disk, notebooks, code submissions / practice files. The hard part is turning that arc into
+    a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在悉尼大学上 QBUS6600，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到磁盘上的作业 brief / lab、notebook、代码提交 /
+    练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: QBUS6600 Data Analytics for Business Capstone sits in data science & analytics. Evidence
+    from the course folder points to Data wrangling / analytics tables. Assessed work expects you to apply
+    lecture ideas under deadline pressure. Students stall when terminology outruns notes, when a demo
+    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
+    never made explicit.
+  overview_cn: QBUS6600 是悉尼大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Data wrangling / analytics tables
+    cn: 数据清洗 / 分析表
+  - en: Notebook workflows the marker can re-run
+    cn: 改卷人能复跑的 notebook 工作流
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  stuck:
+  - en: Assignment brief (“project1 model”) makes sense in class, freezes you alone
+    cn: 作业 brief（「project1 model」）课上听得懂，自己对着就停住
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  tutoring:
+  - en: 'Lecture sync for QBUS6600: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 QBUS6600 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as project1 model, Project1 Outline, with you
+      at the keyboard.'
+    cn: 作业辅导：针对 project1 model, Project1 Outline 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP9120
   title: Database Management Systems
 - code: INFO1112
   title: Computing 1B OS and Network Platforms
   material: INFO1112
+  theme: systems
+  meta_description_en: INFO1112 Sydney tutoring (Computing 1B OS and Network…). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: INFO1112 Computing 1B OS and Network Platforms at University of Sydney is where abstractions
+    stack fast and labs fail for reasons that look opaque. Private materials show weekly notes spanning
+    roughly week 1–3, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在悉尼大学上 INFO1112，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–3 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: INFO1112 Computing 1B OS and Network Platforms sits in systems, networks & architecture.
+    Evidence from the course folder points to Computer architecture and organisation; Programming foundations
+    and debugging. There is a weekly arc (about week 1–3) plus assessed work that expects you to apply
+    the same ideas under deadline pressure. Students stall when terminology outruns notes, when a demo
+    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
+    never made explicit.
+  overview_cn: INFO1112 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成、编程基础与调试这些点转。大约第
+    1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: 'Week 1: Lecture01A Admin 2025'
+    cn: 第 1 周：Lecture01A Admin 2025
+  - en: 'Week 1: Lecture01B Bits 2025'
+    cn: 第 1 周：Lecture01B Bits 2025
+  - en: 'Week 2: Lecture02 Shell&Processes 2025 08 11 WEILI'
+    cn: 第 2 周：Lecture02 Shell&Processes 2025 08 11 WEILI
+  - en: 'Week 3: Lecture03 Emulators VirtualMachines Containers 2025 08 18'
+    cn: 第 3 周：Lecture03 Emulators VirtualMachines Containers 2025 08 18
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“INFO1112 A1 作业要求”) makes sense in class, freezes you alone
+    cn: 作业 brief（「INFO1112 A1 作业要求」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for INFO1112: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFO1112 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as INFO1112 A1 作业要求, emulator, with you at
+      the keyboard.'
+    cn: 作业辅导：针对 INFO1112 A1 作业要求, emulator 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP2017
   title: Systems Programming
 - code: COMP2123
@@ -52,17 +337,367 @@ courses:
 - code: INFO3616
   title: Principles Of Security And Security Eng
   material: INFO3616-Principles of Security and Security Eng
+  theme: security
+  meta_description_en: INFO3616 Sydney tutoring (Principles Of Security And…). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: INFO3616 Principles Of Security And Security Eng at University of Sydney is where threat models,
+    crypto vocabulary, and lab setup form a terminology wall. Private materials show weekly notes spanning
+    roughly week 1–11, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在悉尼大学上 INFO3616，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到大约第 1–11 周的周课笔记、磁盘上的作业 brief / lab、代码提交 /
+    练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: INFO3616 Principles Of Security And Security Eng sits in security & privacy. Evidence from
+    the course folder points to Security / privacy threat models and labs. There is a weekly arc (about
+    week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: INFO3616 是悉尼大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着安全 / 隐私威胁模型与实验这些点转。大约第 1–11
+    周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。
+  topics:
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: 'Week 4: Abstract Algebra'
+    cn: 第 4 周：Abstract Algebra
+  - en: 'Week 4: Lecture Notes'
+    cn: 第 4 周：Lecture Notes
+  - en: 'Week 4: Number Theory'
+    cn: 第 4 周：Number Theory
+  - en: 'Week 9: Lecture Notes'
+    cn: 第 9 周：Lecture Notes
+  - en: 'Week 10: Lecture Notes'
+    cn: 第 10 周：Lecture Notes
+  - en: 'Week 11: Lecture Notes'
+    cn: 第 11 周：Lecture Notes
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“answers”) makes sense in class, freezes you alone
+    cn: 作业 brief（「answers」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Lab setup unfinished; report lists tools without a clear finding
+    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
+  - en: Labs that need precise setup before any “hacking”
+    cn: Lab 还没配好环境就急着“黑”
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for INFO3616: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFO3616 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as answers, Assignment 1, with you at the keyboard.'
+    cn: 作业辅导：针对 answers, Assignment 1 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - title: Distributed Systems
   material: distributed systems
+  code: COMP3221
+  theme: systems
+  meta_description_en: COMP3221 Sydney tutoring (Distributed Systems). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP3221 Distributed Systems at University of Sydney is where abstractions stack fast and labs
+    fail for reasons that look opaque. Private materials show weekly notes spanning roughly week 1–12,
+    assignment briefs / labs on disk, code submissions / practice files. The hard part is turning that
+    arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–12 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. Evidence from the
+    course folder points to SQL, schema design, and databases; Networking layers, packets, and protocols;
+    OS / systems programming; Computer architecture and organisation. There is a weekly arc (about week
+    1–12) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
+    / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
+    autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Distributed systems ideas
+    cn: 分布式系统概念
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“test peers 6001”) makes sense in class, freezes you alone
+    cn: 作业 brief（「test peers 6001」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for COMP3221: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP3221 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as test peers 6001, test peers 6002, with you
+      at the keyboard.'
+    cn: 作业辅导：针对 test peers 6001, test peers 6002 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: SOFT2201
-  title: SOFT2201
+  title: Software Construction / Design
   material: soft2201-comp9201
-- code: INFO-1113
-  title: Java
+  theme: programming
+  meta_description_en: SOFT2201 Sydney tutoring (Software Construction / Design). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: SOFT2201 Software Construction / Design at University of Sydney is where briefs, tooling, and
+    autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
+    roughly week 2–11, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在悉尼大学上 SOFT2201，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 2–11 周的周课笔记、磁盘上的作业
+    brief / lab、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: SOFT2201 Software Construction / Design sits in programming & software construction. Evidence
+    from the course folder points to Software design and construction. There is a weekly arc (about week
+    2–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: SOFT2201 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着软件设计与构造这些点转。大约第 2–11 周有连续周课主线，作业会要求你在
+    DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Software design and construction
+    cn: 软件设计与构造
+  - en: 'Week 2: W2 UML'
+    cn: 第 2 周：W2 UML
+  - en: 'Week 3: W3 designpatterns'
+    cn: 第 3 周：W3 designpatterns
+  - en: 'Week 4: W4 composite'
+    cn: 第 4 周：W4 composite
+  - en: 'Week 5: W5 admin2'
+    cn: 第 5 周：W5 admin2
+  - en: 'Week 6: W6 singleton'
+    cn: 第 6 周：W6 singleton
+  - en: 'Week 8: W8 white box testing'
+    cn: 第 8 周：W8 white box testing
+  - en: 'Week 9: W9 iterators'
+    cn: 第 9 周：W9 iterators
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“todo app answer”) makes sense in class, freezes you alone
+    cn: 作业 brief（「todo app answer」）课上听得懂，自己对着就停住
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for SOFT2201: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 SOFT2201 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as todo app answer, text editor core answer,
+      with you at the keyboard.'
+    cn: 作业辅导：针对 todo app answer, text editor core answer 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: INFO1113
+  title: Object-Oriented Programming
   material: info-1113-java
-- title: Mktg1011 Foundamentals Of Marketing Analytics
+  theme: programming
+  meta_description_en: INFO1113 / INFO-1113 Sydney tutoring (Object-Oriented Programming). Weekly lecture
+    arc moves on before last week’s method is solid?
+  lead_en: INFO-1113 Java at University of Sydney is where briefs, tooling, and autograder edge cases
+    hit harder than syntax itself. Private materials show weekly notes spanning roughly week 1–11, code
+    submissions / practice files. The hard part is turning that arc into a method you can repeat on the
+    next brief — not rereading slides the night before.
+  lead_cn: 在悉尼大学上 INFO-1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 1–11 周的周课笔记、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: INFO-1113 Java sits in programming & software construction. Evidence from the course folder
+    points to SQL, schema design, and databases; Programming foundations and debugging. There is a weekly
+    arc (about week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: INFO-1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
+    1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: 'Week 1: Intro'
+    cn: 第 1 周：Intro
+  - en: 'Week 2: Loops and Arrays'
+    cn: 第 2 周：Loops and Arrays
+  - en: 'Week 3: Exceptions, inheritance and polymorphism'
+    cn: 第 3 周：Exceptions, inheritance and polymorphism
+  - en: 'Week 4: Collections'
+    cn: 第 4 周：Collections
+  - en: 'Week 5: Inheritance, Method Overloading & Packages'
+    cn: 第 5 周：Inheritance, Method Overloading & Packages
+  - en: 'Week 6: Abstract Class and Interface'
+    cn: 第 6 周：Abstract Class and Interface
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  tutoring:
+  - en: 'Lecture sync for INFO-1113: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFO-1113 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  aliases:
+  - INFO-1113
+- title: Fundamentals of Marketing Analytics
   material: MKTG1011-Foundamentals of Marketing Analytics
+  code: MKTG1011
+  theme: data-science
+  meta_description_en: MKTG1011 Sydney tutoring (Fundamentals of Marketing Analytics). Notebook runs on
+    the sample cell, fails on the hidden / full dataset case?
+  lead_en: MKTG1011 Mktg1011 Fundamentals Of Marketing Analytics at University of Sydney is where messy
+    notebooks and weak method stories lose marks even when a model runs. Private materials show notebooks,
+    code submissions / practice files. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在悉尼大学上 MKTG1011，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到notebook、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: MKTG1011 Mktg1011 Fundamentals Of Marketing Analytics sits in data science & analytics.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: MKTG1011 是悉尼大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Notebook workflows the marker can re-run
+    cn: 改卷人能复跑的 notebook 工作流
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
+  stuck:
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  - en: Last-minute modelling with no data story
+    cn: 临近 DDL 才建模，没有数据故事
+  session_angles:
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  - en: Sanity-check joins, missingness, and leakage risks
+    cn: 核验 join、缺失值与泄漏风险
+  tutoring:
+  - en: 'Lecture sync for MKTG1011: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 MKTG1011 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: ELEC1601
-  title: ELEC1601
+  title: Introduction to Computer Systems
   material: elec1601
+  theme: systems
+  meta_description_en: ELEC1601 Sydney tutoring (Introduction to Computer Systems). Weekly lecture arc
+    moves on before last week’s method is solid?
+  lead_en: ELEC1601 Introduction to Computer Systems at University of Sydney is where briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
+    roughly week 2–4. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在悉尼大学上 ELEC1601，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 2–4 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: ELEC1601 Introduction to Computer Systems sits in programming & software construction.
+    Evidence from the course folder points to Computer architecture and organisation; Security / privacy
+    threat models and labs. There is a weekly arc (about week 2–4) plus assessed work that expects you
+    to apply the same ideas under deadline pressure. Students stall when terminology outruns notes, when
+    a demo makes sense in class but not alone, or when the write-up / autograder asks for a method the
+    notebook never made explicit.
+  overview_cn: ELEC1601 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成、安全 / 隐私威胁模型与实验这些点转。大约第
+    2–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: 'Week 2: Polling and Interrupts ()'
+    cn: 第 2 周：Polling and Interrupts ()
+  - en: 'Week 3: (and 4) Encoding'
+    cn: 第 3 周：(and 4) Encoding
+  - en: 'Week 4: (and 5) Floating point'
+    cn: 第 4 周：(and 5) Floating point
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for ELEC1601 outruns bilingual notes
+    cn: ELEC1601 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  tutoring:
+  - en: 'Lecture sync for ELEC1601: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 ELEC1601 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

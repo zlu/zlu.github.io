@@ -1,22 +1,344 @@
 ---
 university: University College Dublin
 abbr: UCD
-name_cn: "都柏林大学"
+name_cn: 都柏林大学
 teaching_folder: university-college-dublin
 courses:
 - code: COMP3038J
   title: Multi Paradigm Programming
   material: Multi-Paradigm Programming
+  theme: programming
+  meta_description_en: COMP3038J UCD tutoring (Multi Paradigm Programming). Code almost works; edge cases
+    and error messages have no debug method? Bilingual Chinese/English help.
+  lead_en: COMP3038J Multi Paradigm Programming at University College Dublin is where briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Private materials show code submissions /
+    practice files. The hard part is turning that arc into a method you can repeat on the next brief —
+    not rereading slides the night before.
+  lead_cn: 在都柏林大学上 COMP3038J，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP3038J Multi Paradigm Programming sits in programming & software construction. Evidence
+    from the course folder points to Programming foundations and debugging. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: COMP3038J 是都柏林大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  - en: Git basics when the course requires it
+    cn: 课程要求时的 Git 基础
+  stuck:
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for COMP3038J outruns bilingual notes
+    cn: COMP3038J 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  tutoring:
+  - en: 'Lecture sync for COMP3038J: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP3038J 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP3019J
   title: Web Application Development
   material: Web Application Development
+  theme: web-mobile
+  meta_description_en: COMP3019J UCD tutoring (Web Application Development). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP3019J Web Application Development at University College Dublin is where front-end and back-end
+    failures mask each other inside one brief. Private materials show weekly notes spanning roughly week
+    1–7, assignment briefs / labs on disk, code submissions / practice files. The hard part is turning
+    that arc into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在都柏林大学上 COMP3019J，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到大约第 1–7 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: COMP3019J Web Application Development sits in web, mobile & hci. Evidence from the course
+    folder points to SQL, schema design, and databases; Networking layers, packets, and protocols; Programming
+    foundations and debugging; Web / mobile app structure. There is a weekly arc (about week 1–7) plus
+    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP3019J 是都柏林大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、编程基础与调试这些点转。大约第
+    1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: 'Week 1: Introduction and Overview 2025'
+    cn: 第 1 周：Introduction and Overview 2025
+  - en: 'Week 2: a Simple HTML'
+    cn: 第 2 周：a Simple HTML
+  - en: 'Week 2: b CSS'
+    cn: 第 2 周：b CSS
+  - en: 'Week 3: a Introducing flask'
+    cn: 第 3 周：a Introducing flask
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“test”) makes sense in class, freezes you alone
+    cn: 作业 brief（「test」）课上听得懂，自己对着就停住
+  - en: UI looks done but integration tests fail
+    cn: 界面看起来完成了，集成测试不过
+  - en: Unclear ownership in group projects
+    cn: 小组项目里职责不清
+  - en: Demo crashes from environment / device mismatch
+    cn: 环境 / 设备不一致导致演示崩溃
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for COMP3019J: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP3019J 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as test, with you at the keyboard.'
+    cn: 作业辅导：针对 test 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - title: Mobile Computing
   material: Mobile Computing
+  code: Mobile Computing
+  theme: web-mobile
+  meta_description_en: Mobile Computing UCD tutoring (Mobile Computing). UI looks done but integration
+    tests fail? Bilingual Chinese/English help.
+  lead_en: Mobile Computing at University College Dublin is where front-end and back-end failures mask
+    each other inside one brief. Private materials show lecture and practice materials. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
+  lead_cn: 在都柏林大学上 Mobile Computing，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: Mobile Computing sits in web, mobile & hci. Evidence from the course folder points to SQL,
+    schema design, and databases; Security / privacy threat models and labs; Programming foundations and
+    debugging; Web / mobile app structure. Students stall when terminology outruns notes, when a demo
+    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
+    never made explicit.
+  overview_cn: Mobile Computing 是都柏林大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema
+    与数据库、安全 / 隐私威胁模型与实验、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  stuck:
+  - en: UI looks done but integration tests fail
+    cn: 界面看起来完成了，集成测试不过
+  - en: Unclear ownership in group projects
+    cn: 小组项目里职责不清
+  - en: Demo crashes from environment / device mismatch
+    cn: 环境 / 设备不一致导致演示崩溃
+  - en: Lecture vocabulary for Mobile Computing outruns bilingual notes
+    cn: Mobile Computing 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Trace one user action end-to-end
+    cn: 把一个用户操作端到端走通
+  - en: Fix the highest-risk demo path first
+    cn: 先修演示里最高风险的路径
+  - en: Align the write-up with what the rubric scores
+    cn: 让报告对齐评分量表真正打分的点
+  tutoring:
+  - en: 'Lecture sync for Mobile Computing: bilingual catch-up so workshop / tutorial language matches
+      the lectures.'
+    cn: 按 Mobile Computing 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - title: Computer Graphics
   material: Computer Graphics
+  code: Computer Graphics
+  theme: programming
+  meta_description_en: Computer Graphics UCD tutoring (Computer Graphics). Can follow a worked example,
+    cannot start from a blank page under time pressure?
+  lead_en: Computer Graphics at University College Dublin is where invariants, complexity claims, and
+    code must stay aligned under time pressure. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在都柏林大学上 Computer Graphics，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: Computer Graphics sits in algorithms & data structures. Evidence from the course folder
+    points to Algorithms, ADTs, and complexity; Math foundations and proof habits. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
+  overview_cn: Computer Graphics 是都柏林大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Asymptotic complexity and comparing candidates
+    cn: 渐近复杂度与方案比较
+  - en: Arrays, lists, trees, heaps, hash tables
+    cn: 数组、链表、树、堆、哈希表
+  - en: Sorting, searching, and graph traversals
+    cn: 排序、搜索与图遍历
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  stuck:
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  - en: Lecture vocabulary for Computer Graphics outruns bilingual notes
+    cn: Computer Graphics 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  - en: Exam-style short proofs under time pressure
+    cn: 限时练习考试风格的短证明
+  tutoring:
+  - en: 'Lecture sync for Computer Graphics: bilingual catch-up so workshop / tutorial language matches
+      the lectures.'
+    cn: 按 Computer Graphics 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - title: Software Methodology
   material: Software Methodology
+  code: Software Methodology
+  theme: programming
+  meta_description_en: Software Methodology UCD tutoring (Software Methodology). Stuck on labs that fail
+    only under concurrency or load? Bilingual Chinese/English help.
+  lead_en: Software Methodology at University College Dublin is where abstractions stack fast and labs
+    fail for reasons that look opaque. Private materials show lecture and practice materials. The hard
+    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
+    night before.
+  lead_cn: 在都柏林大学上 Software Methodology，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: Software Methodology sits in systems, networks & architecture. Evidence from the course
+    folder points to Computer architecture and organisation. Students stall when terminology outruns notes,
+    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
+    the notebook never made explicit.
+  overview_cn: Software Methodology 是都柏林大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Processes, threads, and synchronisation basics
+    cn: 进程、线程与同步基础
+  - en: Virtual memory and caching intuition
+    cn: 虚拟内存与缓存直觉
+  - en: Sockets, HTTP, and common networking labs
+    cn: Socket、HTTP 与常见网络实验
+  - en: OS scheduling and concurrency bugs
+    cn: 操作系统调度与并发 bug
+  - en: Computer organisation and assembly when required
+    cn: 需要时的计算机组成与汇编
+  stuck:
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture vocabulary for Software Methodology outruns bilingual notes
+    cn: Software Methodology 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  - en: Instrument, reproduce, then patch the root cause
+    cn: 先插桩复现，再修根因
+  - en: Translate jargon into a bilingual cheat sheet for exams
+    cn: 把术语整理成考试用双语速查
+  tutoring:
+  - en: 'Lecture sync for Software Methodology: bilingual catch-up so workshop / tutorial language matches
+      the lectures.'
+    cn: 按 Software Methodology 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP3008J
   title: Distributed Systems
   material: Distributed Systems
+  theme: systems
+  meta_description_en: COMP3008J UCD tutoring (Distributed Systems). Stuck on labs that fail only under
+    concurrency or load? Bilingual Chinese/English help.
+  lead_en: COMP3008J Distributed Systems at University College Dublin is where abstractions stack fast
+    and labs fail for reasons that look opaque. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在都柏林大学上 COMP3008J，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: COMP3008J Distributed Systems sits in systems, networks & architecture. Evidence from the
+    course folder points to Networking layers, packets, and protocols; Computer architecture and organisation;
+    Security / privacy threat models and labs; Algorithms, ADTs, and complexity. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: COMP3008J 是都柏林大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、计算机体系结构与组成、安全
+    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Distributed systems ideas
+    cn: 分布式系统概念
+  stuck:
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture vocabulary for COMP3008J outruns bilingual notes
+    cn: COMP3008J 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  - en: Instrument, reproduce, then patch the root cause
+    cn: 先插桩复现，再修根因
+  - en: Translate jargon into a bilingual cheat sheet for exams
+    cn: 把术语整理成考试用双语速查
+  tutoring:
+  - en: 'Lecture sync for COMP3008J: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP3008J 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

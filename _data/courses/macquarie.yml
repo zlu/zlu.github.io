@@ -4,122 +4,287 @@ abbr: Macquarie
 name_cn: 麦考瑞大学
 teaching_folder: macquarie-university
 courses:
-  - code: COMP1000
-    title: Introduction to Computer Programming
-  - code: COMP1010
-    title: Fundamentals of Computer Science
-  - code: COMP1300
-    title: Introduction to Cyber Security
-  - code: COMP2000
-    title: Object-Oriented Programming Practices
-  - code: COMP2110
-    title: Web Technology
-  - code: COMP2250
-    title: Data Communications
-  - code: COMP3010
-    title: Algorithm Theory and Design
-  - code: COMP3100
-    title: Software Architecture and Design
-  - code: COMP3420
-    title: Artificial Intelligence
-  - topics:
-      - en: Reading assignment guidelines into a section plan
-        cn: 把作业指南转化成章节计划
-      - en: Project / IT management vocabulary
-        cn: 项目 / IT 管理术语
-      - en: Report structure that matches the brief
-        cn: 与 brief 对齐的报告结构
-      - en: Defending decisions without empty buzzwords
-        cn: 为决策辩护，不用空技术用语
-    material: comp3770
-    theme: programming
-    session_angles:
-      - en: Brief → outline → evidence bullets → draft
-        cn: Brief → 大纲 → 证据要点 → 草稿
-      - en: You write; we stress-test clarity against the guideline
-        cn: 你来写；我们按指南压测是否说清
-      - en: Short rewrite drills on weak sections
-        cn: 针对薄弱段落的短改写练习
-    lead_en: "COMP3770 is project and systems management: briefs, reports, and
-      process vocabulary. The hard part is turning abstract management
-      frameworks into a concrete submission the marker recognises — not only
-      knowing the buzzwords."
-    tutoring:
-      - en: "Lecture sync: bilingual management vocabulary tied to the assessment
-          brief."
-        cn: 同步跟课：用中英双语把管理术语绑到作业 brief 上。
-      - en: "Assignments: outline review and section-by-section feedback."
-        cn: 作业辅导：大纲评审与分段反馈。
-      - en: "Deadline sprints: clarify the weakest report sections under time pressure."
-        cn: DDL 冲刺：限时把最弱的报告段落说清楚。
-    code: COMP3770
-    lead_cn: COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架 转化成改卷人认得的具体提交物，而不只是会技术用语。
-    overview_en: Management of IT Systems and Projects emphasises structured
-      reports, assignment guidelines, and defending decisions clearly. Students
-      stall when report templates feel vague, or when technical and managerial
-      language collide in one document.
-    overview_cn: Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。
-      卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
-    title: Management of IT Systems and Projects
-    stuck:
-      - en: Knows the topic, cannot structure the report
-        cn: 懂主题，却搭不起报告结构
-      - en: Guideline language denser than the lecture examples
-        cn: 指南用语比课堂例子更密
-      - en: Technical detail without answering the management question
-        cn: 技术细节很多，却没回答管理问题
-  - topics:
-      - en: Reading assignment guidelines into a section plan
-        cn: 把作业指南转化成章节计划
-      - en: Project / IT management vocabulary
-        cn: 项目 / IT 管理术语
-      - en: Report structure that matches the brief
-        cn: 与 brief 对齐的报告结构
-      - en: Defending decisions without empty buzzwords
-        cn: 为决策辩护，不用空技术用语
-    material: comp3770
-    theme: programming
-    session_angles:
-      - en: Brief → outline → evidence bullets → draft
-        cn: Brief → 大纲 → 证据要点 → 草稿
-      - en: You write; we stress-test clarity against the guideline
-        cn: 你来写；我们按指南压测是否说清
-      - en: Short rewrite drills on weak sections
-        cn: 针对薄弱段落的短改写练习
-    lead_en: "COMP3770 is project and systems management: briefs, reports, and
-      process vocabulary. The hard part is turning abstract management
-      frameworks into a concrete submission the marker recognises — not only
-      knowing the buzzwords."
-    tutoring:
-      - en: "Lecture sync: bilingual management vocabulary tied to the assessment
-          brief."
-        cn: 同步跟课：用中英双语把管理术语绑到作业 brief 上。
-      - en: "Assignments: outline review and section-by-section feedback."
-        cn: 作业辅导：大纲评审与分段反馈。
-      - en: "Deadline sprints: clarify the weakest report sections under time pressure."
-        cn: DDL 冲刺：限时把最弱的报告段落说清楚。
-    code: COMP3770/6770
-    lead_cn: COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架 转化成改卷人认得的具体提交物，而不只是会技术用语。
-    overview_en: Management of IT Systems and Projects emphasises structured
-      reports, assignment guidelines, and defending decisions clearly. Students
-      stall when report templates feel vague, or when technical and managerial
-      language collide in one document.
-    overview_cn: Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。
-      卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
-    title: Management of IT Systems and Projects
-    stuck:
-      - en: Knows the topic, cannot structure the report
-        cn: 懂主题，却搭不起报告结构
-      - en: Guideline language denser than the lecture examples
-        cn: 指南用语比课堂例子更密
-      - en: Technical detail without answering the management question
-        cn: 技术细节很多，却没回答管理问题
-  - code: COMP6010
-    title: Fundamentals of Computer Science
-    material: COMP6010
-  - code: COMP6200
-    title: Intro to Statistics in Data Science
-    material: COMP6200-data-science
-    aliases:
-      - COMP2200
+- code: COMP2200/COMP6200
+  title: Data Science
+- code: COMP6010
+  title: Fundamentals of Computer Science
+  material: COMP6010
+  theme: algorithms
+  meta_description_en: COMP6010 Macquarie tutoring (Fundamentals of Computer Science). Weekly lecture
+    arc moves on before last week’s method is solid?
+  lead_en: COMP6010 Fundamentals of Computer Science at Macquarie University is where invariants, complexity
+    claims, and code must stay aligned under time pressure. Private materials show weekly notes spanning
+    roughly week 2–3. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在麦考瑞大学上 COMP6010，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到大约第 2–3 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP6010 Fundamentals of Computer Science sits in algorithms & data structures. Evidence
+    from the course folder points to Algorithms, ADTs, and complexity. There is a weekly arc (about week
+    2–3) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP6010 是麦考瑞大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度这些点转。大约第 2–3
+    周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 2: W2 Practice Conditions (page 2 of 3) iLearn'
+    cn: 第 2 周：W2 Practice Conditions (page 2 of 3) iLearn
+  - en: 'Week 2: W2 Practice Conditions (page 3 of 3) iLearn'
+    cn: 第 2 周：W2 Practice Conditions (page 3 of 3) iLearn
+  - en: 'Week 3: W3 Practice Loops (page 2 of 4) iLearn'
+    cn: 第 3 周：W3 Practice Loops (page 2 of 4) iLearn
+  - en: 'Week 3: W3 Practice Loops (page 3 of 4) iLearn'
+    cn: 第 3 周：W3 Practice Loops (page 3 of 4) iLearn
+  - en: 'Week 3: W3 Practice Loops (page 4 of 4) iLearn'
+    cn: 第 3 周：W3 Practice Loops (page 4 of 4) iLearn
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  tutoring:
+  - en: 'Lecture sync for COMP6010: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP6010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP3770/6770
+  title: Management of IT Systems and Projects
+  material: comp3770
+  theme: programming
+  lead_en: 'COMP3770 is project and systems management: briefs, reports, and process vocabulary. The hard
+    part is turning abstract management frameworks into a concrete submission the marker recognises —
+    not only knowing the buzzwords.'
+  lead_cn: COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架 转化成改卷人认得的具体提交物，而不只是会技术用语。
+  overview_en: Management of IT Systems and Projects emphasises structured reports, assignment guidelines,
+    and defending decisions clearly. Students stall when report templates feel vague, or when technical
+    and managerial language collide in one document.
+  overview_cn: Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。 卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
+  topics:
+  - en: Reading assignment guidelines into a section plan
+    cn: 把作业指南转化成章节计划
+  - en: Project / IT management vocabulary
+    cn: 项目 / IT 管理术语
+  - en: Report structure that matches the brief
+    cn: 与 brief 对齐的报告结构
+  - en: Defending decisions without empty buzzwords
+    cn: 为决策辩护，不用空技术用语
+  stuck:
+  - en: Knows the topic, cannot structure the report
+    cn: 懂主题，却搭不起报告结构
+  - en: Guideline language denser than the lecture examples
+    cn: 指南用语比课堂例子更密
+  - en: Technical detail without answering the management question
+    cn: 技术细节很多，却没回答管理问题
+  session_angles:
+  - en: Brief → outline → evidence bullets → draft
+    cn: Brief → 大纲 → 证据要点 → 草稿
+  - en: You write; we stress-test clarity against the guideline
+    cn: 你来写；我们按指南压测是否说清
+  - en: Short rewrite drills on weak sections
+    cn: 针对薄弱段落的短改写练习
+  tutoring:
+  - en: 'Lecture sync: bilingual management vocabulary tied to the assessment brief.'
+    cn: 同步跟课：用中英双语把管理术语绑到作业 brief 上。
+  - en: 'Assignments: outline review and section-by-section feedback.'
+    cn: 作业辅导：大纲评审与分段反馈。
+  - en: 'Deadline sprints: clarify the weakest report sections under time pressure.'
+    cn: DDL 冲刺：限时把最弱的报告段落说清楚。
+  meta_description_en: COMP3770/6770 Macquarie tutoring (Management of IT Systems and…). Knows the topic,
+    cannot structure the report? Bilingual Chinese/English help.
+- code: COMP1000
+  title: Introduction to Computer Programming
+- code: COMP1010
+  title: Fundamentals of Computer Science
+- code: COMP1300
+  title: Introduction to Cyber Security
+- code: COMP2000
+  title: Object-Oriented Programming Practices
+- code: COMP2110
+  title: Web Technology
+- code: COMP2200
+  title: Data Science
+  material: COMP6200-aug-2025
+  theme: data-science
+  meta_description_en: COMP2200 Macquarie tutoring (Data Science). Weekly lecture arc moves on before
+    last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP2200 Data Science at Macquarie University is where messy notebooks and weak method stories
+    lose marks even when a model runs. Private materials show weekly notes spanning roughly week 1–4.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在麦考瑞大学上 COMP2200，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到大约第 1–4 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP2200 Data Science sits in data science & analytics. Evidence from the course folder
+    points to ML pipelines, features, and model choice; Math foundations and proof habits. There is a
+    weekly arc (about week 1–4) plus assessed work that expects you to apply the same ideas under deadline
+    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
+    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMP2200 是麦考瑞大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML 流水线、特征与模型选择、数学基础与证明习惯这些点转。大约第
+    1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: 'Week 1: prac'
+    cn: 第 1 周：prac
+  - en: 'Week 2: COMP2200'
+    cn: 第 2 周：COMP2200
+  - en: 'Week 3: COMP2200'
+    cn: 第 3 周：COMP2200
+  - en: 'Week 4: COMP2200'
+    cn: 第 4 周：COMP2200
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  - en: Last-minute modelling with no data story
+    cn: 临近 DDL 才建模，没有数据故事
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  - en: Sanity-check joins, missingness, and leakage risks
+    cn: 核验 join、缺失值与泄漏风险
+  tutoring:
+  - en: 'Lecture sync for COMP2200: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP2200 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP2250
+  title: Data Communications
+- code: COMP3010
+  title: Algorithm Theory and Design
+- code: COMP3100
+  title: Software Architecture and Design
+- code: COMP3420
+  title: Artificial Intelligence
+- code: COMP6200
+  title: Data Science Foundations
+  material: COMP6200-aug-2025
+  theme: data-science
+  meta_description_en: COMP6200 Macquarie tutoring (Data Science Foundations). Weekly lecture arc moves
+    on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: COMP6200 Data Science / Analytics Foundations at Macquarie University is where messy notebooks
+    and weak method stories lose marks even when a model runs. Private materials show weekly notes spanning
+    roughly week 1–4. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在麦考瑞大学上 COMP6200，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到大约第 1–4 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP6200 Data Science / Analytics Foundations sits in data science & analytics. Evidence
+    from the course folder points to ML pipelines, features, and model choice; Math foundations and proof
+    habits. There is a weekly arc (about week 1–4) plus assessed work that expects you to apply the same
+    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
+    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
+    explicit.
+  overview_cn: COMP6200 是麦考瑞大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML 流水线、特征与模型选择、数学基础与证明习惯这些点转。大约第
+    1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: 'Week 1: prac'
+    cn: 第 1 周：prac
+  - en: 'Week 2: COMP2200'
+    cn: 第 2 周：COMP2200
+  - en: 'Week 3: COMP2200'
+    cn: 第 3 周：COMP2200
+  - en: 'Week 4: COMP2200'
+    cn: 第 4 周：COMP2200
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  - en: Last-minute modelling with no data story
+    cn: 临近 DDL 才建模，没有数据故事
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  - en: Sanity-check joins, missingness, and leakage risks
+    cn: 核验 join、缺失值与泄漏风险
+  tutoring:
+  - en: 'Lecture sync for COMP6200: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP6200 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP3770
+  title: Management of IT Systems and Projects
+  material: comp3770
+  theme: programming
+  lead_en: 'COMP3770 is project and systems management: briefs, reports, and process vocabulary. The hard
+    part is turning abstract management frameworks into a concrete submission the marker recognises —
+    not only knowing the buzzwords.'
+  lead_cn: COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架 转化成改卷人认得的具体提交物，而不只是会技术用语。
+  overview_en: Management of IT Systems and Projects emphasises structured reports, assignment guidelines,
+    and defending decisions clearly. Students stall when report templates feel vague, or when technical
+    and managerial language collide in one document.
+  overview_cn: Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。 卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
+  topics:
+  - en: Reading assignment guidelines into a section plan
+    cn: 把作业指南转化成章节计划
+  - en: Project / IT management vocabulary
+    cn: 项目 / IT 管理术语
+  - en: Report structure that matches the brief
+    cn: 与 brief 对齐的报告结构
+  - en: Defending decisions without empty buzzwords
+    cn: 为决策辩护，不用空技术用语
+  stuck:
+  - en: Knows the topic, cannot structure the report
+    cn: 懂主题，却搭不起报告结构
+  - en: Guideline language denser than the lecture examples
+    cn: 指南用语比课堂例子更密
+  - en: Technical detail without answering the management question
+    cn: 技术细节很多，却没回答管理问题
+  session_angles:
+  - en: Brief → outline → evidence bullets → draft
+    cn: Brief → 大纲 → 证据要点 → 草稿
+  - en: You write; we stress-test clarity against the guideline
+    cn: 你来写；我们按指南压测是否说清
+  - en: Short rewrite drills on weak sections
+    cn: 针对薄弱段落的短改写练习
+  tutoring:
+  - en: 'Lecture sync: bilingual management vocabulary tied to the assessment brief.'
+    cn: 同步跟课：用中英双语把管理术语绑到作业 brief 上。
+  - en: 'Assignments: outline review and section-by-section feedback.'
+    cn: 作业辅导：大纲评审与分段反馈。
+  - en: 'Deadline sprints: clarify the weakest report sections under time pressure.'
+    cn: DDL 冲刺：限时把最弱的报告段落说清楚。
+  meta_description_en: COMP3770 Macquarie tutoring (Management of IT Systems and…). Knows the topic, cannot
+    structure the report? Bilingual Chinese/English help.
 ---

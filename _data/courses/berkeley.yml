@@ -1,34 +1,191 @@
 ---
-university: "University of California, Berkeley"
+university: University of California, Berkeley
 abbr: UC Berkeley
-name_cn: "加州大学伯克利分校"
+name_cn: 加州大学伯克利分校
 teaching_folder: uc-berkeley
 courses:
-  - code: CS 61A
-    title: Structure and Interpretation of Computer Programs
-  - code: CS 61B
-    title: Data Structures
-  - code: CS 61C
-    title: Great Ideas in Computer Architecture
-  - code: CS 70
-    title: Discrete Mathematics and Probability Theory
-    material: CS70离散数学
-  - code: CS 170
-    title: Efficient Algorithms and Intractable Problems
-  - code: CS 188
-    title: Introduction to Artificial Intelligence
-  - code: CS 189
-    title: Introduction to Machine Learning
-  - code: CS 186
-    title: Introduction to Database Systems
-  - code: CS 162
-    title: Operating Systems and System Programming
-  - code: DATA C100
-    title: Principles and Techniques of Data Science
-  - title: The Foundations of Data Science
-    material: Data 8-the Foundations of Data Science
-    code: Data 8
-  - code: MATH54
-    title: Linear Algebra and Differential Equations
-    material: Math54-linear-algebra-and-differential-equations
+- code: CS 61A
+  title: Structure and Interpretation of Computer Programs
+- code: CS 61B
+  title: Data Structures
+- code: CS 61C
+  title: Great Ideas in Computer Architecture
+- code: CS 70
+  title: Discrete Mathematics and Probability Theory
+  material: CS70离散数学
+  theme: algorithms
+  meta_description_en: CS 70 UC Berkeley tutoring (Discrete Mathematics and…). Can follow a worked example,
+    cannot start from a blank page under time pressure?
+  lead_en: CS 70 Discrete Mathematics and Probability Theory at University of California, Berkeley is
+    where invariants, complexity claims, and code must stay aligned under time pressure. Private materials
+    show lecture and practice materials. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在加州大学伯克利分校上 CS 70，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: CS 70 Discrete Mathematics and Probability Theory sits in algorithms & data structures.
+    Evidence from the course folder points to ML pipelines, features, and model choice; Math foundations
+    and proof habits. Students stall when terminology outruns notes, when a demo makes sense in class
+    but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: CS 70 是加州大学伯克利分校「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML 流水线、特征与模型选择、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Asymptotic complexity and comparing candidates
+    cn: 渐近复杂度与方案比较
+  - en: Arrays, lists, trees, heaps, hash tables
+    cn: 数组、链表、树、堆、哈希表
+  - en: Sorting, searching, and graph traversals
+    cn: 排序、搜索与图遍历
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  stuck:
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  - en: Lecture vocabulary for CS 70 outruns bilingual notes
+    cn: CS 70 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  - en: Exam-style short proofs under time pressure
+    cn: 限时练习考试风格的短证明
+  tutoring:
+  - en: 'Lecture sync for CS 70: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CS 70 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: CS 170
+  title: Efficient Algorithms and Intractable Problems
+- code: CS 188
+  title: Introduction to Artificial Intelligence
+- code: CS 189
+  title: Introduction to Machine Learning
+- code: CS 186
+  title: Introduction to Database Systems
+- code: CS 162
+  title: Operating Systems and System Programming
+- code: DATA C100
+  title: Principles and Techniques of Data Science
+- title: The Foundations of Data Science
+  material: Data 8-the Foundations of Data Science
+  code: Data 8
+  theme: data-science
+  meta_description_en: Data 8 UC Berkeley tutoring (The Foundations of Data Science). Tool output produced,
+    write-up cannot defend method choice? Bilingual Chinese/English help.
+  lead_en: Data 8 The Foundations of Data Science at University of California, Berkeley is where messy
+    notebooks and weak method stories lose marks even when a model runs. Private materials show lecture
+    and practice materials. The hard part is turning that arc into a method you can repeat on the next
+    brief — not rereading slides the night before.
+  lead_cn: 在加州大学伯克利分校上 Data 8，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: Data 8 The Foundations of Data Science sits in data science & analytics. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit.
+  overview_cn: Data 8 是加州大学伯克利分校「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
+  - en: Reproducible notebooks and environments
+    cn: 可复现的 notebook 与环境
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  - en: Last-minute modelling with no data story
+    cn: 临近 DDL 才建模，没有数据故事
+  - en: Lecture vocabulary for Data 8 outruns bilingual notes
+    cn: Data 8 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  - en: Sanity-check joins, missingness, and leakage risks
+    cn: 核验 join、缺失值与泄漏风险
+  - en: Shape the final narrative and figure set
+    cn: 定稿叙事与图表组合
+  tutoring:
+  - en: 'Lecture sync for Data 8: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 Data 8 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: MATH54
+  title: Linear Algebra and Differential Equations
+  material: Math54-linear-algebra-and-differential-equations
+  theme: math-for-cs
+  meta_description_en: MATH54 UC Berkeley tutoring (Linear Algebra and Differential…). Can follow a worked
+    example, cannot start from a blank page under time pressure?
+  lead_en: MATH54 Linear Algebra and Differential Equations at University of California, Berkeley is where
+    symbols and proof phrasing outrun calculation skill. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在加州大学伯克利分校上 MATH54，符号与证明表述往往比计算本身更劝退。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: MATH54 Linear Algebra and Differential Equations sits in math for computer science. Evidence
+    from the course folder points to Math foundations and proof habits. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: MATH54 是加州大学伯克利分校「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Linear algebra objects used in ML and graphics
+    cn: 机器学习与图形学里用到的线性代数对象
+  - en: Probability language for algorithms and ML
+    cn: 算法与机器学习用的概率语言
+  - en: Optimisation intuition (gradients, constraints)
+    cn: 优化直觉（梯度、约束）
+  - en: Discrete math proofs at coursework pace
+    cn: 课业节奏下的离散数学证明
+  - en: Translating lecture notation into worked examples
+    cn: 把课堂符号翻译成可下手的例子
+  stuck:
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Knowing the formula but not the exam phrasing
+    cn: 会公式，但吃不透考题表述
+  - en: Skipping definitions and jumping to plug-and-chug
+    cn: 跳过定义，直接套公式
+  - en: Weak link from math objects to code or ML use
+    cn: 数学对象与代码 / ML 用途之间断档
+  - en: Lecture vocabulary for MATH54 outruns bilingual notes
+    cn: MATH54 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Bilingual definition cards tied to one exam-style question each
+    cn: 每张双语定义卡对应一道考试风格题
+  - en: Worked examples before general proofs
+    cn: 先做例子，再写一般证明
+  - en: Connect the week’s math to the CS course that needs it
+    cn: 把当周数学接到真正用到它的 CS 课
+  tutoring:
+  - en: 'Lecture sync for MATH54: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 MATH54 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

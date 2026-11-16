@@ -3,29 +3,190 @@ university: Stanford University
 abbr: Stanford
 name_cn: 斯坦福大学
 courses:
-  - code: CS106A
-    title: Programming Methodology
-    material: cs106a
-  - code: CS106B
-    title: Programming Abstractions
-  - code: CS107
-    title: Computer Organization and Systems
-  - code: CS109
-    title: Introduction to Probability for Computer Scientists
-  - code: CS110
-    title: Principles of Computer Systems
-  - code: CS161
-    title: Design and Analysis of Algorithms
-  - code: CS221
-    title: "Artificial Intelligence: Principles and Techniques"
-    material: cs221-ai-principles-and-techniques
-    theme: machine-learning
-  - code: CS229
-    title: Machine Learning
-    material: cs229-machine-learning
-    theme: machine-learning
-  - code: CS230
-    title: Deep Learning
-  - code: CS231N
-    title: Deep Learning for Computer Vision
+- code: CS106A
+  title: Programming Methodology
+  material: cs106a
+  theme: programming
+  meta_description_en: CS106A Stanford tutoring (Programming Methodology). Code that “almost works” with
+    no systematic debug plan? Bilingual Chinese/English help.
+  lead_en: CS106A Programming Methodology at Stanford University is where briefs, tooling, and autograder
+    edge cases hit harder than syntax itself. Private materials show lecture and practice materials. The
+    hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在斯坦福大学上 CS106A，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: CS106A Programming Methodology sits in programming & software construction. Evidence from
+    the course folder points to Web / mobile app structure. Students stall when terminology outruns notes,
+    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
+    the notebook never made explicit.
+  overview_cn: CS106A 是斯坦福大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  - en: Git basics when the course requires it
+    cn: 课程要求时的 Git 基础
+  stuck:
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for CS106A outruns bilingual notes
+    cn: CS106A 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Refactor for clarity before chasing extra marks
+    cn: 先为清晰度重构，再追额外分数
+  tutoring:
+  - en: 'Lecture sync for CS106A: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CS106A 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: CS106B
+  title: Programming Abstractions
+- code: CS107
+  title: Computer Organization and Systems
+- code: CS109
+  title: Introduction to Probability for Computer Scientists
+- code: CS110
+  title: Principles of Computer Systems
+- code: CS161
+  title: Design and Analysis of Algorithms
+- code: CS221
+  title: 'Artificial Intelligence: Principles and Techniques'
+  material: cs221-ai-principles-and-techniques
+  theme: machine-learning
+  meta_description_en: CS221 Stanford tutoring (Artificial Intelligence…). Weekly lecture arc moves on
+    before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: 'CS221 Artificial Intelligence: Principles and Techniques at Stanford University is where method
+    names blur together until pipelines, metrics, and write-ups diverge. Private materials show weekly
+    notes spanning roughly week 1–10, assignment briefs / labs on disk, code submissions / practice files.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.'
+  lead_cn: 在斯坦福大学上 CS221，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到大约第 1–10 周的周课笔记、磁盘上的作业 brief / lab、代码提交
+    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: 'CS221 Artificial Intelligence: Principles and Techniques sits in machine learning & ai.
+    Evidence from the course folder points to Neural nets / deep learning / AI; ML pipelines, features,
+    and model choice; Networking layers, packets, and protocols; Algorithms, ADTs, and complexity. There
+    is a weekly arc (about week 1–10) plus assessed work that expects you to apply the same ideas under
+    deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in class
+    but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.'
+  overview_cn: CS221 是斯坦福大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、ML 流水线、特征与模型选择、网络分层、报文与协议这些点转。大约第
+    1–10 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: 'Week 1: session 01 pre wk1 foundations'
+    cn: 第 1 周：session 01 pre wk1 foundations
+  - en: 'Week 1: slides'
+    cn: 第 1 周：slides
+  - en: 'Week 1: solution'
+    cn: 第 1 周：solution
+  - en: 'Week 1: solutions'
+    cn: 第 1 周：solutions
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“externalities and dual use technologies”) makes sense in class, freezes you
+      alone
+    cn: 作业 brief（「externalities and dual use technologies」）课上听得懂，自己对着就停住
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for CS221: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CS221 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as externalities and dual use technologies,
+      with you at the keyboard.'
+    cn: 作业辅导：针对 externalities and dual use technologies 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: CS229
+  title: Machine Learning
+  material: cs229-machine-learning
+  theme: machine-learning
+  meta_description_en: CS229 Stanford tutoring (Machine Learning). Recognises the algorithm name, cannot
+    derive the update? Bilingual Chinese/English help.
+  lead_en: 'CS229 is classic Stanford machine learning: supervised learning, learning theory, and generative
+    / discriminative models under problem-set pressure. The hard part is not recognising algorithm names
+    — it is deriving updates, choosing models for a brief, and writing proofs / derivations that match
+    the lecture notation.'
+  lead_cn: CS229 是斯坦福经典机器学习：监督学习、学习理论，以及问题集压力下的生成 / 判别模型。难的不是认得算法名字，而是推导更新式、按 brief 选模型，并用与课堂一致的记号把证明
+    / 推导写清楚。
+  overview_en: Machine Learning (CS229) covers core supervised methods, probabilistic models, and the
+    math used to justify them. Problem sets expect derivations and careful notation, not only library
+    calls. Students stall when Greek letters outrun the update rule picture, when generative vs discriminative
+    choice is fuzzy, or when a derivation skips the step the marker wants to see.
+  overview_cn: Machine Learning（CS229）覆盖核心监督学习、概率模型，以及为它们辩护的数学。问题集要推导和严谨记号，而不只是调库。卡点常在希腊字母跑在更新式画面前面、生成
+    vs 判别分不清，或推导跳过了改卷人要看的那一步。
+  topics:
+  - en: Supervised learning and loss / update derivations
+    cn: 监督学习与损失 / 更新推导
+  - en: Generative vs discriminative model choice
+    cn: 生成 vs 判别模型选择
+  - en: Learning theory intuition for coursework proofs
+    cn: 课业证明用的学习理论直觉
+  - en: Problem-set write-ups in lecture notation
+    cn: 用课堂记号写问题集
+  - en: Bilingual symbol glossary for weekly Greek letters
+    cn: 每周希腊字母的双语对照
+  stuck:
+  - en: Recognises the algorithm name, cannot derive the update
+    cn: 认得算法名，推不出更新式
+  - en: Generative vs discriminative confused on the same dataset story
+    cn: 同一数据叙事下生成 / 判别搅在一起
+  - en: Proof / derivation skips the step the rubric marks
+    cn: 证明 / 推导跳过评分要看的步骤
+  - en: Lecture speed + notation outruns bilingual notes
+    cn: 课速 + 记号跑在双语笔记前面
+  session_angles:
+  - en: One model → derive update on a tiny example → you generalise
+    cn: 一个模型 → 小例子推导更新 → 你来一般化
+  - en: Compare generative vs discriminative on the same brief
+    cn: 同一 brief 下对照生成 vs 判别
+  - en: Timed derivation drills in CS229 notation
+    cn: 用 CS229 记号做限时推导
+  tutoring:
+  - en: 'Lecture sync: bilingual rebuild of the week’s ML idea until notation and updates match.'
+    cn: 同步跟课：用中英双语重建当周 ML 思路，直到记号与更新式对齐。
+  - en: 'Problem sets: you write the derivation; we check missing steps and notation.'
+    cn: 问题集：你来写推导；我们检查缺步与记号。
+  - en: 'Exam prep: timed drills on model choice and short proofs.'
+    cn: 考前突击：限时练模型选择与短证明。
+- code: CS230
+  title: Deep Learning
+- code: CS231N
+  title: Deep Learning for Computer Vision
 ---

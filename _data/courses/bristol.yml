@@ -1,7 +1,7 @@
 ---
 university: University of Bristol
 abbr: Bristol
-name_cn: "布里斯托大学"
+name_cn: 布里斯托大学
 teaching_folder: bristol-u
 courses:
 - code: COMS10016
@@ -15,6 +15,59 @@ courses:
 - code: COMS20007
   title: Algorithms I
   material: MATH10017 Algorithms and Programming in C(++) and R
+  theme: algorithms
+  meta_description_en: COMS20007 Bristol tutoring (Algorithms I). Can follow a worked example, cannot
+    start from a blank page under time pressure? Bilingual Chinese/English help.
+  lead_en: COMS20007 Algorithms I at University of Bristol is where invariants, complexity claims, and
+    code must stay aligned under time pressure. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在布里斯托大学上 COMS20007，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: COMS20007 Algorithms I sits in algorithms & data structures. Evidence from the course folder
+    points to Algorithms, ADTs, and complexity; Math foundations and proof habits; Web / mobile app structure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: COMS20007 是布里斯托大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯、Web
+    / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Asymptotic complexity and comparing candidates
+    cn: 渐近复杂度与方案比较
+  - en: Arrays, lists, trees, heaps, hash tables
+    cn: 数组、链表、树、堆、哈希表
+  - en: Sorting, searching, and graph traversals
+    cn: 排序、搜索与图遍历
+  stuck:
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  - en: Lecture vocabulary for COMS20007 outruns bilingual notes
+    cn: COMS20007 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  - en: Exam-style short proofs under time pressure
+    cn: 限时练习考试风格的短证明
+  tutoring:
+  - en: 'Lecture sync for COMS20007: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMS20007 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMS20008
   title: Algorithms II
 - code: COMS20010
@@ -26,6 +79,114 @@ courses:
 - code: MATH1001
   title: 7 Algorithms And Programming In C(++) And R
   material: MATH10017 Algorithms and Programming in C(++) and R
+  theme: algorithms
+  meta_description_en: MATH1001 Bristol tutoring (7 Algorithms And Programming In…). Can follow a worked
+    example, cannot start from a blank page under time pressure?
+  lead_en: MATH1001 7 Algorithms And Programming In C(++) And R at University of Bristol is where invariants,
+    complexity claims, and code must stay aligned under time pressure. Private materials show lecture
+    and practice materials. The hard part is turning that arc into a method you can repeat on the next
+    brief — not rereading slides the night before.
+  lead_cn: 在布里斯托大学上 MATH1001，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: MATH1001 7 Algorithms And Programming In C(++) And R sits in algorithms & data structures.
+    Evidence from the course folder points to Algorithms, ADTs, and complexity; Math foundations and proof
+    habits; Web / mobile app structure. Students stall when terminology outruns notes, when a demo makes
+    sense in class but not alone, or when the write-up / autograder asks for a method the notebook never
+    made explicit.
+  overview_cn: MATH1001 是布里斯托大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯、Web
+    / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Asymptotic complexity and comparing candidates
+    cn: 渐近复杂度与方案比较
+  - en: Arrays, lists, trees, heaps, hash tables
+    cn: 数组、链表、树、堆、哈希表
+  - en: Sorting, searching, and graph traversals
+    cn: 排序、搜索与图遍历
+  stuck:
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
+  - en: Lecture vocabulary for MATH1001 outruns bilingual notes
+    cn: MATH1001 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
+  - en: Exam-style short proofs under time pressure
+    cn: 限时练习考试风格的短证明
+  tutoring:
+  - en: 'Lecture sync for MATH1001: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 MATH1001 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMS1001
   title: 6 Imperative And Functional Programming
+- code: SEMT20003
+  title: Methods of AI
+  material: SEMT20003
+  theme: machine-learning
+  meta_description_en: SEMT20003 Bristol tutoring (Methods of AI). Tool output produced, write-up cannot
+    defend method choice? Bilingual Chinese/English help.
+  lead_en: SEMT20003 Methods of AI at University of Bristol is where method names blur together until
+    pipelines, metrics, and write-ups diverge. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在布里斯托大学上 SEMT20003，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: SEMT20003 Methods of AI sits in machine learning & ai. Evidence from the course folder
+    points to Neural nets / deep learning / AI; ML pipelines, features, and model choice; Networking layers,
+    packets, and protocols; NLP / language-model coursework. Students stall when terminology outruns notes,
+    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
+    the notebook never made explicit.
+  overview_cn: SEMT20003 是布里斯托大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、ML
+    流水线、特征与模型选择、网络分层、报文与协议这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。
+  topics:
+  - en: Neural nets / deep learning / AI
+    cn: 神经网络 / 深度学习 / AI
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: NLP / language-model coursework
+    cn: NLP / 语言模型课业
+  stuck:
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Formulae memorised without knowing what the code should look like
+    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Autograder / notebook fails from shape mismatches or leakage
+    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model “works” but the report cannot explain why
+    cn: 模型能跑，但报告说不清为什么有效
+  - en: Lecture slides move faster than the math catches up
+    cn: 课件节奏快于数学跟进速度
+  session_angles:
+  - en: Map the assignment brief to a short concept checklist
+    cn: 把作业 brief 映射成一份短概念清单
+  - en: Live-debug the failing cell or metric with you driving the keyboard
+    cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
+  - en: Tighten the write-up so claims match the experiments
+    cn: 收紧报告表述，让结论与实验一致
+  tutoring:
+  - en: 'Lecture sync for SEMT20003: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 SEMT20003 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

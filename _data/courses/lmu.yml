@@ -1,9 +1,74 @@
 ---
 university: Ludwig-Maximilians-Universität München
 abbr: LMU
-name_cn: "慕尼黑大学"
+name_cn: 慕尼黑大学
 teaching_folder: lmu-慕尼黑大学
 courses:
-- title: Symbolische Programmierspache
+- title: Symbolische Programmiersprache
   material: symbolische-programmierspache
+  code: Symbolische Programmiersprache
+  theme: programming
+  meta_description_en: Symbolische Programmiersprache LMU tutoring (Symbolische Programmiersprache). Weekly
+    lecture arc moves on before last week’s method is solid?
+  lead_en: Symbolische Programmiersprache Symbolische Programmiersprache at Ludwig-Maximilians-Universität
+    München is where briefs, tooling, and autograder edge cases hit harder than syntax itself. Private
+    materials show weekly notes spanning roughly week 1–11, assignment briefs / labs on disk, notebooks,
+    code submissions / practice files. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在慕尼黑大学上 Symbolische Programmiersprache，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第
+    1–11 周的周课笔记、磁盘上的作业 brief / lab、notebook、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: Symbolische Programmiersprache Symbolische Programmiersprache sits in programming & software
+    construction. Evidence from the course folder points to ML pipelines, features, and model choice;
+    Automata, formal languages, and proofs; Programming foundations and debugging; NLP / language-model
+    coursework. There is a weekly arc (about week 1–11) plus assessed work that expects you to apply the
+    same ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes
+    sense in class but not alone, or when the write-up / autograder asks for a method the notebook never
+    made explicit.
+  overview_cn: Symbolische Programmiersprache 是慕尼黑大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML
+    流水线、特征与模型选择、自动机、形式语言与证明、编程基础与调试这些点转。大约第 1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: Automata, formal languages, and proofs
+    cn: 自动机、形式语言与证明
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: NLP / language-model coursework
+    cn: NLP / 语言模型课业
+  - en: 'Week 1: Bewertung'
+    cn: 第 1 周：Bewertung
+  - en: 'Week 1: basics'
+    cn: 第 1 周：basics
+  - en: 'Week 1: basics solution'
+    cn: 第 1 周：basics solution
+  - en: 'Week 1: hw01 python basics'
+    cn: 第 1 周：hw01 python basics
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“Quiz hw08 nltk Analyze 13145 Studocu”) makes sense in class, freezes you alone
+    cn: 作业 brief（「Quiz hw08 nltk Analyze 13145 Studocu」）课上听得懂，自己对着就停住
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: Code almost works; edge cases and error messages have no debug method
+    cn: 代码差不多能跑，边界和报错却没有 debug 方法
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  tutoring:
+  - en: 'Lecture sync for Symbolische Programmiersprache: bilingual catch-up so workshop / tutorial language
+      matches the lectures.'
+    cn: 按 Symbolische Programmiersprache 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as Quiz hw08 nltk Analyze 13145 Studocu, homework
+      multiple choice questions, with you at the keyboard.'
+    cn: 作业辅导：针对 Quiz hw08 nltk Analyze 13145 Studocu, homework multiple choice questions 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

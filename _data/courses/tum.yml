@@ -1,14 +1,119 @@
 ---
 university: Technical University of Munich
 abbr: TUM
-name_cn: "慕尼黑工业大学"
+name_cn: 慕尼黑工业大学
 teaching_folder: tum
 courses:
 - code: INHN0012
   title: Computer Networking And IT Security
   material: INHN0012 Computer Networking and IT Security
+  theme: security
+  meta_description_en: INHN0012 TUM tutoring (Computer Networking And IT Security). Stuck on lab setup
+    unfinished; report lists tools without a clear finding?
+  lead_en: INHN0012 Computer Networking And IT Security at Technical University of Munich is where threat
+    models, crypto vocabulary, and lab setup form a terminology wall. Private materials show lecture and
+    practice materials. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
+  lead_cn: 在慕尼黑工业大学上 INHN0012，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
+    还能复用的方法。
+  overview_en: INHN0012 Computer Networking And IT Security sits in security & privacy. Evidence from
+    the course folder points to Networking layers, packets, and protocols; Security / privacy threat models
+    and labs; Math foundations and proof habits; Distributed systems ideas. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: INHN0012 是慕尼黑工业大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Distributed systems ideas
+    cn: 分布式系统概念
+  stuck:
+  - en: Lab setup unfinished; report lists tools without a clear finding
+    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
+  - en: Labs that need precise setup before any “hacking”
+    cn: Lab 还没配好环境就急着“黑”
+  - en: Confusing confidentiality, integrity, and availability
+    cn: 把机密性、完整性、可用性搅在一起
+  - en: Reports that list tools without explaining the finding
+    cn: 报告只罗列工具，不解释发现
+  - en: Lecture vocabulary for INHN0012 outruns bilingual notes
+    cn: INHN0012 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Restate the threat model in one paragraph
+    cn: 用一段话重述威胁模型
+  - en: Reproduce the lab outcome, then explain the mechanism
+    cn: 先复现 Lab 结果，再讲清机制
+  - en: Structure the write-up around evidence
+    cn: 按证据组织报告结构
+  tutoring:
+  - en: 'Lecture sync for INHN0012: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INHN0012 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - title: Rechnerarchitekture
-- title: Intro To Computer Architecture
-  material: ' Intro to Computer Architecture'
+- title: Introduction to Computer Architecture
+  material: Intro to Computer Architecture
+  code: ''
+  theme: systems
+  meta_description_en: Introduction to Computer… TUM tutoring. Assignment brief (“0003CA ShortTest1 assignment”)
+    makes sense in class, freezes you alone?
+  lead_en: Intro to Computer Architecture Introduction to Computer Architecture at Technical University
+    of Munich is where abstractions stack fast and labs fail for reasons that look opaque. Private materials
+    show assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在慕尼黑工业大学上 Intro to Computer Architecture，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到磁盘上的作业 brief
+    / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  overview_en: Intro to Computer Architecture Introduction to Computer Architecture sits in systems, networks
+    & architecture. Evidence from the course folder points to OS / systems programming; Computer architecture
+    and organisation; Automata, formal languages, and proofs. Assessed work expects you to apply lecture
+    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
+    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
+    explicit.
+  overview_cn: Intro to Computer Architecture 是慕尼黑工业大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统
+    / 系统编程、计算机体系结构与组成、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Computer architecture and organisation
+    cn: 计算机体系结构与组成
+  - en: Automata, formal languages, and proofs
+    cn: 自动机、形式语言与证明
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“0003CA ShortTest1 assignment”) makes sense in class, freezes you alone
+    cn: 作业 brief（「0003CA ShortTest1 assignment」）课上听得懂，自己对着就停住
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture vocabulary for Intro to Computer Architecture outruns bilingual notes
+    cn: Intro to Computer Architecture 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  - en: Instrument, reproduce, then patch the root cause
+    cn: 先插桩复现，再修根因
+  tutoring:
+  - en: 'Lecture sync for Intro to Computer Architecture: bilingual catch-up so workshop / tutorial language
+      matches the lectures.'
+    cn: 按 Intro to Computer Architecture 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as 0003CA ShortTest1 assignment, assignment,
+      with you at the keyboard.'
+    cn: 作业辅导：针对 0003CA ShortTest1 assignment, assignment 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - title: Formale Sprache
 ---

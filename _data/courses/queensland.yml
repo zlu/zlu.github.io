@@ -1,112 +1,540 @@
 ---
 university: University of Queensland
 abbr: UQ
-name_cn: "昆士兰大学"
+name_cn: 昆士兰大学
 teaching_folder: u-queensland
 courses:
-  - code: CSSE7030
-    title: Intro to Programming
-    department: Computer Science
-  - code: INFOS7900
-    title: Introduction to Information Systems
-  - code: ENGG1001
-    title: Programming for Engineers
-  - code: COMP3506
-    title: Algorithms and Data Structures
-  - code: COMP7505
-    title: Algorithms and Data Structure
-  - code: CSSE2002
-    title: Programming in the Large
-  - code: CSSE2010
-    title: Introduction to Computer Systems
-  - code: COMP3702
-    title: Artificial Intelligence
-  - code: COMP4702
-    title: Machine Learning
-  - code: INFS1200
-    title: Introduction to Information Systems
-  - code: DATA7001
-    title: Introduction to Data Science
-  - code: DECO1400
-    title: Introduction to Web Design
-  - code: CSSE7100
-    title: CSSE7100
-    material: CSSE7100
-  - topics:
-      - en: Classification basics and evaluation
-        cn: 分类基础与评估
-      - en: Decision trees, kNN, Naive Bayes
-        cn: 决策树、kNN、朴素贝叶斯
-      - en: Clustering — k-means, density, hierarchical
-        cn: 聚类：k-means、密度、层次
-      - en: Association rules and anomaly detection
-        cn: 关联规则与异常检测
-      - en: Text / web mining overviews
-        cn: 文本 / Web 挖掘概览
-      - en: Tutorial problem methods under exam-style prompts
-        cn: 考试风格题干下的 tutorial 解题方法
-    material: INFS7203-data-mining
-    theme: data-science
-    session_angles:
-      - en: "For each method: input → idea → when to use → how to evaluate"
-        cn: 每个方法：输入 → 思想 → 何时用 → 怎么评估
-      - en: Tutorial walkthroughs with you attempting first
-        cn: Tutorial 你先做，再一起改方法
-      - en: Short comparison drills like exam wording
-        cn: 考试措辞下的短对比练习
-    lead_en: "INFS7203 packs many mining methods into lectures and
-      tutorials: classification, clustering, association rules, anomaly
-      detection, text / web mining. The hard part is knowing which method fits
-      the question — and explaining it without drowning in jargon."
-    tutoring:
-      - en: "Lecture sync: bilingual walkthrough of mining methods so tutorial language
-          matches."
-        cn: 同步跟课：用中英双语把挖掘方法讲透，与 tutorial 用语对齐。
-      - en: "Tutorials / assignments: method choice and live problem-solving with you
-          driving."
-        cn: Tutorial / 作业：选方法、现场解题，你来主导。
-      - en: "Exam prep: timed drills comparing methods and reading evaluation output."
-        cn: 考前突击：限时对比方法、解读评估输出。
-    code: INFS7203
-    lead_cn: INFS7203 把大量挖掘方法塞进课堂与 tutorial：分类、聚类、关联规则、异常检测、文本 / Web
-      挖掘。难的是判断哪一种方法适合问题，并用不太技术用语的方式说清。
-    overview_en: Data Mining walks through classic supervised and unsupervised
-      techniques with lecture slides and tutorial drills. Students struggle when
-      method names blur together, when evaluation metrics feel abstract, or when
-      tutorial figures look cryptic without a step checklist.
-    overview_cn: Data Mining 用课件与 tutorial 覆盖经典监督 / 无监督技术。卡点常在方法名搅在一起、 评估指标过于抽象，或
-      tutorial 图没有步骤清单就像天书。
-    title: Data Mining
-    stuck:
-      - en: Method catalogue memorised, selection criteria missing
-        cn: 方法目录背下来了，却不会选
-      - en: Metric names (precision, recall, silhouette…) without a picture
-        cn: 指标名（precision、recall、silhouette…）没有画面
-      - en: Tutorial graphs and tables that look cryptic under time pressure
-        cn: 限时下 tutorial 图表像暗号
-  - title: Intro To Software Engeering
-    code: CSSE1001
-    material: CSSE1001-intro-to-software-engr
-  - title: Computational Engineering and Data Analysis
-    material: MECH2700
-    code: MECH2700
-  - code: INFS7900
-    title: Introduction to Information Systems
-    material: infs7900
-  - title: Methods of AI
-    material: SEMT20003
-    code: SEMT20003
-    department: ""
-  - title: Transforming Business with Information Systems
-    code: BISM1201
-    material: BISM1201
-  - code: COMP4403
-    title: Compiler
-    material: comp4403-compiler
-  - code: COMS3200
-    title: COMS3200
-    material: coms3200
-  - code: INFS7410
-    material: INFS7410
-    title: Information Retrieval and Web Search
+- code: CSSE7030
+  title: Intro to Programming
+  department: Computer Science
+- code: INFOS7900
+  title: Introduction to Information Systems
+- code: ENGG1001
+  title: Programming for Engineers
+- code: COMP3506
+  title: Algorithms and Data Structures
+- code: COMP7505
+  title: Algorithms and Data Structure
+- code: CSSE2002
+  title: Programming in the Large
+- code: CSSE2010
+  title: Introduction to Computer Systems
+- code: COMP3702
+  title: Artificial Intelligence
+- code: COMP4702
+  title: Machine Learning
+- code: INFS1200
+  title: Introduction to Information Systems
+- code: DATA7001
+  title: Introduction to Data Science
+- code: DECO1400
+  title: Introduction to Web Design
+- code: CSSE7100
+  title: Introduction to Software Engineering
+  material: CSSE7100
+  theme: programming
+  meta_description_en: CSSE7100 UQ tutoring (Introduction to Software Engineering). Weekly lecture arc
+    moves on before last week’s method is solid?
+  lead_en: CSSE7100 Introduction to Software Engineering at University of Queensland is where briefs,
+    tooling, and autograder edge cases hit harder than syntax itself. Private materials show weekly notes
+    spanning roughly week 1–13. The hard part is turning that arc into a method you can repeat on the
+    next brief — not rereading slides the night before.
+  lead_cn: 在昆士兰大学上 CSSE7100，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 1–13 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: CSSE7100 Introduction to Software Engineering sits in programming & software construction.
+    Evidence from the course folder points to Algorithms, ADTs, and complexity; Web / mobile app structure.
+    There is a weekly arc (about week 1–13) plus assessed work that expects you to apply the same ideas
+    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
+    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: CSSE7100 是昆士兰大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、Web / 移动应用结构这些点转。大约第
+    1–13 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for CSSE7100 outruns bilingual notes
+    cn: CSSE7100 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  tutoring:
+  - en: 'Lecture sync for CSSE7100: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CSSE7100 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- topics:
+  - en: Classification basics and evaluation
+    cn: 分类基础与评估
+  - en: Decision trees, kNN, Naive Bayes
+    cn: 决策树、kNN、朴素贝叶斯
+  - en: Clustering — k-means, density, hierarchical
+    cn: 聚类：k-means、密度、层次
+  - en: Association rules and anomaly detection
+    cn: 关联规则与异常检测
+  - en: Text / web mining overviews
+    cn: 文本 / Web 挖掘概览
+  - en: Tutorial problem methods under exam-style prompts
+    cn: 考试风格题干下的 tutorial 解题方法
+  material: INFS7203-data-mining
+  theme: data-science
+  session_angles:
+  - en: 'For each method: input → idea → when to use → how to evaluate'
+    cn: 每个方法：输入 → 思想 → 何时用 → 怎么评估
+  - en: Tutorial walkthroughs with you attempting first
+    cn: Tutorial 你先做，再一起改方法
+  - en: Short comparison drills like exam wording
+    cn: 考试措辞下的短对比练习
+  lead_en: 'INFS7203 packs many mining methods into lectures and tutorials: classification, clustering,
+    association rules, anomaly detection, text / web mining. The hard part is knowing which method fits
+    the question — and explaining it without drowning in jargon.'
+  tutoring:
+  - en: 'Lecture sync: bilingual walkthrough of mining methods so tutorial language matches.'
+    cn: 同步跟课：用中英双语把挖掘方法讲透，与 tutorial 用语对齐。
+  - en: 'Tutorials / assignments: method choice and live problem-solving with you driving.'
+    cn: Tutorial / 作业：选方法、现场解题，你来主导。
+  - en: 'Exam prep: timed drills comparing methods and reading evaluation output.'
+    cn: 考前突击：限时对比方法、解读评估输出。
+  code: INFS7203
+  lead_cn: INFS7203 把大量挖掘方法塞进课堂与 tutorial：分类、聚类、关联规则、异常检测、文本 / Web 挖掘。难的是判断哪一种方法适合问题，并用不太技术用语的方式说清。
+  overview_en: Data Mining walks through classic supervised and unsupervised techniques with lecture slides
+    and tutorial drills. Students struggle when method names blur together, when evaluation metrics feel
+    abstract, or when tutorial figures look cryptic without a step checklist.
+  overview_cn: Data Mining 用课件与 tutorial 覆盖经典监督 / 无监督技术。卡点常在方法名搅在一起、 评估指标过于抽象，或 tutorial 图没有步骤清单就像天书。
+  title: Data Mining
+  stuck:
+  - en: Method catalogue memorised, selection criteria missing
+    cn: 方法目录背下来了，却不会选
+  - en: Metric names (precision, recall, silhouette…) without a picture
+    cn: 指标名（precision、recall、silhouette…）没有画面
+  - en: Tutorial graphs and tables that look cryptic under time pressure
+    cn: 限时下 tutorial 图表像暗号
+  meta_description_en: INFS7203 UQ tutoring (Data Mining). Method catalogue memorised, selection criteria
+    missing? Bilingual Chinese/English help.
+- title: Intro To Software Engeering
+  code: CSSE1001
+  material: CSSE1001-intro-to-software-engr
+  theme: web-mobile
+  meta_description_en: CSSE1001 UQ tutoring (Intro To Software Engeering). UI looks done but integration
+    tests fail? Bilingual Chinese/English help.
+  lead_en: CSSE1001 Intro To Software Engeering at University of Queensland is where front-end and back-end
+    failures mask each other inside one brief. Private materials show code submissions / practice files.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在昆士兰大学上 CSSE1001，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: CSSE1001 Intro To Software Engeering sits in web, mobile & hci. Evidence from the course
+    folder points to Algorithms, ADTs, and complexity; Programming foundations and debugging; Software
+    design and construction; Web / mobile app structure. Students stall when terminology outruns notes,
+    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
+    the notebook never made explicit.
+  overview_cn: CSSE1001 是昆士兰大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、编程基础与调试、软件设计与构造这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Programming foundations and debugging
+    cn: 编程基础与调试
+  - en: Software design and construction
+    cn: 软件设计与构造
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  stuck:
+  - en: UI looks done but integration tests fail
+    cn: 界面看起来完成了，集成测试不过
+  - en: Unclear ownership in group projects
+    cn: 小组项目里职责不清
+  - en: Demo crashes from environment / device mismatch
+    cn: 环境 / 设备不一致导致演示崩溃
+  - en: Lecture vocabulary for CSSE1001 outruns bilingual notes
+    cn: CSSE1001 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Trace one user action end-to-end
+    cn: 把一个用户操作端到端走通
+  - en: Fix the highest-risk demo path first
+    cn: 先修演示里最高风险的路径
+  tutoring:
+  - en: 'Lecture sync for CSSE1001: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 CSSE1001 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Computational Engineering and Data Analysis
+  material: MECH2700
+  code: MECH2700
+  theme: data-science
+  meta_description_en: MECH2700 UQ tutoring (Computational Engineering and Data…). Weekly lecture arc
+    moves on before last week’s method is solid? Bilingual Chinese/English help.
+  lead_en: MECH2700 Computational Engineering and Data Analysis at University of Queensland is where messy
+    notebooks and weak method stories lose marks even when a model runs. Private materials show weekly
+    notes spanning roughly week 1–3, assignment briefs / labs on disk. The hard part is turning that arc
+    into a method you can repeat on the next brief — not rereading slides the night before.
+  lead_cn: 在昆士兰大学上 MECH2700，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到大约第 1–3 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: MECH2700 Computational Engineering and Data Analysis sits in data science & analytics.
+    Evidence from the course folder points to Data wrangling / analytics tables; Math foundations and
+    proof habits. There is a weekly arc (about week 1–3) plus assessed work that expects you to apply
+    the same ideas under deadline pressure. Students stall when terminology outruns notes, when a demo
+    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
+    never made explicit.
+  overview_cn: MECH2700 是昆士兰大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表、数学基础与证明习惯这些点转。大约第
+    1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Data wrangling / analytics tables
+    cn: 数据清洗 / 分析表
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: 'Week 1: wk01 errors (1)'
+    cn: 第 1 周：wk01 errors (1)
+  - en: 'Week 2: interpolation'
+    cn: 第 2 周：interpolation
+  - en: 'Week 2: interpolation(1)'
+    cn: 第 2 周：interpolation(1)
+  - en: 'Week 3: differentiation LEC WKS (1)'
+    cn: 第 3 周：differentiation LEC WKS (1)
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Assignment brief (“mech2700 assignment 1 2026 s2(1)”) makes sense in class, freezes you alone
+    cn: 作业 brief（「mech2700 assignment 1 2026 s2(1)」）课上听得懂，自己对着就停住
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  tutoring:
+  - en: 'Lecture sync for MECH2700: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 MECH2700 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as mech2700 assignment 1 2026 s2(1), with you
+      at the keyboard.'
+    cn: 作业辅导：针对 mech2700 assignment 1 2026 s2(1) 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: INFS7900
+  title: Introduction to Information Systems
+  material: infs7900
+  theme: databases
+  meta_description_en: INFS7900 UQ tutoring (Introduction to Information Systems). Assignment brief (“a10”)
+    makes sense in class, freezes you alone?
+  lead_en: INFS7900 Introduction to Information Systems at University of Queensland is where one wrong
+    schema or join quietly breaks every later query. Private materials show assignment briefs / labs on
+    disk. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
+    slides the night before.
+  lead_cn: 在昆士兰大学上 INFS7900，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: INFS7900 Introduction to Information Systems sits in databases & information systems. Evidence
+    from the course folder points to SQL, schema design, and databases. Assessed work expects you to apply
+    lecture ideas under deadline pressure. Students stall when terminology outruns notes, when a demo
+    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
+    never made explicit.
+  overview_cn: INFS7900 是昆士兰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: ER modelling and normalisation trade-offs
+    cn: ER 建模与范式权衡
+  - en: SQL joins, aggregation, and nested queries
+    cn: SQL join、聚合与嵌套查询
+  - en: Indexes, plans, and “why is this slow?”
+    cn: 索引、执行计划与“为什么慢”
+  - en: Transactions and isolation at intro level
+    cn: 入门级事务与隔离级别
+  stuck:
+  - en: Assignment brief (“a10”) makes sense in class, freezes you alone
+    cn: 作业 brief（「a10」）课上听得懂，自己对着就停住
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for INFS7900 outruns bilingual notes
+    cn: INFS7900 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  tutoring:
+  - en: 'Lecture sync for INFS7900: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFS7900 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as a10, with you at the keyboard.'
+    cn: 作业辅导：针对 a10 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- title: Transforming Business with Information Systems
+  code: BISM1201
+  material: BISM1201
+  theme: databases
+  meta_description_en: BISM1201 UQ tutoring (Transforming Business with…). Assignment brief (“README”)
+    makes sense in class, freezes you alone? Bilingual Chinese/English help.
+  lead_en: BISM1201 Transforming Business with Information Systems at University of Queensland is where
+    one wrong schema or join quietly breaks every later query. Private materials show assignment briefs
+    / labs on disk. The hard part is turning that arc into a method you can repeat on the next brief —
+    not rereading slides the night before.
+  lead_cn: 在昆士兰大学上 BISM1201，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: BISM1201 Transforming Business with Information Systems sits in databases & information
+    systems. Evidence from the course folder points to ML pipelines, features, and model choice; SQL,
+    schema design, and databases. Assessed work expects you to apply lecture ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: BISM1201 是昆士兰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema
+    与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: ML pipelines, features, and model choice
+    cn: ML 流水线、特征与模型选择
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: ER modelling and normalisation trade-offs
+    cn: ER 建模与范式权衡
+  - en: SQL joins, aggregation, and nested queries
+    cn: SQL join、聚合与嵌套查询
+  - en: Indexes, plans, and “why is this slow?”
+    cn: 索引、执行计划与“为什么慢”
+  stuck:
+  - en: Assignment brief (“README”) makes sense in class, freezes you alone
+    cn: 作业 brief（「README」）课上听得懂，自己对着就停住
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for BISM1201 outruns bilingual notes
+    cn: BISM1201 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  tutoring:
+  - en: 'Lecture sync for BISM1201: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 BISM1201 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as README, with you at the keyboard.'
+    cn: 作业辅导：针对 README 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMP4403
+  title: Compilers and Interpreters
+  material: comp4403-compiler
+  theme: programming
+  meta_description_en: COMP4403 UQ tutoring (Compilers and Interpreters). Code that “almost works” with
+    no systematic debug plan? Bilingual Chinese/English help.
+  lead_en: COMP4403 Compilers and Interpreters at University of Queensland is where briefs, tooling, and
+    autograder edge cases hit harder than syntax itself. Private materials show lecture and practice materials.
+    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在昆士兰大学上 COMP4403，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP4403 Compilers and Interpreters sits in programming & software construction. Evidence
+    from the course folder points to Automata, formal languages, and proofs. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: COMP4403 是昆士兰大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Automata, formal languages, and proofs
+    cn: 自动机、形式语言与证明
+  - en: Reading the brief and designing before typing
+    cn: 先读题、先设计，再动手写
+  - en: Functions, modules, and readable structure
+    cn: 函数、模块与可读结构
+  - en: Recursion, ADTs, and common lab patterns
+    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Unit tests and autograder feedback loops
+    cn: 单元测试与 autograder 反馈循环
+  - en: Git basics when the course requires it
+    cn: 课程要求时的 Git 基础
+  stuck:
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture vocabulary for COMP4403 outruns bilingual notes
+    cn: COMP4403 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Refactor for clarity before chasing extra marks
+    cn: 先为清晰度重构，再追额外分数
+  tutoring:
+  - en: 'Lecture sync for COMP4403: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP4403 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: COMS3200
+  title: Computer Networks I
+  material: coms3200
+  theme: systems
+  meta_description_en: COMS3200 UQ tutoring (Computer Networks I). Assignment brief (“Assignment 2”) makes
+    sense in class, freezes you alone? Bilingual Chinese/English help.
+  lead_en: COMS3200 Computer Networks I at University of Queensland is where abstractions stack fast and
+    labs fail for reasons that look opaque. Private materials show assignment briefs / labs on disk. The
+    hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
+    the night before.
+  lead_cn: 在昆士兰大学上 COMS3200，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMS3200 Computer Networks I sits in systems, networks & architecture. Evidence from the
+    course folder points to Networking layers, packets, and protocols; Security / privacy threat models
+    and labs; Algorithms, ADTs, and complexity; Automata, formal languages, and proofs. Assessed work
+    expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit.
+  overview_cn: COMS3200 是昆士兰大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、算法、ADT
+    与复杂度这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Networking layers, packets, and protocols
+    cn: 网络分层、报文与协议
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Algorithms, ADTs, and complexity
+    cn: 算法、ADT 与复杂度
+  - en: Automata, formal languages, and proofs
+    cn: 自动机、形式语言与证明
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“Assignment 2”) makes sense in class, freezes you alone
+    cn: 作业 brief（「Assignment 2」）课上听得懂，自己对着就停住
+  - en: Labs that fail only under concurrency or load
+    cn: 只有并发或负载下才失败的 Lab
+  - en: Mixing up layers (app vs transport vs link)
+    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Man pages and RFCs denser than lecture pace
+    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture vocabulary for COMS3200 outruns bilingual notes
+    cn: COMS3200 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Draw the call / packet path before changing code
+    cn: 改代码前先画出调用 / 报文路径
+  - en: Instrument, reproduce, then patch the root cause
+    cn: 先插桩复现，再修根因
+  tutoring:
+  - en: 'Lecture sync for COMS3200: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMS3200 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as Assignment 2, Assignment 2 (v1), with you
+      at the keyboard.'
+    cn: 作业辅导：针对 Assignment 2, Assignment 2 (v1) 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+- code: INFS7410
+  material: INFS7410
+  title: Information Retrieval and Web Search
+  theme: web-mobile
+  meta_description_en: INFS7410 UQ tutoring (Information Retrieval and Web Search). Weekly lecture arc
+    moves on before last week’s method is solid?
+  lead_en: INFS7410 Information Retrieval and Web Search at University of Queensland is where front-end
+    and back-end failures mask each other inside one brief. Private materials show weekly notes spanning
+    roughly week 1–13, notebooks. The hard part is turning that arc into a method you can repeat on the
+    next brief — not rereading slides the night before.
+  lead_cn: 在昆士兰大学上 INFS7410，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到大约第 1–13 周的周课笔记、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: INFS7410 Information Retrieval and Web Search sits in web, mobile & hci. Evidence from
+    the course folder points to Math foundations and proof habits; Web / mobile app structure. There is
+    a weekly arc (about week 1–13) plus assessed work that expects you to apply the same ideas under deadline
+    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
+    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+  overview_cn: INFS7410 是昆士兰大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数学基础与证明习惯、Web / 移动应用结构这些点转。大约第
+    1–13 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+    notebook 里从未写清。
+  topics:
+  - en: Math foundations and proof habits
+    cn: 数学基础与证明习惯
+  - en: Web / mobile app structure
+    cn: Web / 移动应用结构
+  - en: 'Week 1: prac'
+    cn: 第 1 周：prac
+  - en: 'Week 2: prac'
+    cn: 第 2 周：prac
+  - en: 'Week 2: qrels'
+    cn: 第 2 周：qrels
+  - en: 'Week 3: prac'
+    cn: 第 3 周：prac
+  - en: 'Week 4: w4 slide deck'
+    cn: 第 4 周：w4 slide deck
+  - en: 'Week 5: w5 full slidedeck'
+    cn: 第 5 周：w5 full slidedeck
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
+    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
+  - en: UI looks done but integration tests fail
+    cn: 界面看起来完成了，集成测试不过
+  - en: Unclear ownership in group projects
+    cn: 小组项目里职责不清
+  - en: Demo crashes from environment / device mismatch
+    cn: 环境 / 设备不一致导致演示崩溃
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: You type in your environment; we keep the plan visible beside the editor
+    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Trace one user action end-to-end
+    cn: 把一个用户操作端到端走通
+  tutoring:
+  - en: 'Lecture sync for INFS7410: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 INFS7410 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 ---

@@ -1,13 +1,123 @@
 ---
 university: Hong Kong Metropolitan University
 abbr: HKMU
-name_cn: "香港都会大学"
+name_cn: 香港都会大学
 teaching_folder: hkmu
 courses:
 - title: Comp S321f Advanced Database And Data Warehousing
   material: comp s321f - advanced-database-and-data-warehousing
+  code: COMP S321F
+  theme: databases
+  meta_description_en: COMP S321F HKMU tutoring (Comp S321f Advanced Database And…). Assignment brief
+    (“321f lab8 sol”) makes sense in class, freezes you alone?
+  lead_en: COMP S321F Comp S321f Advanced Database And Data Warehousing at Hong Kong Metropolitan University
+    is where one wrong schema or join quietly breaks every later query. Private materials show assignment
+    briefs / labs on disk. The hard part is turning that arc into a method you can repeat on the next
+    brief — not rereading slides the night before.
+  lead_cn: 在香港都会大学上 COMP S321F，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP S321F Comp S321f Advanced Database And Data Warehousing sits in databases & information
+    systems. Evidence from the course folder points to SQL, schema design, and databases; OS / systems
+    programming; Security / privacy threat models and labs. Assessed work expects you to apply lecture
+    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
+    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
+    explicit.
+  overview_cn: COMP S321F 是香港都会大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、操作系统
+    / 系统编程、安全 / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。
+  topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: OS / systems programming
+    cn: 操作系统 / 系统编程
+  - en: Security / privacy threat models and labs
+    cn: 安全 / 隐私威胁模型与实验
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  stuck:
+  - en: Assignment brief (“321f lab8 sol”) makes sense in class, freezes you alone
+    cn: 作业 brief（「321f lab8 sol」）课上听得懂，自己对着就停住
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for COMP S321F outruns bilingual notes
+    cn: COMP S321F 的课堂术语跑在双语笔记前面
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  tutoring:
+  - en: 'Lecture sync for COMP S321F: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP S321F 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as 321f lab8 sol, 321f lab8 v2, with you at
+      the keyboard.'
+    cn: 作业辅导：针对 321f lab8 sol, 321f lab8 v2 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - title: COMP S460F Advanced Topics In Data Mining
   material: COMP S460F Advanced Topics in Data Mining
+  code: COMP S460F
+  theme: data-science
+  meta_description_en: COMP S460F HKMU tutoring (COMP S460F Advanced Topics In Data…). Tool output produced,
+    write-up cannot defend method choice? Bilingual Chinese/English help.
+  lead_en: COMP S460F COMP S460F Advanced Topics In Data Mining at Hong Kong Metropolitan University is
+    where messy notebooks and weak method stories lose marks even when a model runs. Private materials
+    show assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
+  lead_cn: 在香港都会大学上 COMP S460F，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
+    brief 还能复用的方法。
+  overview_en: COMP S460F COMP S460F Advanced Topics In Data Mining sits in data science & analytics.
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit.
+  overview_cn: COMP S460F 是香港都会大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。
+  topics:
+  - en: Assignment briefs mapped to a step-by-step plan
+    cn: 把作业 brief 映射成可执行步骤
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
+  stuck:
+  - en: Assignment brief (“(2025) COMP S460F Assignment01 Question Paper co”) makes sense in class, freezes
+      you alone
+    cn: 作业 brief（「(2025) COMP S460F Assignment01 Question Paper co」）课上听得懂，自己对着就停住
+  - en: Tool output produced, write-up cannot defend method choice
+    cn: 工具输出有了，报告却说不清为何选这个方法
+  - en: Messy merges and silent NaNs that break later metrics
+    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Pretty plots that do not answer the brief
+    cn: 图很漂亮，但没回答题目要求
+  - en: Last-minute modelling with no data story
+    cn: 临近 DDL 才建模，没有数据故事
+  session_angles:
+  - en: Map the brief to a short checklist; you drive, we chase the failing case
+    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
+  - en: Rebuild the analysis pipeline step by step from the brief
+    cn: 按 brief 逐步重建分析流水线
+  - en: Sanity-check joins, missingness, and leakage risks
+    cn: 核验 join、缺失值与泄漏风险
+  tutoring:
+  - en: 'Lecture sync for COMP S460F: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 COMP S460F 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review for assessments such as (2025) COMP S460F Assignment01 Question
+      Paper conf (1), with you at the keyboard.'
+    cn: 作业辅导：针对 (2025) COMP S460F Assignment01 Question Paper conf (1) 一类评估拆题，你来操作键盘。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP2030SEF
   title: Intermediate Java Programming & User Interface Design
 ---
