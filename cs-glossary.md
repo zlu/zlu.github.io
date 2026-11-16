@@ -2,14 +2,14 @@
 layout: page
 title: "CS Glossary — Algorithms, Complexity, and Systems Terms"
 permalink: /cs-glossary/
-description: "Searchable computer science glossary covering sorting, search, graph algorithms, data structures, complexity classes, automata, and systems terms, each on its own linkable page."
-keywords: "CS glossary, computer science glossary, sorting algorithms, binary search, BFS, DFS, Dijkstra, dynamic programming, NP-hard, complexity theory, algorithms dictionary"
+description: "Searchable computer science glossary covering sorting, search, graph algorithms, data structures, complexity classes, automata, networking, TLS fingerprinting, and systems terms, each on its own linkable page."
+keywords: "CS glossary, computer science glossary, sorting algorithms, binary search, BFS, DFS, Dijkstra, dynamic programming, NP-hard, complexity theory, TLS, JA4, algorithms dictionary"
 sitemap: true
 ---
 
 <p class="glossary-intro">
   Concise definitions for sorting, searching, graph algorithms, data structures,
-  complexity, automata, and systems concepts.
+  complexity, automata, networking / TLS, and systems concepts.
   Each term has its own indexable page. Browse below or search.
 </p>
 
