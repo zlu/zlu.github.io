@@ -116,3 +116,8 @@ That is enough for JSON or Markdown without another model call. The left/right c
 5. Export `{code, name, value, flag, unit, ref, panel}` records. Do not send the raw merged `<table>` into clinical logic.
 
 Unlimited-OCR-2 is strong on Chinese hospital headers and boxes. On dual-panel [CBC](/med-glossary/全血细胞计数/) sheets, the remaining gap is simple: the page is two lists, not one table, even when both lists sit inside one rectangle. Split the page, or repair the HTML, and keep the PDF local.
+
+## References
+
+1. <span id="ref-unlimited-ocr-2"></span>Baidu ERNIE Team. “Unlimited OCR Works 2: Pioneering the OCR-3.0 Era: From Long- to Unlimited-Horizon Parsing.” arXiv preprint, 2026. [arXiv:2610.39308](https://arxiv.org/abs/2610.39308){:target="_blank" rel="noopener noreferrer"}.  
+   Read in [BetterReads](https://www.betterreads.dev/reader?bookId=unlimited_ocr_works_2&type=pdf&preview=1){:target="_blank" rel="noopener noreferrer"}
