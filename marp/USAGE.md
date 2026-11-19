@@ -32,9 +32,32 @@ From another project, point `markdown.marp.themes` at this file, e.g.:
 
 `/Users/zlu/baidu-sync/projects/zlu.github.io/marp/zlu-theme.css`
 
+## Slide sizes
+
+Presets defined in `zlu-theme.css` via `@size`:
+
+| Frontmatter | Use |
+|---|---|
+| `size: 16:9` | Default tutoring decks |
+| `size: 4:3` | Older projectors |
+| `size: A4` | Single-page print cheatsheets (portrait) |
+
 ## Export
 
-From the blog repo root:
+Anywhere on this machine (script lives at `marp/zlu-marp`, installed to `~/.local/bin/zlu-marp`):
+
+```bash
+zlu-marp deck.md                 # writes deck.pdf next to the markdown
+zlu-marp deck.md -o out.pdf      # custom output path
+```
+
+Override the theme path if needed:
+
+```bash
+ZLU_MARP_THEME=/path/to/zlu-theme.css zlu-marp deck.md
+```
+
+From the blog repo root (raw CLI):
 
 ```bash
 npx @marp-team/marp-cli --theme-set marp/zlu-theme.css --theme zlu --html \

@@ -1,10 +1,14 @@
 /* @theme zlu */
+/* @size 16:9 1280px 720px */
+/* @size 4:3 960px 720px */
+/* @size A4 210mm 297mm */
 
 /*
   zlu — personal Marp brand theme
   --------------------------------
   Home: zlu.github.io/marp/  (excluded from Jekyll publish)
   Use: theme: zlu   +   --theme-set marp/zlu-theme.css
+  size: 16:9 (decks) | 4:3 | A4 (print cheatsheets)
 */
 
 @import 'default';

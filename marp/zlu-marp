@@ -1,0 +1,119 @@
+#!/usr/bin/env bash
+# Convert a Marp markdown deck to PDF with the zlu theme.
+# Usage:
+#   zlu-marp deck.md
+#   zlu-marp deck.md -o out.pdf
+#   zlu-marp -o out.pdf deck.md
+
+set -euo pipefail
+
+THEME="${ZLU_MARP_THEME:-/Users/zlu/baidu-sync/projects/zlu.github.io/marp/zlu-theme.css}"
+
+usage() {
+  cat <<'EOF'
+Usage: zlu-marp <file.md> [-o <output.pdf>]
+
+Converts a Marp markdown file to PDF with the zlu theme.
+If -o is omitted, writes <file>.pdf next to the markdown file.
+
+Environment:
+  ZLU_MARP_THEME   Absolute path to zlu-theme.css (optional override)
+EOF
+}
+
+ensure_node() {
+  if command -v npx >/dev/null 2>&1 && command -v node >/dev/null 2>&1; then
+    return 0
+  fi
+
+  local candidates=(
+    /opt/homebrew/bin
+    /usr/local/bin
+  )
+
+  if [[ -d "$HOME/.nvm/versions/node" ]]; then
+    local latest
+    latest="$(ls -1d "$HOME/.nvm/versions/node"/v* 2>/dev/null | sort -V | tail -1 || true)"
+    if [[ -n "${latest:-}" ]]; then
+      candidates+=("$latest/bin")
+    fi
+  fi
+
+  local dir
+  for dir in "${candidates[@]}"; do
+    if [[ -x "$dir/node" && -x "$dir/npx" ]]; then
+      export PATH="$dir:$PATH"
+      return 0
+    fi
+  done
+
+  echo "zlu-marp: node/npx not found. Install Node or add it to PATH." >&2
+  exit 1
+}
+
+md=""
+out=""
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    -o|--output)
+      if [[ $# -lt 2 ]]; then
+        echo "zlu-marp: -o requires a path" >&2
+        exit 1
+      fi
+      out="$2"
+      shift 2
+      ;;
+    -*)
+      echo "zlu-marp: unknown option: $1" >&2
+      usage >&2
+      exit 1
+      ;;
+    *)
+      if [[ -n "$md" ]]; then
+        echo "zlu-marp: unexpected argument: $1" >&2
+        usage >&2
+        exit 1
+      fi
+      md="$1"
+      shift
+      ;;
+  esac
+done
+
+if [[ -z "$md" ]]; then
+  usage >&2
+  exit 1
+fi
+
+if [[ ! -f "$md" ]]; then
+  echo "zlu-marp: file not found: $md" >&2
+  exit 1
+fi
+
+if [[ ! -f "$THEME" ]]; then
+  echo "zlu-marp: theme not found: $THEME" >&2
+  echo "Set ZLU_MARP_THEME to the absolute path of zlu-theme.css." >&2
+  exit 1
+fi
+
+if [[ -z "$out" ]]; then
+  if [[ "$md" == *.md ]]; then
+    out="${md%.md}.pdf"
+  else
+    out="${md}.pdf"
+  fi
+fi
+
+ensure_node
+
+exec npx -y @marp-team/marp-cli \
+  --theme-set "$THEME" \
+  --theme zlu \
+  --html \
+  "$md" \
+  -o "$out"
