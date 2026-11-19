@@ -1162,7 +1162,7 @@ module Jekyll
         t.merge("cn" => polish_cn(t["cn"]))
       }
       session_angles = bilingual_items(course["session_angles"])
-      session_angles = synth["session_angles"] if session_angles.empty?
+      session_angles = synth["session_angles"] if session_angles.empty? && !hand_curated
       session_angles = session_angles.map { |t|
         next t unless t.is_a?(Hash)
 
@@ -1177,7 +1177,8 @@ module Jekyll
       overview_en = synth["overview_en"] if overview_en.empty?
       overview_cn = synth["overview_cn"] if overview_cn.empty?
       tutoring = bilingual_items(course["tutoring"])
-      tutoring = synth["tutoring"] if tutoring.empty?
+      # Do not invent a numbered "How I tutor" list for hand-written course pages.
+      tutoring = synth["tutoring"] if tutoring.empty? && !hand_curated
       tutoring = tutoring.map { |t|
         next t unless t.is_a?(Hash)
 

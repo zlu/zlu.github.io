@@ -55,6 +55,14 @@ module Jekyll
       parts << "LLM" if collection_name == "ai-glossary"
       parts << "complexity theory" if collection_name == "cs-glossary"
       parts << "algorithms" if collection_name == "cs-glossary"
+      # Stats / probability entries set keywords in front matter; when absent,
+      # still tag CS glossary pages that already mention statistics in the title.
+      title_l = doc.data["title"].to_s.downcase
+      if collection_name == "cs-glossary" && title_l =~ /statisti|probabilit|estimat|bayes|likelihood|distribut|regress|moment|variance|covari|hypothesis|confidence|sample mean|central limit|law of large/
+        parts << "statistics"
+        parts << "probability"
+        parts << "statistics glossary"
+      end
       doc.data["keywords"] ||= parts.compact.map(&:to_s).uniq.join(", ")
     end
 

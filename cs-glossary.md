@@ -1,15 +1,17 @@
 ---
 layout: page
-title: "CS Glossary — Algorithms, Complexity, and Systems Terms"
+title: "CS Glossary — Algorithms, Statistics, Probability, and Systems Terms"
 permalink: /cs-glossary/
-description: "Searchable computer science glossary covering sorting, search, graph algorithms, data structures, complexity classes, automata, networking, TLS fingerprinting, and systems terms, each on its own linkable page."
-keywords: "CS glossary, computer science glossary, sorting algorithms, binary search, BFS, DFS, Dijkstra, dynamic programming, NP-hard, complexity theory, TLS, JA4, algorithms dictionary"
+description: "Searchable computer science glossary covering algorithms, data structures, complexity, plus statistics and probability — moments, estimators, MLE, distributions, Bayes, OLS, hypothesis tests — each on its own SEO-indexable page."
+keywords: "CS glossary, computer science glossary, statistics glossary, probability glossary, estimator, method of moments, maximum likelihood, MLE, Bayes theorem, normal distribution, central limit theorem, OLS, linear regression, hypothesis testing, confidence interval, sorting algorithms, binary search, BFS, DFS, Dijkstra, dynamic programming, NP-hard, complexity theory, TLS, JA4"
 sitemap: true
 ---
 
 <p class="glossary-intro">
   Concise definitions for sorting, searching, graph algorithms, data structures,
-  complexity, automata, networking / TLS, and systems concepts.
+  complexity, automata, networking / TLS, systems concepts, and
+  <strong>statistics &amp; probability</strong>
+  (moments, estimators, distributions, Bayes, OLS, inference).
   Each term has its own indexable page. Browse below or search.
 </p>
 
