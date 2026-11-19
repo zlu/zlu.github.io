@@ -12,18 +12,14 @@ courses:
   meta_description_en: COMP3221 Sydney tutoring (Distributed Systems). Weekly lecture arc moves on before
     last week’s method is solid? Bilingual Chinese/English help.
   lead_en: COMP3221 Distributed Systems at University of Sydney is where abstractions stack fast and labs
-    fail for reasons that look opaque. Private materials show weekly notes spanning roughly week 1–12,
-    assignment briefs / labs on disk, code submissions / practice files. The hard part is turning that
+    fail for reasons that look opaque. The hard part is turning that
     arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–12 周的周课笔记、磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
-  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. Evidence from the
-    course folder points to SQL, schema design, and databases; Networking layers, packets, and protocols;
-    OS / systems programming; Computer architecture and organisation. There is a weekly arc (about week
+  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
+  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. There is a weekly arc (about week
     1–12) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
+  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
     / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
     autograder 要的方法在 notebook 里从未写清。
   topics:
@@ -77,17 +73,14 @@ courses:
   meta_description_en: INFO1113 Sydney tutoring (Object-Oriented Programming). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: INFO1113 Object-Oriented Programming at University of Sydney is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
-    roughly week 1–11, code submissions / practice files. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 INFO1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 1–11 周的周课笔记、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+    autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在悉尼大学上 INFO1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: INFO1113 Object-Oriented Programming sits in programming & software construction. Evidence
-    from the course folder points to SQL, schema design, and databases; Programming foundations and debugging.
+    from
     There is a weekly arc (about week 1–11) plus assessed work that expects you to apply the same ideas
     under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
     class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: INFO1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
+  overview_cn: INFO1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
     1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -141,11 +134,10 @@ courses:
   meta_description_en: INFO1110 Sydney tutoring (Introduction to Programming). Code that “almost works”
     with no systematic debug plan? Bilingual Chinese/English help.
   lead_en: INFO1110 Introduction to Programming at University of Sydney is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. Private materials show lecture and practice materials.
+    autograder edge cases hit harder than syntax itself.
     The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.
-  lead_cn: 在悉尼大学上 INFO1110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在悉尼大学上 INFO1110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: INFO1110 Introduction to Programming sits in programming & software construction. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.
@@ -196,17 +188,15 @@ courses:
   meta_description_en: QBUS6600 Sydney tutoring (Data Analytics for Business Capstone). Assignment brief
     (“project1 model”) makes sense in class, freezes you alone?
   lead_en: QBUS6600 Data Analytics for Business Capstone at University of Sydney is where messy notebooks
-    and weak method stories lose marks even when a model runs. Private materials show assignment briefs
-    / labs on disk, notebooks, code submissions / practice files. The hard part is turning that arc into
+    and weak method stories lose marks even when a model runs. The hard part is turning that arc into
     a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 QBUS6600，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到磁盘上的作业 brief / lab、notebook、代码提交 /
-    练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在悉尼大学上 QBUS6600，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: QBUS6600 Data Analytics for Business Capstone sits in data science & analytics. Evidence
-    from the course folder points to Data wrangling / analytics tables. Assessed work expects you to apply
+    from Assessed work expects you to apply
     lecture ideas under deadline pressure. Students stall when terminology outruns notes, when a demo
     makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
     never made explicit.
-  overview_cn: QBUS6600 是悉尼大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: QBUS6600 是悉尼大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Data wrangling / analytics tables
@@ -256,19 +246,16 @@ courses:
   meta_description_en: INFO1112 Sydney tutoring (Computing 1B OS and Network…). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: INFO1112 Computing 1B OS and Network Platforms at University of Sydney is where abstractions
-    stack fast and labs fail for reasons that look opaque. Private materials show weekly notes spanning
-    roughly week 1–3, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    stack fast and labs fail for reasons that look opaque. The hard part
     is turning that arc into a method you can repeat on the next brief — not rereading slides the night
     before.
-  lead_cn: 在悉尼大学上 INFO1112，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–3 周的周课笔记、磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在悉尼大学上 INFO1112，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: INFO1112 Computing 1B OS and Network Platforms sits in systems, networks & architecture.
-    Evidence from the course folder points to Computer architecture and organisation; Programming foundations
-    and debugging. There is a weekly arc (about week 1–3) plus assessed work that expects you to apply
+    There is a weekly arc (about week 1–3) plus assessed work that expects you to apply
     the same ideas under deadline pressure. Students stall when terminology outruns notes, when a demo
     makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
     never made explicit.
-  overview_cn: INFO1112 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成、编程基础与调试这些点转。大约第
+  overview_cn: INFO1112 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、编程基础与调试这些点转。大约第
     1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -341,18 +328,16 @@ courses:
   meta_description_en: INFO3616 Sydney tutoring (Principles Of Security And…). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: INFO3616 Principles Of Security And Security Eng at University of Sydney is where threat models,
-    crypto vocabulary, and lab setup form a terminology wall. Private materials show weekly notes spanning
-    roughly week 1–11, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    crypto vocabulary, and lab setup form a terminology wall. The hard part
     is turning that arc into a method you can repeat on the next brief — not rereading slides the night
     before.
-  lead_cn: 在悉尼大学上 INFO3616，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到大约第 1–11 周的周课笔记、磁盘上的作业 brief / lab、代码提交 /
-    练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在悉尼大学上 INFO3616，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
   overview_en: INFO3616 Principles Of Security And Security Eng sits in security & privacy. Evidence from
-    the course folder points to Security / privacy threat models and labs. There is a weekly arc (about
+    There is a weekly arc (about
     week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: INFO3616 是悉尼大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着安全 / 隐私威胁模型与实验这些点转。大约第 1–11
+  overview_cn: INFO3616 是悉尼大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着安全 / 隐私威胁模型与实验这些点转。大约第 1–11
     周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
     里从未写清。
   topics:
@@ -404,18 +389,14 @@ courses:
   meta_description_en: COMP3221 Sydney tutoring (Distributed Systems). Weekly lecture arc moves on before
     last week’s method is solid? Bilingual Chinese/English help.
   lead_en: COMP3221 Distributed Systems at University of Sydney is where abstractions stack fast and labs
-    fail for reasons that look opaque. Private materials show weekly notes spanning roughly week 1–12,
-    assignment briefs / labs on disk, code submissions / practice files. The hard part is turning that
+    fail for reasons that look opaque. The hard part is turning that
     arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到大约第 1–12 周的周课笔记、磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
-  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. Evidence from the
-    course folder points to SQL, schema design, and databases; Networking layers, packets, and protocols;
-    OS / systems programming; Computer architecture and organisation. There is a weekly arc (about week
+  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
+  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. There is a weekly arc (about week
     1–12) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
+  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
     / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
     autograder 要的方法在 notebook 里从未写清。
   topics:
@@ -468,18 +449,16 @@ courses:
   meta_description_en: SOFT2201 Sydney tutoring (Software Construction / Design). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: SOFT2201 Software Construction / Design at University of Sydney is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
-    roughly week 2–11, assignment briefs / labs on disk, code submissions / practice files. The hard part
+    autograder edge cases hit harder than syntax itself. The hard part
     is turning that arc into a method you can repeat on the next brief — not rereading slides the night
     before.
-  lead_cn: 在悉尼大学上 SOFT2201，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 2–11 周的周课笔记、磁盘上的作业
-    brief / lab、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在悉尼大学上 SOFT2201，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: SOFT2201 Software Construction / Design sits in programming & software construction. Evidence
-    from the course folder points to Software design and construction. There is a weekly arc (about week
+    from There is a weekly arc (about week
     2–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: SOFT2201 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着软件设计与构造这些点转。大约第 2–11 周有连续周课主线，作业会要求你在
+  overview_cn: SOFT2201 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着软件设计与构造这些点转。大约第 2–11 周有连续周课主线，作业会要求你在
     DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Software design and construction
@@ -531,17 +510,14 @@ courses:
   meta_description_en: INFO1113 / INFO-1113 Sydney tutoring (Object-Oriented Programming). Weekly lecture
     arc moves on before last week’s method is solid?
   lead_en: INFO-1113 Java at University of Sydney is where briefs, tooling, and autograder edge cases
-    hit harder than syntax itself. Private materials show weekly notes spanning roughly week 1–11, code
-    submissions / practice files. The hard part is turning that arc into a method you can repeat on the
+    hit harder than syntax itself. The hard part is turning that arc into a method you can repeat on the
     next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 INFO-1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 1–11 周的周课笔记、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
-  overview_en: INFO-1113 Java sits in programming & software construction. Evidence from the course folder
-    points to SQL, schema design, and databases; Programming foundations and debugging. There is a weekly
+  lead_cn: 在悉尼大学上 INFO-1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
+  overview_en: INFO-1113 Java sits in programming & software construction. There is a weekly
     arc (about week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: INFO-1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
+  overview_cn: INFO-1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
     1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -595,11 +571,9 @@ courses:
   meta_description_en: MKTG1011 Sydney tutoring (Fundamentals of Marketing Analytics). Notebook runs on
     the sample cell, fails on the hidden / full dataset case?
   lead_en: MKTG1011 Mktg1011 Fundamentals Of Marketing Analytics at University of Sydney is where messy
-    notebooks and weak method stories lose marks even when a model runs. Private materials show notebooks,
-    code submissions / practice files. The hard part is turning that arc into a method you can repeat
+    notebooks and weak method stories lose marks even when a model runs. The hard part is turning that arc into a method you can repeat
     on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 MKTG1011，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到notebook、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在悉尼大学上 MKTG1011，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: MKTG1011 Mktg1011 Fundamentals Of Marketing Analytics sits in data science & analytics.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit.
@@ -650,18 +624,14 @@ courses:
   meta_description_en: ELEC1601 Sydney tutoring (Introduction to Computer Systems). Weekly lecture arc
     moves on before last week’s method is solid?
   lead_en: ELEC1601 Introduction to Computer Systems at University of Sydney is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. Private materials show weekly notes spanning
-    roughly week 2–4. The hard part is turning that arc into a method you can repeat on the next brief
-    — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 ELEC1601，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到大约第 2–4 周的周课笔记。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+    and autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在悉尼大学上 ELEC1601，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: ELEC1601 Introduction to Computer Systems sits in programming & software construction.
-    Evidence from the course folder points to Computer architecture and organisation; Security / privacy
-    threat models and labs. There is a weekly arc (about week 2–4) plus assessed work that expects you
+    There is a weekly arc (about week 2–4) plus assessed work that expects you
     to apply the same ideas under deadline pressure. Students stall when terminology outruns notes, when
     a demo makes sense in class but not alone, or when the write-up / autograder asks for a method the
     notebook never made explicit.
-  overview_cn: ELEC1601 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成、安全 / 隐私威胁模型与实验这些点转。大约第
+  overview_cn: ELEC1601 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、安全 / 隐私威胁模型与实验这些点转。大约第
     2–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:

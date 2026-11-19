@@ -10,16 +10,15 @@ courses:
   meta_description_en: CS106A Stanford tutoring (Programming Methodology). Code that “almost works” with
     no systematic debug plan? Bilingual Chinese/English help.
   lead_en: CS106A Programming Methodology at Stanford University is where briefs, tooling, and autograder
-    edge cases hit harder than syntax itself. Private materials show lecture and practice materials. The
+    edge cases hit harder than syntax itself. The
     hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.
-  lead_cn: 在斯坦福大学上 CS106A，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在斯坦福大学上 CS106A，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: CS106A Programming Methodology sits in programming & software construction. Evidence from
-    the course folder points to Web / mobile app structure. Students stall when terminology outruns notes,
+    Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
     the notebook never made explicit.
-  overview_cn: CS106A 是斯坦福大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: CS106A 是斯坦福大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Web / mobile app structure
@@ -74,19 +73,16 @@ courses:
   meta_description_en: CS221 Stanford tutoring (Artificial Intelligence…). Weekly lecture arc moves on
     before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: 'CS221 Artificial Intelligence: Principles and Techniques at Stanford University is where method
-    names blur together until pipelines, metrics, and write-ups diverge. Private materials show weekly
-    notes spanning roughly week 1–10, assignment briefs / labs on disk, code submissions / practice files.
+    names blur together until pipelines, metrics, and write-ups diverge.
     The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.'
-  lead_cn: 在斯坦福大学上 CS221，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到大约第 1–10 周的周课笔记、磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在斯坦福大学上 CS221，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: 'CS221 Artificial Intelligence: Principles and Techniques sits in machine learning & ai.
-    Evidence from the course folder points to Neural nets / deep learning / AI; ML pipelines, features,
-    and model choice; Networking layers, packets, and protocols; Algorithms, ADTs, and complexity. There
+    There
     is a weekly arc (about week 1–10) plus assessed work that expects you to apply the same ideas under
     deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in class
     but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.'
-  overview_cn: CS221 是斯坦福大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、ML 流水线、特征与模型选择、网络分层、报文与协议这些点转。大约第
+  overview_cn: CS221 是斯坦福大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、ML 流水线、特征与模型选择、网络分层、报文与协议这些点转。大约第
     1–10 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:

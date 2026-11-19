@@ -11,18 +11,14 @@ courses:
   meta_description_en: MA2624 NCUT tutoring (Machine Learning for Artificial…). Assignment brief (“MA2634
     Perceptrons”) makes sense in class, freezes you alone?
   lead_en: MA2624 Machine Learning for Artificial Intelligence at North China University of Technology
-    is where method names blur together until pipelines, metrics, and write-ups diverge. Private materials
-    show assignment briefs / labs on disk, notebooks. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在北方工业大学上 MA2624，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到磁盘上的作业 brief / lab、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+    is where method names blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在北方工业大学上 MA2624，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: MA2624 Machine Learning for Artificial Intelligence sits in machine learning & ai. Evidence
-    from the course folder points to Neural nets / deep learning / AI; Networking layers, packets, and
-    protocols; Security / privacy threat models and labs; Math foundations and proof habits. Assessed
+    from Assessed
     work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
     notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
     a method the notebook never made explicit.
-  overview_cn: MA2624 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
+  overview_cn: MA2624 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Neural nets / deep learning / AI
@@ -72,11 +68,10 @@ courses:
   meta_description_en: MA2623 NCUT tutoring (Linear and Abstract Algebra). Assignment brief (“MA2623 ES
     08”) makes sense in class, freezes you alone?
   lead_en: MA2623 Linear Abstract Algebra at North China University of Technology is where lecture speed
-    and dense vocabulary outrun note-taking. Private materials show assignment briefs / labs on disk.
+    and dense vocabulary outrun note-taking.
     The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.
-  lead_cn: 在北方工业大学上 MA2623，课速一快、术语一密，笔记一断档后面就更难补。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在北方工业大学上 MA2623，课速一快、术语一密，笔记一断档后面就更难补。
   overview_en: MA2623 Linear Abstract Algebra sits in computer science coursework. Assessed work expects
     you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
@@ -129,18 +124,13 @@ courses:
   meta_description_en: MA2634 NCUT tutoring (Machine Learning for AI). Assignment brief (“MA2634 Perceptrons”)
     makes sense in class, freezes you alone?
   lead_en: MA2634 ML For AI at North China University of Technology is where method names blur together
-    until pipelines, metrics, and write-ups diverge. Private materials show assignment briefs / labs on
-    disk, notebooks. The hard part is turning that arc into a method you can repeat on the next brief
-    — not rereading slides the night before.
-  lead_cn: 在北方工业大学上 MA2634，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到磁盘上的作业 brief / lab、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: MA2634 ML For AI sits in machine learning & ai. Evidence from the course folder points
-    to Neural nets / deep learning / AI; Networking layers, packets, and protocols; Security / privacy
-    threat models and labs; Math foundations and proof habits. Assessed work expects you to apply lecture
+    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在北方工业大学上 MA2634，方法名搅在一起，pipeline、指标和报告对不上就会崩。
+  overview_en: MA2634 ML For AI sits in machine learning & ai. Assessed work expects you to apply lecture
     ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
     in class but not alone, or when the write-up / autograder asks for a method the notebook never made
     explicit.
-  overview_cn: MA2634 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
+  overview_cn: MA2634 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Neural nets / deep learning / AI

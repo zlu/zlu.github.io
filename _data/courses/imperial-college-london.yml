@@ -20,11 +20,10 @@ courses:
     统计推断、线性回归、时间序列、GIS、数学规划与定性研究设计。
   overview_en: >-
     One-to-one tutoring for CIVE70107: lecture catch-up, tutorial exercises, and
-    topic drills across the syllabus. Sample slides from the probability deck are
-    below; ask on WeChat for the rest.
+    topic drills across the syllabus. Sample slides from our probability tutoring
+    deck are below.
   overview_cn: >-
-    CIVE70107 一对一辅导：跟课、tutorial 练习、按大纲专题训练。下方有概率部分课件样例，
-    其余讲义微信联系即可。
+    CIVE70107 一对一辅导：跟课、tutorial 练习、按大纲专题训练。下方有我们概率辅导课件的样例页。
   topics:
   - en: Probability foundations — Ω, Bayes, pmf/pdf, E[X]
     cn: 概率基础 — 样本空间、Bayes、pmf/pdf、期望
@@ -51,9 +50,9 @@ courses:
     cn: 定性题里选对研究哲学立场
   sample_slides:
     title_en: Probability foundations — sample slides
-    title_cn: 概率基础 — 课件样例
-    lead_en: Title, roadmap, Part A opener, and definitions from the probability deck.
-    lead_cn: 概率课件中的封面、路线图、Part A 导言与定义页。
+    title_cn: 概率基础 — 辅导课件样例
+    lead_en: Title, roadmap, Part A opener, and definitions from our tutoring deck.
+    lead_cn: 我们辅导课件里的封面、路线图、Part A 导言与定义页。
     bullets:
     - en: Sample space Ω — discrete vs continuous
       cn: 样本空间 Ω — 离散 vs 连续
@@ -64,7 +63,7 @@ courses:
     slides:
     - src: /assets/teach/imperial-college-london/cive70107/sample/01-title.webp
       alt_en: CIVE70107 probability foundations title slide
-      alt_cn: CIVE70107 概率基础课件封面
+      alt_cn: CIVE70107 概率基础辅导课件封面
       caption_en: Title
       caption_cn: 封面
     - src: /assets/teach/imperial-college-london/cive70107/sample/03-roadmap.webp
@@ -82,8 +81,8 @@ courses:
       alt_cn: 试验、样本点、样本空间与事件
       caption_en: Definitions
       caption_cn: 定义
-    cta_en: WeChat for the full deck pack
-    cta_cn: 微信索取完整课件
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
   faq:
   - q_en: What does CIVE70107 cover?
     q_cn: CIVE70107 学什么？
@@ -93,9 +92,9 @@ courses:
     a_cn: >-
       概率与推断、线性回归、时间序列、GIS / 空间模型、网络优化、定性研究设计。
   - q_en: Are sample slides available?
-    q_cn: 有课件样例吗？
-    a_en: Yes — see the probability slides on this page. Message WeChat for the rest.
-    a_cn: 有，本页有概率部分样例；其余讲义微信联系。
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring deck are on this page.
+    a_cn: 有，本页展示我们辅导课件的样例页。
 - code: CO120
   title: Programming I
 - code: CO121
@@ -129,18 +128,15 @@ courses:
   meta_description_en: COMP6000 Imperial tutoring (Advanced Computer Architecture). Stuck on labs that
     fail only under concurrency or load? Bilingual Chinese/English help.
   lead_en: COMP6000 Advanced Computer Architecture at Imperial College London is where abstractions stack
-    fast and labs fail for reasons that look opaque. Private materials show assignment briefs / labs on
-    disk. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
+    fast and labs fail for reasons that look opaque. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
     slides the night before.
-  lead_cn: 在伦敦帝国理工学院上 COMP6000，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在伦敦帝国理工学院上 COMP6000，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: COMP6000 Advanced Computer Architecture sits in systems, networks & architecture. Evidence
-    from the course folder points to OS / systems programming; Computer architecture and organisation;
-    Security / privacy threat models and labs; Automata, formal languages, and proofs. Assessed work expects
+    from Assessed work expects
     you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
     the notebook never made explicit.
-  overview_cn: COMP6000 是伦敦帝国理工学院「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统 / 系统编程、计算机体系结构与组成、安全
+  overview_cn: COMP6000 是伦敦帝国理工学院「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统 / 系统编程、计算机体系结构与组成、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: OS / systems programming
@@ -189,17 +185,14 @@ courses:
   meta_description_en: MATH6002 Imperial tutoring (6 70026 Methods For Data Science). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: MATH6002 6 70026 Methods For Data Science at Imperial College London is where messy notebooks
-    and weak method stories lose marks even when a model runs. Private materials show lecture and practice
-    materials. The hard part is turning that arc into a method you can repeat on the next brief — not
+    and weak method stories lose marks even when a model runs. The hard part is turning that arc into a method you can repeat on the next brief — not
     rereading slides the night before.
-  lead_cn: 在伦敦帝国理工学院上 MATH6002，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在伦敦帝国理工学院上 MATH6002，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: MATH6002 6 70026 Methods For Data Science sits in data science & analytics. Evidence from
-    the course folder points to Data wrangling / analytics tables; SQL, schema design, and databases;
-    Math foundations and proof habits. Students stall when terminology outruns notes, when a demo makes
+    Students stall when terminology outruns notes, when a demo makes
     sense in class but not alone, or when the write-up / autograder asks for a method the notebook never
     made explicit.
-  overview_cn: MATH6002 是伦敦帝国理工学院「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表、SQL、Schema
+  overview_cn: MATH6002 是伦敦帝国理工学院「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、SQL、Schema
     与数据库、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Data wrangling / analytics tables
@@ -246,10 +239,9 @@ courses:
   meta_description_en: PHYS70041 Imperial tutoring (Long Summer Project). Lectures outpacing note-taking?
     Bilingual Chinese/English help.
   lead_en: PHYS70041 Long Summer Project at Imperial College London is where lecture speed and dense vocabulary
-    outrun note-taking. Private materials show lecture and practice materials. The hard part is turning
+    outrun note-taking. The hard part is turning
     that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在伦敦帝国理工学院上 PHYS70041，课速一快、术语一密，笔记一断档后面就更难补。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
-    还能复用的方法。
+  lead_cn: 在伦敦帝国理工学院上 PHYS70041，课速一快、术语一密，笔记一断档后面就更难补。
   overview_en: PHYS70041 Long Summer Project sits in computer science coursework. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
     autograder asks for a method the notebook never made explicit.

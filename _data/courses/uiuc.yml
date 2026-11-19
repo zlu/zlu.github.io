@@ -11,18 +11,14 @@ courses:
   meta_description_en: CS444 UIUC tutoring (Deep Learning for Computer Vision). Assignment brief (“README”)
     makes sense in class, freezes you alone?
   lead_en: CS444 Deep Learning for Computer Vision at University of Illinois Urbana-Champaign is where
-    method names blur together until pipelines, metrics, and write-ups diverge. Private materials show
-    assignment briefs / labs on disk, notebooks, code submissions / practice files. The hard part is turning
+    method names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning
     that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在伊利诺伊大学厄巴纳-香槟分校上 CS444，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到磁盘上的作业 brief / lab、notebook、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
-  overview_en: CS444 Deep Learning for Computer Vision sits in machine learning & ai. Evidence from the
-    course folder points to Neural nets / deep learning / AI; ML pipelines, features, and model choice;
-    Networking layers, packets, and protocols; Algorithms, ADTs, and complexity. Assessed work expects
+  lead_cn: 在伊利诺伊大学厄巴纳-香槟分校上 CS444，方法名搅在一起，pipeline、指标和报告对不上就会崩。
+  overview_en: CS444 Deep Learning for Computer Vision sits in machine learning & ai. Assessed work expects
     you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
     the notebook never made explicit.
-  overview_cn: CS444 是伊利诺伊大学厄巴纳-香槟分校「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 /
+  overview_cn: CS444 是伊利诺伊大学厄巴纳-香槟分校「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 /
     AI、ML 流水线、特征与模型选择、网络分层、报文与协议这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -75,18 +71,14 @@ courses:
   meta_description_en: ECE494 UIUC tutoring (Deep Learning for Computer Vision). Assignment brief (“README”)
     makes sense in class, freezes you alone?
   lead_en: ECE494 Deep Learning for Computer Vision at University of Illinois Urbana-Champaign is where
-    method names blur together until pipelines, metrics, and write-ups diverge. Private materials show
-    assignment briefs / labs on disk, notebooks, code submissions / practice files. The hard part is turning
+    method names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning
     that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在伊利诺伊大学厄巴纳-香槟分校上 ECE494，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到磁盘上的作业 brief / lab、notebook、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
-  overview_en: ECE494 Deep Learning for Computer Vision sits in machine learning & ai. Evidence from the
-    course folder points to Neural nets / deep learning / AI; ML pipelines, features, and model choice;
-    Networking layers, packets, and protocols; Algorithms, ADTs, and complexity. Assessed work expects
+  lead_cn: 在伊利诺伊大学厄巴纳-香槟分校上 ECE494，方法名搅在一起，pipeline、指标和报告对不上就会崩。
+  overview_en: ECE494 Deep Learning for Computer Vision sits in machine learning & ai. Assessed work expects
     you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
     the notebook never made explicit.
-  overview_cn: ECE494 是伊利诺伊大学厄巴纳-香槟分校「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习
+  overview_cn: ECE494 是伊利诺伊大学厄巴纳-香槟分校「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习
     / AI、ML 流水线、特征与模型选择、网络分层、报文与协议这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:

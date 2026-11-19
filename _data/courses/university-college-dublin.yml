@@ -11,16 +11,13 @@ courses:
   meta_description_en: COMP3038J UCD tutoring (Multi Paradigm Programming). Code almost works; edge cases
     and error messages have no debug method? Bilingual Chinese/English help.
   lead_en: COMP3038J Multi Paradigm Programming at University College Dublin is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. Private materials show code submissions /
-    practice files. The hard part is turning that arc into a method you can repeat on the next brief —
-    not rereading slides the night before.
-  lead_cn: 在都柏林大学上 COMP3038J，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+    and autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在都柏林大学上 COMP3038J，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: COMP3038J Multi Paradigm Programming sits in programming & software construction. Evidence
-    from the course folder points to Programming foundations and debugging. Students stall when terminology
+    from Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
     for a method the notebook never made explicit.
-  overview_cn: COMP3038J 是都柏林大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: COMP3038J 是都柏林大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Programming foundations and debugging
@@ -67,18 +64,16 @@ courses:
   meta_description_en: COMP3019J UCD tutoring (Web Application Development). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: COMP3019J Web Application Development at University College Dublin is where front-end and back-end
-    failures mask each other inside one brief. Private materials show weekly notes spanning roughly week
-    1–7, assignment briefs / labs on disk, code submissions / practice files. The hard part is turning
+    failures mask each other inside one brief. The hard part is turning
     that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在都柏林大学上 COMP3019J，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到大约第 1–7 周的周课笔记、磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在都柏林大学上 COMP3019J，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。
   overview_en: COMP3019J Web Application Development sits in web, mobile & hci. Evidence from the course
     folder points to SQL, schema design, and databases; Networking layers, packets, and protocols; Programming
     foundations and debugging; Web / mobile app structure. There is a weekly arc (about week 1–7) plus
     assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
     autograder asks for a method the notebook never made explicit.
-  overview_cn: COMP3019J 是都柏林大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、编程基础与调试这些点转。大约第
+  overview_cn: COMP3019J 是都柏林大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、编程基础与调试这些点转。大约第
     1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -130,17 +125,14 @@ courses:
   meta_description_en: Mobile Computing UCD tutoring (Mobile Computing). UI looks done but integration
     tests fail? Bilingual Chinese/English help.
   lead_en: Mobile Computing at University College Dublin is where front-end and back-end failures mask
-    each other inside one brief. Private materials show lecture and practice materials. The hard part
+    each other inside one brief. The hard part
     is turning that arc into a method you can repeat on the next brief — not rereading slides the night
     before.
-  lead_cn: 在都柏林大学上 Mobile Computing，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: Mobile Computing sits in web, mobile & hci. Evidence from the course folder points to SQL,
-    schema design, and databases; Security / privacy threat models and labs; Programming foundations and
-    debugging; Web / mobile app structure. Students stall when terminology outruns notes, when a demo
+  lead_cn: 在都柏林大学上 Mobile Computing，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。
+  overview_en: Mobile Computing sits in web, mobile & hci. Students stall when terminology outruns notes, when a demo
     makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
     never made explicit.
-  overview_cn: Mobile Computing 是都柏林大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema
+  overview_cn: Mobile Computing 是都柏林大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema
     与数据库、安全 / 隐私威胁模型与实验、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -183,16 +175,14 @@ courses:
   meta_description_en: Computer Graphics UCD tutoring (Computer Graphics). Can follow a worked example,
     cannot start from a blank page under time pressure?
   lead_en: Computer Graphics at University College Dublin is where invariants, complexity claims, and
-    code must stay aligned under time pressure. Private materials show lecture and practice materials.
+    code must stay aligned under time pressure.
     The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.
-  lead_cn: 在都柏林大学上 Computer Graphics，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: Computer Graphics sits in algorithms & data structures. Evidence from the course folder
-    points to Algorithms, ADTs, and complexity; Math foundations and proof habits. Students stall when
+  lead_cn: 在都柏林大学上 Computer Graphics，限时下不变量、复杂度结论和代码必须说的是同一件事。
+  overview_en: Computer Graphics sits in algorithms & data structures. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
     autograder asks for a method the notebook never made explicit.
-  overview_cn: Computer Graphics 是都柏林大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: Computer Graphics 是都柏林大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Algorithms, ADTs, and complexity
@@ -240,16 +230,15 @@ courses:
   meta_description_en: Software Methodology UCD tutoring (Software Methodology). Stuck on labs that fail
     only under concurrency or load? Bilingual Chinese/English help.
   lead_en: Software Methodology at University College Dublin is where abstractions stack fast and labs
-    fail for reasons that look opaque. Private materials show lecture and practice materials. The hard
+    fail for reasons that look opaque. The hard
     part is turning that arc into a method you can repeat on the next brief — not rereading slides the
     night before.
-  lead_cn: 在都柏林大学上 Software Methodology，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在都柏林大学上 Software Methodology，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: Software Methodology sits in systems, networks & architecture. Evidence from the course
     folder points to Computer architecture and organisation. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
     the notebook never made explicit.
-  overview_cn: Software Methodology 是都柏林大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: Software Methodology 是都柏林大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Computer architecture and organisation
@@ -295,17 +284,14 @@ courses:
   meta_description_en: COMP3008J UCD tutoring (Distributed Systems). Stuck on labs that fail only under
     concurrency or load? Bilingual Chinese/English help.
   lead_en: COMP3008J Distributed Systems at University College Dublin is where abstractions stack fast
-    and labs fail for reasons that look opaque. Private materials show lecture and practice materials.
+    and labs fail for reasons that look opaque.
     The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.
-  lead_cn: 在都柏林大学上 COMP3008J，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
-    还能复用的方法。
-  overview_en: COMP3008J Distributed Systems sits in systems, networks & architecture. Evidence from the
-    course folder points to Networking layers, packets, and protocols; Computer architecture and organisation;
-    Security / privacy threat models and labs; Algorithms, ADTs, and complexity. Students stall when terminology
+  lead_cn: 在都柏林大学上 COMP3008J，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
+  overview_en: COMP3008J Distributed Systems sits in systems, networks & architecture. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
     for a method the notebook never made explicit.
-  overview_cn: COMP3008J 是都柏林大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、计算机体系结构与组成、安全
+  overview_cn: COMP3008J 是都柏林大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、计算机体系结构与组成、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Networking layers, packets, and protocols

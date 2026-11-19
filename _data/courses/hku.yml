@@ -15,17 +15,14 @@ courses:
   meta_description_en: COMP1117B HKU tutoring (Computer Programming). Assignment brief (“Assignment3”)
     makes sense in class, freezes you alone? Bilingual Chinese/English help.
   lead_en: COMP1117B Computer Programming at The University of Hong Kong is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. Private materials show assignment briefs / labs
-    on disk, code submissions / practice files. The hard part is turning that arc into a method you can
+    autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method you can
     repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在香港大学上 COMP1117B，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在香港大学上 COMP1117B，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: COMP1117B Computer Programming sits in programming & software construction. Evidence from
-    the course folder points to Networking layers, packets, and protocols; Programming foundations and
-    debugging. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
     / autograder asks for a method the notebook never made explicit.
-  overview_cn: COMP1117B 是香港大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: COMP1117B 是香港大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Networking layers, packets, and protocols
@@ -73,17 +70,14 @@ courses:
   meta_description_en: COMP1117 HKU tutoring (Computer Programming). Assignment brief (“Assignment3”)
     makes sense in class, freezes you alone? Bilingual Chinese/English help.
   lead_en: COMP1117 Computer Programming at The University of Hong Kong is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. Private materials show assignment briefs / labs
-    on disk, code submissions / practice files. The hard part is turning that arc into a method you can
+    autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method you can
     repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在香港大学上 COMP1117，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在香港大学上 COMP1117，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: COMP1117 Computer Programming sits in programming & software construction. Evidence from
-    the course folder points to Networking layers, packets, and protocols; Programming foundations and
-    debugging. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
     / autograder asks for a method the notebook never made explicit.
-  overview_cn: COMP1117 是香港大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: COMP1117 是香港大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Networking layers, packets, and protocols
@@ -149,16 +143,14 @@ courses:
   meta_description_en: IIMT 3601 HKU tutoring (Database Management). Stuck on correct-looking SQL that
     fails hidden test schemas? Bilingual Chinese/English help.
   lead_en: IIMT 3601 Database Management at The University of Hong Kong is where one wrong schema or join
-    quietly breaks every later query. Private materials show lecture and practice materials. The hard
+    quietly breaks every later query. The hard
     part is turning that arc into a method you can repeat on the next brief — not rereading slides the
     night before.
-  lead_cn: 在香港大学上 IIMT 3601，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
-    还能复用的方法。
-  overview_en: IIMT 3601 Database Management sits in databases & information systems. Evidence from the
-    course folder points to SQL, schema design, and databases. Students stall when terminology outruns
+  lead_cn: 在香港大学上 IIMT 3601，Schema 或 join 偏一点，后面查询会整条链一起歪。
+  overview_en: IIMT 3601 Database Management sits in databases & information systems. Students stall when terminology outruns
     notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
     a method the notebook never made explicit.
-  overview_cn: IIMT 3601 是香港大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: IIMT 3601 是香港大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: SQL, schema design, and databases
@@ -203,11 +195,10 @@ courses:
   meta_description_en: CS Master Exam HKU tutoring (CS Master Entrance Exam Prep). Lectures outpacing
     note-taking? Bilingual Chinese/English help.
   lead_en: CS Master Exam CS Master Entrance Exam Prep at The University of Hong Kong is where lecture
-    speed and dense vocabulary outrun note-taking. Private materials show lecture and practice materials.
+    speed and dense vocabulary outrun note-taking.
     The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.
-  lead_cn: 在香港大学上 CS Master Exam，课速一快、术语一密，笔记一断档后面就更难补。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
-    还能复用的方法。
+  lead_cn: 在香港大学上 CS Master Exam，课速一快、术语一密，笔记一断档后面就更难补。
   overview_en: CS Master Exam CS Master Entrance Exam Prep sits in computer science coursework. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.

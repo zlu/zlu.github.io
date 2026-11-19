@@ -1017,7 +1017,7 @@ module Jekyll
         polish_cn(t["cn"]) if t.is_a?(Hash)
       }.reject(&:empty?)
       stuck_note = if stuck_cn.any?
-                     "这门课里同学特别容易卡在：#{stuck_cn.join('；')}。课上会优先对着这些点练，而不是泛泛重讲一遍课件。"
+                     "这门课里同学特别容易卡在：#{stuck_cn.join('；')}。课上会优先对着这些点练。"
                    else
                      "课上会先问清你卡在读题、实现还是调试，再对着那一点往下推进。"
                    end

@@ -11,17 +11,14 @@ courses:
   meta_description_en: CS2110 Cornell tutoring (Java Test). Assignment brief (“A2 CS 2110”) makes sense
     in class, freezes you alone? Bilingual Chinese/English help.
   lead_en: CS2110 Java Test at Cornell University is where briefs, tooling, and autograder edge cases
-    hit harder than syntax itself. Private materials show assignment briefs / labs on disk, code submissions
-    / practice files. The hard part is turning that arc into a method you can repeat on the next brief
-    — not rereading slides the night before.
-  lead_cn: 在康奈尔大学上 CS2110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。现有材料里能看到磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+    hit harder than syntax itself. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在康奈尔大学上 CS2110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: CS2110 Java Test sits in programming & software construction. Evidence from the course
     folder points to Algorithms, ADTs, and complexity; Programming foundations and debugging. Assessed
     work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
     notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
     a method the notebook never made explicit.
-  overview_cn: CS2110 是康奈尔大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: CS2110 是康奈尔大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Algorithms, ADTs, and complexity
@@ -68,10 +65,9 @@ courses:
   meta_description_en: Database Cornell tutoring (Database Systems). Stuck on correct-looking SQL that
     fails hidden test schemas? Bilingual Chinese/English help.
   lead_en: Database Database Systems at Cornell University is where one wrong schema or join quietly breaks
-    every later query. Private materials show lecture and practice materials. The hard part is turning
+    every later query. The hard part is turning
     that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在康奈尔大学上 Database，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
-    还能复用的方法。
+  lead_cn: 在康奈尔大学上 Database，Schema 或 join 偏一点，后面查询会整条链一起歪。
   overview_en: Database Database Systems sits in databases & information systems. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
     autograder asks for a method the notebook never made explicit.

@@ -27,17 +27,14 @@ courses:
   meta_description_en: IDBF001 / 31271 UTS tutoring (Database Fundamentals). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: IDBF001 Database Fundamentals at University of Technology Sydney is where one wrong schema
-    or join quietly breaks every later query. Private materials show weekly notes spanning roughly week
-    7–7, assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat
+    or join quietly breaks every later query. The hard part is turning that arc into a method you can repeat
     on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼科技大学上 IDBF001，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到大约第 7–7 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: IDBF001 Database Fundamentals sits in databases & information systems. Evidence from the
-    course folder points to SQL, schema design, and databases. There is a weekly arc (about week 7–7)
+  lead_cn: 在悉尼科技大学上 IDBF001，Schema 或 join 偏一点，后面查询会整条链一起歪。
+  overview_en: IDBF001 Database Fundamentals sits in databases & information systems. There is a weekly arc (about week 7–7)
     plus assessed work that expects you to apply the same ideas under deadline pressure. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
     / autograder asks for a method the notebook never made explicit.
-  overview_cn: IDBF001 是悉尼科技大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库这些点转。大约第
+  overview_cn: IDBF001 是悉尼科技大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。大约第
     7–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -272,17 +269,14 @@ courses:
   meta_description_en: IWBS001 UTS tutoring (Web Systems). Weekly lecture arc moves on before last week’s
     method is solid? Bilingual Chinese/English help.
   lead_en: IWBS001 Web Systems at University of Technology Sydney is where front-end and back-end failures
-    mask each other inside one brief. Private materials show weekly notes spanning roughly week 3–3, assignment
-    briefs / labs on disk, code submissions / practice files. The hard part is turning that arc into a
+    mask each other inside one brief. The hard part is turning that arc into a
     method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼科技大学上 IWBS001，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到大约第 3–3 周的周课笔记、磁盘上的作业 brief / lab、代码提交
-    / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
-  overview_en: IWBS001 Web Systems sits in web, mobile & hci. Evidence from the course folder points to
-    Programming foundations and debugging; Web / mobile app structure. There is a weekly arc (about week
+  lead_cn: 在悉尼科技大学上 IWBS001，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。
+  overview_en: IWBS001 Web Systems sits in web, mobile & hci. There is a weekly arc (about week
     3–3) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: IWBS001 是悉尼科技大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。大约第
+  overview_cn: IWBS001 是悉尼科技大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。大约第
     3–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:

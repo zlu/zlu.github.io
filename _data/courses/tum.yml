@@ -11,17 +11,13 @@ courses:
   meta_description_en: INHN0012 TUM tutoring (Computer Networking And IT Security). Stuck on lab setup
     unfinished; report lists tools without a clear finding?
   lead_en: INHN0012 Computer Networking And IT Security at Technical University of Munich is where threat
-    models, crypto vocabulary, and lab setup form a terminology wall. Private materials show lecture and
-    practice materials. The hard part is turning that arc into a method you can repeat on the next brief
-    — not rereading slides the night before.
-  lead_cn: 在慕尼黑工业大学上 INHN0012，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
-    还能复用的方法。
+    models, crypto vocabulary, and lab setup form a terminology wall. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在慕尼黑工业大学上 INHN0012，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
   overview_en: INHN0012 Computer Networking And IT Security sits in security & privacy. Evidence from
-    the course folder points to Networking layers, packets, and protocols; Security / privacy threat models
-    and labs; Math foundations and proof habits; Distributed systems ideas. Students stall when terminology
+    Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
     for a method the notebook never made explicit.
-  overview_cn: INHN0012 是慕尼黑工业大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: INHN0012 是慕尼黑工业大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Networking layers, packets, and protocols
@@ -65,18 +61,15 @@ courses:
   meta_description_en: Introduction to Computer… TUM tutoring. Assignment brief (“0003CA ShortTest1 assignment”)
     makes sense in class, freezes you alone?
   lead_en: Intro to Computer Architecture Introduction to Computer Architecture at Technical University
-    of Munich is where abstractions stack fast and labs fail for reasons that look opaque. Private materials
-    show assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat
+    of Munich is where abstractions stack fast and labs fail for reasons that look opaque. The hard part is turning that arc into a method you can repeat
     on the next brief — not rereading slides the night before.
-  lead_cn: 在慕尼黑工业大学上 Intro to Computer Architecture，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。现有材料里能看到磁盘上的作业 brief
-    / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
+  lead_cn: 在慕尼黑工业大学上 Intro to Computer Architecture，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: Intro to Computer Architecture Introduction to Computer Architecture sits in systems, networks
-    & architecture. Evidence from the course folder points to OS / systems programming; Computer architecture
-    and organisation; Automata, formal languages, and proofs. Assessed work expects you to apply lecture
+    & architecture. Assessed work expects you to apply lecture
     ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
     in class but not alone, or when the write-up / autograder asks for a method the notebook never made
     explicit.
-  overview_cn: Intro to Computer Architecture 是慕尼黑工业大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着操作系统
+  overview_cn: Intro to Computer Architecture 是慕尼黑工业大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统
     / 系统编程、计算机体系结构与组成、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:

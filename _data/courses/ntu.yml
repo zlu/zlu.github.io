@@ -17,18 +17,15 @@ courses:
   meta_description_en: EE6407 NTU tutoring (Genetic Algorithms & Machine…). Weekly lecture arc moves on
     before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: EE6407 Genetic Algorithms & Machine Learning at Nanyang Technological University is where method
-    names blur together until pipelines, metrics, and write-ups diverge. Private materials show weekly
-    notes spanning roughly week 1–7, assignment briefs / labs on disk. The hard part is turning that arc
+    names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning that arc
     into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在南洋理工大学上 EE6407，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到大约第 1–7 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在南洋理工大学上 EE6407，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: EE6407 Genetic Algorithms & Machine Learning sits in machine learning & ai. Evidence from
-    the course folder points to ML pipelines, features, and model choice; SQL, schema design, and databases;
-    Programming foundations and debugging; Web / mobile app structure. There is a weekly arc (about week
+    There is a weekly arc (about week
     1–7) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: EE6407 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema
+  overview_cn: EE6407 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema
     与数据库、编程基础与调试这些点转。大约第 1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
@@ -107,18 +104,14 @@ courses:
   meta_description_en: CE/CZ2001 NTU tutoring (Algorithms). Weekly lecture arc moves on before last week’s
     method is solid? Bilingual Chinese/English help.
   lead_en: CE/CZ2001 Algorithms at Nanyang Technological University is where method names blur together
-    until pipelines, metrics, and write-ups diverge. Private materials show weekly notes spanning roughly
-    week 1–7, assignment briefs / labs on disk. The hard part is turning that arc into a method you can
+    until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you can
     repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在南洋理工大学上 CE/CZ2001，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到大约第 1–7 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: CE/CZ2001 Algorithms sits in machine learning & ai. Evidence from the course folder points
-    to ML pipelines, features, and model choice; SQL, schema design, and databases; Programming foundations
-    and debugging; Web / mobile app structure. There is a weekly arc (about week 1–7) plus assessed work
+  lead_cn: 在南洋理工大学上 CE/CZ2001，方法名搅在一起，pipeline、指标和报告对不上就会崩。
+  overview_en: CE/CZ2001 Algorithms sits in machine learning & ai. There is a weekly arc (about week 1–7) plus assessed work
     that expects you to apply the same ideas under deadline pressure. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
     for a method the notebook never made explicit.
-  overview_cn: CE/CZ2001 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema
+  overview_cn: CE/CZ2001 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema
     与数据库、编程基础与调试这些点转。大约第 1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
@@ -170,18 +163,14 @@ courses:
   meta_description_en: IE0005 NTU tutoring (Introduction to Data Science and…). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: IE0005 Introduction to Data Science and Artificial Intelligence at Nanyang Technological University
-    is where method names blur together until pipelines, metrics, and write-ups diverge. Private materials
-    show weekly notes spanning roughly week 1–7, notebooks. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在南洋理工大学上 IE0005，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到大约第 1–7 周的周课笔记、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+    is where method names blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在南洋理工大学上 IE0005，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: IE0005 Introduction to Data Science and Artificial Intelligence sits in machine learning
-    & ai. Evidence from the course folder points to Data wrangling / analytics tables; Neural nets / deep
-    learning / AI; ML pipelines, features, and model choice; Automata, formal languages, and proofs. There
+    & ai. There
     is a weekly arc (about week 1–7) plus assessed work that expects you to apply the same ideas under
     deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in class
     but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: IE0005 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表、神经网络 / 深度学习
+  overview_cn: IE0005 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、神经网络 / 深度学习
     / AI、ML 流水线、特征与模型选择这些点转。大约第 1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
@@ -233,17 +222,15 @@ courses:
   meta_description_en: KM6307 NTU tutoring (Organisation of Knowledg). Weekly lecture arc moves on before
     last week’s method is solid? Bilingual Chinese/English help.
   lead_en: KM6307 Organisation of Knowledg at Nanyang Technological University is where one wrong schema
-    or join quietly breaks every later query. Private materials show weekly notes spanning roughly week
-    7–7, assignment briefs / labs on disk. The hard part is turning that arc into a method you can repeat
+    or join quietly breaks every later query. The hard part is turning that arc into a method you can repeat
     on the next brief — not rereading slides the night before.
-  lead_cn: 在南洋理工大学上 KM6307，Schema 或 join 偏一点，后面查询会整条链一起歪。现有材料里能看到大约第 7–7 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+  lead_cn: 在南洋理工大学上 KM6307，Schema 或 join 偏一点，后面查询会整条链一起歪。
   overview_en: KM6307 Organisation of Knowledg sits in databases & information systems. Evidence from
-    the course folder points to SQL, schema design, and databases; Web / mobile app structure. There is
+    There is
     a weekly arc (about week 7–7) plus assessed work that expects you to apply the same ideas under deadline
     pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
     alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: KM6307 是南洋理工大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着SQL、Schema 与数据库、Web /
+  overview_cn: KM6307 是南洋理工大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、Web /
     移动应用结构这些点转。大约第 7–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
     要的方法在 notebook 里从未写清。
   topics:
@@ -292,16 +279,14 @@ courses:
   meta_description_en: EE6430 NTU tutoring (SPECIAL TOPICS IN MACHINE LEARNING). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: EE6430 SPECIAL TOPICS IN MACHINE LEARNING at Nanyang Technological University is where method
-    names blur together until pipelines, metrics, and write-ups diverge. Private materials show lecture
-    and practice materials. The hard part is turning that arc into a method you can repeat on the next
+    names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you can repeat on the next
     brief — not rereading slides the night before.
-  lead_cn: 在南洋理工大学上 EE6430，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief
-    还能复用的方法。
+  lead_cn: 在南洋理工大学上 EE6430，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: EE6430 SPECIAL TOPICS IN MACHINE LEARNING sits in machine learning & ai. Evidence from
-    the course folder points to Neural nets / deep learning / AI; ML pipelines, features, and model choice.
+   
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: EE6430 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、ML
+  overview_cn: EE6430 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、ML
     流水线、特征与模型选择这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Neural nets / deep learning / AI

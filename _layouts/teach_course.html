@@ -133,7 +133,7 @@ layout: default
   {% assign sample_cta_en = sample.cta_en | default: "" | strip %}
   {% if sample_cta_en == "" %}{% assign sample_cta_en = "Book on WeChat for the full pack" %}{% endif %}
   {% assign sample_cta_cn = sample.cta_cn | default: "" | strip %}
-  {% if sample_cta_cn == "" %}{% assign sample_cta_cn = "微信预约领取完整课件" %}{% endif %}
+  {% if sample_cta_cn == "" %}{% assign sample_cta_cn = "微信预约辅导" %}{% endif %}
   <section class="teach-landing-section teach-course-sample" aria-labelledby="teach-course-sample-title">
     <h2 id="teach-course-sample-title"
         data-en="{{ sample_title_en }}"
@@ -168,8 +168,8 @@ layout: default
       {% endfor %}
     </div>
     <p class="teach-sample-cta-note"
-       data-en="Full deck stays with tutoring — not a public download."
-       data-cn="完整课件随辅导提供，不设公开下载。">完整课件随辅导提供，不设公开下载。</p>
+       data-en="These are sample pages from our tutoring decks — not university lecture notes."
+       data-cn="以上为我们辅导课件样例，不是学校课堂讲义。">以上为我们辅导课件样例，不是学校课堂讲义。</p>
     <a class="btn btn-primary" href="/teach/#teach-book-qr"
        data-en="{{ sample_cta_en }}"
        data-cn="{{ sample_cta_cn }}">{{ sample_cta_cn }}</a>

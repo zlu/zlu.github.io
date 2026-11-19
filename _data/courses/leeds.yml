@@ -28,11 +28,8 @@ courses:
   meta_description_en: 'LUBS3185 Leeds tutoring (People Analytics: Strategy and…). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.'
   lead_en: 'LUBS3185 People Analytics: Strategy and Practice at University of Leeds is where messy notebooks
-    and weak method stories lose marks even when a model runs. Private materials show code submissions
-    / practice files. The hard part is turning that arc into a method you can repeat on the next brief
-    — not rereading slides the night before.'
-  lead_cn: 在利兹大学上 LUBS3185，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。现有材料里能看到代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
+    and weak method stories lose marks even when a model runs. Tutoring focuses on methods you can reuse on the next brief.'
+  lead_cn: 在利兹大学上 LUBS3185，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: 'LUBS3185 People Analytics: Strategy and Practice sits in data science & analytics. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
     write-up / autograder asks for a method the notebook never made explicit.'

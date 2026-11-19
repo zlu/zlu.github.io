@@ -660,23 +660,21 @@ def build_copy(uni_label: str, uni_cn: str, code: str, title: str, theme: str, e
     topic_ens = [t["en"] for t in (ev.get("topic_hits") or [])][:4]
     topic_cns = [t["cn"] for t in (ev.get("topic_hits") or [])][:3]
 
+    # Never claim we hold/redistribute university lecture notes or course packs.
     lead_en = (
         f"{label} at {uni_label} is where {hard['en']}. "
-        f"Private materials show {ev_en}. "
-        f"The hard part is turning that arc into a method you can repeat on the next brief — "
-        f"not rereading slides the night before."
+        f"Tutoring focuses on methods you can reuse on the next brief."
     )
     lead_cn = (
         f"在{uni_cn}上 {cn_handle}，{hard['cn']}。"
-        f"现有材料里能看到{ev_cn}。"
-        f"难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。"
+        f"辅导对着你真正卡住的步骤练，练到下一份 brief 还能自己下手。"
     )
 
     overview_en = (
         f"{label} sits in {theme_label_en.lower()}. "
     )
     if topic_ens:
-        overview_en += f"Evidence from the course folder points to {'; '.join(topic_ens)}. "
+        overview_en += f"Common topics include {'; '.join(topic_ens)}. "
     if ev.get("week_span"):
         a, b = ev["week_span"]
         overview_en += f"There is a weekly arc (about week {a}–{b}) plus assessed work that expects you to apply the same ideas under deadline pressure. "
@@ -691,7 +689,7 @@ def build_copy(uni_label: str, uni_cn: str, code: str, title: str, theme: str, e
         f"{cn_handle} 是{uni_cn}「{theme_label_cn}」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。"
     )
     if topic_cns:
-        overview_cn += f"从课程材料看，学期里常会绕着{ '、'.join(topic_cns) }这些点转。"
+        overview_cn += f"学期里常会绕着{ '、'.join(topic_cns) }这些点转。"
     if ev.get("week_span"):
         a, b = ev["week_span"]
         overview_cn += f"大约第 {a}–{b} 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。"

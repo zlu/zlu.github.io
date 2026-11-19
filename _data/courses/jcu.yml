@@ -13,18 +13,14 @@ courses:
   meta_description_en: CP3406 JCU tutoring (Android). Weekly lecture arc moves on before last week’s method
     is solid? Bilingual Chinese/English help.
   lead_en: CP3406 Android at James Cook University Singapore is where front-end and back-end failures
-    mask each other inside one brief. Private materials show weekly notes spanning roughly week 4–7, assignment
-    briefs / labs on disk. The hard part is turning that arc into a method you can repeat on the next
+    mask each other inside one brief. The hard part is turning that arc into a method you can repeat on the next
     brief — not rereading slides the night before.
-  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3406，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。现有材料里能看到大约第 4–7 周的周课笔记、磁盘上的作业 brief / lab。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: CP3406 Android sits in web, mobile & hci. Evidence from the course folder points to Data
-    wrangling / analytics tables; Networking layers, packets, and protocols; Computer architecture and
-    organisation; Web / mobile app structure. There is a weekly arc (about week 4–7) plus assessed work
+  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3406，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。
+  overview_en: CP3406 Android sits in web, mobile & hci. There is a weekly arc (about week 4–7) plus assessed work
     that expects you to apply the same ideas under deadline pressure. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
     for a method the notebook never made explicit.
-  overview_cn: CP3406 是詹姆斯库克大学（新加坡）「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着数据清洗 / 分析表、网络分层、报文与协议、计算机体系结构与组成这些点转。大约第
+  overview_cn: CP3406 是詹姆斯库克大学（新加坡）「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、网络分层、报文与协议、计算机体系结构与组成这些点转。大约第
     4–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
   topics:
@@ -77,17 +73,13 @@ courses:
   meta_description_en: CP3404 JCU tutoring (Network Security and Cryptography). Assignment brief (“CP3404
     Assignment 1”) makes sense in class, freezes you alone?
   lead_en: CP3404 Network Security and Cryptography at James Cook University Singapore is where threat
-    models, crypto vocabulary, and lab setup form a terminology wall. Private materials show assignment
-    briefs / labs on disk, code submissions / practice files. The hard part is turning that arc into a
+    models, crypto vocabulary, and lab setup form a terminology wall. The hard part is turning that arc into a
     method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3404，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。现有材料里能看到磁盘上的作业 brief / lab、代码提交 / 练习文件。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: CP3404 Network Security and Cryptography sits in security & privacy. Evidence from the
-    course folder points to Neural nets / deep learning / AI; Networking layers, packets, and protocols;
-    Security / privacy threat models and labs. Assessed work expects you to apply lecture ideas under
+  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3404，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
+  overview_en: CP3404 Network Security and Cryptography sits in security & privacy. Assessed work expects you to apply lecture ideas under
     deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in class
     but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: CP3404 是詹姆斯库克大学（新加坡）「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
+  overview_cn: CP3404 是詹姆斯库克大学（新加坡）「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Neural nets / deep learning / AI
@@ -131,18 +123,13 @@ courses:
   meta_description_en: CP3501 JCU tutoring (Deep Learning). Weekly lecture arc moves on before last week’s
     method is solid? Bilingual Chinese/English help.
   lead_en: CP3501 Deep Learning at James Cook University Singapore is where method names blur together
-    until pipelines, metrics, and write-ups diverge. Private materials show weekly notes spanning roughly
-    week 1–4, assignment briefs / labs on disk, notebooks. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3501，方法名搅在一起，pipeline、指标和报告对不上就会崩。现有材料里能看到大约第 1–4 周的周课笔记、磁盘上的作业 brief / lab、notebook。难的不是考前把课件再扫一遍，而是把这条主线练成下一份
-    brief 还能复用的方法。
-  overview_en: CP3501 Deep Learning sits in machine learning & ai. Evidence from the course folder points
-    to Neural nets / deep learning / AI; Computer architecture and organisation; Algorithms, ADTs, and
-    complexity; Programming foundations and debugging. There is a weekly arc (about week 1–4) plus assessed
+    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3501，方法名搅在一起，pipeline、指标和报告对不上就会崩。
+  overview_en: CP3501 Deep Learning sits in machine learning & ai. There is a weekly arc (about week 1–4) plus assessed
     work that expects you to apply the same ideas under deadline pressure. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
     for a method the notebook never made explicit.
-  overview_cn: CP3501 是詹姆斯库克大学（新加坡）「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着神经网络 / 深度学习 /
+  overview_cn: CP3501 是詹姆斯库克大学（新加坡）「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 /
     AI、计算机体系结构与组成、算法、ADT 与复杂度这些点转。大约第 1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:

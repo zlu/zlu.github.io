@@ -17,15 +17,14 @@ courses:
   meta_description_en: CS445 Pitt tutoring (Compinfo401). Can follow a worked example, cannot start from
     a blank page under time pressure? Bilingual Chinese/English help.
   lead_en: CS445 Compinfo401 at University of Pittsburgh is where invariants, complexity claims, and code
-    must stay aligned under time pressure. Private materials show lecture and practice materials. The
+    must stay aligned under time pressure. The
     hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
     the night before.
-  lead_cn: 在匹兹堡大学上 CS445，限时下不变量、复杂度结论和代码必须说的是同一件事。现有材料里能看到讲座与练习材料。难的不是考前把课件再扫一遍，而是把这条主线练成下一份 brief 还能复用的方法。
-  overview_en: CS445 Compinfo401 sits in algorithms & data structures. Evidence from the course folder
-    points to Algorithms, ADTs, and complexity; Programming foundations and debugging. Students stall
+  lead_cn: 在匹兹堡大学上 CS445，限时下不变量、复杂度结论和代码必须说的是同一件事。
+  overview_en: CS445 Compinfo401 sits in algorithms & data structures. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
     / autograder asks for a method the notebook never made explicit.
-  overview_cn: CS445 是匹兹堡大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。从课程材料看，学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+  overview_cn: CS445 是匹兹堡大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
   - en: Algorithms, ADTs, and complexity

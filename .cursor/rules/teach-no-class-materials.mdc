@@ -1,0 +1,34 @@
+---
+description: Never claim zlu.me/teach has or distributes university class notes
+globs: "{teach,_data/courses,_layouts/teach*,_includes/teach*,_plugins/teach*}/**"
+alwaysApply: true
+---
+
+# Teach site — no class-materials claims
+
+Public teach pages must **never** say or imply that we possess, mirror, or give out university lecture notes, slides, past papers, assignment packs, or other course materials.
+
+## Hard bans (public copy)
+
+Do not write variants of:
+
+- EN: "Private materials show…", "Evidence from the course folder…", "we have the lecture notes / slides / past papers", "full course pack", "download the notes"
+- CN: "现有材料里能看到…", "从课程材料看…", "其余讲义微信联系", "领取完整课件/讲义", "我们有课件/笔记/past paper"
+
+Internal paths under `teaching/` and admin hints that materials are private are fine. Do not surface that inventory on indexed pages.
+
+## Allowed
+
+- Ask the **student** to send **their** brief, PDF, code, or screenshot of **their** lecture slide when booking.
+- Show **our** tutoring decks / sample slides, clearly framed as tutoring content we wrote (not the university’s notes).
+- Name syllabus topics in plain language without claiming we hold the official files.
+
+## Sample slides / FAQ
+
+- OK: "Sample slides from our probability tutoring deck are below."
+- Not OK: "We have the class notes / 其余讲义微信索取."
+- CTA: book tutoring on WeChat — do not promise a course-material dump.
+
+## Generators
+
+`enrich_teach_courses.py` and `teach_pages.rb` must not emit materials-inventory claims into `lead_*` / `overview_*` / FAQ.
