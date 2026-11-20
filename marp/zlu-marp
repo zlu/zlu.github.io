@@ -111,9 +111,15 @@ fi
 
 ensure_node
 
+# --allow-local-files: embed images referenced as relative paths (e.g. figures/*.png)
+# --pdf-outlines: PDF bookmarks for Preview/Acrobat TOC (from Markdown headings)
 exec npx -y @marp-team/marp-cli \
   --theme-set "$THEME" \
   --theme zlu \
   --html \
+  --allow-local-files \
+  --pdf-outlines \
+  --pdf-outlines.pages=false \
+  --pdf-outlines.headings \
   "$md" \
   -o "$out"

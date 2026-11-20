@@ -51,6 +51,10 @@ zlu-marp deck.md                 # writes deck.pdf next to the markdown
 zlu-marp deck.md -o out.pdf      # custom output path
 ```
 
+Local images (e.g. `![w:700](figures/plot.png)` next to the markdown) are allowed: the wrapper passes `--allow-local-files`.
+
+PDF bookmarks (Preview sidebar TOC): enabled via `--pdf-outlines` from Markdown headings (`#` / `##`). Open **View → Table of Contents** (or the sidebar TOC button) in Preview.
+
 Override the theme path if needed:
 
 ```bash
@@ -61,9 +65,11 @@ From the blog repo root (raw CLI):
 
 ```bash
 npx @marp-team/marp-cli --theme-set marp/zlu-theme.css --theme zlu --html \
+  --allow-local-files \
   marp/TEMPLATE.md -o marp/TEMPLATE.pdf
 
 npx @marp-team/marp-cli --theme-set marp/zlu-theme.css --theme zlu --html \
+  --allow-local-files \
   your-deck.md -o your-deck.pptx
 ```
 
