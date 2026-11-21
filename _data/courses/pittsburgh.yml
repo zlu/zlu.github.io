@@ -17,15 +17,14 @@ courses:
   meta_description_en: CS445 Pitt tutoring (Compinfo401). Can follow a worked example, cannot start from
     a blank page under time pressure? Bilingual Chinese/English help.
   lead_en: CS445 Compinfo401 at University of Pittsburgh is where invariants, complexity claims, and code
-    must stay aligned under time pressure. The
-    hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
+    must stay aligned under time pressure. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
   lead_cn: 在匹兹堡大学上 CS445，限时下不变量、复杂度结论和代码必须说的是同一件事。
-  overview_en: CS445 Compinfo401 sits in algorithms & data structures. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
+  overview_en: CS445 Compinfo401 sits in algorithms & data structures. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: CS445 是匹兹堡大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -64,4 +63,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: CS445 — sample slides
+    title_cn: CS445 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Asymptotic complexity and comparing candidates
+      cn: 渐近复杂度与方案比较
+    - en: Arrays, lists, trees, heaps, hash tables
+      cn: 数组、链表、树、堆、哈希表
+    - en: Sorting, searching, and graph traversals
+      cn: 排序、搜索与图遍历
+    - en: Greedy, divide-and-conquer, and dynamic programming patterns
+      cn: 贪心、分治与动态规划模式
+    slides:
+    - src: /assets/teach/u-pittsburg/cs445/sample/01-title.webp
+      alt_en: CS445 tutoring title
+      alt_cn: CS445 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-pittsburg/cs445/sample/02-topics.webp
+      alt_en: CS445 tutoring topics
+      alt_cn: CS445 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-pittsburg/cs445/sample/03-stuck.webp
+      alt_en: CS445 tutoring stuck points
+      alt_cn: CS445 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-pittsburg/cs445/sample/04-tutoring.webp
+      alt_en: CS445 tutoring how tutoring runs
+      alt_cn: CS445 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

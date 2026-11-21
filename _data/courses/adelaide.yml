@@ -30,11 +30,11 @@ courses:
   lead_en: >-
     COMP SCI 4023 Event Driven Computing mixes formal models with reactive
     software: finite automata, regex, Moore machines, Petri nets, and FRP.
-    Lectures move fast and Greek letters (δ, Δ̂, ε, Σ) pile up; tutoring turns
-    that fog into steps you can repeat on paper.
+    Lectures move fast and Greek letters (δ, Δ̂, ε, Σ) show up everywhere;
+    tutoring turns them into steps you can repeat on paper.
   lead_cn: >-
-    COMP SCI 4023 Event Driven Computing 把形式模型与反应式软件绑在一起：有限自动机、正则、
-    Moore 机、Petri 网与 FRP。课节奏快，希腊字母（δ、Δ̂、ε、Σ）堆在一起；辅导把这团雾拆成纸上能做的方法。
+    COMP SCI 4023 Event Driven Computing 同时学形式模型和反应式软件：有限自动机、正则、
+    Moore 机、Petri 网与 FRP。课节奏快，希腊字母（δ、Δ̂、ε、Σ）很多；辅导会拆成纸上能一步步做的方法。
   overview_en: >-
     One-to-one tutoring for COMP SCI 4023: lecture catch-up, workshop drills, and
     exam blocks across the syllabus. Sample slides from our concept-review
@@ -59,8 +59,8 @@ courses:
     cn: 课速 + 希腊字母（δ、Δ̂、ε、Σ）——术语比理解跑得快
   - en: Abstract definitions with no mental picture of what the machine is doing
     cn: 抽象定义对不上脑子里的「机器在干什么」
-  - en: Cryptic state / Petri diagrams that look familiar until the exam figure is new
-    cn: 状态图 / Petri 网像暗号：课堂图眼熟，考试换一张就不会读
+  - en: State / Petri diagrams look familiar until the exam figure is new
+    cn: 课上状态图 / Petri 网眼熟，考试换一张就不会读
   - en: DFA / NFA / ε rules mixed up when writing the transition table
     cn: 写转移表时 DFA / NFA / ε 规则搅在一起
   - en: Petri answers by intuition instead of checking the net step by step

@@ -27,16 +27,17 @@ courses:
   meta_description_en: IDBF001 / 31271 UTS tutoring (Database Fundamentals). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: IDBF001 Database Fundamentals at University of Technology Sydney is where one wrong schema
-    or join quietly breaks every later query. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
+    or join quietly breaks every later query. The hard part is turning that arc into a method you can
+    repeat on the next brief — not rereading slides the night before.
   lead_cn: 在悉尼科技大学上 IDBF001，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: IDBF001 Database Fundamentals sits in databases & information systems. There is a weekly arc (about week 7–7)
-    plus assessed work that expects you to apply the same ideas under deadline pressure. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
-  overview_cn: IDBF001 是悉尼科技大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。大约第
-    7–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。
+  overview_en: IDBF001 Database Fundamentals sits in databases & information systems. There is a weekly
+    arc (about week 7–7) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
+  overview_cn: IDBF001 是悉尼科技大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。大约第 7–7
+    周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -78,6 +79,44 @@ courses:
       Design Week 7) 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: IDBF001 — sample slides
+    title_cn: IDBF001 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Reading Assessment Template (Database Design )
+      cn: Reading Assessment Template (Database Design )
+    slides:
+    - src: /assets/teach/uts/idbf001/sample/01-title.webp
+      alt_en: IDBF001 tutoring title
+      alt_cn: IDBF001 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/uts/idbf001/sample/02-topics.webp
+      alt_en: IDBF001 tutoring topics
+      alt_cn: IDBF001 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/uts/idbf001/sample/03-stuck.webp
+      alt_en: IDBF001 tutoring stuck points
+      alt_cn: IDBF001 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/uts/idbf001/sample/04-tutoring.webp
+      alt_en: IDBF001 tutoring how tutoring runs
+      alt_cn: IDBF001 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: INEF001
   title: Networking Fundamentals
   material: INEF001-networking
@@ -97,10 +136,12 @@ courses:
     tools (ping, traceroute, nslookup, and friends), so students see headers, filters, and round trips
     instead of only slide diagrams. Network / socket programming assignments then ask you to build something
     that speaks the protocol (for example a simple TCP web server). Tutoring is bilingual: Chinese for
-    intuition, English for quiz wording, lab write-ups, and code comments.'
+    intuition, English for quiz wording, lab write-ups, and code comments. Sample slides from our tutoring
+    intro deck are below.'
   overview_cn: UTS（Diploma of IT）的 Networking Fundamentals 教材是经典的《计算机网络：自顶向下方法》。 每周 workshop 复习核心概念——时延与吞吐、协议栈、HTTP/DNS/邮件、UDP/TCP、IP
     与路由—— 并练 online quiz 会考的同构题型。Lab 则用 Wireshark 抓包和命令行工具（ping、 traceroute、nslookup 等）把同一套抽象概念落到真实网络上，让你看见首部、过滤器
     和往返，而不只是课件上的图。网络 / Socket 编程作业再要求你写出能说话的协议程序 （例如简单的 TCP Web 服务器）。辅导中英双语：中文讲清直觉，英文对齐 quiz 问法、 Lab 表述与代码用语。
+    下方有我们辅导入门课件的样例页。
   method_note_en: 'Three tracks, same Kurose spine: workshop practice for quiz marks, labs that make the
     abstraction visible, and socket assignments you drive yourself.'
   method_note_cn: 三条线、同一本 Kurose：workshop 练到 quiz 能得分，Lab 把抽象变看得见， Socket 作业由你动手、我在旁边盯卡点。
@@ -155,6 +196,44 @@ courses:
     evidence gets session one onto the real blocker faster.'
   prep_cn: 微信请发学校、课号（INEF001）、截止日期，以及你卡在哪：当周 workshop 题、 Wireshark 截图 / 抓包、命令行输出，或 Socket 作业 brief 与报错原文。证据越具体，
     第一节课越快对着真问题开讲。
+  sample_slides:
+    title_en: INEF001 — sample slides
+    title_cn: INEF001 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Networking layers, packets, and protocols
+      cn: 网络分层、报文与协议
+    slides:
+    - src: /assets/teach/uts/inef001/sample/01-title.webp
+      alt_en: INEF001 tutoring title
+      alt_cn: INEF001 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/uts/inef001/sample/02-topics.webp
+      alt_en: INEF001 tutoring topics
+      alt_cn: INEF001 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/uts/inef001/sample/03-stuck.webp
+      alt_en: INEF001 tutoring stuck points
+      alt_cn: INEF001 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/uts/inef001/sample/04-tutoring.webp
+      alt_en: INEF001 tutoring how tutoring runs
+      alt_cn: INEF001 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - topics:
   - en: Java syntax and console I/O with a text menu
     cn: Java 语法与带文本菜单的控制台输入输出
@@ -243,9 +322,10 @@ courses:
     It is choosing a scenario that fits taught constructs, splitting use-cases into high-cohesion / low-coupling
     tasks for 2–3 people, collaborating on GitHub, then designing classes and integrating with the shared
     menu and collections so the explanation can justify inheritance, interfaces, overload / override,
-    and polymorphism.'
+    and polymorphism. Sample slides from our tutoring intro deck are below.'
   overview_cn: UTS（Diploma of IT）的 Programming 2 接在 IPRO001 后面：继承、接口、枚举、 List / Map，以及一个小组面向对象应用。真正难的往往不是「会不会敲
     Java」， 而是选题是否落在已教内容里、把用例拆成 2–3 人可并行的高内聚低耦合任务、 用 GitHub 协作，再设计类并并入共享菜单与集合，使说明能讲清继承、接口、 重载 / 重写与多态。
+    下方有我们辅导入门课件的样例页。
   title: Programming 2
   stuck:
   - en: Open topic, but the design needs libraries or ideas not yet taught
@@ -262,6 +342,44 @@ courses:
   - '41040'
   meta_description_en: IPRO002 / 41040 UTS tutoring (Programming 2). Open topic, but the design needs
     libraries or ideas not yet taught? Bilingual Chinese/English help.
+  sample_slides:
+    title_en: IPRO002 — sample slides
+    title_cn: IPRO002 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    slides:
+    - src: /assets/teach/uts/ipro002/sample/01-title.webp
+      alt_en: IPRO002 tutoring title
+      alt_cn: IPRO002 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/uts/ipro002/sample/02-topics.webp
+      alt_en: IPRO002 tutoring topics
+      alt_cn: IPRO002 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/uts/ipro002/sample/03-stuck.webp
+      alt_en: IPRO002 tutoring stuck points
+      alt_cn: IPRO002 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/uts/ipro002/sample/04-tutoring.webp
+      alt_en: IPRO002 tutoring how tutoring runs
+      alt_cn: IPRO002 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: IWBS001
   title: Web Systems
   material: IWBS001-web-systems
@@ -269,16 +387,17 @@ courses:
   meta_description_en: IWBS001 UTS tutoring (Web Systems). Weekly lecture arc moves on before last week’s
     method is solid? Bilingual Chinese/English help.
   lead_en: IWBS001 Web Systems at University of Technology Sydney is where front-end and back-end failures
-    mask each other inside one brief. The hard part is turning that arc into a
-    method you can repeat on the next brief — not rereading slides the night before.
+    mask each other inside one brief. The hard part is turning that arc into a method you can repeat on
+    the next brief — not rereading slides the night before.
   lead_cn: 在悉尼科技大学上 IWBS001，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。
-  overview_en: IWBS001 Web Systems sits in web, mobile & hci. There is a weekly arc (about week
-    3–3) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
+  overview_en: IWBS001 Web Systems sits in web, mobile & hci. There is a weekly arc (about week 3–3) plus
+    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
   overview_cn: IWBS001 是悉尼科技大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。大约第
     3–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。
+    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Programming foundations and debugging
     cn: 编程基础与调试
@@ -314,4 +433,42 @@ courses:
     cn: 作业辅导：针对 IWBS001 Assignment 2 Assessment Brief 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: IWBS001 — sample slides
+    title_cn: IWBS001 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    - en: Web / mobile app structure
+      cn: Web / 移动应用结构
+    slides:
+    - src: /assets/teach/uts/iwbs001/sample/01-title.webp
+      alt_en: IWBS001 tutoring title
+      alt_cn: IWBS001 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/uts/iwbs001/sample/02-topics.webp
+      alt_en: IWBS001 tutoring topics
+      alt_cn: IWBS001 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/uts/iwbs001/sample/03-stuck.webp
+      alt_en: IWBS001 tutoring stuck points
+      alt_cn: IWBS001 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/uts/iwbs001/sample/04-tutoring.webp
+      alt_en: IWBS001 tutoring how tutoring runs
+      alt_cn: IWBS001 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

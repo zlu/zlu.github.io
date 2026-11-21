@@ -11,14 +11,15 @@ courses:
   meta_description_en: INHN0012 TUM tutoring (Computer Networking And IT Security). Stuck on lab setup
     unfinished; report lists tools without a clear finding?
   lead_en: INHN0012 Computer Networking And IT Security at Technical University of Munich is where threat
-    models, crypto vocabulary, and lab setup form a terminology wall. Tutoring focuses on methods you can reuse on the next brief.
+    models, crypto vocabulary, and lab setup form a terminology wall. Tutoring focuses on methods you
+    can reuse on the next brief.
   lead_cn: 在慕尼黑工业大学上 INHN0012，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
   overview_en: INHN0012 Computer Networking And IT Security sits in security & privacy. Evidence from
-    Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
   overview_cn: INHN0012 是慕尼黑工业大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -53,6 +54,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: INHN0012 — sample slides
+    title_cn: INHN0012 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Threat models and trust boundaries
+      cn: 威胁模型与信任边界
+    - en: Crypto primitives at course depth (not CTF spoilers)
+      cn: 课业深度的密码学原语（非 CTF 剧透）
+    - en: Web / network attack patterns the syllabus names
+      cn: 大纲点名的 Web / 网络攻击模式
+    - en: Secure coding habits for assignments
+      cn: 作业里的安全编码习惯
+    slides:
+    - src: /assets/teach/tum/inhn0012/sample/01-title.webp
+      alt_en: INHN0012 tutoring title
+      alt_cn: INHN0012 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/tum/inhn0012/sample/02-topics.webp
+      alt_en: INHN0012 tutoring topics
+      alt_cn: INHN0012 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/tum/inhn0012/sample/03-stuck.webp
+      alt_en: INHN0012 tutoring stuck points
+      alt_cn: INHN0012 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/tum/inhn0012/sample/04-tutoring.webp
+      alt_en: INHN0012 tutoring how tutoring runs
+      alt_cn: INHN0012 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Rechnerarchitekture
 - title: Introduction to Computer Architecture
   material: Intro to Computer Architecture
@@ -61,17 +104,18 @@ courses:
   meta_description_en: Introduction to Computer… TUM tutoring. Assignment brief (“0003CA ShortTest1 assignment”)
     makes sense in class, freezes you alone?
   lead_en: Intro to Computer Architecture Introduction to Computer Architecture at Technical University
-    of Munich is where abstractions stack fast and labs fail for reasons that look opaque. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
+    of Munich is where abstractions stack fast and labs fail for reasons that look opaque. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
   lead_cn: 在慕尼黑工业大学上 Intro to Computer Architecture，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: Intro to Computer Architecture Introduction to Computer Architecture sits in systems, networks
-    & architecture. Assessed work expects you to apply lecture
-    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
-    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
-    explicit.
+    & architecture. Assessed work expects you to apply lecture ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring
+    intro deck are below.
   overview_cn: Intro to Computer Architecture 是慕尼黑工业大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统
     / 系统编程、计算机体系结构与组成、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。
+    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -108,5 +152,47 @@ courses:
     cn: 作业辅导：针对 0003CA ShortTest1 assignment, assignment 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Introduction to Computer Architecture — sample slides
+    title_cn: Introduction to Computer Architecture — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Computer architecture and organisation
+      cn: 计算机体系结构与组成
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
+    slides:
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/01-title.webp
+      alt_en: Introduction to Computer Architecture tutoring title
+      alt_cn: Introduction to Computer Architecture 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/02-topics.webp
+      alt_en: Introduction to Computer Architecture tutoring topics
+      alt_cn: Introduction to Computer Architecture 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/03-stuck.webp
+      alt_en: Introduction to Computer Architecture tutoring stuck points
+      alt_cn: Introduction to Computer Architecture 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/04-tutoring.webp
+      alt_en: Introduction to Computer Architecture tutoring how tutoring runs
+      alt_cn: Introduction to Computer Architecture 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Formale Sprache
 ---

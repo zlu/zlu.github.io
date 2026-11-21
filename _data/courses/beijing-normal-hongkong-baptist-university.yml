@@ -8,19 +8,19 @@ courses:
   material: Research and Application of Language Models
   code: Language Models
   theme: machine-learning
-  meta_description_en: Language Models BNBU tutoring (Research And Application Of…). Tool output produced,
-    write-up cannot defend method choice? Bilingual Chinese/English help.
-  lead_en: Language Models Research And Application Of Language Models at Beijing Normal-Hong Kong Baptist
-    University is where method names blur together until pipelines, metrics, and write-ups diverge. Private
-    materials show lecture and practice materials. The hard part is turning that arc into a method you
-    can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在北京师范大学-香港浸会大学联合国际学院上 Language Models，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: Language Models Research And Application Of Language Models sits in machine learning &
-    ai. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit.
-  overview_cn: Language Models 是北京师范大学-香港浸会大学联合国际学院「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着NLP
-    / 语言模型课业这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: Language Models Beijing tutoring (Research And Application Of…). Stuck on NLP /
+    language-model coursework? Bilingual Chinese/English help.
+  lead_en: 'Language Models Research And Application Of Language Models at Beijing Normal-Hong Kong Baptist
+    University. Method names blur together until pipelines, metrics, and write-ups diverge. Tutoring:
+    lecture catch-up, assignment debug, exam drills — methods you can reuse.'
+  lead_cn: 在北京师范大学-香港浸会大学联合国际学院上 Language Models，方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导对着你卡住的步骤练，练到下一份 brief
+    还能自己做。
+  overview_en: 'Language Models Research And Application Of Language Models (Machine learning & AI) at
+    Beijing Normal-Hong Kong Baptist University. Common topics: NLP / language-model coursework. People
+    stall when terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder
+    wants a method the notebook never showed. Sample slides from our tutoring intro deck are below.'
+  overview_cn: Language Models 是北京师范大学-香港浸会大学联合国际学院的「机器学习与人工智能」课，既要真懂，也要能动手。常见内容包括NLP / 语言模型课业。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: NLP / language-model coursework
     cn: NLP / 语言模型课业
@@ -60,4 +60,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Language Models — sample slides
+    title_cn: Language Models — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: NLP / language-model coursework
+      cn: NLP / 语言模型课业
+    - en: Supervised vs unsupervised intuition
+      cn: 监督 / 无监督学习的直觉区分
+    - en: Loss, gradients, and what “training” actually updates
+      cn: 损失、梯度，以及“训练”到底在更新什么
+    - en: Train / validation / test splits and leakage
+      cn: 训练 / 验证 / 测试划分与数据泄漏
+    slides:
+    - src: /assets/teach/beijing-normal-hk-baptist-u/language-models/sample/01-title.webp
+      alt_en: Language Models tutoring title
+      alt_cn: Language Models 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/beijing-normal-hk-baptist-u/language-models/sample/02-topics.webp
+      alt_en: Language Models tutoring topics
+      alt_cn: Language Models 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/beijing-normal-hk-baptist-u/language-models/sample/03-stuck.webp
+      alt_en: Language Models tutoring stuck points
+      alt_cn: Language Models 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/beijing-normal-hk-baptist-u/language-models/sample/04-tutoring.webp
+      alt_en: Language Models tutoring how tutoring runs
+      alt_cn: Language Models 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

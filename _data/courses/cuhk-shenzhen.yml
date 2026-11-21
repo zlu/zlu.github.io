@@ -8,21 +8,20 @@ courses:
   material: dda3020-machine-learning
   code: DDA3020
   theme: machine-learning
-  meta_description_en: DDA3020 CUHK-Shenzhen tutoring (Dda3020 Machine Learning). Tool output produced,
-    write-up cannot defend method choice? Bilingual Chinese/English help.
-  lead_en: DDA3020 Dda3020 Machine Learning at The Chinese University of Hong Kong, Shenzhen is where
-    method names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you can repeat on
-    the next brief — not rereading slides the night before.
-  lead_cn: 在香港中文大学（深圳）上 DDA3020，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: DDA3020 Dda3020 Machine Learning sits in machine learning & ai. Evidence from the course
-    folder points to Data wrangling / analytics tables; Neural nets / deep learning / AI; ML pipelines,
-    features, and model choice; Networking layers, packets, and protocols. Assessed work expects you to
-    apply lecture ideas under deadline pressure. Students stall when terminology outruns notes, when a
-    demo makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
-    never made explicit.
-  overview_cn: DDA3020 是香港中文大学（深圳）「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、神经网络
-    / 深度学习 / AI、ML 流水线、特征与模型选择这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。
+  meta_description_en: DDA3020 The tutoring (Dda3020 Machine Learning). Stuck on assignment briefs such
+    as DDA3020 Lecture 12 Overfitting and Bias ?
+  lead_en: 'DDA3020 Dda3020 Machine Learning at The Chinese University of Hong Kong, Shenzhen. Method
+    names blur together until pipelines, metrics, and write-ups diverge. Tutoring: lecture catch-up, assignment
+    debug, exam drills — methods you can reuse.'
+  lead_cn: 在香港中文大学（深圳）上 DDA3020，方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'DDA3020 Dda3020 Machine Learning (Machine learning & AI) at The Chinese University of
+    Hong Kong, Shenzhen. Common topics: Data wrangling / analytics tables; Neural nets / deep learning
+    / AI; ML pipelines, features, and model choice; Networking layers, packets, and protocols. Assessed
+    work expects you to apply the same ideas under deadline. People stall when terms outrun notes, when
+    a class demo does not replay alone, or when the write-up / autograder wants a method the notebook
+    never showed. Sample slides from our tutoring intro deck are below.'
+  overview_cn: DDA3020 是香港中文大学（深圳）的「机器学习与人工智能」课，既要真懂，也要能动手。常见内容包括数据清洗 / 分析表、神经网络 / 深度学习 / AI、ML 流水线、特征与模型选择。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -63,4 +62,42 @@ courses:
       to Unsupervised Learning Ann 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: DDA3020 — sample slides
+    title_cn: DDA3020 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Neural nets / deep learning / AI
+      cn: 神经网络 / 深度学习 / AI
+    - en: Networking layers, packets, and protocols
+      cn: 网络分层、报文与协议
+    slides:
+    - src: /assets/teach/cuhk-sz/dda3020/sample/01-title.webp
+      alt_en: DDA3020 tutoring title
+      alt_cn: DDA3020 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/cuhk-sz/dda3020/sample/02-topics.webp
+      alt_en: DDA3020 tutoring topics
+      alt_cn: DDA3020 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/cuhk-sz/dda3020/sample/03-stuck.webp
+      alt_en: DDA3020 tutoring stuck points
+      alt_cn: DDA3020 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/cuhk-sz/dda3020/sample/04-tutoring.webp
+      alt_en: DDA3020 tutoring how tutoring runs
+      alt_cn: DDA3020 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

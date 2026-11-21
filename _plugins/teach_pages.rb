@@ -508,27 +508,27 @@ module Jekyll
         polish_cn(t["cn"]) if t.is_a?(Hash)
       }.first(3)
 
-      lead_en = "#{label} at #{university} is hard for many Chinese students abroad: " \
-                "#{hard['en']}. Tutoring turns that fog into steps you can repeat."
+      lead_en = "#{label} at #{university}. #{hard['en'].sub(/\A./) { |c| c.upcase }}. " \
+                "One-to-one tutoring: catch up on lectures, debug assignments, drill exam question shapes."
       opener = THEME_LEAD_CN[theme_id.to_s] || THEME_LEAD_CN["general"]
       lead_cn = polish_cn(
         "#{opener}在#{school}上 #{cn_course}，#{hard['cn']}。" \
-        "一对一不会只给你更长的笔记，而是先把卡点拆开，按你跟得上的节奏把方法练熟，练到作业和考试能自己下手。"
+        "一对一先把你卡住的点拆开，按你的节奏练方法，练到作业和考试能自己下手。"
       )
 
-      overview_en = "#{label} sits in #{theme_label_en.to_s.downcase}. "
-      overview_en += "Typical focus includes #{topic_ens.join('; ')}. " if topic_ens.any?
-      overview_en += "The pain is rarely never having seen the topic; it is terminology " \
-                     "under time pressure, symbols that do not stick, and questions that look " \
-                     "cryptic until you have a method."
+      overview_en = "#{label} (#{theme_label_en}) at #{university}. "
+      overview_en += "Common topics: #{topic_ens.join('; ')}. " if topic_ens.any?
+      overview_en += "People usually get stuck when terms pile up too fast, " \
+                     "when a class demo does not replay alone, or when the brief asks " \
+                     "for a method that was never written down."
 
-      overview_cn = "#{cn_course} 是 #{school}「#{theme_label_cn}」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。"
+      overview_cn = "#{cn_course} 是#{school}的「#{theme_label_cn}」课，既要真懂，也要能动手。"
       if topic_cns.any?
-        overview_cn += "学期里常会绕着#{topic_cns.join('、')}这些点转。"
+        overview_cn += "常见内容包括#{topic_cns.join('、')}。"
       end
-      overview_cn += "留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、符号记不牢，" \
-                     "作业和考试一换问法就不知道从哪下笔。" \
-                     "辅导里会先帮你把方法立住，再对着你手里的题目练到能自己写、自己改。"
+      overview_cn += "很多人不是完全没学过，而是课上术语太快、自己复不出来，" \
+                     "作业一换问法就不知道从哪开始。" \
+                     "辅导会先把方法讲清楚，再对着你手里的题练到能自己写、自己改。"
       overview_cn = polish_cn(overview_cn)
 
       stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) }.map do |t|

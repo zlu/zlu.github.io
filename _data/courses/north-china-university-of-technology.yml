@@ -11,15 +11,17 @@ courses:
   meta_description_en: MA2624 NCUT tutoring (Machine Learning for Artificial…). Assignment brief (“MA2634
     Perceptrons”) makes sense in class, freezes you alone?
   lead_en: MA2624 Machine Learning for Artificial Intelligence at North China University of Technology
-    is where method names blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+    is where method names blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses
+    on methods you can reuse on the next brief.
   lead_cn: 在北方工业大学上 MA2624，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: MA2624 Machine Learning for Artificial Intelligence sits in machine learning & ai. Evidence
-    from Assessed
-    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
+    from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
   overview_cn: MA2624 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+    下方有我们辅导入门课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -61,6 +63,48 @@ courses:
     cn: 作业辅导：针对 MA2634 Perceptrons, MA2634 Matricies 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides: &id001
+    title_en: MA2624 — sample slides
+    title_cn: MA2624 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    - en: Supervised vs unsupervised intuition
+      cn: 监督 / 无监督学习的直觉区分
+    - en: Loss, gradients, and what “training” actually updates
+      cn: 损失、梯度，以及“训练”到底在更新什么
+    - en: Train / validation / test splits and leakage
+      cn: 训练 / 验证 / 测试划分与数据泄漏
+    slides:
+    - src: /assets/teach/north-china-university-of-technology/ma2624/sample/01-title.webp
+      alt_en: MA2624 tutoring title
+      alt_cn: MA2624 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/north-china-university-of-technology/ma2624/sample/02-topics.webp
+      alt_en: MA2624 tutoring topics
+      alt_cn: MA2624 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/north-china-university-of-technology/ma2624/sample/03-stuck.webp
+      alt_en: MA2624 tutoring stuck points
+      alt_cn: MA2624 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/north-china-university-of-technology/ma2624/sample/04-tutoring.webp
+      alt_en: MA2624 tutoring how tutoring runs
+      alt_cn: MA2624 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: MA2623
   title: Linear and Abstract Algebra
   material: MA2623-linear-abstract-algebra
@@ -68,16 +112,15 @@ courses:
   meta_description_en: MA2623 NCUT tutoring (Linear and Abstract Algebra). Assignment brief (“MA2623 ES
     08”) makes sense in class, freezes you alone?
   lead_en: MA2623 Linear Abstract Algebra at North China University of Technology is where lecture speed
-    and dense vocabulary outrun note-taking.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
+    and dense vocabulary outrun note-taking. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
   lead_cn: 在北方工业大学上 MA2623，课速一快、术语一密，笔记一断档后面就更难补。
   overview_en: MA2623 Linear Abstract Algebra sits in computer science coursework. Assessed work expects
     you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit.
+    the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: MA2623 是北方工业大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Assignment briefs mapped to a step-by-step plan
     cn: 把作业 brief 映射成可执行步骤
@@ -117,6 +160,48 @@ courses:
     cn: 作业辅导：针对 MA2623 ES 08, MA2623 ES 09 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: MA2623 — sample slides
+    title_cn: MA2623 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
+    - en: Discrete math proofs at coursework pace
+      cn: 课业节奏下的离散数学证明
+    slides:
+    - src: /assets/teach/north-china-university-of-technology/ma2623/sample/01-title.webp
+      alt_en: MA2623 tutoring title
+      alt_cn: MA2623 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/north-china-university-of-technology/ma2623/sample/02-topics.webp
+      alt_en: MA2623 tutoring topics
+      alt_cn: MA2623 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/north-china-university-of-technology/ma2623/sample/03-stuck.webp
+      alt_en: MA2623 tutoring stuck points
+      alt_cn: MA2623 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/north-china-university-of-technology/ma2623/sample/04-tutoring.webp
+      alt_en: MA2623 tutoring how tutoring runs
+      alt_cn: MA2623 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: MA2634
   title: Machine Learning for AI
   material: MA2634-ML-for-AI
@@ -124,14 +209,16 @@ courses:
   meta_description_en: MA2634 NCUT tutoring (Machine Learning for AI). Assignment brief (“MA2634 Perceptrons”)
     makes sense in class, freezes you alone?
   lead_en: MA2634 ML For AI at North China University of Technology is where method names blur together
-    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the
+    next brief.
   lead_cn: 在北方工业大学上 MA2634，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: MA2634 ML For AI sits in machine learning & ai. Assessed work expects you to apply lecture
     ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
     in class but not alone, or when the write-up / autograder asks for a method the notebook never made
-    explicit.
+    explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: MA2634 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+    下方有我们辅导入门课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -173,4 +260,10 @@ courses:
     cn: 作业辅导：针对 MA2634 Perceptrons, MA2634 Matricies 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides: *id001
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

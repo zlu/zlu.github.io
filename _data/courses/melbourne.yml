@@ -10,10 +10,9 @@ courses:
   title: Foundations of Algorithms
   material: comp10002
   theme: algorithms
-  lead_cn: 在墨尔本大学上 COMP10002，限时下不变量、复杂度结论和代码必须说的是同一件事。
-  overview_cn: COMP10002 是墨尔本大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统 / 系统编程这些点转。大约第
-    1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。
+  lead_cn: 在墨尔本大学上 COMP10002，限时下不变量、复杂度结论和代码必须说的是同一件事。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_cn: COMP10002 是墨尔本大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括操作系统 / 系统编程。大约第 1–12 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -56,15 +55,58 @@ courses:
     cn: 写代码前先写不变量与递推
   - en: Dry-run on a small example, then generalise
     cn: 先在小例子上手推，再一般化
-  meta_description_en: COMP10002 Melbourne tutoring (Foundations of Algorithms). Weekly lecture arc moves
-    on before last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: COMP10002 Foundations of Algorithms at University of Melbourne is where invariants, complexity
-    claims, and code must stay aligned under time pressure. Tutoring focuses on methods you can reuse on the next brief.
-  overview_en: COMP10002 Foundations of Algorithms sits in algorithms & data structures. Evidence from
-    There is a weekly arc (about week 1–12) plus
-    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit.
+  meta_description_en: COMP10002 University tutoring (Foundations of Algorithms). Stuck on OS / systems
+    programming? Bilingual Chinese/English help.
+  lead_en: 'COMP10002 Foundations of Algorithms at University of Melbourne. Invariants, complexity claims,
+    and code must stay aligned under time pressure. Tutoring: lecture catch-up, assignment debug, exam
+    drills — methods you can reuse.'
+  overview_en: 'COMP10002 Foundations of Algorithms (Algorithms & data structures) at University of Melbourne.
+    Common topics: OS / systems programming. Weekly arc about week 1–12, plus assessed work under deadline.
+    People stall when terms outrun notes, when a class demo does not replay alone, or when the write-up
+    / autograder wants a method the notebook never showed. Sample slides from our tutoring intro deck
+    are below.'
+  sample_slides: &id001
+    title_en: COMP1000 — sample slides
+    title_cn: COMP1000 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: OS / systems programming
+      cn: 操作系统 / 系统编程
+    - en: Download systems programming
+      cn: Download systems programming
+    - en: Lecture 1 Presentation Slides COMP10002 2025s1
+      cn: Lecture 1 Presentation Slides COMP10002 2025s1
+    - en: Lecture 2 Presentation Slides COMP10002 2025s1
+      cn: Lecture 2 Presentation Slides COMP10002 2025s1
+    slides:
+    - src: /assets/teach/u-melborne/comp1000/sample/01-title.webp
+      alt_en: COMP1000 tutoring title
+      alt_cn: COMP1000 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-melborne/comp1000/sample/02-topics.webp
+      alt_en: COMP1000 tutoring topics
+      alt_cn: COMP1000 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-melborne/comp1000/sample/03-stuck.webp
+      alt_en: COMP1000 tutoring stuck points
+      alt_cn: COMP1000 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-melborne/comp1000/sample/04-tutoring.webp
+      alt_en: COMP1000 tutoring how tutoring runs
+      alt_cn: COMP1000 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMP20003
   title: Algorithms and Data Structures
 - code: COMP20007
@@ -95,21 +137,18 @@ courses:
   title: 0 Advanced Db
   material: comp90050-advanced-db
   theme: databases
-  meta_description_en: COMP9005 Melbourne tutoring (0 Advanced Db). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: COMP9005 0 Advanced Db at University of Melbourne is where one wrong schema or join quietly
-    breaks every later query. The hard
-    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
-    night before.
-  lead_cn: 在墨尔本大学上 COMP9005，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: COMP9005 0 Advanced Db sits in databases & information systems. Evidence from the course
-    folder points to SQL, schema design, and databases; OS / systems programming. There is a weekly arc
-    (about week 1–9) plus assessed work that expects you to apply the same ideas under deadline pressure.
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: COMP9005 是墨尔本大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、操作系统
-    / 系统编程这些点转。大约第 1–9 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。
+  meta_description_en: COMP9005 University tutoring (0 Advanced Db). Stuck on SQL, schema design, and
+    databases? Bilingual Chinese/English help.
+  lead_en: 'COMP9005 0 Advanced Db at University of Melbourne. One wrong schema or join quietly breaks
+    every later query. Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse.'
+  lead_cn: 在墨尔本大学上 COMP9005，Schema 或 join 偏一点，后面查询会整条链一起歪。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'COMP9005 0 Advanced Db (Databases & information systems) at University of Melbourne. Common
+    topics: SQL, schema design, and databases; OS / systems programming. Weekly arc about week 1–9, plus
+    assessed work under deadline. People stall when terms outrun notes, when a class demo does not replay
+    alone, or when the write-up / autograder wants a method the notebook never showed. Sample slides from
+    our tutoring intro deck are below.'
+  overview_cn: COMP9005 是墨尔本大学的「数据库与信息系统」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、操作系统 / 系统编程。大约第 1–9 周有连续周课，作业会要求你在
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -152,22 +191,63 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMP9005 — sample slides
+    title_cn: COMP9005 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: comp90050 advanced database systems lecture 2 notes
+      cn: comp90050 advanced database systems lecture 2 notes
+    - en: comp90050 advanced database systems lecture notes
+      cn: comp90050 advanced database systems lecture notes
+    - en: comp90050 advanced database systems lecture notes on fault t
+      cn: comp90050 advanced database systems lecture notes on fault t
+    slides:
+    - src: /assets/teach/u-melborne/comp9005/sample/01-title.webp
+      alt_en: COMP9005 tutoring title
+      alt_cn: COMP9005 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-melborne/comp9005/sample/02-topics.webp
+      alt_en: COMP9005 tutoring topics
+      alt_cn: COMP9005 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-melborne/comp9005/sample/03-stuck.webp
+      alt_en: COMP9005 tutoring stuck points
+      alt_cn: COMP9005 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-melborne/comp9005/sample/04-tutoring.webp
+      alt_en: COMP9005 tutoring how tutoring runs
+      alt_cn: COMP9005 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Mathematics (Term 1)
   material: math-Term 1
   code: MAST Term1
   theme: math-for-cs
-  meta_description_en: MAST Term1 Melbourne tutoring (Mathematics (Term 1)). Can follow a worked example,
-    cannot start from a blank page under time pressure?
-  lead_en: MAST Term1 Mathematics (Term 1) at University of Melbourne is where symbols and proof phrasing
-    outrun calculation skill. The hard part is
-    turning that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在墨尔本大学上 MAST Term1，符号与证明表述往往比计算本身更劝退。
-  overview_en: MAST Term1 Mathematics (Term 1) sits in math for computer science. Evidence from the course
-    folder points to Math foundations and proof habits. Students stall when terminology outruns notes,
-    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit.
-  overview_cn: MAST Term1 是墨尔本大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: MAST Term1 University tutoring (Mathematics (Term 1)). Stuck on Math foundations
+    and proof habits? Bilingual Chinese/English help.
+  lead_en: 'MAST Term1 Mathematics (Term 1) at University of Melbourne. Symbols and proof phrasing outrun
+    calculation skill. Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse.'
+  lead_cn: 在墨尔本大学上 MAST Term1，符号与证明表述往往比计算本身更劝退。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'MAST Term1 Mathematics (Term 1) (Math for computer science) at University of Melbourne.
+    Common topics: Math foundations and proof habits. People stall when terms outrun notes, when a class
+    demo does not replay alone, or when the write-up / autograder wants a method the notebook never showed.
+    Sample slides from our tutoring intro deck are below.'
+  overview_cn: MAST Term1 是墨尔本大学的「计算机数学基础」课，既要真懂，也要能动手。常见内容包括数学基础与证明习惯。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
@@ -206,23 +286,65 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: MAST Term1 — sample slides
+    title_cn: MAST Term1 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
+    slides:
+    - src: /assets/teach/u-melborne/mast-term1/sample/01-title.webp
+      alt_en: MAST Term1 tutoring title
+      alt_cn: MAST Term1 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-melborne/mast-term1/sample/02-topics.webp
+      alt_en: MAST Term1 tutoring topics
+      alt_cn: MAST Term1 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-melborne/mast-term1/sample/03-stuck.webp
+      alt_en: MAST Term1 tutoring stuck points
+      alt_cn: MAST Term1 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-melborne/mast-term1/sample/04-tutoring.webp
+      alt_en: MAST Term1 tutoring how tutoring runs
+      alt_cn: MAST Term1 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMP1000
   title: Foundations of Algorithms
   material: comp10002
   theme: algorithms
-  meta_description_en: COMP1000 / COMP10002 Melbourne tutoring (Foundations of Algorithms). Weekly lecture
-    arc moves on before last week’s method is solid?
-  lead_en: COMP1000 Foundations of Algorithms at University of Melbourne is where invariants, complexity
-    claims, and code must stay aligned under time pressure. Tutoring focuses on methods you can reuse on the next brief.
-  lead_cn: 在墨尔本大学上 COMP1000，限时下不变量、复杂度结论和代码必须说的是同一件事。
-  overview_en: COMP1000 Foundations of Algorithms sits in algorithms & data structures. Evidence from
-    There is a weekly arc (about week 1–12) plus
-    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit.
-  overview_cn: COMP1000 是墨尔本大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统 / 系统编程这些点转。大约第 1–12
-    周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。
+  meta_description_en: COMP1000 University tutoring (Foundations of Algorithms). Stuck on OS / systems
+    programming? Bilingual Chinese/English help.
+  lead_en: 'COMP1000 Foundations of Algorithms at University of Melbourne. Invariants, complexity claims,
+    and code must stay aligned under time pressure. Tutoring: lecture catch-up, assignment debug, exam
+    drills — methods you can reuse.'
+  lead_cn: 在墨尔本大学上 COMP1000，限时下不变量、复杂度结论和代码必须说的是同一件事。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'COMP1000 Foundations of Algorithms (Algorithms & data structures) at University of Melbourne.
+    Common topics: OS / systems programming. Weekly arc about week 1–12, plus assessed work under deadline.
+    People stall when terms outrun notes, when a class demo does not replay alone, or when the write-up
+    / autograder wants a method the notebook never showed. Sample slides from our tutoring intro deck
+    are below.'
+  overview_cn: COMP1000 是墨尔本大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括操作系统 / 系统编程。大约第 1–12 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -267,6 +389,12 @@ courses:
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   aliases:
   - COMP10002
+  sample_slides: *id001
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMP2000
   title: COMP 5 Intro. To Numerical Computation In C
   material: COMP20005 - Intro. to Numerical Computation in C
@@ -274,16 +402,16 @@ courses:
   meta_description_en: COMP2000 Melbourne tutoring (COMP 5 Intro. To Numerical…). Can follow a worked
     example, cannot start from a blank page under time pressure?
   lead_en: COMP2000 COMP 5 Intro. To Numerical Computation In C at University of Melbourne is where symbols
-    and proof phrasing outrun calculation skill. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
+    and proof phrasing outrun calculation skill. The hard part is turning that arc into a method you can
+    repeat on the next brief — not rereading slides the night before.
   lead_cn: 在墨尔本大学上 COMP2000，符号与证明表述往往比计算本身更劝退。
   overview_en: COMP2000 COMP 5 Intro. To Numerical Computation In C sits in math for computer science.
-    Assessed
-    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: COMP2000 是墨尔本大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+    下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -325,4 +453,42 @@ courses:
       Search in C 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMP2000 — sample slides
+    title_cn: COMP2000 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    slides:
+    - src: /assets/teach/u-melborne/comp2000/sample/01-title.webp
+      alt_en: COMP2000 tutoring title
+      alt_cn: COMP2000 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-melborne/comp2000/sample/02-topics.webp
+      alt_en: COMP2000 tutoring topics
+      alt_cn: COMP2000 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-melborne/comp2000/sample/03-stuck.webp
+      alt_en: COMP2000 tutoring stuck points
+      alt_cn: COMP2000 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-melborne/comp2000/sample/04-tutoring.webp
+      alt_en: COMP2000 tutoring how tutoring runs
+      alt_cn: COMP2000 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

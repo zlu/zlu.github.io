@@ -15,9 +15,9 @@ courses:
   overview_en: Introduction to Programming covers Python fundamentals through workshops, quizzes, and
     coding tasks (control flow, functions, strings, simple algorithms such as classical ciphers). Students
     get stuck when the task wording is unclear, when errors look random, or when a solution “almost works”
-    but fails hidden cases.
+    but fails hidden cases. Sample slides from our tutoring intro deck are below.
   overview_cn: Introduction to Programming 用 workshop、quiz 与编程任务带你入门 Python（控制流、函数、 字符串，以及恺撒 / 维吉尼亚一类经典密码练习）。真正卡人的是题意读不清、报错像随机事件，
-    或代码「差不多能跑」却过不了隐藏测例。
+    或代码「差不多能跑」却过不了隐藏测例。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Python basics — variables, control flow, functions
     cn: Python 基础：变量、控制流、函数
@@ -57,33 +57,67 @@ courses:
     cn: Quiz / 考前突击：限时练控制流、字符串，以及在压力下读懂报错。
   meta_description_en: FIT1045 Monash tutoring (Introduction to Programming). Assignment text makes sense
     in class, then freezes you alone at the keyboard? Bilingual help.
+  sample_slides:
+    title_en: FIT1045 — sample slides
+    title_cn: FIT1045 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: W1 Pre Class
+      cn: W1 Pre Class
+    - en: W1 Workshop
+      cn: W1 Workshop
+    - en: W2 Pre Class
+      cn: W2 Pre Class
+    - en: W3 Pre Class Part 1 2
+      cn: W3 Pre Class Part 1 2
+    slides:
+    - src: /assets/teach/monash/fit1045/sample/01-title.webp
+      alt_en: FIT1045 tutoring title
+      alt_cn: FIT1045 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/fit1045/sample/02-topics.webp
+      alt_en: FIT1045 tutoring topics
+      alt_cn: FIT1045 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/monash/fit1045/sample/03-stuck.webp
+      alt_en: FIT1045 tutoring stuck points
+      alt_cn: FIT1045 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/monash/fit1045/sample/04-tutoring.webp
+      alt_en: FIT1045 tutoring how tutoring runs
+      alt_cn: FIT1045 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: FIT5196
   title: Data Wrangling
   material: FIT5196-datawrangling
   theme: data-science
-  meta_description_en: >-
-    FIT5196 Monash Data Wrangling tutoring. A1 text parse / vocab / countvec,
-    A2 dirty·outlier·missing cleansing, bilingual pandas notebooks.
-  lead_en: >-
-    FIT5196 Data Wrangling at Monash is about making raw data usable in Python
-    (mostly pandas notebooks): parse messy files, assess quality, clean, integrate,
-    and leave a method trail. A1-style work is semi-structured text → tidy tables
-    plus vocab / count vectors. A2-style work is dirty / outlier / missing tables
-    with EDA before each fix. Markers care that the pipeline re-runs cleanly — not
-    that one lucky cell once worked.
-  lead_cn: >-
-    Monash 的 FIT5196 Data Wrangling 主要练一件事：用 Python（多半是 pandas notebook）把脏数据做成能分析的数据。
-    流程就是解析、检查质量、清洗、整合，再把做法写清楚。A1 常见是半结构化文本抽字段，再做 vocab / count vector；
-    A2 常见是 dirty / outlier / missing 三张表，要先 EDA 再改。改卷看的是能不能干净复跑，不是某次碰巧跑通。
-  overview_en: >-
-    Unit objectives line up with parse → quality → clean → integrate → document.
-    Group assessments often mix Excel + mis-structured text dumps; wrong group zip
-    means zero output marks. Sample slides below are from our FIT5196 tutoring deck
-    (not university lecture notes). Bring your brief, rubric, and notebook when you book.
-  overview_cn: >-
-    课纲目标对应：解析 → 质量检查 → 清洗 → 整合 → 写清过程。小组作业常混 Excel 和半结构化文本；
-    输错小组 zip，输出分经常直接是零。下面样例页来自我们的 FIT5196 辅导课件（不是学校讲义）。
-    预约时请带上你自己的 brief、评分表和 notebook。
+  meta_description_en: FIT5196 Monash Data Wrangling tutoring. A1 text parse / vocab / countvec, A2 dirty·outlier·missing
+    cleansing, bilingual pandas notebooks.
+  lead_en: 'FIT5196 Data Wrangling at Monash is about making raw data usable in Python (mostly pandas
+    notebooks): parse messy files, assess quality, clean, integrate, and leave a method trail. A1-style
+    work is semi-structured text → tidy tables plus vocab / count vectors. A2-style work is dirty / outlier
+    / missing tables with EDA before each fix. Markers care that the pipeline re-runs cleanly — not that
+    one lucky cell once worked.'
+  lead_cn: Monash 的 FIT5196 Data Wrangling 主要练一件事：用 Python（多半是 pandas notebook）把脏数据做成能分析的数据。 流程就是解析、检查质量、清洗、整合，再把做法写清楚。A1
+    常见是半结构化文本抽字段，再做 vocab / count vector； A2 常见是 dirty / outlier / missing 三张表，要先 EDA 再改。改卷看的是能不能干净复跑，不是某次碰巧跑通。
+  overview_en: Unit objectives line up with parse → quality → clean → integrate → document. Group assessments
+    often mix Excel + mis-structured text dumps; wrong group zip means zero output marks. Sample slides
+    below are from our FIT5196 tutoring deck (not university lecture notes). Bring your brief, rubric,
+    and notebook when you book.
+  overview_cn: 课纲目标对应：解析 → 质量检查 → 清洗 → 整合 → 写清过程。小组作业常混 Excel 和半结构化文本； 输错小组 zip，输出分经常直接是零。下面样例页来自我们的 FIT5196
+    辅导课件（不是学校讲义）。 预约时请带上你自己的 brief、评分表和 notebook。
   topics:
   - en: Semi-structured text / Excel parse into JSON and CSV schemas
     cn: 半结构化文本 / Excel 解析成 JSON、CSV 规定格式
@@ -121,11 +155,9 @@ courses:
   faq:
   - q_en: What does FIT5196 cover?
     q_cn: FIT5196 学什么？
-    a_en: >-
-      Data wrangling in Python: parsing semi-structured files, quality assessment,
-      cleansing, integration, and documenting the process for assessment.
-    a_cn: >-
-      用 Python 做数据整理：解析半结构化文件、检查质量、清洗、整合，并把过程写清楚交差。
+    a_en: 'Data wrangling in Python: parsing semi-structured files, quality assessment, cleansing, integration,
+      and documenting the process for assessment.'
+    a_cn: 用 Python 做数据整理：解析半结构化文件、检查质量、清洗、整合，并把过程写清楚交差。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our FIT5196 tutoring deck are on this page.
@@ -133,11 +165,9 @@ courses:
   sample_slides:
     title_en: FIT5196 Data Wrangling — sample slides
     title_cn: FIT5196 Data Wrangling — 辅导课件样例
-    lead_en: >-
-      Title, roadmap, unit arc, A1 parse checklist, vocab / countvec, and A2 EDA-first
-      cleansing from our tutoring deck.
-    lead_cn: >-
-      我们辅导课件里的封面、路线图、课程主线、A1 解析清单、vocab / countvec，以及 A2 先 EDA 再清洗。
+    lead_en: Title, roadmap, unit arc, A1 parse checklist, vocab / countvec, and A2 EDA-first cleansing
+      from our tutoring deck.
+    lead_cn: 我们辅导课件里的封面、路线图、课程主线、A1 解析清单、vocab / countvec，以及 A2 先 EDA 再清洗。
     bullets:
     - en: Parse → quality → clean → integrate → document
       cn: 解析 → 质量 → 清洗 → 整合 → 写清过程
@@ -186,29 +216,21 @@ courses:
   - ETX5500
   material: etx3500-5500-High-Dimensional-Data-Analysis
   theme: data-science
-  meta_description_en: >-
-    ETX3500 / ETX5500 Monash High Dimensional Data Analysis tutoring.
-    Cluster, PCA, MDS, factor analysis in R; bilingual R Markdown help.
-  lead_en: >-
-    ETX3500 / ETX5500 High Dimensional Data Analysis (Monash Business / EBS) is
-    multivariate methods for survey-style data with many variables: cluster analysis;
-    PCA, correspondence analysis, and multidimensional scaling for dimension reduction;
-    factor analysis for explaining outcomes. Early weeks also lock in R, tidy data,
-    ggplot, and R Markdown so exercises and the group report can knit.
-  lead_cn: >-
-    Monash 的 ETX3500 / ETX5500 High Dimensional Data Analysis 学的是多变量方法，适合问卷这类变量很多的数据：
-    聚类；PCA、对应分析、多维尺度这类降维；因子分析用来解释结果。前几周还会把 R、tidy data、ggplot、
-    R Markdown 用熟，后面练习和小组报告才能顺利 knit。
-  overview_en: >-
-    Assessment typically mixes short individual exercises, a quiz, a group analysis
-    report, and a final exam. Seminars mix theory and practice; tutorials are R
-    hands-on. Students stall when R Markdown will not knit, when they run a method
-    without saying what changed in the table, or when the write-up cannot defend
-    method choice (cluster vs PCA vs factor).
-  overview_cn: >-
-    考核一般是个人短练习、小测、小组分析报告和期末考试。Seminar 讲理论和操作，tutorial 主要在 R 里练。
-    常见卡住：R Markdown knit 不出来；方法跑了但说不清表里发生了什么；报告里选 cluster / PCA / factor
-    却讲不出理由。
+  meta_description_en: ETX3500 / ETX5500 Monash High Dimensional Data Analysis tutoring. Cluster, PCA,
+    MDS, factor analysis in R; bilingual R Markdown help.
+  lead_en: 'ETX3500 / ETX5500 High Dimensional Data Analysis (Monash Business / EBS) is multivariate methods
+    for survey-style data with many variables: cluster analysis; PCA, correspondence analysis, and multidimensional
+    scaling for dimension reduction; factor analysis for explaining outcomes. Early weeks also lock in
+    R, tidy data, ggplot, and R Markdown so exercises and the group report can knit.'
+  lead_cn: Monash 的 ETX3500 / ETX5500 High Dimensional Data Analysis 学的是多变量方法，适合问卷这类变量很多的数据： 聚类；PCA、对应分析、多维尺度这类降维；因子分析用来解释结果。前几周还会把
+    R、tidy data、ggplot、 R Markdown 用熟，后面练习和小组报告才能顺利 knit。
+  overview_en: Assessment typically mixes short individual exercises, a quiz, a group analysis report,
+    and a final exam. Seminars mix theory and practice; tutorials are R hands-on. Students stall when
+    R Markdown will not knit, when they run a method without saying what changed in the table, or when
+    the write-up cannot defend method choice (cluster vs PCA vs factor). Sample slides from our tutoring
+    intro deck are below.
+  overview_cn: 考核一般是个人短练习、小测、小组分析报告和期末考试。Seminar 讲理论和操作，tutorial 主要在 R 里练。 常见卡住：R Markdown knit 不出来；方法跑了但说不清表里发生了什么；报告里选
+    cluster / PCA / factor 却讲不出理由。 下方有我们辅导入门课件的样例页。
   topics:
   - en: R, tidyverse, ggplot, and knit-able R Markdown
     cn: R、tidyverse、ggplot，以及能 knit 的 R Markdown
@@ -243,32 +265,65 @@ courses:
     cn: 练习 / tutorial：你操作 R；我帮你看方法选择和能不能 knit。
   - en: 'Exam / quiz prep: short drills on when to use cluster, PCA, MDS, factor analysis.'
     cn: 考前：短练什么时候用聚类、PCA、MDS、因子分析。
+  sample_slides:
+    title_en: ETX3500 — sample slides
+    title_cn: ETX3500 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Pandas / dplyr style transforms and joins
+      cn: Pandas / dplyr 风格的变换与 join
+    - en: EDA, distributions, and “what question am I answering?”
+      cn: 探索性分析、分布，以及“我在回答什么问题”
+    - en: Feature hygiene before modelling
+      cn: 建模前的特征卫生
+    - en: Visualisation that supports a claim
+      cn: 能支撑结论的可视化
+    slides:
+    - src: /assets/teach/monash/etx3500/sample/01-title.webp
+      alt_en: ETX3500 tutoring title
+      alt_cn: ETX3500 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/etx3500/sample/02-topics.webp
+      alt_en: ETX3500 tutoring topics
+      alt_cn: ETX3500 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/monash/etx3500/sample/03-stuck.webp
+      alt_en: ETX3500 tutoring stuck points
+      alt_cn: ETX3500 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/monash/etx3500/sample/04-tutoring.webp
+      alt_en: ETX3500 tutoring how tutoring runs
+      alt_cn: ETX3500 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: FIT2102
   title: Programming Paradigms
   theme: programming
-  meta_description_en: >-
-    FIT2102 Monash Programming Paradigms tutoring. Imperative / OOP / functional /
+  meta_description_en: FIT2102 Monash Programming Paradigms tutoring. Imperative / OOP / functional /
     declarative; FRP and Haskell-style assignments; bilingual help.
-  lead_en: >-
-    FIT2102 Programming Paradigms at Monash compares imperative, object-oriented,
-    functional, and declarative styles. Core ideas: abstraction, composition, data
-    modelling, state and side effects, evaluation strategies (strict vs lazy), and
-    types. Practical work often includes Functional Reactive Programming and a
-    Haskell-style project, plus workshop / quiz work — not only “code that runs”.
-  lead_cn: >-
-    Monash 的 FIT2102 Programming Paradigms 对比命令式、面向对象、函数式、声明式这几类写法。
-    核心概念是抽象、组合、数据建模、状态与副作用、求值策略（严格 / 惰性）、类型。作业常见 Functional
-    Reactive Programming 和偏 Haskell 风格的项目，还有 workshop / quiz——不只是代码能跑。
-  overview_en: >-
-    You need to solve the same kind of problem in more than one style, then explain
-    trade-offs in clarity and maintainability. Students stall when JavaScript / FRP
-    event thinking clashes with old imperative habits, when Haskell types and purity
-    block the first compiling program, or when interview / quiz wording asks which
-    paradigm rule is being tested.
-  overview_cn: >-
-    课要求同一类问题能用不止一种范式来写，并说清可读性和可维护性上的取舍。常见卡住：JS / FRP
-    的事件思路和以前的命令式习惯冲突；Haskell 类型和纯函数卡在第一份能编译的程序；quiz /
-    面试式提问时，看不出在考哪条范式规则。
+  lead_en: 'FIT2102 Programming Paradigms at Monash compares imperative, object-oriented, functional,
+    and declarative styles. Core ideas: abstraction, composition, data modelling, state and side effects,
+    evaluation strategies (strict vs lazy), and types. Practical work often includes Functional Reactive
+    Programming and a Haskell-style project, plus workshop / quiz work — not only “code that runs”.'
+  lead_cn: Monash 的 FIT2102 Programming Paradigms 对比命令式、面向对象、函数式、声明式这几类写法。 核心概念是抽象、组合、数据建模、状态与副作用、求值策略（严格
+    / 惰性）、类型。作业常见 Functional Reactive Programming 和偏 Haskell 风格的项目，还有 workshop / quiz——不只是代码能跑。
+  overview_en: You need to solve the same kind of problem in more than one style, then explain trade-offs
+    in clarity and maintainability. Students stall when JavaScript / FRP event thinking clashes with old
+    imperative habits, when Haskell types and purity block the first compiling program, or when interview
+    / quiz wording asks which paradigm rule is being tested.
+  overview_cn: 课要求同一类问题能用不止一种范式来写，并说清可读性和可维护性上的取舍。常见卡住：JS / FRP 的事件思路和以前的命令式习惯冲突；Haskell 类型和纯函数卡在第一份能编译的程序；quiz
+    / 面试式提问时，看不出在考哪条范式规则。
   topics:
   - en: Imperative vs OOP vs functional vs declarative — what changes
     cn: 命令式 / OOP / 函数式 / 声明式分别改了什么
@@ -306,27 +361,19 @@ courses:
 - code: FIT2099
   title: Object Oriented Design and Implementation
   theme: programming
-  meta_description_en: >-
-    FIT2099 Monash Object Oriented Design tutoring. UML class / interaction diagrams,
+  meta_description_en: FIT2099 Monash Object Oriented Design tutoring. UML class / interaction diagrams,
     Java OOP (abstraction, inheritance, polymorphism), bilingual design review.
-  lead_en: >-
-    FIT2099 Object Oriented Design and Implementation at Monash is design first:
-    UML class and interaction diagrams, then Java implementation using abstraction,
-    information hiding, inheritance, and polymorphism. Projects and quizzes expect
-    you to justify the design — not only that the feature runs.
-  lead_cn: >-
-    Monash 的 FIT2099 Object Oriented Design and Implementation 先做设计再写代码：
-    UML 类图 / 交互图，再用 Java 实现抽象、信息隐藏、继承、多态。项目和 quiz 要你能说清
-    为什么这样设计，不只是功能能跑。
-  overview_en: >-
-    Learning outcomes stress iterative OO design against requirements, describing
-    design quality, implementing in Java, systematic refactor / debug in an IDE,
-    and team practice with version control. Students stall when diagrams diverge
-    from classes, when inheritance choices fight later requirements, or when the
-    rubric asks for a design story the code never shows.
-  overview_cn: >-
-    课纲强调：按需求迭代做 OO 设计、评价设计质量、用 Java 实现、在 IDE 里有条理地重构 / debug，
-    以及用版本控制和同学协作。常见卡住：图和真实类对不上；继承选错，后面需求一改就难受；
+  lead_en: 'FIT2099 Object Oriented Design and Implementation at Monash is design first: UML class and
+    interaction diagrams, then Java implementation using abstraction, information hiding, inheritance,
+    and polymorphism. Projects and quizzes expect you to justify the design — not only that the feature
+    runs.'
+  lead_cn: Monash 的 FIT2099 Object Oriented Design and Implementation 先做设计再写代码： UML 类图 / 交互图，再用 Java 实现抽象、信息隐藏、继承、多态。项目和
+    quiz 要你能说清 为什么这样设计，不只是功能能跑。
+  overview_en: Learning outcomes stress iterative OO design against requirements, describing design quality,
+    implementing in Java, systematic refactor / debug in an IDE, and team practice with version control.
+    Students stall when diagrams diverge from classes, when inheritance choices fight later requirements,
+    or when the rubric asks for a design story the code never shows.
+  overview_cn: 课纲强调：按需求迭代做 OO 设计、评价设计质量、用 Java 实现、在 IDE 里有条理地重构 / debug， 以及用版本控制和同学协作。常见卡住：图和真实类对不上；继承选错，后面需求一改就难受；
     评分要设计说明，代码里却写不出来。
   topics:
   - en: UML class diagrams and interaction diagrams
@@ -361,27 +408,18 @@ courses:
 - code: FIT3152
   title: Data Analytics
   theme: data-science
-  meta_description_en: >-
-    FIT3152 Monash Data Analytics tutoring. R / RStudio: cleanse, visual analysis,
-    networks, statistical learning, clustering, NLP; bilingual write-ups.
-  lead_en: >-
-    FIT3152 Data Analytics at Monash introduces big-data style analysis in R /
-    RStudio: data management and transformation, visual analysis, social network
-    analysis, statistical learning, clustering, and natural language processing.
-    Assessment expects a justified pipeline — not only busy plots.
-  lead_cn: >-
-    Monash 的 FIT3152 Data Analytics 用 R / RStudio 做偏大数据场景的分析：数据整理与变换、
-    可视化、社会网络分析、统计学习、聚类、自然语言处理。作业要的是说得清的分析流程，
+  meta_description_en: 'FIT3152 Monash Data Analytics tutoring. R / RStudio: cleanse, visual analysis,
+    networks, statistical learning, clustering, NLP; bilingual write-ups.'
+  lead_en: 'FIT3152 Data Analytics at Monash introduces big-data style analysis in R / RStudio: data management
+    and transformation, visual analysis, social network analysis, statistical learning, clustering, and
+    natural language processing. Assessment expects a justified pipeline — not only busy plots.'
+  lead_cn: Monash 的 FIT3152 Data Analytics 用 R / RStudio 做偏大数据场景的分析：数据整理与变换、 可视化、社会网络分析、统计学习、聚类、自然语言处理。作业要的是说得清的分析流程，
     不是图很多但解释没有。
-  overview_en: >-
-    Outcomes: turn a real problem into an analytics task, cleanse and prepare data,
-    analyse with statistical / graphical / ML techniques, validate results, and
-    communicate to a broad audience. Applied sessions run through the semester.
-    Students stall when method names blur, when plots are not validated, or when
-    the write-up cannot defend assumptions.
-  overview_cn: >-
-    课纲要求：把实际问题变成分析任务、清洗准备数据、用统计 / 图形 / 机器学习方法分析、
-    验证结果，再写成别人能看懂的报告。学期里有 applied session。常见卡住：方法名混在一起；
+  overview_en: 'Outcomes: turn a real problem into an analytics task, cleanse and prepare data, analyse
+    with statistical / graphical / ML techniques, validate results, and communicate to a broad audience.
+    Applied sessions run through the semester. Students stall when method names blur, when plots are not
+    validated, or when the write-up cannot defend assumptions.'
+  overview_cn: 课纲要求：把实际问题变成分析任务、清洗准备数据、用统计 / 图形 / 机器学习方法分析、 验证结果，再写成别人能看懂的报告。学期里有 applied session。常见卡住：方法名混在一起；
     图画了却不验证；报告里假设说不清。
   topics:
   - en: Data cleansing and transformation in R
@@ -418,26 +456,18 @@ courses:
 - code: FIT3155
   title: Advanced Data Structures and Algorithms
   theme: algorithms
-  meta_description_en: >-
-    FIT3155 Monash Advanced DSA tutoring. Amortized analysis, advanced sort/search,
+  meta_description_en: FIT3155 Monash Advanced DSA tutoring. Amortized analysis, advanced sort/search,
     tree/string/graph structures, proofs and complexity; bilingual drills.
-  lead_en: >-
-    FIT3155 Advanced Data Structures and Algorithms at Monash goes past intro DSA:
-    amortized analysis, advanced sorting and searching, tree / string / graph
-    structures, number-theoretic algorithms, and proving correctness with space /
-    time arguments. Labs and workshops expect the invariant, the complexity claim,
-    and the code to match.
-  lead_cn: >-
-    Monash 的 FIT3155 Advanced Data Structures and Algorithms 比入门 DSA 更深：
-    均摊分析、进阶排序 / 查找、树 / 字符串 / 图结构、数论相关算法，还要证明正确性并说清
-    时空复杂度。Lab / workshop 要求不变量、复杂度结论和代码对得上。
-  overview_en: >-
-    Assessment typically includes artefacts and an exam. Students stall when proof
-    sketches stay vague, when asymptotic notation is written without a plain claim,
-    or when a correct idea dies in implementation bugs under time pressure.
-  overview_cn: >-
-    考核一般有作业 artefact 和考试。常见卡住：证明只写个大概；渐近记号写了，白话结论没有；
-    思路对，限时一写代码就挂。
+  lead_en: 'FIT3155 Advanced Data Structures and Algorithms at Monash goes past intro DSA: amortized analysis,
+    advanced sorting and searching, tree / string / graph structures, number-theoretic algorithms, and
+    proving correctness with space / time arguments. Labs and workshops expect the invariant, the complexity
+    claim, and the code to match.'
+  lead_cn: Monash 的 FIT3155 Advanced Data Structures and Algorithms 比入门 DSA 更深： 均摊分析、进阶排序 / 查找、树 / 字符串
+    / 图结构、数论相关算法，还要证明正确性并说清 时空复杂度。Lab / workshop 要求不变量、复杂度结论和代码对得上。
+  overview_en: Assessment typically includes artefacts and an exam. Students stall when proof sketches
+    stay vague, when asymptotic notation is written without a plain claim, or when a correct idea dies
+    in implementation bugs under time pressure.
+  overview_cn: 考核一般有作业 artefact 和考试。常见卡住：证明只写个大概；渐近记号写了，白话结论没有； 思路对，限时一写代码就挂。
   topics:
   - en: Amortized analysis
     cn: 均摊分析
@@ -471,28 +501,19 @@ courses:
 - code: FIT5197
   title: Statistical Data Modelling
   theme: data-science
-  meta_description_en: >-
-    FIT5197 Monash Statistical Data Modelling tutoring. Probability, MLE, CI,
-    hypothesis tests, regression / classification, clustering; bilingual help.
-  lead_en: >-
-    FIT5197 Statistical Data Modelling at Monash builds the maths / stats base for
-    later data science and ML units: sample statistics, probability, expectation,
-    parametrised distributions, maximum likelihood, confidence intervals, hypothesis
-    testing, then predictive models (regression / classification) and unsupervised
-    clustering. The hard part is reading output and defending the model — not only
-    calling a library function.
-  lead_cn: >-
-    Monash 的 FIT5197 Statistical Data Modelling 给后面的数据科学 / 机器学习课打统计基础：
-    样本统计量、概率、期望、参数分布、极大似然、置信区间、假设检验，再到回归 / 分类这类预测模型，
-    以及聚类。难的是会读输出、能说清为什么选这个模型，不只是调用库函数。
-  overview_en: >-
-    Outcomes: EDA with descriptive stats, inferential models, predictive models,
-    sampling / simulation / tests, implement models in code, and interpret results.
-    Students stall when model names blur, diagnostics are ignored, or exam questions
-    test interpretation instead of button clicks.
-  overview_cn: >-
-    课纲要求：用描述统计做 EDA、建推断模型、建预测模型、做抽样 / 模拟 / 检验、用代码实现，
-    并解释结果。常见卡住：模型名搅在一起；诊断图画了不会读；考题考解读，不考点哪里。
+  meta_description_en: FIT5197 Monash Statistical Data Modelling tutoring. Probability, MLE, CI, hypothesis
+    tests, regression / classification, clustering; bilingual help.
+  lead_en: 'FIT5197 Statistical Data Modelling at Monash builds the maths / stats base for later data
+    science and ML units: sample statistics, probability, expectation, parametrised distributions, maximum
+    likelihood, confidence intervals, hypothesis testing, then predictive models (regression / classification)
+    and unsupervised clustering. The hard part is reading output and defending the model — not only calling
+    a library function.'
+  lead_cn: Monash 的 FIT5197 Statistical Data Modelling 给后面的数据科学 / 机器学习课打统计基础： 样本统计量、概率、期望、参数分布、极大似然、置信区间、假设检验，再到回归
+    / 分类这类预测模型， 以及聚类。难的是会读输出、能说清为什么选这个模型，不只是调用库函数。
+  overview_en: 'Outcomes: EDA with descriptive stats, inferential models, predictive models, sampling
+    / simulation / tests, implement models in code, and interpret results. Students stall when model names
+    blur, diagnostics are ignored, or exam questions test interpretation instead of button clicks.'
+  overview_cn: 课纲要求：用描述统计做 EDA、建推断模型、建预测模型、做抽样 / 模拟 / 检验、用代码实现， 并解释结果。常见卡住：模型名搅在一起；诊断图画了不会读；考题考解读，不考点哪里。
   topics:
   - en: Probability, expectation, and common distributions
     cn: 概率、期望与常见分布
@@ -528,29 +549,20 @@ courses:
 - code: FIT9136
   title: Introduction to Python Programming
   theme: programming
-  meta_description_en: >-
-    FIT9136 Monash Introduction to Python Programming tutoring. Control flow,
-    datatypes, functions, OOP basics, OnTrack portfolio; bilingual help.
-  lead_en: >-
-    FIT9136 Introduction to Python Programming at Monash covers programming
-    fundamentals: control structures, built-in and complex datatypes, modularity,
-    basic libraries, good practices, and team coding. Assessment is portfolio-style
-    (OnTrack pass tasks / in-class discussion) — “it runs” is not enough if the
-    structure and hand-execution story are weak.
-  lead_cn: >-
-    Monash 的 FIT9136 Introduction to Python Programming 是 Python 入门：控制结构、
-    内置和复合数据类型、模块化、常用库、良好习惯，以及小组协作。考核偏 OnTrack 作品集 /
-    课上讨论——代码能跑不够，结构和手推执行也要说得清。
-  overview_en: >-
-    Outcomes include systems thinking about program structure, implementing with
-    sequence / selection / iteration / functions / types / libraries, hand-executing
-    code to explain state, disciplined test / debug / document habits, and basic OOP
-    organisation. Students stall when briefs assume prior CS habits, when OnTrack
-    tasks fail discussion sign-off, or when edge cases are never tested.
-  overview_cn: >-
-    课纲要求：说清程序结构、会写顺序 / 分支 / 循环 / 函数 / 类型 / 库调用、能手推执行解释状态、
-    有测试 / debug / 文档习惯，并用基础 OOP 组织代码。常见卡住：题干默认你有 CS 基础；
-    OnTrack 任务过不了课上讨论；边界情况没测。
+  meta_description_en: FIT9136 Monash Introduction to Python Programming tutoring. Control flow, datatypes,
+    functions, OOP basics, OnTrack portfolio; bilingual help.
+  lead_en: 'FIT9136 Introduction to Python Programming at Monash covers programming fundamentals: control
+    structures, built-in and complex datatypes, modularity, basic libraries, good practices, and team
+    coding. Assessment is portfolio-style (OnTrack pass tasks / in-class discussion) — “it runs” is not
+    enough if the structure and hand-execution story are weak.'
+  lead_cn: Monash 的 FIT9136 Introduction to Python Programming 是 Python 入门：控制结构、 内置和复合数据类型、模块化、常用库、良好习惯，以及小组协作。考核偏
+    OnTrack 作品集 / 课上讨论——代码能跑不够，结构和手推执行也要说得清。
+  overview_en: Outcomes include systems thinking about program structure, implementing with sequence /
+    selection / iteration / functions / types / libraries, hand-executing code to explain state, disciplined
+    test / debug / document habits, and basic OOP organisation. Students stall when briefs assume prior
+    CS habits, when OnTrack tasks fail discussion sign-off, or when edge cases are never tested.
+  overview_cn: 课纲要求：说清程序结构、会写顺序 / 分支 / 循环 / 函数 / 类型 / 库调用、能手推执行解释状态、 有测试 / debug / 文档习惯，并用基础 OOP 组织代码。常见卡住：题干默认你有
+    CS 基础； OnTrack 任务过不了课上讨论；边界情况没测。
   topics:
   - en: Sequence, selection, iteration, and functions
     cn: 顺序、分支、循环与函数
@@ -583,7 +595,6 @@ courses:
     cn: 作品集任务：看计划、现场 debug。
   - en: 'In-class / quiz prep: timed foundation drills and hand execution.'
     cn: 课上 / quiz：限时基础练和手推执行。
-
 - code: FIT5202
   title: Data Processing for Big Data
   material: FIT5202
@@ -602,11 +613,11 @@ courses:
     RDDs and DataFrames; A2A builds energy-prediction models; A2B wires a Kafka producer, Spark streaming
     job, and consumer with watermarks and parquet sinks. Students stall when partitioning talk stays abstract,
     when RDD vs DataFrame choice is unclear, when ML stages silently mismatch schemas, or when streaming
-    only works until the first checkpoint restart.'
+    only works until the first checkpoint restart. Sample slides from our tutoring intro deck are below.'
   overview_cn: Data Processing for Big Data 以 Apache Spark（PySpark）为主线：并行搜索、join、 aggregation / sort /
     groupBy，再进特征化、estimator / transformer / pipeline、 分类、聚类与协同过滤。作业跟着这条弧走——A1 用 RDD / DataFrame 分析房产数据；
     A2A 做能耗预测模型；A2B 串起 Kafka producer、Spark streaming 与 consumer，还要管 watermark 与 parquet 输出。卡点常在分区概念停在抽象层、RDD
-    vs DataFrame 分不清、 ML stage schema 对不上，或 streaming 一重启 checkpoint 就崩。
+    vs DataFrame 分不清、 ML stage schema 对不上，或 streaming 一重启 checkpoint 就崩。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SparkSession, partitioning, and local-cluster mental models
     cn: SparkSession、分区与本地集群心智模型
@@ -643,6 +654,48 @@ courses:
     cn: 作业辅导：拆 A1 RDD/DF、A2A 建模与 A2B streaming，现场 debug。
   - en: 'Assessment prep: short drills on when to use which Spark API and how to read streaming failures.'
     cn: 评估突击：短练何时用哪种 Spark API，以及怎么读 streaming 报错。
+  sample_slides:
+    title_en: FIT5202 — sample slides
+    title_cn: FIT5202 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Spark / distributed data processing
+      cn: Spark / 分布式数据处理
+    - en: Data wrangling / analytics tables
+      cn: 数据清洗 / 分析表
+    - en: Neural nets / deep learning / AI
+      cn: 神经网络 / 深度学习 / AI
+    - en: ML pipelines, features, and model choice
+      cn: ML 流水线、特征与模型选择
+    slides:
+    - src: /assets/teach/monash/fit5202/sample/01-title.webp
+      alt_en: FIT5202 tutoring title
+      alt_cn: FIT5202 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/fit5202/sample/02-topics.webp
+      alt_en: FIT5202 tutoring topics
+      alt_cn: FIT5202 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/monash/fit5202/sample/03-stuck.webp
+      alt_en: FIT5202 tutoring stuck points
+      alt_cn: FIT5202 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/monash/fit5202/sample/04-tutoring.webp
+      alt_en: FIT5202 tutoring how tutoring runs
+      alt_cn: FIT5202 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: ENG1014
   title: Engineering Numerical Analysis
   material: eng1014
@@ -661,10 +714,10 @@ courses:
     with workshop notebooks and quizzes each week. The individual assignment (“Coding for Climate Change”)
     expects template-faithful outputs and an oral defence of your approach. Students stall when they treat
     notebooks as disposable scratchpads, when fit quality is never checked, or when interview questions
-    expose code they cannot explain.'
+    expose code they cannot explain. Sample slides from our tutoring intro deck are below.'
   overview_cn: Engineering Numerical Analysis 在课程环境里用数值编程（numpy、matplotlib、eng1014.py， 作业禁用 pandas）：导入与准备数据、线性
     / 非线性曲线拟合、程序控制、数值方程求解、 积分与 ODE，每周还有 workshop notebook 与 quiz。个人大作业「Coding for Climate Change」 要求严格按模板出结果，并在面试里讲清思路。卡点常在把
-    notebook 当一次性草稿、从不检查 拟合质量，或面试一问就露馅——代码自己也讲不清。
+    notebook 当一次性草稿、从不检查 拟合质量，或面试一问就露馅——代码自己也讲不清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Numerical programming habits in the ENG1014 environment
     cn: ENG1014 环境下的数值编程习惯
@@ -701,6 +754,48 @@ courses:
     cn: 作业 / workshop：在允许的库集合内拆题、现场 debug。
   - en: 'Quiz / interview prep: short drills on method choice and explaining your code aloud.'
     cn: Quiz / 面试突击：短练方法选择，以及把代码讲出口。
+  sample_slides:
+    title_en: ENG1014 — sample slides
+    title_cn: ENG1014 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    - en: W1 Introduction to Numerical Programming Course Notes(2)
+      cn: W1 Introduction to Numerical Programming Course Notes(2)
+    - en: W2 Communicating with Data Course Notes(2)
+      cn: W2 Communicating with Data Course Notes(2)
+    - en: W2 Communicating with Data Practice Questions(2)
+      cn: W2 Communicating with Data Practice Questions(2)
+    slides:
+    - src: /assets/teach/monash/eng1014/sample/01-title.webp
+      alt_en: ENG1014 tutoring title
+      alt_cn: ENG1014 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/eng1014/sample/02-topics.webp
+      alt_en: ENG1014 tutoring topics
+      alt_cn: ENG1014 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/monash/eng1014/sample/03-stuck.webp
+      alt_en: ENG1014 tutoring stuck points
+      alt_cn: ENG1014 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/monash/eng1014/sample/04-tutoring.webp
+      alt_en: ENG1014 tutoring how tutoring runs
+      alt_cn: ENG1014 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: FIT1058
   title: Foundations of Computing
   material: FIT1058 Foundations of computing
@@ -719,6 +814,7 @@ courses:
     logic, then predicate logic. Weekly seminars come in multiple parts with worked examples; sample solutions
     reward clear structure. Students stall when school maths gaps meet new notation, when existential
     / universal quantifiers blur, or when a proof idea cannot be written as a sequence of justified steps.
+    Sample slides from our tutoring intro deck are below.
   overview_cn: Foundations of Computing 训练整个 CS 学位都会用到的抽象建模、逻辑推理与证明。前几周 课程笔记覆盖集合与计数、函数（含 CS 视角）、证明方法（构造、分情形、反证、归纳）、
     命题逻辑，再进谓词逻辑。每周 seminar 多分场次并带例题；样例解答强调结构清楚。卡点常在 中学数学缺口撞上新记号、存在 / 全称量词搅在一起，或证明思路落不成一串有依据的步骤。
   topics:
@@ -757,6 +853,48 @@ courses:
     cn: 习题：你来写证明；我们检查结构与缺失依据。
   - en: 'Exam prep: timed short proofs and quantifier translation drills.'
     cn: 考前突击：限时短证明与量词翻译练习。
+  sample_slides:
+    title_en: FIT1058 — sample slides
+    title_cn: FIT1058 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Example for
+      cn: Example for
+    - en: 'FIT1058 Seminar #1'
+      cn: 'FIT1058 Seminar #1'
+    - en: 'FIT1058 Seminar #2'
+      cn: 'FIT1058 Seminar #2'
+    - en: 'FIT1058 Seminar #3'
+      cn: 'FIT1058 Seminar #3'
+    slides:
+    - src: /assets/teach/monash/fit1058/sample/01-title.webp
+      alt_en: FIT1058 tutoring title
+      alt_cn: FIT1058 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/fit1058/sample/02-topics.webp
+      alt_en: FIT1058 tutoring topics
+      alt_cn: FIT1058 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/monash/fit1058/sample/03-stuck.webp
+      alt_en: FIT1058 tutoring stuck points
+      alt_cn: FIT1058 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/monash/fit1058/sample/04-tutoring.webp
+      alt_en: FIT1058 tutoring how tutoring runs
+      alt_cn: FIT1058 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: FIT1008
   title: Fundamentals of Algorithms
   aliases:
@@ -776,9 +914,9 @@ courses:
     tables, and recursive thinking / recursive sorts. Weekly workshops and applied sheets push implementations
     such as circular queues and referential arrays. Students stall when Big-O is memorised without a dry-run,
     when linked-structure pointer updates corrupt the structure, or when a recursive idea has no clear
-    base case before coding.
+    base case before coding. Sample slides from our tutoring intro deck are below.
   overview_cn: Fundamentals of Algorithms 覆盖算法复杂度、经典排序、抽象数据类型（栈、队列、集合）、 列表表示（数组与链表）、迭代器、哈希表，以及递归思维 / 递归排序。每周
-    workshop 与 applied 会推到环形队列、引用数组一类实现。卡点常在 Big-O 只会背不会手推、链表指针 一改就坏结构，或递归还没想清基准情形就动手写。
+    workshop 与 applied 会推到环形队列、引用数组一类实现。卡点常在 Big-O 只会背不会手推、链表指针 一改就坏结构，或递归还没想清基准情形就动手写。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Big-O intuition and comparing algorithm candidates
     cn: Big-O 直觉与算法方案比较
@@ -816,6 +954,48 @@ courses:
     cn: Workshop / applied：你来实现；我们检查不变量与边界。
   - en: 'Exam prep: timed complexity + short implementation drills.'
     cn: 考前突击：限时练复杂度与短实现。
+  sample_slides:
+    title_en: FIT1008 — sample slides
+    title_cn: FIT1008 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Algorithms, ADTs, and complexity
+      cn: 算法、ADT 与复杂度
+    - en: 3.1 Workshop
+      cn: 3.1 Workshop
+    - en: 3.2 Applied
+      cn: 3.2 Applied
+    - en: 4.1 Workshop
+      cn: 4.1 Workshop
+    slides:
+    - src: /assets/teach/monash/fit1008/sample/01-title.webp
+      alt_en: FIT1008 tutoring title
+      alt_cn: FIT1008 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/fit1008/sample/02-topics.webp
+      alt_en: FIT1008 tutoring topics
+      alt_cn: FIT1008 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/monash/fit1008/sample/03-stuck.webp
+      alt_en: FIT1008 tutoring stuck points
+      alt_cn: FIT1008 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/monash/fit1008/sample/04-tutoring.webp
+      alt_en: FIT1008 tutoring how tutoring runs
+      alt_cn: FIT1008 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: FIT1047
   title: Introduction to Computer Systems, Networks and Security
   material: fit1047
@@ -833,10 +1013,10 @@ courses:
     protocols) and cybersecurity assessments: article analysis, security-control diagrams for an enterprise
     scenario, weekly reflections, and an in-person test. Students stall when base conversions feel mechanical
     but K-maps do not, when Wireshark output cannot be turned into a claim, or when the security report
-    lists tools without a clear threat story.'
+    lists tools without a clear threat story. Sample slides from our tutoring intro deck are below.'
   overview_cn: Introduction to Computer Systems, Networks and Security 从比特、字节、进制换算、 ASCII 与布尔逻辑开始，再进门电路、电路与卡诺图。后半程进入网络
     workshop / applied （无线抓包、Internet 流量、客户端 / 服务器 / 协议），以及网络安全评估：案例分析、 企业场景安全控制图、每周反思与当面测验。卡点常在进制换算会做但卡诺图不会化简、
-    Wireshark 输出变不成结论，或安全报告只罗列工具没有清晰威胁叙事。
+    Wireshark 输出变不成结论，或安全报告只罗列工具没有清晰威胁叙事。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Number systems, ASCII, and Boolean basics
     cn: 进制、ASCII 与布尔基础
@@ -873,6 +1053,48 @@ courses:
     cn: 作业辅导：拆网络分析与网络安全报告 / 示意图。
   - en: 'Test / workshop prep: timed drills on conversions, K-maps, and reading traces.'
     cn: 测验 / workshop 突击：限时练换算、卡诺图与读报文。
+  sample_slides:
+    title_en: FIT1047 — sample slides
+    title_cn: FIT1047 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Pre Semester Lesson
+      cn: Pre Semester Lesson
+    - en: Overview, Number systems, Basic Boolean logic
+      cn: Overview, Number systems, Basic Boolean logic
+    - en: Gates and circuits, Karnaugh maps
+      cn: Gates and circuits, Karnaugh maps
+    - en: FIT1047 Applied Session
+      cn: FIT1047 Applied Session
+    slides:
+    - src: /assets/teach/monash/fit1047/sample/01-title.webp
+      alt_en: FIT1047 tutoring title
+      alt_cn: FIT1047 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/fit1047/sample/02-topics.webp
+      alt_en: FIT1047 tutoring topics
+      alt_cn: FIT1047 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/monash/fit1047/sample/03-stuck.webp
+      alt_en: FIT1047 tutoring stuck points
+      alt_cn: FIT1047 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/monash/fit1047/sample/04-tutoring.webp
+      alt_en: FIT1047 tutoring how tutoring runs
+      alt_cn: FIT1047 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: FIT5124
   title: Emerging Topics for Cybersecurity in Practice
   material: fit5124-networking-ml

@@ -12,13 +12,12 @@ courses:
   meta_description_en: 15-112 CMU tutoring (Fundamentals of Programming and…). Notebook runs on the sample
     cell, fails on the hidden / full dataset case?
   lead_en: 15-112 Fundamentals of Programming and Computer Science at Carnegie Mellon University is where
-    briefs, tooling, and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
+    briefs, tooling, and autograder edge cases hit harder than syntax itself. The hard part is turning
+    that arc into a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在卡内基梅隆大学上 15-112，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: 15-112 Fundamentals of Programming and Computer Science sits in programming & software
-    construction. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
+    construction. Students stall when terminology outruns notes, when a demo makes sense in class but
+    not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
   overview_cn: 15-112 是卡内基梅隆大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:
@@ -62,13 +61,9 @@ courses:
   sample_slides:
     title_en: 15-112 course intro — sample slides
     title_cn: 15-112 课程介绍 — 辅导课件样例
-    lead_en: >-
-      Four pages from our 15-minute course-intro tutoring deck: what the course
-      is, why the pace is hard, how competencies / quizzes / exams work, and how
-      we structure tutoring time.
-    lead_cn: >-
-      来自 15 分钟课程介绍辅导课件的 4 页：课程定位、难度与节奏、competencies / quiz / exam
-      怎么考，以及辅导怎么排。
+    lead_en: 'Four pages from our 15-minute course-intro tutoring deck: what the course is, why the pace
+      is hard, how competencies / quizzes / exams work, and how we structure tutoring time.'
+    lead_cn: 来自 15 分钟课程介绍辅导课件的 4 页：课程定位、难度与节奏、competencies / quiz / exam 怎么考，以及辅导怎么排。
     bullets:
     - en: Weekly theme pace from loops through recursion and the term project
       cn: 从 loops 到 recursion 与 term project 的周主题节奏
@@ -122,16 +117,15 @@ courses:
   meta_description_en: 07-120 CMU tutoring (Introduction to Software…). Assignment brief (“homework2”)
     makes sense in class, freezes you alone? Bilingual Chinese/English help.
   lead_en: 07-120 Introduction to Software Construction at Carnegie Mellon University is where briefs,
-    tooling, and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a
-    method you can repeat on the next brief — not rereading slides the night before.
+    tooling, and autograder edge cases hit harder than syntax itself. The hard part is turning that arc
+    into a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在卡内基梅隆大学上 07-120，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: 07-120 Introduction to Software Construction sits in programming & software construction.
-    Assessed work expects
-    you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
-    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit.
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: 07-120 是卡内基梅隆大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统 / 系统编程、算法、ADT 与复杂度、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -170,4 +164,46 @@ courses:
     cn: 作业辅导：针对 homework2, homework5 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: 07-120 — sample slides
+    title_cn: 07-120 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: OS / systems programming
+      cn: 操作系统 / 系统编程
+    - en: Algorithms, ADTs, and complexity
+      cn: 算法、ADT 与复杂度
+    - en: Automata, formal languages, and proofs
+      cn: 自动机、形式语言与证明
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    slides:
+    - src: /assets/teach/cmu/07-120/sample/01-title.webp
+      alt_en: 07-120 tutoring title
+      alt_cn: 07-120 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/cmu/07-120/sample/02-topics.webp
+      alt_en: 07-120 tutoring topics
+      alt_cn: 07-120 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/cmu/07-120/sample/03-stuck.webp
+      alt_en: 07-120 tutoring stuck points
+      alt_cn: 07-120 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/cmu/07-120/sample/04-tutoring.webp
+      alt_en: 07-120 tutoring how tutoring runs
+      alt_cn: 07-120 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

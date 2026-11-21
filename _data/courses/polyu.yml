@@ -29,14 +29,14 @@ courses:
   meta_description_en: COMP5941 PolyU tutoring (Ai Thesis). Tool output produced, write-up cannot defend
     method choice? Bilingual Chinese/English help.
   lead_en: COMP5941 Ai Thesis at The Hong Kong Polytechnic University is where method names blur together
-    until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
-    slides the night before.
+    until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you
+    can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在香港理工大学上 COMP5941，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: COMP5941 Ai Thesis sits in machine learning & ai. Students stall when terminology outruns notes, when a demo
-    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
-    never made explicit.
+  overview_en: COMP5941 Ai Thesis sits in machine learning & ai. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: COMP5941 是香港理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着Spark / 分布式数据处理这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Spark / distributed data processing
     cn: Spark / 分布式数据处理
@@ -75,4 +75,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMP5941 — sample slides
+    title_cn: COMP5941 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Supervised vs unsupervised intuition
+      cn: 监督 / 无监督学习的直觉区分
+    - en: Loss, gradients, and what “training” actually updates
+      cn: 损失、梯度，以及“训练”到底在更新什么
+    - en: Train / validation / test splits and leakage
+      cn: 训练 / 验证 / 测试划分与数据泄漏
+    - en: Linear models, logistic regression, and decision boundaries
+      cn: 线性模型、逻辑回归与决策边界
+    slides:
+    - src: /assets/teach/hk-polytech/comp5941/sample/01-title.webp
+      alt_en: COMP5941 tutoring title
+      alt_cn: COMP5941 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/hk-polytech/comp5941/sample/02-topics.webp
+      alt_en: COMP5941 tutoring topics
+      alt_cn: COMP5941 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/hk-polytech/comp5941/sample/03-stuck.webp
+      alt_en: COMP5941 tutoring stuck points
+      alt_cn: COMP5941 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/hk-polytech/comp5941/sample/04-tutoring.webp
+      alt_en: COMP5941 tutoring how tutoring runs
+      alt_cn: COMP5941 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

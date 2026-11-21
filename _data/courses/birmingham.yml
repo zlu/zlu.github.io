@@ -11,16 +11,17 @@ courses:
   meta_description_en: Database And Web Programming Birmingham tutoring (Database and Web Programming).
     Weekly lecture arc moves on before last week’s method is solid?
   lead_en: Database and Web Programming at University of Birmingham is where one wrong schema or join
-    quietly breaks every later query. The hard part is turning that arc into a method you can repeat on the
-    next brief — not rereading slides the night before.
+    quietly breaks every later query. The hard part is turning that arc into a method you can repeat on
+    the next brief — not rereading slides the night before.
   lead_cn: 在伯明翰大学上 Database And Web Programming，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: Database and Web Programming sits in databases & information systems. There is a weekly arc (about week
-    6–6) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
+  overview_en: Database and Web Programming sits in databases & information systems. There is a weekly
+    arc (about week 6–6) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
   overview_cn: Database And Web Programming 是伯明翰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema
     与数据库、安全 / 隐私威胁模型与实验、编程基础与调试这些点转。大约第 6–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -64,6 +65,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Database And Web Programming — sample slides
+    title_cn: Database And Web Programming — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Security / privacy threat models and labs
+      cn: 安全 / 隐私威胁模型与实验
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    - en: Web / mobile app structure
+      cn: Web / 移动应用结构
+    slides:
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/01-title.webp
+      alt_en: Database And Web Programming tutoring title
+      alt_cn: Database And Web Programming 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/02-topics.webp
+      alt_en: Database And Web Programming tutoring topics
+      alt_cn: Database And Web Programming 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/03-stuck.webp
+      alt_en: Database And Web Programming tutoring stuck points
+      alt_cn: Database And Web Programming 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/04-tutoring.webp
+      alt_en: Database And Web Programming tutoring how tutoring runs
+      alt_cn: Database And Web Programming 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Artificial Intelligence 1
   material: LC Artificial Intelligence 1
   code: LC AI1
@@ -71,15 +114,17 @@ courses:
   meta_description_en: LC AI1 Birmingham tutoring (Artificial Intelligence 1). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: LC Artificial Intelligence 1 at University of Birmingham is where method names blur together
-    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the
+    next brief.
   lead_cn: 在伯明翰大学上 LC Artificial Intelligence 1，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: LC Artificial Intelligence 1 sits in machine learning & ai. There is a weekly arc (about week 1–11) plus assessed work that expects you
-    to apply the same ideas under deadline pressure. Students stall when terminology outruns notes, when
-    a demo makes sense in class but not alone, or when the write-up / autograder asks for a method the
-    notebook never made explicit.
-  overview_cn: LC Artificial Intelligence 1 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络
-    / 深度学习 / AI、ML 流水线、特征与模型选择、算法、ADT 与复杂度这些点转。大约第 1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  overview_en: LC Artificial Intelligence 1 sits in machine learning & ai. There is a weekly arc (about
+    week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring
+    intro deck are below.
+  overview_cn: LC Artificial Intelligence 1 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 /
+    深度学习 / AI、ML 流水线、特征与模型选择、算法、ADT 与复杂度这些点转。大约第 1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -125,6 +170,46 @@ courses:
     cn: 作业辅导：针对 A37228 LC Artificial Intelligence 1 Main v2 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: LC AI1 — sample slides
+    title_cn: LC AI1 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Neural nets / deep learning / AI
+      cn: 神经网络 / 深度学习 / AI
+    - en: ML pipelines, features, and model choice
+      cn: ML 流水线、特征与模型选择
+    - en: Algorithms, ADTs, and complexity
+      cn: 算法、ADT 与复杂度
+    slides:
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/01-title.webp
+      alt_en: LC AI1 tutoring title
+      alt_cn: LC AI1 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/02-topics.webp
+      alt_en: LC AI1 tutoring topics
+      alt_cn: LC AI1 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/03-stuck.webp
+      alt_en: LC AI1 tutoring stuck points
+      alt_cn: LC AI1 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/04-tutoring.webp
+      alt_en: LC AI1 tutoring how tutoring runs
+      alt_cn: LC AI1 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Artificial Intelligence and Machine Learning
   material: LMLI Artificial Intelligence and Machine Learning
   code: LMLI AI/ML
@@ -133,16 +218,17 @@ courses:
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: LMLI Artificial Intelligence And Machine Learning Artificial Intelligence and Machine Learning
     at University of Birmingham is where method names blur together until pipelines, metrics, and write-ups
-    diverge. The hard part is turning that arc
-    into a method you can repeat on the next brief — not rereading slides the night before.
+    diverge. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
+    slides the night before.
   lead_cn: 在伯明翰大学上 LMLI Artificial Intelligence And Machine Learning，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: LMLI Artificial Intelligence And Machine Learning Artificial Intelligence and Machine Learning
     sits in machine learning & ai. Assessed work expects you to apply lecture ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
   overview_cn: LMLI Artificial Intelligence And Machine Learning 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络
     / 深度学习 / AI、ML 流水线、特征与模型选择、SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。
+    要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -189,23 +275,65 @@ courses:
     cn: 作业辅导：针对 4QQMN909 Full Coursework Assessment Brief 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: LMLI AI/ML — sample slides
+    title_cn: LMLI AI/ML — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Neural nets / deep learning / AI
+      cn: 神经网络 / 深度学习 / AI
+    - en: ML pipelines, features, and model choice
+      cn: ML 流水线、特征与模型选择
+    - en: Networking layers, packets, and protocols
+      cn: 网络分层、报文与协议
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    slides:
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/01-title.webp
+      alt_en: LMLI AI/ML tutoring title
+      alt_cn: LMLI AI/ML 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/02-topics.webp
+      alt_en: LMLI AI/ML tutoring topics
+      alt_cn: LMLI AI/ML 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/03-stuck.webp
+      alt_en: LMLI AI/ML tutoring stuck points
+      alt_cn: LMLI AI/ML 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/04-tutoring.webp
+      alt_en: LMLI AI/ML tutoring how tutoring runs
+      alt_cn: LMLI AI/ML 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: DSA 24 25
   material: DSA 24-25
   code: Data Structures and Algorithms
   theme: algorithms
-  meta_description_en: Data Structures and Algorithms Birmingham tutoring (DSA 24 25). Weekly lecture
-    arc moves on before last week’s method is solid?
-  lead_en: Data Structures and Algorithms DSA 24 25 at University of Birmingham is where invariants, complexity
-    claims, and code must stay aligned under time pressure. Tutoring focuses on methods you can reuse on the next brief.
-  lead_cn: 在伯明翰大学上 Data Structures and Algorithms，限时下不变量、复杂度结论和代码必须说的是同一件事。
-  overview_en: Data Structures and Algorithms DSA 24 25 sits in algorithms & data structures. Evidence
-    from There is a weekly arc (about week
-    7–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: Data Structures and Algorithms 是伯明翰大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT
-    与复杂度这些点转。大约第 7–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。
+  meta_description_en: Data Structures and Algorithms University tutoring (DSA 24 25). Stuck on Algorithms,
+    ADTs, and complexity? Bilingual Chinese/English help.
+  lead_en: 'Data Structures and Algorithms DSA 24 25 at University of Birmingham. Invariants, complexity
+    claims, and code must stay aligned under time pressure. Tutoring: lecture catch-up, assignment debug,
+    exam drills — methods you can reuse.'
+  lead_cn: 在伯明翰大学上 Data Structures and Algorithms，限时下不变量、复杂度结论和代码必须说的是同一件事。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'Data Structures and Algorithms DSA 24 25 (Algorithms & data structures) at University
+    of Birmingham. Common topics: Algorithms, ADTs, and complexity. Weekly arc about week 7–11, plus assessed
+    work under deadline. People stall when terms outrun notes, when a class demo does not replay alone,
+    or when the write-up / autograder wants a method the notebook never showed. Sample slides from our
+    tutoring intro deck are below.'
+  overview_cn: Data Structures and Algorithms 是伯明翰大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度。大约第 7–11
+    周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -245,24 +373,63 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Data Structures and Algorithms — sample slides
+    title_cn: Data Structures and Algorithms — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Algorithms, ADTs, and complexity
+      cn: 算法、ADT 与复杂度
+    - en: final (1)
+      cn: final (1)
+    slides:
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/01-title.webp
+      alt_en: Data Structures and Algorithms tutoring title
+      alt_cn: Data Structures and Algorithms 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/02-topics.webp
+      alt_en: Data Structures and Algorithms tutoring topics
+      alt_cn: Data Structures and Algorithms 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/03-stuck.webp
+      alt_en: Data Structures and Algorithms tutoring stuck points
+      alt_cn: Data Structures and Algorithms 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/04-tutoring.webp
+      alt_en: Data Structures and Algorithms tutoring how tutoring runs
+      alt_cn: Data Structures and Algorithms 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Data Structures, Algorithms, and Databases
   material: LM Data Structures, Algorithms, and Databases
   code: LM DSA/DB
   theme: algorithms
-  meta_description_en: LM DSA/DB Birmingham tutoring (Data Structures, Algorithms, and…). Weekly lecture
-    arc moves on before last week’s method is solid?
-  lead_en: LM Data Structures, Algorithms, And Databases Data Structures, Algorithms, and Databases at
-    University of Birmingham is where one wrong schema or join quietly breaks every later query. Private
-    materials show weekly notes spanning roughly week 1–11. Tutoring focuses on methods you can reuse on the next brief.
-  lead_cn: 在伯明翰大学上 LM Data Structures, Algorithms, And Databases，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: LM Data Structures, Algorithms, And Databases Data Structures, Algorithms, and Databases
-    sits in databases & information systems. There is
-    a weekly arc (about week 1–11) plus assessed work that expects you to apply the same ideas under deadline
-    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
-    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: LM Data Structures, Algorithms, And Databases 是伯明翰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema
-    与数据库、计算机体系结构与组成、算法、ADT 与复杂度这些点转。大约第 1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: LM DSA/DB University tutoring (Data Structures, Algorithms, and…). Stuck on SQL,
+    schema design, and databases? Bilingual Chinese/English help.
+  lead_en: 'LM DSA/DB Data Structures, Algorithms, and Databases at University of Birmingham. Invariants,
+    complexity claims, and code must stay aligned under time pressure. Tutoring: lecture catch-up, assignment
+    debug, exam drills — methods you can reuse.'
+  lead_cn: 在伯明翰大学上 LM DSA/DB，限时下不变量、复杂度结论和代码必须说的是同一件事。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'LM DSA/DB Data Structures, Algorithms, and Databases (Algorithms & data structures) at
+    University of Birmingham. Common topics: SQL, schema design, and databases; Computer architecture
+    and organisation; Algorithms, ADTs, and complexity. Weekly arc about week 1–11, plus assessed work
+    under deadline. People stall when terms outrun notes, when a class demo does not replay alone, or
+    when the write-up / autograder wants a method the notebook never showed. Sample slides from our tutoring
+    intro deck are below.'
+  overview_cn: LM DSA/DB 是伯明翰大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、计算机体系结构与组成、算法、ADT 与复杂度。大约第
+    1–11 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。
+    下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -283,30 +450,70 @@ courses:
   stuck:
   - en: Weekly lecture arc moves on before last week’s method is solid
     cn: 周课往前赶，上一周的方法还没练稳
-  - en: Correct-looking SQL that fails hidden test schemas
-    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
-  - en: Over-normalised or under-normalised designs
-    cn: 过度范式或范式不足的设计
-  - en: ORM confusion masking missing SQL fundamentals
-    cn: 被 ORM 迷惑，SQL 基本功没补上
-  - en: Lecture vocabulary for LM Data Structures, Algorithms, And Databases outruns bilingual notes
-    cn: LM Data Structures, Algorithms, And Databases 的课堂术语跑在双语笔记前面
+  - en: Can follow a worked example, cannot start from a blank page under time pressure
+    cn: 能看懂例题，限时白纸上却开不了头
+  - en: Correct intuition but wrong complexity or incomplete proof
+    cn: 直觉对，但复杂度写错或证明不完整
+  - en: DP / recursion without a clear state definition
+    cn: 动态规划 / 递归没有清晰状态定义
+  - en: Implementation bugs that hide a sound algorithm
+    cn: 算法本身没问题，实现 bug 把分扣光
   session_angles:
   - en: Rebuild this week’s lecture idea before touching the homework
     cn: 先重建当周讲座概念，再碰作业
-  - en: Sketch the ER, then write queries against it
-    cn: 先画 ER，再对着写查询
-  - en: Explain a query plan in plain language
-    cn: 用白话解释执行计划
+  - en: Write the invariant and recurrence before code
+    cn: 写代码前先写不变量与递推
+  - en: Dry-run on a small example, then generalise
+    cn: 先在小例子上手推，再一般化
   tutoring:
-  - en: 'Lecture sync for LM Data Structures, Algorithms, And Databases: bilingual catch-up so workshop
-      / tutorial language matches the lectures.'
-    cn: 按 LM Data Structures, Algorithms, And Databases 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial
-      会用的英文说法。
+  - en: 'Lecture sync for LM DSA/DB: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 LM DSA/DB 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
   - en: 'Assignments: approach review and live debug against the real brief.'
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: LM DSA/DB — sample slides
+    title_cn: LM DSA/DB — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: DSAD Lecture1
+      cn: DSAD Lecture1
+    - en: DSAD Lecture2
+      cn: DSAD Lecture2
+    - en: DSAD Lecture3
+      cn: DSAD Lecture3
+    slides:
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/01-title.webp
+      alt_en: LM DSA/DB tutoring title
+      alt_cn: LM DSA/DB 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/02-topics.webp
+      alt_en: LM DSA/DB tutoring topics
+      alt_cn: LM DSA/DB 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/03-stuck.webp
+      alt_en: LM DSA/DB tutoring stuck points
+      alt_cn: LM DSA/DB 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/04-tutoring.webp
+      alt_en: LM DSA/DB tutoring how tutoring runs
+      alt_cn: LM DSA/DB 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Computer Systems
   material: Computer Systems
   code: Computer Systems
@@ -314,15 +521,15 @@ courses:
   meta_description_en: Computer Systems Birmingham tutoring (Computer Systems). Stuck on labs that fail
     only under concurrency or load? Bilingual Chinese/English help.
   lead_en: Computer Systems at University of Birmingham is where abstractions stack fast and labs fail
-    for reasons that look opaque. The hard part
-    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
-    before.
+    for reasons that look opaque. The hard part is turning that arc into a method you can repeat on the
+    next brief — not rereading slides the night before.
   lead_cn: 在伯明翰大学上 Computer Systems，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: Computer Systems sits in systems, networks & architecture. Students stall when terminology outruns notes,
-    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit.
-  overview_cn: Computer Systems 是伯明翰大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、操作系统
-    / 系统编程、计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  overview_en: Computer Systems sits in systems, networks & architecture. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+  overview_cn: Computer Systems 是伯明翰大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、操作系统 /
+    系统编程、计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+    下方有我们辅导入门课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -356,6 +563,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Computer Systems — sample slides
+    title_cn: Computer Systems — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Networking layers, packets, and protocols
+      cn: 网络分层、报文与协议
+    - en: OS / systems programming
+      cn: 操作系统 / 系统编程
+    - en: Computer architecture and organisation
+      cn: 计算机体系结构与组成
+    - en: Algorithms, ADTs, and complexity
+      cn: 算法、ADT 与复杂度
+    slides:
+    - src: /assets/teach/u-birmingham/computer-systems/sample/01-title.webp
+      alt_en: Computer Systems tutoring title
+      alt_cn: Computer Systems 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/computer-systems/sample/02-topics.webp
+      alt_en: Computer Systems tutoring topics
+      alt_cn: Computer Systems 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/computer-systems/sample/03-stuck.webp
+      alt_en: Computer Systems tutoring stuck points
+      alt_cn: Computer Systems 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/computer-systems/sample/04-tutoring.webp
+      alt_en: Computer Systems tutoring how tutoring runs
+      alt_cn: Computer Systems 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Artificial Intelligence 2
   material: LI Artificial Intelligence 2
   code: LI AI2
@@ -363,16 +612,15 @@ courses:
   meta_description_en: LI AI2 Birmingham tutoring (Artificial Intelligence 2). Tool output produced, write-up
     cannot defend method choice? Bilingual Chinese/English help.
   lead_en: LI Artificial Intelligence 2 at University of Birmingham is where method names blur together
-    until pipelines, metrics, and write-ups diverge.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
+    until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you
+    can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在伯明翰大学上 LI Artificial Intelligence 2，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: LI Artificial Intelligence 2 sits in machine learning & ai. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit.
-  overview_cn: LI Artificial Intelligence 2 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络
-    / 深度学习 / AI、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。
+  overview_en: LI Artificial Intelligence 2 sits in machine learning & ai. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+  overview_cn: LI Artificial Intelligence 2 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 /
+    深度学习 / AI、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -412,6 +660,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: LI AI2 — sample slides
+    title_cn: LI AI2 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Neural nets / deep learning / AI
+      cn: 神经网络 / 深度学习 / AI
+    - en: Supervised vs unsupervised intuition
+      cn: 监督 / 无监督学习的直觉区分
+    - en: Loss, gradients, and what “training” actually updates
+      cn: 损失、梯度，以及“训练”到底在更新什么
+    - en: Train / validation / test splits and leakage
+      cn: 训练 / 验证 / 测试划分与数据泄漏
+    slides:
+    - src: /assets/teach/u-birmingham/li-ai2/sample/01-title.webp
+      alt_en: LI AI2 tutoring title
+      alt_cn: LI AI2 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/li-ai2/sample/02-topics.webp
+      alt_en: LI AI2 tutoring topics
+      alt_cn: LI AI2 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/li-ai2/sample/03-stuck.webp
+      alt_en: LI AI2 tutoring stuck points
+      alt_cn: LI AI2 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/li-ai2/sample/04-tutoring.webp
+      alt_en: LI AI2 tutoring how tutoring runs
+      alt_cn: LI AI2 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - material: 29903 - LI Multidisciplinary Systems and Software Engineering
   code: '29903'
   title: LI Multidisciplinary Systems and Software Engineering
@@ -419,15 +709,16 @@ courses:
   meta_description_en: 29903 Birmingham tutoring (LI Multidisciplinary Systems and…). Assignment brief
     (“Lab 1 Rectifier 2026”) makes sense in class, freezes you alone?
   lead_en: 29903 LI Multidisciplinary Systems and Software Engineering at University of Birmingham is
-    where briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse on the next brief.
+    where briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring focuses on
+    methods you can reuse on the next brief.
   lead_cn: 在伯明翰大学上 29903，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: 29903 LI Multidisciplinary Systems and Software Engineering sits in programming & software
-    construction. Assessed
-    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
+    construction. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
   overview_cn: 29903 是伯明翰大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Programming foundations and debugging
     cn: 编程基础与调试
@@ -467,6 +758,48 @@ courses:
     cn: 作业辅导：针对 Lab 1 Rectifier 2026, Lab 1 Rectifier 2026 ANSWERS 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: 29903 — sample slides
+    title_cn: 29903 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    slides:
+    - src: /assets/teach/u-birmingham/29903/sample/01-title.webp
+      alt_en: 29903 tutoring title
+      alt_cn: 29903 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-birmingham/29903/sample/02-topics.webp
+      alt_en: 29903 tutoring topics
+      alt_cn: 29903 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-birmingham/29903/sample/03-stuck.webp
+      alt_en: 29903 tutoring stuck points
+      alt_cn: 29903 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-birmingham/29903/sample/04-tutoring.webp
+      alt_en: 29903 tutoring how tutoring runs
+      alt_cn: 29903 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - material: 07-3838153lm-analytics-micro-course-birmingham-business-school
   title: LM Analytics Micro-Course
   department: Birmingham Business School
@@ -475,12 +808,12 @@ courses:
   meta_description_en: 07-38153 Birmingham tutoring (LM Analytics Micro-Course). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: 07-38153 LM Analytics Micro-Course at University of Birmingham is where messy notebooks and
-    weak method stories lose marks even when a model runs. The hard part is turning that arc into a method you can repeat on the next brief — not
-    rereading slides the night before.
+    weak method stories lose marks even when a model runs. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在伯明翰大学上 07-38153，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: 07-38153 LM Analytics Micro-Course sits in data science & analytics. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
+  overview_en: 07-38153 LM Analytics Micro-Course sits in data science & analytics. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit.
   overview_cn: 07-38153 是伯明翰大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。
   topics:

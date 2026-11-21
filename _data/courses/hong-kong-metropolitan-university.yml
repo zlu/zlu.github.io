@@ -11,17 +11,17 @@ courses:
   meta_description_en: COMP S321F HKMU tutoring (Comp S321f Advanced Database And…). Assignment brief
     (“321f lab8 sol”) makes sense in class, freezes you alone?
   lead_en: COMP S321F Comp S321f Advanced Database And Data Warehousing at Hong Kong Metropolitan University
-    is where one wrong schema or join quietly breaks every later query. The hard part is turning that arc into a method you can repeat on the next
-    brief — not rereading slides the night before.
+    is where one wrong schema or join quietly breaks every later query. The hard part is turning that
+    arc into a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在香港都会大学上 COMP S321F，Schema 或 join 偏一点，后面查询会整条链一起歪。
   overview_en: COMP S321F Comp S321f Advanced Database And Data Warehousing sits in databases & information
-    systems. Assessed work expects you to apply lecture
-    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
-    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
-    explicit.
-  overview_cn: COMP S321F 是香港都会大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、操作系统
-    / 系统编程、安全 / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。
+    systems. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
+  overview_cn: COMP S321F 是香港都会大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、操作系统 / 系统编程、安全
+    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+    下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -57,6 +57,46 @@ courses:
     cn: 作业辅导：针对 321f lab8 sol, 321f lab8 v2 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMP S321F — sample slides
+    title_cn: COMP S321F — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: OS / systems programming
+      cn: 操作系统 / 系统编程
+    - en: Security / privacy threat models and labs
+      cn: 安全 / 隐私威胁模型与实验
+    slides:
+    - src: /assets/teach/hkmu/comp-s321f/sample/01-title.webp
+      alt_en: COMP S321F tutoring title
+      alt_cn: COMP S321F 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/hkmu/comp-s321f/sample/02-topics.webp
+      alt_en: COMP S321F tutoring topics
+      alt_cn: COMP S321F 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/hkmu/comp-s321f/sample/03-stuck.webp
+      alt_en: COMP S321F tutoring stuck points
+      alt_cn: COMP S321F 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/hkmu/comp-s321f/sample/04-tutoring.webp
+      alt_en: COMP S321F tutoring how tutoring runs
+      alt_cn: COMP S321F 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: COMP S460F Advanced Topics In Data Mining
   material: COMP S460F Advanced Topics in Data Mining
   code: COMP S460F
@@ -64,15 +104,15 @@ courses:
   meta_description_en: COMP S460F HKMU tutoring (COMP S460F Advanced Topics In Data…). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: COMP S460F COMP S460F Advanced Topics In Data Mining at Hong Kong Metropolitan University is
-    where messy notebooks and weak method stories lose marks even when a model runs. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
+    where messy notebooks and weak method stories lose marks even when a model runs. The hard part is
+    turning that arc into a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在香港都会大学上 COMP S460F，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: COMP S460F COMP S460F Advanced Topics In Data Mining sits in data science & analytics.
     Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit.
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: COMP S460F 是香港都会大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Assignment briefs mapped to a step-by-step plan
     cn: 把作业 brief 映射成可执行步骤
@@ -113,6 +153,48 @@ courses:
     cn: 作业辅导：针对 (2025) COMP S460F Assignment01 Question Paper conf (1) 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMP S460F — sample slides
+    title_cn: COMP S460F — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Pandas / dplyr style transforms and joins
+      cn: Pandas / dplyr 风格的变换与 join
+    - en: EDA, distributions, and “what question am I answering?”
+      cn: 探索性分析、分布，以及“我在回答什么问题”
+    - en: Feature hygiene before modelling
+      cn: 建模前的特征卫生
+    - en: Visualisation that supports a claim
+      cn: 能支撑结论的可视化
+    slides:
+    - src: /assets/teach/hkmu/comp-s460f/sample/01-title.webp
+      alt_en: COMP S460F tutoring title
+      alt_cn: COMP S460F 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/hkmu/comp-s460f/sample/02-topics.webp
+      alt_en: COMP S460F tutoring topics
+      alt_cn: COMP S460F 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/hkmu/comp-s460f/sample/03-stuck.webp
+      alt_en: COMP S460F tutoring stuck points
+      alt_cn: COMP S460F 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/hkmu/comp-s460f/sample/04-tutoring.webp
+      alt_en: COMP S460F tutoring how tutoring runs
+      alt_cn: COMP S460F 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMP2030SEF
   title: Intermediate Java Programming & User Interface Design
 ---

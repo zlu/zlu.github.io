@@ -12,14 +12,16 @@ courses:
   meta_description_en: Intro to R Bayes tutoring (Introduction to R for Business…). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: Intro to R Introduction to R for Business Analytics at City St George's, University of London
-    is where messy notebooks and weak method stories lose marks even when a model runs. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
+    is where messy notebooks and weak method stories lose marks even when a model runs. The hard part
+    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
+    before.
   lead_cn: 在伦敦城市大学贝叶斯商学院上 Intro to R，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: Intro to R Introduction to R for Business Analytics sits in data science & analytics. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring
+    intro deck are below.
   overview_cn: Intro to R 是伦敦城市大学贝叶斯商学院「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Pandas / dplyr style transforms and joins
     cn: Pandas / dplyr 风格的变换与 join
@@ -58,4 +60,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Intro to R — sample slides
+    title_cn: Intro to R — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Pandas / dplyr style transforms and joins
+      cn: Pandas / dplyr 风格的变换与 join
+    - en: EDA, distributions, and “what question am I answering?”
+      cn: 探索性分析、分布，以及“我在回答什么问题”
+    - en: Feature hygiene before modelling
+      cn: 建模前的特征卫生
+    - en: Visualisation that supports a claim
+      cn: 能支撑结论的可视化
+    slides:
+    - src: /assets/teach/bayes-business-school/intro-to-r/sample/01-title.webp
+      alt_en: Intro to R tutoring title
+      alt_cn: Intro to R 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/bayes-business-school/intro-to-r/sample/02-topics.webp
+      alt_en: Intro to R tutoring topics
+      alt_cn: Intro to R 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/bayes-business-school/intro-to-r/sample/03-stuck.webp
+      alt_en: Intro to R tutoring stuck points
+      alt_cn: Intro to R 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/bayes-business-school/intro-to-r/sample/04-tutoring.webp
+      alt_en: Intro to R tutoring how tutoring runs
+      alt_cn: Intro to R 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

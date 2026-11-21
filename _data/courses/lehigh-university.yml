@@ -11,15 +11,15 @@ courses:
   meta_description_en: ENGR 010 Lehigh tutoring (Applied Engineering Computer Methods). Assignment brief
     (“E4 Manufacturing Data Level C”) makes sense in class, freezes you…
   lead_en: ENGR 010 Applied Engineering Computer Methods at Lehigh University is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into
-    a method you can repeat on the next brief — not rereading slides the night before.
+    and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a
+    method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在里海大学上 ENGR 010，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: ENGR 010 Applied Engineering Computer Methods sits in programming & software construction.
-    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: ENGR 010 是里海大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Programming foundations and debugging
     cn: 编程基础与调试
@@ -55,4 +55,42 @@ courses:
     cn: 作业辅导：针对 E4 Manufacturing Data Level C, E4 Manufacturing Data Level A 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: ENGR 010 — sample slides
+    title_cn: ENGR 010 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    - en: Web / mobile app structure
+      cn: Web / 移动应用结构
+    slides:
+    - src: /assets/teach/lehigh-university/engr-010/sample/01-title.webp
+      alt_en: ENGR 010 tutoring title
+      alt_cn: ENGR 010 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/lehigh-university/engr-010/sample/02-topics.webp
+      alt_en: ENGR 010 tutoring topics
+      alt_cn: ENGR 010 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/lehigh-university/engr-010/sample/03-stuck.webp
+      alt_en: ENGR 010 tutoring stuck points
+      alt_cn: ENGR 010 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/lehigh-university/engr-010/sample/04-tutoring.webp
+      alt_en: ENGR 010 tutoring how tutoring runs
+      alt_cn: ENGR 010 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

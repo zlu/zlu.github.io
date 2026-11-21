@@ -17,9 +17,10 @@ courses:
   overview_en: 'Machine Learning for Artificial Intelligence covers core ML ideas with heavy linear-algebra
     practice: matrices, decompositions, perceptrons, polynomial regression, and neural-net notes, with
     worksheets and a mock exam. Students stall when worksheet algebra and ML updates feel like two subjects,
-    or when exam questions ask for a derivation the notes only showed once.'
+    or when exam questions ask for a derivation the notes only showed once. Sample slides from our tutoring
+    intro deck are below.'
   overview_cn: Machine Learning for Artificial Intelligence 用大量线性代数练习撑起核心 ML：矩阵、分解、感知机、多项式回归与神经网络笔记，还有
-    worksheet 与 mock exam。卡点常在代数练习和 ML 更新像两门课，或考题要的推导笔记只演示过一次。
+    worksheet 与 mock exam。卡点常在代数练习和 ML 更新像两门课，或考题要的推导笔记只演示过一次。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Matrices and decompositions for ML coursework
     cn: 机器学习课业用的矩阵与分解
@@ -52,4 +53,46 @@ courses:
     cn: Worksheet / 作业：你来推导；我们抓记号缺口。
   - en: 'Mock exam prep: timed drills on recurring question shapes.'
     cn: Mock exam 突击：按常考题型限时练。
+  sample_slides:
+    title_en: MA2624 — sample slides
+    title_cn: MA2624 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    - en: Supervised vs unsupervised intuition
+      cn: 监督 / 无监督学习的直觉区分
+    - en: Loss, gradients, and what “training” actually updates
+      cn: 损失、梯度，以及“训练”到底在更新什么
+    - en: Train / validation / test splits and leakage
+      cn: 训练 / 验证 / 测试划分与数据泄漏
+    slides:
+    - src: /assets/teach/brunel-university-of-london/ma2624/sample/01-title.webp
+      alt_en: MA2624 tutoring title
+      alt_cn: MA2624 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/brunel-university-of-london/ma2624/sample/02-topics.webp
+      alt_en: MA2624 tutoring topics
+      alt_cn: MA2624 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/brunel-university-of-london/ma2624/sample/03-stuck.webp
+      alt_en: MA2624 tutoring stuck points
+      alt_cn: MA2624 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/brunel-university-of-london/ma2624/sample/04-tutoring.webp
+      alt_en: MA2624 tutoring how tutoring runs
+      alt_cn: MA2624 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

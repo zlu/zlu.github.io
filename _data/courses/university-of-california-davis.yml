@@ -28,11 +28,11 @@ courses:
     homework (eight full assignments after a short welcome task — typically the top six count, with a
     small share for code comments). Late work often uses a blend of on-time and late scores. Staffed “stay
     late and code” nights support weeks with due dates. Plan on substantial weekly practice; fluency comes
-    from writing programs, not from rereading slides.'
+    from writing programs, not from rereading slides. Sample slides from our tutoring intro deck are below.'
   overview_cn: Introduction to Programming（2026 秋，B01–B06）把 Python 当成解决实际问题、 做轻度数据分析的工具：与用户交互、读写数据文件、使用内置数据结构，好把本专业的
     重复劳动自动化。常用教材是 Severance《Python for Everybody》（用 Python 3 探索数据），Canvas 上还有讲义阅读与 Core Python 速查表。成绩大致对半开：一半来自
     讨论课机房的开卷短测（取最好的八次；可选期末综合测验只会抬分不会拉低），一半来自 编程作业（欢迎作业之后约八次完整作业，通常取最高六次，另有一小部分看代码注释）。 迟交常按准时分与迟交分的折中计。作业周有
-    SLAC 晚间答疑。每周要留出够用的练习时间； 编程靠写，不靠反复看幻灯片。
+    SLAC 晚间答疑。每周要留出够用的练习时间； 编程靠写，不靠反复看幻灯片。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Python for non-CS majors — gentle path from first programs to useful scripts
     cn: 面向非 CS 专业的 Python：从第一段程序到真正能用的脚本
@@ -72,8 +72,50 @@ courses:
       does.'
     cn: 作业：拆题 → 梳步骤 → 在你的环境里现场 debug；注释写清代码实际在做什么。
   - en: 'Quiz prep: short timed drills so weekly lab quizzes and the optional final pair feel familiar.'
-    cn: 测验突击：短时限练习，让每周机房 quiz 和可选期末综合测验手感熟悉。
+    cn: 测验突击：短时限练习，让每周机房 quiz 和可选期末综合测验更熟悉。
   - en: 'Success habits: keep the quiz streak, submit HW early enough to iterate, and lock concepts before
       the next unit.'
     cn: 成功习惯：测验不断档、作业提早交好留改分轮次，并在进入下一单元前把概念钉牢。
+  sample_slides:
+    title_en: ecs-032a — sample slides
+    title_cn: ecs-032a — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Unit tests and autograder feedback loops
+      cn: 单元测试与 autograder 反馈循环
+    slides:
+    - src: /assets/teach/uc-davis/ecs-032a/sample/01-title.webp
+      alt_en: ecs-032a tutoring title
+      alt_cn: ecs-032a 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/uc-davis/ecs-032a/sample/02-topics.webp
+      alt_en: ecs-032a tutoring topics
+      alt_cn: ecs-032a 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/uc-davis/ecs-032a/sample/03-stuck.webp
+      alt_en: ecs-032a tutoring stuck points
+      alt_cn: ecs-032a 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/uc-davis/ecs-032a/sample/04-tutoring.webp
+      alt_en: ecs-032a tutoring how tutoring runs
+      alt_cn: ecs-032a 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

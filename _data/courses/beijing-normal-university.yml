@@ -11,14 +11,14 @@ courses:
   meta_description_en: Deutsch A1 BNU tutoring (German A1). Lectures outpacing note-taking? Bilingual
     Chinese/English lecture sync, assignments, exam prep.
   lead_en: Deutsch A1 German A1 at Beijing Normal University is where lecture speed and dense vocabulary
-    outrun note-taking. The hard part is turning
-    that arc into a method you can repeat on the next brief — not rereading slides the night before.
+    outrun note-taking. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
   lead_cn: 在北京师范大学上 Deutsch A1，课速一快、术语一密，笔记一断档后面就更难补。
   overview_en: Deutsch A1 German A1 sits in computer science coursework. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit.
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: Deutsch A1 是北京师范大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Lecture catch-up in Chinese and English
     cn: 中英双语补课与知识点梳理
@@ -53,4 +53,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Deutsch A1 — sample slides
+    title_cn: Deutsch A1 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Lecture catch-up in Chinese and English
+      cn: 中英双语补课与知识点梳理
+    - en: Assignment approach and debugging
+      cn: 作业思路与调试
+    - en: Project structure and write-up feedback
+      cn: Project 结构与报告反馈
+    - en: Exam topic maps on weak areas
+      cn: 针对薄弱点的考点地图
+    slides:
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/01-title.webp
+      alt_en: Deutsch A1 tutoring title
+      alt_cn: Deutsch A1 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/02-topics.webp
+      alt_en: Deutsch A1 tutoring topics
+      alt_cn: Deutsch A1 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/03-stuck.webp
+      alt_en: Deutsch A1 tutoring stuck points
+      alt_cn: Deutsch A1 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/04-tutoring.webp
+      alt_en: Deutsch A1 tutoring how tutoring runs
+      alt_cn: Deutsch A1 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

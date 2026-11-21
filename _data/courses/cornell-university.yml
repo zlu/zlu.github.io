@@ -8,18 +8,18 @@ courses:
   title: Java Test
   material: cs2110-java-test
   theme: programming
-  meta_description_en: CS2110 Cornell tutoring (Java Test). Assignment brief (“A2 CS 2110”) makes sense
-    in class, freezes you alone? Bilingual Chinese/English help.
-  lead_en: CS2110 Java Test at Cornell University is where briefs, tooling, and autograder edge cases
-    hit harder than syntax itself. Tutoring focuses on methods you can reuse on the next brief.
-  lead_cn: 在康奈尔大学上 CS2110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: CS2110 Java Test sits in programming & software construction. Evidence from the course
-    folder points to Algorithms, ADTs, and complexity; Programming foundations and debugging. Assessed
-    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
-  overview_cn: CS2110 是康奈尔大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: CS2110 Cornell University tutoring (Java Test). Stuck on assignment briefs such
+    as A2 CS 2110? Bilingual Chinese/English help.
+  lead_en: 'CS2110 Java Test at Cornell University. Briefs, tooling, and autograder edge cases hit harder
+    than syntax itself. Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse.'
+  lead_cn: 在康奈尔大学上 CS2110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'CS2110 Java Test (Programming & software construction) at Cornell University. Common topics:
+    Algorithms, ADTs, and complexity; Programming foundations and debugging. Assessed work expects you
+    to apply the same ideas under deadline. People stall when terms outrun notes, when a class demo does
+    not replay alone, or when the write-up / autograder wants a method the notebook never showed. Sample
+    slides from our tutoring intro deck are below.'
+  overview_cn: CS2110 是康奈尔大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度、编程基础与调试。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -58,6 +58,48 @@ courses:
     cn: 作业辅导：针对 A2 CS 2110 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: CS2110 — sample slides
+    title_cn: CS2110 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    slides:
+    - src: /assets/teach/cornell/cs2110/sample/01-title.webp
+      alt_en: CS2110 tutoring title
+      alt_cn: CS2110 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/cornell/cs2110/sample/02-topics.webp
+      alt_en: CS2110 tutoring topics
+      alt_cn: CS2110 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/cornell/cs2110/sample/03-stuck.webp
+      alt_en: CS2110 tutoring stuck points
+      alt_cn: CS2110 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/cornell/cs2110/sample/04-tutoring.webp
+      alt_en: CS2110 tutoring how tutoring runs
+      alt_cn: CS2110 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: Database Systems
   material: database
   code: Database
@@ -65,14 +107,15 @@ courses:
   meta_description_en: Database Cornell tutoring (Database Systems). Stuck on correct-looking SQL that
     fails hidden test schemas? Bilingual Chinese/English help.
   lead_en: Database Database Systems at Cornell University is where one wrong schema or join quietly breaks
-    every later query. The hard part is turning
-    that arc into a method you can repeat on the next brief — not rereading slides the night before.
+    every later query. The hard part is turning that arc into a method you can repeat on the next brief
+    — not rereading slides the night before.
   lead_cn: 在康奈尔大学上 Database，Schema 或 join 偏一点，后面查询会整条链一起歪。
   overview_en: Database Database Systems sits in databases & information systems. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit.
+    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
   overview_cn: Database 是康奈尔大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: ER modelling and normalisation trade-offs
     cn: ER 建模与范式权衡
@@ -107,4 +150,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Database — sample slides
+    title_cn: Database — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: ER modelling and normalisation trade-offs
+      cn: ER 建模与范式权衡
+    - en: SQL joins, aggregation, and nested queries
+      cn: SQL join、聚合与嵌套查询
+    - en: Indexes, plans, and “why is this slow?”
+      cn: 索引、执行计划与“为什么慢”
+    - en: Transactions and isolation at intro level
+      cn: 入门级事务与隔离级别
+    slides:
+    - src: /assets/teach/cornell/database/sample/01-title.webp
+      alt_en: Database tutoring title
+      alt_cn: Database 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/cornell/database/sample/02-topics.webp
+      alt_en: Database tutoring topics
+      alt_cn: Database 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/cornell/database/sample/03-stuck.webp
+      alt_en: Database tutoring stuck points
+      alt_cn: Database 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/cornell/database/sample/04-tutoring.webp
+      alt_en: Database tutoring how tutoring runs
+      alt_cn: Database 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

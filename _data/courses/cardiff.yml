@@ -14,17 +14,15 @@ courses:
   meta_description_en: CM6123 Cardiff tutoring (Software Development Skills). Assignment brief (“Assessment
     CM6123 1 2024 2025 1”) makes sense in class, freezes you alone?
   lead_en: CM6123 Software Development Skills at Cardiff University is where one wrong schema or join
-    quietly breaks every later query. The hard
-    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
-    night before.
+    quietly breaks every later query. The hard part is turning that arc into a method you can repeat on
+    the next brief — not rereading slides the night before.
   lead_cn: 在卡迪夫大学上 CM6123，Schema 或 join 偏一点，后面查询会整条链一起歪。
   overview_en: CM6123 Software Development Skills sits in databases & information systems. Evidence from
-    Assessed
-    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: CM6123 是卡迪夫大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、软件设计与构造这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -64,6 +62,48 @@ courses:
     cn: 作业辅导：针对 Assessment CM6123 1 2024 2025 1 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: CM6123 — sample slides
+    title_cn: CM6123 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: ER modelling and normalisation trade-offs
+      cn: ER 建模与范式权衡
+    - en: SQL joins, aggregation, and nested queries
+      cn: SQL join、聚合与嵌套查询
+    - en: Indexes, plans, and “why is this slow?”
+      cn: 索引、执行计划与“为什么慢”
+    - en: Transactions and isolation at intro level
+      cn: 入门级事务与隔离级别
+    slides:
+    - src: /assets/teach/cardiff/cm6123/sample/01-title.webp
+      alt_en: CM6123 tutoring title
+      alt_cn: CM6123 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/cardiff/cm6123/sample/02-topics.webp
+      alt_en: CM6123 tutoring topics
+      alt_cn: CM6123 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/cardiff/cm6123/sample/03-stuck.webp
+      alt_en: CM6123 tutoring stuck points
+      alt_cn: CM6123 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/cardiff/cm6123/sample/04-tutoring.webp
+      alt_en: CM6123 tutoring how tutoring runs
+      alt_cn: CM6123 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: CMT645
   title: DevOps
 - code: CMT655

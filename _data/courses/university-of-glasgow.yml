@@ -11,17 +11,17 @@ courses:
   meta_description_en: COMPSCI5089 Glasgow tutoring (Introduction to Data Science and…). Weekly lecture
     arc moves on before last week’s method is solid?
   lead_en: COMPSCI5089 Introduction to Data Science and Systems at University of Glasgow is where messy
-    notebooks and weak method stories lose marks even when a model runs. The hard part is turning
-    that arc into a method you can repeat on the next brief — not rereading slides the night before.
+    notebooks and weak method stories lose marks even when a model runs. The hard part is turning that
+    arc into a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在格拉斯哥大学上 COMPSCI5089，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: COMPSCI5089 Introduction to Data Science and Systems sits in data science & analytics.
-    There is a weekly arc (about week 9–10) plus assessed
-    work that expects you to apply the same ideas under deadline pressure. Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit.
+    There is a weekly arc (about week 9–10) plus assessed work that expects you to apply the same ideas
+    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
+    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+    Sample slides from our tutoring intro deck are below.
   overview_cn: COMPSCI5089 是格拉斯哥大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、网络分层、报文与协议、数学基础与证明习惯这些点转。大约第
     9–10 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。
+    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -65,23 +65,62 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMPSCI5089 — sample slides
+    title_cn: COMPSCI5089 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Data wrangling / analytics tables
+      cn: 数据清洗 / 分析表
+    - en: Networking layers, packets, and protocols
+      cn: 网络分层、报文与协议
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    slides:
+    - src: /assets/teach/u-glasgow/compsci5089/sample/01-title.webp
+      alt_en: COMPSCI5089 tutoring title
+      alt_cn: COMPSCI5089 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/compsci5089/sample/02-topics.webp
+      alt_en: COMPSCI5089 tutoring topics
+      alt_cn: COMPSCI5089 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/compsci5089/sample/03-stuck.webp
+      alt_en: COMPSCI5089 tutoring stuck points
+      alt_cn: COMPSCI5089 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/compsci5089/sample/04-tutoring.webp
+      alt_en: COMPSCI5089 tutoring how tutoring runs
+      alt_cn: COMPSCI5089 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMPSCI5077
   title: Enterprise Cyber Security
   material: compsci5077
   theme: security
-  meta_description_en: COMPSCI5077 Glasgow tutoring (Enterprise Cyber Security). Stuck on lab setup unfinished;
-    report lists tools without a clear finding?
-  lead_en: COMPSCI5077 Enterprise Cyber Security at University of Glasgow is where threat models, crypto
-    vocabulary, and lab setup form a terminology wall.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
-  lead_cn: 在格拉斯哥大学上 COMPSCI5077，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
-  overview_en: COMPSCI5077 Enterprise Cyber Security sits in security & privacy. Evidence from the course
-    folder points to Computer architecture and organisation; Security / privacy threat models and labs.
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: COMPSCI5077 是格拉斯哥大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、安全 / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: COMPSCI5077 University of Glasgow tutoring (Enterprise Cyber Security). Stuck on
+    Computer architecture and organisation? Bilingual Chinese/English help.
+  lead_en: 'COMPSCI5077 Enterprise Cyber Security at University of Glasgow. Threat models, crypto vocabulary,
+    and lab setup form a terminology wall. Tutoring: lecture catch-up, assignment debug, exam drills —
+    methods you can reuse.'
+  lead_cn: 在格拉斯哥大学上 COMPSCI5077，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'COMPSCI5077 Enterprise Cyber Security (Security & privacy) at University of Glasgow. Common
+    topics: Computer architecture and organisation; Security / privacy threat models and labs. People
+    stall when terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder
+    wants a method the notebook never showed. Sample slides from our tutoring intro deck are below.'
+  overview_cn: COMPSCI5077 是格拉斯哥大学的「安全与隐私」课，既要真懂，也要能动手。常见内容包括计算机体系结构与组成、安全 / 隐私威胁模型与实验。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Computer architecture and organisation
     cn: 计算机体系结构与组成
@@ -121,23 +160,60 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMPSCI5077 — sample slides
+    title_cn: COMPSCI5077 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Computer architecture and organisation
+      cn: 计算机体系结构与组成
+    - en: Security / privacy threat models and labs
+      cn: 安全 / 隐私威胁模型与实验
+    slides:
+    - src: /assets/teach/u-glasgow/compsci5077/sample/01-title.webp
+      alt_en: COMPSCI5077 tutoring title
+      alt_cn: COMPSCI5077 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/compsci5077/sample/02-topics.webp
+      alt_en: COMPSCI5077 tutoring topics
+      alt_cn: COMPSCI5077 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/compsci5077/sample/03-stuck.webp
+      alt_en: COMPSCI5077 tutoring stuck points
+      alt_cn: COMPSCI5077 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/compsci5077/sample/04-tutoring.webp
+      alt_en: COMPSCI5077 tutoring how tutoring runs
+      alt_cn: COMPSCI5077 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMPSCI2007
   title: Data Structure
   material: COMPSCI2007-datastructure
   theme: algorithms
-  meta_description_en: COMPSCI2007 Glasgow tutoring (Data Structure). Can follow a worked example, cannot
-    start from a blank page under time pressure?
-  lead_en: COMPSCI2007 Data Structure at University of Glasgow is where invariants, complexity claims,
-    and code must stay aligned under time pressure.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
-  lead_cn: 在格拉斯哥大学上 COMPSCI2007，限时下不变量、复杂度结论和代码必须说的是同一件事。
-  overview_en: COMPSCI2007 Data Structure sits in algorithms & data structures. Evidence from the course
-    folder points to Algorithms, ADTs, and complexity. Students stall when terminology outruns notes,
-    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit.
-  overview_cn: COMPSCI2007 是格拉斯哥大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: COMPSCI2007 University of Glasgow tutoring (Data Structure). Stuck on Algorithms,
+    ADTs, and complexity? Bilingual Chinese/English help.
+  lead_en: 'COMPSCI2007 Data Structure at University of Glasgow. Invariants, complexity claims, and code
+    must stay aligned under time pressure. Tutoring: lecture catch-up, assignment debug, exam drills —
+    methods you can reuse.'
+  lead_cn: 在格拉斯哥大学上 COMPSCI2007，限时下不变量、复杂度结论和代码必须说的是同一件事。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'COMPSCI2007 Data Structure (Algorithms & data structures) at University of Glasgow. Common
+    topics: Algorithms, ADTs, and complexity. People stall when terms outrun notes, when a class demo
+    does not replay alone, or when the write-up / autograder wants a method the notebook never showed.
+    Sample slides from our tutoring intro deck are below.'
+  overview_cn: COMPSCI2007 是格拉斯哥大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -177,6 +253,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMPSCI2007 — sample slides
+    title_cn: COMPSCI2007 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Asymptotic complexity and comparing candidates
+      cn: 渐近复杂度与方案比较
+    - en: Arrays, lists, trees, heaps, hash tables
+      cn: 数组、链表、树、堆、哈希表
+    - en: Sorting, searching, and graph traversals
+      cn: 排序、搜索与图遍历
+    - en: Greedy, divide-and-conquer, and dynamic programming patterns
+      cn: 贪心、分治与动态规划模式
+    slides:
+    - src: /assets/teach/u-glasgow/compsci2007/sample/01-title.webp
+      alt_en: COMPSCI2007 tutoring title
+      alt_cn: COMPSCI2007 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/compsci2007/sample/02-topics.webp
+      alt_en: COMPSCI2007 tutoring topics
+      alt_cn: COMPSCI2007 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/compsci2007/sample/03-stuck.webp
+      alt_en: COMPSCI2007 tutoring stuck points
+      alt_cn: COMPSCI2007 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/compsci2007/sample/04-tutoring.webp
+      alt_en: COMPSCI2007 tutoring how tutoring runs
+      alt_cn: COMPSCI2007 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - material: 5099 Information Visualisation
   code: COMSCI5099
   title: Information Visualization
@@ -184,14 +302,15 @@ courses:
   meta_description_en: COMSCI5099 Glasgow tutoring (Information Visualization). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: COMSCI5099 Information Visualization at University of Glasgow is where messy notebooks and
-    weak method stories lose marks even when a model runs. The hard part is turning that arc into a method you can repeat on the next brief — not
-    rereading slides the night before.
+    weak method stories lose marks even when a model runs. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在格拉斯哥大学上 COMSCI5099，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: COMSCI5099 Information Visualization sits in data science & analytics. Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit.
-  overview_cn: COMSCI5099 是格拉斯哥大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、SQL、Schema
-    与数据库、网络分层、报文与协议这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  overview_en: COMSCI5099 Information Visualization sits in data science & analytics. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
+  overview_cn: COMSCI5099 是格拉斯哥大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、SQL、Schema 与数据库、网络分层、报文与协议这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -228,6 +347,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMSCI5099 — sample slides
+    title_cn: COMSCI5099 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Data wrangling / analytics tables
+      cn: 数据清洗 / 分析表
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Networking layers, packets, and protocols
+      cn: 网络分层、报文与协议
+    - en: Security / privacy threat models and labs
+      cn: 安全 / 隐私威胁模型与实验
+    slides:
+    - src: /assets/teach/u-glasgow/comsci5099/sample/01-title.webp
+      alt_en: COMSCI5099 tutoring title
+      alt_cn: COMSCI5099 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/comsci5099/sample/02-topics.webp
+      alt_en: COMSCI5099 tutoring topics
+      alt_cn: COMSCI5099 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/comsci5099/sample/03-stuck.webp
+      alt_en: COMSCI5099 tutoring stuck points
+      alt_cn: COMSCI5099 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/comsci5099/sample/04-tutoring.webp
+      alt_en: COMSCI5099 tutoring how tutoring runs
+      alt_cn: COMSCI5099 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - material: 5076 Database & Data Analytics
   title: Database & Data Analytics
   code: COMPSCI5076
@@ -235,15 +396,17 @@ courses:
   meta_description_en: COMPSCI5076 Glasgow tutoring (Database & Data Analytics). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: COMPSCI5076 Database & Data Analytics at University of Glasgow is where messy notebooks and
-    weak method stories lose marks even when a model runs. Tutoring focuses on methods you can reuse on the next brief.
+    weak method stories lose marks even when a model runs. Tutoring focuses on methods you can reuse on
+    the next brief.
   lead_cn: 在格拉斯哥大学上 COMPSCI5076，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: COMPSCI5076 Database & Data Analytics sits in data science & analytics. There is a weekly arc (about week 1–4) plus assessed work that
-    expects you to apply the same ideas under deadline pressure. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
+  overview_en: COMPSCI5076 Database & Data Analytics sits in data science & analytics. There is a weekly
+    arc (about week 1–4) plus assessed work that expects you to apply the same ideas under deadline pressure.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
   overview_cn: COMPSCI5076 是格拉斯哥大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、计算机体系结构与组成、数学基础与证明习惯这些点转。大约第
     1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。
+    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -283,24 +446,65 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMPSCI5076 — sample slides
+    title_cn: COMPSCI5076 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Pandas / dplyr style transforms and joins
+      cn: Pandas / dplyr 风格的变换与 join
+    - en: EDA, distributions, and “what question am I answering?”
+      cn: 探索性分析、分布，以及“我在回答什么问题”
+    - en: Feature hygiene before modelling
+      cn: 建模前的特征卫生
+    slides:
+    - src: /assets/teach/u-glasgow/compsci5076/sample/01-title.webp
+      alt_en: COMPSCI5076 tutoring title
+      alt_cn: COMPSCI5076 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/compsci5076/sample/02-topics.webp
+      alt_en: COMPSCI5076 tutoring topics
+      alt_cn: COMPSCI5076 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/compsci5076/sample/03-stuck.webp
+      alt_en: COMPSCI5076 tutoring stuck points
+      alt_cn: COMPSCI5076 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/compsci5076/sample/04-tutoring.webp
+      alt_en: COMPSCI5076 tutoring how tutoring runs
+      alt_cn: COMPSCI5076 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - material: 5057 HCI Design & Evaluation
   title: HCI Design & Evaluation
   code: COMPSCI5057
   theme: web-mobile
-  meta_description_en: COMPSCI5057 Glasgow tutoring (HCI Design & Evaluation). Weekly lecture arc moves
-    on before last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: COMPSCI5057 HCI Design & Evaluation at University of Glasgow is where front-end and back-end
-    failures mask each other inside one brief. The hard part is turning that arc into a method you can repeat on the next brief — not rereading
-    slides the night before.
-  lead_cn: 在格拉斯哥大学上 COMPSCI5057，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。
-  overview_en: COMPSCI5057 HCI Design & Evaluation sits in web, mobile & hci. Evidence from the course
-    folder points to Automata, formal languages, and proofs. There is a weekly arc (about week 1–3) plus
-    assessed work that expects you to apply the same ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit.
-  overview_cn: COMPSCI5057 是格拉斯哥大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着自动机、形式语言与证明这些点转。大约第
-    1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。
+  meta_description_en: COMPSCI5057 University of Glasgow tutoring (HCI Design & Evaluation). Stuck on
+    Automata, formal languages, and proofs? Bilingual Chinese/English help.
+  lead_en: 'COMPSCI5057 HCI Design & Evaluation at University of Glasgow. Front-end and back-end failures
+    mask each other inside one brief. Tutoring: lecture catch-up, assignment debug, exam drills — methods
+    you can reuse.'
+  lead_cn: 在格拉斯哥大学上 COMPSCI5057，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'COMPSCI5057 HCI Design & Evaluation (Web, mobile & HCI) at University of Glasgow. Common
+    topics: Automata, formal languages, and proofs. Weekly arc about week 1–3, plus assessed work under
+    deadline. People stall when terms outrun notes, when a class demo does not replay alone, or when the
+    write-up / autograder wants a method the notebook never showed. Sample slides from our tutoring intro
+    deck are below.'
+  overview_cn: COMPSCI5057 是格拉斯哥大学的「Web、移动与人机交互」课，既要真懂，也要能动手。常见内容包括自动机、形式语言与证明。大约第 1–3 周有连续周课，作业会要求你在
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Automata, formal languages, and proofs
     cn: 自动机、形式语言与证明
@@ -336,6 +540,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMPSCI5057 — sample slides
+    title_cn: COMPSCI5057 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: introduction
+      cn: introduction
+    - en: theories of HCI and heuristic evaluation
+      cn: theories of HCI and heuristic evaluation
+    - en: HCIDE2026 experiments
+      cn: HCIDE2026 experiments
+    slides:
+    - src: /assets/teach/u-glasgow/compsci5057/sample/01-title.webp
+      alt_en: COMPSCI5057 tutoring title
+      alt_cn: COMPSCI5057 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/compsci5057/sample/02-topics.webp
+      alt_en: COMPSCI5057 tutoring topics
+      alt_cn: COMPSCI5057 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/compsci5057/sample/03-stuck.webp
+      alt_en: COMPSCI5057 tutoring stuck points
+      alt_cn: COMPSCI5057 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/compsci5057/sample/04-tutoring.webp
+      alt_en: COMPSCI5057 tutoring how tutoring runs
+      alt_cn: COMPSCI5057 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - material: 4043 Systems and Networks
   title: Systems and Networks
   code: COMPSCI4043
@@ -343,16 +587,15 @@ courses:
   meta_description_en: COMPSCI4043 Glasgow tutoring (Systems and Networks). Stuck on labs that fail only
     under concurrency or load? Bilingual Chinese/English help.
   lead_en: COMPSCI4043 Systems and Networks at University of Glasgow is where abstractions stack fast
-    and labs fail for reasons that look opaque.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
+    and labs fail for reasons that look opaque. The hard part is turning that arc into a method you can
+    repeat on the next brief — not rereading slides the night before.
   lead_cn: 在格拉斯哥大学上 COMPSCI4043，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: COMPSCI4043 Systems and Networks sits in systems, networks & architecture. Evidence from
-    Students stall when terminology outruns notes, when a demo
-    makes sense in class but not alone, or when the write-up / autograder asks for a method the notebook
-    never made explicit.
+    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
   overview_cn: COMPSCI4043 是格拉斯哥大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着Spark / 分布式数据处理、网络分层、报文与协议、计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Spark / distributed data processing
     cn: Spark / 分布式数据处理
@@ -390,6 +633,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMPSCI4043 — sample slides
+    title_cn: COMPSCI4043 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Computer architecture and organisation
+      cn: 计算机体系结构与组成
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
+    slides:
+    - src: /assets/teach/u-glasgow/compsci4043/sample/01-title.webp
+      alt_en: COMPSCI4043 tutoring title
+      alt_cn: COMPSCI4043 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/compsci4043/sample/02-topics.webp
+      alt_en: COMPSCI4043 tutoring topics
+      alt_cn: COMPSCI4043 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/compsci4043/sample/03-stuck.webp
+      alt_en: COMPSCI4043 tutoring stuck points
+      alt_cn: COMPSCI4043 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/compsci4043/sample/04-tutoring.webp
+      alt_en: COMPSCI4043 tutoring how tutoring runs
+      alt_cn: COMPSCI4043 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - material: 4039 Programming
   title: Programming
   code: COMPSCI4039
@@ -397,16 +682,16 @@ courses:
   meta_description_en: COMPSCI4039 Glasgow tutoring (Programming). Weekly lecture arc moves on before
     last week’s method is solid? Bilingual Chinese/English help.
   lead_en: COMPSCI4039 Programming at University of Glasgow is where briefs, tooling, and autograder edge
-    cases hit harder than syntax itself.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
+    cases hit harder than syntax itself. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
   lead_cn: 在格拉斯哥大学上 COMPSCI4039，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: COMPSCI4039 Programming sits in programming & software construction. There is a weekly
     arc (about week 1–1) plus assessed work that expects you to apply the same ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
   overview_cn: COMPSCI4039 是格拉斯哥大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: 'Week 1: Wk01 01 Intro Hello world'
     cn: 第 1 周：Wk01 01 Intro Hello world
@@ -446,4 +731,44 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: COMPSCI4039 — sample slides
+    title_cn: COMPSCI4039 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Wk01 01 Intro Hello world
+      cn: Wk01 01 Intro Hello world
+    - en: Wk01 02 Variables functions and scope
+      cn: Wk01 02 Variables functions and scope
+    - en: Wk01 03 Loops stringFormating libraries
+      cn: Wk01 03 Loops stringFormating libraries
+    slides:
+    - src: /assets/teach/u-glasgow/compsci4039/sample/01-title.webp
+      alt_en: COMPSCI4039 tutoring title
+      alt_cn: COMPSCI4039 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-glasgow/compsci4039/sample/02-topics.webp
+      alt_en: COMPSCI4039 tutoring topics
+      alt_cn: COMPSCI4039 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-glasgow/compsci4039/sample/03-stuck.webp
+      alt_en: COMPSCI4039 tutoring stuck points
+      alt_cn: COMPSCI4039 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-glasgow/compsci4039/sample/04-tutoring.webp
+      alt_en: COMPSCI4039 tutoring how tutoring runs
+      alt_cn: COMPSCI4039 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

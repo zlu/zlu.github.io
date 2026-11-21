@@ -8,20 +8,19 @@ courses:
   title: Engineering Software Computing
   material: ESC4402
   theme: programming
-  meta_description_en: ESC4402 Algonquin tutoring (Engineering Software Computing). Weekly lecture arc
-    moves on before last week’s method is solid?
-  lead_en: ESC4402 Engineering Software / Computing at Algonquin College is where one wrong schema or
-    join quietly breaks every later query. The hard part is turning that arc into a method you can repeat on
-    the next brief — not rereading slides the night before.
-  lead_cn: 在亚岗昆学院上 ESC4402，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: ESC4402 Engineering Software / Computing sits in databases & information systems. Evidence
-    from There is a weekly arc (about week 1–9) plus assessed work that
-    expects you to apply the same ideas under deadline pressure. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
-  overview_cn: ESC4402 是亚岗昆学院「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、自动机、形式语言与证明、Web
-    / 移动应用结构这些点转。大约第 1–9 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
-    autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: ESC4402 Algonquin College tutoring (Engineering Software Computing). Stuck on assignment
+    briefs such as 8. Module 8 Setup for Automatic Account ?
+  lead_en: 'ESC4402 Engineering Software Computing at Algonquin College. Briefs, tooling, and autograder
+    edge cases hit harder than syntax itself. Tutoring: lecture catch-up, assignment debug, exam drills
+    — methods you can reuse.'
+  lead_cn: 在亚岗昆学院上 ESC4402，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'ESC4402 Engineering Software Computing (Programming & software construction) at Algonquin
+    College. Common topics: SQL, schema design, and databases; Automata, formal languages, and proofs;
+    Web / mobile app structure. Weekly arc about week 1–9, plus assessed work under deadline. People stall
+    when terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder
+    wants a method the notebook never showed. Sample slides from our tutoring intro deck are below.'
+  overview_cn: ESC4402 是亚岗昆学院的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、自动机、形式语言与证明、Web / 移动应用结构。大约第
+    1–9 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -45,19 +44,19 @@ courses:
   - en: Assignment brief (“8. Module 8 Setup for Automatic Account Assignme”) makes sense in class, freezes
       you alone
     cn: 作业 brief（「8. Module 8 Setup for Automatic Account Assignme」）课上听得懂，自己对着就停住
-  - en: Correct-looking SQL that fails hidden test schemas
-    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
-  - en: Over-normalised or under-normalised designs
-    cn: 过度范式或范式不足的设计
-  - en: ORM confusion masking missing SQL fundamentals
-    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Code that “almost works” with no systematic debug plan
+    cn: 代码“差不多能跑”，但没有系统调试计划
+  - en: Autograder mismatches from edge cases or I/O format
+    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Copy-paste solutions that cannot be explained in viva / demo
+    cn: 粘贴来的解法，演示或口头答不上来
   session_angles:
   - en: Rebuild this week’s lecture idea before touching the homework
     cn: 先重建当周讲座概念，再碰作业
   - en: Map the brief to a short checklist; you drive, we chase the failing case
     cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Sketch the ER, then write queries against it
-    cn: 先画 ER，再对着写查询
+  - en: Restate the problem and sketch data flow on a whiteboard
+    cn: 复述题意，白板画出数据流
   tutoring:
   - en: 'Lecture sync for ESC4402: bilingual catch-up so workshop / tutorial language matches the lectures.'
     cn: 按 ESC4402 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
@@ -66,6 +65,46 @@ courses:
     cn: 作业辅导：针对 8. Module 8 Setup for Automatic Account Assignment 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: ESC4402 — sample slides
+    title_cn: ESC4402 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Automata, formal languages, and proofs
+      cn: 自动机、形式语言与证明
+    - en: Web / mobile app structure
+      cn: Web / 移动应用结构
+    slides:
+    - src: /assets/teach/algonguin-college/esc4402/sample/01-title.webp
+      alt_en: ESC4402 tutoring title
+      alt_cn: ESC4402 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/algonguin-college/esc4402/sample/02-topics.webp
+      alt_en: ESC4402 tutoring topics
+      alt_cn: ESC4402 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/algonguin-college/esc4402/sample/03-stuck.webp
+      alt_en: ESC4402 tutoring stuck points
+      alt_cn: ESC4402 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/algonguin-college/esc4402/sample/04-tutoring.webp
+      alt_en: ESC4402 tutoring how tutoring runs
+      alt_cn: ESC4402 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: ESC4503
   title: Intro To Business Application Programming
   material: ESC4503-intro-to-business-application-programming
@@ -73,16 +112,17 @@ courses:
   meta_description_en: ESC4503 Algonquin tutoring (Intro To Business Application…). Weekly lecture arc
     moves on before last week’s method is solid?
   lead_en: ESC4503 Intro To Business Application Programming at Algonquin College is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse on the next brief.
+    and autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse
+    on the next brief.
   lead_cn: 在亚岗昆学院上 ESC4503，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: ESC4503 Intro To Business Application Programming sits in programming & software construction.
-    There is a weekly arc (about
-    week 1–6) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: ESC4503 是亚岗昆学院「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、操作系统 /
-    系统编程、算法、ADT 与复杂度这些点转。大约第 1–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    There is a weekly arc (about week 1–6) plus assessed work that expects you to apply the same ideas
+    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
+    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+    Sample slides from our tutoring intro deck are below.
+  overview_cn: ESC4503 是亚岗昆学院「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、操作系统 / 系统编程、算法、ADT
+    与复杂度这些点转。大约第 1–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
+    要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -126,4 +166,44 @@ courses:
     cn: 作业辅导：针对 Wk 4 Assignment Help, Wk 3 Assignment Help 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: ESC4503 — sample slides
+    title_cn: ESC4503 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: Algorithms, ADTs, and complexity
+      cn: 算法、ADT 与复杂度
+    - en: Programming foundations and debugging
+      cn: 编程基础与调试
+    slides:
+    - src: /assets/teach/algonguin-college/esc4503/sample/01-title.webp
+      alt_en: ESC4503 tutoring title
+      alt_cn: ESC4503 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/algonguin-college/esc4503/sample/02-topics.webp
+      alt_en: ESC4503 tutoring topics
+      alt_cn: ESC4503 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/algonguin-college/esc4503/sample/03-stuck.webp
+      alt_en: ESC4503 tutoring stuck points
+      alt_cn: ESC4503 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/algonguin-college/esc4503/sample/04-tutoring.webp
+      alt_en: ESC4503 tutoring how tutoring runs
+      alt_cn: ESC4503 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

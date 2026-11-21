@@ -661,41 +661,42 @@ def build_copy(uni_label: str, uni_cn: str, code: str, title: str, theme: str, e
     topic_cns = [t["cn"] for t in (ev.get("topic_hits") or [])][:3]
 
     # Never claim we hold/redistribute university lecture notes or course packs.
+    hard_en = hard["en"]
+    if hard_en and hard_en[0].islower():
+        hard_en = hard_en[0].upper() + hard_en[1:]
     lead_en = (
-        f"{label} at {uni_label} is where {hard['en']}. "
-        f"Tutoring focuses on methods you can reuse on the next brief."
+        f"{label} at {uni_label}. {hard_en}. "
+        f"Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse."
     )
     lead_cn = (
         f"在{uni_cn}上 {cn_handle}，{hard['cn']}。"
-        f"辅导对着你真正卡住的步骤练，练到下一份 brief 还能自己下手。"
+        f"辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。"
     )
 
-    overview_en = (
-        f"{label} sits in {theme_label_en.lower()}. "
-    )
+    overview_en = f"{label} ({theme_label_en}) at {uni_label}. "
     if topic_ens:
-        overview_en += f"Common topics include {'; '.join(topic_ens)}. "
+        overview_en += f"Common topics: {'; '.join(topic_ens)}. "
     if ev.get("week_span"):
         a, b = ev["week_span"]
-        overview_en += f"There is a weekly arc (about week {a}–{b}) plus assessed work that expects you to apply the same ideas under deadline pressure. "
+        overview_en += f"Weekly arc about week {a}–{b}, plus assessed work under deadline. "
     elif ev.get("assn_files"):
-        overview_en += "Assessed work expects you to apply lecture ideas under deadline pressure. "
+        overview_en += "Assessed work expects you to apply the same ideas under deadline. "
     overview_en += (
-        "Students stall when terminology outruns notes, when a demo makes sense in class but not alone, "
-        "or when the write-up / autograder asks for a method the notebook never made explicit."
+        "People stall when terms outrun notes, when a class demo does not replay alone, "
+        "or when the write-up / autograder wants a method the notebook never showed."
     )
 
     overview_cn = (
-        f"{cn_handle} 是{uni_cn}「{theme_label_cn}」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。"
+        f"{cn_handle} 是{uni_cn}的「{theme_label_cn}」课，既要真懂，也要能动手。"
     )
     if topic_cns:
-        overview_cn += f"学期里常会绕着{ '、'.join(topic_cns) }这些点转。"
+        overview_cn += f"常见内容包括{'、'.join(topic_cns)}。"
     if ev.get("week_span"):
         a, b = ev["week_span"]
-        overview_cn += f"大约第 {a}–{b} 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。"
+        overview_cn += f"大约第 {a}–{b} 周有连续周课，作业会要求你在 DDL 下用同一套方法。"
     overview_cn += (
-        "留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，"
-        "或报告 / autograder 要的方法在 notebook 里从未写清。"
+        "很多人不是完全没学过，而是课上术语太快、自己复不出来，"
+        "或报告 / autograder 要的方法在 notebook 里从没写清。"
     )
 
     topics = build_topics(ev, theme, themes)
@@ -746,7 +747,34 @@ def dump_admin(doc: dict) -> str:
     return f"---\n{body}---\n"
 
 
-def process_uni(path: Path, themes: dict, write: bool, only_codes: Optional[Set[str]]) -> dict:
+BANNED_COPY_RE = re.compile(
+    r"Private materials|Evidence from the|现有材料|其余讲义|领取完整|"
+    r"full course pack|we have the lecture|download the notes",
+    re.I,
+)
+
+
+def copy_needs_refresh(course: dict, force: bool = False) -> bool:
+    """True if empty lead, banned inventory phrasing, or --force."""
+    if force:
+        return True
+    lead = (course.get("lead_en") or "").strip()
+    blob = " ".join(
+        str(course.get(k) or "")
+        for k in ("lead_en", "lead_cn", "overview_en", "overview_cn")
+    )
+    if BANNED_COPY_RE.search(blob):
+        return True
+    return not lead
+
+
+def process_uni(
+    path: Path,
+    themes: dict,
+    write: bool,
+    only_codes: Optional[Set[str]],
+    force: bool = False,
+) -> dict:
     data = load_admin(path)
     uni_slug = path.stem
     uni_label = data.get("university") or uni_slug
@@ -774,7 +802,7 @@ def process_uni(path: Path, themes: dict, write: bool, only_codes: Optional[Set[
         if not material:
             stats["skipped_no_material"] += 1
             continue
-        if (course.get("lead_en") or "").strip():
+        if not copy_needs_refresh(course, force=force):
             stats["skipped_curated"] += 1
             continue
         code0 = (course.get("code") or "").strip()
@@ -839,6 +867,7 @@ def process_uni(path: Path, themes: dict, write: bool, only_codes: Optional[Set[
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--force", action="store_true", help="Overwrite existing lead_en")
     ap.add_argument("--uni", action="append", default=[], help="Limit to admin slug(s)")
     ap.add_argument("--code", action="append", default=[], help="Limit to course code(s)")
     args = ap.parse_args()
@@ -855,9 +884,11 @@ def main() -> int:
     total_fix = []
     for path in paths:
         # Skip monash if already curated unless explicitly requested
-        if path.stem == "monash" and not only:
+        if path.stem == "monash" and not only and not args.force:
             continue
-        st = process_uni(path, themes, write=args.write, only_codes=only_codes)
+        st = process_uni(
+            path, themes, write=args.write, only_codes=only_codes, force=args.force
+        )
         if st["enriched"] or st["fixes"]:
             print(f"\n== {st['uni']} enriched={st['enriched']} missing={st['missing_folder']} ==")
             for c in st["courses"]:

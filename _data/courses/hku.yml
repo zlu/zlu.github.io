@@ -15,15 +15,15 @@ courses:
   meta_description_en: COMP1117B HKU tutoring (Computer Programming). Assignment brief (“Assignment3”)
     makes sense in class, freezes you alone? Bilingual Chinese/English help.
   lead_en: COMP1117B Computer Programming at The University of Hong Kong is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method you can
-    repeat on the next brief — not rereading slides the night before.
+    autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在香港大学上 COMP1117B，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: COMP1117B Computer Programming sits in programming & software construction. Evidence from
-    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: COMP1117B 是香港大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -63,6 +63,48 @@ courses:
     cn: 作业辅导：针对 Assignment3, mst 2024s1 a1 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides: &id001
+    title_en: COMP1117 — sample slides
+    title_cn: COMP1117 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Unit tests and autograder feedback loops
+      cn: 单元测试与 autograder 反馈循环
+    slides:
+    - src: /assets/teach/hku/comp1117/sample/01-title.webp
+      alt_en: COMP1117 tutoring title
+      alt_cn: COMP1117 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/hku/comp1117/sample/02-topics.webp
+      alt_en: COMP1117 tutoring topics
+      alt_cn: COMP1117 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/hku/comp1117/sample/03-stuck.webp
+      alt_en: COMP1117 tutoring stuck points
+      alt_cn: COMP1117 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/hku/comp1117/sample/04-tutoring.webp
+      alt_en: COMP1117 tutoring how tutoring runs
+      alt_cn: COMP1117 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMP1117
   title: Computer Programming
   material: comp1117b
@@ -70,15 +112,15 @@ courses:
   meta_description_en: COMP1117 HKU tutoring (Computer Programming). Assignment brief (“Assignment3”)
     makes sense in class, freezes you alone? Bilingual Chinese/English help.
   lead_en: COMP1117 Computer Programming at The University of Hong Kong is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method you can
-    repeat on the next brief — not rereading slides the night before.
+    autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method
+    you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在香港大学上 COMP1117，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
   overview_en: COMP1117 Computer Programming sits in programming & software construction. Evidence from
-    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
+    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
+    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
+    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
   overview_cn: COMP1117 是香港大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -118,6 +160,12 @@ courses:
     cn: 作业辅导：针对 Assignment3, mst 2024s1 a1 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides: *id001
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: COMP2113
   title: Programming Technologies
 - code: COMP2119
@@ -143,15 +191,15 @@ courses:
   meta_description_en: IIMT 3601 HKU tutoring (Database Management). Stuck on correct-looking SQL that
     fails hidden test schemas? Bilingual Chinese/English help.
   lead_en: IIMT 3601 Database Management at The University of Hong Kong is where one wrong schema or join
-    quietly breaks every later query. The hard
-    part is turning that arc into a method you can repeat on the next brief — not rereading slides the
-    night before.
+    quietly breaks every later query. The hard part is turning that arc into a method you can repeat on
+    the next brief — not rereading slides the night before.
   lead_cn: 在香港大学上 IIMT 3601，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: IIMT 3601 Database Management sits in databases & information systems. Students stall when terminology outruns
-    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
-    a method the notebook never made explicit.
+  overview_en: IIMT 3601 Database Management sits in databases & information systems. Students stall when
+    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
+    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
   overview_cn: IIMT 3601 是香港大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -188,6 +236,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: IIMT 3601 — sample slides
+    title_cn: IIMT 3601 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: ER modelling and normalisation trade-offs
+      cn: ER 建模与范式权衡
+    - en: SQL joins, aggregation, and nested queries
+      cn: SQL join、聚合与嵌套查询
+    - en: Indexes, plans, and “why is this slow?”
+      cn: 索引、执行计划与“为什么慢”
+    - en: Transactions and isolation at intro level
+      cn: 入门级事务与隔离级别
+    slides:
+    - src: /assets/teach/hku/iimt-3601/sample/01-title.webp
+      alt_en: IIMT 3601 tutoring title
+      alt_cn: IIMT 3601 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/hku/iimt-3601/sample/02-topics.webp
+      alt_en: IIMT 3601 tutoring topics
+      alt_cn: IIMT 3601 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/hku/iimt-3601/sample/03-stuck.webp
+      alt_en: IIMT 3601 tutoring stuck points
+      alt_cn: IIMT 3601 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/hku/iimt-3601/sample/04-tutoring.webp
+      alt_en: IIMT 3601 tutoring how tutoring runs
+      alt_cn: IIMT 3601 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - title: CS Master Entrance Exam Prep
   material: cs-master-mock-exam
   code: CS Master Exam
@@ -195,9 +285,8 @@ courses:
   meta_description_en: CS Master Exam HKU tutoring (CS Master Entrance Exam Prep). Lectures outpacing
     note-taking? Bilingual Chinese/English help.
   lead_en: CS Master Exam CS Master Entrance Exam Prep at The University of Hong Kong is where lecture
-    speed and dense vocabulary outrun note-taking.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
+    speed and dense vocabulary outrun note-taking. The hard part is turning that arc into a method you
+    can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在香港大学上 CS Master Exam，课速一快、术语一密，笔记一断档后面就更难补。
   overview_en: CS Master Exam CS Master Entrance Exam Prep sits in computer science coursework. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the

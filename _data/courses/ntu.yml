@@ -14,20 +14,20 @@ courses:
   department: School of Electrical and Electronic Engineering
   material: EE6407-GENETIC ALGORITHMS & MACHINE LEARNING
   theme: machine-learning
-  meta_description_en: EE6407 NTU tutoring (Genetic Algorithms & Machine…). Weekly lecture arc moves on
-    before last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: EE6407 Genetic Algorithms & Machine Learning at Nanyang Technological University is where method
-    names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning that arc
-    into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在南洋理工大学上 EE6407，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: EE6407 Genetic Algorithms & Machine Learning sits in machine learning & ai. Evidence from
-    There is a weekly arc (about week
-    1–7) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: EE6407 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema
-    与数据库、编程基础与调试这些点转。大约第 1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: EE6407 Nanyang tutoring (Genetic Algorithms & Machine…). Stuck on assignment briefs
+    such as ml hw2 answer? Bilingual Chinese/English help.
+  lead_en: 'EE6407 Genetic Algorithms & Machine Learning at Nanyang Technological University. Method names
+    blur together until pipelines, metrics, and write-ups diverge. Tutoring: lecture catch-up, assignment
+    debug, exam drills — methods you can reuse.'
+  lead_cn: 在南洋理工大学上 EE6407，方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'EE6407 Genetic Algorithms & Machine Learning (Machine learning & AI) at Nanyang Technological
+    University. Common topics: ML pipelines, features, and model choice; SQL, schema design, and databases;
+    Programming foundations and debugging; Web / mobile app structure. Weekly arc about week 1–7, plus
+    assessed work under deadline. People stall when terms outrun notes, when a class demo does not replay
+    alone, or when the write-up / autograder wants a method the notebook never showed. Sample slides from
+    our tutoring intro deck are below.'
+  overview_cn: EE6407 是南洋理工大学的「机器学习与人工智能」课，既要真懂，也要能动手。常见内容包括ML 流水线、特征与模型选择、SQL、Schema 与数据库、编程基础与调试。大约第
+    1–7 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: ML pipelines, features, and model choice
     cn: ML 流水线、特征与模型选择
@@ -70,6 +70,48 @@ courses:
     cn: 作业辅导：针对 ml hw2 answer, ml hw2 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides: &id001
+    title_en: CE/CZ2001 — sample slides
+    title_cn: CE/CZ2001 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: ML pipelines, features, and model choice
+      cn: ML 流水线、特征与模型选择
+    - en: nb golf hw 1
+      cn: nb golf hw 1
+    - en: ml hw2
+      cn: ml hw2
+    - en: ml hw2 answer
+      cn: ml hw2 answer
+    slides:
+    - src: /assets/teach/ntu/ce-cz2001/sample/01-title.webp
+      alt_en: CE/CZ2001 tutoring title
+      alt_cn: CE/CZ2001 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/ntu/ce-cz2001/sample/02-topics.webp
+      alt_en: CE/CZ2001 tutoring topics
+      alt_cn: CE/CZ2001 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/ntu/ce-cz2001/sample/03-stuck.webp
+      alt_en: CE/CZ2001 tutoring stuck points
+      alt_cn: CE/CZ2001 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/ntu/ce-cz2001/sample/04-tutoring.webp
+      alt_en: CE/CZ2001 tutoring how tutoring runs
+      alt_cn: CE/CZ2001 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: EE7207
   title: Neural Networks & Deep Learning
   department: School of Electrical and Electronic Engineering
@@ -104,16 +146,17 @@ courses:
   meta_description_en: CE/CZ2001 NTU tutoring (Algorithms). Weekly lecture arc moves on before last week’s
     method is solid? Bilingual Chinese/English help.
   lead_en: CE/CZ2001 Algorithms at Nanyang Technological University is where method names blur together
-    until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you can
-    repeat on the next brief — not rereading slides the night before.
+    until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you
+    can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在南洋理工大学上 CE/CZ2001，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: CE/CZ2001 Algorithms sits in machine learning & ai. There is a weekly arc (about week 1–7) plus assessed work
-    that expects you to apply the same ideas under deadline pressure. Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit.
+  overview_en: CE/CZ2001 Algorithms sits in machine learning & ai. There is a weekly arc (about week 1–7)
+    plus assessed work that expects you to apply the same ideas under deadline pressure. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
+    deck are below.
   overview_cn: CE/CZ2001 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema
     与数据库、编程基础与调试这些点转。大约第 1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: ML pipelines, features, and model choice
     cn: ML 流水线、特征与模型选择
@@ -156,6 +199,12 @@ courses:
     cn: 作业辅导：针对 ml hw2 answer, ml hw2 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides: *id001
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: IE0005
   title: Introduction to Data Science and Artificial Intelligence
   material: IE0005
@@ -163,16 +212,17 @@ courses:
   meta_description_en: IE0005 NTU tutoring (Introduction to Data Science and…). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: IE0005 Introduction to Data Science and Artificial Intelligence at Nanyang Technological University
-    is where method names blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the next brief.
+    is where method names blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses
+    on methods you can reuse on the next brief.
   lead_cn: 在南洋理工大学上 IE0005，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: IE0005 Introduction to Data Science and Artificial Intelligence sits in machine learning
-    & ai. There
-    is a weekly arc (about week 1–7) plus assessed work that expects you to apply the same ideas under
-    deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in class
-    but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: IE0005 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、神经网络 / 深度学习
-    / AI、ML 流水线、特征与模型选择这些点转。大约第 1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    & ai. There is a weekly arc (about week 1–7) plus assessed work that expects you to apply the same
+    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
+    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
+    explicit. Sample slides from our tutoring intro deck are below.
+  overview_cn: IE0005 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、神经网络 / 深度学习 / AI、ML
+    流水线、特征与模型选择这些点转。大约第 1–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -215,24 +265,65 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: IE0005 — sample slides
+    title_cn: IE0005 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Data wrangling / analytics tables
+      cn: 数据清洗 / 分析表
+    - en: ML pipelines, features, and model choice
+      cn: ML 流水线、特征与模型选择
+    - en: Automata, formal languages, and proofs
+      cn: 自动机、形式语言与证明
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    slides:
+    - src: /assets/teach/ntu/ie0005/sample/01-title.webp
+      alt_en: IE0005 tutoring title
+      alt_cn: IE0005 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/ntu/ie0005/sample/02-topics.webp
+      alt_en: IE0005 tutoring topics
+      alt_cn: IE0005 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/ntu/ie0005/sample/03-stuck.webp
+      alt_en: IE0005 tutoring stuck points
+      alt_cn: IE0005 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/ntu/ie0005/sample/04-tutoring.webp
+      alt_en: IE0005 tutoring how tutoring runs
+      alt_cn: IE0005 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: KM6307
   title: Organisation of Knowledg
   material: KM6307
   theme: databases
-  meta_description_en: KM6307 NTU tutoring (Organisation of Knowledg). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: KM6307 Organisation of Knowledg at Nanyang Technological University is where one wrong schema
-    or join quietly breaks every later query. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
-  lead_cn: 在南洋理工大学上 KM6307，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: KM6307 Organisation of Knowledg sits in databases & information systems. Evidence from
-    There is
-    a weekly arc (about week 7–7) plus assessed work that expects you to apply the same ideas under deadline
-    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
-    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: KM6307 是南洋理工大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、Web /
-    移动应用结构这些点转。大约第 7–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。
+  meta_description_en: KM6307 Nanyang tutoring (Organisation of Knowledg). Stuck on assignment briefs
+    such as Project2.advice(1)? Bilingual Chinese/English help.
+  lead_en: 'KM6307 Organisation of Knowledg at Nanyang Technological University. One wrong schema or join
+    quietly breaks every later query. Tutoring: lecture catch-up, assignment debug, exam drills — methods
+    you can reuse.'
+  lead_cn: 在南洋理工大学上 KM6307，Schema 或 join 偏一点，后面查询会整条链一起歪。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'KM6307 Organisation of Knowledg (Databases & information systems) at Nanyang Technological
+    University. Common topics: SQL, schema design, and databases; Web / mobile app structure. Weekly arc
+    about week 7–7, plus assessed work under deadline. People stall when terms outrun notes, when a class
+    demo does not replay alone, or when the write-up / autograder wants a method the notebook never showed.
+    Sample slides from our tutoring intro deck are below.'
+  overview_cn: KM6307 是南洋理工大学的「数据库与信息系统」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、Web / 移动应用结构。大约第 7–7 周有连续周课，作业会要求你在
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -272,6 +363,46 @@ courses:
     cn: 作业辅导：针对 Project2.advice(1), Comments on Flight ontology Homework 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: KM6307 — sample slides
+    title_cn: KM6307 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: KM6307 .KnowledgeGraph Intro.rev 2025
+      cn: KM6307 .KnowledgeGraph Intro.rev 2025
+    - en: KM6307 Lab.Neo4j.pt1 intro.AuraDB.rev 2025
+      cn: KM6307 Lab.Neo4j.pt1 intro.AuraDB.rev 2025
+    - en: KM6307 Lab.Neo4j.pt1 intro.Desktop
+      cn: KM6307 Lab.Neo4j.pt1 intro.Desktop
+    slides:
+    - src: /assets/teach/ntu/km6307/sample/01-title.webp
+      alt_en: KM6307 tutoring title
+      alt_cn: KM6307 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/ntu/km6307/sample/02-topics.webp
+      alt_en: KM6307 tutoring topics
+      alt_cn: KM6307 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/ntu/km6307/sample/03-stuck.webp
+      alt_en: KM6307 tutoring stuck points
+      alt_cn: KM6307 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/ntu/km6307/sample/04-tutoring.webp
+      alt_en: KM6307 tutoring how tutoring runs
+      alt_cn: KM6307 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: EE6430
   material: EE6430 – SPECIAL TOPICS IN MACHINE LEARNING
   title: SPECIAL TOPICS IN MACHINE LEARNING
@@ -279,15 +410,16 @@ courses:
   meta_description_en: EE6430 NTU tutoring (SPECIAL TOPICS IN MACHINE LEARNING). Tool output produced,
     write-up cannot defend method choice? Bilingual Chinese/English help.
   lead_en: EE6430 SPECIAL TOPICS IN MACHINE LEARNING at Nanyang Technological University is where method
-    names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you can repeat on the next
-    brief — not rereading slides the night before.
+    names blur together until pipelines, metrics, and write-ups diverge. The hard part is turning that
+    arc into a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在南洋理工大学上 EE6430，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: EE6430 SPECIAL TOPICS IN MACHINE LEARNING sits in machine learning & ai. Evidence from
-   
+  overview_en: 'EE6430 SPECIAL TOPICS IN MACHINE LEARNING sits in machine learning & ai. Evidence from
+
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: EE6430 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、ML
-    流水线、特征与模型选择这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.'
+  overview_cn: EE6430 是南洋理工大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、ML 流水线、特征与模型选择这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -326,4 +458,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: EE6430 — sample slides
+    title_cn: EE6430 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Supervised vs unsupervised intuition
+      cn: 监督 / 无监督学习的直觉区分
+    - en: Loss, gradients, and what “training” actually updates
+      cn: 损失、梯度，以及“训练”到底在更新什么
+    - en: Train / validation / test splits and leakage
+      cn: 训练 / 验证 / 测试划分与数据泄漏
+    - en: Linear models, logistic regression, and decision boundaries
+      cn: 线性模型、逻辑回归与决策边界
+    slides:
+    - src: /assets/teach/ntu/ee6430/sample/01-title.webp
+      alt_en: EE6430 tutoring title
+      alt_cn: EE6430 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/ntu/ee6430/sample/02-topics.webp
+      alt_en: EE6430 tutoring topics
+      alt_cn: EE6430 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/ntu/ee6430/sample/03-stuck.webp
+      alt_en: EE6430 tutoring stuck points
+      alt_cn: EE6430 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/ntu/ee6430/sample/04-tutoring.webp
+      alt_en: EE6430 tutoring how tutoring runs
+      alt_cn: EE6430 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

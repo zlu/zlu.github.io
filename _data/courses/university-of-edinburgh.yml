@@ -31,15 +31,16 @@ courses:
   meta_description_en: Econ Math Edinburgh tutoring (Economics Mathematics). Weekly lecture arc moves
     on before last week’s method is solid? Bilingual Chinese/English help.
   lead_en: Econ Math Economics Mathematics at University of Edinburgh is where symbols and proof phrasing
-    outrun calculation skill. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
+    outrun calculation skill. The hard part is turning that arc into a method you can repeat on the next
+    brief — not rereading slides the night before.
   lead_cn: 在爱丁堡大学上 Econ Math，符号与证明表述往往比计算本身更劝退。
   overview_en: Econ Math Economics Mathematics sits in math for computer science. There is a weekly arc
     (about week 1–1) plus assessed work that expects you to apply the same ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
+    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
+    our tutoring intro deck are below.
   overview_cn: Econ Math 是爱丁堡大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: 'Week 1: TSLA 2 review'
     cn: 第 1 周：TSLA 2 review
@@ -78,4 +79,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Econ Math — sample slides
+    title_cn: Econ Math — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: TSLA 2 review
+      cn: TSLA 2 review
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
+    slides:
+    - src: /assets/teach/u-edinburgh/econ-math/sample/01-title.webp
+      alt_en: Econ Math tutoring title
+      alt_cn: Econ Math 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-edinburgh/econ-math/sample/02-topics.webp
+      alt_en: Econ Math tutoring topics
+      alt_cn: Econ Math 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-edinburgh/econ-math/sample/03-stuck.webp
+      alt_en: Econ Math tutoring stuck points
+      alt_cn: Econ Math 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-edinburgh/econ-math/sample/04-tutoring.webp
+      alt_en: Econ Math tutoring how tutoring runs
+      alt_cn: Econ Math 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---

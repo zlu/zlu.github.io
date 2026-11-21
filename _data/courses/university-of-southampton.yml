@@ -36,8 +36,9 @@ courses:
     is a weekly arc (about week 1–10) plus assessed work that expects you to apply the same ideas under
     deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in class
     but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
+    Sample slides from our tutoring intro deck are below.
   overview_cn: MANG2092 是南安普顿大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–10 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: 'Week 1: Lecture Slides'
     cn: 第 1 周：Lecture Slides
@@ -82,22 +83,63 @@ courses:
     cn: 作业辅导：针对 MANG2092 Individual Coursework Brief 2, VBA2 36234818 一类评估拆题，你来操作键盘。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: MANG2092 — sample slides
+    title_cn: MANG2092 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Lecture Slides
+      cn: Lecture Slides
+    - en: Lecture Slides
+      cn: Lecture Slides
+    - en: Lecture Slides
+      cn: Lecture Slides
+    - en: Lecture Slides
+      cn: Lecture Slides
+    slides:
+    - src: /assets/teach/u-southampton/mang2092/sample/01-title.webp
+      alt_en: MANG2092 tutoring title
+      alt_cn: MANG2092 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-southampton/mang2092/sample/02-topics.webp
+      alt_en: MANG2092 tutoring topics
+      alt_cn: MANG2092 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-southampton/mang2092/sample/03-stuck.webp
+      alt_en: MANG2092 tutoring stuck points
+      alt_cn: MANG2092 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-southampton/mang2092/sample/04-tutoring.webp
+      alt_en: MANG2092 tutoring how tutoring runs
+      alt_cn: MANG2092 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: MATH6161
   title: Mathematical Methods
   material: MATH6161
   theme: math-for-cs
-  meta_description_en: MATH6161 Southampton tutoring (Mathematical Methods). Can follow a worked example,
-    cannot start from a blank page under time pressure?
-  lead_en: MATH6161 Mathematical Methods at University of Southampton is where symbols and proof phrasing
-    outrun calculation skill. The hard part is
-    turning that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在南安普顿大学上 MATH6161，符号与证明表述往往比计算本身更劝退。
-  overview_en: MATH6161 Mathematical Methods sits in math for computer science. Evidence from the course
-    folder points to Math foundations and proof habits; NLP / language-model coursework. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
-  overview_cn: MATH6161 是南安普顿大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数学基础与证明习惯、NLP / 语言模型课业这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: MATH6161 University tutoring (Mathematical Methods). Stuck on Math foundations
+    and proof habits? Bilingual Chinese/English help.
+  lead_en: 'MATH6161 Mathematical Methods at University of Southampton. Symbols and proof phrasing outrun
+    calculation skill. Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse.'
+  lead_cn: 在南安普顿大学上 MATH6161，符号与证明表述往往比计算本身更劝退。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
+  overview_en: 'MATH6161 Mathematical Methods (Math for computer science) at University of Southampton.
+    Common topics: Math foundations and proof habits; NLP / language-model coursework. People stall when
+    terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder wants
+    a method the notebook never showed. Sample slides from our tutoring intro deck are below.'
+  overview_cn: MATH6161 是南安普顿大学的「计算机数学基础」课，既要真懂，也要能动手。常见内容包括数学基础与证明习惯、NLP / 语言模型课业。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
@@ -136,6 +178,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: MATH6161 — sample slides
+    title_cn: MATH6161 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
+    slides:
+    - src: /assets/teach/u-southampton/math6161/sample/01-title.webp
+      alt_en: MATH6161 tutoring title
+      alt_cn: MATH6161 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-southampton/math6161/sample/02-topics.webp
+      alt_en: MATH6161 tutoring topics
+      alt_cn: MATH6161 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-southampton/math6161/sample/03-stuck.webp
+      alt_en: MATH6161 tutoring stuck points
+      alt_cn: MATH6161 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-southampton/math6161/sample/04-tutoring.webp
+      alt_en: MATH6161 tutoring how tutoring runs
+      alt_cn: MATH6161 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 - code: MATH6164
   title: Mathematical Methods / Statistics
   material: math6164
@@ -143,16 +227,15 @@ courses:
   meta_description_en: MATH6164 Southampton tutoring (Mathematical Methods / Statistics). Can follow a
     worked example, cannot start from a blank page under time pressure?
   lead_en: MATH6164 Mathematical Methods / Statistics at University of Southampton is where symbols and
-    proof phrasing outrun calculation skill. The
-    hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
+    proof phrasing outrun calculation skill. The hard part is turning that arc into a method you can repeat
+    on the next brief — not rereading slides the night before.
   lead_cn: 在南安普顿大学上 MATH6164，符号与证明表述往往比计算本身更劝退。
   overview_en: MATH6164 Mathematical Methods / Statistics sits in math for computer science. Evidence
-    from Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
+    from Students stall when terminology outruns notes, when a demo makes sense in class but not alone,
+    or when the write-up / autograder asks for a method the notebook never made explicit. Sample slides
+    from our tutoring intro deck are below.
   overview_cn: MATH6164 是南安普顿大学「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数学基础与证明习惯、分布式系统概念这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
   topics:
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
@@ -191,4 +274,46 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: MATH6164 — sample slides
+    title_cn: MATH6164 — 辅导课件样例
+    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
+    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    bullets:
+    - en: Math foundations and proof habits
+      cn: 数学基础与证明习惯
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
+    slides:
+    - src: /assets/teach/u-southampton/math6164/sample/01-title.webp
+      alt_en: MATH6164 tutoring title
+      alt_cn: MATH6164 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-southampton/math6164/sample/02-topics.webp
+      alt_en: MATH6164 tutoring topics
+      alt_cn: MATH6164 辅导课件 · 讲什么
+      caption_en: Topics
+      caption_cn: 讲什么
+    - src: /assets/teach/u-southampton/math6164/sample/03-stuck.webp
+      alt_en: MATH6164 tutoring stuck points
+      alt_cn: MATH6164 辅导课件 · 常见卡点
+      caption_en: Stuck points
+      caption_cn: 常见卡点
+    - src: /assets/teach/u-southampton/math6164/sample/04-tutoring.webp
+      alt_en: MATH6164 tutoring how tutoring runs
+      alt_cn: MATH6164 辅导课件 · 怎么上
+      caption_en: How tutoring runs
+      caption_cn: 怎么上
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our tutoring intro deck are on this page.
+    a_cn: 有，本页有我们辅导入门课件的样例页。
 ---
