@@ -59,6 +59,48 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: 15-112 course intro — sample slides
+    title_cn: 15-112 课程介绍 — 辅导课件样例
+    lead_en: >-
+      Four pages from our 15-minute course-intro tutoring deck: what the course
+      is, why the pace is hard, how competencies / quizzes / exams work, and how
+      we structure tutoring time.
+    lead_cn: >-
+      来自 15 分钟课程介绍辅导课件的 4 页：课程定位、难度与节奏、competencies / quiz / exam
+      怎么考，以及辅导怎么排。
+    bullets:
+    - en: Weekly theme pace from loops through recursion and the term project
+      cn: 从 loops 到 recursion 与 term project 的周主题节奏
+    - en: Competencies (comps) vs graded quizzes and midterms
+      cn: Competencies（comps）与计分 quiz / midterm 的区别
+    - en: Paper Code Tracing, Fill-in-the-Blank, and Free Response
+      cn: 纸质 Code Tracing、Fill-in-the-Blank 与 Free Response
+    - en: Tutoring plan — trace, whiteboard Free Response, explain every line
+      cn: 辅导计划 — 先 tracing、白板 Free Response、能解释每一行
+    slides:
+    - src: /assets/teach/carnegie-mellon-university/15-112/sample/01-title.webp
+      alt_en: CMU 15-112 Fundamentals of Programming tutoring title slide
+      alt_cn: CMU 15-112 Fundamentals of Programming 辅导课件封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/carnegie-mellon-university/15-112/sample/02-difficulty.webp
+      alt_en: Why 15-112 difficulty is high — pace, closed-book paper, competencies
+      alt_cn: 15-112 难度高的原因 — 节奏、闭卷纸考、competencies
+      caption_en: Difficulty
+      caption_cn: 难度
+    - src: /assets/teach/carnegie-mellon-university/15-112/sample/03-assessments.webp
+      alt_en: Competencies versus quizzes and exams — formats and timing
+      alt_cn: Competencies 与 quiz / exam — 题型与时间
+      caption_en: Assessments
+      caption_cn: 考核
+    - src: /assets/teach/carnegie-mellon-university/15-112/sample/04-tutoring-plan.webp
+      alt_en: How we structure 15-112 tutoring sessions
+      alt_cn: 15-112 辅导如何安排
+      caption_en: Tutoring plan
+      caption_cn: 辅导安排
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
 - code: 15-150
   title: Principles of Functional Programming
 - code: 15-210
