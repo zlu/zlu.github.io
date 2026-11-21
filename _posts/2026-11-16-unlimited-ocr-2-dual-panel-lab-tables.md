@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Unlimited-OCR-2 on Dual-Panel Lab Tables: What Works, What Breaks, How I Fixed It"
-description: "Baidu Unlimited-OCR-2 reads Chinese hospital PDF headers and boxes well. Dual-panel CBC result grids still get merged into one wrong HTML table. I fixed that by splitting left and right, then repairing the HTML."
-keywords: "Unlimited-OCR-2, Baidu OCR, open source OCR, document parsing, dual-panel table, CBC lab report, Apple Silicon MPS"
+description: "OCR issue when a page has two tables side by side: UnlimitedOCR2 / Unlimited-OCR-2 merges dual-panel CBC grids into one wrong HTML table. I split left and right, then repaired the HTML, on Apple Silicon."
+keywords: "Unlimited-OCR-2, UnlimitedOCR2, Baidu OCR, OCR two tables, dual-panel table, CBC lab report, document parsing, Apple Silicon MPS, Transformers"
 date: 2026-11-16
 comments: true
 tags:
@@ -26,9 +26,9 @@ glossary:
   - 实验室信息系统
 ---
 
-Baidu released [Unlimited-OCR-2](https://huggingface.co/baidu/Unlimited-OCR-2) as open weights (also on [ModelScope](https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR-2)). It is a small document [vision-language model](/ai-glossary/vision-language-model/). It reads pages and returns text with layout tags, reading order, tables, and multi-page context. The model card describes Sparse Reference Sliding Window Attention (SR-SWA), which keeps long-document decoding cost from growing as fast as plain full attention.
+Baidu released [Unlimited-OCR-2](https://huggingface.co/baidu/Unlimited-OCR-2) (also called UnlimitedOCR2) as open weights on Hugging Face and [ModelScope](https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR-2). It is a small document [vision-language model](/ai-glossary/vision-language-model/). It reads pages and returns text with layout tags, reading order, tables, and multi-page context. The model card describes Sparse Reference Sliding Window Attention (SR-SWA), which keeps long-document decoding cost from growing as fast as plain full attention.
 
-I ran Unlimited-OCR-2 locally on Apple Silicon (MPS, fp32). The PDF stayed on my machine. The test page was a Chinese hospital **[CBC](/med-glossary/全血细胞计数/) (complete blood count) + 5-part differential** sheet: one page, dense header, then a results grid. Below I describe the layout only. No patient identifiers and no real lab values from that file.
+I ran Unlimited-OCR-2 locally on Apple Silicon (MPS, fp32, Transformers). The PDF stayed on my machine. The test page was a Chinese hospital **[CBC](/med-glossary/全血细胞计数/) (complete blood count) + 5-part differential** sheet: one page, dense header, then a results grid. Headers and boxes read well. The dual-panel results grid did not: the model merged two side-by-side tables into one wrong HTML `<table>`. Below I describe the layout only. No patient identifiers and no real lab values from that file.
 
 ## What worked without extra code
 
@@ -43,7 +43,7 @@ Runtime on an M4-class Mac: model load about 19 s, one dense page about 9 minute
 
 The output is not only a flat string. It returns text blocks, titles, an HTML `<table>`, and boxes. That structured markup is what I parse next.
 
-## Where it failed: dual-panel CBC grids
+## OCR issue when the page has two tables
 
 ![Printed Chinese CBC sheets with two side-by-side result panels under shared headers](/assets/images/uploads/unlimited-ocr-2/dual-panel-cbc-photo.png)
 
@@ -51,7 +51,7 @@ The output is not only a flat string. It returns text blocks, titles, an HTML `<
 
 Hospital lab reports are often printed by a [lab computer system (LIS)](/med-glossary/实验室信息系统/). Many of those printouts put **two separate result lists on one page**. The left list is long ([WBC](/med-glossary/白细胞/) through [RDW-CV](/med-glossary/红细胞分布宽度/)). The right list is short ([RDW-SD](/med-glossary/红细胞分布宽度/) through [P-LCR](/med-glossary/大血小板比例/)). Both sides use the same headers: item, result, unit, reference range. The row counts do not match. People read left, then right. The model still tried to build **one** HTML table.
 
-Unlimited-OCR-2 did that. Paddle-style table tools I tried on the same kind of sheet did the same. The print layout is the problem, not only one OCR tool.
+Unlimited-OCR-2 did that. Paddle-style table tools I tried on the same kind of sheet did the same. The print layout is the problem, not only one OCR tool. If your OCR output looks like one wide row that mixes left-panel and right-panel cells, you are hitting this dual-panel case.
 
 A schematic of the bad HTML (synthetic values):
 

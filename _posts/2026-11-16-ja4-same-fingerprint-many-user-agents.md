@@ -9,22 +9,24 @@ tags:
   - tls
   - waf
   - betterreads
-description: "JA4 is a TLS ClientHello digest, not a client ID. How one digest on BetterReads covered seven rotating Windows Chrome UAs, and how I turned that into Vercel Firewall rules without Observability Plus."
-keywords: "JA4 fingerprint, JA3, TLS ClientHello, User-Agent spoofing, Vercel Firewall, bot protection, scraping farm, BetterReads, WAF rules"
+description: "JA4 hashes the TLS ClientHello, not the HTTP User-Agent. One digest can cover hundreds of UAs. Algorithm, Python code, JA4T/JA4TS, and Vercel Firewall rules from a BetterReads farm."
+keywords: "JA4 fingerprint, JA4 algorithm, JA4 Python, JA4T, JA4TS, JA3, TLS ClientHello, User-Agent spoofing, mbedtls, quiche, Vercel Firewall, bot protection, Windows Defender, BetterReads, WAF rules"
 comments: true
 ---
 
-If you work in threat hunting, bot detection, [WAF](/cs-glossary/waf/), or traffic analysis, you have probably seen this confusing signal:
+[JA4](/cs-glossary/ja4/) is a digest of the [TLS](/cs-glossary/tls/) **[ClientHello](/cs-glossary/clienthello/)**. The HTTP [User-Agent](/cs-glossary/user-agent/) is not an input. That is why one JA4 can cover hundreds of different UA strings, and why spoofing the header never splits the TLS bucket.
 
-> One single [JA4](/cs-glossary/ja4/) fingerprint. Thousands of requests. Dozens, sometimes hundreds, of different [User-Agent](/cs-glossary/user-agent/) strings.
+If you work in threat hunting, bot detection, or [WAF](/cs-glossary/waf/) ops, you have probably seen this confusing signal:
 
-It looks wrong until you see what JA4 measures and what it ignores. Below is the mechanics, then a real BetterReads incident from mid-November 2026 where that mismatch showed up as a **13k/day** bucket and I had to decide whether to Deny the JA4 itself.
+> One single JA4 fingerprint. Thousands of requests. Dozens, sometimes hundreds, of different User-Agent strings.
+
+Below: the JA4 algorithm, a Python implementation, how JA4 differs from JA4T / JA4TS (the TCP pair often shown next to it in Defender-style tooling), then a BetterReads incident from mid-November 2026 where one digest hit **~13k/day** and I had to decide whether to Deny it.
 
 Related field notes from the earlier farm wave: [Fighting Scraping Farms on a Reading Site](/2026/10/26/fighting-scraping-farms-on-a-reading-site/).
 
-## What JA4 actually is
+## JA4 algorithm
 
-JA4 is a [TLS](/cs-glossary/tls/) **[ClientHello](/cs-glossary/clienthello/)** fingerprint, a successor to [JA3](/cs-glossary/ja3/). JA3 broke easily because modern browsers randomize the order of TLS extensions. JA4 fixes that by sorting key fields before hashing, so fingerprints stay stable against extension reordering.
+JA4 is a ClientHello fingerprint, a successor to [JA3](/cs-glossary/ja3/). JA3 broke easily because modern browsers randomize the order of TLS extensions. JA4 fixes that by sorting key fields before hashing, so fingerprints stay stable against extension reordering.
 
 A JA4 has three parts joined by `_`:
 
@@ -75,7 +77,7 @@ Processing for JA4_c:
 
 Example: `supported_groups` (`0x000a`) tells the server which curves the client likes. JA4 only cares that extension `0x000a` **exists**. Two clients can advertise different curves inside that extension and still share the same JA4.
 
-## Compute JA4 in Python
+## JA4 in Python
 
 The FoxIO [JA4 spec](https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/JA4.md) is short enough to implement from already-parsed ClientHello fields. User-Agent is not an input. That is the whole point of the "same JA4, many UAs" case.
 
@@ -190,12 +192,28 @@ A JA4 is a **TLS stack configuration profile**, not a device, browser, or person
 
 Common reasons the bucket splits at HTTP:
 
-1. **Same TLS library, custom UA.** Go `crypto/tls`, OpenSSL, BoringSSL, OkHttp, Cronet: override `User-Agent`, leave ClientHello alone.
+1. **Same TLS library, custom UA.** Go `crypto/tls`, OpenSSL, BoringSSL, mbedTLS, OkHttp, Cronet, Cloudflare quiche (and quiche-java): override `User-Agent`, leave ClientHello alone. Switch the library or its cipher/extension config and the JA4 changes; rewrite the header and it does not.
 2. **Headless automation.** Playwright / Puppeteer / Selenium spoof arbitrary UAs; Chromium's TLS stack stays put, so JA4 stays stable.
 3. **Shared mobile SDKs.** Many apps, one networking stack, app-specific UAs.
 4. **Proxies.** Forward the original ClientHello, rewrite HTTP headers after encryption is up.
 
-Operational takeaway: **do not treat JA4 as a unique client ID.** Treat it as "what ClientHello is talking to me." One bucket can hold legitimate browsers, SDKs, scrapers, and malware that happen to share a TLS stack.
+Operational takeaway: **do not treat JA4 as a unique client ID.** Treat it as "what ClientHello is talking to me." One bucket can hold legitimate browsers, SDKs, scrapers, and malware that happen to share a TLS stack. "Remove JA4 fingerprinting" from a custom stack (mbedTLS, a .NET TLS client, a VIPRE or other security agent, BIND-adjacent TLS frontends) really means change the ClientHello the library emits. There is no HTTP-header knob that erases the digest.
+
+## JA4T and JA4TS (not the same as JA4)
+
+SOC and endpoint tools (including Windows Defender / Microsoft Defender threat intel that surfaces FoxIO labels) often show **JA4**, **JA4T**, and **JA4TS** together. They are different layers:
+
+| Name | Layer | Built from |
+| --- | --- | --- |
+| **JA4** | TLS | ClientHello (this post) |
+| **JA4S** | TLS | ServerHello / session side |
+| **[JA4H](/cs-glossary/ja4h/)** | HTTP | Request header names / order / flags |
+| **JA4T** | TCP | Client SYN (window size, option order, MSS, scale) |
+| **JA4TS** | TCP | Server SYN-ACK response |
+
+JA4T fingerprints the OS / TCP stack, not the browser TLS config. FoxIO's Windows 11 example is `JA4T=64240_2-1-3-1-1-4_1460_8`. JA4TS is the server's SYN-ACK; the same host can emit more than one JA4TS depending on which TCP options the client offered.
+
+So when a Defender alert or a WAF UI shows "JA4 T" and "JA4 TS," that is the TCP pair, not a broken spelling of the TLS digest. Clustering bots on BetterReads used JA4 (TLS) plus path and UA. JA4T would be the next pivot if I needed OS-stack confirmation that the TLS digest alone did not give.
 
 ## BetterReads, Nov 2026: 32k logged bots, top JA4 ~13k
 
@@ -321,6 +339,24 @@ JA4 says "same ClientHello." Path + UA + ASN say "same abuse campaign."
 | "Bot Protection Logged = safe" | Still pays SSR until custom Deny |
 | "Challenge everything" | Easy to break good crawlers |
 | "AS Deny the ISPs in the chart" | Hits real readers; prefer JA4+path or exact UA |
+| "JA4T = JA4 typo" | JA4T/JA4TS are TCP; JA4 is TLS ClientHello |
+
+## Short FAQ
+
+**Is JA4 a browser or device ID?**  
+No. It is a TLS stack profile from the ClientHello.
+
+**Does changing User-Agent change JA4?**  
+No. UA is HTTP. JA4 is TLS.
+
+**What is JA4T vs JA4TS in Windows Defender?**  
+JA4T = client TCP SYN fingerprint. JA4TS = server SYN-ACK fingerprint. Separate from the TLS JA4 digest.
+
+**Can I compute JA4 in Python?**  
+Yes. See [JA4 in Python](#ja4-in-python) above. Feed already-parsed ClientHello fields; do not hash the UA string.
+
+**Do mbedTLS, quiche, or .NET clients share Chrome's JA4?**  
+Only if they emit the same ClientHello fields. Different libraries usually mean different digests. Same library with a custom UA still shares the digest.
 
 ---
 
