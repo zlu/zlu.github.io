@@ -61,275 +61,399 @@ courses:
   title: Data Wrangling
   material: FIT5196-datawrangling
   theme: data-science
-  meta_description_en: FIT5196 Monash tutoring (Data Wrangling). Stuck on mis-structured text parse, dirty/outlier/missing
-    tables, or rubric “enough cleaning”? Bilingual pandas help.
-  lead_en: FIT5196 punishes messy notebooks. A1 is semi-structured text parse into vocab / count vectors;
-    A2 is dirty, outlier, and missing tables with a written method trail. The hard part is a clean, reproducible
-    pipeline the marker can re-run — not one lucky pandas line.
-  lead_cn: FIT5196 最怕凌乱 notebook。A1 是半结构化文本解析进 vocab / count vector；A2 是 dirty / outlier / missing 三张脏表，还要留下方法轨迹。难的不是碰巧跑通一行
-    pandas，而是交出改卷人能复跑的干净流水线。
-  overview_en: 'Data Wrangling covers the full import → clean → explore → reshape loop in Python (pandas
-    notebooks), plus group assessments and declarations. Early weeks introduce wrangling and EDA / pre-processing;
-    assessments then force real mess: mis-structured XML-like review dumps, wrong input zip = zero output
-    marks, and cleansing decisions you must justify. Students stall when regex / field extraction is brittle,
-    when joins invent silent NaNs, when EDA has no question, or when the rubric asks for method clarity
-    the notebook never shows.'
-  overview_cn: Data Wrangling 覆盖 Python（多为 pandas notebook）里导入 → 清洗 → 探索 → 重塑全流程， 加上小组评估与声明。前几周讲 wrangling
-    与 EDA / 预处理；作业立刻变成真脏活：半结构化 评论 dump、输错 zip 输出分直接零、清洗决策必须写清。卡点常在正则 / 字段抽取一碰就碎、 join 悄悄造 NaN、EDA 没有问题意识，或评分要方法说明而
-    notebook 里从未写清。
+  meta_description_en: >-
+    FIT5196 Monash Data Wrangling tutoring. A1 text parse / vocab / countvec,
+    A2 dirty·outlier·missing cleansing, bilingual pandas notebooks.
+  lead_en: >-
+    FIT5196 Data Wrangling at Monash is about making raw data usable in Python
+    (mostly pandas notebooks): parse messy files, assess quality, clean, integrate,
+    and leave a method trail. A1-style work is semi-structured text → tidy tables
+    plus vocab / count vectors. A2-style work is dirty / outlier / missing tables
+    with EDA before each fix. Markers care that the pipeline re-runs cleanly — not
+    that one lucky cell once worked.
+  lead_cn: >-
+    Monash 的 FIT5196 Data Wrangling 主要练一件事：用 Python（多半是 pandas notebook）把脏数据做成能分析的数据。
+    流程就是解析、检查质量、清洗、整合，再把做法写清楚。A1 常见是半结构化文本抽字段，再做 vocab / count vector；
+    A2 常见是 dirty / outlier / missing 三张表，要先 EDA 再改。改卷看的是能不能干净复跑，不是某次碰巧跑通。
+  overview_en: >-
+    Unit objectives line up with parse → quality → clean → integrate → document.
+    Group assessments often mix Excel + mis-structured text dumps; wrong group zip
+    means zero output marks. Sample slides below are from our FIT5196 tutoring deck
+    (not university lecture notes). Bring your brief, rubric, and notebook when you book.
+  overview_cn: >-
+    课纲目标对应：解析 → 质量检查 → 清洗 → 整合 → 写清过程。小组作业常混 Excel 和半结构化文本；
+    输错小组 zip，输出分经常直接是零。下面样例页来自我们的 FIT5196 辅导课件（不是学校讲义）。
+    预约时请带上你自己的 brief、评分表和 notebook。
   topics:
-  - en: Parsing semi-structured text / Excel into tidy tables
-    cn: 把半结构化文本 / Excel 解析成整齐表
-  - en: Vocab, count vectors, and text pre-processing for A1-style tasks
-    cn: A1 风格的 vocab、count vector 与文本预处理
-  - en: Dirty / outlier / missing cleansing with an EDA-first checklist
-    cn: 先 EDA 再洗 dirty / outlier / missing
-  - en: pandas dtypes, joins / merges without silent row inflation
-    cn: pandas dtype、join / merge 不悄悄膨胀行数
-  - en: Rubric, group declarations, and reproducible notebooks
-    cn: 评分量表、小组声明与可复现 notebook
-  - en: EDA / pre-processing before any modelling story
-    cn: 建模叙事之前的 EDA / 预处理
+  - en: Semi-structured text / Excel parse into JSON and CSV schemas
+    cn: 半结构化文本 / Excel 解析成 JSON、CSV 规定格式
+  - en: Vocab, count vectors, token rules, and stopwords
+    cn: Vocab、count vector、分词规则与停用词
+  - en: EDA-first dirty / outlier / missing cleansing
+    cn: 先 EDA，再做 dirty / outlier / missing 清洗
+  - en: Joins with helper tables without silent row inflation
+    cn: 和辅助表 join，别悄悄涨行或造 NaN
+  - en: Rubric methodology + re-runnable group notebooks
+    cn: 评分里的 methodology，以及能复跑的小组 notebook
   stuck:
-  - en: Wrong group input files → output marks go to zero
-    cn: 小组输入文件拿错 → 输出分直接归零
-  - en: Brief + rubric language — unsure what 'enough cleaning' means
-    cn: Brief + 评分表述——不清楚「清洗到什么程度算够」
-  - en: Regex / field extract works on sample, fails on the full dump
-    cn: 样例上正则 / 字段抽取能过，全量 dump 就挂
-  - en: Group notebooks with unclear ownership and broken paths
-    cn: 小组 notebook 权责不清、路径一换就挂
+  - en: Wrong group input zip → output marks go to zero
+    cn: 小组输入 zip 拿错 → 输出分归零
+  - en: Regex / field extract OK on sample, fails on the full dump
+    cn: 样例上正则能过，全量文件就挂
+  - en: Unsure what the rubric means by “enough cleaning”
+    cn: 不清楚评分说的「清洗到什么程度算够」
+  - en: Group notebook paths break; declaration / ownership unclear
+    cn: 小组 notebook 路径一换就挂，声明和分工也不清
   session_angles:
-  - en: Map A1 / A2 tasks to a short parse → clean → evidence checklist
-    cn: 把 A1 / A2 映射成 解析 → 清洗 → 证据 短清单
-  - en: You drive the notebook; we sanity-check joins, missingness, and output schemas
-    cn: 你来跑 notebook，我们一起核验 join、缺失值与输出 schema
-  - en: Tighten the write-up so each cleansing decision has a trail
-    cn: 收紧报告，让每个清洗决策都有轨迹
+  - en: Brief → parse / clean checklist → you type → re-check schema
+    cn: Brief → 解析/清洗清单 → 你来敲 → 再对输出格式
+  - en: You drive the notebook; we check joins, missingness, and outputs
+    cn: 你操作 notebook；我们一起核 join、缺失和输出
+  - en: Write one method sentence per cleansing decision
+    cn: 每个清洗决定写一句方法说明
   tutoring:
-  - en: 'Lecture sync: bilingual walkthrough of wrangling ideas (import → clean → explore → reshape) aligned
-      with workshop language.'
-    cn: 同步跟课：用中英双语把清洗主线讲透（导入 → 清洗 → 探索 → 重塑），与 workshop 用语对齐。
-  - en: 'Assignments: approach review and live notebook debug for A1 parse and A2 cleansing.'
-    cn: 作业辅导：拆 A1 解析 / A2 清洗 brief，现场 debug notebook。
-  - en: 'Assessment prep: rubric-focused drills so each task leaves a clear method trail.'
-    cn: 评估突击：按评分量表练，让每个任务都留下清晰方法轨迹。
+  - en: 'Lecture sync: bilingual walkthrough of the wrangling arc against weekly topics.'
+    cn: 跟课：中英对照讲清本周 wrangling 主线。
+  - en: 'Assignments: A1 parse / vocab and A2 cleansing debug with you at the keyboard.'
+    cn: 作业：A1 解析/vocab、A2 清洗，你来敲，我帮你查错。
+  - en: 'Assessment prep: rubric-focused checks so each task leaves a method trail.'
+    cn: 交作业前：按评分项核对，保证每步都有方法说明。
+  faq:
+  - q_en: What does FIT5196 cover?
+    q_cn: FIT5196 学什么？
+    a_en: >-
+      Data wrangling in Python: parsing semi-structured files, quality assessment,
+      cleansing, integration, and documenting the process for assessment.
+    a_cn: >-
+      用 Python 做数据整理：解析半结构化文件、检查质量、清洗、整合，并把过程写清楚交差。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our FIT5196 tutoring deck are on this page.
+    a_cn: 有，本页有我们 FIT5196 辅导课件的样例页。
+  sample_slides:
+    title_en: FIT5196 Data Wrangling — sample slides
+    title_cn: FIT5196 Data Wrangling — 辅导课件样例
+    lead_en: >-
+      Title, roadmap, unit arc, A1 parse checklist, vocab / countvec, and A2 EDA-first
+      cleansing from our tutoring deck.
+    lead_cn: >-
+      我们辅导课件里的封面、路线图、课程主线、A1 解析清单、vocab / countvec，以及 A2 先 EDA 再清洗。
+    bullets:
+    - en: Parse → quality → clean → integrate → document
+      cn: 解析 → 质量 → 清洗 → 整合 → 写清过程
+    - en: A1-style text parse and output schema checks
+      cn: A1 风格文本解析与输出格式核对
+    - en: Vocab / count vector pipeline
+      cn: Vocab / count vector 流水线
+    - en: Dirty / outlier / missing with EDA first
+      cn: Dirty / outlier / missing，先 EDA 再改
+    slides:
+    - src: /assets/teach/monash/fit5196/sample/01-title.webp
+      alt_en: FIT5196 Data Wrangling tutoring title slide
+      alt_cn: FIT5196 Data Wrangling 辅导课件封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/fit5196/sample/02-roadmap.webp
+      alt_en: Tutoring roadmap for FIT5196 wrangling review
+      alt_cn: FIT5196 辅导路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/fit5196/sample/03-unit-arc.webp
+      alt_en: Wrangling arc — parse, quality, clean, integrate, document
+      alt_cn: Wrangling 主线：解析、质量、清洗、整合、写清过程
+      caption_en: Unit arc
+      caption_cn: 课程主线
+    - src: /assets/teach/monash/fit5196/sample/04-parse-checklist.webp
+      alt_en: A1-style parse checklist
+      alt_cn: A1 风格解析清单
+      caption_en: Parse checklist
+      caption_cn: 解析清单
+    - src: /assets/teach/monash/fit5196/sample/05-vocab-countvec.webp
+      alt_en: Vocab and count vector pipeline
+      alt_cn: Vocab 与 count vector 流水线
+      caption_en: Vocab / countvec
+      caption_cn: Vocab / countvec
+    - src: /assets/teach/monash/fit5196/sample/06-eda-cleanse.webp
+      alt_en: EDA before dirty / outlier / missing fixes
+      alt_cn: 改 dirty / outlier / missing 之前先做 EDA
+      caption_en: EDA then cleanse
+      caption_cn: 先 EDA 再清洗
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
 - code: ETX3500
   title: High Dimensional Data Analysis
   aliases:
   - ETX5500
   material: etx3500-5500-High-Dimensional-Data-Analysis
   theme: data-science
-  meta_description_en: ETX3500 / ETX5500 Monash tutoring (High Dimensional Data Analysis). Stuck on R
-    / tidyverse / R Markdown or method choice under dense formulae? Bilingual help.
-  lead_en: ETX3500 / ETX5500 mixes stats language with high-dimensional intuition. Early weeks jump from
-    unit intro into R, tidy data, and R Markdown while formulae and plots keep coming. The hard part is
-    knowing what the method does to your table — not copying a slide title into the write-up.
-  lead_cn: ETX3500 / ETX5500 把统计术语和高维直觉绑在一起。前几周从课程介绍直接进入 R、 tidy data 与 R Markdown，公式和图还在不停切换。难的不是把课件标题抄进报告，
-    而是说清这个方法对你的表到底做了什么。
-  overview_en: 'High Dimensional Data Analysis (ETX3500 / ETX5500) covers statistical tools for data with
-    many variables: R / tidyverse workflows, R Markdown reports, dimension reduction intuition, modelling
-    choices, and reading plots. Tutorials and exercises expect you to move between symbols and output
-    tables. Students stall when Greek letters and matrix talk outrun the picture of “what changed in my
-    data,” or when the R Markdown knit fails while the deadline does not wait.'
-  overview_cn: High Dimensional Data Analysis（ETX3500 / ETX5500）面向多变量数据：R / tidyverse 工作流、R Markdown 报告、降维直觉、建模选择与读图。Tutorial
-    / 练习要求在符号与 输出表之间来回切换。卡点常在希腊字母和矩阵表述跑在前面，脑子里却没有 「数据到底变了什么」的画面；或 R Markdown 织不出来，DDL 却不等你。
+  meta_description_en: >-
+    ETX3500 / ETX5500 Monash High Dimensional Data Analysis tutoring.
+    Cluster, PCA, MDS, factor analysis in R; bilingual R Markdown help.
+  lead_en: >-
+    ETX3500 / ETX5500 High Dimensional Data Analysis (Monash Business / EBS) is
+    multivariate methods for survey-style data with many variables: cluster analysis;
+    PCA, correspondence analysis, and multidimensional scaling for dimension reduction;
+    factor analysis for explaining outcomes. Early weeks also lock in R, tidy data,
+    ggplot, and R Markdown so exercises and the group report can knit.
+  lead_cn: >-
+    Monash 的 ETX3500 / ETX5500 High Dimensional Data Analysis 学的是多变量方法，适合问卷这类变量很多的数据：
+    聚类；PCA、对应分析、多维尺度这类降维；因子分析用来解释结果。前几周还会把 R、tidy data、ggplot、
+    R Markdown 用熟，后面练习和小组报告才能顺利 knit。
+  overview_en: >-
+    Assessment typically mixes short individual exercises, a quiz, a group analysis
+    report, and a final exam. Seminars mix theory and practice; tutorials are R
+    hands-on. Students stall when R Markdown will not knit, when they run a method
+    without saying what changed in the table, or when the write-up cannot defend
+    method choice (cluster vs PCA vs factor).
+  overview_cn: >-
+    考核一般是个人短练习、小测、小组分析报告和期末考试。Seminar 讲理论和操作，tutorial 主要在 R 里练。
+    常见卡住：R Markdown knit 不出来；方法跑了但说不清表里发生了什么；报告里选 cluster / PCA / factor
+    却讲不出理由。
   topics:
-  - en: R, tidyverse, and tidy-data habits for coursework
-    cn: 课业用的 R、tidyverse 与 tidy data 习惯
-  - en: R Markdown reports the marker can knit
-    cn: 改卷人能 knit 出来的 R Markdown 报告
-  - en: High-dimensional intuition vs ordinary regression habits
-    cn: 高维直觉 vs 普通回归习惯
-  - en: Reading stats terminology next to the formula
-    cn: 统计术语与公式对照着读
-  - en: Tutorial / exercise walkthroughs with a method checklist
-    cn: Tutorial / 练习：带着方法清单过
-  - en: Interpreting plots without hand-waving
-    cn: 解读图表，不靠含糊其辞
+  - en: R, tidyverse, ggplot, and knit-able R Markdown
+    cn: R、tidyverse、ggplot，以及能 knit 的 R Markdown
+  - en: Cluster analysis for distinct groups
+    cn: 用聚类找出不同组别
+  - en: PCA, correspondence analysis, multidimensional scaling
+    cn: PCA、对应分析、多维尺度（降维 / 可视化）
+  - en: Factor analysis for explaining / predicting outcomes
+    cn: 用因子分析解释或预测结果
+  - en: Reading output tables and plots in plain language
+    cn: 用白话读输出表和图
   stuck:
-  - en: R / R Markdown environment eats the week before any stats
-    cn: 还没碰统计，R / R Markdown 环境就吃掉一周
-  - en: Formulae memorised without knowing what the output table should look like
-    cn: 公式背下来了，却不知道输出表该长什么样
-  - en: Lecture speed outruns note-taking on symbols and assumptions
-    cn: 课速超过记符号与假设的速度
-  - en: Plots produced, but the write-up cannot defend the modelling choice
-    cn: 图做出来了，报告却说不清为何选这个模型
+  - en: R / RStudio / knit setup blocks the first exercises
+    cn: 前几周卡在 R / RStudio / knit 环境
+  - en: Method names memorised; unclear what the output means
+    cn: 方法名背了，输出表看不懂
+  - en: Plots done, but the report cannot defend the method choice
+    cn: 图有了，报告说不清为什么选这个方法
+  - en: 'Group report: five people, inconsistent R Markdown structure'
+    cn: 小组报告五人分工，R Markdown 结构对不齐
   session_angles:
-  - en: 'Rebuild each method as: input table → transform → what to report'
-    cn: 每个方法都转化成：输入表 → 变换 → 要报告什么
-  - en: Bilingual symbol glossary for the week’s Greek letters and terms
-    cn: 用中英对照本周希腊字母与术语
-  - en: Exercise drills that force interpretation, not only computation
-    cn: 练习既要算，也要解释
+  - en: 'Each method as: input table → transform → what to report'
+    cn: 每个方法按「输入表 → 变换 → 报告写什么」过一遍
+  - en: Bilingual glossary for the week’s terms next to R output
+    cn: 本周术语中英对照，对着 R 输出看
+  - en: Exercise + short interpretation, not only code that runs
+    cn: 练习既要跑通，也要能解释
   tutoring:
-  - en: 'Lecture sync: bilingual concept catch-up so R + stats vocabulary matches the exercises.'
-    cn: 同步跟课：用中英双语补概念，让 R 与统计词汇与练习对齐。
-  - en: 'Assignments / tutorials: approach review with you driving the computation.'
-    cn: 作业 / tutorial：你来操作计算，我旁路梳思路。
-  - en: 'Exam prep: short drills on method choice, assumptions, and reading output.'
-    cn: 考前突击：短练方法选择、假设与读输出。
+  - en: 'Lecture sync: bilingual catch-up on the week’s multivariate topic + R workflow.'
+    cn: 跟课：本周多变量主题 + R 流程，中英对照补。
+  - en: 'Exercises / tutorials: you drive R; we check method choice and knit.'
+    cn: 练习 / tutorial：你操作 R；我帮你看方法选择和能不能 knit。
+  - en: 'Exam / quiz prep: short drills on when to use cluster, PCA, MDS, factor analysis.'
+    cn: 考前：短练什么时候用聚类、PCA、MDS、因子分析。
 - code: FIT2102
   title: Programming Paradigms
   theme: programming
-  meta_description_en: FIT2102 Monash tutoring (Programming Paradigms). Stuck translating lecture vocabulary
-    into a first working example? Bilingual Chinese/English lecture sync.
-  lead_en: FIT2102 switches the ground rules of programming. Lectures introduce a new paradigm (often
-    functional-style thinking) while assessment expects precise reasoning. The hard part is abstract rules
-    that do not feel like “normal” Python / Java habits.
-  lead_cn: FIT2102 会换掉很多同学习惯的编程手感。课上引入偏函数式的规则后，考核却要求推理写清楚： 不是代码能跑就够，而是要说明在当前范式下为什么这样写才合法。抽象规则一旦和原先的 Python
-    / Java 习惯拧着，作业和考试都会突然变难。
-  overview_en: Programming Paradigms asks you to think in more than one model of computation and write
-    programs that match the paradigm’s rules. Students struggle when definitions stay abstract, when error
-    messages come from an unfamiliar toolchain, or when exam questions test reasoning instead of syntax
-    recall.
-  overview_cn: Programming Paradigms 要求你用不止一种计算模型思考，并按该范式的规则写程序。留学生常见卡点是： 定义停在抽象层、小例子写不出来；工具链报错其实在提示规则被破坏，却被当成环境问题；考题措辞绕，
-    看不出在考哪条范式规则。辅导会按「概念 → 小例子 → 你来扩展 → 限时短问」推进。
+  meta_description_en: >-
+    FIT2102 Monash Programming Paradigms tutoring. Imperative / OOP / functional /
+    declarative; FRP and Haskell-style assignments; bilingual help.
+  lead_en: >-
+    FIT2102 Programming Paradigms at Monash compares imperative, object-oriented,
+    functional, and declarative styles. Core ideas: abstraction, composition, data
+    modelling, state and side effects, evaluation strategies (strict vs lazy), and
+    types. Practical work often includes Functional Reactive Programming and a
+    Haskell-style project, plus workshop / quiz work — not only “code that runs”.
+  lead_cn: >-
+    Monash 的 FIT2102 Programming Paradigms 对比命令式、面向对象、函数式、声明式这几类写法。
+    核心概念是抽象、组合、数据建模、状态与副作用、求值策略（严格 / 惰性）、类型。作业常见 Functional
+    Reactive Programming 和偏 Haskell 风格的项目，还有 workshop / quiz——不只是代码能跑。
+  overview_en: >-
+    You need to solve the same kind of problem in more than one style, then explain
+    trade-offs in clarity and maintainability. Students stall when JavaScript / FRP
+    event thinking clashes with old imperative habits, when Haskell types and purity
+    block the first compiling program, or when interview / quiz wording asks which
+    paradigm rule is being tested.
+  overview_cn: >-
+    课要求同一类问题能用不止一种范式来写，并说清可读性和可维护性上的取舍。常见卡住：JS / FRP
+    的事件思路和以前的命令式习惯冲突；Haskell 类型和纯函数卡在第一份能编译的程序；quiz /
+    面试式提问时，看不出在考哪条范式规则。
   topics:
-  - en: Paradigm shift — what changes vs ordinary imperative code
-    cn: 范式切换：相对命令式代码改了什么
-  - en: Reading definitions into small executable examples
-    cn: 把定义落到可执行小例子
-  - en: Tooling / compiler errors as diagnostic text
-    cn: 把工具链 / 编译报错当诊断文本读
-  - en: Exam-style reasoning, not only coding syntax
-    cn: 考试风格的推理，而不只是语法
+  - en: Imperative vs OOP vs functional vs declarative — what changes
+    cn: 命令式 / OOP / 函数式 / 声明式分别改了什么
+  - en: Abstraction, composition, state, side effects
+    cn: 抽象、组合、状态、副作用
+  - en: Strict vs lazy evaluation; role of types
+    cn: 严格求值 vs 惰性求值；类型起什么作用
+  - en: Functional Reactive Programming assignments
+    cn: Functional Reactive Programming 作业
+  - en: Haskell-style pure functional programming
+    cn: Haskell 风格的纯函数式编程
   stuck:
-  - en: Translating lecture vocabulary into the first working example
-    cn: 把课堂术语变成第一个能跑的例子
-  - en: Abstract concepts with no picture of data flow
-    cn: 抽象概念对不上数据怎么流动的画面
-  - en: Exam wording hides which paradigm rule is being tested
-    cn: 考题措辞让人看不出在考哪条范式规则
+  - en: Cannot turn lecture vocabulary into a first working example
+    cn: 课上术语对不上第一个能跑的例子
+  - en: FRP / event model fights imperative habits
+    cn: FRP / 事件模型和以前的命令式写法冲突
+  - en: Haskell types / purity errors feel like “environment bugs”
+    cn: Haskell 类型 / 纯函数报错被当成环境问题
+  - en: Quiz wording hides which paradigm rule is tested
+    cn: Quiz 措辞让人看不出在考哪条规则
   session_angles:
-  - en: One concept → one tiny example → you extend it
-    cn: 一个概念 → 一个小例子 → 你来扩展
-  - en: Compare the paradigm rule to the imperative habit it replaces
-    cn: 把范式规则和它替换掉的命令式习惯对照
-  - en: Timed short questions that mimic exam phrasing
-    cn: 用考试措辞做限时短问
+  - en: One concept → tiny example → you extend it
+    cn: 一个概念 → 小例子 → 你来改大
+  - en: Same problem in two paradigms; compare the trade-off out loud
+    cn: 同一题用两种范式写，口头说清取舍
+  - en: Timed short questions in exam / quiz phrasing
+    cn: 用考试 / quiz 措辞做限时短问
   tutoring:
-  - en: 'Lecture sync: bilingual walkthrough of paradigm ideas until examples feel concrete.'
-    cn: 同步跟课：用中英双语把范式概念讲到例子落地。
+  - en: 'Lecture sync: bilingual walkthrough until FRP / Haskell examples feel concrete.'
+    cn: 跟课：中英对照把 FRP / Haskell 例子讲到能自己写。
   - en: 'Assignments: approach review and live debug with you at the keyboard.'
-    cn: 作业辅导：拆题、现场 debug，你来操作键盘。
-  - en: 'Exam prep: drills on reasoning under exam question wording.'
-    cn: 考前突击：练在考题措辞下做推理。
+    cn: 作业：拆题、现场 debug，你来敲键盘。
+  - en: 'Quiz / exam prep: drills on paradigm rules under question wording.'
+    cn: Quiz / 考前：按题目措辞练范式规则。
 - code: FIT2099
   title: Object Oriented Design and Implementation
   theme: programming
-  meta_description_en: FIT2099 Monash tutoring (Object Oriented Design). Can code features but cannot
-    explain the design choices? Bilingual design review and exam prep.
-  lead_en: 'FIT2099 is a design-first course: classes, responsibilities, and diagrams before the code
-    compiles. The hard part is justifying a design — not only making Java (or similar) run.'
-  lead_cn: FIT2099 是设计课：先谈类、职责与图，再谈编译通过。难的是说清为什么这样设计， 而不只是让 Java（或类似语言）跑起来。
-  overview_en: Object Oriented Design and Implementation focuses on modelling problems with objects, implementing
-    designs, and communicating structure (often with diagrams and design vocabulary). Students stall when
-    design jargon outruns the mental model, or when code works but the design story fails the rubric.
-  overview_cn: Object Oriented Design and Implementation 强调用对象建模、落地实现，并用图与设计术语 讲清结构。卡点常在设计技术用语跑在前面，或代码能跑但设计叙事过不了评分。
+  meta_description_en: >-
+    FIT2099 Monash Object Oriented Design tutoring. UML class / interaction diagrams,
+    Java OOP (abstraction, inheritance, polymorphism), bilingual design review.
+  lead_en: >-
+    FIT2099 Object Oriented Design and Implementation at Monash is design first:
+    UML class and interaction diagrams, then Java implementation using abstraction,
+    information hiding, inheritance, and polymorphism. Projects and quizzes expect
+    you to justify the design — not only that the feature runs.
+  lead_cn: >-
+    Monash 的 FIT2099 Object Oriented Design and Implementation 先做设计再写代码：
+    UML 类图 / 交互图，再用 Java 实现抽象、信息隐藏、继承、多态。项目和 quiz 要你能说清
+    为什么这样设计，不只是功能能跑。
+  overview_en: >-
+    Learning outcomes stress iterative OO design against requirements, describing
+    design quality, implementing in Java, systematic refactor / debug in an IDE,
+    and team practice with version control. Students stall when diagrams diverge
+    from classes, when inheritance choices fight later requirements, or when the
+    rubric asks for a design story the code never shows.
+  overview_cn: >-
+    课纲强调：按需求迭代做 OO 设计、评价设计质量、用 Java 实现、在 IDE 里有条理地重构 / debug，
+    以及用版本控制和同学协作。常见卡住：图和真实类对不上；继承选错，后面需求一改就难受；
+    评分要设计说明，代码里却写不出来。
   topics:
-  - en: Objects, responsibilities, and collaboration
-    cn: 对象、职责与协作
-  - en: Design vocabulary vs the code you write
-    cn: 设计术语与你写的代码对照
-  - en: Diagrams that match the implementation
-    cn: 与实现对齐的图
-  - en: Refactoring a messy design without breaking behaviour
-    cn: 在不破坏行为的前提下重构乱设计
+  - en: UML class diagrams and interaction diagrams
+    cn: UML 类图与交互图
+  - en: Responsibilities, collaboration, information hiding
+    cn: 职责、协作、信息隐藏
+  - en: Inheritance and polymorphism in Java
+    cn: Java 里的继承与多态
+  - en: Refactor / debug with IDE and version control
+    cn: 用 IDE 和版本控制做重构 / debug
   stuck:
-  - en: Can code features but cannot explain the design choices
-    cn: 功能能写，却说不清设计选择
-  - en: Diagrams look neat but diverge from the actual classes
-    cn: 图很整齐，却和真实类结构对不上
-  - en: Inheritance / coupling choices that fight later requirements
-    cn: 继承 / 耦合选择与后续需求打架
+  - en: Features work; design choices cannot be explained
+    cn: 功能能写，设计理由说不清
+  - en: Neat diagrams that do not match the classes
+    cn: 图画得整齐，和真实类对不上
+  - en: Inheritance / coupling fights later requirements
+    cn: 继承 / 耦合选错，后面需求改不动
   session_angles:
-  - en: Start from responsibilities, then names, then code
-    cn: 先职责，再命名，再写代码
-  - en: You implement; we check the design story against the rubric
-    cn: 你来实现；我们按评分核对设计叙事
-  - en: Short design critiques like exam / review questions
-    cn: 像考试 / review 一样做短设计点评
+  - en: Responsibilities → names → diagram → code
+    cn: 先职责 → 再命名 → 再画图 → 再写代码
+  - en: You implement; we check the design against the rubric
+    cn: 你实现；我们按评分核对设计说明
+  - en: Short design critiques like quiz / review prompts
+    cn: 按 quiz / review 题型做短设计点评
   tutoring:
-  - en: 'Lecture sync: bilingual OOP design vocabulary tied to small examples.'
-    cn: 同步跟课：用中英双语把 OOP 设计术语绑到小例子上。
+  - en: 'Lecture sync: bilingual OO vocabulary tied to small Java examples.'
+    cn: 跟课：OO 术语中英对照，绑到小 Java 例子上。
   - en: 'Assignments: design review + implementation debug.'
-    cn: 作业辅导：设计评审 + 实现 debug。
-  - en: 'Exam / review prep: justify designs under exam / review prompts.'
-    cn: 考试 / review 突击：在题目要求下为设计辩护。
+    cn: 作业：看设计 + 帮你 debug 实现。
+  - en: 'Quiz / review prep: justify designs under exam-style prompts.'
+    cn: Quiz / review：按考试题型练「为设计辩护」。
 - code: FIT3152
   title: Data Analytics
   theme: data-science
-  meta_description_en: FIT3152 Monash tutoring (Data Analytics). Tool output produced but interpretation
-    missing? Bilingual help on EDA, model choice, and write-ups.
-  lead_en: FIT3152 mixes analytics tools with statistical storytelling. The hard part is turning a brief
-    into a justified analysis — not producing charts that look busy.
-  lead_cn: FIT3152 把分析工具和统计叙事绑在一起。难的是把 brief 转化成站得住脚的分析， 而不是做出看起来很忙的图。
-  overview_en: Data Analytics covers exploratory analysis, modelling choices, and communicating results
-    for assessment. Students struggle with method names, when to trust a plot, and write-ups that must
-    defend assumptions.
-  overview_cn: Data Analytics 覆盖探索性分析、建模选择，以及为评估写清结果。卡点常在方法名混在一起、 何时相信一张图，以及报告必须为假设辩护。
+  meta_description_en: >-
+    FIT3152 Monash Data Analytics tutoring. R / RStudio: cleanse, visual analysis,
+    networks, statistical learning, clustering, NLP; bilingual write-ups.
+  lead_en: >-
+    FIT3152 Data Analytics at Monash introduces big-data style analysis in R /
+    RStudio: data management and transformation, visual analysis, social network
+    analysis, statistical learning, clustering, and natural language processing.
+    Assessment expects a justified pipeline — not only busy plots.
+  lead_cn: >-
+    Monash 的 FIT3152 Data Analytics 用 R / RStudio 做偏大数据场景的分析：数据整理与变换、
+    可视化、社会网络分析、统计学习、聚类、自然语言处理。作业要的是说得清的分析流程，
+    不是图很多但解释没有。
+  overview_en: >-
+    Outcomes: turn a real problem into an analytics task, cleanse and prepare data,
+    analyse with statistical / graphical / ML techniques, validate results, and
+    communicate to a broad audience. Applied sessions run through the semester.
+    Students stall when method names blur, when plots are not validated, or when
+    the write-up cannot defend assumptions.
+  overview_cn: >-
+    课纲要求：把实际问题变成分析任务、清洗准备数据、用统计 / 图形 / 机器学习方法分析、
+    验证结果，再写成别人能看懂的报告。学期里有 applied session。常见卡住：方法名混在一起；
+    图画了却不验证；报告里假设说不清。
   topics:
-  - en: EDA with a question, not only plots
-    cn: 带着问题做 EDA，而不只是画图
-  - en: Model choice and assumption checks
-    cn: 模型选择与假设检查
-  - en: Analytics vocabulary next to the output
-    cn: 分析术语与输出对照
-  - en: Write-ups that match the evidence in the tables
-    cn: 报告结论与表格证据一致
+  - en: Data cleansing and transformation in R
+    cn: 用 R 做清洗与变换
+  - en: Visual analysis with a clear question
+    cn: 带着明确问题做可视化
+  - en: Clustering and statistical learning basics
+    cn: 聚类与统计学习基础
+  - en: Social network analysis and text / NLP tasks
+    cn: 社会网络分析与文本 / NLP 任务
+  - en: Validate results and write the claim carefully
+    cn: 验证结果，报告结论写严谨
   stuck:
-  - en: Tool output produced, interpretation missing
+  - en: Tool output produced; interpretation missing
     cn: 工具输出有了，解释没有
-  - en: Brief terms map poorly onto the buttons you clicked
-    cn: Brief 术语对不上你点过的按钮
-  - en: Overfitting a story to whatever the software spat out
-    cn: 软件吐什么就编什么故事
+  - en: Brief terms do not map to the R steps you ran
+    cn: Brief 里的词对不上你在 R 里做的步骤
+  - en: Story fitted to whatever the software printed
+    cn: 软件吐什么结论就写什么
   session_angles:
   - en: Brief → question → method → claim checklist
     cn: Brief → 问题 → 方法 → 结论清单
-  - en: You run the analysis; we pressure-test the interpretation
-    cn: 你来跑分析；我们一起压测解释是否站得住
+  - en: You run R; we pressure-test the interpretation
+    cn: 你跑 R；我们一起压测解释是否站得住
   - en: Short exam-style interpretation drills
     cn: 考试风格的短解读练习
   tutoring:
-  - en: 'Lecture sync: bilingual analytics concepts aligned with assessment language.'
-    cn: 同步跟课：用中英双语对齐分析概念与评估用语。
-  - en: 'Assignments: pipeline and write-up review with you driving the tools.'
-    cn: 作业辅导：流水线与报告评审，你来操作工具。
-  - en: 'Exam prep: interpret outputs under timed prompts.'
-    cn: 考前突击：限时提示下解读输出。
+  - en: 'Lecture sync: bilingual analytics topics aligned with R lab language.'
+    cn: 跟课：分析主题中英对照，对齐 R lab 用语。
+  - en: 'Assignments: pipeline and write-up review with you driving RStudio.'
+    cn: 作业：看流水线和报告，你操作 RStudio。
+  - en: 'Exam prep: timed interpretation of outputs and assumptions.'
+    cn: 考前：限时练读输出和假设。
 - code: FIT3155
   title: Advanced Data Structures and Algorithms
   theme: algorithms
-  meta_description_en: FIT3155 Monash tutoring (Advanced DSA). Correct intuition but incomplete proof
-    or wrong complexity? Bilingual drills on invariants and exams.
-  lead_en: 'FIT3155 is algorithms under time pressure: proofs, complexity talk, and implementations that
-    must match the argument. The hard part is keeping the invariant, the complexity claim, and the code
-    aligned.'
-  lead_cn: FIT3155 是限时压力下的算法课：证明、复杂度表述，以及必须与论证对齐的实现。 难的是让不变量、复杂度结论和代码说的是同一件事。
-  overview_en: Advanced Data Structures and Algorithms goes beyond intro DSA into harder structures, algorithm
-    design patterns, and exam-style reasoning. Students stall when proof sketches feel abstract, or when
-    a correct idea dies in implementation bugs.
-  overview_cn: Advanced Data Structures and Algorithms 在入门 DSA 之上进入更难的结构、算法设计模式 与考试风格推理。卡点常在证明提纲过于抽象，或思路正确却死在实现
-    bug 上。
+  meta_description_en: >-
+    FIT3155 Monash Advanced DSA tutoring. Amortized analysis, advanced sort/search,
+    tree/string/graph structures, proofs and complexity; bilingual drills.
+  lead_en: >-
+    FIT3155 Advanced Data Structures and Algorithms at Monash goes past intro DSA:
+    amortized analysis, advanced sorting and searching, tree / string / graph
+    structures, number-theoretic algorithms, and proving correctness with space /
+    time arguments. Labs and workshops expect the invariant, the complexity claim,
+    and the code to match.
+  lead_cn: >-
+    Monash 的 FIT3155 Advanced Data Structures and Algorithms 比入门 DSA 更深：
+    均摊分析、进阶排序 / 查找、树 / 字符串 / 图结构、数论相关算法，还要证明正确性并说清
+    时空复杂度。Lab / workshop 要求不变量、复杂度结论和代码对得上。
+  overview_en: >-
+    Assessment typically includes artefacts and an exam. Students stall when proof
+    sketches stay vague, when asymptotic notation is written without a plain claim,
+    or when a correct idea dies in implementation bugs under time pressure.
+  overview_cn: >-
+    考核一般有作业 artefact 和考试。常见卡住：证明只写个大概；渐近记号写了，白话结论没有；
+    思路对，限时一写代码就挂。
   topics:
-  - en: Advanced structures and when to reach for them
-    cn: 进阶结构及其适用场景
-  - en: Invariants and short proof sketches
-    cn: 不变量与短证明提纲
-  - en: Complexity arguments that survive marker scrutiny
-    cn: 经得起改卷的复杂度论证
-  - en: Implementation that matches the algorithm you claimed
-    cn: 实现与你声称的算法一致
+  - en: Amortized analysis
+    cn: 均摊分析
+  - en: Advanced sorting and searching
+    cn: 进阶排序与查找
+  - en: Tree, string, and graph data structures / algorithms
+    cn: 树、字符串、图的数据结构与算法
+  - en: Correctness proofs and space / time complexity
+    cn: 正确性证明与时空复杂度
   stuck:
-  - en: Correct intuition, incomplete proof or wrong complexity
+  - en: Intuition OK; proof incomplete or complexity wrong
     cn: 直觉对，证明不完整或复杂度写错
-  - en: Greek / asymptotic notation outrunning the plain-language claim
-    cn: 希腊字母 / 渐近记号跑在大白话结论前面
-  - en: Exam figures and pseudocode that look cryptic under time pressure
-    cn: 限时下考试图与伪代码像天书
+  - en: Asymptotic notation without a plain-language claim
+    cn: 只会写渐近记号，说不清大白话结论
+  - en: Exam pseudocode unreadable under time pressure
+    cn: 考试限时读伪代码读不动
   session_angles:
   - en: Write the invariant before code
     cn: 写代码前先写不变量
@@ -339,96 +463,127 @@ courses:
     cn: 限时证明 + 代码配对练习
   tutoring:
   - en: 'Lecture sync: bilingual algorithm ideas until proofs and code share vocabulary.'
-    cn: 同步跟课：用中英双语把算法思想讲到证明与代码共用术语。
+    cn: 跟课：算法思路中英对照，证明和代码用同一套词。
   - en: 'Assignments: design + debug with you implementing.'
-    cn: 作业辅导：设计 + debug，你来实现。
+    cn: 作业：设计 + debug，你来实现。
   - en: 'Exam prep: timed drills on proofs, complexity, and reading pseudocode.'
-    cn: 考前突击：限时练证明、复杂度与读伪代码。
+    cn: 考前：限时练证明、复杂度和读伪代码。
 - code: FIT5197
-  title: Modelling for Data Analysis
+  title: Statistical Data Modelling
   theme: data-science
-  meta_description_en: FIT5197 Monash tutoring (Modelling for Data Analysis). Running a model without
-    knowing what success looks like? Bilingual diagnostics and interpretation.
-  lead_en: 'FIT5197 is statistical modelling: choose a model, check assumptions, and defend the fit. The
-    hard part is interpretation under terminology denser than the software UI.'
-  lead_cn: FIT5197 是统计建模：选模型、查假设、为拟合辩护。难的是术语比软件界面更密， 解释跟不上。
-  overview_en: Modelling for Data Analysis focuses on building and justifying statistical models for assessment.
-    Students struggle when model names blur together, when diagnostics are ignored, or when the write-up
-    cannot explain a coefficient or plot.
-  overview_cn: Modelling for Data Analysis 重点是为评估建立并论证统计模型。卡点常在模型名搅在一起、 忽略诊断，或报告解释不清系数 / 图。
+  meta_description_en: >-
+    FIT5197 Monash Statistical Data Modelling tutoring. Probability, MLE, CI,
+    hypothesis tests, regression / classification, clustering; bilingual help.
+  lead_en: >-
+    FIT5197 Statistical Data Modelling at Monash builds the maths / stats base for
+    later data science and ML units: sample statistics, probability, expectation,
+    parametrised distributions, maximum likelihood, confidence intervals, hypothesis
+    testing, then predictive models (regression / classification) and unsupervised
+    clustering. The hard part is reading output and defending the model — not only
+    calling a library function.
+  lead_cn: >-
+    Monash 的 FIT5197 Statistical Data Modelling 给后面的数据科学 / 机器学习课打统计基础：
+    样本统计量、概率、期望、参数分布、极大似然、置信区间、假设检验，再到回归 / 分类这类预测模型，
+    以及聚类。难的是会读输出、能说清为什么选这个模型，不只是调用库函数。
+  overview_en: >-
+    Outcomes: EDA with descriptive stats, inferential models, predictive models,
+    sampling / simulation / tests, implement models in code, and interpret results.
+    Students stall when model names blur, diagnostics are ignored, or exam questions
+    test interpretation instead of button clicks.
+  overview_cn: >-
+    课纲要求：用描述统计做 EDA、建推断模型、建预测模型、做抽样 / 模拟 / 检验、用代码实现，
+    并解释结果。常见卡住：模型名搅在一起；诊断图画了不会读；考题考解读，不考点哪里。
   topics:
-  - en: Model choice for the question being asked
-    cn: 针对问题选择模型
-  - en: Assumption checks and diagnostics
-    cn: 假设检查与诊断
-  - en: Stats vocabulary next to software output
-    cn: 统计术语与软件输出对照
-  - en: Write-ups that defend fit quality honestly
-    cn: 诚实为拟合质量辩护的报告
+  - en: Probability, expectation, and common distributions
+    cn: 概率、期望与常见分布
+  - en: MLE, confidence intervals, hypothesis testing
+    cn: 极大似然、置信区间、假设检验
+  - en: Regression and classification as predictive models
+    cn: 回归与分类（预测模型）
+  - en: Clustering as unsupervised grouping
+    cn: 聚类（无监督分组）
+  - en: Diagnostics and honest interpretation in the write-up
+    cn: 诊断图，以及报告里老实写结论
   stuck:
-  - en: Running a model without knowing what success looks like
-    cn: 模型跑了，结果不理想或不知道成功的标准
+  - en: Model runs; unclear what “good fit” means
+    cn: 模型跑了，不知道拟合算不算好
   - en: Diagnostic plots produced but not read
     cn: 诊断图做了却不会读
-  - en: Exam questions that test interpretation, not button clicks
+  - en: Exam asks interpretation, not software clicks
     cn: 考题考解读，不考点哪里
   session_angles:
   - en: Question → candidate models → diagnostics → claim
     cn: 问题 → 候选模型 → 诊断 → 结论
-  - en: You fit; we interpret the uncomfortable diagnostics together
-    cn: 你来拟合；我们一起解读难看的诊断
+  - en: You fit; we read the uncomfortable diagnostics together
+    cn: 你拟合；我们一起读难看的诊断
   - en: Short interpretation drills under exam wording
     cn: 考试措辞下的短解读练习
   tutoring:
-  - en: 'Lecture sync: bilingual modelling concepts aligned with assessment language.'
-    cn: 同步跟课：用中英双语对齐建模概念与评估用语。
+  - en: 'Lecture sync: bilingual modelling concepts aligned with lab language.'
+    cn: 跟课：建模概念中英对照，对齐 lab 用语。
   - en: 'Assignments: model choice and write-up review with you driving the software.'
-    cn: 作业辅导：模型选择与报告评审，你来操作软件。
+    cn: 作业：看模型选择和报告，你操作软件。
   - en: 'Exam prep: timed interpretation of outputs and assumptions.'
-    cn: 考前突击：限时解读输出与假设。
+    cn: 考前：限时练读输出和假设。
 - code: FIT9136
-  title: Algorithms and Programming Foundations in Python
+  title: Introduction to Python Programming
   theme: programming
-  lead_en: FIT9136 rebuilds programming and algorithm foundations in Python for postgraduate or conversion
-    students. Lectures move quickly across basics and problem solving. The hard part is catching up on
-    both coding fluency and algorithmic thinking at once.
-  lead_cn: FIT9136 用 Python 为研究生 / 转专业学生重建编程与算法基础。课上在基础与解题之间切得很快。 难的是编程手感与算法思维要同时补。
-  overview_en: Algorithms and programming foundations in Python covers core coding skills plus introductory
-    algorithmic problem solving. Students stall when briefs assume prior CS habits, or when “it runs”
-    is treated as “it is correct.”
-  overview_cn: Algorithms and programming foundations in Python 覆盖核心编码与入门算法解题。卡点常在 brief 默认你已有 CS 习惯，或把「能跑」当成「正确」。
+  meta_description_en: >-
+    FIT9136 Monash Introduction to Python Programming tutoring. Control flow,
+    datatypes, functions, OOP basics, OnTrack portfolio; bilingual help.
+  lead_en: >-
+    FIT9136 Introduction to Python Programming at Monash covers programming
+    fundamentals: control structures, built-in and complex datatypes, modularity,
+    basic libraries, good practices, and team coding. Assessment is portfolio-style
+    (OnTrack pass tasks / in-class discussion) — “it runs” is not enough if the
+    structure and hand-execution story are weak.
+  lead_cn: >-
+    Monash 的 FIT9136 Introduction to Python Programming 是 Python 入门：控制结构、
+    内置和复合数据类型、模块化、常用库、良好习惯，以及小组协作。考核偏 OnTrack 作品集 /
+    课上讨论——代码能跑不够，结构和手推执行也要说得清。
+  overview_en: >-
+    Outcomes include systems thinking about program structure, implementing with
+    sequence / selection / iteration / functions / types / libraries, hand-executing
+    code to explain state, disciplined test / debug / document habits, and basic OOP
+    organisation. Students stall when briefs assume prior CS habits, when OnTrack
+    tasks fail discussion sign-off, or when edge cases are never tested.
+  overview_cn: >-
+    课纲要求：说清程序结构、会写顺序 / 分支 / 循环 / 函数 / 类型 / 库调用、能手推执行解释状态、
+    有测试 / debug / 文档习惯，并用基础 OOP 组织代码。常见卡住：题干默认你有 CS 基础；
+    OnTrack 任务过不了课上讨论；边界情况没测。
   topics:
-  - en: Python foundations for algorithm tasks
-    cn: 面向算法任务的 Python 基础
-  - en: Problem decomposition from briefs
-    cn: 从 brief 分解问题
-  - en: Basic complexity intuition
-    cn: 基础复杂度直觉
-  - en: Testing edge cases before submission
-    cn: 提交前测边界情况
+  - en: Sequence, selection, iteration, and functions
+    cn: 顺序、分支、循环与函数
+  - en: Built-in / complex datatypes and program state
+    cn: 内置 / 复合类型与程序状态
+  - en: Hand execution and debugging method
+    cn: 手推执行与 debug 方法
+  - en: Basic OOP structure and readable modules
+    cn: 基础 OOP 结构与可读模块
+  - en: OnTrack portfolio tasks and edge-case testing
+    cn: OnTrack 作品集任务与边界测试
   stuck:
-  - en: Syntax OK, algorithmic plan missing
-    cn: 语法没问题，算法计划没有
-  - en: Problem statements denser than the examples in slides
-    cn: 题干比课件例子密得多
-  - en: Autograder failures with no debugging method
-    cn: autograder 挂了却没有 debug 方法
+  - en: Syntax OK; no clear plan for the task
+    cn: 语法没问题，任务没有清晰计划
+  - en: OnTrack discussion / sign-off fails
+    cn: OnTrack 课上讨论 / 签字过不了
+  - en: Autograder or tests fail with no debug method
+    cn: 自动测试挂了，没有 debug 步骤
   session_angles:
   - en: Brief → plan → code → edge cases
     cn: Brief → 计划 → 代码 → 边界
   - en: You type; we keep the plan visible beside the editor
-    cn: 你来打字；计划始终放在编辑器旁边
-  - en: Short quiz-style drills on foundations
-    cn: 基础题的短 quiz 练习
+    cn: 你打字；计划放在编辑器旁边对照
+  - en: Short quiz-style foundation drills
+    cn: 基础题短练
   tutoring:
-  - en: 'Lecture sync: bilingual foundations so Python and algorithm vocabulary match.'
-    cn: 同步跟课：用中英双语对齐 Python 与算法术语。
-  - en: 'Assignments: plan review and live debug.'
-    cn: 作业辅导：计划评审与现场 debug。
-  - en: 'Exam / quiz prep: timed foundation drills.'
-    cn: 考试 / quiz 突击：限时基础练习。
-  meta_description_en: FIT9136 Monash tutoring (Python Algorithms Foundations). Syntax OK, algorithmic
-    plan missing? Bilingual lecture sync, assignments, and quiz drills.
+  - en: 'Lecture sync: bilingual foundations so Python vocabulary matches workshops.'
+    cn: 跟课：Python 基础中英对照，对齐 workshop 用语。
+  - en: 'Portfolio tasks: plan review and live debug.'
+    cn: 作品集任务：看计划、现场 debug。
+  - en: 'In-class / quiz prep: timed foundation drills and hand execution.'
+    cn: 课上 / quiz：限时基础练和手推执行。
+
 - code: FIT5202
   title: Data Processing for Big Data
   material: FIT5202
