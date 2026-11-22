@@ -4,145 +4,144 @@ abbr: Adelaide
 name_cn: 阿德莱德大学
 teaching_folder: adelaide-university
 courses:
-- code: COMP SCI 1101
-  title: Introduction to Programming
-- code: COMP SCI 1102
-  title: Object Oriented Programming
-- code: COMP SCI 2103
-  title: Algorithm Design and Data Structures
-- code: COMP SCI 2201
-  title: Algorithm and Data Structure Analysis
-- code: COMP SCI 3001
-  title: Computer Networks and Applications
-- code: COMP SCI 3004
-  title: Operating Systems
-- code: COMP SCI 3007
-  title: Artificial Intelligence
-- code: COMP SCI 3314
-  title: Introduction to Statistical Machine Learning
-- code: COMP SCI 4023
-  title: Event Driven Computing
-  material: Comp_4023-event-driven-computing
-  theme: automata
-  meta_description_en: >-
-    COMP SCI 4023 Event Driven Computing tutoring at University of Adelaide.
-    DFA / NFA, regex, Moore, Petri nets, Observer / FRP.
-  lead_en: >-
-    COMP SCI 4023 Event Driven Computing mixes formal models with reactive
-    software: finite automata, regex, Moore machines, Petri nets, and FRP.
-    Lectures move fast and Greek letters (δ, Δ̂, ε, Σ) show up everywhere;
-    tutoring turns them into steps you can repeat on paper.
-  lead_cn: >-
-    COMP SCI 4023 Event Driven Computing 同时学形式模型和反应式软件：有限自动机、正则、
-    Moore 机、Petri 网与 FRP。课节奏快，希腊字母（δ、Δ̂、ε、Σ）很多；辅导会拆成纸上能一步步做的方法。
-  overview_en: >-
-    One-to-one tutoring for COMP SCI 4023: lecture catch-up, workshop drills, and
-    exam blocks across the syllabus. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: >-
-    COMP SCI 4023 一对一辅导：跟课、workshop 练习、按大纲考试块训练。下方有我们概念复习辅导课件的样例页。
-  topics:
-  - en: Reading FSAs and computing extended transitions Δ̂
-    cn: 读 FSA 图并计算扩展转移 Δ̂
-  - en: NFA design and subset construction
-    cn: NFA 设计与子集构造
-  - en: Regex membership and ε-NFA → NFA
-    cn: 正则判定与 ε-NFA → NFA
-  - en: Moore machines from a short brief
-    cn: 按简短 brief 画 Moore 机
-  - en: Petri nets — marking, enabled transitions, firing
-    cn: Petri 网：标识、使能变迁与激发
-  - en: Observers, event logs, and FRP map / miss patterns
-    cn: Observer、事件日志与 FRP map / miss
-  stuck:
-  - en: Lecture pace + Greek symbols (δ, Δ̂, ε, Σ) — vocabulary outruns understanding
-    cn: 课速 + 希腊字母（δ、Δ̂、ε、Σ）——术语比理解跑得快
-  - en: Abstract definitions with no mental picture of what the machine is doing
-    cn: 抽象定义对不上脑子里的「机器在干什么」
-  - en: State / Petri diagrams look familiar until the exam figure is new
-    cn: 课上状态图 / Petri 网眼熟，考试换一张就不会读
-  - en: DFA / NFA / ε rules mixed up when writing the transition table
-    cn: 写转移表时 DFA / NFA / ε 规则搅在一起
-  - en: Petri answers by intuition instead of checking the net step by step
-    cn: Petri 凭直觉答题，不按网逐步核对
-  session_angles:
-  - en: Lecture sync with the same vocabulary workshops and exams use
-    cn: 同步跟课，术语与 workshop、考试一致
-  - en: 'Programming assignments: you drive; I debug the model and the edge cases'
-    cn: 编程作业你来操作；我帮你对齐模型与边界情况
-  - en: Exam blocks with a fixed method per question type (FSA, NFA, regex, Moore, Petri, FRP)
-    cn: 按题型固定方法做考试块（FSA、NFA、正则、Moore、Petri、FRP）
-  tutoring:
-  - en: 'Lecture sync: bilingual walkthrough of the course arc (automata → machines → Petri → events /
-      FRP) so workshop and exam language match.'
-    cn: 同步跟课：用中英双语把课程主线讲透（自动机 → 机器 → Petri → 事件 / FRP），让 workshop 与考试用语对齐。
-  - en: 'Assignments: approach review and live debug.'
-    cn: 作业辅导：拆 brief、梳模型、现场 debug。
-  - en: 'Exam prep: timed drills on the recurring question shapes (FSA inspection, NFA / subset, regex
-      / ε-NFA, Moore from brief, Petri, observer / FRP), then wrong-answer analysis.'
-    cn: 考前突击：针对反复出现的题型限时练（FSA 读图、NFA / 子集、正则 / ε-NFA、按 brief 画 Moore、Petri、observer / FRP），再做错题方法复盘。
-  sample_slides:
-    title_en: Event Driven Computing — sample slides
-    title_cn: Event Driven Computing — 辅导课件样例
-    lead_en: >-
-      Title, roadmap, Part A opener, DFA definitions, Petri enable/fire, and
-      FRP Event vs Behavior from our tutoring deck.
-    lead_cn: >-
-      我们辅导课件里的封面、路线图、Part A 导言、DFA 定义、Petri 使能/激发，以及 FRP Event vs Behavior。
-    bullets:
-    - en: DFA five-tuple and extended transition Δ̂
-      cn: DFA 五元组与扩展转移 Δ̂
-    - en: NFA design and subset construction
-      cn: NFA 设计与子集构造
-    - en: Petri nets — marking, enable, fire
-      cn: Petri 网 — 标识、使能、激发
-    - en: FRP — Event vs Behavior, missed first event
-      cn: FRP — Event vs Behavior、漏掉初始状态
-    slides:
-    - src: /assets/teach/adelaide-university/comp-sci-4023/sample/01-title.webp
-      alt_en: COMP SCI 4023 Event Driven Computing tutoring title slide
-      alt_cn: COMP SCI 4023 Event Driven Computing 辅导课件封面
-      caption_en: Title
-      caption_cn: 封面
-    - src: /assets/teach/adelaide-university/comp-sci-4023/sample/02-roadmap.webp
-      alt_en: Concept-review roadmap covering FSA, NFA, regex, Moore, Petri, FRP
-      alt_cn: 概念复习路线图：FSA、NFA、正则、Moore、Petri、FRP
-      caption_en: Roadmap
-      caption_cn: 路线图
-    - src: /assets/teach/adelaide-university/comp-sci-4023/sample/03-part-a.webp
-      alt_en: Part A — DFA / FSA opener
-      alt_cn: Part A — DFA / FSA 导言
-      caption_en: Part A · DFA / FSA
-      caption_cn: Part A · DFA / FSA
-    - src: /assets/teach/adelaide-university/comp-sci-4023/sample/04-dfa-tuple.webp
-      alt_en: DFA five-tuple definition slide
-      alt_cn: DFA 五元组定义页
-      caption_en: DFA five-tuple
-      caption_cn: DFA 五元组
-    - src: /assets/teach/adelaide-university/comp-sci-4023/sample/05-petri-fire.webp
-      alt_en: Petri net enable and fire rules
-      alt_cn: Petri 网使能与激发规则
-      caption_en: Petri · enable and fire
-      caption_cn: Petri · 使能与激发
-    - src: /assets/teach/adelaide-university/comp-sci-4023/sample/06-event-behavior.webp
-      alt_en: FRP Event versus Behavior
-      alt_cn: FRP Event 与 Behavior
-      caption_en: FRP · Event vs Behavior
-      caption_cn: FRP · Event vs Behavior
-    cta_en: Book tutoring on WeChat
-    cta_cn: 微信预约辅导
-  faq:
-  - q_en: What does COMP SCI 4023 cover?
-    q_cn: COMP SCI 4023 学什么？
-    a_en: >-
-      Finite accepters (DFA / NFA / ε-NFA), regular expressions, Moore machines,
-      Petri nets, and Observer / FRP-style event delivery.
-    a_cn: >-
-      有限接受器（DFA / NFA / ε-NFA）、正则表达式、Moore 机、Petri 网，以及 Observer / FRP 风格的事件投递。
-  - q_en: Are sample slides available?
-    q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring deck are on this page.
-    a_cn: 有，本页展示我们辅导课件的样例页。
-- code: COMP SCI 7201
-  title: Algorithm and Data Structure Analysis
+  - code: COMP3011
+    title: Cloud and Concurrent Programming
+    department: School of Computer Science & IT
+    material: COMP3011
+  - code: COMP SCI 1101
+    title: Introduction to Programming
+  - code: COMP SCI 1102
+    title: Object Oriented Programming
+  - code: COMP SCI 2103
+    title: Algorithm Design and Data Structures
+  - code: COMP SCI 2201
+    title: Algorithm and Data Structure Analysis
+  - code: COMP SCI 3001
+    title: Computer Networks and Applications
+  - code: COMP SCI 3004
+    title: Operating Systems
+  - code: COMP SCI 3007
+    title: Artificial Intelligence
+  - code: COMP SCI 3314
+    title: Introduction to Statistical Machine Learning
+  - topics:
+      - en: Reading FSAs and computing extended transitions Δ̂
+        cn: 读 FSA 图并计算扩展转移 Δ̂
+      - en: NFA design and subset construction
+        cn: NFA 设计与子集构造
+      - en: Regex membership and ε-NFA → NFA
+        cn: 正则判定与 ε-NFA → NFA
+      - en: Moore machines from a short brief
+        cn: 按简短 brief 画 Moore 机
+      - en: Petri nets — marking, enabled transitions, firing
+        cn: Petri 网：标识、使能变迁与激发
+      - en: Observers, event logs, and FRP map / miss patterns
+        cn: Observer、事件日志与 FRP map / miss
+    meta_description_en: COMP SCI 4023 Event Driven Computing tutoring at University
+      of Adelaide. DFA / NFA, regex, Moore, Petri nets, Observer / FRP.
+    material: Comp_4023-event-driven-computing
+    theme: automata
+    session_angles:
+      - en: Lecture sync with the same vocabulary workshops and exams use
+        cn: 同步跟课，术语与 workshop、考试一致
+      - en: "Programming assignments: you drive; I debug the model and the edge cases"
+        cn: 编程作业你来操作；我帮你对齐模型与边界情况
+      - en: Exam blocks with a fixed method per question type (FSA, NFA, regex, Moore,
+          Petri, FRP)
+        cn: 按题型固定方法做考试块（FSA、NFA、正则、Moore、Petri、FRP）
+    lead_en: "COMP SCI 4023 Event Driven Computing mixes formal models with reactive
+      software: finite automata, regex, Moore machines, Petri nets, and FRP.
+      Lectures move fast and Greek letters (δ, Δ̂, ε, Σ) show up everywhere;
+      tutoring turns them into steps you can repeat on paper."
+    tutoring:
+      - en: "Lecture sync: bilingual walkthrough of the course arc (automata → machines
+          → Petri → events / FRP) so workshop and exam language match."
+        cn: 同步跟课：用中英双语把课程主线讲透（自动机 → 机器 → Petri → 事件 / FRP），让 workshop 与考试用语对齐。
+      - en: "Assignments: approach review and live debug."
+        cn: 作业辅导：拆 brief、梳模型、现场 debug。
+      - en: "Exam prep: timed drills on the recurring question shapes (FSA inspection,
+          NFA / subset, regex / ε-NFA, Moore from brief, Petri, observer / FRP),
+          then wrong-answer analysis."
+        cn: 考前突击：针对反复出现的题型限时练（FSA 读图、NFA / 子集、正则 / ε-NFA、按 brief 画 Moore、Petri、observer
+          / FRP），再做错题方法复盘。
+    code: COMP SCI 4023
+    lead_cn: COMP SCI 4023 Event Driven Computing 同时学形式模型和反应式软件：有限自动机、正则、 Moore
+      机、Petri 网与 FRP。课节奏快，希腊字母（δ、Δ̂、ε、Σ）很多；辅导会拆成纸上能一步步做的方法。
+    overview_en: "One-to-one tutoring for COMP SCI 4023: lecture catch-up, workshop
+      drills, and exam blocks across the syllabus. Sample slides from our
+      concept-review tutoring deck are below."
+    overview_cn: COMP SCI 4023 一对一辅导：跟课、workshop 练习、按大纲考试块训练。下方有我们概念复习辅导课件的样例页。
+    faq:
+      - q_en: What does COMP SCI 4023 cover?
+        q_cn: COMP SCI 4023 学什么？
+        a_en: Finite accepters (DFA / NFA / ε-NFA), regular expressions, Moore machines,
+          Petri nets, and Observer / FRP-style event delivery.
+        a_cn: 有限接受器（DFA / NFA / ε-NFA）、正则表达式、Moore 机、Petri 网，以及 Observer / FRP 风格的事件投递。
+      - q_en: Are sample slides available?
+        q_cn: 有辅导课件样例吗？
+        a_en: Yes — sample pages from our tutoring deck are on this page.
+        a_cn: 有，本页展示我们辅导课件的样例页。
+    sample_slides:
+      title_en: Event Driven Computing — sample slides
+      title_cn: Event Driven Computing — 辅导课件样例
+      lead_en: Title, roadmap, Part A opener, DFA definitions, Petri enable/fire, and
+        FRP Event vs Behavior from our tutoring deck.
+      lead_cn: 我们辅导课件里的封面、路线图、Part A 导言、DFA 定义、Petri 使能/激发，以及 FRP Event vs Behavior。
+      bullets:
+        - en: DFA five-tuple and extended transition Δ̂
+          cn: DFA 五元组与扩展转移 Δ̂
+        - en: NFA design and subset construction
+          cn: NFA 设计与子集构造
+        - en: Petri nets — marking, enable, fire
+          cn: Petri 网 — 标识、使能、激发
+        - en: FRP — Event vs Behavior, missed first event
+          cn: FRP — Event vs Behavior、漏掉初始状态
+      slides:
+        - src: /assets/teach/adelaide-university/comp-sci-4023/sample/01-title.webp
+          alt_en: COMP SCI 4023 Event Driven Computing tutoring title slide
+          alt_cn: COMP SCI 4023 Event Driven Computing 辅导课件封面
+          caption_en: Title
+          caption_cn: 封面
+        - src: /assets/teach/adelaide-university/comp-sci-4023/sample/02-roadmap.webp
+          alt_en: Concept-review roadmap covering FSA, NFA, regex, Moore, Petri, FRP
+          alt_cn: 概念复习路线图：FSA、NFA、正则、Moore、Petri、FRP
+          caption_en: Roadmap
+          caption_cn: 路线图
+        - src: /assets/teach/adelaide-university/comp-sci-4023/sample/03-part-a.webp
+          alt_en: Part A — DFA / FSA opener
+          alt_cn: Part A — DFA / FSA 导言
+          caption_en: Part A · DFA / FSA
+          caption_cn: Part A · DFA / FSA
+        - src: /assets/teach/adelaide-university/comp-sci-4023/sample/04-dfa-tuple.webp
+          alt_en: DFA five-tuple definition slide
+          alt_cn: DFA 五元组定义页
+          caption_en: DFA five-tuple
+          caption_cn: DFA 五元组
+        - src: /assets/teach/adelaide-university/comp-sci-4023/sample/05-petri-fire.webp
+          alt_en: Petri net enable and fire rules
+          alt_cn: Petri 网使能与激发规则
+          caption_en: Petri · enable and fire
+          caption_cn: Petri · 使能与激发
+        - src: /assets/teach/adelaide-university/comp-sci-4023/sample/06-event-behavior.webp
+          alt_en: FRP Event versus Behavior
+          alt_cn: FRP Event 与 Behavior
+          caption_en: FRP · Event vs Behavior
+          caption_cn: FRP · Event vs Behavior
+      cta_en: Book tutoring on WeChat
+      cta_cn: 微信预约辅导
+    title: Event Driven Computing
+    stuck:
+      - en: Lecture pace + Greek symbols (δ, Δ̂, ε, Σ) — vocabulary outruns
+          understanding
+        cn: 课速 + 希腊字母（δ、Δ̂、ε、Σ）——术语比理解跑得快
+      - en: Abstract definitions with no mental picture of what the machine is doing
+        cn: 抽象定义对不上脑子里的「机器在干什么」
+      - en: State / Petri diagrams look familiar until the exam figure is new
+        cn: 课上状态图 / Petri 网眼熟，考试换一张就不会读
+      - en: DFA / NFA / ε rules mixed up when writing the transition table
+        cn: 写转移表时 DFA / NFA / ε 规则搅在一起
+      - en: Petri answers by intuition instead of checking the net step by step
+        cn: Petri 凭直觉答题，不按网逐步核对
+  - code: COMP SCI 7201
+    title: Algorithm and Data Structure Analysis
 ---
