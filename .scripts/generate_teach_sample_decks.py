@@ -161,6 +161,16 @@ def is_intro_shell_sample(course: dict) -> bool:
     return False
 
 
+def has_wrong_lang_c_sample(course: dict, lang: str) -> bool:
+    """True if samples still show C memory while the course is not C/C++."""
+    if lang in {"c", "cpp"}:
+        return False
+    ss = course.get("sample_slides") or {}
+    caps = " ".join(str(s.get("caption_en") or "") for s in (ss.get("slides") or []) if isinstance(s, dict))
+    srcs = " ".join(str(s.get("src") or "") for s in (ss.get("slides") or []) if isinstance(s, dict))
+    return "Stack, heap, data (C)" in caps or "stack-heap-data-c" in srcs
+
+
 def code_matches_force(code: str, force: set[str]) -> bool:
     if not force:
         return False
@@ -334,7 +344,225 @@ def render_selected_webps(pdf_path: Path, out_dir: Path, page_indices: list[int]
         png.unlink()
 
 
-def brand_theme_pack(theme: str, code: str, title: str, uni_label: str) -> str:
+PROGRAMMING_LANG_BLOCKS: dict[str, dict[str, str]] = {
+    "java": {
+        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · OOP",
+        "ROADMAP_D_TITLE": "Java OOP — inheritance / interfaces",
+        "ROADMAP_D_DESC": "Override, polymorphism, where behaviour lives",
+        "PART_D_SECTION_TITLE": "Part D · Java OOP",
+        "PART_D_SECTION_SUB": "Inheritance, interfaces, polymorphism",
+        "PART_D_SLIDE": """# Inheritance, interface, polymorphism
+
+<p class="eyebrow">D1 · OO choices you must justify</p>
+
+| Idea | Plain meaning |
+|---|---|
+| **Inheritance** | child class reuses / specialises a parent |
+| **Interface** | a contract of methods; class **implements** it |
+| **Overload** | same name, different parameter lists |
+| **Override** | child replaces a parent instance method |
+| **Polymorphism** | call site uses a parent / interface type; runtime picks the child body |
+
+```java
+Animal a = new Dog();  // compile-time type Animal
+a.speak();             // runs Dog.speak if overridden
+```
+
+Put shared menu / I/O in one place; put domain behaviour on the class that owns the data.
+
+<div class="pitfall">
+<strong>Trap.</strong> A “parent” that is only a bag of unrelated fields. Inheritance needs a real is-a story the write-up can defend.
+</div>
+""",
+    },
+    "python": {
+        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · NAMES",
+        "ROADMAP_D_TITLE": "Python names, objects, mutability",
+        "ROADMAP_D_DESC": "Assignment, aliases, what mutates in place",
+        "PART_D_SECTION_TITLE": "Part D · Python objects",
+        "PART_D_SECTION_SUB": "Names versus objects",
+        "PART_D_SLIDE": """# Names, objects, mutability
+
+<p class="eyebrow">D1 · What assignment actually does</p>
+
+A name refers to an object. `b = a` makes another name for the **same** object (alias), it does not copy.
+
+| Kind | Examples | `b = a` then mutate |
+|---|---|---|
+| Immutable | `int`, `str`, `tuple` | rebinding `a` leaves `b` on the old object |
+| Mutable | `list`, `dict`, `set` | in-place change via `a` is visible through `b` |
+
+```python
+a = [1, 2]
+b = a
+a.append(3)   # b is [1, 2, 3] too
+c = a[:]      # shallow copy — new list
+```
+
+Default args are evaluated once: never use `def f(x=[])`.
+
+<div class="pitfall">
+<strong>Trap.</strong> Treating `=` as a deep copy. Autograders love alias bugs on nested lists / dicts.
+</div>
+""",
+    },
+    "javascript": {
+        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · OBJECTS",
+        "ROADMAP_D_TITLE": "JS objects, references, modules",
+        "ROADMAP_D_DESC": "Mutable objects, `const`, how modules share state",
+        "PART_D_SECTION_TITLE": "Part D · JavaScript objects",
+        "PART_D_SECTION_SUB": "References and module boundaries",
+        "PART_D_SLIDE": """# Objects are references
+
+<p class="eyebrow">D1 · What `const` does not freeze</p>
+
+| Binding | Meaning |
+|---|---|
+| `const obj = {...}` | cannot rebind `obj`; **can** mutate properties |
+| `let` / `var` | can rebind the name |
+| Spread / `Object.assign` | shallow copy only |
+
+```js
+const a = { n: 1 };
+const b = a;
+a.n = 2;        // b.n is 2
+const c = { ...a }; // shallow clone
+```
+
+Keep DOM / I/O at the edges; keep domain state in plain objects or a small module with a clear public API.
+
+<div class="pitfall">
+<strong>Trap.</strong> Mutating a shared object across modules, then wondering why another screen “randomly” changes.
+</div>
+""",
+    },
+    "c": {
+        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · MEMORY",
+        "ROADMAP_D_TITLE": "Tests and memory (C / pointers)",
+        "ROADMAP_D_DESC": "Autograder loops; stack vs heap",
+        "PART_D_SECTION_TITLE": "Part D · Tests and memory",
+        "PART_D_SECTION_SUB": "Autograder loops and C storage",
+        "PART_D_SLIDE": """# Stack, heap, data (C)
+
+<p class="eyebrow">D1 · Where values live</p>
+
+| Region | Holds | Lifetime |
+|---|---|---|
+| **Stack** | locals, parameters, return addr | until the function returns |
+| **Heap** | `malloc` / `new` blocks | until `free` / `delete` |
+| **Data / BSS** | globals, `static` | whole program |
+
+```c
+int x = 10;      // data
+int *p = &x;     // p on stack; stores address of x
+int *h = malloc(sizeof(int));  // h on stack; *h on heap
+```
+
+Pointer arithmetic scales by `sizeof(*p)`. Off-by-one and use-after-free are undefined behaviour, not “sometimes works”.
+
+<div class="pitfall">
+<strong>Exam trap.</strong> Returning the address of a local stack variable is a dangling pointer the moment the function returns.
+</div>
+""",
+    },
+    "cpp": {
+        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · MEMORY",
+        "ROADMAP_D_TITLE": "C++ ownership and RAII",
+        "ROADMAP_D_DESC": "new/delete vs stack; who frees what",
+        "PART_D_SECTION_TITLE": "Part D · C++ memory",
+        "PART_D_SECTION_SUB": "Ownership and lifetimes",
+        "PART_D_SLIDE": """# Ownership in C++
+
+<p class="eyebrow">D1 · Who destroys the object</p>
+
+| Pattern | Meaning |
+|---|---|
+| Stack object | destructor runs at scope end |
+| `new` / `delete` | you own the lifetime; pair them |
+| RAII / smart pointer | resource tied to object lifetime |
+
+```cpp
+std::vector<int> v{1,2,3};     // frees itself
+auto* p = new int(3);
+delete p;                      // required
+```
+
+Prefer containers and RAII over raw `new` in coursework unless the brief forces it.
+
+<div class="pitfall">
+<strong>Trap.</strong> Double-delete or using a pointer after `delete`. Markers hit both.
+</div>
+""",
+    },
+    "general": {
+        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · TESTS",
+        "ROADMAP_D_TITLE": "Tests and autograder loops",
+        "ROADMAP_D_DESC": "Minimal failing case; one change per experiment",
+        "PART_D_SECTION_TITLE": "Part D · Tests",
+        "PART_D_SECTION_SUB": "Autograder feedback loops",
+        "PART_D_SLIDE": """# Autograder loop
+
+<p class="eyebrow">D1 · Method</p>
+
+1. Reproduce with the **smallest** failing input
+2. Read the expected vs actual output carefully (whitespace, order)
+3. Change **one** hypothesis; re-run
+4. Add a regression test for that edge before moving on
+
+| Anti-pattern | Replace with |
+|---|---|
+| Fix three things at once | one change per run |
+| Only test the sample | invent empty / one / max / duplicate cases |
+
+<div class="tip">
+<strong>Habit.</strong> Keep a failing case in a file you can re-run in one command.
+</div>
+""",
+    },
+}
+
+
+def detect_programming_lang(mpath: Path, course_blob: str = "") -> str:
+    """Infer primary language for programming theme packs."""
+    blob = (course_blob or "").lower()
+    counts = {"java": 0, "python": 0, "javascript": 0, "c": 0, "cpp": 0}
+    if mpath and mpath.is_dir():
+        for p in scan_files(mpath, limit=500):
+            suf = p.suffix.lower()
+            if suf == ".java":
+                counts["java"] += 3
+            elif suf == ".py":
+                counts["python"] += 3
+            elif suf in {".js", ".jsx", ".ts", ".tsx"}:
+                counts["javascript"] += 3
+            elif suf in {".cpp", ".cc", ".cxx", ".hpp"}:
+                counts["cpp"] += 3
+            elif suf == ".c" or suf == ".h":
+                counts["c"] += 2
+    # Text hints (course copy / title)
+    if re.search(r"\bjava\b|object[- ]oriented|oop\b", blob):
+        counts["java"] += 5
+    if re.search(r"\bpython\b|pandas|numpy|jupyter", blob):
+        counts["python"] += 5
+    if re.search(r"javascript|\bjs\b|typescript|node\.?js|react", blob):
+        counts["javascript"] += 5
+    if re.search(r"c\+\+|cpp\b", blob):
+        counts["cpp"] += 5
+    if re.search(r"\bpointers?\b|\bmalloc\b|systems programming|\bin c\b", blob):
+        counts["c"] += 4
+    best = max(counts, key=counts.get)
+    if counts[best] <= 0:
+        return "general"
+    return best
+
+
+def brand_theme_pack(
+    theme: str,
+    code: str,
+    title: str,
+    uni_label: str,
+    lang: str = "general",
+) -> str:
     path = THEME_PACKS / f"{theme}.md"
     if not path.exists():
         path = THEME_PACKS / "general.md"
@@ -343,12 +571,17 @@ def brand_theme_pack(theme: str, code: str, title: str, uni_label: str) -> str:
     short_title = title if len(title) <= 52 else title[:49].rsplit(" ", 1)[0] + "…"
     uni = (uni_label or "").upper()[:28]
     footer = f"zlu · {handle}"
-    return (
+    out = (
         raw.replace("{{CODE}}", handle)
         .replace("{{TITLE}}", short_title)
         .replace("{{UNI}}", uni)
         .replace("{{FOOTER}}", footer)
     )
+    if theme == "programming":
+        block = PROGRAMMING_LANG_BLOCKS.get(lang) or PROGRAMMING_LANG_BLOCKS["general"]
+        for key, val in block.items():
+            out = out.replace("{{" + key + "}}", val)
+    return out
 
 
 def bullets_from_topics(ev: dict, themes: dict, theme: str, limit: int = 4) -> list[dict]:
@@ -545,6 +778,51 @@ def collect_targets(min_files: int) -> list[dict]:
         course_slug = ascii_slug(code or title) or ascii_slug(mat)[:40]
         asset_folder = ascii_slug(folder) or ascii_slug(refs[0]["yml"].stem) or "teach-misc"
         real_decks = list_real_deck_mds(mpath / "decks")
+        admin_blob = f"{code} {title} {mat}"
+        try:
+            admin = load_admin(primary["yml"])
+            for course in admin.get("courses") or []:
+                if not isinstance(course, dict):
+                    continue
+                if (course.get("material") or "").strip() != mat:
+                    continue
+                admin_blob = " ".join(
+                    str(course.get(k) or "")
+                    for k in (
+                        "code",
+                        "title",
+                        "lead_en",
+                        "overview_en",
+                        "meta_description_en",
+                        "theme",
+                    )
+                )
+                break
+        except Exception:
+            pass
+        lang = (
+            detect_programming_lang(mpath, admin_blob)
+            if theme == "programming"
+            else "general"
+        )
+        wrong_lang = False
+        if theme == "programming":
+            for ref in refs:
+                # peek sample from yaml
+                try:
+                    adm = load_admin(ref["yml"])
+                    for course in adm.get("courses") or []:
+                        if not isinstance(course, dict):
+                            continue
+                        if (course.get("material") or "").strip() != mat:
+                            continue
+                        if has_wrong_lang_c_sample(course, lang):
+                            wrong_lang = True
+                            break
+                except Exception:
+                    pass
+                if wrong_lang:
+                    break
         targets.append(
             {
                 "folder": folder,
@@ -557,11 +835,16 @@ def collect_targets(min_files: int) -> list[dict]:
                 "code": code,
                 "title": title,
                 "theme": theme,
+                "lang": lang,
                 "course_slug": course_slug,
                 "refs": refs,
                 "themes": themes,
                 "already_sampled": any(r["has_sample"] for r in refs),
-                "needs_regen": any(r["is_intro"] for r in refs) or not any(r["has_sample"] for r in refs),
+                "needs_regen": (
+                    any(r["is_intro"] for r in refs)
+                    or not any(r["has_sample"] for r in refs)
+                    or wrong_lang
+                ),
                 "real_decks": real_decks,
             }
         )
@@ -614,20 +897,25 @@ def process_target(
     pdf_path: Optional[Path] = None
     branded_tmp: Optional[Path] = None
 
+    lang = t.get("lang") or "general"
+    if theme == "programming" and lang == "general":
+        course_blob = f"{code} {title} {t.get('material') or ''}"
+        lang = detect_programming_lang(t["mpath"], course_blob)
+
     real = t.get("real_decks") or []
     if real:
         md_path = real[0]
         pdf_path = md_path.with_suffix(".pdf")
         source = f"deck:{md_path.name}"
     else:
-        branded = brand_theme_pack(theme, code, title, t["uni_label"])
         deck_dir.mkdir(parents=True, exist_ok=True)
         md_path = deck_dir / "concept-mini.md"
         pdf_path = deck_dir / "concept-mini.pdf"
         branded_tmp = md_path
-        source = f"theme:{theme}"
+        source = f"theme:{theme}" + (f":{lang}" if theme == "programming" else "")
 
     result["source"] = source
+    result["lang"] = lang
     result["preview_bullets"] = [b["en"] for b in bullets]
 
     if not write:
@@ -635,7 +923,10 @@ def process_target(
 
     try:
         if branded_tmp is not None:
-            branded_tmp.write_text(brand_theme_pack(theme, code, title, t["uni_label"]), encoding="utf-8")
+            branded_tmp.write_text(
+                brand_theme_pack(theme, code, title, t["uni_label"], lang=lang),
+                encoding="utf-8",
+            )
         if pdf_path is None or md_path is None:
             raise RuntimeError("missing md/pdf path")
         # Re-export if md newer than pdf or pdf missing

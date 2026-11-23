@@ -3,7 +3,7 @@ layout: post
 title: "Play a local MP4 with JavaFX Media"
 description: "Get started with JavaFX: open a Stage, add an Open button and FileChooser, then Media / MediaPlayer / MediaView and a seek slider for a local MP4."
 keywords: "JavaFX MediaPlayer, MediaView, javafx-media, OpenJFX, Maven, local MP4, FileChooser, Slider"
-date: 2026-11-22
+date: 2026-11-22 10:00:00 +0800
 comments: true
 tags:
   - JavaFX

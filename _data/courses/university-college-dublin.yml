@@ -62,9 +62,9 @@ courses:
     title_en: COMP3038J — sample slides
     title_cn: COMP3038J — 辅导课件样例
     lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Stack, heap, data (C) from our tutoring deck.
-    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
-      code), One job per function, Stack, heap, data (C)。
+      function, Autograder loop from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
+      One job per function, Autograder loop。
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
@@ -100,11 +100,11 @@ courses:
       alt_cn: COMP3038J 辅导课件 · One job per function
       caption_en: One job per function
       caption_cn: One job per function
-    - src: /assets/teach/university-college-dublin/comp3038j/sample/06-stack-heap-data-c.webp
-      alt_en: COMP3038J tutoring · Stack, heap, data (C)
-      alt_cn: COMP3038J 辅导课件 · Stack, heap, data (C)
-      caption_en: Stack, heap, data (C)
-      caption_cn: Stack, heap, data (C)
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/06-autograder-loop.webp
+      alt_en: COMP3038J tutoring · Autograder loop
+      alt_cn: COMP3038J 辅导课件 · Autograder loop
+      caption_en: Autograder loop
+      caption_cn: Autograder loop
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -382,9 +382,9 @@ courses:
     title_en: Computer Graphics — sample slides
     title_cn: Computer Graphics — 辅导课件样例
     lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Stack, heap, data (C) from our tutoring deck.
-    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
-      code), One job per function, Stack, heap, data (C)。
+      function, Autograder loop from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
+      One job per function, Autograder loop。
     bullets:
     - en: Algorithms, ADTs, and complexity
       cn: 算法、ADT 与复杂度
@@ -416,11 +416,11 @@ courses:
       alt_cn: Computer Graphics 辅导课件 · One job per function
       caption_en: One job per function
       caption_cn: One job per function
-    - src: /assets/teach/university-college-dublin/computer-graphics/sample/06-stack-heap-data-c.webp
-      alt_en: Computer Graphics tutoring · Stack, heap, data (C)
-      alt_cn: Computer Graphics 辅导课件 · Stack, heap, data (C)
-      caption_en: Stack, heap, data (C)
-      caption_cn: Stack, heap, data (C)
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/06-autograder-loop.webp
+      alt_en: Computer Graphics tutoring · Autograder loop
+      alt_cn: Computer Graphics 辅导课件 · Autograder loop
+      caption_en: Autograder loop
+      caption_cn: Autograder loop
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

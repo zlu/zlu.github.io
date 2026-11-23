@@ -2,7 +2,7 @@
 marp: true
 theme: zlu
 title: "{{CODE}} · Programming Concept Review"
-description: Tutoring concept deck for {{CODE}} ({{UNI}}). Briefs, structure, recursion, tests, memory.
+description: Tutoring concept deck for {{CODE}} ({{UNI}}). Briefs, structure, recursion, language focus.
 paginate: true
 size: 16:9
 math: mathjax
@@ -18,7 +18,7 @@ zlu · {{CODE}} · {{UNI}}
 
 Read the brief → design → implement → test the edges.
 
-<div class="cover-parts">BRIEF · STRUCTURE · RECURSION · TESTS · MEMORY</div>
+<div class="cover-parts">{{COVER_PARTS}}</div>
 
 ---
 
@@ -61,8 +61,8 @@ Read the brief → design → implement → test the edges.
   <div class="roadmap-row">
     <div class="badge">D</div>
     <div>
-      <strong>Tests and memory (C / pointers)</strong>
-      <span class="desc">Autograder loops; stack vs heap</span>
+      <strong>{{ROADMAP_D_TITLE}}</strong>
+      <span class="desc">{{ROADMAP_D_DESC}}</span>
     </div>
     <div class="meta">~20 min</div>
   </div>
@@ -143,30 +143,10 @@ Trace $n=3$ on paper: $3\to 2\to 1\to 0$ then multiply on the way back.
 
 <!-- _class: section -->
 
-# Part D · Tests and memory
+# {{PART_D_SECTION_TITLE}}
 
-## Autograder loops and C storage · ~20 min
+## {{PART_D_SECTION_SUB}} · ~20 min
 
 ---
 
-# Stack, heap, data (C)
-
-<p class="eyebrow">D1 · Where values live</p>
-
-| Region | Holds | Lifetime |
-|---|---|---|
-| **Stack** | locals, parameters, return addr | until the function returns |
-| **Heap** | `malloc` / `new` blocks | until `free` / `delete` |
-| **Data / BSS** | globals, `static` | whole program |
-
-```c
-int x = 10;      // data
-int *p = &x;     // p on stack; stores address of x
-int *h = malloc(sizeof(int));  // h on stack; *h on heap
-```
-
-Pointer arithmetic scales by `sizeof(*p)`. Off-by-one and use-after-free are undefined behaviour, not “sometimes works”.
-
-<div class="pitfall">
-<strong>Exam trap.</strong> Returning the address of a local stack variable is a dangling pointer the moment the function returns.
-</div>
+{{PART_D_SLIDE}}

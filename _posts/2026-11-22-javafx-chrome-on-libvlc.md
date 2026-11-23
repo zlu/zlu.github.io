@@ -3,7 +3,7 @@ layout: post
 title: "Same JavaFX chrome, libVLC underneath"
 description: "I kept the mini-player UI from the JavaFX Media post and swapped the engine for libVLC via vlcj, including how video reaches an ImageView on macOS and what bundling natives implies."
 keywords: "vlcj, libVLC, JavaFX, ImageViewVideoSurface, PixelBuffer, desktop player, LGPL"
-date: 2026-11-22
+date: 2026-11-22 18:00:00 +0800
 comments: true
 tags:
   - VLC

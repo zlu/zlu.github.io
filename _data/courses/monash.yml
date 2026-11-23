@@ -61,9 +61,9 @@ courses:
     title_en: FIT1045 — sample slides
     title_cn: FIT1045 — 辅导课件样例
     lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Stack, heap, data (C) from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
-      job per function、Stack, heap, data (C)。
+      function, Names, objects, mutability from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
+      One job per function, Names, objects, mutability。
     bullets:
     - en: Reading the brief and designing before typing
       cn: 先读题、先设计，再动手写
@@ -99,11 +99,11 @@ courses:
       alt_cn: FIT1045 辅导课件 · One job per function
       caption_en: One job per function
       caption_cn: One job per function
-    - src: /assets/teach/monash/fit1045/sample/06-stack-heap-data-c.webp
-      alt_en: FIT1045 tutoring · Stack, heap, data (C)
-      alt_cn: FIT1045 辅导课件 · Stack, heap, data (C)
-      caption_en: Stack, heap, data (C)
-      caption_cn: Stack, heap, data (C)
+    - src: /assets/teach/monash/fit1045/sample/06-names-objects-mutability.webp
+      alt_en: FIT1045 tutoring · Names, objects, mutability
+      alt_cn: FIT1045 辅导课件 · Names, objects, mutability
+      caption_en: Names, objects, mutability
+      caption_cn: Names, objects, mutability
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
