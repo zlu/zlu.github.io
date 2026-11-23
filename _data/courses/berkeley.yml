@@ -24,9 +24,9 @@ courses:
   overview_en: CS 70 Discrete Mathematics and Probability Theory sits in algorithms & data structures.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: CS 70 是加州大学伯克利分校「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着ML 流水线、特征与模型选择、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: ML pipelines, features, and model choice
     cn: ML 流水线、特征与模型选择
@@ -68,8 +68,10 @@ courses:
   sample_slides:
     title_en: CS 70 — sample slides
     title_cn: CS 70 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Complexity, Big-O in exam language, Pick the ADT by the operation,
+      DP four-line template from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Complexity、Big-O in exam language、Pick the ADT by
+      the operation、DP four-line template。
     bullets:
     - en: Asymptotic complexity and comparing candidates
       cn: 渐近复杂度与方案比较
@@ -81,32 +83,42 @@ courses:
       cn: 贪心、分治与动态规划模式
     slides:
     - src: /assets/teach/uc-berkeley/cs-70/sample/01-title.webp
-      alt_en: CS 70 tutoring title
+      alt_en: CS 70 tutoring · Title
       alt_cn: CS 70 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/uc-berkeley/cs-70/sample/02-topics.webp
-      alt_en: CS 70 tutoring topics
-      alt_cn: CS 70 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/uc-berkeley/cs-70/sample/03-stuck.webp
-      alt_en: CS 70 tutoring stuck points
-      alt_cn: CS 70 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/uc-berkeley/cs-70/sample/04-tutoring.webp
-      alt_en: CS 70 tutoring how tutoring runs
-      alt_cn: CS 70 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/uc-berkeley/cs-70/sample/02-roadmap.webp
+      alt_en: CS 70 tutoring · Roadmap
+      alt_cn: CS 70 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/uc-berkeley/cs-70/sample/03-part-a-complexity.webp
+      alt_en: CS 70 tutoring · Part A · Complexity
+      alt_cn: CS 70 辅导课件 · Part A · Complexity
+      caption_en: Part A · Complexity
+      caption_cn: Part A · Complexity
+    - src: /assets/teach/uc-berkeley/cs-70/sample/04-big-o-in-exam-language.webp
+      alt_en: CS 70 tutoring · Big-O in exam language
+      alt_cn: CS 70 辅导课件 · Big-O in exam language
+      caption_en: Big-O in exam language
+      caption_cn: Big-O in exam language
+    - src: /assets/teach/uc-berkeley/cs-70/sample/05-pick-the-adt-by-the-operation.webp
+      alt_en: CS 70 tutoring · Pick the ADT by the operation
+      alt_cn: CS 70 辅导课件 · Pick the ADT by the operation
+      caption_en: Pick the ADT by the operation
+      caption_cn: Pick the ADT by the operation
+    - src: /assets/teach/uc-berkeley/cs-70/sample/06-dp-four-line-template.webp
+      alt_en: CS 70 tutoring · DP four-line template
+      alt_cn: CS 70 辅导课件 · DP four-line template
+      caption_en: DP four-line template
+      caption_cn: DP four-line template
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CS 170
   title: Efficient Algorithms and Intractable Problems
 - code: CS 188
@@ -185,9 +197,9 @@ courses:
   overview_en: MATH54 Linear Algebra and Differential Equations sits in math for computer science. Evidence
     from Students stall when terminology outruns notes, when a demo makes sense in class but not alone,
     or when the write-up / autograder asks for a method the notebook never made explicit. Sample slides
-    from our tutoring intro deck are below.
+    from our concept-review tutoring deck are below.
   overview_cn: MATH54 是加州大学伯克利分校「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
@@ -229,8 +241,10 @@ courses:
   sample_slides:
     title_en: MATH54 — sample slides
     title_cn: MATH54 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Vectors and matrices in CS, Probability essentials, Part D · Proofs, Proof
+      checklist from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Vectors and matrices in CS、Probability essentials、Part D ·
+      Proofs、Proof checklist。
     bullets:
     - en: Math foundations and proof habits
       cn: 数学基础与证明习惯
@@ -242,30 +256,40 @@ courses:
       cn: 优化直觉（梯度、约束）
     slides:
     - src: /assets/teach/uc-berkeley/math54/sample/01-title.webp
-      alt_en: MATH54 tutoring title
+      alt_en: MATH54 tutoring · Title
       alt_cn: MATH54 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/uc-berkeley/math54/sample/02-topics.webp
-      alt_en: MATH54 tutoring topics
-      alt_cn: MATH54 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/uc-berkeley/math54/sample/03-stuck.webp
-      alt_en: MATH54 tutoring stuck points
-      alt_cn: MATH54 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/uc-berkeley/math54/sample/04-tutoring.webp
-      alt_en: MATH54 tutoring how tutoring runs
-      alt_cn: MATH54 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/uc-berkeley/math54/sample/02-roadmap.webp
+      alt_en: MATH54 tutoring · Roadmap
+      alt_cn: MATH54 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/uc-berkeley/math54/sample/03-vectors-and-matrices-in-cs.webp
+      alt_en: MATH54 tutoring · Vectors and matrices in CS
+      alt_cn: MATH54 辅导课件 · Vectors and matrices in CS
+      caption_en: Vectors and matrices in CS
+      caption_cn: Vectors and matrices in CS
+    - src: /assets/teach/uc-berkeley/math54/sample/04-probability-essentials.webp
+      alt_en: MATH54 tutoring · Probability essentials
+      alt_cn: MATH54 辅导课件 · Probability essentials
+      caption_en: Probability essentials
+      caption_cn: Probability essentials
+    - src: /assets/teach/uc-berkeley/math54/sample/05-part-d-proofs.webp
+      alt_en: MATH54 tutoring · Part D · Proofs
+      alt_cn: MATH54 辅导课件 · Part D · Proofs
+      caption_en: Part D · Proofs
+      caption_cn: Part D · Proofs
+    - src: /assets/teach/uc-berkeley/math54/sample/06-proof-checklist.webp
+      alt_en: MATH54 tutoring · Proof checklist
+      alt_cn: MATH54 辅导课件 · Proof checklist
+      caption_en: Proof checklist
+      caption_cn: Proof checklist
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

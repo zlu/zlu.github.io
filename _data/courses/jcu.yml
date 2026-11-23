@@ -19,10 +19,11 @@ courses:
   overview_en: CP3406 Android sits in web, mobile & hci. There is a weekly arc (about week 4–7) plus assessed
     work that expects you to apply the same ideas under deadline pressure. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
+    are below.
   overview_cn: CP3406 是詹姆斯库克大学（新加坡）「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、网络分层、报文与协议、计算机体系结构与组成这些点转。大约第
     4–7 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -69,45 +70,57 @@ courses:
   sample_slides:
     title_en: CP3406 — sample slides
     title_cn: CP3406 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Part A · Client and server, Who does what, State vs URL, Part D · HCI sketch, Task-centred
+      evaluation from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Part A · Client and server、Who does what、State vs URL、Part D · HCI
+      sketch、Task-centred evaluation。
     bullets:
     - en: Web / mobile app structure
       cn: Web / 移动应用结构
-    - en: CP3406 CP5307 Lecture 04
-      cn: CP3406 CP5307 Lecture 04
-    - en: CP3406 CP5307 Practical 04
-      cn: CP3406 CP5307 Practical 04
-    - en: Prca4 WordGame
-      cn: Prca4 WordGame
+    - en: Client / server responsibilities and APIs
+      cn: 前后端职责与 API
+    - en: State, routing, and common framework patterns
+      cn: 状态、路由与常见框架模式
+    - en: Mobile lifecycle and platform constraints
+      cn: 移动端生命周期与平台约束
     slides:
     - src: /assets/teach/james-cook-singapore/cp3406/sample/01-title.webp
-      alt_en: CP3406 tutoring title
+      alt_en: CP3406 tutoring · Title
       alt_cn: CP3406 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/james-cook-singapore/cp3406/sample/02-topics.webp
-      alt_en: CP3406 tutoring topics
-      alt_cn: CP3406 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/james-cook-singapore/cp3406/sample/03-stuck.webp
-      alt_en: CP3406 tutoring stuck points
-      alt_cn: CP3406 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/james-cook-singapore/cp3406/sample/04-tutoring.webp
-      alt_en: CP3406 tutoring how tutoring runs
-      alt_cn: CP3406 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/james-cook-singapore/cp3406/sample/02-part-a-client-and-server.webp
+      alt_en: CP3406 tutoring · Part A · Client and server
+      alt_cn: CP3406 辅导课件 · Part A · Client and server
+      caption_en: Part A · Client and server
+      caption_cn: Part A · Client and server
+    - src: /assets/teach/james-cook-singapore/cp3406/sample/03-who-does-what.webp
+      alt_en: CP3406 tutoring · Who does what
+      alt_cn: CP3406 辅导课件 · Who does what
+      caption_en: Who does what
+      caption_cn: Who does what
+    - src: /assets/teach/james-cook-singapore/cp3406/sample/04-state-vs-url.webp
+      alt_en: CP3406 tutoring · State vs URL
+      alt_cn: CP3406 辅导课件 · State vs URL
+      caption_en: State vs URL
+      caption_cn: State vs URL
+    - src: /assets/teach/james-cook-singapore/cp3406/sample/05-part-d-hci-sketch.webp
+      alt_en: CP3406 tutoring · Part D · HCI sketch
+      alt_cn: CP3406 辅导课件 · Part D · HCI sketch
+      caption_en: Part D · HCI sketch
+      caption_cn: Part D · HCI sketch
+    - src: /assets/teach/james-cook-singapore/cp3406/sample/06-task-centred-evaluation.webp
+      alt_en: CP3406 tutoring · Task-centred evaluation
+      alt_cn: CP3406 辅导课件 · Task-centred evaluation
+      caption_en: Task-centred evaluation
+      caption_cn: Task-centred evaluation
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CP3404
   title: Network Security and Cryptography
   material: CP3404
@@ -121,10 +134,10 @@ courses:
   overview_en: CP3404 Network Security and Cryptography sits in security & privacy. Assessed work expects
     you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    the notebook never made explicit. Sample slides from our concept-review tutoring deck are below.
   overview_cn: CP3404 是詹姆斯库克大学（新加坡）「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -163,8 +176,10 @@ courses:
   sample_slides:
     title_en: CP3404 — sample slides
     title_cn: CP3404 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Threat modelling, Threat model skeleton, Primitive jobs (not interchangeable),
+      Part D · Coding habits from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Threat modelling、Threat model skeleton、Primitive jobs
+      (not interchangeable)、Part D · Coding habits。
     bullets:
     - en: Networking layers, packets, and protocols
       cn: 网络分层、报文与协议
@@ -172,32 +187,42 @@ courses:
       cn: 安全 / 隐私威胁模型与实验
     slides:
     - src: /assets/teach/james-cook-singapore/cp3404/sample/01-title.webp
-      alt_en: CP3404 tutoring title
+      alt_en: CP3404 tutoring · Title
       alt_cn: CP3404 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/james-cook-singapore/cp3404/sample/02-topics.webp
-      alt_en: CP3404 tutoring topics
-      alt_cn: CP3404 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/james-cook-singapore/cp3404/sample/03-stuck.webp
-      alt_en: CP3404 tutoring stuck points
-      alt_cn: CP3404 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/james-cook-singapore/cp3404/sample/04-tutoring.webp
-      alt_en: CP3404 tutoring how tutoring runs
-      alt_cn: CP3404 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/james-cook-singapore/cp3404/sample/02-roadmap.webp
+      alt_en: CP3404 tutoring · Roadmap
+      alt_cn: CP3404 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/james-cook-singapore/cp3404/sample/03-part-a-threat-modelling.webp
+      alt_en: CP3404 tutoring · Part A · Threat modelling
+      alt_cn: CP3404 辅导课件 · Part A · Threat modelling
+      caption_en: Part A · Threat modelling
+      caption_cn: Part A · Threat modelling
+    - src: /assets/teach/james-cook-singapore/cp3404/sample/04-threat-model-skeleton.webp
+      alt_en: CP3404 tutoring · Threat model skeleton
+      alt_cn: CP3404 辅导课件 · Threat model skeleton
+      caption_en: Threat model skeleton
+      caption_cn: Threat model skeleton
+    - src: /assets/teach/james-cook-singapore/cp3404/sample/05-primitive-jobs-not-interchangeable.webp
+      alt_en: CP3404 tutoring · Primitive jobs (not interchangeable)
+      alt_cn: CP3404 辅导课件 · Primitive jobs (not interchangeable)
+      caption_en: Primitive jobs (not interchangeable)
+      caption_cn: Primitive jobs (not interchangeable)
+    - src: /assets/teach/james-cook-singapore/cp3404/sample/06-part-d-coding-habits.webp
+      alt_en: CP3404 tutoring · Part D · Coding habits
+      alt_cn: CP3404 辅导课件 · Part D · Coding habits
+      caption_en: Part D · Coding habits
+      caption_cn: Part D · Coding habits
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CP3501
   title: Deep Learning
   material: CP3501- Deep Learning
@@ -211,11 +236,11 @@ courses:
   overview_en: CP3501 Deep Learning sits in machine learning & ai. There is a weekly arc (about week 1–4)
     plus assessed work that expects you to apply the same ideas under deadline pressure. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
-    deck are below.
+    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: CP3501 是詹姆斯库克大学（新加坡）「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、计算机体系结构与组成、算法、ADT
     与复杂度这些点转。大约第 1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -263,8 +288,10 @@ courses:
   sample_slides:
     title_en: CP3501 — sample slides
     title_cn: CP3501 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: 'Title, Roadmap, Part A · Supervised learning, Supervised vs unsupervised, Loss: what training
+      minimises, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Supervised learning、Supervised vs unsupervised、Loss:
+      what training minimises、Sigmoid and the decision rule。'
     bullets:
     - en: Neural nets / deep learning / AI
       cn: 神经网络 / 深度学习 / AI
@@ -272,30 +299,40 @@ courses:
       cn: 编程基础与调试
     slides:
     - src: /assets/teach/james-cook-singapore/cp3501/sample/01-title.webp
-      alt_en: CP3501 tutoring title
+      alt_en: CP3501 tutoring · Title
       alt_cn: CP3501 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/james-cook-singapore/cp3501/sample/02-topics.webp
-      alt_en: CP3501 tutoring topics
-      alt_cn: CP3501 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/james-cook-singapore/cp3501/sample/03-stuck.webp
-      alt_en: CP3501 tutoring stuck points
-      alt_cn: CP3501 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/james-cook-singapore/cp3501/sample/04-tutoring.webp
-      alt_en: CP3501 tutoring how tutoring runs
-      alt_cn: CP3501 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/james-cook-singapore/cp3501/sample/02-roadmap.webp
+      alt_en: CP3501 tutoring · Roadmap
+      alt_cn: CP3501 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/james-cook-singapore/cp3501/sample/03-part-a-supervised-learning.webp
+      alt_en: CP3501 tutoring · Part A · Supervised learning
+      alt_cn: CP3501 辅导课件 · Part A · Supervised learning
+      caption_en: Part A · Supervised learning
+      caption_cn: Part A · Supervised learning
+    - src: /assets/teach/james-cook-singapore/cp3501/sample/04-supervised-vs-unsupervised.webp
+      alt_en: CP3501 tutoring · Supervised vs unsupervised
+      alt_cn: CP3501 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/james-cook-singapore/cp3501/sample/05-loss-what-training-minimises.webp
+      alt_en: 'CP3501 tutoring · Loss: what training minimises'
+      alt_cn: 'CP3501 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/james-cook-singapore/cp3501/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: CP3501 tutoring · Sigmoid and the decision rule
+      alt_cn: CP3501 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

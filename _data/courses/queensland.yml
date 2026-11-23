@@ -44,10 +44,10 @@ courses:
     There is a weekly arc (about week 1–13) plus assessed work that expects you to apply the same ideas
     under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
     class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our tutoring intro deck are below.'
+    Sample slides from our concept-review tutoring deck are below.'
   overview_cn: CSSE7100 是昆士兰大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、Web / 移动应用结构这些点转。大约第
     1–13 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -89,8 +89,10 @@ courses:
   sample_slides:
     title_en: CSSE7100 — sample slides
     title_cn: CSSE7100 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
+      code), One job per function, Stack, heap, data (C)。
     bullets:
     - en: Reading the brief and designing before typing
       cn: 先读题、先设计，再动手写
@@ -102,32 +104,42 @@ courses:
       cn: 单元测试与 autograder 反馈循环
     slides:
     - src: /assets/teach/u-queensland/csse7100/sample/01-title.webp
-      alt_en: CSSE7100 tutoring title
+      alt_en: CSSE7100 tutoring · Title
       alt_cn: CSSE7100 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/csse7100/sample/02-topics.webp
-      alt_en: CSSE7100 tutoring topics
-      alt_cn: CSSE7100 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/csse7100/sample/03-stuck.webp
-      alt_en: CSSE7100 tutoring stuck points
-      alt_cn: CSSE7100 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/csse7100/sample/04-tutoring.webp
-      alt_en: CSSE7100 tutoring how tutoring runs
-      alt_cn: CSSE7100 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/csse7100/sample/02-roadmap.webp
+      alt_en: CSSE7100 tutoring · Roadmap
+      alt_cn: CSSE7100 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-queensland/csse7100/sample/03-part-a-from-brief-to-design.webp
+      alt_en: CSSE7100 tutoring · Part A · From brief to design
+      alt_cn: CSSE7100 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/u-queensland/csse7100/sample/04-brief-checklist-before-code.webp
+      alt_en: CSSE7100 tutoring · Brief checklist (before code)
+      alt_cn: CSSE7100 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/u-queensland/csse7100/sample/05-one-job-per-function.webp
+      alt_en: CSSE7100 tutoring · One job per function
+      alt_cn: CSSE7100 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/u-queensland/csse7100/sample/06-stack-heap-data-c.webp
+      alt_en: CSSE7100 tutoring · Stack, heap, data (C)
+      alt_cn: CSSE7100 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - topics:
   - en: Classification basics and evaluation
     cn: 分类基础与评估
@@ -164,9 +176,9 @@ courses:
   lead_cn: INFS7203 把大量挖掘方法塞进课堂与 tutorial：分类、聚类、关联规则、异常检测、文本 / Web 挖掘。难的是判断哪一种方法适合问题，并用不太技术用语的方式说清。
   overview_en: Data Mining walks through classic supervised and unsupervised techniques with lecture slides
     and tutorial drills. Students struggle when method names blur together, when evaluation metrics feel
-    abstract, or when tutorial figures look cryptic without a step checklist. Sample slides from our tutoring
-    intro deck are below.
-  overview_cn: Data Mining 用课件与 tutorial 讲经典监督 / 无监督技术。卡点常在方法名混在一起、评估指标太抽象，或 tutorial 图没有步骤清单就不会做。 下方有我们辅导入门课件的样例页。
+    abstract, or when tutorial figures look cryptic without a step checklist. Sample slides from our concept-review
+    tutoring deck are below.
+  overview_cn: Data Mining 用课件与 tutorial 讲经典监督 / 无监督技术。卡点常在方法名混在一起、评估指标太抽象，或 tutorial 图没有步骤清单就不会做。 下方有我们概念复习辅导课件的样例页。
   title: Data Mining
   stuck:
   - en: Method catalogue memorised, selection criteria missing
@@ -180,8 +192,10 @@ courses:
   sample_slides:
     title_en: INFS7203 — sample slides
     title_cn: INFS7203 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature
+      hygiene。
     bullets:
     - en: Data wrangling / analytics tables
       cn: 数据清洗 / 分析表
@@ -191,32 +205,42 @@ courses:
       cn: Web / 移动应用结构
     slides:
     - src: /assets/teach/u-queensland/infs7203/sample/01-title.webp
-      alt_en: INFS7203 tutoring title
+      alt_en: INFS7203 tutoring · Title
       alt_cn: INFS7203 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/infs7203/sample/02-topics.webp
-      alt_en: INFS7203 tutoring topics
-      alt_cn: INFS7203 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/infs7203/sample/03-stuck.webp
-      alt_en: INFS7203 tutoring stuck points
-      alt_cn: INFS7203 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/infs7203/sample/04-tutoring.webp
-      alt_en: INFS7203 tutoring how tutoring runs
-      alt_cn: INFS7203 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/infs7203/sample/02-roadmap.webp
+      alt_en: INFS7203 tutoring · Roadmap
+      alt_cn: INFS7203 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-queensland/infs7203/sample/03-part-a-tables.webp
+      alt_en: INFS7203 tutoring · Part A · Tables
+      alt_cn: INFS7203 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/u-queensland/infs7203/sample/04-tidy-data-rules.webp
+      alt_en: INFS7203 tutoring · Tidy data rules
+      alt_cn: INFS7203 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/u-queensland/infs7203/sample/05-eda-checklist.webp
+      alt_en: INFS7203 tutoring · EDA checklist
+      alt_cn: INFS7203 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/u-queensland/infs7203/sample/06-feature-hygiene.webp
+      alt_en: INFS7203 tutoring · Feature hygiene
+      alt_cn: INFS7203 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Intro To Software Engeering
   code: CSSE1001
   material: CSSE1001-intro-to-software-engr
@@ -231,9 +255,9 @@ courses:
     Common topics: Algorithms, ADTs, and complexity; Programming foundations and debugging; Software design
     and construction; Web / mobile app structure. People stall when terms outrun notes, when a class demo
     does not replay alone, or when the write-up / autograder wants a method the notebook never showed.
-    Sample slides from our tutoring intro deck are below.'
+    Sample slides from our concept-review tutoring deck are below.'
   overview_cn: CSSE1001 是昆士兰大学的「Web、移动与人机交互」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度、编程基础与调试、软件设计与构造。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -269,8 +293,10 @@ courses:
   sample_slides:
     title_en: CSSE1001 — sample slides
     title_cn: CSSE1001 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Part A · Client and server, Who does what, State vs URL, Part D · HCI sketch, Task-centred
+      evaluation from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Part A · Client and server, Who does what, State vs URL, Part
+      D · HCI sketch, Task-centred evaluation。
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
@@ -278,32 +304,42 @@ courses:
       cn: Web / 移动应用结构
     slides:
     - src: /assets/teach/u-queensland/csse1001/sample/01-title.webp
-      alt_en: CSSE1001 tutoring title
+      alt_en: CSSE1001 tutoring · Title
       alt_cn: CSSE1001 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/csse1001/sample/02-topics.webp
-      alt_en: CSSE1001 tutoring topics
-      alt_cn: CSSE1001 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/csse1001/sample/03-stuck.webp
-      alt_en: CSSE1001 tutoring stuck points
-      alt_cn: CSSE1001 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/csse1001/sample/04-tutoring.webp
-      alt_en: CSSE1001 tutoring how tutoring runs
-      alt_cn: CSSE1001 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/csse1001/sample/02-part-a-client-and-server.webp
+      alt_en: CSSE1001 tutoring · Part A · Client and server
+      alt_cn: CSSE1001 辅导课件 · Part A · Client and server
+      caption_en: Part A · Client and server
+      caption_cn: Part A · Client and server
+    - src: /assets/teach/u-queensland/csse1001/sample/03-who-does-what.webp
+      alt_en: CSSE1001 tutoring · Who does what
+      alt_cn: CSSE1001 辅导课件 · Who does what
+      caption_en: Who does what
+      caption_cn: Who does what
+    - src: /assets/teach/u-queensland/csse1001/sample/04-state-vs-url.webp
+      alt_en: CSSE1001 tutoring · State vs URL
+      alt_cn: CSSE1001 辅导课件 · State vs URL
+      caption_en: State vs URL
+      caption_cn: State vs URL
+    - src: /assets/teach/u-queensland/csse1001/sample/05-part-d-hci-sketch.webp
+      alt_en: CSSE1001 tutoring · Part D · HCI sketch
+      alt_cn: CSSE1001 辅导课件 · Part D · HCI sketch
+      caption_en: Part D · HCI sketch
+      caption_cn: Part D · HCI sketch
+    - src: /assets/teach/u-queensland/csse1001/sample/06-task-centred-evaluation.webp
+      alt_en: CSSE1001 tutoring · Task-centred evaluation
+      alt_cn: CSSE1001 辅导课件 · Task-centred evaluation
+      caption_en: Task-centred evaluation
+      caption_cn: Task-centred evaluation
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Computational Engineering and Data Analysis
   material: MECH2700
   code: MECH2700
@@ -318,10 +354,10 @@ courses:
     There is a weekly arc (about week 1–3) plus assessed work that expects you to apply the same ideas
     under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
     class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our tutoring intro deck are below.
+    Sample slides from our concept-review tutoring deck are below.
   overview_cn: MECH2700 是昆士兰大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、数学基础与证明习惯这些点转。大约第
     1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -366,45 +402,57 @@ courses:
   sample_slides:
     title_en: MECH2700 — sample slides
     title_cn: MECH2700 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature
+      hygiene。
     bullets:
     - en: Math foundations and proof habits
       cn: 数学基础与证明习惯
-    - en: wk01 errors (1)
-      cn: wk01 errors (1)
-    - en: interpolation
-      cn: interpolation
-    - en: interpolation(1)
-      cn: interpolation(1)
+    - en: Pandas / dplyr style transforms and joins
+      cn: Pandas / dplyr 风格的变换与 join
+    - en: EDA, distributions, and “what question am I answering?”
+      cn: 探索性分析、分布，以及“我在回答什么问题”
+    - en: Feature hygiene before modelling
+      cn: 建模前的特征卫生
     slides:
     - src: /assets/teach/u-queensland/mech2700/sample/01-title.webp
-      alt_en: MECH2700 tutoring title
+      alt_en: MECH2700 tutoring · Title
       alt_cn: MECH2700 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/mech2700/sample/02-topics.webp
-      alt_en: MECH2700 tutoring topics
-      alt_cn: MECH2700 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/mech2700/sample/03-stuck.webp
-      alt_en: MECH2700 tutoring stuck points
-      alt_cn: MECH2700 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/mech2700/sample/04-tutoring.webp
-      alt_en: MECH2700 tutoring how tutoring runs
-      alt_cn: MECH2700 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/mech2700/sample/02-roadmap.webp
+      alt_en: MECH2700 tutoring · Roadmap
+      alt_cn: MECH2700 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-queensland/mech2700/sample/03-part-a-tables.webp
+      alt_en: MECH2700 tutoring · Part A · Tables
+      alt_cn: MECH2700 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/u-queensland/mech2700/sample/04-tidy-data-rules.webp
+      alt_en: MECH2700 tutoring · Tidy data rules
+      alt_cn: MECH2700 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/u-queensland/mech2700/sample/05-eda-checklist.webp
+      alt_en: MECH2700 tutoring · EDA checklist
+      alt_cn: MECH2700 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/u-queensland/mech2700/sample/06-feature-hygiene.webp
+      alt_en: MECH2700 tutoring · Feature hygiene
+      alt_cn: MECH2700 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: INFS7900
   title: Introduction to Information Systems
   material: infs7900
@@ -418,10 +466,10 @@ courses:
   overview_en: INFS7900 Introduction to Information Systems sits in databases & information systems. Evidence
     from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
-    deck are below.
+    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: INFS7900 是昆士兰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -463,8 +511,10 @@ courses:
   sample_slides:
     title_en: INFS7900 — sample slides
     title_cn: INFS7900 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order, Why is this slow? from
+      our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order,
+      Why is this slow?。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -476,32 +526,42 @@ courses:
       cn: 索引、执行计划与“为什么慢”
     slides:
     - src: /assets/teach/u-queensland/infs7900/sample/01-title.webp
-      alt_en: INFS7900 tutoring title
+      alt_en: INFS7900 tutoring · Title
       alt_cn: INFS7900 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/infs7900/sample/02-topics.webp
-      alt_en: INFS7900 tutoring topics
-      alt_cn: INFS7900 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/infs7900/sample/03-stuck.webp
-      alt_en: INFS7900 tutoring stuck points
-      alt_cn: INFS7900 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/infs7900/sample/04-tutoring.webp
-      alt_en: INFS7900 tutoring how tutoring runs
-      alt_cn: INFS7900 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/infs7900/sample/02-roadmap.webp
+      alt_en: INFS7900 tutoring · Roadmap
+      alt_cn: INFS7900 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-queensland/infs7900/sample/03-part-a-modelling.webp
+      alt_en: INFS7900 tutoring · Part A · Modelling
+      alt_cn: INFS7900 辅导课件 · Part A · Modelling
+      caption_en: Part A · Modelling
+      caption_cn: Part A · Modelling
+    - src: /assets/teach/u-queensland/infs7900/sample/04-er-essentials.webp
+      alt_en: INFS7900 tutoring · ER essentials
+      alt_cn: INFS7900 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/u-queensland/infs7900/sample/05-sql-mental-order.webp
+      alt_en: INFS7900 tutoring · SQL mental order
+      alt_cn: INFS7900 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/u-queensland/infs7900/sample/06-why-is-this-slow.webp
+      alt_en: INFS7900 tutoring · Why is this slow?
+      alt_cn: INFS7900 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Transforming Business with Information Systems
   code: BISM1201
   material: BISM1201
@@ -515,10 +575,10 @@ courses:
   overview_en: BISM1201 Transforming Business with Information Systems sits in databases & information
     systems. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
-    deck are below.
+    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: BISM1201 是昆士兰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着ML 流水线、特征与模型选择、SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: ML pipelines, features, and model choice
     cn: ML 流水线、特征与模型选择
@@ -560,8 +620,10 @@ courses:
   sample_slides:
     title_en: BISM1201 — sample slides
     title_cn: BISM1201 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order, Why is this slow? from
+      our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order,
+      Why is this slow?。
     bullets:
     - en: ER modelling and normalisation trade-offs
       cn: ER 建模与范式权衡
@@ -573,32 +635,42 @@ courses:
       cn: 入门级事务与隔离级别
     slides:
     - src: /assets/teach/u-queensland/bism1201/sample/01-title.webp
-      alt_en: BISM1201 tutoring title
+      alt_en: BISM1201 tutoring · Title
       alt_cn: BISM1201 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/bism1201/sample/02-topics.webp
-      alt_en: BISM1201 tutoring topics
-      alt_cn: BISM1201 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/bism1201/sample/03-stuck.webp
-      alt_en: BISM1201 tutoring stuck points
-      alt_cn: BISM1201 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/bism1201/sample/04-tutoring.webp
-      alt_en: BISM1201 tutoring how tutoring runs
-      alt_cn: BISM1201 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/bism1201/sample/02-roadmap.webp
+      alt_en: BISM1201 tutoring · Roadmap
+      alt_cn: BISM1201 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-queensland/bism1201/sample/03-part-a-modelling.webp
+      alt_en: BISM1201 tutoring · Part A · Modelling
+      alt_cn: BISM1201 辅导课件 · Part A · Modelling
+      caption_en: Part A · Modelling
+      caption_cn: Part A · Modelling
+    - src: /assets/teach/u-queensland/bism1201/sample/04-er-essentials.webp
+      alt_en: BISM1201 tutoring · ER essentials
+      alt_cn: BISM1201 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/u-queensland/bism1201/sample/05-sql-mental-order.webp
+      alt_en: BISM1201 tutoring · SQL mental order
+      alt_cn: BISM1201 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/u-queensland/bism1201/sample/06-why-is-this-slow.webp
+      alt_en: BISM1201 tutoring · Why is this slow?
+      alt_cn: BISM1201 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP4403
   title: Compilers and Interpreters
   material: comp4403-compiler
@@ -612,9 +684,9 @@ courses:
   overview_en: COMP4403 Compilers and Interpreters sits in programming & software construction. Evidence
     from Students stall when terminology outruns notes, when a demo makes sense in class but not alone,
     or when the write-up / autograder asks for a method the notebook never made explicit. Sample slides
-    from our tutoring intro deck are below.
+    from our concept-review tutoring deck are below.
   overview_cn: COMP4403 是昆士兰大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Automata, formal languages, and proofs
     cn: 自动机、形式语言与证明
@@ -654,8 +726,10 @@ courses:
   sample_slides:
     title_en: COMP4403 — sample slides
     title_cn: COMP4403 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
+      code), One job per function, Stack, heap, data (C)。
     bullets:
     - en: Automata, formal languages, and proofs
       cn: 自动机、形式语言与证明
@@ -667,32 +741,42 @@ courses:
       cn: 递归、抽象数据类型与常见 Lab 模式
     slides:
     - src: /assets/teach/u-queensland/comp4403/sample/01-title.webp
-      alt_en: COMP4403 tutoring title
+      alt_en: COMP4403 tutoring · Title
       alt_cn: COMP4403 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/comp4403/sample/02-topics.webp
-      alt_en: COMP4403 tutoring topics
-      alt_cn: COMP4403 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/comp4403/sample/03-stuck.webp
-      alt_en: COMP4403 tutoring stuck points
-      alt_cn: COMP4403 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/comp4403/sample/04-tutoring.webp
-      alt_en: COMP4403 tutoring how tutoring runs
-      alt_cn: COMP4403 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/comp4403/sample/02-roadmap.webp
+      alt_en: COMP4403 tutoring · Roadmap
+      alt_cn: COMP4403 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-queensland/comp4403/sample/03-part-a-from-brief-to-design.webp
+      alt_en: COMP4403 tutoring · Part A · From brief to design
+      alt_cn: COMP4403 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/u-queensland/comp4403/sample/04-brief-checklist-before-code.webp
+      alt_en: COMP4403 tutoring · Brief checklist (before code)
+      alt_cn: COMP4403 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/u-queensland/comp4403/sample/05-one-job-per-function.webp
+      alt_en: COMP4403 tutoring · One job per function
+      alt_cn: COMP4403 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/u-queensland/comp4403/sample/06-stack-heap-data-c.webp
+      alt_en: COMP4403 tutoring · Stack, heap, data (C)
+      alt_cn: COMP4403 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMS3200
   title: Computer Networks I
   material: coms3200
@@ -706,9 +790,9 @@ courses:
   overview_en: COMS3200 Computer Networks I sits in systems, networks & architecture. Assessed work expects
     you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    the notebook never made explicit. Sample slides from our concept-review tutoring deck are below.
   overview_cn: COMS3200 是昆士兰大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、算法、ADT
-    与复杂度这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    与复杂度这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -751,8 +835,10 @@ courses:
   sample_slides:
     title_en: COMS3200 — sample slides
     title_cn: COMS3200 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical
+      section and race, Socket + HTTP sketch。
     bullets:
     - en: Processes, threads, and synchronisation basics
       cn: 进程、线程与同步基础
@@ -764,32 +850,42 @@ courses:
       cn: 操作系统调度与并发 bug
     slides:
     - src: /assets/teach/u-queensland/coms3200/sample/01-title.webp
-      alt_en: COMS3200 tutoring title
+      alt_en: COMS3200 tutoring · Title
       alt_cn: COMS3200 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/coms3200/sample/02-topics.webp
-      alt_en: COMS3200 tutoring topics
-      alt_cn: COMS3200 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/coms3200/sample/03-stuck.webp
-      alt_en: COMS3200 tutoring stuck points
-      alt_cn: COMS3200 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/coms3200/sample/04-tutoring.webp
-      alt_en: COMS3200 tutoring how tutoring runs
-      alt_cn: COMS3200 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/coms3200/sample/02-roadmap.webp
+      alt_en: COMS3200 tutoring · Roadmap
+      alt_cn: COMS3200 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-queensland/coms3200/sample/03-part-a-processes-and-threads.webp
+      alt_en: COMS3200 tutoring · Part A · Processes and threads
+      alt_cn: COMS3200 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/u-queensland/coms3200/sample/04-process-vs-thread.webp
+      alt_en: COMS3200 tutoring · Process vs thread
+      alt_cn: COMS3200 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/u-queensland/coms3200/sample/05-critical-section-and-race.webp
+      alt_en: COMS3200 tutoring · Critical section and race
+      alt_cn: COMS3200 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/u-queensland/coms3200/sample/06-socket-http-sketch.webp
+      alt_en: COMS3200 tutoring · Socket + HTTP sketch
+      alt_cn: COMS3200 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: INFS7410
   material: INFS7410
   title: Information Retrieval and Web Search
@@ -804,9 +900,9 @@ courses:
     Common topics: Math foundations and proof habits; Web / mobile app structure. Weekly arc about week
     1–13, plus assessed work under deadline. People stall when terms outrun notes, when a class demo does
     not replay alone, or when the write-up / autograder wants a method the notebook never showed. Sample
-    slides from our tutoring intro deck are below.'
+    slides from our concept-review tutoring deck are below.'
   overview_cn: INFS7410 是昆士兰大学的「Web、移动与人机交互」课，既要真懂，也要能动手。常见内容包括数学基础与证明习惯、Web / 移动应用结构。大约第 1–13 周有连续周课，作业会要求你在
-    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
@@ -852,43 +948,55 @@ courses:
   sample_slides:
     title_en: INFS7410 — sample slides
     title_cn: INFS7410 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Part A · Client and server, Who does what, State vs URL, Part D · HCI sketch, Task-centred
+      evaluation from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Part A · Client and server, Who does what, State vs URL, Part
+      D · HCI sketch, Task-centred evaluation。
     bullets:
-    - en: prac
-      cn: prac
-    - en: prac
-      cn: prac
-    - en: qrels
-      cn: qrels
-    - en: prac
-      cn: prac
+    - en: Client / server responsibilities and APIs
+      cn: 前后端职责与 API
+    - en: State, routing, and common framework patterns
+      cn: 状态、路由与常见框架模式
+    - en: Mobile lifecycle and platform constraints
+      cn: 移动端生命周期与平台约束
+    - en: Accessibility and HCI evaluation basics
+      cn: 无障碍与 HCI 评估基础
     slides:
     - src: /assets/teach/u-queensland/infs7410/sample/01-title.webp
-      alt_en: INFS7410 tutoring title
+      alt_en: INFS7410 tutoring · Title
       alt_cn: INFS7410 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-queensland/infs7410/sample/02-topics.webp
-      alt_en: INFS7410 tutoring topics
-      alt_cn: INFS7410 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-queensland/infs7410/sample/03-stuck.webp
-      alt_en: INFS7410 tutoring stuck points
-      alt_cn: INFS7410 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-queensland/infs7410/sample/04-tutoring.webp
-      alt_en: INFS7410 tutoring how tutoring runs
-      alt_cn: INFS7410 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-queensland/infs7410/sample/02-part-a-client-and-server.webp
+      alt_en: INFS7410 tutoring · Part A · Client and server
+      alt_cn: INFS7410 辅导课件 · Part A · Client and server
+      caption_en: Part A · Client and server
+      caption_cn: Part A · Client and server
+    - src: /assets/teach/u-queensland/infs7410/sample/03-who-does-what.webp
+      alt_en: INFS7410 tutoring · Who does what
+      alt_cn: INFS7410 辅导课件 · Who does what
+      caption_en: Who does what
+      caption_cn: Who does what
+    - src: /assets/teach/u-queensland/infs7410/sample/04-state-vs-url.webp
+      alt_en: INFS7410 tutoring · State vs URL
+      alt_cn: INFS7410 辅导课件 · State vs URL
+      caption_en: State vs URL
+      caption_cn: State vs URL
+    - src: /assets/teach/u-queensland/infs7410/sample/05-part-d-hci-sketch.webp
+      alt_en: INFS7410 tutoring · Part D · HCI sketch
+      alt_cn: INFS7410 辅导课件 · Part D · HCI sketch
+      caption_en: Part D · HCI sketch
+      caption_cn: Part D · HCI sketch
+    - src: /assets/teach/u-queensland/infs7410/sample/06-task-centred-evaluation.webp
+      alt_en: INFS7410 tutoring · Task-centred evaluation
+      alt_cn: INFS7410 辅导课件 · Task-centred evaluation
+      caption_en: Task-centred evaluation
+      caption_cn: Task-centred evaluation
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

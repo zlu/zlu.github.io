@@ -19,10 +19,10 @@ courses:
     arc (about week 1–12) plus assessed work that expects you to apply the same ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
     / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
-    autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -69,8 +69,10 @@ courses:
   sample_slides: &id001
     title_en: COMP3221 — sample slides
     title_cn: COMP3221 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
     - en: Networking layers, packets, and protocols
       cn: 网络分层、报文与协议
@@ -82,32 +84,42 @@ courses:
       cn: 安全 / 隐私威胁模型与实验
     slides:
     - src: /assets/teach/u-sydney/comp3221/sample/01-title.webp
-      alt_en: COMP3221 tutoring title
+      alt_en: COMP3221 tutoring · Title
       alt_cn: COMP3221 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/comp3221/sample/02-topics.webp
-      alt_en: COMP3221 tutoring topics
-      alt_cn: COMP3221 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/comp3221/sample/03-stuck.webp
-      alt_en: COMP3221 tutoring stuck points
-      alt_cn: COMP3221 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/comp3221/sample/04-tutoring.webp
-      alt_en: COMP3221 tutoring how tutoring runs
-      alt_cn: COMP3221 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/comp3221/sample/02-roadmap.webp
+      alt_en: COMP3221 tutoring · Roadmap
+      alt_cn: COMP3221 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/comp3221/sample/03-part-a-processes-and-threads.webp
+      alt_en: COMP3221 tutoring · Part A · Processes and threads
+      alt_cn: COMP3221 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/u-sydney/comp3221/sample/04-process-vs-thread.webp
+      alt_en: COMP3221 tutoring · Process vs thread
+      alt_cn: COMP3221 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/u-sydney/comp3221/sample/05-critical-section-and-race.webp
+      alt_en: COMP3221 tutoring · Critical section and race
+      alt_cn: COMP3221 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/u-sydney/comp3221/sample/06-socket-http-sketch.webp
+      alt_en: COMP3221 tutoring · Socket + HTTP sketch
+      alt_cn: COMP3221 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: INFO1113
   title: Object-Oriented Programming
   department: Computer Science
@@ -123,9 +135,9 @@ courses:
     of Sydney. Common topics: SQL, schema design, and databases; Programming foundations and debugging.
     Weekly arc about week 1–11, plus assessed work under deadline. People stall when terms outrun notes,
     when a class demo does not replay alone, or when the write-up / autograder wants a method the notebook
-    never showed. Sample slides from our tutoring intro deck are below.'
+    never showed. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: INFO1113 是悉尼大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、编程基础与调试。大约第 1–11 周有连续周课，作业会要求你在
-    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -171,8 +183,10 @@ courses:
   sample_slides: &id002
     title_en: INFO1113 — sample slides
     title_cn: INFO1113 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -180,32 +194,42 @@ courses:
       cn: 编程基础与调试
     slides:
     - src: /assets/teach/u-sydney/info1113/sample/01-title.webp
-      alt_en: INFO1113 tutoring title
+      alt_en: INFO1113 tutoring · Title
       alt_cn: INFO1113 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/info1113/sample/02-topics.webp
-      alt_en: INFO1113 tutoring topics
-      alt_cn: INFO1113 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/info1113/sample/03-stuck.webp
-      alt_en: INFO1113 tutoring stuck points
-      alt_cn: INFO1113 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/info1113/sample/04-tutoring.webp
-      alt_en: INFO1113 tutoring how tutoring runs
-      alt_cn: INFO1113 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/info1113/sample/02-roadmap.webp
+      alt_en: INFO1113 tutoring · Roadmap
+      alt_cn: INFO1113 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/info1113/sample/03-part-a-from-brief-to-design.webp
+      alt_en: INFO1113 tutoring · Part A · From brief to design
+      alt_cn: INFO1113 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/u-sydney/info1113/sample/04-brief-checklist-before-code.webp
+      alt_en: INFO1113 tutoring · Brief checklist (before code)
+      alt_cn: INFO1113 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/u-sydney/info1113/sample/05-one-job-per-function.webp
+      alt_en: INFO1113 tutoring · One job per function
+      alt_cn: INFO1113 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/u-sydney/info1113/sample/06-stack-heap-data-c.webp
+      alt_en: INFO1113 tutoring · Stack, heap, data (C)
+      alt_cn: INFO1113 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP5310
   title: Principles of Data Science
 - code: INFO1110
@@ -274,10 +298,10 @@ courses:
   overview_en: QBUS6600 Data Analytics for Business Capstone sits in data science & analytics. Evidence
     from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
-    deck are below.
+    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: QBUS6600 是悉尼大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -320,8 +344,9 @@ courses:
   sample_slides:
     title_en: QBUS6600 — sample slides
     title_cn: QBUS6600 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: Pandas / dplyr style transforms and joins
       cn: Pandas / dplyr 风格的变换与 join
@@ -333,32 +358,42 @@ courses:
       cn: 能支撑结论的可视化
     slides:
     - src: /assets/teach/u-sydney/qbus6600/sample/01-title.webp
-      alt_en: QBUS6600 tutoring title
+      alt_en: QBUS6600 tutoring · Title
       alt_cn: QBUS6600 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/qbus6600/sample/02-topics.webp
-      alt_en: QBUS6600 tutoring topics
-      alt_cn: QBUS6600 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/qbus6600/sample/03-stuck.webp
-      alt_en: QBUS6600 tutoring stuck points
-      alt_cn: QBUS6600 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/qbus6600/sample/04-tutoring.webp
-      alt_en: QBUS6600 tutoring how tutoring runs
-      alt_cn: QBUS6600 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/qbus6600/sample/02-roadmap.webp
+      alt_en: QBUS6600 tutoring · Roadmap
+      alt_cn: QBUS6600 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/qbus6600/sample/03-part-a-tables.webp
+      alt_en: QBUS6600 tutoring · Part A · Tables
+      alt_cn: QBUS6600 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/u-sydney/qbus6600/sample/04-tidy-data-rules.webp
+      alt_en: QBUS6600 tutoring · Tidy data rules
+      alt_cn: QBUS6600 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/u-sydney/qbus6600/sample/05-eda-checklist.webp
+      alt_en: QBUS6600 tutoring · EDA checklist
+      alt_cn: QBUS6600 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/u-sydney/qbus6600/sample/06-feature-hygiene.webp
+      alt_en: QBUS6600 tutoring · Feature hygiene
+      alt_cn: QBUS6600 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP9120
   title: Database Management Systems
 - code: INFO1112
@@ -375,10 +410,10 @@ courses:
     There is a weekly arc (about week 1–3) plus assessed work that expects you to apply the same ideas
     under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
     class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our tutoring intro deck are below.
+    Sample slides from our concept-review tutoring deck are below.
   overview_cn: INFO1112 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、编程基础与调试这些点转。大约第
     1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Computer architecture and organisation
     cn: 计算机体系结构与组成
@@ -423,45 +458,57 @@ courses:
   sample_slides:
     title_en: INFO1112 — sample slides
     title_cn: INFO1112 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
-    - en: Lecture01A Admin 2025
-      cn: Lecture01A Admin 2025
-    - en: Lecture01B Bits 2025
-      cn: Lecture01B Bits 2025
-    - en: Lecture02 Shell&Processes 2025 08 11 WEILI
-      cn: Lecture02 Shell&Processes 2025 08 11 WEILI
-    - en: Lecture03 Emulators VirtualMachines Containers 2025 08 18
-      cn: Lecture03 Emulators VirtualMachines Containers 2025 08 18
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
+    - en: OS scheduling and concurrency bugs
+      cn: 操作系统调度与并发 bug
     slides:
     - src: /assets/teach/u-sydney/info1112/sample/01-title.webp
-      alt_en: INFO1112 tutoring title
+      alt_en: INFO1112 tutoring · Title
       alt_cn: INFO1112 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/info1112/sample/02-topics.webp
-      alt_en: INFO1112 tutoring topics
-      alt_cn: INFO1112 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/info1112/sample/03-stuck.webp
-      alt_en: INFO1112 tutoring stuck points
-      alt_cn: INFO1112 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/info1112/sample/04-tutoring.webp
-      alt_en: INFO1112 tutoring how tutoring runs
-      alt_cn: INFO1112 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/info1112/sample/02-roadmap.webp
+      alt_en: INFO1112 tutoring · Roadmap
+      alt_cn: INFO1112 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/info1112/sample/03-part-a-processes-and-threads.webp
+      alt_en: INFO1112 tutoring · Part A · Processes and threads
+      alt_cn: INFO1112 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/u-sydney/info1112/sample/04-process-vs-thread.webp
+      alt_en: INFO1112 tutoring · Process vs thread
+      alt_cn: INFO1112 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/u-sydney/info1112/sample/05-critical-section-and-race.webp
+      alt_en: INFO1112 tutoring · Critical section and race
+      alt_cn: INFO1112 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/u-sydney/info1112/sample/06-socket-http-sketch.webp
+      alt_en: INFO1112 tutoring · Socket + HTTP sketch
+      alt_cn: INFO1112 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2017
   title: Systems Programming
 - code: COMP2123
@@ -498,9 +545,9 @@ courses:
     Sydney. Common topics: Security / privacy threat models and labs. Weekly arc about week 1–11, plus
     assessed work under deadline. People stall when terms outrun notes, when a class demo does not replay
     alone, or when the write-up / autograder wants a method the notebook never showed. Sample slides from
-    our tutoring intro deck are below.'
+    our concept-review tutoring deck are below.'
   overview_cn: INFO3616 是悉尼大学的「安全与隐私」课，既要真懂，也要能动手。常见内容包括安全 / 隐私威胁模型与实验。大约第 1–11 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Security / privacy threat models and labs
     cn: 安全 / 隐私威胁模型与实验
@@ -546,43 +593,57 @@ courses:
   sample_slides:
     title_en: INFO3616 — sample slides
     title_cn: INFO3616 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Threat modelling, Threat model skeleton, Primitive jobs (not interchangeable),
+      Part D · Coding habits from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Threat modelling、Threat model skeleton、Primitive jobs
+      (not interchangeable)、Part D · Coding habits。
     bullets:
     - en: Security / privacy threat models and labs
       cn: 安全 / 隐私威胁模型与实验
-    - en: Abstract Algebra
-      cn: Abstract Algebra
-    - en: Number Theory
-      cn: Number Theory
+    - en: Threat models and trust boundaries
+      cn: 威胁模型与信任边界
+    - en: Crypto primitives at course depth (not CTF spoilers)
+      cn: 课业深度的密码学原语（非 CTF 剧透）
+    - en: Web / network attack patterns the syllabus names
+      cn: 大纲点名的 Web / 网络攻击模式
     slides:
     - src: /assets/teach/u-sydney/info3616/sample/01-title.webp
-      alt_en: INFO3616 tutoring title
+      alt_en: INFO3616 tutoring · Title
       alt_cn: INFO3616 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/info3616/sample/02-topics.webp
-      alt_en: INFO3616 tutoring topics
-      alt_cn: INFO3616 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/info3616/sample/03-stuck.webp
-      alt_en: INFO3616 tutoring stuck points
-      alt_cn: INFO3616 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/info3616/sample/04-tutoring.webp
-      alt_en: INFO3616 tutoring how tutoring runs
-      alt_cn: INFO3616 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/info3616/sample/02-roadmap.webp
+      alt_en: INFO3616 tutoring · Roadmap
+      alt_cn: INFO3616 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/info3616/sample/03-part-a-threat-modelling.webp
+      alt_en: INFO3616 tutoring · Part A · Threat modelling
+      alt_cn: INFO3616 辅导课件 · Part A · Threat modelling
+      caption_en: Part A · Threat modelling
+      caption_cn: Part A · Threat modelling
+    - src: /assets/teach/u-sydney/info3616/sample/04-threat-model-skeleton.webp
+      alt_en: INFO3616 tutoring · Threat model skeleton
+      alt_cn: INFO3616 辅导课件 · Threat model skeleton
+      caption_en: Threat model skeleton
+      caption_cn: Threat model skeleton
+    - src: /assets/teach/u-sydney/info3616/sample/05-primitive-jobs-not-interchangeable.webp
+      alt_en: INFO3616 tutoring · Primitive jobs (not interchangeable)
+      alt_cn: INFO3616 辅导课件 · Primitive jobs (not interchangeable)
+      caption_en: Primitive jobs (not interchangeable)
+      caption_cn: Primitive jobs (not interchangeable)
+    - src: /assets/teach/u-sydney/info3616/sample/06-part-d-coding-habits.webp
+      alt_en: INFO3616 tutoring · Part D · Coding habits
+      alt_cn: INFO3616 辅导课件 · Part D · Coding habits
+      caption_en: Part D · Coding habits
+      caption_cn: Part D · Coding habits
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Distributed Systems
   material: distributed systems
   code: COMP3221
@@ -597,10 +658,10 @@ courses:
     arc (about week 1–12) plus assessed work that expects you to apply the same ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
     / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
-    autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -648,8 +709,8 @@ courses:
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SOFT2201
   title: Software Construction / Design
   material: soft2201-comp9201
@@ -664,9 +725,9 @@ courses:
     of Sydney. Common topics: Software design and construction. Weekly arc about week 2–11, plus assessed
     work under deadline. People stall when terms outrun notes, when a class demo does not replay alone,
     or when the write-up / autograder wants a method the notebook never showed. Sample slides from our
-    tutoring intro deck are below.'
+    concept-review tutoring deck are below.'
   overview_cn: SOFT2201 是悉尼大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括软件设计与构造。大约第 2–11 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Software design and construction
     cn: 软件设计与构造
@@ -713,45 +774,57 @@ courses:
   sample_slides:
     title_en: SOFT2201 — sample slides
     title_cn: SOFT2201 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
-    - en: W2 UML
-      cn: W2 UML
-    - en: W3 designpatterns
-      cn: W3 designpatterns
-    - en: W4 composite
-      cn: W4 composite
-    - en: W5 admin2
-      cn: W5 admin2
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Unit tests and autograder feedback loops
+      cn: 单元测试与 autograder 反馈循环
     slides:
     - src: /assets/teach/u-sydney/soft2201/sample/01-title.webp
-      alt_en: SOFT2201 tutoring title
+      alt_en: SOFT2201 tutoring · Title
       alt_cn: SOFT2201 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/soft2201/sample/02-topics.webp
-      alt_en: SOFT2201 tutoring topics
-      alt_cn: SOFT2201 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/soft2201/sample/03-stuck.webp
-      alt_en: SOFT2201 tutoring stuck points
-      alt_cn: SOFT2201 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/soft2201/sample/04-tutoring.webp
-      alt_en: SOFT2201 tutoring how tutoring runs
-      alt_cn: SOFT2201 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/soft2201/sample/02-roadmap.webp
+      alt_en: SOFT2201 tutoring · Roadmap
+      alt_cn: SOFT2201 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/soft2201/sample/03-part-a-from-brief-to-design.webp
+      alt_en: SOFT2201 tutoring · Part A · From brief to design
+      alt_cn: SOFT2201 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/u-sydney/soft2201/sample/04-brief-checklist-before-code.webp
+      alt_en: SOFT2201 tutoring · Brief checklist (before code)
+      alt_cn: SOFT2201 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/u-sydney/soft2201/sample/05-one-job-per-function.webp
+      alt_en: SOFT2201 tutoring · One job per function
+      alt_cn: SOFT2201 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/u-sydney/soft2201/sample/06-stack-heap-data-c.webp
+      alt_en: SOFT2201 tutoring · Stack, heap, data (C)
+      alt_cn: SOFT2201 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: INFO1113
   title: Object-Oriented Programming
   material: info-1113-java
@@ -765,11 +838,11 @@ courses:
   overview_en: INFO-1113 Java sits in programming & software construction. There is a weekly arc (about
     week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring
-    intro deck are below.
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: INFO-1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
     1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -818,8 +891,8 @@ courses:
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Fundamentals of Marketing Analytics
   material: MKTG1011-Foundamentals of Marketing Analytics
   code: MKTG1011
@@ -833,9 +906,9 @@ courses:
   overview_en: MKTG1011 Mktg1011 Fundamentals Of Marketing Analytics sits in data science & analytics.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: MKTG1011 是悉尼大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Notebook workflows the marker can re-run
     cn: 改卷人能复跑的 notebook 工作流
@@ -877,8 +950,9 @@ courses:
   sample_slides:
     title_en: MKTG1011 — sample slides
     title_cn: MKTG1011 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: Pandas / dplyr style transforms and joins
       cn: Pandas / dplyr 风格的变换与 join
@@ -890,32 +964,42 @@ courses:
       cn: 能支撑结论的可视化
     slides:
     - src: /assets/teach/u-sydney/mktg1011/sample/01-title.webp
-      alt_en: MKTG1011 tutoring title
+      alt_en: MKTG1011 tutoring · Title
       alt_cn: MKTG1011 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/mktg1011/sample/02-topics.webp
-      alt_en: MKTG1011 tutoring topics
-      alt_cn: MKTG1011 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/mktg1011/sample/03-stuck.webp
-      alt_en: MKTG1011 tutoring stuck points
-      alt_cn: MKTG1011 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/mktg1011/sample/04-tutoring.webp
-      alt_en: MKTG1011 tutoring how tutoring runs
-      alt_cn: MKTG1011 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/mktg1011/sample/02-roadmap.webp
+      alt_en: MKTG1011 tutoring · Roadmap
+      alt_cn: MKTG1011 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/mktg1011/sample/03-part-a-tables.webp
+      alt_en: MKTG1011 tutoring · Part A · Tables
+      alt_cn: MKTG1011 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/u-sydney/mktg1011/sample/04-tidy-data-rules.webp
+      alt_en: MKTG1011 tutoring · Tidy data rules
+      alt_cn: MKTG1011 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/u-sydney/mktg1011/sample/05-eda-checklist.webp
+      alt_en: MKTG1011 tutoring · EDA checklist
+      alt_cn: MKTG1011 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/u-sydney/mktg1011/sample/06-feature-hygiene.webp
+      alt_en: MKTG1011 tutoring · Feature hygiene
+      alt_cn: MKTG1011 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: ELEC1601
   title: Introduction to Computer Systems
   material: elec1601
@@ -930,10 +1014,10 @@ courses:
     There is a weekly arc (about week 2–4) plus assessed work that expects you to apply the same ideas
     under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
     class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our tutoring intro deck are below.
+    Sample slides from our concept-review tutoring deck are below.
   overview_cn: ELEC1601 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、安全 / 隐私威胁模型与实验这些点转。大约第
     2–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Computer architecture and organisation
     cn: 计算机体系结构与组成
@@ -973,43 +1057,55 @@ courses:
   sample_slides:
     title_en: ELEC1601 — sample slides
     title_cn: ELEC1601 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
     - en: Computer architecture and organisation
       cn: 计算机体系结构与组成
-    - en: Polling and Interrupts ()
-      cn: Polling and Interrupts ()
-    - en: (and 4) Encoding
-      cn: (and 4) Encoding
-    - en: (and 5) Floating point
-      cn: (and 5) Floating point
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
     slides:
     - src: /assets/teach/u-sydney/elec1601/sample/01-title.webp
-      alt_en: ELEC1601 tutoring title
+      alt_en: ELEC1601 tutoring · Title
       alt_cn: ELEC1601 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-sydney/elec1601/sample/02-topics.webp
-      alt_en: ELEC1601 tutoring topics
-      alt_cn: ELEC1601 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-sydney/elec1601/sample/03-stuck.webp
-      alt_en: ELEC1601 tutoring stuck points
-      alt_cn: ELEC1601 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-sydney/elec1601/sample/04-tutoring.webp
-      alt_en: ELEC1601 tutoring how tutoring runs
-      alt_cn: ELEC1601 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-sydney/elec1601/sample/02-roadmap.webp
+      alt_en: ELEC1601 tutoring · Roadmap
+      alt_cn: ELEC1601 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/elec1601/sample/03-part-a-processes-and-threads.webp
+      alt_en: ELEC1601 tutoring · Part A · Processes and threads
+      alt_cn: ELEC1601 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/u-sydney/elec1601/sample/04-process-vs-thread.webp
+      alt_en: ELEC1601 tutoring · Process vs thread
+      alt_cn: ELEC1601 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/u-sydney/elec1601/sample/05-critical-section-and-race.webp
+      alt_en: ELEC1601 tutoring · Critical section and race
+      alt_cn: ELEC1601 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/u-sydney/elec1601/sample/06-socket-http-sketch.webp
+      alt_en: ELEC1601 tutoring · Socket + HTTP sketch
+      alt_cn: ELEC1601 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

@@ -18,10 +18,10 @@ courses:
     arc (about week 6–6) plus assessed work that expects you to apply the same ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: Database And Web Programming 是伯明翰大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema
     与数据库、安全 / 隐私威胁模型与实验、编程基础与调试这些点转。大约第 6–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -68,8 +68,10 @@ courses:
   sample_slides:
     title_en: Database And Web Programming — sample slides
     title_cn: Database And Web Programming — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order, Why is this slow? from
+      our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Modelling、ER essentials、SQL mental order、Why is this
+      slow?。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -81,32 +83,42 @@ courses:
       cn: Web / 移动应用结构
     slides:
     - src: /assets/teach/u-birmingham/database-and-web-programming/sample/01-title.webp
-      alt_en: Database And Web Programming tutoring title
+      alt_en: Database And Web Programming tutoring · Title
       alt_cn: Database And Web Programming 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/02-topics.webp
-      alt_en: Database And Web Programming tutoring topics
-      alt_cn: Database And Web Programming 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/03-stuck.webp
-      alt_en: Database And Web Programming tutoring stuck points
-      alt_cn: Database And Web Programming 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/04-tutoring.webp
-      alt_en: Database And Web Programming tutoring how tutoring runs
-      alt_cn: Database And Web Programming 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/02-roadmap.webp
+      alt_en: Database And Web Programming tutoring · Roadmap
+      alt_cn: Database And Web Programming 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/03-part-a-modelling.webp
+      alt_en: Database And Web Programming tutoring · Part A · Modelling
+      alt_cn: Database And Web Programming 辅导课件 · Part A · Modelling
+      caption_en: Part A · Modelling
+      caption_cn: Part A · Modelling
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/04-er-essentials.webp
+      alt_en: Database And Web Programming tutoring · ER essentials
+      alt_cn: Database And Web Programming 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/05-sql-mental-order.webp
+      alt_en: Database And Web Programming tutoring · SQL mental order
+      alt_cn: Database And Web Programming 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/u-birmingham/database-and-web-programming/sample/06-why-is-this-slow.webp
+      alt_en: Database And Web Programming tutoring · Why is this slow?
+      alt_cn: Database And Web Programming 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Artificial Intelligence 1
   material: LC Artificial Intelligence 1
   code: LC AI1
@@ -120,11 +132,11 @@ courses:
   overview_en: LC Artificial Intelligence 1 sits in machine learning & ai. There is a weekly arc (about
     week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring
-    intro deck are below.
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: LC Artificial Intelligence 1 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 /
     深度学习 / AI、ML 流水线、特征与模型选择、算法、ADT 与复杂度这些点转。大约第 1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -173,8 +185,10 @@ courses:
   sample_slides:
     title_en: LC AI1 — sample slides
     title_cn: LC AI1 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: 'Title, Roadmap, Part A · Supervised learning, Supervised vs unsupervised, Loss: what training
+      minimises, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Supervised learning、Supervised vs unsupervised、Loss:
+      what training minimises、Sigmoid and the decision rule。'
     bullets:
     - en: Neural nets / deep learning / AI
       cn: 神经网络 / 深度学习 / AI
@@ -184,32 +198,42 @@ courses:
       cn: 算法、ADT 与复杂度
     slides:
     - src: /assets/teach/u-birmingham/lc-ai1/sample/01-title.webp
-      alt_en: LC AI1 tutoring title
+      alt_en: LC AI1 tutoring · Title
       alt_cn: LC AI1 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/lc-ai1/sample/02-topics.webp
-      alt_en: LC AI1 tutoring topics
-      alt_cn: LC AI1 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/lc-ai1/sample/03-stuck.webp
-      alt_en: LC AI1 tutoring stuck points
-      alt_cn: LC AI1 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/lc-ai1/sample/04-tutoring.webp
-      alt_en: LC AI1 tutoring how tutoring runs
-      alt_cn: LC AI1 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/02-roadmap.webp
+      alt_en: LC AI1 tutoring · Roadmap
+      alt_cn: LC AI1 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/03-part-a-supervised-learning.webp
+      alt_en: LC AI1 tutoring · Part A · Supervised learning
+      alt_cn: LC AI1 辅导课件 · Part A · Supervised learning
+      caption_en: Part A · Supervised learning
+      caption_cn: Part A · Supervised learning
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/04-supervised-vs-unsupervised.webp
+      alt_en: LC AI1 tutoring · Supervised vs unsupervised
+      alt_cn: LC AI1 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/05-loss-what-training-minimises.webp
+      alt_en: 'LC AI1 tutoring · Loss: what training minimises'
+      alt_cn: 'LC AI1 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/u-birmingham/lc-ai1/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: LC AI1 tutoring · Sigmoid and the decision rule
+      alt_cn: LC AI1 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Artificial Intelligence and Machine Learning
   material: LMLI Artificial Intelligence and Machine Learning
   code: LMLI AI/ML
@@ -225,10 +249,10 @@ courses:
     sits in machine learning & ai. Assessed work expects you to apply lecture ideas under deadline pressure.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: LMLI Artificial Intelligence And Machine Learning 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络
     / 深度学习 / AI、ML 流水线、特征与模型选择、SQL、Schema 与数据库这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -278,8 +302,10 @@ courses:
   sample_slides:
     title_en: LMLI AI/ML — sample slides
     title_cn: LMLI AI/ML — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: 'Title, Roadmap, Part A · Supervised learning, Supervised vs unsupervised, Loss: what training
+      minimises, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Supervised learning、Supervised vs unsupervised、Loss:
+      what training minimises、Sigmoid and the decision rule。'
     bullets:
     - en: Neural nets / deep learning / AI
       cn: 神经网络 / 深度学习 / AI
@@ -291,32 +317,42 @@ courses:
       cn: 数学基础与证明习惯
     slides:
     - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/01-title.webp
-      alt_en: LMLI AI/ML tutoring title
+      alt_en: LMLI AI/ML tutoring · Title
       alt_cn: LMLI AI/ML 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/02-topics.webp
-      alt_en: LMLI AI/ML tutoring topics
-      alt_cn: LMLI AI/ML 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/03-stuck.webp
-      alt_en: LMLI AI/ML tutoring stuck points
-      alt_cn: LMLI AI/ML 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/04-tutoring.webp
-      alt_en: LMLI AI/ML tutoring how tutoring runs
-      alt_cn: LMLI AI/ML 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/02-roadmap.webp
+      alt_en: LMLI AI/ML tutoring · Roadmap
+      alt_cn: LMLI AI/ML 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/03-part-a-supervised-learning.webp
+      alt_en: LMLI AI/ML tutoring · Part A · Supervised learning
+      alt_cn: LMLI AI/ML 辅导课件 · Part A · Supervised learning
+      caption_en: Part A · Supervised learning
+      caption_cn: Part A · Supervised learning
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/04-supervised-vs-unsupervised.webp
+      alt_en: LMLI AI/ML tutoring · Supervised vs unsupervised
+      alt_cn: LMLI AI/ML 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/05-loss-what-training-minimises.webp
+      alt_en: 'LMLI AI/ML tutoring · Loss: what training minimises'
+      alt_cn: 'LMLI AI/ML 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/u-birmingham/lmli-ai-ml/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: LMLI AI/ML tutoring · Sigmoid and the decision rule
+      alt_cn: LMLI AI/ML 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: DSA 24 25
   material: DSA 24-25
   code: Data Structures and Algorithms
@@ -331,9 +367,9 @@ courses:
     of Birmingham. Common topics: Algorithms, ADTs, and complexity. Weekly arc about week 7–11, plus assessed
     work under deadline. People stall when terms outrun notes, when a class demo does not replay alone,
     or when the write-up / autograder wants a method the notebook never showed. Sample slides from our
-    tutoring intro deck are below.'
+    concept-review tutoring deck are below.'
   overview_cn: Data Structures and Algorithms 是伯明翰大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度。大约第 7–11
-    周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -376,41 +412,57 @@ courses:
   sample_slides:
     title_en: Data Structures and Algorithms — sample slides
     title_cn: Data Structures and Algorithms — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Complexity, Big-O in exam language, Pick the ADT by the operation,
+      Part D · Dynamic programming from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Complexity、Big-O in exam language、Pick the ADT by
+      the operation、Part D · Dynamic programming。
     bullets:
     - en: Algorithms, ADTs, and complexity
       cn: 算法、ADT 与复杂度
-    - en: final (1)
-      cn: final (1)
+    - en: Asymptotic complexity and comparing candidates
+      cn: 渐近复杂度与方案比较
+    - en: Arrays, lists, trees, heaps, hash tables
+      cn: 数组、链表、树、堆、哈希表
+    - en: Sorting, searching, and graph traversals
+      cn: 排序、搜索与图遍历
     slides:
     - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/01-title.webp
-      alt_en: Data Structures and Algorithms tutoring title
+      alt_en: Data Structures and Algorithms tutoring · Title
       alt_cn: Data Structures and Algorithms 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/02-topics.webp
-      alt_en: Data Structures and Algorithms tutoring topics
-      alt_cn: Data Structures and Algorithms 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/03-stuck.webp
-      alt_en: Data Structures and Algorithms tutoring stuck points
-      alt_cn: Data Structures and Algorithms 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/04-tutoring.webp
-      alt_en: Data Structures and Algorithms tutoring how tutoring runs
-      alt_cn: Data Structures and Algorithms 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/02-roadmap.webp
+      alt_en: Data Structures and Algorithms tutoring · Roadmap
+      alt_cn: Data Structures and Algorithms 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/03-part-a-complexity.webp
+      alt_en: Data Structures and Algorithms tutoring · Part A · Complexity
+      alt_cn: Data Structures and Algorithms 辅导课件 · Part A · Complexity
+      caption_en: Part A · Complexity
+      caption_cn: Part A · Complexity
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/04-big-o-in-exam-language.webp
+      alt_en: Data Structures and Algorithms tutoring · Big-O in exam language
+      alt_cn: Data Structures and Algorithms 辅导课件 · Big-O in exam language
+      caption_en: Big-O in exam language
+      caption_cn: Big-O in exam language
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/05-pick-the-adt-by-the-operation.webp
+      alt_en: Data Structures and Algorithms tutoring · Pick the ADT by the operation
+      alt_cn: Data Structures and Algorithms 辅导课件 · Pick the ADT by the operation
+      caption_en: Pick the ADT by the operation
+      caption_cn: Pick the ADT by the operation
+    - src: /assets/teach/u-birmingham/data-structures-and-algorithms/sample/06-part-d-dynamic-programming.webp
+      alt_en: Data Structures and Algorithms tutoring · Part D · Dynamic programming
+      alt_cn: Data Structures and Algorithms 辅导课件 · Part D · Dynamic programming
+      caption_en: Part D · Dynamic programming
+      caption_cn: Part D · Dynamic programming
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Data Structures, Algorithms, and Databases
   material: LM Data Structures, Algorithms, and Databases
   code: LM DSA/DB
@@ -425,11 +477,11 @@ courses:
     University of Birmingham. Common topics: SQL, schema design, and databases; Computer architecture
     and organisation; Algorithms, ADTs, and complexity. Weekly arc about week 1–11, plus assessed work
     under deadline. People stall when terms outrun notes, when a class demo does not replay alone, or
-    when the write-up / autograder wants a method the notebook never showed. Sample slides from our tutoring
-    intro deck are below.'
+    when the write-up / autograder wants a method the notebook never showed. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: LM DSA/DB 是伯明翰大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、计算机体系结构与组成、算法、ADT 与复杂度。大约第
     1–11 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -475,45 +527,57 @@ courses:
   sample_slides:
     title_en: LM DSA/DB — sample slides
     title_cn: LM DSA/DB — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Complexity, Big-O in exam language, Pick the ADT by the operation,
+      DP four-line template from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Complexity、Big-O in exam language、Pick the ADT by
+      the operation、DP four-line template。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
-    - en: DSAD Lecture1
-      cn: DSAD Lecture1
-    - en: DSAD Lecture2
-      cn: DSAD Lecture2
-    - en: DSAD Lecture3
-      cn: DSAD Lecture3
+    - en: Asymptotic complexity and comparing candidates
+      cn: 渐近复杂度与方案比较
+    - en: Arrays, lists, trees, heaps, hash tables
+      cn: 数组、链表、树、堆、哈希表
+    - en: Sorting, searching, and graph traversals
+      cn: 排序、搜索与图遍历
     slides:
     - src: /assets/teach/u-birmingham/lm-dsa-db/sample/01-title.webp
-      alt_en: LM DSA/DB tutoring title
+      alt_en: LM DSA/DB tutoring · Title
       alt_cn: LM DSA/DB 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/02-topics.webp
-      alt_en: LM DSA/DB tutoring topics
-      alt_cn: LM DSA/DB 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/03-stuck.webp
-      alt_en: LM DSA/DB tutoring stuck points
-      alt_cn: LM DSA/DB 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/04-tutoring.webp
-      alt_en: LM DSA/DB tutoring how tutoring runs
-      alt_cn: LM DSA/DB 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/02-roadmap.webp
+      alt_en: LM DSA/DB tutoring · Roadmap
+      alt_cn: LM DSA/DB 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/03-part-a-complexity.webp
+      alt_en: LM DSA/DB tutoring · Part A · Complexity
+      alt_cn: LM DSA/DB 辅导课件 · Part A · Complexity
+      caption_en: Part A · Complexity
+      caption_cn: Part A · Complexity
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/04-big-o-in-exam-language.webp
+      alt_en: LM DSA/DB tutoring · Big-O in exam language
+      alt_cn: LM DSA/DB 辅导课件 · Big-O in exam language
+      caption_en: Big-O in exam language
+      caption_cn: Big-O in exam language
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/05-pick-the-adt-by-the-operation.webp
+      alt_en: LM DSA/DB tutoring · Pick the ADT by the operation
+      alt_cn: LM DSA/DB 辅导课件 · Pick the ADT by the operation
+      caption_en: Pick the ADT by the operation
+      caption_cn: Pick the ADT by the operation
+    - src: /assets/teach/u-birmingham/lm-dsa-db/sample/06-dp-four-line-template.webp
+      alt_en: LM DSA/DB tutoring · DP four-line template
+      alt_cn: LM DSA/DB 辅导课件 · DP four-line template
+      caption_en: DP four-line template
+      caption_cn: DP four-line template
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Computer Systems
   material: Computer Systems
   code: Computer Systems
@@ -526,10 +590,11 @@ courses:
   lead_cn: 在伯明翰大学上 Computer Systems，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: Computer Systems sits in systems, networks & architecture. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
+    are below.
   overview_cn: Computer Systems 是伯明翰大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、操作系统 /
     系统编程、计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -566,8 +631,10 @@ courses:
   sample_slides:
     title_en: Computer Systems — sample slides
     title_cn: Computer Systems — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
     - en: Networking layers, packets, and protocols
       cn: 网络分层、报文与协议
@@ -579,32 +646,42 @@ courses:
       cn: 算法、ADT 与复杂度
     slides:
     - src: /assets/teach/u-birmingham/computer-systems/sample/01-title.webp
-      alt_en: Computer Systems tutoring title
+      alt_en: Computer Systems tutoring · Title
       alt_cn: Computer Systems 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/computer-systems/sample/02-topics.webp
-      alt_en: Computer Systems tutoring topics
-      alt_cn: Computer Systems 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/computer-systems/sample/03-stuck.webp
-      alt_en: Computer Systems tutoring stuck points
-      alt_cn: Computer Systems 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/computer-systems/sample/04-tutoring.webp
-      alt_en: Computer Systems tutoring how tutoring runs
-      alt_cn: Computer Systems 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/computer-systems/sample/02-roadmap.webp
+      alt_en: Computer Systems tutoring · Roadmap
+      alt_cn: Computer Systems 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/computer-systems/sample/03-part-a-processes-and-threads.webp
+      alt_en: Computer Systems tutoring · Part A · Processes and threads
+      alt_cn: Computer Systems 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/u-birmingham/computer-systems/sample/04-process-vs-thread.webp
+      alt_en: Computer Systems tutoring · Process vs thread
+      alt_cn: Computer Systems 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/u-birmingham/computer-systems/sample/05-critical-section-and-race.webp
+      alt_en: Computer Systems tutoring · Critical section and race
+      alt_cn: Computer Systems 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/u-birmingham/computer-systems/sample/06-socket-http-sketch.webp
+      alt_en: Computer Systems tutoring · Socket + HTTP sketch
+      alt_cn: Computer Systems 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Artificial Intelligence 2
   material: LI Artificial Intelligence 2
   code: LI AI2
@@ -617,10 +694,11 @@ courses:
   lead_cn: 在伯明翰大学上 LI Artificial Intelligence 2，方法名搅在一起，pipeline、指标和报告对不上就会崩。
   overview_en: LI Artificial Intelligence 2 sits in machine learning & ai. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
+    are below.
   overview_cn: LI Artificial Intelligence 2 是伯明翰大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 /
     深度学习 / AI、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。 下方有我们辅导入门课件的样例页。
+    里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -663,8 +741,10 @@ courses:
   sample_slides:
     title_en: LI AI2 — sample slides
     title_cn: LI AI2 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: 'Title, Roadmap, Part A · Supervised learning, Supervised vs unsupervised, Loss: what training
+      minimises, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Supervised learning、Supervised vs unsupervised、Loss:
+      what training minimises、Sigmoid and the decision rule。'
     bullets:
     - en: Neural nets / deep learning / AI
       cn: 神经网络 / 深度学习 / AI
@@ -676,32 +756,42 @@ courses:
       cn: 训练 / 验证 / 测试划分与数据泄漏
     slides:
     - src: /assets/teach/u-birmingham/li-ai2/sample/01-title.webp
-      alt_en: LI AI2 tutoring title
+      alt_en: LI AI2 tutoring · Title
       alt_cn: LI AI2 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/li-ai2/sample/02-topics.webp
-      alt_en: LI AI2 tutoring topics
-      alt_cn: LI AI2 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/li-ai2/sample/03-stuck.webp
-      alt_en: LI AI2 tutoring stuck points
-      alt_cn: LI AI2 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/li-ai2/sample/04-tutoring.webp
-      alt_en: LI AI2 tutoring how tutoring runs
-      alt_cn: LI AI2 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/li-ai2/sample/02-roadmap.webp
+      alt_en: LI AI2 tutoring · Roadmap
+      alt_cn: LI AI2 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/li-ai2/sample/03-part-a-supervised-learning.webp
+      alt_en: LI AI2 tutoring · Part A · Supervised learning
+      alt_cn: LI AI2 辅导课件 · Part A · Supervised learning
+      caption_en: Part A · Supervised learning
+      caption_cn: Part A · Supervised learning
+    - src: /assets/teach/u-birmingham/li-ai2/sample/04-supervised-vs-unsupervised.webp
+      alt_en: LI AI2 tutoring · Supervised vs unsupervised
+      alt_cn: LI AI2 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/u-birmingham/li-ai2/sample/05-loss-what-training-minimises.webp
+      alt_en: 'LI AI2 tutoring · Loss: what training minimises'
+      alt_cn: 'LI AI2 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/u-birmingham/li-ai2/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: LI AI2 tutoring · Sigmoid and the decision rule
+      alt_cn: LI AI2 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - material: 29903 - LI Multidisciplinary Systems and Software Engineering
   code: '29903'
   title: LI Multidisciplinary Systems and Software Engineering
@@ -715,10 +805,10 @@ courses:
   overview_en: 29903 LI Multidisciplinary Systems and Software Engineering sits in programming & software
     construction. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
-    deck are below.
+    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: 29903 是伯明翰大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Programming foundations and debugging
     cn: 编程基础与调试
@@ -761,8 +851,10 @@ courses:
   sample_slides:
     title_en: 29903 — sample slides
     title_cn: 29903 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
@@ -774,32 +866,42 @@ courses:
       cn: 递归、抽象数据类型与常见 Lab 模式
     slides:
     - src: /assets/teach/u-birmingham/29903/sample/01-title.webp
-      alt_en: 29903 tutoring title
+      alt_en: 29903 tutoring · Title
       alt_cn: 29903 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/u-birmingham/29903/sample/02-topics.webp
-      alt_en: 29903 tutoring topics
-      alt_cn: 29903 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/u-birmingham/29903/sample/03-stuck.webp
-      alt_en: 29903 tutoring stuck points
-      alt_cn: 29903 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/u-birmingham/29903/sample/04-tutoring.webp
-      alt_en: 29903 tutoring how tutoring runs
-      alt_cn: 29903 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/u-birmingham/29903/sample/02-roadmap.webp
+      alt_en: 29903 tutoring · Roadmap
+      alt_cn: 29903 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-birmingham/29903/sample/03-part-a-from-brief-to-design.webp
+      alt_en: 29903 tutoring · Part A · From brief to design
+      alt_cn: 29903 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/u-birmingham/29903/sample/04-brief-checklist-before-code.webp
+      alt_en: 29903 tutoring · Brief checklist (before code)
+      alt_cn: 29903 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/u-birmingham/29903/sample/05-one-job-per-function.webp
+      alt_en: 29903 tutoring · One job per function
+      alt_cn: 29903 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/u-birmingham/29903/sample/06-stack-heap-data-c.webp
+      alt_en: 29903 tutoring · Stack, heap, data (C)
+      alt_cn: 29903 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - material: 07-3838153lm-analytics-micro-course-birmingham-business-school
   title: LM Analytics Micro-Course
   department: Birmingham Business School

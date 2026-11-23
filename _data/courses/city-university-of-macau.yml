@@ -17,11 +17,11 @@ courses:
   overview_en: BCS010 數據庫系統 sits in databases & information systems. There is a weekly arc (about week
     1–6) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring
-    intro deck are below.
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: BCS010 是澳门城市大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。大约第 1–6
     周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。 下方有我们辅导入门课件的样例页。
+    里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -67,43 +67,55 @@ courses:
   sample_slides:
     title_en: BCS010 — sample slides
     title_cn: BCS010 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order, Why is this slow? from
+      our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Modelling、ER essentials、SQL mental order、Why is this
+      slow?。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
-    - en: 0248 数据库系统概念第六版(中文版)
-      cn: 0248 数据库系统概念第六版(中文版)
-    - en: 1 基础篇 数据库概述
-      cn: 1 基础篇 数据库概述
-    - en: 关系数据库 选择题
-      cn: 关系数据库 选择题
+    - en: ER modelling and normalisation trade-offs
+      cn: ER 建模与范式权衡
+    - en: SQL joins, aggregation, and nested queries
+      cn: SQL join、聚合与嵌套查询
+    - en: Indexes, plans, and “why is this slow?”
+      cn: 索引、执行计划与“为什么慢”
     slides:
     - src: /assets/teach/city-university-of-macau/bcs010/sample/01-title.webp
-      alt_en: BCS010 tutoring title
+      alt_en: BCS010 tutoring · Title
       alt_cn: BCS010 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/02-topics.webp
-      alt_en: BCS010 tutoring topics
-      alt_cn: BCS010 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/03-stuck.webp
-      alt_en: BCS010 tutoring stuck points
-      alt_cn: BCS010 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/04-tutoring.webp
-      alt_en: BCS010 tutoring how tutoring runs
-      alt_cn: BCS010 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/02-roadmap.webp
+      alt_en: BCS010 tutoring · Roadmap
+      alt_cn: BCS010 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/03-part-a-modelling.webp
+      alt_en: BCS010 tutoring · Part A · Modelling
+      alt_cn: BCS010 辅导课件 · Part A · Modelling
+      caption_en: Part A · Modelling
+      caption_cn: Part A · Modelling
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/04-er-essentials.webp
+      alt_en: BCS010 tutoring · ER essentials
+      alt_cn: BCS010 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/05-sql-mental-order.webp
+      alt_en: BCS010 tutoring · SQL mental order
+      alt_cn: BCS010 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/06-why-is-this-slow.webp
+      alt_en: BCS010 tutoring · Why is this slow?
+      alt_cn: BCS010 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

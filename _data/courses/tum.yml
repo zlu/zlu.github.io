@@ -17,9 +17,9 @@ courses:
   overview_en: INHN0012 Computer Networking And IT Security sits in security & privacy. Evidence from
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: INHN0012 是慕尼黑工业大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -57,8 +57,10 @@ courses:
   sample_slides:
     title_en: INHN0012 — sample slides
     title_cn: INHN0012 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Threat modelling, Threat model skeleton, Primitive jobs (not interchangeable),
+      Part D · Coding habits from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Threat modelling、Threat model skeleton、Primitive jobs
+      (not interchangeable)、Part D · Coding habits。
     bullets:
     - en: Threat models and trust boundaries
       cn: 威胁模型与信任边界
@@ -70,32 +72,42 @@ courses:
       cn: 作业里的安全编码习惯
     slides:
     - src: /assets/teach/tum/inhn0012/sample/01-title.webp
-      alt_en: INHN0012 tutoring title
+      alt_en: INHN0012 tutoring · Title
       alt_cn: INHN0012 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/tum/inhn0012/sample/02-topics.webp
-      alt_en: INHN0012 tutoring topics
-      alt_cn: INHN0012 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/tum/inhn0012/sample/03-stuck.webp
-      alt_en: INHN0012 tutoring stuck points
-      alt_cn: INHN0012 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/tum/inhn0012/sample/04-tutoring.webp
-      alt_en: INHN0012 tutoring how tutoring runs
-      alt_cn: INHN0012 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/tum/inhn0012/sample/02-roadmap.webp
+      alt_en: INHN0012 tutoring · Roadmap
+      alt_cn: INHN0012 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/tum/inhn0012/sample/03-part-a-threat-modelling.webp
+      alt_en: INHN0012 tutoring · Part A · Threat modelling
+      alt_cn: INHN0012 辅导课件 · Part A · Threat modelling
+      caption_en: Part A · Threat modelling
+      caption_cn: Part A · Threat modelling
+    - src: /assets/teach/tum/inhn0012/sample/04-threat-model-skeleton.webp
+      alt_en: INHN0012 tutoring · Threat model skeleton
+      alt_cn: INHN0012 辅导课件 · Threat model skeleton
+      caption_en: Threat model skeleton
+      caption_cn: Threat model skeleton
+    - src: /assets/teach/tum/inhn0012/sample/05-primitive-jobs-not-interchangeable.webp
+      alt_en: INHN0012 tutoring · Primitive jobs (not interchangeable)
+      alt_cn: INHN0012 辅导课件 · Primitive jobs (not interchangeable)
+      caption_en: Primitive jobs (not interchangeable)
+      caption_cn: Primitive jobs (not interchangeable)
+    - src: /assets/teach/tum/inhn0012/sample/06-part-d-coding-habits.webp
+      alt_en: INHN0012 tutoring · Part D · Coding habits
+      alt_cn: INHN0012 辅导课件 · Part D · Coding habits
+      caption_en: Part D · Coding habits
+      caption_cn: Part D · Coding habits
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Rechnerarchitekture
 - title: Introduction to Computer Architecture
   material: Intro to Computer Architecture
@@ -111,11 +123,11 @@ courses:
   overview_en: Intro to Computer Architecture Introduction to Computer Architecture sits in systems, networks
     & architecture. Assessed work expects you to apply lecture ideas under deadline pressure. Students
     stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring
-    intro deck are below.
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: Intro to Computer Architecture 是慕尼黑工业大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统
     / 系统编程、计算机体系结构与组成、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -155,8 +167,10 @@ courses:
   sample_slides:
     title_en: Introduction to Computer Architecture — sample slides
     title_cn: Introduction to Computer Architecture — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
     - en: Computer architecture and organisation
       cn: 计算机体系结构与组成
@@ -168,31 +182,41 @@ courses:
       cn: Socket、HTTP 与常见网络实验
     slides:
     - src: /assets/teach/tum/introduction-to-computer-architecture/sample/01-title.webp
-      alt_en: Introduction to Computer Architecture tutoring title
+      alt_en: Introduction to Computer Architecture tutoring · Title
       alt_cn: Introduction to Computer Architecture 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/02-topics.webp
-      alt_en: Introduction to Computer Architecture tutoring topics
-      alt_cn: Introduction to Computer Architecture 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/03-stuck.webp
-      alt_en: Introduction to Computer Architecture tutoring stuck points
-      alt_cn: Introduction to Computer Architecture 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/04-tutoring.webp
-      alt_en: Introduction to Computer Architecture tutoring how tutoring runs
-      alt_cn: Introduction to Computer Architecture 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/02-roadmap.webp
+      alt_en: Introduction to Computer Architecture tutoring · Roadmap
+      alt_cn: Introduction to Computer Architecture 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/03-part-a-processes-and-threads.webp
+      alt_en: Introduction to Computer Architecture tutoring · Part A · Processes and threads
+      alt_cn: Introduction to Computer Architecture 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/04-process-vs-thread.webp
+      alt_en: Introduction to Computer Architecture tutoring · Process vs thread
+      alt_cn: Introduction to Computer Architecture 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/05-critical-section-and-race.webp
+      alt_en: Introduction to Computer Architecture tutoring · Critical section and race
+      alt_cn: Introduction to Computer Architecture 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/06-socket-http-sketch.webp
+      alt_en: Introduction to Computer Architecture tutoring · Socket + HTTP sketch
+      alt_cn: Introduction to Computer Architecture 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Formale Sprache
 ---

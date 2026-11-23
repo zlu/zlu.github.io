@@ -17,9 +17,9 @@ courses:
     Algorithms, ADTs, and complexity; Programming foundations and debugging. Assessed work expects you
     to apply the same ideas under deadline. People stall when terms outrun notes, when a class demo does
     not replay alone, or when the write-up / autograder wants a method the notebook never showed. Sample
-    slides from our tutoring intro deck are below.'
+    slides from our concept-review tutoring deck are below.'
   overview_cn: CS2110 是康奈尔大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度、编程基础与调试。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -61,8 +61,10 @@ courses:
   sample_slides:
     title_en: CS2110 — sample slides
     title_cn: CS2110 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
@@ -74,32 +76,42 @@ courses:
       cn: 递归、抽象数据类型与常见 Lab 模式
     slides:
     - src: /assets/teach/cornell/cs2110/sample/01-title.webp
-      alt_en: CS2110 tutoring title
+      alt_en: CS2110 tutoring · Title
       alt_cn: CS2110 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/cornell/cs2110/sample/02-topics.webp
-      alt_en: CS2110 tutoring topics
-      alt_cn: CS2110 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/cornell/cs2110/sample/03-stuck.webp
-      alt_en: CS2110 tutoring stuck points
-      alt_cn: CS2110 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/cornell/cs2110/sample/04-tutoring.webp
-      alt_en: CS2110 tutoring how tutoring runs
-      alt_cn: CS2110 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/cornell/cs2110/sample/02-roadmap.webp
+      alt_en: CS2110 tutoring · Roadmap
+      alt_cn: CS2110 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/cornell/cs2110/sample/03-part-a-from-brief-to-design.webp
+      alt_en: CS2110 tutoring · Part A · From brief to design
+      alt_cn: CS2110 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/cornell/cs2110/sample/04-brief-checklist-before-code.webp
+      alt_en: CS2110 tutoring · Brief checklist (before code)
+      alt_cn: CS2110 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/cornell/cs2110/sample/05-one-job-per-function.webp
+      alt_en: CS2110 tutoring · One job per function
+      alt_cn: CS2110 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/cornell/cs2110/sample/06-stack-heap-data-c.webp
+      alt_en: CS2110 tutoring · Stack, heap, data (C)
+      alt_cn: CS2110 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Database Systems
   material: database
   code: Database
@@ -112,10 +124,10 @@ courses:
   lead_cn: 在康奈尔大学上 Database，Schema 或 join 偏一点，后面查询会整条链一起歪。
   overview_en: Database Database Systems sits in databases & information systems. Students stall when
     terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
-    deck are below.
+    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: Database 是康奈尔大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: ER modelling and normalisation trade-offs
     cn: ER 建模与范式权衡
@@ -153,8 +165,10 @@ courses:
   sample_slides:
     title_en: Database — sample slides
     title_cn: Database — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order, Why is this slow? from
+      our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Modelling、ER essentials、SQL mental order、Why is this
+      slow?。
     bullets:
     - en: ER modelling and normalisation trade-offs
       cn: ER 建模与范式权衡
@@ -166,30 +180,40 @@ courses:
       cn: 入门级事务与隔离级别
     slides:
     - src: /assets/teach/cornell/database/sample/01-title.webp
-      alt_en: Database tutoring title
+      alt_en: Database tutoring · Title
       alt_cn: Database 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/cornell/database/sample/02-topics.webp
-      alt_en: Database tutoring topics
-      alt_cn: Database 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/cornell/database/sample/03-stuck.webp
-      alt_en: Database tutoring stuck points
-      alt_cn: Database 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/cornell/database/sample/04-tutoring.webp
-      alt_en: Database tutoring how tutoring runs
-      alt_cn: Database 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/cornell/database/sample/02-roadmap.webp
+      alt_en: Database tutoring · Roadmap
+      alt_cn: Database 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/cornell/database/sample/03-part-a-modelling.webp
+      alt_en: Database tutoring · Part A · Modelling
+      alt_cn: Database 辅导课件 · Part A · Modelling
+      caption_en: Part A · Modelling
+      caption_cn: Part A · Modelling
+    - src: /assets/teach/cornell/database/sample/04-er-essentials.webp
+      alt_en: Database tutoring · ER essentials
+      alt_cn: Database 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/cornell/database/sample/05-sql-mental-order.webp
+      alt_en: Database tutoring · SQL mental order
+      alt_cn: Database 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/cornell/database/sample/06-why-is-this-slow.webp
+      alt_en: Database tutoring · Why is this slow?
+      alt_cn: Database 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

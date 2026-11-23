@@ -17,10 +17,10 @@ courses:
   overview_en: 'DS1000b Data Science Concepts (Data science & analytics) at Western University. Common
     topics: Data wrangling / analytics tables; OS / systems programming; Math foundations and proof habits.
     People stall when terms outrun notes, when a class demo does not replay alone, or when the write-up
-    / autograder wants a method the notebook never showed. Sample slides from our tutoring intro deck
-    are below.'
+    / autograder wants a method the notebook never showed. Sample slides from our concept-review tutoring
+    deck are below.'
   overview_cn: DS1000b 是西安大略大学的「数据科学与分析」课，既要真懂，也要能动手。常见内容包括数据清洗 / 分析表、操作系统 / 系统编程、数学基础与证明习惯。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -62,8 +62,9 @@ courses:
   sample_slides:
     title_en: DS1000b — sample slides
     title_cn: DS1000b — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: Pandas / dplyr style transforms and joins
       cn: Pandas / dplyr 风格的变换与 join
@@ -75,30 +76,40 @@ courses:
       cn: 能支撑结论的可视化
     slides:
     - src: /assets/teach/western-university/ds1000b/sample/01-title.webp
-      alt_en: DS1000b tutoring title
+      alt_en: DS1000b tutoring · Title
       alt_cn: DS1000b 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/western-university/ds1000b/sample/02-topics.webp
-      alt_en: DS1000b tutoring topics
-      alt_cn: DS1000b 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/western-university/ds1000b/sample/03-stuck.webp
-      alt_en: DS1000b tutoring stuck points
-      alt_cn: DS1000b 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/western-university/ds1000b/sample/04-tutoring.webp
-      alt_en: DS1000b tutoring how tutoring runs
-      alt_cn: DS1000b 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/western-university/ds1000b/sample/02-roadmap.webp
+      alt_en: DS1000b tutoring · Roadmap
+      alt_cn: DS1000b 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/western-university/ds1000b/sample/03-part-a-tables.webp
+      alt_en: DS1000b tutoring · Part A · Tables
+      alt_cn: DS1000b 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/western-university/ds1000b/sample/04-tidy-data-rules.webp
+      alt_en: DS1000b tutoring · Tidy data rules
+      alt_cn: DS1000b 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/western-university/ds1000b/sample/05-eda-checklist.webp
+      alt_en: DS1000b tutoring · EDA checklist
+      alt_cn: DS1000b 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/western-university/ds1000b/sample/06-feature-hygiene.webp
+      alt_en: DS1000b tutoring · Feature hygiene
+      alt_cn: DS1000b 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

@@ -17,9 +17,9 @@ courses:
   overview_en: COMP3038J Multi Paradigm Programming sits in programming & software construction. Evidence
     from Students stall when terminology outruns notes, when a demo makes sense in class but not alone,
     or when the write-up / autograder asks for a method the notebook never made explicit. Sample slides
-    from our tutoring intro deck are below.
+    from our concept-review tutoring deck are below.
   overview_cn: COMP3038J 是都柏林大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Programming foundations and debugging
     cn: 编程基础与调试
@@ -61,8 +61,10 @@ courses:
   sample_slides:
     title_en: COMP3038J — sample slides
     title_cn: COMP3038J — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
+      code), One job per function, Stack, heap, data (C)。
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
@@ -74,32 +76,42 @@ courses:
       cn: 递归、抽象数据类型与常见 Lab 模式
     slides:
     - src: /assets/teach/university-college-dublin/comp3038j/sample/01-title.webp
-      alt_en: COMP3038J tutoring title
+      alt_en: COMP3038J tutoring · Title
       alt_cn: COMP3038J 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/university-college-dublin/comp3038j/sample/02-topics.webp
-      alt_en: COMP3038J tutoring topics
-      alt_cn: COMP3038J 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/university-college-dublin/comp3038j/sample/03-stuck.webp
-      alt_en: COMP3038J tutoring stuck points
-      alt_cn: COMP3038J 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/university-college-dublin/comp3038j/sample/04-tutoring.webp
-      alt_en: COMP3038J tutoring how tutoring runs
-      alt_cn: COMP3038J 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/02-roadmap.webp
+      alt_en: COMP3038J tutoring · Roadmap
+      alt_cn: COMP3038J 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/03-part-a-from-brief-to-design.webp
+      alt_en: COMP3038J tutoring · Part A · From brief to design
+      alt_cn: COMP3038J 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/04-brief-checklist-before-code.webp
+      alt_en: COMP3038J tutoring · Brief checklist (before code)
+      alt_cn: COMP3038J 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/05-one-job-per-function.webp
+      alt_en: COMP3038J tutoring · One job per function
+      alt_cn: COMP3038J 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/06-stack-heap-data-c.webp
+      alt_en: COMP3038J tutoring · Stack, heap, data (C)
+      alt_cn: COMP3038J 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3019J
   title: Web Application Development
   material: Web Application Development
@@ -114,10 +126,10 @@ courses:
     Common topics: SQL, schema design, and databases; Networking layers, packets, and protocols; Programming
     foundations and debugging; Web / mobile app structure. Weekly arc about week 1–7, plus assessed work
     under deadline. People stall when terms outrun notes, when a class demo does not replay alone, or
-    when the write-up / autograder wants a method the notebook never showed. Sample slides from our tutoring
-    intro deck are below.'
+    when the write-up / autograder wants a method the notebook never showed. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: COMP3019J 是都柏林大学的「Web、移动与人机交互」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、网络分层、报文与协议、编程基础与调试。大约第
-    1–7 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    1–7 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -163,8 +175,10 @@ courses:
   sample_slides:
     title_en: COMP3019J — sample slides
     title_cn: COMP3019J — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Part A · Client and server, Who does what, State vs URL, Part D · HCI sketch, Task-centred
+      evaluation from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Part A · Client and server, Who does what, State vs URL, Part
+      D · HCI sketch, Task-centred evaluation。
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
@@ -172,32 +186,42 @@ courses:
       cn: Web / 移动应用结构
     slides:
     - src: /assets/teach/university-college-dublin/comp3019j/sample/01-title.webp
-      alt_en: COMP3019J tutoring title
+      alt_en: COMP3019J tutoring · Title
       alt_cn: COMP3019J 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/university-college-dublin/comp3019j/sample/02-topics.webp
-      alt_en: COMP3019J tutoring topics
-      alt_cn: COMP3019J 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/university-college-dublin/comp3019j/sample/03-stuck.webp
-      alt_en: COMP3019J tutoring stuck points
-      alt_cn: COMP3019J 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/university-college-dublin/comp3019j/sample/04-tutoring.webp
-      alt_en: COMP3019J tutoring how tutoring runs
-      alt_cn: COMP3019J 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/university-college-dublin/comp3019j/sample/02-part-a-client-and-server.webp
+      alt_en: COMP3019J tutoring · Part A · Client and server
+      alt_cn: COMP3019J 辅导课件 · Part A · Client and server
+      caption_en: Part A · Client and server
+      caption_cn: Part A · Client and server
+    - src: /assets/teach/university-college-dublin/comp3019j/sample/03-who-does-what.webp
+      alt_en: COMP3019J tutoring · Who does what
+      alt_cn: COMP3019J 辅导课件 · Who does what
+      caption_en: Who does what
+      caption_cn: Who does what
+    - src: /assets/teach/university-college-dublin/comp3019j/sample/04-state-vs-url.webp
+      alt_en: COMP3019J tutoring · State vs URL
+      alt_cn: COMP3019J 辅导课件 · State vs URL
+      caption_en: State vs URL
+      caption_cn: State vs URL
+    - src: /assets/teach/university-college-dublin/comp3019j/sample/05-part-d-hci-sketch.webp
+      alt_en: COMP3019J tutoring · Part D · HCI sketch
+      alt_cn: COMP3019J 辅导课件 · Part D · HCI sketch
+      caption_en: Part D · HCI sketch
+      caption_cn: Part D · HCI sketch
+    - src: /assets/teach/university-college-dublin/comp3019j/sample/06-task-centred-evaluation.webp
+      alt_en: COMP3019J tutoring · Task-centred evaluation
+      alt_cn: COMP3019J 辅导课件 · Task-centred evaluation
+      caption_en: Task-centred evaluation
+      caption_cn: Task-centred evaluation
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Mobile Computing
   material: Mobile Computing
   code: Mobile Computing
@@ -210,10 +234,10 @@ courses:
   lead_cn: 在都柏林大学上 Mobile Computing，前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层。
   overview_en: Mobile Computing sits in web, mobile & hci. Students stall when terminology outruns notes,
     when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    the notebook never made explicit. Sample slides from our concept-review tutoring deck are below.
   overview_cn: Mobile Computing 是都柏林大学「Web、移动与人机交互」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、安全
     / 隐私威胁模型与实验、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。 下方有我们辅导入门课件的样例页。
+    里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
@@ -250,8 +274,10 @@ courses:
   sample_slides:
     title_en: Mobile Computing — sample slides
     title_cn: Mobile Computing — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Part A · Client and server, Who does what, State vs URL, Part D · HCI sketch, Task-centred
+      evaluation from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Part A · Client and server, Who does what, State vs URL, Part
+      D · HCI sketch, Task-centred evaluation。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -261,32 +287,42 @@ courses:
       cn: Web / 移动应用结构
     slides:
     - src: /assets/teach/university-college-dublin/mobile-computing/sample/01-title.webp
-      alt_en: Mobile Computing tutoring title
+      alt_en: Mobile Computing tutoring · Title
       alt_cn: Mobile Computing 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/university-college-dublin/mobile-computing/sample/02-topics.webp
-      alt_en: Mobile Computing tutoring topics
-      alt_cn: Mobile Computing 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/university-college-dublin/mobile-computing/sample/03-stuck.webp
-      alt_en: Mobile Computing tutoring stuck points
-      alt_cn: Mobile Computing 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/university-college-dublin/mobile-computing/sample/04-tutoring.webp
-      alt_en: Mobile Computing tutoring how tutoring runs
-      alt_cn: Mobile Computing 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/university-college-dublin/mobile-computing/sample/02-part-a-client-and-server.webp
+      alt_en: Mobile Computing tutoring · Part A · Client and server
+      alt_cn: Mobile Computing 辅导课件 · Part A · Client and server
+      caption_en: Part A · Client and server
+      caption_cn: Part A · Client and server
+    - src: /assets/teach/university-college-dublin/mobile-computing/sample/03-who-does-what.webp
+      alt_en: Mobile Computing tutoring · Who does what
+      alt_cn: Mobile Computing 辅导课件 · Who does what
+      caption_en: Who does what
+      caption_cn: Who does what
+    - src: /assets/teach/university-college-dublin/mobile-computing/sample/04-state-vs-url.webp
+      alt_en: Mobile Computing tutoring · State vs URL
+      alt_cn: Mobile Computing 辅导课件 · State vs URL
+      caption_en: State vs URL
+      caption_cn: State vs URL
+    - src: /assets/teach/university-college-dublin/mobile-computing/sample/05-part-d-hci-sketch.webp
+      alt_en: Mobile Computing tutoring · Part D · HCI sketch
+      alt_cn: Mobile Computing 辅导课件 · Part D · HCI sketch
+      caption_en: Part D · HCI sketch
+      caption_cn: Part D · HCI sketch
+    - src: /assets/teach/university-college-dublin/mobile-computing/sample/06-task-centred-evaluation.webp
+      alt_en: Mobile Computing tutoring · Task-centred evaluation
+      alt_cn: Mobile Computing 辅导课件 · Task-centred evaluation
+      caption_en: Task-centred evaluation
+      caption_cn: Task-centred evaluation
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Computer Graphics
   material: Computer Graphics
   code: Computer Graphics
@@ -299,9 +335,10 @@ courses:
   lead_cn: 在都柏林大学上 Computer Graphics，限时下不变量、复杂度结论和代码必须说的是同一件事。
   overview_en: Computer Graphics sits in algorithms & data structures. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
+    are below.
   overview_cn: Computer Graphics 是都柏林大学「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -344,8 +381,10 @@ courses:
   sample_slides:
     title_en: Computer Graphics — sample slides
     title_cn: Computer Graphics — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
+      code), One job per function, Stack, heap, data (C)。
     bullets:
     - en: Algorithms, ADTs, and complexity
       cn: 算法、ADT 与复杂度
@@ -353,32 +392,42 @@ courses:
       cn: 数学基础与证明习惯
     slides:
     - src: /assets/teach/university-college-dublin/computer-graphics/sample/01-title.webp
-      alt_en: Computer Graphics tutoring title
+      alt_en: Computer Graphics tutoring · Title
       alt_cn: Computer Graphics 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/university-college-dublin/computer-graphics/sample/02-topics.webp
-      alt_en: Computer Graphics tutoring topics
-      alt_cn: Computer Graphics 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/university-college-dublin/computer-graphics/sample/03-stuck.webp
-      alt_en: Computer Graphics tutoring stuck points
-      alt_cn: Computer Graphics 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/university-college-dublin/computer-graphics/sample/04-tutoring.webp
-      alt_en: Computer Graphics tutoring how tutoring runs
-      alt_cn: Computer Graphics 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/02-roadmap.webp
+      alt_en: Computer Graphics tutoring · Roadmap
+      alt_cn: Computer Graphics 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/03-part-a-from-brief-to-design.webp
+      alt_en: Computer Graphics tutoring · Part A · From brief to design
+      alt_cn: Computer Graphics 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/04-brief-checklist-before-code.webp
+      alt_en: Computer Graphics tutoring · Brief checklist (before code)
+      alt_cn: Computer Graphics 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/05-one-job-per-function.webp
+      alt_en: Computer Graphics tutoring · One job per function
+      alt_cn: Computer Graphics 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/06-stack-heap-data-c.webp
+      alt_en: Computer Graphics tutoring · Stack, heap, data (C)
+      alt_cn: Computer Graphics 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Software Methodology
   material: Software Methodology
   code: Software Methodology
@@ -393,9 +442,9 @@ courses:
   overview_en: 'Software Methodology (Programming & software construction) at University College Dublin.
     Common topics: Computer architecture and organisation. People stall when terms outrun notes, when
     a class demo does not replay alone, or when the write-up / autograder wants a method the notebook
-    never showed. Sample slides from our tutoring intro deck are below.'
+    never showed. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: Software Methodology 是都柏林大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括计算机体系结构与组成。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Computer architecture and organisation
     cn: 计算机体系结构与组成
@@ -436,8 +485,10 @@ courses:
   sample_slides:
     title_en: Software Methodology — sample slides
     title_cn: Software Methodology — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Part D · Tests and memory from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
+      code), One job per function, Part D · Tests and memory。
     bullets:
     - en: Computer architecture and organisation
       cn: 计算机体系结构与组成
@@ -449,32 +500,42 @@ courses:
       cn: 递归、抽象数据类型与常见 Lab 模式
     slides:
     - src: /assets/teach/university-college-dublin/software-methodology/sample/01-title.webp
-      alt_en: Software Methodology tutoring title
+      alt_en: Software Methodology tutoring · Title
       alt_cn: Software Methodology 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/university-college-dublin/software-methodology/sample/02-topics.webp
-      alt_en: Software Methodology tutoring topics
-      alt_cn: Software Methodology 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/university-college-dublin/software-methodology/sample/03-stuck.webp
-      alt_en: Software Methodology tutoring stuck points
-      alt_cn: Software Methodology 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/university-college-dublin/software-methodology/sample/04-tutoring.webp
-      alt_en: Software Methodology tutoring how tutoring runs
-      alt_cn: Software Methodology 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/02-roadmap.webp
+      alt_en: Software Methodology tutoring · Roadmap
+      alt_cn: Software Methodology 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/03-part-a-from-brief-to-design.webp
+      alt_en: Software Methodology tutoring · Part A · From brief to design
+      alt_cn: Software Methodology 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/04-brief-checklist-before-code.webp
+      alt_en: Software Methodology tutoring · Brief checklist (before code)
+      alt_cn: Software Methodology 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/05-one-job-per-function.webp
+      alt_en: Software Methodology tutoring · One job per function
+      alt_cn: Software Methodology 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/06-part-d-tests-and-memory.webp
+      alt_en: Software Methodology tutoring · Part D · Tests and memory
+      alt_cn: Software Methodology 辅导课件 · Part D · Tests and memory
+      caption_en: Part D · Tests and memory
+      caption_cn: Part D · Tests and memory
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3008J
   title: Distributed Systems
   material: Distributed Systems
@@ -487,11 +548,11 @@ courses:
   lead_cn: 在都柏林大学上 COMP3008J，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
   overview_en: COMP3008J Distributed Systems sits in systems, networks & architecture. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit. Sample slides from our tutoring intro
-    deck are below.
+    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: COMP3008J 是都柏林大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、计算机体系结构与组成、安全
     / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -529,8 +590,10 @@ courses:
   sample_slides:
     title_en: COMP3008J — sample slides
     title_cn: COMP3008J — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our tutoring deck.
+    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical
+      section and race, Socket + HTTP sketch。
     bullets:
     - en: Networking layers, packets, and protocols
       cn: 网络分层、报文与协议
@@ -542,30 +605,40 @@ courses:
       cn: 算法、ADT 与复杂度
     slides:
     - src: /assets/teach/university-college-dublin/comp3008j/sample/01-title.webp
-      alt_en: COMP3008J tutoring title
+      alt_en: COMP3008J tutoring · Title
       alt_cn: COMP3008J 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/university-college-dublin/comp3008j/sample/02-topics.webp
-      alt_en: COMP3008J tutoring topics
-      alt_cn: COMP3008J 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/university-college-dublin/comp3008j/sample/03-stuck.webp
-      alt_en: COMP3008J tutoring stuck points
-      alt_cn: COMP3008J 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/university-college-dublin/comp3008j/sample/04-tutoring.webp
-      alt_en: COMP3008J tutoring how tutoring runs
-      alt_cn: COMP3008J 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/university-college-dublin/comp3008j/sample/02-roadmap.webp
+      alt_en: COMP3008J tutoring · Roadmap
+      alt_cn: COMP3008J 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/university-college-dublin/comp3008j/sample/03-part-a-processes-and-threads.webp
+      alt_en: COMP3008J tutoring · Part A · Processes and threads
+      alt_cn: COMP3008J 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/university-college-dublin/comp3008j/sample/04-process-vs-thread.webp
+      alt_en: COMP3008J tutoring · Process vs thread
+      alt_cn: COMP3008J 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/university-college-dublin/comp3008j/sample/05-critical-section-and-race.webp
+      alt_en: COMP3008J tutoring · Critical section and race
+      alt_cn: COMP3008J 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/university-college-dublin/comp3008j/sample/06-socket-http-sketch.webp
+      alt_en: COMP3008J tutoring · Socket + HTTP sketch
+      alt_cn: COMP3008J 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

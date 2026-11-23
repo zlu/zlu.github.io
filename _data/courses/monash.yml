@@ -15,9 +15,9 @@ courses:
   overview_en: Introduction to Programming covers Python fundamentals through workshops, quizzes, and
     coding tasks (control flow, functions, strings, simple algorithms such as classical ciphers). Students
     get stuck when the task wording is unclear, when errors look random, or when a solution “almost works”
-    but fails hidden cases. Sample slides from our tutoring intro deck are below.
+    but fails hidden cases. Sample slides from our concept-review tutoring deck are below.
   overview_cn: Introduction to Programming 用 workshop、quiz 与编程任务带你入门 Python（控制流、函数、 字符串，以及恺撒 / 维吉尼亚一类经典密码练习）。真正卡人的是题意读不清、报错像随机事件，
-    或代码「差不多能跑」却过不了隐藏测例。 下方有我们辅导入门课件的样例页。
+    或代码「差不多能跑」却过不了隐藏测例。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Python basics — variables, control flow, functions
     cn: Python 基础：变量、控制流、函数
@@ -60,45 +60,57 @@ courses:
   sample_slides:
     title_en: FIT1045 — sample slides
     title_cn: FIT1045 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
-    - en: W1 Pre Class
-      cn: W1 Pre Class
-    - en: W1 Workshop
-      cn: W1 Workshop
-    - en: W2 Pre Class
-      cn: W2 Pre Class
-    - en: W3 Pre Class Part 1 2
-      cn: W3 Pre Class Part 1 2
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Unit tests and autograder feedback loops
+      cn: 单元测试与 autograder 反馈循环
     slides:
     - src: /assets/teach/monash/fit1045/sample/01-title.webp
-      alt_en: FIT1045 tutoring title
+      alt_en: FIT1045 tutoring · Title
       alt_cn: FIT1045 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/monash/fit1045/sample/02-topics.webp
-      alt_en: FIT1045 tutoring topics
-      alt_cn: FIT1045 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/monash/fit1045/sample/03-stuck.webp
-      alt_en: FIT1045 tutoring stuck points
-      alt_cn: FIT1045 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/monash/fit1045/sample/04-tutoring.webp
-      alt_en: FIT1045 tutoring how tutoring runs
-      alt_cn: FIT1045 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/monash/fit1045/sample/02-roadmap.webp
+      alt_en: FIT1045 tutoring · Roadmap
+      alt_cn: FIT1045 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/fit1045/sample/03-part-a-from-brief-to-design.webp
+      alt_en: FIT1045 tutoring · Part A · From brief to design
+      alt_cn: FIT1045 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/monash/fit1045/sample/04-brief-checklist-before-code.webp
+      alt_en: FIT1045 tutoring · Brief checklist (before code)
+      alt_cn: FIT1045 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/monash/fit1045/sample/05-one-job-per-function.webp
+      alt_en: FIT1045 tutoring · One job per function
+      alt_cn: FIT1045 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/monash/fit1045/sample/06-stack-heap-data-c.webp
+      alt_en: FIT1045 tutoring · Stack, heap, data (C)
+      alt_cn: FIT1045 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: FIT5196
   title: Data Wrangling
   material: FIT5196-datawrangling
@@ -227,10 +239,10 @@ courses:
   overview_en: Assessment typically mixes short individual exercises, a quiz, a group analysis report,
     and a final exam. Seminars mix theory and practice; tutorials are R hands-on. Students stall when
     R Markdown will not knit, when they run a method without saying what changed in the table, or when
-    the write-up cannot defend method choice (cluster vs PCA vs factor). Sample slides from our tutoring
-    intro deck are below.
+    the write-up cannot defend method choice (cluster vs PCA vs factor). Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: 考核一般是个人短练习、小测、小组分析报告和期末考试。Seminar 讲理论和操作，tutorial 主要在 R 里练。 常见卡住：R Markdown knit 不出来；方法跑了但说不清表里发生了什么；报告里选
-    cluster / PCA / factor 却讲不出理由。 下方有我们辅导入门课件的样例页。
+    cluster / PCA / factor 却讲不出理由。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: R, tidyverse, ggplot, and knit-able R Markdown
     cn: R、tidyverse、ggplot，以及能 knit 的 R Markdown
@@ -268,8 +280,9 @@ courses:
   sample_slides:
     title_en: ETX3500 — sample slides
     title_cn: ETX3500 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: Pandas / dplyr style transforms and joins
       cn: Pandas / dplyr 风格的变换与 join
@@ -281,32 +294,42 @@ courses:
       cn: 能支撑结论的可视化
     slides:
     - src: /assets/teach/monash/etx3500/sample/01-title.webp
-      alt_en: ETX3500 tutoring title
+      alt_en: ETX3500 tutoring · Title
       alt_cn: ETX3500 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/monash/etx3500/sample/02-topics.webp
-      alt_en: ETX3500 tutoring topics
-      alt_cn: ETX3500 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/monash/etx3500/sample/03-stuck.webp
-      alt_en: ETX3500 tutoring stuck points
-      alt_cn: ETX3500 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/monash/etx3500/sample/04-tutoring.webp
-      alt_en: ETX3500 tutoring how tutoring runs
-      alt_cn: ETX3500 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/monash/etx3500/sample/02-roadmap.webp
+      alt_en: ETX3500 tutoring · Roadmap
+      alt_cn: ETX3500 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/etx3500/sample/03-part-a-tables.webp
+      alt_en: ETX3500 tutoring · Part A · Tables
+      alt_cn: ETX3500 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/monash/etx3500/sample/04-tidy-data-rules.webp
+      alt_en: ETX3500 tutoring · Tidy data rules
+      alt_cn: ETX3500 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/monash/etx3500/sample/05-eda-checklist.webp
+      alt_en: ETX3500 tutoring · EDA checklist
+      alt_cn: ETX3500 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/monash/etx3500/sample/06-feature-hygiene.webp
+      alt_en: ETX3500 tutoring · Feature hygiene
+      alt_cn: ETX3500 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: FIT2102
   title: Programming Paradigms
   theme: programming
@@ -613,11 +636,12 @@ courses:
     RDDs and DataFrames; A2A builds energy-prediction models; A2B wires a Kafka producer, Spark streaming
     job, and consumer with watermarks and parquet sinks. Students stall when partitioning talk stays abstract,
     when RDD vs DataFrame choice is unclear, when ML stages silently mismatch schemas, or when streaming
-    only works until the first checkpoint restart. Sample slides from our tutoring intro deck are below.'
+    only works until the first checkpoint restart. Sample slides from our concept-review tutoring deck
+    are below.'
   overview_cn: Data Processing for Big Data 以 Apache Spark（PySpark）为主线：并行搜索、join、 aggregation / sort /
     groupBy，再进特征化、estimator / transformer / pipeline、 分类、聚类与协同过滤。作业跟着这条弧走——A1 用 RDD / DataFrame 分析房产数据；
     A2A 做能耗预测模型；A2B 串起 Kafka producer、Spark streaming 与 consumer，还要管 watermark 与 parquet 输出。卡点常在分区概念停在抽象层、RDD
-    vs DataFrame 分不清、 ML stage schema 对不上，或 streaming 一重启 checkpoint 就崩。 下方有我们辅导入门课件的样例页。
+    vs DataFrame 分不清、 ML stage schema 对不上，或 streaming 一重启 checkpoint 就崩。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: SparkSession, partitioning, and local-cluster mental models
     cn: SparkSession、分区与本地集群心智模型
@@ -657,8 +681,9 @@ courses:
   sample_slides:
     title_en: FIT5202 — sample slides
     title_cn: FIT5202 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: Spark / distributed data processing
       cn: Spark / 分布式数据处理
@@ -670,32 +695,42 @@ courses:
       cn: ML 流水线、特征与模型选择
     slides:
     - src: /assets/teach/monash/fit5202/sample/01-title.webp
-      alt_en: FIT5202 tutoring title
+      alt_en: FIT5202 tutoring · Title
       alt_cn: FIT5202 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/monash/fit5202/sample/02-topics.webp
-      alt_en: FIT5202 tutoring topics
-      alt_cn: FIT5202 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/monash/fit5202/sample/03-stuck.webp
-      alt_en: FIT5202 tutoring stuck points
-      alt_cn: FIT5202 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/monash/fit5202/sample/04-tutoring.webp
-      alt_en: FIT5202 tutoring how tutoring runs
-      alt_cn: FIT5202 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/monash/fit5202/sample/02-roadmap.webp
+      alt_en: FIT5202 tutoring · Roadmap
+      alt_cn: FIT5202 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/fit5202/sample/03-part-a-tables.webp
+      alt_en: FIT5202 tutoring · Part A · Tables
+      alt_cn: FIT5202 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/monash/fit5202/sample/04-tidy-data-rules.webp
+      alt_en: FIT5202 tutoring · Tidy data rules
+      alt_cn: FIT5202 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/monash/fit5202/sample/05-eda-checklist.webp
+      alt_en: FIT5202 tutoring · EDA checklist
+      alt_cn: FIT5202 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/monash/fit5202/sample/06-feature-hygiene.webp
+      alt_en: FIT5202 tutoring · Feature hygiene
+      alt_cn: FIT5202 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: ENG1014
   title: Engineering Numerical Analysis
   material: eng1014
@@ -714,10 +749,10 @@ courses:
     with workshop notebooks and quizzes each week. The individual assignment (“Coding for Climate Change”)
     expects template-faithful outputs and an oral defence of your approach. Students stall when they treat
     notebooks as disposable scratchpads, when fit quality is never checked, or when interview questions
-    expose code they cannot explain. Sample slides from our tutoring intro deck are below.'
+    expose code they cannot explain. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: Engineering Numerical Analysis 在课程环境里用数值编程（numpy、matplotlib、eng1014.py， 作业禁用 pandas）：导入与准备数据、线性
     / 非线性曲线拟合、程序控制、数值方程求解、 积分与 ODE，每周还有 workshop notebook 与 quiz。个人大作业「Coding for Climate Change」 要求严格按模板出结果，并在面试里讲清思路。卡点常在把
-    notebook 当一次性草稿、从不检查 拟合质量，或面试一问就露馅——代码自己也讲不清。 下方有我们辅导入门课件的样例页。
+    notebook 当一次性草稿、从不检查 拟合质量，或面试一问就露馅——代码自己也讲不清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Numerical programming habits in the ENG1014 environment
     cn: ENG1014 环境下的数值编程习惯
@@ -757,45 +792,57 @@ courses:
   sample_slides:
     title_en: ENG1014 — sample slides
     title_cn: ENG1014 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Vectors and matrices in CS, Probability essentials, Part D · Proofs, Proof
+      checklist from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Vectors and matrices in CS、Probability essentials、Part D ·
+      Proofs、Proof checklist。
     bullets:
     - en: Math foundations and proof habits
       cn: 数学基础与证明习惯
-    - en: W1 Introduction to Numerical Programming Course Notes(2)
-      cn: W1 Introduction to Numerical Programming Course Notes(2)
-    - en: W2 Communicating with Data Course Notes(2)
-      cn: W2 Communicating with Data Course Notes(2)
-    - en: W2 Communicating with Data Practice Questions(2)
-      cn: W2 Communicating with Data Practice Questions(2)
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
     slides:
     - src: /assets/teach/monash/eng1014/sample/01-title.webp
-      alt_en: ENG1014 tutoring title
+      alt_en: ENG1014 tutoring · Title
       alt_cn: ENG1014 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/monash/eng1014/sample/02-topics.webp
-      alt_en: ENG1014 tutoring topics
-      alt_cn: ENG1014 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/monash/eng1014/sample/03-stuck.webp
-      alt_en: ENG1014 tutoring stuck points
-      alt_cn: ENG1014 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/monash/eng1014/sample/04-tutoring.webp
-      alt_en: ENG1014 tutoring how tutoring runs
-      alt_cn: ENG1014 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/monash/eng1014/sample/02-roadmap.webp
+      alt_en: ENG1014 tutoring · Roadmap
+      alt_cn: ENG1014 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/eng1014/sample/03-vectors-and-matrices-in-cs.webp
+      alt_en: ENG1014 tutoring · Vectors and matrices in CS
+      alt_cn: ENG1014 辅导课件 · Vectors and matrices in CS
+      caption_en: Vectors and matrices in CS
+      caption_cn: Vectors and matrices in CS
+    - src: /assets/teach/monash/eng1014/sample/04-probability-essentials.webp
+      alt_en: ENG1014 tutoring · Probability essentials
+      alt_cn: ENG1014 辅导课件 · Probability essentials
+      caption_en: Probability essentials
+      caption_cn: Probability essentials
+    - src: /assets/teach/monash/eng1014/sample/05-part-d-proofs.webp
+      alt_en: ENG1014 tutoring · Part D · Proofs
+      alt_cn: ENG1014 辅导课件 · Part D · Proofs
+      caption_en: Part D · Proofs
+      caption_cn: Part D · Proofs
+    - src: /assets/teach/monash/eng1014/sample/06-proof-checklist.webp
+      alt_en: ENG1014 tutoring · Proof checklist
+      alt_cn: ENG1014 辅导课件 · Proof checklist
+      caption_en: Proof checklist
+      caption_cn: Proof checklist
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: FIT1058
   title: Foundations of Computing
   material: FIT1058 Foundations of computing
@@ -814,7 +861,7 @@ courses:
     logic, then predicate logic. Weekly seminars come in multiple parts with worked examples; sample solutions
     reward clear structure. Students stall when school maths gaps meet new notation, when existential
     / universal quantifiers blur, or when a proof idea cannot be written as a sequence of justified steps.
-    Sample slides from our tutoring intro deck are below.
+    Sample slides from our concept-review tutoring deck are below.
   overview_cn: Foundations of Computing 训练整个 CS 学位都会用到的抽象建模、逻辑推理与证明。前几周 课程笔记覆盖集合与计数、函数（含 CS 视角）、证明方法（构造、分情形、反证、归纳）、
     命题逻辑，再进谓词逻辑。每周 seminar 多分场次并带例题；样例解答强调结构清楚。卡点常在 中学数学缺口撞上新记号、存在 / 全称量词搅在一起，或证明思路落不成一串有依据的步骤。
   topics:
@@ -856,45 +903,57 @@ courses:
   sample_slides:
     title_en: FIT1058 — sample slides
     title_cn: FIT1058 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Vectors and matrices in CS, Probability essentials, Part D · Proofs, Proof
+      checklist from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Vectors and matrices in CS、Probability essentials、Part D ·
+      Proofs、Proof checklist。
     bullets:
-    - en: Example for
-      cn: Example for
-    - en: 'FIT1058 Seminar #1'
-      cn: 'FIT1058 Seminar #1'
-    - en: 'FIT1058 Seminar #2'
-      cn: 'FIT1058 Seminar #2'
-    - en: 'FIT1058 Seminar #3'
-      cn: 'FIT1058 Seminar #3'
+    - en: Linear algebra objects used in ML and graphics
+      cn: 机器学习与图形学里用到的线性代数对象
+    - en: Probability language for algorithms and ML
+      cn: 算法与机器学习用的概率语言
+    - en: Optimisation intuition (gradients, constraints)
+      cn: 优化直觉（梯度、约束）
+    - en: Discrete math proofs at coursework pace
+      cn: 课业节奏下的离散数学证明
     slides:
     - src: /assets/teach/monash/fit1058/sample/01-title.webp
-      alt_en: FIT1058 tutoring title
+      alt_en: FIT1058 tutoring · Title
       alt_cn: FIT1058 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/monash/fit1058/sample/02-topics.webp
-      alt_en: FIT1058 tutoring topics
-      alt_cn: FIT1058 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/monash/fit1058/sample/03-stuck.webp
-      alt_en: FIT1058 tutoring stuck points
-      alt_cn: FIT1058 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/monash/fit1058/sample/04-tutoring.webp
-      alt_en: FIT1058 tutoring how tutoring runs
-      alt_cn: FIT1058 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/monash/fit1058/sample/02-roadmap.webp
+      alt_en: FIT1058 tutoring · Roadmap
+      alt_cn: FIT1058 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/fit1058/sample/03-vectors-and-matrices-in-cs.webp
+      alt_en: FIT1058 tutoring · Vectors and matrices in CS
+      alt_cn: FIT1058 辅导课件 · Vectors and matrices in CS
+      caption_en: Vectors and matrices in CS
+      caption_cn: Vectors and matrices in CS
+    - src: /assets/teach/monash/fit1058/sample/04-probability-essentials.webp
+      alt_en: FIT1058 tutoring · Probability essentials
+      alt_cn: FIT1058 辅导课件 · Probability essentials
+      caption_en: Probability essentials
+      caption_cn: Probability essentials
+    - src: /assets/teach/monash/fit1058/sample/05-part-d-proofs.webp
+      alt_en: FIT1058 tutoring · Part D · Proofs
+      alt_cn: FIT1058 辅导课件 · Part D · Proofs
+      caption_en: Part D · Proofs
+      caption_cn: Part D · Proofs
+    - src: /assets/teach/monash/fit1058/sample/06-proof-checklist.webp
+      alt_en: FIT1058 tutoring · Proof checklist
+      alt_cn: FIT1058 辅导课件 · Proof checklist
+      caption_en: Proof checklist
+      caption_cn: Proof checklist
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: FIT1008
   title: Fundamentals of Algorithms
   aliases:
@@ -914,9 +973,9 @@ courses:
     tables, and recursive thinking / recursive sorts. Weekly workshops and applied sheets push implementations
     such as circular queues and referential arrays. Students stall when Big-O is memorised without a dry-run,
     when linked-structure pointer updates corrupt the structure, or when a recursive idea has no clear
-    base case before coding. Sample slides from our tutoring intro deck are below.
+    base case before coding. Sample slides from our concept-review tutoring deck are below.
   overview_cn: Fundamentals of Algorithms 覆盖算法复杂度、经典排序、抽象数据类型（栈、队列、集合）、 列表表示（数组与链表）、迭代器、哈希表，以及递归思维 / 递归排序。每周
-    workshop 与 applied 会推到环形队列、引用数组一类实现。卡点常在 Big-O 只会背不会手推、链表指针 一改就坏结构，或递归还没想清基准情形就动手写。 下方有我们辅导入门课件的样例页。
+    workshop 与 applied 会推到环形队列、引用数组一类实现。卡点常在 Big-O 只会背不会手推、链表指针 一改就坏结构，或递归还没想清基准情形就动手写。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Big-O intuition and comparing algorithm candidates
     cn: Big-O 直觉与算法方案比较
@@ -957,45 +1016,57 @@ courses:
   sample_slides:
     title_en: FIT1008 — sample slides
     title_cn: FIT1008 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Complexity, Big-O in exam language, Pick the ADT by the operation,
+      DP four-line template from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Complexity、Big-O in exam language、Pick the ADT by
+      the operation、DP four-line template。
     bullets:
     - en: Algorithms, ADTs, and complexity
       cn: 算法、ADT 与复杂度
-    - en: 3.1 Workshop
-      cn: 3.1 Workshop
-    - en: 3.2 Applied
-      cn: 3.2 Applied
-    - en: 4.1 Workshop
-      cn: 4.1 Workshop
+    - en: Asymptotic complexity and comparing candidates
+      cn: 渐近复杂度与方案比较
+    - en: Arrays, lists, trees, heaps, hash tables
+      cn: 数组、链表、树、堆、哈希表
+    - en: Sorting, searching, and graph traversals
+      cn: 排序、搜索与图遍历
     slides:
     - src: /assets/teach/monash/fit1008/sample/01-title.webp
-      alt_en: FIT1008 tutoring title
+      alt_en: FIT1008 tutoring · Title
       alt_cn: FIT1008 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/monash/fit1008/sample/02-topics.webp
-      alt_en: FIT1008 tutoring topics
-      alt_cn: FIT1008 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/monash/fit1008/sample/03-stuck.webp
-      alt_en: FIT1008 tutoring stuck points
-      alt_cn: FIT1008 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/monash/fit1008/sample/04-tutoring.webp
-      alt_en: FIT1008 tutoring how tutoring runs
-      alt_cn: FIT1008 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/monash/fit1008/sample/02-roadmap.webp
+      alt_en: FIT1008 tutoring · Roadmap
+      alt_cn: FIT1008 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/fit1008/sample/03-part-a-complexity.webp
+      alt_en: FIT1008 tutoring · Part A · Complexity
+      alt_cn: FIT1008 辅导课件 · Part A · Complexity
+      caption_en: Part A · Complexity
+      caption_cn: Part A · Complexity
+    - src: /assets/teach/monash/fit1008/sample/04-big-o-in-exam-language.webp
+      alt_en: FIT1008 tutoring · Big-O in exam language
+      alt_cn: FIT1008 辅导课件 · Big-O in exam language
+      caption_en: Big-O in exam language
+      caption_cn: Big-O in exam language
+    - src: /assets/teach/monash/fit1008/sample/05-pick-the-adt-by-the-operation.webp
+      alt_en: FIT1008 tutoring · Pick the ADT by the operation
+      alt_cn: FIT1008 辅导课件 · Pick the ADT by the operation
+      caption_en: Pick the ADT by the operation
+      caption_cn: Pick the ADT by the operation
+    - src: /assets/teach/monash/fit1008/sample/06-dp-four-line-template.webp
+      alt_en: FIT1008 tutoring · DP four-line template
+      alt_cn: FIT1008 辅导课件 · DP four-line template
+      caption_en: DP four-line template
+      caption_cn: DP four-line template
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: FIT1047
   title: Introduction to Computer Systems, Networks and Security
   material: fit1047
@@ -1013,10 +1084,11 @@ courses:
     protocols) and cybersecurity assessments: article analysis, security-control diagrams for an enterprise
     scenario, weekly reflections, and an in-person test. Students stall when base conversions feel mechanical
     but K-maps do not, when Wireshark output cannot be turned into a claim, or when the security report
-    lists tools without a clear threat story. Sample slides from our tutoring intro deck are below.'
+    lists tools without a clear threat story. Sample slides from our concept-review tutoring deck are
+    below.'
   overview_cn: Introduction to Computer Systems, Networks and Security 从比特、字节、进制换算、 ASCII 与布尔逻辑开始，再进门电路、电路与卡诺图。后半程进入网络
     workshop / applied （无线抓包、Internet 流量、客户端 / 服务器 / 协议），以及网络安全评估：案例分析、 企业场景安全控制图、每周反思与当面测验。卡点常在进制换算会做但卡诺图不会化简、
-    Wireshark 输出变不成结论，或安全报告只罗列工具没有清晰威胁叙事。 下方有我们辅导入门课件的样例页。
+    Wireshark 输出变不成结论，或安全报告只罗列工具没有清晰威胁叙事。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Number systems, ASCII, and Boolean basics
     cn: 进制、ASCII 与布尔基础
@@ -1056,45 +1128,57 @@ courses:
   sample_slides:
     title_en: FIT1047 — sample slides
     title_cn: FIT1047 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
-    - en: Pre Semester Lesson
-      cn: Pre Semester Lesson
-    - en: Overview, Number systems, Basic Boolean logic
-      cn: Overview, Number systems, Basic Boolean logic
-    - en: Gates and circuits, Karnaugh maps
-      cn: Gates and circuits, Karnaugh maps
-    - en: FIT1047 Applied Session
-      cn: FIT1047 Applied Session
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
+    - en: OS scheduling and concurrency bugs
+      cn: 操作系统调度与并发 bug
     slides:
     - src: /assets/teach/monash/fit1047/sample/01-title.webp
-      alt_en: FIT1047 tutoring title
+      alt_en: FIT1047 tutoring · Title
       alt_cn: FIT1047 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/monash/fit1047/sample/02-topics.webp
-      alt_en: FIT1047 tutoring topics
-      alt_cn: FIT1047 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/monash/fit1047/sample/03-stuck.webp
-      alt_en: FIT1047 tutoring stuck points
-      alt_cn: FIT1047 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/monash/fit1047/sample/04-tutoring.webp
-      alt_en: FIT1047 tutoring how tutoring runs
-      alt_cn: FIT1047 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/monash/fit1047/sample/02-roadmap.webp
+      alt_en: FIT1047 tutoring · Roadmap
+      alt_cn: FIT1047 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/fit1047/sample/03-part-a-processes-and-threads.webp
+      alt_en: FIT1047 tutoring · Part A · Processes and threads
+      alt_cn: FIT1047 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/monash/fit1047/sample/04-process-vs-thread.webp
+      alt_en: FIT1047 tutoring · Process vs thread
+      alt_cn: FIT1047 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/monash/fit1047/sample/05-critical-section-and-race.webp
+      alt_en: FIT1047 tutoring · Critical section and race
+      alt_cn: FIT1047 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/monash/fit1047/sample/06-socket-http-sketch.webp
+      alt_en: FIT1047 tutoring · Socket + HTTP sketch
+      alt_cn: FIT1047 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: FIT5124
   title: Emerging Topics for Cybersecurity in Practice
   material: fit5124-networking-ml

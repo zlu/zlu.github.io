@@ -61,10 +61,11 @@ courses:
     South Wales. Common topics: OS / systems programming; Security / privacy threat models and labs; Algorithms,
     ADTs, and complexity. Weekly arc about week 0–12, plus assessed work under deadline. People stall
     when terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder
-    wants a method the notebook never showed. Sample slides from our tutoring intro deck are below.'
+    wants a method the notebook never showed. Sample slides from our concept-review tutoring deck are
+    below.'
   overview_cn: COMP2017 是新南威尔士大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括操作系统 / 系统编程、安全 / 隐私威胁模型与实验、算法、ADT 与复杂度。大约第
     0–12 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -111,8 +112,10 @@ courses:
   sample_slides: &id001
     title_en: COMP2017 — sample slides
     title_cn: COMP2017 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
     - en: Security / privacy threat models and labs
       cn: 安全 / 隐私威胁模型与实验
@@ -120,32 +123,42 @@ courses:
       cn: 算法、ADT 与复杂度
     slides:
     - src: /assets/teach/unsw-sydney/comp2017/sample/01-title.webp
-      alt_en: COMP2017 tutoring title
+      alt_en: COMP2017 tutoring · Title
       alt_cn: COMP2017 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp2017/sample/02-topics.webp
-      alt_en: COMP2017 tutoring topics
-      alt_cn: COMP2017 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp2017/sample/03-stuck.webp
-      alt_en: COMP2017 tutoring stuck points
-      alt_cn: COMP2017 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp2017/sample/04-tutoring.webp
-      alt_en: COMP2017 tutoring how tutoring runs
-      alt_cn: COMP2017 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp2017/sample/02-roadmap.webp
+      alt_en: COMP2017 tutoring · Roadmap
+      alt_cn: COMP2017 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp2017/sample/03-part-a-from-brief-to-design.webp
+      alt_en: COMP2017 tutoring · Part A · From brief to design
+      alt_cn: COMP2017 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/unsw-sydney/comp2017/sample/04-brief-checklist-before-code.webp
+      alt_en: COMP2017 tutoring · Brief checklist (before code)
+      alt_cn: COMP2017 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/unsw-sydney/comp2017/sample/05-one-job-per-function.webp
+      alt_en: COMP2017 tutoring · One job per function
+      alt_cn: COMP2017 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/unsw-sydney/comp2017/sample/06-stack-heap-data-c.webp
+      alt_en: COMP2017 tutoring · Stack, heap, data (C)
+      alt_cn: COMP2017 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2107
   title: System Programming
   material: comp2017-9017-system-programming
@@ -161,10 +174,11 @@ courses:
     South Wales. Common topics: OS / systems programming; Security / privacy threat models and labs; Algorithms,
     ADTs, and complexity. Weekly arc about week 0–12, plus assessed work under deadline. People stall
     when terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder
-    wants a method the notebook never showed. Sample slides from our tutoring intro deck are below.'
+    wants a method the notebook never showed. Sample slides from our concept-review tutoring deck are
+    below.'
   overview_cn: COMP2107 是新南威尔士大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括操作系统 / 系统编程、安全 / 隐私威胁模型与实验、算法、ADT 与复杂度。大约第
     0–12 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -212,8 +226,8 @@ courses:
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2511
   title: Software Design And Architecture
   material: comp2511-software-design-and-architecture
@@ -227,10 +241,10 @@ courses:
   overview_en: 'COMP2511 Software Design And Architecture (Systems, networks & architecture) at University
     of New South Wales. Common topics: Programming foundations and debugging; Web / mobile app structure.
     People stall when terms outrun notes, when a class demo does not replay alone, or when the write-up
-    / autograder wants a method the notebook never showed. Sample slides from our tutoring intro deck
-    are below.'
+    / autograder wants a method the notebook never showed. Sample slides from our concept-review tutoring
+    deck are below.'
   overview_cn: COMP2511 是新南威尔士大学的「系统、网络与体系结构」课，既要真懂，也要能动手。常见内容包括编程基础与调试、Web / 移动应用结构。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Programming foundations and debugging
     cn: 编程基础与调试
@@ -272,8 +286,10 @@ courses:
   sample_slides:
     title_en: COMP2511 — sample slides
     title_cn: COMP2511 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
@@ -285,32 +301,42 @@ courses:
       cn: Socket、HTTP 与常见网络实验
     slides:
     - src: /assets/teach/unsw-sydney/comp2511/sample/01-title.webp
-      alt_en: COMP2511 tutoring title
+      alt_en: COMP2511 tutoring · Title
       alt_cn: COMP2511 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp2511/sample/02-topics.webp
-      alt_en: COMP2511 tutoring topics
-      alt_cn: COMP2511 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp2511/sample/03-stuck.webp
-      alt_en: COMP2511 tutoring stuck points
-      alt_cn: COMP2511 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp2511/sample/04-tutoring.webp
-      alt_en: COMP2511 tutoring how tutoring runs
-      alt_cn: COMP2511 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp2511/sample/02-roadmap.webp
+      alt_en: COMP2511 tutoring · Roadmap
+      alt_cn: COMP2511 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp2511/sample/03-part-a-processes-and-threads.webp
+      alt_en: COMP2511 tutoring · Part A · Processes and threads
+      alt_cn: COMP2511 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/unsw-sydney/comp2511/sample/04-process-vs-thread.webp
+      alt_en: COMP2511 tutoring · Process vs thread
+      alt_cn: COMP2511 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/unsw-sydney/comp2511/sample/05-critical-section-and-race.webp
+      alt_en: COMP2511 tutoring · Critical section and race
+      alt_cn: COMP2511 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/unsw-sydney/comp2511/sample/06-socket-http-sketch.webp
+      alt_en: COMP2511 tutoring · Socket + HTTP sketch
+      alt_cn: COMP2511 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - topics:
   - en: 'Lists, trees, and graphs: choose structure before coding'
     cn: 链表、树、图：先选结构再写代码
@@ -366,9 +392,9 @@ courses:
   overview_en: 'COMP3153 Algorithmic Verification (Algorithms & data structures) at University of New
     South Wales. Common topics: Automata, formal languages, and proofs. People stall when terms outrun
     notes, when a class demo does not replay alone, or when the write-up / autograder wants a method the
-    notebook never showed. Sample slides from our tutoring intro deck are below.'
+    notebook never showed. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: COMP3153 是新南威尔士大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括自动机、形式语言与证明。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Automata, formal languages, and proofs
     cn: 自动机、形式语言与证明
@@ -410,8 +436,10 @@ courses:
   sample_slides:
     title_en: COMP3153 — sample slides
     title_cn: COMP3153 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Complexity, Big-O in exam language, Pick the ADT by the operation,
+      DP four-line template from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Complexity、Big-O in exam language、Pick the ADT by
+      the operation、DP four-line template。
     bullets:
     - en: Asymptotic complexity and comparing candidates
       cn: 渐近复杂度与方案比较
@@ -423,32 +451,42 @@ courses:
       cn: 贪心、分治与动态规划模式
     slides:
     - src: /assets/teach/unsw-sydney/comp3153/sample/01-title.webp
-      alt_en: COMP3153 tutoring title
+      alt_en: COMP3153 tutoring · Title
       alt_cn: COMP3153 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp3153/sample/02-topics.webp
-      alt_en: COMP3153 tutoring topics
-      alt_cn: COMP3153 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp3153/sample/03-stuck.webp
-      alt_en: COMP3153 tutoring stuck points
-      alt_cn: COMP3153 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp3153/sample/04-tutoring.webp
-      alt_en: COMP3153 tutoring how tutoring runs
-      alt_cn: COMP3153 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp3153/sample/02-roadmap.webp
+      alt_en: COMP3153 tutoring · Roadmap
+      alt_cn: COMP3153 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp3153/sample/03-part-a-complexity.webp
+      alt_en: COMP3153 tutoring · Part A · Complexity
+      alt_cn: COMP3153 辅导课件 · Part A · Complexity
+      caption_en: Part A · Complexity
+      caption_cn: Part A · Complexity
+    - src: /assets/teach/unsw-sydney/comp3153/sample/04-big-o-in-exam-language.webp
+      alt_en: COMP3153 tutoring · Big-O in exam language
+      alt_cn: COMP3153 辅导课件 · Big-O in exam language
+      caption_en: Big-O in exam language
+      caption_cn: Big-O in exam language
+    - src: /assets/teach/unsw-sydney/comp3153/sample/05-pick-the-adt-by-the-operation.webp
+      alt_en: COMP3153 tutoring · Pick the ADT by the operation
+      alt_cn: COMP3153 辅导课件 · Pick the ADT by the operation
+      caption_en: Pick the ADT by the operation
+      caption_cn: Pick the ADT by the operation
+    - src: /assets/teach/unsw-sydney/comp3153/sample/06-dp-four-line-template.webp
+      alt_en: COMP3153 tutoring · DP four-line template
+      alt_cn: COMP3153 辅导课件 · DP four-line template
+      caption_en: DP four-line template
+      caption_cn: DP four-line template
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3211
   title: Computer Architecture
   material: comp3211
@@ -463,9 +501,9 @@ courses:
     South Wales. Common topics: Computer architecture and organisation. Weekly arc about week 1–3, plus
     assessed work under deadline. People stall when terms outrun notes, when a class demo does not replay
     alone, or when the write-up / autograder wants a method the notebook never showed. Sample slides from
-    our tutoring intro deck are below.'
+    our concept-review tutoring deck are below.'
   overview_cn: COMP3211 是新南威尔士大学的「系统、网络与体系结构」课，既要真懂，也要能动手。常见内容包括计算机体系结构与组成。大约第 1–3 周有连续周课，作业会要求你在 DDL
-    下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Computer architecture and organisation
     cn: 计算机体系结构与组成
@@ -509,45 +547,57 @@ courses:
   sample_slides:
     title_en: COMP3211 — sample slides
     title_cn: COMP3211 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
-    - en: MIPS ref data
-      cn: MIPS ref data
-    - en: wk1 1 notes
-      cn: wk1 1 notes
-    - en: wk1 2 notes
-      cn: wk1 2 notes
-    - en: wk2 2 notes
-      cn: wk2 2 notes
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
+    - en: OS scheduling and concurrency bugs
+      cn: 操作系统调度与并发 bug
     slides:
     - src: /assets/teach/unsw-sydney/comp3211/sample/01-title.webp
-      alt_en: COMP3211 tutoring title
+      alt_en: COMP3211 tutoring · Title
       alt_cn: COMP3211 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp3211/sample/02-topics.webp
-      alt_en: COMP3211 tutoring topics
-      alt_cn: COMP3211 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp3211/sample/03-stuck.webp
-      alt_en: COMP3211 tutoring stuck points
-      alt_cn: COMP3211 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp3211/sample/04-tutoring.webp
-      alt_en: COMP3211 tutoring how tutoring runs
-      alt_cn: COMP3211 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp3211/sample/02-roadmap.webp
+      alt_en: COMP3211 tutoring · Roadmap
+      alt_cn: COMP3211 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp3211/sample/03-part-a-processes-and-threads.webp
+      alt_en: COMP3211 tutoring · Part A · Processes and threads
+      alt_cn: COMP3211 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/unsw-sydney/comp3211/sample/04-process-vs-thread.webp
+      alt_en: COMP3211 tutoring · Process vs thread
+      alt_cn: COMP3211 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/unsw-sydney/comp3211/sample/05-critical-section-and-race.webp
+      alt_en: COMP3211 tutoring · Critical section and race
+      alt_cn: COMP3211 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/unsw-sydney/comp3211/sample/06-socket-http-sketch.webp
+      alt_en: COMP3211 tutoring · Socket + HTTP sketch
+      alt_cn: COMP3211 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3311
   title: Database Systems
 - code: COMP3331
@@ -569,9 +619,9 @@ courses:
     models and labs; Algorithms, ADTs, and complexity; Programming foundations and debugging. Weekly arc
     about week 1–8, plus assessed work under deadline. People stall when terms outrun notes, when a class
     demo does not replay alone, or when the write-up / autograder wants a method the notebook never showed.
-    Sample slides from our tutoring intro deck are below.'
+    Sample slides from our concept-review tutoring deck are below.'
   overview_cn: COMP4337 是新南威尔士大学的「安全与隐私」课，既要真懂，也要能动手。常见内容包括网络分层、报文与协议、安全 / 隐私威胁模型与实验、算法、ADT 与复杂度。大约第 1–8
-    周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -618,8 +668,10 @@ courses:
   sample_slides:
     title_en: COMP4337 — sample slides
     title_cn: COMP4337 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Threat modelling, Threat model skeleton, Primitive jobs (not interchangeable),
+      Part D · Coding habits from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Threat modelling、Threat model skeleton、Primitive jobs
+      (not interchangeable)、Part D · Coding habits。
     bullets:
     - en: Networking layers, packets, and protocols
       cn: 网络分层、报文与协议
@@ -627,32 +679,42 @@ courses:
       cn: 安全 / 隐私威胁模型与实验
     slides:
     - src: /assets/teach/unsw-sydney/comp4337/sample/01-title.webp
-      alt_en: COMP4337 tutoring title
+      alt_en: COMP4337 tutoring · Title
       alt_cn: COMP4337 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp4337/sample/02-topics.webp
-      alt_en: COMP4337 tutoring topics
-      alt_cn: COMP4337 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp4337/sample/03-stuck.webp
-      alt_en: COMP4337 tutoring stuck points
-      alt_cn: COMP4337 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp4337/sample/04-tutoring.webp
-      alt_en: COMP4337 tutoring how tutoring runs
-      alt_cn: COMP4337 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp4337/sample/02-roadmap.webp
+      alt_en: COMP4337 tutoring · Roadmap
+      alt_cn: COMP4337 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp4337/sample/03-part-a-threat-modelling.webp
+      alt_en: COMP4337 tutoring · Part A · Threat modelling
+      alt_cn: COMP4337 辅导课件 · Part A · Threat modelling
+      caption_en: Part A · Threat modelling
+      caption_cn: Part A · Threat modelling
+    - src: /assets/teach/unsw-sydney/comp4337/sample/04-threat-model-skeleton.webp
+      alt_en: COMP4337 tutoring · Threat model skeleton
+      alt_cn: COMP4337 辅导课件 · Threat model skeleton
+      caption_en: Threat model skeleton
+      caption_cn: Threat model skeleton
+    - src: /assets/teach/unsw-sydney/comp4337/sample/05-primitive-jobs-not-interchangeable.webp
+      alt_en: COMP4337 tutoring · Primitive jobs (not interchangeable)
+      alt_cn: COMP4337 辅导课件 · Primitive jobs (not interchangeable)
+      caption_en: Primitive jobs (not interchangeable)
+      caption_cn: Primitive jobs (not interchangeable)
+    - src: /assets/teach/unsw-sydney/comp4337/sample/06-part-d-coding-habits.webp
+      alt_en: COMP4337 tutoring · Part D · Coding habits
+      alt_cn: COMP4337 辅导课件 · Part D · Coding habits
+      caption_en: Part D · Coding habits
+      caption_cn: Part D · Coding habits
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP4920
   title: Computer Ethics
   material: comp4920-computer-ethics
@@ -666,9 +728,9 @@ courses:
   overview_en: COMP4920 Computer Ethics (Security & privacy) at University of New South Wales. Weekly
     arc about week 1–1, plus assessed work under deadline. People stall when terms outrun notes, when
     a class demo does not replay alone, or when the write-up / autograder wants a method the notebook
-    never showed. Sample slides from our tutoring intro deck are below.
+    never showed. Sample slides from our concept-review tutoring deck are below.
   overview_cn: COMP4920 是新南威尔士大学的「安全与隐私」课，既要真懂，也要能动手。大约第 1–1 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: 'Week 1: COMP4920 26T3 READING W1L1a Ethics in Computing'
     cn: 第 1 周：COMP4920 26T3 READING W1L1a Ethics in Computing
@@ -712,45 +774,57 @@ courses:
   sample_slides:
     title_en: COMP4920 — sample slides
     title_cn: COMP4920 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Threat modelling, Threat model skeleton, Primitive jobs (not interchangeable),
+      Part D · Coding habits from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Threat modelling、Threat model skeleton、Primitive jobs
+      (not interchangeable)、Part D · Coding habits。
     bullets:
-    - en: COMP4920 26T3 READING W1L1a Ethics in Computing
-      cn: COMP4920 26T3 READING W1L1a Ethics in Computing
-    - en: COMP4920 26T3 READING W1L1b Ethics in Computing
-      cn: COMP4920 26T3 READING W1L1b Ethics in Computing
-    - en: COMP4920 26T3 READING W1L2a HCD Research Ethics
-      cn: COMP4920 26T3 READING W1L2a HCD Research Ethics
-    - en: COMP4920 26T3 READING W1L2b HCD Research Ethics
-      cn: COMP4920 26T3 READING W1L2b HCD Research Ethics
+    - en: Threat models and trust boundaries
+      cn: 威胁模型与信任边界
+    - en: Crypto primitives at course depth (not CTF spoilers)
+      cn: 课业深度的密码学原语（非 CTF 剧透）
+    - en: Web / network attack patterns the syllabus names
+      cn: 大纲点名的 Web / 网络攻击模式
+    - en: Secure coding habits for assignments
+      cn: 作业里的安全编码习惯
     slides:
     - src: /assets/teach/unsw-sydney/comp4920/sample/01-title.webp
-      alt_en: COMP4920 tutoring title
+      alt_en: COMP4920 tutoring · Title
       alt_cn: COMP4920 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp4920/sample/02-topics.webp
-      alt_en: COMP4920 tutoring topics
-      alt_cn: COMP4920 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp4920/sample/03-stuck.webp
-      alt_en: COMP4920 tutoring stuck points
-      alt_cn: COMP4920 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp4920/sample/04-tutoring.webp
-      alt_en: COMP4920 tutoring how tutoring runs
-      alt_cn: COMP4920 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp4920/sample/02-roadmap.webp
+      alt_en: COMP4920 tutoring · Roadmap
+      alt_cn: COMP4920 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp4920/sample/03-part-a-threat-modelling.webp
+      alt_en: COMP4920 tutoring · Part A · Threat modelling
+      alt_cn: COMP4920 辅导课件 · Part A · Threat modelling
+      caption_en: Part A · Threat modelling
+      caption_cn: Part A · Threat modelling
+    - src: /assets/teach/unsw-sydney/comp4920/sample/04-threat-model-skeleton.webp
+      alt_en: COMP4920 tutoring · Threat model skeleton
+      alt_cn: COMP4920 辅导课件 · Threat model skeleton
+      caption_en: Threat model skeleton
+      caption_cn: Threat model skeleton
+    - src: /assets/teach/unsw-sydney/comp4920/sample/05-primitive-jobs-not-interchangeable.webp
+      alt_en: COMP4920 tutoring · Primitive jobs (not interchangeable)
+      alt_cn: COMP4920 辅导课件 · Primitive jobs (not interchangeable)
+      caption_en: Primitive jobs (not interchangeable)
+      caption_cn: Primitive jobs (not interchangeable)
+    - src: /assets/teach/unsw-sydney/comp4920/sample/06-part-d-coding-habits.webp
+      alt_en: COMP4920 tutoring · Part D · Coding habits
+      alt_cn: COMP4920 辅导课件 · Part D · Coding habits
+      caption_en: Part D · Coding habits
+      caption_cn: Part D · Coding habits
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP5310
   title: Principles of Data Science
   material: Comp5310简化
@@ -766,10 +840,10 @@ courses:
     SQL, schema design, and databases; Math foundations and proof habits. Weekly arc about week 1–13,
     plus assessed work under deadline. People stall when terms outrun notes, when a class demo does not
     replay alone, or when the write-up / autograder wants a method the notebook never showed. Sample slides
-    from our tutoring intro deck are below.'
+    from our concept-review tutoring deck are below.'
   overview_cn: COMP5310 是新南威尔士大学的「数据科学与分析」课，既要真懂，也要能动手。常见内容包括数据清洗 / 分析表、ML 流水线、特征与模型选择、SQL、Schema 与数据库。大约第
     1–13 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -815,8 +889,9 @@ courses:
   sample_slides:
     title_en: COMP5310 — sample slides
     title_cn: COMP5310 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: ML pipelines, features, and model choice
       cn: ML 流水线、特征与模型选择
@@ -826,32 +901,42 @@ courses:
       cn: 编程基础与调试
     slides:
     - src: /assets/teach/unsw-sydney/comp5310/sample/01-title.webp
-      alt_en: COMP5310 tutoring title
+      alt_en: COMP5310 tutoring · Title
       alt_cn: COMP5310 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp5310/sample/02-topics.webp
-      alt_en: COMP5310 tutoring topics
-      alt_cn: COMP5310 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp5310/sample/03-stuck.webp
-      alt_en: COMP5310 tutoring stuck points
-      alt_cn: COMP5310 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp5310/sample/04-tutoring.webp
-      alt_en: COMP5310 tutoring how tutoring runs
-      alt_cn: COMP5310 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp5310/sample/02-roadmap.webp
+      alt_en: COMP5310 tutoring · Roadmap
+      alt_cn: COMP5310 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp5310/sample/03-part-a-tables.webp
+      alt_en: COMP5310 tutoring · Part A · Tables
+      alt_cn: COMP5310 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/unsw-sydney/comp5310/sample/04-tidy-data-rules.webp
+      alt_en: COMP5310 tutoring · Tidy data rules
+      alt_cn: COMP5310 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/unsw-sydney/comp5310/sample/05-eda-checklist.webp
+      alt_en: COMP5310 tutoring · EDA checklist
+      alt_cn: COMP5310 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/unsw-sydney/comp5310/sample/06-feature-hygiene.webp
+      alt_en: COMP5310 tutoring · Feature hygiene
+      alt_cn: COMP5310 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP6080
   title: Web Front-End Programming
 - code: COMP6771
@@ -870,10 +955,10 @@ courses:
   overview_en: 'COMP9021 Principles of Programming (Programming & software construction) at University
     of New South Wales. Common topics: Computer architecture and organisation; Programming foundations
     and debugging. People stall when terms outrun notes, when a class demo does not replay alone, or when
-    the write-up / autograder wants a method the notebook never showed. Sample slides from our tutoring
-    intro deck are below.'
+    the write-up / autograder wants a method the notebook never showed. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: COMP9021 是新南威尔士大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括计算机体系结构与组成、编程基础与调试。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Computer architecture and organisation
     cn: 计算机体系结构与组成
@@ -915,8 +1000,10 @@ courses:
   sample_slides:
     title_en: COMP9021 — sample slides
     title_cn: COMP9021 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
     - en: Reading the brief and designing before typing
       cn: 先读题、先设计，再动手写
@@ -928,32 +1015,42 @@ courses:
       cn: 单元测试与 autograder 反馈循环
     slides:
     - src: /assets/teach/unsw-sydney/comp9021/sample/01-title.webp
-      alt_en: COMP9021 tutoring title
+      alt_en: COMP9021 tutoring · Title
       alt_cn: COMP9021 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp9021/sample/02-topics.webp
-      alt_en: COMP9021 tutoring topics
-      alt_cn: COMP9021 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp9021/sample/03-stuck.webp
-      alt_en: COMP9021 tutoring stuck points
-      alt_cn: COMP9021 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp9021/sample/04-tutoring.webp
-      alt_en: COMP9021 tutoring how tutoring runs
-      alt_cn: COMP9021 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp9021/sample/02-roadmap.webp
+      alt_en: COMP9021 tutoring · Roadmap
+      alt_cn: COMP9021 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp9021/sample/03-part-a-from-brief-to-design.webp
+      alt_en: COMP9021 tutoring · Part A · From brief to design
+      alt_cn: COMP9021 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/unsw-sydney/comp9021/sample/04-brief-checklist-before-code.webp
+      alt_en: COMP9021 tutoring · Brief checklist (before code)
+      alt_cn: COMP9021 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/unsw-sydney/comp9021/sample/05-one-job-per-function.webp
+      alt_en: COMP9021 tutoring · One job per function
+      alt_cn: COMP9021 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/unsw-sydney/comp9021/sample/06-stack-heap-data-c.webp
+      alt_en: COMP9021 tutoring · Stack, heap, data (C)
+      alt_cn: COMP9021 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP9311
   title: Database Systems
 - code: COMP9315
@@ -972,9 +1069,9 @@ courses:
     of New South Wales. Common topics: Networking layers, packets, and protocols; Math foundations and
     proof habits. Weekly arc about week 1–3, plus assessed work under deadline. People stall when terms
     outrun notes, when a class demo does not replay alone, or when the write-up / autograder wants a method
-    the notebook never showed. Sample slides from our tutoring intro deck are below.'
+    the notebook never showed. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: COMP9331 是新南威尔士大学的「系统、网络与体系结构」课，既要真懂，也要能动手。常见内容包括网络分层、报文与协议、数学基础与证明习惯。大约第 1–3 周有连续周课，作业会要求你在
-    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -1014,45 +1111,57 @@ courses:
   sample_slides:
     title_en: COMP9331 — sample slides
     title_cn: COMP9331 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
     - en: Networking layers, packets, and protocols
       cn: 网络分层、报文与协议
-    - en: Lec Quiz W1
-      cn: Lec Quiz W1
-    - en: Lec Quiz W2
-      cn: Lec Quiz W2
-    - en: Lec Quiz W3
-      cn: Lec Quiz W3
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
     slides:
     - src: /assets/teach/unsw-sydney/comp9331/sample/01-title.webp
-      alt_en: COMP9331 tutoring title
+      alt_en: COMP9331 tutoring · Title
       alt_cn: COMP9331 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp9331/sample/02-topics.webp
-      alt_en: COMP9331 tutoring topics
-      alt_cn: COMP9331 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp9331/sample/03-stuck.webp
-      alt_en: COMP9331 tutoring stuck points
-      alt_cn: COMP9331 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp9331/sample/04-tutoring.webp
-      alt_en: COMP9331 tutoring how tutoring runs
-      alt_cn: COMP9331 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp9331/sample/02-roadmap.webp
+      alt_en: COMP9331 tutoring · Roadmap
+      alt_cn: COMP9331 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp9331/sample/03-part-a-processes-and-threads.webp
+      alt_en: COMP9331 tutoring · Part A · Processes and threads
+      alt_cn: COMP9331 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/unsw-sydney/comp9331/sample/04-process-vs-thread.webp
+      alt_en: COMP9331 tutoring · Process vs thread
+      alt_cn: COMP9331 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/unsw-sydney/comp9331/sample/05-critical-section-and-race.webp
+      alt_en: COMP9331 tutoring · Critical section and race
+      alt_cn: COMP9331 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/unsw-sydney/comp9331/sample/06-socket-http-sketch.webp
+      alt_en: COMP9331 tutoring · Socket + HTTP sketch
+      alt_cn: COMP9331 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP9414
   title: Artificial Intelligence
   material: comp9414-ai
@@ -1067,10 +1176,10 @@ courses:
     Common topics: Neural nets / deep learning / AI; Networking layers, packets, and protocols; Security
     / privacy threat models and labs. Assessed work expects you to apply the same ideas under deadline.
     People stall when terms outrun notes, when a class demo does not replay alone, or when the write-up
-    / autograder wants a method the notebook never showed. Sample slides from our tutoring intro deck
-    are below.'
+    / autograder wants a method the notebook never showed. Sample slides from our concept-review tutoring
+    deck are below.'
   overview_cn: COMP9414 是新南威尔士大学的「机器学习与人工智能」课，既要真懂，也要能动手。常见内容包括神经网络 / 深度学习 / AI、网络分层、报文与协议、安全 / 隐私威胁模型与实验。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -1111,8 +1220,10 @@ courses:
   sample_slides:
     title_en: COMP9414 — sample slides
     title_cn: COMP9414 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: 'Title, Roadmap, Part A · Supervised learning, Supervised vs unsupervised, Loss: what training
+      minimises, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Supervised learning、Supervised vs unsupervised、Loss:
+      what training minimises、Sigmoid and the decision rule。'
     bullets:
     - en: Supervised vs unsupervised intuition
       cn: 监督 / 无监督学习的直觉区分
@@ -1124,32 +1235,42 @@ courses:
       cn: 线性模型、逻辑回归与决策边界
     slides:
     - src: /assets/teach/unsw-sydney/comp9414/sample/01-title.webp
-      alt_en: COMP9414 tutoring title
+      alt_en: COMP9414 tutoring · Title
       alt_cn: COMP9414 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp9414/sample/02-topics.webp
-      alt_en: COMP9414 tutoring topics
-      alt_cn: COMP9414 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp9414/sample/03-stuck.webp
-      alt_en: COMP9414 tutoring stuck points
-      alt_cn: COMP9414 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp9414/sample/04-tutoring.webp
-      alt_en: COMP9414 tutoring how tutoring runs
-      alt_cn: COMP9414 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp9414/sample/02-roadmap.webp
+      alt_en: COMP9414 tutoring · Roadmap
+      alt_cn: COMP9414 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp9414/sample/03-part-a-supervised-learning.webp
+      alt_en: COMP9414 tutoring · Part A · Supervised learning
+      alt_cn: COMP9414 辅导课件 · Part A · Supervised learning
+      caption_en: Part A · Supervised learning
+      caption_cn: Part A · Supervised learning
+    - src: /assets/teach/unsw-sydney/comp9414/sample/04-supervised-vs-unsupervised.webp
+      alt_en: COMP9414 tutoring · Supervised vs unsupervised
+      alt_cn: COMP9414 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/unsw-sydney/comp9414/sample/05-loss-what-training-minimises.webp
+      alt_en: 'COMP9414 tutoring · Loss: what training minimises'
+      alt_cn: 'COMP9414 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/unsw-sydney/comp9414/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: COMP9414 tutoring · Sigmoid and the decision rule
+      alt_cn: COMP9414 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP9417
   title: Machine Learning and Data Mining
 - code: COMP9444
@@ -1168,9 +1289,9 @@ courses:
     topics: Neural nets / deep learning / AI; Algorithms, ADTs, and complexity; Automata, formal languages,
     and proofs; Computer vision pipelines. People stall when terms outrun notes, when a class demo does
     not replay alone, or when the write-up / autograder wants a method the notebook never showed. Sample
-    slides from our tutoring intro deck are below.'
+    slides from our concept-review tutoring deck are below.'
   overview_cn: COMP9517 是新南威尔士大学的「机器学习与人工智能」课，既要真懂，也要能动手。常见内容包括神经网络 / 深度学习 / AI、算法、ADT 与复杂度、自动机、形式语言与证明。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Neural nets / deep learning / AI
     cn: 神经网络 / 深度学习 / AI
@@ -1208,8 +1329,10 @@ courses:
   sample_slides:
     title_en: COMP9517 — sample slides
     title_cn: COMP9517 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: 'Title, Roadmap, Part A · Supervised learning, Supervised vs unsupervised, Loss: what training
+      minimises, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Supervised learning、Supervised vs unsupervised、Loss:
+      what training minimises、Sigmoid and the decision rule。'
     bullets:
     - en: Neural nets / deep learning / AI
       cn: 神经网络 / 深度学习 / AI
@@ -1221,32 +1344,42 @@ courses:
       cn: 训练 / 验证 / 测试划分与数据泄漏
     slides:
     - src: /assets/teach/unsw-sydney/comp9517/sample/01-title.webp
-      alt_en: COMP9517 tutoring title
+      alt_en: COMP9517 tutoring · Title
       alt_cn: COMP9517 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp9517/sample/02-topics.webp
-      alt_en: COMP9517 tutoring topics
-      alt_cn: COMP9517 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp9517/sample/03-stuck.webp
-      alt_en: COMP9517 tutoring stuck points
-      alt_cn: COMP9517 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp9517/sample/04-tutoring.webp
-      alt_en: COMP9517 tutoring how tutoring runs
-      alt_cn: COMP9517 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp9517/sample/02-roadmap.webp
+      alt_en: COMP9517 tutoring · Roadmap
+      alt_cn: COMP9517 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp9517/sample/03-part-a-supervised-learning.webp
+      alt_en: COMP9517 tutoring · Part A · Supervised learning
+      alt_cn: COMP9517 辅导课件 · Part A · Supervised learning
+      caption_en: Part A · Supervised learning
+      caption_cn: Part A · Supervised learning
+    - src: /assets/teach/unsw-sydney/comp9517/sample/04-supervised-vs-unsupervised.webp
+      alt_en: COMP9517 tutoring · Supervised vs unsupervised
+      alt_cn: COMP9517 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/unsw-sydney/comp9517/sample/05-loss-what-training-minimises.webp
+      alt_en: 'COMP9517 tutoring · Loss: what training minimises'
+      alt_cn: 'COMP9517 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/unsw-sydney/comp9517/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: COMP9517 tutoring · Sigmoid and the decision rule
+      alt_cn: COMP9517 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP9601
   title: Computer Systems
   material: Comp9601简化
@@ -1261,9 +1394,9 @@ courses:
     Wales. Common topics: Networking layers, packets, and protocols; Computer architecture and organisation.
     Weekly arc about week 1–13, plus assessed work under deadline. People stall when terms outrun notes,
     when a class demo does not replay alone, or when the write-up / autograder wants a method the notebook
-    never showed. Sample slides from our tutoring intro deck are below.'
+    never showed. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: COMP9601 是新南威尔士大学的「系统、网络与体系结构」课，既要真懂，也要能动手。常见内容包括网络分层、报文与协议、计算机体系结构与组成。大约第 1–13 周有连续周课，作业会要求你在
-    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Networking layers, packets, and protocols
     cn: 网络分层、报文与协议
@@ -1309,45 +1442,57 @@ courses:
   sample_slides:
     title_en: COMP9601 — sample slides
     title_cn: COMP9601 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
+      and race、Socket + HTTP sketch。
     bullets:
-    - en: Lecture
-      cn: Lecture
-    - en: Lecture 2
-      cn: Lecture 2
-    - en: Tutorial
-      cn: Tutorial
-    - en: Tutorial Solution
-      cn: Tutorial Solution
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
+    - en: OS scheduling and concurrency bugs
+      cn: 操作系统调度与并发 bug
     slides:
     - src: /assets/teach/unsw-sydney/comp9601/sample/01-title.webp
-      alt_en: COMP9601 tutoring title
+      alt_en: COMP9601 tutoring · Title
       alt_cn: COMP9601 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/comp9601/sample/02-topics.webp
-      alt_en: COMP9601 tutoring topics
-      alt_cn: COMP9601 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/comp9601/sample/03-stuck.webp
-      alt_en: COMP9601 tutoring stuck points
-      alt_cn: COMP9601 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/comp9601/sample/04-tutoring.webp
-      alt_en: COMP9601 tutoring how tutoring runs
-      alt_cn: COMP9601 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/comp9601/sample/02-roadmap.webp
+      alt_en: COMP9601 tutoring · Roadmap
+      alt_cn: COMP9601 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp9601/sample/03-part-a-processes-and-threads.webp
+      alt_en: COMP9601 tutoring · Part A · Processes and threads
+      alt_cn: COMP9601 辅导课件 · Part A · Processes and threads
+      caption_en: Part A · Processes and threads
+      caption_cn: Part A · Processes and threads
+    - src: /assets/teach/unsw-sydney/comp9601/sample/04-process-vs-thread.webp
+      alt_en: COMP9601 tutoring · Process vs thread
+      alt_cn: COMP9601 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/unsw-sydney/comp9601/sample/05-critical-section-and-race.webp
+      alt_en: COMP9601 tutoring · Critical section and race
+      alt_cn: COMP9601 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/unsw-sydney/comp9601/sample/06-socket-http-sketch.webp
+      alt_en: COMP9601 tutoring · Socket + HTTP sketch
+      alt_cn: COMP9601 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: DATA1001
   title: Introduction to Data Science and Decisions
 - code: DATA9001
@@ -1422,9 +1567,9 @@ courses:
     topics: OS / systems programming; Security / privacy threat models and labs. Weekly arc about week
     1–3, plus assessed work under deadline. People stall when terms outrun notes, when a class demo does
     not replay alone, or when the write-up / autograder wants a method the notebook never showed. Sample
-    slides from our tutoring intro deck are below.'
+    slides from our concept-review tutoring deck are below.'
   overview_cn: INFO3616 是新南威尔士大学的「安全与隐私」课，既要真懂，也要能动手。常见内容包括操作系统 / 系统编程、安全 / 隐私威胁模型与实验。大约第 1–3 周有连续周课，作业会要求你在
-    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: OS / systems programming
     cn: 操作系统 / 系统编程
@@ -1466,8 +1611,10 @@ courses:
   sample_slides:
     title_en: INFO3616 — sample slides
     title_cn: INFO3616 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Threat modelling, Threat model skeleton, Primitive jobs (not interchangeable),
+      Part D · Coding habits from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Threat modelling、Threat model skeleton、Primitive jobs
+      (not interchangeable)、Part D · Coding habits。
     bullets:
     - en: Threat models and trust boundaries
       cn: 威胁模型与信任边界
@@ -1479,32 +1626,42 @@ courses:
       cn: 作业里的安全编码习惯
     slides:
     - src: /assets/teach/unsw-sydney/info3616/sample/01-title.webp
-      alt_en: INFO3616 tutoring title
+      alt_en: INFO3616 tutoring · Title
       alt_cn: INFO3616 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/info3616/sample/02-topics.webp
-      alt_en: INFO3616 tutoring topics
-      alt_cn: INFO3616 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/info3616/sample/03-stuck.webp
-      alt_en: INFO3616 tutoring stuck points
-      alt_cn: INFO3616 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/info3616/sample/04-tutoring.webp
-      alt_en: INFO3616 tutoring how tutoring runs
-      alt_cn: INFO3616 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/info3616/sample/02-roadmap.webp
+      alt_en: INFO3616 tutoring · Roadmap
+      alt_cn: INFO3616 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/info3616/sample/03-part-a-threat-modelling.webp
+      alt_en: INFO3616 tutoring · Part A · Threat modelling
+      alt_cn: INFO3616 辅导课件 · Part A · Threat modelling
+      caption_en: Part A · Threat modelling
+      caption_cn: Part A · Threat modelling
+    - src: /assets/teach/unsw-sydney/info3616/sample/04-threat-model-skeleton.webp
+      alt_en: INFO3616 tutoring · Threat model skeleton
+      alt_cn: INFO3616 辅导课件 · Threat model skeleton
+      caption_en: Threat model skeleton
+      caption_cn: Threat model skeleton
+    - src: /assets/teach/unsw-sydney/info3616/sample/05-primitive-jobs-not-interchangeable.webp
+      alt_en: INFO3616 tutoring · Primitive jobs (not interchangeable)
+      alt_cn: INFO3616 辅导课件 · Primitive jobs (not interchangeable)
+      caption_en: Primitive jobs (not interchangeable)
+      caption_cn: Primitive jobs (not interchangeable)
+    - src: /assets/teach/unsw-sydney/info3616/sample/06-part-d-coding-habits.webp
+      alt_en: INFO3616 tutoring · Part D · Coding habits
+      alt_cn: INFO3616 辅导课件 · Part D · Coding habits
+      caption_en: Part D · Coding habits
+      caption_cn: Part D · Coding habits
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: INFS1603
   title: Introduction to Business Databases
 - code: INFS1701
@@ -1523,10 +1680,10 @@ courses:
   overview_en: 'MATH1131 Mathematics 1A (Math for computer science) at University of New South Wales.
     Common topics: Math foundations and proof habits. Assessed work expects you to apply the same ideas
     under deadline. People stall when terms outrun notes, when a class demo does not replay alone, or
-    when the write-up / autograder wants a method the notebook never showed. Sample slides from our tutoring
-    intro deck are below.'
+    when the write-up / autograder wants a method the notebook never showed. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: MATH1131 是新南威尔士大学的「计算机数学基础」课，既要真懂，也要能动手。常见内容包括数学基础与证明习惯。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
@@ -1569,8 +1726,10 @@ courses:
   sample_slides:
     title_en: MATH1131 — sample slides
     title_cn: MATH1131 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Vectors and matrices in CS, Probability essentials, Part D · Proofs, Proof
+      checklist from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Vectors and matrices in CS、Probability essentials、Part D ·
+      Proofs、Proof checklist。
     bullets:
     - en: Linear algebra objects used in ML and graphics
       cn: 机器学习与图形学里用到的线性代数对象
@@ -1582,30 +1741,40 @@ courses:
       cn: 课业节奏下的离散数学证明
     slides:
     - src: /assets/teach/unsw-sydney/math1131/sample/01-title.webp
-      alt_en: MATH1131 tutoring title
+      alt_en: MATH1131 tutoring · Title
       alt_cn: MATH1131 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/unsw-sydney/math1131/sample/02-topics.webp
-      alt_en: MATH1131 tutoring topics
-      alt_cn: MATH1131 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/unsw-sydney/math1131/sample/03-stuck.webp
-      alt_en: MATH1131 tutoring stuck points
-      alt_cn: MATH1131 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/unsw-sydney/math1131/sample/04-tutoring.webp
-      alt_en: MATH1131 tutoring how tutoring runs
-      alt_cn: MATH1131 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/unsw-sydney/math1131/sample/02-roadmap.webp
+      alt_en: MATH1131 tutoring · Roadmap
+      alt_cn: MATH1131 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/math1131/sample/03-vectors-and-matrices-in-cs.webp
+      alt_en: MATH1131 tutoring · Vectors and matrices in CS
+      alt_cn: MATH1131 辅导课件 · Vectors and matrices in CS
+      caption_en: Vectors and matrices in CS
+      caption_cn: Vectors and matrices in CS
+    - src: /assets/teach/unsw-sydney/math1131/sample/04-probability-essentials.webp
+      alt_en: MATH1131 tutoring · Probability essentials
+      alt_cn: MATH1131 辅导课件 · Probability essentials
+      caption_en: Probability essentials
+      caption_cn: Probability essentials
+    - src: /assets/teach/unsw-sydney/math1131/sample/05-part-d-proofs.webp
+      alt_en: MATH1131 tutoring · Part D · Proofs
+      alt_cn: MATH1131 辅导课件 · Part D · Proofs
+      caption_en: Part D · Proofs
+      caption_cn: Part D · Proofs
+    - src: /assets/teach/unsw-sydney/math1131/sample/06-proof-checklist.webp
+      alt_en: MATH1131 tutoring · Proof checklist
+      alt_cn: MATH1131 辅导课件 · Proof checklist
+      caption_en: Proof checklist
+      caption_cn: Proof checklist
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

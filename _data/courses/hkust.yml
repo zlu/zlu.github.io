@@ -23,9 +23,9 @@ courses:
   overview_en: COMP1023 Introduction to Programming / Python sits in programming & software construction.
     Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
     when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our tutoring intro deck are below.
+    our concept-review tutoring deck are below.
   overview_cn: COMP1023 是香港科技大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Programming foundations and debugging
     cn: 编程基础与调试
@@ -65,8 +65,10 @@ courses:
   sample_slides:
     title_en: COMP1023 — sample slides
     title_cn: COMP1023 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
     - en: Reading the brief and designing before typing
       cn: 先读题、先设计，再动手写
@@ -78,32 +80,42 @@ courses:
       cn: 单元测试与 autograder 反馈循环
     slides:
     - src: /assets/teach/hkust/comp1023/sample/01-title.webp
-      alt_en: COMP1023 tutoring title
+      alt_en: COMP1023 tutoring · Title
       alt_cn: COMP1023 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/hkust/comp1023/sample/02-topics.webp
-      alt_en: COMP1023 tutoring topics
-      alt_cn: COMP1023 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/hkust/comp1023/sample/03-stuck.webp
-      alt_en: COMP1023 tutoring stuck points
-      alt_cn: COMP1023 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/hkust/comp1023/sample/04-tutoring.webp
-      alt_en: COMP1023 tutoring how tutoring runs
-      alt_cn: COMP1023 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/hkust/comp1023/sample/02-roadmap.webp
+      alt_en: COMP1023 tutoring · Roadmap
+      alt_cn: COMP1023 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/hkust/comp1023/sample/03-part-a-from-brief-to-design.webp
+      alt_en: COMP1023 tutoring · Part A · From brief to design
+      alt_cn: COMP1023 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/hkust/comp1023/sample/04-brief-checklist-before-code.webp
+      alt_en: COMP1023 tutoring · Brief checklist (before code)
+      alt_cn: COMP1023 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/hkust/comp1023/sample/05-one-job-per-function.webp
+      alt_en: COMP1023 tutoring · One job per function
+      alt_cn: COMP1023 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/hkust/comp1023/sample/06-stack-heap-data-c.webp
+      alt_en: COMP1023 tutoring · Stack, heap, data (C)
+      alt_cn: COMP1023 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2011
   title: Programming with C++
 - code: COMP2012
@@ -134,9 +146,9 @@ courses:
     Kong University of Science and Technology. Common topics: ML pipelines, features, and model choice.
     Weekly arc about week 1–1, plus assessed work under deadline. People stall when terms outrun notes,
     when a class demo does not replay alone, or when the write-up / autograder wants a method the notebook
-    never showed. Sample slides from our tutoring intro deck are below.'
+    never showed. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: DASC2010 是香港科技大学的「数据科学与分析」课，既要真懂，也要能动手。常见内容包括ML 流水线、特征与模型选择。大约第 1–1 周有连续周课，作业会要求你在 DDL
-    下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: ML pipelines, features, and model choice
     cn: ML 流水线、特征与模型选择
@@ -178,8 +190,9 @@ courses:
   sample_slides:
     title_en: DASC2010 — sample slides
     title_cn: DASC2010 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: Pandas / dplyr style transforms and joins
       cn: Pandas / dplyr 风格的变换与 join
@@ -191,32 +204,42 @@ courses:
       cn: 能支撑结论的可视化
     slides:
     - src: /assets/teach/hkust/dasc2010/sample/01-title.webp
-      alt_en: DASC2010 tutoring title
+      alt_en: DASC2010 tutoring · Title
       alt_cn: DASC2010 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/hkust/dasc2010/sample/02-topics.webp
-      alt_en: DASC2010 tutoring topics
-      alt_cn: DASC2010 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/hkust/dasc2010/sample/03-stuck.webp
-      alt_en: DASC2010 tutoring stuck points
-      alt_cn: DASC2010 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/hkust/dasc2010/sample/04-tutoring.webp
-      alt_en: DASC2010 tutoring how tutoring runs
-      alt_cn: DASC2010 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/hkust/dasc2010/sample/02-roadmap.webp
+      alt_en: DASC2010 tutoring · Roadmap
+      alt_cn: DASC2010 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/hkust/dasc2010/sample/03-part-a-tables.webp
+      alt_en: DASC2010 tutoring · Part A · Tables
+      alt_cn: DASC2010 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/hkust/dasc2010/sample/04-tidy-data-rules.webp
+      alt_en: DASC2010 tutoring · Tidy data rules
+      alt_cn: DASC2010 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/hkust/dasc2010/sample/05-eda-checklist.webp
+      alt_en: DASC2010 tutoring · EDA checklist
+      alt_cn: DASC2010 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/hkust/dasc2010/sample/06-feature-hygiene.webp
+      alt_en: DASC2010 tutoring · Feature hygiene
+      alt_cn: DASC2010 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: MSc DDM Written Exam
   code: DDM 理学硕士笔试
   material: MSc DDM Written Exam
@@ -316,10 +339,10 @@ courses:
   overview_en: 'FINA ML Financial Machine Learning (Machine learning & AI) at The Hong Kong University
     of Science and Technology. Common topics: Web / mobile app structure; NLP / language-model coursework.
     People stall when terms outrun notes, when a class demo does not replay alone, or when the write-up
-    / autograder wants a method the notebook never showed. Sample slides from our tutoring intro deck
-    are below.'
+    / autograder wants a method the notebook never showed. Sample slides from our concept-review tutoring
+    deck are below.'
   overview_cn: FINA ML 是香港科技大学的「机器学习与人工智能」课，既要真懂，也要能动手。常见内容包括Web / 移动应用结构、NLP / 语言模型课业。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Web / mobile app structure
     cn: Web / 移动应用结构
@@ -361,8 +384,10 @@ courses:
   sample_slides:
     title_en: FINA ML — sample slides
     title_cn: FINA ML — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: 'Title, Roadmap, Part A · Supervised learning, Supervised vs unsupervised, Loss: what training
+      minimises, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Supervised learning、Supervised vs unsupervised、Loss:
+      what training minimises、Sigmoid and the decision rule。'
     bullets:
     - en: Supervised vs unsupervised intuition
       cn: 监督 / 无监督学习的直觉区分
@@ -374,30 +399,40 @@ courses:
       cn: 线性模型、逻辑回归与决策边界
     slides:
     - src: /assets/teach/hkust/fina-ml/sample/01-title.webp
-      alt_en: FINA ML tutoring title
+      alt_en: FINA ML tutoring · Title
       alt_cn: FINA ML 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/hkust/fina-ml/sample/02-topics.webp
-      alt_en: FINA ML tutoring topics
-      alt_cn: FINA ML 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/hkust/fina-ml/sample/03-stuck.webp
-      alt_en: FINA ML tutoring stuck points
-      alt_cn: FINA ML 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/hkust/fina-ml/sample/04-tutoring.webp
-      alt_en: FINA ML tutoring how tutoring runs
-      alt_cn: FINA ML 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/hkust/fina-ml/sample/02-roadmap.webp
+      alt_en: FINA ML tutoring · Roadmap
+      alt_cn: FINA ML 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/hkust/fina-ml/sample/03-part-a-supervised-learning.webp
+      alt_en: FINA ML tutoring · Part A · Supervised learning
+      alt_cn: FINA ML 辅导课件 · Part A · Supervised learning
+      caption_en: Part A · Supervised learning
+      caption_cn: Part A · Supervised learning
+    - src: /assets/teach/hkust/fina-ml/sample/04-supervised-vs-unsupervised.webp
+      alt_en: FINA ML tutoring · Supervised vs unsupervised
+      alt_cn: FINA ML 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/hkust/fina-ml/sample/05-loss-what-training-minimises.webp
+      alt_en: 'FINA ML tutoring · Loss: what training minimises'
+      alt_cn: 'FINA ML 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/hkust/fina-ml/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: FINA ML tutoring · Sigmoid and the decision rule
+      alt_cn: FINA ML 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

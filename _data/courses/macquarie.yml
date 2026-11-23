@@ -20,9 +20,9 @@ courses:
     University. Common topics: Algorithms, ADTs, and complexity. Weekly arc about week 2–3, plus assessed
     work under deadline. People stall when terms outrun notes, when a class demo does not replay alone,
     or when the write-up / autograder wants a method the notebook never showed. Sample slides from our
-    tutoring intro deck are below.'
+    concept-review tutoring deck are below.'
   overview_cn: COMP6010 是麦考瑞大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度。大约第 2–3 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Algorithms, ADTs, and complexity
     cn: 算法、ADT 与复杂度
@@ -64,45 +64,57 @@ courses:
   sample_slides:
     title_en: COMP6010 — sample slides
     title_cn: COMP6010 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Complexity, Big-O in exam language, Pick the ADT by the operation,
+      DP four-line template from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Complexity、Big-O in exam language、Pick the ADT by
+      the operation、DP four-line template。
     bullets:
-    - en: W2 Practice Conditions (page 2 of 3) iLearn
-      cn: W2 Practice Conditions (page 2 of 3) iLearn
-    - en: W2 Practice Conditions (page 3 of 3) iLearn
-      cn: W2 Practice Conditions (page 3 of 3) iLearn
-    - en: W3 Practice Loops (page 2 of 4) iLearn
-      cn: W3 Practice Loops (page 2 of 4) iLearn
-    - en: W3 Practice Loops (page 3 of 4) iLearn
-      cn: W3 Practice Loops (page 3 of 4) iLearn
+    - en: Asymptotic complexity and comparing candidates
+      cn: 渐近复杂度与方案比较
+    - en: Arrays, lists, trees, heaps, hash tables
+      cn: 数组、链表、树、堆、哈希表
+    - en: Sorting, searching, and graph traversals
+      cn: 排序、搜索与图遍历
+    - en: Greedy, divide-and-conquer, and dynamic programming patterns
+      cn: 贪心、分治与动态规划模式
     slides:
     - src: /assets/teach/macquarie-university/comp6010/sample/01-title.webp
-      alt_en: COMP6010 tutoring title
+      alt_en: COMP6010 tutoring · Title
       alt_cn: COMP6010 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/macquarie-university/comp6010/sample/02-topics.webp
-      alt_en: COMP6010 tutoring topics
-      alt_cn: COMP6010 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/macquarie-university/comp6010/sample/03-stuck.webp
-      alt_en: COMP6010 tutoring stuck points
-      alt_cn: COMP6010 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/macquarie-university/comp6010/sample/04-tutoring.webp
-      alt_en: COMP6010 tutoring how tutoring runs
-      alt_cn: COMP6010 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/macquarie-university/comp6010/sample/02-roadmap.webp
+      alt_en: COMP6010 tutoring · Roadmap
+      alt_cn: COMP6010 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/macquarie-university/comp6010/sample/03-part-a-complexity.webp
+      alt_en: COMP6010 tutoring · Part A · Complexity
+      alt_cn: COMP6010 辅导课件 · Part A · Complexity
+      caption_en: Part A · Complexity
+      caption_cn: Part A · Complexity
+    - src: /assets/teach/macquarie-university/comp6010/sample/04-big-o-in-exam-language.webp
+      alt_en: COMP6010 tutoring · Big-O in exam language
+      alt_cn: COMP6010 辅导课件 · Big-O in exam language
+      caption_en: Big-O in exam language
+      caption_cn: Big-O in exam language
+    - src: /assets/teach/macquarie-university/comp6010/sample/05-pick-the-adt-by-the-operation.webp
+      alt_en: COMP6010 tutoring · Pick the ADT by the operation
+      alt_cn: COMP6010 辅导课件 · Pick the ADT by the operation
+      caption_en: Pick the ADT by the operation
+      caption_cn: Pick the ADT by the operation
+    - src: /assets/teach/macquarie-university/comp6010/sample/06-dp-four-line-template.webp
+      alt_en: COMP6010 tutoring · DP four-line template
+      alt_cn: COMP6010 辅导课件 · DP four-line template
+      caption_en: DP four-line template
+      caption_cn: DP four-line template
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3770/6770
   title: Management of IT Systems and Projects
   material: comp3770
@@ -113,9 +125,10 @@ courses:
   lead_cn: COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架 转化成改卷人认得的具体提交物，而不只是会技术用语。
   overview_en: Management of IT Systems and Projects emphasises structured reports, assignment guidelines,
     and defending decisions clearly. Students stall when report templates feel vague, or when technical
-    and managerial language collide in one document. Sample slides from our tutoring intro deck are below.
+    and managerial language collide in one document. Sample slides from our concept-review tutoring deck
+    are below.
   overview_cn: Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。 卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Reading assignment guidelines into a section plan
     cn: 把作业指南转化成章节计划
@@ -151,8 +164,10 @@ courses:
   sample_slides: &id001
     title_en: COMP3770 — sample slides
     title_cn: COMP3770 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Stack, heap, data (C) from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
+      job per function、Stack, heap, data (C)。
     bullets:
     - en: Reading the brief and designing before typing
       cn: 先读题、先设计，再动手写
@@ -164,32 +179,42 @@ courses:
       cn: 单元测试与 autograder 反馈循环
     slides:
     - src: /assets/teach/macquarie-university/comp3770/sample/01-title.webp
-      alt_en: COMP3770 tutoring title
+      alt_en: COMP3770 tutoring · Title
       alt_cn: COMP3770 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/macquarie-university/comp3770/sample/02-topics.webp
-      alt_en: COMP3770 tutoring topics
-      alt_cn: COMP3770 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/macquarie-university/comp3770/sample/03-stuck.webp
-      alt_en: COMP3770 tutoring stuck points
-      alt_cn: COMP3770 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/macquarie-university/comp3770/sample/04-tutoring.webp
-      alt_en: COMP3770 tutoring how tutoring runs
-      alt_cn: COMP3770 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/macquarie-university/comp3770/sample/02-roadmap.webp
+      alt_en: COMP3770 tutoring · Roadmap
+      alt_cn: COMP3770 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/macquarie-university/comp3770/sample/03-part-a-from-brief-to-design.webp
+      alt_en: COMP3770 tutoring · Part A · From brief to design
+      alt_cn: COMP3770 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/macquarie-university/comp3770/sample/04-brief-checklist-before-code.webp
+      alt_en: COMP3770 tutoring · Brief checklist (before code)
+      alt_cn: COMP3770 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/macquarie-university/comp3770/sample/05-one-job-per-function.webp
+      alt_en: COMP3770 tutoring · One job per function
+      alt_cn: COMP3770 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/macquarie-university/comp3770/sample/06-stack-heap-data-c.webp
+      alt_en: COMP3770 tutoring · Stack, heap, data (C)
+      alt_cn: COMP3770 辅导课件 · Stack, heap, data (C)
+      caption_en: Stack, heap, data (C)
+      caption_cn: Stack, heap, data (C)
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP1000
   title: Introduction to Computer Programming
 - code: COMP1010
@@ -329,9 +354,10 @@ courses:
   lead_cn: COMP3770 是项目与系统管理课：brief、报告与流程术语。难的是把抽象管理框架 转化成改卷人认得的具体提交物，而不只是会技术用语。
   overview_en: Management of IT Systems and Projects emphasises structured reports, assignment guidelines,
     and defending decisions clearly. Students stall when report templates feel vague, or when technical
-    and managerial language collide in one document. Sample slides from our tutoring intro deck are below.
+    and managerial language collide in one document. Sample slides from our concept-review tutoring deck
+    are below.
   overview_cn: Management of IT Systems and Projects 强调结构化报告、作业指南，以及把决策理由说清楚。 卡点常在报告模板含糊，或技术语言与管理语言在同一份文档里打架。
-    下方有我们辅导入门课件的样例页。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Reading assignment guidelines into a section plan
     cn: 把作业指南转化成章节计划
@@ -368,6 +394,6 @@ courses:
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

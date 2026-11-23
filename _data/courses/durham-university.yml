@@ -16,9 +16,10 @@ courses:
   lead_cn: 在杜伦大学上 COMP2271，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: COMP2271 Datascience sits in data science & analytics. Students stall when terminology
     outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our tutoring intro deck are below.
+    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
+    are below.
   overview_cn: COMP2271 是杜伦大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们辅导入门课件的样例页。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Data wrangling / analytics tables
     cn: 数据清洗 / 分析表
@@ -60,8 +61,9 @@ courses:
   sample_slides:
     title_en: COMP2271 — sample slides
     title_cn: COMP2271 — 辅导课件样例
-    lead_en: 'Four pages from our tutoring intro deck: title, topics, stuck points, and how sessions run.'
-    lead_cn: 我们辅导入门课件的四页：封面、讲什么、常见卡点、怎么上。
+    lead_en: Title, Roadmap, Part A · Tables, Tidy data rules, EDA checklist, Feature hygiene from our
+      concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Tables、Tidy data rules、EDA checklist、Feature hygiene。
     bullets:
     - en: Pandas / dplyr style transforms and joins
       cn: Pandas / dplyr 风格的变换与 join
@@ -73,30 +75,40 @@ courses:
       cn: 能支撑结论的可视化
     slides:
     - src: /assets/teach/durham-university/comp2271/sample/01-title.webp
-      alt_en: COMP2271 tutoring title
+      alt_en: COMP2271 tutoring · Title
       alt_cn: COMP2271 辅导课件 · 封面
       caption_en: Title
       caption_cn: 封面
-    - src: /assets/teach/durham-university/comp2271/sample/02-topics.webp
-      alt_en: COMP2271 tutoring topics
-      alt_cn: COMP2271 辅导课件 · 讲什么
-      caption_en: Topics
-      caption_cn: 讲什么
-    - src: /assets/teach/durham-university/comp2271/sample/03-stuck.webp
-      alt_en: COMP2271 tutoring stuck points
-      alt_cn: COMP2271 辅导课件 · 常见卡点
-      caption_en: Stuck points
-      caption_cn: 常见卡点
-    - src: /assets/teach/durham-university/comp2271/sample/04-tutoring.webp
-      alt_en: COMP2271 tutoring how tutoring runs
-      alt_cn: COMP2271 辅导课件 · 怎么上
-      caption_en: How tutoring runs
-      caption_cn: 怎么上
+    - src: /assets/teach/durham-university/comp2271/sample/02-roadmap.webp
+      alt_en: COMP2271 tutoring · Roadmap
+      alt_cn: COMP2271 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/durham-university/comp2271/sample/03-part-a-tables.webp
+      alt_en: COMP2271 tutoring · Part A · Tables
+      alt_cn: COMP2271 辅导课件 · Part A · Tables
+      caption_en: Part A · Tables
+      caption_cn: Part A · Tables
+    - src: /assets/teach/durham-university/comp2271/sample/04-tidy-data-rules.webp
+      alt_en: COMP2271 tutoring · Tidy data rules
+      alt_cn: COMP2271 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/durham-university/comp2271/sample/05-eda-checklist.webp
+      alt_en: COMP2271 tutoring · EDA checklist
+      alt_cn: COMP2271 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/durham-university/comp2271/sample/06-feature-hygiene.webp
+      alt_en: COMP2271 tutoring · Feature hygiene
+      alt_cn: COMP2271 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our tutoring intro deck are on this page.
-    a_cn: 有，本页有我们辅导入门课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---
