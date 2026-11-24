@@ -4,128 +4,247 @@ abbr: CityU Macau
 name_cn: 澳门城市大学
 teaching_folder: 澳门城市大学
 courses:
-  - topics:
-      - en: SQL, schema design, and databases
-        cn: SQL、Schema 与数据库
-      - en: "Week 1: 0248 数据库系统概念第六版(中文版)"
-        cn: 第 1 周：0248 数据库系统概念第六版(中文版)
-      - en: "Week 1: 1 基础篇 数据库概述"
-        cn: 第 1 周：1 基础篇 数据库概述
-      - en: "Week 2: 关系数据库 选择题"
-        cn: 第 2 周：关系数据库 选择题
-      - en: "Week 2: 第2章 关系数据库"
-        cn: 第 2 周：第2章 关系数据库
-      - en: "Week 3: 第2章 关系数据库"
-        cn: 第 3 周：第2章 关系数据库
-      - en: "Week 4: 第3章 关系数据库标准语言SQL（Part 1）(2)"
-        cn: 第 4 周：第3章 关系数据库标准语言SQL（Part 1）(2)
-      - en: "Week 5: 数据库标准语言SQL"
-        cn: 第 5 周：数据库标准语言SQL
-    meta_description_en: BCS010 CityU Macau tutoring (數據庫系統). Weekly lecture arc
-      moves on before last week’s method is solid? Bilingual Chinese/English
-      help.
-    material: BCS010-數據庫系統
-    theme: databases
-    session_angles:
-      - en: Rebuild this week’s lecture idea before touching the homework
-        cn: 先重建当周讲座概念，再碰作业
-      - en: Sketch the ER, then write queries against it
-        cn: 先画 ER，再对着写查询
-      - en: Explain a query plan in plain language
-        cn: 用白话解释执行计划
-    lead_en: BCS010 數據庫系統 at City University of Macau is where one wrong schema or
-      join quietly breaks every later query. The hard part is turning that arc
-      into a method you can repeat on the next brief — not rereading slides the
-      night before.
-    tutoring:
-      - en: "Lecture sync for BCS010: bilingual catch-up so workshop / tutorial language
-          matches the lectures."
-        cn: 按 BCS010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-      - en: "Assignments: approach review and live debug against the real brief."
-        cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-      - en: "Exam / quiz prep: timed drills on weak spots and recurring question shapes
-          for this course."
-        cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
-    code: BCS010
-    lead_cn: 在澳门城市大学上 BCS010，Schema 或 join 偏一点，后面查询会整条链一起歪。
-    overview_en: BCS010 數據庫系統 sits in databases & information systems. There is a
-      weekly arc (about week 1–6) plus assessed work that expects you to apply
-      the same ideas under deadline pressure. Students stall when terminology
-      outruns notes, when a demo makes sense in class but not alone, or when the
-      write-up / autograder asks for a method the notebook never made explicit.
-      Sample slides from our concept-review tutoring deck are below.
-    overview_cn: BCS010
-      是澳门城市大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema
-      与数据库这些点转。大约第 1–6 周有连续周课主线，作业会要求你在 DDL
-      下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-      notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
-    faq:
-      - q_en: Are sample slides available?
-        q_cn: 有辅导课件样例吗？
-        a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
-        a_cn: 有，本页有我们概念复习辅导课件的样例页。
-    sample_slides:
-      title_en: BCS010 — sample slides
-      title_cn: BCS010 — 辅导课件样例
-      lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order,
-        Why is this slow? from our concept-review tutoring deck.
-      lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Modelling、ER essentials、SQL
-        mental order、Why is this slow?。
-      bullets:
-        - en: SQL, schema design, and databases
-          cn: SQL、Schema 与数据库
-        - en: ER modelling and normalisation trade-offs
-          cn: ER 建模与范式权衡
-        - en: SQL joins, aggregation, and nested queries
-          cn: SQL join、聚合与嵌套查询
-        - en: Indexes, plans, and “why is this slow?”
-          cn: 索引、执行计划与“为什么慢”
-      slides:
-        - src: /assets/teach/city-university-of-macau/bcs010/sample/01-title.webp
-          alt_en: BCS010 tutoring · Title
-          alt_cn: BCS010 辅导课件 · 封面
-          caption_en: Title
-          caption_cn: 封面
-        - src: /assets/teach/city-university-of-macau/bcs010/sample/02-roadmap.webp
-          alt_en: BCS010 tutoring · Roadmap
-          alt_cn: BCS010 辅导课件 · 路线图
-          caption_en: Roadmap
-          caption_cn: 路线图
-        - src: /assets/teach/city-university-of-macau/bcs010/sample/03-part-a-modelling.webp
-          alt_en: BCS010 tutoring · Part A · Modelling
-          alt_cn: BCS010 辅导课件 · Part A · Modelling
-          caption_en: Part A · Modelling
-          caption_cn: Part A · Modelling
-        - src: /assets/teach/city-university-of-macau/bcs010/sample/04-er-essentials.webp
-          alt_en: BCS010 tutoring · ER essentials
-          alt_cn: BCS010 辅导课件 · ER essentials
-          caption_en: ER essentials
-          caption_cn: ER essentials
-        - src: /assets/teach/city-university-of-macau/bcs010/sample/05-sql-mental-order.webp
-          alt_en: BCS010 tutoring · SQL mental order
-          alt_cn: BCS010 辅导课件 · SQL mental order
-          caption_en: SQL mental order
-          caption_cn: SQL mental order
-        - src: /assets/teach/city-university-of-macau/bcs010/sample/06-why-is-this-slow.webp
-          alt_en: BCS010 tutoring · Why is this slow?
-          alt_cn: BCS010 辅导课件 · Why is this slow?
-          caption_en: Why is this slow?
-          caption_cn: Why is this slow?
-      cta_en: Book tutoring on WeChat
-      cta_cn: 微信预约辅导
-    title: 數據庫系統
-    stuck:
-      - en: Weekly lecture arc moves on before last week’s method is solid
-        cn: 周课往前赶，上一周的方法还没练稳
-      - en: Correct-looking SQL that fails hidden test schemas
-        cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
-      - en: Over-normalised or under-normalised designs
-        cn: 过度范式或范式不足的设计
-      - en: ORM confusion masking missing SQL fundamentals
-        cn: 被 ORM 迷惑，SQL 基本功没补上
-      - en: Lecture vocabulary for BCS010 outruns bilingual notes
-        cn: BCS010 的课堂术语跑在双语笔记前面
-  - code: BCS021
-    title: 密码学及其应用
-    material: BCS021-密码学及其应用
+- topics:
+  - en: SQL, schema design, and databases
+    cn: SQL、Schema 与数据库
+  - en: 'Week 1: 0248 数据库系统概念第六版(中文版)'
+    cn: 第 1 周：0248 数据库系统概念第六版(中文版)
+  - en: 'Week 1: 1 基础篇 数据库概述'
+    cn: 第 1 周：1 基础篇 数据库概述
+  - en: 'Week 2: 关系数据库 选择题'
+    cn: 第 2 周：关系数据库 选择题
+  - en: 'Week 2: 第2章 关系数据库'
+    cn: 第 2 周：第2章 关系数据库
+  - en: 'Week 3: 第2章 关系数据库'
+    cn: 第 3 周：第2章 关系数据库
+  - en: 'Week 4: 第3章 关系数据库标准语言SQL（Part 1）(2)'
+    cn: 第 4 周：第3章 关系数据库标准语言SQL（Part 1）(2)
+  - en: 'Week 5: 数据库标准语言SQL'
+    cn: 第 5 周：数据库标准语言SQL
+  meta_description_en: BCS010 CityU Macau tutoring (數據庫系統). Weekly lecture arc moves on before last week’s
+    method is solid? Bilingual Chinese/English help.
+  material: BCS010-數據庫系統
+  theme: databases
+  session_angles:
+  - en: Rebuild this week’s lecture idea before touching the homework
+    cn: 先重建当周讲座概念，再碰作业
+  - en: Sketch the ER, then write queries against it
+    cn: 先画 ER，再对着写查询
+  - en: Explain a query plan in plain language
+    cn: 用白话解释执行计划
+  lead_en: BCS010 數據庫系統 at City University of Macau is where one wrong schema or join quietly breaks every
+    later query. The hard part is turning that arc into a method you can repeat on the next brief — not
+    rereading slides the night before.
+  tutoring:
+  - en: 'Lecture sync for BCS010: bilingual catch-up so workshop / tutorial language matches the lectures.'
+    cn: 按 BCS010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
+    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  code: BCS010
+  lead_cn: 在澳门城市大学上 BCS010，Schema 或 join 偏一点，后面查询会整条链一起歪。
+  overview_en: BCS010 數據庫系統 sits in databases & information systems. There is a weekly arc (about week
+    1–6) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
+  overview_cn: BCS010 是澳门城市大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。大约第 1–6
+    周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
+    里从未写清。 下方有我们概念复习辅导课件的样例页。
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
+  sample_slides:
+    title_en: BCS010 — sample slides
+    title_cn: BCS010 — 辅导课件样例
+    lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order, Why is this slow? from
+      our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Modelling、ER essentials、SQL mental order、Why is this
+      slow?。
+    bullets:
+    - en: SQL, schema design, and databases
+      cn: SQL、Schema 与数据库
+    - en: ER modelling and normalisation trade-offs
+      cn: ER 建模与范式权衡
+    - en: SQL joins, aggregation, and nested queries
+      cn: SQL join、聚合与嵌套查询
+    - en: Indexes, plans, and “why is this slow?”
+      cn: 索引、执行计划与“为什么慢”
+    slides:
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/01-title.webp
+      alt_en: BCS010 tutoring · Title
+      alt_cn: BCS010 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/02-roadmap.webp
+      alt_en: BCS010 tutoring · Roadmap
+      alt_cn: BCS010 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/03-part-a-modelling.webp
+      alt_en: BCS010 tutoring · Part A · Modelling
+      alt_cn: BCS010 辅导课件 · Part A · Modelling
+      caption_en: Part A · Modelling
+      caption_cn: Part A · Modelling
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/04-er-essentials.webp
+      alt_en: BCS010 tutoring · ER essentials
+      alt_cn: BCS010 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/05-sql-mental-order.webp
+      alt_en: BCS010 tutoring · SQL mental order
+      alt_cn: BCS010 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/city-university-of-macau/bcs010/sample/06-why-is-this-slow.webp
+      alt_en: BCS010 tutoring · Why is this slow?
+      alt_cn: BCS010 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  title: 數據庫系統
+  stuck:
+  - en: Weekly lecture arc moves on before last week’s method is solid
+    cn: 周课往前赶，上一周的方法还没练稳
+  - en: Correct-looking SQL that fails hidden test schemas
+    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+  - en: Over-normalised or under-normalised designs
+    cn: 过度范式或范式不足的设计
+  - en: ORM confusion masking missing SQL fundamentals
+    cn: 被 ORM 迷惑，SQL 基本功没补上
+  - en: Lecture vocabulary for BCS010 outruns bilingual notes
+    cn: BCS010 的课堂术语跑在双语笔记前面
+- code: BCS021
+  title: 密码学及其应用
+  material: BCS021-密码学及其应用
+  theme: security
+  meta_description_en: BCS021 CityU Macau tutoring (密码学及其应用). Classical crypto through AES, RSA, signatures
+    — and a final report you write yourself. Bilingual help.
+  lead_en: BCS021 密码学及其应用 at City University of Macau is where classical ciphers, AES modes, public-key
+    (DH / RSA), and hash-vs-signature jobs stack into one terminology wall — then the final report asks
+    for a verifiable experiment in your own words. Tutoring rebuilds the primitive jobs, walks your chosen
+    topic’s method, and coaches the write-up you type yourself (no generative-AI drafting).
+  lead_cn: 在澳门城市大学上 BCS021，古典密码、AES 工作模式、公钥（DH / RSA）和「散列 vs 签名」的职责叠成一堵术语墙， 期末报告还要你自己写出可核查的实验。辅导先把原语职责对齐，再按你选的题目梳方法，陪你自己动笔写报告（不用生成式
+    AI 代写 / 改写）。
+  overview_en: BCS021 密码学及其应用 sits in security & privacy. The weekly arc runs from classical crypto and
+    cryptanalysis, through math tools, modern symmetric / AES modes, Diffie–Hellman and RSA, hash / MAC
+    / signatures, protocols, and key management. Assessment mixes attendance, in-class practice, and a
+    substantial individual final report (IEEE LaTeX, experiment + discussion, AI-detection rules). Students
+    stall when primitives get swapped (hash for signature, DH success for identity), when AES-GCM / RSA-OAEP
+    hybrid flows are fuzzy, or when the report needs a clear question, tables, and a voice that is clearly
+    theirs. Sample slides from our concept-review tutoring deck are below.
+  overview_cn: BCS021 是澳门城市大学「安全与隐私」方向的课。周课主线从古典密码与密码分析、数学工具，到现代对称密码 / AES 工作模式、Diffie–Hellman 与 RSA、散列
+    / MAC / 数字签名、密码协议与密钥管理。考核通常含考勤、课堂练习和一份 个人期末报告（IEEE LaTeX、实验与讨论，并有 AI 检测规则）。留学生真正吃力的，往往是原语职责搞混（用散列当签名、把
+    DH 算通当成身份认证）、AES-GCM / RSA-OAEP 混合流程说不清，或报告缺明确问题、对照表和能过 viva 的本人表述。 下方有我们概念复习辅导课件的样例页。
+  topics:
+  - en: Classical crypto & cryptanalysis (Caesar, affine, Vigenère)
+    cn: 古典密码与密码分析（凯撒、仿射、维吉尼亚）
+  - en: Math tools for classical practice
+    cn: 古典密码实践的数学工具
+  - en: Modern symmetric crypto, AES, and block-cipher modes
+    cn: 现代对称密码、AES 与分组密码工作模式
+  - en: Public-key crypto · Diffie–Hellman and RSA
+    cn: 公钥密码 · Diffie–Hellman 与 RSA
+  - en: Hash functions, MACs, and digital signatures
+    cn: 散列函数、消息认证与数字签名
+  - en: Crypto protocols, key distribution & management
+    cn: 密码协议、密钥分配与密钥管理
+  - en: Final report · experiment design and self-authored write-up
+    cn: 期末报告 · 实验设计与本人执笔写作
+  stuck:
+  - en: Primitives swapped — treating a hash match as publisher verification
+    cn: 原语搞混——把「摘要匹配」当成发布者已验证
+  - en: AES-GCM nonce reuse or fuzzy hybrid AES + RSA-OAEP file flow
+    cn: AES-GCM nonce 复用，或 AES + RSA-OAEP 混合传文件流程说不清
+  - en: DH shared secret computed, but MITM / identity still fuzzy
+    cn: DH 共同密钥算出来了，中间人与身份认证仍糊
+  - en: Final-report topic chosen, but no verifiable experiment table yet
+    cn: 期末选题定了，可核查的实验对照表还没搭起来
+  - en: Wanting an AI rewrite when the brief expects your own drafting
+    cn: 想用 AI 改写交卷，但 brief 要求本人执笔
+  session_angles:
+  - en: Name the job of hash vs MAC vs signature on one example file
+    cn: 对着同一份文件说清散列 / MAC / 签名各自证明什么
+  - en: Sketch the AES-GCM + RSA-OAEP send/receive flow before coding
+    cn: 写代码前先画 AES-GCM + RSA-OAEP 收发流程
+  - en: Outline the final report — question, method, one condition change, limits
+    cn: 梳期末报告骨架——问题、方法、一项条件变化、局限
+  - en: Draft the next section in your words while we pressure-test claims
+    cn: 你自己写下一段，我盯住没有图表支撑的断言
+  tutoring:
+  - en: 'Lecture sync for BCS021: bilingual catch-up on classical → AES → public-key → hash/sign so workshop
+      language matches the lectures.'
+    cn: 按 BCS021 当周进度跟课：用中英双语把古典 → AES → 公钥 → 散列/签名补齐，并保留课堂会用的英文说法。
+  - en: 'Final report coaching: pick a topic, design the experiment / demo, build result tables, and draft
+      in your own words (structure + viva — not generative-AI writing).'
+    cn: 期末报告辅导：选题、设计实验 / 演示、搭结果对照表，并陪你本人动笔（梳结构、练 viva，不用生成式 AI 代写）。
+  - en: 'Assignments / in-class practice: approach review and live debug against the real brief you bring.'
+    cn: 作业 / 课堂练习：对着你带来的真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Exam / quiz prep: timed drills on primitive jobs, modes, and protocol pitfalls for this course.'
+    cn: 考试 / quiz 突击：按这门课的原语职责、工作模式和协议陷阱做限时练习。
+  faq:
+  - q_en: Can you help with the BCS021 final report?
+    q_cn: 能辅导 BCS021 期末报告吗？
+    a_en: Yes — bring your chosen topic and any draft. We coach question framing, experiment design, tables/figures,
+      IEEE LaTeX shape, and viva answers while you write in your own words. We do not generate or AI-rewrite
+      the submission for you.
+    a_cn: 可以。带上你的选题和已有草稿。我们辅导问题界定、实验设计、图表、IEEE LaTeX 版式和 viva 应答，由你本人动笔。我们不会代写，也不会用生成式 AI 改写你的交卷稿。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
+  sample_slides:
+    title_en: BCS021 — sample slides
+    title_cn: BCS021 — 辅导课件样例
+    lead_en: 封面、路線圖、頻率與證據、AES-GCM 檢查清單、DH 共同秘密≠身份、期末報告·自己寫 — from our concept-review tutoring deck (Chinese,
+      aligned to this course’s lecture arc).
+    lead_cn: 我们概念复习辅导课件中的样例页（中文，贴合本课周讲主线）：封面、路線圖、頻率與可複核證據、AES-GCM 檢查清單、DH：共同秘密 ≠ 對方身份、期末報告 · 自己寫。
+    bullets:
+    - en: Classical crypto & cryptanalysis (Caesar, affine, Vigenère)
+      cn: 古典密码与密码分析（凯撒、仿射、维吉尼亚）
+    - en: Modern symmetric crypto, AES, and block-cipher modes
+      cn: 现代对称密码、AES 与分组密码工作模式
+    - en: Public-key crypto · Diffie–Hellman and RSA
+      cn: 公钥密码 · Diffie–Hellman 与 RSA
+    - en: Hash functions, MACs, and digital signatures
+      cn: 散列函数、消息认证与数字签名
+    - en: Final report · experiment design and self-authored write-up
+      cn: 期末报告 · 实验设计与本人执笔写作
+    slides:
+    - src: /assets/teach/city-university-of-macau/bcs021/sample/01-title.webp
+      alt_en: BCS021 tutoring · 封面
+      alt_cn: BCS021 辅导课件 · 封面
+      caption_en: 封面
+      caption_cn: 封面
+    - src: /assets/teach/city-university-of-macau/bcs021/sample/02-roadmap.webp
+      alt_en: BCS021 tutoring · 路線圖
+      alt_cn: BCS021 辅导课件 · 路線圖
+      caption_en: 路線圖
+      caption_cn: 路線圖
+    - src: /assets/teach/city-university-of-macau/bcs021/sample/03-frequency-evidence.webp
+      alt_en: BCS021 tutoring · 頻率、長度與可複核證據
+      alt_cn: BCS021 辅导课件 · 頻率、長度與可複核證據
+      caption_en: 頻率、長度與可複核證據
+      caption_cn: 頻率、長度與可複核證據
+    - src: /assets/teach/city-university-of-macau/bcs021/sample/04-aes-gcm-checklist.webp
+      alt_en: BCS021 tutoring · AES-GCM 檢查清單
+      alt_cn: BCS021 辅导课件 · AES-GCM 檢查清單
+      caption_en: AES-GCM 檢查清單
+      caption_cn: AES-GCM 檢查清單
+    - src: /assets/teach/city-university-of-macau/bcs021/sample/05-dh-secret-vs-identity.webp
+      alt_en: BCS021 tutoring · DH：共同秘密 ≠ 對方身份
+      alt_cn: BCS021 辅导课件 · DH：共同秘密 ≠ 對方身份
+      caption_en: DH：共同秘密 ≠ 對方身份
+      caption_cn: DH：共同秘密 ≠ 對方身份
+    - src: /assets/teach/city-university-of-macau/bcs021/sample/06-final-report-write-yourself.webp
+      alt_en: BCS021 tutoring · 期末報告 · 自己寫
+      alt_cn: BCS021 辅导课件 · 期末報告 · 自己寫
+      caption_en: 期末報告 · 自己寫
+      caption_cn: 期末報告 · 自己寫
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
 ---
