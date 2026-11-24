@@ -469,11 +469,38 @@ def bilingual(en: str, cn: str) -> dict:
     return {"en": en, "cn": cn}
 
 
+# Filename leftovers that must never become public "topics" (inventory leak + junk UX).
+WEEK_LABEL_JUNK_RE = re.compile(
+    r"(?i)^(?:"
+    r"lecture\s*slides?|slides?|lectures?|notes?|handouts?|"
+    r"lab\s*\d*\s*\(?\)?|prac(?:tical)?s?\s*\d*|"
+    r"tutorial\s*\d*|workshop\s*\d*|seminar\s*\d*|"
+    r"pdf|pptx?|docx?|"
+    r"[A-Z]{2,6}\s*\d{3,5}[A-Z]?"  # bare course codes e.g. COMP2200
+    r")$",
+)
+
+
+def usable_week_label(label: str) -> bool:
+    """Keep week labels only when they name a real subject, not a file type."""
+    s = (label or "").strip(" -_:()[]")
+    if len(s) < 6:
+        return False
+    if WEEK_LABEL_JUNK_RE.match(s):
+        return False
+    # Mostly punctuation / digits left after stripping week token
+    if re.fullmatch(r"[\d\s\-_()./]+", s):
+        return False
+    return True
+
+
 def build_topics(ev: dict, theme: str, themes: dict[str, dict]) -> list[dict]:
     topics: list[dict] = []
     for hit in ev.get("topic_hits") or []:
         topics.append(bilingual(hit["en"], hit["cn"]))
     for week, label in ev.get("week_labels") or []:
+        if not usable_week_label(label):
+            continue
         short = label if len(label) <= 60 else label[:57] + "…"
         topics.append(bilingual(f"Week {week}: {short}", f"第 {week} 周：{short}"))
     if ev.get("has_notebooks"):
@@ -486,7 +513,7 @@ def build_topics(ev: dict, theme: str, themes: dict[str, dict]) -> list[dict]:
             "Assignment briefs mapped to a step-by-step plan",
             "把作业 brief 映射成可执行步骤",
         ))
-    # Fill from theme if thin
+    # Prefer theme topics over thin filename leftovers
     if len(topics) < 4:
         for t in (themes.get(theme) or {}).get("topics") or []:
             if isinstance(t, dict) and t.get("en"):

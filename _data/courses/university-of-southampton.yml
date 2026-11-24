@@ -40,22 +40,18 @@ courses:
   overview_cn: MANG2092 是南安普顿大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–10 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
-  - en: 'Week 1: Lecture Slides'
-    cn: 第 1 周：Lecture Slides
-  - en: 'Week 2: Lecture Slides'
-    cn: 第 2 周：Lecture Slides
-  - en: 'Week 3: Lecture Slides'
-    cn: 第 3 周：Lecture Slides
-  - en: 'Week 4: Lecture Slides'
-    cn: 第 4 周：Lecture Slides
-  - en: 'Week 4: lab 3()'
-    cn: 第 4 周：lab 3()
-  - en: 'Week 4: lab 4 ()'
-    cn: 第 4 周：lab 4 ()
-  - en: 'Week 5: Lecture Slides'
-    cn: 第 5 周：Lecture Slides
-  - en: 'Week 6: Lecture Slides'
-    cn: 第 6 周：Lecture Slides
+  - en: Tidy tables, transforms, and joins
+    cn: 整洁表、变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Method story the marker can follow from notebook to write-up
+    cn: 从 notebook 到报告、改卷人能跟上的方法叙事
+  - en: Reproducible notebooks and environments
+    cn: 可复现的 notebook 与环境
   stuck:
   - en: Weekly lecture arc moves on before last week’s method is solid
     cn: 周课往前赶，上一周的方法还没练稳
