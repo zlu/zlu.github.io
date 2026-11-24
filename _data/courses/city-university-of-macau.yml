@@ -4,118 +4,128 @@ abbr: CityU Macau
 name_cn: 澳门城市大学
 teaching_folder: 澳门城市大学
 courses:
-- title: 數據庫系統
-  material: BCS010-數據庫系統
-  code: BCS010
-  theme: databases
-  meta_description_en: BCS010 CityU Macau tutoring (數據庫系統). Weekly lecture arc moves on before last week’s
-    method is solid? Bilingual Chinese/English help.
-  lead_en: BCS010 數據庫系統 at City University of Macau is where one wrong schema or join quietly breaks every
-    later query. The hard part is turning that arc into a method you can repeat on the next brief — not
-    rereading slides the night before.
-  lead_cn: 在澳门城市大学上 BCS010，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: BCS010 數據庫系統 sits in databases & information systems. There is a weekly arc (about week
-    1–6) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: BCS010 是澳门城市大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库这些点转。大约第 1–6
-    周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook
-    里从未写清。 下方有我们概念复习辅导课件的样例页。
-  topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: 'Week 1: 0248 数据库系统概念第六版(中文版)'
-    cn: 第 1 周：0248 数据库系统概念第六版(中文版)
-  - en: 'Week 1: 1 基础篇 数据库概述'
-    cn: 第 1 周：1 基础篇 数据库概述
-  - en: 'Week 2: 关系数据库 选择题'
-    cn: 第 2 周：关系数据库 选择题
-  - en: 'Week 2: 第2章 关系数据库'
-    cn: 第 2 周：第2章 关系数据库
-  - en: 'Week 3: 第2章 关系数据库'
-    cn: 第 3 周：第2章 关系数据库
-  - en: 'Week 4: 第3章 关系数据库标准语言SQL（Part 1）(2)'
-    cn: 第 4 周：第3章 关系数据库标准语言SQL（Part 1）(2)
-  - en: 'Week 5: 数据库标准语言SQL'
-    cn: 第 5 周：数据库标准语言SQL
-  stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Correct-looking SQL that fails hidden test schemas
-    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
-  - en: Over-normalised or under-normalised designs
-    cn: 过度范式或范式不足的设计
-  - en: ORM confusion masking missing SQL fundamentals
-    cn: 被 ORM 迷惑，SQL 基本功没补上
-  - en: Lecture vocabulary for BCS010 outruns bilingual notes
-    cn: BCS010 的课堂术语跑在双语笔记前面
-  session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Sketch the ER, then write queries against it
-    cn: 先画 ER，再对着写查询
-  - en: Explain a query plan in plain language
-    cn: 用白话解释执行计划
-  tutoring:
-  - en: 'Lecture sync for BCS010: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 BCS010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
-  sample_slides:
-    title_en: BCS010 — sample slides
-    title_cn: BCS010 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order, Why is this slow? from
-      our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Modelling、ER essentials、SQL mental order、Why is this
-      slow?。
-    bullets:
-    - en: SQL, schema design, and databases
-      cn: SQL、Schema 与数据库
-    - en: ER modelling and normalisation trade-offs
-      cn: ER 建模与范式权衡
-    - en: SQL joins, aggregation, and nested queries
-      cn: SQL join、聚合与嵌套查询
-    - en: Indexes, plans, and “why is this slow?”
-      cn: 索引、执行计划与“为什么慢”
-    slides:
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/01-title.webp
-      alt_en: BCS010 tutoring · Title
-      alt_cn: BCS010 辅导课件 · 封面
-      caption_en: Title
-      caption_cn: 封面
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/02-roadmap.webp
-      alt_en: BCS010 tutoring · Roadmap
-      alt_cn: BCS010 辅导课件 · 路线图
-      caption_en: Roadmap
-      caption_cn: 路线图
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/03-part-a-modelling.webp
-      alt_en: BCS010 tutoring · Part A · Modelling
-      alt_cn: BCS010 辅导课件 · Part A · Modelling
-      caption_en: Part A · Modelling
-      caption_cn: Part A · Modelling
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/04-er-essentials.webp
-      alt_en: BCS010 tutoring · ER essentials
-      alt_cn: BCS010 辅导课件 · ER essentials
-      caption_en: ER essentials
-      caption_cn: ER essentials
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/05-sql-mental-order.webp
-      alt_en: BCS010 tutoring · SQL mental order
-      alt_cn: BCS010 辅导课件 · SQL mental order
-      caption_en: SQL mental order
-      caption_cn: SQL mental order
-    - src: /assets/teach/city-university-of-macau/bcs010/sample/06-why-is-this-slow.webp
-      alt_en: BCS010 tutoring · Why is this slow?
-      alt_cn: BCS010 辅导课件 · Why is this slow?
-      caption_en: Why is this slow?
-      caption_cn: Why is this slow?
-    cta_en: Book tutoring on WeChat
-    cta_cn: 微信预约辅导
-  faq:
-  - q_en: Are sample slides available?
-    q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
-    a_cn: 有，本页有我们概念复习辅导课件的样例页。
+  - topics:
+      - en: SQL, schema design, and databases
+        cn: SQL、Schema 与数据库
+      - en: "Week 1: 0248 数据库系统概念第六版(中文版)"
+        cn: 第 1 周：0248 数据库系统概念第六版(中文版)
+      - en: "Week 1: 1 基础篇 数据库概述"
+        cn: 第 1 周：1 基础篇 数据库概述
+      - en: "Week 2: 关系数据库 选择题"
+        cn: 第 2 周：关系数据库 选择题
+      - en: "Week 2: 第2章 关系数据库"
+        cn: 第 2 周：第2章 关系数据库
+      - en: "Week 3: 第2章 关系数据库"
+        cn: 第 3 周：第2章 关系数据库
+      - en: "Week 4: 第3章 关系数据库标准语言SQL（Part 1）(2)"
+        cn: 第 4 周：第3章 关系数据库标准语言SQL（Part 1）(2)
+      - en: "Week 5: 数据库标准语言SQL"
+        cn: 第 5 周：数据库标准语言SQL
+    meta_description_en: BCS010 CityU Macau tutoring (數據庫系統). Weekly lecture arc
+      moves on before last week’s method is solid? Bilingual Chinese/English
+      help.
+    material: BCS010-數據庫系統
+    theme: databases
+    session_angles:
+      - en: Rebuild this week’s lecture idea before touching the homework
+        cn: 先重建当周讲座概念，再碰作业
+      - en: Sketch the ER, then write queries against it
+        cn: 先画 ER，再对着写查询
+      - en: Explain a query plan in plain language
+        cn: 用白话解释执行计划
+    lead_en: BCS010 數據庫系統 at City University of Macau is where one wrong schema or
+      join quietly breaks every later query. The hard part is turning that arc
+      into a method you can repeat on the next brief — not rereading slides the
+      night before.
+    tutoring:
+      - en: "Lecture sync for BCS010: bilingual catch-up so workshop / tutorial language
+          matches the lectures."
+        cn: 按 BCS010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
+      - en: "Assignments: approach review and live debug against the real brief."
+        cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+      - en: "Exam / quiz prep: timed drills on weak spots and recurring question shapes
+          for this course."
+        cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+    code: BCS010
+    lead_cn: 在澳门城市大学上 BCS010，Schema 或 join 偏一点，后面查询会整条链一起歪。
+    overview_en: BCS010 數據庫系統 sits in databases & information systems. There is a
+      weekly arc (about week 1–6) plus assessed work that expects you to apply
+      the same ideas under deadline pressure. Students stall when terminology
+      outruns notes, when a demo makes sense in class but not alone, or when the
+      write-up / autograder asks for a method the notebook never made explicit.
+      Sample slides from our concept-review tutoring deck are below.
+    overview_cn: BCS010
+      是澳门城市大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema
+      与数据库这些点转。大约第 1–6 周有连续周课主线，作业会要求你在 DDL
+      下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
+      notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+    faq:
+      - q_en: Are sample slides available?
+        q_cn: 有辅导课件样例吗？
+        a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+        a_cn: 有，本页有我们概念复习辅导课件的样例页。
+    sample_slides:
+      title_en: BCS010 — sample slides
+      title_cn: BCS010 — 辅导课件样例
+      lead_en: Title, Roadmap, Part A · Modelling, ER essentials, SQL mental order,
+        Why is this slow? from our concept-review tutoring deck.
+      lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Modelling、ER essentials、SQL
+        mental order、Why is this slow?。
+      bullets:
+        - en: SQL, schema design, and databases
+          cn: SQL、Schema 与数据库
+        - en: ER modelling and normalisation trade-offs
+          cn: ER 建模与范式权衡
+        - en: SQL joins, aggregation, and nested queries
+          cn: SQL join、聚合与嵌套查询
+        - en: Indexes, plans, and “why is this slow?”
+          cn: 索引、执行计划与“为什么慢”
+      slides:
+        - src: /assets/teach/city-university-of-macau/bcs010/sample/01-title.webp
+          alt_en: BCS010 tutoring · Title
+          alt_cn: BCS010 辅导课件 · 封面
+          caption_en: Title
+          caption_cn: 封面
+        - src: /assets/teach/city-university-of-macau/bcs010/sample/02-roadmap.webp
+          alt_en: BCS010 tutoring · Roadmap
+          alt_cn: BCS010 辅导课件 · 路线图
+          caption_en: Roadmap
+          caption_cn: 路线图
+        - src: /assets/teach/city-university-of-macau/bcs010/sample/03-part-a-modelling.webp
+          alt_en: BCS010 tutoring · Part A · Modelling
+          alt_cn: BCS010 辅导课件 · Part A · Modelling
+          caption_en: Part A · Modelling
+          caption_cn: Part A · Modelling
+        - src: /assets/teach/city-university-of-macau/bcs010/sample/04-er-essentials.webp
+          alt_en: BCS010 tutoring · ER essentials
+          alt_cn: BCS010 辅导课件 · ER essentials
+          caption_en: ER essentials
+          caption_cn: ER essentials
+        - src: /assets/teach/city-university-of-macau/bcs010/sample/05-sql-mental-order.webp
+          alt_en: BCS010 tutoring · SQL mental order
+          alt_cn: BCS010 辅导课件 · SQL mental order
+          caption_en: SQL mental order
+          caption_cn: SQL mental order
+        - src: /assets/teach/city-university-of-macau/bcs010/sample/06-why-is-this-slow.webp
+          alt_en: BCS010 tutoring · Why is this slow?
+          alt_cn: BCS010 辅导课件 · Why is this slow?
+          caption_en: Why is this slow?
+          caption_cn: Why is this slow?
+      cta_en: Book tutoring on WeChat
+      cta_cn: 微信预约辅导
+    title: 數據庫系統
+    stuck:
+      - en: Weekly lecture arc moves on before last week’s method is solid
+        cn: 周课往前赶，上一周的方法还没练稳
+      - en: Correct-looking SQL that fails hidden test schemas
+        cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
+      - en: Over-normalised or under-normalised designs
+        cn: 过度范式或范式不足的设计
+      - en: ORM confusion masking missing SQL fundamentals
+        cn: 被 ORM 迷惑，SQL 基本功没补上
+      - en: Lecture vocabulary for BCS010 outruns bilingual notes
+        cn: BCS010 的课堂术语跑在双语笔记前面
+  - code: BCS021
+    title: 密码学及其应用
+    material: BCS021-密码学及其应用
 ---
