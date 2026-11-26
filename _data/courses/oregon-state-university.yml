@@ -8,56 +8,69 @@ courses:
   material: computer-architecture
   code: Computer Architecture
   theme: systems
-  meta_description_en: Computer Architecture Oregon State tutoring (Computer Architecture). Weekly lecture
-    arc moves on before last week’s method is solid?
-  lead_en: Computer Architecture at Oregon State University is where abstractions stack fast and labs
-    fail for reasons that look opaque.
-    The hard part is turning that arc into a method you can repeat on the next brief — not rereading slides
-    the night before.
-  lead_cn: 在俄勒冈州立大学上 Computer Architecture，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: Computer Architecture sits in systems, networks & architecture. There is a weekly arc (about
-    week 2–2) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: Computer Architecture 是俄勒冈州立大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 2–2 周有连续周课主线，作业会要求你在
-    DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: Computer Architecture tutoring (Computer Architecture). Stuck on Data representation
+    — ints, floats, endianness, bitwise ops? Bilingual Chinese/English …
+  lead_en: 'Computer Architecture Computer Architecture at Oregon State University: Data representation
+    — ints, floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+    control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly,
+    data representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在俄勒冈州立大学上 Computer Architecture，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉
+    → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for Computer Architecture Computer Architecture at Oregon State University.
+    Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics
+    and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache,
+    locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: Computer Architecture（俄勒冈州立大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次
+    — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: 'Week 2: study answers'
-    cn: 第 2 周：study answers
-  - en: 'Week 2: tutorial'
-    cn: 第 2 周：tutorial
-  - en: Processes, threads, and synchronisation basics
-    cn: 进程、线程与同步基础
-  - en: Virtual memory and caching intuition
-    cn: 虚拟内存与缓存直觉
-  - en: Sockets, HTTP, and common networking labs
-    cn: Socket、HTTP 与常见网络实验
-  - en: OS scheduling and concurrency bugs
-    cn: 操作系统调度与并发 bug
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
-  - en: Man pages and RFCs denser than lecture pace
-    cn: Man page / RFC 比课堂节奏更密
-  - en: Lecture vocabulary for Computer Architecture outruns bilingual notes
-    cn: Computer Architecture 的课堂术语跑在双语笔记前面
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Draw the call / packet path before changing code
-    cn: 改代码前先画出调用 / 报文路径
-  - en: Instrument, reproduce, then patch the root cause
-    cn: 先插桩复现，再修根因
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
   tutoring:
-  - en: 'Lecture sync for Computer Architecture: bilingual catch-up so workshop / tutorial language matches
-      the lectures.'
-    cn: 按 Computer Architecture 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for Computer Architecture: bilingual walkthrough of Data representation — ints,
+      floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+      control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro so
+      tutorial language matches.'
+    cn: 按 Computer Architecture 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does Computer Architecture cover?
+    q_cn: Computer Architecture 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

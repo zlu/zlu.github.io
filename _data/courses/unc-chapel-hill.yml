@@ -7,56 +7,53 @@ courses:
 - title: Exploring Engineering
   material: APPL 101-Exploring Engineering
   code: APPL 101
-  theme: programming
-  meta_description_en: APPL 101 UNC tutoring (Exploring Engineering). Assignment brief (“FA2025 APPL 101
-    Calendar”) makes sense in class, freezes you alone?
-  lead_en: APPL 101 APPL 101 Exploring Engineering at University of North Carolina at Chapel Hill is where
-    invariants, complexity claims, and code must stay aligned under time pressure. The hard part is turning
-    that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在北卡罗来纳大学教堂山分校上 APPL 101，限时下不变量、复杂度结论和代码必须说的是同一件事。
-  overview_en: APPL 101 APPL 101 Exploring Engineering sits in algorithms & data structures. Evidence
-    from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: APPL 101 是北卡罗来纳大学教堂山分校「算法与数据结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、数学基础与证明习惯、R
-    / MATLAB 科研工作流这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: APPL 101 tutoring (Exploring Engineering). Stuck on Exploring Engineering? Bilingual
+    Chinese/English help.
+  lead_en: 'APPL 101 Exploring Engineering at University of North Carolina at Chapel Hill: Exploring Engineering
+    → Core ideas in Exploring Engineering → Assignments / labs for Exploring Engineering → Exam drills
+    aligned to Exploring Engineering. Lecture speed and dense vocabulary outrun note-taking before methods
+    stick. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在北卡罗来纳大学教堂山分校上 APPL 101，主线是Exploring Engineering → Exploring Engineering 的核心概念 → Exploring
+    Engineering 的作业 / Lab → 对准 Exploring Engineering 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着 Lab
+    / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for APPL 101 Exploring Engineering at University of North Carolina
+    at Chapel Hill. Covered topics: Exploring Engineering; Core ideas in Exploring Engineering; Assignments
+    / labs for Exploring Engineering; Exam drills aligned to Exploring Engineering. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: APPL 101（北卡罗来纳大学教堂山分校）一对一辅导。覆盖主题包括Exploring Engineering、Exploring Engineering 的核心概念、Exploring
+    Engineering 的作业 / Lab、对准 Exploring Engineering 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: R / MATLAB scientific workflow
-    cn: R / MATLAB 科研工作流
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Exploring Engineering
+    cn: Exploring Engineering
+  - en: Core ideas in Exploring Engineering
+    cn: Exploring Engineering 的核心概念
+  - en: Assignments / labs for Exploring Engineering
+    cn: Exploring Engineering 的作业 / Lab
+  - en: Exam drills aligned to Exploring Engineering
+    cn: 对准 Exploring Engineering 的考前练习
   stuck:
-  - en: Assignment brief (“FA2025 APPL 101 Calendar”) makes sense in class, freezes you alone
-    cn: 作业 brief（「FA2025 APPL 101 Calendar」）课上听得懂，自己对着就停住
-  - en: Can follow a worked example, cannot start from a blank page under time pressure
-    cn: 能看懂例题，限时白纸上却开不了头
-  - en: Correct intuition but wrong complexity or incomplete proof
-    cn: 直觉对，但复杂度写错或证明不完整
-  - en: DP / recursion without a clear state definition
-    cn: 动态规划 / 递归没有清晰状态定义
-  - en: Implementation bugs that hide a sound algorithm
-    cn: 算法本身没问题，实现 bug 把分扣光
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Write the invariant and recurrence before code
-    cn: 写代码前先写不变量与递推
-  - en: Dry-run on a small example, then generalise
-    cn: 先在小例子上手推，再一般化
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for APPL 101: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 APPL 101 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as FA2025 APPL 101 Calendar, S1 bike share
-      intro, with you at the keyboard.'
-    cn: 作业辅导：针对 FA2025 APPL 101 Calendar, S1 bike share intro 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for APPL 101: bilingual walkthrough of Exploring Engineering → Core ideas in Exploring
+      Engineering → Assignments / labs for Exploring Engineering → Exam drills aligned to Exploring Engineering
+      so tutorial language matches.'
+    cn: 按 APPL 101 同步跟课：用中英双语把「Exploring Engineering → Exploring Engineering 的核心概念 → Exploring Engineering
+      的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Exploring Engineering question shapes for this course.'
+    cn: 考前突击：按本课「Exploring Engineering」等题型做限时练习。
   sample_slides:
     title_en: APPL 101 — sample slides
     title_cn: APPL 101 — 辅导课件样例
@@ -103,6 +100,18 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does APPL 101 cover?
+    q_cn: APPL 101 学什么？
+    a_en: Exploring Engineering; Core ideas in Exploring Engineering; Assignments / labs for Exploring
+      Engineering; Exam drills aligned to Exploring Engineering. Say which week or assessment you are
+      on when booking.
+    a_cn: Exploring Engineering、Exploring Engineering 的核心概念、Exploring Engineering 的作业 / Lab、对准 Exploring
+      Engineering 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

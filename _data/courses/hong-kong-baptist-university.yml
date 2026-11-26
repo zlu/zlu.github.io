@@ -112,57 +112,52 @@ courses:
 - code: COMP4330S
   title: Ef Advanced Ai
   material: comp4330sef-advanced-ai
-  theme: machine-learning
-  meta_description_en: COMP4330S HKBU tutoring (Ef Advanced Ai). Tool output produced, write-up cannot
-    defend method choice? Bilingual Chinese/English help.
-  lead_en: COMP4330S Ef Advanced Ai at Hong Kong Baptist University is where method names blur together
-    until pipelines, metrics, and write-ups diverge. The hard part is turning that arc into a method you
-    can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在香港浸会大学上 COMP4330S，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: COMP4330S Ef Advanced Ai sits in machine learning & ai. Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
-    are below.
-  overview_cn: COMP4330S 是香港浸会大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: COMP4330S tutoring (Ef Advanced Ai). Stuck on Ef Advanced Ai? Bilingual Chinese/English
+    help.
+  lead_en: 'COMP4330S Ef Advanced Ai at Hong Kong Baptist University: Ef Advanced Ai → Core ideas in Ef
+    Advanced Ai → Assignments / labs for Ef Advanced Ai → Exam drills aligned to Ef Advanced Ai. Lecture
+    speed and dense vocabulary outrun note-taking before methods stick. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港浸会大学上 COMP4330S，主线是Ef Advanced Ai → Ef Advanced Ai 的核心概念 → Ef Advanced Ai 的作业 / Lab → 对准
+    Ef Advanced Ai 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP4330S Ef Advanced Ai at Hong Kong Baptist University. Covered
+    topics: Ef Advanced Ai; Core ideas in Ef Advanced Ai; Assignments / labs for Ef Advanced Ai; Exam
+    drills aligned to Ef Advanced Ai. Bring your brief, failing test, lecture slide screenshot, or the
+    topic name you are stuck on.'
+  overview_cn: COMP4330S（香港浸会大学）一对一辅导。覆盖主题包括Ef Advanced Ai、Ef Advanced Ai 的核心概念、Ef Advanced Ai 的作业 / Lab、对准
+    Ef Advanced Ai 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Supervised vs unsupervised intuition
-    cn: 监督 / 无监督学习的直觉区分
-  - en: Loss, gradients, and what “training” actually updates
-    cn: 损失、梯度，以及“训练”到底在更新什么
-  - en: Train / validation / test splits and leakage
-    cn: 训练 / 验证 / 测试划分与数据泄漏
-  - en: Linear models, logistic regression, and decision boundaries
-    cn: 线性模型、逻辑回归与决策边界
-  - en: Trees, ensembles, and when they beat neural nets
-    cn: 树模型、集成方法，以及何时比神经网络更合适
+  - en: Ef Advanced Ai
+    cn: Ef Advanced Ai
+  - en: Core ideas in Ef Advanced Ai
+    cn: Ef Advanced Ai 的核心概念
+  - en: Assignments / labs for Ef Advanced Ai
+    cn: Ef Advanced Ai 的作业 / Lab
+  - en: Exam drills aligned to Ef Advanced Ai
+    cn: 对准 Ef Advanced Ai 的考前练习
   stuck:
-  - en: Tool output produced, write-up cannot defend method choice
-    cn: 工具输出有了，报告却说不清为何选这个方法
-  - en: Formulae memorised without knowing what the code should look like
-    cn: 公式背下来了，但不知道代码该长什么样
-  - en: Autograder / notebook fails from shape mismatches or leakage
-    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
-  - en: Model “works” but the report cannot explain why
-    cn: 模型能跑，但报告说不清为什么有效
-  - en: Lecture slides move faster than the math catches up
-    cn: 课件节奏快于数学跟进速度
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Map the assignment brief to a short concept checklist
-    cn: 把作业 brief 映射成一份短概念清单
-  - en: Live-debug the failing cell or metric with you driving the keyboard
-    cn: 你来操作键盘，我旁路一起定位挂掉的 cell 或指标
-  - en: Tighten the write-up so claims match the experiments
-    cn: 收紧报告表述，让结论与实验一致
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for COMP4330S: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 COMP4330S 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMP4330S: bilingual walkthrough of Ef Advanced Ai → Core ideas in Ef Advanced
+      Ai → Assignments / labs for Ef Advanced Ai → Exam drills aligned to Ef Advanced Ai so tutorial language
+      matches.'
+    cn: 按 COMP4330S 同步跟课：用中英双语把「Ef Advanced Ai → Ef Advanced Ai 的核心概念 → Ef Advanced Ai 的作业 / Lab」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Ef Advanced Ai question shapes for this course.'
+    cn: 考前突击：按本课「Ef Advanced Ai」等题型做限时练习。
   sample_slides:
     title_en: COMP4330S — sample slides
     title_cn: COMP4330S — 辅导课件样例
@@ -213,6 +208,16 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMP4330S cover?
+    q_cn: COMP4330S 学什么？
+    a_en: Ef Advanced Ai; Core ideas in Ef Advanced Ai; Assignments / labs for Ef Advanced Ai; Exam drills
+      aligned to Ef Advanced Ai. Say which week or assessment you are on when booking.
+    a_cn: Ef Advanced Ai、Ef Advanced Ai 的核心概念、Ef Advanced Ai 的作业 / Lab、对准 Ef Advanced Ai 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -227,11 +232,10 @@ courses:
     and weak method stories lose marks even when a model runs. The hard part is turning that arc into
     a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在香港浸会大学上 COMP7025，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: 'COMP7025 Data Analytics / Mining Topics sits in data science & analytics. Evidence from
-
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.'
+  overview_en: COMP7025 Data Analytics / Mining Topics sits in data science & analytics. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: COMP7025 是香港浸会大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:

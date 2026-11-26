@@ -7,55 +7,56 @@ courses:
 - code: ENGR 010
   title: Applied Engineering Computer Methods
   material: ENGR 010
-  theme: programming
-  meta_description_en: ENGR 010 Lehigh tutoring (Applied Engineering Computer Methods). Assignment brief
-    (“E4 Manufacturing Data Level C”) makes sense in class, freezes you…
-  lead_en: ENGR 010 Applied Engineering Computer Methods at Lehigh University is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a
-    method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在里海大学上 ENGR 010，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: ENGR 010 Applied Engineering Computer Methods sits in programming & software construction.
-    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
-    are below.
-  overview_cn: ENGR 010 是里海大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试、Web / 移动应用结构这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: ENGR 010 tutoring (Applied Engineering Computer Methods). Stuck on Applied Engineering
+    Computer Methods? Bilingual Chinese/English help.
+  lead_en: 'ENGR 010 Applied Engineering Computer Methods at Lehigh University: Applied Engineering Computer
+    Methods → Core ideas in Applied Engineering Computer Methods → Assignments / labs for Applied Engineering
+    Computer Methods → Exam drills aligned to Applied Engineering Computer Methods. Lecture speed and
+    dense vocabulary outrun note-taking before methods stick. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在里海大学上 ENGR 010，主线是Applied Engineering Computer Methods → Applied Engineering Computer Methods
+    的核心概念 → Applied Engineering Computer Methods 的作业 / Lab → 对准 Applied Engineering Computer Methods 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for ENGR 010 Applied Engineering Computer Methods at Lehigh University.
+    Covered topics: Applied Engineering Computer Methods; Core ideas in Applied Engineering Computer Methods;
+    Assignments / labs for Applied Engineering Computer Methods; Exam drills aligned to Applied Engineering
+    Computer Methods. Bring your brief, failing test, lecture slide screenshot, or the topic name you
+    are stuck on.'
+  overview_cn: ENGR 010（里海大学）一对一辅导。覆盖主题包括Applied Engineering Computer Methods、Applied Engineering Computer
+    Methods 的核心概念、Applied Engineering Computer Methods 的作业 / Lab、对准 Applied Engineering Computer Methods
+    的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Web / mobile app structure
-    cn: Web / 移动应用结构
-  - en: Notebook workflows the marker can re-run
-    cn: 改卷人能复跑的 notebook 工作流
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Applied Engineering Computer Methods
+    cn: Applied Engineering Computer Methods
+  - en: Core ideas in Applied Engineering Computer Methods
+    cn: Applied Engineering Computer Methods 的核心概念
+  - en: Assignments / labs for Applied Engineering Computer Methods
+    cn: Applied Engineering Computer Methods 的作业 / Lab
+  - en: Exam drills aligned to Applied Engineering Computer Methods
+    cn: 对准 Applied Engineering Computer Methods 的考前练习
   stuck:
-  - en: Assignment brief (“E4 Manufacturing Data Level C”) makes sense in class, freezes you alone
-    cn: 作业 brief（「E4 Manufacturing Data Level C」）课上听得懂，自己对着就停住
-  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
-    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for ENGR 010: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 ENGR 010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as E4 Manufacturing Data Level C, E4 Manufacturing
-      Data Level A, with you at the keyboard.'
-    cn: 作业辅导：针对 E4 Manufacturing Data Level C, E4 Manufacturing Data Level A 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for ENGR 010: bilingual walkthrough of Applied Engineering Computer Methods → Core
+      ideas in Applied Engineering Computer Methods → Assignments / labs for Applied Engineering Computer
+      Methods → Exam drills aligned to Applied Engineering Computer Methods so tutorial language matches.'
+    cn: 按 ENGR 010 同步跟课：用中英双语把「Applied Engineering Computer Methods → Applied Engineering Computer Methods
+      的核心概念 → Applied Engineering Computer Methods 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Applied Engineering Computer Methods question shapes for this course.'
+    cn: 考前突击：按本课「Applied Engineering Computer Methods」等题型做限时练习。
   sample_slides:
     title_en: ENGR 010 — sample slides
     title_cn: ENGR 010 — 辅导课件样例
@@ -102,6 +103,18 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does ENGR 010 cover?
+    q_cn: ENGR 010 学什么？
+    a_en: Applied Engineering Computer Methods; Core ideas in Applied Engineering Computer Methods; Assignments
+      / labs for Applied Engineering Computer Methods; Exam drills aligned to Applied Engineering Computer
+      Methods. Say which week or assessment you are on when booking.
+    a_cn: Applied Engineering Computer Methods、Applied Engineering Computer Methods 的核心概念、Applied Engineering
+      Computer Methods 的作业 / Lab、对准 Applied Engineering Computer Methods 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

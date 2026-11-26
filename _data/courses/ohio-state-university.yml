@@ -1,8 +1,73 @@
 ---
 university: Ohio State University
 abbr: Ohio State
-name_cn: "俄亥俄州立大学"
+name_cn: 俄亥俄州立大学
 courses:
-  - code: CES2231
-    title: "Software II: Software Development and Design"
+- code: CES2231
+  title: 'Software II: Software Development and Design'
+  theme: web-mobile
+  meta_description_en: 'CES2231 tutoring (Software II: Software…). Stuck on Requirements — user stories,
+    use cases, acceptance criteria? Bilingual Chinese/English help.'
+  lead_en: 'CES2231 Software II: Software Development and Design at Ohio State University: Requirements
+    — user stories, use cases, acceptance criteria → Design — modularity, APIs, and maintainability →
+    Git workflows and code review habits → Testing — unit, integration, and demo evidence…. Specs, teamwork,
+    and demo evidence matter as much as whether the feature runs. Tutoring rebuilds that syllabus arc,
+    then debugs the lab or assignment where it breaks.'
+  lead_cn: 在俄亥俄州立大学上 CES2231，主线是需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+    习惯 → 测试 — 单元、集成与 demo 证据。规格、协作和 demo 证据，往往和「功能能不能跑」一样重要。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CES2231 Software II: Software Development and Design at Ohio State
+    University. Covered topics: Requirements — user stories, use cases, acceptance criteria; Design —
+    modularity, APIs, and maintainability; Git workflows and code review habits; Testing — unit, integration,
+    and demo evidence; HTTP / backend or UI structure the course actually uses. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CES2231（俄亥俄州立大学）一对一辅导。覆盖主题包括需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code
+    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Requirements — user stories, use cases, acceptance criteria
+    cn: 需求 — user story、use case、验收标准
+  - en: Design — modularity, APIs, and maintainability
+    cn: 设计 — 模块化、API 与可维护性
+  - en: Git workflows and code review habits
+    cn: Git 工作流与 code review 习惯
+  - en: Testing — unit, integration, and demo evidence
+    cn: 测试 — 单元、集成与 demo 证据
+  - en: HTTP / backend or UI structure the course actually uses
+    cn: 课程实际用的 HTTP / 后端或 UI 结构
+  - en: Iteration planning and defending design in demos
+    cn: 迭代规划与在 demo 中为设计辩护
+  stuck:
+  - en: Feature works; demo cannot explain design trade-offs
+    cn: 功能能跑，demo 讲不清设计权衡
+  - en: Tests pass locally; CI or tutor demo fails on edges
+    cn: 本地测试能过；CI 或 tutor demo 在边界挂
+  - en: Team Git history messy after a bad merge
+    cn: 错误合并后团队 Git 历史一团糟
+  session_angles:
+  - en: Map interface → tests → demo narrative before coding
+    cn: 写代码前先对齐接口 → 测试 → demo 叙述
+  - en: Own one vertical slice end-to-end
+    cn: 端到端拿下一小条垂直切片
+  tutoring:
+  - en: 'Lecture sync for CES2231: bilingual walkthrough of Requirements — user stories, use cases, acceptance
+      criteria → Design — modularity, APIs, and maintainability → Git workflows and code review habits
+      → Testing — unit, integration, and demo evidence so tutorial language matches.'
+    cn: 按 CES2231 同步跟课：用中英双语把「需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+      习惯」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Requirements — user stories, use cases, acceptance criteria question
+      shapes for this course.'
+    cn: 考前突击：按本课「需求 — user story、use case、验收标准」等题型做限时练习。
+  faq:
+  - q_en: What does CES2231 cover?
+    q_cn: CES2231 学什么？
+    a_en: Requirements — user stories, use cases, acceptance criteria; Design — modularity, APIs, and
+      maintainability; Git workflows and code review habits; Testing — unit, integration, and demo evidence….
+      Say which week or assessment you are on when booking.
+    a_cn: 需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code review 习惯、测试 — 单元、集成与 demo 证据。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

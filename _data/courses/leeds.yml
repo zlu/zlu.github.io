@@ -6,20 +6,531 @@ teaching_folder: leeds-university
 courses:
 - code: COMP1121
   title: Introduction to Programming
+  theme: programming
+  meta_description_en: COMP1121 tutoring (Introduction to Programming). Stuck on Reading the brief — I/O,
+    edges, and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'COMP1121 Introduction to Programming at University of Leeds: Reading the brief — I/O, edges,
+    and marking points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+    and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling, and autograder edge
+    cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在利兹大学上 COMP1121，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1121 Introduction to Programming at University of Leeds. Covered
+    topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+    decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder mismatches;
+    Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide screenshot,
+    or the topic name you are stuck on.'
+  overview_cn: COMP1121（利兹大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for COMP1121: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 COMP1121 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1121 cover?
+    q_cn: COMP1121 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1212
   title: Computer Processors
+  theme: systems
+  meta_description_en: COMP1212 tutoring (Computer Processors). Stuck on Data representation — ints, floats,
+    endianness, bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'COMP1212 Computer Processors at University of Leeds: Data representation — ints, floats, endianness,
+    bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+    intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly, data representation,
+    and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus arc, then debugs the
+    lab or assignment where it breaks.'
+  lead_cn: 在利兹大学上 COMP1212，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1212 Computer Processors at University of Leeds. Covered topics:
+    Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling conventions;
+    CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality, virtual memory
+    intro; How C maps to machine-level behaviour. Bring your brief, failing test, lecture slide screenshot,
+    or the topic name you are stuck on.'
+  overview_cn: COMP1212（利兹大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 —
+    缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
+  stuck:
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
+  session_angles:
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
+  tutoring:
+  - en: 'Lecture sync for COMP1212: bilingual walkthrough of Data representation — ints, floats, endianness,
+      bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+      intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial language matches.'
+    cn: 按 COMP1212 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1212 cover?
+    q_cn: COMP1212 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1421
   title: Computer Architecture
+  theme: systems
+  meta_description_en: COMP1421 tutoring (Computer Architecture). Stuck on Data representation — ints,
+    floats, endianness, bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'COMP1421 Computer Architecture at University of Leeds: Data representation — ints, floats,
+    endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and
+    pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly, data representation,
+    and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus arc, then debugs the
+    lab or assignment where it breaks.'
+  lead_cn: 在利兹大学上 COMP1421，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1421 Computer Architecture at University of Leeds. Covered
+    topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+    conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+    virtual memory intro; How C maps to machine-level behaviour. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1421（利兹大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 —
+    缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
+  stuck:
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
+  session_angles:
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
+  tutoring:
+  - en: 'Lecture sync for COMP1421: bilingual walkthrough of Data representation — ints, floats, endianness,
+      bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+      intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial language matches.'
+    cn: 按 COMP1421 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1421 cover?
+    q_cn: COMP1421 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1511
   title: Introduction to Discrete Mathematics
+  theme: math-for-cs
+  meta_description_en: COMP1511 tutoring (Introduction to Discrete Mathematics). Stuck on Logic, sets,
+    and proof strategies? Bilingual Chinese/English help.
+  lead_en: 'COMP1511 Introduction to Discrete Mathematics at University of Leeds: Logic, sets, and proof
+    strategies → Induction and invariants → Relations, functions, and counting → Graphs / trees as discrete
+    structures…. Symbols and proof phrasing outrun calculation skill. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在利兹大学上 COMP1511，主线是逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数 → 作为离散结构的图 / 树。符号与证明表述往往比计算本身更劝退。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1511 Introduction to Discrete Mathematics at University of
+    Leeds. Covered topics: Logic, sets, and proof strategies; Induction and invariants; Relations, functions,
+    and counting; Graphs / trees as discrete structures; Number theory or modular arithmetic when required.
+    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1511（利兹大学）一对一辅导。覆盖主题包括逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Logic, sets, and proof strategies
+    cn: 逻辑、集合与证明策略
+  - en: Induction and invariants
+    cn: 归纳与不变量
+  - en: Relations, functions, and counting
+    cn: 关系、函数与计数
+  - en: Graphs / trees as discrete structures
+    cn: 作为离散结构的图 / 树
+  - en: Number theory or modular arithmetic when required
+    cn: 需要时的数论 / 模运算
+  - en: Translating word problems into formal statements
+    cn: 把文字题翻译成形式陈述
+  stuck:
+  - en: Can follow a proof; cannot start from a blank page
+    cn: 能看懂证明，白纸上开不了头
+  - en: Notation piles up faster than bilingual notes
+    cn: 符号比双语笔记堆得还快
+  - en: Induction hypothesis stated wrong for the claim
+    cn: 归纳假设和要证的命题对不上
+  session_angles:
+  - en: Restate the claim in one sentence before proving
+    cn: 证明前先用一句话复述命题
+  - en: Pick the proof pattern, then fill details
+    cn: 先选证明模式，再填细节
+  tutoring:
+  - en: 'Lecture sync for COMP1511: bilingual walkthrough of Logic, sets, and proof strategies → Induction
+      and invariants → Relations, functions, and counting → Graphs / trees as discrete structures so tutorial
+      language matches.'
+    cn: 按 COMP1511 同步跟课：用中英双语把「逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Logic, sets, and proof strategies question shapes for this course.'
+    cn: 考前突击：按本课「逻辑、集合与证明策略」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1511 cover?
+    q_cn: COMP1511 学什么？
+    a_en: Logic, sets, and proof strategies; Induction and invariants; Relations, functions, and counting;
+      Graphs / trees as discrete structures…. Say which week or assessment you are on when booking.
+    a_cn: 逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2221
   title: Networks
+  theme: systems
+  meta_description_en: COMP2221 tutoring (Networks). Stuck on Layered models (OSI / TCP-IP) and where
+    each job lives? Bilingual Chinese/English help.
+  lead_en: 'COMP2221 Networks at University of Leeds: Layered models (OSI / TCP-IP) and where each job
+    lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding intuition
+    → HTTP/DNS and application-layer protocols…. Layers, packets, and failure modes blur until you can
+    trace one request end-to-end. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在利兹大学上 COMP2221，主线是分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉 → HTTP/DNS
+    与应用层协议。分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2221 Networks at University of Leeds. Covered topics: Layered
+    models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery; Routing,
+    addressing, and forwarding intuition; HTTP/DNS and application-layer protocols; Congestion, flow control,
+    and performance trade-offs. Bring your brief, failing test, lecture slide screenshot, or the topic
+    name you are stuck on.'
+  overview_cn: COMP2221（利兹大学）一对一辅导。覆盖主题包括分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS
+    与应用层协议。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Layered models (OSI / TCP-IP) and where each job lives
+    cn: 分层模型（OSI / TCP-IP）与各层职责
+  - en: Sockets, TCP vs UDP, and reliable delivery
+    cn: Socket、TCP vs UDP 与可靠传输
+  - en: Routing, addressing, and forwarding intuition
+    cn: 路由、编址与转发直觉
+  - en: HTTP/DNS and application-layer protocols
+    cn: HTTP/DNS 与应用层协议
+  - en: Congestion, flow control, and performance trade-offs
+    cn: 拥塞、流控与性能权衡
+  - en: Lab traces — Wireshark / packet walks when required
+    cn: 需要时的抓包 / 报文走读 Lab
+  stuck:
+  - en: Mixing app vs transport vs network layer when debugging
+    cn: 排查时把应用 / 传输 / 网络层搅在一起
+  - en: Socket code almost works; handshake or timeout edges fail
+    cn: Socket 差不多能跑；握手或超时边界挂掉
+  - en: Protocol diagrams look familiar until the exam scenario is new
+    cn: 协议图课上眼熟，考试换场景就不会读
+  session_angles:
+  - en: Trace one packet path before changing socket code
+    cn: 改 Socket 代码前先跟完一条报文路径
+  - en: Name the layer that owns the failure
+    cn: 先说出故障属于哪一层
+  tutoring:
+  - en: 'Lecture sync for COMP2221: bilingual walkthrough of Layered models (OSI / TCP-IP) and where each
+      job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding intuition
+      → HTTP/DNS and application-layer protocols so tutorial language matches.'
+    cn: 按 COMP2221 同步跟课：用中英双语把「分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Layered models (OSI / TCP-IP) and where each job lives question shapes
+      for this course.'
+    cn: 考前突击：按本课「分层模型（OSI / TCP-IP）与各层职责」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2221 cover?
+    q_cn: COMP2221 学什么？
+    a_en: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery;
+      Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols…. Say which
+      week or assessment you are on when booking.
+    a_cn: 分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS 与应用层协议。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2421
   title: Numerical Computation
+  theme: math-for-cs
+  meta_description_en: COMP2421 tutoring (Numerical Computation). Stuck on Vectors, matrices, and linear
+    maps? Bilingual Chinese/English help.
+  lead_en: 'COMP2421 Numerical Computation at University of Leeds: Vectors, matrices, and linear maps
+    → Systems of equations, rank, and invertibility → Eigenvalues / SVD intuition when in syllabus → Derivatives,
+    gradients, and multivariable pictures…. Symbols and geometric intuition disconnect under exam pressure.
+    Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在利兹大学上 COMP2421，主线是向量、矩阵与线性映射 → 方程组、秩与可逆性 → 大纲中的特征值 / SVD 直觉 → 导数、梯度与多变量图像。限时下符号和几何直觉对不上。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2421 Numerical Computation at University of Leeds. Covered
+    topics: Vectors, matrices, and linear maps; Systems of equations, rank, and invertibility; Eigenvalues
+    / SVD intuition when in syllabus; Derivatives, gradients, and multivariable pictures; Connecting calculus/linear
+    algebra to CS applications. Bring your brief, failing test, lecture slide screenshot, or the topic
+    name you are stuck on.'
+  overview_cn: COMP2421（利兹大学）一对一辅导。覆盖主题包括向量、矩阵与线性映射、方程组、秩与可逆性、大纲中的特征值 / SVD 直觉、导数、梯度与多变量图像。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Vectors, matrices, and linear maps
+    cn: 向量、矩阵与线性映射
+  - en: Systems of equations, rank, and invertibility
+    cn: 方程组、秩与可逆性
+  - en: Eigenvalues / SVD intuition when in syllabus
+    cn: 大纲中的特征值 / SVD 直觉
+  - en: Derivatives, gradients, and multivariable pictures
+    cn: 导数、梯度与多变量图像
+  - en: Connecting calculus/linear algebra to CS applications
+    cn: 把微积分 / 线性代数接到 CS 应用
+  - en: Exam technique — setup before algebra grind
+    cn: 应试技巧 — 先摆好再硬算
+  stuck:
+  - en: Can compute mechanically; cannot explain geometrically
+    cn: 能机械算，几何上讲不清
+  - en: Setup wrong; pages of algebra on the wrong object
+    cn: 对象设错，代数算了好几页
+  - en: Notation from lectures does not transfer to the exam figure
+    cn: 课上符号迁不到考试那张图
+  session_angles:
+  - en: Sketch the geometric picture, then compute
+    cn: 先画几何图像，再计算
+  - en: Name the unknown and the space it lives in
+    cn: 先命名未知量及其所在空间
+  tutoring:
+  - en: 'Lecture sync for COMP2421: bilingual walkthrough of Vectors, matrices, and linear maps → Systems
+      of equations, rank, and invertibility → Eigenvalues / SVD intuition when in syllabus → Derivatives,
+      gradients, and multivariable pictures so tutorial language matches.'
+    cn: 按 COMP2421 同步跟课：用中英双语把「向量、矩阵与线性映射 → 方程组、秩与可逆性 → 大纲中的特征值 / SVD 直觉」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Vectors, matrices, and linear maps question shapes for this course.'
+    cn: 考前突击：按本课「向量、矩阵与线性映射」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2421 cover?
+    q_cn: COMP2421 学什么？
+    a_en: Vectors, matrices, and linear maps; Systems of equations, rank, and invertibility; Eigenvalues
+      / SVD intuition when in syllabus; Derivatives, gradients, and multivariable pictures…. Say which
+      week or assessment you are on when booking.
+    a_cn: 向量、矩阵与线性映射、方程组、秩与可逆性、大纲中的特征值 / SVD 直觉、导数、梯度与多变量图像。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2611
   title: Artificial Intelligence
+  theme: machine-learning
+  meta_description_en: COMP2611 tutoring (Artificial Intelligence). Stuck on Neural net basics — layers,
+    activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'COMP2611 Artificial Intelligence at University of Leeds: Neural net basics — layers, activations,
+    backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers, and
+    training loops → Regularisation — dropout, weight decay, early stopping…. Architectures and loss jargon
+    outrun the debugging loop when shapes and gradients fail. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在利兹大学上 COMP2611，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环 → 正则
+    — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2611 Artificial Intelligence at University of Leeds. Covered
+    topics: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+    the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+    early stopping; Shape debugging and common framework errors. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2611（利兹大学）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for COMP2611: bilingual walkthrough of Neural net basics — layers, activations,
+      backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers,
+      and training loops → Regularisation — dropout, weight decay, early stopping so tutorial language
+      matches.'
+    cn: 按 COMP2611 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2611 cover?
+    q_cn: COMP2611 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3631
   title: Machine Learning
+  theme: machine-learning
+  meta_description_en: COMP3631 tutoring (Machine Learning). Stuck on Supervised learning — linear/logistic
+    models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'COMP3631 Machine Learning at University of Leeds: Supervised learning — linear/logistic models,
+    trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model selection
+    → Metrics — accuracy, precision/recall, ROC, calibration…. Method names blur until pipelines, metrics,
+    and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where
+    it breaks.'
+  lead_cn: 在利兹大学上 COMP3631，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3631 Machine Learning at University of Leeds. Covered topics:
+    Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits and leakage
+    traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall, ROC, calibration;
+    Regularisation, overfitting, and bias-variance. Bring your brief, failing test, lecture slide screenshot,
+    or the topic name you are stuck on.'
+  overview_cn: COMP3631（利兹大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for COMP3631: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 COMP3631 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3631 cover?
+    q_cn: COMP3631 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: LUBS3185
   title: 'People Analytics: Strategy and Practice'
   department: Leeds Business School

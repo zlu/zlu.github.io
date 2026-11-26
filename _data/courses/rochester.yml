@@ -1,8 +1,73 @@
 ---
 university: University of Rochester
 abbr: Rochester
-name_cn: "罗切斯特大学"
+name_cn: 罗切斯特大学
 courses:
-  - code: DSCC 465
-    title: Intro to Statistical Machine Learning
+- code: DSCC 465
+  title: Intro to Statistical Machine Learning
+  theme: machine-learning
+  meta_description_en: DSCC 465 tutoring (Intro to Statistical Machine…). Stuck on Supervised learning
+    — linear/logistic models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'DSCC 465 Intro to Statistical Machine Learning at University of Rochester: Supervised learning
+    — linear/logistic models, trees, SVMs → Train / validation / test splits and leakage traps → Features,
+    scaling, and model selection → Metrics — accuracy, precision/recall, ROC, calibration…. Method names
+    blur until pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在罗切斯特大学上 DSCC 465，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for DSCC 465 Intro to Statistical Machine Learning at University of
+    Rochester. Covered topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation
+    / test splits and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+    ROC, calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: DSCC 465（罗切斯特大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 —
+    准确率、精确率/召回、ROC、校准。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for DSCC 465: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 DSCC 465 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does DSCC 465 cover?
+    q_cn: DSCC 465 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

@@ -9,63 +9,57 @@ courses:
   department: Computer Science
   material: distributed systems
   theme: systems
-  meta_description_en: COMP3221 Sydney tutoring (Distributed Systems). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: COMP3221 Distributed Systems at University of Sydney is where abstractions stack fast and labs
-    fail for reasons that look opaque. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. There is a weekly
-    arc (about week 1–12) plus assessed work that expects you to apply the same ideas under deadline pressure.
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.
-  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
-    / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
-    autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: COMP3221 tutoring (Distributed Systems). Stuck on Models of distribution — nodes,
+    links, partial failure? Bilingual Chinese/English help.
+  lead_en: 'COMP3221 Distributed Systems at University of Sydney: Models of distribution — nodes, links,
+    partial failure → RPC, messaging, and serialisation basics → Consistency, replication, and consensus
+    intuition → Clocks, ordering, and concurrency control…. Partial failure and consistency models make
+    “it worked on my node” meaningless. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在悉尼大学上 COMP3221，主线是分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉 → 时钟、排序与并发控制。部分失效和一致性模型会让「我这台节点能跑」变得毫无意义。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3221 Distributed Systems at University of Sydney. Covered
+    topics: Models of distribution — nodes, links, partial failure; RPC, messaging, and serialisation
+    basics; Consistency, replication, and consensus intuition; Clocks, ordering, and concurrency control;
+    Fault tolerance and idempotent design. Bring your brief, failing test, lecture slide screenshot, or
+    the topic name you are stuck on.'
+  overview_cn: COMP3221（悉尼大学）一对一辅导。覆盖主题包括分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: OS / systems programming
-    cn: 操作系统 / 系统编程
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Web / mobile app structure
-    cn: Web / 移动应用结构
-  - en: Distributed systems ideas
-    cn: 分布式系统概念
+  - en: Models of distribution — nodes, links, partial failure
+    cn: 分布模型 — 节点、链路、部分失效
+  - en: RPC, messaging, and serialisation basics
+    cn: RPC、消息与序列化基础
+  - en: Consistency, replication, and consensus intuition
+    cn: 一致性、复制与共识直觉
+  - en: Clocks, ordering, and concurrency control
+    cn: 时钟、排序与并发控制
+  - en: Fault tolerance and idempotent design
+    cn: 容错与幂等设计
+  - en: Lab systems — tracing failures across components
+    cn: Lab 系统 — 跨组件追踪故障
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“test peers 6001”) makes sense in class, freezes you alone
-    cn: 作业 brief（「test peers 6001」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Happy path works; partition or retry logic breaks state
+    cn: 快乐路径能跑；分区或重试逻辑弄坏状态
+  - en: Consistency model named; behaviour under failure unclear
+    cn: 一致性模型名字会背，失效下行为说不清
+  - en: Logs from multiple nodes do not tell one story
+    cn: 多节点日志拼不成一个故事
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Draw the failure scenario before changing code
+    cn: 改代码前先画失效场景
+  - en: Make retries idempotent on purpose
+    cn: 有意识地把重试做成幂等
   tutoring:
-  - en: 'Lecture sync for COMP3221: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 COMP3221 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as test peers 6001, test peers 6002, with you
-      at the keyboard.'
-    cn: 作业辅导：针对 test peers 6001, test peers 6002 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMP3221: bilingual walkthrough of Models of distribution — nodes, links, partial
+      failure → RPC, messaging, and serialisation basics → Consistency, replication, and consensus intuition
+      → Clocks, ordering, and concurrency control so tutorial language matches.'
+    cn: 按 COMP3221 同步跟课：用中英双语把「分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Models of distribution — nodes, links, partial failure question shapes
+      for this course.'
+    cn: 考前突击：按本课「分布模型 — 节点、链路、部分失效」等题型做限时练习。
   sample_slides: &id001
     title_en: COMP3221 — sample slides
     title_cn: COMP3221 — 辅导课件样例
@@ -116,6 +110,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMP3221 cover?
+    q_cn: COMP3221 学什么？
+    a_en: Models of distribution — nodes, links, partial failure; RPC, messaging, and serialisation basics;
+      Consistency, replication, and consensus intuition; Clocks, ordering, and concurrency control…. Say
+      which week or assessment you are on when booking.
+    a_cn: 分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -125,61 +130,55 @@ courses:
   department: Computer Science
   material: info-1113-java
   theme: programming
-  meta_description_en: INFO1113 University of Sydney tutoring (Object-Oriented Programming). Stuck on
-    SQL, schema design, and databases? Bilingual Chinese/English help.
-  lead_en: 'INFO1113 Object-Oriented Programming at University of Sydney. Briefs, tooling, and autograder
-    edge cases hit harder than syntax itself. Tutoring: lecture catch-up, assignment debug, exam drills
-    — methods you can reuse.'
-  lead_cn: 在悉尼大学上 INFO1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'INFO1113 Object-Oriented Programming (Programming & software construction) at University
-    of Sydney. Common topics: SQL, schema design, and databases; Programming foundations and debugging.
-    Weekly arc about week 1–11, plus assessed work under deadline. People stall when terms outrun notes,
-    when a class demo does not replay alone, or when the write-up / autograder wants a method the notebook
-    never showed. Sample slides from our concept-review tutoring deck are below.'
-  overview_cn: INFO1113 是悉尼大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、编程基础与调试。大约第 1–11 周有连续周课，作业会要求你在
-    DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: INFO1113 tutoring (Object-Oriented Programming). Stuck on Classes, objects, encapsulation,
+    and invariants? Bilingual Chinese/English help.
+  lead_en: 'INFO1113 Object-Oriented Programming at University of Sydney: Classes, objects, encapsulation,
+    and invariants → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities
+    and collaborators → Testing objects and mutable state…. Class design and ownership bugs hide behind
+    “it compiles”. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 INFO1113，主线是类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系 → 测对象与可变状态。类设计和所有权问题藏在「能编译」后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for INFO1113 Object-Oriented Programming at University of Sydney.
+    Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+    Design before typing — responsibilities and collaborators; Testing objects and mutable state; Common
+    memory / reference pitfalls in the course language. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: INFO1113（悉尼大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: 'Week 1: Intro'
-    cn: 第 1 周：Intro
-  - en: 'Week 2: Loops and Arrays'
-    cn: 第 2 周：Loops and Arrays
-  - en: 'Week 3: Exceptions, inheritance and polymorphism'
-    cn: 第 3 周：Exceptions, inheritance and polymorphism
-  - en: 'Week 4: Collections'
-    cn: 第 4 周：Collections
-  - en: 'Week 5: Inheritance, Method Overloading & Packages'
-    cn: 第 5 周：Inheritance, Method Overloading & Packages
-  - en: 'Week 6: Abstract Class and Interface'
-    cn: 第 6 周：Abstract Class and Interface
+  - en: Classes, objects, encapsulation, and invariants
+    cn: 类、对象、封装与不变量
+  - en: Inheritance, interfaces, and polymorphism
+    cn: 继承、接口与多态
+  - en: Design before typing — responsibilities and collaborators
+    cn: 先设计再写 — 职责与协作关系
+  - en: Testing objects and mutable state
+    cn: 测对象与可变状态
+  - en: Common memory / reference pitfalls in the course language
+    cn: 课程语言里的常见引用 / 内存坑
+  - en: Refactoring for clarity under an autograder
+    cn: 在 autograder 下为清晰度重构
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Methods work in isolation; object graph breaks under the brief
+    cn: 方法单独能跑；对象关系一接 brief 就断
+  - en: Inheritance used where composition was needed
+    cn: 该用组合却用了继承
+  - en: Equals/hash or ownership bugs that only show in tests
+    cn: equals/hash 或所有权 bug 只在测试里出现
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: CRC / responsibility sketch before opening the editor
+    cn: 打开编辑器前先画职责草图
+  - en: Write the failing test that names the invariant
+    cn: 先写点名不变量的失败测试
   tutoring:
-  - en: 'Lecture sync for INFO1113: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 INFO1113 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for INFO1113: bilingual walkthrough of Classes, objects, encapsulation, and invariants
+      → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities and collaborators
+      → Testing objects and mutable state so tutorial language matches.'
+    cn: 按 INFO1113 同步跟课：用中英双语把「类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Classes, objects, encapsulation, and invariants question shapes for
+      this course.'
+    cn: 考前突击：按本课「类、对象、封装与不变量」等题型做限时练习。
   sample_slides: &id002
     title_en: INFO1113 — sample slides
     title_cn: INFO1113 — 辅导课件样例
@@ -226,80 +225,238 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does INFO1113 cover?
+    q_cn: INFO1113 学什么？
+    a_en: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+      Design before typing — responsibilities and collaborators; Testing objects and mutable state…. Say
+      which week or assessment you are on when booking.
+    a_cn: 类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP5310
   title: Principles of Data Science
+  theme: data-science
+  meta_description_en: COMP5310 tutoring (Principles of Data Science). Stuck on Data wrangling — tidy
+    tables, joins, missingness? Bilingual Chinese/English help.
+  lead_en: 'COMP5310 Principles of Data Science at University of Sydney: Data wrangling — tidy tables,
+    joins, missingness → EDA and visualisation that answer a question → Feature hygiene and leakage checks
+    → Simple models / summaries appropriate to the brief…. Messy tables and weak method stories lose marks
+    even when a chart renders. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在悉尼大学上 COMP5310，主线是数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查 → 适合 brief 的简单模型 / 汇总。就算图画出来了，脏表和站不住的方法叙事也会丢分。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP5310 Principles of Data Science at University of Sydney. Covered
+    topics: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer a question;
+    Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief; Method trail
+    the marker can re-run. Bring your brief, failing test, lecture slide screenshot, or the topic name
+    you are stuck on.'
+  overview_cn: COMP5310（悉尼大学）一对一辅导。覆盖主题包括数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data wrangling — tidy tables, joins, missingness
+    cn: 数据整理 — 整洁表、连接、缺失
+  - en: EDA and visualisation that answer a question
+    cn: 能回答问题的 EDA 与可视化
+  - en: Feature hygiene and leakage checks
+    cn: 特征卫生与泄漏检查
+  - en: Simple models / summaries appropriate to the brief
+    cn: 适合 brief 的简单模型 / 汇总
+  - en: Method trail the marker can re-run
+    cn: 改卷人能复跑的方法轨迹
+  - en: Writing that defends every plot and transform
+    cn: 能为每张图和每步变换辩护的写作
+  stuck:
+  - en: Plot produced; caption cannot defend the choice
+    cn: 图有了，图注说不清为何这样画
+  - en: Joins explode row counts unnoticed
+    cn: Join 把行数炸开却没发现
+  - en: Notebook order unreproducible for the marker
+    cn: notebook 顺序让改卷人无法复现
+  session_angles:
+  - en: State the question, then pick the table grain
+    cn: 先陈述问题，再定表的粒度
+  - en: Keep a transform log beside the notebook
+    cn: 在 notebook 旁保留变换日志
+  tutoring:
+  - en: 'Lecture sync for COMP5310: bilingual walkthrough of Data wrangling — tidy tables, joins, missingness
+      → EDA and visualisation that answer a question → Feature hygiene and leakage checks → Simple models
+      / summaries appropriate to the brief so tutorial language matches.'
+    cn: 按 COMP5310 同步跟课：用中英双语把「数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data wrangling — tidy tables, joins, missingness question shapes for
+      this course.'
+    cn: 考前突击：按本课「数据整理 — 整洁表、连接、缺失」等题型做限时练习。
+  faq:
+  - q_en: What does COMP5310 cover?
+    q_cn: COMP5310 学什么？
+    a_en: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer a question;
+      Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief…. Say which
+      week or assessment you are on when booking.
+    a_cn: 数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: INFO1110
   title: Introduction to Programming
   material: INFO1110 Introduction to Programming
   theme: programming
-  meta_description_en: INFO1110 Sydney tutoring (Introduction to Programming). Code that “almost works”
-    with no systematic debug plan? Bilingual Chinese/English help.
-  lead_en: INFO1110 Introduction to Programming at University of Sydney is where briefs, tooling, and
-    autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 INFO1110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: INFO1110 Introduction to Programming sits in programming & software construction. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: INFO1110 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: INFO1110 tutoring (Introduction to Programming). Stuck on Reading the brief — I/O,
+    edges, and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'INFO1110 Introduction to Programming at University of Sydney: Reading the brief — I/O, edges,
+    and marking points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+    and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling, and autograder edge
+    cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在悉尼大学上 INFO1110，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for INFO1110 Introduction to Programming at University of Sydney.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: INFO1110（悉尼大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief and designing before typing
-    cn: 先读题、先设计，再动手写
-  - en: Functions, modules, and readable structure
-    cn: 函数、模块与可读结构
-  - en: Recursion, ADTs, and common lab patterns
-    cn: 递归、抽象数据类型与常见 Lab 模式
-  - en: Unit tests and autograder feedback loops
-    cn: 单元测试与 autograder 反馈循环
-  - en: Git basics when the course requires it
-    cn: 课程要求时的 Git 基础
-  - en: Memory / pointers when the language is C or C++
-    cn: C / C++ 下的内存与指针
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
   stuck:
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
-  - en: Lecture vocabulary for INFO1110 outruns bilingual notes
-    cn: INFO1110 的课堂术语跑在双语笔记前面
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
   - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分定位失败用例
-  - en: Refactor for clarity before chasing extra marks
-    cn: 先为清晰度重构，再追额外分数
+    cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for INFO1110: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 INFO1110 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for INFO1110: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 INFO1110 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does INFO1110 cover?
+    q_cn: INFO1110 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: ELEC1601/ELEC9601
   title: Intro to Computer System
+  theme: systems
+  meta_description_en: ELEC1601/ELEC9601 tutoring (Intro to Computer System). Stuck on Data representation
+    — ints, floats, endianness, bitwise ops? Bilingual Chinese/English h…
+  lead_en: 'ELEC1601/ELEC9601 Intro to Computer System at University of Sydney: Data representation —
+    ints, floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+    control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly,
+    data representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 ELEC1601/ELEC9601，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次
+    — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for ELEC1601/ELEC9601 Intro to Computer System at University of Sydney.
+    Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics
+    and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache,
+    locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: ELEC1601/ELEC9601（悉尼大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次
+    — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
+  stuck:
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
+  session_angles:
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
+  tutoring:
+  - en: 'Lecture sync for ELEC1601/ELEC9601: bilingual walkthrough of Data representation — ints, floats,
+      endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control,
+      and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial
+      language matches.'
+    cn: 按 ELEC1601/ELEC9601 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does ELEC1601/ELEC9601 cover?
+    q_cn: ELEC1601/ELEC9601 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: QBUS6600
   title: Data Analytics for Business Capstone
   material: QBUS6600
   theme: data-science
-  meta_description_en: QBUS6600 Sydney tutoring (Data Analytics for Business Capstone). Assignment brief
-    (“project1 model”) makes sense in class, freezes you alone?
+  meta_description_en: QBUS6600 tutoring (Data Analytics for Business Capstone). Stuck on Data wrangling
+    / analytics tables? Bilingual Chinese/English help.
   lead_en: QBUS6600 Data Analytics for Business Capstone at University of Sydney is where messy notebooks
     and weak method stories lose marks even when a model runs. The hard part is turning that arc into
     a method you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在悉尼大学上 QBUS6600，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: QBUS6600 Data Analytics for Business Capstone sits in data science & analytics. Evidence
-    from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
+  overview_en: QBUS6600 Data Analytics for Business Capstone sits in data science & analytics. Assessed
+    work expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit. Sample slides from our concept-review tutoring deck are
+    below.
   overview_cn: QBUS6600 是悉尼大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
@@ -316,8 +473,8 @@ courses:
   - en: Feature hygiene before modelling
     cn: 建模前的特征卫生
   stuck:
-  - en: Assignment brief (“project1 model”) makes sense in class, freezes you alone
-    cn: 作业 brief（「project1 model」）课上听得懂，自己对着就停住
+  - en: Assignment brief makes sense in class, freezes you alone
+    cn: 作业 brief 课上听得懂，自己对着就停住
   - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
     cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
   - en: Tool output produced, write-up cannot defend method choice
@@ -336,9 +493,8 @@ courses:
   tutoring:
   - en: 'Lecture sync for QBUS6600: bilingual catch-up so workshop / tutorial language matches the lectures.'
     cn: 按 QBUS6600 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as project1 model, Project1 Outline, with you
-      at the keyboard.'
-    cn: 作业辅导：针对 project1 model, Project1 Outline 一类评估拆题，你来操作键盘。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   sample_slides:
@@ -396,65 +552,126 @@ courses:
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP9120
   title: Database Management Systems
+  theme: databases
+  meta_description_en: COMP9120 tutoring (Database Management Systems). Stuck on ER / relational modelling
+    and normalisation? Bilingual Chinese/English help.
+  lead_en: 'COMP9120 Database Management Systems at University of Sydney: ER / relational modelling and
+    normalisation → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query
+    is slow → Transactions — ACID, isolation, locking…. One wrong schema or join quietly breaks every
+    later query and transaction story. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在悉尼大学上 COMP9120，主线是ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因 → 事务 — ACID、隔离级别、锁。Schema
+    或 join 偏一点，后面查询和事务叙事会整条链一起歪。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP9120 Database Management Systems at University of Sydney.
+    Covered topics: ER / relational modelling and normalisation; SQL — select, join, aggregation, nested
+    queries; Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking; Integrity
+    constraints and schema evolution. Bring your brief, failing test, lecture slide screenshot, or the
+    topic name you are stuck on.'
+  overview_cn: COMP9120（悉尼大学）一对一辅导。覆盖主题包括ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: ER / relational modelling and normalisation
+    cn: ER / 关系建模与范式
+  - en: SQL — select, join, aggregation, nested queries
+    cn: SQL — 查询、连接、聚合、嵌套
+  - en: Indexes, plans, and why a query is slow
+    cn: 索引、执行计划与慢查询原因
+  - en: Transactions — ACID, isolation, locking
+    cn: 事务 — ACID、隔离级别、锁
+  - en: Integrity constraints and schema evolution
+    cn: 完整性约束与 Schema 演化
+  - en: Application ↔ DB boundary (ORM / prepared statements)
+    cn: 应用与数据库边界（ORM / 预处理语句）
+  stuck:
+  - en: Join results look right until a duplicate or NULL appears
+    cn: Join 结果看起来对，一出现重复或 NULL 就崩
+  - en: Normalisation on paper; schema in code still denormalised
+    cn: 纸上范式对了，代码里 Schema 仍不规范
+  - en: Transaction / isolation questions collapse under time pressure
+    cn: 限时下事务 / 隔离级别题直接崩盘
+  session_angles:
+  - en: Draw the ER, then write the join checklist
+    cn: 先画 ER，再写 join 清单
+  - en: Explain the plan before tuning indexes
+    cn: 调索引前先说清执行计划
+  tutoring:
+  - en: 'Lecture sync for COMP9120: bilingual walkthrough of ER / relational modelling and normalisation
+      → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query is slow → Transactions
+      — ACID, isolation, locking so tutorial language matches.'
+    cn: 按 COMP9120 同步跟课：用中英双语把「ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on ER / relational modelling and normalisation question shapes for this
+      course.'
+    cn: 考前突击：按本课「ER / 关系建模与范式」等题型做限时练习。
+  faq:
+  - q_en: What does COMP9120 cover?
+    q_cn: COMP9120 学什么？
+    a_en: ER / relational modelling and normalisation; SQL — select, join, aggregation, nested queries;
+      Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking…. Say which week
+      or assessment you are on when booking.
+    a_cn: ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: INFO1112
   title: Computing 1B OS and Network Platforms
   material: INFO1112
   theme: systems
-  meta_description_en: INFO1112 Sydney tutoring (Computing 1B OS and Network…). Weekly lecture arc moves
-    on before last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: INFO1112 Computing 1B OS and Network Platforms at University of Sydney is where abstractions
-    stack fast and labs fail for reasons that look opaque. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 INFO1112，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: INFO1112 Computing 1B OS and Network Platforms sits in systems, networks & architecture.
-    There is a weekly arc (about week 1–3) plus assessed work that expects you to apply the same ideas
-    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
-    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our concept-review tutoring deck are below.
-  overview_cn: INFO1112 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、编程基础与调试这些点转。大约第
-    1–3 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: INFO1112 tutoring (Computing 1B OS and Network…). Stuck on Layered models (OSI
+    / TCP-IP) and where each job lives? Bilingual Chinese/English help.
+  lead_en: 'INFO1112 Computing 1B OS and Network Platforms at University of Sydney: Layered models (OSI
+    / TCP-IP) and where each job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing,
+    and forwarding intuition → HTTP/DNS and application-layer protocols…. Layers, packets, and failure
+    modes blur until you can trace one request end-to-end. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 INFO1112，主线是分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉 → HTTP/DNS
+    与应用层协议。分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for INFO1112 Computing 1B OS and Network Platforms at University of
+    Sydney. Covered topics: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP,
+    and reliable delivery; Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer
+    protocols; Congestion, flow control, and performance trade-offs. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: INFO1112（悉尼大学）一对一辅导。覆盖主题包括分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS
+    与应用层协议。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: 'Week 1: Lecture01A Admin 2025'
-    cn: 第 1 周：Lecture01A Admin 2025
-  - en: 'Week 1: Lecture01B Bits 2025'
-    cn: 第 1 周：Lecture01B Bits 2025
-  - en: 'Week 2: Lecture02 Shell&Processes 2025 08 11 WEILI'
-    cn: 第 2 周：Lecture02 Shell&Processes 2025 08 11 WEILI
-  - en: 'Week 3: Lecture03 Emulators VirtualMachines Containers 2025 08 18'
-    cn: 第 3 周：Lecture03 Emulators VirtualMachines Containers 2025 08 18
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Layered models (OSI / TCP-IP) and where each job lives
+    cn: 分层模型（OSI / TCP-IP）与各层职责
+  - en: Sockets, TCP vs UDP, and reliable delivery
+    cn: Socket、TCP vs UDP 与可靠传输
+  - en: Routing, addressing, and forwarding intuition
+    cn: 路由、编址与转发直觉
+  - en: HTTP/DNS and application-layer protocols
+    cn: HTTP/DNS 与应用层协议
+  - en: Congestion, flow control, and performance trade-offs
+    cn: 拥塞、流控与性能权衡
+  - en: Lab traces — Wireshark / packet walks when required
+    cn: 需要时的抓包 / 报文走读 Lab
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“INFO1112 A1 作业要求”) makes sense in class, freezes you alone
-    cn: 作业 brief（「INFO1112 A1 作业要求」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Mixing app vs transport vs network layer when debugging
+    cn: 排查时把应用 / 传输 / 网络层搅在一起
+  - en: Socket code almost works; handshake or timeout edges fail
+    cn: Socket 差不多能跑；握手或超时边界挂掉
+  - en: Protocol diagrams look familiar until the exam scenario is new
+    cn: 协议图课上眼熟，考试换场景就不会读
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Trace one packet path before changing socket code
+    cn: 改 Socket 代码前先跟完一条报文路径
+  - en: Name the layer that owns the failure
+    cn: 先说出故障属于哪一层
   tutoring:
-  - en: 'Lecture sync for INFO1112: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 INFO1112 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as INFO1112 A1 作业要求, emulator, with you at
-      the keyboard.'
-    cn: 作业辅导：针对 INFO1112 A1 作业要求, emulator 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for INFO1112: bilingual walkthrough of Layered models (OSI / TCP-IP) and where each
+      job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding intuition
+      → HTTP/DNS and application-layer protocols so tutorial language matches.'
+    cn: 按 INFO1112 同步跟课：用中英双语把「分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Layered models (OSI / TCP-IP) and where each job lives question shapes
+      for this course.'
+    cn: 考前突击：按本课「分层模型（OSI / TCP-IP）与各层职责」等题型做限时练习。
   sample_slides:
     title_en: INFO1112 — sample slides
     title_cn: INFO1112 — 辅导课件样例
@@ -505,91 +722,812 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does INFO1112 cover?
+    q_cn: INFO1112 学什么？
+    a_en: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery;
+      Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols…. Say which
+      week or assessment you are on when booking.
+    a_cn: 分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS 与应用层协议。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2017
   title: Systems Programming
+  theme: systems
+  meta_description_en: COMP2017 tutoring (Systems Programming). Stuck on OS architecture — kernel vs user,
+    system calls, interrupts? Bilingual Chinese/English help.
+  lead_en: 'COMP2017 Systems Programming at University of Sydney: OS architecture — kernel vs user, system
+    calls, interrupts → Processes, threads, PCBs, and scheduling → Concurrency — mutexes, semaphores,
+    condition variables, deadlock → Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)…. Processes,
+    memory, concurrency, and file-system ideas stack faster than labs can catch up. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 COMP2017，主线是操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁 → 虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。进程、内存、并发和文件系统叠得比 Lab 跟得上的速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2017 Systems Programming at University of Sydney. Covered
+    topics: OS architecture — kernel vs user, system calls, interrupts; Processes, threads, PCBs, and
+    scheduling; Concurrency — mutexes, semaphores, condition variables, deadlock; Virtual memory — paging,
+    TLB, replacement (FIFO/LRU/CLOCK); File systems — inodes, allocation, journaling, protection. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2017（悉尼大学）一对一辅导。覆盖主题包括操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: OS architecture — kernel vs user, system calls, interrupts
+    cn: 操作系统结构 — 内核/用户态、系统调用、中断
+  - en: Processes, threads, PCBs, and scheduling
+    cn: 进程、线程、PCB 与调度
+  - en: Concurrency — mutexes, semaphores, condition variables, deadlock
+    cn: 并发 — mutex、信号量、条件变量、死锁
+  - en: Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)
+    cn: 虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）
+  - en: File systems — inodes, allocation, journaling, protection
+    cn: 文件系统 — inode、分配、日志、保护
+  - en: C/Linux labs tying lectures to real behaviour
+    cn: 把课接到真实行为的 C/Linux Lab
+  stuck:
+  - en: Lecture process model clear; fork/wait lab does not match
+    cn: 课上进程模型清楚，fork/wait Lab 却对不上
+  - en: Race or deadlock only under timing you cannot reproduce
+    cn: 竞态 / 死锁只在某种时序下出现，复现不了
+  - en: Paging / TLB / replacement mix up when the exam figure changes
+    cn: 考试换图，分页 / TLB / 置换就搅在一起
+  session_angles:
+  - en: Draw process / lock / page path before changing code
+    cn: 改代码前先画进程 / 锁 / 页路径
+  - en: Reproduce the race, then patch the root cause
+    cn: 先复现竞态，再修根因
+  tutoring:
+  - en: 'Lecture sync for COMP2017: bilingual walkthrough of OS architecture — kernel vs user, system
+      calls, interrupts → Processes, threads, PCBs, and scheduling → Concurrency — mutexes, semaphores,
+      condition variables, deadlock → Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK) so tutorial
+      language matches.'
+    cn: 按 COMP2017 同步跟课：用中英双语把「操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on OS architecture — kernel vs user, system calls, interrupts question
+      shapes for this course.'
+    cn: 考前突击：按本课「操作系统结构 — 内核/用户态、系统调用、中断」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2017 cover?
+    q_cn: COMP2017 学什么？
+    a_en: OS architecture — kernel vs user, system calls, interrupts; Processes, threads, PCBs, and scheduling;
+      Concurrency — mutexes, semaphores, condition variables, deadlock; Virtual memory — paging, TLB,
+      replacement (FIFO/LRU/CLOCK)…. Say which week or assessment you are on when booking.
+    a_cn: 操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2123
   title: Data Structures and Algorithms
+  theme: algorithms
+  meta_description_en: COMP2123 tutoring (Data Structures and Algorithms). Stuck on Complexity — Big-O,
+    recurrence, and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'COMP2123 Data Structures and Algorithms at University of Sydney: Complexity — Big-O, recurrence,
+    and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching
+    families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code
+    must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在悉尼大学上 COMP2123，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2123 Data Structures and Algorithms at University of Sydney.
+    Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues,
+    trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+    MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2123（悉尼大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for COMP2123: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMP2123 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2123 cover?
+    q_cn: COMP2123 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2823
   title: Data Structures and Algorithms (Advanced)
+  theme: algorithms
+  meta_description_en: COMP2823 tutoring (Data Structures and Algorithms…). Stuck on Complexity — Big-O,
+    recurrence, and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'COMP2823 Data Structures and Algorithms (Advanced) at University of Sydney: Complexity — Big-O,
+    recurrence, and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting
+    and searching families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity
+    claims, and code must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 COMP2823，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2823 Data Structures and Algorithms (Advanced) at University
+    of Sydney. Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists,
+    stacks, queues, trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS,
+    shortest paths, MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2823（悉尼大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for COMP2823: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMP2823 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2823 cover?
+    q_cn: COMP2823 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3027
   title: Algorithm Design
+  theme: algorithms
+  meta_description_en: COMP3027 tutoring (Algorithm Design). Stuck on Complexity — Big-O, recurrence,
+    and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'COMP3027 Algorithm Design at University of Sydney: Complexity — Big-O, recurrence, and arguing
+    bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+    → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code must
+    stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在悉尼大学上 COMP3027，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3027 Algorithm Design at University of Sydney. Covered topics:
+    Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees, heaps,
+    hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths, MSTs; Greedy,
+    divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP3027（悉尼大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for COMP3027: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMP3027 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3027 cover?
+    q_cn: COMP3027 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3308
   title: Introduction to Artificial Intelligence
+  theme: machine-learning
+  meta_description_en: COMP3308 tutoring (Introduction to Artificial…). Stuck on Neural net basics — layers,
+    activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'COMP3308 Introduction to Artificial Intelligence at University of Sydney: Neural net basics
+    — layers, activations, backprop intuition → CNNs / RNNs / Transformers when the course uses them →
+    Losses, optimisers, and training loops → Regularisation — dropout, weight decay, early stopping….
+    Architectures and loss jargon outrun the debugging loop when shapes and gradients fail. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 COMP3308，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环 → 正则
+    — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3308 Introduction to Artificial Intelligence at University
+    of Sydney. Covered topics: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs
+    / Transformers when the course uses them; Losses, optimisers, and training loops; Regularisation —
+    dropout, weight decay, early stopping; Shape debugging and common framework errors. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP3308（悉尼大学）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for COMP3308: bilingual walkthrough of Neural net basics — layers, activations,
+      backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers,
+      and training loops → Regularisation — dropout, weight decay, early stopping so tutorial language
+      matches.'
+    cn: 按 COMP3308 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3308 cover?
+    q_cn: COMP3308 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3608
   title: Introduction to Artificial Intelligence (Advanced)
+  theme: machine-learning
+  meta_description_en: COMP3608 tutoring (Introduction to Artificial…). Stuck on Neural net basics — layers,
+    activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'COMP3608 Introduction to Artificial Intelligence (Advanced) at University of Sydney: Neural
+    net basics — layers, activations, backprop intuition → CNNs / RNNs / Transformers when the course
+    uses them → Losses, optimisers, and training loops → Regularisation — dropout, weight decay, early
+    stopping…. Architectures and loss jargon outrun the debugging loop when shapes and gradients fail.
+    Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 COMP3608，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环 → 正则
+    — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3608 Introduction to Artificial Intelligence (Advanced) at
+    University of Sydney. Covered topics: Neural net basics — layers, activations, backprop intuition;
+    CNNs / RNNs / Transformers when the course uses them; Losses, optimisers, and training loops; Regularisation
+    — dropout, weight decay, early stopping; Shape debugging and common framework errors. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP3608（悉尼大学）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for COMP3608: bilingual walkthrough of Neural net basics — layers, activations,
+      backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers,
+      and training loops → Regularisation — dropout, weight decay, early stopping so tutorial language
+      matches.'
+    cn: 按 COMP3608 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3608 cover?
+    q_cn: COMP3608 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP5318
   title: Machine Learning and Data Mining
+  theme: machine-learning
+  meta_description_en: COMP5318 tutoring (Machine Learning and Data Mining). Stuck on Supervised learning
+    — linear/logistic models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'COMP5318 Machine Learning and Data Mining at University of Sydney: Supervised learning — linear/logistic
+    models, trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and
+    model selection → Metrics — accuracy, precision/recall, ROC, calibration…. Method names blur until
+    pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 COMP5318，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP5318 Machine Learning and Data Mining at University of Sydney.
+    Covered topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test
+    splits and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+    ROC, calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP5318（悉尼大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for COMP5318: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 COMP5318 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does COMP5318 cover?
+    q_cn: COMP5318 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP5328
   title: Advanced Machine Learning
+  theme: machine-learning
+  meta_description_en: COMP5328 tutoring (Advanced Machine Learning). Stuck on Supervised learning — linear/logistic
+    models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'COMP5328 Advanced Machine Learning at University of Sydney: Supervised learning — linear/logistic
+    models, trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and
+    model selection → Metrics — accuracy, precision/recall, ROC, calibration…. Method names blur until
+    pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 COMP5328，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP5328 Advanced Machine Learning at University of Sydney. Covered
+    topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+    and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall, ROC,
+    calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP5328（悉尼大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for COMP5328: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 COMP5328 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does COMP5328 cover?
+    q_cn: COMP5328 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP5349
   title: Cloud Computing
+  theme: systems
+  meta_description_en: COMP5349 tutoring (Cloud Computing). Stuck on Models of distribution — nodes, links,
+    partial failure? Bilingual Chinese/English help.
+  lead_en: 'COMP5349 Cloud Computing at University of Sydney: Models of distribution — nodes, links, partial
+    failure → RPC, messaging, and serialisation basics → Consistency, replication, and consensus intuition
+    → Clocks, ordering, and concurrency control…. Partial failure and consistency models make “it worked
+    on my node” meaningless. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where
+    it breaks.'
+  lead_cn: 在悉尼大学上 COMP5349，主线是分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉 → 时钟、排序与并发控制。部分失效和一致性模型会让「我这台节点能跑」变得毫无意义。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP5349 Cloud Computing at University of Sydney. Covered topics:
+    Models of distribution — nodes, links, partial failure; RPC, messaging, and serialisation basics;
+    Consistency, replication, and consensus intuition; Clocks, ordering, and concurrency control; Fault
+    tolerance and idempotent design. Bring your brief, failing test, lecture slide screenshot, or the
+    topic name you are stuck on.'
+  overview_cn: COMP5349（悉尼大学）一对一辅导。覆盖主题包括分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Models of distribution — nodes, links, partial failure
+    cn: 分布模型 — 节点、链路、部分失效
+  - en: RPC, messaging, and serialisation basics
+    cn: RPC、消息与序列化基础
+  - en: Consistency, replication, and consensus intuition
+    cn: 一致性、复制与共识直觉
+  - en: Clocks, ordering, and concurrency control
+    cn: 时钟、排序与并发控制
+  - en: Fault tolerance and idempotent design
+    cn: 容错与幂等设计
+  - en: Lab systems — tracing failures across components
+    cn: Lab 系统 — 跨组件追踪故障
+  stuck:
+  - en: Happy path works; partition or retry logic breaks state
+    cn: 快乐路径能跑；分区或重试逻辑弄坏状态
+  - en: Consistency model named; behaviour under failure unclear
+    cn: 一致性模型名字会背，失效下行为说不清
+  - en: Logs from multiple nodes do not tell one story
+    cn: 多节点日志拼不成一个故事
+  session_angles:
+  - en: Draw the failure scenario before changing code
+    cn: 改代码前先画失效场景
+  - en: Make retries idempotent on purpose
+    cn: 有意识地把重试做成幂等
+  tutoring:
+  - en: 'Lecture sync for COMP5349: bilingual walkthrough of Models of distribution — nodes, links, partial
+      failure → RPC, messaging, and serialisation basics → Consistency, replication, and consensus intuition
+      → Clocks, ordering, and concurrency control so tutorial language matches.'
+    cn: 按 COMP5349 同步跟课：用中英双语把「分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Models of distribution — nodes, links, partial failure question shapes
+      for this course.'
+    cn: 考前突击：按本课「分布模型 — 节点、链路、部分失效」等题型做限时练习。
+  faq:
+  - q_en: What does COMP5349 cover?
+    q_cn: COMP5349 学什么？
+    a_en: Models of distribution — nodes, links, partial failure; RPC, messaging, and serialisation basics;
+      Consistency, replication, and consensus intuition; Clocks, ordering, and concurrency control…. Say
+      which week or assessment you are on when booking.
+    a_cn: 分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP9007
   title: Algorithms
+  theme: algorithms
+  meta_description_en: COMP9007 tutoring (Algorithms). Stuck on Complexity — Big-O, recurrence, and arguing
+    bounds? Bilingual Chinese/English help.
+  lead_en: 'COMP9007 Algorithms at University of Sydney: Complexity — Big-O, recurrence, and arguing bounds
+    → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families →
+    Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code must stay
+    aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在悉尼大学上 COMP9007，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP9007 Algorithms at University of Sydney. Covered topics: Complexity
+    — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees, heaps, hash tables;
+    Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths, MSTs; Greedy, divide-and-conquer,
+    and dynamic programming patterns. Bring your brief, failing test, lecture slide screenshot, or the
+    topic name you are stuck on.'
+  overview_cn: COMP9007（悉尼大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for COMP9007: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMP9007 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does COMP9007 cover?
+    q_cn: COMP9007 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: DATA1002
   title: 'Informatics: Data and Computation'
+  theme: data-science
+  meta_description_en: 'DATA1002 tutoring (Informatics: Data and Computation). Stuck on Data wrangling
+    — tidy tables, joins, missingness? Bilingual Chinese/English help.'
+  lead_en: 'DATA1002 Informatics: Data and Computation at University of Sydney: Data wrangling — tidy
+    tables, joins, missingness → EDA and visualisation that answer a question → Feature hygiene and leakage
+    checks → Simple models / summaries appropriate to the brief…. Messy tables and weak method stories
+    lose marks even when a chart renders. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在悉尼大学上 DATA1002，主线是数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查 → 适合 brief 的简单模型 / 汇总。就算图画出来了，脏表和站不住的方法叙事也会丢分。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for DATA1002 Informatics: Data and Computation at University of Sydney.
+    Covered topics: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer
+    a question; Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief;
+    Method trail the marker can re-run. Bring your brief, failing test, lecture slide screenshot, or the
+    topic name you are stuck on.'
+  overview_cn: DATA1002（悉尼大学）一对一辅导。覆盖主题包括数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data wrangling — tidy tables, joins, missingness
+    cn: 数据整理 — 整洁表、连接、缺失
+  - en: EDA and visualisation that answer a question
+    cn: 能回答问题的 EDA 与可视化
+  - en: Feature hygiene and leakage checks
+    cn: 特征卫生与泄漏检查
+  - en: Simple models / summaries appropriate to the brief
+    cn: 适合 brief 的简单模型 / 汇总
+  - en: Method trail the marker can re-run
+    cn: 改卷人能复跑的方法轨迹
+  - en: Writing that defends every plot and transform
+    cn: 能为每张图和每步变换辩护的写作
+  stuck:
+  - en: Plot produced; caption cannot defend the choice
+    cn: 图有了，图注说不清为何这样画
+  - en: Joins explode row counts unnoticed
+    cn: Join 把行数炸开却没发现
+  - en: Notebook order unreproducible for the marker
+    cn: notebook 顺序让改卷人无法复现
+  session_angles:
+  - en: State the question, then pick the table grain
+    cn: 先陈述问题，再定表的粒度
+  - en: Keep a transform log beside the notebook
+    cn: 在 notebook 旁保留变换日志
+  tutoring:
+  - en: 'Lecture sync for DATA1002: bilingual walkthrough of Data wrangling — tidy tables, joins, missingness
+      → EDA and visualisation that answer a question → Feature hygiene and leakage checks → Simple models
+      / summaries appropriate to the brief so tutorial language matches.'
+    cn: 按 DATA1002 同步跟课：用中英双语把「数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data wrangling — tidy tables, joins, missingness question shapes for
+      this course.'
+    cn: 考前突击：按本课「数据整理 — 整洁表、连接、缺失」等题型做限时练习。
+  faq:
+  - q_en: What does DATA1002 cover?
+    q_cn: DATA1002 学什么？
+    a_en: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer a question;
+      Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief…. Say which
+      week or assessment you are on when booking.
+    a_cn: 数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: INFO3616
   title: Principles Of Security And Security Eng
   material: INFO3616-Principles of Security and Security Eng
   theme: security
-  meta_description_en: INFO3616 University of Sydney tutoring (Principles Of Security And…). Stuck on
-    assignment briefs such as answers? Bilingual Chinese/English help.
-  lead_en: 'INFO3616 Principles Of Security And Security Eng at University of Sydney. Threat models, crypto
-    vocabulary, and lab setup form a terminology wall. Tutoring: lecture catch-up, assignment debug, exam
-    drills — methods you can reuse.'
-  lead_cn: 在悉尼大学上 INFO3616，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'INFO3616 Principles Of Security And Security Eng (Security & privacy) at University of
-    Sydney. Common topics: Security / privacy threat models and labs. Weekly arc about week 1–11, plus
-    assessed work under deadline. People stall when terms outrun notes, when a class demo does not replay
-    alone, or when the write-up / autograder wants a method the notebook never showed. Sample slides from
-    our concept-review tutoring deck are below.'
-  overview_cn: INFO3616 是悉尼大学的「安全与隐私」课，既要真懂，也要能动手。常见内容包括安全 / 隐私威胁模型与实验。大约第 1–11 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: INFO3616 tutoring (Principles Of Security And…). Stuck on Threat modelling — assets,
+    attackers, trust boundaries? Bilingual Chinese/English help.
+  lead_en: 'INFO3616 Principles Of Security And Security Eng at University of Sydney: Threat modelling
+    — assets, attackers, trust boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition
+    → Authentication, authorisation, and session security → Common web / network vulnerabilities when
+    in syllabus…. Threat models and crypto vocabulary form a wall before the lab even builds. Tutoring
+    rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 INFO3616，主线是威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全 → 大纲中的常见 Web /
+    网络漏洞。威胁模型和密码学术语先堆成一堵墙，Lab 还没编译就劝退。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for INFO3616 Principles Of Security And Security Eng at University
+    of Sydney. Covered topics: Threat modelling — assets, attackers, trust boundaries; Crypto primitives
+    — symmetric, public-key, hashing, TLS intuition; Authentication, authorisation, and session security;
+    Common web / network vulnerabilities when in syllabus; Secure coding habits and failure modes. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: INFO3616（悉尼大学）一对一辅导。覆盖主题包括威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见
+    Web / 网络漏洞。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: 'Week 4: Abstract Algebra'
-    cn: 第 4 周：Abstract Algebra
-  - en: 'Week 4: Lecture Notes'
-    cn: 第 4 周：Lecture Notes
-  - en: 'Week 4: Number Theory'
-    cn: 第 4 周：Number Theory
-  - en: 'Week 9: Lecture Notes'
-    cn: 第 9 周：Lecture Notes
-  - en: 'Week 10: Lecture Notes'
-    cn: 第 10 周：Lecture Notes
-  - en: 'Week 11: Lecture Notes'
-    cn: 第 11 周：Lecture Notes
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Threat modelling — assets, attackers, trust boundaries
+    cn: 威胁建模 — 资产、攻击者、信任边界
+  - en: Crypto primitives — symmetric, public-key, hashing, TLS intuition
+    cn: 密码学原语 — 对称、公钥、哈希、TLS 直觉
+  - en: Authentication, authorisation, and session security
+    cn: 认证、授权与会话安全
+  - en: Common web / network vulnerabilities when in syllabus
+    cn: 大纲中的常见 Web / 网络漏洞
+  - en: Secure coding habits and failure modes
+    cn: 安全编码习惯与失败模式
+  - en: Lab setup and reporting findings clearly
+    cn: Lab 环境与把发现写清楚
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“answers”) makes sense in class, freezes you alone
-    cn: 作业 brief（「answers」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Lab setup unfinished; report lists tools without a clear finding
-    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
-  - en: Labs that need precise setup before any “hacking”
-    cn: Lab 还没配好环境就急着“黑”
+  - en: Lab setup unfinished; report lists tools without a finding
+    cn: Lab 环境没配好；报告只罗列工具没有发现
+  - en: Primitive names memorised; wrong tool for the threat
+    cn: 原语名字背过了，威胁却选错工具
+  - en: Crypto math and protocol steps diverge under exam pressure
+    cn: 限时下密码学计算和协议步骤对不上
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Write the threat model before picking a primitive
+    cn: 选原语前先写威胁模型
+  - en: One reproducible finding beats a tool dump
+    cn: 一个可复现发现胜过工具清单
   tutoring:
-  - en: 'Lecture sync for INFO3616: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 INFO3616 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as answers, Assignment 1, with you at the keyboard.'
-    cn: 作业辅导：针对 answers, Assignment 1 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for INFO3616: bilingual walkthrough of Threat modelling — assets, attackers, trust
+      boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition → Authentication,
+      authorisation, and session security → Common web / network vulnerabilities when in syllabus so tutorial
+      language matches.'
+    cn: 按 INFO3616 同步跟课：用中英双语把「威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Threat modelling — assets, attackers, trust boundaries question shapes
+      for this course.'
+    cn: 考前突击：按本课「威胁建模 — 资产、攻击者、信任边界」等题型做限时练习。
   sample_slides:
     title_en: INFO3616 — sample slides
     title_cn: INFO3616 — 辅导课件样例
@@ -640,6 +1578,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does INFO3616 cover?
+    q_cn: INFO3616 学什么？
+    a_en: Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric, public-key,
+      hashing, TLS intuition; Authentication, authorisation, and session security; Common web / network
+      vulnerabilities when in syllabus…. Say which week or assessment you are on when booking.
+    a_cn: 威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见 Web / 网络漏洞。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -648,65 +1597,70 @@ courses:
   material: distributed systems
   code: COMP3221
   theme: systems
-  meta_description_en: COMP3221 Sydney tutoring (Distributed Systems). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: COMP3221 Distributed Systems at University of Sydney is where abstractions stack fast and labs
-    fail for reasons that look opaque. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 COMP3221，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: COMP3221 Distributed Systems sits in systems, networks & architecture. There is a weekly
-    arc (about week 1–12) plus assessed work that expects you to apply the same ideas under deadline pressure.
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.
-  overview_cn: COMP3221 是悉尼大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、网络分层、报文与协议、操作系统
-    / 系统编程这些点转。大约第 1–12 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 /
-    autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: COMP3221 tutoring (Distributed Systems). Stuck on Models of distribution — nodes,
+    links, partial failure? Bilingual Chinese/English help.
+  lead_en: 'COMP3221 Distributed Systems at University of Sydney: Models of distribution — nodes, links,
+    partial failure → RPC, messaging, and serialisation basics → Consistency, replication, and consensus
+    intuition → Clocks, ordering, and concurrency control…. Partial failure and consistency models make
+    “it worked on my node” meaningless. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在悉尼大学上 COMP3221，主线是分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉 → 时钟、排序与并发控制。部分失效和一致性模型会让「我这台节点能跑」变得毫无意义。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3221 Distributed Systems at University of Sydney. Covered
+    topics: Models of distribution — nodes, links, partial failure; RPC, messaging, and serialisation
+    basics; Consistency, replication, and consensus intuition; Clocks, ordering, and concurrency control;
+    Fault tolerance and idempotent design. Bring your brief, failing test, lecture slide screenshot, or
+    the topic name you are stuck on.'
+  overview_cn: COMP3221（悉尼大学）一对一辅导。覆盖主题包括分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: OS / systems programming
-    cn: 操作系统 / 系统编程
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Web / mobile app structure
-    cn: Web / 移动应用结构
-  - en: Distributed systems ideas
-    cn: 分布式系统概念
+  - en: Models of distribution — nodes, links, partial failure
+    cn: 分布模型 — 节点、链路、部分失效
+  - en: RPC, messaging, and serialisation basics
+    cn: RPC、消息与序列化基础
+  - en: Consistency, replication, and consensus intuition
+    cn: 一致性、复制与共识直觉
+  - en: Clocks, ordering, and concurrency control
+    cn: 时钟、排序与并发控制
+  - en: Fault tolerance and idempotent design
+    cn: 容错与幂等设计
+  - en: Lab systems — tracing failures across components
+    cn: Lab 系统 — 跨组件追踪故障
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“test peers 6001”) makes sense in class, freezes you alone
-    cn: 作业 brief（「test peers 6001」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
+  - en: Happy path works; partition or retry logic breaks state
+    cn: 快乐路径能跑；分区或重试逻辑弄坏状态
+  - en: Consistency model named; behaviour under failure unclear
+    cn: 一致性模型名字会背，失效下行为说不清
+  - en: Logs from multiple nodes do not tell one story
+    cn: 多节点日志拼不成一个故事
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Draw the failure scenario before changing code
+    cn: 改代码前先画失效场景
+  - en: Make retries idempotent on purpose
+    cn: 有意识地把重试做成幂等
   tutoring:
-  - en: 'Lecture sync for COMP3221: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 COMP3221 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as test peers 6001, test peers 6002, with you
-      at the keyboard.'
-    cn: 作业辅导：针对 test peers 6001, test peers 6002 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMP3221: bilingual walkthrough of Models of distribution — nodes, links, partial
+      failure → RPC, messaging, and serialisation basics → Consistency, replication, and consensus intuition
+      → Clocks, ordering, and concurrency control so tutorial language matches.'
+    cn: 按 COMP3221 同步跟课：用中英双语把「分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Models of distribution — nodes, links, partial failure question shapes
+      for this course.'
+    cn: 考前突击：按本课「分布模型 — 节点、链路、部分失效」等题型做限时练习。
   sample_slides: *id001
   faq:
+  - q_en: What does COMP3221 cover?
+    q_cn: COMP3221 学什么？
+    a_en: Models of distribution — nodes, links, partial failure; RPC, messaging, and serialisation basics;
+      Consistency, replication, and consensus intuition; Clocks, ordering, and concurrency control…. Say
+      which week or assessment you are on when booking.
+    a_cn: 分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -715,62 +1669,55 @@ courses:
   title: Software Construction / Design
   material: soft2201-comp9201
   theme: programming
-  meta_description_en: SOFT2201 University of Sydney tutoring (Software Construction / Design). Stuck
-    on assignment briefs such as todo app answer?
-  lead_en: 'SOFT2201 Software Construction / Design at University of Sydney. Briefs, tooling, and autograder
-    edge cases hit harder than syntax itself. Tutoring: lecture catch-up, assignment debug, exam drills
-    — methods you can reuse.'
-  lead_cn: 在悉尼大学上 SOFT2201，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'SOFT2201 Software Construction / Design (Programming & software construction) at University
-    of Sydney. Common topics: Software design and construction. Weekly arc about week 2–11, plus assessed
-    work under deadline. People stall when terms outrun notes, when a class demo does not replay alone,
-    or when the write-up / autograder wants a method the notebook never showed. Sample slides from our
-    concept-review tutoring deck are below.'
-  overview_cn: SOFT2201 是悉尼大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括软件设计与构造。大约第 2–11 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: SOFT2201 tutoring (Software Construction / Design). Stuck on Classes, objects,
+    encapsulation, and invariants? Bilingual Chinese/English help.
+  lead_en: 'SOFT2201 Software Construction / Design at University of Sydney: Classes, objects, encapsulation,
+    and invariants → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities
+    and collaborators → Testing objects and mutable state…. Class design and ownership bugs hide behind
+    “it compiles”. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 SOFT2201，主线是类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系 → 测对象与可变状态。类设计和所有权问题藏在「能编译」后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for SOFT2201 Software Construction / Design at University of Sydney.
+    Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+    Design before typing — responsibilities and collaborators; Testing objects and mutable state; Common
+    memory / reference pitfalls in the course language. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: SOFT2201（悉尼大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Software design and construction
-    cn: 软件设计与构造
-  - en: 'Week 2: W2 UML'
-    cn: 第 2 周：W2 UML
-  - en: 'Week 3: W3 designpatterns'
-    cn: 第 3 周：W3 designpatterns
-  - en: 'Week 4: W4 composite'
-    cn: 第 4 周：W4 composite
-  - en: 'Week 5: W5 admin2'
-    cn: 第 5 周：W5 admin2
-  - en: 'Week 6: W6 singleton'
-    cn: 第 6 周：W6 singleton
-  - en: 'Week 8: W8 white box testing'
-    cn: 第 8 周：W8 white box testing
-  - en: 'Week 9: W9 iterators'
-    cn: 第 9 周：W9 iterators
+  - en: Classes, objects, encapsulation, and invariants
+    cn: 类、对象、封装与不变量
+  - en: Inheritance, interfaces, and polymorphism
+    cn: 继承、接口与多态
+  - en: Design before typing — responsibilities and collaborators
+    cn: 先设计再写 — 职责与协作关系
+  - en: Testing objects and mutable state
+    cn: 测对象与可变状态
+  - en: Common memory / reference pitfalls in the course language
+    cn: 课程语言里的常见引用 / 内存坑
+  - en: Refactoring for clarity under an autograder
+    cn: 在 autograder 下为清晰度重构
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“todo app answer”) makes sense in class, freezes you alone
-    cn: 作业 brief（「todo app answer」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Methods work in isolation; object graph breaks under the brief
+    cn: 方法单独能跑；对象关系一接 brief 就断
+  - en: Inheritance used where composition was needed
+    cn: 该用组合却用了继承
+  - en: Equals/hash or ownership bugs that only show in tests
+    cn: equals/hash 或所有权 bug 只在测试里出现
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: CRC / responsibility sketch before opening the editor
+    cn: 打开编辑器前先画职责草图
+  - en: Write the failing test that names the invariant
+    cn: 先写点名不变量的失败测试
   tutoring:
-  - en: 'Lecture sync for SOFT2201: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 SOFT2201 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as todo app answer, text editor core answer,
-      with you at the keyboard.'
-    cn: 作业辅导：针对 todo app answer, text editor core answer 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for SOFT2201: bilingual walkthrough of Classes, objects, encapsulation, and invariants
+      → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities and collaborators
+      → Testing objects and mutable state so tutorial language matches.'
+    cn: 按 SOFT2201 同步跟课：用中英双语把「类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Classes, objects, encapsulation, and invariants question shapes for
+      this course.'
+    cn: 考前突击：按本课「类、对象、封装与不变量」等题型做限时练习。
   sample_slides:
     title_en: SOFT2201 — sample slides
     title_cn: SOFT2201 — 辅导课件样例
@@ -821,6 +1768,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does SOFT2201 cover?
+    q_cn: SOFT2201 学什么？
+    a_en: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+      Design before typing — responsibilities and collaborators; Testing objects and mutable state…. Say
+      which week or assessment you are on when booking.
+    a_cn: 类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -829,66 +1787,70 @@ courses:
   title: Object-Oriented Programming
   material: info-1113-java
   theme: programming
-  meta_description_en: INFO1113 / INFO-1113 Sydney tutoring (Object-Oriented Programming). Weekly lecture
-    arc moves on before last week’s method is solid?
-  lead_en: INFO-1113 Java at University of Sydney is where briefs, tooling, and autograder edge cases
-    hit harder than syntax itself. The hard part is turning that arc into a method you can repeat on the
-    next brief — not rereading slides the night before.
-  lead_cn: 在悉尼大学上 INFO-1113，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: INFO-1113 Java sits in programming & software construction. There is a weekly arc (about
-    week 1–11) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: INFO-1113 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、编程基础与调试这些点转。大约第
-    1–11 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: INFO1113 tutoring (Object-Oriented Programming). Stuck on Classes, objects, encapsulation,
+    and invariants? Bilingual Chinese/English help.
+  lead_en: 'INFO1113 Object-Oriented Programming at University of Sydney: Classes, objects, encapsulation,
+    and invariants → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities
+    and collaborators → Testing objects and mutable state…. Class design and ownership bugs hide behind
+    “it compiles”. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 INFO1113，主线是类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系 → 测对象与可变状态。类设计和所有权问题藏在「能编译」后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for INFO1113 Object-Oriented Programming at University of Sydney.
+    Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+    Design before typing — responsibilities and collaborators; Testing objects and mutable state; Common
+    memory / reference pitfalls in the course language. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: INFO1113（悉尼大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: 'Week 1: Intro'
-    cn: 第 1 周：Intro
-  - en: 'Week 2: Loops and Arrays'
-    cn: 第 2 周：Loops and Arrays
-  - en: 'Week 3: Exceptions, inheritance and polymorphism'
-    cn: 第 3 周：Exceptions, inheritance and polymorphism
-  - en: 'Week 4: Collections'
-    cn: 第 4 周：Collections
-  - en: 'Week 5: Inheritance, Method Overloading & Packages'
-    cn: 第 5 周：Inheritance, Method Overloading & Packages
-  - en: 'Week 6: Abstract Class and Interface'
-    cn: 第 6 周：Abstract Class and Interface
+  - en: Classes, objects, encapsulation, and invariants
+    cn: 类、对象、封装与不变量
+  - en: Inheritance, interfaces, and polymorphism
+    cn: 继承、接口与多态
+  - en: Design before typing — responsibilities and collaborators
+    cn: 先设计再写 — 职责与协作关系
+  - en: Testing objects and mutable state
+    cn: 测对象与可变状态
+  - en: Common memory / reference pitfalls in the course language
+    cn: 课程语言里的常见引用 / 内存坑
+  - en: Refactoring for clarity under an autograder
+    cn: 在 autograder 下为清晰度重构
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Methods work in isolation; object graph breaks under the brief
+    cn: 方法单独能跑；对象关系一接 brief 就断
+  - en: Inheritance used where composition was needed
+    cn: 该用组合却用了继承
+  - en: Equals/hash or ownership bugs that only show in tests
+    cn: equals/hash 或所有权 bug 只在测试里出现
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: CRC / responsibility sketch before opening the editor
+    cn: 打开编辑器前先画职责草图
+  - en: Write the failing test that names the invariant
+    cn: 先写点名不变量的失败测试
   tutoring:
-  - en: 'Lecture sync for INFO-1113: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 INFO-1113 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for INFO1113: bilingual walkthrough of Classes, objects, encapsulation, and invariants
+      → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities and collaborators
+      → Testing objects and mutable state so tutorial language matches.'
+    cn: 按 INFO1113 同步跟课：用中英双语把「类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Classes, objects, encapsulation, and invariants question shapes for
+      this course.'
+    cn: 考前突击：按本课「类、对象、封装与不变量」等题型做限时练习。
   aliases:
   - INFO-1113
   sample_slides: *id002
   faq:
+  - q_en: What does INFO1113 cover?
+    q_cn: INFO1113 学什么？
+    a_en: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+      Design before typing — responsibilities and collaborators; Testing objects and mutable state…. Say
+      which week or assessment you are on when booking.
+    a_cn: 类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -1004,56 +1966,58 @@ courses:
   title: Introduction to Computer Systems
   material: elec1601
   theme: systems
-  meta_description_en: ELEC1601 Sydney tutoring (Introduction to Computer Systems). Weekly lecture arc
-    moves on before last week’s method is solid?
-  lead_en: ELEC1601 Introduction to Computer Systems at University of Sydney is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse
-    on the next brief.
-  lead_cn: 在悉尼大学上 ELEC1601，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: ELEC1601 Introduction to Computer Systems sits in programming & software construction.
-    There is a weekly arc (about week 2–4) plus assessed work that expects you to apply the same ideas
-    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
-    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our concept-review tutoring deck are below.
-  overview_cn: ELEC1601 是悉尼大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、安全 / 隐私威胁模型与实验这些点转。大约第
-    2–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: ELEC1601 tutoring (Introduction to Computer Systems). Stuck on Data representation
+    — ints, floats, endianness, bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'ELEC1601 Introduction to Computer Systems at University of Sydney: Data representation — ints,
+    floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control,
+    and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly, data
+    representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus arc,
+    then debugs the lab or assignment where it breaks.'
+  lead_cn: 在悉尼大学上 ELEC1601，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for ELEC1601 Introduction to Computer Systems at University of Sydney.
+    Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics
+    and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache,
+    locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: ELEC1601（悉尼大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 —
+    缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: 'Week 2: Polling and Interrupts ()'
-    cn: 第 2 周：Polling and Interrupts ()
-  - en: 'Week 3: (and 4) Encoding'
-    cn: 第 3 周：(and 4) Encoding
-  - en: 'Week 4: (and 5) Floating point'
-    cn: 第 4 周：(and 5) Floating point
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
-  - en: Lecture vocabulary for ELEC1601 outruns bilingual notes
-    cn: ELEC1601 的课堂术语跑在双语笔记前面
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
-  - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
   tutoring:
-  - en: 'Lecture sync for ELEC1601: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 ELEC1601 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for ELEC1601: bilingual walkthrough of Data representation — ints, floats, endianness,
+      bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+      intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial language matches.'
+    cn: 按 ELEC1601 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
   sample_slides:
     title_en: ELEC1601 — sample slides
     title_cn: ELEC1601 — 辅导课件样例
@@ -1104,6 +2068,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does ELEC1601 cover?
+    q_cn: ELEC1601 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

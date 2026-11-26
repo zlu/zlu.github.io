@@ -7,20 +7,20 @@ courses:
 - topics:
   - en: SQL, schema design, and databases
     cn: SQL、Schema 与数据库
-  - en: 'Week 1: 0248 数据库系统概念第六版(中文版)'
-    cn: 第 1 周：0248 数据库系统概念第六版(中文版)
-  - en: 'Week 1: 1 基础篇 数据库概述'
-    cn: 第 1 周：1 基础篇 数据库概述
-  - en: 'Week 2: 关系数据库 选择题'
-    cn: 第 2 周：关系数据库 选择题
-  - en: 'Week 2: 第2章 关系数据库'
-    cn: 第 2 周：第2章 关系数据库
-  - en: 'Week 3: 第2章 关系数据库'
-    cn: 第 3 周：第2章 关系数据库
-  - en: 'Week 4: 第3章 关系数据库标准语言SQL（Part 1）(2)'
-    cn: 第 4 周：第3章 关系数据库标准语言SQL（Part 1）(2)
-  - en: 'Week 5: 数据库标准语言SQL'
-    cn: 第 5 周：数据库标准语言SQL
+  - en: ER modelling and normalisation trade-offs
+    cn: ER 建模与范式权衡
+  - en: SQL joins, aggregation, and nested queries
+    cn: SQL join、聚合与嵌套查询
+  - en: Indexes, plans, and “why is this slow?”
+    cn: 索引、执行计划与“为什么慢”
+  - en: Transactions and isolation at intro level
+    cn: 入门级事务与隔离级别
+  - en: Application ↔ DB boundary in coursework projects
+    cn: 课设里应用与数据库的边界
+  - en: Lecture catch-up in Chinese and English
+    cn: 中英双语补课与知识点梳理
+  - en: Assignment approach and debugging
+    cn: 作业思路与调试
   meta_description_en: BCS010 CityU Macau tutoring (數據庫系統). Weekly lecture arc moves on before last week’s
     method is solid? Bilingual Chinese/English help.
   material: BCS010-數據庫系統

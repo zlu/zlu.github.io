@@ -6,6 +6,71 @@ teaching_folder: james-cook-singapore
 courses:
 - code: CP1407
   title: Introductory Machine Learning and Data Science
+  theme: machine-learning
+  meta_description_en: CP1407 tutoring (Introductory Machine Learning…). Stuck on Supervised learning
+    — linear/logistic models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'CP1407 Introductory Machine Learning and Data Science at James Cook University Singapore:
+    Supervised learning — linear/logistic models, trees, SVMs → Train / validation / test splits and leakage
+    traps → Features, scaling, and model selection → Metrics — accuracy, precision/recall, ROC, calibration….
+    Method names blur until pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在詹姆斯库克大学（新加坡）上 CP1407，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CP1407 Introductory Machine Learning and Data Science at James
+    Cook University Singapore. Covered topics: Supervised learning — linear/logistic models, trees, SVMs;
+    Train / validation / test splits and leakage traps; Features, scaling, and model selection; Metrics
+    — accuracy, precision/recall, ROC, calibration; Regularisation, overfitting, and bias-variance. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CP1407（詹姆斯库克大学（新加坡））一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标
+    — 准确率、精确率/召回、ROC、校准。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for CP1407: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 CP1407 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does CP1407 cover?
+    q_cn: CP1407 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CP3406
   title: Android
   material: CP3406-android
@@ -33,19 +98,11 @@ courses:
     cn: 计算机体系结构与组成
   - en: Web / mobile app structure
     cn: Web / 移动应用结构
-  - en: 'Week 4: CP3406 CP5307 Lecture 04'
-    cn: 第 4 周：CP3406 CP5307 Lecture 04
-  - en: 'Week 4: CP3406 CP5307 Practical 04'
-    cn: 第 4 周：CP3406 CP5307 Practical 04
-  - en: 'Week 4: Prca4 WordGame'
-    cn: 第 4 周：Prca4 WordGame
-  - en: 'Week 5: CP3406 CP5307 Lecture 05'
-    cn: 第 5 周：CP3406 CP5307 Lecture 05
   stuck:
   - en: Weekly lecture arc moves on before last week’s method is solid
     cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“Prca4 WordGame”) makes sense in class, freezes you alone
-    cn: 作业 brief（「Prca4 WordGame」）课上听得懂，自己对着就停住
+  - en: Assignment brief makes sense in class, freezes you alone
+    cn: 作业 brief 课上听得懂，自己对着就停住
   - en: UI looks done but integration tests fail
     cn: 界面看起来完成了，集成测试不过
   - en: Unclear ownership in group projects
@@ -62,9 +119,8 @@ courses:
   tutoring:
   - en: 'Lecture sync for CP3406: bilingual catch-up so workshop / tutorial language matches the lectures.'
     cn: 按 CP3406 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as Prca4 WordGame, CP3406 Assessment 2 Mobile
-      App Development, with you at the keyboard.'
-    cn: 作业辅导：针对 Prca4 WordGame, CP3406 Assessment 2 Mobile App Development 一类评估拆题，你来操作键盘。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   sample_slides:
@@ -124,55 +180,59 @@ courses:
 - code: CP3404
   title: Network Security and Cryptography
   material: CP3404
-  theme: security
-  meta_description_en: CP3404 JCU tutoring (Network Security and Cryptography). Assignment brief (“CP3404
-    Assignment 1”) makes sense in class, freezes you alone?
-  lead_en: CP3404 Network Security and Cryptography at James Cook University Singapore is where threat
-    models, crypto vocabulary, and lab setup form a terminology wall. The hard part is turning that arc
-    into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3404，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
-  overview_en: CP3404 Network Security and Cryptography sits in security & privacy. Assessed work expects
-    you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
-    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit. Sample slides from our concept-review tutoring deck are below.
-  overview_cn: CP3404 是詹姆斯库克大学（新加坡）「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
-    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们概念复习辅导课件的样例页。
+  theme: systems
+  meta_description_en: CP3404 tutoring (Network Security and Cryptography). Stuck on Layered models (OSI
+    / TCP-IP) and where each job lives? Bilingual Chinese/English help.
+  lead_en: 'CP3404 Network Security and Cryptography at James Cook University Singapore: Layered models
+    (OSI / TCP-IP) and where each job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing,
+    and forwarding intuition → HTTP/DNS and application-layer protocols…. Layers, packets, and failure
+    modes blur until you can trace one request end-to-end. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3404，主线是分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉 → HTTP/DNS
+    与应用层协议。分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CP3404 Network Security and Cryptography at James Cook University
+    Singapore. Covered topics: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs
+    UDP, and reliable delivery; Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer
+    protocols; Congestion, flow control, and performance trade-offs. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CP3404（詹姆斯库克大学（新加坡））一对一辅导。覆盖主题包括分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS
+    与应用层协议。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Neural nets / deep learning / AI
-    cn: 神经网络 / 深度学习 / AI
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Layered models (OSI / TCP-IP) and where each job lives
+    cn: 分层模型（OSI / TCP-IP）与各层职责
+  - en: Sockets, TCP vs UDP, and reliable delivery
+    cn: Socket、TCP vs UDP 与可靠传输
+  - en: Routing, addressing, and forwarding intuition
+    cn: 路由、编址与转发直觉
+  - en: HTTP/DNS and application-layer protocols
+    cn: HTTP/DNS 与应用层协议
+  - en: Congestion, flow control, and performance trade-offs
+    cn: 拥塞、流控与性能权衡
+  - en: Lab traces — Wireshark / packet walks when required
+    cn: 需要时的抓包 / 报文走读 Lab
   stuck:
-  - en: Assignment brief (“CP3404 Assignment 1”) makes sense in class, freezes you alone
-    cn: 作业 brief（「CP3404 Assignment 1」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Lab setup unfinished; report lists tools without a clear finding
-    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
-  - en: Labs that need precise setup before any “hacking”
-    cn: Lab 还没配好环境就急着“黑”
-  - en: Confusing confidentiality, integrity, and availability
-    cn: 把机密性、完整性、可用性搅在一起
+  - en: Mixing app vs transport vs network layer when debugging
+    cn: 排查时把应用 / 传输 / 网络层搅在一起
+  - en: Socket code almost works; handshake or timeout edges fail
+    cn: Socket 差不多能跑；握手或超时边界挂掉
+  - en: Protocol diagrams look familiar until the exam scenario is new
+    cn: 协议图课上眼熟，考试换场景就不会读
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Restate the threat model in one paragraph
-    cn: 用一段话重述威胁模型
+  - en: Trace one packet path before changing socket code
+    cn: 改 Socket 代码前先跟完一条报文路径
+  - en: Name the layer that owns the failure
+    cn: 先说出故障属于哪一层
   tutoring:
-  - en: 'Lecture sync for CP3404: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CP3404 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as CP3404 Assignment 1, CP3404 Assessment overview,
-      with you at the keyboard.'
-    cn: 作业辅导：针对 CP3404 Assignment 1, CP3404 Assessment overview 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CP3404: bilingual walkthrough of Layered models (OSI / TCP-IP) and where each
+      job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding intuition
+      → HTTP/DNS and application-layer protocols so tutorial language matches.'
+    cn: 按 CP3404 同步跟课：用中英双语把「分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Layered models (OSI / TCP-IP) and where each job lives question shapes
+      for this course.'
+    cn: 考前突击：按本课「分层模型（OSI / TCP-IP）与各层职责」等题型做限时练习。
   sample_slides:
     title_en: CP3404 — sample slides
     title_cn: CP3404 — 辅导课件样例
@@ -219,6 +279,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does CP3404 cover?
+    q_cn: CP3404 学什么？
+    a_en: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery;
+      Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols…. Say which
+      week or assessment you are on when booking.
+    a_cn: 分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS 与应用层协议。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -227,64 +298,58 @@ courses:
   title: Deep Learning
   material: CP3501- Deep Learning
   theme: machine-learning
-  meta_description_en: CP3501 JCU tutoring (Deep Learning). Weekly lecture arc moves on before last week’s
-    method is solid? Bilingual Chinese/English help.
-  lead_en: CP3501 Deep Learning at James Cook University Singapore is where method names blur together
-    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the
-    next brief.
-  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3501，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: CP3501 Deep Learning sits in machine learning & ai. There is a weekly arc (about week 1–4)
-    plus assessed work that expects you to apply the same ideas under deadline pressure. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: CP3501 是詹姆斯库克大学（新加坡）「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、计算机体系结构与组成、算法、ADT
-    与复杂度这些点转。大约第 1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: CP3501 tutoring (Deep Learning). Stuck on Neural net basics — layers, activations,
+    backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'CP3501 Deep Learning at James Cook University Singapore: Neural net basics — layers, activations,
+    backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers, and
+    training loops → Regularisation — dropout, weight decay, early stopping…. Architectures and loss jargon
+    outrun the debugging loop when shapes and gradients fail. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在詹姆斯库克大学（新加坡）上 CP3501，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环
+    → 正则 — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CP3501 Deep Learning at James Cook University Singapore. Covered
+    topics: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+    the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+    early stopping; Shape debugging and common framework errors. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CP3501（詹姆斯库克大学（新加坡））一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Neural nets / deep learning / AI
-    cn: 神经网络 / 深度学习 / AI
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Web / mobile app structure
-    cn: Web / 移动应用结构
-  - en: NLP / language-model coursework
-    cn: NLP / 语言模型课业
-  - en: 'Week 1: summary'
-    cn: 第 1 周：summary
-  - en: 'Week 2: summary'
-    cn: 第 2 周：summary
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“CP3501 2025 TR2 JCUA Assessment overview v250508”) makes sense in class, freezes
-      you alone
-    cn: 作业 brief（「CP3501 2025 TR2 JCUA Assessment overview v250508」）课上听得懂，自己对着就停住
-  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
-    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
-  - en: Tool output produced, write-up cannot defend method choice
-    cn: 工具输出有了，报告却说不清为何选这个方法
-  - en: Formulae memorised without knowing what the code should look like
-    cn: 公式背下来了，但不知道代码该长什么样
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
   tutoring:
-  - en: 'Lecture sync for CP3501: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CP3501 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as CP3501 2025 TR2 JCUA Assessment overview
-      v250508, with you at the keyboard.'
-    cn: 作业辅导：针对 CP3501 2025 TR2 JCUA Assessment overview v250508 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CP3501: bilingual walkthrough of Neural net basics — layers, activations, backprop
+      intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers, and training
+      loops → Regularisation — dropout, weight decay, early stopping so tutorial language matches.'
+    cn: 按 CP3501 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
   sample_slides:
     title_en: CP3501 — sample slides
     title_cn: CP3501 — 辅导课件样例
@@ -331,6 +396,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does CP3501 cover?
+    q_cn: CP3501 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

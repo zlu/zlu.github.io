@@ -29,16 +29,16 @@ courses:
     cn: 网络分层、报文与协议
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
-  - en: 'Week 9: Data systems Indexing'
-    cn: 第 9 周：Data systems Indexing
-  - en: 'Week 9: Data systems Storage'
-    cn: 第 9 周：Data systems Storage
-  - en: 'Week 10: Data systems Advanced Data Systems'
-    cn: 第 10 周：Data systems Advanced Data Systems
-  - en: 'Week 10: Data systems Indexing II'
-    cn: 第 10 周：Data systems Indexing II
-  - en: 'Week 10: Query Processing Optimisation'
-    cn: 第 10 周：Query Processing Optimisation
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
   stuck:
   - en: Weekly lecture arc moves on before last week’s method is solid
     cn: 周课往前赶，上一周的方法还没练稳
@@ -120,58 +120,59 @@ courses:
   title: Enterprise Cyber Security
   material: compsci5077
   theme: security
-  meta_description_en: COMPSCI5077 University of Glasgow tutoring (Enterprise Cyber Security). Stuck on
-    Computer architecture and organisation? Bilingual Chinese/English help.
-  lead_en: 'COMPSCI5077 Enterprise Cyber Security at University of Glasgow. Threat models, crypto vocabulary,
-    and lab setup form a terminology wall. Tutoring: lecture catch-up, assignment debug, exam drills —
-    methods you can reuse.'
-  lead_cn: 在格拉斯哥大学上 COMPSCI5077，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'COMPSCI5077 Enterprise Cyber Security (Security & privacy) at University of Glasgow. Common
-    topics: Computer architecture and organisation; Security / privacy threat models and labs. People
-    stall when terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder
-    wants a method the notebook never showed. Sample slides from our concept-review tutoring deck are
-    below.'
-  overview_cn: COMPSCI5077 是格拉斯哥大学的「安全与隐私」课，既要真懂，也要能动手。常见内容包括计算机体系结构与组成、安全 / 隐私威胁模型与实验。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: COMPSCI5077 tutoring (Enterprise Cyber Security). Stuck on Threat modelling — assets,
+    attackers, trust boundaries? Bilingual Chinese/English help.
+  lead_en: 'COMPSCI5077 Enterprise Cyber Security at University of Glasgow: Threat modelling — assets,
+    attackers, trust boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition →
+    Authentication, authorisation, and session security → Common web / network vulnerabilities when in
+    syllabus…. Threat models and crypto vocabulary form a wall before the lab even builds. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在格拉斯哥大学上 COMPSCI5077，主线是威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全 → 大纲中的常见
+    Web / 网络漏洞。威胁模型和密码学术语先堆成一堵墙，Lab 还没编译就劝退。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMPSCI5077 Enterprise Cyber Security at University of Glasgow.
+    Covered topics: Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric,
+    public-key, hashing, TLS intuition; Authentication, authorisation, and session security; Common web
+    / network vulnerabilities when in syllabus; Secure coding habits and failure modes. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMPSCI5077（格拉斯哥大学）一对一辅导。覆盖主题包括威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见
+    Web / 网络漏洞。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Threat models and trust boundaries
-    cn: 威胁模型与信任边界
-  - en: Crypto primitives at course depth (not CTF spoilers)
-    cn: 课业深度的密码学原语（非 CTF 剧透）
-  - en: Web / network attack patterns the syllabus names
-    cn: 大纲点名的 Web / 网络攻击模式
-  - en: Secure coding habits for assignments
-    cn: 作业里的安全编码习惯
+  - en: Threat modelling — assets, attackers, trust boundaries
+    cn: 威胁建模 — 资产、攻击者、信任边界
+  - en: Crypto primitives — symmetric, public-key, hashing, TLS intuition
+    cn: 密码学原语 — 对称、公钥、哈希、TLS 直觉
+  - en: Authentication, authorisation, and session security
+    cn: 认证、授权与会话安全
+  - en: Common web / network vulnerabilities when in syllabus
+    cn: 大纲中的常见 Web / 网络漏洞
+  - en: Secure coding habits and failure modes
+    cn: 安全编码习惯与失败模式
+  - en: Lab setup and reporting findings clearly
+    cn: Lab 环境与把发现写清楚
   stuck:
-  - en: Lab setup unfinished; report lists tools without a clear finding
-    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
-  - en: Labs that need precise setup before any “hacking”
-    cn: Lab 还没配好环境就急着“黑”
-  - en: Confusing confidentiality, integrity, and availability
-    cn: 把机密性、完整性、可用性搅在一起
-  - en: Reports that list tools without explaining the finding
-    cn: 报告只罗列工具，不解释发现
-  - en: Lecture vocabulary for COMPSCI5077 outruns bilingual notes
-    cn: COMPSCI5077 的课堂术语跑在双语笔记前面
+  - en: Lab setup unfinished; report lists tools without a finding
+    cn: Lab 环境没配好；报告只罗列工具没有发现
+  - en: Primitive names memorised; wrong tool for the threat
+    cn: 原语名字背过了，威胁却选错工具
+  - en: Crypto math and protocol steps diverge under exam pressure
+    cn: 限时下密码学计算和协议步骤对不上
   session_angles:
-  - en: Restate the threat model in one paragraph
-    cn: 用一段话重述威胁模型
-  - en: Reproduce the lab outcome, then explain the mechanism
-    cn: 先复现 Lab 结果，再讲清机制
-  - en: Structure the write-up around evidence
-    cn: 按证据组织报告结构
+  - en: Write the threat model before picking a primitive
+    cn: 选原语前先写威胁模型
+  - en: One reproducible finding beats a tool dump
+    cn: 一个可复现发现胜过工具清单
   tutoring:
-  - en: 'Lecture sync for COMPSCI5077: bilingual catch-up so workshop / tutorial language matches the
-      lectures.'
-    cn: 按 COMPSCI5077 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMPSCI5077: bilingual walkthrough of Threat modelling — assets, attackers,
+      trust boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition → Authentication,
+      authorisation, and session security → Common web / network vulnerabilities when in syllabus so tutorial
+      language matches.'
+    cn: 按 COMPSCI5077 同步跟课：用中英双语把「威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Threat modelling — assets, attackers, trust boundaries question shapes
+      for this course.'
+    cn: 考前突击：按本课「威胁建模 — 资产、攻击者、信任边界」等题型做限时练习。
   sample_slides:
     title_en: COMPSCI5077 — sample slides
     title_cn: COMPSCI5077 — 辅导课件样例
@@ -218,6 +219,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMPSCI5077 cover?
+    q_cn: COMPSCI5077 学什么？
+    a_en: Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric, public-key,
+      hashing, TLS intuition; Authentication, authorisation, and session security; Common web / network
+      vulnerabilities when in syllabus…. Say which week or assessment you are on when booking.
+    a_cn: 威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见 Web / 网络漏洞。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -226,57 +238,58 @@ courses:
   title: Data Structure
   material: COMPSCI2007-datastructure
   theme: algorithms
-  meta_description_en: COMPSCI2007 University of Glasgow tutoring (Data Structure). Stuck on Algorithms,
-    ADTs, and complexity? Bilingual Chinese/English help.
-  lead_en: 'COMPSCI2007 Data Structure at University of Glasgow. Invariants, complexity claims, and code
-    must stay aligned under time pressure. Tutoring: lecture catch-up, assignment debug, exam drills —
-    methods you can reuse.'
-  lead_cn: 在格拉斯哥大学上 COMPSCI2007，限时下不变量、复杂度结论和代码必须说的是同一件事。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'COMPSCI2007 Data Structure (Algorithms & data structures) at University of Glasgow. Common
-    topics: Algorithms, ADTs, and complexity. People stall when terms outrun notes, when a class demo
-    does not replay alone, or when the write-up / autograder wants a method the notebook never showed.
-    Sample slides from our concept-review tutoring deck are below.'
-  overview_cn: COMPSCI2007 是格拉斯哥大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: COMPSCI2007 tutoring (Data Structure). Stuck on Complexity — Big-O, recurrence,
+    and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'COMPSCI2007 Data Structure at University of Glasgow: Complexity — Big-O, recurrence, and arguing
+    bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+    → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code must
+    stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在格拉斯哥大学上 COMPSCI2007，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMPSCI2007 Data Structure at University of Glasgow. Covered topics:
+    Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees, heaps,
+    hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths, MSTs; Greedy,
+    divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMPSCI2007（格拉斯哥大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 —
+    BFS/DFS、最短路、最小生成树。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Asymptotic complexity and comparing candidates
-    cn: 渐近复杂度与方案比较
-  - en: Arrays, lists, trees, heaps, hash tables
-    cn: 数组、链表、树、堆、哈希表
-  - en: Sorting, searching, and graph traversals
-    cn: 排序、搜索与图遍历
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
   - en: Greedy, divide-and-conquer, and dynamic programming patterns
     cn: 贪心、分治与动态规划模式
-  - en: Invariants and proof sketches for exams
-    cn: 考试用的不变量与证明提纲
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
   stuck:
-  - en: Can follow a worked example, cannot start from a blank page under time pressure
-    cn: 能看懂例题，限时白纸上却开不了头
-  - en: Correct intuition but wrong complexity or incomplete proof
-    cn: 直觉对，但复杂度写错或证明不完整
-  - en: DP / recursion without a clear state definition
-    cn: 动态规划 / 递归没有清晰状态定义
-  - en: Implementation bugs that hide a sound algorithm
-    cn: 算法本身没问题，实现 bug 把分扣光
-  - en: Lecture vocabulary for COMPSCI2007 outruns bilingual notes
-    cn: COMPSCI2007 的课堂术语跑在双语笔记前面
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
   session_angles:
-  - en: Write the invariant and recurrence before code
-    cn: 写代码前先写不变量与递推
-  - en: Dry-run on a small example, then generalise
-    cn: 先在小例子上手推，再一般化
-  - en: Exam-style short proofs under time pressure
-    cn: 限时练习考试风格的短证明
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
   tutoring:
-  - en: 'Lecture sync for COMPSCI2007: bilingual catch-up so workshop / tutorial language matches the
-      lectures.'
-    cn: 按 COMPSCI2007 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMPSCI2007: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMPSCI2007 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
   sample_slides:
     title_en: COMPSCI2007 — sample slides
     title_cn: COMPSCI2007 — 辅导课件样例
@@ -327,6 +340,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMPSCI2007 cover?
+    q_cn: COMPSCI2007 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -334,55 +358,54 @@ courses:
 - material: 5099 Information Visualisation
   code: COMSCI5099
   title: Information Visualization
-  theme: data-science
-  meta_description_en: COMSCI5099 Glasgow tutoring (Information Visualization). Tool output produced,
-    write-up cannot defend method choice? Bilingual Chinese/English help.
-  lead_en: COMSCI5099 Information Visualization at University of Glasgow is where messy notebooks and
-    weak method stories lose marks even when a model runs. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在格拉斯哥大学上 COMSCI5099，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: COMSCI5099 Information Visualization sits in data science & analytics. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: COMSCI5099 是格拉斯哥大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、SQL、Schema 与数据库、网络分层、报文与协议这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: COMSCI5099 tutoring (Information Visualization). Stuck on Information Visualization?
+    Bilingual Chinese/English help.
+  lead_en: 'COMSCI5099 Information Visualization at University of Glasgow: Information Visualization →
+    Core ideas in Information Visualization → Assignments / labs for Information Visualization → Exam
+    drills aligned to Information Visualization. Lecture speed and dense vocabulary outrun note-taking
+    before methods stick. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where
+    it breaks.'
+  lead_cn: 在格拉斯哥大学上 COMSCI5099，主线是Information Visualization → Information Visualization 的核心概念 → Information
+    Visualization 的作业 / Lab → 对准 Information Visualization 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMSCI5099 Information Visualization at University of Glasgow.
+    Covered topics: Information Visualization; Core ideas in Information Visualization; Assignments /
+    labs for Information Visualization; Exam drills aligned to Information Visualization. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMSCI5099（格拉斯哥大学）一对一辅导。覆盖主题包括Information Visualization、Information Visualization 的核心概念、Information
+    Visualization 的作业 / Lab、对准 Information Visualization 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Data wrangling / analytics tables
-    cn: 数据清洗 / 分析表
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
+  - en: Information Visualization
+    cn: Information Visualization
+  - en: Core ideas in Information Visualization
+    cn: Information Visualization 的核心概念
+  - en: Assignments / labs for Information Visualization
+    cn: Information Visualization 的作业 / Lab
+  - en: Exam drills aligned to Information Visualization
+    cn: 对准 Information Visualization 的考前练习
   stuck:
-  - en: Tool output produced, write-up cannot defend method choice
-    cn: 工具输出有了，报告却说不清为何选这个方法
-  - en: Messy merges and silent NaNs that break later metrics
-    cn: 混乱的 merge 与静默 NaN，后面指标全歪
-  - en: Pretty plots that do not answer the brief
-    cn: 图很漂亮，但没回答题目要求
-  - en: Last-minute modelling with no data story
-    cn: 临近 DDL 才建模，没有数据故事
-  - en: Lecture vocabulary for COMSCI5099 outruns bilingual notes
-    cn: COMSCI5099 的课堂术语跑在双语笔记前面
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Rebuild the analysis pipeline step by step from the brief
-    cn: 按 brief 逐步重建分析流水线
-  - en: Sanity-check joins, missingness, and leakage risks
-    cn: 核验 join、缺失值与泄漏风险
-  - en: Shape the final narrative and figure set
-    cn: 定稿叙事与图表组合
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for COMSCI5099: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 COMSCI5099 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMSCI5099: bilingual walkthrough of Information Visualization → Core ideas
+      in Information Visualization → Assignments / labs for Information Visualization → Exam drills aligned
+      to Information Visualization so tutorial language matches.'
+    cn: 按 COMSCI5099 同步跟课：用中英双语把「Information Visualization → Information Visualization 的核心概念 → Information
+      Visualization 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Information Visualization question shapes for this course.'
+    cn: 考前突击：按本课「Information Visualization」等题型做限时练习。
   sample_slides:
     title_en: COMSCI5099 — sample slides
     title_cn: COMSCI5099 — 辅导课件样例
@@ -432,6 +455,18 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMSCI5099 cover?
+    q_cn: COMSCI5099 学什么？
+    a_en: Information Visualization; Core ideas in Information Visualization; Assignments / labs for Information
+      Visualization; Exam drills aligned to Information Visualization. Say which week or assessment you
+      are on when booking.
+    a_cn: Information Visualization、Information Visualization 的核心概念、Information Visualization 的作业 / Lab、对准
+      Information Visualization 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -566,12 +601,20 @@ courses:
   topics:
   - en: Automata, formal languages, and proofs
     cn: 自动机、形式语言与证明
-  - en: 'Week 1: introduction'
-    cn: 第 1 周：introduction
-  - en: 'Week 2: theories of HCI and heuristic evaluation'
-    cn: 第 2 周：theories of HCI and heuristic evaluation
-  - en: 'Week 3: HCIDE2026 experiments'
-    cn: 第 3 周：HCIDE2026 experiments
+  - en: Client / server responsibilities and APIs
+    cn: 前后端职责与 API
+  - en: State, routing, and common framework patterns
+    cn: 状态、路由与常见框架模式
+  - en: Mobile lifecycle and platform constraints
+    cn: 移动端生命周期与平台约束
+  - en: Accessibility and HCI evaluation basics
+    cn: 无障碍与 HCI 评估基础
+  - en: Demo scripts and marking rubrics
+    cn: 演示脚本与评分量表
+  - en: Lecture catch-up in Chinese and English
+    cn: 中英双语补课与知识点梳理
+  - en: Assignment approach and debugging
+    cn: 作业思路与调试
   stuck:
   - en: Weekly lecture arc moves on before last week’s method is solid
     cn: 周课往前赶，上一周的方法还没练稳
@@ -656,55 +699,58 @@ courses:
   title: Systems and Networks
   code: COMPSCI4043
   theme: systems
-  meta_description_en: COMPSCI4043 Glasgow tutoring (Systems and Networks). Stuck on labs that fail only
-    under concurrency or load? Bilingual Chinese/English help.
-  lead_en: COMPSCI4043 Systems and Networks at University of Glasgow is where abstractions stack fast
-    and labs fail for reasons that look opaque. The hard part is turning that arc into a method you can
-    repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在格拉斯哥大学上 COMPSCI4043，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: COMPSCI4043 Systems and Networks sits in systems, networks & architecture. Evidence from
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.
-  overview_cn: COMPSCI4043 是格拉斯哥大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着Spark / 分布式数据处理、网络分层、报文与协议、计算机体系结构与组成这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: COMPSCI4043 tutoring (Systems and Networks). Stuck on Layered models (OSI / TCP-IP)
+    and where each job lives? Bilingual Chinese/English help.
+  lead_en: 'COMPSCI4043 Systems and Networks at University of Glasgow: Layered models (OSI / TCP-IP) and
+    where each job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding
+    intuition → HTTP/DNS and application-layer protocols…. Layers, packets, and failure modes blur until
+    you can trace one request end-to-end. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在格拉斯哥大学上 COMPSCI4043，主线是分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉 → HTTP/DNS
+    与应用层协议。分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMPSCI4043 Systems and Networks at University of Glasgow. Covered
+    topics: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable
+    delivery; Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols;
+    Congestion, flow control, and performance trade-offs. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMPSCI4043（格拉斯哥大学）一对一辅导。覆盖主题包括分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS
+    与应用层协议。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Spark / distributed data processing
-    cn: Spark / 分布式数据处理
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Processes, threads, and synchronisation basics
-    cn: 进程、线程与同步基础
-  - en: Virtual memory and caching intuition
-    cn: 虚拟内存与缓存直觉
-  - en: Sockets, HTTP, and common networking labs
-    cn: Socket、HTTP 与常见网络实验
+  - en: Layered models (OSI / TCP-IP) and where each job lives
+    cn: 分层模型（OSI / TCP-IP）与各层职责
+  - en: Sockets, TCP vs UDP, and reliable delivery
+    cn: Socket、TCP vs UDP 与可靠传输
+  - en: Routing, addressing, and forwarding intuition
+    cn: 路由、编址与转发直觉
+  - en: HTTP/DNS and application-layer protocols
+    cn: HTTP/DNS 与应用层协议
+  - en: Congestion, flow control, and performance trade-offs
+    cn: 拥塞、流控与性能权衡
+  - en: Lab traces — Wireshark / packet walks when required
+    cn: 需要时的抓包 / 报文走读 Lab
   stuck:
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
-  - en: Man pages and RFCs denser than lecture pace
-    cn: Man page / RFC 比课堂节奏更密
-  - en: Lecture vocabulary for COMPSCI4043 outruns bilingual notes
-    cn: COMPSCI4043 的课堂术语跑在双语笔记前面
+  - en: Mixing app vs transport vs network layer when debugging
+    cn: 排查时把应用 / 传输 / 网络层搅在一起
+  - en: Socket code almost works; handshake or timeout edges fail
+    cn: Socket 差不多能跑；握手或超时边界挂掉
+  - en: Protocol diagrams look familiar until the exam scenario is new
+    cn: 协议图课上眼熟，考试换场景就不会读
   session_angles:
-  - en: Draw the call / packet path before changing code
-    cn: 改代码前先画出调用 / 报文路径
-  - en: Instrument, reproduce, then patch the root cause
-    cn: 先插桩复现，再修根因
-  - en: Translate jargon into a bilingual cheat sheet for exams
-    cn: 把术语整理成考试用双语速查
+  - en: Trace one packet path before changing socket code
+    cn: 改 Socket 代码前先跟完一条报文路径
+  - en: Name the layer that owns the failure
+    cn: 先说出故障属于哪一层
   tutoring:
-  - en: 'Lecture sync for COMPSCI4043: bilingual catch-up so workshop / tutorial language matches the
-      lectures.'
-    cn: 按 COMPSCI4043 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMPSCI4043: bilingual walkthrough of Layered models (OSI / TCP-IP) and where
+      each job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding
+      intuition → HTTP/DNS and application-layer protocols so tutorial language matches.'
+    cn: 按 COMPSCI4043 同步跟课：用中英双语把「分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Layered models (OSI / TCP-IP) and where each job lives question shapes
+      for this course.'
+    cn: 考前突击：按本课「分层模型（OSI / TCP-IP）与各层职责」等题型做限时练习。
   sample_slides:
     title_en: COMPSCI4043 — sample slides
     title_cn: COMPSCI4043 — 辅导课件样例
@@ -755,6 +801,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMPSCI4043 cover?
+    q_cn: COMPSCI4043 学什么？
+    a_en: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery;
+      Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols…. Say which
+      week or assessment you are on when booking.
+    a_cn: 分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS 与应用层协议。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -762,59 +819,51 @@ courses:
 - material: 4039 Programming
   title: Programming
   code: COMPSCI4039
-  theme: programming
-  meta_description_en: COMPSCI4039 Glasgow tutoring (Programming). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: COMPSCI4039 Programming at University of Glasgow is where briefs, tooling, and autograder edge
-    cases hit harder than syntax itself. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
-  lead_cn: 在格拉斯哥大学上 COMPSCI4039，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: COMPSCI4039 Programming sits in programming & software construction. There is a weekly
-    arc (about week 1–1) plus assessed work that expects you to apply the same ideas under deadline pressure.
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.
-  overview_cn: COMPSCI4039 是格拉斯哥大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: COMPSCI4039 tutoring (Programming). Stuck on Programming? Bilingual Chinese/English
+    help.
+  lead_en: 'COMPSCI4039 Programming at University of Glasgow: Programming → Core ideas in Programming
+    → Assignments / labs for Programming → Exam drills aligned to Programming. Lecture speed and dense
+    vocabulary outrun note-taking before methods stick. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在格拉斯哥大学上 COMPSCI4039，主线是Programming → Programming 的核心概念 → Programming 的作业 / Lab → 对准 Programming
+    的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMPSCI4039 Programming at University of Glasgow. Covered topics:
+    Programming; Core ideas in Programming; Assignments / labs for Programming; Exam drills aligned to
+    Programming. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
+    on.'
+  overview_cn: COMPSCI4039（格拉斯哥大学）一对一辅导。覆盖主题包括Programming、Programming 的核心概念、Programming 的作业 / Lab、对准 Programming
+    的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: 'Week 1: Wk01 01 Intro Hello world'
-    cn: 第 1 周：Wk01 01 Intro Hello world
-  - en: 'Week 1: Wk01 02 Variables functions and scope'
-    cn: 第 1 周：Wk01 02 Variables functions and scope
-  - en: 'Week 1: Wk01 03 Loops stringFormating libraries'
-    cn: 第 1 周：Wk01 03 Loops stringFormating libraries
-  - en: Reading the brief and designing before typing
-    cn: 先读题、先设计，再动手写
-  - en: Functions, modules, and readable structure
-    cn: 函数、模块与可读结构
-  - en: Recursion, ADTs, and common lab patterns
-    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Programming
+    cn: Programming
+  - en: Core ideas in Programming
+    cn: Programming 的核心概念
+  - en: Assignments / labs for Programming
+    cn: Programming 的作业 / Lab
+  - en: Exam drills aligned to Programming
+    cn: 对准 Programming 的考前练习
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
-  - en: Lecture vocabulary for COMPSCI4039 outruns bilingual notes
-    cn: COMPSCI4039 的课堂术语跑在双语笔记前面
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
-  - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分定位失败用例
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for COMPSCI4039: bilingual catch-up so workshop / tutorial language matches the
-      lectures.'
-    cn: 按 COMPSCI4039 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMPSCI4039: bilingual walkthrough of Programming → Core ideas in Programming
+      → Assignments / labs for Programming → Exam drills aligned to Programming so tutorial language matches.'
+    cn: 按 COMPSCI4039 同步跟课：用中英双语把「Programming → Programming 的核心概念 → Programming 的作业 / Lab」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Programming question shapes for this course.'
+    cn: 考前突击：按本课「Programming」等题型做限时练习。
   sample_slides:
     title_en: COMPSCI4039 — sample slides
     title_cn: COMPSCI4039 — 辅导课件样例
@@ -865,6 +914,16 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMPSCI4039 cover?
+    q_cn: COMPSCI4039 学什么？
+    a_en: Programming; Core ideas in Programming; Assignments / labs for Programming; Exam drills aligned
+      to Programming. Say which week or assessment you are on when booking.
+    a_cn: Programming、Programming 的核心概念、Programming 的作业 / Lab、对准 Programming 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

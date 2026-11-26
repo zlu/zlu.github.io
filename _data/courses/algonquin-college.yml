@@ -7,65 +7,54 @@ courses:
 - code: ESC4402
   title: Engineering Software Computing
   material: ESC4402
-  theme: programming
-  meta_description_en: ESC4402 Algonquin College tutoring (Engineering Software Computing). Stuck on assignment
-    briefs such as 8. Module 8 Setup for Automatic Account ?
-  lead_en: 'ESC4402 Engineering Software Computing at Algonquin College. Briefs, tooling, and autograder
-    edge cases hit harder than syntax itself. Tutoring: lecture catch-up, assignment debug, exam drills
-    — methods you can reuse.'
-  lead_cn: 在亚岗昆学院上 ESC4402，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'ESC4402 Engineering Software Computing (Programming & software construction) at Algonquin
-    College. Common topics: SQL, schema design, and databases; Automata, formal languages, and proofs;
-    Web / mobile app structure. Weekly arc about week 1–9, plus assessed work under deadline. People stall
-    when terms outrun notes, when a class demo does not replay alone, or when the write-up / autograder
-    wants a method the notebook never showed. Sample slides from our concept-review tutoring deck are
-    below.'
-  overview_cn: ESC4402 是亚岗昆学院的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括SQL、Schema 与数据库、自动机、形式语言与证明、Web / 移动应用结构。大约第
-    1–9 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告 / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: ESC4402 tutoring (Engineering Software Computing). Stuck on Engineering Software
+    Computing? Bilingual Chinese/English help.
+  lead_en: 'ESC4402 Engineering Software Computing at Algonquin College: Engineering Software Computing
+    → Core ideas in Engineering Software Computing → Assignments / labs for Engineering Software Computing
+    → Exam drills aligned to Engineering Software Computing. Lecture speed and dense vocabulary outrun
+    note-taking before methods stick. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在亚岗昆学院上 ESC4402，主线是Engineering Software Computing → Engineering Software Computing 的核心概念 →
+    Engineering Software Computing 的作业 / Lab → 对准 Engineering Software Computing 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for ESC4402 Engineering Software Computing at Algonquin College. Covered
+    topics: Engineering Software Computing; Core ideas in Engineering Software Computing; Assignments
+    / labs for Engineering Software Computing; Exam drills aligned to Engineering Software Computing.
+    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: ESC4402（亚岗昆学院）一对一辅导。覆盖主题包括Engineering Software Computing、Engineering Software Computing
+    的核心概念、Engineering Software Computing 的作业 / Lab、对准 Engineering Software Computing 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: Automata, formal languages, and proofs
-    cn: 自动机、形式语言与证明
-  - en: Web / mobile app structure
-    cn: Web / 移动应用结构
-  - en: 'Week 1: 1. MIS Review'
-    cn: 第 1 周：1. MIS Review
-  - en: 'Week 1: 2. Enterprise Systems'
-    cn: 第 1 周：2. Enterprise Systems
-  - en: 'Week 1: 3. Your SAP experience'
-    cn: 第 1 周：3. Your SAP experience
-  - en: 'Week 2: Ch 1'
-    cn: 第 2 周：Ch 1
-  - en: 'Week 3: Ch 2'
-    cn: 第 3 周：Ch 2
+  - en: Engineering Software Computing
+    cn: Engineering Software Computing
+  - en: Core ideas in Engineering Software Computing
+    cn: Engineering Software Computing 的核心概念
+  - en: Assignments / labs for Engineering Software Computing
+    cn: Engineering Software Computing 的作业 / Lab
+  - en: Exam drills aligned to Engineering Software Computing
+    cn: 对准 Engineering Software Computing 的考前练习
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“8. Module 8 Setup for Automatic Account Assignme”) makes sense in class, freezes
-      you alone
-    cn: 作业 brief（「8. Module 8 Setup for Automatic Account Assignme」）课上听得懂，自己对着就停住
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for ESC4402: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 ESC4402 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as 8. Module 8 Setup for Automatic Account
-      Assignment, with you at the keyboard.'
-    cn: 作业辅导：针对 8. Module 8 Setup for Automatic Account Assignment 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for ESC4402: bilingual walkthrough of Engineering Software Computing → Core ideas
+      in Engineering Software Computing → Assignments / labs for Engineering Software Computing → Exam
+      drills aligned to Engineering Software Computing so tutorial language matches.'
+    cn: 按 ESC4402 同步跟课：用中英双语把「Engineering Software Computing → Engineering Software Computing 的核心概念 →
+      Engineering Software Computing 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Engineering Software Computing question shapes for this course.'
+    cn: 考前突击：按本课「Engineering Software Computing」等题型做限时练习。
   sample_slides:
     title_en: ESC4402 — sample slides
     title_cn: ESC4402 — 辅导课件样例
@@ -114,6 +103,18 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does ESC4402 cover?
+    q_cn: ESC4402 学什么？
+    a_en: Engineering Software Computing; Core ideas in Engineering Software Computing; Assignments /
+      labs for Engineering Software Computing; Exam drills aligned to Engineering Software Computing.
+      Say which week or assessment you are on when booking.
+    a_cn: Engineering Software Computing、Engineering Software Computing 的核心概念、Engineering Software Computing
+      的作业 / Lab、对准 Engineering Software Computing 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -121,64 +122,58 @@ courses:
 - code: ESC4503
   title: Intro To Business Application Programming
   material: ESC4503-intro-to-business-application-programming
-  theme: programming
-  meta_description_en: ESC4503 Algonquin tutoring (Intro To Business Application…). Weekly lecture arc
-    moves on before last week’s method is solid?
-  lead_en: ESC4503 Intro To Business Application Programming at Algonquin College is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. Tutoring focuses on methods you can reuse
-    on the next brief.
-  lead_cn: 在亚岗昆学院上 ESC4503，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: ESC4503 Intro To Business Application Programming sits in programming & software construction.
-    There is a weekly arc (about week 1–6) plus assessed work that expects you to apply the same ideas
-    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
-    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our concept-review tutoring deck are below.
-  overview_cn: ESC4503 是亚岗昆学院「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、操作系统 / 系统编程、算法、ADT
-    与复杂度这些点转。大约第 1–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: ESC4503 tutoring (Intro To Business Application…). Stuck on Intro To Business Application
+    Programming? Bilingual Chinese/English help.
+  lead_en: 'ESC4503 Intro To Business Application Programming at Algonquin College: Intro To Business
+    Application Programming → Core ideas in Intro To Business Application Programming → Assignments /
+    labs for Intro To Business Application Programming → Exam drills aligned to Intro To Business Application
+    Programming. Lecture speed and dense vocabulary outrun note-taking before methods stick. Tutoring
+    rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在亚岗昆学院上 ESC4503，主线是Intro To Business Application Programming → Intro To Business Application
+    Programming 的核心概念 → Intro To Business Application Programming 的作业 / Lab → 对准 Intro To Business Application
+    Programming 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for ESC4503 Intro To Business Application Programming at Algonquin
+    College. Covered topics: Intro To Business Application Programming; Core ideas in Intro To Business
+    Application Programming; Assignments / labs for Intro To Business Application Programming; Exam drills
+    aligned to Intro To Business Application Programming. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: ESC4503（亚岗昆学院）一对一辅导。覆盖主题包括Intro To Business Application Programming、Intro To Business Application
+    Programming 的核心概念、Intro To Business Application Programming 的作业 / Lab、对准 Intro To Business Application
+    Programming 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: OS / systems programming
-    cn: 操作系统 / 系统编程
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: 'Week 1: A1 F25'
-    cn: 第 1 周：A1 F25
-  - en: 'Week 1: ESC4503 outline'
-    cn: 第 1 周：ESC4503 outline
-  - en: 'Week 1: Installing Eclipse'
-    cn: 第 1 周：Installing Eclipse
-  - en: 'Week 1: Java – Mac Issue'
-    cn: 第 1 周：Java – Mac Issue
+  - en: Intro To Business Application Programming
+    cn: Intro To Business Application Programming
+  - en: Core ideas in Intro To Business Application Programming
+    cn: Intro To Business Application Programming 的核心概念
+  - en: Assignments / labs for Intro To Business Application Programming
+    cn: Intro To Business Application Programming 的作业 / Lab
+  - en: Exam drills aligned to Intro To Business Application Programming
+    cn: 对准 Intro To Business Application Programming 的考前练习
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“Wk 4 Assignment Help”) makes sense in class, freezes you alone
-    cn: 作业 brief（「Wk 4 Assignment Help」）课上听得懂，自己对着就停住
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for ESC4503: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 ESC4503 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as Wk 4 Assignment Help, Wk 3 Assignment Help,
-      with you at the keyboard.'
-    cn: 作业辅导：针对 Wk 4 Assignment Help, Wk 3 Assignment Help 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for ESC4503: bilingual walkthrough of Intro To Business Application Programming
+      → Core ideas in Intro To Business Application Programming → Assignments / labs for Intro To Business
+      Application Programming → Exam drills aligned to Intro To Business Application Programming so tutorial
+      language matches.'
+    cn: 按 ESC4503 同步跟课：用中英双语把「Intro To Business Application Programming → Intro To Business Application
+      Programming 的核心概念 → Intro To Business Application Programming 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Intro To Business Application Programming question shapes for this
+      course.'
+    cn: 考前突击：按本课「Intro To Business Application Programming」等题型做限时练习。
   sample_slides:
     title_en: ESC4503 — sample slides
     title_cn: ESC4503 — 辅导课件样例
@@ -227,6 +222,18 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does ESC4503 cover?
+    q_cn: ESC4503 学什么？
+    a_en: Intro To Business Application Programming; Core ideas in Intro To Business Application Programming;
+      Assignments / labs for Intro To Business Application Programming; Exam drills aligned to Intro To
+      Business Application Programming. Say which week or assessment you are on when booking.
+    a_cn: Intro To Business Application Programming、Intro To Business Application Programming 的核心概念、Intro
+      To Business Application Programming 的作业 / Lab、对准 Intro To Business Application Programming 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

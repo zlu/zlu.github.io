@@ -57,6 +57,16 @@ python3 .scripts/sync-teach-catalog.py --write-links
 python3 .scripts/sync-teach-catalog.py
 ```
 
+Stub courses (no hand-written `lead_en`) get **subject-pack** copy from title/code — not theme-process filler:
+
+```bash
+python3 .scripts/enrich_teach_stubs.py            # dry-run
+python3 .scripts/enrich_teach_stubs.py --write    # apply
+python3 .scripts/enrich_teach_stubs.py --write --force  # also refresh weak theme-ish leads
+```
+
+Packs live in `_data/teach_subject_packs.yml` (also used by `teach_pages.rb` synthesis).
+
 ## SEO helpers
 
 `/llms.txt` is generated on every build by [`_plugins/llms_txt.rb`](_plugins/llms_txt.rb)

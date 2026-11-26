@@ -32,3 +32,15 @@ Internal paths under `teaching/` and admin hints that materials are private are 
 ## Generators
 
 `enrich_teach_courses.py` and `teach_pages.rb` must not emit materials-inventory claims into `lead_*` / `overview_*` / FAQ.
+
+## Covered topics chips
+
+Public `topics` must be syllabus concepts in plain language (theme pack / lexicon).
+
+Never publish:
+
+- `Week N: <folder or file basename>` chips
+- Raw lecture/worksheet/slide filenames (`lecture02`, `AY25…Tutorial+Worksheet`, `…canvas`, course-code-only labels)
+- Quoted private assessment filenames in `stuck` / `tutoring` / meta
+
+If private materials are scanned for evidence, use them only to pick theme / lexicon hits — never as the chip text.

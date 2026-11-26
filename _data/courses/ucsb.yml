@@ -7,53 +7,56 @@ courses:
 - code: COMPSC_16
   material: compsc16
   title: Problem Solving with Computers I
-  theme: programming
-  meta_description_en: COMPSC_16 UCSB tutoring (Problem Solving with Computers I). Code that “almost works”
-    with no systematic debug plan?
-  lead_en: COMPSC_16 Problem Solving with Computers I at University of California, Santa Barbara is where
-    briefs, tooling, and autograder edge cases hit harder than syntax itself. The hard part is turning
-    that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在加州大学圣塔芭芭拉分校上 COMPSC_16，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: COMPSC_16 Problem Solving with Computers I sits in programming & software construction.
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.
-  overview_cn: COMPSC_16 是加州大学圣塔芭芭拉分校「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着计算机体系结构与组成、算法、ADT 与复杂度、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: COMPSC_16 tutoring (Problem Solving with Computers I). Stuck on Problem Solving?
+    Bilingual Chinese/English help.
+  lead_en: 'COMPSC_16 Problem Solving with Computers I at University of California, Santa Barbara: Problem
+    Solving → Computers I → Core ideas in Problem Solving with Computers I → Assignments / labs for Problem
+    Solving with Computers I…. Lecture speed and dense vocabulary outrun note-taking before methods stick.
+    Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在加州大学圣塔芭芭拉分校上 COMPSC_16，主线是Problem Solving → Computers I → Problem Solving with Computers I
+    的核心概念 → Problem Solving with Computers I 的作业 / Lab。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
+    debug。
+  overview_en: 'One-to-one tutoring for COMPSC_16 Problem Solving with Computers I at University of California,
+    Santa Barbara. Covered topics: Problem Solving; Computers I; Core ideas in Problem Solving with Computers
+    I; Assignments / labs for Problem Solving with Computers I; Exam drills aligned to Problem Solving
+    with Computers I. Bring your brief, failing test, lecture slide screenshot, or the topic name you
+    are stuck on.'
+  overview_cn: COMPSC_16（加州大学圣塔芭芭拉分校）一对一辅导。覆盖主题包括Problem Solving、Computers I、Problem Solving with Computers
+    I 的核心概念、Problem Solving with Computers I 的作业 / Lab。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Automata, formal languages, and proofs
-    cn: 自动机、形式语言与证明
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
+  - en: Problem Solving
+    cn: Problem Solving
+  - en: Computers I
+    cn: Computers I
+  - en: Core ideas in Problem Solving with Computers I
+    cn: Problem Solving with Computers I 的核心概念
+  - en: Assignments / labs for Problem Solving with Computers I
+    cn: Problem Solving with Computers I 的作业 / Lab
+  - en: Exam drills aligned to Problem Solving with Computers I
+    cn: 对准 Problem Solving with Computers I 的考前练习
   stuck:
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
-  - en: Lecture vocabulary for COMPSC_16 outruns bilingual notes
-    cn: COMPSC_16 的课堂术语跑在双语笔记前面
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
-  - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分定位失败用例
-  - en: Refactor for clarity before chasing extra marks
-    cn: 先为清晰度重构，再追额外分数
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for COMPSC_16: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 COMPSC_16 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMPSC_16: bilingual walkthrough of Problem Solving → Computers I → Core ideas
+      in Problem Solving with Computers I → Assignments / labs for Problem Solving with Computers I so
+      tutorial language matches.'
+    cn: 按 COMPSC_16 同步跟课：用中英双语把「Problem Solving → Computers I → Problem Solving with Computers I 的核心概念」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Problem Solving question shapes for this course.'
+    cn: 考前突击：按本课「Problem Solving」等题型做限时练习。
   sample_slides:
     title_en: COMPSC_16 — sample slides
     title_cn: COMPSC_16 — 辅导课件样例
@@ -100,6 +103,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMPSC_16 cover?
+    q_cn: COMPSC_16 学什么？
+    a_en: Problem Solving; Computers I; Core ideas in Problem Solving with Computers I; Assignments /
+      labs for Problem Solving with Computers I…. Say which week or assessment you are on when booking.
+    a_cn: Problem Solving、Computers I、Problem Solving with Computers I 的核心概念、Problem Solving with Computers
+      I 的作业 / Lab。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

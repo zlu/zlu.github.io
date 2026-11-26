@@ -6,10 +6,205 @@ teaching_folder: uc-berkeley
 courses:
 - code: CS 61A
   title: Structure and Interpretation of Computer Programs
+  theme: programming
+  meta_description_en: CS 61A tutoring (Structure and Interpretation of…). Stuck on Reading the brief
+    — I/O, edges, and marking points before code? Bilingual Chinese/English h…
+  lead_en: 'CS 61A Structure and Interpretation of Computer Programs at University of California, Berkeley:
+    Reading the brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition
+    → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches….
+    Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 61A，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试
+    vs autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
+    debug。
+  overview_en: 'One-to-one tutoring for CS 61A Structure and Interpretation of Computer Programs at University
+    of California, Berkeley. Covered topics: Reading the brief — I/O, edges, and marking points before
+    code; Control flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs;
+    Testing locally vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS 61A（加州大学伯克利分校）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for CS 61A: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CS 61A 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does CS 61A cover?
+    q_cn: CS 61A 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS 61B
   title: Data Structures
+  theme: algorithms
+  meta_description_en: CS 61B tutoring (Data Structures). Stuck on Complexity — Big-O, recurrence, and
+    arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'CS 61B Data Structures at University of California, Berkeley: Complexity — Big-O, recurrence,
+    and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching
+    families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code
+    must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 61B，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS 61B Data Structures at University of California, Berkeley.
+    Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues,
+    trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+    MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS 61B（加州大学伯克利分校）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for CS 61B: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 CS 61B 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does CS 61B cover?
+    q_cn: CS 61B 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS 61C
   title: Great Ideas in Computer Architecture
+  theme: systems
+  meta_description_en: CS 61C tutoring (Great Ideas in Computer Architecture). Stuck on Data representation
+    — ints, floats, endianness, bitwise ops? Bilingual Chinese/English …
+  lead_en: 'CS 61C Great Ideas in Computer Architecture at University of California, Berkeley: Data representation
+    — ints, floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+    control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly,
+    data representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 61C，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS 61C Great Ideas in Computer Architecture at University of California,
+    Berkeley. Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly /
+    ISA basics and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy
+    — cache, locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS 61C（加州大学伯克利分校）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次
+    — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
+  stuck:
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
+  session_angles:
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
+  tutoring:
+  - en: 'Lecture sync for CS 61C: bilingual walkthrough of Data representation — ints, floats, endianness,
+      bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+      intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial language matches.'
+    cn: 按 CS 61C 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does CS 61C cover?
+    q_cn: CS 61C 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS 70
   title: Discrete Mathematics and Probability Theory
   material: CS70离散数学
@@ -121,16 +316,406 @@ courses:
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CS 170
   title: Efficient Algorithms and Intractable Problems
+  theme: algorithms
+  meta_description_en: CS 170 tutoring (Efficient Algorithms and…). Stuck on Complexity — Big-O, recurrence,
+    and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'CS 170 Efficient Algorithms and Intractable Problems at University of California, Berkeley:
+    Complexity — Big-O, recurrence, and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps,
+    hash tables → Sorting and searching families → Graph algorithms — BFS/DFS, shortest paths, MSTs….
+    Invariants, complexity claims, and code must stay aligned under time pressure. Tutoring rebuilds that
+    syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 170，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS 170 Efficient Algorithms and Intractable Problems at University
+    of California, Berkeley. Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core
+    ADTs — lists, stacks, queues, trees, heaps, hash tables; Sorting and searching families; Graph algorithms
+    — BFS/DFS, shortest paths, MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS 170（加州大学伯克利分校）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for CS 170: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 CS 170 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does CS 170 cover?
+    q_cn: CS 170 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS 188
   title: Introduction to Artificial Intelligence
+  theme: machine-learning
+  meta_description_en: CS 188 tutoring (Introduction to Artificial…). Stuck on Neural net basics — layers,
+    activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'CS 188 Introduction to Artificial Intelligence at University of California, Berkeley: Neural
+    net basics — layers, activations, backprop intuition → CNNs / RNNs / Transformers when the course
+    uses them → Losses, optimisers, and training loops → Regularisation — dropout, weight decay, early
+    stopping…. Architectures and loss jargon outrun the debugging loop when shapes and gradients fail.
+    Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 188，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环
+    → 正则 — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS 188 Introduction to Artificial Intelligence at University of
+    California, Berkeley. Covered topics: Neural net basics — layers, activations, backprop intuition;
+    CNNs / RNNs / Transformers when the course uses them; Losses, optimisers, and training loops; Regularisation
+    — dropout, weight decay, early stopping; Shape debugging and common framework errors. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS 188（加州大学伯克利分校）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for CS 188: bilingual walkthrough of Neural net basics — layers, activations, backprop
+      intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers, and training
+      loops → Regularisation — dropout, weight decay, early stopping so tutorial language matches.'
+    cn: 按 CS 188 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does CS 188 cover?
+    q_cn: CS 188 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS 189
   title: Introduction to Machine Learning
+  theme: machine-learning
+  meta_description_en: CS 189 tutoring (Introduction to Machine Learning). Stuck on Supervised learning
+    — linear/logistic models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'CS 189 Introduction to Machine Learning at University of California, Berkeley: Supervised
+    learning — linear/logistic models, trees, SVMs → Train / validation / test splits and leakage traps
+    → Features, scaling, and model selection → Metrics — accuracy, precision/recall, ROC, calibration….
+    Method names blur until pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 189，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS 189 Introduction to Machine Learning at University of California,
+    Berkeley. Covered topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation
+    / test splits and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+    ROC, calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS 189（加州大学伯克利分校）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 —
+    准确率、精确率/召回、ROC、校准。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for CS 189: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 CS 189 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does CS 189 cover?
+    q_cn: CS 189 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS 186
   title: Introduction to Database Systems
+  theme: databases
+  meta_description_en: CS 186 tutoring (Introduction to Database Systems). Stuck on ER / relational modelling
+    and normalisation? Bilingual Chinese/English help.
+  lead_en: 'CS 186 Introduction to Database Systems at University of California, Berkeley: ER / relational
+    modelling and normalisation → SQL — select, join, aggregation, nested queries → Indexes, plans, and
+    why a query is slow → Transactions — ACID, isolation, locking…. One wrong schema or join quietly breaks
+    every later query and transaction story. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 186，主线是ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因 → 事务 — ACID、隔离级别、锁。Schema
+    或 join 偏一点，后面查询和事务叙事会整条链一起歪。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS 186 Introduction to Database Systems at University of California,
+    Berkeley. Covered topics: ER / relational modelling and normalisation; SQL — select, join, aggregation,
+    nested queries; Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking;
+    Integrity constraints and schema evolution. Bring your brief, failing test, lecture slide screenshot,
+    or the topic name you are stuck on.'
+  overview_cn: CS 186（加州大学伯克利分校）一对一辅导。覆盖主题包括ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: ER / relational modelling and normalisation
+    cn: ER / 关系建模与范式
+  - en: SQL — select, join, aggregation, nested queries
+    cn: SQL — 查询、连接、聚合、嵌套
+  - en: Indexes, plans, and why a query is slow
+    cn: 索引、执行计划与慢查询原因
+  - en: Transactions — ACID, isolation, locking
+    cn: 事务 — ACID、隔离级别、锁
+  - en: Integrity constraints and schema evolution
+    cn: 完整性约束与 Schema 演化
+  - en: Application ↔ DB boundary (ORM / prepared statements)
+    cn: 应用与数据库边界（ORM / 预处理语句）
+  stuck:
+  - en: Join results look right until a duplicate or NULL appears
+    cn: Join 结果看起来对，一出现重复或 NULL 就崩
+  - en: Normalisation on paper; schema in code still denormalised
+    cn: 纸上范式对了，代码里 Schema 仍不规范
+  - en: Transaction / isolation questions collapse under time pressure
+    cn: 限时下事务 / 隔离级别题直接崩盘
+  session_angles:
+  - en: Draw the ER, then write the join checklist
+    cn: 先画 ER，再写 join 清单
+  - en: Explain the plan before tuning indexes
+    cn: 调索引前先说清执行计划
+  tutoring:
+  - en: 'Lecture sync for CS 186: bilingual walkthrough of ER / relational modelling and normalisation
+      → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query is slow → Transactions
+      — ACID, isolation, locking so tutorial language matches.'
+    cn: 按 CS 186 同步跟课：用中英双语把「ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on ER / relational modelling and normalisation question shapes for this
+      course.'
+    cn: 考前突击：按本课「ER / 关系建模与范式」等题型做限时练习。
+  faq:
+  - q_en: What does CS 186 cover?
+    q_cn: CS 186 学什么？
+    a_en: ER / relational modelling and normalisation; SQL — select, join, aggregation, nested queries;
+      Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking…. Say which week
+      or assessment you are on when booking.
+    a_cn: ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS 162
   title: Operating Systems and System Programming
+  theme: systems
+  meta_description_en: CS 162 tutoring (Operating Systems and System…). Stuck on OS architecture — kernel
+    vs user, system calls, interrupts? Bilingual Chinese/English help.
+  lead_en: 'CS 162 Operating Systems and System Programming at University of California, Berkeley: OS
+    architecture — kernel vs user, system calls, interrupts → Processes, threads, PCBs, and scheduling
+    → Concurrency — mutexes, semaphores, condition variables, deadlock → Virtual memory — paging, TLB,
+    replacement (FIFO/LRU/CLOCK)…. Processes, memory, concurrency, and file-system ideas stack faster
+    than labs can catch up. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where
+    it breaks.'
+  lead_cn: 在加州大学伯克利分校上 CS 162，主线是操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁 → 虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。进程、内存、并发和文件系统叠得比 Lab 跟得上的速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS 162 Operating Systems and System Programming at University
+    of California, Berkeley. Covered topics: OS architecture — kernel vs user, system calls, interrupts;
+    Processes, threads, PCBs, and scheduling; Concurrency — mutexes, semaphores, condition variables,
+    deadlock; Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK); File systems — inodes, allocation,
+    journaling, protection. Bring your brief, failing test, lecture slide screenshot, or the topic name
+    you are stuck on.'
+  overview_cn: CS 162（加州大学伯克利分校）一对一辅导。覆盖主题包括操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: OS architecture — kernel vs user, system calls, interrupts
+    cn: 操作系统结构 — 内核/用户态、系统调用、中断
+  - en: Processes, threads, PCBs, and scheduling
+    cn: 进程、线程、PCB 与调度
+  - en: Concurrency — mutexes, semaphores, condition variables, deadlock
+    cn: 并发 — mutex、信号量、条件变量、死锁
+  - en: Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)
+    cn: 虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）
+  - en: File systems — inodes, allocation, journaling, protection
+    cn: 文件系统 — inode、分配、日志、保护
+  - en: C/Linux labs tying lectures to real behaviour
+    cn: 把课接到真实行为的 C/Linux Lab
+  stuck:
+  - en: Lecture process model clear; fork/wait lab does not match
+    cn: 课上进程模型清楚，fork/wait Lab 却对不上
+  - en: Race or deadlock only under timing you cannot reproduce
+    cn: 竞态 / 死锁只在某种时序下出现，复现不了
+  - en: Paging / TLB / replacement mix up when the exam figure changes
+    cn: 考试换图，分页 / TLB / 置换就搅在一起
+  session_angles:
+  - en: Draw process / lock / page path before changing code
+    cn: 改代码前先画进程 / 锁 / 页路径
+  - en: Reproduce the race, then patch the root cause
+    cn: 先复现竞态，再修根因
+  tutoring:
+  - en: 'Lecture sync for CS 162: bilingual walkthrough of OS architecture — kernel vs user, system calls,
+      interrupts → Processes, threads, PCBs, and scheduling → Concurrency — mutexes, semaphores, condition
+      variables, deadlock → Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK) so tutorial language
+      matches.'
+    cn: 按 CS 162 同步跟课：用中英双语把「操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on OS architecture — kernel vs user, system calls, interrupts question
+      shapes for this course.'
+    cn: 考前突击：按本课「操作系统结构 — 内核/用户态、系统调用、中断」等题型做限时练习。
+  faq:
+  - q_en: What does CS 162 cover?
+    q_cn: CS 162 学什么？
+    a_en: OS architecture — kernel vs user, system calls, interrupts; Processes, threads, PCBs, and scheduling;
+      Concurrency — mutexes, semaphores, condition variables, deadlock; Virtual memory — paging, TLB,
+      replacement (FIFO/LRU/CLOCK)…. Say which week or assessment you are on when booking.
+    a_cn: 操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: DATA C100
   title: Principles and Techniques of Data Science
+  theme: data-science
+  meta_description_en: DATA C100 tutoring (Principles and Techniques of…). Stuck on Data wrangling — tidy
+    tables, joins, missingness? Bilingual Chinese/English help.
+  lead_en: 'DATA C100 Principles and Techniques of Data Science at University of California, Berkeley:
+    Data wrangling — tidy tables, joins, missingness → EDA and visualisation that answer a question →
+    Feature hygiene and leakage checks → Simple models / summaries appropriate to the brief…. Messy tables
+    and weak method stories lose marks even when a chart renders. Tutoring rebuilds that syllabus arc,
+    then debugs the lab or assignment where it breaks.'
+  lead_cn: 在加州大学伯克利分校上 DATA C100，主线是数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查 → 适合 brief 的简单模型 /
+    汇总。就算图画出来了，脏表和站不住的方法叙事也会丢分。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for DATA C100 Principles and Techniques of Data Science at University
+    of California, Berkeley. Covered topics: Data wrangling — tidy tables, joins, missingness; EDA and
+    visualisation that answer a question; Feature hygiene and leakage checks; Simple models / summaries
+    appropriate to the brief; Method trail the marker can re-run. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: DATA C100（加州大学伯克利分校）一对一辅导。覆盖主题包括数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型
+    / 汇总。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data wrangling — tidy tables, joins, missingness
+    cn: 数据整理 — 整洁表、连接、缺失
+  - en: EDA and visualisation that answer a question
+    cn: 能回答问题的 EDA 与可视化
+  - en: Feature hygiene and leakage checks
+    cn: 特征卫生与泄漏检查
+  - en: Simple models / summaries appropriate to the brief
+    cn: 适合 brief 的简单模型 / 汇总
+  - en: Method trail the marker can re-run
+    cn: 改卷人能复跑的方法轨迹
+  - en: Writing that defends every plot and transform
+    cn: 能为每张图和每步变换辩护的写作
+  stuck:
+  - en: Plot produced; caption cannot defend the choice
+    cn: 图有了，图注说不清为何这样画
+  - en: Joins explode row counts unnoticed
+    cn: Join 把行数炸开却没发现
+  - en: Notebook order unreproducible for the marker
+    cn: notebook 顺序让改卷人无法复现
+  session_angles:
+  - en: State the question, then pick the table grain
+    cn: 先陈述问题，再定表的粒度
+  - en: Keep a transform log beside the notebook
+    cn: 在 notebook 旁保留变换日志
+  tutoring:
+  - en: 'Lecture sync for DATA C100: bilingual walkthrough of Data wrangling — tidy tables, joins, missingness
+      → EDA and visualisation that answer a question → Feature hygiene and leakage checks → Simple models
+      / summaries appropriate to the brief so tutorial language matches.'
+    cn: 按 DATA C100 同步跟课：用中英双语把「数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data wrangling — tidy tables, joins, missingness question shapes for
+      this course.'
+    cn: 考前突击：按本课「数据整理 — 整洁表、连接、缺失」等题型做限时练习。
+  faq:
+  - q_en: What does DATA C100 cover?
+    q_cn: DATA C100 学什么？
+    a_en: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer a question;
+      Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief…. Say which
+      week or assessment you are on when booking.
+    a_cn: 数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - title: The Foundations of Data Science
   material: Data 8-the Foundations of Data Science
   code: Data 8
@@ -194,10 +779,10 @@ courses:
     symbols and proof phrasing outrun calculation skill. The hard part is turning that arc into a method
     you can repeat on the next brief — not rereading slides the night before.
   lead_cn: 在加州大学伯克利分校上 MATH54，符号与证明表述往往比计算本身更劝退。
-  overview_en: MATH54 Linear Algebra and Differential Equations sits in math for computer science. Evidence
-    from Students stall when terminology outruns notes, when a demo makes sense in class but not alone,
-    or when the write-up / autograder asks for a method the notebook never made explicit. Sample slides
-    from our concept-review tutoring deck are below.
+  overview_en: MATH54 Linear Algebra and Differential Equations sits in math for computer science. Students
+    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
+    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: MATH54 是加州大学伯克利分校「计算机数学基础」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:

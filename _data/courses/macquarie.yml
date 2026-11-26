@@ -6,61 +6,127 @@ teaching_folder: macquarie-university
 courses:
 - code: COMP2200/COMP6200
   title: Data Science
+  theme: data-science
+  meta_description_en: COMP2200/COMP6200 tutoring (Data Science). Stuck on Data wrangling — tidy tables,
+    joins, missingness? Bilingual Chinese/English help.
+  lead_en: 'COMP2200/COMP6200 Data Science at Macquarie University: Data wrangling — tidy tables, joins,
+    missingness → EDA and visualisation that answer a question → Feature hygiene and leakage checks →
+    Simple models / summaries appropriate to the brief…. Messy tables and weak method stories lose marks
+    even when a chart renders. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP2200/COMP6200，主线是数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查 → 适合 brief 的简单模型
+    / 汇总。就算图画出来了，脏表和站不住的方法叙事也会丢分。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2200/COMP6200 Data Science at Macquarie University. Covered
+    topics: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer a question;
+    Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief; Method trail
+    the marker can re-run. Bring your brief, failing test, lecture slide screenshot, or the topic name
+    you are stuck on.'
+  overview_cn: COMP2200/COMP6200（麦考瑞大学）一对一辅导。覆盖主题包括数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief
+    的简单模型 / 汇总。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data wrangling — tidy tables, joins, missingness
+    cn: 数据整理 — 整洁表、连接、缺失
+  - en: EDA and visualisation that answer a question
+    cn: 能回答问题的 EDA 与可视化
+  - en: Feature hygiene and leakage checks
+    cn: 特征卫生与泄漏检查
+  - en: Simple models / summaries appropriate to the brief
+    cn: 适合 brief 的简单模型 / 汇总
+  - en: Method trail the marker can re-run
+    cn: 改卷人能复跑的方法轨迹
+  - en: Writing that defends every plot and transform
+    cn: 能为每张图和每步变换辩护的写作
+  stuck:
+  - en: Plot produced; caption cannot defend the choice
+    cn: 图有了，图注说不清为何这样画
+  - en: Joins explode row counts unnoticed
+    cn: Join 把行数炸开却没发现
+  - en: Notebook order unreproducible for the marker
+    cn: notebook 顺序让改卷人无法复现
+  session_angles:
+  - en: State the question, then pick the table grain
+    cn: 先陈述问题，再定表的粒度
+  - en: Keep a transform log beside the notebook
+    cn: 在 notebook 旁保留变换日志
+  tutoring:
+  - en: 'Lecture sync for COMP2200/COMP6200: bilingual walkthrough of Data wrangling — tidy tables, joins,
+      missingness → EDA and visualisation that answer a question → Feature hygiene and leakage checks
+      → Simple models / summaries appropriate to the brief so tutorial language matches.'
+    cn: 按 COMP2200/COMP6200 同步跟课：用中英双语把「数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data wrangling — tidy tables, joins, missingness question shapes for
+      this course.'
+    cn: 考前突击：按本课「数据整理 — 整洁表、连接、缺失」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2200/COMP6200 cover?
+    q_cn: COMP2200/COMP6200 学什么？
+    a_en: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer a question;
+      Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief…. Say which
+      week or assessment you are on when booking.
+    a_cn: 数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP6010
   title: Fundamentals of Computer Science
   material: COMP6010
-  theme: algorithms
-  meta_description_en: COMP6010 Macquarie University tutoring (Fundamentals of Computer Science). Stuck
-    on Algorithms, ADTs, and complexity? Bilingual Chinese/English help.
-  lead_en: 'COMP6010 Fundamentals of Computer Science at Macquarie University. Invariants, complexity
-    claims, and code must stay aligned under time pressure. Tutoring: lecture catch-up, assignment debug,
-    exam drills — methods you can reuse.'
-  lead_cn: 在麦考瑞大学上 COMP6010，限时下不变量、复杂度结论和代码必须说的是同一件事。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'COMP6010 Fundamentals of Computer Science (Algorithms & data structures) at Macquarie
-    University. Common topics: Algorithms, ADTs, and complexity. Weekly arc about week 2–3, plus assessed
-    work under deadline. People stall when terms outrun notes, when a class demo does not replay alone,
-    or when the write-up / autograder wants a method the notebook never showed. Sample slides from our
-    concept-review tutoring deck are below.'
-  overview_cn: COMP6010 是麦考瑞大学的「算法与数据结构」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度。大约第 2–3 周有连续周课，作业会要求你在 DDL 下用同一套方法。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  theme: programming
+  meta_description_en: COMP6010 tutoring (Fundamentals of Computer Science). Stuck on Reading the brief
+    — I/O, edges, and marking points before code? Bilingual Chinese/English…
+  lead_en: 'COMP6010 Fundamentals of Computer Science at Macquarie University: Reading the brief — I/O,
+    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
+    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP6010，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP6010 Fundamentals of Computer Science at Macquarie University.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP6010（麦考瑞大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: 'Week 2: W2 Practice Conditions (page 2 of 3) iLearn'
-    cn: 第 2 周：W2 Practice Conditions (page 2 of 3) iLearn
-  - en: 'Week 2: W2 Practice Conditions (page 3 of 3) iLearn'
-    cn: 第 2 周：W2 Practice Conditions (page 3 of 3) iLearn
-  - en: 'Week 3: W3 Practice Loops (page 2 of 4) iLearn'
-    cn: 第 3 周：W3 Practice Loops (page 2 of 4) iLearn
-  - en: 'Week 3: W3 Practice Loops (page 3 of 4) iLearn'
-    cn: 第 3 周：W3 Practice Loops (page 3 of 4) iLearn
-  - en: 'Week 3: W3 Practice Loops (page 4 of 4) iLearn'
-    cn: 第 3 周：W3 Practice Loops (page 4 of 4) iLearn
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Can follow a worked example, cannot start from a blank page under time pressure
-    cn: 能看懂例题，限时白纸上却开不了头
-  - en: Correct intuition but wrong complexity or incomplete proof
-    cn: 直觉对，但复杂度写错或证明不完整
-  - en: DP / recursion without a clear state definition
-    cn: 动态规划 / 递归没有清晰状态定义
-  - en: Implementation bugs that hide a sound algorithm
-    cn: 算法本身没问题，实现 bug 把分扣光
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Write the invariant and recurrence before code
-    cn: 写代码前先写不变量与递推
-  - en: Dry-run on a small example, then generalise
-    cn: 先在小例子上手推，再一般化
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP6010: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 COMP6010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMP6010: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 COMP6010 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
   sample_slides:
     title_en: COMP6010 — sample slides
     title_cn: COMP6010 — 辅导课件样例
@@ -111,6 +177,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMP6010 cover?
+    q_cn: COMP6010 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -217,14 +294,335 @@ courses:
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP1000
   title: Introduction to Computer Programming
+  theme: programming
+  meta_description_en: COMP1000 tutoring (Introduction to Computer Programming). Stuck on Reading the
+    brief — I/O, edges, and marking points before code? Bilingual Chinese/Eng…
+  lead_en: 'COMP1000 Introduction to Computer Programming at Macquarie University: Reading the brief —
+    I/O, edges, and marking points before code → Control flow, functions, and decomposition → Data basics
+    — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP1000，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1000 Introduction to Computer Programming at Macquarie University.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1000（麦考瑞大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for COMP1000: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 COMP1000 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1000 cover?
+    q_cn: COMP1000 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1010
   title: Fundamentals of Computer Science
+  theme: programming
+  meta_description_en: COMP1010 tutoring (Fundamentals of Computer Science). Stuck on Reading the brief
+    — I/O, edges, and marking points before code? Bilingual Chinese/English…
+  lead_en: 'COMP1010 Fundamentals of Computer Science at Macquarie University: Reading the brief — I/O,
+    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
+    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP1010，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1010 Fundamentals of Computer Science at Macquarie University.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1010（麦考瑞大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for COMP1010: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 COMP1010 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1010 cover?
+    q_cn: COMP1010 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1300
   title: Introduction to Cyber Security
+  theme: security
+  meta_description_en: COMP1300 tutoring (Introduction to Cyber Security). Stuck on Threat modelling —
+    assets, attackers, trust boundaries? Bilingual Chinese/English help.
+  lead_en: 'COMP1300 Introduction to Cyber Security at Macquarie University: Threat modelling — assets,
+    attackers, trust boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition →
+    Authentication, authorisation, and session security → Common web / network vulnerabilities when in
+    syllabus…. Threat models and crypto vocabulary form a wall before the lab even builds. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP1300，主线是威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全 → 大纲中的常见 Web
+    / 网络漏洞。威胁模型和密码学术语先堆成一堵墙，Lab 还没编译就劝退。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1300 Introduction to Cyber Security at Macquarie University.
+    Covered topics: Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric,
+    public-key, hashing, TLS intuition; Authentication, authorisation, and session security; Common web
+    / network vulnerabilities when in syllabus; Secure coding habits and failure modes. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1300（麦考瑞大学）一对一辅导。覆盖主题包括威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见
+    Web / 网络漏洞。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Threat modelling — assets, attackers, trust boundaries
+    cn: 威胁建模 — 资产、攻击者、信任边界
+  - en: Crypto primitives — symmetric, public-key, hashing, TLS intuition
+    cn: 密码学原语 — 对称、公钥、哈希、TLS 直觉
+  - en: Authentication, authorisation, and session security
+    cn: 认证、授权与会话安全
+  - en: Common web / network vulnerabilities when in syllabus
+    cn: 大纲中的常见 Web / 网络漏洞
+  - en: Secure coding habits and failure modes
+    cn: 安全编码习惯与失败模式
+  - en: Lab setup and reporting findings clearly
+    cn: Lab 环境与把发现写清楚
+  stuck:
+  - en: Lab setup unfinished; report lists tools without a finding
+    cn: Lab 环境没配好；报告只罗列工具没有发现
+  - en: Primitive names memorised; wrong tool for the threat
+    cn: 原语名字背过了，威胁却选错工具
+  - en: Crypto math and protocol steps diverge under exam pressure
+    cn: 限时下密码学计算和协议步骤对不上
+  session_angles:
+  - en: Write the threat model before picking a primitive
+    cn: 选原语前先写威胁模型
+  - en: One reproducible finding beats a tool dump
+    cn: 一个可复现发现胜过工具清单
+  tutoring:
+  - en: 'Lecture sync for COMP1300: bilingual walkthrough of Threat modelling — assets, attackers, trust
+      boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition → Authentication,
+      authorisation, and session security → Common web / network vulnerabilities when in syllabus so tutorial
+      language matches.'
+    cn: 按 COMP1300 同步跟课：用中英双语把「威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Threat modelling — assets, attackers, trust boundaries question shapes
+      for this course.'
+    cn: 考前突击：按本课「威胁建模 — 资产、攻击者、信任边界」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1300 cover?
+    q_cn: COMP1300 学什么？
+    a_en: Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric, public-key,
+      hashing, TLS intuition; Authentication, authorisation, and session security; Common web / network
+      vulnerabilities when in syllabus…. Say which week or assessment you are on when booking.
+    a_cn: 威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见 Web / 网络漏洞。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2000
   title: Object-Oriented Programming Practices
+  theme: programming
+  meta_description_en: COMP2000 tutoring (Object-Oriented Programming…). Stuck on Reading the brief —
+    I/O, edges, and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'COMP2000 Object-Oriented Programming Practices at Macquarie University: Reading the brief
+    — I/O, edges, and marking points before code → Control flow, functions, and decomposition → Data basics
+    — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP2000，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2000 Object-Oriented Programming Practices at Macquarie University.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2000（麦考瑞大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for COMP2000: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 COMP2000 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2000 cover?
+    q_cn: COMP2000 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2110
   title: Web Technology
+  theme: web-mobile
+  meta_description_en: COMP2110 tutoring (Web Technology). Stuck on Client / server responsibilities and
+    APIs? Bilingual Chinese/English help.
+  lead_en: 'COMP2110 Web Technology at Macquarie University: Client / server responsibilities and APIs
+    → HTTP, routing, and status codes → State, forms, and validation → Auth / sessions when in syllabus….
+    Front-end and back-end failures mask each other inside one brief. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP2110，主线是客户端 / 服务端职责与 API → HTTP、路由与状态码 → 状态、表单与校验 → 大纲中的认证 / 会话。前后端报错互相掩盖，一份 brief
+    里很难定位坏在哪一层。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2110 Web Technology at Macquarie University. Covered topics:
+    Client / server responsibilities and APIs; HTTP, routing, and status codes; State, forms, and validation;
+    Auth / sessions when in syllabus; UI structure or accessibility basics when required. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2110（麦考瑞大学）一对一辅导。覆盖主题包括客户端 / 服务端职责与 API、HTTP、路由与状态码、状态、表单与校验、大纲中的认证 / 会话。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Client / server responsibilities and APIs
+    cn: 客户端 / 服务端职责与 API
+  - en: HTTP, routing, and status codes
+    cn: HTTP、路由与状态码
+  - en: State, forms, and validation
+    cn: 状态、表单与校验
+  - en: Auth / sessions when in syllabus
+    cn: 大纲中的认证 / 会话
+  - en: UI structure or accessibility basics when required
+    cn: 需要时的 UI 结构或无访问性基础
+  - en: Debugging across browser, network, and server logs
+    cn: 跨浏览器、网络与服务端日志排查
+  stuck:
+  - en: UI looks fine; API contract silently diverged
+    cn: UI 看起来正常；API 契约已悄悄不一致
+  - en: Works in one browser / device only
+    cn: 只在某一个浏览器 / 设备上能用
+  - en: Cannot tell whether the bug is CSS, JS, or backend
+    cn: 分不清 bug 在 CSS、JS 还是后端
+  session_angles:
+  - en: Reproduce with network panel before changing UI
+    cn: 改 UI 前先用网络面板复现
+  - en: Fix the contract, then the presentation
+    cn: 先修契约，再修展示
+  tutoring:
+  - en: 'Lecture sync for COMP2110: bilingual walkthrough of Client / server responsibilities and APIs
+      → HTTP, routing, and status codes → State, forms, and validation → Auth / sessions when in syllabus
+      so tutorial language matches.'
+    cn: 按 COMP2110 同步跟课：用中英双语把「客户端 / 服务端职责与 API → HTTP、路由与状态码 → 状态、表单与校验」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Client / server responsibilities and APIs question shapes for this
+      course.'
+    cn: 考前突击：按本课「客户端 / 服务端职责与 API」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2110 cover?
+    q_cn: COMP2110 学什么？
+    a_en: Client / server responsibilities and APIs; HTTP, routing, and status codes; State, forms, and
+      validation; Auth / sessions when in syllabus…. Say which week or assessment you are on when booking.
+    a_cn: 客户端 / 服务端职责与 API、HTTP、路由与状态码、状态、表单与校验、大纲中的认证 / 会话。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2200
   title: Data Science
   material: COMP6200-aug-2025
@@ -247,14 +645,18 @@ courses:
     cn: ML 流水线、特征与模型选择
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
-  - en: 'Week 1: prac'
-    cn: 第 1 周：prac
-  - en: 'Week 2: COMP2200'
-    cn: 第 2 周：COMP2200
-  - en: 'Week 3: COMP2200'
-    cn: 第 3 周：COMP2200
-  - en: 'Week 4: COMP2200'
-    cn: 第 4 周：COMP2200
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
+  - en: Reproducible notebooks and environments
+    cn: 可复现的 notebook 与环境
   stuck:
   - en: Weekly lecture arc moves on before last week’s method is solid
     cn: 周课往前赶，上一周的方法还没练稳
@@ -282,12 +684,272 @@ courses:
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
 - code: COMP2250
   title: Data Communications
+  theme: systems
+  meta_description_en: COMP2250 tutoring (Data Communications). Stuck on Layered models (OSI / TCP-IP)
+    and where each job lives? Bilingual Chinese/English help.
+  lead_en: 'COMP2250 Data Communications at Macquarie University: Layered models (OSI / TCP-IP) and where
+    each job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding
+    intuition → HTTP/DNS and application-layer protocols…. Layers, packets, and failure modes blur until
+    you can trace one request end-to-end. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP2250，主线是分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉 → HTTP/DNS
+    与应用层协议。分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2250 Data Communications at Macquarie University. Covered
+    topics: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable
+    delivery; Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols;
+    Congestion, flow control, and performance trade-offs. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2250（麦考瑞大学）一对一辅导。覆盖主题包括分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS
+    与应用层协议。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Layered models (OSI / TCP-IP) and where each job lives
+    cn: 分层模型（OSI / TCP-IP）与各层职责
+  - en: Sockets, TCP vs UDP, and reliable delivery
+    cn: Socket、TCP vs UDP 与可靠传输
+  - en: Routing, addressing, and forwarding intuition
+    cn: 路由、编址与转发直觉
+  - en: HTTP/DNS and application-layer protocols
+    cn: HTTP/DNS 与应用层协议
+  - en: Congestion, flow control, and performance trade-offs
+    cn: 拥塞、流控与性能权衡
+  - en: Lab traces — Wireshark / packet walks when required
+    cn: 需要时的抓包 / 报文走读 Lab
+  stuck:
+  - en: Mixing app vs transport vs network layer when debugging
+    cn: 排查时把应用 / 传输 / 网络层搅在一起
+  - en: Socket code almost works; handshake or timeout edges fail
+    cn: Socket 差不多能跑；握手或超时边界挂掉
+  - en: Protocol diagrams look familiar until the exam scenario is new
+    cn: 协议图课上眼熟，考试换场景就不会读
+  session_angles:
+  - en: Trace one packet path before changing socket code
+    cn: 改 Socket 代码前先跟完一条报文路径
+  - en: Name the layer that owns the failure
+    cn: 先说出故障属于哪一层
+  tutoring:
+  - en: 'Lecture sync for COMP2250: bilingual walkthrough of Layered models (OSI / TCP-IP) and where each
+      job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding intuition
+      → HTTP/DNS and application-layer protocols so tutorial language matches.'
+    cn: 按 COMP2250 同步跟课：用中英双语把「分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Layered models (OSI / TCP-IP) and where each job lives question shapes
+      for this course.'
+    cn: 考前突击：按本课「分层模型（OSI / TCP-IP）与各层职责」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2250 cover?
+    q_cn: COMP2250 学什么？
+    a_en: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery;
+      Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols…. Say which
+      week or assessment you are on when booking.
+    a_cn: 分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS 与应用层协议。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3010
   title: Algorithm Theory and Design
+  theme: algorithms
+  meta_description_en: COMP3010 tutoring (Algorithm Theory and Design). Stuck on Complexity — Big-O, recurrence,
+    and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'COMP3010 Algorithm Theory and Design at Macquarie University: Complexity — Big-O, recurrence,
+    and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching
+    families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code
+    must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP3010，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3010 Algorithm Theory and Design at Macquarie University.
+    Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues,
+    trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+    MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP3010（麦考瑞大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for COMP3010: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMP3010 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3010 cover?
+    q_cn: COMP3010 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3100
   title: Software Architecture and Design
+  theme: web-mobile
+  meta_description_en: COMP3100 tutoring (Software Architecture and Design). Stuck on Requirements — user
+    stories, use cases, acceptance criteria? Bilingual Chinese/English help.
+  lead_en: 'COMP3100 Software Architecture and Design at Macquarie University: Requirements — user stories,
+    use cases, acceptance criteria → Design — modularity, APIs, and maintainability → Git workflows and
+    code review habits → Testing — unit, integration, and demo evidence…. Specs, teamwork, and demo evidence
+    matter as much as whether the feature runs. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP3100，主线是需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+    习惯 → 测试 — 单元、集成与 demo 证据。规格、协作和 demo 证据，往往和「功能能不能跑」一样重要。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3100 Software Architecture and Design at Macquarie University.
+    Covered topics: Requirements — user stories, use cases, acceptance criteria; Design — modularity,
+    APIs, and maintainability; Git workflows and code review habits; Testing — unit, integration, and
+    demo evidence; HTTP / backend or UI structure the course actually uses. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP3100（麦考瑞大学）一对一辅导。覆盖主题包括需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code
+    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Requirements — user stories, use cases, acceptance criteria
+    cn: 需求 — user story、use case、验收标准
+  - en: Design — modularity, APIs, and maintainability
+    cn: 设计 — 模块化、API 与可维护性
+  - en: Git workflows and code review habits
+    cn: Git 工作流与 code review 习惯
+  - en: Testing — unit, integration, and demo evidence
+    cn: 测试 — 单元、集成与 demo 证据
+  - en: HTTP / backend or UI structure the course actually uses
+    cn: 课程实际用的 HTTP / 后端或 UI 结构
+  - en: Iteration planning and defending design in demos
+    cn: 迭代规划与在 demo 中为设计辩护
+  stuck:
+  - en: Feature works; demo cannot explain design trade-offs
+    cn: 功能能跑，demo 讲不清设计权衡
+  - en: Tests pass locally; CI or tutor demo fails on edges
+    cn: 本地测试能过；CI 或 tutor demo 在边界挂
+  - en: Team Git history messy after a bad merge
+    cn: 错误合并后团队 Git 历史一团糟
+  session_angles:
+  - en: Map interface → tests → demo narrative before coding
+    cn: 写代码前先对齐接口 → 测试 → demo 叙述
+  - en: Own one vertical slice end-to-end
+    cn: 端到端拿下一小条垂直切片
+  tutoring:
+  - en: 'Lecture sync for COMP3100: bilingual walkthrough of Requirements — user stories, use cases, acceptance
+      criteria → Design — modularity, APIs, and maintainability → Git workflows and code review habits
+      → Testing — unit, integration, and demo evidence so tutorial language matches.'
+    cn: 按 COMP3100 同步跟课：用中英双语把「需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+      习惯」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Requirements — user stories, use cases, acceptance criteria question
+      shapes for this course.'
+    cn: 考前突击：按本课「需求 — user story、use case、验收标准」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3100 cover?
+    q_cn: COMP3100 学什么？
+    a_en: Requirements — user stories, use cases, acceptance criteria; Design — modularity, APIs, and
+      maintainability; Git workflows and code review habits; Testing — unit, integration, and demo evidence….
+      Say which week or assessment you are on when booking.
+    a_cn: 需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code review 习惯、测试 — 单元、集成与 demo 证据。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3420
   title: Artificial Intelligence
+  theme: machine-learning
+  meta_description_en: COMP3420 tutoring (Artificial Intelligence). Stuck on Neural net basics — layers,
+    activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'COMP3420 Artificial Intelligence at Macquarie University: Neural net basics — layers, activations,
+    backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers, and
+    training loops → Regularisation — dropout, weight decay, early stopping…. Architectures and loss jargon
+    outrun the debugging loop when shapes and gradients fail. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在麦考瑞大学上 COMP3420，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环 →
+    正则 — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3420 Artificial Intelligence at Macquarie University. Covered
+    topics: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+    the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+    early stopping; Shape debugging and common framework errors. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP3420（麦考瑞大学）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for COMP3420: bilingual walkthrough of Neural net basics — layers, activations,
+      backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers,
+      and training loops → Regularisation — dropout, weight decay, early stopping so tutorial language
+      matches.'
+    cn: 按 COMP3420 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3420 cover?
+    q_cn: COMP3420 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP6200
   title: Data Science Foundations
   material: COMP6200-aug-2025
@@ -298,11 +960,10 @@ courses:
     and weak method stories lose marks even when a model runs. Tutoring focuses on methods you can reuse
     on the next brief.
   lead_cn: 在麦考瑞大学上 COMP6200，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: COMP6200 Data Science / Analytics Foundations sits in data science & analytics. Evidence
-    from There is a weekly arc (about week 1–4) plus assessed work that expects you to apply the same
-    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
-    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
-    explicit.
+  overview_en: COMP6200 Data Science / Analytics Foundations sits in data science & analytics. There is
+    a weekly arc (about week 1–4) plus assessed work that expects you to apply the same ideas under deadline
+    pressure. Students stall when terminology outruns notes, when a demo makes sense in class but not
+    alone, or when the write-up / autograder asks for a method the notebook never made explicit.
   overview_cn: COMP6200 是麦考瑞大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着ML 流水线、特征与模型选择、数学基础与证明习惯这些点转。大约第
     1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
     notebook 里从未写清。
@@ -311,14 +972,18 @@ courses:
     cn: ML 流水线、特征与模型选择
   - en: Math foundations and proof habits
     cn: 数学基础与证明习惯
-  - en: 'Week 1: prac'
-    cn: 第 1 周：prac
-  - en: 'Week 2: COMP2200'
-    cn: 第 2 周：COMP2200
-  - en: 'Week 3: COMP2200'
-    cn: 第 3 周：COMP2200
-  - en: 'Week 4: COMP2200'
-    cn: 第 4 周：COMP2200
+  - en: Pandas / dplyr style transforms and joins
+    cn: Pandas / dplyr 风格的变换与 join
+  - en: EDA, distributions, and “what question am I answering?”
+    cn: 探索性分析、分布，以及“我在回答什么问题”
+  - en: Feature hygiene before modelling
+    cn: 建模前的特征卫生
+  - en: Visualisation that supports a claim
+    cn: 能支撑结论的可视化
+  - en: Group projects — ownership of one clear analysis thread
+    cn: 小组作业——把住一条清晰分析主线
+  - en: Reproducible notebooks and environments
+    cn: 可复现的 notebook 与环境
   stuck:
   - en: Weekly lecture arc moves on before last week’s method is solid
     cn: 周课往前赶，上一周的方法还没练稳

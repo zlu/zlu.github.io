@@ -6,24 +6,667 @@ teaching_folder: u-nottingham
 courses:
 - code: COMP4030
   title: Data Science with Machine Learning
+  theme: machine-learning
+  meta_description_en: COMP4030 tutoring (Data Science with Machine Learning). Stuck on Supervised learning
+    — linear/logistic models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'COMP4030 Data Science with Machine Learning at University of Nottingham: Supervised learning
+    — linear/logistic models, trees, SVMs → Train / validation / test splits and leakage traps → Features,
+    scaling, and model selection → Metrics — accuracy, precision/recall, ROC, calibration…. Method names
+    blur until pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP4030，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP4030 Data Science with Machine Learning at University of Nottingham.
+    Covered topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test
+    splits and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+    ROC, calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP4030（诺丁汉大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for COMP4030: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 COMP4030 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does COMP4030 cover?
+    q_cn: COMP4030 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1001
   title: Mathematics for Computer Scientists
+  theme: math-for-cs
+  meta_description_en: COMP1001 tutoring (Mathematics for Computer Scientists). Stuck on Logic, sets,
+    and proof strategies? Bilingual Chinese/English help.
+  lead_en: 'COMP1001 Mathematics for Computer Scientists at University of Nottingham: Logic, sets, and
+    proof strategies → Induction and invariants → Relations, functions, and counting → Graphs / trees
+    as discrete structures…. Symbols and proof phrasing outrun calculation skill. Tutoring rebuilds that
+    syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP1001，主线是逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数 → 作为离散结构的图 / 树。符号与证明表述往往比计算本身更劝退。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1001 Mathematics for Computer Scientists at University of
+    Nottingham. Covered topics: Logic, sets, and proof strategies; Induction and invariants; Relations,
+    functions, and counting; Graphs / trees as discrete structures; Number theory or modular arithmetic
+    when required. Bring your brief, failing test, lecture slide screenshot, or the topic name you are
+    stuck on.'
+  overview_cn: COMP1001（诺丁汉大学）一对一辅导。覆盖主题包括逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Logic, sets, and proof strategies
+    cn: 逻辑、集合与证明策略
+  - en: Induction and invariants
+    cn: 归纳与不变量
+  - en: Relations, functions, and counting
+    cn: 关系、函数与计数
+  - en: Graphs / trees as discrete structures
+    cn: 作为离散结构的图 / 树
+  - en: Number theory or modular arithmetic when required
+    cn: 需要时的数论 / 模运算
+  - en: Translating word problems into formal statements
+    cn: 把文字题翻译成形式陈述
+  stuck:
+  - en: Can follow a proof; cannot start from a blank page
+    cn: 能看懂证明，白纸上开不了头
+  - en: Notation piles up faster than bilingual notes
+    cn: 符号比双语笔记堆得还快
+  - en: Induction hypothesis stated wrong for the claim
+    cn: 归纳假设和要证的命题对不上
+  session_angles:
+  - en: Restate the claim in one sentence before proving
+    cn: 证明前先用一句话复述命题
+  - en: Pick the proof pattern, then fill details
+    cn: 先选证明模式，再填细节
+  tutoring:
+  - en: 'Lecture sync for COMP1001: bilingual walkthrough of Logic, sets, and proof strategies → Induction
+      and invariants → Relations, functions, and counting → Graphs / trees as discrete structures so tutorial
+      language matches.'
+    cn: 按 COMP1001 同步跟课：用中英双语把「逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Logic, sets, and proof strategies question shapes for this course.'
+    cn: 考前突击：按本课「逻辑、集合与证明策略」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1001 cover?
+    q_cn: COMP1001 学什么？
+    a_en: Logic, sets, and proof strategies; Induction and invariants; Relations, functions, and counting;
+      Graphs / trees as discrete structures…. Say which week or assessment you are on when booking.
+    a_cn: 逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1002
   title: Programming and Algorithms
+  theme: algorithms
+  meta_description_en: COMP1002 tutoring (Programming and Algorithms). Stuck on Complexity — Big-O, recurrence,
+    and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'COMP1002 Programming and Algorithms at University of Nottingham: Complexity — Big-O, recurrence,
+    and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching
+    families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code
+    must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP1002，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1002 Programming and Algorithms at University of Nottingham.
+    Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues,
+    trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+    MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1002（诺丁汉大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for COMP1002: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMP1002 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1002 cover?
+    q_cn: COMP1002 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1003
   title: Computer Systems Architecture
+  theme: systems
+  meta_description_en: COMP1003 tutoring (Computer Systems Architecture). Stuck on Data representation
+    — ints, floats, endianness, bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'COMP1003 Computer Systems Architecture at University of Nottingham: Data representation —
+    ints, floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+    control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly,
+    data representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP1003，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1003 Computer Systems Architecture at University of Nottingham.
+    Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics
+    and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache,
+    locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1003（诺丁汉大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次
+    — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
+  stuck:
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
+  session_angles:
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
+  tutoring:
+  - en: 'Lecture sync for COMP1003: bilingual walkthrough of Data representation — ints, floats, endianness,
+      bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+      intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial language matches.'
+    cn: 按 COMP1003 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1003 cover?
+    q_cn: COMP1003 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP1005
   title: Software Engineering
+  theme: web-mobile
+  meta_description_en: COMP1005 tutoring (Software Engineering). Stuck on Requirements — user stories,
+    use cases, acceptance criteria? Bilingual Chinese/English help.
+  lead_en: 'COMP1005 Software Engineering at University of Nottingham: Requirements — user stories, use
+    cases, acceptance criteria → Design — modularity, APIs, and maintainability → Git workflows and code
+    review habits → Testing — unit, integration, and demo evidence…. Specs, teamwork, and demo evidence
+    matter as much as whether the feature runs. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP1005，主线是需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+    习惯 → 测试 — 单元、集成与 demo 证据。规格、协作和 demo 证据，往往和「功能能不能跑」一样重要。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP1005 Software Engineering at University of Nottingham. Covered
+    topics: Requirements — user stories, use cases, acceptance criteria; Design — modularity, APIs, and
+    maintainability; Git workflows and code review habits; Testing — unit, integration, and demo evidence;
+    HTTP / backend or UI structure the course actually uses. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP1005（诺丁汉大学）一对一辅导。覆盖主题包括需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code
+    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Requirements — user stories, use cases, acceptance criteria
+    cn: 需求 — user story、use case、验收标准
+  - en: Design — modularity, APIs, and maintainability
+    cn: 设计 — 模块化、API 与可维护性
+  - en: Git workflows and code review habits
+    cn: Git 工作流与 code review 习惯
+  - en: Testing — unit, integration, and demo evidence
+    cn: 测试 — 单元、集成与 demo 证据
+  - en: HTTP / backend or UI structure the course actually uses
+    cn: 课程实际用的 HTTP / 后端或 UI 结构
+  - en: Iteration planning and defending design in demos
+    cn: 迭代规划与在 demo 中为设计辩护
+  stuck:
+  - en: Feature works; demo cannot explain design trade-offs
+    cn: 功能能跑，demo 讲不清设计权衡
+  - en: Tests pass locally; CI or tutor demo fails on edges
+    cn: 本地测试能过；CI 或 tutor demo 在边界挂
+  - en: Team Git history messy after a bad merge
+    cn: 错误合并后团队 Git 历史一团糟
+  session_angles:
+  - en: Map interface → tests → demo narrative before coding
+    cn: 写代码前先对齐接口 → 测试 → demo 叙述
+  - en: Own one vertical slice end-to-end
+    cn: 端到端拿下一小条垂直切片
+  tutoring:
+  - en: 'Lecture sync for COMP1005: bilingual walkthrough of Requirements — user stories, use cases, acceptance
+      criteria → Design — modularity, APIs, and maintainability → Git workflows and code review habits
+      → Testing — unit, integration, and demo evidence so tutorial language matches.'
+    cn: 按 COMP1005 同步跟课：用中英双语把「需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+      习惯」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Requirements — user stories, use cases, acceptance criteria question
+      shapes for this course.'
+    cn: 考前突击：按本课「需求 — user story、use case、验收标准」等题型做限时练习。
+  faq:
+  - q_en: What does COMP1005 cover?
+    q_cn: COMP1005 学什么？
+    a_en: Requirements — user stories, use cases, acceptance criteria; Design — modularity, APIs, and
+      maintainability; Git workflows and code review habits; Testing — unit, integration, and demo evidence….
+      Say which week or assessment you are on when booking.
+    a_cn: 需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code review 习惯、测试 — 单元、集成与 demo 证据。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2001
   title: Algorithm Design and Analysis
+  theme: algorithms
+  meta_description_en: COMP2001 tutoring (Algorithm Design and Analysis). Stuck on Complexity — Big-O,
+    recurrence, and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'COMP2001 Algorithm Design and Analysis at University of Nottingham: Complexity — Big-O, recurrence,
+    and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching
+    families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code
+    must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP2001，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2001 Algorithm Design and Analysis at University of Nottingham.
+    Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues,
+    trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+    MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2001（诺丁汉大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for COMP2001: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 COMP2001 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2001 cover?
+    q_cn: COMP2001 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2003
   title: Operating Systems and Concurrency
+  theme: systems
+  meta_description_en: COMP2003 tutoring (Operating Systems and Concurrency). Stuck on OS architecture
+    — kernel vs user, system calls, interrupts? Bilingual Chinese/English help.
+  lead_en: 'COMP2003 Operating Systems and Concurrency at University of Nottingham: OS architecture —
+    kernel vs user, system calls, interrupts → Processes, threads, PCBs, and scheduling → Concurrency
+    — mutexes, semaphores, condition variables, deadlock → Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)….
+    Processes, memory, concurrency, and file-system ideas stack faster than labs can catch up. Tutoring
+    rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP2003，主线是操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁 → 虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。进程、内存、并发和文件系统叠得比 Lab 跟得上的速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2003 Operating Systems and Concurrency at University of Nottingham.
+    Covered topics: OS architecture — kernel vs user, system calls, interrupts; Processes, threads, PCBs,
+    and scheduling; Concurrency — mutexes, semaphores, condition variables, deadlock; Virtual memory —
+    paging, TLB, replacement (FIFO/LRU/CLOCK); File systems — inodes, allocation, journaling, protection.
+    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2003（诺丁汉大学）一对一辅导。覆盖主题包括操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: OS architecture — kernel vs user, system calls, interrupts
+    cn: 操作系统结构 — 内核/用户态、系统调用、中断
+  - en: Processes, threads, PCBs, and scheduling
+    cn: 进程、线程、PCB 与调度
+  - en: Concurrency — mutexes, semaphores, condition variables, deadlock
+    cn: 并发 — mutex、信号量、条件变量、死锁
+  - en: Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)
+    cn: 虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）
+  - en: File systems — inodes, allocation, journaling, protection
+    cn: 文件系统 — inode、分配、日志、保护
+  - en: C/Linux labs tying lectures to real behaviour
+    cn: 把课接到真实行为的 C/Linux Lab
+  stuck:
+  - en: Lecture process model clear; fork/wait lab does not match
+    cn: 课上进程模型清楚，fork/wait Lab 却对不上
+  - en: Race or deadlock only under timing you cannot reproduce
+    cn: 竞态 / 死锁只在某种时序下出现，复现不了
+  - en: Paging / TLB / replacement mix up when the exam figure changes
+    cn: 考试换图，分页 / TLB / 置换就搅在一起
+  session_angles:
+  - en: Draw process / lock / page path before changing code
+    cn: 改代码前先画进程 / 锁 / 页路径
+  - en: Reproduce the race, then patch the root cause
+    cn: 先复现竞态，再修根因
+  tutoring:
+  - en: 'Lecture sync for COMP2003: bilingual walkthrough of OS architecture — kernel vs user, system
+      calls, interrupts → Processes, threads, PCBs, and scheduling → Concurrency — mutexes, semaphores,
+      condition variables, deadlock → Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK) so tutorial
+      language matches.'
+    cn: 按 COMP2003 同步跟课：用中英双语把「操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on OS architecture — kernel vs user, system calls, interrupts question
+      shapes for this course.'
+    cn: 考前突击：按本课「操作系统结构 — 内核/用户态、系统调用、中断」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2003 cover?
+    q_cn: COMP2003 学什么？
+    a_en: OS architecture — kernel vs user, system calls, interrupts; Processes, threads, PCBs, and scheduling;
+      Concurrency — mutexes, semaphores, condition variables, deadlock; Virtual memory — paging, TLB,
+      replacement (FIFO/LRU/CLOCK)…. Say which week or assessment you are on when booking.
+    a_cn: 操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP2012
   title: Artificial Intelligence Methods
+  theme: machine-learning
+  meta_description_en: COMP2012 tutoring (Artificial Intelligence Methods). Stuck on Neural net basics
+    — layers, activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'COMP2012 Artificial Intelligence Methods at University of Nottingham: Neural net basics —
+    layers, activations, backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses,
+    optimisers, and training loops → Regularisation — dropout, weight decay, early stopping…. Architectures
+    and loss jargon outrun the debugging loop when shapes and gradients fail. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP2012，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环 →
+    正则 — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2012 Artificial Intelligence Methods at University of Nottingham.
+    Covered topics: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers
+    when the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight
+    decay, early stopping; Shape debugging and common framework errors. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2012（诺丁汉大学）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for COMP2012: bilingual walkthrough of Neural net basics — layers, activations,
+      backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers,
+      and training loops → Regularisation — dropout, weight decay, early stopping so tutorial language
+      matches.'
+    cn: 按 COMP2012 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2012 cover?
+    q_cn: COMP2012 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3001
   title: Machine Learning
+  theme: machine-learning
+  meta_description_en: COMP3001 tutoring (Machine Learning). Stuck on Supervised learning — linear/logistic
+    models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'COMP3001 Machine Learning at University of Nottingham: Supervised learning — linear/logistic
+    models, trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and
+    model selection → Metrics — accuracy, precision/recall, ROC, calibration…. Method names blur until
+    pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP3001，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3001 Machine Learning at University of Nottingham. Covered
+    topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+    and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall, ROC,
+    calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP3001（诺丁汉大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for COMP3001: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 COMP3001 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3001 cover?
+    q_cn: COMP3001 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: COMP3010
   title: Computer Vision
+  theme: machine-learning
+  meta_description_en: COMP3010 tutoring (Computer Vision). Stuck on Image formation, filtering, and features?
+    Bilingual Chinese/English help.
+  lead_en: 'COMP3010 Computer Vision at University of Nottingham: Image formation, filtering, and features
+    → Classical detectors / descriptors when taught → Learning-based vision pipelines when in syllabus
+    → Datasets, metrics, and leakage in vision tasks…. Pipelines fail on shape, colourspace, or eval protocol
+    long before “the model”. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where
+    it breaks.'
+  lead_cn: 在诺丁汉大学上 COMP3010，主线是成像、滤波与特征 → 课程中的经典检测 / 描述子 → 大纲中的学习式视觉流水线 → 视觉任务中的数据、指标与泄漏。往往先倒在维度、色彩空间或评估协议上，而不是「模型本身」。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP3010 Computer Vision at University of Nottingham. Covered
+    topics: Image formation, filtering, and features; Classical detectors / descriptors when taught; Learning-based
+    vision pipelines when in syllabus; Datasets, metrics, and leakage in vision tasks; Debugging shapes,
+    dtypes, and preprocessing. Bring your brief, failing test, lecture slide screenshot, or the topic
+    name you are stuck on.'
+  overview_cn: COMP3010（诺丁汉大学）一对一辅导。覆盖主题包括成像、滤波与特征、课程中的经典检测 / 描述子、大纲中的学习式视觉流水线、视觉任务中的数据、指标与泄漏。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Image formation, filtering, and features
+    cn: 成像、滤波与特征
+  - en: Classical detectors / descriptors when taught
+    cn: 课程中的经典检测 / 描述子
+  - en: Learning-based vision pipelines when in syllabus
+    cn: 大纲中的学习式视觉流水线
+  - en: Datasets, metrics, and leakage in vision tasks
+    cn: 视觉任务中的数据、指标与泄漏
+  - en: Debugging shapes, dtypes, and preprocessing
+    cn: debug 维度、dtype 与预处理
+  - en: Reporting qualitative + quantitative evidence
+    cn: 报告定性 + 定量证据
+  stuck:
+  - en: Preprocessing differs between notebook and submission
+    cn: notebook 和提交的预处理不一致
+  - en: Metric improves; qualitative failures ignored
+    cn: 指标涨了，定性失败被忽略
+  - en: Colourspace / channel bugs that look like model failure
+    cn: 色彩空间 / 通道 bug 看起来像模型失败
+  session_angles:
+  - en: Visualise intermediates before tuning the model
+    cn: 调模型前先可视化中间结果
+  - en: Freeze preprocessing, then change one module
+    cn: 先冻住预处理，再改一个模块
+  tutoring:
+  - en: 'Lecture sync for COMP3010: bilingual walkthrough of Image formation, filtering, and features
+      → Classical detectors / descriptors when taught → Learning-based vision pipelines when in syllabus
+      → Datasets, metrics, and leakage in vision tasks so tutorial language matches.'
+    cn: 按 COMP3010 同步跟课：用中英双语把「成像、滤波与特征 → 课程中的经典检测 / 描述子 → 大纲中的学习式视觉流水线」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Image formation, filtering, and features question shapes for this
+      course.'
+    cn: 考前突击：按本课「成像、滤波与特征」等题型做限时练习。
+  faq:
+  - q_en: What does COMP3010 cover?
+    q_cn: COMP3010 学什么？
+    a_en: Image formation, filtering, and features; Classical detectors / descriptors when taught; Learning-based
+      vision pipelines when in syllabus; Datasets, metrics, and leakage in vision tasks…. Say which week
+      or assessment you are on when booking.
+    a_cn: 成像、滤波与特征、课程中的经典检测 / 描述子、大纲中的学习式视觉流水线、视觉任务中的数据、指标与泄漏。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - title: Eeee4119 Ai And Intelligent Systems
   material: eeee4119-ai-and-intelligent-systems
   code: EEEE4119
@@ -34,11 +677,10 @@ courses:
     blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can
     reuse on the next brief.
   lead_cn: 在诺丁汉大学上 EEEE4119，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: 'EEEE4119 Eeee4119 Ai And Intelligent Systems sits in machine learning & ai. Evidence from
-
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.'
+  overview_en: EEEE4119 Eeee4119 Ai And Intelligent Systems sits in machine learning & ai. Students stall
+    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
+    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: EEEE4119 是诺丁汉大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、ML 流水线、特征与模型选择这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:

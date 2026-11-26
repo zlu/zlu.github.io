@@ -8,63 +8,59 @@ courses:
   title: Cryptography
   material: 密码学
   theme: security
-  meta_description_en: CSC8202 Newcastle tutoring (Cryptography). Weekly lecture arc moves on before last
-    week’s method is solid? Bilingual Chinese/English help.
-  lead_en: CSC8202 Cryptography at Newcastle University is where threat models, crypto vocabulary, and
-    lab setup form a terminology wall. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
-  lead_cn: 在纽卡斯尔大学上 CSC8202，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
-  overview_en: CSC8202 Cryptography sits in security & privacy. There is a weekly arc (about week 1–4)
-    plus assessed work that expects you to apply the same ideas under deadline pressure. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: CSC8202 是纽卡斯尔大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统 / 系统编程、安全 / 隐私威胁模型与实验、算法、ADT
-    与复杂度这些点转。大约第 1–4 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder
-    要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: CSC8202 tutoring (Cryptography). Stuck on Threat modelling — assets, attackers,
+    trust boundaries? Bilingual Chinese/English help.
+  lead_en: 'CSC8202 Cryptography at Newcastle University: Threat modelling — assets, attackers, trust
+    boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition → Authentication, authorisation,
+    and session security → Common web / network vulnerabilities when in syllabus…. Threat models and crypto
+    vocabulary form a wall before the lab even builds. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在纽卡斯尔大学上 CSC8202，主线是威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全 → 大纲中的常见 Web
+    / 网络漏洞。威胁模型和密码学术语先堆成一堵墙，Lab 还没编译就劝退。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSC8202 Cryptography at Newcastle University. Covered topics:
+    Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric, public-key,
+    hashing, TLS intuition; Authentication, authorisation, and session security; Common web / network
+    vulnerabilities when in syllabus; Secure coding habits and failure modes. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSC8202（纽卡斯尔大学）一对一辅导。覆盖主题包括威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见
+    Web / 网络漏洞。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: OS / systems programming
-    cn: 操作系统 / 系统编程
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: R / MATLAB scientific workflow
-    cn: R / MATLAB 科研工作流
-  - en: 'Week 1: 1 Intro'
-    cn: 第 1 周：1 Intro
-  - en: 'Week 1: 1 Intro Handouts'
-    cn: 第 1 周：1 Intro Handouts
+  - en: Threat modelling — assets, attackers, trust boundaries
+    cn: 威胁建模 — 资产、攻击者、信任边界
+  - en: Crypto primitives — symmetric, public-key, hashing, TLS intuition
+    cn: 密码学原语 — 对称、公钥、哈希、TLS 直觉
+  - en: Authentication, authorisation, and session security
+    cn: 认证、授权与会话安全
+  - en: Common web / network vulnerabilities when in syllabus
+    cn: 大纲中的常见 Web / 网络漏洞
+  - en: Secure coding habits and failure modes
+    cn: 安全编码习惯与失败模式
+  - en: Lab setup and reporting findings clearly
+    cn: Lab 环境与把发现写清楚
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“CSC8626 Coursework 1”) makes sense in class, freezes you alone
-    cn: 作业 brief（「CSC8626 Coursework 1」）课上听得懂，自己对着就停住
-  - en: Lab setup unfinished; report lists tools without a clear finding
-    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
-  - en: Labs that need precise setup before any “hacking”
-    cn: Lab 还没配好环境就急着“黑”
-  - en: Confusing confidentiality, integrity, and availability
-    cn: 把机密性、完整性、可用性搅在一起
+  - en: Lab setup unfinished; report lists tools without a finding
+    cn: Lab 环境没配好；报告只罗列工具没有发现
+  - en: Primitive names memorised; wrong tool for the threat
+    cn: 原语名字背过了，威胁却选错工具
+  - en: Crypto math and protocol steps diverge under exam pressure
+    cn: 限时下密码学计算和协议步骤对不上
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Restate the threat model in one paragraph
-    cn: 用一段话重述威胁模型
+  - en: Write the threat model before picking a primitive
+    cn: 选原语前先写威胁模型
+  - en: One reproducible finding beats a tool dump
+    cn: 一个可复现发现胜过工具清单
   tutoring:
-  - en: 'Lecture sync for CSC8202: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CSC8202 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as CSC8626 Coursework 1, CSC8626 Coursework
-      DescriptionSheet, with you at the keyboard.'
-    cn: 作业辅导：针对 CSC8626 Coursework 1, CSC8626 Coursework DescriptionSheet 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CSC8202: bilingual walkthrough of Threat modelling — assets, attackers, trust
+      boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition → Authentication,
+      authorisation, and session security → Common web / network vulnerabilities when in syllabus so tutorial
+      language matches.'
+    cn: 按 CSC8202 同步跟课：用中英双语把「威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Threat modelling — assets, attackers, trust boundaries question shapes
+      for this course.'
+    cn: 考前突击：按本课「威胁建模 — 资产、攻击者、信任边界」等题型做限时练习。
   sample_slides:
     title_en: CSC8202 — sample slides
     title_cn: CSC8202 — 辅导课件样例
@@ -111,6 +107,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does CSC8202 cover?
+    q_cn: CSC8202 学什么？
+    a_en: Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric, public-key,
+      hashing, TLS intuition; Authentication, authorisation, and session security; Common web / network
+      vulnerabilities when in syllabus…. Say which week or assessment you are on when booking.
+    a_cn: 威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见 Web / 网络漏洞。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

@@ -1,0 +1,462 @@
+# Course-specific subject packs for stub enrichment.
+# Match against "code title" (case-insensitive). First match wins.
+# Only the page shell is generic — pack topics/stuck/hard must name the subject.
+#
+# Used by:
+#   .scripts/enrich_teach_stubs.py
+#   _plugins/teach_pages.rb (synthesize_course_copy fallback)
+---
+packs:
+- id: operating-systems
+  theme: systems
+  match: operat(?:ing)?\s*systems?|(?:\bos\b).{0,20}(?:system|program)|systems?\s*program
+  hard_en: processes, memory, concurrency, and file-system ideas stack faster than labs can catch up
+  hard_cn: 进程、内存、并发和文件系统叠得比 Lab 跟得上的速度还快
+  topics:
+  - {en: "OS architecture — kernel vs user, system calls, interrupts", cn: "操作系统结构 — 内核/用户态、系统调用、中断"}
+  - {en: "Processes, threads, PCBs, and scheduling", cn: "进程、线程、PCB 与调度"}
+  - {en: "Concurrency — mutexes, semaphores, condition variables, deadlock", cn: "并发 — mutex、信号量、条件变量、死锁"}
+  - {en: "Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)", cn: "虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）"}
+  - {en: "File systems — inodes, allocation, journaling, protection", cn: "文件系统 — inode、分配、日志、保护"}
+  - {en: "C/Linux labs tying lectures to real behaviour", cn: "把课接到真实行为的 C/Linux Lab"}
+  stuck:
+  - {en: "Lecture process model clear; fork/wait lab does not match", cn: "课上进程模型清楚，fork/wait Lab 却对不上"}
+  - {en: "Race or deadlock only under timing you cannot reproduce", cn: "竞态 / 死锁只在某种时序下出现，复现不了"}
+  - {en: "Paging / TLB / replacement mix up when the exam figure changes", cn: "考试换图，分页 / TLB / 置换就搅在一起"}
+  session_angles:
+  - {en: "Draw process / lock / page path before changing code", cn: "改代码前先画进程 / 锁 / 页路径"}
+  - {en: "Reproduce the race, then patch the root cause", cn: "先复现竞态，再修根因"}
+
+- id: computer-networks
+  theme: systems
+  match: computer\s*networks?|network(?:ing)?\s*(?:and|&)|networks?\s+and\s+(?:appl|commun)|(?:^|[\s/])networks?(?:\s|$)|data\s+communications?|\btcp\b|\bosi\b|socket\s*program|wireless\s*networks?|systems?\s+and\s+networks?
+  hard_en: layers, packets, and failure modes blur until you can trace one request end-to-end
+  hard_cn: 分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾
+  topics:
+  - {en: "Layered models (OSI / TCP-IP) and where each job lives", cn: "分层模型（OSI / TCP-IP）与各层职责"}
+  - {en: "Sockets, TCP vs UDP, and reliable delivery", cn: "Socket、TCP vs UDP 与可靠传输"}
+  - {en: "Routing, addressing, and forwarding intuition", cn: "路由、编址与转发直觉"}
+  - {en: "HTTP/DNS and application-layer protocols", cn: "HTTP/DNS 与应用层协议"}
+  - {en: "Congestion, flow control, and performance trade-offs", cn: "拥塞、流控与性能权衡"}
+  - {en: "Lab traces — Wireshark / packet walks when required", cn: "需要时的抓包 / 报文走读 Lab"}
+  stuck:
+  - {en: "Mixing app vs transport vs network layer when debugging", cn: "排查时把应用 / 传输 / 网络层搅在一起"}
+  - {en: "Socket code almost works; handshake or timeout edges fail", cn: "Socket 差不多能跑；握手或超时边界挂掉"}
+  - {en: "Protocol diagrams look familiar until the exam scenario is new", cn: "协议图课上眼熟，考试换场景就不会读"}
+  session_angles:
+  - {en: "Trace one packet path before changing socket code", cn: "改 Socket 代码前先跟完一条报文路径"}
+  - {en: "Name the layer that owns the failure", cn: "先说出故障属于哪一层"}
+
+- id: databases
+  theme: databases
+  match: databases?|relational\s*databases?|\bsql\b|data\s*management|information\s*systems?|dbms
+  hard_en: one wrong schema or join quietly breaks every later query and transaction story
+  hard_cn: Schema 或 join 偏一点，后面查询和事务叙事会整条链一起歪
+  topics:
+  - {en: "ER / relational modelling and normalisation", cn: "ER / 关系建模与范式"}
+  - {en: "SQL — select, join, aggregation, nested queries", cn: "SQL — 查询、连接、聚合、嵌套"}
+  - {en: "Indexes, plans, and why a query is slow", cn: "索引、执行计划与慢查询原因"}
+  - {en: "Transactions — ACID, isolation, locking", cn: "事务 — ACID、隔离级别、锁"}
+  - {en: "Integrity constraints and schema evolution", cn: "完整性约束与 Schema 演化"}
+  - {en: "Application ↔ DB boundary (ORM / prepared statements)", cn: "应用与数据库边界（ORM / 预处理语句）"}
+  stuck:
+  - {en: "Join results look right until a duplicate or NULL appears", cn: "Join 结果看起来对，一出现重复或 NULL 就崩"}
+  - {en: "Normalisation on paper; schema in code still denormalised", cn: "纸上范式对了，代码里 Schema 仍不规范"}
+  - {en: "Transaction / isolation questions collapse under time pressure", cn: "限时下事务 / 隔离级别题直接崩盘"}
+  session_angles:
+  - {en: "Draw the ER, then write the join checklist", cn: "先画 ER，再写 join 清单"}
+  - {en: "Explain the plan before tuning indexes", cn: "调索引前先说清执行计划"}
+
+- id: algorithms-ds
+  theme: algorithms
+  match: algorithms?(?:\s+and\s+data)?|data\s*structures?|algorithm\s*design|algorithm\s*analysis|design\s+and\s+analysis\s+of\s+algorithms|programming\s+techniques
+  hard_en: invariants, complexity claims, and code must stay aligned under time pressure
+  hard_cn: 限时下不变量、复杂度结论和代码必须说的是同一件事
+  topics:
+  - {en: "Complexity — Big-O, recurrence, and arguing bounds", cn: "复杂度 — Big-O、递推与界的论证"}
+  - {en: "Core ADTs — lists, stacks, queues, trees, heaps, hash tables", cn: "核心 ADT — 表、栈、队列、树、堆、哈希表"}
+  - {en: "Sorting and searching families", cn: "排序与查找族"}
+  - {en: "Graph algorithms — BFS/DFS, shortest paths, MSTs", cn: "图算法 — BFS/DFS、最短路、最小生成树"}
+  - {en: "Greedy, divide-and-conquer, and dynamic programming patterns", cn: "贪心、分治与动态规划模式"}
+  - {en: "Writing proofs / invariants that match the code", cn: "写出和代码一致的证明 / 不变量"}
+  stuck:
+  - {en: "Can follow a worked DP example; blank page under time pressure", cn: "能看懂 DP 例题，限时白纸开不了头"}
+  - {en: "Complexity claim and implementation disagree", cn: "复杂度结论和实现说的不是同一件事"}
+  - {en: "Graph algorithm chosen wrong for the constraint set", cn: "约束条件下选错了图算法"}
+  session_angles:
+  - {en: "State invariant and complexity before coding", cn: "写代码前先写不变量和复杂度"}
+  - {en: "Reduce the problem to a known pattern, then specialise", cn: "先归到已知模式，再特化"}
+
+- id: machine-learning
+  theme: machine-learning
+  match: machine\s*learn|statistical\s*machine\s*learn|pattern\s*recogni|supervi(?:sed)?\s*learn|ml\s*and
+  hard_en: method names blur until pipelines, metrics, and write-ups diverge
+  hard_cn: 方法名搅在一起，pipeline、指标和报告对不上就会崩
+  topics:
+  - {en: "Supervised learning — linear/logistic models, trees, SVMs", cn: "监督学习 — 线性 / 逻辑回归、树、SVM"}
+  - {en: "Train / validation / test splits and leakage traps", cn: "训练 / 验证 / 测试划分与泄漏陷阱"}
+  - {en: "Features, scaling, and model selection", cn: "特征、缩放与模型选择"}
+  - {en: "Metrics — accuracy, precision/recall, ROC, calibration", cn: "指标 — 准确率、精确率/召回、ROC、校准"}
+  - {en: "Regularisation, overfitting, and bias-variance", cn: "正则、过拟合与偏差-方差"}
+  - {en: "Notebook pipelines the marker can re-run", cn: "改卷人能复跑的 notebook 流水线"}
+  stuck:
+  - {en: "Model runs; write-up cannot defend metric or split choice", cn: "模型能跑，报告说不清指标或划分选择"}
+  - {en: "Train score high; test collapses from leakage or skew", cn: "训练集分数高；测试因泄漏或分布偏斜崩掉"}
+  - {en: "Hyperparameters tuned by gut feel with no protocol", cn: "超参凭感觉调，没有协议"}
+  session_angles:
+  - {en: "Lock the split and metric before touching models", cn: "碰模型前先锁死划分和指标"}
+  - {en: "One ablation at a time; keep a method trail", cn: "一次只做一个消融，保留方法轨迹"}
+
+- id: deep-learning-ai
+  theme: machine-learning
+  match: deep\s*learn|neural\s*networks?|artificial\s*intell|\bai\b(?:\s|/)|cnn|rnn|transformer|reinforcement\s*learn|topics?\s+in\s+ai|intelligent\s+systems?|quantum\s+computing|decision\s+making\s+with\s+programming
+  hard_en: architectures and loss jargon outrun the debugging loop when shapes and gradients fail
+  hard_cn: 结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住
+  topics:
+  - {en: "Neural net basics — layers, activations, backprop intuition", cn: "神经网络基础 — 层、激活、反向传播直觉"}
+  - {en: "CNNs / RNNs / Transformers when the course uses them", cn: "课程用到的 CNN / RNN / Transformer"}
+  - {en: "Losses, optimisers, and training loops", cn: "损失函数、优化器与训练循环"}
+  - {en: "Regularisation — dropout, weight decay, early stopping", cn: "正则 — dropout、权重衰减、早停"}
+  - {en: "Shape debugging and common framework errors", cn: "维度 debug 与常见框架报错"}
+  - {en: "Eval protocol and reporting that matches the brief", cn: "与 brief 对齐的评估协议与报告"}
+  stuck:
+  - {en: "Forward pass runs; loss NaNs or never decreases", cn: "前向能跑；loss 变 NaN 或一直不降"}
+  - {en: "Architecture named correctly; tensor shapes still wrong", cn: "结构名字说对了，张量维度仍错"}
+  - {en: "Cannot explain why this model fits the task in the write-up", cn: "报告里说不清为何这个模型适合该任务"}
+  session_angles:
+  - {en: "Print shapes at each block before tuning hyperparameters", cn: "调超参前先把每块维度打出来"}
+  - {en: "Tie architecture choice back to the data modality", cn: "把结构选择拉回数据模态"}
+
+- id: intro-programming
+  theme: programming
+  match: introduction\s+to\s+programming|programming\s+(?:fundamentals?|methodology|principles|practice|abstractions|technologies)|programming\s+as\s+problem|intro(?:duction)?\s+to\s+(?:cs|computing|computer\s*science)|principles?\s+of\s+programming|computational\s+thinking|structured\s+programming|problem\s+solving\s+and\s+programming|imperative(?:\s+and\s+functional)?\s+programming|functional\s+programming|procedural\s+programming|computer\s+programming|intermediate\s+programming|further\s+programming|foundations?\s+of\s+programming|programming\s+with\s+|programming\s+i\b|programming\s+for\s+engineers|fundamentals?\s+of\s+computer\s+science|computation,\s*programs|programs,\s+and\s+programming|structure\s+and\s+interpretation
+  hard_en: briefs, tooling, and autograder edge cases hit harder than syntax itself
+  hard_cn: 真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界
+  topics:
+  - {en: "Reading the brief — I/O, edges, and marking points before code", cn: "先读 brief — 输入输出、边界与评分点，再动手"}
+  - {en: "Control flow, functions, and decomposition", cn: "控制流、函数与拆题"}
+  - {en: "Data basics — arrays/lists/strings and common bugs", cn: "数据基础 — 数组/列表/字符串与常见坑"}
+  - {en: "Testing locally vs autograder mismatches", cn: "本地测试 vs autograder 不一致"}
+  - {en: "Debugging method — reproduce, bisect, fix", cn: "调试方法 — 复现、二分、再修"}
+  - {en: "Style and structure the marker can follow", cn: "改卷人跟得上的风格与结构"}
+  stuck:
+  - {en: "Sample cases pass; submission fails on edges or I/O format", cn: "样例能过；提交在边界或 I/O 格式上挂"}
+  - {en: "Brief read three times, still unsure what to implement", cn: "brief 读了三遍仍不确定要实现什么"}
+  - {en: "Code that almost works with no systematic debug plan", cn: "代码差不多能跑，却没有系统 debug 计划"}
+  session_angles:
+  - {en: "Restate I/O and edges on a whiteboard first", cn: "先在白板上复述输入输出和边界"}
+  - {en: "Bisect the failing test with print / debugger discipline", cn: "用打印 / 调试器纪律二分失败用例"}
+
+- id: oop
+  theme: programming
+  match: object[\s-]*oriented|oriented\s+programming|\boop\b|java\s+program|programming\s+(?:ii|2)|software\s+construction|programming\s+in\s+the\s+large|c\+\+\s*programming|programming\s+with\s+c\+\+|software\s+libraries
+  hard_en: class design and ownership bugs hide behind “it compiles”
+  hard_cn: 类设计和所有权问题藏在「能编译」后面
+  topics:
+  - {en: "Classes, objects, encapsulation, and invariants", cn: "类、对象、封装与不变量"}
+  - {en: "Inheritance, interfaces, and polymorphism", cn: "继承、接口与多态"}
+  - {en: "Design before typing — responsibilities and collaborators", cn: "先设计再写 — 职责与协作关系"}
+  - {en: "Testing objects and mutable state", cn: "测对象与可变状态"}
+  - {en: "Common memory / reference pitfalls in the course language", cn: "课程语言里的常见引用 / 内存坑"}
+  - {en: "Refactoring for clarity under an autograder", cn: "在 autograder 下为清晰度重构"}
+  stuck:
+  - {en: "Methods work in isolation; object graph breaks under the brief", cn: "方法单独能跑；对象关系一接 brief 就断"}
+  - {en: "Inheritance used where composition was needed", cn: "该用组合却用了继承"}
+  - {en: "Equals/hash or ownership bugs that only show in tests", cn: "equals/hash 或所有权 bug 只在测试里出现"}
+  session_angles:
+  - {en: "CRC / responsibility sketch before opening the editor", cn: "打开编辑器前先画职责草图"}
+  - {en: "Write the failing test that names the invariant", cn: "先写点名不变量的失败测试"}
+
+- id: computer-organisation
+  theme: systems
+  match: computer\s+(?:organisation|organization|architecture|systems?|processors?)|computer\s+systems?\s+fundamentals|program\s+execution|microprocessors?|assembly|digital\s+logic|rechnerarchitektur|principles\s+of\s+computer\s+systems|introduction\s+to\s+(?:software\s+)?systems|systems?\s+architecture
+  hard_en: assembly, data representation, and microarchitecture terms outrun note-taking
+  hard_cn: 汇编、数据表示和微体系术语比记笔记速度还快
+  topics:
+  - {en: "Data representation — ints, floats, endianness, bitwise ops", cn: "数据表示 — 整数、浮点、端序、位运算"}
+  - {en: "Assembly / ISA basics and calling conventions", cn: "汇编 / ISA 基础与调用约定"}
+  - {en: "CPU datapath, control, and pipelining intuition", cn: "CPU 数据通路、控制与流水线直觉"}
+  - {en: "Memory hierarchy — cache, locality, virtual memory intro", cn: "存储层次 — 缓存、局部性、虚拟内存入门"}
+  - {en: "How C maps to machine-level behaviour", cn: "C 如何落到机器层行为"}
+  - {en: "Labs with simulators / assembly tooling when required", cn: "需要时的模拟器 / 汇编工具 Lab"}
+  stuck:
+  - {en: "Assembly control clear in lecture; your program clobbers registers", cn: "课上汇编控制流清楚，自己的程序却弄坏寄存器"}
+  - {en: "IEEE-754 or bitwise exam figures collapse under time", cn: "限时下 IEEE-754 或位运算题崩盘"}
+  - {en: "Cache / pipeline questions feel familiar until the figure changes", cn: "缓存 / 流水线题眼熟，换图就不会"}
+  session_angles:
+  - {en: "Hand-trace registers and memory before editing", cn: "改之前先手推寄存器与内存"}
+  - {en: "Connect each C line to the machine events it causes", cn: "把每行 C 接到它触发的机器事件"}
+
+- id: software-engineering
+  theme: web-mobile
+  match: software\s+engineering|software\s+design|software\s+architecture|software\s+product|software\s+foundations|software\s+development|agile|full[\s-]*stack|dev(?:elopment)?\s*methods|\bdevops\b|it\s+solution\s+architecture|creative\s+programming
+  hard_en: specs, teamwork, and demo evidence matter as much as whether the feature runs
+  hard_cn: 规格、协作和 demo 证据，往往和「功能能不能跑」一样重要
+  topics:
+  - {en: "Requirements — user stories, use cases, acceptance criteria", cn: "需求 — user story、use case、验收标准"}
+  - {en: "Design — modularity, APIs, and maintainability", cn: "设计 — 模块化、API 与可维护性"}
+  - {en: "Git workflows and code review habits", cn: "Git 工作流与 code review 习惯"}
+  - {en: "Testing — unit, integration, and demo evidence", cn: "测试 — 单元、集成与 demo 证据"}
+  - {en: "HTTP / backend or UI structure the course actually uses", cn: "课程实际用的 HTTP / 后端或 UI 结构"}
+  - {en: "Iteration planning and defending design in demos", cn: "迭代规划与在 demo 中为设计辩护"}
+  stuck:
+  - {en: "Feature works; demo cannot explain design trade-offs", cn: "功能能跑，demo 讲不清设计权衡"}
+  - {en: "Tests pass locally; CI or tutor demo fails on edges", cn: "本地测试能过；CI 或 tutor demo 在边界挂"}
+  - {en: "Team Git history messy after a bad merge", cn: "错误合并后团队 Git 历史一团糟"}
+  session_angles:
+  - {en: "Map interface → tests → demo narrative before coding", cn: "写代码前先对齐接口 → 测试 → demo 叙述"}
+  - {en: "Own one vertical slice end-to-end", cn: "端到端拿下一小条垂直切片"}
+
+- id: security
+  theme: security
+  match: secur(?:ity|ing)|crypto|cryptography|cyber|threat\s*model|privacy|network\s*security|information\s*security
+  hard_en: threat models and crypto vocabulary form a wall before the lab even builds
+  hard_cn: 威胁模型和密码学术语先堆成一堵墙，Lab 还没编译就劝退
+  topics:
+  - {en: "Threat modelling — assets, attackers, trust boundaries", cn: "威胁建模 — 资产、攻击者、信任边界"}
+  - {en: "Crypto primitives — symmetric, public-key, hashing, TLS intuition", cn: "密码学原语 — 对称、公钥、哈希、TLS 直觉"}
+  - {en: "Authentication, authorisation, and session security", cn: "认证、授权与会话安全"}
+  - {en: "Common web / network vulnerabilities when in syllabus", cn: "大纲中的常见 Web / 网络漏洞"}
+  - {en: "Secure coding habits and failure modes", cn: "安全编码习惯与失败模式"}
+  - {en: "Lab setup and reporting findings clearly", cn: "Lab 环境与把发现写清楚"}
+  stuck:
+  - {en: "Lab setup unfinished; report lists tools without a finding", cn: "Lab 环境没配好；报告只罗列工具没有发现"}
+  - {en: "Primitive names memorised; wrong tool for the threat", cn: "原语名字背过了，威胁却选错工具"}
+  - {en: "Crypto math and protocol steps diverge under exam pressure", cn: "限时下密码学计算和协议步骤对不上"}
+  session_angles:
+  - {en: "Write the threat model before picking a primitive", cn: "选原语前先写威胁模型"}
+  - {en: "One reproducible finding beats a tool dump", cn: "一个可复现发现胜过工具清单"}
+
+- id: discrete-math
+  theme: math-for-cs
+  match: discrete\s+(?:math|structures|mathematics)|foundations\s+of\s+computing|(?:^|[\s/])logic(?:\s|$)|logic\s+and|proofs?\s+and|computability|mathematics\s+for\s+computer|models?\s+of\s+computation|theoretical\s+computer\s+science|computing\s+theory|formale\s+sprache|great\s+ideas\s+in\s+theoretical
+  hard_en: symbols and proof phrasing outrun calculation skill
+  hard_cn: 符号与证明表述往往比计算本身更劝退
+  topics:
+  - {en: "Logic, sets, and proof strategies", cn: "逻辑、集合与证明策略"}
+  - {en: "Induction and invariants", cn: "归纳与不变量"}
+  - {en: "Relations, functions, and counting", cn: "关系、函数与计数"}
+  - {en: "Graphs / trees as discrete structures", cn: "作为离散结构的图 / 树"}
+  - {en: "Number theory or modular arithmetic when required", cn: "需要时的数论 / 模运算"}
+  - {en: "Translating word problems into formal statements", cn: "把文字题翻译成形式陈述"}
+  stuck:
+  - {en: "Can follow a proof; cannot start from a blank page", cn: "能看懂证明，白纸上开不了头"}
+  - {en: "Notation piles up faster than bilingual notes", cn: "符号比双语笔记堆得还快"}
+  - {en: "Induction hypothesis stated wrong for the claim", cn: "归纳假设和要证的命题对不上"}
+  session_angles:
+  - {en: "Restate the claim in one sentence before proving", cn: "证明前先用一句话复述命题"}
+  - {en: "Pick the proof pattern, then fill details", cn: "先选证明模式，再填细节"}
+
+- id: probability-stats
+  theme: math-for-cs
+  match: probability|statistics|statistical\s+(?:methods|learning|modelling|modeling)|stochastic|bayesian(?!\s*network\s*only)
+  hard_en: notation and modelling assumptions fail before the arithmetic does
+  hard_cn: 往往先倒在符号和建模假设上，而不是四则运算
+  topics:
+  - {en: "Probability axioms, conditioning, and Bayes", cn: "概率公理、条件概率与贝叶斯"}
+  - {en: "Random variables, expectation, variance", cn: "随机变量、期望、方差"}
+  - {en: "Common distributions and when to use them", cn: "常见分布与选用时机"}
+  - {en: "Estimation, confidence, and hypothesis tests when taught", cn: "课程中的估计、置信与假设检验"}
+  - {en: "Modelling assumptions you must state in write-ups", cn: "报告里必须写明的建模假设"}
+  - {en: "Connecting formulas to the story in the brief", cn: "把公式接到 brief 里的故事"}
+  stuck:
+  - {en: "Formula memorised; conditioning direction flipped", cn: "公式背过了，条件方向却弄反"}
+  - {en: "Computation correct; modelling assumption never stated", cn: "算对了，建模假设从没写出来"}
+  - {en: "Exam word problems — unsure which distribution applies", cn: "考试文字题 — 不确定该用哪个分布"}
+  session_angles:
+  - {en: "Draw the sample space / dependence before calculating", cn: "算之前先画样本空间 / 依赖关系"}
+  - {en: "Name the assumption that makes the formula legal", cn: "说出让公式成立的假设"}
+
+- id: linear-algebra-calculus
+  theme: math-for-cs
+  match: linear\s*algebra|calculus|multivariable|matrix\s+methods|mathematical\s+methods|numer(?:ical)?\s+(?:analysis|methods|computation)|optimisation|optimization
+  hard_en: symbols and geometric intuition disconnect under exam pressure
+  hard_cn: 限时下符号和几何直觉对不上
+  topics:
+  - {en: "Vectors, matrices, and linear maps", cn: "向量、矩阵与线性映射"}
+  - {en: "Systems of equations, rank, and invertibility", cn: "方程组、秩与可逆性"}
+  - {en: "Eigenvalues / SVD intuition when in syllabus", cn: "大纲中的特征值 / SVD 直觉"}
+  - {en: "Derivatives, gradients, and multivariable pictures", cn: "导数、梯度与多变量图像"}
+  - {en: "Connecting calculus/linear algebra to CS applications", cn: "把微积分 / 线性代数接到 CS 应用"}
+  - {en: "Exam technique — setup before algebra grind", cn: "应试技巧 — 先摆好再硬算"}
+  stuck:
+  - {en: "Can compute mechanically; cannot explain geometrically", cn: "能机械算，几何上讲不清"}
+  - {en: "Setup wrong; pages of algebra on the wrong object", cn: "对象设错，代数算了好几页"}
+  - {en: "Notation from lectures does not transfer to the exam figure", cn: "课上符号迁不到考试那张图"}
+  session_angles:
+  - {en: "Sketch the geometric picture, then compute", cn: "先画几何图像，再计算"}
+  - {en: "Name the unknown and the space it lives in", cn: "先命名未知量及其所在空间"}
+
+- id: automata-compilers
+  theme: automata
+  match: automata|formal\s+languages?|compilers?|programming\s+languages?|parsers?|computability|theory\s+of\s+computation
+  hard_en: Greek letters and state diagrams look familiar until the exam figure is new
+  hard_cn: 希腊字母和状态图课上眼熟，考试换一张就不会读
+  topics:
+  - {en: "DFA / NFA / ε-NFA and equivalence ideas", cn: "DFA / NFA / ε-NFA 与等价思想"}
+  - {en: "Regular expressions and languages", cn: "正则表达式与语言"}
+  - {en: "Grammars, parsing, and ambiguity when taught", cn: "课程中的文法、解析与歧义"}
+  - {en: "Pumping lemmas / decidability sketches when required", cn: "需要时的泵引理 / 可判定性草图"}
+  - {en: "Compiler pipeline stages when in syllabus", cn: "大纲中的编译流水线阶段"}
+  - {en: "Reading and drawing machines under time pressure", cn: "限时下读图与画自动机"}
+  stuck:
+  - {en: "Definitions memorised; cannot build the machine for a new language", cn: "定义背过了，新语言却画不出自动机"}
+  - {en: "NFA and DFA constructions mixed in the transition table", cn: "转移表里 NFA / DFA 构造搅在一起"}
+  - {en: "Proof sketch missing the exact hypothesis form", cn: "证明草图缺了假设的准确形式"}
+  session_angles:
+  - {en: "Build a tiny example language before the general proof", cn: "一般证明前先构造一个小例子语言"}
+  - {en: "Check acceptance on two strings before submitting the diagram", cn: "交图前先用两个串检查接受情况"}
+
+- id: distributed-systems
+  theme: systems
+  match: distributed\s+systems?|cloud\s+computing|parallel(?:\s+and\s+|\s+)(?:distributed|computing)|concurrent\s+programming|high[\s-]*performance
+  hard_en: partial failure and consistency models make “it worked on my node” meaningless
+  hard_cn: 部分失效和一致性模型会让「我这台节点能跑」变得毫无意义
+  topics:
+  - {en: "Models of distribution — nodes, links, partial failure", cn: "分布模型 — 节点、链路、部分失效"}
+  - {en: "RPC, messaging, and serialisation basics", cn: "RPC、消息与序列化基础"}
+  - {en: "Consistency, replication, and consensus intuition", cn: "一致性、复制与共识直觉"}
+  - {en: "Clocks, ordering, and concurrency control", cn: "时钟、排序与并发控制"}
+  - {en: "Fault tolerance and idempotent design", cn: "容错与幂等设计"}
+  - {en: "Lab systems — tracing failures across components", cn: "Lab 系统 — 跨组件追踪故障"}
+  stuck:
+  - {en: "Happy path works; partition or retry logic breaks state", cn: "快乐路径能跑；分区或重试逻辑弄坏状态"}
+  - {en: "Consistency model named; behaviour under failure unclear", cn: "一致性模型名字会背，失效下行为说不清"}
+  - {en: "Logs from multiple nodes do not tell one story", cn: "多节点日志拼不成一个故事"}
+  session_angles:
+  - {en: "Draw the failure scenario before changing code", cn: "改代码前先画失效场景"}
+  - {en: "Make retries idempotent on purpose", cn: "有意识地把重试做成幂等"}
+
+- id: computer-vision
+  theme: machine-learning
+  match: computer\s+vision|image\s+(?:processing|analysis)|opencv|visual\s+recogni|machine\s+vision
+  hard_en: pipelines fail on shape, colourspace, or eval protocol long before “the model”
+  hard_cn: 往往先倒在维度、色彩空间或评估协议上，而不是「模型本身」
+  topics:
+  - {en: "Image formation, filtering, and features", cn: "成像、滤波与特征"}
+  - {en: "Classical detectors / descriptors when taught", cn: "课程中的经典检测 / 描述子"}
+  - {en: "Learning-based vision pipelines when in syllabus", cn: "大纲中的学习式视觉流水线"}
+  - {en: "Datasets, metrics, and leakage in vision tasks", cn: "视觉任务中的数据、指标与泄漏"}
+  - {en: "Debugging shapes, dtypes, and preprocessing", cn: "debug 维度、dtype 与预处理"}
+  - {en: "Reporting qualitative + quantitative evidence", cn: "报告定性 + 定量证据"}
+  stuck:
+  - {en: "Preprocessing differs between notebook and submission", cn: "notebook 和提交的预处理不一致"}
+  - {en: "Metric improves; qualitative failures ignored", cn: "指标涨了，定性失败被忽略"}
+  - {en: "Colourspace / channel bugs that look like model failure", cn: "色彩空间 / 通道 bug 看起来像模型失败"}
+  session_angles:
+  - {en: "Visualise intermediates before tuning the model", cn: "调模型前先可视化中间结果"}
+  - {en: "Freeze preprocessing, then change one module", cn: "先冻住预处理，再改一个模块"}
+
+- id: nlp
+  theme: machine-learning
+  match: natural\s+language|\bnlp\b|language\s+models?|text\s+(?:mining|processing)|computational\s+linguistics
+  hard_en: tokenisation, metrics, and data splits decide results before model fancy-ness
+  hard_cn: 往往先由分词、指标和数据划分决定结果，而不是模型花哨程度
+  topics:
+  - {en: "Text preprocessing and tokenisation", cn: "文本预处理与分词"}
+  - {en: "Classical features — n-grams, TF-IDF when taught", cn: "课程中的经典特征 — n-gram、TF-IDF"}
+  - {en: "Sequence / embedding / LM approaches in syllabus", cn: "大纲中的序列 / 向量 / 语言模型方法"}
+  - {en: "Evaluation — accuracy, F1, BLEU/ROUGE when used", cn: "评估 — 准确率、F1、BLEU/ROUGE（若使用）"}
+  - {en: "Dataset pitfalls — leakage, class imbalance, domain shift", cn: "数据陷阱 — 泄漏、类别不平衡、域偏移"}
+  - {en: "Reproducible notebooks and error analysis", cn: "可复现 notebook 与错误分析"}
+  stuck:
+  - {en: "Tokenizer mismatch between train and eval", cn: "训练和评估的分词器不一致"}
+  - {en: "Leaderboard chasing without error analysis", cn: "追榜却不做错误分析"}
+  - {en: "Cannot explain predictions in the write-up", cn: "报告里解释不了预测"}
+  session_angles:
+  - {en: "Fix the split and metric, then swap models", cn: "先锁死划分和指标，再换模型"}
+  - {en: "Read 20 failure cases before the next experiment", cn: "下次实验前先读 20 个失败样例"}
+
+- id: data-science
+  theme: data-science
+  match: data\s+(?:science|analytics|analysis|mining|wrangl|visuali|technologies|warehous)|informatics|business\s+(?:analytics|intelligence)|big\s+data|manipulating\s+and\s+exploring\s+data|exploring\s+data
+  hard_en: messy tables and weak method stories lose marks even when a chart renders
+  hard_cn: 就算图画出来了，脏表和站不住的方法叙事也会丢分
+  topics:
+  - {en: "Data wrangling — tidy tables, joins, missingness", cn: "数据整理 — 整洁表、连接、缺失"}
+  - {en: "EDA and visualisation that answer a question", cn: "能回答问题的 EDA 与可视化"}
+  - {en: "Feature hygiene and leakage checks", cn: "特征卫生与泄漏检查"}
+  - {en: "Simple models / summaries appropriate to the brief", cn: "适合 brief 的简单模型 / 汇总"}
+  - {en: "Method trail the marker can re-run", cn: "改卷人能复跑的方法轨迹"}
+  - {en: "Writing that defends every plot and transform", cn: "能为每张图和每步变换辩护的写作"}
+  stuck:
+  - {en: "Plot produced; caption cannot defend the choice", cn: "图有了，图注说不清为何这样画"}
+  - {en: "Joins explode row counts unnoticed", cn: "Join 把行数炸开却没发现"}
+  - {en: "Notebook order unreproducible for the marker", cn: "notebook 顺序让改卷人无法复现"}
+  session_angles:
+  - {en: "State the question, then pick the table grain", cn: "先陈述问题，再定表的粒度"}
+  - {en: "Keep a transform log beside the notebook", cn: "在 notebook 旁保留变换日志"}
+
+- id: web-mobile
+  theme: web-mobile
+  match: web\s+(?:development|programming|application|technology|design|search)|mobile\s+(?:app|development)|frontend|front[\s-]*end|backend|full[\s-]*stack|human[\s-]*computer|hci|interaction\s+design|information\s+retrieval|multimodal\s+interface|digital\s+media
+  hard_en: front-end and back-end failures mask each other inside one brief
+  hard_cn: 前后端报错互相掩盖，一份 brief 里很难定位坏在哪一层
+  topics:
+  - {en: "Client / server responsibilities and APIs", cn: "客户端 / 服务端职责与 API"}
+  - {en: "HTTP, routing, and status codes", cn: "HTTP、路由与状态码"}
+  - {en: "State, forms, and validation", cn: "状态、表单与校验"}
+  - {en: "Auth / sessions when in syllabus", cn: "大纲中的认证 / 会话"}
+  - {en: "UI structure or accessibility basics when required", cn: "需要时的 UI 结构或无访问性基础"}
+  - {en: "Debugging across browser, network, and server logs", cn: "跨浏览器、网络与服务端日志排查"}
+  stuck:
+  - {en: "UI looks fine; API contract silently diverged", cn: "UI 看起来正常；API 契约已悄悄不一致"}
+  - {en: "Works in one browser / device only", cn: "只在某一个浏览器 / 设备上能用"}
+  - {en: "Cannot tell whether the bug is CSS, JS, or backend", cn: "分不清 bug 在 CSS、JS 还是后端"}
+  session_angles:
+  - {en: "Reproduce with network panel before changing UI", cn: "改 UI 前先用网络面板复现"}
+  - {en: "Fix the contract, then the presentation", cn: "先修契约，再修展示"}
+
+- id: graphics
+  theme: programming
+  match: computer\s+graphics|graphics\s+program|rendering|game\s+(?:design|development|engine)|animation
+  hard_en: math, pipelines, and shader/state bugs stack until demos freeze
+  hard_cn: 数学、管线和着色器 / 状态 bug 叠在一起，demo 就容易卡死
+  topics:
+  - {en: "Transforms, cameras, and coordinate spaces", cn: "变换、相机与坐标空间"}
+  - {en: "Rasterisation / ray ideas as taught", cn: "课程中的光栅 / 光线思想"}
+  - {en: "Mesh data, buffers, and GPU upload basics", cn: "网格数据、缓冲与 GPU 上传基础"}
+  - {en: "Shading, lighting, and materials intro", cn: "着色、光照与材质入门"}
+  - {en: "Debugging visual errors systematically", cn: "系统排查视觉错误"}
+  - {en: "Performance and scene organisation when required", cn: "需要时的性能与场景组织"}
+  stuck:
+  - {en: "Black screen — camera, winding, or shader compile?", cn: "黑屏 — 相机、绕序还是着色器编译？"}
+  - {en: "Math correct on paper; matrix order wrong in code", cn: "纸上数学对，代码里矩阵顺序错"}
+  - {en: "Demo freezes only on large scenes", cn: "只在大场景下 demo 卡死"}
+  session_angles:
+  - {en: "Render a known unit cube before the real asset", cn: "上真实资产前先渲染已知单位立方体"}
+  - {en: "Isolate transform vs shading failures", cn: "把变换问题与着色问题分开"}
+
+- id: ethics-society
+  theme: general
+  match: ethics|social\s+implications|computers?\s+and\s+society|responsible\s+(?:ai|computing)|professional\s+practice|technology\s+and\s+society
+  hard_en: cases need structured argument, not opinion dumps
+  hard_cn: 案例分析要的是有结构的论证，不是观点堆砌
+  topics:
+  - {en: "Stakeholder analysis and conflicting values", cn: "利益相关方分析与价值冲突"}
+  - {en: "Frameworks — utilitarian, deontological, virtue, etc. as taught", cn: "课程中的伦理框架"}
+  - {en: "Privacy, fairness, accountability in computing systems", cn: "计算系统中的隐私、公平与问责"}
+  - {en: "Professional codes and incident case studies", cn: "职业准则与事故案例"}
+  - {en: "Writing a clear claim–evidence–warrant essay", cn: "写清「主张–证据–理据」的论述"}
+  - {en: "Linking technical design choices to ethical outcomes", cn: "把技术设计选择连到伦理后果"}
+  stuck:
+  - {en: "Opinion without a framework or counter-argument", cn: "只有观点，没有框架或反方论证"}
+  - {en: "Case facts misread; conclusion does not follow", cn: "案例事实读偏，结论推不出"}
+  - {en: "English essay structure collapses under the word limit", cn: "字数限制下英文论述结构崩掉"}
+  session_angles:
+  - {en: "Pick a framework, then stress-test with a counter-case", cn: "先选框架，再用反例压测"}
+  - {en: "Outline claim → evidence → warrant before drafting", cn: "动笔前先列主张 → 证据 → 理据"}
+
+- id: general-fallback
+  theme: general
+  match: .
+  hard_en: lecture speed and dense vocabulary outrun note-taking before methods stick
+  hard_cn: 方法还没练稳，课速和密集术语已经把笔记甩在后面
+  topics: []
+  stuck:
+  - {en: "Lecture demo makes sense; solo replay fails", cn: "课上演示听得懂，自己复不出来"}
+  - {en: "Terms pile up faster than bilingual notes", cn: "术语比双语笔记堆得还快"}
+  - {en: "Brief asks for a method that was never written down", cn: "brief 要的方法从未写进笔记"}
+  session_angles:
+  - {en: "Restate this week’s claim before touching the homework", cn: "碰作业前先复述本周命题"}
+  - {en: "Map the brief to a short checklist; you drive the fix", cn: "把 brief 映射成短清单；你来主导修改"}

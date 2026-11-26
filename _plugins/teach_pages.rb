@@ -490,82 +490,138 @@ module Jekyll
       THEME_DIFFICULTY[theme_id.to_s] || THEME_DIFFICULTY["general"]
     end
 
-    # Public course-page copy from theme knowledge when admin YAML has no hand-written fields.
-    def synthesize_course_copy(course, university, theme_id, theme_meta, label_cn: nil)
+    # Subject packs: course-title-specific topics (not theme-process fluff).
+    def subject_packs(site)
+      raw = site.data["teach_subject_packs"]
+      packs = if raw.is_a?(Hash)
+                Array(raw["packs"])
+              elsif raw.is_a?(Array)
+                raw
+              else
+                []
+              end
+      packs.select { |p| p.is_a?(Hash) && p["match"].to_s.strip != "" }
+    end
+
+    def match_subject_pack(course, packs)
+      hay = "#{course['code']} #{course['title']}"
+      packs.find { |p|
+        begin
+          Regexp.new(p["match"].to_s, Regexp::IGNORECASE).match?(hay)
+        rescue RegexpError
+          false
+        end
+      } || packs.last
+    end
+
+    def title_fallback_topics(title)
+      t = title.to_s.strip.gsub(/\s+/, " ")
+      return [
+        { "en" => "Core lecture concepts for this unit", "cn" => "本课核心讲座概念" },
+        { "en" => "Assignment / lab methods under deadline", "cn" => "DDL 下的作业 / Lab 方法" },
+        { "en" => "Exam question shapes for this syllabus", "cn" => "本课大纲的常考题型" }
+      ] if t.empty?
+
+      parts = t.split(/\s+[:\/\-–—]\s+|\s+and\s+|\s+&\s+|\s+with\s+/i).map { |p| p.strip.sub(/\.\z/, "") }
+      parts = parts.select { |p| p.length >= 4 }
+      topics = parts.first(5).map { |p| { "en" => p, "cn" => p } }
+      if topics.length < 3
+        topics << { "en" => "Core ideas in #{t}", "cn" => "#{t} 的核心概念" }
+        topics << { "en" => "Assignments / labs for #{t}", "cn" => "#{t} 的作业 / Lab" }
+        topics << { "en" => "Exam drills aligned to #{t}", "cn" => "对准 #{t} 的考前练习" }
+      end
+      topics.first(6)
+    end
+
+    # Public course-page copy when admin YAML has no hand-written fields.
+    # Prefer subject packs matched on code+title; theme packs are last resort only.
+    def synthesize_course_copy(course, university, theme_id, theme_meta, label_cn: nil, site: nil)
       code = course["code"].to_s
       title = course["title"].to_s
       label = [code, title].reject(&:empty?).join(" ")
       label = title if label.empty?
-      # Prefer short course handle in Chinese prose; dump full English title only when needed.
       cn_course = code.empty? ? title : code
       school = label_cn.to_s.strip
       school = university.to_s if school.empty?
-      hard = theme_difficulty(theme_id)
-      theme_label_en = theme_meta["label_en"].to_s
-      theme_label_cn = theme_meta["label_cn"].to_s
-      topic_ens = Array(theme_meta["topics"]).filter_map { |t| t["en"].to_s if t.is_a?(Hash) }.first(4)
-      topic_cns = Array(theme_meta["topics"]).filter_map { |t|
-        polish_cn(t["cn"]) if t.is_a?(Hash)
-      }.first(3)
 
-      lead_en = "#{label} at #{university}. #{hard['en'].sub(/\A./) { |c| c.upcase }}. " \
-                "One-to-one tutoring: catch up on lectures, debug assignments, drill exam question shapes."
-      opener = THEME_LEAD_CN[theme_id.to_s] || THEME_LEAD_CN["general"]
+      pack = site ? match_subject_pack(course, subject_packs(site)) : nil
+      pack = nil unless pack.is_a?(Hash)
+
+      topics = Array(pack && pack["topics"]).select { |t| t.is_a?(Hash) && t["en"].to_s.strip != "" }
+      topics = title_fallback_topics(title) if topics.empty?
+      # Absolute last resort: theme topics (still better than tutoring-process chips).
+      if topics.empty?
+        topics = Array(theme_meta["topics"]).select { |t| t.is_a?(Hash) }
+      end
+      topics = topics.map { |t|
+        t.merge("en" => t["en"].to_s, "cn" => polish_cn(t["cn"] || t["en"]))
+      }
+
+      stuck = Array(pack && pack["stuck"]).select { |t| t.is_a?(Hash) }.map do |t|
+        t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
+      end
+      if stuck.empty?
+        stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) }.map do |t|
+          t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
+        end
+      end
+
+      session_angles = Array(pack && pack["session_angles"]).select { |t| t.is_a?(Hash) }.map do |t|
+        t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
+      end
+      if session_angles.empty?
+        session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }.map do |t|
+          t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
+        end
+      end
+
+      hard_en = (pack && pack["hard_en"]).to_s.strip
+      hard_cn = (pack && pack["hard_cn"]).to_s.strip
+      if hard_en.empty?
+        hard = theme_difficulty(theme_id)
+        hard_en = hard["en"].to_s
+        hard_cn = hard["cn"].to_s
+      end
+      hard_en = hard_en.sub(/\A./) { |c| c.upcase } unless hard_en.empty?
+
+      topic_ens = topics.filter_map { |t| t["en"].to_s if t.is_a?(Hash) }.reject(&:empty?).first(5)
+      topic_cns = topics.filter_map { |t| polish_cn(t["cn"]) if t.is_a?(Hash) }.reject(&:empty?).first(4)
+      arc = topic_ens.first(4).join(" → ")
+
+      lead_en = "#{label} at #{university}: #{arc}#{topic_ens.length > 4 ? '…' : ''}. " \
+                "#{hard_en}. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks."
       lead_cn = polish_cn(
-        "#{opener}在#{school}上 #{cn_course}，#{hard['cn']}。" \
-        "一对一先把你卡住的点拆开，按你的节奏练方法，练到作业和考试能自己下手。"
+        "在#{school}上 #{cn_course}，主线是#{topic_cns.first(4).join(' → ')}#{topic_cns.length > 4 ? '…' : ''}。" \
+        "#{hard_cn}。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。"
       )
 
-      overview_en = "#{label} (#{theme_label_en}) at #{university}. "
-      overview_en += "Common topics: #{topic_ens.join('; ')}. " if topic_ens.any?
-      overview_en += "People usually get stuck when terms pile up too fast, " \
-                     "when a class demo does not replay alone, or when the brief asks " \
-                     "for a method that was never written down."
+      overview_en = "One-to-one tutoring for #{label} at #{university}. "
+      overview_en += "Covered topics: #{topic_ens.join('; ')}. " if topic_ens.any?
+      overview_en += "Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on."
 
-      overview_cn = "#{cn_course} 是#{school}的「#{theme_label_cn}」课，既要真懂，也要能动手。"
-      if topic_cns.any?
-        overview_cn += "常见内容包括#{topic_cns.join('、')}。"
-      end
-      overview_cn += "很多人不是完全没学过，而是课上术语太快、自己复不出来，" \
-                     "作业一换问法就不知道从哪开始。" \
-                     "辅导会先把方法讲清楚，再对着你手里的题练到能自己写、自己改。"
-      overview_cn = polish_cn(overview_cn)
+      overview_cn = polish_cn(
+        "#{cn_course}（#{school}）一对一辅导。" \
+        "#{topic_cns.any? ? "覆盖主题包括#{topic_cns.join('、')}。" : ''}" \
+        "预约时请带上 brief、失败测例、卡住的课件截图，或主题名。"
+      )
 
-      stuck = Array(theme_meta["stuck"]).select { |t| t.is_a?(Hash) }.map do |t|
-        t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
-      end
-      pace_stuck = {
-        "en" => "Lecture speed + dense #{theme_label_en.downcase} vocabulary outruns note-taking",
-        "cn" => polish_cn("课速偏快，「#{theme_label_cn}」术语又密，笔记一跟丢，下课后更难自己补回来")
-      }
-      stuck = [pace_stuck] + stuck unless stuck.any? { |t|
-        en = t["en"].to_s.downcase
-        en.include?("lecture speed") || en.include?("outruns note")
-      }
-
-      session_angles = Array(theme_meta["session_angles"]).select { |t| t.is_a?(Hash) }.map do |t|
-        t.merge("cn" => polish_cn(t["cn"]), "en" => t["en"].to_s)
-      end
       tutoring = [
         {
-          "en" => "Lecture sync for #{label}: bilingual catch-up so workshop / tutorial language matches the lectures.",
+          "en" => "Lecture sync for #{cn_course}: bilingual walkthrough of #{arc.empty? ? "this week’s ideas" : arc} so tutorial language matches.",
           "cn" => polish_cn(
-            "按 #{cn_course} 当周进度跟课：用中文把课件里没听清的概念补上，" \
-            "同时保留 workshop / tutorial 会用到的英文说法，避免听课和写作业变成两套语言。"
+            "按 #{cn_course} 同步跟课：用中英双语把「#{topic_cns.first(3).join(' → ').empty? ? '本周概念' : topic_cns.first(3).join(' → ')}」讲透，对齐 tutorial 用语。"
           )
         },
         {
-          "en" => "Assignments: approach review and live debug.",
+          "en" => "Assignments / labs: approach review and live debug (you at the keyboard).",
           "cn" => polish_cn(
-            "作业卡壳时，先一起读透 brief 和评分点，梳一条你能写下去的思路；" \
-            "你来写代码或推导，我在旁边盯卡点、一起看报错和边界，而不是代写交差。"
+            "作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。"
           )
         },
         {
-          "en" => "Exam prep: timed drills on weak spots and recurring question shapes for this course.",
+          "en" => "Exam prep: timed drills on #{topic_ens.first || 'recurring'} question shapes for this course.",
           "cn" => polish_cn(
-            "期中期末前先摸清这门课常考的题型和你自己的薄弱点，再做限时练习；" \
-            "练的是审题、下手顺序和表述，而不是临考前无目的地刷题。"
+            "考前突击：按本课「#{topic_cns.first || '常考'}」等题型做限时练习。"
           )
         }
       ]
@@ -578,7 +634,7 @@ module Jekyll
         "stuck" => stuck,
         "session_angles" => session_angles,
         "tutoring" => tutoring,
-        "topics" => Array(theme_meta["topics"]).select { |t| t.is_a?(Hash) }
+        "topics" => topics
       }
     end
 
@@ -1151,7 +1207,7 @@ module Jekyll
         course["lead_en"], course["lead_cn"], course["overview_en"], course["overview_cn"]
       ].any? { |v| v.to_s.strip != "" }
       synth = synthesize_course_copy(
-        course, university, theme_id, theme_meta, label_cn: label_cn
+        course, university, theme_id, theme_meta, label_cn: label_cn, site: site
       )
 
       stuck = bilingual_items(course["stuck"])

@@ -7,57 +7,48 @@ courses:
 - code: CS2110
   title: Java Test
   material: cs2110-java-test
-  theme: programming
-  meta_description_en: CS2110 Cornell University tutoring (Java Test). Stuck on assignment briefs such
-    as A2 CS 2110? Bilingual Chinese/English help.
-  lead_en: 'CS2110 Java Test at Cornell University. Briefs, tooling, and autograder edge cases hit harder
-    than syntax itself. Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse.'
-  lead_cn: 在康奈尔大学上 CS2110，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
-  overview_en: 'CS2110 Java Test (Programming & software construction) at Cornell University. Common topics:
-    Algorithms, ADTs, and complexity; Programming foundations and debugging. Assessed work expects you
-    to apply the same ideas under deadline. People stall when terms outrun notes, when a class demo does
-    not replay alone, or when the write-up / autograder wants a method the notebook never showed. Sample
-    slides from our concept-review tutoring deck are below.'
-  overview_cn: CS2110 是康奈尔大学的「编程与软件构造」课，既要真懂，也要能动手。常见内容包括算法、ADT 与复杂度、编程基础与调试。很多人不是完全没学过，而是课上术语太快、自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从没写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: CS2110 tutoring (Java Test). Stuck on Java Test? Bilingual Chinese/English help.
+  lead_en: 'CS2110 Java Test at Cornell University: Java Test → Core ideas in Java Test → Assignments
+    / labs for Java Test → Exam drills aligned to Java Test. Lecture speed and dense vocabulary outrun
+    note-taking before methods stick. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在康奈尔大学上 CS2110，主线是Java Test → Java Test 的核心概念 → Java Test 的作业 / Lab → 对准 Java Test 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2110 Java Test at Cornell University. Covered topics: Java Test;
+    Core ideas in Java Test; Assignments / labs for Java Test; Exam drills aligned to Java Test. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS2110（康奈尔大学）一对一辅导。覆盖主题包括Java Test、Java Test 的核心概念、Java Test 的作业 / Lab、对准 Java Test 的考前练习。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
-  - en: Reading the brief and designing before typing
-    cn: 先读题、先设计，再动手写
-  - en: Functions, modules, and readable structure
-    cn: 函数、模块与可读结构
-  - en: Recursion, ADTs, and common lab patterns
-    cn: 递归、抽象数据类型与常见 Lab 模式
+  - en: Java Test
+    cn: Java Test
+  - en: Core ideas in Java Test
+    cn: Java Test 的核心概念
+  - en: Assignments / labs for Java Test
+    cn: Java Test 的作业 / Lab
+  - en: Exam drills aligned to Java Test
+    cn: 对准 Java Test 的考前练习
   stuck:
-  - en: Assignment brief (“A2 CS 2110”) makes sense in class, freezes you alone
-    cn: 作业 brief（「A2 CS 2110」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for CS2110: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CS2110 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as A2 CS 2110, with you at the keyboard.'
-    cn: 作业辅导：针对 A2 CS 2110 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CS2110: bilingual walkthrough of Java Test → Core ideas in Java Test → Assignments
+      / labs for Java Test → Exam drills aligned to Java Test so tutorial language matches.'
+    cn: 按 CS2110 同步跟课：用中英双语把「Java Test → Java Test 的核心概念 → Java Test 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Java Test question shapes for this course.'
+    cn: 考前突击：按本课「Java Test」等题型做限时练习。
   sample_slides:
     title_en: CS2110 — sample slides
     title_cn: CS2110 — 辅导课件样例
@@ -108,6 +99,16 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does CS2110 cover?
+    q_cn: CS2110 学什么？
+    a_en: Java Test; Core ideas in Java Test; Assignments / labs for Java Test; Exam drills aligned to
+      Java Test. Say which week or assessment you are on when booking.
+    a_cn: Java Test、Java Test 的核心概念、Java Test 的作业 / Lab、对准 Java Test 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

@@ -8,65 +8,58 @@ courses:
   title: Programming Methodology
   material: CS1010E - Programming Methedology
   theme: programming
-  meta_description_en: CS1010E NUS tutoring (Programming Methodology). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: CS1010E Programming Methodology at National University of Singapore is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a
-    method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在新加坡国立大学上 CS1010E，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: 'CS1010E Programming Methodology sits in programming & software construction. Evidence
-    from
-
-    There is a weekly arc (about week 1–5) plus assessed work that expects you to apply the same ideas
-    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
-    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our concept-review tutoring deck are below.'
-  overview_cn: CS1010E 是新加坡国立大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。大约第
-    1–5 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: CS1010E tutoring (Programming Methodology). Stuck on Reading the brief — I/O, edges,
+    and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'CS1010E Programming Methodology at National University of Singapore: Reading the brief — I/O,
+    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
+    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS1010E，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS1010E Programming Methodology at National University of Singapore.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: CS1010E（新加坡国立大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: 'Week 2: AY25 26S1 Tutorial Worksheet'
-    cn: 第 2 周：AY25 26S1 Tutorial Worksheet
-  - en: 'Week 2: Problem Solving with Programming CS1010E Programming Meth…'
-    cn: 第 2 周：Problem Solving with Programming CS1010E Programming Meth…
-  - en: 'Week 2: lecture02'
-    cn: 第 2 周：lecture02
-  - en: 'Week 2: lecture02 4on1'
-    cn: 第 2 周：lecture02 4on1
-  - en: 'Week 2: lecture02 4on1Z'
-    cn: 第 2 周：lecture02 4on1Z
-  - en: 'Week 3: AY25 26S1++Tutorial+Worksheet'
-    cn: 第 3 周：AY25 26S1++Tutorial+Worksheet
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“CS1010E 202223 S1+Midterm+answers”) makes sense in class, freezes you alone
-    cn: 作业 brief（「CS1010E 202223 S1+Midterm+answers」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for CS1010E: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CS1010E 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as CS1010E 202223 S1+Midterm+answers, CS1010E
-      2021 S1+Midterm+Final, with you at the keyboard.'
-    cn: 作业辅导：针对 CS1010E 202223 S1+Midterm+answers, CS1010E 2021 S1+Midterm+Final 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CS1010E: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CS1010E 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
   sample_slides: &id001
     title_en: CS1010 — sample slides
     title_cn: CS1010 — 辅导课件样例
@@ -117,6 +110,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does CS1010E cover?
+    q_cn: CS1010E 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -125,66 +129,71 @@ courses:
   title: Programming Methodology
   material: CS1010E - Programming Methedology
   theme: programming
-  meta_description_en: CS1010 NUS tutoring (Programming Methodology). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: CS1010 Programming Methodology at National University of Singapore is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a
-    method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在新加坡国立大学上 CS1010，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: 'CS1010 Programming Methodology sits in programming & software construction. Evidence from
-
-    There is a weekly arc (about week 1–5) plus assessed work that expects you to apply the same ideas
-    under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense in
-    class but not alone, or when the write-up / autograder asks for a method the notebook never made explicit.
-    Sample slides from our concept-review tutoring deck are below.'
-  overview_cn: CS1010 是新加坡国立大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着算法、ADT 与复杂度、编程基础与调试这些点转。大约第
-    1–5 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: CS1010 tutoring (Programming Methodology). Stuck on Reading the brief — I/O, edges,
+    and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'CS1010 Programming Methodology at National University of Singapore: Reading the brief — I/O,
+    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
+    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS1010，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS1010 Programming Methodology at National University of Singapore.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: CS1010（新加坡国立大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Algorithms, ADTs, and complexity
-    cn: 算法、ADT 与复杂度
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: 'Week 2: AY25 26S1 Tutorial Worksheet'
-    cn: 第 2 周：AY25 26S1 Tutorial Worksheet
-  - en: 'Week 2: Problem Solving with Programming CS1010E Programming Meth…'
-    cn: 第 2 周：Problem Solving with Programming CS1010E Programming Meth…
-  - en: 'Week 2: lecture02'
-    cn: 第 2 周：lecture02
-  - en: 'Week 2: lecture02 4on1'
-    cn: 第 2 周：lecture02 4on1
-  - en: 'Week 2: lecture02 4on1Z'
-    cn: 第 2 周：lecture02 4on1Z
-  - en: 'Week 3: AY25 26S1++Tutorial+Worksheet'
-    cn: 第 3 周：AY25 26S1++Tutorial+Worksheet
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“CS1010E 202223 S1+Midterm+answers”) makes sense in class, freezes you alone
-    cn: 作业 brief（「CS1010E 202223 S1+Midterm+answers」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for CS1010: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CS1010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as CS1010E 202223 S1+Midterm+answers, CS1010E
-      2021 S1+Midterm+Final, with you at the keyboard.'
-    cn: 作业辅导：针对 CS1010E 202223 S1+Midterm+answers, CS1010E 2021 S1+Midterm+Final 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CS1010: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CS1010 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
   sample_slides: *id001
   faq:
+  - q_en: What does CS1010 cover?
+    q_cn: CS1010 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -193,126 +202,943 @@ courses:
   title: Programming Methodology
   material: CS1101S-programming-methodology
   theme: programming
-  meta_description_en: CS1010S NUS tutoring (Programming Methodology). Code that “almost works” with no
-    systematic debug plan? Bilingual Chinese/English help.
-  lead_en: CS1010S Programming Methodology at National University of Singapore is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a
-    method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在新加坡国立大学上 CS1010S，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: CS1010S Programming Methodology sits in programming & software construction. Evidence from
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: CS1010S 是新加坡国立大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: CS1010S tutoring (Programming Methodology). Stuck on Reading the brief — I/O, edges,
+    and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'CS1010S Programming Methodology at National University of Singapore: Reading the brief — I/O,
+    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
+    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS1010S，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS1010S Programming Methodology at National University of Singapore.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: CS1010S（新加坡国立大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Reading the brief and designing before typing
-    cn: 先读题、先设计，再动手写
-  - en: Functions, modules, and readable structure
-    cn: 函数、模块与可读结构
-  - en: Recursion, ADTs, and common lab patterns
-    cn: 递归、抽象数据类型与常见 Lab 模式
-  - en: Unit tests and autograder feedback loops
-    cn: 单元测试与 autograder 反馈循环
-  - en: Git basics when the course requires it
-    cn: 课程要求时的 Git 基础
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
   stuck:
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
-  - en: Lecture vocabulary for CS1010S outruns bilingual notes
-    cn: CS1010S 的课堂术语跑在双语笔记前面
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
   - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分定位失败用例
-  - en: Refactor for clarity before chasing extra marks
-    cn: 先为清晰度重构，再追额外分数
+    cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for CS1010S: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CS1010S 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CS1010S: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CS1010S 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does CS1010S cover?
+    q_cn: CS1010S 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS1101S
   title: Programming Methodology
   material: CS1101S-programming-methodology
   theme: programming
-  meta_description_en: CS1101S NUS tutoring (Programming Methodology). Code that “almost works” with no
-    systematic debug plan? Bilingual Chinese/English help.
-  lead_en: CS1101S Programming Methodology at National University of Singapore is where briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. The hard part is turning that arc into a
-    method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在新加坡国立大学上 CS1101S，真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。
-  overview_en: CS1101S Programming Methodology sits in programming & software construction. Evidence from
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit.
-  overview_cn: CS1101S 是新加坡国立大学「编程与软件构造」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: CS1101S tutoring (Programming Methodology). Stuck on Reading the brief — I/O, edges,
+    and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'CS1101S Programming Methodology at National University of Singapore: Reading the brief — I/O,
+    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
+    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS1101S，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS1101S Programming Methodology at National University of Singapore.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: CS1101S（新加坡国立大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Reading the brief and designing before typing
-    cn: 先读题、先设计，再动手写
-  - en: Functions, modules, and readable structure
-    cn: 函数、模块与可读结构
-  - en: Recursion, ADTs, and common lab patterns
-    cn: 递归、抽象数据类型与常见 Lab 模式
-  - en: Unit tests and autograder feedback loops
-    cn: 单元测试与 autograder 反馈循环
-  - en: Git basics when the course requires it
-    cn: 课程要求时的 Git 基础
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
   stuck:
-  - en: Code that “almost works” with no systematic debug plan
-    cn: 代码“差不多能跑”，但没有系统调试计划
-  - en: Autograder mismatches from edge cases or I/O format
-    cn: 边界条件或 I/O 格式导致 autograder 不过
-  - en: Copy-paste solutions that cannot be explained in viva / demo
-    cn: 粘贴来的解法，演示或口头答不上来
-  - en: Lecture vocabulary for CS1101S outruns bilingual notes
-    cn: CS1101S 的课堂术语跑在双语笔记前面
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
-  - en: Restate the problem and sketch data flow on a whiteboard
-    cn: 复述题意，白板画出数据流
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
   - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分定位失败用例
-  - en: Refactor for clarity before chasing extra marks
-    cn: 先为清晰度重构，再追额外分数
+    cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for CS1101S: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CS1101S 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CS1101S: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CS1101S 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does CS1101S cover?
+    q_cn: CS1101S 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS1231
   title: Discrete Structures
+  theme: math-for-cs
+  meta_description_en: CS1231 tutoring (Discrete Structures). Stuck on Logic, sets, and proof strategies?
+    Bilingual Chinese/English help.
+  lead_en: 'CS1231 Discrete Structures at National University of Singapore: Logic, sets, and proof strategies
+    → Induction and invariants → Relations, functions, and counting → Graphs / trees as discrete structures….
+    Symbols and proof phrasing outrun calculation skill. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS1231，主线是逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数 → 作为离散结构的图 / 树。符号与证明表述往往比计算本身更劝退。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS1231 Discrete Structures at National University of Singapore.
+    Covered topics: Logic, sets, and proof strategies; Induction and invariants; Relations, functions,
+    and counting; Graphs / trees as discrete structures; Number theory or modular arithmetic when required.
+    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS1231（新加坡国立大学）一对一辅导。覆盖主题包括逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Logic, sets, and proof strategies
+    cn: 逻辑、集合与证明策略
+  - en: Induction and invariants
+    cn: 归纳与不变量
+  - en: Relations, functions, and counting
+    cn: 关系、函数与计数
+  - en: Graphs / trees as discrete structures
+    cn: 作为离散结构的图 / 树
+  - en: Number theory or modular arithmetic when required
+    cn: 需要时的数论 / 模运算
+  - en: Translating word problems into formal statements
+    cn: 把文字题翻译成形式陈述
+  stuck:
+  - en: Can follow a proof; cannot start from a blank page
+    cn: 能看懂证明，白纸上开不了头
+  - en: Notation piles up faster than bilingual notes
+    cn: 符号比双语笔记堆得还快
+  - en: Induction hypothesis stated wrong for the claim
+    cn: 归纳假设和要证的命题对不上
+  session_angles:
+  - en: Restate the claim in one sentence before proving
+    cn: 证明前先用一句话复述命题
+  - en: Pick the proof pattern, then fill details
+    cn: 先选证明模式，再填细节
+  tutoring:
+  - en: 'Lecture sync for CS1231: bilingual walkthrough of Logic, sets, and proof strategies → Induction
+      and invariants → Relations, functions, and counting → Graphs / trees as discrete structures so tutorial
+      language matches.'
+    cn: 按 CS1231 同步跟课：用中英双语把「逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Logic, sets, and proof strategies question shapes for this course.'
+    cn: 考前突击：按本课「逻辑、集合与证明策略」等题型做限时练习。
+  faq:
+  - q_en: What does CS1231 cover?
+    q_cn: CS1231 学什么？
+    a_en: Logic, sets, and proof strategies; Induction and invariants; Relations, functions, and counting;
+      Graphs / trees as discrete structures…. Say which week or assessment you are on when booking.
+    a_cn: 逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS2030
   title: Programming Methodology II
+  theme: programming
+  meta_description_en: CS2030 tutoring (Programming Methodology II). Stuck on Reading the brief — I/O,
+    edges, and marking points before code? Bilingual Chinese/English help.
+  lead_en: 'CS2030 Programming Methodology II at National University of Singapore: Reading the brief —
+    I/O, edges, and marking points before code → Control flow, functions, and decomposition → Data basics
+    — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
+    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS2030，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2030 Programming Methodology II at National University of Singapore.
+    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
+    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: CS2030（新加坡国立大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for CS2030: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CS2030 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does CS2030 cover?
+    q_cn: CS2030 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS2040
   title: Data Structures and Algorithms
+  theme: algorithms
+  meta_description_en: CS2040 tutoring (Data Structures and Algorithms). Stuck on Complexity — Big-O,
+    recurrence, and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'CS2040 Data Structures and Algorithms at National University of Singapore: Complexity — Big-O,
+    recurrence, and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting
+    and searching families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity
+    claims, and code must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS2040，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2040 Data Structures and Algorithms at National University of
+    Singapore. Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists,
+    stacks, queues, trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS,
+    shortest paths, MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS2040（新加坡国立大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for CS2040: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 CS2040 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does CS2040 cover?
+    q_cn: CS2040 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS2100
   title: Computer Organisation
+  theme: systems
+  meta_description_en: CS2100 tutoring (Computer Organisation). Stuck on Data representation — ints, floats,
+    endianness, bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'CS2100 Computer Organisation at National University of Singapore: Data representation — ints,
+    floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control,
+    and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly, data
+    representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus arc,
+    then debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS2100，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2100 Computer Organisation at National University of Singapore.
+    Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics
+    and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache,
+    locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS2100（新加坡国立大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次
+    — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
+  stuck:
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
+  session_angles:
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
+  tutoring:
+  - en: 'Lecture sync for CS2100: bilingual walkthrough of Data representation — ints, floats, endianness,
+      bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+      intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial language matches.'
+    cn: 按 CS2100 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does CS2100 cover?
+    q_cn: CS2100 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS2102
   title: Database Systems
+  theme: databases
+  meta_description_en: CS2102 tutoring (Database Systems). Stuck on ER / relational modelling and normalisation?
+    Bilingual Chinese/English help.
+  lead_en: 'CS2102 Database Systems at National University of Singapore: ER / relational modelling and
+    normalisation → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query
+    is slow → Transactions — ACID, isolation, locking…. One wrong schema or join quietly breaks every
+    later query and transaction story. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS2102，主线是ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因 → 事务 — ACID、隔离级别、锁。Schema
+    或 join 偏一点，后面查询和事务叙事会整条链一起歪。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2102 Database Systems at National University of Singapore. Covered
+    topics: ER / relational modelling and normalisation; SQL — select, join, aggregation, nested queries;
+    Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking; Integrity constraints
+    and schema evolution. Bring your brief, failing test, lecture slide screenshot, or the topic name
+    you are stuck on.'
+  overview_cn: CS2102（新加坡国立大学）一对一辅导。覆盖主题包括ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: ER / relational modelling and normalisation
+    cn: ER / 关系建模与范式
+  - en: SQL — select, join, aggregation, nested queries
+    cn: SQL — 查询、连接、聚合、嵌套
+  - en: Indexes, plans, and why a query is slow
+    cn: 索引、执行计划与慢查询原因
+  - en: Transactions — ACID, isolation, locking
+    cn: 事务 — ACID、隔离级别、锁
+  - en: Integrity constraints and schema evolution
+    cn: 完整性约束与 Schema 演化
+  - en: Application ↔ DB boundary (ORM / prepared statements)
+    cn: 应用与数据库边界（ORM / 预处理语句）
+  stuck:
+  - en: Join results look right until a duplicate or NULL appears
+    cn: Join 结果看起来对，一出现重复或 NULL 就崩
+  - en: Normalisation on paper; schema in code still denormalised
+    cn: 纸上范式对了，代码里 Schema 仍不规范
+  - en: Transaction / isolation questions collapse under time pressure
+    cn: 限时下事务 / 隔离级别题直接崩盘
+  session_angles:
+  - en: Draw the ER, then write the join checklist
+    cn: 先画 ER，再写 join 清单
+  - en: Explain the plan before tuning indexes
+    cn: 调索引前先说清执行计划
+  tutoring:
+  - en: 'Lecture sync for CS2102: bilingual walkthrough of ER / relational modelling and normalisation
+      → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query is slow → Transactions
+      — ACID, isolation, locking so tutorial language matches.'
+    cn: 按 CS2102 同步跟课：用中英双语把「ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on ER / relational modelling and normalisation question shapes for this
+      course.'
+    cn: 考前突击：按本课「ER / 关系建模与范式」等题型做限时练习。
+  faq:
+  - q_en: What does CS2102 cover?
+    q_cn: CS2102 学什么？
+    a_en: ER / relational modelling and normalisation; SQL — select, join, aggregation, nested queries;
+      Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking…. Say which week
+      or assessment you are on when booking.
+    a_cn: ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS2103
   title: Software Engineering
+  theme: web-mobile
+  meta_description_en: CS2103 tutoring (Software Engineering). Stuck on Requirements — user stories, use
+    cases, acceptance criteria? Bilingual Chinese/English help.
+  lead_en: 'CS2103 Software Engineering at National University of Singapore: Requirements — user stories,
+    use cases, acceptance criteria → Design — modularity, APIs, and maintainability → Git workflows and
+    code review habits → Testing — unit, integration, and demo evidence…. Specs, teamwork, and demo evidence
+    matter as much as whether the feature runs. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS2103，主线是需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+    习惯 → 测试 — 单元、集成与 demo 证据。规格、协作和 demo 证据，往往和「功能能不能跑」一样重要。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2103 Software Engineering at National University of Singapore.
+    Covered topics: Requirements — user stories, use cases, acceptance criteria; Design — modularity,
+    APIs, and maintainability; Git workflows and code review habits; Testing — unit, integration, and
+    demo evidence; HTTP / backend or UI structure the course actually uses. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS2103（新加坡国立大学）一对一辅导。覆盖主题包括需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code
+    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Requirements — user stories, use cases, acceptance criteria
+    cn: 需求 — user story、use case、验收标准
+  - en: Design — modularity, APIs, and maintainability
+    cn: 设计 — 模块化、API 与可维护性
+  - en: Git workflows and code review habits
+    cn: Git 工作流与 code review 习惯
+  - en: Testing — unit, integration, and demo evidence
+    cn: 测试 — 单元、集成与 demo 证据
+  - en: HTTP / backend or UI structure the course actually uses
+    cn: 课程实际用的 HTTP / 后端或 UI 结构
+  - en: Iteration planning and defending design in demos
+    cn: 迭代规划与在 demo 中为设计辩护
+  stuck:
+  - en: Feature works; demo cannot explain design trade-offs
+    cn: 功能能跑，demo 讲不清设计权衡
+  - en: Tests pass locally; CI or tutor demo fails on edges
+    cn: 本地测试能过；CI 或 tutor demo 在边界挂
+  - en: Team Git history messy after a bad merge
+    cn: 错误合并后团队 Git 历史一团糟
+  session_angles:
+  - en: Map interface → tests → demo narrative before coding
+    cn: 写代码前先对齐接口 → 测试 → demo 叙述
+  - en: Own one vertical slice end-to-end
+    cn: 端到端拿下一小条垂直切片
+  tutoring:
+  - en: 'Lecture sync for CS2103: bilingual walkthrough of Requirements — user stories, use cases, acceptance
+      criteria → Design — modularity, APIs, and maintainability → Git workflows and code review habits
+      → Testing — unit, integration, and demo evidence so tutorial language matches.'
+    cn: 按 CS2103 同步跟课：用中英双语把「需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+      习惯」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Requirements — user stories, use cases, acceptance criteria question
+      shapes for this course.'
+    cn: 考前突击：按本课「需求 — user story、use case、验收标准」等题型做限时练习。
+  faq:
+  - q_en: What does CS2103 cover?
+    q_cn: CS2103 学什么？
+    a_en: Requirements — user stories, use cases, acceptance criteria; Design — modularity, APIs, and
+      maintainability; Git workflows and code review habits; Testing — unit, integration, and demo evidence….
+      Say which week or assessment you are on when booking.
+    a_cn: 需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code review 习惯、测试 — 单元、集成与 demo 证据。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS2105
   title: Introduction to Computer Networks
+  theme: systems
+  meta_description_en: CS2105 tutoring (Introduction to Computer Networks). Stuck on Layered models (OSI
+    / TCP-IP) and where each job lives? Bilingual Chinese/English help.
+  lead_en: 'CS2105 Introduction to Computer Networks at National University of Singapore: Layered models
+    (OSI / TCP-IP) and where each job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing,
+    and forwarding intuition → HTTP/DNS and application-layer protocols…. Layers, packets, and failure
+    modes blur until you can trace one request end-to-end. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS2105，主线是分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉 → HTTP/DNS
+    与应用层协议。分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2105 Introduction to Computer Networks at National University
+    of Singapore. Covered topics: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP
+    vs UDP, and reliable delivery; Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer
+    protocols; Congestion, flow control, and performance trade-offs. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS2105（新加坡国立大学）一对一辅导。覆盖主题包括分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS
+    与应用层协议。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Layered models (OSI / TCP-IP) and where each job lives
+    cn: 分层模型（OSI / TCP-IP）与各层职责
+  - en: Sockets, TCP vs UDP, and reliable delivery
+    cn: Socket、TCP vs UDP 与可靠传输
+  - en: Routing, addressing, and forwarding intuition
+    cn: 路由、编址与转发直觉
+  - en: HTTP/DNS and application-layer protocols
+    cn: HTTP/DNS 与应用层协议
+  - en: Congestion, flow control, and performance trade-offs
+    cn: 拥塞、流控与性能权衡
+  - en: Lab traces — Wireshark / packet walks when required
+    cn: 需要时的抓包 / 报文走读 Lab
+  stuck:
+  - en: Mixing app vs transport vs network layer when debugging
+    cn: 排查时把应用 / 传输 / 网络层搅在一起
+  - en: Socket code almost works; handshake or timeout edges fail
+    cn: Socket 差不多能跑；握手或超时边界挂掉
+  - en: Protocol diagrams look familiar until the exam scenario is new
+    cn: 协议图课上眼熟，考试换场景就不会读
+  session_angles:
+  - en: Trace one packet path before changing socket code
+    cn: 改 Socket 代码前先跟完一条报文路径
+  - en: Name the layer that owns the failure
+    cn: 先说出故障属于哪一层
+  tutoring:
+  - en: 'Lecture sync for CS2105: bilingual walkthrough of Layered models (OSI / TCP-IP) and where each
+      job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding intuition
+      → HTTP/DNS and application-layer protocols so tutorial language matches.'
+    cn: 按 CS2105 同步跟课：用中英双语把「分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Layered models (OSI / TCP-IP) and where each job lives question shapes
+      for this course.'
+    cn: 考前突击：按本课「分层模型（OSI / TCP-IP）与各层职责」等题型做限时练习。
+  faq:
+  - q_en: What does CS2105 cover?
+    q_cn: CS2105 学什么？
+    a_en: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery;
+      Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols…. Say which
+      week or assessment you are on when booking.
+    a_cn: 分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS 与应用层协议。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS2106
   title: Introduction to Operating Systems
+  theme: systems
+  meta_description_en: CS2106 NUS tutoring (Introduction to Operating Systems). Stuck on processes, concurrency,
+    paging, or C/Linux labs? Bilingual Chinese/English help.
+  lead_en: 'CS2106 Introduction to Operating Systems links OS structure to real Unix/Linux behaviour:
+    processes and scheduling, concurrency and synchronisation, virtual memory, and file systems. Labs
+    are C in a Linux environment — tutoring turns lecture abstractions into a method you can debug when
+    fork, locks, or paging behave differently than the slide.'
+  lead_cn: CS2106 Introduction to Operating Systems 把操作系统结构接到真实 Unix/Linux 行为上：进程与调度、并发与同步、虚拟内存、文件系统。Lab
+    是 Linux 环境下的 C——辅导会把课上抽象变成方法，当你的 fork、锁或分页和课件对不上时，能按步骤 debug。
+  overview_en: 'One-to-one tutoring for CS2106 at NUS: lecture catch-up on kernel / process / concurrency
+    / memory / file-system ideas, then live debug on your C lab or exam drill. Officially 4 units, offered
+    Semesters 1 and 2; typical format is lectures, tutorials, and programming labs. Formal prereq is a
+    D or better in CS2100 (or CS2100DE / CS2100HS / EE2007 / EE2024 / EE2028); precluded with CG2271,
+    EE4214, or the 2001CEGHON pathway. Check NUSMods for the current semester timetable and exam date.
+    Bring your lab brief, failing test, or a screenshot of the lecture slide you are stuck on when you
+    book.'
+  overview_cn: 新加坡国立大学 CS2106 一对一辅导：先补内核 / 进程 / 并发 / 内存 / 文件系统概念，再对着你的 C Lab 或考前题现场 debug。正式 4 学分，Sem
+    1 与 Sem 2 均开；常见形式是讲座、tutorial 与编程 Lab。先修通常要求 CS2100（或 CS2100DE / CS2100HS / EE2007 / EE2024 / EE2028）成绩
+    D 及以上；与 CG2271、EE4214 或 2001CEGHON 路径互斥。当学期课表与考试时间以 NUSMods 为准。预约时请带上你的 Lab brief、失败测例，或卡住的那页课件截图。
+  topics:
+  - en: OS architecture — kernel vs user mode, system calls, interrupts
+    cn: 操作系统结构 — 内核/用户态、系统调用、中断
+  - en: Processes and threads — PCB, fork/exec/wait, scheduling (RR, MLFQ)
+    cn: 进程与线程 — PCB、fork/exec/wait、调度（RR、MLFQ）
+  - en: Concurrency — critical sections, mutexes, semaphores, condition variables
+    cn: 并发 — 临界区、mutex、信号量、条件变量
+  - en: Classic sync problems and deadlock (mutual exclusion, hold-and-wait)
+    cn: 经典同步问题与死锁（互斥、占有等待）
+  - en: Memory — address spaces, paging, TLB, replacement (FIFO, LRU, CLOCK)
+    cn: 内存 — 地址空间、分页、TLB、置换（FIFO、LRU、CLOCK）
+  - en: File systems — inodes, links, allocation, journaling; protection / ACLs
+    cn: 文件系统 — inode、链接、分配、日志；保护 / ACL
+  - en: C/Linux labs — shell, processes, sync, memory, and file-system programming
+    cn: C/Linux Lab — shell、进程、同步、内存与文件系统编程
+  stuck:
+  - en: Lecture process model makes sense; your fork/exec/wait lab does not
+    cn: 课上进程模型听得懂，自己的 fork/exec/wait Lab 却对不上
+  - en: Race or deadlock only shows under timing you cannot reproduce alone
+    cn: 竞态 / 死锁只在某种时序下出现，自己复现不了
+  - en: Paging / TLB / replacement algorithms mix up when the exam figure changes
+    cn: 考试换一张图，分页 / TLB / 置换算法就搅在一起
+  - en: Semaphore vs mutex vs condition variable — pick the wrong tool under time pressure
+    cn: 限时下分不清该用信号量、mutex 还是条件变量
+  - en: Man pages and errno denser than lecture pace; lab fails for opaque reasons
+    cn: Man page 和 errno 比课堂更密；Lab 挂了却看不出原因
+  session_angles:
+  - en: Draw the process / lock / page path before changing C code
+    cn: 改 C 代码前先画进程 / 锁 / 页路径
+  - en: 'Lab debug: you drive; we chase races, waits, and failing asserts'
+    cn: Lab 调试：你来操作；一起追竞态、等待和失败断言
+  - en: Translate OS jargon into a bilingual cheat sheet for the 2-hour exam
+    cn: 把操作系统术语整理成双语速查，对准两小时大考
+  tutoring:
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
+  - en: 'Labs: approach review and live debug on your C/Linux programming (you at the keyboard).'
+    cn: Lab 辅导：拆 brief、梳思路，对着你的 C/Linux 编程现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on scheduling, sync, paging, and file-system question shapes.'
+    cn: 考前突击：按调度、同步、分页、文件系统常考题型做限时练习。
+  faq:
+  - q_en: What does CS2106 cover?
+    q_cn: CS2106 学什么？
+    a_en: OS structuring and architecture, processes and scheduling, concurrency and synchronisation,
+      memory management (including virtual memory and paging), file systems, and protection — tied to
+      contemporary Unix/Linux behaviour. Bring the week or lab you are on when booking.
+    a_cn: 操作系统结构与体系、进程与调度、并发与同步、内存管理（含虚拟内存与分页）、文件系统与保护——并接到当代 Unix/Linux 行为。预约时说明你卡在哪一周或哪个 Lab。
+  - q_en: What are the formal prerequisites?
+    q_cn: 正式先修是什么？
+    a_en: A grade of D or better in CS2100 (or CS2100DE, CS2100HS, EE2007, EE2024, or EE2028). Preclusions
+      include CG2271, EE4214, and the 2001CEGHON pathway — confirm on NUSMods for your cohort.
+    a_cn: 通常要求 CS2100（或 CS2100DE、CS2100HS、EE2007、EE2024、EE2028）成绩 D 及以上。互斥包括 CG2271、EE4214 与 2001CEGHON
+      路径——以你届 NUSMods 说明为准。
+  - q_en: How are labs structured?
+    q_cn: Lab 大概怎么上？
+    a_en: Expect C programming in a Linux/Unix environment across shell, processes, synchronisation, memory,
+      and file-system ideas. Bring your brief, starter, or failing test so we debug your setup — not a
+      generic demo.
+    a_cn: 常见是在 Linux/Unix 环境下用 C 做 shell、进程、同步、内存与文件系统相关编程。请带上 brief、starter 或失败测例，对着你的环境 debug，而不是泛泛演示。
 - code: CS3230
   title: Design and Analysis of Algorithms
+  theme: algorithms
+  meta_description_en: CS3230 tutoring (Design and Analysis of Algorithms). Stuck on Complexity — Big-O,
+    recurrence, and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'CS3230 Design and Analysis of Algorithms at National University of Singapore: Complexity —
+    Big-O, recurrence, and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    → Sorting and searching families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants,
+    complexity claims, and code must stay aligned under time pressure. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS3230，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS3230 Design and Analysis of Algorithms at National University
+    of Singapore. Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists,
+    stacks, queues, trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS,
+    shortest paths, MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS3230（新加坡国立大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for CS3230: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 CS3230 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does CS3230 cover?
+    q_cn: CS3230 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS3243
   title: Introduction to Artificial Intelligence
+  theme: machine-learning
+  meta_description_en: CS3243 tutoring (Introduction to Artificial…). Stuck on Neural net basics — layers,
+    activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'CS3243 Introduction to Artificial Intelligence at National University of Singapore: Neural
+    net basics — layers, activations, backprop intuition → CNNs / RNNs / Transformers when the course
+    uses them → Losses, optimisers, and training loops → Regularisation — dropout, weight decay, early
+    stopping…. Architectures and loss jargon outrun the debugging loop when shapes and gradients fail.
+    Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS3243，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环 →
+    正则 — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS3243 Introduction to Artificial Intelligence at National University
+    of Singapore. Covered topics: Neural net basics — layers, activations, backprop intuition; CNNs /
+    RNNs / Transformers when the course uses them; Losses, optimisers, and training loops; Regularisation
+    — dropout, weight decay, early stopping; Shape debugging and common framework errors. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS3243（新加坡国立大学）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for CS3243: bilingual walkthrough of Neural net basics — layers, activations, backprop
+      intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers, and training
+      loops → Regularisation — dropout, weight decay, early stopping so tutorial language matches.'
+    cn: 按 CS3243 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does CS3243 cover?
+    q_cn: CS3243 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS3244
   title: Machine Learning
+  theme: machine-learning
+  meta_description_en: CS3244 tutoring (Machine Learning). Stuck on Supervised learning — linear/logistic
+    models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'CS3244 Machine Learning at National University of Singapore: Supervised learning — linear/logistic
+    models, trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and
+    model selection → Metrics — accuracy, precision/recall, ROC, calibration…. Method names blur until
+    pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS3244，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS3244 Machine Learning at National University of Singapore. Covered
+    topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+    and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall, ROC,
+    calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS3244（新加坡国立大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for CS3244: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 CS3244 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does CS3244 cover?
+    q_cn: CS3244 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS4248
   title: Natural Language Processing
+  theme: machine-learning
+  meta_description_en: CS4248 tutoring (Natural Language Processing). Stuck on Text preprocessing and
+    tokenisation? Bilingual Chinese/English help.
+  lead_en: 'CS4248 Natural Language Processing at National University of Singapore: Text preprocessing
+    and tokenisation → Classical features — n-grams, TF-IDF when taught → Sequence / embedding / LM approaches
+    in syllabus → Evaluation — accuracy, F1, BLEU/ROUGE when used…. Tokenisation, metrics, and data splits
+    decide results before model fancy-ness. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在新加坡国立大学上 CS4248，主线是文本预处理与分词 → 课程中的经典特征 — n-gram、TF-IDF → 大纲中的序列 / 向量 / 语言模型方法 → 评估 — 准确率、F1、BLEU/ROUGE（若使用）。往往先由分词、指标和数据划分决定结果，而不是模型花哨程度。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS4248 Natural Language Processing at National University of Singapore.
+    Covered topics: Text preprocessing and tokenisation; Classical features — n-grams, TF-IDF when taught;
+    Sequence / embedding / LM approaches in syllabus; Evaluation — accuracy, F1, BLEU/ROUGE when used;
+    Dataset pitfalls — leakage, class imbalance, domain shift. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS4248（新加坡国立大学）一对一辅导。覆盖主题包括文本预处理与分词、课程中的经典特征 — n-gram、TF-IDF、大纲中的序列 / 向量 / 语言模型方法、评估 —
+    准确率、F1、BLEU/ROUGE（若使用）。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Text preprocessing and tokenisation
+    cn: 文本预处理与分词
+  - en: Classical features — n-grams, TF-IDF when taught
+    cn: 课程中的经典特征 — n-gram、TF-IDF
+  - en: Sequence / embedding / LM approaches in syllabus
+    cn: 大纲中的序列 / 向量 / 语言模型方法
+  - en: Evaluation — accuracy, F1, BLEU/ROUGE when used
+    cn: 评估 — 准确率、F1、BLEU/ROUGE（若使用）
+  - en: Dataset pitfalls — leakage, class imbalance, domain shift
+    cn: 数据陷阱 — 泄漏、类别不平衡、域偏移
+  - en: Reproducible notebooks and error analysis
+    cn: 可复现 notebook 与错误分析
+  stuck:
+  - en: Tokenizer mismatch between train and eval
+    cn: 训练和评估的分词器不一致
+  - en: Leaderboard chasing without error analysis
+    cn: 追榜却不做错误分析
+  - en: Cannot explain predictions in the write-up
+    cn: 报告里解释不了预测
+  session_angles:
+  - en: Fix the split and metric, then swap models
+    cn: 先锁死划分和指标，再换模型
+  - en: Read 20 failure cases before the next experiment
+    cn: 下次实验前先读 20 个失败样例
+  tutoring:
+  - en: 'Lecture sync for CS4248: bilingual walkthrough of Text preprocessing and tokenisation → Classical
+      features — n-grams, TF-IDF when taught → Sequence / embedding / LM approaches in syllabus → Evaluation
+      — accuracy, F1, BLEU/ROUGE when used so tutorial language matches.'
+    cn: 按 CS4248 同步跟课：用中英双语把「文本预处理与分词 → 课程中的经典特征 — n-gram、TF-IDF → 大纲中的序列 / 向量 / 语言模型方法」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Text preprocessing and tokenisation question shapes for this course.'
+    cn: 考前突击：按本课「文本预处理与分词」等题型做限时练习。
+  faq:
+  - q_en: What does CS4248 cover?
+    q_cn: CS4248 学什么？
+    a_en: Text preprocessing and tokenisation; Classical features — n-grams, TF-IDF when taught; Sequence
+      / embedding / LM approaches in syllabus; Evaluation — accuracy, F1, BLEU/ROUGE when used…. Say which
+      week or assessment you are on when booking.
+    a_cn: 文本预处理与分词、课程中的经典特征 — n-gram、TF-IDF、大纲中的序列 / 向量 / 语言模型方法、评估 — 准确率、F1、BLEU/ROUGE（若使用）。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

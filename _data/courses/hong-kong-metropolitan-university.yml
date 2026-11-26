@@ -8,55 +8,57 @@ courses:
   material: comp s321f - advanced-database-and-data-warehousing
   code: COMP S321F
   theme: databases
-  meta_description_en: COMP S321F HKMU tutoring (Comp S321f Advanced Database And…). Assignment brief
-    (“321f lab8 sol”) makes sense in class, freezes you alone?
-  lead_en: COMP S321F Comp S321f Advanced Database And Data Warehousing at Hong Kong Metropolitan University
-    is where one wrong schema or join quietly breaks every later query. The hard part is turning that
-    arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在香港都会大学上 COMP S321F，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: COMP S321F Comp S321f Advanced Database And Data Warehousing sits in databases & information
-    systems. Assessed work expects you to apply lecture ideas under deadline pressure. Students stall
-    when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: COMP S321F 是香港都会大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、操作系统 / 系统编程、安全
-    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们概念复习辅导课件的样例页。
+  meta_description_en: COMP S321F tutoring (Comp S321f Advanced Database And…). Stuck on ER / relational
+    modelling and normalisation? Bilingual Chinese/English help.
+  lead_en: 'COMP S321F Comp S321f Advanced Database And Data Warehousing at Hong Kong Metropolitan University:
+    ER / relational modelling and normalisation → SQL — select, join, aggregation, nested queries → Indexes,
+    plans, and why a query is slow → Transactions — ACID, isolation, locking…. One wrong schema or join
+    quietly breaks every later query and transaction story. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港都会大学上 COMP S321F，主线是ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因 → 事务 — ACID、隔离级别、锁。Schema
+    或 join 偏一点，后面查询和事务叙事会整条链一起歪。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP S321F Comp S321f Advanced Database And Data Warehousing at
+    Hong Kong Metropolitan University. Covered topics: ER / relational modelling and normalisation; SQL
+    — select, join, aggregation, nested queries; Indexes, plans, and why a query is slow; Transactions
+    — ACID, isolation, locking; Integrity constraints and schema evolution. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP S321F（香港都会大学）一对一辅导。覆盖主题包括ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: SQL, schema design, and databases
-    cn: SQL、Schema 与数据库
-  - en: OS / systems programming
-    cn: 操作系统 / 系统编程
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: ER / relational modelling and normalisation
+    cn: ER / 关系建模与范式
+  - en: SQL — select, join, aggregation, nested queries
+    cn: SQL — 查询、连接、聚合、嵌套
+  - en: Indexes, plans, and why a query is slow
+    cn: 索引、执行计划与慢查询原因
+  - en: Transactions — ACID, isolation, locking
+    cn: 事务 — ACID、隔离级别、锁
+  - en: Integrity constraints and schema evolution
+    cn: 完整性约束与 Schema 演化
+  - en: Application ↔ DB boundary (ORM / prepared statements)
+    cn: 应用与数据库边界（ORM / 预处理语句）
   stuck:
-  - en: Assignment brief (“321f lab8 sol”) makes sense in class, freezes you alone
-    cn: 作业 brief（「321f lab8 sol」）课上听得懂，自己对着就停住
-  - en: Correct-looking SQL that fails hidden test schemas
-    cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
-  - en: Over-normalised or under-normalised designs
-    cn: 过度范式或范式不足的设计
-  - en: ORM confusion masking missing SQL fundamentals
-    cn: 被 ORM 迷惑，SQL 基本功没补上
-  - en: Lecture vocabulary for COMP S321F outruns bilingual notes
-    cn: COMP S321F 的课堂术语跑在双语笔记前面
+  - en: Join results look right until a duplicate or NULL appears
+    cn: Join 结果看起来对，一出现重复或 NULL 就崩
+  - en: Normalisation on paper; schema in code still denormalised
+    cn: 纸上范式对了，代码里 Schema 仍不规范
+  - en: Transaction / isolation questions collapse under time pressure
+    cn: 限时下事务 / 隔离级别题直接崩盘
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Sketch the ER, then write queries against it
-    cn: 先画 ER，再对着写查询
-  - en: Explain a query plan in plain language
-    cn: 用白话解释执行计划
+  - en: Draw the ER, then write the join checklist
+    cn: 先画 ER，再写 join 清单
+  - en: Explain the plan before tuning indexes
+    cn: 调索引前先说清执行计划
   tutoring:
-  - en: 'Lecture sync for COMP S321F: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 COMP S321F 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as 321f lab8 sol, 321f lab8 v2, with you at
-      the keyboard.'
-    cn: 作业辅导：针对 321f lab8 sol, 321f lab8 v2 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for COMP S321F: bilingual walkthrough of ER / relational modelling and normalisation
+      → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query is slow → Transactions
+      — ACID, isolation, locking so tutorial language matches.'
+    cn: 按 COMP S321F 同步跟课：用中英双语把「ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on ER / relational modelling and normalisation question shapes for this
+      course.'
+    cn: 考前突击：按本课「ER / 关系建模与范式」等题型做限时练习。
   sample_slides:
     title_en: COMP S321F — sample slides
     title_cn: COMP S321F — 辅导课件样例
@@ -105,6 +107,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does COMP S321F cover?
+    q_cn: COMP S321F 学什么？
+    a_en: ER / relational modelling and normalisation; SQL — select, join, aggregation, nested queries;
+      Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking…. Say which week
+      or assessment you are on when booking.
+    a_cn: ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -140,9 +153,8 @@ courses:
   - en: Group projects — ownership of one clear analysis thread
     cn: 小组作业——把住一条清晰分析主线
   stuck:
-  - en: Assignment brief (“(2025) COMP S460F Assignment01 Question Paper co”) makes sense in class, freezes
-      you alone
-    cn: 作业 brief（「(2025) COMP S460F Assignment01 Question Paper co」）课上听得懂，自己对着就停住
+  - en: Assignment brief makes sense in class, freezes you alone
+    cn: 作业 brief 课上听得懂，自己对着就停住
   - en: Tool output produced, write-up cannot defend method choice
     cn: 工具输出有了，报告却说不清为何选这个方法
   - en: Messy merges and silent NaNs that break later metrics
@@ -161,9 +173,8 @@ courses:
   tutoring:
   - en: 'Lecture sync for COMP S460F: bilingual catch-up so workshop / tutorial language matches the lectures.'
     cn: 按 COMP S460F 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as (2025) COMP S460F Assignment01 Question
-      Paper conf (1), with you at the keyboard.'
-    cn: 作业辅导：针对 (2025) COMP S460F Assignment01 Question Paper conf (1) 一类评估拆题，你来操作键盘。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   sample_slides:
@@ -221,4 +232,67 @@ courses:
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2030SEF
   title: Intermediate Java Programming & User Interface Design
+  theme: programming
+  meta_description_en: COMP2030SEF tutoring (Intermediate Java Programming &…). Stuck on Classes, objects,
+    encapsulation, and invariants? Bilingual Chinese/English help.
+  lead_en: 'COMP2030SEF Intermediate Java Programming & User Interface Design at Hong Kong Metropolitan
+    University: Classes, objects, encapsulation, and invariants → Inheritance, interfaces, and polymorphism
+    → Design before typing — responsibilities and collaborators → Testing objects and mutable state….
+    Class design and ownership bugs hide behind “it compiles”. Tutoring rebuilds that syllabus arc, then
+    debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港都会大学上 COMP2030SEF，主线是类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系 → 测对象与可变状态。类设计和所有权问题藏在「能编译」后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for COMP2030SEF Intermediate Java Programming & User Interface Design
+    at Hong Kong Metropolitan University. Covered topics: Classes, objects, encapsulation, and invariants;
+    Inheritance, interfaces, and polymorphism; Design before typing — responsibilities and collaborators;
+    Testing objects and mutable state; Common memory / reference pitfalls in the course language. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2030SEF（香港都会大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Classes, objects, encapsulation, and invariants
+    cn: 类、对象、封装与不变量
+  - en: Inheritance, interfaces, and polymorphism
+    cn: 继承、接口与多态
+  - en: Design before typing — responsibilities and collaborators
+    cn: 先设计再写 — 职责与协作关系
+  - en: Testing objects and mutable state
+    cn: 测对象与可变状态
+  - en: Common memory / reference pitfalls in the course language
+    cn: 课程语言里的常见引用 / 内存坑
+  - en: Refactoring for clarity under an autograder
+    cn: 在 autograder 下为清晰度重构
+  stuck:
+  - en: Methods work in isolation; object graph breaks under the brief
+    cn: 方法单独能跑；对象关系一接 brief 就断
+  - en: Inheritance used where composition was needed
+    cn: 该用组合却用了继承
+  - en: Equals/hash or ownership bugs that only show in tests
+    cn: equals/hash 或所有权 bug 只在测试里出现
+  session_angles:
+  - en: CRC / responsibility sketch before opening the editor
+    cn: 打开编辑器前先画职责草图
+  - en: Write the failing test that names the invariant
+    cn: 先写点名不变量的失败测试
+  tutoring:
+  - en: 'Lecture sync for COMP2030SEF: bilingual walkthrough of Classes, objects, encapsulation, and invariants
+      → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities and collaborators
+      → Testing objects and mutable state so tutorial language matches.'
+    cn: 按 COMP2030SEF 同步跟课：用中英双语把「类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Classes, objects, encapsulation, and invariants question shapes for
+      this course.'
+    cn: 考前突击：按本课「类、对象、封装与不变量」等题型做限时练习。
+  faq:
+  - q_en: What does COMP2030SEF cover?
+    q_cn: COMP2030SEF 学什么？
+    a_en: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+      Design before typing — responsibilities and collaborators; Testing objects and mutable state…. Say
+      which week or assessment you are on when booking.
+    a_cn: 类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

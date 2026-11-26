@@ -8,8 +8,8 @@ courses:
   title: Database Systems
   material: data 201
   theme: databases
-  meta_description_en: DATA201 San tutoring (Database Systems). Stuck on assignment briefs such as DATA201
-    Lecture2 SQLBasics? Bilingual Chinese/English help.
+  meta_description_en: DATA201 tutoring (Database Systems). Stuck on Data wrangling / analytics tables?
+    Bilingual Chinese/English help.
   lead_en: 'DATA201 Database Systems at San José State University. One wrong schema or join quietly breaks
     every later query. Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse.'
   lead_cn: 在圣何塞州立大学上 DATA201，Schema 或 join 偏一点，后面查询会整条链一起歪。辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。
@@ -34,8 +34,8 @@ courses:
   - en: Indexes, plans, and “why is this slow?”
     cn: 索引、执行计划与“为什么慢”
   stuck:
-  - en: Assignment brief (“DATA201 Lecture2 SQLBasics”) makes sense in class, freezes you alone
-    cn: 作业 brief（「DATA201 Lecture2 SQLBasics」）课上听得懂，自己对着就停住
+  - en: Assignment brief makes sense in class, freezes you alone
+    cn: 作业 brief 课上听得懂，自己对着就停住
   - en: Correct-looking SQL that fails hidden test schemas
     cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
   - en: Over-normalised or under-normalised designs
@@ -54,9 +54,8 @@ courses:
   tutoring:
   - en: 'Lecture sync for DATA201: bilingual catch-up so workshop / tutorial language matches the lectures.'
     cn: 按 DATA201 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as DATA201 Lecture2 SQLBasics, DATA201 Lecture1
-      Introduction, with you at the keyboard.'
-    cn: 作业辅导：针对 DATA201 Lecture2 SQLBasics, DATA201 Lecture1 Introduction 一类评估拆题，你来操作键盘。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   sample_slides:

@@ -1,9 +1,61 @@
 ---
 university: Macau University of Science and Technology
 abbr: MUST
-name_cn: "澳门科技大学"
+name_cn: 澳门科技大学
 teaching_folder: 澳门科技大学
 courses:
 - code: GIT001D05
   title: 资讯科技
+  theme: general
+  meta_description_en: GIT001D05 tutoring (资讯科技). Stuck on 资讯科技? Bilingual Chinese/English help.
+  lead_en: 'GIT001D05 资讯科技 at Macau University of Science and Technology: 资讯科技 → Core ideas in 资讯科技 →
+    Assignments / labs for 资讯科技 → Exam drills aligned to 资讯科技. Lecture speed and dense vocabulary outrun
+    note-taking before methods stick. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在澳门科技大学上 GIT001D05，主线是资讯科技 → 资讯科技 的核心概念 → 资讯科技 的作业 / Lab → 对准 资讯科技 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for GIT001D05 资讯科技 at Macau University of Science and Technology.
+    Covered topics: 资讯科技; Core ideas in 资讯科技; Assignments / labs for 资讯科技; Exam drills aligned to 资讯科技.
+    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: GIT001D05（澳门科技大学）一对一辅导。覆盖主题包括资讯科技、资讯科技 的核心概念、资讯科技 的作业 / Lab、对准 资讯科技 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: 资讯科技
+    cn: 资讯科技
+  - en: Core ideas in 资讯科技
+    cn: 资讯科技 的核心概念
+  - en: Assignments / labs for 资讯科技
+    cn: 资讯科技 的作业 / Lab
+  - en: Exam drills aligned to 资讯科技
+    cn: 对准 资讯科技 的考前练习
+  stuck:
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
+  session_angles:
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
+  tutoring:
+  - en: 'Lecture sync for GIT001D05: bilingual walkthrough of 资讯科技 → Core ideas in 资讯科技 → Assignments
+      / labs for 资讯科技 → Exam drills aligned to 资讯科技 so tutorial language matches.'
+    cn: 按 GIT001D05 同步跟课：用中英双语把「资讯科技 → 资讯科技 的核心概念 → 资讯科技 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on 资讯科技 question shapes for this course.'
+    cn: 考前突击：按本课「资讯科技」等题型做限时练习。
+  faq:
+  - q_en: What does GIT001D05 cover?
+    q_cn: GIT001D05 学什么？
+    a_en: 资讯科技; Core ideas in 资讯科技; Assignments / labs for 资讯科技; Exam drills aligned to 资讯科技. Say which
+      week or assessment you are on when booking.
+    a_cn: 资讯科技、资讯科技 的核心概念、资讯科技 的作业 / Lab、对准 资讯科技 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

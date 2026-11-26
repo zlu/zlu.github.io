@@ -6,74 +6,726 @@ teaching_folder: cuhk
 courses:
 - code: CSCI1120
   title: Introduction to Computing Using C++
+  theme: programming
+  meta_description_en: CSCI1120 tutoring (Introduction to Computing Using C++). Stuck on Reading the brief
+    — I/O, edges, and marking points before code? Bilingual Chinese/Engl…
+  lead_en: 'CSCI1120 Introduction to Computing Using C++ at The Chinese University of Hong Kong: Reading
+    the brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition
+    → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches….
+    Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI1120，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI1120 Introduction to Computing Using C++ at The Chinese University
+    of Hong Kong. Covered topics: Reading the brief — I/O, edges, and marking points before code; Control
+    flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally
+    vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI1120（香港中文大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for CSCI1120: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CSCI1120 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI1120 cover?
+    q_cn: CSCI1120 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI1130
   title: Introduction to Computing Using Java
+  theme: programming
+  meta_description_en: CSCI1130 tutoring (Introduction to Computing Using Java). Stuck on Reading the
+    brief — I/O, edges, and marking points before code? Bilingual Chinese/Eng…
+  lead_en: 'CSCI1130 Introduction to Computing Using Java at The Chinese University of Hong Kong: Reading
+    the brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition
+    → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches….
+    Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI1130，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
+    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI1130 Introduction to Computing Using Java at The Chinese University
+    of Hong Kong. Covered topics: Reading the brief — I/O, edges, and marking points before code; Control
+    flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally
+    vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI1130（香港中文大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
+    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Reading the brief — I/O, edges, and marking points before code
+    cn: 先读 brief — 输入输出、边界与评分点，再动手
+  - en: Control flow, functions, and decomposition
+    cn: 控制流、函数与拆题
+  - en: Data basics — arrays/lists/strings and common bugs
+    cn: 数据基础 — 数组/列表/字符串与常见坑
+  - en: Testing locally vs autograder mismatches
+    cn: 本地测试 vs autograder 不一致
+  - en: Debugging method — reproduce, bisect, fix
+    cn: 调试方法 — 复现、二分、再修
+  - en: Style and structure the marker can follow
+    cn: 改卷人跟得上的风格与结构
+  stuck:
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Brief read three times, still unsure what to implement
+    cn: brief 读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
+  session_angles:
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
+  tutoring:
+  - en: 'Lecture sync for CSCI1130: bilingual walkthrough of Reading the brief — I/O, edges, and marking
+      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
+      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
+    cn: 按 CSCI1130 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+      shapes for this course.'
+    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI1130 cover?
+    q_cn: CSCI1130 学什么？
+    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
+      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
+      mismatches…. Say which week or assessment you are on when booking.
+    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI1520
   title: Computer Principles and C++ Programming
+  theme: programming
+  meta_description_en: CSCI1520 tutoring (Computer Principles and C++…). Stuck on Classes, objects, encapsulation,
+    and invariants? Bilingual Chinese/English help.
+  lead_en: 'CSCI1520 Computer Principles and C++ Programming at The Chinese University of Hong Kong: Classes,
+    objects, encapsulation, and invariants → Inheritance, interfaces, and polymorphism → Design before
+    typing — responsibilities and collaborators → Testing objects and mutable state…. Class design and
+    ownership bugs hide behind “it compiles”. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI1520，主线是类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系 → 测对象与可变状态。类设计和所有权问题藏在「能编译」后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI1520 Computer Principles and C++ Programming at The Chinese
+    University of Hong Kong. Covered topics: Classes, objects, encapsulation, and invariants; Inheritance,
+    interfaces, and polymorphism; Design before typing — responsibilities and collaborators; Testing objects
+    and mutable state; Common memory / reference pitfalls in the course language. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI1520（香港中文大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Classes, objects, encapsulation, and invariants
+    cn: 类、对象、封装与不变量
+  - en: Inheritance, interfaces, and polymorphism
+    cn: 继承、接口与多态
+  - en: Design before typing — responsibilities and collaborators
+    cn: 先设计再写 — 职责与协作关系
+  - en: Testing objects and mutable state
+    cn: 测对象与可变状态
+  - en: Common memory / reference pitfalls in the course language
+    cn: 课程语言里的常见引用 / 内存坑
+  - en: Refactoring for clarity under an autograder
+    cn: 在 autograder 下为清晰度重构
+  stuck:
+  - en: Methods work in isolation; object graph breaks under the brief
+    cn: 方法单独能跑；对象关系一接 brief 就断
+  - en: Inheritance used where composition was needed
+    cn: 该用组合却用了继承
+  - en: Equals/hash or ownership bugs that only show in tests
+    cn: equals/hash 或所有权 bug 只在测试里出现
+  session_angles:
+  - en: CRC / responsibility sketch before opening the editor
+    cn: 打开编辑器前先画职责草图
+  - en: Write the failing test that names the invariant
+    cn: 先写点名不变量的失败测试
+  tutoring:
+  - en: 'Lecture sync for CSCI1520: bilingual walkthrough of Classes, objects, encapsulation, and invariants
+      → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities and collaborators
+      → Testing objects and mutable state so tutorial language matches.'
+    cn: 按 CSCI1520 同步跟课：用中英双语把「类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Classes, objects, encapsulation, and invariants question shapes for
+      this course.'
+    cn: 考前突击：按本课「类、对象、封装与不变量」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI1520 cover?
+    q_cn: CSCI1520 学什么？
+    a_en: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+      Design before typing — responsibilities and collaborators; Testing objects and mutable state…. Say
+      which week or assessment you are on when booking.
+    a_cn: 类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI2100
   title: Data Structures
+  theme: algorithms
+  meta_description_en: CSCI2100 tutoring (Data Structures). Stuck on Complexity — Big-O, recurrence, and
+    arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'CSCI2100 Data Structures at The Chinese University of Hong Kong: Complexity — Big-O, recurrence,
+    and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching
+    families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants, complexity claims, and code
+    must stay aligned under time pressure. Tutoring rebuilds that syllabus arc, then debugs the lab or
+    assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI2100，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI2100 Data Structures at The Chinese University of Hong Kong.
+    Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues,
+    trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+    MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI2100（香港中文大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for CSCI2100: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 CSCI2100 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI2100 cover?
+    q_cn: CSCI2100 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI2120
   title: Introduction to Software Engineering
+  theme: web-mobile
+  meta_description_en: CSCI2120 tutoring (Introduction to Software Engineering). Stuck on Requirements
+    — user stories, use cases, acceptance criteria? Bilingual Chinese/Englis…
+  lead_en: 'CSCI2120 Introduction to Software Engineering at The Chinese University of Hong Kong: Requirements
+    — user stories, use cases, acceptance criteria → Design — modularity, APIs, and maintainability →
+    Git workflows and code review habits → Testing — unit, integration, and demo evidence…. Specs, teamwork,
+    and demo evidence matter as much as whether the feature runs. Tutoring rebuilds that syllabus arc,
+    then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI2120，主线是需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+    习惯 → 测试 — 单元、集成与 demo 证据。规格、协作和 demo 证据，往往和「功能能不能跑」一样重要。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI2120 Introduction to Software Engineering at The Chinese University
+    of Hong Kong. Covered topics: Requirements — user stories, use cases, acceptance criteria; Design
+    — modularity, APIs, and maintainability; Git workflows and code review habits; Testing — unit, integration,
+    and demo evidence; HTTP / backend or UI structure the course actually uses. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI2120（香港中文大学）一对一辅导。覆盖主题包括需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code
+    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Requirements — user stories, use cases, acceptance criteria
+    cn: 需求 — user story、use case、验收标准
+  - en: Design — modularity, APIs, and maintainability
+    cn: 设计 — 模块化、API 与可维护性
+  - en: Git workflows and code review habits
+    cn: Git 工作流与 code review 习惯
+  - en: Testing — unit, integration, and demo evidence
+    cn: 测试 — 单元、集成与 demo 证据
+  - en: HTTP / backend or UI structure the course actually uses
+    cn: 课程实际用的 HTTP / 后端或 UI 结构
+  - en: Iteration planning and defending design in demos
+    cn: 迭代规划与在 demo 中为设计辩护
+  stuck:
+  - en: Feature works; demo cannot explain design trade-offs
+    cn: 功能能跑，demo 讲不清设计权衡
+  - en: Tests pass locally; CI or tutor demo fails on edges
+    cn: 本地测试能过；CI 或 tutor demo 在边界挂
+  - en: Team Git history messy after a bad merge
+    cn: 错误合并后团队 Git 历史一团糟
+  session_angles:
+  - en: Map interface → tests → demo narrative before coding
+    cn: 写代码前先对齐接口 → 测试 → demo 叙述
+  - en: Own one vertical slice end-to-end
+    cn: 端到端拿下一小条垂直切片
+  tutoring:
+  - en: 'Lecture sync for CSCI2120: bilingual walkthrough of Requirements — user stories, use cases, acceptance
+      criteria → Design — modularity, APIs, and maintainability → Git workflows and code review habits
+      → Testing — unit, integration, and demo evidence so tutorial language matches.'
+    cn: 按 CSCI2120 同步跟课：用中英双语把「需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+      习惯」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Requirements — user stories, use cases, acceptance criteria question
+      shapes for this course.'
+    cn: 考前突击：按本课「需求 — user story、use case、验收标准」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI2120 cover?
+    q_cn: CSCI2120 学什么？
+    a_en: Requirements — user stories, use cases, acceptance criteria; Design — modularity, APIs, and
+      maintainability; Git workflows and code review habits; Testing — unit, integration, and demo evidence….
+      Say which week or assessment you are on when booking.
+    a_cn: 需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code review 习惯、测试 — 单元、集成与 demo 证据。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI3150
   title: Introduction to Operating Systems
+  theme: systems
+  meta_description_en: CSCI3150 tutoring (Introduction to Operating Systems). Stuck on OS architecture
+    — kernel vs user, system calls, interrupts? Bilingual Chinese/English help.
+  lead_en: 'CSCI3150 Introduction to Operating Systems at The Chinese University of Hong Kong: OS architecture
+    — kernel vs user, system calls, interrupts → Processes, threads, PCBs, and scheduling → Concurrency
+    — mutexes, semaphores, condition variables, deadlock → Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)….
+    Processes, memory, concurrency, and file-system ideas stack faster than labs can catch up. Tutoring
+    rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI3150，主线是操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁 → 虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。进程、内存、并发和文件系统叠得比 Lab 跟得上的速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI3150 Introduction to Operating Systems at The Chinese University
+    of Hong Kong. Covered topics: OS architecture — kernel vs user, system calls, interrupts; Processes,
+    threads, PCBs, and scheduling; Concurrency — mutexes, semaphores, condition variables, deadlock; Virtual
+    memory — paging, TLB, replacement (FIFO/LRU/CLOCK); File systems — inodes, allocation, journaling,
+    protection. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
+    on.'
+  overview_cn: CSCI3150（香港中文大学）一对一辅导。覆盖主题包括操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存
+    — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: OS architecture — kernel vs user, system calls, interrupts
+    cn: 操作系统结构 — 内核/用户态、系统调用、中断
+  - en: Processes, threads, PCBs, and scheduling
+    cn: 进程、线程、PCB 与调度
+  - en: Concurrency — mutexes, semaphores, condition variables, deadlock
+    cn: 并发 — mutex、信号量、条件变量、死锁
+  - en: Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK)
+    cn: 虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）
+  - en: File systems — inodes, allocation, journaling, protection
+    cn: 文件系统 — inode、分配、日志、保护
+  - en: C/Linux labs tying lectures to real behaviour
+    cn: 把课接到真实行为的 C/Linux Lab
+  stuck:
+  - en: Lecture process model clear; fork/wait lab does not match
+    cn: 课上进程模型清楚，fork/wait Lab 却对不上
+  - en: Race or deadlock only under timing you cannot reproduce
+    cn: 竞态 / 死锁只在某种时序下出现，复现不了
+  - en: Paging / TLB / replacement mix up when the exam figure changes
+    cn: 考试换图，分页 / TLB / 置换就搅在一起
+  session_angles:
+  - en: Draw process / lock / page path before changing code
+    cn: 改代码前先画进程 / 锁 / 页路径
+  - en: Reproduce the race, then patch the root cause
+    cn: 先复现竞态，再修根因
+  tutoring:
+  - en: 'Lecture sync for CSCI3150: bilingual walkthrough of OS architecture — kernel vs user, system
+      calls, interrupts → Processes, threads, PCBs, and scheduling → Concurrency — mutexes, semaphores,
+      condition variables, deadlock → Virtual memory — paging, TLB, replacement (FIFO/LRU/CLOCK) so tutorial
+      language matches.'
+    cn: 按 CSCI3150 同步跟课：用中英双语把「操作系统结构 — 内核/用户态、系统调用、中断 → 进程、线程、PCB 与调度 → 并发 — mutex、信号量、条件变量、死锁」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on OS architecture — kernel vs user, system calls, interrupts question
+      shapes for this course.'
+    cn: 考前突击：按本课「操作系统结构 — 内核/用户态、系统调用、中断」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI3150 cover?
+    q_cn: CSCI3150 学什么？
+    a_en: OS architecture — kernel vs user, system calls, interrupts; Processes, threads, PCBs, and scheduling;
+      Concurrency — mutexes, semaphores, condition variables, deadlock; Virtual memory — paging, TLB,
+      replacement (FIFO/LRU/CLOCK)…. Say which week or assessment you are on when booking.
+    a_cn: 操作系统结构 — 内核/用户态、系统调用、中断、进程、线程、PCB 与调度、并发 — mutex、信号量、条件变量、死锁、虚拟内存 — 分页、TLB、置换（FIFO/LRU/CLOCK）。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI3160
   title: Design and Analysis of Algorithms
+  theme: algorithms
+  meta_description_en: CSCI3160 tutoring (Design and Analysis of Algorithms). Stuck on Complexity — Big-O,
+    recurrence, and arguing bounds? Bilingual Chinese/English help.
+  lead_en: 'CSCI3160 Design and Analysis of Algorithms at The Chinese University of Hong Kong: Complexity
+    — Big-O, recurrence, and arguing bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    → Sorting and searching families → Graph algorithms — BFS/DFS, shortest paths, MSTs…. Invariants,
+    complexity claims, and code must stay aligned under time pressure. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI3160，主线是复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族 → 图算法 — BFS/DFS、最短路、最小生成树。限时下不变量、复杂度结论和代码必须说的是同一件事。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI3160 Design and Analysis of Algorithms at The Chinese University
+    of Hong Kong. Covered topics: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists,
+    stacks, queues, trees, heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS,
+    shortest paths, MSTs; Greedy, divide-and-conquer, and dynamic programming patterns. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI3160（香港中文大学）一对一辅导。覆盖主题包括复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Complexity — Big-O, recurrence, and arguing bounds
+    cn: 复杂度 — Big-O、递推与界的论证
+  - en: Core ADTs — lists, stacks, queues, trees, heaps, hash tables
+    cn: 核心 ADT — 表、栈、队列、树、堆、哈希表
+  - en: Sorting and searching families
+    cn: 排序与查找族
+  - en: Graph algorithms — BFS/DFS, shortest paths, MSTs
+    cn: 图算法 — BFS/DFS、最短路、最小生成树
+  - en: Greedy, divide-and-conquer, and dynamic programming patterns
+    cn: 贪心、分治与动态规划模式
+  - en: Writing proofs / invariants that match the code
+    cn: 写出和代码一致的证明 / 不变量
+  stuck:
+  - en: Can follow a worked DP example; blank page under time pressure
+    cn: 能看懂 DP 例题，限时白纸开不了头
+  - en: Complexity claim and implementation disagree
+    cn: 复杂度结论和实现说的不是同一件事
+  - en: Graph algorithm chosen wrong for the constraint set
+    cn: 约束条件下选错了图算法
+  session_angles:
+  - en: State invariant and complexity before coding
+    cn: 写代码前先写不变量和复杂度
+  - en: Reduce the problem to a known pattern, then specialise
+    cn: 先归到已知模式，再特化
+  tutoring:
+  - en: 'Lecture sync for CSCI3160: bilingual walkthrough of Complexity — Big-O, recurrence, and arguing
+      bounds → Core ADTs — lists, stacks, queues, trees, heaps, hash tables → Sorting and searching families
+      → Graph algorithms — BFS/DFS, shortest paths, MSTs so tutorial language matches.'
+    cn: 按 CSCI3160 同步跟课：用中英双语把「复杂度 — Big-O、递推与界的论证 → 核心 ADT — 表、栈、队列、树、堆、哈希表 → 排序与查找族」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Complexity — Big-O, recurrence, and arguing bounds question shapes
+      for this course.'
+    cn: 考前突击：按本课「复杂度 — Big-O、递推与界的论证」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI3160 cover?
+    q_cn: CSCI3160 学什么？
+    a_en: Complexity — Big-O, recurrence, and arguing bounds; Core ADTs — lists, stacks, queues, trees,
+      heaps, hash tables; Sorting and searching families; Graph algorithms — BFS/DFS, shortest paths,
+      MSTs…. Say which week or assessment you are on when booking.
+    a_cn: 复杂度 — Big-O、递推与界的论证、核心 ADT — 表、栈、队列、树、堆、哈希表、排序与查找族、图算法 — BFS/DFS、最短路、最小生成树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI3230
   title: Fundamentals of Artificial Intelligence
+  theme: machine-learning
+  meta_description_en: CSCI3230 tutoring (Fundamentals of Artificial…). Stuck on Neural net basics — layers,
+    activations, backprop intuition? Bilingual Chinese/English help.
+  lead_en: 'CSCI3230 Fundamentals of Artificial Intelligence at The Chinese University of Hong Kong: Neural
+    net basics — layers, activations, backprop intuition → CNNs / RNNs / Transformers when the course
+    uses them → Losses, optimisers, and training loops → Regularisation — dropout, weight decay, early
+    stopping…. Architectures and loss jargon outrun the debugging loop when shapes and gradients fail.
+    Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI3230，主线是神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环 →
+    正则 — dropout、权重衰减、早停。结构和 loss 术语跑得比 debug 循环快，一遇到维度或梯度问题就停住。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI3230 Fundamentals of Artificial Intelligence at The Chinese
+    University of Hong Kong. Covered topics: Neural net basics — layers, activations, backprop intuition;
+    CNNs / RNNs / Transformers when the course uses them; Losses, optimisers, and training loops; Regularisation
+    — dropout, weight decay, early stopping; Shape debugging and common framework errors. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI3230（香港中文大学）一对一辅导。覆盖主题包括神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则
+    — dropout、权重衰减、早停。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Neural net basics — layers, activations, backprop intuition
+    cn: 神经网络基础 — 层、激活、反向传播直觉
+  - en: CNNs / RNNs / Transformers when the course uses them
+    cn: 课程用到的 CNN / RNN / Transformer
+  - en: Losses, optimisers, and training loops
+    cn: 损失函数、优化器与训练循环
+  - en: Regularisation — dropout, weight decay, early stopping
+    cn: 正则 — dropout、权重衰减、早停
+  - en: Shape debugging and common framework errors
+    cn: 维度 debug 与常见框架报错
+  - en: Eval protocol and reporting that matches the brief
+    cn: 与 brief 对齐的评估协议与报告
+  stuck:
+  - en: Forward pass runs; loss NaNs or never decreases
+    cn: 前向能跑；loss 变 NaN 或一直不降
+  - en: Architecture named correctly; tensor shapes still wrong
+    cn: 结构名字说对了，张量维度仍错
+  - en: Cannot explain why this model fits the task in the write-up
+    cn: 报告里说不清为何这个模型适合该任务
+  session_angles:
+  - en: Print shapes at each block before tuning hyperparameters
+    cn: 调超参前先把每块维度打出来
+  - en: Tie architecture choice back to the data modality
+    cn: 把结构选择拉回数据模态
+  tutoring:
+  - en: 'Lecture sync for CSCI3230: bilingual walkthrough of Neural net basics — layers, activations,
+      backprop intuition → CNNs / RNNs / Transformers when the course uses them → Losses, optimisers,
+      and training loops → Regularisation — dropout, weight decay, early stopping so tutorial language
+      matches.'
+    cn: 按 CSCI3230 同步跟课：用中英双语把「神经网络基础 — 层、激活、反向传播直觉 → 课程用到的 CNN / RNN / Transformer → 损失函数、优化器与训练循环」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Neural net basics — layers, activations, backprop intuition question
+      shapes for this course.'
+    cn: 考前突击：按本课「神经网络基础 — 层、激活、反向传播直觉」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI3230 cover?
+    q_cn: CSCI3230 学什么？
+    a_en: Neural net basics — layers, activations, backprop intuition; CNNs / RNNs / Transformers when
+      the course uses them; Losses, optimisers, and training loops; Regularisation — dropout, weight decay,
+      early stopping…. Say which week or assessment you are on when booking.
+    a_cn: 神经网络基础 — 层、激活、反向传播直觉、课程用到的 CNN / RNN / Transformer、损失函数、优化器与训练循环、正则 — dropout、权重衰减、早停。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI3320
   title: Fundamentals of Machine Learning
+  theme: machine-learning
+  meta_description_en: CSCI3320 tutoring (Fundamentals of Machine Learning). Stuck on Supervised learning
+    — linear/logistic models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'CSCI3320 Fundamentals of Machine Learning at The Chinese University of Hong Kong: Supervised
+    learning — linear/logistic models, trees, SVMs → Train / validation / test splits and leakage traps
+    → Features, scaling, and model selection → Metrics — accuracy, precision/recall, ROC, calibration….
+    Method names blur until pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI3320，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI3320 Fundamentals of Machine Learning at The Chinese University
+    of Hong Kong. Covered topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation
+    / test splits and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+    ROC, calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI3320（香港中文大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 —
+    准确率、精确率/召回、ROC、校准。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
+  stuck:
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
+  session_angles:
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
+  tutoring:
+  - en: 'Lecture sync for CSCI3320: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 CSCI3320 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI3320 cover?
+    q_cn: CSCI3320 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CSCI4180
   title: Introduction to Cloud Computing and Storage
+  theme: systems
+  meta_description_en: CSCI4180 tutoring (Introduction to Cloud Computing…). Stuck on Models of distribution
+    — nodes, links, partial failure? Bilingual Chinese/English help.
+  lead_en: 'CSCI4180 Introduction to Cloud Computing and Storage at The Chinese University of Hong Kong:
+    Models of distribution — nodes, links, partial failure → RPC, messaging, and serialisation basics
+    → Consistency, replication, and consensus intuition → Clocks, ordering, and concurrency control….
+    Partial failure and consistency models make “it worked on my node” meaningless. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CSCI4180，主线是分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉 → 时钟、排序与并发控制。部分失效和一致性模型会让「我这台节点能跑」变得毫无意义。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CSCI4180 Introduction to Cloud Computing and Storage at The Chinese
+    University of Hong Kong. Covered topics: Models of distribution — nodes, links, partial failure; RPC,
+    messaging, and serialisation basics; Consistency, replication, and consensus intuition; Clocks, ordering,
+    and concurrency control; Fault tolerance and idempotent design. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CSCI4180（香港中文大学）一对一辅导。覆盖主题包括分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Models of distribution — nodes, links, partial failure
+    cn: 分布模型 — 节点、链路、部分失效
+  - en: RPC, messaging, and serialisation basics
+    cn: RPC、消息与序列化基础
+  - en: Consistency, replication, and consensus intuition
+    cn: 一致性、复制与共识直觉
+  - en: Clocks, ordering, and concurrency control
+    cn: 时钟、排序与并发控制
+  - en: Fault tolerance and idempotent design
+    cn: 容错与幂等设计
+  - en: Lab systems — tracing failures across components
+    cn: Lab 系统 — 跨组件追踪故障
+  stuck:
+  - en: Happy path works; partition or retry logic breaks state
+    cn: 快乐路径能跑；分区或重试逻辑弄坏状态
+  - en: Consistency model named; behaviour under failure unclear
+    cn: 一致性模型名字会背，失效下行为说不清
+  - en: Logs from multiple nodes do not tell one story
+    cn: 多节点日志拼不成一个故事
+  session_angles:
+  - en: Draw the failure scenario before changing code
+    cn: 改代码前先画失效场景
+  - en: Make retries idempotent on purpose
+    cn: 有意识地把重试做成幂等
+  tutoring:
+  - en: 'Lecture sync for CSCI4180: bilingual walkthrough of Models of distribution — nodes, links, partial
+      failure → RPC, messaging, and serialisation basics → Consistency, replication, and consensus intuition
+      → Clocks, ordering, and concurrency control so tutorial language matches.'
+    cn: 按 CSCI4180 同步跟课：用中英双语把「分布模型 — 节点、链路、部分失效 → RPC、消息与序列化基础 → 一致性、复制与共识直觉」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Models of distribution — nodes, links, partial failure question shapes
+      for this course.'
+    cn: 考前突击：按本课「分布模型 — 节点、链路、部分失效」等题型做限时练习。
+  faq:
+  - q_en: What does CSCI4180 cover?
+    q_cn: CSCI4180 学什么？
+    a_en: Models of distribution — nodes, links, partial failure; RPC, messaging, and serialisation basics;
+      Consistency, replication, and consensus intuition; Clocks, ordering, and concurrency control…. Say
+      which week or assessment you are on when booking.
+    a_cn: 分布模型 — 节点、链路、部分失效、RPC、消息与序列化基础、一致性、复制与共识直觉、时钟、排序与并发控制。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CS5187
   title: Vision and Image Processing
   material: cs5187-vision-and-image
   theme: machine-learning
-  meta_description_en: CS5187 CUHK tutoring (Vision and Image Processing). Lectures outpacing note-taking?
-    Bilingual Chinese/English help.
-  lead_en: CS5187 Vision And Image at The Chinese University of Hong Kong is where lecture speed and dense
-    vocabulary outrun note-taking. The hard part is turning that arc into a method you can repeat on the
-    next brief — not rereading slides the night before.
-  lead_cn: 在香港中文大学上 CS5187，课速一快、术语一密，笔记一断档后面就更难补。
-  overview_en: CS5187 Vision And Image sits in computer science coursework. Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
-    are below.
-  overview_cn: CS5187 是香港中文大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: CS5187 tutoring (Vision and Image Processing). Stuck on Image formation, filtering,
+    and features? Bilingual Chinese/English help.
+  lead_en: 'CS5187 Vision and Image Processing at The Chinese University of Hong Kong: Image formation,
+    filtering, and features → Classical detectors / descriptors when taught → Learning-based vision pipelines
+    when in syllabus → Datasets, metrics, and leakage in vision tasks…. Pipelines fail on shape, colourspace,
+    or eval protocol long before “the model”. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CS5187，主线是成像、滤波与特征 → 课程中的经典检测 / 描述子 → 大纲中的学习式视觉流水线 → 视觉任务中的数据、指标与泄漏。往往先倒在维度、色彩空间或评估协议上，而不是「模型本身」。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS5187 Vision and Image Processing at The Chinese University of
+    Hong Kong. Covered topics: Image formation, filtering, and features; Classical detectors / descriptors
+    when taught; Learning-based vision pipelines when in syllabus; Datasets, metrics, and leakage in vision
+    tasks; Debugging shapes, dtypes, and preprocessing. Bring your brief, failing test, lecture slide
+    screenshot, or the topic name you are stuck on.'
+  overview_cn: CS5187（香港中文大学）一对一辅导。覆盖主题包括成像、滤波与特征、课程中的经典检测 / 描述子、大纲中的学习式视觉流水线、视觉任务中的数据、指标与泄漏。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Lecture catch-up in Chinese and English
-    cn: 中英双语补课与知识点梳理
-  - en: Assignment approach and debugging
-    cn: 作业思路与调试
-  - en: Project structure and write-up feedback
-    cn: Project 结构与报告反馈
-  - en: Exam topic maps on weak areas
-    cn: 针对薄弱点的考点地图
-  - en: Tools the course actually uses (Git, notebooks, LaTeX)
-    cn: 课程真正用到的工具（Git、notebook、LaTeX）
+  - en: Image formation, filtering, and features
+    cn: 成像、滤波与特征
+  - en: Classical detectors / descriptors when taught
+    cn: 课程中的经典检测 / 描述子
+  - en: Learning-based vision pipelines when in syllabus
+    cn: 大纲中的学习式视觉流水线
+  - en: Datasets, metrics, and leakage in vision tasks
+    cn: 视觉任务中的数据、指标与泄漏
+  - en: Debugging shapes, dtypes, and preprocessing
+    cn: debug 维度、dtype 与预处理
+  - en: Reporting qualitative + quantitative evidence
+    cn: 报告定性 + 定量证据
   stuck:
-  - en: Lectures outpacing note-taking
-    cn: 课速度快于记笔记速度
-  - en: Stacked deadlines across labs and projects
-    cn: Lab 与 Project 截止日期叠在一起
-  - en: Not knowing what “good enough” looks like for the rubric
-    cn: 不清楚评分量表眼里的“够好”
-  - en: Lecture vocabulary for CS5187 outruns bilingual notes
-    cn: CS5187 的课堂术语跑在双语笔记前面
+  - en: Preprocessing differs between notebook and submission
+    cn: notebook 和提交的预处理不一致
+  - en: Metric improves; qualitative failures ignored
+    cn: 指标涨了，定性失败被忽略
+  - en: Colourspace / channel bugs that look like model failure
+    cn: 色彩空间 / 通道 bug 看起来像模型失败
   session_angles:
-  - en: Start from your materials and the nearest deadline
-    cn: 从你的材料与最近 DDL 开始
-  - en: Leave with a concrete next-step checklist
-    cn: 课后带走一份可执行的下一步清单
-  - en: Book follow-ups only where they still move the grade
-    cn: 只在还能拉动成绩的地方约后续课
+  - en: Visualise intermediates before tuning the model
+    cn: 调模型前先可视化中间结果
+  - en: Freeze preprocessing, then change one module
+    cn: 先冻住预处理，再改一个模块
   tutoring:
-  - en: 'Lecture sync for CS5187: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CS5187 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CS5187: bilingual walkthrough of Image formation, filtering, and features →
+      Classical detectors / descriptors when taught → Learning-based vision pipelines when in syllabus
+      → Datasets, metrics, and leakage in vision tasks so tutorial language matches.'
+    cn: 按 CS5187 同步跟课：用中英双语把「成像、滤波与特征 → 课程中的经典检测 / 描述子 → 大纲中的学习式视觉流水线」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Image formation, filtering, and features question shapes for this
+      course.'
+    cn: 考前突击：按本课「成像、滤波与特征」等题型做限时练习。
   sample_slides:
     title_en: CS5187 — sample slides
     title_cn: CS5187 — 辅导课件样例
@@ -124,6 +776,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does CS5187 cover?
+    q_cn: CS5187 学什么？
+    a_en: Image formation, filtering, and features; Classical detectors / descriptors when taught; Learning-based
+      vision pipelines when in syllabus; Datasets, metrics, and leakage in vision tasks…. Say which week
+      or assessment you are on when booking.
+    a_cn: 成像、滤波与特征、课程中的经典检测 / 描述子、大纲中的学习式视觉流水线、视觉任务中的数据、指标与泄漏。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -131,63 +794,50 @@ courses:
 - code: SDSC8009
   title: Datamining
   material: sdsc8009-datamining
-  theme: data-science
-  meta_description_en: SDSC8009 CUHK tutoring (Datamining). Weekly lecture arc moves on before last week’s
-    method is solid? Bilingual Chinese/English help.
-  lead_en: SDSC8009 Datamining at The Chinese University of Hong Kong is where messy notebooks and weak
-    method stories lose marks even when a model runs. The hard part is turning that arc into a method
-    you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在香港中文大学上 SDSC8009，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
-  overview_en: SDSC8009 Datamining sits in data science & analytics. There is a weekly arc (about week
-    1–6) plus assessed work that expects you to apply the same ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: SDSC8009 是香港中文大学「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着数据清洗 / 分析表、计算机体系结构与组成、数学基础与证明习惯这些点转。大约第
-    1–6 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: SDSC8009 tutoring (Datamining). Stuck on Datamining? Bilingual Chinese/English
+    help.
+  lead_en: 'SDSC8009 Datamining at The Chinese University of Hong Kong: Datamining → Core ideas in Datamining
+    → Assignments / labs for Datamining → Exam drills aligned to Datamining. Lecture speed and dense vocabulary
+    outrun note-taking before methods stick. Tutoring rebuilds that syllabus arc, then debugs the lab
+    or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 SDSC8009，主线是Datamining → Datamining 的核心概念 → Datamining 的作业 / Lab → 对准 Datamining 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for SDSC8009 Datamining at The Chinese University of Hong Kong. Covered
+    topics: Datamining; Core ideas in Datamining; Assignments / labs for Datamining; Exam drills aligned
+    to Datamining. Bring your brief, failing test, lecture slide screenshot, or the topic name you are
+    stuck on.'
+  overview_cn: SDSC8009（香港中文大学）一对一辅导。覆盖主题包括Datamining、Datamining 的核心概念、Datamining 的作业 / Lab、对准 Datamining
+    的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Data wrangling / analytics tables
-    cn: 数据清洗 / 分析表
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Web / mobile app structure
-    cn: Web / 移动应用结构
-  - en: 'Week 1: course introduction'
-    cn: 第 1 周：course introduction
-  - en: 'Week 1: lecture notes detailed'
-    cn: 第 1 周：lecture notes detailed
-  - en: 'Week 1: lecture notes simple'
-    cn: 第 1 周：lecture notes simple
+  - en: Datamining
+    cn: Datamining
+  - en: Core ideas in Datamining
+    cn: Datamining 的核心概念
+  - en: Assignments / labs for Datamining
+    cn: Datamining 的作业 / Lab
+  - en: Exam drills aligned to Datamining
+    cn: 对准 Datamining 的考前练习
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“solution”) makes sense in class, freezes you alone
-    cn: 作业 brief（「solution」）课上听得懂，自己对着就停住
-  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
-    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
-  - en: Tool output produced, write-up cannot defend method choice
-    cn: 工具输出有了，报告却说不清为何选这个方法
-  - en: Messy merges and silent NaNs that break later metrics
-    cn: 混乱的 merge 与静默 NaN，后面指标全歪
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for SDSC8009: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 SDSC8009 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as solution, assignment, with you at the keyboard.'
-    cn: 作业辅导：针对 solution, assignment 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for SDSC8009: bilingual walkthrough of Datamining → Core ideas in Datamining → Assignments
+      / labs for Datamining → Exam drills aligned to Datamining so tutorial language matches.'
+    cn: 按 SDSC8009 同步跟课：用中英双语把「Datamining → Datamining 的核心概念 → Datamining 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Datamining question shapes for this course.'
+    cn: 考前突击：按本课「Datamining」等题型做限时练习。
   sample_slides:
     title_en: SDSC8009 — sample slides
     title_cn: SDSC8009 — 辅导课件样例
@@ -237,6 +887,16 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does SDSC8009 cover?
+    q_cn: SDSC8009 学什么？
+    a_en: Datamining; Core ideas in Datamining; Assignments / labs for Datamining; Exam drills aligned
+      to Datamining. Say which week or assessment you are on when booking.
+    a_cn: Datamining、Datamining 的核心概念、Datamining 的作业 / Lab、对准 Datamining 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -245,54 +905,58 @@ courses:
   title: Computer Organization
   material: cs2115-computer-organization
   theme: systems
-  meta_description_en: CS2115 CUHK tutoring (Computer Organization). Weekly lecture arc moves on before
-    last week’s method is solid? Bilingual Chinese/English help.
-  lead_en: CS2115 Computer Organization at The Chinese University of Hong Kong is where abstractions stack
-    fast and labs fail for reasons that look opaque. The hard part is turning that arc into a method you
-    can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在香港中文大学上 CS2115，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: CS2115 Computer Organization sits in systems, networks & architecture. There is a weekly
-    arc (about week 1–1) plus assessed work that expects you to apply the same ideas under deadline pressure.
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.
-  overview_cn: CS2115 是香港中文大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。大约第 1–1 周有连续周课主线，作业会要求你在 DDL 下用同一套方法。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: CS2115 tutoring (Computer Organization). Stuck on Data representation — ints, floats,
+    endianness, bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'CS2115 Computer Organization at The Chinese University of Hong Kong: Data representation —
+    ints, floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+    control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly,
+    data representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港中文大学上 CS2115，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CS2115 Computer Organization at The Chinese University of Hong
+    Kong. Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA
+    basics and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy
+    — cache, locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: CS2115（香港中文大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 —
+    缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: 'Week 1: CS2115 HW1 model solutions'
-    cn: 第 1 周：CS2115 HW1 model solutions
-  - en: 'Week 1: HW 1'
-    cn: 第 1 周：HW 1
-  - en: 'Week 1: HW 1 answer student'
-    cn: 第 1 周：HW 1 answer student
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
   stuck:
-  - en: Weekly lecture arc moves on before last week’s method is solid
-    cn: 周课往前赶，上一周的方法还没练稳
-  - en: Assignment brief (“CS2115 HW1 model solutions”) makes sense in class, freezes you alone
-    cn: 作业 brief（「CS2115 HW1 model solutions」）课上听得懂，自己对着就停住
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
-  - en: Man pages and RFCs denser than lecture pace
-    cn: Man page / RFC 比课堂节奏更密
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
   session_angles:
-  - en: Rebuild this week’s lecture idea before touching the homework
-    cn: 先重建当周讲座概念，再碰作业
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Draw the call / packet path before changing code
-    cn: 改代码前先画出调用 / 报文路径
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
   tutoring:
-  - en: 'Lecture sync for CS2115: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 CS2115 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as CS2115 HW1 model solutions, with you at
-      the keyboard.'
-    cn: 作业辅导：针对 CS2115 HW1 model solutions 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for CS2115: bilingual walkthrough of Data representation — ints, floats, endianness,
+      bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and pipelining
+      intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial language matches.'
+    cn: 按 CS2115 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
   sample_slides:
     title_en: CS2115 — sample slides
     title_cn: CS2115 — 辅导课件样例
@@ -343,6 +1007,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does CS2115 cover?
+    q_cn: CS2115 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

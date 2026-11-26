@@ -8,57 +8,59 @@ courses:
   material: ITSD010 Computing and Cybersecurity Fundamentals
   code: ITSD010
   theme: security
-  meta_description_en: ITSD010 SIM tutoring (Itsd010 Computing And…). Assignment brief (“CA2 Oct 2026”)
-    makes sense in class, freezes you alone? Bilingual Chinese/English help.
-  lead_en: ITSD010 Itsd010 Computing And Cybersecurity Fundamentals at Singapore Institute of Management
-    is where threat models, crypto vocabulary, and lab setup form a terminology wall. The hard part is
-    turning that arc into a method you can repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在新加坡管理学院上 ITSD010，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
-  overview_en: ITSD010 Itsd010 Computing And Cybersecurity Fundamentals sits in security & privacy. Evidence
-    from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: ITSD010 是新加坡管理学院「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着安全 / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: ITSD010 tutoring (Itsd010 Computing And…). Stuck on Threat modelling — assets,
+    attackers, trust boundaries? Bilingual Chinese/English help.
+  lead_en: 'ITSD010 Itsd010 Computing And Cybersecurity Fundamentals at Singapore Institute of Management:
+    Threat modelling — assets, attackers, trust boundaries → Crypto primitives — symmetric, public-key,
+    hashing, TLS intuition → Authentication, authorisation, and session security → Common web / network
+    vulnerabilities when in syllabus…. Threat models and crypto vocabulary form a wall before the lab
+    even builds. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在新加坡管理学院上 ITSD010，主线是威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全 → 大纲中的常见 Web
+    / 网络漏洞。威胁模型和密码学术语先堆成一堵墙，Lab 还没编译就劝退。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for ITSD010 Itsd010 Computing And Cybersecurity Fundamentals at Singapore
+    Institute of Management. Covered topics: Threat modelling — assets, attackers, trust boundaries; Crypto
+    primitives — symmetric, public-key, hashing, TLS intuition; Authentication, authorisation, and session
+    security; Common web / network vulnerabilities when in syllabus; Secure coding habits and failure
+    modes. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: ITSD010（新加坡管理学院）一对一辅导。覆盖主题包括威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见
+    Web / 网络漏洞。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
-  - en: Threat models and trust boundaries
-    cn: 威胁模型与信任边界
-  - en: Crypto primitives at course depth (not CTF spoilers)
-    cn: 课业深度的密码学原语（非 CTF 剧透）
-  - en: Web / network attack patterns the syllabus names
-    cn: 大纲点名的 Web / 网络攻击模式
-  - en: Secure coding habits for assignments
-    cn: 作业里的安全编码习惯
+  - en: Threat modelling — assets, attackers, trust boundaries
+    cn: 威胁建模 — 资产、攻击者、信任边界
+  - en: Crypto primitives — symmetric, public-key, hashing, TLS intuition
+    cn: 密码学原语 — 对称、公钥、哈希、TLS 直觉
+  - en: Authentication, authorisation, and session security
+    cn: 认证、授权与会话安全
+  - en: Common web / network vulnerabilities when in syllabus
+    cn: 大纲中的常见 Web / 网络漏洞
+  - en: Secure coding habits and failure modes
+    cn: 安全编码习惯与失败模式
+  - en: Lab setup and reporting findings clearly
+    cn: Lab 环境与把发现写清楚
   stuck:
-  - en: Assignment brief (“CA2 Oct 2026”) makes sense in class, freezes you alone
-    cn: 作业 brief（「CA2 Oct 2026」）课上听得懂，自己对着就停住
-  - en: Lab setup unfinished; report lists tools without a clear finding
-    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
-  - en: Labs that need precise setup before any “hacking”
-    cn: Lab 还没配好环境就急着“黑”
-  - en: Confusing confidentiality, integrity, and availability
-    cn: 把机密性、完整性、可用性搅在一起
-  - en: Reports that list tools without explaining the finding
-    cn: 报告只罗列工具，不解释发现
+  - en: Lab setup unfinished; report lists tools without a finding
+    cn: Lab 环境没配好；报告只罗列工具没有发现
+  - en: Primitive names memorised; wrong tool for the threat
+    cn: 原语名字背过了，威胁却选错工具
+  - en: Crypto math and protocol steps diverge under exam pressure
+    cn: 限时下密码学计算和协议步骤对不上
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Restate the threat model in one paragraph
-    cn: 用一段话重述威胁模型
-  - en: Reproduce the lab outcome, then explain the mechanism
-    cn: 先复现 Lab 结果，再讲清机制
+  - en: Write the threat model before picking a primitive
+    cn: 选原语前先写威胁模型
+  - en: One reproducible finding beats a tool dump
+    cn: 一个可复现发现胜过工具清单
   tutoring:
-  - en: 'Lecture sync for ITSD010: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 ITSD010 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as CA2 Oct 2026, with you at the keyboard.'
-    cn: 作业辅导：针对 CA2 Oct 2026 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for ITSD010: bilingual walkthrough of Threat modelling — assets, attackers, trust
+      boundaries → Crypto primitives — symmetric, public-key, hashing, TLS intuition → Authentication,
+      authorisation, and session security → Common web / network vulnerabilities when in syllabus so tutorial
+      language matches.'
+    cn: 按 ITSD010 同步跟课：用中英双语把「威胁建模 — 资产、攻击者、信任边界 → 密码学原语 — 对称、公钥、哈希、TLS 直觉 → 认证、授权与会话安全」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Threat modelling — assets, attackers, trust boundaries question shapes
+      for this course.'
+    cn: 考前突击：按本课「威胁建模 — 资产、攻击者、信任边界」等题型做限时练习。
   sample_slides:
     title_en: ITSD010 — sample slides
     title_cn: ITSD010 — 辅导课件样例
@@ -109,6 +111,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does ITSD010 cover?
+    q_cn: ITSD010 学什么？
+    a_en: Threat modelling — assets, attackers, trust boundaries; Crypto primitives — symmetric, public-key,
+      hashing, TLS intuition; Authentication, authorisation, and session security; Common web / network
+      vulnerabilities when in syllabus…. Say which week or assessment you are on when booking.
+    a_cn: 威胁建模 — 资产、攻击者、信任边界、密码学原语 — 对称、公钥、哈希、TLS 直觉、认证、授权与会话安全、大纲中的常见 Web / 网络漏洞。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

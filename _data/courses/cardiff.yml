@@ -6,22 +6,85 @@ teaching_folder: cardiff
 courses:
 - code: CM6125
   title: Database Systems
+  theme: databases
+  meta_description_en: CM6125 tutoring (Database Systems). Stuck on ER / relational modelling and normalisation?
+    Bilingual Chinese/English help.
+  lead_en: 'CM6125 Database Systems at Cardiff University: ER / relational modelling and normalisation
+    → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query is slow → Transactions
+    — ACID, isolation, locking…. One wrong schema or join quietly breaks every later query and transaction
+    story. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在卡迪夫大学上 CM6125，主线是ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因 → 事务 — ACID、隔离级别、锁。Schema
+    或 join 偏一点，后面查询和事务叙事会整条链一起歪。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CM6125 Database Systems at Cardiff University. Covered topics:
+    ER / relational modelling and normalisation; SQL — select, join, aggregation, nested queries; Indexes,
+    plans, and why a query is slow; Transactions — ACID, isolation, locking; Integrity constraints and
+    schema evolution. Bring your brief, failing test, lecture slide screenshot, or the topic name you
+    are stuck on.'
+  overview_cn: CM6125（卡迪夫大学）一对一辅导。覆盖主题包括ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: ER / relational modelling and normalisation
+    cn: ER / 关系建模与范式
+  - en: SQL — select, join, aggregation, nested queries
+    cn: SQL — 查询、连接、聚合、嵌套
+  - en: Indexes, plans, and why a query is slow
+    cn: 索引、执行计划与慢查询原因
+  - en: Transactions — ACID, isolation, locking
+    cn: 事务 — ACID、隔离级别、锁
+  - en: Integrity constraints and schema evolution
+    cn: 完整性约束与 Schema 演化
+  - en: Application ↔ DB boundary (ORM / prepared statements)
+    cn: 应用与数据库边界（ORM / 预处理语句）
+  stuck:
+  - en: Join results look right until a duplicate or NULL appears
+    cn: Join 结果看起来对，一出现重复或 NULL 就崩
+  - en: Normalisation on paper; schema in code still denormalised
+    cn: 纸上范式对了，代码里 Schema 仍不规范
+  - en: Transaction / isolation questions collapse under time pressure
+    cn: 限时下事务 / 隔离级别题直接崩盘
+  session_angles:
+  - en: Draw the ER, then write the join checklist
+    cn: 先画 ER，再写 join 清单
+  - en: Explain the plan before tuning indexes
+    cn: 调索引前先说清执行计划
+  tutoring:
+  - en: 'Lecture sync for CM6125: bilingual walkthrough of ER / relational modelling and normalisation
+      → SQL — select, join, aggregation, nested queries → Indexes, plans, and why a query is slow → Transactions
+      — ACID, isolation, locking so tutorial language matches.'
+    cn: 按 CM6125 同步跟课：用中英双语把「ER / 关系建模与范式 → SQL — 查询、连接、聚合、嵌套 → 索引、执行计划与慢查询原因」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on ER / relational modelling and normalisation question shapes for this
+      course.'
+    cn: 考前突击：按本课「ER / 关系建模与范式」等题型做限时练习。
+  faq:
+  - q_en: What does CM6125 cover?
+    q_cn: CM6125 学什么？
+    a_en: ER / relational modelling and normalisation; SQL — select, join, aggregation, nested queries;
+      Indexes, plans, and why a query is slow; Transactions — ACID, isolation, locking…. Say which week
+      or assessment you are on when booking.
+    a_cn: ER / 关系建模与范式、SQL — 查询、连接、聚合、嵌套、索引、执行计划与慢查询原因、事务 — ACID、隔离级别、锁。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CM6123
   title: Software Development Skills
   department: School of Computer Science and Informatics
   material: 05.03.2025-softwaredev
   theme: databases
-  meta_description_en: CM6123 Cardiff tutoring (Software Development Skills). Assignment brief (“Assessment
-    CM6123 1 2024 2025 1”) makes sense in class, freezes you alone?
+  meta_description_en: CM6123 tutoring (Software Development Skills). Stuck on SQL, schema design, and
+    databases? Bilingual Chinese/English help.
   lead_en: CM6123 Software Development Skills at Cardiff University is where one wrong schema or join
     quietly breaks every later query. The hard part is turning that arc into a method you can repeat on
     the next brief — not rereading slides the night before.
   lead_cn: 在卡迪夫大学上 CM6123，Schema 或 join 偏一点，后面查询会整条链一起歪。
-  overview_en: CM6123 Software Development Skills sits in databases & information systems. Evidence from
-    Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when terminology
-    outruns notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks
-    for a method the notebook never made explicit. Sample slides from our concept-review tutoring deck
-    are below.
+  overview_en: CM6123 Software Development Skills sits in databases & information systems. Assessed work
+    expects you to apply lecture ideas under deadline pressure. Students stall when terminology outruns
+    notes, when a demo makes sense in class but not alone, or when the write-up / autograder asks for
+    a method the notebook never made explicit. Sample slides from our concept-review tutoring deck are
+    below.
   overview_cn: CM6123 是卡迪夫大学「数据库与信息系统」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着SQL、Schema 与数据库、软件设计与构造这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
     / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
@@ -38,8 +101,8 @@ courses:
   - en: Indexes, plans, and “why is this slow?”
     cn: 索引、执行计划与“为什么慢”
   stuck:
-  - en: Assignment brief (“Assessment CM6123 1 2024 2025 1”) makes sense in class, freezes you alone
-    cn: 作业 brief（「Assessment CM6123 1 2024 2025 1」）课上听得懂，自己对着就停住
+  - en: Assignment brief makes sense in class, freezes you alone
+    cn: 作业 brief 课上听得懂，自己对着就停住
   - en: Correct-looking SQL that fails hidden test schemas
     cn: 看起来对的 SQL，在隐藏测试 schema 上翻车
   - en: Over-normalised or under-normalised designs
@@ -58,9 +121,8 @@ courses:
   tutoring:
   - en: 'Lecture sync for CM6123: bilingual catch-up so workshop / tutorial language matches the lectures.'
     cn: 按 CM6123 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as Assessment CM6123 1 2024 2025 1, with you
-      at the keyboard.'
-    cn: 作业辅导：针对 Assessment CM6123 1 2024 2025 1 一类评估拆题，你来操作键盘。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   sample_slides:
@@ -119,6 +181,135 @@ courses:
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CMT645
   title: DevOps
+  theme: web-mobile
+  meta_description_en: CMT645 tutoring (DevOps). Stuck on Requirements — user stories, use cases, acceptance
+    criteria? Bilingual Chinese/English help.
+  lead_en: 'CMT645 DevOps at Cardiff University: Requirements — user stories, use cases, acceptance criteria
+    → Design — modularity, APIs, and maintainability → Git workflows and code review habits → Testing
+    — unit, integration, and demo evidence…. Specs, teamwork, and demo evidence matter as much as whether
+    the feature runs. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it
+    breaks.'
+  lead_cn: 在卡迪夫大学上 CMT645，主线是需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+    习惯 → 测试 — 单元、集成与 demo 证据。规格、协作和 demo 证据，往往和「功能能不能跑」一样重要。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CMT645 DevOps at Cardiff University. Covered topics: Requirements
+    — user stories, use cases, acceptance criteria; Design — modularity, APIs, and maintainability; Git
+    workflows and code review habits; Testing — unit, integration, and demo evidence; HTTP / backend or
+    UI structure the course actually uses. Bring your brief, failing test, lecture slide screenshot, or
+    the topic name you are stuck on.'
+  overview_cn: CMT645（卡迪夫大学）一对一辅导。覆盖主题包括需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code
+    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Requirements — user stories, use cases, acceptance criteria
+    cn: 需求 — user story、use case、验收标准
+  - en: Design — modularity, APIs, and maintainability
+    cn: 设计 — 模块化、API 与可维护性
+  - en: Git workflows and code review habits
+    cn: Git 工作流与 code review 习惯
+  - en: Testing — unit, integration, and demo evidence
+    cn: 测试 — 单元、集成与 demo 证据
+  - en: HTTP / backend or UI structure the course actually uses
+    cn: 课程实际用的 HTTP / 后端或 UI 结构
+  - en: Iteration planning and defending design in demos
+    cn: 迭代规划与在 demo 中为设计辩护
+  stuck:
+  - en: Feature works; demo cannot explain design trade-offs
+    cn: 功能能跑，demo 讲不清设计权衡
+  - en: Tests pass locally; CI or tutor demo fails on edges
+    cn: 本地测试能过；CI 或 tutor demo 在边界挂
+  - en: Team Git history messy after a bad merge
+    cn: 错误合并后团队 Git 历史一团糟
+  session_angles:
+  - en: Map interface → tests → demo narrative before coding
+    cn: 写代码前先对齐接口 → 测试 → demo 叙述
+  - en: Own one vertical slice end-to-end
+    cn: 端到端拿下一小条垂直切片
+  tutoring:
+  - en: 'Lecture sync for CMT645: bilingual walkthrough of Requirements — user stories, use cases, acceptance
+      criteria → Design — modularity, APIs, and maintainability → Git workflows and code review habits
+      → Testing — unit, integration, and demo evidence so tutorial language matches.'
+    cn: 按 CMT645 同步跟课：用中英双语把「需求 — user story、use case、验收标准 → 设计 — 模块化、API 与可维护性 → Git 工作流与 code review
+      习惯」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Requirements — user stories, use cases, acceptance criteria question
+      shapes for this course.'
+    cn: 考前突击：按本课「需求 — user story、use case、验收标准」等题型做限时练习。
+  faq:
+  - q_en: What does CMT645 cover?
+    q_cn: CMT645 学什么？
+    a_en: Requirements — user stories, use cases, acceptance criteria; Design — modularity, APIs, and
+      maintainability; Git workflows and code review habits; Testing — unit, integration, and demo evidence….
+      Say which week or assessment you are on when booking.
+    a_cn: 需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code review 习惯、测试 — 单元、集成与 demo 证据。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - code: CMT655
   title: Manipulating and Exploring Data
+  theme: data-science
+  meta_description_en: CMT655 tutoring (Manipulating and Exploring Data). Stuck on Data wrangling — tidy
+    tables, joins, missingness? Bilingual Chinese/English help.
+  lead_en: 'CMT655 Manipulating and Exploring Data at Cardiff University: Data wrangling — tidy tables,
+    joins, missingness → EDA and visualisation that answer a question → Feature hygiene and leakage checks
+    → Simple models / summaries appropriate to the brief…. Messy tables and weak method stories lose marks
+    even when a chart renders. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
+    where it breaks.'
+  lead_cn: 在卡迪夫大学上 CMT655，主线是数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查 → 适合 brief 的简单模型 / 汇总。就算图画出来了，脏表和站不住的方法叙事也会丢分。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for CMT655 Manipulating and Exploring Data at Cardiff University.
+    Covered topics: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer
+    a question; Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief;
+    Method trail the marker can re-run. Bring your brief, failing test, lecture slide screenshot, or the
+    topic name you are stuck on.'
+  overview_cn: CMT655（卡迪夫大学）一对一辅导。覆盖主题包括数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data wrangling — tidy tables, joins, missingness
+    cn: 数据整理 — 整洁表、连接、缺失
+  - en: EDA and visualisation that answer a question
+    cn: 能回答问题的 EDA 与可视化
+  - en: Feature hygiene and leakage checks
+    cn: 特征卫生与泄漏检查
+  - en: Simple models / summaries appropriate to the brief
+    cn: 适合 brief 的简单模型 / 汇总
+  - en: Method trail the marker can re-run
+    cn: 改卷人能复跑的方法轨迹
+  - en: Writing that defends every plot and transform
+    cn: 能为每张图和每步变换辩护的写作
+  stuck:
+  - en: Plot produced; caption cannot defend the choice
+    cn: 图有了，图注说不清为何这样画
+  - en: Joins explode row counts unnoticed
+    cn: Join 把行数炸开却没发现
+  - en: Notebook order unreproducible for the marker
+    cn: notebook 顺序让改卷人无法复现
+  session_angles:
+  - en: State the question, then pick the table grain
+    cn: 先陈述问题，再定表的粒度
+  - en: Keep a transform log beside the notebook
+    cn: 在 notebook 旁保留变换日志
+  tutoring:
+  - en: 'Lecture sync for CMT655: bilingual walkthrough of Data wrangling — tidy tables, joins, missingness
+      → EDA and visualisation that answer a question → Feature hygiene and leakage checks → Simple models
+      / summaries appropriate to the brief so tutorial language matches.'
+    cn: 按 CMT655 同步跟课：用中英双语把「数据整理 — 整洁表、连接、缺失 → 能回答问题的 EDA 与可视化 → 特征卫生与泄漏检查」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data wrangling — tidy tables, joins, missingness question shapes for
+      this course.'
+    cn: 考前突击：按本课「数据整理 — 整洁表、连接、缺失」等题型做限时练习。
+  faq:
+  - q_en: What does CMT655 cover?
+    q_cn: CMT655 学什么？
+    a_en: Data wrangling — tidy tables, joins, missingness; EDA and visualisation that answer a question;
+      Feature hygiene and leakage checks; Simple models / summaries appropriate to the brief…. Say which
+      week or assessment you are on when booking.
+    a_cn: 数据整理 — 整洁表、连接、缺失、能回答问题的 EDA 与可视化、特征卫生与泄漏检查、适合 brief 的简单模型 / 汇总。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

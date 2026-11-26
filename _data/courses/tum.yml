@@ -7,53 +7,59 @@ courses:
 - code: INHN0012
   title: Computer Networking And IT Security
   material: INHN0012 Computer Networking and IT Security
-  theme: security
-  meta_description_en: INHN0012 TUM tutoring (Computer Networking And IT Security). Stuck on lab setup
-    unfinished; report lists tools without a clear finding?
-  lead_en: INHN0012 Computer Networking And IT Security at Technical University of Munich is where threat
-    models, crypto vocabulary, and lab setup form a terminology wall. Tutoring focuses on methods you
-    can reuse on the next brief.
-  lead_cn: 在慕尼黑工业大学上 INHN0012，威胁模型、密码学术语和 Lab 环境叠成一堵术语墙。
-  overview_en: INHN0012 Computer Networking And IT Security sits in security & privacy. Evidence from
-    Students stall when terminology outruns notes, when a demo makes sense in class but not alone, or
-    when the write-up / autograder asks for a method the notebook never made explicit. Sample slides from
-    our concept-review tutoring deck are below.
-  overview_cn: INHN0012 是慕尼黑工业大学「安全与隐私」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、安全 / 隐私威胁模型与实验、数学基础与证明习惯这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: systems
+  meta_description_en: INHN0012 tutoring (Computer Networking And IT Security). Stuck on Layered models
+    (OSI / TCP-IP) and where each job lives? Bilingual Chinese/English help.
+  lead_en: 'INHN0012 Computer Networking And IT Security at Technical University of Munich: Layered models
+    (OSI / TCP-IP) and where each job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing,
+    and forwarding intuition → HTTP/DNS and application-layer protocols…. Layers, packets, and failure
+    modes blur until you can trace one request end-to-end. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在慕尼黑工业大学上 INHN0012，主线是分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉 → HTTP/DNS
+    与应用层协议。分层、报文和故障模式搅在一起，直到你能把一次请求从头跟到尾。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for INHN0012 Computer Networking And IT Security at Technical University
+    of Munich. Covered topics: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs
+    UDP, and reliable delivery; Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer
+    protocols; Congestion, flow control, and performance trade-offs. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: INHN0012（慕尼黑工业大学）一对一辅导。覆盖主题包括分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS
+    与应用层协议。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Distributed systems ideas
-    cn: 分布式系统概念
+  - en: Layered models (OSI / TCP-IP) and where each job lives
+    cn: 分层模型（OSI / TCP-IP）与各层职责
+  - en: Sockets, TCP vs UDP, and reliable delivery
+    cn: Socket、TCP vs UDP 与可靠传输
+  - en: Routing, addressing, and forwarding intuition
+    cn: 路由、编址与转发直觉
+  - en: HTTP/DNS and application-layer protocols
+    cn: HTTP/DNS 与应用层协议
+  - en: Congestion, flow control, and performance trade-offs
+    cn: 拥塞、流控与性能权衡
+  - en: Lab traces — Wireshark / packet walks when required
+    cn: 需要时的抓包 / 报文走读 Lab
   stuck:
-  - en: Lab setup unfinished; report lists tools without a clear finding
-    cn: Lab 环境还没配好；报告只罗列工具没有清晰发现
-  - en: Labs that need precise setup before any “hacking”
-    cn: Lab 还没配好环境就急着“黑”
-  - en: Confusing confidentiality, integrity, and availability
-    cn: 把机密性、完整性、可用性搅在一起
-  - en: Reports that list tools without explaining the finding
-    cn: 报告只罗列工具，不解释发现
-  - en: Lecture vocabulary for INHN0012 outruns bilingual notes
-    cn: INHN0012 的课堂术语跑在双语笔记前面
+  - en: Mixing app vs transport vs network layer when debugging
+    cn: 排查时把应用 / 传输 / 网络层搅在一起
+  - en: Socket code almost works; handshake or timeout edges fail
+    cn: Socket 差不多能跑；握手或超时边界挂掉
+  - en: Protocol diagrams look familiar until the exam scenario is new
+    cn: 协议图课上眼熟，考试换场景就不会读
   session_angles:
-  - en: Restate the threat model in one paragraph
-    cn: 用一段话重述威胁模型
-  - en: Reproduce the lab outcome, then explain the mechanism
-    cn: 先复现 Lab 结果，再讲清机制
-  - en: Structure the write-up around evidence
-    cn: 按证据组织报告结构
+  - en: Trace one packet path before changing socket code
+    cn: 改 Socket 代码前先跟完一条报文路径
+  - en: Name the layer that owns the failure
+    cn: 先说出故障属于哪一层
   tutoring:
-  - en: 'Lecture sync for INHN0012: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 INHN0012 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for INHN0012: bilingual walkthrough of Layered models (OSI / TCP-IP) and where each
+      job lives → Sockets, TCP vs UDP, and reliable delivery → Routing, addressing, and forwarding intuition
+      → HTTP/DNS and application-layer protocols so tutorial language matches.'
+    cn: 按 INHN0012 同步跟课：用中英双语把「分层模型（OSI / TCP-IP）与各层职责 → Socket、TCP vs UDP 与可靠传输 → 路由、编址与转发直觉」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Layered models (OSI / TCP-IP) and where each job lives question shapes
+      for this course.'
+    cn: 考前突击：按本课「分层模型（OSI / TCP-IP）与各层职责」等题型做限时练习。
   sample_slides:
     title_en: INHN0012 — sample slides
     title_cn: INHN0012 — 辅导课件样例
@@ -104,66 +110,145 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does INHN0012 cover?
+    q_cn: INHN0012 学什么？
+    a_en: Layered models (OSI / TCP-IP) and where each job lives; Sockets, TCP vs UDP, and reliable delivery;
+      Routing, addressing, and forwarding intuition; HTTP/DNS and application-layer protocols…. Say which
+      week or assessment you are on when booking.
+    a_cn: 分层模型（OSI / TCP-IP）与各层职责、Socket、TCP vs UDP 与可靠传输、路由、编址与转发直觉、HTTP/DNS 与应用层协议。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Rechnerarchitekture
+  theme: systems
+  meta_description_en: Rechnerarchitekture tutoring. Stuck on Data representation — ints, floats, endianness,
+    bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'Rechnerarchitekture at Technical University of Munich: Data representation — ints, floats,
+    endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control, and
+    pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly, data representation,
+    and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus arc, then debugs the
+    lab or assignment where it breaks.'
+  lead_cn: 在慕尼黑工业大学上 Rechnerarchitekture，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉
+    → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for Rechnerarchitekture at Technical University of Munich. Covered
+    topics: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+    conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+    virtual memory intro; How C maps to machine-level behaviour. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: Rechnerarchitekture（慕尼黑工业大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次
+    — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
+  stuck:
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
+  session_angles:
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
+  tutoring:
+  - en: 'Lecture sync for Rechnerarchitekture: bilingual walkthrough of Data representation — ints, floats,
+      endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath, control,
+      and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro so tutorial
+      language matches.'
+    cn: 按 Rechnerarchitekture 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU 数据通路、控制与流水线直觉」讲透，对齐
+      tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
+  faq:
+  - q_en: What does Rechnerarchitekture cover?
+    q_cn: Rechnerarchitekture 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 - title: Introduction to Computer Architecture
   material: Intro to Computer Architecture
   code: ''
   theme: systems
-  meta_description_en: Introduction to Computer… TUM tutoring. Assignment brief (“0003CA ShortTest1 assignment”)
-    makes sense in class, freezes you alone?
-  lead_en: Intro to Computer Architecture Introduction to Computer Architecture at Technical University
-    of Munich is where abstractions stack fast and labs fail for reasons that look opaque. The hard part
-    is turning that arc into a method you can repeat on the next brief — not rereading slides the night
-    before.
-  lead_cn: 在慕尼黑工业大学上 Intro to Computer Architecture，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: Intro to Computer Architecture Introduction to Computer Architecture sits in systems, networks
-    & architecture. Assessed work expects you to apply lecture ideas under deadline pressure. Students
-    stall when terminology outruns notes, when a demo makes sense in class but not alone, or when the
-    write-up / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: Intro to Computer Architecture 是慕尼黑工业大学「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着操作系统
-    / 系统编程、计算机体系结构与组成、自动机、形式语言与证明这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在
-    notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  meta_description_en: Introduction to Computer… tutoring. Stuck on Data representation — ints, floats,
+    endianness, bitwise ops? Bilingual Chinese/English help.
+  lead_en: 'Introduction to Computer Architecture at Technical University of Munich: Data representation
+    — ints, floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+    control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro…. Assembly,
+    data representation, and microarchitecture terms outrun note-taking. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在慕尼黑工业大学上 Introduction to Computer Architecture，主线是数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 →
+    CPU 数据通路、控制与流水线直觉 → 存储层次 — 缓存、局部性、虚拟内存入门。汇编、数据表示和微体系术语比记笔记速度还快。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for Introduction to Computer Architecture at Technical University
+    of Munich. Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly /
+    ISA basics and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy
+    — cache, locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: Introduction to Computer Architecture（慕尼黑工业大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA
+    基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: OS / systems programming
-    cn: 操作系统 / 系统编程
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Automata, formal languages, and proofs
-    cn: 自动机、形式语言与证明
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Data representation — ints, floats, endianness, bitwise ops
+    cn: 数据表示 — 整数、浮点、端序、位运算
+  - en: Assembly / ISA basics and calling conventions
+    cn: 汇编 / ISA 基础与调用约定
+  - en: CPU datapath, control, and pipelining intuition
+    cn: CPU 数据通路、控制与流水线直觉
+  - en: Memory hierarchy — cache, locality, virtual memory intro
+    cn: 存储层次 — 缓存、局部性、虚拟内存入门
+  - en: How C maps to machine-level behaviour
+    cn: C 如何落到机器层行为
+  - en: Labs with simulators / assembly tooling when required
+    cn: 需要时的模拟器 / 汇编工具 Lab
   stuck:
-  - en: Assignment brief (“0003CA ShortTest1 assignment”) makes sense in class, freezes you alone
-    cn: 作业 brief（「0003CA ShortTest1 assignment」）课上听得懂，自己对着就停住
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
-  - en: Man pages and RFCs denser than lecture pace
-    cn: Man page / RFC 比课堂节奏更密
-  - en: Lecture vocabulary for Intro to Computer Architecture outruns bilingual notes
-    cn: Intro to Computer Architecture 的课堂术语跑在双语笔记前面
+  - en: Assembly control clear in lecture; your program clobbers registers
+    cn: 课上汇编控制流清楚，自己的程序却弄坏寄存器
+  - en: IEEE-754 or bitwise exam figures collapse under time
+    cn: 限时下 IEEE-754 或位运算题崩盘
+  - en: Cache / pipeline questions feel familiar until the figure changes
+    cn: 缓存 / 流水线题眼熟，换图就不会
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Draw the call / packet path before changing code
-    cn: 改代码前先画出调用 / 报文路径
-  - en: Instrument, reproduce, then patch the root cause
-    cn: 先插桩复现，再修根因
+  - en: Hand-trace registers and memory before editing
+    cn: 改之前先手推寄存器与内存
+  - en: Connect each C line to the machine events it causes
+    cn: 把每行 C 接到它触发的机器事件
   tutoring:
-  - en: 'Lecture sync for Intro to Computer Architecture: bilingual catch-up so workshop / tutorial language
-      matches the lectures.'
-    cn: 按 Intro to Computer Architecture 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as 0003CA ShortTest1 assignment, assignment,
-      with you at the keyboard.'
-    cn: 作业辅导：针对 0003CA ShortTest1 assignment, assignment 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for Introduction to Computer Architecture: bilingual walkthrough of Data representation
+      — ints, floats, endianness, bitwise ops → Assembly / ISA basics and calling conventions → CPU datapath,
+      control, and pipelining intuition → Memory hierarchy — cache, locality, virtual memory intro so
+      tutorial language matches.'
+    cn: 按 Introduction to Computer Architecture 同步跟课：用中英双语把「数据表示 — 整数、浮点、端序、位运算 → 汇编 / ISA 基础与调用约定 → CPU
+      数据通路、控制与流水线直觉」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Data representation — ints, floats, endianness, bitwise ops question
+      shapes for this course.'
+    cn: 考前突击：按本课「数据表示 — 整数、浮点、端序、位运算」等题型做限时练习。
   sample_slides:
     title_en: Introduction to Computer Architecture — sample slides
     title_cn: Introduction to Computer Architecture — 辅导课件样例
@@ -214,9 +299,79 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does Introduction to Computer Architecture cover?
+    q_cn: Introduction to Computer Architecture 学什么？
+    a_en: Data representation — ints, floats, endianness, bitwise ops; Assembly / ISA basics and calling
+      conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy — cache, locality,
+      virtual memory intro…. Say which week or assessment you are on when booking.
+    a_cn: 数据表示 — 整数、浮点、端序、位运算、汇编 / ISA 基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - title: Formale Sprache
+  theme: math-for-cs
+  meta_description_en: Formale Sprache tutoring. Stuck on Logic, sets, and proof strategies? Bilingual
+    Chinese/English help.
+  lead_en: 'Formale Sprache at Technical University of Munich: Logic, sets, and proof strategies → Induction
+    and invariants → Relations, functions, and counting → Graphs / trees as discrete structures…. Symbols
+    and proof phrasing outrun calculation skill. Tutoring rebuilds that syllabus arc, then debugs the
+    lab or assignment where it breaks.'
+  lead_cn: 在慕尼黑工业大学上 Formale Sprache，主线是逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数 → 作为离散结构的图 / 树。符号与证明表述往往比计算本身更劝退。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for Formale Sprache at Technical University of Munich. Covered topics:
+    Logic, sets, and proof strategies; Induction and invariants; Relations, functions, and counting; Graphs
+    / trees as discrete structures; Number theory or modular arithmetic when required. Bring your brief,
+    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: Formale Sprache（慕尼黑工业大学）一对一辅导。覆盖主题包括逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  topics:
+  - en: Logic, sets, and proof strategies
+    cn: 逻辑、集合与证明策略
+  - en: Induction and invariants
+    cn: 归纳与不变量
+  - en: Relations, functions, and counting
+    cn: 关系、函数与计数
+  - en: Graphs / trees as discrete structures
+    cn: 作为离散结构的图 / 树
+  - en: Number theory or modular arithmetic when required
+    cn: 需要时的数论 / 模运算
+  - en: Translating word problems into formal statements
+    cn: 把文字题翻译成形式陈述
+  stuck:
+  - en: Can follow a proof; cannot start from a blank page
+    cn: 能看懂证明，白纸上开不了头
+  - en: Notation piles up faster than bilingual notes
+    cn: 符号比双语笔记堆得还快
+  - en: Induction hypothesis stated wrong for the claim
+    cn: 归纳假设和要证的命题对不上
+  session_angles:
+  - en: Restate the claim in one sentence before proving
+    cn: 证明前先用一句话复述命题
+  - en: Pick the proof pattern, then fill details
+    cn: 先选证明模式，再填细节
+  tutoring:
+  - en: 'Lecture sync for Formale Sprache: bilingual walkthrough of Logic, sets, and proof strategies
+      → Induction and invariants → Relations, functions, and counting → Graphs / trees as discrete structures
+      so tutorial language matches.'
+    cn: 按 Formale Sprache 同步跟课：用中英双语把「逻辑、集合与证明策略 → 归纳与不变量 → 关系、函数与计数」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Logic, sets, and proof strategies question shapes for this course.'
+    cn: 考前突击：按本课「逻辑、集合与证明策略」等题型做限时练习。
+  faq:
+  - q_en: What does Formale Sprache cover?
+    q_cn: Formale Sprache 学什么？
+    a_en: Logic, sets, and proof strategies; Induction and invariants; Relations, functions, and counting;
+      Graphs / trees as discrete structures…. Say which week or assessment you are on when booking.
+    a_cn: 逻辑、集合与证明策略、归纳与不变量、关系、函数与计数、作为离散结构的图 / 树。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

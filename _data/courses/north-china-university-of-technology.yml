@@ -8,61 +8,58 @@ courses:
   title: Machine Learning for Artificial Intelligence
   material: MA2634-ML-for-AI
   theme: machine-learning
-  meta_description_en: MA2624 NCUT tutoring (Machine Learning for Artificial…). Assignment brief (“MA2634
-    Perceptrons”) makes sense in class, freezes you alone?
-  lead_en: MA2624 Machine Learning for Artificial Intelligence at North China University of Technology
-    is where method names blur together until pipelines, metrics, and write-ups diverge. Tutoring focuses
-    on methods you can reuse on the next brief.
-  lead_cn: 在北方工业大学上 MA2624，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: MA2624 Machine Learning for Artificial Intelligence sits in machine learning & ai. Evidence
-    from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: MA2624 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
-    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们概念复习辅导课件的样例页。
+  meta_description_en: MA2624 tutoring (Machine Learning for Artificial…). Stuck on Supervised learning
+    — linear/logistic models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'MA2624 Machine Learning for Artificial Intelligence at North China University of Technology:
+    Supervised learning — linear/logistic models, trees, SVMs → Train / validation / test splits and leakage
+    traps → Features, scaling, and model selection → Metrics — accuracy, precision/recall, ROC, calibration….
+    Method names blur until pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus
+    arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在北方工业大学上 MA2624，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for MA2624 Machine Learning for Artificial Intelligence at North China
+    University of Technology. Covered topics: Supervised learning — linear/logistic models, trees, SVMs;
+    Train / validation / test splits and leakage traps; Features, scaling, and model selection; Metrics
+    — accuracy, precision/recall, ROC, calibration; Regularisation, overfitting, and bias-variance. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: MA2624（北方工业大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Neural nets / deep learning / AI
-    cn: 神经网络 / 深度学习 / AI
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Notebook workflows the marker can re-run
-    cn: 改卷人能复跑的 notebook 工作流
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
   stuck:
-  - en: Assignment brief (“MA2634 Perceptrons”) makes sense in class, freezes you alone
-    cn: 作业 brief（「MA2634 Perceptrons」）课上听得懂，自己对着就停住
-  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
-    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
-  - en: Tool output produced, write-up cannot defend method choice
-    cn: 工具输出有了，报告却说不清为何选这个方法
-  - en: Formulae memorised without knowing what the code should look like
-    cn: 公式背下来了，但不知道代码该长什么样
-  - en: Autograder / notebook fails from shape mismatches or leakage
-    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Map the assignment brief to a short concept checklist
-    cn: 把作业 brief 映射成一份短概念清单
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
   tutoring:
-  - en: 'Lecture sync for MA2624: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 MA2624 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as MA2634 Perceptrons, MA2634 Matricies, with
-      you at the keyboard.'
-    cn: 作业辅导：针对 MA2634 Perceptrons, MA2634 Matricies 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for MA2624: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 MA2624 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
   sample_slides: &id001
     title_en: MA2624 — sample slides
     title_cn: MA2624 — 辅导课件样例
@@ -113,6 +110,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does MA2624 cover?
+    q_cn: MA2624 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -120,58 +128,53 @@ courses:
 - code: MA2623
   title: Linear and Abstract Algebra
   material: MA2623-linear-abstract-algebra
-  theme: math-for-cs
-  meta_description_en: MA2623 NCUT tutoring (Linear and Abstract Algebra). Assignment brief (“MA2623 ES
-    08”) makes sense in class, freezes you alone?
-  lead_en: MA2623 Linear Abstract Algebra at North China University of Technology is where lecture speed
-    and dense vocabulary outrun note-taking. The hard part is turning that arc into a method you can repeat
-    on the next brief — not rereading slides the night before.
-  lead_cn: 在北方工业大学上 MA2623，课速一快、术语一密，笔记一断档后面就更难补。
-  overview_en: MA2623 Linear Abstract Algebra sits in computer science coursework. Assessed work expects
-    you to apply lecture ideas under deadline pressure. Students stall when terminology outruns notes,
-    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit. Sample slides from our concept-review tutoring deck are below.
-  overview_cn: MA2623 是北方工业大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: MA2623 tutoring (Linear and Abstract Algebra). Stuck on Linear? Bilingual Chinese/English
+    help.
+  lead_en: 'MA2623 Linear and Abstract Algebra at North China University of Technology: Linear → Abstract
+    Algebra → Core ideas in Linear and Abstract Algebra → Assignments / labs for Linear and Abstract Algebra….
+    Lecture speed and dense vocabulary outrun note-taking before methods stick. Tutoring rebuilds that
+    syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在北方工业大学上 MA2623，主线是Linear → Abstract Algebra → Linear and Abstract Algebra 的核心概念 → Linear and
+    Abstract Algebra 的作业 / Lab。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for MA2623 Linear and Abstract Algebra at North China University of
+    Technology. Covered topics: Linear; Abstract Algebra; Core ideas in Linear and Abstract Algebra; Assignments
+    / labs for Linear and Abstract Algebra; Exam drills aligned to Linear and Abstract Algebra. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: MA2623（北方工业大学）一对一辅导。覆盖主题包括Linear、Abstract Algebra、Linear and Abstract Algebra 的核心概念、Linear
+    and Abstract Algebra 的作业 / Lab。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
-  - en: Lecture catch-up in Chinese and English
-    cn: 中英双语补课与知识点梳理
-  - en: Assignment approach and debugging
-    cn: 作业思路与调试
-  - en: Project structure and write-up feedback
-    cn: Project 结构与报告反馈
-  - en: Exam topic maps on weak areas
-    cn: 针对薄弱点的考点地图
-  - en: Tools the course actually uses (Git, notebooks, LaTeX)
-    cn: 课程真正用到的工具（Git、notebook、LaTeX）
+  - en: Linear
+    cn: Linear
+  - en: Abstract Algebra
+    cn: Abstract Algebra
+  - en: Core ideas in Linear and Abstract Algebra
+    cn: Linear and Abstract Algebra 的核心概念
+  - en: Assignments / labs for Linear and Abstract Algebra
+    cn: Linear and Abstract Algebra 的作业 / Lab
+  - en: Exam drills aligned to Linear and Abstract Algebra
+    cn: 对准 Linear and Abstract Algebra 的考前练习
   stuck:
-  - en: Assignment brief (“MA2623 ES 08”) makes sense in class, freezes you alone
-    cn: 作业 brief（「MA2623 ES 08」）课上听得懂，自己对着就停住
-  - en: Lectures outpacing note-taking
-    cn: 课速度快于记笔记速度
-  - en: Stacked deadlines across labs and projects
-    cn: Lab 与 Project 截止日期叠在一起
-  - en: Not knowing what “good enough” looks like for the rubric
-    cn: 不清楚评分量表眼里的“够好”
-  - en: Lecture vocabulary for MA2623 outruns bilingual notes
-    cn: MA2623 的课堂术语跑在双语笔记前面
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: Start from your materials and the nearest deadline
-    cn: 从你的材料与最近 DDL 开始
-  - en: Leave with a concrete next-step checklist
-    cn: 课后带走一份可执行的下一步清单
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for MA2623: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 MA2623 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as MA2623 ES 08, MA2623 ES 09, with you at
-      the keyboard.'
-    cn: 作业辅导：针对 MA2623 ES 08, MA2623 ES 09 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for MA2623: bilingual walkthrough of Linear → Abstract Algebra → Core ideas in Linear
+      and Abstract Algebra → Assignments / labs for Linear and Abstract Algebra so tutorial language matches.'
+    cn: 按 MA2623 同步跟课：用中英双语把「Linear → Abstract Algebra → Linear and Abstract Algebra 的核心概念」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Linear question shapes for this course.'
+    cn: 考前突击：按本课「Linear」等题型做限时练习。
   sample_slides:
     title_en: MA2623 — sample slides
     title_cn: MA2623 — 辅导课件样例
@@ -222,6 +225,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does MA2623 cover?
+    q_cn: MA2623 学什么？
+    a_en: Linear; Abstract Algebra; Core ideas in Linear and Abstract Algebra; Assignments / labs for
+      Linear and Abstract Algebra…. Say which week or assessment you are on when booking.
+    a_cn: Linear、Abstract Algebra、Linear and Abstract Algebra 的核心概念、Linear and Abstract Algebra 的作业 /
+      Lab。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -230,62 +244,71 @@ courses:
   title: Machine Learning for AI
   material: MA2634-ML-for-AI
   theme: machine-learning
-  meta_description_en: MA2634 NCUT tutoring (Machine Learning for AI). Assignment brief (“MA2634 Perceptrons”)
-    makes sense in class, freezes you alone?
-  lead_en: MA2634 ML For AI at North China University of Technology is where method names blur together
-    until pipelines, metrics, and write-ups diverge. Tutoring focuses on methods you can reuse on the
-    next brief.
-  lead_cn: 在北方工业大学上 MA2634，方法名搅在一起，pipeline、指标和报告对不上就会崩。
-  overview_en: MA2634 ML For AI sits in machine learning & ai. Assessed work expects you to apply lecture
-    ideas under deadline pressure. Students stall when terminology outruns notes, when a demo makes sense
-    in class but not alone, or when the write-up / autograder asks for a method the notebook never made
-    explicit. Sample slides from our concept-review tutoring deck are below.
-  overview_cn: MA2634 是北方工业大学「机器学习与人工智能」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着神经网络 / 深度学习 / AI、网络分层、报文与协议、安全
-    / 隐私威胁模型与实验这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告 / autograder 要的方法在 notebook 里从未写清。
-    下方有我们概念复习辅导课件的样例页。
+  meta_description_en: MA2634 tutoring (Machine Learning for AI). Stuck on Supervised learning — linear/logistic
+    models, trees, SVMs? Bilingual Chinese/English help.
+  lead_en: 'MA2634 Machine Learning for AI at North China University of Technology: Supervised learning
+    — linear/logistic models, trees, SVMs → Train / validation / test splits and leakage traps → Features,
+    scaling, and model selection → Metrics — accuracy, precision/recall, ROC, calibration…. Method names
+    blur until pipelines, metrics, and write-ups diverge. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在北方工业大学上 MA2634，主线是监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择 → 指标 — 准确率、精确率/召回、ROC、校准。方法名搅在一起，pipeline、指标和报告对不上就会崩。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for MA2634 Machine Learning for AI at North China University of Technology.
+    Covered topics: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test
+    splits and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+    ROC, calibration; Regularisation, overfitting, and bias-variance. Bring your brief, failing test,
+    lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: MA2634（北方工业大学）一对一辅导。覆盖主题包括监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Neural nets / deep learning / AI
-    cn: 神经网络 / 深度学习 / AI
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: Security / privacy threat models and labs
-    cn: 安全 / 隐私威胁模型与实验
-  - en: Math foundations and proof habits
-    cn: 数学基础与证明习惯
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Notebook workflows the marker can re-run
-    cn: 改卷人能复跑的 notebook 工作流
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: Supervised learning — linear/logistic models, trees, SVMs
+    cn: 监督学习 — 线性 / 逻辑回归、树、SVM
+  - en: Train / validation / test splits and leakage traps
+    cn: 训练 / 验证 / 测试划分与泄漏陷阱
+  - en: Features, scaling, and model selection
+    cn: 特征、缩放与模型选择
+  - en: Metrics — accuracy, precision/recall, ROC, calibration
+    cn: 指标 — 准确率、精确率/召回、ROC、校准
+  - en: Regularisation, overfitting, and bias-variance
+    cn: 正则、过拟合与偏差-方差
+  - en: Notebook pipelines the marker can re-run
+    cn: 改卷人能复跑的 notebook 流水线
   stuck:
-  - en: Assignment brief (“MA2634 Perceptrons”) makes sense in class, freezes you alone
-    cn: 作业 brief（「MA2634 Perceptrons」）课上听得懂，自己对着就停住
-  - en: Notebook runs on the sample cell, fails on the hidden / full dataset case
-    cn: notebook 在样例 cell 能过，全量 / 隐藏数据就挂
-  - en: Tool output produced, write-up cannot defend method choice
-    cn: 工具输出有了，报告却说不清为何选这个方法
-  - en: Formulae memorised without knowing what the code should look like
-    cn: 公式背下来了，但不知道代码该长什么样
-  - en: Autograder / notebook fails from shape mismatches or leakage
-    cn: 因维度不对或数据泄漏导致 autograder / notebook 挂掉
+  - en: Model runs; write-up cannot defend metric or split choice
+    cn: 模型能跑，报告说不清指标或划分选择
+  - en: Train score high; test collapses from leakage or skew
+    cn: 训练集分数高；测试因泄漏或分布偏斜崩掉
+  - en: Hyperparameters tuned by gut feel with no protocol
+    cn: 超参凭感觉调，没有协议
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Map the assignment brief to a short concept checklist
-    cn: 把作业 brief 映射成一份短概念清单
+  - en: Lock the split and metric before touching models
+    cn: 碰模型前先锁死划分和指标
+  - en: One ablation at a time; keep a method trail
+    cn: 一次只做一个消融，保留方法轨迹
   tutoring:
-  - en: 'Lecture sync for MA2634: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 MA2634 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as MA2634 Perceptrons, MA2634 Matricies, with
-      you at the keyboard.'
-    cn: 作业辅导：针对 MA2634 Perceptrons, MA2634 Matricies 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for MA2634: bilingual walkthrough of Supervised learning — linear/logistic models,
+      trees, SVMs → Train / validation / test splits and leakage traps → Features, scaling, and model
+      selection → Metrics — accuracy, precision/recall, ROC, calibration so tutorial language matches.'
+    cn: 按 MA2634 同步跟课：用中英双语把「监督学习 — 线性 / 逻辑回归、树、SVM → 训练 / 验证 / 测试划分与泄漏陷阱 → 特征、缩放与模型选择」讲透，对齐 tutorial
+      用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Supervised learning — linear/logistic models, trees, SVMs question
+      shapes for this course.'
+    cn: 考前突击：按本课「监督学习 — 线性 / 逻辑回归、树、SVM」等题型做限时练习。
   sample_slides: *id001
   faq:
+  - q_en: What does MA2634 cover?
+    q_cn: MA2634 学什么？
+    a_en: Supervised learning — linear/logistic models, trees, SVMs; Train / validation / test splits
+      and leakage traps; Features, scaling, and model selection; Metrics — accuracy, precision/recall,
+      ROC, calibration…. Say which week or assessment you are on when booking.
+    a_cn: 监督学习 — 线性 / 逻辑回归、树、SVM、训练 / 验证 / 测试划分与泄漏陷阱、特征、缩放与模型选择、指标 — 准确率、精确率/召回、ROC、校准。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.

@@ -13,6 +13,10 @@ Usage:
   python3 .scripts/enrich_teach_courses.py            # dry-run summary
   python3 .scripts/enrich_teach_courses.py --write     # apply YAML updates
   python3 .scripts/enrich_teach_courses.py --write --uni unsw
+  python3 .scripts/enrich_teach_courses.py --scrub-public-copy --write
+      # drop Week-N filename topics / inventory leaks without rewriting leads
+
+Public topics are syllabus concepts only — never "Week N: <filename>".
 """
 
 from __future__ import annotations
@@ -337,17 +341,24 @@ def gather_evidence(material_path: Path) -> dict:
         if len(topic_hits) >= 8:
             break
 
-    # Week-labelled basenames as soft topics
+    # Week-labelled lecture titles as concept hints (never publish "Week N: file").
+    # Skip week 0 and administrivia / unit-intro fluff — tutoring does not cover that.
     week_labels = []
     for rel in lect_files + rels:
         m = WEEK_RE.search(rel)
         if not m:
             continue
-        label = clean_token(Path(rel).name)
-        label = re.sub(r"(?i)week\s*\d+\s*", "", label).strip(" -_:")
-        if len(label) >= 4:
-            week_labels.append((int(m.group(1)), label))
-    week_labels = sorted(set(week_labels))[:10]
+        week_n = int(m.group(1))
+        if week_n <= 0:
+            continue
+        label = tidy_lecture_topic_label(
+            re.sub(r"(?i)week\s*\d+\s*", "", clean_token(Path(rel).name))
+        )
+        if len(label) < 4 or is_admin_topic_label(label):
+            continue
+        week_labels.append((week_n, label))
+    # Prefer later substantive weeks; keep stable order by week then label.
+    week_labels = sorted(set(week_labels))[:14]
 
     assn_labels = []
     for rel in assn_files[:20]:
@@ -469,119 +480,167 @@ def bilingual(en: str, cn: str) -> dict:
     return {"en": en, "cn": cn}
 
 
-# Filename leftovers that must never become public "topics" (inventory leak + junk UX).
-WEEK_LABEL_JUNK_RE = re.compile(
-    r"(?i)^(?:"
-    r"lecture\s*slides?|slides?|lectures?|notes?|handouts?|"
-    r"lab\s*\d*\s*\(?\)?|prac(?:tical)?s?\s*\d*|"
-    r"tutorial\s*\d*|workshop\s*\d*|seminar\s*\d*|"
-    r"pdf|pptx?|docx?|"
-    r"[A-Z]{2,6}\s*\d{3,5}[A-Z]?"  # bare course codes e.g. COMP2200
-    r")$",
+# Public topics must be syllabus concepts — never "Week N: <filename>".
+WEEK_FILENAME_TOPIC_RE = re.compile(r"(?i)^Week\s+\d+\s*:")
+# Week 0 / early "Administrivia / unit intro" are not tutoring topics.
+ADMIN_TOPIC_RE = re.compile(
+    r"(?i)\b(?:"
+    r"administrivia|admin(?:istration)?\b|"
+    r"unit\s+intro(?:duction)?|course\s+intro(?:duction)?|"
+    r"course\s+(?:overview|structure|outline|welcome|info)|"
+    r"more\s+administrivia|housekeeping|logistics|timetable|"
+    r"getting\s+started|meet\s+the\s+team|welcome\s+week|"
+    r"platform(?:s)?\b|announcements?\b"
+    r")\b"
+)
+QUOTED_BLOB_RE = re.compile(r"[“\"「]([^”\"」]{6,})[”\"」]")
+# Quoted emphasis like “almost works” is fine; private file stems are not.
+FILENAME_INNER_RE = re.compile(
+    r"(?i)(?:"
+    r"Midterm|Final|Tutorial|Worksheet|Lecture\s*\d|answers|"
+    r"AY\s*\d|S[12]\s*\+|Assig|HW\s*\d|Lab\s*\d|"
+    r"\+\+|\.pdf|\.pptx?|\.docx?|"
+    r"[A-Z]{2,6}\s*\d{3,5}.*\d{4}"  # e.g. CS1010E 202223 …
+    r")"
+)
+ASSESS_FILENAME_RE = re.compile(
+    r"assessments such as\s+.+?(?:,\s*with you|, with you)|针对\s+.+\s+一类评估",
+    re.I,
+)
+# Word-bounded "the" so we never eat "There is…".
+INVENTORY_OVERVIEW_RE = re.compile(
+    r"Evidence from(?:\s+the\b)?(?:\s+course\b)?(?:\s+folder\b)?(?:\s+show\b)?\s*"
+    r"|Private materials\s*"
+    r"|现有材料(?:里能看到)?\s*"
+    r"|从课程材料(?:看)?\s*",
+    re.I,
 )
 
 
-def usable_week_label(label: str) -> bool:
-    """Keep week labels only when they name a real subject, not a file type."""
-    s = (label or "").strip(" -_:()[]")
-    if len(s) < 6:
-        return False
-    if WEEK_LABEL_JUNK_RE.match(s):
-        return False
-    # Mostly punctuation / digits left after stripping week token
-    if re.fullmatch(r"[\d\s\-_()./]+", s):
-        return False
-    return True
+def is_filename_topic(en: str) -> bool:
+    """True when a topic chip is a week-prefixed file/folder dump."""
+    return bool(WEEK_FILENAME_TOPIC_RE.match((en or "").strip()))
 
 
-def build_topics(ev: dict, theme: str, themes: dict[str, dict]) -> list[dict]:
-    topics: list[dict] = []
-    for hit in ev.get("topic_hits") or []:
-        topics.append(bilingual(hit["en"], hit["cn"]))
-    for week, label in ev.get("week_labels") or []:
-        if not usable_week_label(label):
-            continue
-        short = label if len(label) <= 60 else label[:57] + "…"
-        topics.append(bilingual(f"Week {week}: {short}", f"第 {week} 周：{short}"))
-    if ev.get("has_notebooks"):
-        topics.append(bilingual(
-            "Notebook workflows the marker can re-run",
-            "改卷人能复跑的 notebook 工作流",
-        ))
-    if ev.get("assn_labels"):
-        topics.append(bilingual(
-            "Assignment briefs mapped to a step-by-step plan",
-            "把作业 brief 映射成可执行步骤",
-        ))
-    # Prefer theme topics over thin filename leftovers
-    if len(topics) < 4:
-        for t in (themes.get(theme) or {}).get("topics") or []:
-            if isinstance(t, dict) and t.get("en"):
-                topics.append(bilingual(t["en"], t.get("cn") or t["en"]))
-            if len(topics) >= 6:
-                break
-    # Dedup by en
+def is_admin_topic_label(label: str) -> bool:
+    """True for unit-intro / administrivia labels — skip on tutoring pages."""
+    return bool(ADMIN_TOPIC_RE.search((label or "").strip()))
+
+
+def tidy_lecture_topic_label(label: str) -> str:
+    """Turn a lecture basename into a syllabus-style topic chip."""
+    s = clean_token(label or "")
+    s = re.sub(r"(?i)\(\d+\)\s*$", "", s).strip(" -_:")
+    s = re.sub(r"\s{2,}", " ", s)
+    # Drop leading numbering like "1. Further Thread…"
+    s = re.sub(r"^\d+\.\s*", "", s)
+    return s.strip(" -_:")
+
+
+def has_filename_quote(text: str) -> bool:
+    """True when quotes wrap a private file/assessment stem (not emphasis)."""
+    for m in QUOTED_BLOB_RE.finditer(text or ""):
+        if FILENAME_INNER_RE.search(m.group(1)):
+            return True
+    return False
+
+
+def dedupe_topics(topics: list[dict], limit: int = 8) -> list[dict]:
     out, seen = [], set()
     for t in topics:
+        if not isinstance(t, dict) or not t.get("en"):
+            continue
         k = t["en"].lower()
         if k in seen:
             continue
         seen.add(k)
-        out.append(t)
-        if len(out) >= 8:
+        out.append(bilingual(t["en"], t.get("cn") or t["en"]))
+        if len(out) >= limit:
             break
     return out
 
 
+def theme_topic_pool(theme: str, themes: dict[str, dict]) -> list[dict]:
+    pool: list[dict] = []
+    for t in (themes.get(theme) or {}).get("topics") or []:
+        if isinstance(t, dict) and t.get("en"):
+            pool.append(bilingual(t["en"], t.get("cn") or t["en"]))
+    if theme != "general":
+        for t in (themes.get("general") or {}).get("topics") or []:
+            if isinstance(t, dict) and t.get("en"):
+                pool.append(bilingual(t["en"], t.get("cn") or t["en"]))
+    return pool
+
+
+def build_topics(ev: dict, theme: str, themes: dict[str, dict]) -> list[dict]:
+    """Syllabus concepts from this course’s lectures — never theme-pack filler first.
+
+    Never publish week-labelled filenames or administrivia / unit-intro chips.
+    Theme topics are a last resort only when the folder has no lecture titles and
+    no lexicon hits (otherwise every systems course looks identical).
+    """
+    topics: list[dict] = []
+    lecture_topics: list[dict] = []
+    for _week, label in ev.get("week_labels") or []:
+        if is_admin_topic_label(label) or is_filename_topic(label):
+            continue
+        lecture_topics.append(bilingual(label, label))
+    topics.extend(lecture_topics)
+    for hit in ev.get("topic_hits") or []:
+        en = hit.get("en") or ""
+        if is_admin_topic_label(en) or is_filename_topic(en):
+            continue
+        topics.append(bilingual(en, hit.get("cn") or en))
+    # Only when we still have nothing course-specific.
+    if not topics:
+        topics.extend(theme_topic_pool(theme, themes))
+    return dedupe_topics(topics, limit=8)
+
+
 def build_stuck(ev: dict, theme: str, themes: dict[str, dict], code: str) -> list[dict]:
+    """Stuck points grounded in this course’s lecture titles when available."""
     stuck: list[dict] = []
     handle = code or "this course"
-    if ev.get("week_span"):
+    lectures = [lab for _w, lab in (ev.get("week_labels") or []) if lab and not is_admin_topic_label(lab)]
+    # Course-specific: name early / mid / late technical lectures.
+    if len(lectures) >= 1:
         stuck.append(bilingual(
-            f"Weekly lecture arc moves on before last week’s method is solid",
-            f"周课往前赶，上一周的方法还没练稳",
+            f"“{lectures[0]}” makes sense in lecture; your lab does not replay alone",
+            f"课上「{lectures[0]}」听得懂，Lab 自己对着就复不出来",
+        ))
+    if len(lectures) >= 3:
+        mid = lectures[len(lectures) // 2]
+        stuck.append(bilingual(
+            f"Later weeks move to “{mid}” before last week’s method is solid",
+            f"后面已讲到「{mid}」，上一周的方法还没练稳",
+        ))
+    if len(lectures) >= 5:
+        late = lectures[-1]
+        stuck.append(bilingual(
+            f"Exam figures for “{late}” look new even when the slide felt familiar",
+            f"「{late}」课上看过，考试换一张图仍觉得陌生",
         ))
     if ev.get("assn_labels") or ev.get("assn_files"):
-        sample = (ev.get("assn_labels") or ["the assignment"])[0]
         stuck.append(bilingual(
-            f"Assignment brief (“{sample[:48]}”) makes sense in class, freezes you alone",
-            f"作业 brief（「{sample[:48]}」）课上听得懂，自己对着就停住",
-        ))
-    if ev.get("has_notebooks"):
-        stuck.append(bilingual(
-            "Notebook runs on the sample cell, fails on the hidden / full dataset case",
-            "notebook 在样例 cell 能过，全量 / 隐藏数据就挂",
+            "Assignment brief makes sense in class, freezes you alone",
+            "作业 brief 课上听得懂，自己对着就停住",
         ))
     if ev.get("has_code") and theme in {"programming", "algorithms", "systems", "security"}:
         stuck.append(bilingual(
             "Code almost works; edge cases and error messages have no debug method",
             "代码差不多能跑，边界和报错却没有 debug 方法",
         ))
-    if theme in {"math-for-cs", "automata", "algorithms"}:
+    if not lectures:
+        # No lecture titles — only then fall back to theme stuck chips.
+        for t in (themes.get(theme) or {}).get("stuck") or []:
+            if isinstance(t, dict) and t.get("en"):
+                stuck.append(bilingual(t["en"], t.get("cn") or t["en"]))
+            if len(stuck) >= 5:
+                break
         stuck.append(bilingual(
-            "Can follow a worked example, cannot start from a blank page under time pressure",
-            "能看懂例题，限时白纸上却开不了头",
+            f"Lecture vocabulary for {handle} outruns bilingual notes",
+            f"{handle} 的课堂术语跑在双语笔记前面",
         ))
-    if theme in {"data-science", "machine-learning"}:
-        stuck.append(bilingual(
-            "Tool output produced, write-up cannot defend method choice",
-            "工具输出有了，报告却说不清为何选这个方法",
-        ))
-    if theme == "security":
-        stuck.append(bilingual(
-            "Lab setup unfinished; report lists tools without a clear finding",
-            "Lab 环境还没配好；报告只罗列工具没有清晰发现",
-        ))
-    # Theme defaults
-    for t in (themes.get(theme) or {}).get("stuck") or []:
-        if isinstance(t, dict) and t.get("en"):
-            stuck.append(bilingual(t["en"], t.get("cn") or t["en"]))
-        if len(stuck) >= 5:
-            break
-    stuck.append(bilingual(
-        f"Lecture vocabulary for {handle} outruns bilingual notes",
-        f"{handle} 的课堂术语跑在双语笔记前面",
-    ))
     out, seen = [], set()
     for t in stuck:
         k = t["en"].lower()
@@ -627,50 +686,21 @@ def build_session_angles(ev: dict, theme: str, themes: dict[str, dict]) -> list[
 
 def build_tutoring(code: str, title: str, ev: dict) -> list[dict]:
     handle = code or title
-    assn_bit_en = "approach review and live debug against the real brief"
-    assn_bit_cn = "对着真实 brief 拆题、梳思路、现场 debug"
-    if ev.get("assn_labels"):
-        labels = ", ".join(ev["assn_labels"][:2])
-        assn_bit_en = f"approach review for assessments such as {labels}, with you at the keyboard"
-        assn_bit_cn = f"针对 {labels} 一类评估拆题，你来操作键盘"
+    # Never list private assessment filenames on the public page.
     return [
         bilingual(
             f"Lecture sync for {handle}: bilingual catch-up so workshop / tutorial language matches the lectures.",
             f"按 {handle} 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。",
         ),
         bilingual(
-            f"Assignments: {assn_bit_en}.",
-            f"作业辅导：{assn_bit_cn}。",
+            "Assignments: approach review and live debug against the real brief.",
+            "作业辅导：对着真实 brief 拆题、梳思路、现场 debug。",
         ),
         bilingual(
             "Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.",
             "考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。",
         ),
     ]
-
-
-def evidence_phrase(ev: dict) -> tuple[str, str]:
-    bits_en, bits_cn = [], []
-    if ev.get("week_span"):
-        a, b = ev["week_span"]
-        bits_en.append(f"weekly notes spanning roughly week {a}–{b}")
-        bits_cn.append(f"大约第 {a}–{b} 周的周课笔记")
-    if ev.get("assn_labels"):
-        bits_en.append("assignment briefs / labs on disk")
-        bits_cn.append("磁盘上的作业 brief / lab")
-    elif ev.get("assn_files"):
-        bits_en.append("named assignment / lab files")
-        bits_cn.append("点名的作业 / lab 文件")
-    if ev.get("has_notebooks"):
-        bits_en.append("notebooks")
-        bits_cn.append("notebook")
-    if ev.get("has_code"):
-        bits_en.append("code submissions / practice files")
-        bits_cn.append("代码提交 / 练习文件")
-    if not bits_en:
-        bits_en.append("lecture and practice materials")
-        bits_cn.append("讲座与练习材料")
-    return (", ".join(bits_en), "、".join(bits_cn))
 
 
 def build_copy(uni_label: str, uni_cn: str, code: str, title: str, theme: str, ev: dict, themes: dict[str, dict]) -> dict:
@@ -680,51 +710,63 @@ def build_copy(uni_label: str, uni_cn: str, code: str, title: str, theme: str, e
     else:
         label = " ".join(x for x in [code, title] if x).strip() or title or code
     cn_handle = code or title
-    ev_en, ev_cn = evidence_phrase(ev)
     theme_label_en = (themes.get(theme) or {}).get("label_en") or theme
     theme_label_cn = (themes.get(theme) or {}).get("label_cn") or theme
 
-    topic_ens = [t["en"] for t in (ev.get("topic_hits") or [])][:4]
-    topic_cns = [t["cn"] for t in (ev.get("topic_hits") or [])][:3]
+    # Prefer substantive lecture titles — these are the course-specific signal.
+    lecture_ens = [lab for _w, lab in (ev.get("week_labels") or []) if lab][:6]
+    hit_ens = [t["en"] for t in (ev.get("topic_hits") or [])]
+    hit_cns = [t["cn"] for t in (ev.get("topic_hits") or [])]
+    topic_ens = (lecture_ens + [e for e in hit_ens if e not in lecture_ens])[:4]
+    topic_cns = (lecture_ens[:3] + [c for c in hit_cns if c not in lecture_ens])[:3]
+    content_weeks = [w for w, _ in (ev.get("week_labels") or [])]
 
     # Never claim we hold/redistribute university lecture notes or course packs.
-    hard_en = hard["en"]
-    if hard_en and hard_en[0].islower():
-        hard_en = hard_en[0].upper() + hard_en[1:]
-    lead_en = (
-        f"{label} at {uni_label}. {hard_en}. "
-        f"Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse."
-    )
-    lead_cn = (
-        f"在{uni_cn}上 {cn_handle}，{hard['cn']}。"
-        f"辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。"
-    )
+    # Lead must name this course’s topics when we have them — not only theme difficulty.
+    if lecture_ens:
+        arc = " → ".join(lecture_ens[:4])
+        lead_en = (
+            f"{label} at {uni_label} covers {arc}"
+            f"{'…' if len(lecture_ens) > 4 else ''}. "
+            f"Tutoring rebuilds that arc, then debugs the lab or assignment where it breaks."
+        )
+        lead_cn = (
+            f"在{uni_cn}上 {cn_handle}，主线是{' → '.join(lecture_ens[:4])}"
+            f"{'…' if len(lecture_ens) > 4 else ''}。"
+            f"辅导先把这条主线重建清楚，再对着 Lab / 作业里断开的地方 debug。"
+        )
+    else:
+        hard_en = hard["en"]
+        if hard_en and hard_en[0].islower():
+            hard_en = hard_en[0].upper() + hard_en[1:]
+        lead_en = (
+            f"{label} at {uni_label}. {hard_en}. "
+            f"Tutoring: lecture catch-up, assignment debug, exam drills — methods you can reuse."
+        )
+        lead_cn = (
+            f"在{uni_cn}上 {cn_handle}，{hard['cn']}。"
+            f"辅导对着你卡住的步骤练，练到下一份 brief 还能自己做。"
+        )
 
-    overview_en = f"{label} ({theme_label_en}) at {uni_label}. "
+    overview_en = f"One-to-one tutoring for {label} at {uni_label}. "
     if topic_ens:
-        overview_en += f"Common topics: {'; '.join(topic_ens)}. "
-    if ev.get("week_span"):
-        a, b = ev["week_span"]
-        overview_en += f"Weekly arc about week {a}–{b}, plus assessed work under deadline. "
+        overview_en += f"Covered topics: {'; '.join(topic_ens)}. "
+    if content_weeks:
+        a, b = min(content_weeks), max(content_weeks)
+        overview_en += f"Technical weeks about {a}–{b} (admin / unit-intro omitted). "
     elif ev.get("assn_files"):
         overview_en += "Assessed work expects you to apply the same ideas under deadline. "
     overview_en += (
-        "People stall when terms outrun notes, when a class demo does not replay alone, "
-        "or when the write-up / autograder wants a method the notebook never showed."
+        "Bring your brief, failing test, or the lecture topic you are stuck on."
     )
 
-    overview_cn = (
-        f"{cn_handle} 是{uni_cn}的「{theme_label_cn}」课，既要真懂，也要能动手。"
-    )
+    overview_cn = f"{cn_handle}（{uni_cn}）一对一辅导。"
     if topic_cns:
-        overview_cn += f"常见内容包括{'、'.join(topic_cns)}。"
-    if ev.get("week_span"):
-        a, b = ev["week_span"]
-        overview_cn += f"大约第 {a}–{b} 周有连续周课，作业会要求你在 DDL 下用同一套方法。"
-    overview_cn += (
-        "很多人不是完全没学过，而是课上术语太快、自己复不出来，"
-        "或报告 / autograder 要的方法在 notebook 里从没写清。"
-    )
+        overview_cn += f"覆盖主题包括{'、'.join(topic_cns)}。"
+    if content_weeks:
+        a, b = min(content_weeks), max(content_weeks)
+        overview_cn += f"技术周大约第 {a}–{b} 周（行政 / 单元介绍不做）。"
+    overview_cn += "预约时请带上 brief、失败测例，或你卡住的那课主题。"
 
     topics = build_topics(ev, theme, themes)
     stuck = build_stuck(ev, theme, themes, code)
@@ -732,13 +774,14 @@ def build_copy(uni_label: str, uni_cn: str, code: str, title: str, theme: str, e
     tutoring = build_tutoring(code, title, ev)
 
     # SERP meta: code + short uni + concrete stuck hook (≤155; plugin truncates at 160).
+    # Never put private filenames into meta.
     uni_short = uni_label.split()[0] if len(uni_label) > 22 else uni_label
-    if ev.get("assn_labels"):
-        hook = f"assignment briefs such as {ev['assn_labels'][0][:40]}"
-    elif ev.get("topic_hits"):
+    if ev.get("topic_hits"):
         hook = ev["topic_hits"][0]["en"]
     elif topic_ens:
         hook = topic_ens[0]
+    elif ev.get("assn_files"):
+        hook = "assignment briefs under deadline"
     else:
         hook = "lecture speed and dense vocabulary"
     st = title if len(title) <= 36 else (title[:33].rsplit(" ", 1)[0] + "…")
@@ -775,14 +818,193 @@ def dump_admin(doc: dict) -> str:
 
 
 BANNED_COPY_RE = re.compile(
-    r"Private materials|Evidence from the|现有材料|其余讲义|领取完整|"
-    r"full course pack|we have the lecture|download the notes",
+    r"Private materials|Evidence from(?:\s+the)?|现有材料|其余讲义|领取完整|"
+    r"full course pack|we have the lecture|download the notes|"
+    r"磁盘上的作业|on disk|named assignment / lab files",
     re.I,
 )
 
 
+def public_copy_is_leaky(course: dict) -> bool:
+    """True when topics/stuck/tutoring/overview leak filenames or inventory claims."""
+    for t in course.get("topics") or []:
+        if isinstance(t, dict) and is_filename_topic(t.get("en") or ""):
+            return True
+    for s in course.get("stuck") or []:
+        if isinstance(s, dict) and has_filename_quote(s.get("en") or ""):
+            return True
+    for s in course.get("tutoring") or []:
+        if not isinstance(s, dict):
+            continue
+        blob = f"{s.get('en') or ''} {s.get('cn') or ''}"
+        if ASSESS_FILENAME_RE.search(blob) or has_filename_quote(blob):
+            return True
+    blob = " ".join(
+        str(course.get(k) or "")
+        for k in ("lead_en", "lead_cn", "overview_en", "overview_cn", "meta_description_en")
+    )
+    if BANNED_COPY_RE.search(blob) or INVENTORY_OVERVIEW_RE.search(blob):
+        return True
+    if has_filename_quote(course.get("meta_description_en") or ""):
+        return True
+    # Broken leftover from older inventory scrubs: "…. re is a weekly arc…"
+    if re.search(r"(?i)\.\s*re is a\b", course.get("overview_en") or ""):
+        return True
+    return False
+
+
+def scrub_stuck_item(item: dict) -> dict:
+    en = item.get("en") or ""
+    cn = item.get("cn") or en
+    if has_filename_quote(en) or has_filename_quote(cn):
+        return bilingual(
+            "Assignment brief makes sense in class, freezes you alone",
+            "作业 brief 课上听得懂，自己对着就停住",
+        )
+    return bilingual(en, cn)
+
+
+def scrub_tutoring_item(item: dict, code: str, title: str) -> dict:
+    en = item.get("en") or ""
+    cn = item.get("cn") or en
+    blob = f"{en} {cn}"
+    if ASSESS_FILENAME_RE.search(blob) or has_filename_quote(blob):
+        return bilingual(
+            "Assignments: approach review and live debug against the real brief.",
+            "作业辅导：对着真实 brief 拆题、梳思路、现场 debug。",
+        )
+    # Drop accidental filename lists that slipped past the "such as" pattern.
+    if re.search(r"(?i)Midterm\+|Final\+|Tutorial\+|Worksheet\+|S1\+|S2\+|AY\d", en):
+        handle = code or title or "this course"
+        if en.lower().startswith("assignments"):
+            return bilingual(
+                "Assignments: approach review and live debug against the real brief.",
+                "作业辅导：对着真实 brief 拆题、梳思路、现场 debug。",
+            )
+        if "lecture sync" in en.lower():
+            return bilingual(
+                f"Lecture sync for {handle}: bilingual catch-up so workshop / tutorial language matches the lectures.",
+                f"按 {handle} 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。",
+            )
+    return bilingual(en, cn)
+
+
+def scrub_overview_text(text: str) -> str:
+    if not text:
+        return text
+    cleaned = INVENTORY_OVERVIEW_RE.sub("", text)
+    # Repair prior bad scrub that ate "The" from "There is…".
+    cleaned = re.sub(r"(?i)(\.\s*)re is a\b", r"\1There is a", cleaned)
+    cleaned = re.sub(r"(?i)^re is a\b", "There is a", cleaned)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
+    cleaned = re.sub(r" +\n", "\n", cleaned)
+    return cleaned.strip()
+
+
+def scrub_course_public_copy(course: dict, themes: dict[str, dict]) -> list[str]:
+    """Fix filename topics / inventory leaks without rewriting curated leads."""
+    notes: list[str] = []
+    theme = normalize_theme(str(course.get("theme") or ""), f"{course.get('code')} {course.get('title')}", themes)
+    if course.get("theme") != theme:
+        course["theme"] = theme
+        notes.append("theme normalized")
+
+    topics = [t for t in (course.get("topics") or []) if isinstance(t, dict) and t.get("en")]
+    kept = [
+        t for t in topics
+        if not is_filename_topic(t.get("en") or "") and not is_admin_topic_label(t.get("en") or "")
+    ]
+    dropped = len(topics) - len(kept)
+    if dropped:
+        notes.append(f"dropped {dropped} week-filename / admin topics")
+    # Do not silently refill with theme-pack clones — empty is better than fake specificity.
+    kept = dedupe_topics(kept, limit=8)
+    if not kept:
+        kept = dedupe_topics(theme_topic_pool(theme, themes), limit=8)
+        notes.append("no course topics left; theme pack fallback")
+    if kept != topics:
+        course["topics"] = kept
+        if "dropped" not in " ".join(notes) and "filled" not in " ".join(notes):
+            notes.append("topics deduped")
+
+    stuck_in = [s for s in (course.get("stuck") or []) if isinstance(s, dict)]
+    stuck_out = [scrub_stuck_item(s) for s in stuck_in]
+    if stuck_out != stuck_in:
+        course["stuck"] = dedupe_topics(stuck_out, limit=5)
+        notes.append("scrubbed filename quotes in stuck")
+
+    code = (course.get("code") or "").strip()
+    title = (course.get("title") or "").strip()
+    tut_in = [s for s in (course.get("tutoring") or []) if isinstance(s, dict)]
+    tut_out = [scrub_tutoring_item(s, code, title) for s in tut_in]
+    if tut_out != tut_in:
+        course["tutoring"] = tut_out
+        notes.append("scrubbed assessment filenames in tutoring")
+
+    for key in ("overview_en", "overview_cn", "lead_en", "lead_cn"):
+        raw = course.get(key) or ""
+        cleaned = scrub_overview_text(raw) if key.startswith("overview") else (raw or "")
+        if BANNED_COPY_RE.search(cleaned):
+            cleaned = INVENTORY_OVERVIEW_RE.sub("", cleaned).strip()
+        if cleaned != raw:
+            course[key] = cleaned
+            notes.append(f"scrubbed inventory phrasing in {key}")
+
+    meta = course.get("meta_description_en") or ""
+    if has_filename_quote(meta) or re.search(
+        r"(?i)assignment briefs such as|Midterm\+|Tutorial\+|AY\d|S1\+|S2\+", meta
+    ):
+        hook = "assignment briefs under deadline"
+        if course.get("topics"):
+            hook = course["topics"][0].get("en") or hook
+        st = title if len(title) <= 36 else (title[:33].rsplit(" ", 1)[0] + "…")
+        head = f"{code} tutoring ({st})" if code else f"{st} tutoring"
+        course["meta_description_en"] = f"{head}. Stuck on {hook}? Bilingual Chinese/English help."[:155]
+        notes.append("scrubbed filenames in meta")
+
+    return notes
+
+
+def scrub_all_public_copy(themes: dict[str, dict], write: bool, only_uni: Optional[Set[str]] = None) -> dict:
+    stats = {"courses": 0, "files": 0, "notes": []}
+    for path in sorted(COURSES_DIR.glob("*.yml")):
+        if only_uni and path.stem not in only_uni:
+            continue
+        data = load_admin(path)
+        changed = False
+        for course in data.get("courses") or []:
+            if not isinstance(course, dict):
+                continue
+            topics = [t for t in (course.get("topics") or []) if isinstance(t, dict) and t.get("en")]
+            needs = (
+                public_copy_is_leaky(course)
+                or any(is_filename_topic(t.get("en") or "") for t in topics)
+                or (bool(course.get("lead_en")) and 0 < len(topics) < 3)
+            )
+            if not needs:
+                continue
+            before = yaml.safe_dump(course, allow_unicode=True, sort_keys=False)
+            notes = scrub_course_public_copy(course, themes)
+            after = yaml.safe_dump(course, allow_unicode=True, sort_keys=False)
+            if before != after:
+                changed = True
+                stats["courses"] += 1
+                label = course.get("code") or course.get("title") or "?"
+                stats["notes"].append(f"{path.stem}/{label}: {', '.join(notes) or 'updated'}")
+        if changed:
+            stats["files"] += 1
+            if write:
+                path.write_text(dump_admin(data), encoding="utf-8")
+    return stats
+
+
 def copy_needs_refresh(course: dict, force: bool = False) -> bool:
-    """True if empty lead, banned inventory phrasing, or --force."""
+    """True if empty lead, banned inventory phrasing in lead/overview, or --force.
+
+    Filename topic chips are fixed via scrub_course_public_copy / --scrub-public-copy
+    so we do not overwrite curated leads just to clean chips.
+    """
     if force:
         return True
     lead = (course.get("lead_en") or "").strip()
@@ -790,7 +1012,7 @@ def copy_needs_refresh(course: dict, force: bool = False) -> bool:
         str(course.get(k) or "")
         for k in ("lead_en", "lead_cn", "overview_en", "overview_cn")
     )
-    if BANNED_COPY_RE.search(blob):
+    if BANNED_COPY_RE.search(blob) or INVENTORY_OVERVIEW_RE.search(blob):
         return True
     return not lead
 
@@ -811,6 +1033,7 @@ def process_uni(
     stats = {
         "uni": uni_slug,
         "enriched": 0,
+        "scrubbed": 0,
         "skipped_curated": 0,
         "skipped_no_material": 0,
         "missing_folder": 0,
@@ -829,11 +1052,22 @@ def process_uni(
         if not material:
             stats["skipped_no_material"] += 1
             continue
-        if not copy_needs_refresh(course, force=force):
-            stats["skipped_curated"] += 1
-            continue
         code0 = (course.get("code") or "").strip()
         if only_codes and code0 not in only_codes and code0.replace(" ", "") not in only_codes:
+            continue
+
+        # Light scrub for filename chips even when lead is curated.
+        if not force and public_copy_is_leaky(course) and not copy_needs_refresh(course, force=False):
+            notes = scrub_course_public_copy(course, themes)
+            if notes:
+                changed = True
+                stats["scrubbed"] += 1
+                stats["fixes"].extend([f"{code0 or course.get('title')}: {n}" for n in notes])
+            stats["skipped_curated"] += 1
+            continue
+
+        if not copy_needs_refresh(course, force=force):
+            stats["skipped_curated"] += 1
             continue
 
         mpath = resolve_material_path(root, material)
@@ -895,6 +1129,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--force", action="store_true", help="Overwrite existing lead_en")
+    ap.add_argument(
+        "--scrub-public-copy",
+        action="store_true",
+        help="Drop week-filename topics and inventory leaks without rewriting leads",
+    )
     ap.add_argument("--uni", action="append", default=[], help="Limit to admin slug(s)")
     ap.add_argument("--code", action="append", default=[], help="Limit to course code(s)")
     args = ap.parse_args()
@@ -902,6 +1141,16 @@ def main() -> int:
     themes = load_themes()
     only = set(args.uni) if args.uni else None
     only_codes = {c.replace(" ", "") for c in args.code} | set(args.code) if args.code else None
+
+    if args.scrub_public_copy:
+        st = scrub_all_public_copy(themes, write=args.write, only_uni=only)
+        mode = "WROTE" if args.write else "DRY-RUN"
+        print(f"\n{mode} scrub: {st['courses']} courses across {st['files']} files")
+        for note in st["notes"][:80]:
+            print(f"  {note}")
+        if len(st["notes"]) > 80:
+            print(f"  … {len(st['notes']) - 80} more")
+        return 0
 
     paths = sorted(COURSES_DIR.glob("*.yml"))
     if only:

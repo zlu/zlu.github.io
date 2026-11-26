@@ -8,48 +8,63 @@ courses:
   material: LIT111
   code: LIT111
   theme: general
-  meta_description_en: LIT111 DKU tutoring (Literature Foundations). Lectures outpacing note-taking? Bilingual
-    Chinese/English lecture sync, assignments, exam prep.
-  lead_en: Lit111 at Duke Kunshan University is where lecture speed and dense vocabulary outrun note-taking.
-    Tutoring focuses on methods you can reuse on the next brief.
-  lead_cn: 在昆山杜克大学上 LIT111，课速一快、术语一密，笔记一断档后面就更难补。
-  overview_en: Lit111 sits in computer science coursework. Students stall when terminology outruns notes,
-    when a demo makes sense in class but not alone, or when the write-up / autograder asks for a method
-    the notebook never made explicit.
-  overview_cn: LIT111 是昆山杜克大学「计算机课业」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+  meta_description_en: LIT111 tutoring (Literature Foundations). Stuck on Literature Foundations? Bilingual
+    Chinese/English help.
+  lead_en: 'LIT111 Literature Foundations at Duke Kunshan University: Literature Foundations → Core ideas
+    in Literature Foundations → Assignments / labs for Literature Foundations → Exam drills aligned to
+    Literature Foundations. Lecture speed and dense vocabulary outrun note-taking before methods stick.
+    Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在昆山杜克大学上 LIT111，主线是Literature Foundations → Literature Foundations 的核心概念 → Literature Foundations
+    的作业 / Lab → 对准 Literature Foundations 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
+    debug。
+  overview_en: 'One-to-one tutoring for LIT111 Literature Foundations at Duke Kunshan University. Covered
+    topics: Literature Foundations; Core ideas in Literature Foundations; Assignments / labs for Literature
+    Foundations; Exam drills aligned to Literature Foundations. Bring your brief, failing test, lecture
+    slide screenshot, or the topic name you are stuck on.'
+  overview_cn: LIT111（昆山杜克大学）一对一辅导。覆盖主题包括Literature Foundations、Literature Foundations 的核心概念、Literature
+    Foundations 的作业 / Lab、对准 Literature Foundations 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Lecture catch-up in Chinese and English
-    cn: 中英双语补课与知识点梳理
-  - en: Assignment approach and debugging
-    cn: 作业思路与调试
-  - en: Project structure and write-up feedback
-    cn: Project 结构与报告反馈
-  - en: Exam topic maps on weak areas
-    cn: 针对薄弱点的考点地图
-  - en: Tools the course actually uses (Git, notebooks, LaTeX)
-    cn: 课程真正用到的工具（Git、notebook、LaTeX）
+  - en: Literature Foundations
+    cn: Literature Foundations
+  - en: Core ideas in Literature Foundations
+    cn: Literature Foundations 的核心概念
+  - en: Assignments / labs for Literature Foundations
+    cn: Literature Foundations 的作业 / Lab
+  - en: Exam drills aligned to Literature Foundations
+    cn: 对准 Literature Foundations 的考前练习
   stuck:
-  - en: Lectures outpacing note-taking
-    cn: 课速度快于记笔记速度
-  - en: Stacked deadlines across labs and projects
-    cn: Lab 与 Project 截止日期叠在一起
-  - en: Not knowing what “good enough” looks like for the rubric
-    cn: 不清楚评分量表眼里的“够好”
-  - en: Lecture vocabulary for LIT111 outruns bilingual notes
-    cn: LIT111 的课堂术语跑在双语笔记前面
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Start from your materials and the nearest deadline
-    cn: 从你的材料与最近 DDL 开始
-  - en: Leave with a concrete next-step checklist
-    cn: 课后带走一份可执行的下一步清单
-  - en: Book follow-ups only where they still move the grade
-    cn: 只在还能拉动成绩的地方约后续课
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for LIT111: bilingual catch-up so workshop / tutorial language matches the lectures.'
-    cn: 按 LIT111 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review and live debug against the real brief.'
-    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for LIT111: bilingual walkthrough of Literature Foundations → Core ideas in Literature
+      Foundations → Assignments / labs for Literature Foundations → Exam drills aligned to Literature
+      Foundations so tutorial language matches.'
+    cn: 按 LIT111 同步跟课：用中英双语把「Literature Foundations → Literature Foundations 的核心概念 → Literature Foundations
+      的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Literature Foundations question shapes for this course.'
+    cn: 考前突击：按本课「Literature Foundations」等题型做限时练习。
+  faq:
+  - q_en: What does LIT111 cover?
+    q_cn: LIT111 学什么？
+    a_en: Literature Foundations; Core ideas in Literature Foundations; Assignments / labs for Literature
+      Foundations; Exam drills aligned to Literature Foundations. Say which week or assessment you are
+      on when booking.
+    a_cn: Literature Foundations、Literature Foundations 的核心概念、Literature Foundations 的作业 / Lab、对准 Literature
+      Foundations 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
 ---

@@ -8,8 +8,8 @@ courses:
   material: dda3020-machine-learning
   code: DDA3020
   theme: machine-learning
-  meta_description_en: DDA3020 The tutoring (Dda3020 Machine Learning). Stuck on assignment briefs such
-    as DDA3020 Lecture 12 Overfitting and Bias ?
+  meta_description_en: DDA3020 tutoring (Dda3020 Machine Learning). Stuck on Data wrangling / analytics
+    tables? Bilingual Chinese/English help.
   lead_en: 'DDA3020 Dda3020 Machine Learning at The Chinese University of Hong Kong, Shenzhen. Method
     names blur together until pipelines, metrics, and write-ups diverge. Tutoring: lecture catch-up, assignment
     debug, exam drills — methods you can reuse.'
@@ -34,9 +34,8 @@ courses:
   - en: Assignment briefs mapped to a step-by-step plan
     cn: 把作业 brief 映射成可执行步骤
   stuck:
-  - en: Assignment brief (“DDA3020 Lecture 12 Overfitting and Bias Variance”) makes sense in class, freezes
-      you alone
-    cn: 作业 brief（「DDA3020 Lecture 12 Overfitting and Bias Variance」）课上听得懂，自己对着就停住
+  - en: Assignment brief makes sense in class, freezes you alone
+    cn: 作业 brief 课上听得懂，自己对着就停住
   - en: Tool output produced, write-up cannot defend method choice
     cn: 工具输出有了，报告却说不清为何选这个方法
   - en: Formulae memorised without knowing what the code should look like
@@ -55,11 +54,8 @@ courses:
   tutoring:
   - en: 'Lecture sync for DDA3020: bilingual catch-up so workshop / tutorial language matches the lectures.'
     cn: 按 DDA3020 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as DDA3020 Lecture 12 Overfitting and Bias
-      Variance Trade off A, DDA3020 Lecture 14 Introduction to Unsupervised Learning Ann, with you at
-      the keyboard.'
-    cn: 作业辅导：针对 DDA3020 Lecture 12 Overfitting and Bias Variance Trade off A, DDA3020 Lecture 14 Introduction
-      to Unsupervised Learning Ann 一类评估拆题，你来操作键盘。
+  - en: 'Assignments: approach review and live debug against the real brief.'
+    cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
   sample_slides:

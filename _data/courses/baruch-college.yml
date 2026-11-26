@@ -7,58 +7,54 @@ courses:
 - title: MFE Technical Interview Prep
   material: mfe-tech-interview
   code: MFE Interview
-  theme: systems
-  meta_description_en: MFE Interview Baruch tutoring (MFE Technical Interview Prep). Assignment brief
-    (“assignment instructions”) makes sense in class, freezes you alone?
-  lead_en: MFE Interview MFE Technical Interview Prep at Baruch College is where abstractions stack fast
-    and labs fail for reasons that look opaque. The hard part is turning that arc into a method you can
-    repeat on the next brief — not rereading slides the night before.
-  lead_cn: 在巴鲁克学院上 MFE Interview，抽象叠得快，Lab 挂掉时又常常看不出是概念错还是环境错。
-  overview_en: MFE Interview MFE Technical Interview Prep sits in systems, networks & architecture. Evidence
-    from Assessed work expects you to apply lecture ideas under deadline pressure. Students stall when
-    terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up /
-    autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
-    tutoring deck are below.
-  overview_cn: MFE Interview 是巴鲁克学院「系统、网络与体系结构」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。学期里常会绕着网络分层、报文与协议、计算机体系结构与组成、编程基础与调试这些点转。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
+  theme: general
+  meta_description_en: MFE Interview tutoring (MFE Technical Interview Prep). Stuck on MFE Technical Interview
+    Prep? Bilingual Chinese/English help.
+  lead_en: 'MFE Interview MFE Technical Interview Prep at Baruch College: MFE Technical Interview Prep
+    → Core ideas in MFE Technical Interview Prep → Assignments / labs for MFE Technical Interview Prep
+    → Exam drills aligned to MFE Technical Interview Prep. Lecture speed and dense vocabulary outrun note-taking
+    before methods stick. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where
+    it breaks.'
+  lead_cn: 在巴鲁克学院上 MFE Interview，主线是MFE Technical Interview Prep → MFE Technical Interview Prep 的核心概念
+    → MFE Technical Interview Prep 的作业 / Lab → 对准 MFE Technical Interview Prep 的考前练习。方法还没练稳，课速和密集术语已经把笔记甩在后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for MFE Interview MFE Technical Interview Prep at Baruch College.
+    Covered topics: MFE Technical Interview Prep; Core ideas in MFE Technical Interview Prep; Assignments
+    / labs for MFE Technical Interview Prep; Exam drills aligned to MFE Technical Interview Prep. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: MFE Interview（巴鲁克学院）一对一辅导。覆盖主题包括MFE Technical Interview Prep、MFE Technical Interview Prep
+    的核心概念、MFE Technical Interview Prep 的作业 / Lab、对准 MFE Technical Interview Prep 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Networking layers, packets, and protocols
-    cn: 网络分层、报文与协议
-  - en: Computer architecture and organisation
-    cn: 计算机体系结构与组成
-  - en: Programming foundations and debugging
-    cn: 编程基础与调试
-  - en: Web / mobile app structure
-    cn: Web / 移动应用结构
-  - en: Assignment briefs mapped to a step-by-step plan
-    cn: 把作业 brief 映射成可执行步骤
+  - en: MFE Technical Interview Prep
+    cn: MFE Technical Interview Prep
+  - en: Core ideas in MFE Technical Interview Prep
+    cn: MFE Technical Interview Prep 的核心概念
+  - en: Assignments / labs for MFE Technical Interview Prep
+    cn: MFE Technical Interview Prep 的作业 / Lab
+  - en: Exam drills aligned to MFE Technical Interview Prep
+    cn: 对准 MFE Technical Interview Prep 的考前练习
   stuck:
-  - en: Assignment brief (“assignment instructions”) makes sense in class, freezes you alone
-    cn: 作业 brief（「assignment instructions」）课上听得懂，自己对着就停住
-  - en: Code almost works; edge cases and error messages have no debug method
-    cn: 代码差不多能跑，边界和报错却没有 debug 方法
-  - en: Labs that fail only under concurrency or load
-    cn: 只有并发或负载下才失败的 Lab
-  - en: Mixing up layers (app vs transport vs link)
-    cn: 把应用 / 传输 / 链路层概念混在一起
-  - en: Man pages and RFCs denser than lecture pace
-    cn: Man page / RFC 比课堂节奏更密
+  - en: Lecture demo makes sense; solo replay fails
+    cn: 课上演示听得懂，自己复不出来
+  - en: Terms pile up faster than bilingual notes
+    cn: 术语比双语笔记堆得还快
+  - en: Brief asks for a method that was never written down
+    cn: brief 要的方法从未写进笔记
   session_angles:
-  - en: Map the brief to a short checklist; you drive, we chase the failing case
-    cn: 把 brief 映射成短清单；你来操作，一起追失败测例
-  - en: You type in your environment; we keep the plan visible beside the editor
-    cn: 你在自己的环境里打字；计划始终放在编辑器旁边
-  - en: Draw the call / packet path before changing code
-    cn: 改代码前先画出调用 / 报文路径
+  - en: Restate this week’s claim before touching the homework
+    cn: 碰作业前先复述本周命题
+  - en: Map the brief to a short checklist; you drive the fix
+    cn: 把 brief 映射成短清单；你来主导修改
   tutoring:
-  - en: 'Lecture sync for MFE Interview: bilingual catch-up so workshop / tutorial language matches the
-      lectures.'
-    cn: 按 MFE Interview 当周进度跟课：用中英双语把没听清的概念补上，并保留 workshop / tutorial 会用的英文说法。
-  - en: 'Assignments: approach review for assessments such as assignment instructions, homework exercises,
-      with you at the keyboard.'
-    cn: 作业辅导：针对 assignment instructions, homework exercises 一类评估拆题，你来操作键盘。
-  - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
-    cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  - en: 'Lecture sync for MFE Interview: bilingual walkthrough of MFE Technical Interview Prep → Core
+      ideas in MFE Technical Interview Prep → Assignments / labs for MFE Technical Interview Prep → Exam
+      drills aligned to MFE Technical Interview Prep so tutorial language matches.'
+    cn: 按 MFE Interview 同步跟课：用中英双语把「MFE Technical Interview Prep → MFE Technical Interview Prep 的核心概念
+      → MFE Technical Interview Prep 的作业 / Lab」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on MFE Technical Interview Prep question shapes for this course.'
+    cn: 考前突击：按本课「MFE Technical Interview Prep」等题型做限时练习。
   sample_slides:
     title_en: MFE Interview — sample slides
     title_cn: MFE Interview — 辅导课件样例
@@ -109,6 +105,18 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does MFE Interview cover?
+    q_cn: MFE Interview 学什么？
+    a_en: MFE Technical Interview Prep; Core ideas in MFE Technical Interview Prep; Assignments / labs
+      for MFE Technical Interview Prep; Exam drills aligned to MFE Technical Interview Prep. Say which
+      week or assessment you are on when booking.
+    a_cn: MFE Technical Interview Prep、MFE Technical Interview Prep 的核心概念、MFE Technical Interview Prep
+      的作业 / Lab、对准 MFE Technical Interview Prep 的考前练习。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
