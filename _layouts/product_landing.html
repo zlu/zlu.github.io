@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  {% seo %}
+  <link rel="icon" href="{{ page.product_icon | default: '/assets/images/favicon-32.png' }}" type="image/png">
+  {% if page.product_css %}
+  <link rel="stylesheet" href="{{ page.product_css }}?v={{ site.time | date: '%s' }}">
+  {% endif %}
+</head>
+<body class="product-landing{% if page.product_theme %} product-landing--{{ page.product_theme }}{% endif %}">
+  {{ content }}
+</body>
+</html>

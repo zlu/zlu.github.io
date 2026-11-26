@@ -35,7 +35,7 @@ Side projects and products I build and run.
 <ul class="portfolio-projects">
   <li>
     <img class="portfolio-icon" src="/assets/images/portfolio/lume.png" alt="" width="128" height="128">
-    <span><strong>Lume</strong> — Local video player (libVLC) with URL open for YouTube/Bilibili. 7-day trial, then $19. <a href="https://downloads.machygienist.app/releases/Lume-latest.zip">Download</a> (macOS Apple Silicon).</span>
+    <span><strong><a href="/lume/">Lume</a></strong> — Local video player (libVLC) with URL open for YouTube/Bilibili. 7-day trial, then $19. <a href="https://downloads.machygienist.app/releases/Lume-latest.zip">Download</a> (macOS Apple Silicon).</span>
   </li>
   <li>
     <img class="portfolio-icon" src="/assets/images/portfolio/machygienist.png" alt="" width="128" height="128">

@@ -10,6 +10,7 @@ Apply when editing `_posts/` or `_drafts/` markdown.
 
 ## Hard bans
 
+- **No sentence titles.** Post `title`, `description` hooks that read like headlines, and Markdown `#` / `##` / `###` headings must be short labels (noun phrases, topic names, concrete nouns). Do **not** write them as full sentences, clause stacks, or AI-blog openers ("Getting X to talk to Y", "What this means for Z", "Why you should…", "So buy something better: what?", "A brief detour into…"). Prefer "FAT32", "Double NAT", "OpenWrt vs iStoreOS" over "Round 4: the gateway finally blinks". Body prose can be full sentences; titles cannot.
 - **No metaphors.** Do not compare training to ladders, journeys, machines that "become" something poetic, poisoning signals, nudging weights, looking up dictionaries, or similar. State the mechanism directly.
 - **No em dashes** (`—`). Use a period, comma, colon, or parentheses instead. Prefer ASCII hyphens for ranges (`1-8`), not en dashes.
 - **No AI-filler vocabulary.** Do not use these for style (technical API names like `reshape` are fine when they are real code):
@@ -43,4 +44,4 @@ Apply when editing `_posts/` or `_drafts/` markdown.
 
 1. Search the draft for `—` and remove every hit.
 2. Search for banned words above; rewrite those sentences.
-3. Read section titles: if a title is metaphorical ("Putting the ladder together"), rename it to a factual label ("Summary").
+3. Read the post `title` and every `#` / `##` / `###`: if any is a full sentence, a "Getting…", "What…means", "Why…", or metaphorical label ("Putting the ladder together"), rename it to a short factual phrase ("FAT32", "Double NAT", "Summary").
