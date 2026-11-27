@@ -3,14 +3,23 @@ title: Hypothesis testing
 synonyms:
   - Statistical test
   - Significance test
-keywords: hypothesis testing, significance test, type I type II, p-value, statistics glossary, probability
+keywords: hypothesis testing, significance test, type I type II, p-value, critical region, statistics glossary, probability
 related:
+  - Hypothesis
   - Null hypothesis
+  - Alternative hypothesis
+  - Test statistic
+  - Critical region
   - P-value
+  - Type I error
+  - Type II error
+  - Significance level
+  - Power of a test
   - T-test
   - Confidence interval
-  - Statistical inference
 ---
-**Hypothesis testing** decides whether data are compatible with a claim about $\theta$. Specify [null](/cs-glossary/null-hypothesis/) $H_0$ and alternative $H_1$, choose a test statistic, and reject $H_0$ when the statistic falls in a critical region (or when the [$p$-value](/cs-glossary/p-value/) $<\alpha$).
+**Hypothesis testing** decides whether data are compatible with a claim about $\theta$. Partition the parameter space into complementary $H_0:\theta\in\Omega_0$ and $H_1:\theta\in\Omega_0^c$, choose a [test statistic](/cs-glossary/test-statistic/) $T(X)$ with known null distribution, and reject $H_0$ when $T$ falls in the [critical region](/cs-glossary/critical-region/) $R$ — equivalently when the [$p$-value](/cs-glossary/p-value/) $\le\alpha$.
 
-Type I error: reject a true $H_0$ (rate $\alpha$). Type II: fail to reject a false $H_0$. Power $=1-$ Type II. Regression slope tests are usually two-sided $H_0:\beta=0$ via a [$t$-test](/cs-glossary/t-test/).
+- [Type I error](/cs-glossary/type-i-error/): reject true $H_0$ (controlled by [size](/cs-glossary/significance-level/) $\alpha$)
+- [Type II error](/cs-glossary/type-ii-error/): keep false $H_0$; [power](/cs-glossary/power-of-a-test/) $=1-\beta$
+- Regression slopes: usually two-sided $H_0:\beta=0$ via a [$t$-test](/cs-glossary/t-test/)

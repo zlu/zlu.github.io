@@ -2,8 +2,8 @@
 layout: page
 title: "CS Glossary — Algorithms, Statistics, Probability, and Systems Terms"
 permalink: /cs-glossary/
-description: "Searchable computer science glossary covering algorithms, data structures, complexity, plus statistics and probability — moments, estimators, MLE, distributions, Bayes, OLS, hypothesis tests — each on its own SEO-indexable page."
-keywords: "CS glossary, computer science glossary, statistics glossary, probability glossary, estimator, method of moments, maximum likelihood, MLE, Bayes theorem, normal distribution, central limit theorem, OLS, linear regression, hypothesis testing, confidence interval, sorting algorithms, binary search, BFS, DFS, Dijkstra, dynamic programming, NP-hard, complexity theory, TLS, JA4"
+description: "Searchable computer science glossary covering algorithms, data structures, complexity, plus statistics and probability — moments, estimators, MLE, distributions, Bayes, OLS, RSE, R², F-tests, hypothesis tests — each on its own SEO-indexable page."
+keywords: "CS glossary, computer science glossary, statistics glossary, probability glossary, estimator, method of moments, maximum likelihood, MLE, Bayes theorem, normal distribution, central limit theorem, OLS, linear regression, residual standard error, RSE, R-squared, p-value, Type I error, power, ACF, PACF, ARIMA, Moran's I, linear programming, assignment problem, hypothesis testing, confidence interval, sorting algorithms, binary search, BFS, DFS, Dijkstra, dynamic programming, NP-hard, complexity theory, TLS, JA4"
 sitemap: true
 ---
 
@@ -11,7 +11,7 @@ sitemap: true
   Concise definitions for sorting, searching, graph algorithms, data structures,
   complexity, automata, networking / TLS, systems concepts, and
   <strong>statistics &amp; probability</strong>
-  (moments, estimators, distributions, Bayes, OLS, inference).
+  (moments, estimators, distributions, Bayes, OLS, RSE, R², F-tests, ACF/PACF, ARIMA, spatial models, LP/IP, inference).
   Each term has its own indexable page. Browse below or search.
 </p>
 

@@ -3,13 +3,23 @@ title: Time series
 synonyms:
   - Temporal data
   - Longitudinal series
-keywords: time series, ARIMA, ACF PACF, serial correlation, statistics
+  - Time-series data
+keywords: time series, ARIMA, ACF PACF, serial correlation, trend seasonality, forecasting, statistics glossary
 related:
+  - Cross-sectional data
+  - Panel data
+  - Trend
+  - Seasonality
   - Autocorrelation
+  - Autocorrelation function
+  - Partial autocorrelation
   - Durbin–Watson
-  - IID
-  - Statistical inference
+  - ARMA
+  - ARIMA
+  - Stationarity
+  - Forecasting
+  - Intervention model
 ---
-A **time series** is data indexed by time, usually dependent across lags. Classical [iid](/cs-glossary/iid/) sampling assumptions fail; [autocorrelation](/cs-glossary/autocorrelation/), trends, and seasonality dominate.
+A **time series** records values of a variable for one entity at successive times. Rows are dependent: [trend](/cs-glossary/trend/), [seasonality](/cs-glossary/seasonality/), and [serial autocorrelation](/cs-glossary/serial-autocorrelation/) break classical [iid](/cs-glossary/iid/) regression assumptions.
 
-Tools in applied coursework: ACF/PACF plots, [Durbin–Watson](/cs-glossary/durbin-watson/) on regression residuals, and AR/ARIMA-style corrections when serial correlation appears.
+Course toolkit: time-series regression + [Durbin–Watson](/cs-glossary/durbin-watson/); [ACF](/cs-glossary/autocorrelation-function/)/[PACF](/cs-glossary/partial-autocorrelation/); [AR](/cs-glossary/autoregressive-model/)/[MA](/cs-glossary/moving-average-model/)/[ARMA](/cs-glossary/arma/)/[ARIMA](/cs-glossary/arima/); [forecasting](/cs-glossary/forecasting/) and [intervention](/cs-glossary/intervention-model/) models.

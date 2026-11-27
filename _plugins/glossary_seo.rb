@@ -58,7 +58,7 @@ module Jekyll
       # Stats / probability entries set keywords in front matter; when absent,
       # still tag CS glossary pages that already mention statistics in the title.
       title_l = doc.data["title"].to_s.downcase
-      if collection_name == "cs-glossary" && title_l =~ /statisti|probabilit|estimat|bayes|likelihood|distribut|regress|moment|variance|covari|hypothesis|confidence|sample mean|central limit|law of large/
+      if collection_name == "cs-glossary" && title_l =~ /statisti|probabilit|estimat|bayes|likelihood|distribut|regress|moment|variance|covari|hypothesis|confidence|sample mean|central limit|law of large|residual|r-squared|f-test|intercept|slope|error term|fitted|normal equation|sum of squares|dependent|independent|exogen|endogen|gauss|blue|heterosced|homosced|p-value|type i|type ii|power of|autocorr|arima|arma|stationar|season|forecast|spatial|moran|gis|raster|vector data|linear programming|integer programming|assignment|transportation|flow|metaheuristic|durbin|white noise|elasticity|lag |dummy|qq|kolmogorov/
         parts << "statistics"
         parts << "probability"
         parts << "statistics glossary"

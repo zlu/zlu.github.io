@@ -3,13 +3,21 @@ title: Autocorrelation
 synonyms:
   - Serial correlation
   - ACF dependence
-keywords: autocorrelation, serial correlation, ACF, Durbin-Watson, time series statistics
+keywords: autocorrelation, serial correlation, ACF, PACF, Durbin-Watson, time series, statistics glossary
 related:
+  - Serial autocorrelation
+  - Autocorrelation function
+  - Partial autocorrelation
   - Durbin–Watson
+  - Spatial autocorrelation
   - Covariance
   - Time series
   - Gauss–Markov theorem
+  - White noise
 ---
-**Autocorrelation** (serial correlation) is correlation of a series with its own lags: $\mathrm{Corr}(\varepsilon_t,\varepsilon_{t-k})\neq 0$. In regression errors it violates the uncorrelated-errors part of [Gauss–Markov](/cs-glossary/gauss-markov-theorem/).
+**Autocorrelation** is correlation of a series (or of residuals) with its own [lags](/cs-glossary/lag/): $\mathrm{Corr}(Y_t,Y_{t-k})\neq 0$. In regression errors it violates the uncorrelated-errors part of [Gauss–Markov](/cs-glossary/gauss-markov-theorem/).
 
-Detect with residual plots, ACF/PACF, or [Durbin–Watson](/cs-glossary/durbin-watson/). Consequences: inefficient OLS and invalid classical inference. Remedies include lagged models, ARIMA errors, and HAC standard errors.
+- Temporal: [serial autocorrelation](/cs-glossary/serial-autocorrelation/), [ACF](/cs-glossary/autocorrelation-function/), [PACF](/cs-glossary/partial-autocorrelation/), [Durbin–Watson](/cs-glossary/durbin-watson/)
+- Spatial: [spatial autocorrelation](/cs-glossary/spatial-autocorrelation/), [Moran's I](/cs-glossary/morans-i/)
+
+Consequences: inefficient OLS and invalid classical inference. Remedies: lagged / ARIMA models, spatial lag/error models, HAC SEs.
