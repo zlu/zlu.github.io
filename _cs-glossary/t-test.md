@@ -22,4 +22,4 @@ t_{\hat\alpha}=\frac{\hat\alpha-c}{\mathrm{s.e.}(\hat\alpha)},
 \quad\sim t_{n-2},
 $$
 
-with $\mathrm{s.e.}(\hat\beta)=s/\sqrt{S_{xx}}$ and $\mathrm{s.e.}(\hat\alpha)=s\sqrt{1/n+\bar x^2/S_{xx}}$ ([RSE](/cs-glossary/residual-standard-error/) $s$). Reject two-sided $H_0$ at level $p$ if $|t|>t_{n-2,\,p/2}$. Typical significance probe: $c=0$. Equivalent to checking whether $c$ lies outside the [confidence interval](/cs-glossary/confidence-interval/). In simple regression, $F=t^2$ for the slope vs the joint [$F$-test](/cs-glossary/f-test/).
+with $\mathrm{s.e.}(\hat\beta)=s/\sqrt{S_{xx}}$ and $\mathrm{s.e.}(\hat\alpha)=s\sqrt{1/n+\bar x^2/S_{xx}}$ ([RSE](/cs-glossary/residual-standard-error/) $s$). Reject two-sided $H_0$ at level $p$ if $\lvert t\rvert>t_{n-2,\,p/2}$. Typical significance probe: $c=0$. Equivalent to checking whether $c$ lies outside the [confidence interval](/cs-glossary/confidence-interval/). In simple regression, $F=t^2$ for the slope vs the joint [$F$-test](/cs-glossary/f-test/).
