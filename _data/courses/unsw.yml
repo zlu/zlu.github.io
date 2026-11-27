@@ -73,74 +73,77 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
-- topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
-  theme: programming
-  session_angles:
-  - en: Restate I/O and edges on a whiteboard first
-    cn: 先在白板上复述输入输出和边界
-  - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分失败用例
-  tutoring:
-  - en: 'Lecture sync for COMP1511: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP1511 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
-  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
-    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
-      shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
-  code: COMP1511
-  lead_cn: 在新南威尔士大学上 COMP1511，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试
-    vs autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
-    debug。
-  overview_cn: COMP1511（新南威尔士大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+- code: COMP1511
   title: Programming Fundamentals
+  theme: programming
+  meta_description_en: COMP1511 UNSW tutoring (Programming Fundamentals). Stuck on C, pointers, arrays,
+    or autotest? Bilingual Chinese/English help.
+  lead_en: 'COMP1511 Programming Fundamentals is UNSW’s first C course: types and control flow, arrays
+    and strings, pointers and memory, then structs/linked lists under dense briefs and autotest. Tutoring
+    rebuilds the week’s C model, then debugs the lab or assignment where your pointer diagram and the
+    failing autotest disagree — not a generic “read the brief” pep talk.'
+  lead_cn: COMP1511 Programming Fundamentals 是 UNSW 的第一门 C 课：类型与控制流、数组与字符串、指针与内存，再到结构体 / 链表，配上密 brief
+    和 autotest。辅导重建当周 C 模型，再在指针图和失败 autotest 对不上时 对着 Lab / 作业 debug——不是泛泛的「先读 brief」鸡汤。
+  overview_en: 'One-to-one tutoring for COMP1511 at UNSW (6 UoC). Public arc: C basics and I/O → control
+    flow and functions → arrays/strings → pointers and memory → structs and linked lists → style and testing
+    for autotest. Bring your brief, failing autotest, or a screenshot of the lecture slide you are stuck
+    on.'
+  overview_cn: UNSW COMP1511 一对一辅导（6 学分）。公开主线：C 基础与 I/O → 控制流与函数 → 数组 / 字符串 → 指针与内存 → 结构体与链表 → 面向 autotest
+    的风格与测试。预约时请带上 brief、失败 autotest，或卡住的那页课件截图。
+  topics:
+  - en: C basics — types, control flow, functions, stdio
+    cn: C 基础 — 类型、控制流、函数、stdio
+  - en: Arrays, strings, and common off-by-one / NUL bugs
+    cn: 数组、字符串与常见 off-by-one / NUL 坑
+  - en: Pointers, addresses, and the stack vs heap picture
+    cn: 指针、地址，以及栈 / 堆图景
+  - en: Structs, linked lists, and modular .c / .h layout
+    cn: 结构体、链表与 .c / .h 模块划分
+  - en: Reading dense COMP1511 briefs and mapping to autotest
+    cn: 读密 COMP1511 brief 并映射到 autotest
+  - en: Debugging — print / gdb when sample passes but submit fails
+    cn: 调试 — 样例能过提交挂时用打印 / gdb
   stuck:
-  - en: Sample cases pass; submission fails on edges or I/O format
-    cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
-  - en: Code that almost works with no systematic debug plan
-    cn: 代码差不多能跑，却没有系统 debug 计划
-  meta_description_en: COMP1511 tutoring (Programming Fundamentals). Stuck on Reading the brief — I/O,
-    edges, and marking points before code? Bilingual Chinese/English help.
-  lead_en: 'COMP1511 Programming Fundamentals at University of New South Wales: Reading the brief — I/O,
-    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
-    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
-    debugs the lab or assignment where it breaks.'
-  overview_en: 'One-to-one tutoring for COMP1511 Programming Fundamentals at University of New South Wales.
-    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
-    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
-    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
-    screenshot, or the topic name you are stuck on.'
+  - en: Local samples pass; autotest fails on string edges or I/O format
+    cn: 本地样例能过；autotest 在字符串边界或 I/O 格式挂
+  - en: Pointer diagram clear in lecture; your code still segfaults
+    cn: 课上指针图画得清，自己的代码仍 segfault
+  - en: Brief read thrice; still unsure which ADT or loop structure to build
+    cn: brief 读了三遍，仍不确定要建哪个 ADT 或循环结构
+  - en: Malloc / free — leak or use-after-free only shows under autotest
+    cn: malloc / free — 泄漏或 use-after-free 只在 autotest 下暴露
+  - en: Style / header layout fails check while logic looks fine
+    cn: 逻辑看起来没问题，风格 / 头文件布局却过不了检查
+  session_angles:
+  - en: Draw the pointer / array picture before typing
+    cn: 动手前先画指针 / 数组图
+  - en: 'You drive: we chase the failing autotest with a minimal repro'
+    cn: 你来操作：一起用最小复现追失败的 autotest
+  - en: Restate I/O and edges from the brief on a whiteboard first
+    cn: 先在白板上复述 brief 里的 I/O 与边界
+  tutoring:
+  - en: 'Lecture sync: bilingual walkthrough of C → arrays/strings → pointers/lists so lab language matches.'
+    cn: 同步跟课：用中英双语把 C → 数组 / 字符串 → 指针 / 链表讲透，对齐 Lab 用语。
+  - en: 'Labs / assignments: approach review and live debug on your code (you at the keyboard).'
+    cn: Lab / 作业：拆题、梳思路，对着你的代码现场 debug（你来操作键盘）。
+  - en: 'Exam / weekly-test drills: pointer traces, string edges, and brief-reading under time pressure.'
+    cn: 考试 / 周测突击：限时练指针手推、字符串边界与读 brief。
   faq:
   - q_en: What does COMP1511 cover?
     q_cn: COMP1511 学什么？
-    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
-      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
-      mismatches…. Say which week or assessment you are on when booking.
-    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
+    a_en: First-year C — control flow, arrays/strings, pointers/memory, structs/lists — under dense briefs
+      and autotest. Say which week or lab you are on when booking.
+    a_cn: 大一 C——控制流、数组 / 字符串、指针 / 内存、结构体 / 链表，配上密 brief 和 autotest。预约时说明你卡在哪一周或哪个 Lab。
+  - q_en: I have never used C — can I still book?
+    q_cn: 没用过 C 也能约吗？
+    a_en: Yes. Sessions start from the construct you are on (loops → arrays → pointers) and build a debug
+      method you can reuse on the next autotest.
+    a_cn: 可以。课上从你正在学的构造开始（循环 → 数组 → 指针），练出下一份 autotest 还能用的排查方法。
   - q_en: What should I bring to the first session?
     q_cn: 第一次课前准备什么？
-    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
-      you are stuck on.
-    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+    a_en: Lab or assignment brief, your .c files, the failing autotest output, and the week topic name
+      (e.g. pointers, strings, linked lists).
+    a_cn: Lab 或作业 brief、你的 .c 文件、失败 autotest 输出，以及当周主题名（如指针、字符串、链表）。
 - code: COMP1521
   title: Computer Systems Fundamentals
   theme: systems
@@ -1705,75 +1708,100 @@ courses:
   title: Principles of Programming
   material: comp9021 25T3 期末班资料
   theme: programming
-  meta_description_en: COMP9021 tutoring (Principles of Programming). Stuck on Reading the brief — I/O,
-    edges, and marking points before code? Bilingual Chinese/English help.
-  lead_en: 'COMP9021 Principles of Programming at University of New South Wales: Reading the brief — I/O,
-    edges, and marking points before code → Control flow, functions, and decomposition → Data basics —
-    arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling,
-    and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then
-    debugs the lab or assignment where it breaks.'
-  lead_cn: 在新南威尔士大学上 COMP9021，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试
-    vs autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
-    debug。
-  overview_en: 'One-to-one tutoring for COMP9021 Principles of Programming at University of New South
-    Wales. Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow,
-    functions, and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally
-    vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test,
-    lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP9021（新南威尔士大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  meta_description_en: COMP9021 UNSW tutoring (Principles of Programming). Stuck on Python quizzes, recursion,
+    grids, or OOP? Bilingual Chinese/English help.
+  lead_en: 'COMP9021 Principles of Programming is accelerated postgraduate Python: lists/dicts/sets, files
+    and formatting, recursion and memoisation, classes, then grids/NumPy/search-style problems under weekly
+    quizzes and a heavy final. Tutoring rebuilds the week’s technique, then drills the quiz or exam shape
+    you are failing — not a generic “read the brief” pep talk.'
+  lead_cn: COMP9021 Principles of Programming 是加速的研究生 Python：list/dict/set、文件与格式化、递归与记忆化、类，再到网格 / NumPy
+    / 搜索类题，配上周 quiz 和很重的期末。辅导重建当周技法，再练你挂掉的 quiz / 考试题型——不是泛泛的「先读 brief」鸡汤。
+  overview_en: 'One-to-one tutoring for COMP9021 at UNSW (6 UoC, Level 0 bridging, no formal prereq —
+    steep curve). Public arc: Python operators and containers → base systems/Unicode/sorting/lambdas →
+    complexity, slices, files, bitwise ops → generators, 2-D lists, NumPy, regex → recursion/memoisation
+    → classes/OOP → linked structures, stacks/queues/trees, DP, inheritance. Assessment is typically weekly
+    quizzes, two assignments, and a large final. Bring your quiz stub, assignment brief, failing test,
+    or past-paper style question when you book. Sample slides from our tutoring deck are below.'
+  overview_cn: UNSW COMP9021 一对一辅导（6 学分，Level 0 桥接，无正式先修——曲线很陡）。公开主线：Python 运算符与容器 → 进制 / Unicode / 排序
+    / lambda → 复杂度、切片、文件、位运算 → 生成器、二维 list、NumPy、正则 → 递归 / 记忆化 → 类 / OOP → 链表结构、栈 / 队列 / 树、DP、继承。考核常见为周
+    quiz、两次作业和大头期末。预约时请带上 quiz 骨架、作业 brief、失败测例或真题风格题。下方有辅导课件样例。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Python containers — lists, tuples, dicts, sets, strings
+    cn: Python 容器 — list、tuple、dict、set、字符串
+  - en: Functions, lambdas, generators, slices, and complexity intuition
+    cn: 函数、lambda、生成器、切片与复杂度直觉
+  - en: Files, directories, formatting, bitwise ops
+    cn: 文件 / 目录、格式化、位运算
+  - en: Recursion, memoisation, and dynamic programming patterns
+    cn: 递归、记忆化与动态规划模式
+  - en: Classes / OOP — identity, equality, inheritance
+    cn: 类 / OOP — 身份、相等、继承
+  - en: 2-D grids, NumPy, regex, DFS/BFS-style search
+    cn: 二维网格、NumPy、正则、DFS/BFS 式搜索
+  - en: Weekly quiz + assignment problem shapes under time pressure
+    cn: 限时下的周 quiz + 作业题型
   stuck:
-  - en: Sample cases pass; submission fails on edges or I/O format
-    cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
-  - en: Code that almost works with no systematic debug plan
-    cn: 代码差不多能跑，却没有系统 debug 计划
+  - en: Quiz almost finished; slice / mutability / dict-key edges fail
+    cn: Quiz 差不多写完；切片 / 可变性 / dict 键边界挂掉
+  - en: Recursion idea clear; base case or memo key wrong under the clock
+    cn: 递归思路清楚；限时下 base case 或 memo 键写错
+  - en: Grid / path questions — cannot settle on a state representation
+    cn: 网格 / 路径题 — 状态表示定不下来
+  - en: Class works on sample; equality / hashing breaks hidden tests
+    cn: 样例上类能跑；相等 / 哈希在隐藏测试崩
+  - en: File-parse or format-print questions lose marks on exact output
+    cn: 文件解析或格式化打印题在精确输出上丢分
   session_angles:
-  - en: Restate I/O and edges on a whiteboard first
-    cn: 先在白板上复述输入输出和边界
-  - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分失败用例
+  - en: Hand-trace a tiny input before editing the quiz skeleton
+    cn: 改 quiz 骨架前先手推一个小输入
+  - en: 'You type: we chase the failing edge (slice, key, base case, grid bound)'
+    cn: 你来打字：一起追失败边界（切片、键、base case、网格边界）
+  - en: Timed drill on one exam family — recursion, grid, or OOP
+    cn: 限时练一类考试题族 — 递归、网格或 OOP
   tutoring:
-  - en: 'Lecture sync for COMP9021: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP9021 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
-  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
-    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
-      shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  - en: 'Lecture sync: bilingual walkthrough of containers → files → recursion/OOP → grids/NumPy so quiz
+      language matches.'
+    cn: 同步跟课：用中英双语把「容器 → 文件 → 递归/OOP → 网格/NumPy」讲透，对齐 quiz 用语。
+  - en: 'Quizzes / assignments: approach review and live debug on your stub (you at the keyboard).'
+    cn: Quiz / 作业：拆题、梳思路，对着你的骨架现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on recursion, grids, file I/O, and class question shapes.'
+    cn: 考前突击：按递归、网格、文件 I/O 与类的题型做限时练习。
+  faq:
+  - q_en: What does COMP9021 cover?
+    q_cn: COMP9021 学什么？
+    a_en: Accelerated Python problem-solving — containers, files, recursion/DP, OOP, grids/NumPy/search,
+      plus weekly quizzes and a large final. Say which quiz week or assignment you are on when booking.
+    a_cn: 加速的 Python 解题——容器、文件、递归/DP、OOP、网格/NumPy/搜索，外加周 quiz 和大头期末。预约时说明你卡在哪周 quiz 或哪次作业。
+  - q_en: I am new to programming — can I still take tutoring?
+    q_cn: 零基础也能辅导吗？
+    a_en: Yes. The course assumes no prior Python, but the pace is steep. Sessions start from the construct
+      you are on (list/dict → recursion → class) and build a method you can reuse on the next quiz.
+    a_cn: 可以。课程不假定你会 Python，但节奏很快。课上从你正在学的构造开始（list/dict → 递归 → 类），练出下一份 quiz 还能用的方法。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: Quiz stub or assignment PDF, your attempt, failing output, and the week topic name (e.g. recursion,
+      grid, files).
+    a_cn: Quiz 骨架或作业 PDF、你的尝试、失败输出，以及当周主题名（如递归、网格、文件）。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our COMP9021 tutoring deck are on this page.
+    a_cn: 有，本页有我们 COMP9021 辅导课件的样例页。
   sample_slides:
     title_en: COMP9021 — sample slides
     title_cn: COMP9021 — 辅导课件样例
     lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Names, objects, mutability。
+      function, Names, objects, mutability from our COMP9021 tutoring deck.
+    lead_cn: 我们 COMP9021 辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
+      code), One job per function, Names, objects, mutability。
     bullets:
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
-    - en: Unit tests and autograder feedback loops
-      cn: 单元测试与 autograder 反馈循环
+    - en: Python containers and problem decomposition
+      cn: Python 容器与拆题
+    - en: Recursion / memoisation patterns for quizzes
+      cn: Quiz 用的递归 / 记忆化模式
+    - en: Grids, search, and exact output discipline
+      cn: 网格、搜索与精确输出纪律
+    - en: Classes — identity, equality, inheritance
+      cn: 类 — 身份、相等、继承
     slides:
     - src: /assets/teach/unsw-sydney/comp9021/sample/01-title.webp
       alt_en: COMP9021 tutoring · Title
@@ -1807,22 +1835,6 @@ courses:
       caption_cn: Names, objects, mutability
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
-  faq:
-  - q_en: What does COMP9021 cover?
-    q_cn: COMP9021 学什么？
-    a_en: Reading the brief — I/O, edges, and marking points before code; Control flow, functions, and
-      decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
-      mismatches…. Say which week or assessment you are on when booking.
-    a_cn: 先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试 vs autograder 不一致。预约时说明你卡在哪一周或哪次评估。
-  - q_en: What should I bring to the first session?
-    q_cn: 第一次课前准备什么？
-    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
-      you are stuck on.
-    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
-  - q_en: Are sample slides available?
-    q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
-    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP9311
   title: Database Systems
   theme: databases

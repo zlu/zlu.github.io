@@ -7,40 +7,41 @@ courses:
 - code: COMP1002
   title: Introduction to Programming
   theme: programming
-  meta_description_en: COMP1002 tutoring (Introduction to Programming). Stuck on Reading the brief — I/O,
-    edges, and marking points before code? Bilingual Chinese/English help.
+  meta_description_en: COMP1002 tutoring (Introduction to Programming). Stuck on Variables, types, and
+    expressions in the course language? Bilingual Chinese/English help.
   lead_en: 'COMP1002 Introduction to Programming at The Hong Kong University of Science and Technology:
-    Reading the brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition
-    → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches….
-    Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
-    arc, then debugs the lab or assignment where it breaks.'
-  lead_cn: 在香港科技大学上 COMP1002，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
-    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+    Variables, types, and expressions in the course language → Control flow — branching, loops, and nested
+    logic → Functions / procedures and stepwise decomposition → Collections — arrays/lists/strings and
+    indexing bugs…. Problem decomposition and edge cases hit harder than memorising syntax. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港科技大学上 COMP1002，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for COMP1002 Introduction to Programming at The Hong Kong University
-    of Science and Technology. Covered topics: Reading the brief — I/O, edges, and marking points before
-    code; Control flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs;
-    Testing locally vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief,
-    failing test, lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP1002（香港科技大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    of Science and Technology. Covered topics: Variables, types, and expressions in the course language;
+    Control flow — branching, loops, and nested logic; Functions / procedures and stepwise decomposition;
+    Collections — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder
+    expects. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
+    on.'
+  overview_cn: COMP1002（香港科技大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
   - en: Sample cases pass; submission fails on edges or I/O format
     cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
   - en: Code that almost works with no systematic debug plan
     cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
@@ -49,16 +50,16 @@ courses:
   - en: Bisect the failing test with print / debugger discipline
     cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP1002: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP1002 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for COMP1002: bilingual walkthrough of Variables, types, and expressions in the
+      course language → Control flow — branching, loops, and nested logic → Functions / procedures and
+      stepwise decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language
+      matches.'
+    cn: 按 COMP1002 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
       shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
   faq:
   - q_en: What does COMP1002 cover?
     q_cn: COMP1002 学什么？
@@ -74,40 +75,41 @@ courses:
 - code: COMP1021
   title: Introduction to Programming with Python
   theme: programming
-  meta_description_en: COMP1021 tutoring (Introduction to Programming with…). Stuck on Reading the brief
-    — I/O, edges, and marking points before code? Bilingual Chinese/Englis…
+  meta_description_en: COMP1021 tutoring (Introduction to Programming with…). Stuck on Variables, types,
+    and expressions in the course language? Bilingual Chinese/English help.
   lead_en: 'COMP1021 Introduction to Programming with Python at The Hong Kong University of Science and
-    Technology: Reading the brief — I/O, edges, and marking points before code → Control flow, functions,
-    and decomposition → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder
-    mismatches…. Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds
-    that syllabus arc, then debugs the lab or assignment where it breaks.'
-  lead_cn: 在香港科技大学上 COMP1021，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
-    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+    Technology: Variables, types, and expressions in the course language → Control flow — branching, loops,
+    and nested logic → Functions / procedures and stepwise decomposition → Collections — arrays/lists/strings
+    and indexing bugs…. Problem decomposition and edge cases hit harder than memorising syntax. Tutoring
+    rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港科技大学上 COMP1021，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for COMP1021 Introduction to Programming with Python at The Hong Kong
-    University of Science and Technology. Covered topics: Reading the brief — I/O, edges, and marking
-    points before code; Control flow, functions, and decomposition; Data basics — arrays/lists/strings
-    and common bugs; Testing locally vs autograder mismatches; Debugging method — reproduce, bisect, fix.
-    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP1021（香港科技大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    University of Science and Technology. Covered topics: Variables, types, and expressions in the course
+    language; Control flow — branching, loops, and nested logic; Functions / procedures and stepwise decomposition;
+    Collections — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder
+    expects. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
+    on.'
+  overview_cn: COMP1021（香港科技大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
   - en: Sample cases pass; submission fails on edges or I/O format
     cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
   - en: Code that almost works with no systematic debug plan
     cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
@@ -116,16 +118,16 @@ courses:
   - en: Bisect the failing test with print / debugger discipline
     cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP1021: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP1021 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for COMP1021: bilingual walkthrough of Variables, types, and expressions in the
+      course language → Control flow — branching, loops, and nested logic → Functions / procedures and
+      stepwise decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language
+      matches.'
+    cn: 按 COMP1021 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
       shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
   faq:
   - q_en: What does COMP1021 cover?
     q_cn: COMP1021 学什么？
@@ -141,41 +143,41 @@ courses:
 - code: COMP1022P
   title: Introduction to Computing with Java
   theme: programming
-  meta_description_en: COMP1022P tutoring (Introduction to Computing with Java). Stuck on Reading the
-    brief — I/O, edges, and marking points before code? Bilingual Chinese/Eng…
+  meta_description_en: COMP1022P tutoring (Introduction to Computing with Java). Stuck on Variables, types,
+    and expressions in the course language? Bilingual Chinese/English h…
   lead_en: 'COMP1022P Introduction to Computing with Java at The Hong Kong University of Science and Technology:
-    Reading the brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition
-    → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches….
-    Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
-    arc, then debugs the lab or assignment where it breaks.'
-  lead_cn: 在香港科技大学上 COMP1022P，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试
-    vs autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
-    debug。
+    Variables, types, and expressions in the course language → Control flow — branching, loops, and nested
+    logic → Functions / procedures and stepwise decomposition → Collections — arrays/lists/strings and
+    indexing bugs…. Problem decomposition and edge cases hit harder than memorising syntax. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港科技大学上 COMP1022P，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for COMP1022P Introduction to Computing with Java at The Hong Kong
-    University of Science and Technology. Covered topics: Reading the brief — I/O, edges, and marking
-    points before code; Control flow, functions, and decomposition; Data basics — arrays/lists/strings
-    and common bugs; Testing locally vs autograder mismatches; Debugging method — reproduce, bisect, fix.
-    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP1022P（香港科技大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    University of Science and Technology. Covered topics: Variables, types, and expressions in the course
+    language; Control flow — branching, loops, and nested logic; Functions / procedures and stepwise decomposition;
+    Collections — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder
+    expects. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
+    on.'
+  overview_cn: COMP1022P（香港科技大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
   - en: Sample cases pass; submission fails on edges or I/O format
     cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
   - en: Code that almost works with no systematic debug plan
     cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
@@ -184,16 +186,16 @@ courses:
   - en: Bisect the failing test with print / debugger discipline
     cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP1022P: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP1022P 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for COMP1022P: bilingual walkthrough of Variables, types, and expressions in the
+      course language → Control flow — branching, loops, and nested logic → Functions / procedures and
+      stepwise decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language
+      matches.'
+    cn: 按 COMP1022P 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
       shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
   faq:
   - q_en: What does COMP1022P cover?
     q_cn: COMP1022P 学什么？
@@ -210,40 +212,41 @@ courses:
   title: Introduction to Programming
   material: comp1023
   theme: programming
-  meta_description_en: COMP1023 tutoring (Introduction to Programming). Stuck on Reading the brief — I/O,
-    edges, and marking points before code? Bilingual Chinese/English help.
+  meta_description_en: COMP1023 tutoring (Introduction to Programming). Stuck on Variables, types, and
+    expressions in the course language? Bilingual Chinese/English help.
   lead_en: 'COMP1023 Introduction to Programming at The Hong Kong University of Science and Technology:
-    Reading the brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition
-    → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches….
-    Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
-    arc, then debugs the lab or assignment where it breaks.'
-  lead_cn: 在香港科技大学上 COMP1023，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
-    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+    Variables, types, and expressions in the course language → Control flow — branching, loops, and nested
+    logic → Functions / procedures and stepwise decomposition → Collections — arrays/lists/strings and
+    indexing bugs…. Problem decomposition and edge cases hit harder than memorising syntax. Tutoring rebuilds
+    that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港科技大学上 COMP1023，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for COMP1023 Introduction to Programming at The Hong Kong University
-    of Science and Technology. Covered topics: Reading the brief — I/O, edges, and marking points before
-    code; Control flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs;
-    Testing locally vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief,
-    failing test, lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP1023（香港科技大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    of Science and Technology. Covered topics: Variables, types, and expressions in the course language;
+    Control flow — branching, loops, and nested logic; Functions / procedures and stepwise decomposition;
+    Collections — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder
+    expects. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
+    on.'
+  overview_cn: COMP1023（香港科技大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
   - en: Sample cases pass; submission fails on edges or I/O format
     cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
   - en: Code that almost works with no systematic debug plan
     cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
@@ -252,16 +255,16 @@ courses:
   - en: Bisect the failing test with print / debugger discipline
     cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP1023: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP1023 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for COMP1023: bilingual walkthrough of Variables, types, and expressions in the
+      course language → Control flow — branching, loops, and nested logic → Functions / procedures and
+      stepwise decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language
+      matches.'
+    cn: 按 COMP1023 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
       shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
   sample_slides:
     title_en: COMP1023 — sample slides
     title_cn: COMP1023 — 辅导课件样例
@@ -330,40 +333,40 @@ courses:
 - code: COMP2011
   title: Programming with C++
   theme: programming
-  meta_description_en: COMP2011 tutoring (Programming with C++). Stuck on Reading the brief — I/O, edges,
-    and marking points before code? Bilingual Chinese/English help.
-  lead_en: 'COMP2011 Programming with C++ at The Hong Kong University of Science and Technology: Reading
-    the brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition
-    → Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches….
-    Briefs, tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
-    arc, then debugs the lab or assignment where it breaks.'
-  lead_cn: 在香港科技大学上 COMP2011，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
-    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  meta_description_en: COMP2011 tutoring (Programming with C++). Stuck on Variables, types, and expressions
+    in the course language? Bilingual Chinese/English help.
+  lead_en: 'COMP2011 Programming with C++ at The Hong Kong University of Science and Technology: Variables,
+    types, and expressions in the course language → Control flow — branching, loops, and nested logic
+    → Functions / procedures and stepwise decomposition → Collections — arrays/lists/strings and indexing
+    bugs…. Problem decomposition and edge cases hit harder than memorising syntax. Tutoring rebuilds that
+    syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在香港科技大学上 COMP2011，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for COMP2011 Programming with C++ at The Hong Kong University of Science
-    and Technology. Covered topics: Reading the brief — I/O, edges, and marking points before code; Control
-    flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally
-    vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test,
-    lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP2011（香港科技大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    and Technology. Covered topics: Variables, types, and expressions in the course language; Control
+    flow — branching, loops, and nested logic; Functions / procedures and stepwise decomposition; Collections
+    — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder expects. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP2011（香港科技大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
   - en: Sample cases pass; submission fails on edges or I/O format
     cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
   - en: Code that almost works with no systematic debug plan
     cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
@@ -372,16 +375,16 @@ courses:
   - en: Bisect the failing test with print / debugger discipline
     cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP2011: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP2011 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for COMP2011: bilingual walkthrough of Variables, types, and expressions in the
+      course language → Control flow — branching, loops, and nested logic → Functions / procedures and
+      stepwise decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language
+      matches.'
+    cn: 按 COMP2011 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
       shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
   faq:
   - q_en: What does COMP2011 cover?
     q_cn: COMP2011 学什么？

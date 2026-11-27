@@ -205,41 +205,40 @@ courses:
 - code: COMP16121
   title: Object Oriented Programming with Java 1
   theme: programming
-  meta_description_en: COMP16121 tutoring (Object Oriented Programming with…). Stuck on Reading the brief
-    — I/O, edges, and marking points before code? Bilingual Chinese/Engli…
-  lead_en: 'COMP16121 Object Oriented Programming with Java 1 at University of Manchester: Reading the
-    brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition →
-    Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs,
-    tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
-    arc, then debugs the lab or assignment where it breaks.'
-  lead_cn: 在曼彻斯特大学上 COMP16121，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试
-    vs autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
-    debug。
+  meta_description_en: COMP16121 tutoring (Object Oriented Programming with…). Stuck on Variables, types,
+    and expressions in the course language? Bilingual Chinese/English help.
+  lead_en: 'COMP16121 Object Oriented Programming with Java 1 at University of Manchester: Variables,
+    types, and expressions in the course language → Control flow — branching, loops, and nested logic
+    → Functions / procedures and stepwise decomposition → Collections — arrays/lists/strings and indexing
+    bugs…. Problem decomposition and edge cases hit harder than memorising syntax. Tutoring rebuilds that
+    syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在曼彻斯特大学上 COMP16121，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for COMP16121 Object Oriented Programming with Java 1 at University
-    of Manchester. Covered topics: Reading the brief — I/O, edges, and marking points before code; Control
-    flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally
-    vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test,
-    lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP16121（曼彻斯特大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    of Manchester. Covered topics: Variables, types, and expressions in the course language; Control flow
+    — branching, loops, and nested logic; Functions / procedures and stepwise decomposition; Collections
+    — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder expects. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP16121（曼彻斯特大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
   - en: Sample cases pass; submission fails on edges or I/O format
     cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
   - en: Code that almost works with no systematic debug plan
     cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
@@ -248,16 +247,16 @@ courses:
   - en: Bisect the failing test with print / debugger discipline
     cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP16121: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP16121 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for COMP16121: bilingual walkthrough of Variables, types, and expressions in the
+      course language → Control flow — branching, loops, and nested logic → Functions / procedures and
+      stepwise decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language
+      matches.'
+    cn: 按 COMP16121 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
       shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
   faq:
   - q_en: What does COMP16121 cover?
     q_cn: COMP16121 学什么？
@@ -273,41 +272,40 @@ courses:
 - code: COMP16212
   title: Object Oriented Programming with Java 2
   theme: programming
-  meta_description_en: COMP16212 tutoring (Object Oriented Programming with…). Stuck on Reading the brief
-    — I/O, edges, and marking points before code? Bilingual Chinese/Engli…
-  lead_en: 'COMP16212 Object Oriented Programming with Java 2 at University of Manchester: Reading the
-    brief — I/O, edges, and marking points before code → Control flow, functions, and decomposition →
-    Data basics — arrays/lists/strings and common bugs → Testing locally vs autograder mismatches…. Briefs,
-    tooling, and autograder edge cases hit harder than syntax itself. Tutoring rebuilds that syllabus
-    arc, then debugs the lab or assignment where it breaks.'
-  lead_cn: 在曼彻斯特大学上 COMP16212，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试
-    vs autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方
-    debug。
+  meta_description_en: COMP16212 tutoring (Object Oriented Programming with…). Stuck on Variables, types,
+    and expressions in the course language? Bilingual Chinese/English help.
+  lead_en: 'COMP16212 Object Oriented Programming with Java 2 at University of Manchester: Variables,
+    types, and expressions in the course language → Control flow — branching, loops, and nested logic
+    → Functions / procedures and stepwise decomposition → Collections — arrays/lists/strings and indexing
+    bugs…. Problem decomposition and edge cases hit harder than memorising syntax. Tutoring rebuilds that
+    syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在曼彻斯特大学上 COMP16212，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for COMP16212 Object Oriented Programming with Java 2 at University
-    of Manchester. Covered topics: Reading the brief — I/O, edges, and marking points before code; Control
-    flow, functions, and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally
-    vs autograder mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test,
-    lecture slide screenshot, or the topic name you are stuck on.'
-  overview_cn: COMP16212（曼彻斯特大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    of Manchester. Covered topics: Variables, types, and expressions in the course language; Control flow
+    — branching, loops, and nested logic; Functions / procedures and stepwise decomposition; Collections
+    — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder expects. Bring
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: COMP16212（曼彻斯特大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
   - en: Sample cases pass; submission fails on edges or I/O format
     cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
   - en: Code that almost works with no systematic debug plan
     cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
@@ -316,16 +314,16 @@ courses:
   - en: Bisect the failing test with print / debugger discipline
     cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync for COMP16212: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 COMP16212 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for COMP16212: bilingual walkthrough of Variables, types, and expressions in the
+      course language → Control flow — branching, loops, and nested logic → Functions / procedures and
+      stepwise decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language
+      matches.'
+    cn: 按 COMP16212 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
       shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
   faq:
   - q_en: What does COMP16212 cover?
     q_cn: COMP16212 学什么？

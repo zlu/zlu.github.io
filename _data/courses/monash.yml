@@ -8,55 +8,57 @@ courses:
   title: Introduction to Programming
   material: fit1045
   theme: programming
-  lead_en: FIT1045 is many students' first real programming unit. Briefs, Python syntax, and workshop
-    logic hit at once. The hard part is not memorising keywords — it is turning a wordy task into working
-    code without freezing in the IDE.
-  lead_cn: FIT1045 往往是留学生第一门正经编程课。Brief、Python 语法、workshop 逻辑一起压过来。 难的不是背关键字，而是把题意变成能跑的代码，而不是在 IDE 里卡住。
-  overview_en: Introduction to Programming covers Python fundamentals through workshops, quizzes, and
-    coding tasks (control flow, functions, strings, simple algorithms such as classical ciphers). Students
-    get stuck when the task wording is unclear, when errors look random, or when a solution “almost works”
-    but fails hidden cases. Sample slides from our concept-review tutoring deck are below.
-  overview_cn: Introduction to Programming 用 workshop、quiz 与编程任务带你入门 Python（控制流、函数、 字符串，以及恺撒 / 维吉尼亚一类经典密码练习）。真正卡人的是题意读不清、报错像随机事件，
-    或代码「差不多能跑」却过不了隐藏测例。 下方有我们概念复习辅导课件的样例页。
+  lead_en: 'FIT1045 Introduction to Programming at Monash University: Variables, types, and expressions
+    in the course language → Control flow — branching, loops, and nested logic → Functions / procedures
+    and stepwise decomposition → Collections — arrays/lists/strings and indexing bugs…. Problem decomposition
+    and edge cases hit harder than memorising syntax. Tutoring rebuilds that syllabus arc, then debugs
+    the lab or assignment where it breaks.'
+  lead_cn: 在莫纳什大学上 FIT1045，主线是课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题 → 集合 — 数组/列表/字符串与下标坑。真正难的往往是拆题和边界，而不是背语法。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
+  overview_en: 'One-to-one tutoring for FIT1045 Introduction to Programming at Monash University. Covered
+    topics: Variables, types, and expressions in the course language; Control flow — branching, loops,
+    and nested logic; Functions / procedures and stepwise decomposition; Collections — arrays/lists/strings
+    and indexing bugs; I/O, specs, and exact output the autograder expects. Bring your brief, failing
+    test, lecture slide screenshot, or the topic name you are stuck on.'
+  overview_cn: FIT1045（莫纳什大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
+    brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Python basics — variables, control flow, functions
-    cn: Python 基础：变量、控制流、函数
-  - en: Strings, lists, mutability, and simple data processing
-    cn: 字符串、列表、可变性与简单数据处理
-  - en: Reading a brief into a step-by-step plan
-    cn: 把 brief 拆成可执行步骤
-  - en: Debugging with traces instead of random edits
-    cn: 用跟踪思路 debug，而不是乱改
-  - en: Pre-class / workshop / quiz-style practice problems
-    cn: Pre-class / workshop / quiz 风格练习
-  - en: Multi-file projects (e.g. robot / geo feature tasks) and classic ciphers
-    cn: 多文件项目（如 robot / 地理特征任务）与经典密码题
+  - en: Variables, types, and expressions in the course language
+    cn: 课程语言中的变量、类型与表达式
+  - en: Control flow — branching, loops, and nested logic
+    cn: 控制流 — 分支、循环与嵌套逻辑
+  - en: Functions / procedures and stepwise decomposition
+    cn: 函数 / 过程与逐步拆题
+  - en: Collections — arrays/lists/strings and indexing bugs
+    cn: 集合 — 数组/列表/字符串与下标坑
+  - en: I/O, specs, and exact output the autograder expects
+    cn: I/O、规格与 autograder 要求的精确输出
+  - en: Testing and debugging — reproduce, bisect, fix
+    cn: 测试与调试 — 复现、二分、再修
   stuck:
-  - en: Assignment text makes sense in class, then freezes you alone at the keyboard
-    cn: 课上听得懂题，自己对着键盘就停住
-  - en: Syntax errors and stack traces feel random instead of diagnostic
-    cn: 语法错误和堆栈像随机事件，不会当诊断信息读
-  - en: A program that works on the sample input fails the autograder edge cases
-    cn: 样例能过，autograder 边界一测就挂
-  - en: Copying workshop demos without knowing which line does the real work
-    cn: 会抄 workshop 演示，但分不清哪一行才是关键逻辑
+  - en: Sample cases pass; submission fails on edges or I/O format
+    cn: 样例能过；提交在边界或 I/O 格式上挂
+  - en: Spec read three times, still unsure what to implement
+    cn: 规格读了三遍仍不确定要实现什么
+  - en: Code that almost works with no systematic debug plan
+    cn: 代码差不多能跑，却没有系统 debug 计划
   session_angles:
-  - en: Translate the brief into a short checklist before typing code
-    cn: 写代码前先把 brief 转化成短清单
-  - en: You drive the IDE; we chase the failing case together
-    cn: 你来操作 IDE，我们一起追失败测例
-  - en: Exam / quiz drills on the same patterns workshops use
-    cn: 用与 workshop 同构的题型做 quiz / 考试练习
+  - en: Restate I/O and edges on a whiteboard first
+    cn: 先在白板上复述输入输出和边界
+  - en: Bisect the failing test with print / debugger discipline
+    cn: 用打印 / 调试器纪律二分失败用例
   tutoring:
-  - en: 'Lecture sync: bilingual walkthrough of Python concepts so workshop language matches the lectures.'
-    cn: 同步跟课：用中英双语把 Python 概念讲透，与 workshop / 课堂用语对齐。
-  - en: 'Assignments: approach review and live debug.'
-    cn: 作业辅导：拆 brief、梳思路、现场 debug。
-  - en: 'Quiz / exam prep: short timed drills on control flow, strings, and reading error messages under
-      pressure.'
-    cn: Quiz / 考前突击：限时练控制流、字符串，以及在压力下读懂报错。
-  meta_description_en: FIT1045 Monash tutoring (Introduction to Programming). Assignment text makes sense
-    in class, then freezes you alone at the keyboard? Bilingual help.
+  - en: 'Lecture sync for FIT1045: bilingual walkthrough of Variables, types, and expressions in the course
+      language → Control flow — branching, loops, and nested logic → Functions / procedures and stepwise
+      decomposition → Collections — arrays/lists/strings and indexing bugs so tutorial language matches.'
+    cn: 按 FIT1045 同步跟课：用中英双语把「课程语言中的变量、类型与表达式 → 控制流 — 分支、循环与嵌套逻辑 → 函数 / 过程与逐步拆题」讲透，对齐 tutorial 用语。
+  - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
+    cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
+  - en: 'Exam prep: timed drills on Variables, types, and expressions in the course language question
+      shapes for this course.'
+    cn: 考前突击：按本课「课程语言中的变量、类型与表达式」等题型做限时练习。
+  meta_description_en: FIT1045 tutoring (Introduction to Programming). Stuck on Variables, types, and
+    expressions in the course language? Bilingual Chinese/English help.
   sample_slides:
     title_en: FIT1045 — sample slides
     title_cn: FIT1045 — 辅导课件样例
@@ -107,6 +109,17 @@ courses:
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
+  - q_en: What does FIT1045 cover?
+    q_cn: FIT1045 学什么？
+    a_en: C basics — types, control flow, functions, I/O; Arrays, strings, and pointer arithmetic; Memory
+      — stack vs heap, malloc, common leaks; Structs, linked lists, and modular .c/.h layout…. Say which
+      week or assessment you are on when booking.
+    a_cn: C 基础 — 类型、控制流、函数、I/O、数组、字符串与指针运算、内存 — 栈 / 堆、malloc、常见泄漏、结构体、链表与 .c/.h 模块划分。预约时说明你卡在哪一周或哪次评估。
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
+      you are stuck on.
+    a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
@@ -1365,58 +1378,55 @@ courses:
 - code: FIT1051
   title: Programming fundamentals in java
   theme: programming
-  meta_description_en: FIT1051 tutoring (Programming fundamentals in java). Stuck on Reading the brief
-    — I/O, edges, and marking points before code? Bilingual Chinese/English …
-  lead_en: 'FIT1051 Programming fundamentals in java at Monash University: Reading the brief — I/O, edges,
-    and marking points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-    and common bugs → Testing locally vs autograder mismatches…. Briefs, tooling, and autograder edge
-    cases hit harder than syntax itself. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment
-    where it breaks.'
-  lead_cn: 在莫纳什大学上 FIT1051，主线是先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑 → 本地测试 vs
-    autograder 不一致。真正难的往往不是语法，而是 brief 读不透、工具链不熟，以及 autograder 专砸边界。辅导先重建这条大纲主线，再对着 Lab / 作业里断开的地方 debug。
+  meta_description_en: FIT1051 tutoring (Programming fundamentals in java). Stuck on Classes, objects,
+    encapsulation, and invariants? Bilingual Chinese/English help.
+  lead_en: 'FIT1051 Programming fundamentals in java at Monash University: Classes, objects, encapsulation,
+    and invariants → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities
+    and collaborators → Testing objects and mutable state…. Class design and ownership bugs hide behind
+    “it compiles”. Tutoring rebuilds that syllabus arc, then debugs the lab or assignment where it breaks.'
+  lead_cn: 在莫纳什大学上 FIT1051，主线是类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系 → 测对象与可变状态。类设计和所有权问题藏在「能编译」后面。辅导先重建这条大纲主线，再对着
+    Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for FIT1051 Programming fundamentals in java at Monash University.
-    Covered topics: Reading the brief — I/O, edges, and marking points before code; Control flow, functions,
-    and decomposition; Data basics — arrays/lists/strings and common bugs; Testing locally vs autograder
-    mismatches; Debugging method — reproduce, bisect, fix. Bring your brief, failing test, lecture slide
+    Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
+    Design before typing — responsibilities and collaborators; Testing objects and mutable state; Common
+    memory / reference pitfalls in the course language. Bring your brief, failing test, lecture slide
     screenshot, or the topic name you are stuck on.'
-  overview_cn: FIT1051（莫纳什大学）一对一辅导。覆盖主题包括先读 brief — 输入输出、边界与评分点，再动手、控制流、函数与拆题、数据基础 — 数组/列表/字符串与常见坑、本地测试
-    vs autograder 不一致。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+  overview_cn: FIT1051（莫纳什大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
   topics:
-  - en: Reading the brief — I/O, edges, and marking points before code
-    cn: 先读 brief — 输入输出、边界与评分点，再动手
-  - en: Control flow, functions, and decomposition
-    cn: 控制流、函数与拆题
-  - en: Data basics — arrays/lists/strings and common bugs
-    cn: 数据基础 — 数组/列表/字符串与常见坑
-  - en: Testing locally vs autograder mismatches
-    cn: 本地测试 vs autograder 不一致
-  - en: Debugging method — reproduce, bisect, fix
-    cn: 调试方法 — 复现、二分、再修
-  - en: Style and structure the marker can follow
-    cn: 改卷人跟得上的风格与结构
+  - en: Classes, objects, encapsulation, and invariants
+    cn: 类、对象、封装与不变量
+  - en: Inheritance, interfaces, and polymorphism
+    cn: 继承、接口与多态
+  - en: Design before typing — responsibilities and collaborators
+    cn: 先设计再写 — 职责与协作关系
+  - en: Testing objects and mutable state
+    cn: 测对象与可变状态
+  - en: Common memory / reference pitfalls in the course language
+    cn: 课程语言里的常见引用 / 内存坑
+  - en: Refactoring for clarity under an autograder
+    cn: 在 autograder 下为清晰度重构
   stuck:
-  - en: Sample cases pass; submission fails on edges or I/O format
-    cn: 样例能过；提交在边界或 I/O 格式上挂
-  - en: Brief read three times, still unsure what to implement
-    cn: brief 读了三遍仍不确定要实现什么
-  - en: Code that almost works with no systematic debug plan
-    cn: 代码差不多能跑，却没有系统 debug 计划
+  - en: Methods work in isolation; object graph breaks under the brief
+    cn: 方法单独能跑；对象关系一接 brief 就断
+  - en: Inheritance used where composition was needed
+    cn: 该用组合却用了继承
+  - en: Equals/hash or ownership bugs that only show in tests
+    cn: equals/hash 或所有权 bug 只在测试里出现
   session_angles:
-  - en: Restate I/O and edges on a whiteboard first
-    cn: 先在白板上复述输入输出和边界
-  - en: Bisect the failing test with print / debugger discipline
-    cn: 用打印 / 调试器纪律二分失败用例
+  - en: CRC / responsibility sketch before opening the editor
+    cn: 打开编辑器前先画职责草图
+  - en: Write the failing test that names the invariant
+    cn: 先写点名不变量的失败测试
   tutoring:
-  - en: 'Lecture sync for FIT1051: bilingual walkthrough of Reading the brief — I/O, edges, and marking
-      points before code → Control flow, functions, and decomposition → Data basics — arrays/lists/strings
-      and common bugs → Testing locally vs autograder mismatches so tutorial language matches.'
-    cn: 按 FIT1051 同步跟课：用中英双语把「先读 brief — 输入输出、边界与评分点，再动手 → 控制流、函数与拆题 → 数据基础 — 数组/列表/字符串与常见坑」讲透，对齐 tutorial
-      用语。
+  - en: 'Lecture sync for FIT1051: bilingual walkthrough of Classes, objects, encapsulation, and invariants
+      → Inheritance, interfaces, and polymorphism → Design before typing — responsibilities and collaborators
+      → Testing objects and mutable state so tutorial language matches.'
+    cn: 按 FIT1051 同步跟课：用中英双语把「类、对象、封装与不变量 → 继承、接口与多态 → 先设计再写 — 职责与协作关系」讲透，对齐 tutorial 用语。
   - en: 'Assignments / labs: approach review and live debug (you at the keyboard).'
     cn: 作业 / Lab：拆 brief、梳思路，现场 debug（你来操作键盘）。
-  - en: 'Exam prep: timed drills on Reading the brief — I/O, edges, and marking points before code question
-      shapes for this course.'
-    cn: 考前突击：按本课「先读 brief — 输入输出、边界与评分点，再动手」等题型做限时练习。
+  - en: 'Exam prep: timed drills on Classes, objects, encapsulation, and invariants question shapes for
+      this course.'
+    cn: 考前突击：按本课「类、对象、封装与不变量」等题型做限时练习。
   faq:
   - q_en: What does FIT1051 cover?
     q_cn: FIT1051 学什么？

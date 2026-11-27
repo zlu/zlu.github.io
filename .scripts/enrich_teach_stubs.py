@@ -26,22 +26,41 @@ ROOT = Path(__file__).resolve().parents[1]
 COURSES_DIR = ROOT / "_data" / "courses"
 PACKS_PATH = ROOT / "_data" / "teach_subject_packs.yml"
 
-# Leads that are clearly theme/synth filler — eligible for --force refresh.
-WEAK_LEAD_RE = re.compile(
+# Truly stubby / outdated intro-pack copy — eligible for --force refresh.
+# Pack clones with real subject topics are NOT "done", but force-rewriting
+# them just swaps one template for another. Track those separately in audit.
+FORCE_LEAD_RE = re.compile(
     r"Briefs, tooling, and autograder|"
     r"Abstractions stack fast|"
     r"One-to-one tutoring: catch up on lectures|"
-    r"lecture speed and dense vocabulary|"
-    r"Common topics: (?:Programming foundations|Reading the brief|OS / systems programming)",
+    r"Common topics: (?:Programming foundations|Reading the brief|OS / systems programming)|"
+    r"Covered topics: Reading the brief — I/O|"
+    r"课讲得快、术语密，很多抽象点单靠课件记不住",
     re.I,
 )
-WEAK_TOPIC_MARKERS = (
+FORCE_TOPIC_MARKERS = (
+    "Reading the brief — I/O, edges, and marking points before code",
     "Reading the brief and designing before typing",
     "Programming foundations and debugging",
     "Git basics when the course requires it",
-    "Algorithms, ADTs, and complexity",
-    "Security / privacy threat models and labs",
     "中英双语补课",
+)
+# Broader "still pack-templated" metric (report only; does not drive --force).
+PACK_CLONE_LEAD_RE = re.compile(
+    r"Tutoring rebuilds that syllabus arc|"
+    r"Covered topics: Variables, types, and expressions",
+    re.I,
+)
+# Never overwrite these hand-curated fingerprints with pack clones.
+PROTECTED_LEAD_RE = re.compile(
+    r"accelerated postgraduate Python|"
+    r"bridges C to the machine|"
+    r"first C course|"
+    r"not a generic|"
+    r"mipsy|"
+    r"weekly quizzes and a heavy final|"
+    r"pointer diagram and the failing autotest",
+    re.I,
 )
 
 
@@ -215,16 +234,18 @@ def build_copy(uni_label: str, uni_cn: str, code: str, title: str, pack: dict) -
 
 def needs_enrichment(course: dict, force: bool) -> bool:
     lead = (course.get("lead_en") or "").strip()
+    if PROTECTED_LEAD_RE.search(lead):
+        return False
     if not lead:
         return True
     if not force:
         return False
-    if WEAK_LEAD_RE.search(lead):
+    if FORCE_LEAD_RE.search(lead):
         return True
     tops = " | ".join(
         (t.get("en") or "") for t in (course.get("topics") or []) if isinstance(t, dict)
     )
-    return any(m in tops for m in WEAK_TOPIC_MARKERS)
+    return any(m in tops for m in FORCE_TOPIC_MARKERS)
 
 
 def apply_copy(course: dict, copy: dict) -> None:
@@ -283,13 +304,58 @@ def process_file(path: Path, packs: list[dict], write: bool, force: bool, only_c
     return stats
 
 
+def audit() -> int:
+    """Honest inventory: empty ≠ pack-clone ≠ hand-curated."""
+    empty = 0
+    forceable = 0
+    pack_clone = 0
+    protected = 0
+    other = 0
+    material_pack = 0
+    for path in sorted(COURSES_DIR.glob("*.yml")):
+        data = load_yaml_doc(path)
+        for course in data.get("courses") or []:
+            if not isinstance(course, dict) or not (course.get("code") or course.get("title")):
+                continue
+            lead = (course.get("lead_en") or "").strip()
+            if PROTECTED_LEAD_RE.search(lead):
+                protected += 1
+                continue
+            if not lead:
+                empty += 1
+                continue
+            if needs_enrichment(course, force=True):
+                forceable += 1
+                continue
+            if PACK_CLONE_LEAD_RE.search(lead):
+                pack_clone += 1
+                if course.get("material"):
+                    material_pack += 1
+                continue
+            other += 1
+    total = empty + forceable + pack_clone + protected + other
+    print("teach course inventory (honest):")
+    print(f"  empty lead_en:              {empty}")
+    print(f"  forceable intro/stub copy:  {forceable}")
+    print(f"  subject-pack clones:        {pack_clone}  (material-backed among them: {material_pack})")
+    print(f"  hand-curated fingerprints:  {protected}")
+    print(f"  other (may still be thin):  {other}")
+    print(f"  total:                      {total}")
+    print("Note: non-empty lead_en alone never means curated. Pack clones ≠ done.")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--force", action="store_true", help="Also refresh weak theme-ish curated leads")
+    ap.add_argument("--audit", action="store_true", help="Print honest stub/pack/curated counts")
     ap.add_argument("--uni", action="append", default=[], help="Limit to admin slug(s)")
     ap.add_argument("--code", action="append", default=[], help="Limit to course code(s)")
     args = ap.parse_args()
+
+    if args.audit:
+        return audit()
 
     packs = load_packs()
     only = set(args.uni) if args.uni else None
