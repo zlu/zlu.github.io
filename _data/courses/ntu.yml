@@ -72,6 +72,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: AB0403
   title: Decision Making with Programming & Analytics
   theme: machine-learning
@@ -139,6 +143,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: EE6407
   title: Genetic Algorithms & Machine Learning
   department: School of Electrical and Electronic Engineering
@@ -328,6 +336,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC1003
   title: Introduction to Computational Thinking and Programming
   theme: programming
@@ -395,6 +407,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC1005
   title: Digital Logic
   theme: systems
@@ -462,6 +478,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC1006
   title: Computer Organisation and Architecture
   theme: systems
@@ -529,6 +549,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC1007
   title: Data Structures and Algorithms
   theme: algorithms
@@ -595,6 +619,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC2000
   title: Object Oriented Design and Programming
   theme: programming
@@ -660,6 +688,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC2001
   title: Algorithm Design and Analysis
   theme: algorithms
@@ -726,6 +758,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC2005
   title: Operating Systems
   theme: systems
@@ -794,6 +830,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC2006
   title: Software Engineering
   theme: web-mobile
@@ -861,6 +901,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC3001
   title: Introduction to Artificial Intelligence
   theme: machine-learning
@@ -928,6 +972,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: SC4001
   title: Neural Networks and Deep Learning
   theme: systems
@@ -995,6 +1043,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CZ3005
   title: Artificial Intelligence
   theme: machine-learning
@@ -1062,6 +1114,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CZ4042
   title: Neural Networks and Deep Learning
   theme: systems
@@ -1129,6 +1185,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: CE/CZ2001
   title: Algorithms
   material: EE6407-GENETIC ALGORITHMS & MACHINE LEARNING

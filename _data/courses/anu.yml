@@ -70,6 +70,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP1110
   title: Structured Programming
   theme: programming
@@ -137,6 +141,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP1600
   title: Foundations of Computing
   theme: math-for-cs
@@ -198,6 +206,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2100
   title: Software Construction
   theme: programming
@@ -262,6 +274,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2300
   title: Computer Organisation and Program Execution
   theme: systems
@@ -329,6 +345,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2400
   title: Relational Databases
   theme: databases
@@ -395,6 +415,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3600
   title: Algorithms
   theme: algorithms
@@ -461,6 +485,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2620
   title: Logic
   theme: math-for-cs
@@ -522,6 +550,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3670
   title: Introduction to Machine Learning
   theme: machine-learning
@@ -589,6 +621,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP4620
   title: Advanced Topics in AI
   theme: machine-learning
@@ -657,6 +693,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP6670
   title: Introduction to Machine Learning
   theme: machine-learning
@@ -724,6 +764,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP6710
   title: Structured Programming (Master)
   theme: programming
@@ -791,4 +835,8 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

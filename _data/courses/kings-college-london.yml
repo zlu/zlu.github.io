@@ -65,6 +65,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 4CCS1FC2
   title: Foundations of Computing 2
   theme: math-for-cs
@@ -126,6 +130,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 4CCS1PRP
   title: Programming Practice and Applications
   theme: programming
@@ -193,6 +201,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 4CCS1DST
   title: Data Structures
   theme: algorithms
@@ -259,6 +271,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 5CCS2OSC
   title: Operating Systems and Concurrency
   theme: systems
@@ -327,6 +343,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 5CCS2DBS
   title: Database Systems
   theme: databases
@@ -392,6 +412,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 5CCS2AIN
   title: Artificial Intelligence Reasoning and Decision Making
   theme: machine-learning
@@ -460,6 +484,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 6CCS3AIN
   title: Artificial Intelligence
   theme: machine-learning
@@ -528,6 +556,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 6CCS3ML1
   title: Machine Learning
   theme: machine-learning
@@ -595,6 +627,10 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: 7CCSMPNN
   title: Pattern Recognition, Neural Networks and Deep Learning
   theme: systems
@@ -662,4 +698,8 @@ courses:
     a_en: School, course code, deadline, plus your brief/PDF, code, or a screenshot of the lecture slide
       you are stuck on.
     a_cn: 学校、课号、截止日期，再加上 brief/PDF、代码，或卡住的那页课件截图。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 ---

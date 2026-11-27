@@ -1,16 +1,16 @@
 source: Admin _data/courses + linked private teaching/ metadata
 policy: Class files stay private. Run with --write-links to persist empty teaching_folder/material
   into admin YAML.
-university_count: 90
-course_count: 700
-linked_course_count: 174
+university_count: 91
+course_count: 704
+linked_course_count: 177
 universities:
 - slug: unsw
   university: University of New South Wales
   teaching_folder: unsw-sydney
   hand_curated: true
-  course_count: 36
-  linked_course_count: 16
+  course_count: 37
+  linked_course_count: 17
   courses:
   - code: ADAD9113
     title: Communication Skills for Creative Disciplines
@@ -49,8 +49,7 @@ universities:
     material: comp2017-9017-system-programming
     link: material field
     topics: &id001
-    - &id004
-      en: operating systems
+    - en: operating systems
       cn: 操作系统
     - &id005
       en: memory / pointers
@@ -65,12 +64,12 @@ universities:
     - en: assignments / labs
       cn: 作业 / Lab
     shape: &id002
-      pdf: 20
+      pdf: 22
       slides: 0
       notebooks: 0
       code: 6
-      notes_md: 1
-      total_content_files: 28
+      notes_md: 3
+      total_content_files: 32
       week_span:
       - 0
       - 12
@@ -78,17 +77,17 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 75
+    depth_score: 79
   - code: COMP2107
-    title: Systems Programming
+    title: System Programming
     material: comp2017-9017-system-programming
     link: material field
     topics: *id001
     shape: *id002
     signals: *id003
-    depth_score: 75
+    depth_score: 79
   - code: COMP2511
-    title: Object-Oriented Design and Programming
+    title: Software Design And Architecture
     material: comp2511-software-design-and-architecture
     link: material field
     topics:
@@ -100,18 +99,18 @@ universities:
       en: Java
       cn: Java
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 17
-      notes_md: 2
-      total_content_files: 30
+      notes_md: 4
+      total_content_files: 34
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 35
+    depth_score: 39
   - code: COMP2521
     title: Data Structures and Algorithms
     material: ''
@@ -145,18 +144,18 @@ universities:
       en: algorithms
       cn: 算法
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 3
+    depth_score: 7
   - code: COMP3211
     title: Computer Architecture
     material: comp3211
@@ -170,12 +169,12 @@ universities:
     - en: computer architecture
       cn: 计算机体系结构
     shape:
-      pdf: 7
+      pdf: 9
       slides: 0
       notebooks: 0
       code: 16
-      notes_md: 1
-      total_content_files: 52
+      notes_md: 3
+      total_content_files: 56
       week_span:
       - 1
       - 3
@@ -183,7 +182,45 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 64
+    depth_score: 68
+  - code: COMP3221
+    title: Distributed Systems
+    material: comp3221
+    link: material field
+    topics:
+    - en: exam prep
+      cn: 考前突击
+    - en: assignments / labs
+      cn: 作业 / Lab
+    - en: networking
+      cn: 计算机网络
+    - &id015
+      en: distributed systems
+      cn: 分布式系统
+    - &id004
+      en: operating systems
+      cn: 操作系统
+    - en: OOP
+      cn: 面向对象
+    - en: stats / probability
+      cn: 统计 / 概率
+    - en: web front-end
+      cn: 前端
+    shape:
+      pdf: 418
+      slides: 0
+      notebooks: 1
+      code: 216
+      notes_md: 10
+      total_content_files: 725
+      week_span:
+      - 1
+      - 13
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 748
   - code: COMP3311
     title: Database Systems
     material: ''
@@ -209,7 +246,7 @@ universities:
     signals: {}
     depth_score: 0
   - code: COMP4337
-    title: Securing Fixed and Wireless Networks
+    title: 9337 Securing Fixed And Wireless Networks
     material: comp4337-9337-securing-fixed-and-wireless-networks
     link: material field
     topics:
@@ -222,30 +259,30 @@ universities:
       en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 29
+      pdf: 31
       slides: 0
       notebooks: 0
       code: 5
-      notes_md: 4
-      total_content_files: 43
+      notes_md: 6
+      total_content_files: 47
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 46
+    depth_score: 50
   - code: COMP4920
     title: Computer Ethics
     material: comp4920-computer-ethics
     link: material field
     topics: []
     shape:
-      pdf: 7
+      pdf: 9
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 4
-      total_content_files: 11
+      notes_md: 6
+      total_content_files: 15
       week_span:
       - 1
       - 1
@@ -253,22 +290,21 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 14
+    depth_score: 18
   - code: COMP5310
     title: Principles of Data Science
     material: Comp5310简化
     link: material field
     topics:
-    - &id015
-      en: stats / probability
+    - en: stats / probability
       cn: 统计 / 概率
     shape:
-      pdf: 21
+      pdf: 23
       slides: 0
       notebooks: 19
       code: 0
-      notes_md: 2
-      total_content_files: 54
+      notes_md: 4
+      total_content_files: 58
       week_span:
       - 1
       - 13
@@ -276,7 +312,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 93
+    depth_score: 97
   - code: COMP6080
     title: Web Front-End Programming
     material: ''
@@ -306,18 +342,18 @@ universities:
       en: computer architecture
       cn: 计算机体系结构
     shape:
-      pdf: 15
+      pdf: 17
       slides: 0
       notebooks: 7
       code: 225
-      notes_md: 0
-      total_content_files: 306
+      notes_md: 2
+      total_content_files: 310
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 311
+    depth_score: 315
   - code: COMP9311
     title: Database Systems
     material: ''
@@ -348,12 +384,12 @@ universities:
     - en: APIs / HTTP
       cn: API / HTTP
     shape:
-      pdf: 23
+      pdf: 25
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 40
-      total_content_files: 64
+      notes_md: 42
+      total_content_files: 68
       week_span:
       - 1
       - 3
@@ -361,25 +397,25 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 78
+    depth_score: 82
   - code: COMP9414
     title: Artificial Intelligence
     material: comp9414-ai
     link: material field
     topics: []
     shape:
-      pdf: 1
+      pdf: 3
       slides: 0
       notebooks: 2
       code: 0
-      notes_md: 0
-      total_content_files: 5
+      notes_md: 2
+      total_content_files: 9
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 8
+    depth_score: 12
   - code: COMP9417
     title: Machine Learning and Data Mining
     material: ''
@@ -404,12 +440,12 @@ universities:
     - en: web front-end
       cn: 前端
     shape:
-      pdf: 20
+      pdf: 22
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 22
+      notes_md: 2
+      total_content_files: 26
       week_span:
       - 1
       - 9
@@ -417,19 +453,19 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 51
+    depth_score: 55
   - code: COMP9601
     title: Computer Systems
     material: Comp9601简化
     link: material field
     topics: []
     shape:
-      pdf: 33
+      pdf: 35
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 33
+      notes_md: 2
+      total_content_files: 37
       week_span:
       - 1
       - 13
@@ -437,7 +473,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 72
+    depth_score: 76
   - code: DATA1001
     title: Introduction to Data Science and Decisions
     material: ''
@@ -478,12 +514,12 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 5
+      pdf: 7
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 6
+      notes_md: 2
+      total_content_files: 10
       week_span:
       - 1
       - 3
@@ -491,7 +527,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 15
+    depth_score: 19
   - code: INFS1603
     title: Introduction to Business Databases
     material: ''
@@ -516,18 +552,18 @@ universities:
     - en: C++ STL
       cn: C++ STL
     shape:
-      pdf: 57
+      pdf: 59
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 57
+      notes_md: 2
+      total_content_files: 61
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 57
+    depth_score: 61
   topics:
   - *id004
   - *id005
@@ -545,11 +581,11 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 1002
-  coverage_summary_en: 'Bilingual tutoring across 16 course(s) at this school. Lecture
+  total_depth: 1810
+  coverage_summary_en: 'Bilingual tutoring across 17 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: operating
     systems, memory / pointers, lists / stacks / queues, algorithms.'
-  coverage_summary_cn: 本校可辅导约 16 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：操作系统、内存
+  coverage_summary_cn: 本校可辅导约 17 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：操作系统、内存
     / 指针、链表 / 栈 / 队列、算法。。
 - slug: birmingham
   university: University of Birmingham
@@ -584,12 +620,12 @@ universities:
     - en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 4
+      pdf: 6
       slides: 4
       notebooks: 0
       code: 394
-      notes_md: 13
-      total_content_files: 485
+      notes_md: 15
+      total_content_files: 489
       week_span:
       - 6
       - 9
@@ -597,7 +633,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 505
+    depth_score: 509
   - code: LC AI1
     title: Artificial Intelligence 1
     material: LC Artificial Intelligence 1
@@ -618,12 +654,12 @@ universities:
     - en: stats / probability
       cn: 统计 / 概率
     shape:
-      pdf: 58
+      pdf: 60
       slides: 1
       notebooks: 2
       code: 0
-      notes_md: 4
-      total_content_files: 65
+      notes_md: 6
+      total_content_files: 69
       week_span:
       - 1
       - 11
@@ -631,7 +667,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 103
+    depth_score: 107
   - code: LMLI AI/ML
     title: Artificial Intelligence and Machine Learning
     material: LMLI Artificial Intelligence and Machine Learning
@@ -648,12 +684,12 @@ universities:
       en: stats / probability
       cn: 统计 / 概率
     shape:
-      pdf: 22
+      pdf: 24
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 22
+      notes_md: 2
+      total_content_files: 26
       week_span:
       - 1
       - 8
@@ -661,7 +697,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 49
+    depth_score: 53
   - code: Data Structures and Algorithms
     title: DSA 24 25
     material: DSA 24-25
@@ -683,12 +719,12 @@ universities:
     - en: memory / pointers
       cn: 内存 / 指针
     shape:
-      pdf: 17
+      pdf: 19
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 17
+      notes_md: 2
+      total_content_files: 21
       week_span:
       - 7
       - 11
@@ -696,7 +732,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 37
+    depth_score: 41
   - code: LM DSA/DB
     title: Data Structures, Algorithms, and Databases
     material: LM Data Structures, Algorithms, and Databases
@@ -712,12 +748,12 @@ universities:
     - en: SQL / databases
       cn: SQL / 数据库
     shape:
-      pdf: 3
+      pdf: 5
       slides: 14
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 17
+      notes_md: 2
+      total_content_files: 21
       week_span:
       - 1
       - 11
@@ -725,7 +761,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 32
+    depth_score: 36
   - code: Computer Systems
     title: Computer Systems
     material: Computer Systems
@@ -745,36 +781,36 @@ universities:
     - en: computer architecture
       cn: 计算机体系结构
     shape:
-      pdf: 14
+      pdf: 16
       slides: 1
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 15
+      notes_md: 2
+      total_content_files: 19
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 15
+    depth_score: 19
   - code: LI AI2
     title: Artificial Intelligence 2
     material: LI Artificial Intelligence 2
     link: material field
     topics: []
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 3
+    depth_score: 7
   - code: '29903'
     title: LI Multidisciplinary Systems and Software Engineering
     material: 29903 - LI Multidisciplinary Systems and Software Engineering
@@ -786,18 +822,18 @@ universities:
     - en: Python
       cn: Python
     shape:
-      pdf: 0
+      pdf: 2
       slides: 0
       notebooks: 3
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 6
+    depth_score: 10
   - code: 07-38153
     title: LM Analytics Micro-Course
     material: 07-3838153lm-analytics-micro-course-birmingham-business-school
@@ -835,7 +871,7 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 752
+  total_depth: 784
   coverage_summary_en: 'Bilingual tutoring across 9 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: databases,
     APIs / HTTP, web front-end, Java.'
@@ -942,12 +978,12 @@ universities:
       en: machine learning
       cn: 机器学习
     shape:
-      pdf: 204
+      pdf: 206
       slides: 0
-      notebooks: 0
+      notebooks: 1
       code: 273
-      notes_md: 6
-      total_content_files: 665
+      notes_md: 8
+      total_content_files: 671
       week_span:
       - 1
       - 10
@@ -955,7 +991,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 703
+    depth_score: 709
   - code: CS229
     title: Machine Learning
     material: cs229-machine-learning
@@ -993,7 +1029,7 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 713
+  total_depth: 719
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: OOP,
     web front-end, exam prep, assignments / labs.'
@@ -1033,12 +1069,12 @@ universities:
       en: web / JS
       cn: Web / JS
     shape: &id037
-      pdf: 14
+      pdf: 16
       slides: 2
       notebooks: 0
       code: 5
-      notes_md: 1
-      total_content_files: 34
+      notes_md: 3
+      total_content_files: 38
       week_span:
       - 1
       - 12
@@ -1046,7 +1082,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 78
+    depth_score: 82
   - code: INFO1113
     title: Object-Oriented Programming
     material: info-1113-java
@@ -1059,12 +1095,12 @@ universities:
       en: OOP
       cn: 面向对象
     shape: &id040
-      pdf: 12
+      pdf: 14
       slides: 0
       notebooks: 0
       code: 3
-      notes_md: 0
-      total_content_files: 15
+      notes_md: 2
+      total_content_files: 19
       week_span:
       - 1
       - 11
@@ -1072,7 +1108,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 48
+    depth_score: 52
   - code: COMP5310
     title: Principles of Data Science
     material: ''
@@ -1115,18 +1151,18 @@ universities:
     - en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 1
       code: 3
-      notes_md: 1
-      total_content_files: 17
+      notes_md: 3
+      total_content_files: 21
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 20
+    depth_score: 24
   - code: COMP9120
     title: Database Management Systems
     material: ''
@@ -1145,12 +1181,12 @@ universities:
     - en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 6
+      pdf: 8
       slides: 0
       notebooks: 0
       code: 9
-      notes_md: 0
-      total_content_files: 17
+      notes_md: 2
+      total_content_files: 21
       week_span:
       - 1
       - 3
@@ -1158,7 +1194,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 34
+    depth_score: 38
   - code: COMP2017
     title: Systems Programming
     material: ''
@@ -1259,12 +1295,12 @@ universities:
     - en: exam prep
       cn: 考前突击
     shape:
-      pdf: 47
+      pdf: 49
       slides: 0
       notebooks: 0
       code: 8
-      notes_md: 17
-      total_content_files: 211
+      notes_md: 19
+      total_content_files: 215
       week_span:
       - 1
       - 11
@@ -1272,7 +1308,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 252
+    depth_score: 256
   - code: COMP3221
     title: Distributed Systems
     material: distributed systems
@@ -1280,7 +1316,7 @@ universities:
     topics: *id036
     shape: *id037
     signals: *id038
-    depth_score: 78
+    depth_score: 82
   - code: SOFT2201
     title: Software Construction / Design
     material: soft2201-comp9201
@@ -1299,12 +1335,12 @@ universities:
       en: web front-end
       cn: 前端
     shape:
-      pdf: 17
+      pdf: 19
       slides: 0
       notebooks: 0
       code: 14
-      notes_md: 1
-      total_content_files: 42
+      notes_md: 3
+      total_content_files: 46
       week_span:
       - 2
       - 11
@@ -1312,7 +1348,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 77
+    depth_score: 81
   - code: INFO1113
     title: Object-Oriented Programming
     material: info-1113-java
@@ -1320,7 +1356,7 @@ universities:
     topics: *id039
     shape: *id040
     signals: *id041
-    depth_score: 48
+    depth_score: 52
   - code: MKTG1011
     title: Fundamentals of Marketing Analytics
     material: MKTG1011-Foundamentals of Marketing Analytics
@@ -1330,30 +1366,30 @@ universities:
       en: computer architecture
       cn: 计算机体系结构
     shape:
-      pdf: 1
+      pdf: 3
       slides: 2
       notebooks: 1
       code: 2
-      notes_md: 5
-      total_content_files: 20
+      notes_md: 7
+      total_content_files: 24
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 23
+    depth_score: 27
   - code: ELEC1601
     title: Introduction to Computer Systems
     material: elec1601
     link: material field
     topics: []
     shape:
-      pdf: 4
+      pdf: 6
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 4
+      notes_md: 2
+      total_content_files: 8
       week_span:
       - 2
       - 96
@@ -1361,7 +1397,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 19
+    depth_score: 23
   topics:
   - *id042
   - *id043
@@ -1379,7 +1415,7 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 679
+  total_depth: 719
   coverage_summary_en: 'Bilingual tutoring across 11 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: distributed
     systems, operating systems, computer architecture, exam prep.'
@@ -1408,18 +1444,18 @@ universities:
     - en: exam prep
       cn: 考前突击
     shape:
-      pdf: 15
+      pdf: 18
       slides: 0
       notebooks: 2
       code: 1
-      notes_md: 5
-      total_content_files: 49
+      notes_md: 7
+      total_content_files: 54
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 54
+    depth_score: 59
   - code: 15-150
     title: Principles of Functional Programming
     material: ''
@@ -1506,12 +1542,12 @@ universities:
       en: memory / pointers
       cn: 内存 / 指针
     shape:
-      pdf: 17
+      pdf: 19
       slides: 1
       notebooks: 0
       code: 344
-      notes_md: 19
-      total_content_files: 433
+      notes_md: 21
+      total_content_files: 437
       week_span:
       - 1
       - 11
@@ -1519,7 +1555,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 471
+    depth_score: 475
   topics:
   - *id054
   - *id055
@@ -1536,7 +1572,7 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 525
+  total_depth: 534
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: web
     front-end, graphs, OOP, exam prep.'
@@ -1557,12 +1593,12 @@ universities:
       en: OOP
       cn: 面向对象
     shape:
-      pdf: 40
+      pdf: 42
       slides: 0
       notebooks: 0
       code: 26
-      notes_md: 0
-      total_content_files: 70
+      notes_md: 2
+      total_content_files: 74
       week_span:
       - 1
       - 13
@@ -1570,19 +1606,19 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 117
+    depth_score: 121
   - code: FIT5196
     title: Data Wrangling
     material: FIT5196-datawrangling
     link: material field
     topics: []
     shape:
-      pdf: 13
+      pdf: 14
       slides: 0
       notebooks: 11
       code: 4
-      notes_md: 0
-      total_content_files: 57
+      notes_md: 1
+      total_content_files: 59
       week_span:
       - 1
       - 5
@@ -1590,19 +1626,19 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 63
+    depth_score: 65
   - code: ETX3500
     title: High Dimensional Data Analysis
     material: etx3500-5500-High-Dimensional-Data-Analysis
     link: material field
     topics: []
     shape:
-      pdf: 4
+      pdf: 6
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 4
+      notes_md: 2
+      total_content_files: 8
       week_span:
       - 2
       - 2
@@ -1610,7 +1646,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 7
+    depth_score: 11
   - code: FIT2102
     title: Programming Paradigms
     material: ''
@@ -1644,7 +1680,7 @@ universities:
     signals: {}
     depth_score: 0
   - code: FIT5197
-    title: Modelling for Data Analysis
+    title: Statistical Data Modelling
     material: ''
     link: unlinked
     topics: []
@@ -1652,7 +1688,7 @@ universities:
     signals: {}
     depth_score: 0
   - code: FIT9136
-    title: Algorithms and Programming Foundations in Python
+    title: Introduction to Python Programming
     material: ''
     link: unlinked
     topics: []
@@ -1686,12 +1722,12 @@ universities:
       en: stats / probability
       cn: 统计 / 概率
     shape:
-      pdf: 34
+      pdf: 36
       slides: 1
       notebooks: 19
       code: 1
-      notes_md: 2
-      total_content_files: 79
+      notes_md: 4
+      total_content_files: 83
       week_span:
       - 1
       - 8
@@ -1699,7 +1735,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 106
+    depth_score: 110
   - code: ENG1014
     title: Engineering Numerical Analysis
     material: eng1014
@@ -1708,12 +1744,12 @@ universities:
     - en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 12
+      pdf: 14
       slides: 0
       notebooks: 12
       code: 10
-      notes_md: 0
-      total_content_files: 40
+      notes_md: 2
+      total_content_files: 44
       week_span:
       - 1
       - 10
@@ -1721,7 +1757,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 73
+    depth_score: 77
   - code: FIT1058
     title: Foundations of Computing
     material: FIT1058 Foundations of computing
@@ -1731,12 +1767,12 @@ universities:
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 27
+      pdf: 29
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 30
+      notes_md: 2
+      total_content_files: 34
       week_span:
       - 1
       - 6
@@ -1744,7 +1780,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 53
+    depth_score: 57
   - code: FIT1008
     title: Fundamentals of Algorithms
     material: fit1008
@@ -1760,12 +1796,12 @@ universities:
       en: sorting
       cn: 排序
     shape:
-      pdf: 25
+      pdf: 27
       slides: 0
       notebooks: 0
       code: 6
-      notes_md: 0
-      total_content_files: 31
+      notes_md: 2
+      total_content_files: 35
       week_span:
       - 3
       - 4
@@ -1773,7 +1809,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 40
+    depth_score: 44
   - code: FIT1047
     title: Introduction to Computer Systems, Networks and Security
     material: fit1047
@@ -1783,12 +1819,12 @@ universities:
       en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 10
+      pdf: 12
       slides: 3
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 15
+      notes_md: 3
+      total_content_files: 19
       week_span:
       - 0
       - 7
@@ -1796,7 +1832,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 30
+    depth_score: 34
   - code: FIT5124
     title: Emerging Topics for Cybersecurity in Practice
     material: fit5124-networking-ml
@@ -1885,7 +1921,7 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 491
+  total_depth: 521
   coverage_summary_en: 'Bilingual tutoring across 9 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: OOP,
     assignments / labs, machine learning, algorithms.'
@@ -2002,12 +2038,12 @@ universities:
     - en: web front-end
       cn: 前端
     shape:
-      pdf: 23
+      pdf: 25
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 24
+      notes_md: 2
+      total_content_files: 28
       week_span:
       - 1
       - 13
@@ -2015,19 +2051,19 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 60
+    depth_score: 64
   - code: INFS7203
     title: Data Mining
     material: INFS7203-data-mining
     link: material field
     topics: []
     shape:
-      pdf: 29
+      pdf: 31
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 29
+      notes_md: 2
+      total_content_files: 33
       week_span:
       - 1
       - 13
@@ -2035,7 +2071,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 59
+    depth_score: 63
   - code: CSSE1001
     title: Intro To Software Engeering
     material: CSSE1001-intro-to-software-engr
@@ -2049,18 +2085,18 @@ universities:
     - en: software engineering
       cn: 软件工程
     shape:
-      pdf: 26
+      pdf: 28
       slides: 0
       notebooks: 0
       code: 1
-      notes_md: 0
-      total_content_files: 27
+      notes_md: 2
+      total_content_files: 31
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 32
+    depth_score: 36
   - code: MECH2700
     title: Computational Engineering and Data Analysis
     material: MECH2700
@@ -2069,12 +2105,12 @@ universities:
     - en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 18
+      pdf: 20
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 18
+      notes_md: 2
+      total_content_files: 22
       week_span:
       - 2
       - 3
@@ -2082,7 +2118,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 32
+    depth_score: 36
   - code: INFS7900
     title: Introduction to Information Systems
     material: infs7900
@@ -2094,18 +2130,18 @@ universities:
     - en: exam prep
       cn: 考前突击
     shape:
-      pdf: 0
+      pdf: 2
       slides: 0
       notebooks: 0
       code: 16
-      notes_md: 0
-      total_content_files: 16
+      notes_md: 2
+      total_content_files: 20
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 21
+    depth_score: 25
   - code: BISM1201
     title: Transforming Business with Information Systems
     material: BISM1201
@@ -2120,18 +2156,18 @@ universities:
     - en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 8
+      pdf: 10
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 11
+      notes_md: 3
+      total_content_files: 15
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 14
+    depth_score: 18
   - code: COMP4403
     title: Compilers and Interpreters
     material: comp4403-compiler
@@ -2141,18 +2177,18 @@ universities:
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
     shape:
-      pdf: 11
+      pdf: 13
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 11
+      notes_md: 2
+      total_content_files: 15
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 11
+    depth_score: 15
   - code: COMS3200
     title: Computer Networks I
     material: coms3200
@@ -2174,18 +2210,18 @@ universities:
       en: networking
       cn: 计算机网络
     shape:
-      pdf: 2
+      pdf: 4
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 6
+      notes_md: 2
+      total_content_files: 10
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 14
+    depth_score: 18
   - code: INFS7410
     title: Information Retrieval and Web Search
     material: INFS7410
@@ -2195,12 +2231,12 @@ universities:
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 18
+      pdf: 20
       slides: 0
       notebooks: 5
       code: 0
-      notes_md: 0
-      total_content_files: 28
+      notes_md: 2
+      total_content_files: 32
       week_span:
       - 1
       - 13
@@ -2208,7 +2244,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 72
+    depth_score: 76
   topics:
   - *id077
   - *id078
@@ -2225,181 +2261,213 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 315
+  total_depth: 351
   coverage_summary_en: 'Bilingual tutoring across 9 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: web
     front-end, OOP, software engineering, assignments / labs.'
   coverage_summary_cn: 本校可辅导约 9 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：前端、面向对象、软件工程、作业
     / Lab。。
-- slug: university-college-dublin
-  university: University College Dublin
-  teaching_folder: university-college-dublin
+- slug: university-of-glasgow
+  university: University of Glasgow
+  teaching_folder: u-glasgow
   hand_curated: true
-  course_count: 6
-  linked_course_count: 6
+  course_count: 8
+  linked_course_count: 8
   courses:
-  - code: COMP3038J
-    title: Multi Paradigm Programming
-    material: Multi-Paradigm Programming
-    link: material field
-    topics:
-    - en: exam prep
-      cn: 考前突击
-    - &id089
-      en: OOP
-      cn: 面向对象
-    shape:
-      pdf: 13
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 94
-      week_span: null
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 99
-  - code: COMP3019J
-    title: Web Application Development
-    material: Web Application Development
+  - code: COMPSCI5089
+    title: Introduction to Data Science and Systems
+    material: compsci5089-intro-to-datascience
     link: material field
     topics:
     - &id088
-      en: exam prep
-      cn: 考前突击
-    - &id090
-      en: web front-end
-      cn: 前端
-    - &id091
+      en: stats / probability
+      cn: 统计 / 概率
+    - &id089
       en: assignments / labs
       cn: 作业 / Lab
-    - en: databases
-      cn: 数据库
+    - &id090
+      en: machine learning
+      cn: 机器学习
+    - &id091
+      en: C++ STL
+      cn: C++ STL
+    - en: networking
+      cn: 计算机网络
     - &id093
-      en: web / JS
-      cn: Web / JS
+      en: linear algebra
+      cn: 线性代数
+    - &id094
+      en: web front-end
+      cn: 前端
+    - &id095
+      en: exam prep
+      cn: 考前突击
     shape:
-      pdf: 14
-      slides: 0
-      notebooks: 0
-      code: 3
-      notes_md: 0
-      total_content_files: 56
+      pdf: 54
+      slides: 10
+      notebooks: 16
+      code: 39
+      notes_md: 31
+      total_content_files: 161
       week_span:
-      - 1
-      - 20
+      - 0
+      - 19
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 85
-  - code: Mobile Computing
-    title: Mobile Computing
-    material: Mobile Computing
+    depth_score: 205
+  - code: COMPSCI5077
+    title: Enterprise Cyber Security
+    material: compsci5077
     link: material field
     topics:
+    - en: computer architecture
+      cn: 计算机体系结构
     - en: security
       cn: 安全
-    - &id092
+    shape:
+      pdf: 44
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 4
+      total_content_files: 48
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 48
+  - code: COMPSCI2007
+    title: Data Structure
+    material: COMPSCI2007-datastructure
+    link: material field
+    topics:
+    - &id098
+      en: data structures
+      cn: 数据结构
+    shape:
+      pdf: 3
+      slides: 21
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 26
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 26
+  - code: COMSCI5099
+    title: Information Visualization
+    material: 5099 Information Visualisation
+    link: material field
+    topics:
+    - en: networking
+      cn: 计算机网络
+    - &id097
+      en: security
+      cn: 安全
+    shape:
+      pdf: 8
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 10
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 10
+  - code: COMPSCI5076
+    title: Database & Data Analytics
+    material: 5076 Database & Data Analytics
+    link: material field
+    topics:
+    - &id099
       en: databases
       cn: 数据库
     shape:
-      pdf: 63
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 64
-      week_span: null
+      notes_md: 2
+      total_content_files: 8
+      week_span:
+      - 1
+      - 4
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 64
-  - code: Computer Graphics
-    title: Computer Graphics
-    material: Computer Graphics
+      weekly_lecture_arc: true
+    depth_score: 17
+  - code: COMPSCI5057
+    title: HCI Design & Evaluation
+    material: 5057 HCI Design & Evaluation
     link: material field
-    topics:
-    - &id095
-      en: graphs
-      cn: 图算法
-    - en: algorithms
-      cn: 算法
-    - en: computer architecture
-      cn: 计算机体系结构
+    topics: []
     shape:
-      pdf: 23
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 26
+      notes_md: 2
+      total_content_files: 7
       week_span:
-      - 20
-      - 20
+      - 1
+      - 3
     signals:
       exam_prep_materials: false
-      assignment_lab_materials: true
+      assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 32
-  - code: Software Methodology
-    title: Software Methodology
-    material: Software Methodology
+    depth_score: 16
+  - code: COMPSCI4043
+    title: Systems and Networks
+    material: 4043 Systems and Networks
     link: material field
     topics:
-    - en: computer architecture
-      cn: 计算机体系结构
-    - &id098
-      en: software engineering
-      cn: 软件工程
-    shape:
-      pdf: 0
-      slides: 11
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 11
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: true
-      weekly_lecture_arc: false
-    depth_score: 14
-  - code: COMP3008J
-    title: Distributed Systems
-    material: Distributed Systems
-    link: material field
-    topics:
-    - &id094
-      en: security
-      cn: 安全
-    - &id099
-      en: distributed systems
-      cn: 分布式系统
-    - en: networking
+    - &id092
+      en: networking
       cn: 计算机网络
     - &id096
-      en: algorithms
-      cn: 算法
-    - &id097
       en: computer architecture
       cn: 计算机体系结构
     shape:
-      pdf: 13
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 13
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 13
+    depth_score: 7
+  - code: COMPSCI4039
+    title: Programming
+    material: 4039 Programming
+    link: material field
+    topics: []
+    shape:
+      pdf: 2
+      slides: 3
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 7
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 7
   topics:
   - *id088
   - *id089
@@ -2417,213 +2485,181 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 307
-  coverage_summary_en: 'Bilingual tutoring across 6 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
-    prep, OOP, web front-end, assignments / labs.'
-  coverage_summary_cn: 本校可辅导约 6 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、面向对象、前端、作业
-    / Lab。。
-- slug: university-of-glasgow
-  university: University of Glasgow
-  teaching_folder: u-glasgow
+  total_depth: 336
+  coverage_summary_en: 'Bilingual tutoring across 8 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: stats
+    / probability, assignments / labs, machine learning, C++ STL.'
+  coverage_summary_cn: 本校可辅导约 8 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：统计 / 概率、作业
+    / Lab、机器学习、C++ STL。。
+- slug: university-college-dublin
+  university: University College Dublin
+  teaching_folder: university-college-dublin
   hand_curated: true
-  course_count: 8
-  linked_course_count: 8
+  course_count: 6
+  linked_course_count: 6
   courses:
-  - code: COMPSCI5089
-    title: Introduction to Data Science and Systems
-    material: compsci5089-intro-to-datascience
+  - code: COMP3038J
+    title: Multi Paradigm Programming
+    material: Multi-Paradigm Programming
     link: material field
     topics:
-    - &id100
-      en: stats / probability
-      cn: 统计 / 概率
-    - &id101
-      en: assignments / labs
-      cn: 作业 / Lab
-    - &id102
-      en: machine learning
-      cn: 机器学习
-    - &id103
-      en: C++ STL
-      cn: C++ STL
-    - en: networking
-      cn: 计算机网络
-    - &id105
-      en: linear algebra
-      cn: 线性代数
-    - &id106
-      en: web front-end
-      cn: 前端
-    - &id107
-      en: exam prep
+    - en: exam prep
       cn: 考前突击
+    - &id101
+      en: OOP
+      cn: 面向对象
     shape:
-      pdf: 52
-      slides: 10
-      notebooks: 16
-      code: 39
-      notes_md: 29
-      total_content_files: 157
-      week_span:
-      - 0
-      - 19
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 201
-  - code: COMPSCI5077
-    title: Enterprise Cyber Security
-    material: compsci5077
-    link: material field
-    topics:
-    - en: computer architecture
-      cn: 计算机体系结构
-    - en: security
-      cn: 安全
-    shape:
-      pdf: 42
+      pdf: 15
       slides: 0
       notebooks: 0
       code: 0
       notes_md: 2
-      total_content_files: 44
+      total_content_files: 98
       week_span: null
     signals:
-      exam_prep_materials: false
+      exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 44
-  - code: COMPSCI2007
-    title: Data Structure
-    material: COMPSCI2007-datastructure
+    depth_score: 103
+  - code: COMP3019J
+    title: Web Application Development
+    material: Web Application Development
     link: material field
     topics:
-    - &id110
-      en: data structures
-      cn: 数据结构
+    - &id100
+      en: exam prep
+      cn: 考前突击
+    - &id102
+      en: web front-end
+      cn: 前端
+    - &id103
+      en: assignments / labs
+      cn: 作业 / Lab
+    - en: databases
+      cn: 数据库
+    - &id105
+      en: web / JS
+      cn: Web / JS
     shape:
-      pdf: 1
-      slides: 21
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 22
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 22
-  - code: COMSCI5099
-    title: Information Visualization
-    material: 5099 Information Visualisation
-    link: material field
-    topics:
-    - en: networking
-      cn: 计算机网络
-    - &id109
-      en: security
-      cn: 安全
-    shape:
-      pdf: 6
+      pdf: 16
       slides: 0
       notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 6
-      week_span: null
+      code: 3
+      notes_md: 2
+      total_content_files: 60
+      week_span:
+      - 1
+      - 20
     signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 6
-  - code: COMPSCI5076
-    title: Database & Data Analytics
-    material: 5076 Database & Data Analytics
+      exam_prep_materials: true
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 89
+  - code: Mobile Computing
+    title: Mobile Computing
+    material: Mobile Computing
     link: material field
     topics:
-    - &id111
+    - en: security
+      cn: 安全
+    - &id104
       en: databases
       cn: 数据库
     shape:
-      pdf: 3
+      pdf: 65
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 4
-      week_span:
-      - 1
-      - 4
+      notes_md: 2
+      total_content_files: 68
+      week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 13
-  - code: COMPSCI5057
-    title: HCI Design & Evaluation
-    material: 5057 HCI Design & Evaluation
-    link: material field
-    topics: []
-    shape:
-      pdf: 3
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 3
-      week_span:
-      - 1
-      - 3
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 12
-  - code: COMPSCI4043
-    title: Systems and Networks
-    material: 4043 Systems and Networks
+      weekly_lecture_arc: false
+    depth_score: 68
+  - code: Computer Graphics
+    title: Computer Graphics
+    material: Computer Graphics
     link: material field
     topics:
-    - &id104
-      en: networking
+    - &id107
+      en: graphs
+      cn: 图算法
+    - en: algorithms
+      cn: 算法
+    - en: computer architecture
+      cn: 计算机体系结构
+    shape:
+      pdf: 25
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 30
+      week_span:
+      - 20
+      - 20
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 36
+  - code: Software Methodology
+    title: Software Methodology
+    material: Software Methodology
+    link: material field
+    topics:
+    - en: computer architecture
+      cn: 计算机体系结构
+    - &id110
+      en: software engineering
+      cn: 软件工程
+    shape:
+      pdf: 2
+      slides: 11
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 15
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: false
+    depth_score: 18
+  - code: COMP3008J
+    title: Distributed Systems
+    material: Distributed Systems
+    link: material field
+    topics:
+    - &id106
+      en: security
+      cn: 安全
+    - &id111
+      en: distributed systems
+      cn: 分布式系统
+    - en: networking
       cn: 计算机网络
     - &id108
+      en: algorithms
+      cn: 算法
+    - &id109
       en: computer architecture
       cn: 计算机体系结构
     shape:
-      pdf: 3
+      pdf: 15
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 17
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 3
-  - code: COMPSCI4039
-    title: Programming
-    material: 4039 Programming
-    link: material field
-    topics: []
-    shape:
-      pdf: 0
-      slides: 3
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 3
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 3
+    depth_score: 17
   topics:
   - *id100
   - *id101
@@ -2641,12 +2677,12 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 304
-  coverage_summary_en: 'Bilingual tutoring across 8 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: stats
-    / probability, assignments / labs, machine learning, C++ STL.'
-  coverage_summary_cn: 本校可辅导约 8 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：统计 / 概率、作业
-    / Lab、机器学习、C++ STL。。
+  total_depth: 331
+  coverage_summary_en: 'Bilingual tutoring across 6 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, OOP, web front-end, assignments / labs.'
+  coverage_summary_cn: 本校可辅导约 6 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、面向对象、前端、作业
+    / Lab。。
 - slug: tum
   university: Technical University of Munich
   teaching_folder: tum
@@ -2675,18 +2711,18 @@ universities:
       en: stats / probability
       cn: 统计 / 概率
     shape:
-      pdf: 241
+      pdf: 243
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 247
+      notes_md: 2
+      total_content_files: 251
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 252
+    depth_score: 256
   - code: ''
     title: Rechnerarchitekture
     material: ''
@@ -2710,18 +2746,18 @@ universities:
       en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 19
+      pdf: 21
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 19
+      notes_md: 2
+      total_content_files: 23
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 22
+    depth_score: 26
   - code: ''
     title: Formale Sprache
     material: ''
@@ -2743,7 +2779,7 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: false
-  total_depth: 274
+  total_depth: 282
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Assignment
     / lab debug sessions. Exam-prep drills. Typical themes: security, networking,
     web front-end, exam prep.'
@@ -2784,12 +2820,12 @@ universities:
     - en: stats / probability
       cn: 统计 / 概率
     shape: &id121
-      pdf: 26
+      pdf: 28
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 29
+      notes_md: 2
+      total_content_files: 33
       week_span:
       - 1
       - 8
@@ -2797,7 +2833,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 47
+    depth_score: 51
   - code: EE7207
     title: Neural Networks & Deep Learning
     material: ''
@@ -2909,7 +2945,7 @@ universities:
     topics: *id120
     shape: *id121
     signals: *id122
-    depth_score: 47
+    depth_score: 51
   - code: IE0005
     title: Introduction to Data Science and Artificial Intelligence
     material: IE0005
@@ -2927,12 +2963,12 @@ universities:
       en: Python
       cn: Python
     shape:
-      pdf: 30
+      pdf: 32
       slides: 0
       notebooks: 22
       code: 0
-      notes_md: 0
-      total_content_files: 88
+      notes_md: 2
+      total_content_files: 92
       week_span:
       - 1
       - 7
@@ -2940,7 +2976,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 112
+    depth_score: 116
   - code: KM6307
     title: Organisation of Knowledg
     material: KM6307
@@ -2953,12 +2989,12 @@ universities:
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 1
+      pdf: 3
       slides: 1
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 13
+      notes_md: 2
+      total_content_files: 17
       week_span:
       - 7
       - 7
@@ -2966,7 +3002,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 24
+    depth_score: 28
   - code: EE6430
     title: SPECIAL TOPICS IN MACHINE LEARNING
     material: EE6430 – SPECIAL TOPICS IN MACHINE LEARNING
@@ -2976,18 +3012,18 @@ universities:
       en: machine learning
       cn: 机器学习
     shape:
-      pdf: 4
+      pdf: 6
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 5
+      notes_md: 3
+      total_content_files: 9
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 5
+    depth_score: 9
   topics:
   - *id123
   - *id124
@@ -3000,7 +3036,7 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 235
+  total_depth: 255
   coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: machine
     learning, algorithms, stats / probability, computer architecture.'
@@ -3027,12 +3063,12 @@ universities:
     link: material field
     topics: []
     shape: &id130
-      pdf: 11
+      pdf: 13
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 12
+      notes_md: 3
+      total_content_files: 16
       week_span:
       - 1
       - 12
@@ -3040,7 +3076,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 45
+    depth_score: 49
   - code: COMP20003
     title: Algorithms and Data Structures
     material: ''
@@ -3154,12 +3190,12 @@ universities:
       en: databases
       cn: 数据库
     shape:
-      pdf: 15
+      pdf: 17
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 15
+      notes_md: 2
+      total_content_files: 19
       week_span:
       - 1
       - 12
@@ -3167,7 +3203,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 51
+    depth_score: 55
   - code: MAST Term1
     title: Mathematics (Term 1)
     material: math-Term 1
@@ -3177,12 +3213,12 @@ universities:
       en: linear algebra
       cn: 线性代数
     shape:
-      pdf: 33
+      pdf: 35
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 33
+      notes_md: 2
+      total_content_files: 37
       week_span:
       - 1
       - 6
@@ -3190,7 +3226,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 48
+    depth_score: 52
   - code: COMP1000
     title: Foundations of Algorithms
     material: comp10002
@@ -3198,7 +3234,7 @@ universities:
     topics: []
     shape: *id130
     signals: *id131
-    depth_score: 45
+    depth_score: 49
   - code: COMP2000
     title: COMP 5 Intro. To Numerical Computation In C
     material: COMP20005 - Intro. to Numerical Computation in C
@@ -3208,18 +3244,18 @@ universities:
       en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 9
+      pdf: 11
       slides: 0
       notebooks: 0
       code: 3
-      notes_md: 0
-      total_content_files: 14
+      notes_md: 2
+      total_content_files: 18
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 17
+    depth_score: 21
   topics:
   - *id132
   - *id133
@@ -3228,7 +3264,7 @@ universities:
     exam_prep_materials: false
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 206
+  total_depth: 226
   coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Typical themes: databases, linear algebra,
     assignments / labs.'
@@ -3307,27 +3343,29 @@ universities:
     - &id136
       en: SQL / databases
       cn: SQL / 数据库
+    - en: assignments / labs
+      cn: 作业 / Lab
     shape:
-      pdf: 1
+      pdf: 6
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 2
-      total_content_files: 4
+      notes_md: 4
+      total_content_files: 13
       week_span:
       - 7
       - 7
     signals:
       exam_prep_materials: false
-      assignment_lab_materials: false
+      assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 7
+    depth_score: 19
   - code: INEF001
     title: Networking Fundamentals
     material: INEF001-networking
     link: material field
     topics:
-    - &id137
+    - &id138
       en: networking
       cn: 计算机网络
     - en: assignments / labs
@@ -3343,12 +3381,12 @@ universities:
     - en: web front-end
       cn: 前端
     shape:
-      pdf: 13
+      pdf: 15
       slides: 0
       notebooks: 0
       code: 6
-      notes_md: 7
-      total_content_files: 39
+      notes_md: 10
+      total_content_files: 44
       week_span:
       - 1
       - 11
@@ -3356,7 +3394,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 75
+    depth_score: 80
   - code: IPRO001
     title: Programming 1
     material: programming1-IPRO001
@@ -3388,12 +3426,12 @@ universities:
       en: databases
       cn: 数据库
     shape:
-      pdf: 1
+      pdf: 4
       slides: 0
       notebooks: 0
-      code: 57
-      notes_md: 6
-      total_content_files: 64
+      code: 69
+      notes_md: 12
+      total_content_files: 85
       week_span:
       - 5
       - 5
@@ -3401,7 +3439,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 70
+    depth_score: 91
   - code: IWBS001
     title: Web Systems
     material: IWBS001-web-systems
@@ -3419,16 +3457,16 @@ universities:
     - &id144
       en: OOP
       cn: 面向对象
-    - &id138
+    - &id137
       en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 1
+      pdf: 3
       slides: 2
       notebooks: 0
       code: 2
-      notes_md: 5
-      total_content_files: 13
+      notes_md: 7
+      total_content_files: 17
       week_span:
       - 3
       - 3
@@ -3436,7 +3474,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 24
+    depth_score: 28
   topics:
   - *id135
   - *id136
@@ -3452,12 +3490,12 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 183
+  total_depth: 225
   coverage_summary_en: 'Bilingual tutoring across 5 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: databases,
-    SQL / databases, networking, assignments / labs.'
+    SQL / databases, assignments / labs, networking.'
   coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：数据库、SQL
-    / 数据库、计算机网络、作业 / Lab。。
+    / 数据库、作业 / Lab、计算机网络。。
 - slug: bristol
   university: University of Bristol
   teaching_folder: bristol-u
@@ -3509,12 +3547,12 @@ universities:
       en: exam prep
       cn: 考前突击
     shape: &id146
-      pdf: 21
+      pdf: 23
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 21
+      notes_md: 2
+      total_content_files: 25
       week_span:
       - 0
       - 17
@@ -3522,7 +3560,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 80
+    depth_score: 84
   - code: COMS20008
     title: Algorithms II
     material: ''
@@ -3562,7 +3600,7 @@ universities:
     topics: *id145
     shape: *id146
     signals: *id147
-    depth_score: 80
+    depth_score: 84
   - code: COMS1001
     title: 6 Imperative And Functional Programming
     material: ''
@@ -3589,18 +3627,18 @@ universities:
       en: LLMs / NLP
       cn: 大模型 / NLP
     shape:
-      pdf: 12
+      pdf: 14
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 12
+      notes_md: 2
+      total_content_files: 16
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 12
+    depth_score: 16
   topics:
   - *id148
   - *id149
@@ -3612,77 +3650,11 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 172
+  total_depth: 184
   coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
     catch-up. Exam-prep drills. Typical themes: algorithms, exam prep, machine learning,
     deep learning.'
   coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。考前突击。常见主题：算法、考前突击、机器学习、深度学习。。
-- slug: lmu
-  university: Ludwig-Maximilians-Universität München
-  teaching_folder: lmu-慕尼黑大学
-  hand_curated: true
-  course_count: 1
-  linked_course_count: 1
-  courses:
-  - code: Symbolische Programmiersprache
-    title: Symbolische Programmierspache
-    material: symbolische-programmierspache
-    link: material field
-    topics:
-    - &id154
-      en: machine learning
-      cn: 机器学习
-    - &id155
-      en: stats / probability
-      cn: 统计 / 概率
-    - &id156
-      en: regex / ε-NFA
-      cn: 正则 / ε-NFA
-    - &id157
-      en: exam prep
-      cn: 考前突击
-    - &id158
-      en: assignments / labs
-      cn: 作业 / Lab
-    - &id159
-      en: C++ STL
-      cn: C++ STL
-    - &id160
-      en: OOP
-      cn: 面向对象
-    shape:
-      pdf: 41
-      slides: 1
-      notebooks: 1
-      code: 56
-      notes_md: 8
-      total_content_files: 122
-      week_span:
-      - 1
-      - 11
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 163
-  topics:
-  - *id154
-  - *id155
-  - *id156
-  - *id157
-  - *id158
-  - *id159
-  - *id160
-  signals:
-    exam_prep_materials: true
-    assignment_lab_materials: true
-    weekly_lecture_arc: true
-  total_depth: 163
-  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: machine
-    learning, stats / probability, regex / ε-NFA, exam prep.'
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：机器学习、统计
-    / 概率、正则 / ε-NFA、考前突击。。
 - slug: imperial-college-london
   university: Imperial College London
   teaching_folder: imperial-college-london
@@ -3691,28 +3663,28 @@ universities:
   linked_course_count: 4
   courses:
   - code: CIVE70107
-    title: ANALYTICAL METHODS
+    title: Analytical Methods
     material: CIVE70107-ANALYTICAL METHODS
     link: material field
     topics:
-    - &id161
+    - &id154
       en: exam prep
       cn: 考前突击
     - en: stats / probability
       cn: 统计 / 概率
     shape:
-      pdf: 26
-      slides: 4
+      pdf: 36
+      slides: 3
       notebooks: 0
-      code: 0
-      notes_md: 1
-      total_content_files: 31
+      code: 2
+      notes_md: 10
+      total_content_files: 51
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 39
+    depth_score: 59
   - code: CO120
     title: Programming I
     material: ''
@@ -3822,55 +3794,55 @@ universities:
     material: AdvancedCompArchitecture
     link: material field
     topics:
-    - &id163
+    - &id156
       en: web front-end
       cn: 前端
-    - &id164
+    - &id157
       en: graphs
       cn: 图算法
-    - &id165
+    - &id158
       en: computer architecture
       cn: 计算机体系结构
-    - &id162
+    - &id155
       en: stats / probability
       cn: 统计 / 概率
-    - &id166
+    - &id159
       en: C++ STL
       cn: C++ STL
-    - &id167
+    - &id160
       en: memory / pointers
       cn: 内存 / 指针
-    - &id168
+    - &id161
       en: operating systems
       cn: 操作系统
-    - &id169
+    - &id162
       en: OOP
       cn: 面向对象
     shape:
-      pdf: 63
+      pdf: 65
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 65
+      notes_md: 2
+      total_content_files: 69
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 73
+    depth_score: 77
   - code: MATH6002
     title: 6 70026 Methods For Data Science
     material: math60026-70026-methods-for-data-science
     link: material field
     topics: []
     shape:
-      pdf: 8
+      pdf: 10
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 8
+      notes_md: 2
+      total_content_files: 12
       week_span:
       - 1
       - 8
@@ -3878,13 +3850,13 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 32
+    depth_score: 36
   - code: PHYS70041
     title: Long Summer Project
     material: PHYS70041
     link: material field
     topics:
-    - &id170
+    - &id163
       en: LLMs / NLP
       cn: 大模型 / NLP
     shape:
@@ -3901,9 +3873,75 @@ universities:
       weekly_lecture_arc: false
     depth_score: 1
   topics:
+  - *id154
+  - *id155
+  - *id156
+  - *id157
+  - *id158
+  - *id159
+  - *id160
   - *id161
   - *id162
   - *id163
+  signals:
+    exam_prep_materials: true
+    assignment_lab_materials: true
+    weekly_lecture_arc: true
+  total_depth: 173
+  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, stats / probability, web front-end, graphs.'
+  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、统计
+    / 概率、前端、图算法。。
+- slug: lmu
+  university: Ludwig-Maximilians-Universität München
+  teaching_folder: lmu-慕尼黑大学
+  hand_curated: true
+  course_count: 1
+  linked_course_count: 1
+  courses:
+  - code: Symbolische Programmiersprache
+    title: Symbolische Programmiersprache
+    material: symbolische-programmierspache
+    link: material field
+    topics:
+    - &id164
+      en: machine learning
+      cn: 机器学习
+    - &id165
+      en: stats / probability
+      cn: 统计 / 概率
+    - &id166
+      en: regex / ε-NFA
+      cn: 正则 / ε-NFA
+    - &id167
+      en: exam prep
+      cn: 考前突击
+    - &id168
+      en: assignments / labs
+      cn: 作业 / Lab
+    - &id169
+      en: C++ STL
+      cn: C++ STL
+    - &id170
+      en: OOP
+      cn: 面向对象
+    shape:
+      pdf: 43
+      slides: 1
+      notebooks: 1
+      code: 56
+      notes_md: 10
+      total_content_files: 126
+      week_span:
+      - 1
+      - 11
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 167
+  topics:
   - *id164
   - *id165
   - *id166
@@ -3915,12 +3953,12 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 145
-  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
-    prep, stats / probability, web front-end, graphs.'
-  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、统计
-    / 概率、前端、图算法。。
+  total_depth: 167
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: machine
+    learning, stats / probability, regex / ε-NFA, exam prep.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：机器学习、统计
+    / 概率、正则 / ε-NFA、考前突击。。
 - slug: jcu
   university: James Cook University Singapore
   teaching_folder: james-cook-singapore
@@ -3942,12 +3980,12 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 16
+      pdf: 18
       slides: 9
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 27
+      notes_md: 2
+      total_content_files: 31
       week_span:
       - 1
       - 9
@@ -3955,7 +3993,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 54
+    depth_score: 58
   - code: CP3404
     title: Network Security and Cryptography
     material: CP3404
@@ -3974,18 +4012,18 @@ universities:
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 11
+      pdf: 13
       slides: 20
       notebooks: 0
       code: 4
-      notes_md: 5
-      total_content_files: 45
+      notes_md: 7
+      total_content_files: 49
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 53
+    depth_score: 57
   - code: CP3501
     title: Deep Learning
     material: CP3501- Deep Learning
@@ -3995,12 +4033,12 @@ universities:
       en: deep learning
       cn: 深度学习
     shape:
-      pdf: 10
+      pdf: 12
       slides: 6
       notebooks: 4
       code: 0
-      notes_md: 3
-      total_content_files: 23
+      notes_md: 5
+      total_content_files: 27
       week_span:
       - 1
       - 4
@@ -4008,7 +4046,7 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 38
+    depth_score: 42
   topics:
   - *id171
   - *id172
@@ -4019,70 +4057,12 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 145
+  total_depth: 157
   coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: security,
     assignments / labs, networking, exam prep.'
   coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：安全、作业 /
     Lab、计算机网络、考前突击。。
-- slug: lehigh-university
-  university: Lehigh University
-  teaching_folder: lehigh-university
-  hand_curated: true
-  course_count: 1
-  linked_course_count: 1
-  courses:
-  - code: ENGR 010
-    title: Applied Engineering Computer Methods
-    material: ENGR 010
-    link: material field
-    topics:
-    - &id176
-      en: Python
-      cn: Python
-    - &id177
-      en: web / JS
-      cn: Web / JS
-    - &id178
-      en: OOP
-      cn: 面向对象
-    - &id179
-      en: exam prep
-      cn: 考前突击
-    - &id180
-      en: assignments / labs
-      cn: 作业 / Lab
-    shape:
-      pdf: 4
-      slides: 1
-      notebooks: 55
-      code: 17
-      notes_md: 10
-      total_content_files: 131
-      week_span:
-      - 1
-      - 1
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 142
-  topics:
-  - *id176
-  - *id177
-  - *id178
-  - *id179
-  - *id180
-  signals:
-    exam_prep_materials: true
-    assignment_lab_materials: true
-    weekly_lecture_arc: true
-  total_depth: 142
-  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: Python,
-    web / JS, OOP, exam prep.'
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：Python、Web
-    / JS、面向对象、考前突击。。
 - slug: nus
   university: National University of Singapore
   teaching_folder: nus
@@ -4094,44 +4074,44 @@ universities:
     title: Programming Methodology
     material: CS1010E - Programming Methedology
     link: material field
-    topics: &id181
+    topics: &id176
     - en: exam prep
       cn: 考前突击
-    - &id188
+    - &id183
       en: assignments / labs
       cn: 作业 / Lab
-    shape: &id182
-      pdf: 29
+    shape: &id177
+      pdf: 31
       slides: 0
       notebooks: 0
       code: 12
-      notes_md: 0
-      total_content_files: 42
+      notes_md: 2
+      total_content_files: 46
       week_span:
       - 1
       - 5
-    signals: &id183
+    signals: &id178
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 65
+    depth_score: 69
   - code: CS1010
     title: Programming Methodology
     material: CS1010E - Programming Methedology
     link: material field
-    topics: *id181
-    shape: *id182
-    signals: *id183
-    depth_score: 65
+    topics: *id176
+    shape: *id177
+    signals: *id178
+    depth_score: 69
   - code: CS1010S
     title: Programming Methodology
     material: CS1101S-programming-methodology
     link: material field
-    topics: &id184
-    - &id187
+    topics: &id179
+    - &id182
       en: exam prep
       cn: 考前突击
-    shape: &id185
+    shape: &id180
       pdf: 1
       slides: 0
       notebooks: 0
@@ -4139,7 +4119,7 @@ universities:
       notes_md: 0
       total_content_files: 1
       week_span: null
-    signals: &id186
+    signals: &id181
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
@@ -4148,9 +4128,9 @@ universities:
     title: Programming Methodology
     material: CS1101S-programming-methodology
     link: material field
-    topics: *id184
-    shape: *id185
-    signals: *id186
+    topics: *id179
+    shape: *id180
+    signals: *id181
     depth_score: 6
   - code: CS1231
     title: Discrete Structures
@@ -4249,18 +4229,76 @@ universities:
     signals: {}
     depth_score: 0
   topics:
+  - *id182
+  - *id183
+  signals:
+    exam_prep_materials: true
+    assignment_lab_materials: true
+    weekly_lecture_arc: true
+  total_depth: 150
+  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, assignments / labs.'
+  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、作业
+    / Lab。。
+- slug: lehigh-university
+  university: Lehigh University
+  teaching_folder: lehigh-university
+  hand_curated: true
+  course_count: 1
+  linked_course_count: 1
+  courses:
+  - code: ENGR 010
+    title: Applied Engineering Computer Methods
+    material: ENGR 010
+    link: material field
+    topics:
+    - &id184
+      en: Python
+      cn: Python
+    - &id185
+      en: web / JS
+      cn: Web / JS
+    - &id186
+      en: OOP
+      cn: 面向对象
+    - &id187
+      en: exam prep
+      cn: 考前突击
+    - &id188
+      en: assignments / labs
+      cn: 作业 / Lab
+    shape:
+      pdf: 6
+      slides: 1
+      notebooks: 55
+      code: 17
+      notes_md: 12
+      total_content_files: 135
+      week_span:
+      - 1
+      - 1
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 146
+  topics:
+  - *id184
+  - *id185
+  - *id186
   - *id187
   - *id188
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 142
-  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
-    prep, assignments / labs.'
-  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、作业
-    / Lab。。
+  total_depth: 146
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: Python,
+    web / JS, OOP, exam prep.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：Python、Web
+    / JS、面向对象、考前突击。。
 - slug: university-of-southampton
   university: University of Southampton
   teaching_folder: u-southampton
@@ -4351,12 +4389,12 @@ universities:
     - en: exam prep
       cn: 考前突击
     shape:
-      pdf: 23
+      pdf: 25
       slides: 5
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 38
+      notes_md: 2
+      total_content_files: 42
       week_span:
       - 1
       - 10
@@ -4364,7 +4402,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 76
+    depth_score: 80
   - code: MATH6161
     title: Mathematical Methods
     material: MATH6161
@@ -4379,12 +4417,12 @@ universities:
     - en: exam prep
       cn: 考前突击
     shape:
-      pdf: 26
+      pdf: 28
       slides: 1
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 27
+      notes_md: 2
+      total_content_files: 31
       week_span:
       - 1
       - 1
@@ -4392,7 +4430,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 35
+    depth_score: 39
   - code: MATH6164
     title: Mathematical Methods / Statistics
     material: math6164
@@ -4405,18 +4443,18 @@ universities:
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
     shape:
-      pdf: 15
+      pdf: 17
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 15
+      notes_md: 2
+      total_content_files: 19
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 20
+    depth_score: 24
   topics:
   - *id189
   - *id190
@@ -4427,43 +4465,93 @@ universities:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 131
+  total_depth: 143
   coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: assignments
     / labs, exam prep, linear algebra, OOP.'
   coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：作业 / Lab、考前突击、线性代数、面向对象。。
-- slug: concordia-university
-  university: Concordia University
-  teaching_folder: concordia
+- slug: adelaide
+  university: University of Adelaide
+  teaching_folder: adelaide-university
   hand_curated: true
-  course_count: 10
+  course_count: 11
   linked_course_count: 2
   courses:
-  - code: COMP 248
-    title: Object-Oriented Programming I
+  - code: COMP3011
+    title: Cloud and Concurrent Programming
+    material: COMP3011
+    link: material field
+    topics:
+    - en: Java
+      cn: Java
+    - en: assignments / labs
+      cn: 作业 / Lab
+    - &id196
+      en: web front-end
+      cn: 前端
+    - &id197
+      en: stats / probability
+      cn: 统计 / 概率
+    - &id198
+      en: computer architecture
+      cn: 计算机体系结构
+    - &id199
+      en: operating systems
+      cn: 操作系统
+    shape:
+      pdf: 2
+      slides: 0
+      notebooks: 0
+      code: 38
+      notes_md: 4
+      total_content_files: 45
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: false
+    depth_score: 48
+  - code: COMP SCI 1101
+    title: Introduction to Programming
     material: ''
     link: unlinked
     topics: []
     shape: {}
     signals: {}
     depth_score: 0
-  - code: COMP 249
-    title: Object-Oriented Programming II
+  - code: COMP SCI 1102
+    title: Object Oriented Programming
     material: ''
     link: unlinked
     topics: []
     shape: {}
     signals: {}
     depth_score: 0
-  - code: COMP 352
-    title: Data Structures and Algorithms
+  - code: COMP SCI 2103
+    title: Algorithm Design and Data Structures
     material: ''
     link: unlinked
     topics: []
     shape: {}
     signals: {}
     depth_score: 0
-  - code: COMP 346
+  - code: COMP SCI 2201
+    title: Algorithm and Data Structure Analysis
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP SCI 3001
+    title: Computer Networks and Applications
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP SCI 3004
     title: Operating Systems
     material: ''
     link: unlinked
@@ -4471,15 +4559,7 @@ universities:
     shape: {}
     signals: {}
     depth_score: 0
-  - code: COMP 353
-    title: Databases
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP 472
+  - code: COMP SCI 3007
     title: Artificial Intelligence
     material: ''
     link: unlinked
@@ -4487,87 +4567,85 @@ universities:
     shape: {}
     signals: {}
     depth_score: 0
-  - code: COMP 479
-    title: Information Retrieval and Web Search
+  - code: COMP SCI 3314
+    title: Introduction to Statistical Machine Learning
     material: ''
     link: unlinked
     topics: []
     shape: {}
     signals: {}
     depth_score: 0
-  - code: SOEN 287
-    title: Web Programming
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: CART263
-    title: Creative Computation (JavaScript)
-    material: cart263-js-winter2026
+  - code: COMP SCI 4023
+    title: Event Driven Computing
+    material: Comp_4023-event-driven-computing
     link: material field
     topics:
-    - en: web front-end
-      cn: 前端
-    - en: exam prep
+    - &id200
+      en: automata / FSA
+      cn: 自动机 / FSA
+    - &id194
+      en: Java
+      cn: Java
+    - &id201
+      en: FRP / observers
+      cn: FRP / Observer
+    - &id202
+      en: exam prep
       cn: 考前突击
-    - &id196
-      en: C++ STL
-      cn: C++ STL
+    - &id203
+      en: software engineering
+      cn: 软件工程
+    - &id204
+      en: regex / ε-NFA
+      cn: 正则 / ε-NFA
+    - &id195
+      en: assignments / labs
+      cn: 作业 / Lab
     shape:
-      pdf: 0
-      slides: 0
+      pdf: 14
+      slides: 12
       notebooks: 0
-      code: 68
-      notes_md: 3
-      total_content_files: 101
+      code: 8
+      notes_md: 12
+      total_content_files: 46
       week_span:
-      - 4
-      - 4
+      - 1
+      - 11
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 112
-  - code: CART211
-    title: Creative Computation Studio
-    material: cart211-final
-    link: material field
-    topics:
-    - &id195
-      en: exam prep
-      cn: 考前突击
-    - &id194
-      en: web front-end
-      cn: 前端
-    shape:
-      pdf: 0
-      slides: 0
-      notebooks: 0
-      code: 1
-      notes_md: 0
-      total_content_files: 11
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 11
+    depth_score: 87
+  - code: COMP SCI 7201
+    title: Algorithm and Data Structure Analysis
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
   topics:
   - *id194
   - *id195
   - *id196
+  - *id197
+  - *id198
+  - *id199
+  - *id200
+  - *id201
+  - *id202
+  - *id203
+  - *id204
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 123
+  total_depth: 135
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: web
-    front-end, exam prep, C++ STL.'
-  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：前端、考前突击、C++
-    STL。。
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: Java,
+    assignments / labs, web front-end, stats / probability.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：Java、作业
+    / Lab、前端、统计 / 概率。。
 - slug: cuhk
   university: The Chinese University of Hong Kong
   teaching_folder: cuhk
@@ -4661,12 +4739,12 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 0
+      pdf: 2
       slides: 20
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 20
+      notes_md: 2
+      total_content_files: 24
       week_span:
       - 1
       - 11
@@ -4674,31 +4752,31 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 53
+    depth_score: 57
   - code: SDSC8009
     title: Datamining
     material: sdsc8009-datamining
     link: material field
     topics:
-    - &id197
+    - &id205
       en: Python
       cn: Python
-    - &id198
+    - &id206
       en: exam prep
       cn: 考前突击
-    - &id199
+    - &id207
       en: assignments / labs
       cn: 作业 / Lab
-    - &id200
+    - &id208
       en: stats / probability
       cn: 统计 / 概率
     shape:
-      pdf: 11
+      pdf: 13
       slides: 0
       notebooks: 13
       code: 1
-      notes_md: 0
-      total_content_files: 33
+      notes_md: 2
+      total_content_files: 37
       week_span:
       - 1
       - 6
@@ -4706,22 +4784,22 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 59
+    depth_score: 63
   - code: CS2115
     title: Computer Organization
     material: cs2115-computer-organization
     link: material field
     topics:
-    - &id201
+    - &id209
       en: web front-end
       cn: 前端
     shape:
-      pdf: 1
+      pdf: 3
       slides: 4
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 8
+      notes_md: 3
+      total_content_files: 12
       week_span:
       - 1
       - 1
@@ -4729,18 +4807,18 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 11
+    depth_score: 15
   topics:
-  - *id197
-  - *id198
-  - *id199
-  - *id200
-  - *id201
+  - *id205
+  - *id206
+  - *id207
+  - *id208
+  - *id209
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 123
+  total_depth: 135
   coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: Python,
     exam prep, assignments / labs, stats / probability.'
@@ -4758,18 +4836,18 @@ universities:
     material: ESC4402
     link: material field
     topics:
-    - &id202
+    - &id210
       en: exam prep
       cn: 考前突击
     - en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 2
+      pdf: 4
       slides: 17
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 42
+      notes_md: 2
+      total_content_files: 46
       week_span:
       - 2
       - 26
@@ -4777,34 +4855,34 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 68
+    depth_score: 72
   - code: ESC4503
     title: Intro To Business Application Programming
     material: ESC4503-intro-to-business-application-programming
     link: material field
     topics:
-    - &id204
+    - &id212
       en: stats / probability
       cn: 统计 / 概率
-    - &id203
+    - &id211
       en: assignments / labs
       cn: 作业 / Lab
-    - &id205
+    - &id213
       en: web front-end
       cn: 前端
-    - &id206
+    - &id214
       en: databases
       cn: 数据库
-    - &id207
+    - &id215
       en: Java
       cn: Java
     shape:
-      pdf: 2
+      pdf: 4
       slides: 4
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 33
+      notes_md: 2
+      total_content_files: 37
       week_span:
       - 1
       - 6
@@ -4812,24 +4890,160 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 51
+    depth_score: 55
   topics:
-  - *id202
-  - *id203
-  - *id204
-  - *id205
-  - *id206
-  - *id207
+  - *id210
+  - *id211
+  - *id212
+  - *id213
+  - *id214
+  - *id215
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 119
+  total_depth: 127
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
     prep, assignments / labs, stats / probability, web front-end.'
   coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、作业
     / Lab、统计 / 概率、前端。。
+- slug: concordia-university
+  university: Concordia University
+  teaching_folder: concordia
+  hand_curated: true
+  course_count: 10
+  linked_course_count: 2
+  courses:
+  - code: COMP 248
+    title: Object-Oriented Programming I
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP 249
+    title: Object-Oriented Programming II
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP 352
+    title: Data Structures and Algorithms
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP 346
+    title: Operating Systems
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP 353
+    title: Databases
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP 472
+    title: Artificial Intelligence
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP 479
+    title: Information Retrieval and Web Search
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: SOEN 287
+    title: Web Programming
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: CART263
+    title: Creative Computation (JavaScript)
+    material: cart263-js-winter2026
+    link: material field
+    topics:
+    - en: web front-end
+      cn: 前端
+    - en: exam prep
+      cn: 考前突击
+    - &id218
+      en: C++ STL
+      cn: C++ STL
+    shape:
+      pdf: 2
+      slides: 0
+      notebooks: 0
+      code: 68
+      notes_md: 5
+      total_content_files: 105
+      week_span:
+      - 4
+      - 4
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 116
+  - code: CART211
+    title: Creative Computation Studio
+    material: cart211-final
+    link: material field
+    topics:
+    - &id217
+      en: exam prep
+      cn: 考前突击
+    - &id216
+      en: web front-end
+      cn: 前端
+    shape:
+      pdf: 0
+      slides: 0
+      notebooks: 0
+      code: 1
+      notes_md: 0
+      total_content_files: 11
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 11
+  topics:
+  - *id216
+  - *id217
+  - *id218
+  signals:
+    exam_prep_materials: true
+    assignment_lab_materials: true
+    weekly_lecture_arc: true
+  total_depth: 127
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: web
+    front-end, exam prep, C++ STL.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：前端、考前突击、C++
+    STL。。
 - slug: hong-kong-baptist-university
   university: Hong Kong Baptist University
   teaching_folder: hk-baptist
@@ -4842,16 +5056,16 @@ universities:
     material: comps413f-application-design-and-development-for-mobile-devices
     link: material field
     topics:
-    - &id208
+    - &id219
       en: operating systems
       cn: 操作系统
     shape:
-      pdf: 0
+      pdf: 2
       slides: 11
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 11
+      notes_md: 2
+      total_content_files: 15
       week_span:
       - 1
       - 11
@@ -4859,19 +5073,19 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 44
+    depth_score: 48
   - code: COMP4330S
     title: Ef Advanced Ai
     material: comp4330sef-advanced-ai
     link: material field
     topics: []
     shape:
-      pdf: 10
+      pdf: 12
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 10
+      notes_md: 2
+      total_content_files: 14
       week_span:
       - 1
       - 10
@@ -4879,39 +5093,233 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 40
+    depth_score: 44
   - code: COMP7025
     title: Data Analytics Topics
     material: COMP7025
     link: material field
     topics:
-    - &id209
+    - &id220
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 15
+      pdf: 17
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 16
+      notes_md: 3
+      total_content_files: 20
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 21
+    depth_score: 25
   topics:
-  - *id208
-  - *id209
+  - *id219
+  - *id220
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 105
+  total_depth: 117
   coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
     catch-up. Exam-prep drills. Typical themes: operating systems, exam prep.'
   coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。考前突击。常见主题：操作系统、考前突击。。
+- slug: hkust
+  university: The Hong Kong University of Science and Technology
+  teaching_folder: hkust
+  hand_curated: true
+  course_count: 15
+  linked_course_count: 4
+  courses:
+  - code: COMP1002
+    title: Introduction to Programming
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1021
+    title: Introduction to Programming with Python
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1022P
+    title: Introduction to Computing with Java
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1023
+    title: Introduction to Programming
+    material: comp1023
+    link: material field
+    topics: []
+    shape:
+      pdf: 5
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 7
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 7
+  - code: COMP2011
+    title: Programming with C++
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2012
+    title: Object-Oriented Programming and Data Structures
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2611
+    title: Computer Organization
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2711
+    title: Discrete Mathematical Tools for Computer Science
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3711
+    title: Design and Analysis of Algorithms
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP4211
+    title: Machine Learning
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP4331
+    title: Introduction to Data Mining
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP4411
+    title: Computer Graphics
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: DASC2010
+    title: Calculus for Data Analytics in Science
+    material: dasc2010
+    link: material field
+    topics: []
+    shape:
+      pdf: 6
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 8
+      week_span:
+      - 1
+      - 1
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 11
+  - code: DDM 理学硕士笔试
+    title: MSc DDM Written Exam
+    material: MSc DDM Written Exam
+    link: material field
+    topics:
+    - &id221
+      en: exam prep
+      cn: 考前突击
+    shape:
+      pdf: 16
+      slides: 3
+      notebooks: 0
+      code: 0
+      notes_md: 7
+      total_content_files: 34
+      week_span:
+      - 1
+      - 4
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 45
+  - code: FINA ML
+    title: Financial Machine Learning
+    material: fin-ml
+    link: material field
+    topics:
+    - &id222
+      en: machine learning
+      cn: 机器学习
+    - &id223
+      en: stats / probability
+      cn: 统计 / 概率
+    shape:
+      pdf: 4
+      slides: 0
+      notebooks: 0
+      code: 19
+      notes_md: 4
+      total_content_files: 45
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: false
+    depth_score: 48
+  topics:
+  - *id221
+  - *id222
+  - *id223
+  signals:
+    exam_prep_materials: true
+    assignment_lab_materials: true
+    weekly_lecture_arc: true
+  total_depth: 111
+  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
+    prep, machine learning, stats / probability.'
+  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、机器学习、统计
+    / 概率。。
 - slug: uiuc
   university: University of Illinois Urbana-Champaign
   teaching_folder: uiuc
@@ -4923,36 +5331,36 @@ universities:
     title: Deep Learning for Computer Vision
     material: cs444-ece494-deep-learning-for-computer-vision
     link: material field
-    topics: &id210
-    - &id213
+    topics: &id224
+    - &id227
       en: deep learning
       cn: 深度学习
-    - &id214
+    - &id228
       en: linear algebra
       cn: 线性代数
-    shape: &id211
-      pdf: 2
+    shape: &id225
+      pdf: 4
       slides: 0
       notebooks: 3
       code: 20
-      notes_md: 11
-      total_content_files: 42
+      notes_md: 13
+      total_content_files: 46
       week_span:
       - 3
       - 5
-    signals: &id212
+    signals: &id226
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 51
+    depth_score: 55
   - code: ECE494
     title: Deep Learning for Computer Vision
     material: cs444-ece494-deep-learning-for-computer-vision
     link: material field
-    topics: *id210
-    shape: *id211
-    signals: *id212
-    depth_score: 51
+    topics: *id224
+    shape: *id225
+    signals: *id226
+    depth_score: 55
   - code: CS124
     title: Introduction to Computer Science I
     material: ''
@@ -5058,211 +5466,17 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id213
-  - *id214
+  - *id227
+  - *id228
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 102
+  total_depth: 110
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Typical themes: deep learning, linear
     algebra.'
   coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：深度学习、线性代数。。
-- slug: hkust
-  university: The Hong Kong University of Science and Technology
-  teaching_folder: hkust
-  hand_curated: true
-  course_count: 15
-  linked_course_count: 4
-  courses:
-  - code: COMP1002
-    title: Introduction to Programming
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1021
-    title: Introduction to Programming with Python
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1022P
-    title: Introduction to Computing with Java
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1023
-    title: Introduction to Programming
-    material: comp1023
-    link: material field
-    topics: []
-    shape:
-      pdf: 3
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 3
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 3
-  - code: COMP2011
-    title: Programming with C++
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2012
-    title: Object-Oriented Programming and Data Structures
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2611
-    title: Computer Organization
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2711
-    title: Discrete Mathematical Tools for Computer Science
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3711
-    title: Design and Analysis of Algorithms
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP4211
-    title: Machine Learning
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP4331
-    title: Introduction to Data Mining
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP4411
-    title: Computer Graphics
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: DASC2010
-    title: Calculus for Data Analytics in Science
-    material: dasc2010
-    link: material field
-    topics: []
-    shape:
-      pdf: 4
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 4
-      week_span:
-      - 1
-      - 1
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 7
-  - code: DDM 理学硕士笔试
-    title: MSc DDM Written Exam
-    material: MSc DDM Written Exam
-    link: material field
-    topics:
-    - &id215
-      en: exam prep
-      cn: 考前突击
-    shape:
-      pdf: 15
-      slides: 3
-      notebooks: 0
-      code: 0
-      notes_md: 6
-      total_content_files: 32
-      week_span:
-      - 1
-      - 4
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 43
-  - code: FINA ML
-    title: Financial Machine Learning
-    material: fin-ml
-    link: material field
-    topics:
-    - &id216
-      en: machine learning
-      cn: 机器学习
-    - &id217
-      en: stats / probability
-      cn: 统计 / 概率
-    shape:
-      pdf: 2
-      slides: 0
-      notebooks: 0
-      code: 19
-      notes_md: 2
-      total_content_files: 41
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: true
-      weekly_lecture_arc: false
-    depth_score: 44
-  topics:
-  - *id215
-  - *id216
-  - *id217
-  signals:
-    exam_prep_materials: true
-    assignment_lab_materials: true
-    weekly_lecture_arc: true
-  total_depth: 97
-  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
-    prep, machine learning, stats / probability.'
-  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击、机器学习、统计
-    / 概率。。
 - slug: north-china-university-of-technology
   university: North China University of Technology
   teaching_folder: 北方工业大
@@ -5274,35 +5488,35 @@ universities:
     title: Machine Learning for Artificial Intelligence
     material: MA2634-ML-for-AI
     link: material field
-    topics: &id218
-    - &id221
+    topics: &id229
+    - &id232
       en: machine learning
       cn: 机器学习
-    - &id222
+    - &id233
       en: stats / probability
       cn: 统计 / 概率
-    - &id223
+    - &id234
       en: C++ STL
       cn: C++ STL
-    - &id224
+    - &id235
       en: exam prep
       cn: 考前突击
-    - &id225
+    - &id236
       en: linear algebra
       cn: 线性代数
-    shape: &id219
-      pdf: 15
+    shape: &id230
+      pdf: 17
       slides: 0
       notebooks: 2
       code: 0
-      notes_md: 1
-      total_content_files: 18
+      notes_md: 3
+      total_content_files: 22
       week_span: null
-    signals: &id220
+    signals: &id231
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 23
+    depth_score: 27
   - code: MA2623
     title: Linear and Abstract Algebra
     material: MA2623-linear-abstract-algebra
@@ -5311,12 +5525,12 @@ universities:
     - en: exam prep
       cn: 考前突击
     shape:
-      pdf: 25
+      pdf: 27
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 6
-      total_content_files: 31
+      notes_md: 8
+      total_content_files: 35
       week_span:
       - 5
       - 9
@@ -5324,30 +5538,230 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 51
+    depth_score: 55
   - code: MA2634
     title: Machine Learning for AI
     material: MA2634-ML-for-AI
     link: material field
-    topics: *id218
-    shape: *id219
-    signals: *id220
-    depth_score: 23
+    topics: *id229
+    shape: *id230
+    signals: *id231
+    depth_score: 27
   topics:
-  - *id221
-  - *id222
-  - *id223
-  - *id224
-  - *id225
+  - *id232
+  - *id233
+  - *id234
+  - *id235
+  - *id236
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 97
+  total_depth: 109
   coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Lecture
     catch-up. Exam-prep drills. Typical themes: machine learning, stats / probability,
     C++ STL, exam prep.'
   coverage_summary_cn: 本校可辅导约 3 门相关课程。可同步跟课答疑。考前突击。常见主题：机器学习、统计 / 概率、C++ STL、考前突击。。
+- slug: macquarie
+  university: Macquarie University
+  teaching_folder: macquarie-university
+  hand_curated: true
+  course_count: 15
+  linked_course_count: 4
+  courses:
+  - code: COMP2200/COMP6200
+    title: Data Science
+    material: comp6200-data-science
+    link: title fuzzy
+    topics:
+    - &id239
+      en: machine learning
+      cn: 机器学习
+    - &id240
+      en: networking
+      cn: 计算机网络
+    - &id241
+      en: assignments / labs
+      cn: 作业 / Lab
+    - &id242
+      en: stats / probability
+      cn: 统计 / 概率
+    - &id243
+      en: exam prep
+      cn: 考前突击
+    - &id244
+      en: C++ STL
+      cn: C++ STL
+    - &id245
+      en: web front-end
+      cn: 前端
+    shape:
+      pdf: 21
+      slides: 0
+      notebooks: 8
+      code: 7
+      notes_md: 0
+      total_content_files: 42
+      week_span:
+      - 1
+      - 20
+    signals:
+      exam_prep_materials: true
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 74
+  - code: COMP6010
+    title: Fundamentals of Computer Science
+    material: COMP6010
+    link: material field
+    topics: []
+    shape:
+      pdf: 7
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 9
+      week_span:
+      - 2
+      - 3
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 15
+  - code: COMP3770/6770
+    title: Management of IT Systems and Projects
+    material: comp3770
+    link: material field
+    topics: []
+    shape: &id237
+      pdf: 3
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 4
+      total_content_files: 8
+      week_span: null
+    signals: &id238
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 8
+  - code: COMP1000
+    title: Introduction to Computer Programming
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1010
+    title: Fundamentals of Computer Science
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1300
+    title: Introduction to Cyber Security
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2000
+    title: Object-Oriented Programming Practices
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2110
+    title: Web Technology
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2200
+    title: Data Science
+    material: COMP6200-aug-2025
+    link: material field missing on disk
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2250
+    title: Data Communications
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3010
+    title: Algorithm Theory and Design
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3100
+    title: Software Architecture and Design
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3420
+    title: Artificial Intelligence
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP6200
+    title: Data Science Foundations
+    material: COMP6200-aug-2025
+    link: material field missing on disk
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3770
+    title: Management of IT Systems and Projects
+    material: comp3770
+    link: material field
+    topics: []
+    shape: *id237
+    signals: *id238
+    depth_score: 8
+  topics:
+  - *id239
+  - *id240
+  - *id241
+  - *id242
+  - *id243
+  - *id244
+  - *id245
+  signals:
+    exam_prep_materials: true
+    assignment_lab_materials: true
+    weekly_lecture_arc: true
+  total_depth: 105
+  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: machine
+    learning, networking, assignments / labs, stats / probability.'
+  coverage_summary_cn: 本校可辅导约 4 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：机器学习、计算机网络、作业
+    / Lab、统计 / 概率。。
 - slug: newcastle
   university: Newcastle University
   teaching_folder: new-castle
@@ -5360,28 +5774,28 @@ universities:
     material: 密码学
     link: material field
     topics:
-    - &id226
+    - &id246
       en: OOP
       cn: 面向对象
-    - &id227
+    - &id247
       en: security
       cn: 安全
-    - &id228
+    - &id248
       en: assignments / labs
       cn: 作业 / Lab
-    - &id229
+    - &id249
       en: exam prep
       cn: 考前突击
-    - &id230
+    - &id250
       en: complexity
       cn: 复杂度
     shape:
-      pdf: 40
+      pdf: 42
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 63
+      notes_md: 2
+      total_content_files: 67
       week_span:
       - 1
       - 4
@@ -5389,157 +5803,23 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 83
+    depth_score: 87
   topics:
-  - *id226
-  - *id227
-  - *id228
-  - *id229
-  - *id230
+  - *id246
+  - *id247
+  - *id248
+  - *id249
+  - *id250
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 83
+  total_depth: 87
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: OOP,
     security, assignments / labs, exam prep.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：面向对象、安全、作业
     / Lab、考前突击。。
-- slug: adelaide
-  university: University of Adelaide
-  teaching_folder: adelaide-university
-  hand_curated: true
-  course_count: 10
-  linked_course_count: 1
-  courses:
-  - code: COMP SCI 1101
-    title: Introduction to Programming
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 1102
-    title: Object Oriented Programming
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 2103
-    title: Algorithm Design and Data Structures
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 2201
-    title: Algorithm and Data Structure Analysis
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 3001
-    title: Computer Networks and Applications
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 3004
-    title: Operating Systems
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 3007
-    title: Artificial Intelligence
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 3314
-    title: Introduction to Statistical Machine Learning
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP SCI 4023
-    title: Event Driven Computing
-    material: Comp_4023-event-driven-computing
-    link: material field
-    topics:
-    - &id231
-      en: automata / FSA
-      cn: 自动机 / FSA
-    - &id232
-      en: Java
-      cn: Java
-    - &id233
-      en: FRP / observers
-      cn: FRP / Observer
-    - &id234
-      en: exam prep
-      cn: 考前突击
-    - &id235
-      en: regex / ε-NFA
-      cn: 正则 / ε-NFA
-    - &id236
-      en: assignments / labs
-      cn: 作业 / Lab
-    shape:
-      pdf: 12
-      slides: 12
-      notebooks: 0
-      code: 8
-      notes_md: 9
-      total_content_files: 41
-      week_span:
-      - 1
-      - 11
-    signals:
-      exam_prep_materials: true
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 82
-  - code: COMP SCI 7201
-    title: Algorithm and Data Structure Analysis
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  topics:
-  - *id231
-  - *id232
-  - *id233
-  - *id234
-  - *id235
-  - *id236
-  signals:
-    exam_prep_materials: true
-    assignment_lab_materials: true
-    weekly_lecture_arc: true
-  total_depth: 82
-  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: automata
-    / FSA, Java, FRP / observers, exam prep.'
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。常见主题：自动机 / FSA、Java、FRP
-    / Observer、考前突击。。
 - slug: hong-kong-metropolitan-university
   university: Hong Kong Metropolitan University
   teaching_folder: hkmu
@@ -5552,60 +5832,60 @@ universities:
     material: comp s321f - advanced-database-and-data-warehousing
     link: material field
     topics:
-    - &id237
+    - &id251
       en: databases
       cn: 数据库
-    - &id238
+    - &id252
       en: SQL / databases
       cn: SQL / 数据库
-    - &id239
+    - &id253
       en: security
       cn: 安全
-    - &id240
+    - &id254
       en: web front-end
       cn: 前端
     - en: exam prep
       cn: 考前突击
-    - &id242
+    - &id256
       en: graphs
       cn: 图算法
     shape:
-      pdf: 10
+      pdf: 12
       slides: 5
       notebooks: 0
       code: 4
-      notes_md: 5
-      total_content_files: 53
+      notes_md: 7
+      total_content_files: 57
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 61
+    depth_score: 65
   - code: COMP S460F
     title: COMP S460F Advanced Topics In Data Mining
     material: COMP S460F Advanced Topics in Data Mining
     link: material field
     topics:
-    - &id243
+    - &id257
       en: assignments / labs
       cn: 作业 / Lab
-    - &id241
+    - &id255
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 7
+      pdf: 9
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 7
+      notes_md: 2
+      total_content_files: 11
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 15
+    depth_score: 19
   - code: COMP2030SEF
     title: Intermediate Java Programming & User Interface Design
     material: ''
@@ -5615,18 +5895,18 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id237
-  - *id238
-  - *id239
-  - *id240
-  - *id241
-  - *id242
-  - *id243
+  - *id251
+  - *id252
+  - *id253
+  - *id254
+  - *id255
+  - *id256
+  - *id257
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: false
-  total_depth: 76
+  total_depth: 84
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Assignment
     / lab debug sessions. Exam-prep drills. Typical themes: databases, SQL / databases,
     security, web front-end.'
@@ -5660,12 +5940,12 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 3
+      pdf: 5
       slides: 16
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 19
+      notes_md: 2
+      total_content_files: 23
       week_span:
       - 1
       - 21
@@ -5673,64 +5953,16 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 67
+    depth_score: 71
   topics: []
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 67
+  total_depth: 71
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。。
-- slug: national-university-of-malaysia
-  university: National University of Malaysia
-  teaching_folder: national-university-of-malaysia
-  hand_curated: true
-  course_count: 2
-  linked_course_count: 1
-  courses:
-  - code: STQD6114
-    title: Data Analytics in R
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: '6114'
-    title: 非结构化数据分析(R)
-    material: 6114非结构化数据分析(R)
-    link: material field
-    topics:
-    - &id244
-      en: data structures
-      cn: 数据结构
-    shape:
-      pdf: 11
-      slides: 0
-      notebooks: 0
-      code: 9
-      notes_md: 0
-      total_content_files: 60
-      week_span:
-      - 3
-      - 3
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: true
-      weekly_lecture_arc: true
-    depth_score: 66
-  topics:
-  - *id244
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: true
-    weekly_lecture_arc: true
-  total_depth: 66
-  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
-    catch-up. Assignment / lab debug sessions. Typical themes: data structures.'
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：数据结构。。
 - slug: berkeley
   university: University of California, Berkeley
   teaching_folder: uc-berkeley
@@ -5768,18 +6000,18 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 31
+      pdf: 33
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 31
+      notes_md: 2
+      total_content_files: 35
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 31
+    depth_score: 35
   - code: CS 170
     title: Efficient Algorithms and Intractable Problems
     material: ''
@@ -5833,13 +6065,13 @@ universities:
     material: Data 8-the Foundations of Data Science
     link: material field
     topics:
-    - &id245
+    - &id258
       en: web front-end
       cn: 前端
-    - &id246
+    - &id259
       en: Python
       cn: Python
-    - &id247
+    - &id260
       en: distributed systems
       cn: 分布式系统
     shape:
@@ -5860,39 +6092,253 @@ universities:
     material: Math54-linear-algebra-and-differential-equations
     link: material field
     topics:
-    - &id248
+    - &id261
       en: linear algebra
       cn: 线性代数
-    - &id249
+    - &id262
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 8
+    depth_score: 12
   topics:
-  - *id245
-  - *id246
-  - *id247
-  - *id248
-  - *id249
+  - *id258
+  - *id259
+  - *id260
+  - *id261
+  - *id262
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 62
+  total_depth: 70
   coverage_summary_en: 'Bilingual tutoring across 3 course(s) at this school. Exam-prep
     drills. Typical themes: web front-end, Python, distributed systems, linear algebra.'
   coverage_summary_cn: 本校可辅导约 3 门相关课程。考前突击。常见主题：前端、Python、分布式系统、线性代数。。
+- slug: national-university-of-malaysia
+  university: National University of Malaysia
+  teaching_folder: national-university-of-malaysia
+  hand_curated: true
+  course_count: 2
+  linked_course_count: 1
+  courses:
+  - code: STQD6114
+    title: Data Analytics in R
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: '6114'
+    title: 非结构化数据分析(R)
+    material: 6114非结构化数据分析(R)
+    link: material field
+    topics:
+    - &id263
+      en: data structures
+      cn: 数据结构
+    shape:
+      pdf: 13
+      slides: 0
+      notebooks: 0
+      code: 9
+      notes_md: 2
+      total_content_files: 64
+      week_span:
+      - 3
+      - 3
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: true
+    depth_score: 70
+  topics:
+  - *id263
+  signals:
+    exam_prep_materials: false
+    assignment_lab_materials: true
+    weekly_lecture_arc: true
+  total_depth: 70
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Assignment / lab debug sessions. Typical themes: data structures.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。常见主题：数据结构。。
+- slug: hku
+  university: The University of Hong Kong
+  teaching_folder: hku
+  hand_curated: true
+  course_count: 14
+  linked_course_count: 4
+  courses:
+  - code: COMP3340
+    title: Applied Deep Learning
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP1117B
+    title: Computer Programming
+    material: comp1117b
+    link: material field
+    topics: &id264
+    - &id267
+      en: assignments / labs
+      cn: 作业 / Lab
+    shape: &id265
+      pdf: 12
+      slides: 0
+      notebooks: 0
+      code: 2
+      notes_md: 10
+      total_content_files: 24
+      week_span: null
+    signals: &id266
+      exam_prep_materials: false
+      assignment_lab_materials: true
+      weekly_lecture_arc: false
+    depth_score: 27
+  - code: COMP1117
+    title: Computer Programming
+    material: comp1117b
+    link: material field
+    topics: *id264
+    shape: *id265
+    signals: *id266
+    depth_score: 27
+  - code: COMP2113
+    title: Programming Technologies
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2119
+    title: Introduction to Data Structures and Algorithms
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2120
+    title: Computer Organization
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP2121
+    title: Discrete Mathematics
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3230
+    title: Principles of Operating Systems
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3270
+    title: Artificial Intelligence
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3278
+    title: Introduction to Database Management Systems
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3314
+    title: Machine Learning
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: COMP3357
+    title: Cryptography
+    material: ''
+    link: unlinked
+    topics: []
+    shape: {}
+    signals: {}
+    depth_score: 0
+  - code: IIMT 3601
+    title: Database Management
+    material: IIMT 3601Database Management
+    link: material field
+    topics: []
+    shape:
+      pdf: 10
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 13
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 13
+  - code: CS Master Exam
+    title: CS Master Entrance Exam Prep
+    material: cs-master-mock-exam
+    link: material field
+    topics:
+    - &id268
+      en: exam prep
+      cn: 考前突击
+    shape:
+      pdf: 0
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 2
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 2
+  topics:
+  - *id267
+  - *id268
+  signals:
+    exam_prep_materials: false
+    assignment_lab_materials: true
+    weekly_lecture_arc: false
+  total_depth: 69
+  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Assignment
+    / lab debug sessions. Typical themes: assignments / labs, exam prep.'
+  coverage_summary_cn: 本校可辅导约 4 门相关课程。作业 / Lab 拆题与 debug。常见主题：作业 / Lab、考前突击。。
 - slug: nottingham
   university: University of Nottingham
   teaching_folder: u-nottingham
@@ -5985,16 +6431,16 @@ universities:
     material: eeee4119-ai-and-intelligent-systems
     link: material field
     topics:
-    - &id250
+    - &id269
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 27
+      pdf: 29
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 27
+      notes_md: 2
+      total_content_files: 31
       week_span:
       - 2
       - 10
@@ -6002,353 +6448,17 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 59
+    depth_score: 63
   topics:
-  - *id250
+  - *id269
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 59
+  total_depth: 63
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Exam-prep drills. Typical themes: exam prep.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。考前突击。常见主题：考前突击。。
-- slug: hku
-  university: The University of Hong Kong
-  teaching_folder: hku
-  hand_curated: true
-  course_count: 14
-  linked_course_count: 4
-  courses:
-  - code: COMP3340
-    title: Applied Deep Learning
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1117B
-    title: Computer Programming
-    material: comp1117b
-    link: material field
-    topics: &id251
-    - &id254
-      en: assignments / labs
-      cn: 作业 / Lab
-    shape: &id252
-      pdf: 10
-      slides: 0
-      notebooks: 0
-      code: 2
-      notes_md: 8
-      total_content_files: 20
-      week_span: null
-    signals: &id253
-      exam_prep_materials: false
-      assignment_lab_materials: true
-      weekly_lecture_arc: false
-    depth_score: 23
-  - code: COMP1117
-    title: Computer Programming
-    material: comp1117b
-    link: material field
-    topics: *id251
-    shape: *id252
-    signals: *id253
-    depth_score: 23
-  - code: COMP2113
-    title: Programming Technologies
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2119
-    title: Introduction to Data Structures and Algorithms
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2120
-    title: Computer Organization
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2121
-    title: Discrete Mathematics
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3230
-    title: Principles of Operating Systems
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3270
-    title: Artificial Intelligence
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3278
-    title: Introduction to Database Management Systems
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3314
-    title: Machine Learning
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3357
-    title: Cryptography
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: IIMT 3601
-    title: Database Management
-    material: IIMT 3601Database Management
-    link: material field
-    topics: []
-    shape:
-      pdf: 8
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 9
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 9
-  - code: CS Master Exam
-    title: CS Master Entrance Exam Prep
-    material: cs-master-mock-exam
-    link: material field
-    topics:
-    - &id255
-      en: exam prep
-      cn: 考前突击
-    shape:
-      pdf: 0
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 2
-      total_content_files: 2
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 2
-  topics:
-  - *id254
-  - *id255
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: true
-    weekly_lecture_arc: false
-  total_depth: 57
-  coverage_summary_en: 'Bilingual tutoring across 4 course(s) at this school. Assignment
-    / lab debug sessions. Typical themes: assignments / labs, exam prep.'
-  coverage_summary_cn: 本校可辅导约 4 门相关课程。作业 / Lab 拆题与 debug。常见主题：作业 / Lab、考前突击。。
-- slug: macquarie
-  university: Macquarie University
-  teaching_folder: macquarie-university
-  hand_curated: true
-  course_count: 15
-  linked_course_count: 5
-  courses:
-  - code: COMP2200/COMP6200
-    title: Data Science
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP6010
-    title: Fundamentals of Computer Science
-    material: COMP6010
-    link: material field
-    topics: []
-    shape:
-      pdf: 5
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 5
-      week_span:
-      - 2
-      - 3
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 11
-  - code: COMP3770/6770
-    title: Management of IT Systems and Projects
-    material: comp3770
-    link: material field
-    topics: []
-    shape: &id258
-      pdf: 1
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 2
-      total_content_files: 4
-      week_span: null
-    signals: &id259
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 4
-  - code: COMP1000
-    title: Introduction to Computer Programming
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1010
-    title: Fundamentals of Computer Science
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP1300
-    title: Introduction to Cyber Security
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2000
-    title: Object-Oriented Programming Practices
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2110
-    title: Web Technology
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP2200
-    title: Data Science
-    material: COMP6200-aug-2025
-    link: material field
-    topics: []
-    shape: &id256
-      pdf: 7
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 7
-      week_span:
-      - 1
-      - 4
-    signals: &id257
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 19
-  - code: COMP2250
-    title: Data Communications
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3010
-    title: Algorithm Theory and Design
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3100
-    title: Software Architecture and Design
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP3420
-    title: Artificial Intelligence
-    material: ''
-    link: unlinked
-    topics: []
-    shape: {}
-    signals: {}
-    depth_score: 0
-  - code: COMP6200
-    title: Data Science Foundations
-    material: COMP6200-aug-2025
-    link: material field
-    topics: []
-    shape: *id256
-    signals: *id257
-    depth_score: 19
-  - code: COMP3770
-    title: Management of IT Systems and Projects
-    material: comp3770
-    link: material field
-    topics: []
-    shape: *id258
-    signals: *id259
-    depth_score: 4
-  topics: []
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: false
-    weekly_lecture_arc: true
-  total_depth: 57
-  coverage_summary_en: Bilingual tutoring across 5 course(s) at this school. Lecture
-    catch-up.
-  coverage_summary_cn: 本校可辅导约 5 门相关课程。可同步跟课答疑。。
 - slug: san-jose-state-university
   university: San José State University
   teaching_folder: sjsu
@@ -6361,22 +6471,22 @@ universities:
     material: data 201
     link: material field
     topics:
-    - &id260
+    - &id270
       en: databases
       cn: 数据库
-    - &id261
+    - &id271
       en: SQL / databases
       cn: SQL / 数据库
-    - &id262
+    - &id272
       en: assignments / labs
       cn: 作业 / Lab
     shape:
-      pdf: 16
+      pdf: 18
       slides: 0
       notebooks: 0
       code: 10
-      notes_md: 2
-      total_content_files: 29
+      notes_md: 4
+      total_content_files: 33
       week_span:
       - 1
       - 6
@@ -6384,16 +6494,16 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 55
+    depth_score: 59
   topics:
-  - *id260
-  - *id261
-  - *id262
+  - *id270
+  - *id271
+  - *id272
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 55
+  total_depth: 59
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: databases,
     SQL / databases, assignments / labs.'
@@ -6547,16 +6657,16 @@ universities:
     material: Connected system资料
     link: material field
     topics:
-    - &id263
+    - &id273
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 20
+      pdf: 22
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 20
+      notes_md: 2
+      total_content_files: 24
       week_span:
       - 0
       - 21
@@ -6564,14 +6674,14 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 49
+    depth_score: 53
   topics:
-  - *id263
+  - *id273
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 49
+  total_depth: 53
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Exam-prep drills. Typical themes: exam prep.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。考前突击。常见主题：考前突击。。
@@ -6587,62 +6697,120 @@ universities:
     material: mfe-tech-interview
     link: material field
     topics:
-    - &id264
+    - &id274
       en: memory / pointers
       cn: 内存 / 指针
-    - &id265
+    - &id275
       en: OOP
       cn: 面向对象
-    - &id266
+    - &id276
       en: assignments / labs
       cn: 作业 / Lab
-    - &id267
+    - &id277
       en: Python
       cn: Python
-    - &id268
+    - &id278
       en: C++
       cn: C++
-    - &id269
+    - &id279
       en: C++ STL
       cn: C++ STL
-    - &id270
+    - &id280
       en: lists / stacks / queues
       cn: 链表 / 栈 / 队列
-    - &id271
+    - &id281
       en: operating systems
       cn: 操作系统
     shape:
-      pdf: 0
+      pdf: 2
       slides: 0
       notebooks: 0
       code: 4
-      notes_md: 35
-      total_content_files: 39
+      notes_md: 37
+      total_content_files: 43
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 47
+    depth_score: 51
   topics:
-  - *id264
-  - *id265
-  - *id266
-  - *id267
-  - *id268
-  - *id269
-  - *id270
-  - *id271
+  - *id274
+  - *id275
+  - *id276
+  - *id277
+  - *id278
+  - *id279
+  - *id280
+  - *id281
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: false
-  total_depth: 47
+  total_depth: 51
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
     / lab debug sessions. Exam-prep drills. Typical themes: memory / pointers, OOP,
     assignments / labs, Python.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。考前突击。常见主题：内存 / 指针、面向对象、作业
     / Lab、Python。。
+- slug: city-university-of-macau
+  university: City University of Macau
+  teaching_folder: 澳门城市大学
+  hand_curated: true
+  course_count: 2
+  linked_course_count: 2
+  courses:
+  - code: BCS010
+    title: 數據庫系統
+    material: BCS010-數據庫系統
+    link: material field
+    topics: []
+    shape:
+      pdf: 6
+      slides: 3
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 12
+      week_span:
+      - 1
+      - 6
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 30
+  - code: BCS021
+    title: 密码学及其应用
+    material: BCS021-密码学及其应用
+    link: material field
+    topics:
+    - &id282
+      en: security
+      cn: 安全
+    shape:
+      pdf: 4
+      slides: 12
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 19
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 19
+  topics:
+  - *id282
+  signals:
+    exam_prep_materials: false
+    assignment_lab_materials: false
+    weekly_lecture_arc: true
+  total_depth: 49
+  coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
+    catch-up. Typical themes: security.'
+  coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。常见主题：安全。。
 - slug: cuhk-shenzhen
   university: The Chinese University of Hong Kong, Shenzhen
   teaching_folder: cuhk-sz
@@ -6655,28 +6823,28 @@ universities:
     material: dda3020-machine-learning
     link: material field
     topics:
-    - &id272
+    - &id283
       en: machine learning
       cn: 机器学习
-    - &id273
+    - &id284
       en: stats / probability
       cn: 统计 / 概率
-    - &id274
+    - &id285
       en: networking
       cn: 计算机网络
-    - &id275
+    - &id286
       en: deep learning
       cn: 深度学习
-    - &id276
+    - &id287
       en: LLMs / NLP
       cn: 大模型 / NLP
     shape:
-      pdf: 10
+      pdf: 12
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 10
+      notes_md: 2
+      total_content_files: 14
       week_span:
       - 5
       - 14
@@ -6684,100 +6852,58 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 40
+    depth_score: 44
   topics:
-  - *id272
-  - *id273
-  - *id274
-  - *id275
-  - *id276
+  - *id283
+  - *id284
+  - *id285
+  - *id286
+  - *id287
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 40
+  total_depth: 44
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Typical themes: machine learning, stats / probability, networking, deep
     learning.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。常见主题：机器学习、统计 / 概率、计算机网络、深度学习。。
-- slug: ucsb
-  university: University of California, Santa Barbara
-  teaching_folder: ucsb
+- slug: university-of-california-davis
+  university: University of California, Davis
+  teaching_folder: uc-davis
   hand_curated: true
   course_count: 1
   linked_course_count: 1
   courses:
-  - code: COMPSC_16
-    title: Problem Solving with Computers I
-    material: compsc16
-    link: material field
-    topics:
-    - &id277
-      en: lists / stacks / queues
-      cn: 链表 / 栈 / 队列
-    - &id278
-      en: C++
-      cn: C++
-    shape:
-      pdf: 27
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 27
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: false
-    depth_score: 27
-  topics:
-  - *id277
-  - *id278
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: false
-    weekly_lecture_arc: false
-  total_depth: 27
-  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Typical
-    themes: lists / stacks / queues, C++.'
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。常见主题：链表 / 栈 / 队列、C++。。
-- slug: city-university-of-macau
-  university: City University of Macau
-  teaching_folder: 澳门城市大学
-  hand_curated: true
-  course_count: 1
-  linked_course_count: 1
-  courses:
-  - code: BCS010
-    title: 數據庫系統
-    material: BCS010-數據庫系統
+  - code: ecs-032a
+    title: Introduction to Programming
+    material: ecs-032a
     link: material field
     topics: []
     shape:
-      pdf: 4
-      slides: 3
+      pdf: 8
+      slides: 0
       notebooks: 0
-      code: 0
-      notes_md: 0
-      total_content_files: 8
+      code: 15
+      notes_md: 3
+      total_content_files: 29
       week_span:
-      - 1
+      - 6
       - 6
     signals:
       exam_prep_materials: false
-      assignment_lab_materials: false
+      assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 26
+    depth_score: 35
   topics: []
   signals:
     exam_prep_materials: false
-    assignment_lab_materials: false
+    assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 26
+  total_depth: 35
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. Lecture
-    catch-up.
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。。
+    catch-up. Assignment / lab debug sessions.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。。
 - slug: cornell-university
   university: Cornell University
   teaching_folder: cornell
@@ -6790,16 +6916,16 @@ universities:
     material: cs2110-java-test
     link: material field
     topics:
-    - &id279
+    - &id288
       en: Java
       cn: Java
     shape:
-      pdf: 1
+      pdf: 3
       slides: 0
       notebooks: 0
       code: 13
-      notes_md: 3
-      total_content_files: 17
+      notes_md: 5
+      total_content_files: 21
       week_span:
       - 3
       - 3
@@ -6807,39 +6933,81 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 20
+    depth_score: 24
   - code: Database
     title: Database Systems
     material: database
     link: material field
     topics:
-    - &id280
+    - &id289
       en: databases
       cn: 数据库
     shape:
-      pdf: 6
+      pdf: 8
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 6
+      notes_md: 2
+      total_content_files: 10
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 6
+    depth_score: 10
   topics:
-  - *id279
-  - *id280
+  - *id288
+  - *id289
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 26
+  total_depth: 34
   coverage_summary_en: 'Bilingual tutoring across 2 course(s) at this school. Lecture
     catch-up. Typical themes: Java, databases.'
   coverage_summary_cn: 本校可辅导约 2 门相关课程。可同步跟课答疑。常见主题：Java、数据库。。
+- slug: ucsb
+  university: University of California, Santa Barbara
+  teaching_folder: ucsb
+  hand_curated: true
+  course_count: 1
+  linked_course_count: 1
+  courses:
+  - code: COMPSC_16
+    title: Problem Solving with Computers I
+    material: compsc16
+    link: material field
+    topics:
+    - &id290
+      en: lists / stacks / queues
+      cn: 链表 / 栈 / 队列
+    - &id291
+      en: C++
+      cn: C++
+    shape:
+      pdf: 29
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 31
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 31
+  topics:
+  - *id290
+  - *id291
+  signals:
+    exam_prep_materials: false
+    assignment_lab_materials: false
+    weekly_lecture_arc: false
+  total_depth: 31
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Typical
+    themes: lists / stacks / queues, C++.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。常见主题：链表 / 栈 / 队列、C++。。
 - slug: brunel-university-of-london
   university: Brunel University of London
   teaching_folder: brunel-university-of-london
@@ -6852,45 +7020,45 @@ universities:
     material: MA2624-ML-for-AI
     link: material field
     topics:
-    - &id281
+    - &id292
       en: machine learning
       cn: 机器学习
-    - &id282
+    - &id293
       en: stats / probability
       cn: 统计 / 概率
-    - &id283
+    - &id294
       en: C++ STL
       cn: C++ STL
-    - &id284
+    - &id295
       en: exam prep
       cn: 考前突击
-    - &id285
+    - &id296
       en: linear algebra
       cn: 线性代数
     shape:
-      pdf: 15
+      pdf: 17
       slides: 0
       notebooks: 2
       code: 0
-      notes_md: 1
-      total_content_files: 18
+      notes_md: 3
+      total_content_files: 22
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 23
+    depth_score: 27
   topics:
-  - *id281
-  - *id282
-  - *id283
-  - *id284
-  - *id285
+  - *id292
+  - *id293
+  - *id294
+  - *id295
+  - *id296
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 23
+  total_depth: 27
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Exam-prep
     drills. Typical themes: machine learning, stats / probability, C++ STL, exam prep.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。考前突击。常见主题：机器学习、统计 / 概率、C++ STL、考前突击。。
@@ -6970,19 +7138,19 @@ universities:
     material: lubs3185
     link: material field
     topics:
-    - &id286
+    - &id297
       en: exam prep
       cn: 考前突击
-    - &id287
+    - &id298
       en: web front-end
       cn: 前端
     shape:
-      pdf: 3
+      pdf: 5
       slides: 2
       notebooks: 0
       code: 3
-      notes_md: 0
-      total_content_files: 12
+      notes_md: 2
+      total_content_files: 16
       week_span:
       - 8
       - 8
@@ -6990,15 +7158,15 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 23
+    depth_score: 27
   topics:
-  - *id286
-  - *id287
+  - *id297
+  - *id298
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 23
+  total_depth: 27
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills. Typical themes: exam
     prep, web front-end.'
@@ -7015,41 +7183,41 @@ universities:
     material: APPL 101-Exploring Engineering
     link: material field
     topics:
-    - &id288
+    - &id299
       en: OOP
       cn: 面向对象
-    - &id289
+    - &id300
       en: algorithms
       cn: 算法
-    - &id290
+    - &id301
       en: assignments / labs
       cn: 作业 / Lab
-    - &id291
+    - &id302
       en: APIs / HTTP
       cn: API / HTTP
     shape:
-      pdf: 12
+      pdf: 14
       slides: 6
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 20
+      notes_md: 2
+      total_content_files: 24
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 23
+    depth_score: 27
   topics:
-  - *id288
-  - *id289
-  - *id290
-  - *id291
+  - *id299
+  - *id300
+  - *id301
+  - *id302
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
     weekly_lecture_arc: false
-  total_depth: 23
+  total_depth: 27
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
     / lab debug sessions. Typical themes: OOP, algorithms, assignments / labs, APIs
     / HTTP.'
@@ -7148,12 +7316,12 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 0
+      pdf: 2
       slides: 0
       notebooks: 2
       code: 3
-      notes_md: 2
-      total_content_files: 12
+      notes_md: 4
+      total_content_files: 16
       week_span:
       - 1
       - 1
@@ -7161,13 +7329,13 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: true
-    depth_score: 23
+    depth_score: 27
   topics: []
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: true
-  total_depth: 23
+  total_depth: 27
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Assignment / lab debug sessions. Exam-prep drills.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。作业 / Lab 拆题与 debug。考前突击。。
@@ -7183,37 +7351,37 @@ universities:
     material: Introduction to Programming
     link: material field
     topics:
-    - &id292
+    - &id303
       en: data structures
       cn: 数据结构
-    - &id293
+    - &id304
       en: assignments / labs
       cn: 作业 / Lab
-    - &id294
+    - &id305
       en: OOP
       cn: 面向对象
     shape:
-      pdf: 7
+      pdf: 9
       slides: 4
       notebooks: 1
       code: 1
-      notes_md: 0
-      total_content_files: 14
+      notes_md: 2
+      total_content_files: 18
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 17
+    depth_score: 21
   topics:
-  - *id292
-  - *id293
-  - *id294
+  - *id303
+  - *id304
+  - *id305
   signals:
     exam_prep_materials: false
     assignment_lab_materials: true
     weekly_lecture_arc: false
-  total_depth: 17
+  total_depth: 21
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
     / lab debug sessions. Typical themes: data structures, assignments / labs, OOP.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。常见主题：数据结构、作业 / Lab、面向对象。。
@@ -7229,16 +7397,16 @@ universities:
     material: prob solving and programming
     link: material field
     topics:
-    - &id295
+    - &id306
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 6
+      pdf: 8
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 6
+      notes_md: 2
+      total_content_files: 10
       week_span:
       - 6
       - 7
@@ -7246,7 +7414,7 @@ universities:
       exam_prep_materials: true
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 17
+    depth_score: 21
   - code: COMP1043
     title: Problem Solving and Programming in Python
     material: ''
@@ -7256,12 +7424,12 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id295
+  - *id306
   signals:
     exam_prep_materials: true
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 17
+  total_depth: 21
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Exam-prep drills. Typical themes: exam prep.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。考前突击。常见主题：考前突击。。
@@ -7277,16 +7445,16 @@ universities:
     material: csci4850-modern-binary-exploitation
     link: material field
     topics:
-    - &id296
+    - &id307
       en: memory / pointers
       cn: 内存 / 指针
     shape:
-      pdf: 4
+      pdf: 6
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 4
+      notes_md: 2
+      total_content_files: 8
       week_span:
       - 1
       - 4
@@ -7294,51 +7462,17 @@ universities:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: true
-    depth_score: 16
+    depth_score: 20
   topics:
-  - *id296
+  - *id307
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: true
-  total_depth: 16
+  total_depth: 20
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
     catch-up. Typical themes: memory / pointers.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。常见主题：内存 / 指针。。
-- slug: university-of-california-davis
-  university: University of California, Davis
-  teaching_folder: uc-davis
-  hand_curated: true
-  course_count: 1
-  linked_course_count: 1
-  courses:
-  - code: ecs-032a
-    title: Introduction to Programming
-    material: ecs-032a
-    link: material field
-    topics: []
-    shape:
-      pdf: 3
-      slides: 0
-      notebooks: 0
-      code: 7
-      notes_md: 1
-      total_content_files: 13
-      week_span: null
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: true
-      weekly_lecture_arc: false
-    depth_score: 16
-  topics: []
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: true
-    weekly_lecture_arc: false
-  total_depth: 16
-  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school. Assignment
-    / lab debug sessions.
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。。
 - slug: western-university
   university: Western University
   teaching_folder: western-university
@@ -7351,29 +7485,29 @@ universities:
     material: ds1000b-data-science-concepts
     link: material field
     topics:
-    - &id297
+    - &id308
       en: exam prep
       cn: 考前突击
     shape:
-      pdf: 7
+      pdf: 9
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 8
+      notes_md: 3
+      total_content_files: 12
       week_span: null
     signals:
       exam_prep_materials: true
       assignment_lab_materials: true
       weekly_lecture_arc: false
-    depth_score: 16
+    depth_score: 20
   topics:
-  - *id297
+  - *id308
   signals:
     exam_prep_materials: true
     assignment_lab_materials: true
     weekly_lecture_arc: false
-  total_depth: 16
+  total_depth: 20
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Assignment
     / lab debug sessions. Exam-prep drills. Typical themes: exam prep.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。作业 / Lab 拆题与 debug。考前突击。常见主题：考前突击。。
@@ -7390,24 +7524,24 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 6
+      pdf: 8
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 8
+      notes_md: 3
+      total_content_files: 12
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 8
+    depth_score: 12
   topics: []
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 8
+  total_depth: 12
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。。
 - slug: beijing-normal-university
@@ -7423,24 +7557,24 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 5
+      pdf: 7
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 6
+      notes_md: 3
+      total_content_files: 10
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 6
+    depth_score: 10
   topics: []
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 6
+  total_depth: 10
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。。
 - slug: polyu
@@ -7528,24 +7662,24 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 1
+      pdf: 3
       slides: 0
       notebooks: 0
       code: 2
-      notes_md: 0
-      total_content_files: 6
+      notes_md: 2
+      total_content_files: 10
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 6
+    depth_score: 10
   topics: []
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 6
+  total_depth: 10
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。。
 - slug: bayes-business-school
@@ -7560,29 +7694,29 @@ universities:
     material: intro-to-r
     link: material field
     topics:
-    - &id298
+    - &id309
       en: web front-end
       cn: 前端
     shape:
-      pdf: 0
+      pdf: 2
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 5
+      notes_md: 2
+      total_content_files: 9
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 5
+    depth_score: 9
   topics:
-  - *id298
+  - *id309
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 5
+  total_depth: 9
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Typical
     themes: web front-end.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。常见主题：前端。。
@@ -7598,22 +7732,22 @@ universities:
     material: bu.510.615-python-for-data-analysis
     link: material field
     topics:
-    - &id299
+    - &id310
       en: Python
       cn: Python
     shape:
-      pdf: 4
+      pdf: 6
       slides: 0
       notebooks: 1
       code: 0
-      notes_md: 0
-      total_content_files: 5
+      notes_md: 2
+      total_content_files: 9
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 5
+    depth_score: 9
   - code: EN.601.220
     title: Intermediate Programming
     material: ''
@@ -7679,12 +7813,12 @@ universities:
     signals: {}
     depth_score: 0
   topics:
-  - *id299
+  - *id310
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 5
+  total_depth: 9
   coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Typical
     themes: Python.'
   coverage_summary_cn: 本校可辅导约 1 门相关课程。常见主题：Python。。
@@ -7765,66 +7899,26 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 1
-      total_content_files: 5
+      notes_md: 3
+      total_content_files: 9
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 5
+    depth_score: 9
   topics: []
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 5
+  total_depth: 9
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。。
-- slug: oregon-state-university
-  university: Oregon State University
-  teaching_folder: oregon-state
-  hand_curated: true
-  course_count: 1
-  linked_course_count: 1
-  courses:
-  - code: Computer Architecture
-    title: Computer Architecture
-    material: computer-architecture
-    link: material field
-    topics:
-    - &id300
-      en: computer architecture
-      cn: 计算机体系结构
-    shape:
-      pdf: 0
-      slides: 0
-      notebooks: 0
-      code: 0
-      notes_md: 2
-      total_content_files: 2
-      week_span:
-      - 2
-      - 2
-    signals:
-      exam_prep_materials: false
-      assignment_lab_materials: false
-      weekly_lecture_arc: true
-    depth_score: 5
-  topics:
-  - *id300
-  signals:
-    exam_prep_materials: false
-    assignment_lab_materials: false
-    weekly_lecture_arc: true
-  total_depth: 5
-  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
-    catch-up. Typical themes: computer architecture.'
-  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。常见主题：计算机体系结构。。
 - slug: beijing-normal-hongkong-baptist-university
   university: Beijing Normal-Hong Kong Baptist University
   teaching_folder: beijing-normal-hk-baptist-u
@@ -7838,24 +7932,24 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 2
+      pdf: 4
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 3
+    depth_score: 7
   topics: []
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 3
+  total_depth: 7
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。。
 - slug: cardiff
@@ -7879,18 +7973,18 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 3
+    depth_score: 7
   - code: CMT645
     title: DevOps
     material: ''
@@ -7912,7 +8006,7 @@ universities:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 3
+  total_depth: 7
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。。
 - slug: durham-university
@@ -7928,26 +8022,66 @@ universities:
     link: material field
     topics: []
     shape:
-      pdf: 3
+      pdf: 5
       slides: 0
       notebooks: 0
       code: 0
-      notes_md: 0
-      total_content_files: 3
+      notes_md: 2
+      total_content_files: 7
       week_span: null
     signals:
       exam_prep_materials: false
       assignment_lab_materials: false
       weekly_lecture_arc: false
-    depth_score: 3
+    depth_score: 7
   topics: []
   signals:
     exam_prep_materials: false
     assignment_lab_materials: false
     weekly_lecture_arc: false
-  total_depth: 3
+  total_depth: 7
   coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
   coverage_summary_cn: 本校可辅导约 1 门相关课程。。
+- slug: oregon-state-university
+  university: Oregon State University
+  teaching_folder: oregon-state
+  hand_curated: true
+  course_count: 1
+  linked_course_count: 1
+  courses:
+  - code: Computer Architecture
+    title: Computer Architecture
+    material: computer-architecture
+    link: material field
+    topics:
+    - &id311
+      en: computer architecture
+      cn: 计算机体系结构
+    shape:
+      pdf: 0
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 2
+      total_content_files: 2
+      week_span:
+      - 2
+      - 2
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: true
+    depth_score: 5
+  topics:
+  - *id311
+  signals:
+    exam_prep_materials: false
+    assignment_lab_materials: false
+    weekly_lecture_arc: true
+  total_depth: 5
+  coverage_summary_en: 'Bilingual tutoring across 1 course(s) at this school. Lecture
+    catch-up. Typical themes: computer architecture.'
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。可同步跟课答疑。常见主题：计算机体系结构。。
 - slug: duke-kunshan-university
   university: Duke Kunshan University
   teaching_folder: duke-kunshan-u
@@ -7962,6 +8096,39 @@ universities:
     topics: []
     shape:
       pdf: 0
+      slides: 0
+      notebooks: 0
+      code: 0
+      notes_md: 0
+      total_content_files: 2
+      week_span: null
+    signals:
+      exam_prep_materials: false
+      assignment_lab_materials: false
+      weekly_lecture_arc: false
+    depth_score: 2
+  topics: []
+  signals:
+    exam_prep_materials: false
+    assignment_lab_materials: false
+    weekly_lecture_arc: false
+  total_depth: 2
+  coverage_summary_en: Bilingual tutoring across 1 course(s) at this school.
+  coverage_summary_cn: 本校可辅导约 1 门相关课程。。
+- slug: university-of-southern-california
+  university: University of Southern California
+  teaching_folder: university-of-southern-california
+  hand_curated: true
+  course_count: 1
+  linked_course_count: 1
+  courses:
+  - code: EE 155
+    title: Introduction to Computer Programming for Electrical Engineers
+    material: EE155-mid2
+    link: material field
+    topics: []
+    shape:
+      pdf: 2
       slides: 0
       notebooks: 0
       code: 0

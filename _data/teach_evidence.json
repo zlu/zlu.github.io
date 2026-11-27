@@ -5,7 +5,8 @@
     "adelaide-university": {
       "preferred_slug": "adelaide-university",
       "materials": [
-        "Comp_4023-event-driven-computing"
+        "Comp_4023-event-driven-computing",
+        "COMP3011"
       ]
     },
     "algonguin-college": {
@@ -198,9 +199,8 @@
     "macquarie-university": {
       "preferred_slug": "macquarie",
       "materials": [
-        "COMP6200-aug-2025",
+        "comp6200-data-science",
         "COMP6010",
-        "comp6200-march-2025",
         "comp3770"
       ]
     },
@@ -495,6 +495,12 @@
         "MMA"
       ]
     },
+    "university-of-southern-california": {
+      "preferred_slug": "university-of-southern-california",
+      "materials": [
+        "EE155-mid2"
+      ]
+    },
     "university-of-waterloo": {
       "preferred_slug": "university-of-waterloo",
       "materials": [
@@ -519,6 +525,7 @@
         "MTHS1313",
         "comp3211",
         "comp9331-networking",
+        "comp3221",
         "comp4337-9337-securing-fixed-and-wireless-networks"
       ]
     },
@@ -567,6 +574,8 @@
     "澳门城市大学": {
       "preferred_slug": "city-university-of-macau",
       "materials": [
+        "BCS029 人工智能概论",
+        "BCS021-密码学及其应用",
         "BCS010-數據庫系統"
       ]
     },

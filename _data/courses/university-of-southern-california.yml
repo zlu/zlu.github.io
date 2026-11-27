@@ -1,0 +1,160 @@
+---
+university: University of Southern California
+abbr: USC
+name_cn: 南加州大学
+teaching_folder: university-of-southern-california
+courses:
+- code: EE 155
+  title: Introduction to Computer Programming for Electrical Engineers
+  material: EE155-mid2
+  theme: programming
+  meta_description_en: EE 155 USC tutoring (Intro C++ for EE). Stuck on functions, pointers/refs, recursion,
+    arrays/vectors, structs, or paper midterms? Bilingual Chinese/English — Horstmann Brief C++ Late Objects
+    aligned.
+  lead_en: 'EE 155 Introduction to Computer Programming for Electrical Engineers at USC is a 4-unit C++
+    course built around Brief C++: Late Objects (3rd ed., Cay S. Horstmann): data representation → control
+    structures → functions → recursion → arrays and composite types → basic algorithm analysis → file
+    I/O, with weekly lab programming on EdStem. The hard part is rarely “never seen cout” — it is paper
+    midterms and labs where almost-correct code still fails on prototypes, pointer vs reference parameter
+    choice, recursion base cases, or vector/map edge behaviour. Tutoring rebuilds that syllabus arc in
+    bilingual walkthroughs, then drills the question shapes and live-debugs the lab where it breaks.'
+  lead_cn: 'USC 的 EE 155（电气工程计算机编程导论）是 4 学分 C++ 课，教材用 Cay S. Horstmann《Brief C++: Late Objects》第 3 版：数据表示
+    → 控制结构 → 函数 → 递归 → 数组与复合类型 → 基础算法分析 → 文件 I/O，配合每周 EdStem Lab。真正难的往往不是「没见过 cout」——而是纸笔 Midterm 与 Lab：代码差不多对，一碰上函数原型、指针
+    vs 引用传参、递归终止条件，或 vector / map 边界就挂。辅导用中英双语重建这条大纲主线，再按真题题型练，并在你的 Lab 断开处现场 debug。'
+  overview_en: 'One-to-one tutoring for EE 155 at the University of Southern California. The course introduces
+    programming and algorithmic thinking for EE through C++, following Brief C++: Late Objects (Horstmann,
+    3rd ed.). Covered topics: data representation (ints, floats, strings); control structures; functions
+    and modular design; recursion; arrays, vectors/deques, maps, and structs; basic algorithm analysis;
+    file I/O; weekly lab assignments. Exams are typically paper (with a provided cheat sheet) via Gradescope
+    regrades; labs and lecture exercises run on EdStem. Bring your lab brief, failing EdStem case, lecture-slide
+    screenshot, or the Horstmann chapter / topic you cannot map onto the midterm question. Sample slides
+    from our concept-review tutoring deck are below.'
+  overview_cn: 'EE 155（南加州大学）一对一辅导。课程用 C++ 把编程与算法思维带给 EE，教材对齐 Horstmann《Brief C++: Late Objects》第 3 版。覆盖主题包括数据表示（整数、浮点、字符串）、控制结构、函数与模块化、递归、数组、
+    vector / deque、map 与 struct、基础算法分析、文件 I/O，以及每周 Lab。考试多为纸笔（会发 cheat sheet）， 复议走 Gradescope；Lab 与课上练习在
+    EdStem。预约时请带上 Lab brief、失败测例、卡住的课件截图，或对不上 Midterm 题的 Horstmann 章节 / 主题名。 下方有我们概念复习辅导课件的样例页。'
+  topics:
+  - en: Data representation — ints, floats, strings (Horstmann / lecture arc)
+    cn: 数据表示 — 整数、浮点、字符串（对齐 Horstmann / 讲课主线）
+  - en: Control structures — branching, loops, and nested logic
+    cn: 控制结构 — 分支、循环与嵌套逻辑
+  - en: Functions — prototypes, headers vs .cpp, parameters, defaults, void vs return
+    cn: 函数 — 原型、头文件 vs .cpp、参数、默认实参、void vs 有返回值
+  - en: Pointers vs references — pass-by, swap, dangling returns, const string&
+    cn: 指针 vs 引用 — 传参、swap、悬空返回、const string&
+  - en: Recursion — base case, call stack, and when a loop is clearer
+    cn: 递归 — 终止条件、调用栈，以及何时循环更清楚
+  - en: Arrays, vectors/deques, maps, and structs as composite types
+    cn: 数组、vector / deque、map 与 struct 等复合类型
+  - en: Basic algorithm analysis and file I/O for EE-style data processing
+    cn: 基础算法分析与面向 EE 数据处理的文件 I/O
+  - en: Weekly EdStem labs and paper midterm / final question shapes
+    cn: 每周 EdStem Lab 与纸笔 Midterm / Final 题型
+  stuck:
+  - en: Lecture demo compiles; solo rewrite misses the prototype or
+    cn: 课上演示能编过；自己重写漏了原型或
+  - en: Can explain “pointer vs reference” in words; midterm MCQ / short code still flips them
+    cn: 口头能说清指针 vs 引用；Midterm 选择题 / 短代码仍搞反
+  - en: Recursion looks fine until the base case or return path is wrong
+    cn: 递归看起来没问题，直到终止条件或返回路径写错
+  - en: Vector / map / struct lab almost works; edges or exact I/O fail EdStem
+    cn: vector / map / struct Lab 差不多能跑；边界或精确 I/O 挂 EdStem
+  - en: Horstmann chapter reads clear; cannot map it onto the paper exam wording
+    cn: Horstmann 章节能读懂，对不上纸笔考试措辞
+  session_angles:
+  - en: Restate I/O, types, and ownership (value / ref / pointer) before typing
+    cn: 动手前先复述输入输出、类型，以及值 / 引用 / 指针所有权
+  - en: Trace one recursive or pointer question on paper the way the midterm scores it
+    cn: 按 Midterm 给分方式在纸上追踪一道递归或指针题
+  - en: You drive EdStem / the editor; we bisect the failing case together
+    cn: 你来操作 EdStem / 编辑器；一起二分失败用例
+  tutoring:
+  - en: 'Lecture sync for EE 155: bilingual walkthrough of data representation → control → functions →
+      recursion → arrays / vectors / maps / structs → file I/O, kept in Horstmann Brief C++ Late Objects
+      wording so lab and exam language match.'
+    cn: '按 EE 155 同步跟课：用中英双语把「数据表示 → 控制 → 函数 → 递归 → 数组 / vector / map / struct → 文件 I/O」讲透，用语对齐 Horstmann《Brief
+      C++: Late Objects》，方便 Lab 与考试。'
+  - en: 'Weekly labs (EdStem): approach review and live debug (you at the keyboard) — no ghost-writing
+      the submission.'
+    cn: 每周 Lab（EdStem）：拆 brief、梳思路，现场 debug（你来操作键盘）——不代写交差。
+  - en: 'Exam prep: timed drills on paper midterm shapes — functions, pointers/references, recursion,
+      arrays, vectors/deques, maps, structs, and short programming problems.'
+    cn: 考前突击：按纸笔 Midterm 题型限时练 — 函数、指针/引用、递归、数组、vector/deque、map、struct 与短编程题。
+  prep_en: 'Send school, EE 155, deadline, and what you are stuck on: EdStem lab brief / failing case,
+    a screenshot of the lecture slide, or the Horstmann chapter (functions, pointers, recursion, containers,
+    structs, file I/O) that does not connect to the midterm question. Concrete evidence gets session one
+    onto the real blocker faster.'
+  prep_cn: 发学校、EE 155、截止日期，以及卡点：EdStem Lab brief / 失败测例、卡住的课件截图，或对不上 Midterm 题的 Horstmann 章节（函数、指针、递归、容器、struct、文件
+    I/O）。有具体证据，第一节课更快落到真问题。
+  faq:
+  - q_en: What does EE 155 cover?
+    q_cn: EE 155 学什么？
+    a_en: 'USC’s 4-unit intro to programming for EE — C++ and algorithmic thinking via Brief C++: Late
+      Objects (Horstmann, 3rd ed.). Core arc: data representation, control structures, functions, recursion,
+      arrays and composite types (vectors, maps, structs), basic algorithm analysis, and file I/O, plus
+      weekly labs. Say which week, lab, or midterm topic you are on when booking.'
+    a_cn: 'USC 面向 EE 的 4 学分编程导论 — 用 Horstmann《Brief C++: Late Objects》第 3 版学 C++ 与算法思维。主线包括数据表示、控制结构、函数、递归、数组与复合类型（vector、map、struct）、基础算法分析与文件
+      I/O，外加每周 Lab。预约时说明你卡在哪一周、哪次 Lab 或哪类 Midterm 题。'
+  - q_en: Which textbook does the course use?
+    q_cn: 这门课用哪本教材？
+    a_en: 'Brief C++: Late Objects by Cay S. Horstmann (Wiley, 3rd edition). Tutoring aligns explanations
+      and drills to that late-objects C++ path — not a generic “any language” intro.'
+    a_cn: 'Cay S. Horstmann 的《Brief C++: Late Objects》（Wiley，第 3 版）。辅导按这本 Late Objects 路线讲 C++，而不是泛泛的「任意语言入门」。'
+  - q_en: What should I bring to the first session?
+    q_cn: 第一次课前准备什么？
+    a_en: School, EE 155, deadline, plus your EdStem lab brief/PDF, code, a screenshot of the lecture
+      slide you are stuck on, or the Horstmann chapter / midterm topic that does not click.
+    a_cn: 学校、EE 155、截止日期，再加上 EdStem Lab brief/PDF、代码、卡住的课件截图，或对不上的 Horstmann 章节 / Midterm 主题。
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our EE 155 concept-review tutoring deck are on this page. They are our tutoring slides, not USC lecture notes.
+    a_cn: 有 — 本页有我们 EE 155 概念复习辅导课件的样例页。那是我们的辅导课件，不是 USC 讲义。
+  sample_slides:
+    title_en: EE 155 — sample slides
+    title_cn: EE 155 — 辅导课件样例
+    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
+      function, Ownership in C++ from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
+      One job per function, Ownership in C++。
+    bullets:
+    - en: Reading the brief and designing before typing
+      cn: 先读题、先设计，再动手写
+    - en: Functions, modules, and readable structure
+      cn: 函数、模块与可读结构
+    - en: Recursion, ADTs, and common lab patterns
+      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Unit tests and autograder feedback loops
+      cn: 单元测试与 autograder 反馈循环
+    slides:
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/01-title.webp
+      alt_en: EE 155 tutoring · Title
+      alt_cn: EE 155 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/02-roadmap.webp
+      alt_en: EE 155 tutoring · Roadmap
+      alt_cn: EE 155 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/03-part-a-from-brief-to-design.webp
+      alt_en: EE 155 tutoring · Part A · From brief to design
+      alt_cn: EE 155 辅导课件 · Part A · From brief to design
+      caption_en: Part A · From brief to design
+      caption_cn: Part A · From brief to design
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/04-brief-checklist-before-code.webp
+      alt_en: EE 155 tutoring · Brief checklist (before code)
+      alt_cn: EE 155 辅导课件 · Brief checklist (before code)
+      caption_en: Brief checklist (before code)
+      caption_cn: Brief checklist (before code)
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/05-one-job-per-function.webp
+      alt_en: EE 155 tutoring · One job per function
+      alt_cn: EE 155 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/06-ownership-in-c.webp
+      alt_en: EE 155 tutoring · Ownership in C++
+      alt_cn: EE 155 辅导课件 · Ownership in C++
+      caption_en: Ownership in C++
+      caption_cn: Ownership in C++
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+---

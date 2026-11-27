@@ -3,6 +3,7 @@ universities:
 - folder: adelaide-university
   admin_slug: adelaide-university
   materials:
+  - COMP3011
   - Comp_4023-event-driven-computing
 - folder: algonguin-college
   admin_slug: algonquin-college
@@ -141,9 +142,8 @@ universities:
   admin_slug: macquarie
   materials:
   - COMP6010
-  - COMP6200-aug-2025
   - comp3770
-  - comp6200-march-2025
+  - comp6200-data-science
 - folder: monash
   admin_slug: monash
   materials:
@@ -362,6 +362,10 @@ universities:
   materials:
   - COMP0161
   - MMA
+- folder: university-of-southern-california
+  admin_slug: university-of-southern-california
+  materials:
+  - EE155-mid2
 - folder: university-of-waterloo
   admin_slug: university-of-waterloo
   materials:
@@ -379,6 +383,7 @@ universities:
   - comp2511-software-design-and-architecture
   - comp3153-9153-algorithmic-verification
   - comp3211
+  - comp3221
   - comp4337-9337-securing-fixed-and-wireless-networks
   - comp4920-computer-ethics
   - comp9021 25T3 期末班资料
@@ -419,6 +424,8 @@ universities:
   admin_slug: city-university-of-macau
   materials:
   - BCS010-數據庫系統
+  - BCS021-密码学及其应用
+  - BCS029 人工智能概论
 - folder: 澳门理工大学
   admin_slug: macao-polytechnic-university
   materials: []
