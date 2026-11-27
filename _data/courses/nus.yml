@@ -21,9 +21,10 @@ courses:
     Covered topics: Variables, types, and expressions in the course language; Control flow — branching,
     loops, and nested logic; Functions / procedures and stepwise decomposition; Collections — arrays/lists/strings
     and indexing bugs; I/O, specs, and exact output the autograder expects. Bring your brief, failing
-    test, lecture slide screenshot, or the topic name you are stuck on.'
+    test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: CS1010E（新加坡国立大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Variables, types, and expressions in the course language
     cn: 课程语言中的变量、类型与表达式
@@ -62,19 +63,19 @@ courses:
   sample_slides: &id001
     title_en: CS1010 — sample slides
     title_cn: CS1010 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Names, objects, mutability。
+    lead_en: 'Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion: three must-haves,
+      Mutability and defaults from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion:
+      three must-haves, Mutability and defaults。'
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Functions and decomposition
+      cn: 函数与拆题
+    - en: Names, objects, and mutability
+      cn: 名字、对象与可变性
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
     slides:
     - src: /assets/teach/nus/cs1010/sample/01-title.webp
       alt_en: CS1010 tutoring · Title
@@ -86,26 +87,26 @@ courses:
       alt_cn: CS1010 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/nus/cs1010/sample/03-part-a-from-brief-to-design.webp
-      alt_en: CS1010 tutoring · Part A · From brief to design
-      alt_cn: CS1010 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/nus/cs1010/sample/04-brief-checklist-before-code.webp
-      alt_en: CS1010 tutoring · Brief checklist (before code)
-      alt_cn: CS1010 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/nus/cs1010/sample/05-one-job-per-function.webp
-      alt_en: CS1010 tutoring · One job per function
-      alt_cn: CS1010 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/nus/cs1010/sample/06-names-objects-mutability.webp
+    - src: /assets/teach/nus/cs1010/sample/03-functions-with-one-job.webp
+      alt_en: CS1010 tutoring · Functions with one job
+      alt_cn: CS1010 辅导课件 · Functions with one job
+      caption_en: Functions with one job
+      caption_cn: Functions with one job
+    - src: /assets/teach/nus/cs1010/sample/04-names-objects-mutability.webp
       alt_en: CS1010 tutoring · Names, objects, mutability
       alt_cn: CS1010 辅导课件 · Names, objects, mutability
       caption_en: Names, objects, mutability
       caption_cn: Names, objects, mutability
+    - src: /assets/teach/nus/cs1010/sample/05-recursion-three-must-haves.webp
+      alt_en: 'CS1010 tutoring · Recursion: three must-haves'
+      alt_cn: 'CS1010 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/nus/cs1010/sample/06-mutability-and-defaults.webp
+      alt_en: CS1010 tutoring · Mutability and defaults
+      alt_cn: CS1010 辅导课件 · Mutability and defaults
+      caption_en: Mutability and defaults
+      caption_cn: Mutability and defaults
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -141,9 +142,10 @@ courses:
     Covered topics: Variables, types, and expressions in the course language; Control flow — branching,
     loops, and nested logic; Functions / procedures and stepwise decomposition; Collections — arrays/lists/strings
     and indexing bugs; I/O, specs, and exact output the autograder expects. Bring your brief, failing
-    test, lecture slide screenshot, or the topic name you are stuck on.'
+    test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: CS1010（新加坡国立大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Variables, types, and expressions in the course language
     cn: 课程语言中的变量、类型与表达式

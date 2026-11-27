@@ -22,10 +22,10 @@ courses:
     at Ludwig-Maximilians-Universität München. Covered topics: Symbolische Programmiersprache; Core ideas
     in Symbolische Programmiersprache; Assignments / labs for Symbolische Programmiersprache; Exam drills
     aligned to Symbolische Programmiersprache. Bring your brief, failing test, lecture slide screenshot,
-    or the topic name you are stuck on.'
+    or the topic name you are stuck on. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: Symbolische Programmiersprache（慕尼黑大学）一对一辅导。覆盖主题包括Symbolische Programmiersprache、Symbolische
     Programmiersprache 的核心概念、Symbolische Programmiersprache 的作业 / Lab、对准 Symbolische Programmiersprache
-    的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Symbolische Programmiersprache
     cn: Symbolische Programmiersprache
@@ -60,10 +60,10 @@ courses:
   sample_slides:
     title_en: Symbolische Programmiersprache — sample slides
     title_cn: Symbolische Programmiersprache — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Names, objects, mutability。
+    lead_en: 'Title, Roadmap, Supervised vs unsupervised, Loss: what training minimises, Train / validation
+      / test, Sigmoid and the decision rule from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Supervised vs unsupervised, Loss: what training minimises,
+      Train / validation / test, Sigmoid and the decision rule。'
     bullets:
     - en: ML pipelines, features, and model choice
       cn: ML 流水线、特征与模型选择
@@ -84,26 +84,26 @@ courses:
       alt_cn: Symbolische Programmiersprache 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/03-part-a-from-brief-to-design.webp
-      alt_en: Symbolische Programmiersprache tutoring · Part A · From brief to design
-      alt_cn: Symbolische Programmiersprache 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/04-brief-checklist-before-code.webp
-      alt_en: Symbolische Programmiersprache tutoring · Brief checklist (before code)
-      alt_cn: Symbolische Programmiersprache 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/05-one-job-per-function.webp
-      alt_en: Symbolische Programmiersprache tutoring · One job per function
-      alt_cn: Symbolische Programmiersprache 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/06-names-objects-mutability.webp
-      alt_en: Symbolische Programmiersprache tutoring · Names, objects, mutability
-      alt_cn: Symbolische Programmiersprache 辅导课件 · Names, objects, mutability
-      caption_en: Names, objects, mutability
-      caption_cn: Names, objects, mutability
+    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/03-supervised-vs-unsupervised.webp
+      alt_en: Symbolische Programmiersprache tutoring · Supervised vs unsupervised
+      alt_cn: Symbolische Programmiersprache 辅导课件 · Supervised vs unsupervised
+      caption_en: Supervised vs unsupervised
+      caption_cn: Supervised vs unsupervised
+    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/04-loss-what-training-minimises.webp
+      alt_en: 'Symbolische Programmiersprache tutoring · Loss: what training minimises'
+      alt_cn: 'Symbolische Programmiersprache 辅导课件 · Loss: what training minimises'
+      caption_en: 'Loss: what training minimises'
+      caption_cn: 'Loss: what training minimises'
+    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/05-train-validation-test.webp
+      alt_en: Symbolische Programmiersprache tutoring · Train / validation / test
+      alt_cn: Symbolische Programmiersprache 辅导课件 · Train / validation / test
+      caption_en: Train / validation / test
+      caption_cn: Train / validation / test
+    - src: /assets/teach/lmu/symbolische-programmiersprache/sample/06-sigmoid-and-the-decision-rule.webp
+      alt_en: Symbolische Programmiersprache tutoring · Sigmoid and the decision rule
+      alt_cn: Symbolische Programmiersprache 辅导课件 · Sigmoid and the decision rule
+      caption_en: Sigmoid and the decision rule
+      caption_cn: Sigmoid and the decision rule
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

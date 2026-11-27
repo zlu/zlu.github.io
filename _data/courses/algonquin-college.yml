@@ -21,9 +21,11 @@ courses:
   overview_en: 'One-to-one tutoring for ESC4402 Engineering Software Computing at Algonquin College. Covered
     topics: Engineering Software Computing; Core ideas in Engineering Software Computing; Assignments
     / labs for Engineering Software Computing; Exam drills aligned to Engineering Software Computing.
-    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+    Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on. Sample
+    slides from our concept-review tutoring deck are below.'
   overview_cn: ESC4402（亚岗昆学院）一对一辅导。覆盖主题包括Engineering Software Computing、Engineering Software Computing
     的核心概念、Engineering Software Computing 的作业 / Lab、对准 Engineering Software Computing 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Engineering Software Computing
     cn: Engineering Software Computing
@@ -58,10 +60,10 @@ courses:
   sample_slides:
     title_en: ESC4402 — sample slides
     title_cn: ESC4402 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Autograder loop from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Autograder loop。
+    lead_en: Title, Roadmap, ER essentials, SQL mental order, Why is this slow?, ACID in one slide from
+      our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, ER essentials, SQL mental order, Why is this slow?, ACID
+      in one slide。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -80,26 +82,26 @@ courses:
       alt_cn: ESC4402 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/algonguin-college/esc4402/sample/03-part-a-from-brief-to-design.webp
-      alt_en: ESC4402 tutoring · Part A · From brief to design
-      alt_cn: ESC4402 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/algonguin-college/esc4402/sample/04-brief-checklist-before-code.webp
-      alt_en: ESC4402 tutoring · Brief checklist (before code)
-      alt_cn: ESC4402 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/algonguin-college/esc4402/sample/05-one-job-per-function.webp
-      alt_en: ESC4402 tutoring · One job per function
-      alt_cn: ESC4402 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/algonguin-college/esc4402/sample/06-autograder-loop.webp
-      alt_en: ESC4402 tutoring · Autograder loop
-      alt_cn: ESC4402 辅导课件 · Autograder loop
-      caption_en: Autograder loop
-      caption_cn: Autograder loop
+    - src: /assets/teach/algonguin-college/esc4402/sample/03-er-essentials.webp
+      alt_en: ESC4402 tutoring · ER essentials
+      alt_cn: ESC4402 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/algonguin-college/esc4402/sample/04-sql-mental-order.webp
+      alt_en: ESC4402 tutoring · SQL mental order
+      alt_cn: ESC4402 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/algonguin-college/esc4402/sample/05-why-is-this-slow.webp
+      alt_en: ESC4402 tutoring · Why is this slow?
+      alt_cn: ESC4402 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
+    - src: /assets/teach/algonguin-college/esc4402/sample/06-acid-in-one-slide.webp
+      alt_en: ESC4402 tutoring · ACID in one slide
+      alt_cn: ESC4402 辅导课件 · ACID in one slide
+      caption_en: ACID in one slide
+      caption_cn: ACID in one slide
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -137,10 +139,11 @@ courses:
     College. Covered topics: Intro To Business Application Programming; Core ideas in Intro To Business
     Application Programming; Assignments / labs for Intro To Business Application Programming; Exam drills
     aligned to Intro To Business Application Programming. Bring your brief, failing test, lecture slide
-    screenshot, or the topic name you are stuck on.'
+    screenshot, or the topic name you are stuck on. Sample slides from our concept-review tutoring deck
+    are below.'
   overview_cn: ESC4503（亚岗昆学院）一对一辅导。覆盖主题包括Intro To Business Application Programming、Intro To Business Application
     Programming 的核心概念、Intro To Business Application Programming 的作业 / Lab、对准 Intro To Business Application
-    Programming 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    Programming 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Intro To Business Application Programming
     cn: Intro To Business Application Programming
@@ -177,10 +180,10 @@ courses:
   sample_slides:
     title_en: ESC4503 — sample slides
     title_cn: ESC4503 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Autograder loop from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Autograder loop。
+    lead_en: Title, Roadmap, ER essentials, SQL mental order, Why is this slow?, ACID in one slide from
+      our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, ER essentials, SQL mental order, Why is this slow?, ACID
+      in one slide。
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -199,26 +202,26 @@ courses:
       alt_cn: ESC4503 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/algonguin-college/esc4503/sample/03-part-a-from-brief-to-design.webp
-      alt_en: ESC4503 tutoring · Part A · From brief to design
-      alt_cn: ESC4503 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/algonguin-college/esc4503/sample/04-brief-checklist-before-code.webp
-      alt_en: ESC4503 tutoring · Brief checklist (before code)
-      alt_cn: ESC4503 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/algonguin-college/esc4503/sample/05-one-job-per-function.webp
-      alt_en: ESC4503 tutoring · One job per function
-      alt_cn: ESC4503 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/algonguin-college/esc4503/sample/06-autograder-loop.webp
-      alt_en: ESC4503 tutoring · Autograder loop
-      alt_cn: ESC4503 辅导课件 · Autograder loop
-      caption_en: Autograder loop
-      caption_cn: Autograder loop
+    - src: /assets/teach/algonguin-college/esc4503/sample/03-er-essentials.webp
+      alt_en: ESC4503 tutoring · ER essentials
+      alt_cn: ESC4503 辅导课件 · ER essentials
+      caption_en: ER essentials
+      caption_cn: ER essentials
+    - src: /assets/teach/algonguin-college/esc4503/sample/04-sql-mental-order.webp
+      alt_en: ESC4503 tutoring · SQL mental order
+      alt_cn: ESC4503 辅导课件 · SQL mental order
+      caption_en: SQL mental order
+      caption_cn: SQL mental order
+    - src: /assets/teach/algonguin-college/esc4503/sample/05-why-is-this-slow.webp
+      alt_en: ESC4503 tutoring · Why is this slow?
+      alt_cn: ESC4503 辅导课件 · Why is this slow?
+      caption_en: Why is this slow?
+      caption_cn: Why is this slow?
+    - src: /assets/teach/algonguin-college/esc4503/sample/06-acid-in-one-slide.webp
+      alt_en: ESC4503 tutoring · ACID in one slide
+      alt_cn: ESC4503 辅导课件 · ACID in one slide
+      caption_en: ACID in one slide
+      caption_cn: ACID in one slide
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

@@ -238,9 +238,9 @@ courses:
     Control flow — branching, loops, and nested logic; Functions / procedures and stepwise decomposition;
     Collections — arrays/lists/strings and indexing bugs; I/O, specs, and exact output the autograder
     expects. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
-    on.'
+    on. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: COMP1023（香港科技大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Variables, types, and expressions in the course language
     cn: 课程语言中的变量、类型与表达式
@@ -280,19 +280,19 @@ courses:
   sample_slides:
     title_en: COMP1023 — sample slides
     title_cn: COMP1023 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Names, objects, mutability。
+    lead_en: 'Title, Roadmap, One job per function, Control flow and indexing, Recursion: three must-haves,
+      Autograder loop from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, One job per function, Control flow and indexing, Recursion:
+      three must-haves, Autograder loop。'
     bullets:
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
-    - en: Unit tests and autograder feedback loops
-      cn: 单元测试与 autograder 反馈循环
+    - en: Decomposition — one job per function
+      cn: 拆题 — 一函数一事
+    - en: Control flow and indexing edges
+      cn: 控制流与下标边界
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: Debug loop — smallest failing case
+      cn: 调试闭环 — 最小失败用例
     slides:
     - src: /assets/teach/hkust/comp1023/sample/01-title.webp
       alt_en: COMP1023 tutoring · Title
@@ -304,26 +304,26 @@ courses:
       alt_cn: COMP1023 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/hkust/comp1023/sample/03-part-a-from-brief-to-design.webp
-      alt_en: COMP1023 tutoring · Part A · From brief to design
-      alt_cn: COMP1023 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/hkust/comp1023/sample/04-brief-checklist-before-code.webp
-      alt_en: COMP1023 tutoring · Brief checklist (before code)
-      alt_cn: COMP1023 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/hkust/comp1023/sample/05-one-job-per-function.webp
+    - src: /assets/teach/hkust/comp1023/sample/03-one-job-per-function.webp
       alt_en: COMP1023 tutoring · One job per function
       alt_cn: COMP1023 辅导课件 · One job per function
       caption_en: One job per function
       caption_cn: One job per function
-    - src: /assets/teach/hkust/comp1023/sample/06-names-objects-mutability.webp
-      alt_en: COMP1023 tutoring · Names, objects, mutability
-      alt_cn: COMP1023 辅导课件 · Names, objects, mutability
-      caption_en: Names, objects, mutability
-      caption_cn: Names, objects, mutability
+    - src: /assets/teach/hkust/comp1023/sample/04-control-flow-and-indexing.webp
+      alt_en: COMP1023 tutoring · Control flow and indexing
+      alt_cn: COMP1023 辅导课件 · Control flow and indexing
+      caption_en: Control flow and indexing
+      caption_cn: Control flow and indexing
+    - src: /assets/teach/hkust/comp1023/sample/05-recursion-three-must-haves.webp
+      alt_en: 'COMP1023 tutoring · Recursion: three must-haves'
+      alt_cn: 'COMP1023 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/hkust/comp1023/sample/06-autograder-loop.webp
+      alt_en: COMP1023 tutoring · Autograder loop
+      alt_cn: COMP1023 辅导课件 · Autograder loop
+      caption_en: Autograder loop
+      caption_cn: Autograder loop
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

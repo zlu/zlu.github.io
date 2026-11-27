@@ -768,9 +768,10 @@ courses:
   overview_en: Programming 1 at UTS (Diploma of IT) introduces Java through text menus, objects, and simple
     collections. Students usually struggle less with "never saw syntax" and more with reading the brief,
     placing behaviour in the right class, and debugging when the menu path and data do not match. IPRO002
-    extends the same line into inheritance, interfaces, and a group project.
+    extends the same line into inheritance, interfaces, and a group project. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: UTS（Diploma of IT）的 Programming 1 用 Java 把文本菜单、对象和小集合跑通。 真正卡人的往往不是「语法完全没见过」，而是 brief 读不清、行为该放哪个类、
-    菜单路径和数据对不上时不会排查。IPRO002 在同一条线上继续：继承、接口与小组项目。
+    菜单路径和数据对不上时不会排查。IPRO002 在同一条线上继续：继承、接口与小组项目。 下方有我们概念复习辅导课件的样例页。
   title: Programming 1
   stuck:
   - en: Code that almost runs but the student cannot explain each step
@@ -785,6 +786,60 @@ courses:
   - '41039'
   meta_description_en: IPRO001 / 41039 UTS tutoring (Programming 1). Code that almost runs but the student
     cannot explain each step? Bilingual Chinese/English help.
+  sample_slides:
+    title_en: IPRO001 — sample slides
+    title_cn: IPRO001 — 辅导课件样例
+    lead_en: 'Title, Roadmap, Methods with one job, Objects are references, Recursion: three must-haves,
+      Inheritance, interface, polymorphism from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Methods with one job, Objects are references, Recursion:
+      three must-haves, Inheritance, interface, polymorphism。'
+    bullets:
+    - en: Methods and decomposition
+      cn: 方法与拆题
+    - en: Objects, references, and aliases
+      cn: 对象、引用与别名
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: Inheritance, interfaces, polymorphism
+      cn: 继承、接口与多态
+    slides:
+    - src: /assets/teach/uts/ipro001/sample/01-title.webp
+      alt_en: IPRO001 tutoring · Title
+      alt_cn: IPRO001 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/uts/ipro001/sample/02-roadmap.webp
+      alt_en: IPRO001 tutoring · Roadmap
+      alt_cn: IPRO001 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/uts/ipro001/sample/03-methods-with-one-job.webp
+      alt_en: IPRO001 tutoring · Methods with one job
+      alt_cn: IPRO001 辅导课件 · Methods with one job
+      caption_en: Methods with one job
+      caption_cn: Methods with one job
+    - src: /assets/teach/uts/ipro001/sample/04-objects-are-references.webp
+      alt_en: IPRO001 tutoring · Objects are references
+      alt_cn: IPRO001 辅导课件 · Objects are references
+      caption_en: Objects are references
+      caption_cn: Objects are references
+    - src: /assets/teach/uts/ipro001/sample/05-recursion-three-must-haves.webp
+      alt_en: 'IPRO001 tutoring · Recursion: three must-haves'
+      alt_cn: 'IPRO001 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/uts/ipro001/sample/06-inheritance-interface-polymorphism.webp
+      alt_en: IPRO001 tutoring · Inheritance, interface, polymorphism
+      alt_cn: IPRO001 辅导课件 · Inheritance, interface, polymorphism
+      caption_en: Inheritance, interface, polymorphism
+      caption_cn: Inheritance, interface, polymorphism
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - topics:
   - en: Scenario and use-cases that fit weeks 1–6 only
     cn: 选题与用例只落在前几周已教内容里
@@ -848,10 +903,10 @@ courses:
   sample_slides:
     title_en: IPRO002 — sample slides
     title_cn: IPRO002 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Inheritance, interface, polymorphism from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Inheritance, interface, polymorphism。
+    lead_en: 'Title, Roadmap, Methods with one job, Objects are references, Recursion: three must-haves,
+      Inheritance, interface, polymorphism from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Methods with one job, Objects are references, Recursion:
+      three must-haves, Inheritance, interface, polymorphism。'
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -868,21 +923,21 @@ courses:
       alt_cn: IPRO002 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/uts/ipro002/sample/03-part-a-from-brief-to-design.webp
-      alt_en: IPRO002 tutoring · Part A · From brief to design
-      alt_cn: IPRO002 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/uts/ipro002/sample/04-brief-checklist-before-code.webp
-      alt_en: IPRO002 tutoring · Brief checklist (before code)
-      alt_cn: IPRO002 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/uts/ipro002/sample/05-one-job-per-function.webp
-      alt_en: IPRO002 tutoring · One job per function
-      alt_cn: IPRO002 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
+    - src: /assets/teach/uts/ipro002/sample/03-methods-with-one-job.webp
+      alt_en: IPRO002 tutoring · Methods with one job
+      alt_cn: IPRO002 辅导课件 · Methods with one job
+      caption_en: Methods with one job
+      caption_cn: Methods with one job
+    - src: /assets/teach/uts/ipro002/sample/04-objects-are-references.webp
+      alt_en: IPRO002 tutoring · Objects are references
+      alt_cn: IPRO002 辅导课件 · Objects are references
+      caption_en: Objects are references
+      caption_cn: Objects are references
+    - src: /assets/teach/uts/ipro002/sample/05-recursion-three-must-haves.webp
+      alt_en: 'IPRO002 tutoring · Recursion: three must-haves'
+      alt_cn: 'IPRO002 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
     - src: /assets/teach/uts/ipro002/sample/06-inheritance-interface-polymorphism.webp
       alt_en: IPRO002 tutoring · Inheritance, interface, polymorphism
       alt_cn: IPRO002 辅导课件 · Inheritance, interface, polymorphism

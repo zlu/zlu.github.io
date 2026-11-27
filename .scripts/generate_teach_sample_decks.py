@@ -72,12 +72,21 @@ LOGISTICS_RE = re.compile(
 )
 CONTENTISH_RE = re.compile(
     r"(?i)\b(definition|define|theorem|lemma|example|trap|pitfall|habit|"
-    r"formula|algorithm|proof|model|tuple|lemma|checklist|method|"
-    r"interleaving|sigmoid|gradient|pointer|heap|stack|join|index|"
+    r"formula|algorithm|proof|model|tuple|lemma|method|"
+    r"interleaving|sigmoid|gradient|pointer|reference|heap|stack|join|index|"
     r"dfa|nfa|petri|bayes|mutex|race|deadlock|bfs|dfs|dp\b|"
-    r"encrypt|hash|threat|socket|page fault|expectation)"
+    r"encrypt|hash|threat|socket|page fault|expectation|"
+    r"recursion|prototype|vector|array|struct|ownership|raii|"
+    r"overload|override|polymorphism|mutability|alias)"
 )
 SECTION_RE = re.compile(r"(?i)^part\s+[a-z]\b|^roadmap\b")
+# Soft "how to homework" slides — not course concepts. Prefer language/content pages.
+GENERIC_BRIEF_SHELL_RE = re.compile(
+    r"(?i)from brief to design|brief checklist \(before code\)|"
+    r"brief\s*→\s*checklist|brief-checklist|"
+    r"read the brief\s*→\s*design|what the marker will run|"
+    r"restate the brief in one sentence"
+)
 
 
 def ascii_slug(text: str) -> str:
@@ -158,6 +167,28 @@ def is_intro_shell_sample(course: dict) -> bool:
     srcs = " ".join(str(s.get("src") or "") for s in (ss.get("slides") or []) if isinstance(s, dict))
     if "03-stuck" in srcs and "04-tutoring" in srcs:
         return True
+    # Generic programming "brief → design" shell — not language/concept teaching.
+    if GENERIC_BRIEF_SHELL_RE.search(blob) or "part-a-from-brief" in srcs or "brief-checklist" in srcs:
+        return True
+    if "From brief to design" in caps or "Brief checklist" in caps:
+        return True
+    return False
+
+
+def is_thin_section_slide(text: str) -> bool:
+    """True for almost-empty Part/section divider pages (title + subtitle only)."""
+    lines = [ln.strip() for ln in (text or "").splitlines() if ln.strip()]
+    lines = [
+        ln
+        for ln in lines
+        if not re.match(r"(?i)^zlu\b", ln) and not re.fullmatch(r"\d+", ln)
+    ]
+    if not lines:
+        return True
+    head = lines[0]
+    body = " ".join(lines[1:])
+    if SECTION_RE.search(head) and len(body) < 80 and len(lines) <= 4:
+        return True
     return False
 
 
@@ -224,21 +255,24 @@ def page_texts(pdf_path: Path) -> list[str]:
 def score_page(text: str, index: int) -> float:
     t = text or ""
     head = "\n".join(t.splitlines()[:8])
-    if LOGISTICS_RE.search(t):
+    if LOGISTICS_RE.search(t) or GENERIC_BRIEF_SHELL_RE.search(t):
         return -100.0
+    if is_thin_section_slide(t):
+        return -80.0
     score = 0.0
     if index == 0:
         score += 40.0  # always keep cover as candidate
-    if SECTION_RE.search(head) or re.search(r"(?i)^roadmap", head):
-        score += 25.0
+    if re.search(r"(?i)^roadmap", head):
+        score += 18.0
     if CONTENTISH_RE.search(t):
-        score += 30.0
+        score += 35.0
     if re.search(r"(?i)\b(trap|pitfall|habit|tip)\b", t):
         score += 12.0
-    if re.search(r"\$|\\\\begin\{|\\frac", t):
-        score += 8.0
-    if re.search(r"(?i)^#?\s*part\s+[a-z]", head):
-        score += 5.0
+    if re.search(r"```|\$|\\\\begin\{|\\frac", t):
+        score += 10.0
+    # Thin "Part X · …" dividers are navigation, not teaching samples
+    if re.search(r"(?i)^#?\s*part\s+[a-z]", head) and is_thin_section_slide(t):
+        score -= 40.0
     # Prefer mid-deck teaching over last "book tutoring" end cards
     if re.search(r"(?i)book tutoring|wechat|end of deck", t):
         score -= 20.0
@@ -247,48 +281,52 @@ def score_page(text: str, index: int) -> float:
 
 
 def pick_sample_pages(texts: list[str], limit: int = 6) -> list[int]:
-    """Return 0-based page indices: cover + roadmap + content pages."""
+    """Return 0-based page indices: cover + roadmap + real teaching pages."""
     if not texts:
         return []
     n = len(texts)
-    scored = [(score_page(texts[i], i), i) for i in range(n)]
-    scored.sort(reverse=True)
 
-    chosen: list[int] = []
-    # Force cover
-    chosen.append(0)
+    def usable(i: int) -> bool:
+        t = texts[i] or ""
+        if LOGISTICS_RE.search(t) or GENERIC_BRIEF_SHELL_RE.search(t):
+            return False
+        if i != 0 and is_thin_section_slide(t):
+            return False
+        return score_page(t, i) >= 10
 
-    # Best roadmap / section among early pages
+    chosen: list[int] = [0]
+
+    # Prefer one roadmap page if it is contentful (not a thin divider)
     roadmap_candidates = [
-        i for s, i in scored if i != 0 and (SECTION_RE.search("\n".join((texts[i] or "").splitlines()[:6])) or re.search(r"(?i)roadmap", texts[i] or ""))
+        i
+        for i in range(1, n)
+        if re.search(r"(?i)roadmap", texts[i] or "") and usable(i)
     ]
     if roadmap_candidates:
-        # earliest high-scoring roadmap-ish
         roadmap_candidates.sort(key=lambda i: (-score_page(texts[i], i), i))
-        if roadmap_candidates[0] not in chosen:
-            chosen.append(roadmap_candidates[0])
+        chosen.append(roadmap_candidates[0])
 
+    scored = sorted(
+        ((score_page(texts[i], i), i) for i in range(n) if i not in chosen and usable(i)),
+        reverse=True,
+    )
     for _s, i in scored:
-        if i in chosen:
-            continue
-        if score_page(texts[i], i) < 10:
-            continue
-        if LOGISTICS_RE.search(texts[i] or ""):
-            continue
         chosen.append(i)
         if len(chosen) >= limit:
             break
 
-    # Fill if thin
+    # Fill with any non-junk pages if still thin
     for i in range(n):
         if len(chosen) >= min(limit, n):
             break
-        if i not in chosen and not LOGISTICS_RE.search(texts[i] or ""):
-            chosen.append(i)
+        if i in chosen:
+            continue
+        t = texts[i] or ""
+        if LOGISTICS_RE.search(t) or GENERIC_BRIEF_SHELL_RE.search(t) or is_thin_section_slide(t):
+            continue
+        chosen.append(i)
 
-    chosen = sorted(set(chosen))[:limit]
-    # Ensure cover first in display order by sorting then rotating? Better: sort by index for narrative
-    return sorted(chosen)[:limit]
+    return sorted(set(chosen))[:limit]
 
 
 def caption_from_text(text: str, index: int) -> tuple[str, str]:
@@ -344,175 +382,428 @@ def render_selected_webps(pdf_path: Path, out_dir: Path, page_indices: list[int]
         png.unlink()
 
 
+# Shared teaching slides reused across language packs (content, not "brief → design" fluff).
+_PROG_SLIDE_FUNCTIONS = """# Functions that compile and score
+
+<p class="eyebrow">A1 · Prototypes and parameters</p>
+
+Declare before use (or put the prototype in a header). Name the parameter mode on paper before coding.
+
+| Mode | Meaning on exams |
+|---|---|
+| By value | callee gets a **copy** |
+| By pointer / reference | callee can **see / change** the caller's object |
+| `const` ref / pointer | read without copying a large object |
+
+```text
+prototype in .h  →  definition in .cpp  →  call from main / lab harness
+```
+
+<div class="pitfall">
+<strong>Trap.</strong> Using a function before any declaration. Midterms love the missing prototype / wrong `#include` order.
+</div>
+"""
+
+_PROG_SLIDE_RECURSION = """# Recursion: three must-haves
+
+<p class="eyebrow">C1 · Method</p>
+
+Every correct recursive function needs:
+
+| Piece | Question |
+|---|---|
+| **Base case** | When do I stop and return a concrete value? |
+| **Recursive case** | How do I reduce to a smaller instance of the same problem? |
+| **Progress** | Does each call move strictly closer to the base case? |
+
+Toy: factorial $n! = n\\cdot(n-1)!$ with $0!=1$.
+
+Trace $n=3$ on paper: $3\\to 2\\to 1\\to 0$ then multiply on the way back.
+
+<div class="tip">
+<strong>Debug.</strong> If it never ends, you are missing progress or the base case is unreachable.
+</div>
+"""
+
 PROGRAMMING_LANG_BLOCKS: dict[str, dict[str, str]] = {
-    "java": {
-        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · OOP",
-        "ROADMAP_D_TITLE": "Java OOP — inheritance / interfaces",
-        "ROADMAP_D_DESC": "Override, polymorphism, where behaviour lives",
-        "PART_D_SECTION_TITLE": "Part D · Java OOP",
-        "PART_D_SECTION_SUB": "Inheritance, interfaces, polymorphism",
-        "PART_D_SLIDE": """# Inheritance, interface, polymorphism
+    "cpp": {
+        "COVER_TITLE": "{{CODE}} · C++ foundations",
+        "COVER_TAGLINE": "Functions → pointers/refs → recursion → containers",
+        "COVER_PARTS": "FUNCTIONS · POINTERS · RECURSION · CONTAINERS",
+        "ROADMAP_A_TITLE": "Functions and prototypes",
+        "ROADMAP_A_DESC": "Headers vs .cpp; value / pointer / reference params",
+        "ROADMAP_B_TITLE": "Pointers vs references",
+        "ROADMAP_B_DESC": "Pass-by, swap, dangling returns, const string&",
+        "ROADMAP_C_TITLE": "Recursion checklist",
+        "ROADMAP_C_DESC": "Base case, recursive case, progress",
+        "ROADMAP_D_TITLE": "Arrays, vectors, structs",
+        "ROADMAP_D_DESC": "Indexing, ownership, composite types on exams",
+        "SLIDE_A": _PROG_SLIDE_FUNCTIONS,
+        "SLIDE_B": """# Pointers vs references
 
-<p class="eyebrow">D1 · OO choices you must justify</p>
+<p class="eyebrow">B1 · What the midterm is actually testing</p>
 
-| Idea | Plain meaning |
-|---|---|
-| **Inheritance** | child class reuses / specialises a parent |
-| **Interface** | a contract of methods; class **implements** it |
-| **Overload** | same name, different parameter lists |
-| **Override** | child replaces a parent instance method |
-| **Polymorphism** | call site uses a parent / interface type; runtime picks the child body |
-
-```java
-Animal a = new Dog();  // compile-time type Animal
-a.speak();             // runs Dog.speak if overridden
-```
-
-Put shared menu / I/O in one place; put domain behaviour on the class that owns the data.
-
-<div class="pitfall">
-<strong>Trap.</strong> A “parent” that is only a bag of unrelated fields. Inheritance needs a real is-a story the write-up can defend.
-</div>
-""",
-    },
-    "python": {
-        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · NAMES",
-        "ROADMAP_D_TITLE": "Python names, objects, mutability",
-        "ROADMAP_D_DESC": "Assignment, aliases, what mutates in place",
-        "PART_D_SECTION_TITLE": "Part D · Python objects",
-        "PART_D_SECTION_SUB": "Names versus objects",
-        "PART_D_SLIDE": """# Names, objects, mutability
-
-<p class="eyebrow">D1 · What assignment actually does</p>
-
-A name refers to an object. `b = a` makes another name for the **same** object (alias), it does not copy.
-
-| Kind | Examples | `b = a` then mutate |
+| Form | You write | Typical exam ask |
 |---|---|---|
-| Immutable | `int`, `str`, `tuple` | rebinding `a` leaves `b` on the old object |
-| Mutable | `list`, `dict`, `set` | in-place change via `a` is visible through `b` |
+| Pointer | `T* p` / `&x` | swap via pointers; null; dangling |
+| Reference | `T& r` | alias; must bind to an object |
+| `const T&` | large arg, no copy | prefer over pass-by-value for `string` |
 
-```python
-a = [1, 2]
-b = a
-a.append(3)   # b is [1, 2, 3] too
-c = a[:]      # shallow copy — new list
+```cpp
+void swap(double* a, double* b) {
+  double t = *a; *a = *b; *b = t;
+}
 ```
 
-Default args are evaluated once: never use `def f(x=[])`.
+Returning `&` / `*` to a **local** is undefined the moment the function returns.
 
 <div class="pitfall">
-<strong>Trap.</strong> Treating `=` as a deep copy. Autograders love alias bugs on nested lists / dicts.
+<strong>Trap.</strong> Explaining “pointer vs reference” in words, then picking the wrong MCQ signature under time pressure.
 </div>
 """,
-    },
-    "javascript": {
-        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · OBJECTS",
-        "ROADMAP_D_TITLE": "JS objects, references, modules",
-        "ROADMAP_D_DESC": "Mutable objects, `const`, how modules share state",
-        "PART_D_SECTION_TITLE": "Part D · JavaScript objects",
-        "PART_D_SECTION_SUB": "References and module boundaries",
-        "PART_D_SLIDE": """# Objects are references
+        "SLIDE_C": _PROG_SLIDE_RECURSION,
+        "SLIDE_D": """# Arrays, vectors, structs
 
-<p class="eyebrow">D1 · What `const` does not freeze</p>
+<p class="eyebrow">D1 · Composite data on paper and in labs</p>
 
-| Binding | Meaning |
+| Type | Exam / lab focus |
 |---|---|
-| `const obj = {...}` | cannot rebind `obj`; **can** mutate properties |
-| `let` / `var` | can rebind the name |
-| Spread / `Object.assign` | shallow copy only |
+| C array | fixed size; decay to pointer; bounds |
+| `vector` / `deque` | `size`, `push_back`, index bugs |
+| `map` | key lookup; missing key behaviour |
+| `struct` | fields; pass by value vs ref |
 
-```js
-const a = { n: 1 };
-const b = a;
-a.n = 2;        // b.n is 2
-const c = { ...a }; // shallow clone
+```cpp
+struct Point { double x; double y; };
+vector<Point> pts;
+pts.push_back({1.0, 2.0});
 ```
 
-Keep DOM / I/O at the edges; keep domain state in plain objects or a small module with a clear public API.
+Prefer `vector` over raw `new[]` unless the brief forces manual allocation.
 
-<div class="pitfall">
-<strong>Trap.</strong> Mutating a shared object across modules, then wondering why another screen “randomly” changes.
+<div class="tip">
+<strong>Habit.</strong> State size and valid indices before the loop. Off-by-one is the most common lab fail.
 </div>
 """,
     },
     "c": {
-        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · MEMORY",
-        "ROADMAP_D_TITLE": "Tests and memory (C / pointers)",
-        "ROADMAP_D_DESC": "Autograder loops; stack vs heap",
-        "PART_D_SECTION_TITLE": "Part D · Tests and memory",
-        "PART_D_SECTION_SUB": "Autograder loops and C storage",
-        "PART_D_SLIDE": """# Stack, heap, data (C)
+        "COVER_TITLE": "{{CODE}} · C foundations",
+        "COVER_TAGLINE": "Functions → pointers → recursion → memory",
+        "COVER_PARTS": "FUNCTIONS · POINTERS · RECURSION · MEMORY",
+        "ROADMAP_A_TITLE": "Functions and prototypes",
+        "ROADMAP_A_DESC": "Headers, parameter modes, side effects",
+        "ROADMAP_B_TITLE": "Pointers and arrays",
+        "ROADMAP_B_DESC": "Addresses, decay, pointer arithmetic",
+        "ROADMAP_C_TITLE": "Recursion checklist",
+        "ROADMAP_C_DESC": "Base case, recursive case, progress",
+        "ROADMAP_D_TITLE": "Stack, heap, data",
+        "ROADMAP_D_DESC": "Lifetimes; malloc/free discipline",
+        "SLIDE_A": _PROG_SLIDE_FUNCTIONS,
+        "SLIDE_B": """# Pointers and arrays (C)
+
+<p class="eyebrow">B1 · Addresses you must draw</p>
+
+| Idea | Plain meaning |
+|---|---|
+| `T *p` | `p` holds an address of a `T` |
+| `*p` | the object at that address |
+| `&x` | address of `x` |
+| Array name | decays to pointer to first element |
+
+```c
+int a[4] = {1,2,3,4};
+int *p = a;          // &a[0]
+*(p + 2) = 9;        // a[2] = 9
+```
+
+Pointer arithmetic scales by `sizeof(*p)`. Off-by-one is undefined behaviour, not “sometimes works”.
+
+<div class="pitfall">
+<strong>Exam trap.</strong> Returning the address of a local stack variable — dangling as soon as the function returns.
+</div>
+""",
+        "SLIDE_C": _PROG_SLIDE_RECURSION,
+        "SLIDE_D": """# Stack, heap, data (C)
 
 <p class="eyebrow">D1 · Where values live</p>
 
 | Region | Holds | Lifetime |
 |---|---|---|
 | **Stack** | locals, parameters, return addr | until the function returns |
-| **Heap** | `malloc` / `new` blocks | until `free` / `delete` |
+| **Heap** | `malloc` blocks | until `free` |
 | **Data / BSS** | globals, `static` | whole program |
 
 ```c
-int x = 10;      // data
-int *p = &x;     // p on stack; stores address of x
-int *h = malloc(sizeof(int));  // h on stack; *h on heap
+int x = 10;                      // data
+int *p = &x;                     // p on stack
+int *h = malloc(sizeof(int));    // *h on heap
+free(h);
 ```
 
-Pointer arithmetic scales by `sizeof(*p)`. Off-by-one and use-after-free are undefined behaviour, not “sometimes works”.
-
 <div class="pitfall">
-<strong>Exam trap.</strong> Returning the address of a local stack variable is a dangling pointer the moment the function returns.
+<strong>Trap.</strong> Use-after-free or missing `free`. Markers and sanitizers both catch this.
 </div>
 """,
     },
-    "cpp": {
-        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · MEMORY",
-        "ROADMAP_D_TITLE": "C++ ownership and RAII",
-        "ROADMAP_D_DESC": "new/delete vs stack; who frees what",
-        "PART_D_SECTION_TITLE": "Part D · C++ memory",
-        "PART_D_SECTION_SUB": "Ownership and lifetimes",
-        "PART_D_SLIDE": """# Ownership in C++
+    "java": {
+        "COVER_TITLE": "{{CODE}} · Java foundations",
+        "COVER_TAGLINE": "Methods → objects → recursion → OOP",
+        "COVER_PARTS": "METHODS · OBJECTS · RECURSION · OOP",
+        "ROADMAP_A_TITLE": "Methods and decomposition",
+        "ROADMAP_A_DESC": "One job per method; clear parameters / returns",
+        "ROADMAP_B_TITLE": "Objects and references",
+        "ROADMAP_B_DESC": "Aliases; what mutation a caller sees",
+        "ROADMAP_C_TITLE": "Recursion checklist",
+        "ROADMAP_C_DESC": "Base case, recursive case, progress",
+        "ROADMAP_D_TITLE": "Inheritance and interfaces",
+        "ROADMAP_D_DESC": "Override, polymorphism, where behaviour lives",
+        "SLIDE_A": """# Methods with one job
 
-<p class="eyebrow">D1 · Who destroys the object</p>
+<p class="eyebrow">A1 · Structure markers reward</p>
 
-| Pattern | Meaning |
-|---|---|
-| Stack object | destructor runs at scope end |
-| `new` / `delete` | you own the lifetime; pair them |
-| RAII / smart pointer | resource tied to object lifetime |
+Split work so each method name is a verb phrase with a single reason to change.
 
-```cpp
-std::vector<int> v{1,2,3};     // frees itself
-auto* p = new int(3);
-delete p;                      // required
+```text
+parseInput → validate → coreAlgorithm → formatOutput
 ```
 
-Prefer containers and RAII over raw `new` in coursework unless the brief forces it.
+Keep I/O at the edges. Keep the algorithm testable without `Scanner` noise.
 
 <div class="pitfall">
-<strong>Trap.</strong> Double-delete or using a pointer after `delete`. Markers hit both.
+<strong>Trap.</strong> An 80-line `main` that mixes parsing, logic, and printing — hard to debug and hard to mark partial credit on.
+</div>
+""",
+        "SLIDE_B": """# Objects are references
+
+<p class="eyebrow">B1 · What assignment copies</p>
+
+| Statement | What happens |
+|---|---|
+| `Dog a = new Dog();` | `a` refers to a heap object |
+| `Dog b = a;` | `b` aliases the **same** object |
+| `a.bark();` | mutation visible through `b` too |
+
+Primitive `int` / `double` assign by value. Objects assign by reference.
+
+<div class="tip">
+<strong>Habit.</strong> Draw the boxes before arguing about equals vs `==`.
+</div>
+""",
+        "SLIDE_C": _PROG_SLIDE_RECURSION,
+        "SLIDE_D": """# Inheritance, interface, polymorphism
+
+<p class="eyebrow">D1 · OO choices you must justify</p>
+
+| Idea | Plain meaning |
+|---|---|
+| **Inheritance** | child reuses / specialises a parent |
+| **Interface** | contract of methods; class **implements** it |
+| **Override** | child replaces a parent instance method |
+| **Polymorphism** | call site uses parent type; runtime picks child body |
+
+```java
+Animal a = new Dog();
+a.speak();  // Dog.speak if overridden
+```
+
+<div class="pitfall">
+<strong>Trap.</strong> A “parent” that is only a bag of unrelated fields. Inheritance needs a real is-a story.
+</div>
+""",
+    },
+    "python": {
+        "COVER_TITLE": "{{CODE}} · Python foundations",
+        "COVER_TAGLINE": "Functions → names/objects → recursion → mutability",
+        "COVER_PARTS": "FUNCTIONS · NAMES · RECURSION · MUTABILITY",
+        "ROADMAP_A_TITLE": "Functions and decomposition",
+        "ROADMAP_A_DESC": "Clear inputs/outputs; one job per function",
+        "ROADMAP_B_TITLE": "Names, objects, aliases",
+        "ROADMAP_B_DESC": "What `b = a` shares vs copies",
+        "ROADMAP_C_TITLE": "Recursion checklist",
+        "ROADMAP_C_DESC": "Base case, recursive case, progress",
+        "ROADMAP_D_TITLE": "Mutability traps",
+        "ROADMAP_D_DESC": "Lists/dicts in place; default-arg pitfalls",
+        "SLIDE_A": """# Functions with one job
+
+<p class="eyebrow">A1 · Structure before syntax</p>
+
+```text
+parse → validate → compute → format
+```
+
+Return values; avoid hidden globals. Make the core function easy to unit-test with a tiny list / string.
+
+<div class="pitfall">
+<strong>Trap.</strong> Printing inside the algorithm, then fighting the autograder over whitespace.
+</div>
+""",
+        "SLIDE_B": """# Names, objects, mutability
+
+<p class="eyebrow">B1 · What assignment actually does</p>
+
+A name refers to an object. `b = a` makes another name for the **same** object.
+
+| Kind | Examples | `b = a` then mutate |
+|---|---|---|
+| Immutable | `int`, `str`, `tuple` | rebinding `a` leaves `b` alone |
+| Mutable | `list`, `dict`, `set` | in-place change via `a` visible through `b` |
+
+```python
+a = [1, 2]
+b = a
+a.append(3)   # b is [1, 2, 3] too
+c = a[:]      # shallow copy
+```
+
+<div class="pitfall">
+<strong>Trap.</strong> Treating `=` as a deep copy. Nested list alias bugs are classic.
+</div>
+""",
+        "SLIDE_C": _PROG_SLIDE_RECURSION,
+        "SLIDE_D": """# Mutability and defaults
+
+<p class="eyebrow">D1 · Autograder favourites</p>
+
+| Habit | Why it bites |
+|---|---|
+| `def f(x=[])` | default list is created **once** |
+| `b = a` on a list | alias, not copy |
+| Mutate while iterating | skipped / repeated elements |
+
+```python
+def f(x=None):
+    if x is None:
+        x = []
+    x.append(1)
+    return x
+```
+
+<div class="tip">
+<strong>Habit.</strong> For each mutable arg, say out loud: share, copy, or rebuild?
+</div>
+""",
+    },
+    "javascript": {
+        "COVER_TITLE": "{{CODE}} · JavaScript foundations",
+        "COVER_TAGLINE": "Functions → objects → recursion → modules",
+        "COVER_PARTS": "FUNCTIONS · OBJECTS · RECURSION · MODULES",
+        "ROADMAP_A_TITLE": "Functions and decomposition",
+        "ROADMAP_A_DESC": "Pure helpers; I/O at the edges",
+        "ROADMAP_B_TITLE": "Objects and references",
+        "ROADMAP_B_DESC": "`const` vs mutate; shallow copies",
+        "ROADMAP_C_TITLE": "Recursion checklist",
+        "ROADMAP_C_DESC": "Base case, recursive case, progress",
+        "ROADMAP_D_TITLE": "Module boundaries",
+        "ROADMAP_D_DESC": "What state is shared across files",
+        "SLIDE_A": """# Functions with one job
+
+<p class="eyebrow">A1 · Structure</p>
+
+Keep DOM / `fetch` / `console` at the edges. Domain logic should be plain functions you can call from a test.
+
+```js
+const total = sumItems(items);  // pure
+render(total);                  // I/O
+```
+
+<div class="pitfall">
+<strong>Trap.</strong> Business rules buried inside click handlers — untestable and hard to mark.
+</div>
+""",
+        "SLIDE_B": """# Objects are references
+
+<p class="eyebrow">B1 · What `const` does not freeze</p>
+
+| Binding | Meaning |
+|---|---|
+| `const obj = {...}` | cannot rebind `obj`; **can** mutate properties |
+| Spread / `Object.assign` | shallow copy only |
+
+```js
+const a = { n: 1 };
+const b = a;
+a.n = 2;           // b.n is 2
+const c = { ...a }; // shallow clone
+```
+
+<div class="pitfall">
+<strong>Trap.</strong> Mutating a shared object across modules, then wondering why another screen “randomly” changes.
+</div>
+""",
+        "SLIDE_C": _PROG_SLIDE_RECURSION,
+        "SLIDE_D": """# Modules and shared state
+
+<p class="eyebrow">D1 · Boundaries</p>
+
+Export a small public API. Keep mutable module-level state intentional and documented — or avoid it.
+
+| Pattern | Prefer |
+|---|---|
+| Hidden global array | pass state into functions |
+| Circular imports | extract a tiny shared module |
+| Side effects at import time | lazy init behind a function |
+
+<div class="tip">
+<strong>Habit.</strong> If two files both mutate the same object, draw the ownership before debugging.
 </div>
 """,
     },
     "general": {
-        "COVER_PARTS": "BRIEF · STRUCTURE · RECURSION · TESTS",
+        "COVER_TITLE": "{{CODE}} · Programming foundations",
+        "COVER_TAGLINE": "Decomposition → control → recursion → testing edges",
+        "COVER_PARTS": "DECOMPOSE · CONTROL · RECURSION · TESTS",
+        "ROADMAP_A_TITLE": "Decomposition",
+        "ROADMAP_A_DESC": "One job per function; name the data",
+        "ROADMAP_B_TITLE": "Control and data basics",
+        "ROADMAP_B_DESC": "Branches, loops, indexing bugs",
+        "ROADMAP_C_TITLE": "Recursion checklist",
+        "ROADMAP_C_DESC": "Base case, recursive case, progress",
         "ROADMAP_D_TITLE": "Tests and autograder loops",
-        "ROADMAP_D_DESC": "Minimal failing case; one change per experiment",
-        "PART_D_SECTION_TITLE": "Part D · Tests",
-        "PART_D_SECTION_SUB": "Autograder feedback loops",
-        "PART_D_SLIDE": """# Autograder loop
+        "ROADMAP_D_DESC": "Minimal failing case; one change per run",
+        "SLIDE_A": """# One job per function
+
+<p class="eyebrow">A1 · Structure</p>
+
+```text
+parse_input → validate → core_algorithm → format_output
+```
+
+Keep I/O at the edges. Keep the algorithm easy to test with a tiny fixture.
+
+<div class="pitfall">
+<strong>Trap.</strong> A giant `main` that mixes parsing, logic, and printing.
+</div>
+""",
+        "SLIDE_B": """# Control flow and indexing
+
+<p class="eyebrow">B1 · Edges before the happy path</p>
+
+| Check on paper | Why |
+|---|---|
+| Empty / one element | loop and recursion base cases |
+| Off-by-one indices | `0..n-1` vs `1..n` |
+| Nested loop bounds | $O(n^2)$ surprises and wrong counts |
+
+Write the invariant in one line before typing the loop.
+
+<div class="tip">
+<strong>Habit.</strong> Trace one failing index on paper the way the marker awards points.
+</div>
+""",
+        "SLIDE_C": _PROG_SLIDE_RECURSION,
+        "SLIDE_D": """# Autograder loop
 
 <p class="eyebrow">D1 · Method</p>
 
 1. Reproduce with the **smallest** failing input
-2. Read the expected vs actual output carefully (whitespace, order)
+2. Read expected vs actual carefully (whitespace, order)
 3. Change **one** hypothesis; re-run
-4. Add a regression test for that edge before moving on
+4. Keep that case as a regression before moving on
 
 | Anti-pattern | Replace with |
 |---|---|
 | Fix three things at once | one change per run |
-| Only test the sample | invent empty / one / max / duplicate cases |
+| Only test the sample | empty / one / max / duplicates |
 
 <div class="tip">
 <strong>Habit.</strong> Keep a failing case in a file you can re-run in one command.
@@ -546,14 +837,33 @@ def detect_programming_lang(mpath: Path, course_blob: str = "") -> str:
         counts["python"] += 5
     if re.search(r"javascript|\bjs\b|typescript|node\.?js|react", blob):
         counts["javascript"] += 5
-    if re.search(r"c\+\+|cpp\b", blob):
+    if re.search(r"c\+\+|cpp\b|horstmann|late objects", blob):
         counts["cpp"] += 5
-    if re.search(r"\bpointers?\b|\bmalloc\b|systems programming|\bin c\b", blob):
+    if re.search(r"\bpointers?\b|\breferences?\b|std::vector|\bvector<", blob):
+        counts["cpp"] += 3
+    if re.search(r"\bmalloc\b|systems programming|\bin c\b", blob):
         counts["c"] += 4
     best = max(counts, key=counts.get)
     if counts[best] <= 0:
         return "general"
     return best
+
+
+def cover_title_for(code: str, title: str, lang_block: Optional[dict] = None) -> str:
+    """Never mid-phrase ellipsis on the cover — prefer CODE · short label when title is long."""
+    block = lang_block or {}
+    templ = (block.get("COVER_TITLE") or "").strip()
+    handle = (code or title or "Course").strip()
+    if templ:
+        return (
+            templ.replace("{{CODE}}", handle)
+            .replace("{{TITLE}}", title or handle)
+        )
+    if title and len(title) <= 48:
+        return title
+    if code and title:
+        return f"{code} · concept review"
+    return (title or handle)[:48]
 
 
 def brand_theme_pack(
@@ -568,28 +878,93 @@ def brand_theme_pack(
         path = THEME_PACKS / "general.md"
     raw = path.read_text(encoding="utf-8")
     handle = code or title
-    short_title = title if len(title) <= 52 else title[:49].rsplit(" ", 1)[0] + "…"
     uni = (uni_label or "").upper()[:28]
     footer = f"zlu · {handle}"
+    block = (
+        PROGRAMMING_LANG_BLOCKS.get(lang) or PROGRAMMING_LANG_BLOCKS["general"]
+        if theme == "programming"
+        else {}
+    )
+    short_title = cover_title_for(code, title, block if theme == "programming" else None)
     out = (
         raw.replace("{{CODE}}", handle)
         .replace("{{TITLE}}", short_title)
+        .replace("{{COVER_TITLE}}", short_title)
         .replace("{{UNI}}", uni)
         .replace("{{FOOTER}}", footer)
     )
     if theme == "programming":
-        block = PROGRAMMING_LANG_BLOCKS.get(lang) or PROGRAMMING_LANG_BLOCKS["general"]
+        # COVER_TITLE already applied; still substitute remaining lang keys.
         for key, val in block.items():
+            if key == "COVER_TITLE":
+                continue
             out = out.replace("{{" + key + "}}", val)
+        # Any leftover cover title template tokens
+        out = out.replace("{{CODE}}", handle)
     return out
 
 
-def bullets_from_topics(ev: dict, themes: dict, theme: str, limit: int = 4) -> list[dict]:
+PROGRAMMING_LANG_BULLETS: dict[str, list[dict[str, str]]] = {
+    "cpp": [
+        {"en": "Functions, prototypes, and parameter modes", "cn": "函数、原型与传参模式"},
+        {"en": "Pointers vs references on paper exams", "cn": "纸笔考试里的指针 vs 引用"},
+        {"en": "Recursion — base case and progress", "cn": "递归 — 终止条件与进展"},
+        {"en": "Arrays, vectors, maps, and structs", "cn": "数组、vector、map 与 struct"},
+    ],
+    "c": [
+        {"en": "Functions, prototypes, and pointers", "cn": "函数、原型与指针"},
+        {"en": "Arrays, decay, and pointer arithmetic", "cn": "数组、退化与指针运算"},
+        {"en": "Recursion — base case and progress", "cn": "递归 — 终止条件与进展"},
+        {"en": "Stack vs heap lifetimes", "cn": "栈 vs 堆生命周期"},
+    ],
+    "java": [
+        {"en": "Methods and decomposition", "cn": "方法与拆题"},
+        {"en": "Objects, references, and aliases", "cn": "对象、引用与别名"},
+        {"en": "Recursion — base case and progress", "cn": "递归 — 终止条件与进展"},
+        {"en": "Inheritance, interfaces, polymorphism", "cn": "继承、接口与多态"},
+    ],
+    "python": [
+        {"en": "Functions and decomposition", "cn": "函数与拆题"},
+        {"en": "Names, objects, and mutability", "cn": "名字、对象与可变性"},
+        {"en": "Recursion — base case and progress", "cn": "递归 — 终止条件与进展"},
+        {"en": "List/dict edges and default-arg traps", "cn": "列表/字典边界与默认参数坑"},
+    ],
+    "javascript": [
+        {"en": "Functions and decomposition", "cn": "函数与拆题"},
+        {"en": "Objects, references, and shallow copies", "cn": "对象、引用与浅拷贝"},
+        {"en": "Recursion — base case and progress", "cn": "递归 — 终止条件与进展"},
+        {"en": "Module boundaries and shared state", "cn": "模块边界与共享状态"},
+    ],
+    "general": [
+        {"en": "Decomposition — one job per function", "cn": "拆题 — 一函数一事"},
+        {"en": "Control flow and indexing edges", "cn": "控制流与下标边界"},
+        {"en": "Recursion — base case and progress", "cn": "递归 — 终止条件与进展"},
+        {"en": "Debug loop — smallest failing case", "cn": "调试闭环 — 最小失败用例"},
+    ],
+}
+
+
+def bullets_from_topics(
+    ev: dict,
+    themes: dict,
+    theme: str,
+    limit: int = 4,
+    lang: str = "general",
+) -> list[dict]:
     out = []
     for h in (ev.get("topic_hits") or [])[:limit]:
-        out.append({"en": h["en"], "cn": h.get("cn") or h["en"]})
+        en = h["en"]
+        # Skip soft "brief → design" lexicon leftovers if any
+        if GENERIC_BRIEF_SHELL_RE.search(en) or re.search(r"(?i)^reading the brief", en):
+            continue
+        out.append({"en": en, "cn": h.get("cn") or en})
     if len(out) >= 2:
         return out[:limit]
+    if theme == "programming":
+        for t in PROGRAMMING_LANG_BULLETS.get(lang) or PROGRAMMING_LANG_BULLETS["general"]:
+            out.append({"en": t["en"], "cn": t["cn"]})
+            if len(out) >= limit:
+                return out[:limit]
     meta = themes.get(theme) or {}
     for t in (meta.get("topics") or [])[:limit]:
         if isinstance(t, dict) and t.get("en"):
@@ -742,7 +1117,7 @@ def collect_targets(min_files: int) -> list[dict]:
                 {
                     "folder": folder,
                     "material": mat,
-                    "uni_label": uni_label,
+                    "uni_label": (data.get("abbr") or uni_label),
                     "uni_cn": uni_cn,
                     "refs": [],
                 },
@@ -889,18 +1264,19 @@ def process_target(
     if theme == "general" and ev.get("topic_hits"):
         theme = ev["topic_hits"][0].get("hint") or theme
         theme = normalize_theme(theme, f"{code} {title}", t["themes"])
-    bullets = bullets_from_topics(ev, t["themes"], theme)
+
+    lang = t.get("lang") or "general"
+    if theme == "programming" and lang == "general":
+        course_blob = f"{code} {title} {t.get('material') or ''}"
+        lang = detect_programming_lang(t["mpath"], course_blob)
+
+    bullets = bullets_from_topics(ev, t["themes"], theme, lang=lang)
 
     deck_dir = t["mpath"] / "decks"
     source = "theme-pack"
     md_path: Optional[Path] = None
     pdf_path: Optional[Path] = None
     branded_tmp: Optional[Path] = None
-
-    lang = t.get("lang") or "general"
-    if theme == "programming" and lang == "general":
-        course_blob = f"{code} {title} {t.get('material') or ''}"
-        lang = detect_programming_lang(t["mpath"], course_blob)
 
     real = t.get("real_decks") or []
     if real:

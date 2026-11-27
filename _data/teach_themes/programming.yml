@@ -1,21 +1,23 @@
 ---
 label_en: Programming & software construction
 label_cn: 编程与软件构造
-lead_en: First- and second-year programming courses fail students on style, testing, and debugging habits—not on “knowing syntax.” I tutor with bilingual walkthroughs of the brief, then pair-debug until the design and tests hold.
-lead_cn: 低年级编程课真正挂人的，常常不是「语法会不会」，而是 brief 读不清、风格和测试习惯没建立、autograder 一卡边界就不会排查。辅导时我会先用中英双语把题意和设计拆开，再在你的环境里结对 debug，直到你能自己解释每一处改动。
+lead_en: First- and second-year programming courses fail students on parameter modes, recursion base cases, and container edge behaviour—not on “knowing syntax.” I tutor with bilingual walkthroughs of the concept, then pair-debug until the design and tests hold.
+lead_cn: 低年级编程课真正挂人的，常常不是「语法会不会」，而是传参模式搞不清、递归终止条件写错、容器边界不会查。辅导时我会先用中英双语把概念和设计拆开，再在你的环境里结对 debug，直到你能自己解释每一处改动。
 topics:
-- en: Reading the brief and designing before typing
-  cn: 先读题、先设计，再动手写
-- en: Functions, modules, and readable structure
-  cn: 函数、模块与可读结构
-- en: Recursion, ADTs, and common lab patterns
-  cn: 递归、抽象数据类型与常见 Lab 模式
-- en: Unit tests and autograder feedback loops
-  cn: 单元测试与 autograder 反馈循环
-- en: Git basics when the course requires it
-  cn: 课程要求时的 Git 基础
-- en: Memory / pointers when the language is C or C++
-  cn: C / C++ 下的内存与指针
+- en: Functions / methods — prototypes, parameters, and decomposition
+  cn: 函数 / 方法 — 原型、参数与拆题
+- en: Control flow — branching, loops, and nested logic
+  cn: 控制流 — 分支、循环与嵌套逻辑
+- en: Recursion — base case, recursive case, and progress
+  cn: 递归 — 终止条件、递归步与进展
+- en: Data structures in the course language — arrays, lists/vectors, maps, structs
+  cn: 课程语言中的数据结构 — 数组、列表/vector、map、struct
+- en: Pointers / references / aliases when the language has them
+  cn: 语言里的指针 / 引用 / 别名
+- en: Testing and debugging — reproduce, bisect, fix
+  cn: 测试与调试 — 复现、二分、再修
+- en: Memory / ownership when the language is C or C++
+  cn: C / C++ 下的内存与所有权
 - en: OOP design for Java / Python coursework
   cn: Java / Python 课业中的 OOP 设计
 stuck:
@@ -23,15 +25,15 @@ stuck:
   cn: 代码“差不多能跑”，但没有系统调试计划
 - en: Autograder mismatches from edge cases or I/O format
   cn: 边界条件或 I/O 格式导致 autograder 不过
-- en: Copy-paste solutions that cannot be explained in viva / demo
-  cn: 粘贴来的解法，演示或口头答不上来
+- en: Can explain a concept in words; exam MCQ / short code still flips it
+  cn: 口头能说清概念；考试选择题 / 短代码仍搞反
 session_angles:
-- en: Restate the problem and sketch data flow on a whiteboard
-  cn: 复述题意，白板画出数据流
+- en: Restate types, ownership, and edges on a whiteboard first
+  cn: 先在白板上复述类型、所有权与边界
 - en: Bisect the failing test with print / debugger discipline
   cn: 用打印 / 调试器纪律二分定位失败用例
-- en: Refactor for clarity before chasing extra marks
-  cn: 先为清晰度重构，再追额外分数
+- en: Trace one recursive or pointer question the way the midterm scores it
+  cn: 按 Midterm 给分方式追踪一道递归或指针题
 match: program|software.?construct|structured.?program|imperative|functional.?program| java\b|python|c\+\+|coding|object.?oriented|\boop\b|software.?design| problem.?solving|introduct.*comput|foundations.?of.?comput
 reading:
 - kind: post

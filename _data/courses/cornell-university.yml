@@ -17,9 +17,10 @@ courses:
     Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for CS2110 Java Test at Cornell University. Covered topics: Java Test;
     Core ideas in Java Test; Assignments / labs for Java Test; Exam drills aligned to Java Test. Bring
-    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+    your brief, failing test, lecture slide screenshot, or the topic name you are stuck on. Sample slides
+    from our concept-review tutoring deck are below.'
   overview_cn: CS2110（康奈尔大学）一对一辅导。覆盖主题包括Java Test、Java Test 的核心概念、Java Test 的作业 / Lab、对准 Java Test 的考前练习。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Java Test
     cn: Java Test
@@ -52,19 +53,19 @@ courses:
   sample_slides:
     title_en: CS2110 — sample slides
     title_cn: CS2110 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Inheritance, interface, polymorphism from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Inheritance, interface, polymorphism。
+    lead_en: 'Title, Roadmap, Methods with one job, Objects are references, Recursion: three must-haves,
+      Inheritance, interface, polymorphism from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Methods with one job, Objects are references, Recursion:
+      three must-haves, Inheritance, interface, polymorphism。'
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Methods and decomposition
+      cn: 方法与拆题
+    - en: Objects, references, and aliases
+      cn: 对象、引用与别名
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
     slides:
     - src: /assets/teach/cornell/cs2110/sample/01-title.webp
       alt_en: CS2110 tutoring · Title
@@ -76,21 +77,21 @@ courses:
       alt_cn: CS2110 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/cornell/cs2110/sample/03-part-a-from-brief-to-design.webp
-      alt_en: CS2110 tutoring · Part A · From brief to design
-      alt_cn: CS2110 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/cornell/cs2110/sample/04-brief-checklist-before-code.webp
-      alt_en: CS2110 tutoring · Brief checklist (before code)
-      alt_cn: CS2110 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/cornell/cs2110/sample/05-one-job-per-function.webp
-      alt_en: CS2110 tutoring · One job per function
-      alt_cn: CS2110 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
+    - src: /assets/teach/cornell/cs2110/sample/03-methods-with-one-job.webp
+      alt_en: CS2110 tutoring · Methods with one job
+      alt_cn: CS2110 辅导课件 · Methods with one job
+      caption_en: Methods with one job
+      caption_cn: Methods with one job
+    - src: /assets/teach/cornell/cs2110/sample/04-objects-are-references.webp
+      alt_en: CS2110 tutoring · Objects are references
+      alt_cn: CS2110 辅导课件 · Objects are references
+      caption_en: Objects are references
+      caption_cn: Objects are references
+    - src: /assets/teach/cornell/cs2110/sample/05-recursion-three-must-haves.webp
+      alt_en: 'CS2110 tutoring · Recursion: three must-haves'
+      alt_cn: 'CS2110 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
     - src: /assets/teach/cornell/cs2110/sample/06-inheritance-interface-polymorphism.webp
       alt_en: CS2110 tutoring · Inheritance, interface, polymorphism
       alt_cn: CS2110 辅导课件 · Inheritance, interface, polymorphism

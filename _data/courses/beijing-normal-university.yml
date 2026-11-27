@@ -18,9 +18,10 @@ courses:
     Lab / 作业里断开的地方 debug。
   overview_en: 'One-to-one tutoring for Deutsch A1 German A1 at Beijing Normal University. Covered topics:
     German A1; Core ideas in German A1; Assignments / labs for German A1; Exam drills aligned to German
-    A1. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+    A1. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck on.
+    Sample slides from our concept-review tutoring deck are below.'
   overview_cn: Deutsch A1（北京师范大学）一对一辅导。覆盖主题包括German A1、German A1 的核心概念、German A1 的作业 / Lab、对准 German A1
-    的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: German A1
     cn: German A1
@@ -53,10 +54,10 @@ courses:
   sample_slides:
     title_en: Deutsch A1 — sample slides
     title_cn: Deutsch A1 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · Spec literacy, Brief → checklist, Debug loop, Part D · Exam shapes
-      from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Spec literacy、Brief → checklist、Debug loop、Part D
-      · Exam shapes。
+    lead_en: Title, Roadmap, Spec → checklist, Debug loop, Claims need evidence, Question verb → first
+      move from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Spec → checklist, Debug loop, Claims need evidence, Question
+      verb → first move。
     bullets:
     - en: Lecture catch-up in Chinese and English
       cn: 中英双语补课与知识点梳理
@@ -77,26 +78,26 @@ courses:
       alt_cn: Deutsch A1 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/03-part-a-spec-literacy.webp
-      alt_en: Deutsch A1 tutoring · Part A · Spec literacy
-      alt_cn: Deutsch A1 辅导课件 · Part A · Spec literacy
-      caption_en: Part A · Spec literacy
-      caption_cn: Part A · Spec literacy
-    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/04-brief-checklist.webp
-      alt_en: Deutsch A1 tutoring · Brief → checklist
-      alt_cn: Deutsch A1 辅导课件 · Brief → checklist
-      caption_en: Brief → checklist
-      caption_cn: Brief → checklist
-    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/05-debug-loop.webp
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/03-spec-checklist.webp
+      alt_en: Deutsch A1 tutoring · Spec → checklist
+      alt_cn: Deutsch A1 辅导课件 · Spec → checklist
+      caption_en: Spec → checklist
+      caption_cn: Spec → checklist
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/04-debug-loop.webp
       alt_en: Deutsch A1 tutoring · Debug loop
       alt_cn: Deutsch A1 辅导课件 · Debug loop
       caption_en: Debug loop
       caption_cn: Debug loop
-    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/06-part-d-exam-shapes.webp
-      alt_en: Deutsch A1 tutoring · Part D · Exam shapes
-      alt_cn: Deutsch A1 辅导课件 · Part D · Exam shapes
-      caption_en: Part D · Exam shapes
-      caption_cn: Part D · Exam shapes
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/05-claims-need-evidence.webp
+      alt_en: Deutsch A1 tutoring · Claims need evidence
+      alt_cn: Deutsch A1 辅导课件 · Claims need evidence
+      caption_en: Claims need evidence
+      caption_cn: Claims need evidence
+    - src: /assets/teach/beijing-normal-university/deutsch-a1/sample/06-question-verb-first-move.webp
+      alt_en: Deutsch A1 tutoring · Question verb → first move
+      alt_cn: Deutsch A1 辅导课件 · Question verb → first move
+      caption_en: Question verb → first move
+      caption_cn: Question verb → first move
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

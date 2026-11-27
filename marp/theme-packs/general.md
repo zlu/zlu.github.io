@@ -78,7 +78,7 @@ Spec literacy → debug method → write-up claims → exam shapes.
 
 ---
 
-# Brief → checklist
+# Spec → checklist
 
 <p class="eyebrow">A1 · Method</p>
 

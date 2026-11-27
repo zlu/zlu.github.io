@@ -213,9 +213,10 @@ courses:
     of Munich. Covered topics: Data representation — ints, floats, endianness, bitwise ops; Assembly /
     ISA basics and calling conventions; CPU datapath, control, and pipelining intuition; Memory hierarchy
     — cache, locality, virtual memory intro; How C maps to machine-level behaviour. Bring your brief,
-    failing test, lecture slide screenshot, or the topic name you are stuck on.'
+    failing test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our
+    concept-review tutoring deck are below.'
   overview_cn: Introduction to Computer Architecture（慕尼黑工业大学）一对一辅导。覆盖主题包括数据表示 — 整数、浮点、端序、位运算、汇编 / ISA
-    基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    基础与调用约定、CPU 数据通路、控制与流水线直觉、存储层次 — 缓存、局部性、虚拟内存入门。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Data representation — ints, floats, endianness, bitwise ops
     cn: 数据表示 — 整数、浮点、端序、位运算
@@ -256,10 +257,10 @@ courses:
   sample_slides:
     title_en: Introduction to Computer Architecture — sample slides
     title_cn: Introduction to Computer Architecture — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · Processes and threads, Process vs thread, Critical section and race,
+    lead_en: Title, Roadmap, Process vs thread, Critical section and race, Virtual memory in one picture,
       Socket + HTTP sketch from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title、Roadmap、Part A · Processes and threads、Process vs thread、Critical section
-      and race、Socket + HTTP sketch。
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Process vs thread, Critical section and race, Virtual memory
+      in one picture, Socket + HTTP sketch。
     bullets:
     - en: Computer architecture and organisation
       cn: 计算机体系结构与组成
@@ -280,21 +281,21 @@ courses:
       alt_cn: Introduction to Computer Architecture 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/03-part-a-processes-and-threads.webp
-      alt_en: Introduction to Computer Architecture tutoring · Part A · Processes and threads
-      alt_cn: Introduction to Computer Architecture 辅导课件 · Part A · Processes and threads
-      caption_en: Part A · Processes and threads
-      caption_cn: Part A · Processes and threads
-    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/04-process-vs-thread.webp
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/03-process-vs-thread.webp
       alt_en: Introduction to Computer Architecture tutoring · Process vs thread
       alt_cn: Introduction to Computer Architecture 辅导课件 · Process vs thread
       caption_en: Process vs thread
       caption_cn: Process vs thread
-    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/05-critical-section-and-race.webp
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/04-critical-section-and-race.webp
       alt_en: Introduction to Computer Architecture tutoring · Critical section and race
       alt_cn: Introduction to Computer Architecture 辅导课件 · Critical section and race
       caption_en: Critical section and race
       caption_cn: Critical section and race
+    - src: /assets/teach/tum/introduction-to-computer-architecture/sample/05-virtual-memory-in-one-picture.webp
+      alt_en: Introduction to Computer Architecture tutoring · Virtual memory in one picture
+      alt_cn: Introduction to Computer Architecture 辅导课件 · Virtual memory in one picture
+      caption_en: Virtual memory in one picture
+      caption_cn: Virtual memory in one picture
     - src: /assets/teach/tum/introduction-to-computer-architecture/sample/06-socket-http-sketch.webp
       alt_en: Introduction to Computer Architecture tutoring · Socket + HTTP sketch
       alt_cn: Introduction to Computer Architecture 辅导课件 · Socket + HTTP sketch

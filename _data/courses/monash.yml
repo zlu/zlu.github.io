@@ -19,9 +19,10 @@ courses:
     topics: Variables, types, and expressions in the course language; Control flow — branching, loops,
     and nested logic; Functions / procedures and stepwise decomposition; Collections — arrays/lists/strings
     and indexing bugs; I/O, specs, and exact output the autograder expects. Bring your brief, failing
-    test, lecture slide screenshot, or the topic name you are stuck on.'
+    test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: FIT1045（莫纳什大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Variables, types, and expressions in the course language
     cn: 课程语言中的变量、类型与表达式
@@ -62,19 +63,19 @@ courses:
   sample_slides:
     title_en: FIT1045 — sample slides
     title_cn: FIT1045 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Names, objects, mutability。
+    lead_en: 'Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion: three must-haves,
+      Mutability and defaults from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion:
+      three must-haves, Mutability and defaults。'
     bullets:
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
-    - en: Unit tests and autograder feedback loops
-      cn: 单元测试与 autograder 反馈循环
+    - en: Functions and decomposition
+      cn: 函数与拆题
+    - en: Names, objects, and mutability
+      cn: 名字、对象与可变性
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: List/dict edges and default-arg traps
+      cn: 列表/字典边界与默认参数坑
     slides:
     - src: /assets/teach/monash/fit1045/sample/01-title.webp
       alt_en: FIT1045 tutoring · Title
@@ -86,26 +87,26 @@ courses:
       alt_cn: FIT1045 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/monash/fit1045/sample/03-part-a-from-brief-to-design.webp
-      alt_en: FIT1045 tutoring · Part A · From brief to design
-      alt_cn: FIT1045 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/monash/fit1045/sample/04-brief-checklist-before-code.webp
-      alt_en: FIT1045 tutoring · Brief checklist (before code)
-      alt_cn: FIT1045 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/monash/fit1045/sample/05-one-job-per-function.webp
-      alt_en: FIT1045 tutoring · One job per function
-      alt_cn: FIT1045 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/monash/fit1045/sample/06-names-objects-mutability.webp
+    - src: /assets/teach/monash/fit1045/sample/03-functions-with-one-job.webp
+      alt_en: FIT1045 tutoring · Functions with one job
+      alt_cn: FIT1045 辅导课件 · Functions with one job
+      caption_en: Functions with one job
+      caption_cn: Functions with one job
+    - src: /assets/teach/monash/fit1045/sample/04-names-objects-mutability.webp
       alt_en: FIT1045 tutoring · Names, objects, mutability
       alt_cn: FIT1045 辅导课件 · Names, objects, mutability
       caption_en: Names, objects, mutability
       caption_cn: Names, objects, mutability
+    - src: /assets/teach/monash/fit1045/sample/05-recursion-three-must-haves.webp
+      alt_en: 'FIT1045 tutoring · Recursion: three must-haves'
+      alt_cn: 'FIT1045 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/monash/fit1045/sample/06-mutability-and-defaults.webp
+      alt_en: FIT1045 tutoring · Mutability and defaults
+      alt_cn: FIT1045 辅导课件 · Mutability and defaults
+      caption_en: Mutability and defaults
+      caption_cn: Mutability and defaults
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -1208,9 +1209,10 @@ courses:
     with real-world examples, then design and implement model extraction and membership inference attacks
     with countermeasures — marked on technical correctness, clarity, and presentation quality. Students
     stall when attack code is copied without a threat model, when metrics are reported without saying
-    what “success” means for the attacker, or when defences are named but not evaluated.
+    what “success” means for the attacker, or when defences are named but not evaluated. Sample slides
+    from our concept-review tutoring deck are below.
   overview_cn: Emerging Topics for Cybersecurity in Practice 关注现代 ML 系统的安全与隐私风险。 隐私攻击作业要求结合真实案例讲清目标与威胁模型，再设计并实现模型窃取与成员推断
-    及对应防御——按技术正确性、表述清晰与呈现质量给分。卡点常在只抄攻击代码没有威胁 模型、报了指标却说不清对攻击者而言何谓成功，或防御只点名不评估。
+    及对应防御——按技术正确性、表述清晰与呈现质量给分。卡点常在只抄攻击代码没有威胁 模型、报了指标却说不清对攻击者而言何谓成功，或防御只点名不评估。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Threat models for ML systems and privacy risk
     cn: 面向 ML 系统的威胁模型与隐私风险
@@ -1245,6 +1247,60 @@ courses:
     cn: 作业辅导：威胁模型评审、实验 debug 与防御评估。
   - en: 'Write-up prep: clarity drills so technical ideas survive the presentation mark.'
     cn: 报告突击：练表述清晰，让技术点撑住呈现分。
+  sample_slides:
+    title_en: FIT5124 — sample slides
+    title_cn: FIT5124 — 辅导课件样例
+    lead_en: Title, Roadmap, Threat model skeleton, Primitive jobs (not interchangeable), Syllabus web
+      patterns, Secure coding defaults from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Threat model skeleton, Primitive jobs (not interchangeable),
+      Syllabus web patterns, Secure coding defaults。
+    bullets:
+    - en: Threat models and trust boundaries
+      cn: 威胁模型与信任边界
+    - en: Crypto primitives at course depth (not CTF spoilers)
+      cn: 课业深度的密码学原语（非 CTF 剧透）
+    - en: Web / network attack patterns the syllabus names
+      cn: 大纲点名的 Web / 网络攻击模式
+    - en: Secure coding habits for assignments
+      cn: 作业里的安全编码习惯
+    slides:
+    - src: /assets/teach/monash/fit5124/sample/01-title.webp
+      alt_en: FIT5124 tutoring · Title
+      alt_cn: FIT5124 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/monash/fit5124/sample/02-roadmap.webp
+      alt_en: FIT5124 tutoring · Roadmap
+      alt_cn: FIT5124 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/monash/fit5124/sample/03-threat-model-skeleton.webp
+      alt_en: FIT5124 tutoring · Threat model skeleton
+      alt_cn: FIT5124 辅导课件 · Threat model skeleton
+      caption_en: Threat model skeleton
+      caption_cn: Threat model skeleton
+    - src: /assets/teach/monash/fit5124/sample/04-primitive-jobs-not-interchangeable.webp
+      alt_en: FIT5124 tutoring · Primitive jobs (not interchangeable)
+      alt_cn: FIT5124 辅导课件 · Primitive jobs (not interchangeable)
+      caption_en: Primitive jobs (not interchangeable)
+      caption_cn: Primitive jobs (not interchangeable)
+    - src: /assets/teach/monash/fit5124/sample/05-syllabus-web-patterns.webp
+      alt_en: FIT5124 tutoring · Syllabus web patterns
+      alt_cn: FIT5124 辅导课件 · Syllabus web patterns
+      caption_en: Syllabus web patterns
+      caption_cn: Syllabus web patterns
+    - src: /assets/teach/monash/fit5124/sample/06-secure-coding-defaults.webp
+      alt_en: FIT5124 tutoring · Secure coding defaults
+      alt_cn: FIT5124 辅导课件 · Secure coding defaults
+      caption_en: Secure coding defaults
+      caption_cn: Secure coding defaults
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: FIT2014
   title: Theory of Computation
   theme: automata

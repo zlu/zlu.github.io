@@ -142,8 +142,10 @@ courses:
     Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
     Design before typing — responsibilities and collaborators; Testing objects and mutable state; Common
     memory / reference pitfalls in the course language. Bring your brief, failing test, lecture slide
-    screenshot, or the topic name you are stuck on.'
+    screenshot, or the topic name you are stuck on. Sample slides from our concept-review tutoring deck
+    are below.'
   overview_cn: INFO1113（悉尼大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Classes, objects, encapsulation, and invariants
     cn: 类、对象、封装与不变量
@@ -182,10 +184,10 @@ courses:
   sample_slides: &id002
     title_en: INFO1113 — sample slides
     title_cn: INFO1113 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Inheritance, interface, polymorphism from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Inheritance, interface, polymorphism。
+    lead_en: 'Title, Roadmap, Methods with one job, Objects are references, Recursion: three must-haves,
+      Inheritance, interface, polymorphism from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Methods with one job, Objects are references, Recursion:
+      three must-haves, Inheritance, interface, polymorphism。'
     bullets:
     - en: SQL, schema design, and databases
       cn: SQL、Schema 与数据库
@@ -202,21 +204,21 @@ courses:
       alt_cn: INFO1113 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/u-sydney/info1113/sample/03-part-a-from-brief-to-design.webp
-      alt_en: INFO1113 tutoring · Part A · From brief to design
-      alt_cn: INFO1113 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/u-sydney/info1113/sample/04-brief-checklist-before-code.webp
-      alt_en: INFO1113 tutoring · Brief checklist (before code)
-      alt_cn: INFO1113 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/u-sydney/info1113/sample/05-one-job-per-function.webp
-      alt_en: INFO1113 tutoring · One job per function
-      alt_cn: INFO1113 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
+    - src: /assets/teach/u-sydney/info1113/sample/03-methods-with-one-job.webp
+      alt_en: INFO1113 tutoring · Methods with one job
+      alt_cn: INFO1113 辅导课件 · Methods with one job
+      caption_en: Methods with one job
+      caption_cn: Methods with one job
+    - src: /assets/teach/u-sydney/info1113/sample/04-objects-are-references.webp
+      alt_en: INFO1113 tutoring · Objects are references
+      alt_cn: INFO1113 辅导课件 · Objects are references
+      caption_en: Objects are references
+      caption_cn: Objects are references
+    - src: /assets/teach/u-sydney/info1113/sample/05-recursion-three-must-haves.webp
+      alt_en: 'INFO1113 tutoring · Recursion: three must-haves'
+      alt_cn: 'INFO1113 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
     - src: /assets/teach/u-sydney/info1113/sample/06-inheritance-interface-polymorphism.webp
       alt_en: INFO1113 tutoring · Inheritance, interface, polymorphism
       alt_cn: INFO1113 辅导课件 · Inheritance, interface, polymorphism
@@ -327,9 +329,10 @@ courses:
     Covered topics: Variables, types, and expressions in the course language; Control flow — branching,
     loops, and nested logic; Functions / procedures and stepwise decomposition; Collections — arrays/lists/strings
     and indexing bugs; I/O, specs, and exact output the autograder expects. Bring your brief, failing
-    test, lecture slide screenshot, or the topic name you are stuck on.'
+    test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: INFO1110（悉尼大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Variables, types, and expressions in the course language
     cn: 课程语言中的变量、类型与表达式
@@ -382,6 +385,55 @@ courses:
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
+  sample_slides:
+    title_en: INFO1110 — sample slides
+    title_cn: INFO1110 — 辅导课件样例
+    lead_en: 'Title, Roadmap, One job per function, Control flow and indexing, Recursion: three must-haves,
+      Autograder loop from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, One job per function, Control flow and indexing, Recursion:
+      three must-haves, Autograder loop。'
+    bullets:
+    - en: Decomposition — one job per function
+      cn: 拆题 — 一函数一事
+    - en: Control flow and indexing edges
+      cn: 控制流与下标边界
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: Debug loop — smallest failing case
+      cn: 调试闭环 — 最小失败用例
+    slides:
+    - src: /assets/teach/u-sydney/info1110/sample/01-title.webp
+      alt_en: INFO1110 tutoring · Title
+      alt_cn: INFO1110 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/u-sydney/info1110/sample/02-roadmap.webp
+      alt_en: INFO1110 tutoring · Roadmap
+      alt_cn: INFO1110 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/u-sydney/info1110/sample/03-one-job-per-function.webp
+      alt_en: INFO1110 tutoring · One job per function
+      alt_cn: INFO1110 辅导课件 · One job per function
+      caption_en: One job per function
+      caption_cn: One job per function
+    - src: /assets/teach/u-sydney/info1110/sample/04-control-flow-and-indexing.webp
+      alt_en: INFO1110 tutoring · Control flow and indexing
+      alt_cn: INFO1110 辅导课件 · Control flow and indexing
+      caption_en: Control flow and indexing
+      caption_cn: Control flow and indexing
+    - src: /assets/teach/u-sydney/info1110/sample/05-recursion-three-must-haves.webp
+      alt_en: 'INFO1110 tutoring · Recursion: three must-haves'
+      alt_cn: 'INFO1110 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/u-sydney/info1110/sample/06-autograder-loop.webp
+      alt_en: INFO1110 tutoring · Autograder loop
+      alt_cn: INFO1110 辅导课件 · Autograder loop
+      caption_en: Autograder loop
+      caption_cn: Autograder loop
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
 - code: ELEC1601/ELEC9601
   title: Intro to Computer System
   theme: systems
@@ -1741,8 +1793,10 @@ courses:
     Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
     Design before typing — responsibilities and collaborators; Testing objects and mutable state; Common
     memory / reference pitfalls in the course language. Bring your brief, failing test, lecture slide
-    screenshot, or the topic name you are stuck on.'
+    screenshot, or the topic name you are stuck on. Sample slides from our concept-review tutoring deck
+    are below.'
   overview_cn: SOFT2201（悉尼大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Classes, objects, encapsulation, and invariants
     cn: 类、对象、封装与不变量
@@ -1781,19 +1835,19 @@ courses:
   sample_slides:
     title_en: SOFT2201 — sample slides
     title_cn: SOFT2201 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Names, objects, mutability。
+    lead_en: 'Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion: three must-haves,
+      Mutability and defaults from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion:
+      three must-haves, Mutability and defaults。'
     bullets:
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
-    - en: Unit tests and autograder feedback loops
-      cn: 单元测试与 autograder 反馈循环
+    - en: Functions and decomposition
+      cn: 函数与拆题
+    - en: Names, objects, and mutability
+      cn: 名字、对象与可变性
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: List/dict edges and default-arg traps
+      cn: 列表/字典边界与默认参数坑
     slides:
     - src: /assets/teach/u-sydney/soft2201/sample/01-title.webp
       alt_en: SOFT2201 tutoring · Title
@@ -1805,26 +1859,26 @@ courses:
       alt_cn: SOFT2201 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/u-sydney/soft2201/sample/03-part-a-from-brief-to-design.webp
-      alt_en: SOFT2201 tutoring · Part A · From brief to design
-      alt_cn: SOFT2201 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/u-sydney/soft2201/sample/04-brief-checklist-before-code.webp
-      alt_en: SOFT2201 tutoring · Brief checklist (before code)
-      alt_cn: SOFT2201 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/u-sydney/soft2201/sample/05-one-job-per-function.webp
-      alt_en: SOFT2201 tutoring · One job per function
-      alt_cn: SOFT2201 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/u-sydney/soft2201/sample/06-names-objects-mutability.webp
+    - src: /assets/teach/u-sydney/soft2201/sample/03-functions-with-one-job.webp
+      alt_en: SOFT2201 tutoring · Functions with one job
+      alt_cn: SOFT2201 辅导课件 · Functions with one job
+      caption_en: Functions with one job
+      caption_cn: Functions with one job
+    - src: /assets/teach/u-sydney/soft2201/sample/04-names-objects-mutability.webp
       alt_en: SOFT2201 tutoring · Names, objects, mutability
       alt_cn: SOFT2201 辅导课件 · Names, objects, mutability
       caption_en: Names, objects, mutability
       caption_cn: Names, objects, mutability
+    - src: /assets/teach/u-sydney/soft2201/sample/05-recursion-three-must-haves.webp
+      alt_en: 'SOFT2201 tutoring · Recursion: three must-haves'
+      alt_cn: 'SOFT2201 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/u-sydney/soft2201/sample/06-mutability-and-defaults.webp
+      alt_en: SOFT2201 tutoring · Mutability and defaults
+      alt_cn: SOFT2201 辅导课件 · Mutability and defaults
+      caption_en: Mutability and defaults
+      caption_cn: Mutability and defaults
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -1859,8 +1913,10 @@ courses:
     Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and polymorphism;
     Design before typing — responsibilities and collaborators; Testing objects and mutable state; Common
     memory / reference pitfalls in the course language. Bring your brief, failing test, lecture slide
-    screenshot, or the topic name you are stuck on.'
+    screenshot, or the topic name you are stuck on. Sample slides from our concept-review tutoring deck
+    are below.'
   overview_cn: INFO1113（悉尼大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Classes, objects, encapsulation, and invariants
     cn: 类、对象、封装与不变量

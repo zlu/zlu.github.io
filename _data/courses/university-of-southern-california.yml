@@ -111,19 +111,19 @@ courses:
   sample_slides:
     title_en: EE 155 — sample slides
     title_cn: EE 155 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Ownership in C++ from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Ownership in C++。
+    lead_en: 'Title, Roadmap, Functions that compile and score, Pointers vs references, Recursion: three
+      must-haves, Arrays, vectors, structs from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Functions that compile and score, Pointers vs references,
+      Recursion: three must-haves, Arrays, vectors, structs。'
     bullets:
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
-    - en: Unit tests and autograder feedback loops
-      cn: 单元测试与 autograder 反馈循环
+    - en: Functions, prototypes, and parameter modes
+      cn: 函数、原型与传参模式
+    - en: Pointers vs references on paper exams
+      cn: 纸笔考试里的指针 vs 引用
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: Arrays, vectors, maps, and structs
+      cn: 数组、vector、map 与 struct
     slides:
     - src: /assets/teach/university-of-southern-california/ee-155/sample/01-title.webp
       alt_en: EE 155 tutoring · Title
@@ -135,26 +135,26 @@ courses:
       alt_cn: EE 155 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/university-of-southern-california/ee-155/sample/03-part-a-from-brief-to-design.webp
-      alt_en: EE 155 tutoring · Part A · From brief to design
-      alt_cn: EE 155 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/university-of-southern-california/ee-155/sample/04-brief-checklist-before-code.webp
-      alt_en: EE 155 tutoring · Brief checklist (before code)
-      alt_cn: EE 155 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/university-of-southern-california/ee-155/sample/05-one-job-per-function.webp
-      alt_en: EE 155 tutoring · One job per function
-      alt_cn: EE 155 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/university-of-southern-california/ee-155/sample/06-ownership-in-c.webp
-      alt_en: EE 155 tutoring · Ownership in C++
-      alt_cn: EE 155 辅导课件 · Ownership in C++
-      caption_en: Ownership in C++
-      caption_cn: Ownership in C++
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/03-functions-that-compile-and-score.webp
+      alt_en: EE 155 tutoring · Functions that compile and score
+      alt_cn: EE 155 辅导课件 · Functions that compile and score
+      caption_en: Functions that compile and score
+      caption_cn: Functions that compile and score
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/04-pointers-vs-references.webp
+      alt_en: EE 155 tutoring · Pointers vs references
+      alt_cn: EE 155 辅导课件 · Pointers vs references
+      caption_en: Pointers vs references
+      caption_cn: Pointers vs references
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/05-recursion-three-must-haves.webp
+      alt_en: 'EE 155 tutoring · Recursion: three must-haves'
+      alt_cn: 'EE 155 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/university-of-southern-california/ee-155/sample/06-arrays-vectors-structs.webp
+      alt_en: EE 155 tutoring · Arrays, vectors, structs
+      alt_cn: EE 155 辅导课件 · Arrays, vectors, structs
+      caption_en: Arrays, vectors, structs
+      caption_cn: Arrays, vectors, structs
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
 ---

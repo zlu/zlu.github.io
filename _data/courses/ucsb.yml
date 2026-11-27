@@ -21,9 +21,9 @@ courses:
     Santa Barbara. Covered topics: Problem Solving; Computers I; Core ideas in Problem Solving with Computers
     I; Assignments / labs for Problem Solving with Computers I; Exam drills aligned to Problem Solving
     with Computers I. Bring your brief, failing test, lecture slide screenshot, or the topic name you
-    are stuck on.'
+    are stuck on. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: COMPSC_16（加州大学圣塔芭芭拉分校）一对一辅导。覆盖主题包括Problem Solving、Computers I、Problem Solving with Computers
-    I 的核心概念、Problem Solving with Computers I 的作业 / Lab。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    I 的核心概念、Problem Solving with Computers I 的作业 / Lab。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Problem Solving
     cn: Problem Solving
@@ -60,10 +60,10 @@ courses:
   sample_slides:
     title_en: COMPSC_16 — sample slides
     title_cn: COMPSC_16 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Autograder loop from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Autograder loop。
+    lead_en: Title, Roadmap, Big-O in exam language, Pick the ADT by the operation, BFS vs DFS, DP four-line
+      template from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Big-O in exam language, Pick the ADT by the operation, BFS
+      vs DFS, DP four-line template。
     bullets:
     - en: Algorithms, ADTs, and complexity
       cn: 算法、ADT 与复杂度
@@ -80,26 +80,26 @@ courses:
       alt_cn: COMPSC_16 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/ucsb/compsc-16/sample/03-part-a-from-brief-to-design.webp
-      alt_en: COMPSC_16 tutoring · Part A · From brief to design
-      alt_cn: COMPSC_16 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/ucsb/compsc-16/sample/04-brief-checklist-before-code.webp
-      alt_en: COMPSC_16 tutoring · Brief checklist (before code)
-      alt_cn: COMPSC_16 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/ucsb/compsc-16/sample/05-one-job-per-function.webp
-      alt_en: COMPSC_16 tutoring · One job per function
-      alt_cn: COMPSC_16 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/ucsb/compsc-16/sample/06-autograder-loop.webp
-      alt_en: COMPSC_16 tutoring · Autograder loop
-      alt_cn: COMPSC_16 辅导课件 · Autograder loop
-      caption_en: Autograder loop
-      caption_cn: Autograder loop
+    - src: /assets/teach/ucsb/compsc-16/sample/03-big-o-in-exam-language.webp
+      alt_en: COMPSC_16 tutoring · Big-O in exam language
+      alt_cn: COMPSC_16 辅导课件 · Big-O in exam language
+      caption_en: Big-O in exam language
+      caption_cn: Big-O in exam language
+    - src: /assets/teach/ucsb/compsc-16/sample/04-pick-the-adt-by-the-operation.webp
+      alt_en: COMPSC_16 tutoring · Pick the ADT by the operation
+      alt_cn: COMPSC_16 辅导课件 · Pick the ADT by the operation
+      caption_en: Pick the ADT by the operation
+      caption_cn: Pick the ADT by the operation
+    - src: /assets/teach/ucsb/compsc-16/sample/05-bfs-vs-dfs.webp
+      alt_en: COMPSC_16 tutoring · BFS vs DFS
+      alt_cn: COMPSC_16 辅导课件 · BFS vs DFS
+      caption_en: BFS vs DFS
+      caption_cn: BFS vs DFS
+    - src: /assets/teach/ucsb/compsc-16/sample/06-dp-four-line-template.webp
+      alt_en: COMPSC_16 tutoring · DP four-line template
+      alt_cn: COMPSC_16 辅导课件 · DP four-line template
+      caption_en: DP four-line template
+      caption_cn: DP four-line template
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

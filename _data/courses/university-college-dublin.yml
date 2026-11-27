@@ -21,9 +21,11 @@ courses:
   overview_en: 'One-to-one tutoring for COMP3038J Multi Paradigm Programming at University College Dublin.
     Covered topics: Multi Paradigm Programming; Core ideas in Multi Paradigm Programming; Assignments
     / labs for Multi Paradigm Programming; Exam drills aligned to Multi Paradigm Programming. Bring your
-    brief, failing test, lecture slide screenshot, or the topic name you are stuck on.'
+    brief, failing test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from
+    our concept-review tutoring deck are below.'
   overview_cn: COMP3038J（都柏林大学）一对一辅导。覆盖主题包括Multi Paradigm Programming、Multi Paradigm Programming 的核心概念、Multi
     Paradigm Programming 的作业 / Lab、对准 Multi Paradigm Programming 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Multi Paradigm Programming
     cn: Multi Paradigm Programming
@@ -58,19 +60,19 @@ courses:
   sample_slides:
     title_en: COMP3038J — sample slides
     title_cn: COMP3038J — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Autograder loop from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Autograder loop。
+    lead_en: 'Title, Roadmap, One job per function, Control flow and indexing, Recursion: three must-haves,
+      Autograder loop from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, One job per function, Control flow and indexing, Recursion:
+      three must-haves, Autograder loop。'
     bullets:
     - en: Programming foundations and debugging
       cn: 编程基础与调试
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Decomposition — one job per function
+      cn: 拆题 — 一函数一事
+    - en: Control flow and indexing edges
+      cn: 控制流与下标边界
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
     slides:
     - src: /assets/teach/university-college-dublin/comp3038j/sample/01-title.webp
       alt_en: COMP3038J tutoring · Title
@@ -82,21 +84,21 @@ courses:
       alt_cn: COMP3038J 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/university-college-dublin/comp3038j/sample/03-part-a-from-brief-to-design.webp
-      alt_en: COMP3038J tutoring · Part A · From brief to design
-      alt_cn: COMP3038J 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/university-college-dublin/comp3038j/sample/04-brief-checklist-before-code.webp
-      alt_en: COMP3038J tutoring · Brief checklist (before code)
-      alt_cn: COMP3038J 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/university-college-dublin/comp3038j/sample/05-one-job-per-function.webp
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/03-one-job-per-function.webp
       alt_en: COMP3038J tutoring · One job per function
       alt_cn: COMP3038J 辅导课件 · One job per function
       caption_en: One job per function
       caption_cn: One job per function
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/04-control-flow-and-indexing.webp
+      alt_en: COMP3038J tutoring · Control flow and indexing
+      alt_cn: COMP3038J 辅导课件 · Control flow and indexing
+      caption_en: Control flow and indexing
+      caption_cn: Control flow and indexing
+    - src: /assets/teach/university-college-dublin/comp3038j/sample/05-recursion-three-must-haves.webp
+      alt_en: 'COMP3038J tutoring · Recursion: three must-haves'
+      alt_cn: 'COMP3038J 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
     - src: /assets/teach/university-college-dublin/comp3038j/sample/06-autograder-loop.webp
       alt_en: COMP3038J tutoring · Autograder loop
       alt_cn: COMP3038J 辅导课件 · Autograder loop
@@ -361,9 +363,9 @@ courses:
     Covered topics: Transforms, cameras, and coordinate spaces; Rasterisation / ray ideas as taught; Mesh
     data, buffers, and GPU upload basics; Shading, lighting, and materials intro; Debugging visual errors
     systematically. Bring your brief, failing test, lecture slide screenshot, or the topic name you are
-    stuck on.'
+    stuck on. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: Computer Graphics（都柏林大学）一对一辅导。覆盖主题包括变换、相机与坐标空间、课程中的光栅 / 光线思想、网格数据、缓冲与 GPU 上传基础、着色、光照与材质入门。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Transforms, cameras, and coordinate spaces
     cn: 变换、相机与坐标空间
@@ -403,10 +405,10 @@ courses:
   sample_slides:
     title_en: Computer Graphics — sample slides
     title_cn: Computer Graphics — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Autograder loop from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Autograder loop。
+    lead_en: 'Title, Roadmap, One job per function, Control flow and indexing, Recursion: three must-haves,
+      Autograder loop from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, One job per function, Control flow and indexing, Recursion:
+      three must-haves, Autograder loop。'
     bullets:
     - en: Algorithms, ADTs, and complexity
       cn: 算法、ADT 与复杂度
@@ -423,21 +425,21 @@ courses:
       alt_cn: Computer Graphics 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/university-college-dublin/computer-graphics/sample/03-part-a-from-brief-to-design.webp
-      alt_en: Computer Graphics tutoring · Part A · From brief to design
-      alt_cn: Computer Graphics 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/university-college-dublin/computer-graphics/sample/04-brief-checklist-before-code.webp
-      alt_en: Computer Graphics tutoring · Brief checklist (before code)
-      alt_cn: Computer Graphics 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/university-college-dublin/computer-graphics/sample/05-one-job-per-function.webp
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/03-one-job-per-function.webp
       alt_en: Computer Graphics tutoring · One job per function
       alt_cn: Computer Graphics 辅导课件 · One job per function
       caption_en: One job per function
       caption_cn: One job per function
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/04-control-flow-and-indexing.webp
+      alt_en: Computer Graphics tutoring · Control flow and indexing
+      alt_cn: Computer Graphics 辅导课件 · Control flow and indexing
+      caption_en: Control flow and indexing
+      caption_cn: Control flow and indexing
+    - src: /assets/teach/university-college-dublin/computer-graphics/sample/05-recursion-three-must-haves.webp
+      alt_en: 'Computer Graphics tutoring · Recursion: three must-haves'
+      alt_cn: 'Computer Graphics 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
     - src: /assets/teach/university-college-dublin/computer-graphics/sample/06-autograder-loop.webp
       alt_en: Computer Graphics tutoring · Autograder loop
       alt_cn: Computer Graphics 辅导课件 · Autograder loop
@@ -477,9 +479,10 @@ courses:
   overview_en: 'One-to-one tutoring for Software Methodology Software Methodology at University College
     Dublin. Covered topics: Software Methodology; Core ideas in Software Methodology; Assignments / labs
     for Software Methodology; Exam drills aligned to Software Methodology. Bring your brief, failing test,
-    lecture slide screenshot, or the topic name you are stuck on.'
+    lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: Software Methodology（都柏林大学）一对一辅导。覆盖主题包括Software Methodology、Software Methodology 的核心概念、Software
-    Methodology 的作业 / Lab、对准 Software Methodology 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    Methodology 的作业 / Lab、对准 Software Methodology 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Software Methodology
     cn: Software Methodology
@@ -514,19 +517,19 @@ courses:
   sample_slides:
     title_en: Software Methodology — sample slides
     title_cn: Software Methodology — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Part D · Tests and memory from our tutoring deck.
-    lead_cn: 我们tutoring deck中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
-      code), One job per function, Part D · Tests and memory。
+    lead_en: Title, Roadmap, Process vs thread, Critical section and race, Virtual memory in one picture,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Process vs thread, Critical section and race, Virtual memory
+      in one picture, Socket + HTTP sketch。
     bullets:
     - en: Computer architecture and organisation
       cn: 计算机体系结构与组成
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: Processes, threads, and synchronisation basics
+      cn: 进程、线程与同步基础
+    - en: Virtual memory and caching intuition
+      cn: 虚拟内存与缓存直觉
+    - en: Sockets, HTTP, and common networking labs
+      cn: Socket、HTTP 与常见网络实验
     slides:
     - src: /assets/teach/university-college-dublin/software-methodology/sample/01-title.webp
       alt_en: Software Methodology tutoring · Title
@@ -538,26 +541,26 @@ courses:
       alt_cn: Software Methodology 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/university-college-dublin/software-methodology/sample/03-part-a-from-brief-to-design.webp
-      alt_en: Software Methodology tutoring · Part A · From brief to design
-      alt_cn: Software Methodology 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/university-college-dublin/software-methodology/sample/04-brief-checklist-before-code.webp
-      alt_en: Software Methodology tutoring · Brief checklist (before code)
-      alt_cn: Software Methodology 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/university-college-dublin/software-methodology/sample/05-one-job-per-function.webp
-      alt_en: Software Methodology tutoring · One job per function
-      alt_cn: Software Methodology 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/university-college-dublin/software-methodology/sample/06-part-d-tests-and-memory.webp
-      alt_en: Software Methodology tutoring · Part D · Tests and memory
-      alt_cn: Software Methodology 辅导课件 · Part D · Tests and memory
-      caption_en: Part D · Tests and memory
-      caption_cn: Part D · Tests and memory
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/03-process-vs-thread.webp
+      alt_en: Software Methodology tutoring · Process vs thread
+      alt_cn: Software Methodology 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/04-critical-section-and-race.webp
+      alt_en: Software Methodology tutoring · Critical section and race
+      alt_cn: Software Methodology 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/05-virtual-memory-in-one-picture.webp
+      alt_en: Software Methodology tutoring · Virtual memory in one picture
+      alt_cn: Software Methodology 辅导课件 · Virtual memory in one picture
+      caption_en: Virtual memory in one picture
+      caption_cn: Virtual memory in one picture
+    - src: /assets/teach/university-college-dublin/software-methodology/sample/06-socket-http-sketch.webp
+      alt_en: Software Methodology tutoring · Socket + HTTP sketch
+      alt_cn: Software Methodology 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

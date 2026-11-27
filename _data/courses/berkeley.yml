@@ -763,9 +763,10 @@ courses:
   lead_cn: 在加州大学伯克利分校上 Data 8，就算模型能跑，凌乱 notebook 和站不住的方法叙事也会丢分。
   overview_en: Data 8 The Foundations of Data Science sits in data science & analytics. Students stall
     when terminology outruns notes, when a demo makes sense in class but not alone, or when the write-up
-    / autograder asks for a method the notebook never made explicit.
+    / autograder asks for a method the notebook never made explicit. Sample slides from our concept-review
+    tutoring deck are below.
   overview_cn: Data 8 是加州大学伯克利分校「数据科学与分析」方向的课，考核通常既看你是否真懂，也看你能不能当场动手。留学生真正吃力的，往往不是「完全没见过」，而是课上术语来得太快、课上演示自己复不出来，或报告
-    / autograder 要的方法在 notebook 里从未写清。
+    / autograder 要的方法在 notebook 里从未写清。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Pandas / dplyr style transforms and joins
     cn: Pandas / dplyr 风格的变换与 join
@@ -804,6 +805,60 @@ courses:
     cn: 作业辅导：对着真实 brief 拆题、梳思路、现场 debug。
   - en: 'Exam / quiz prep: timed drills on weak spots and recurring question shapes for this course.'
     cn: 考试 / quiz 突击：按这门课常考题型和你的薄弱点做限时练习。
+  sample_slides:
+    title_en: Data 8 — sample slides
+    title_cn: Data 8 — 辅导课件样例
+    lead_en: Title, Roadmap, Tidy data rules, EDA checklist, Feature hygiene, Choose the plot for the
+      claim from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Tidy data rules, EDA checklist, Feature hygiene, Choose the
+      plot for the claim。
+    bullets:
+    - en: Pandas / dplyr style transforms and joins
+      cn: Pandas / dplyr 风格的变换与 join
+    - en: EDA, distributions, and “what question am I answering?”
+      cn: 探索性分析、分布，以及“我在回答什么问题”
+    - en: Feature hygiene before modelling
+      cn: 建模前的特征卫生
+    - en: Visualisation that supports a claim
+      cn: 能支撑结论的可视化
+    slides:
+    - src: /assets/teach/uc-berkeley/data-8/sample/01-title.webp
+      alt_en: Data 8 tutoring · Title
+      alt_cn: Data 8 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/uc-berkeley/data-8/sample/02-roadmap.webp
+      alt_en: Data 8 tutoring · Roadmap
+      alt_cn: Data 8 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/uc-berkeley/data-8/sample/03-tidy-data-rules.webp
+      alt_en: Data 8 tutoring · Tidy data rules
+      alt_cn: Data 8 辅导课件 · Tidy data rules
+      caption_en: Tidy data rules
+      caption_cn: Tidy data rules
+    - src: /assets/teach/uc-berkeley/data-8/sample/04-eda-checklist.webp
+      alt_en: Data 8 tutoring · EDA checklist
+      alt_cn: Data 8 辅导课件 · EDA checklist
+      caption_en: EDA checklist
+      caption_cn: EDA checklist
+    - src: /assets/teach/uc-berkeley/data-8/sample/05-feature-hygiene.webp
+      alt_en: Data 8 tutoring · Feature hygiene
+      alt_cn: Data 8 辅导课件 · Feature hygiene
+      caption_en: Feature hygiene
+      caption_cn: Feature hygiene
+    - src: /assets/teach/uc-berkeley/data-8/sample/06-choose-the-plot-for-the-claim.webp
+      alt_en: Data 8 tutoring · Choose the plot for the claim
+      alt_cn: Data 8 辅导课件 · Choose the plot for the claim
+      caption_en: Choose the plot for the claim
+      caption_cn: Choose the plot for the claim
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: MATH54
   title: Linear Algebra and Differential Equations
   material: Math54-linear-algebra-and-differential-equations

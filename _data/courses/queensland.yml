@@ -856,9 +856,10 @@ courses:
     Queensland. Covered topics: Requirements — user stories, use cases, acceptance criteria; Design —
     modularity, APIs, and maintainability; Git workflows and code review habits; Testing — unit, integration,
     and demo evidence; HTTP / backend or UI structure the course actually uses. Bring your brief, failing
-    test, lecture slide screenshot, or the topic name you are stuck on.'
+    test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: CSSE7100（昆士兰大学）一对一辅导。覆盖主题包括需求 — user story、use case、验收标准、设计 — 模块化、API 与可维护性、Git 工作流与 code
-    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    review 习惯、测试 — 单元、集成与 demo 证据。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Requirements — user stories, use cases, acceptance criteria
     cn: 需求 — user story、use case、验收标准
@@ -898,19 +899,19 @@ courses:
   sample_slides:
     title_en: CSSE7100 — sample slides
     title_cn: CSSE7100 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Autograder loop from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Autograder loop。
+    lead_en: Title, Roadmap, Who does what, State vs URL, Mobile lifecycle (course level), Task-centred
+      evaluation from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Who does what, State vs URL, Mobile lifecycle (course level),
+      Task-centred evaluation。
     bullets:
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
-    - en: Unit tests and autograder feedback loops
-      cn: 单元测试与 autograder 反馈循环
+    - en: Client / server responsibilities and APIs
+      cn: 前后端职责与 API
+    - en: State, routing, and common framework patterns
+      cn: 状态、路由与常见框架模式
+    - en: Mobile lifecycle and platform constraints
+      cn: 移动端生命周期与平台约束
+    - en: Accessibility and HCI evaluation basics
+      cn: 无障碍与 HCI 评估基础
     slides:
     - src: /assets/teach/u-queensland/csse7100/sample/01-title.webp
       alt_en: CSSE7100 tutoring · Title
@@ -922,26 +923,26 @@ courses:
       alt_cn: CSSE7100 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/u-queensland/csse7100/sample/03-part-a-from-brief-to-design.webp
-      alt_en: CSSE7100 tutoring · Part A · From brief to design
-      alt_cn: CSSE7100 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/u-queensland/csse7100/sample/04-brief-checklist-before-code.webp
-      alt_en: CSSE7100 tutoring · Brief checklist (before code)
-      alt_cn: CSSE7100 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/u-queensland/csse7100/sample/05-one-job-per-function.webp
-      alt_en: CSSE7100 tutoring · One job per function
-      alt_cn: CSSE7100 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/u-queensland/csse7100/sample/06-autograder-loop.webp
-      alt_en: CSSE7100 tutoring · Autograder loop
-      alt_cn: CSSE7100 辅导课件 · Autograder loop
-      caption_en: Autograder loop
-      caption_cn: Autograder loop
+    - src: /assets/teach/u-queensland/csse7100/sample/03-who-does-what.webp
+      alt_en: CSSE7100 tutoring · Who does what
+      alt_cn: CSSE7100 辅导课件 · Who does what
+      caption_en: Who does what
+      caption_cn: Who does what
+    - src: /assets/teach/u-queensland/csse7100/sample/04-state-vs-url.webp
+      alt_en: CSSE7100 tutoring · State vs URL
+      alt_cn: CSSE7100 辅导课件 · State vs URL
+      caption_en: State vs URL
+      caption_cn: State vs URL
+    - src: /assets/teach/u-queensland/csse7100/sample/05-mobile-lifecycle-course-level.webp
+      alt_en: CSSE7100 tutoring · Mobile lifecycle (course level)
+      alt_cn: CSSE7100 辅导课件 · Mobile lifecycle (course level)
+      caption_en: Mobile lifecycle (course level)
+      caption_cn: Mobile lifecycle (course level)
+    - src: /assets/teach/u-queensland/csse7100/sample/06-task-centred-evaluation.webp
+      alt_en: CSSE7100 tutoring · Task-centred evaluation
+      alt_cn: CSSE7100 辅导课件 · Task-centred evaluation
+      caption_en: Task-centred evaluation
+      caption_cn: Task-centred evaluation
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -1523,9 +1524,9 @@ courses:
     Covered topics: DFA / NFA / ε-NFA and equivalence ideas; Regular expressions and languages; Grammars,
     parsing, and ambiguity when taught; Pumping lemmas / decidability sketches when required; Compiler
     pipeline stages when in syllabus. Bring your brief, failing test, lecture slide screenshot, or the
-    topic name you are stuck on.'
+    topic name you are stuck on. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: COMP4403（昆士兰大学）一对一辅导。覆盖主题包括DFA / NFA / ε-NFA 与等价思想、正则表达式与语言、课程中的文法、解析与歧义、需要时的泵引理 / 可判定性草图。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: DFA / NFA / ε-NFA and equivalence ideas
     cn: DFA / NFA / ε-NFA 与等价思想
@@ -1563,19 +1564,19 @@ courses:
   sample_slides:
     title_en: COMP4403 — sample slides
     title_cn: COMP4403 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Autograder loop from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Autograder loop。
+    lead_en: Title, Roadmap, DFA five-tuple, NFA → DFA (subset), Regex membership by splitting, Moore
+      output vs Petri fire from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, DFA five-tuple, NFA → DFA (subset), Regex membership by splitting,
+      Moore output vs Petri fire。
     bullets:
     - en: Automata, formal languages, and proofs
       cn: 自动机、形式语言与证明
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
+    - en: DFA / NFA / ε-NFA reading and extended transitions
+      cn: DFA / NFA / ε-NFA 读图与扩展转移
+    - en: Regex membership and ε-elimination
+      cn: 正则判定与消 ε
+    - en: Moore / Mealy machines from a brief
+      cn: 按 brief 画 Moore / Mealy 机
     slides:
     - src: /assets/teach/u-queensland/comp4403/sample/01-title.webp
       alt_en: COMP4403 tutoring · Title
@@ -1587,26 +1588,26 @@ courses:
       alt_cn: COMP4403 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/u-queensland/comp4403/sample/03-part-a-from-brief-to-design.webp
-      alt_en: COMP4403 tutoring · Part A · From brief to design
-      alt_cn: COMP4403 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/u-queensland/comp4403/sample/04-brief-checklist-before-code.webp
-      alt_en: COMP4403 tutoring · Brief checklist (before code)
-      alt_cn: COMP4403 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/u-queensland/comp4403/sample/05-one-job-per-function.webp
-      alt_en: COMP4403 tutoring · One job per function
-      alt_cn: COMP4403 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/u-queensland/comp4403/sample/06-autograder-loop.webp
-      alt_en: COMP4403 tutoring · Autograder loop
-      alt_cn: COMP4403 辅导课件 · Autograder loop
-      caption_en: Autograder loop
-      caption_cn: Autograder loop
+    - src: /assets/teach/u-queensland/comp4403/sample/03-dfa-five-tuple.webp
+      alt_en: COMP4403 tutoring · DFA five-tuple
+      alt_cn: COMP4403 辅导课件 · DFA five-tuple
+      caption_en: DFA five-tuple
+      caption_cn: DFA five-tuple
+    - src: /assets/teach/u-queensland/comp4403/sample/04-nfa-dfa-subset.webp
+      alt_en: COMP4403 tutoring · NFA → DFA (subset)
+      alt_cn: COMP4403 辅导课件 · NFA → DFA (subset)
+      caption_en: NFA → DFA (subset)
+      caption_cn: NFA → DFA (subset)
+    - src: /assets/teach/u-queensland/comp4403/sample/05-regex-membership-by-splitting.webp
+      alt_en: COMP4403 tutoring · Regex membership by splitting
+      alt_cn: COMP4403 辅导课件 · Regex membership by splitting
+      caption_en: Regex membership by splitting
+      caption_cn: Regex membership by splitting
+    - src: /assets/teach/u-queensland/comp4403/sample/06-moore-output-vs-petri-fire.webp
+      alt_en: COMP4403 tutoring · Moore output vs Petri fire
+      alt_cn: COMP4403 辅导课件 · Moore output vs Petri fire
+      caption_en: Moore output vs Petri fire
+      caption_cn: Moore output vs Petri fire
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:

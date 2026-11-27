@@ -95,9 +95,10 @@ courses:
     Covered topics: Variables, types, and expressions in the course language; Control flow — branching,
     loops, and nested logic; Functions / procedures and stepwise decomposition; Collections — arrays/lists/strings
     and indexing bugs; I/O, specs, and exact output the autograder expects. Bring your brief, failing
-    test, lecture slide screenshot, or the topic name you are stuck on.'
+    test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: COMP1117B（香港大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Variables, types, and expressions in the course language
     cn: 课程语言中的变量、类型与表达式
@@ -137,19 +138,19 @@ courses:
   sample_slides: &id001
     title_en: COMP1117 — sample slides
     title_cn: COMP1117 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our concept-review tutoring deck.
-    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before code),
-      One job per function, Names, objects, mutability。
+    lead_en: 'Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion: three must-haves,
+      Mutability and defaults from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion:
+      three must-haves, Mutability and defaults。'
     bullets:
-    - en: Reading the brief and designing before typing
-      cn: 先读题、先设计，再动手写
-    - en: Functions, modules, and readable structure
-      cn: 函数、模块与可读结构
-    - en: Recursion, ADTs, and common lab patterns
-      cn: 递归、抽象数据类型与常见 Lab 模式
-    - en: Unit tests and autograder feedback loops
-      cn: 单元测试与 autograder 反馈循环
+    - en: Functions and decomposition
+      cn: 函数与拆题
+    - en: Names, objects, and mutability
+      cn: 名字、对象与可变性
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: List/dict edges and default-arg traps
+      cn: 列表/字典边界与默认参数坑
     slides:
     - src: /assets/teach/hku/comp1117/sample/01-title.webp
       alt_en: COMP1117 tutoring · Title
@@ -161,26 +162,26 @@ courses:
       alt_cn: COMP1117 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/hku/comp1117/sample/03-part-a-from-brief-to-design.webp
-      alt_en: COMP1117 tutoring · Part A · From brief to design
-      alt_cn: COMP1117 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/hku/comp1117/sample/04-brief-checklist-before-code.webp
-      alt_en: COMP1117 tutoring · Brief checklist (before code)
-      alt_cn: COMP1117 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/hku/comp1117/sample/05-one-job-per-function.webp
-      alt_en: COMP1117 tutoring · One job per function
-      alt_cn: COMP1117 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/hku/comp1117/sample/06-names-objects-mutability.webp
+    - src: /assets/teach/hku/comp1117/sample/03-functions-with-one-job.webp
+      alt_en: COMP1117 tutoring · Functions with one job
+      alt_cn: COMP1117 辅导课件 · Functions with one job
+      caption_en: Functions with one job
+      caption_cn: Functions with one job
+    - src: /assets/teach/hku/comp1117/sample/04-names-objects-mutability.webp
       alt_en: COMP1117 tutoring · Names, objects, mutability
       alt_cn: COMP1117 辅导课件 · Names, objects, mutability
       caption_en: Names, objects, mutability
       caption_cn: Names, objects, mutability
+    - src: /assets/teach/hku/comp1117/sample/05-recursion-three-must-haves.webp
+      alt_en: 'COMP1117 tutoring · Recursion: three must-haves'
+      alt_cn: 'COMP1117 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/hku/comp1117/sample/06-mutability-and-defaults.webp
+      alt_en: COMP1117 tutoring · Mutability and defaults
+      alt_cn: COMP1117 辅导课件 · Mutability and defaults
+      caption_en: Mutability and defaults
+      caption_cn: Mutability and defaults
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -216,9 +217,10 @@ courses:
     Covered topics: Variables, types, and expressions in the course language; Control flow — branching,
     loops, and nested logic; Functions / procedures and stepwise decomposition; Collections — arrays/lists/strings
     and indexing bugs; I/O, specs, and exact output the autograder expects. Bring your brief, failing
-    test, lecture slide screenshot, or the topic name you are stuck on.'
+    test, lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: COMP1117（香港大学）一对一辅导。覆盖主题包括课程语言中的变量、类型与表达式、控制流 — 分支、循环与嵌套逻辑、函数 / 过程与逐步拆题、集合 — 数组/列表/字符串与下标坑。预约时请带上
-    brief、失败测例、卡住的课件截图，或主题名。
+    brief、失败测例、卡住的课件截图，或主题名。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Variables, types, and expressions in the course language
     cn: 课程语言中的变量、类型与表达式
@@ -1031,9 +1033,10 @@ courses:
     of Hong Kong. Covered topics: CS Master Entrance Exam Prep; Core ideas in CS Master Entrance Exam
     Prep; Assignments / labs for CS Master Entrance Exam Prep; Exam drills aligned to CS Master Entrance
     Exam Prep. Bring your brief, failing test, lecture slide screenshot, or the topic name you are stuck
-    on.'
+    on. Sample slides from our concept-review tutoring deck are below.'
   overview_cn: CS Master Exam（香港大学）一对一辅导。覆盖主题包括CS Master Entrance Exam Prep、CS Master Entrance Exam Prep
     的核心概念、CS Master Entrance Exam Prep 的作业 / Lab、对准 CS Master Entrance Exam Prep 的考前练习。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: CS Master Entrance Exam Prep
     cn: CS Master Entrance Exam Prep
@@ -1082,4 +1085,53 @@ courses:
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
+  sample_slides:
+    title_en: CS Master Exam — sample slides
+    title_cn: CS Master Exam — 辅导课件样例
+    lead_en: Title, Roadmap, Spec → checklist, Debug loop, Claims need evidence, Question verb → first
+      move from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Spec → checklist, Debug loop, Claims need evidence, Question
+      verb → first move。
+    bullets:
+    - en: Lecture catch-up in Chinese and English
+      cn: 中英双语补课与知识点梳理
+    - en: Assignment approach and debugging
+      cn: 作业思路与调试
+    - en: Project structure and write-up feedback
+      cn: Project 结构与报告反馈
+    - en: Exam topic maps on weak areas
+      cn: 针对薄弱点的考点地图
+    slides:
+    - src: /assets/teach/hku/cs-master-exam/sample/01-title.webp
+      alt_en: CS Master Exam tutoring · Title
+      alt_cn: CS Master Exam 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/hku/cs-master-exam/sample/02-roadmap.webp
+      alt_en: CS Master Exam tutoring · Roadmap
+      alt_cn: CS Master Exam 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/hku/cs-master-exam/sample/03-spec-checklist.webp
+      alt_en: CS Master Exam tutoring · Spec → checklist
+      alt_cn: CS Master Exam 辅导课件 · Spec → checklist
+      caption_en: Spec → checklist
+      caption_cn: Spec → checklist
+    - src: /assets/teach/hku/cs-master-exam/sample/04-debug-loop.webp
+      alt_en: CS Master Exam tutoring · Debug loop
+      alt_cn: CS Master Exam 辅导课件 · Debug loop
+      caption_en: Debug loop
+      caption_cn: Debug loop
+    - src: /assets/teach/hku/cs-master-exam/sample/05-claims-need-evidence.webp
+      alt_en: CS Master Exam tutoring · Claims need evidence
+      alt_cn: CS Master Exam 辅导课件 · Claims need evidence
+      caption_en: Claims need evidence
+      caption_cn: Claims need evidence
+    - src: /assets/teach/hku/cs-master-exam/sample/06-question-verb-first-move.webp
+      alt_en: CS Master Exam tutoring · Question verb → first move
+      alt_cn: CS Master Exam 辅导课件 · Question verb → first move
+      caption_en: Question verb → first move
+      caption_cn: Question verb → first move
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
 ---

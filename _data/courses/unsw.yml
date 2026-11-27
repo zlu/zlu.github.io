@@ -367,15 +367,15 @@ courses:
   sample_slides: &id001
     title_en: COMP2017 — sample slides
     title_cn: COMP2017 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Stack, heap, data (C) from our systems tutoring deck.
-    lead_cn: 我们系统方向辅导课件中的样例页：Title、Roadmap、Part A · From brief to design、Brief checklist (before code)、One
-      job per function、Stack, heap, data (C)。
+    lead_en: Title, Roadmap, Process vs thread, Critical section and race, Virtual memory in one picture,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Process vs thread, Critical section and race, Virtual memory
+      in one picture, Socket + HTTP sketch。
     bullets:
-    - en: Pointers, stack vs heap, and ownership
-      cn: 指针、栈 / 堆与所有权
-    - en: Processes, IPC, and thread synchronisation
-      cn: 进程、IPC 与线程同步
+    - en: Security / privacy threat models and labs
+      cn: 安全 / 隐私威胁模型与实验
+    - en: Algorithms, ADTs, and complexity
+      cn: 算法、ADT 与复杂度
     slides:
     - src: /assets/teach/unsw-sydney/comp2017/sample/01-title.webp
       alt_en: COMP2017 tutoring · Title
@@ -387,26 +387,26 @@ courses:
       alt_cn: COMP2017 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/unsw-sydney/comp2017/sample/03-part-a-from-brief-to-design.webp
-      alt_en: COMP2017 tutoring · Part A · From brief to design
-      alt_cn: COMP2017 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/unsw-sydney/comp2017/sample/04-brief-checklist-before-code.webp
-      alt_en: COMP2017 tutoring · Brief checklist (before code)
-      alt_cn: COMP2017 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/unsw-sydney/comp2017/sample/05-one-job-per-function.webp
-      alt_en: COMP2017 tutoring · One job per function
-      alt_cn: COMP2017 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/unsw-sydney/comp2017/sample/06-stack-heap-data-c.webp
-      alt_en: COMP2017 tutoring · Stack, heap, data (C)
-      alt_cn: COMP2017 辅导课件 · Stack, heap, data (C)
-      caption_en: Stack, heap, data (C)
-      caption_cn: Stack, heap, data (C)
+    - src: /assets/teach/unsw-sydney/comp2017/sample/03-process-vs-thread.webp
+      alt_en: COMP2017 tutoring · Process vs thread
+      alt_cn: COMP2017 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/unsw-sydney/comp2017/sample/04-critical-section-and-race.webp
+      alt_en: COMP2017 tutoring · Critical section and race
+      alt_cn: COMP2017 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/unsw-sydney/comp2017/sample/05-virtual-memory-in-one-picture.webp
+      alt_en: COMP2017 tutoring · Virtual memory in one picture
+      alt_cn: COMP2017 辅导课件 · Virtual memory in one picture
+      caption_en: Virtual memory in one picture
+      caption_cn: Virtual memory in one picture
+    - src: /assets/teach/unsw-sydney/comp2017/sample/06-socket-http-sketch.webp
+      alt_en: COMP2017 tutoring · Socket + HTTP sketch
+      alt_cn: COMP2017 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
   faq:
@@ -422,8 +422,8 @@ courses:
     a_cn: 不会。辅导从技术课开始（指针到线程 / 同步），不做单元介绍幻灯片。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our systems tutoring deck are on this page.
-    a_cn: 有，本页有我们系统方向辅导课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2107
   title: System Programming
   material: comp2017-9017-system-programming
@@ -496,8 +496,8 @@ courses:
     a_cn: 那些是行政说明。辅导时间留给指针、进程、IPC 与同步——Lab 和考试真正挂人的部分。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — shared systems tutoring samples are on this page.
-    a_cn: 有，本页有共用的系统辅导课件样例。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP2511
   title: Software Design And Architecture
   material: comp2511-software-design-and-architecture
@@ -1077,9 +1077,10 @@ courses:
     foundations from the course professor’s textbook. Theory on the page can look clear while the two
     programming assignments stay unforgiving: correct under the happy path, wrong under concurrency, partial
     failure, or subtle protocol states. Tutoring is bilingual: Chinese for the model, English for briefs,
-    logs, and how the marker / tests phrase failures.'
+    logs, and how the marker / tests phrase failures. Sample slides from our concept-review tutoring deck
+    are below.'
   overview_cn: UNSW 的 Distributed Systems 一条线走经典分布式教材——体系结构、通信、同步、 一致性与复制、容错与共识——另一条线用教授自己的区块链教材打基础。纸上概念
-    可以很清楚，两份编程作业却很苛刻：快乐路径能过，一碰上并发、部分失败或协议 细状态就错。辅导中英双语：中文讲清模型，英文对齐 brief、日志和评分 / 测试 怎么描述失败。
+    可以很清楚，两份编程作业却很苛刻：快乐路径能过，一碰上并发、部分失败或协议 细状态就错。辅导中英双语：中文讲清模型，英文对齐 brief、日志和评分 / 测试 怎么描述失败。 下方有我们概念复习辅导课件的样例页。
   topics:
   - en: 'Classic DS spine: architecture, communication, sync, consistency, fault tolerance'
     cn: 经典分布式主线：体系结构、通信、同步、一致性、容错
@@ -1128,6 +1129,60 @@ courses:
     / trace, or the textbook chapter (classic DS vs professor blockchain) that does not connect to the
     task. Concrete evidence gets session one onto the real blocker faster.'
   prep_cn: 发学校、COMP3221、截止日期，以及卡点：作业 brief、失败日志 / 轨迹，或对不上任务的 教材章节（经典分布式 vs 教授区块链）。有具体证据，第一节课更快落到真问题。
+  sample_slides:
+    title_en: COMP3221 — sample slides
+    title_cn: COMP3221 — 辅导课件样例
+    lead_en: Title, Roadmap, Process vs thread, Critical section and race, Virtual memory in one picture,
+      Socket + HTTP sketch from our concept-review tutoring deck.
+    lead_cn: 我们概念复习辅导课件中的样例页：Title, Roadmap, Process vs thread, Critical section and race, Virtual memory
+      in one picture, Socket + HTTP sketch。
+    bullets:
+    - en: Networking layers, packets, and protocols
+      cn: 网络分层、报文与协议
+    - en: Automata, formal languages, and proofs
+      cn: 自动机、形式语言与证明
+    - en: Web / mobile app structure
+      cn: Web / 移动应用结构
+    - en: Distributed systems ideas
+      cn: 分布式系统概念
+    slides:
+    - src: /assets/teach/unsw-sydney/comp3221/sample/01-title.webp
+      alt_en: COMP3221 tutoring · Title
+      alt_cn: COMP3221 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/unsw-sydney/comp3221/sample/02-roadmap.webp
+      alt_en: COMP3221 tutoring · Roadmap
+      alt_cn: COMP3221 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/comp3221/sample/03-process-vs-thread.webp
+      alt_en: COMP3221 tutoring · Process vs thread
+      alt_cn: COMP3221 辅导课件 · Process vs thread
+      caption_en: Process vs thread
+      caption_cn: Process vs thread
+    - src: /assets/teach/unsw-sydney/comp3221/sample/04-critical-section-and-race.webp
+      alt_en: COMP3221 tutoring · Critical section and race
+      alt_cn: COMP3221 辅导课件 · Critical section and race
+      caption_en: Critical section and race
+      caption_cn: Critical section and race
+    - src: /assets/teach/unsw-sydney/comp3221/sample/05-virtual-memory-in-one-picture.webp
+      alt_en: COMP3221 tutoring · Virtual memory in one picture
+      alt_cn: COMP3221 辅导课件 · Virtual memory in one picture
+      caption_en: Virtual memory in one picture
+      caption_cn: Virtual memory in one picture
+    - src: /assets/teach/unsw-sydney/comp3221/sample/06-socket-http-sketch.webp
+      alt_en: COMP3221 tutoring · Socket + HTTP sketch
+      alt_cn: COMP3221 辅导课件 · Socket + HTTP sketch
+      caption_en: Socket + HTTP sketch
+      caption_cn: Socket + HTTP sketch
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
+  faq:
+  - q_en: Are sample slides available?
+    q_cn: 有辅导课件样例吗？
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
 - code: COMP3311
   title: Database Systems
   theme: databases
@@ -1900,24 +1955,24 @@ courses:
     a_cn: Quiz 骨架或作业 PDF、你的尝试、失败输出，以及当周主题名（如递归、网格、文件）。
   - q_en: Are sample slides available?
     q_cn: 有辅导课件样例吗？
-    a_en: Yes — sample pages from our COMP9021 tutoring deck are on this page.
-    a_cn: 有，本页有我们 COMP9021 辅导课件的样例页。
+    a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
+    a_cn: 有，本页有我们概念复习辅导课件的样例页。
   sample_slides:
     title_en: COMP9021 — sample slides
     title_cn: COMP9021 — 辅导课件样例
-    lead_en: Title, Roadmap, Part A · From brief to design, Brief checklist (before code), One job per
-      function, Names, objects, mutability from our COMP9021 tutoring deck.
-    lead_cn: 我们 COMP9021 辅导课件中的样例页：Title, Roadmap, Part A · From brief to design, Brief checklist (before
-      code), One job per function, Names, objects, mutability。
+    lead_en: 'Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion: three must-haves,
+      Mutability and defaults from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Functions with one job, Names, objects, mutability, Recursion:
+      three must-haves, Mutability and defaults。'
     bullets:
-    - en: Python containers and problem decomposition
-      cn: Python 容器与拆题
-    - en: Recursion / memoisation patterns for quizzes
-      cn: Quiz 用的递归 / 记忆化模式
-    - en: Grids, search, and exact output discipline
-      cn: 网格、搜索与精确输出纪律
-    - en: Classes — identity, equality, inheritance
-      cn: 类 — 身份、相等、继承
+    - en: Functions and decomposition
+      cn: 函数与拆题
+    - en: Names, objects, and mutability
+      cn: 名字、对象与可变性
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: List/dict edges and default-arg traps
+      cn: 列表/字典边界与默认参数坑
     slides:
     - src: /assets/teach/unsw-sydney/comp9021/sample/01-title.webp
       alt_en: COMP9021 tutoring · Title
@@ -1929,26 +1984,26 @@ courses:
       alt_cn: COMP9021 辅导课件 · 路线图
       caption_en: Roadmap
       caption_cn: 路线图
-    - src: /assets/teach/unsw-sydney/comp9021/sample/03-part-a-from-brief-to-design.webp
-      alt_en: COMP9021 tutoring · Part A · From brief to design
-      alt_cn: COMP9021 辅导课件 · Part A · From brief to design
-      caption_en: Part A · From brief to design
-      caption_cn: Part A · From brief to design
-    - src: /assets/teach/unsw-sydney/comp9021/sample/04-brief-checklist-before-code.webp
-      alt_en: COMP9021 tutoring · Brief checklist (before code)
-      alt_cn: COMP9021 辅导课件 · Brief checklist (before code)
-      caption_en: Brief checklist (before code)
-      caption_cn: Brief checklist (before code)
-    - src: /assets/teach/unsw-sydney/comp9021/sample/05-one-job-per-function.webp
-      alt_en: COMP9021 tutoring · One job per function
-      alt_cn: COMP9021 辅导课件 · One job per function
-      caption_en: One job per function
-      caption_cn: One job per function
-    - src: /assets/teach/unsw-sydney/comp9021/sample/06-names-objects-mutability.webp
+    - src: /assets/teach/unsw-sydney/comp9021/sample/03-functions-with-one-job.webp
+      alt_en: COMP9021 tutoring · Functions with one job
+      alt_cn: COMP9021 辅导课件 · Functions with one job
+      caption_en: Functions with one job
+      caption_cn: Functions with one job
+    - src: /assets/teach/unsw-sydney/comp9021/sample/04-names-objects-mutability.webp
       alt_en: COMP9021 tutoring · Names, objects, mutability
       alt_cn: COMP9021 辅导课件 · Names, objects, mutability
       caption_en: Names, objects, mutability
       caption_cn: Names, objects, mutability
+    - src: /assets/teach/unsw-sydney/comp9021/sample/05-recursion-three-must-haves.webp
+      alt_en: 'COMP9021 tutoring · Recursion: three must-haves'
+      alt_cn: 'COMP9021 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/unsw-sydney/comp9021/sample/06-mutability-and-defaults.webp
+      alt_en: COMP9021 tutoring · Mutability and defaults
+      alt_cn: COMP9021 辅导课件 · Mutability and defaults
+      caption_en: Mutability and defaults
+      caption_cn: Mutability and defaults
     cta_en: Book tutoring on WeChat
     cta_cn: 微信预约辅导
 - code: COMP9311
@@ -2873,8 +2928,10 @@ courses:
     Wales. Covered topics: Classes, objects, encapsulation, and invariants; Inheritance, interfaces, and
     polymorphism; Design before typing — responsibilities and collaborators; Testing objects and mutable
     state; Common memory / reference pitfalls in the course language. Bring your brief, failing test,
-    lecture slide screenshot, or the topic name you are stuck on.'
+    lecture slide screenshot, or the topic name you are stuck on. Sample slides from our concept-review
+    tutoring deck are below.'
   overview_cn: INFO1113（新南威尔士大学）一对一辅导。覆盖主题包括类、对象、封装与不变量、继承、接口与多态、先设计再写 — 职责与协作关系、测对象与可变状态。预约时请带上 brief、失败测例、卡住的课件截图，或主题名。
+    下方有我们概念复习辅导课件的样例页。
   topics:
   - en: Classes, objects, encapsulation, and invariants
     cn: 类、对象、封装与不变量
@@ -2926,6 +2983,55 @@ courses:
     q_cn: 有辅导课件样例吗？
     a_en: Yes — sample pages from our concept-review tutoring deck are on this page.
     a_cn: 有，本页有我们概念复习辅导课件的样例页。
+  sample_slides:
+    title_en: INFO1113 — sample slides
+    title_cn: INFO1113 — 辅导课件样例
+    lead_en: 'Title, Roadmap, Methods with one job, Objects are references, Recursion: three must-haves,
+      Inheritance, interface, polymorphism from our concept-review tutoring deck.'
+    lead_cn: '我们概念复习辅导课件中的样例页：Title, Roadmap, Methods with one job, Objects are references, Recursion:
+      three must-haves, Inheritance, interface, polymorphism。'
+    bullets:
+    - en: Methods and decomposition
+      cn: 方法与拆题
+    - en: Objects, references, and aliases
+      cn: 对象、引用与别名
+    - en: Recursion — base case and progress
+      cn: 递归 — 终止条件与进展
+    - en: Inheritance, interfaces, polymorphism
+      cn: 继承、接口与多态
+    slides:
+    - src: /assets/teach/unsw-sydney/info1113/sample/01-title.webp
+      alt_en: INFO1113 tutoring · Title
+      alt_cn: INFO1113 辅导课件 · 封面
+      caption_en: Title
+      caption_cn: 封面
+    - src: /assets/teach/unsw-sydney/info1113/sample/02-roadmap.webp
+      alt_en: INFO1113 tutoring · Roadmap
+      alt_cn: INFO1113 辅导课件 · 路线图
+      caption_en: Roadmap
+      caption_cn: 路线图
+    - src: /assets/teach/unsw-sydney/info1113/sample/03-methods-with-one-job.webp
+      alt_en: INFO1113 tutoring · Methods with one job
+      alt_cn: INFO1113 辅导课件 · Methods with one job
+      caption_en: Methods with one job
+      caption_cn: Methods with one job
+    - src: /assets/teach/unsw-sydney/info1113/sample/04-objects-are-references.webp
+      alt_en: INFO1113 tutoring · Objects are references
+      alt_cn: INFO1113 辅导课件 · Objects are references
+      caption_en: Objects are references
+      caption_cn: Objects are references
+    - src: /assets/teach/unsw-sydney/info1113/sample/05-recursion-three-must-haves.webp
+      alt_en: 'INFO1113 tutoring · Recursion: three must-haves'
+      alt_cn: 'INFO1113 辅导课件 · Recursion: three must-haves'
+      caption_en: 'Recursion: three must-haves'
+      caption_cn: 'Recursion: three must-haves'
+    - src: /assets/teach/unsw-sydney/info1113/sample/06-inheritance-interface-polymorphism.webp
+      alt_en: INFO1113 tutoring · Inheritance, interface, polymorphism
+      alt_cn: INFO1113 辅导课件 · Inheritance, interface, polymorphism
+      caption_en: Inheritance, interface, polymorphism
+      caption_cn: Inheritance, interface, polymorphism
+    cta_en: Book tutoring on WeChat
+    cta_cn: 微信预约辅导
 - code: INFO3616
   title: Security Engineering
   material: info3616
