@@ -2,13 +2,14 @@
 /* @size 16:9 1280px 720px */
 /* @size 4:3 960px 720px */
 /* @size A4 210mm 297mm */
+/* @size A4L 297mm 210mm */
 
 /*
   zlu — personal Marp brand theme
   --------------------------------
   Home: zlu.github.io/marp/  (excluded from Jekyll publish)
   Use: theme: zlu   +   --theme-set marp/zlu-theme.css
-  size: 16:9 (decks) | 4:3 | A4 (print cheatsheets)
+  size: 16:9 (decks) | 4:3 | A4 (portrait) | A4L (landscape cheatsheets)
 */
 
 @import 'default';
@@ -699,4 +700,37 @@ section.end header,
 section.end footer,
 section.end::after {
   color: rgba(190, 205, 224, 0.7);
+}
+
+/* ---------- Authorship watermark (public shares) ---------- */
+/*
+  Opt-in: <!-- _class: watermark -->  (combine with other classes, e.g. sheet watermark)
+  Diagonal brand mark for Zhihu / handouts so the PDF carries authorship.
+*/
+section.watermark {
+  position: relative;
+  overflow: hidden;
+}
+
+section.watermark::before {
+  content: 'zlu.me';
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  font-family: var(--zlu-font-display);
+  font-size: clamp(2.8rem, 9vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--zlu-navy);
+  opacity: 0.06;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+section.watermark > * {
+  position: relative;
+  z-index: 1;
 }

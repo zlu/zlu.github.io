@@ -40,7 +40,8 @@ Presets defined in `zlu-theme.css` via `@size`:
 |---|---|
 | `size: 16:9` | Default tutoring decks |
 | `size: 4:3` | Older projectors |
-| `size: A4` | Single-page print cheatsheets (portrait) |
+| `size: A4` | Print cheatsheets (portrait) |
+| `size: A4L` | Print cheatsheets (landscape A4) |
 
 ## Export
 
@@ -98,9 +99,12 @@ Put on the line **before** the slide content:
 <!-- _class: equation -->
 <!-- _class: center -->
 <!-- _class: end -->
+<!-- _class: watermark -->
 ```
 
 `lead` is an alias of `cover`.
+
+`watermark` adds a diagonal authorship mark (`zlu.me`) for public shares. Combine with other classes, e.g. `<!-- _class: sheet watermark -->`.
 
 ## HTML patterns (requires `html: true`)
 
