@@ -123,6 +123,8 @@ Use `$inline$` and `$$display$$` only. LaTeX `\(...\)` will not render in Marp.
 
 **Tables:** prefer bullets or a display `$$...$$` above a plain-language list. Pipe tables often mangle `$...$` (especially subscripts / `\mid`).
 
+Rounded table corners are on **corner cells** only (never `table { overflow: hidden; border-radius }`, which clips the first `th`). Theme forces ≥14px left padding on the first column so tight cheatsheet padding cannot pull header text into the curve.
+
 ## Brand tokens
 
 - **Ink / Navy** — covers, titles

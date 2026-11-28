@@ -154,8 +154,15 @@ hr {
 }
 
 /* ---------- Tables ---------- */
+/*
+  Rounded tables without clipping header text.
+  Do NOT put overflow:hidden on the table with border-radius — that clip
+  path cuts the first th in the top-left corner (and other corner cells).
+  Round the corner cells instead; keep border-collapse:separate.
+*/
 
 table {
+  --zlu-table-radius: 8px;
   align-self: stretch;
   flex-grow: 0;
   flex-shrink: 1;
@@ -163,21 +170,73 @@ table {
   width: 100%;
   max-width: 100%;
   table-layout: auto;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 26px;
   margin: 0.75em 0 0.35em;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--zlu-line);
-  border-radius: 12px;
-  overflow: hidden;
+  /* Radius only on cells — table-level radius + overflow/border clips th text */
 }
 
 th,
 td {
-  border: 1px solid var(--zlu-line);
+  border-right: 1px solid var(--zlu-line);
+  border-bottom: 1px solid var(--zlu-line);
   padding: 0.65em 1.15em;
   text-align: left;
   vertical-align: middle;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+tr:last-child > th,
+tr:last-child > td {
+  border-bottom: none;
+}
+
+/*
+  Round corner cells. Padding !important so deck-local tight th/td padding
+  cannot pull glyphs into the curve (top-left header was the common failure).
+*/
+thead tr:first-child > th:first-child,
+tr:first-child > th:first-child,
+tr:first-child > td:first-child {
+  border-top-left-radius: var(--zlu-table-radius);
+  padding-left: 14px !important;
+  padding-top: 10px !important;
+}
+
+thead tr:first-child > th:last-child,
+tr:first-child > th:last-child,
+tr:first-child > td:last-child {
+  border-top-right-radius: var(--zlu-table-radius);
+  padding-right: 14px !important;
+  padding-top: 10px !important;
+}
+
+tbody tr:last-child > td:first-child,
+tr:last-child > th:first-child,
+tr:last-child > td:first-child {
+  border-bottom-left-radius: var(--zlu-table-radius);
+  padding-left: 14px !important;
+  padding-bottom: 10px !important;
+}
+
+tbody tr:last-child > td:last-child,
+tr:last-child > th:last-child,
+tr:last-child > td:last-child {
+  border-bottom-right-radius: var(--zlu-table-radius);
+  padding-right: 14px !important;
+  padding-bottom: 10px !important;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 14px !important;
 }
 
 th {
